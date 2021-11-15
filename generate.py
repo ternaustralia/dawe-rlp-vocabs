@@ -33,7 +33,7 @@ if __name__ == "__main__":
     for file in settings.excel_files:
         try:
             logger.info(f"Downloading {file.download_url}")
-            r = requests.get(file.download_url, params={"api_key": settings.api_key})
+            r = requests.get(file.download_url, params={"key": settings.api_key})
             r.raise_for_status()
             if r.status_code == 200:
                 logger.info(f"Writing file to {file.path}")
