@@ -1,0 +1,75 @@
+# baseURI: http://example.org/unnamed
+# imports: http://datashapes.org/dash
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: unnamed
+
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix unnamed: <http://example.org/unnamed#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/unnamed>
+  a owl:Ontology ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://purl.org/dc/terms/> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+unnamed:Collection
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Collection" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path <http://purl.org/dc/terms/description> ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "description" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path <http://www.w3.org/2004/02/skos/core#member> ;
+      sh:minCount 1 ;
+      sh:name "member" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path <http://www.w3.org/2004/02/skos/core#prefLabel> ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "pref label" ;
+    ] ;
+  sh:targetClass <http://www.w3.org/2004/02/skos/core#Collection> ;
+.
+unnamed:Concept
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Concept" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path <http://www.w3.org/2004/02/skos/core#definition> ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "definition" ;
+      sh:severity sh:Warning ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path <http://www.w3.org/2004/02/skos/core#prefLabel> ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "pref label" ;
+    ] ;
+  sh:targetClass <http://www.w3.org/2004/02/skos/core#Concept> ;
+.
