@@ -33,10 +33,13 @@ if __name__ == "__main__":
     # Create directory if not exists.
     pathlib.Path(settings.excel_files_dir).mkdir(parents=True, exist_ok=True)
 
+    # Details for service account usage from PR at https://github.com/iterative/PyDrive2/blob/e56591edb79bdbe7df147839b5e4dd3e866ad8c3/docs/quickstart.rst
     scope = ["https://www.googleapis.com/auth/drive"]
     gauth = GoogleAuth()
-    gauth.auth_method = 'service'
-    gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name('client_secrets.json', scope)
+    gauth.auth_method = "service"
+    gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name(
+        "client_secrets.json", scope
+    )
     drive = GoogleDrive(gauth)
 
     for file in settings.excel_files:
