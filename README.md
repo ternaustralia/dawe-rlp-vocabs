@@ -4,6 +4,8 @@ Source Excel files for DAWE RLP controlled vocabularies.
 
 The Excel files are converted to RDF using the Python tool [excel2rdf](https://pypi.org/project/excel2rdf/) via the Python script `generate.py`.
 
+Excel files are located in Google Drive at [DAWE RLP/vocab-sources](https://drive.google.com/drive/u/1/folders/15wH8Gphq9eIlRO6swctk87yRzE6UtFMu)
+
 ## Running
 
 ### Virtual environment
