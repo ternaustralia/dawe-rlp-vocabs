@@ -13,7 +13,7 @@ from pydrive2.auth import GoogleAuth
 from oauth2client.service_account import ServiceAccountCredentials
 
 from dawe_vocabs import settings
-from dawe_vocabs.namespaces import TERN
+from dawe_vocabs.namespaces import TERN, REG
 from dawe_vocabs.pretty_table import get_pretty_table_output
 from dawe_vocabs.vocabs import feature_types_collection
 from dawe_vocabs.vocabs import categorical_values_collection
@@ -28,24 +28,26 @@ if __name__ == "__main__":
     g.bind("tern", TERN)
     g.bind("skos", SKOS)
     g.bind("dct", DCTERMS)
+    g.bind("reg", REG)
 
     # Download Excel vocab files and store to disk.
     # Create directory if not exists.
     pathlib.Path(settings.excel_files_dir).mkdir(parents=True, exist_ok=True)
 
     # Details for service account usage from PR at https://github.com/iterative/PyDrive2/blob/e56591edb79bdbe7df147839b5e4dd3e866ad8c3/docs/quickstart.rst
-    scope = ["https://www.googleapis.com/auth/drive"]
-    gauth = GoogleAuth()
-    gauth.auth_method = "service"
-    gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name(
-        "client_secrets.json", scope
-    )
-    drive = GoogleDrive(gauth)
+    if settings.download_excel_files:
+        scope = ["https://www.googleapis.com/auth/drive"]
+        gauth = GoogleAuth()
+        gauth.auth_method = "service"
+        gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name(
+            "client_secrets.json", scope
+        )
+        drive = GoogleDrive(gauth)
 
-    for file in settings.excel_files:
-        logger.info(f"Downloading {file.path} with id {file.id}")
-        drive_file = drive.CreateFile({"id": file.id})
-        drive_file.GetContentFile(file.path)
+        for file in settings.excel_files:
+            logger.info(f"Downloading {file.path} with id {file.id}")
+            drive_file = drive.CreateFile({"id": file.id})
+            drive_file.GetContentFile(file.path)
 
     # Create vocabs from Excel files.
     for file in settings.excel_files:
@@ -60,7 +62,9 @@ if __name__ == "__main__":
     # Generate look up tables to categorical values.
     for lut_config in settings.lut_configs:
         try:
-            categorical_values_collection.create(settings.base_uri, g, lut_config)
+            categorical_values_collection.create(
+                settings.base_uri, g, lut_config, settings.parent_collection_uri
+            )
         except categorical_values_collection.NoDataInAPIException as e:
             logger.error(e)
         except Exception as e:

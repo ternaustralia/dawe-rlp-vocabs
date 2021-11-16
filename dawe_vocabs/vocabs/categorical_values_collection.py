@@ -7,17 +7,22 @@ from dawe_vocabs.vocabs.common import get_local_uuid_name
 
 class NoDataInAPIException(Exception):
     """This is raised when no data is received from the API."""
+
     pass
 
 
-def create(base_uri: Namespace, g: Graph, config: LUTSchema) -> None:
+def create(
+    base_uri: Namespace, g: Graph, config: LUTSchema, parent_collection_uri: str
+) -> None:
     r = requests.get(config.endpoint_url)
     r.raise_for_status()
 
     rows = r.json()
 
     if not rows:
-        raise NoDataInAPIException(f"API endpoint {config.endpoint_url} returned no data.")
+        raise NoDataInAPIException(
+            f"API endpoint {config.endpoint_url} returned no data."
+        )
 
     concepts = list()
 
@@ -45,6 +50,7 @@ def create(base_uri: Namespace, g: Graph, config: LUTSchema) -> None:
 
     # Create the collection
     collection_uri = base_uri[config.collection_uuid]
+    g.add((URIRef(parent_collection_uri), SKOS.member, collection_uri))
     g.add((collection_uri, RDF.type, SKOS.Collection))
     g.add((collection_uri, SKOS.prefLabel, Literal(config.label)))
     g.add(

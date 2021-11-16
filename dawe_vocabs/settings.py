@@ -12,11 +12,19 @@ from rdflib import Namespace
 # Show table result in logging output.
 show_table_result = False
 
+# Download Excel files from Google Drive.
+download_excel_files = True
+
 # Base URI used for all generated vocabularies.
 base_uri = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
 
 # SHACL shapes file.
 shapes_file = "shapes.shapes.ttl"
+
+# Parent categorical values collection
+parent_collection_uri = (
+    "https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521"
+)
 
 # Look up tables to be generated.
 lut_configs: List[LUTSchema] = [
@@ -116,6 +124,11 @@ lut_configs: List[LUTSchema] = [
 # Excel files to be generated using excel2rdf.
 excel_files_dir = "vocab-sources"
 excel_files = (
+    ExcelVocab("vocab-sources/register.xlsx", "1YBOPh7SZpKS-qDxN_Tl-uuZ4slLMbLjD"),
+    ExcelVocab(
+        "vocab-sources/categorical-values-collection.xlsx",
+        "1KPEq5JiqJhQyTp0oihVNhHbLkyhMLG_R",
+    ),
     ExcelVocab(
         "vocab-sources/protocols-collection.xlsx",
         "1RLOQvSXfLaJ-eRSfWa6KPDXTn4a_MRNA",

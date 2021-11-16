@@ -8,7 +8,7 @@ def create(base_uri: Namespace, g: Graph) -> None:
     # Members of this collection are based on the values of tern:hasFeatureType predicate.
     feature_types_uri = base_uri["31a9f83d-9c8b-4d68-8dd7-d1b7a9a4197b"]
     g.add((feature_types_uri, RDF.type, SKOS.Collection))
-    g.add((feature_types_uri, SKOS.prefLabel, Literal("Feature Types")))
+    g.add((feature_types_uri, SKOS.prefLabel, Literal("Feature types")))
     g.add(
         (
             feature_types_uri,
