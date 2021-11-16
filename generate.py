@@ -5,10 +5,12 @@ Generate RDF from Excel files using excel2rdf with data validation provided by P
 import logging
 import pathlib
 
-import requests
 from rdflib import Graph, SKOS, DCTERMS, SH
 from excel2rdf import excel2rdf
 from pyshacl import validate
+from pydrive2.drive import GoogleDrive
+from pydrive2.auth import GoogleAuth
+from oauth2client.service_account import ServiceAccountCredentials
 
 from dawe_vocabs import settings
 from dawe_vocabs.namespaces import TERN
@@ -30,18 +32,17 @@ if __name__ == "__main__":
     # Download Excel vocab files and store to disk.
     # Create directory if not exists.
     pathlib.Path(settings.excel_files_dir).mkdir(parents=True, exist_ok=True)
+
+    scope = ["https://www.googleapis.com/auth/drive"]
+    gauth = GoogleAuth()
+    gauth.auth_method = 'service'
+    gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name('client_secrets.json', scope)
+    drive = GoogleDrive(gauth)
+
     for file in settings.excel_files:
-        try:
-            logger.info(f"Downloading {file.download_url}")
-            r = requests.get(file.download_url, params={"key": settings.api_key})
-            r.raise_for_status()
-            if r.status_code == 200:
-                logger.info(f"Writing file to {file.path}")
-                with open(file.path, "wb") as f:
-                    f.write(r.content)
-        except Exception as e:
-            logger.error(f"Failed to download {file.download_url}")
-            logger.error(e)
+        logger.info(f"Downloading {file.path} with id {file.id}")
+        drive_file = drive.CreateFile({"id": file.id})
+        drive_file.GetContentFile(file.path)
 
     # Create vocabs from Excel files.
     for file in settings.excel_files:

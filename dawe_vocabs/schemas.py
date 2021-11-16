@@ -17,4 +17,4 @@ class ExcelVocab:
     """Excel vocab schema."""
 
     path: str
-    download_url: str
+    id: str

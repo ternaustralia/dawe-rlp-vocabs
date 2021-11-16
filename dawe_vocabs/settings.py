@@ -1,12 +1,5 @@
 from os import environ
 
-try:
-    from dotenv import load_dotenv
-
-    load_dotenv()
-except:
-    pass
-
 from dawe_vocabs.schemas import LUTSchema, ExcelVocab
 
 
@@ -15,10 +8,6 @@ from typing import List
 from rdflib import Namespace
 
 # Settings
-
-# Google API key.
-# This is required to download the Excel files from Google Drive.
-api_key = environ["GOOGLE_API_KEY"]
 
 # Show table result in logging output.
 show_table_result = False
@@ -129,79 +118,79 @@ excel_files_dir = "vocab-sources"
 excel_files = (
     ExcelVocab(
         "vocab-sources/protocols-collection.xlsx",
-        "https://drive.google.com/uc?export=download&id=1RLOQvSXfLaJ-eRSfWa6KPDXTn4a_MRNA",
+        "1RLOQvSXfLaJ-eRSfWa6KPDXTn4a_MRNA",
     ),
     ExcelVocab(
         "vocab-sources/observable-properties-by-module.xlsx",
-        "https://drive.google.com/uc?export=download&id=1kzR1BTPgARnWfHh_mK-xx15TEl1D2bky",
+        "1kzR1BTPgARnWfHh_mK-xx15TEl1D2bky",
     ),
     ExcelVocab(
         "vocab-sources/protocols-plot-description.xlsx",
-        "https://drive.google.com/uc?export=download&id=1Dbrhl1gTIMn7VaijCiSbQc63ybpQmXd_",
+        "1Dbrhl1gTIMn7VaijCiSbQc63ybpQmXd_",
     ),
     ExcelVocab(
         "vocab-sources/plot-description-observable-properties-collection.xlsx",
-        "https://drive.google.com/uc?export=download&id=1qPJ3I4NhfnKLDiqBQVkolAYBDbSZEPQ7",
+        "1qPJ3I4NhfnKLDiqBQVkolAYBDbSZEPQ7",
     ),
     ExcelVocab(
         "vocab-sources/plot-description-observable-properties.xlsx",
-        "https://drive.google.com/uc?export=download&id=1wmEWPnAmo2kunMH_zLSq3HkXckY8Ml33",
+        "1wmEWPnAmo2kunMH_zLSq3HkXckY8Ml33",
     ),
     ExcelVocab(
         "vocab-sources/protocols-cover.xlsx",
-        "https://drive.google.com/uc?export=download&id=11OD9vTq8TDCOyHmOZHutWr-1dK6t7Zsv",
+        "11OD9vTq8TDCOyHmOZHutWr-1dK6t7Zsv",
     ),
     ExcelVocab(
         "vocab-sources/cover-observable-properties-collection.xlsx",
-        "https://drive.google.com/uc?export=download&id=1jUcXQ1HQ9RxxJeYxWp7dosjdwFr0vVw2",
+        "1jUcXQ1HQ9RxxJeYxWp7dosjdwFr0vVw2",
     ),
     ExcelVocab(
         "vocab-sources/cover-observable-properties.xlsx",
-        "https://drive.google.com/uc?export=download&id=1nw2KeprNMmIYYzHz_T2-bD3IoSyj2ayb",
+        "1nw2KeprNMmIYYzHz_T2-bD3IoSyj2ayb",
     ),
     ExcelVocab(
         "vocab-sources/protocols-floristics.xlsx",
-        "https://drive.google.com/uc?export=download&id=1BryGRR1JYl_2eLisqrF9SZyw7ZnRj-Ix",
+        "1BryGRR1JYl_2eLisqrF9SZyw7ZnRj-Ix",
     ),
     ExcelVocab(
         "vocab-sources/floristics-observable-properties-collection.xlsx",
-        "https://drive.google.com/uc?export=download&id=1tWaBUfSol735NzpPeTTpYIpkNE9JaIzJ",
+        "1tWaBUfSol735NzpPeTTpYIpkNE9JaIzJ",
     ),
     ExcelVocab(
         "vocab-sources/floristics-observable-properties.xlsx",
-        "https://drive.google.com/uc?export=download&id=1gsS0NgpF1Njs-S4hW0rSTQJbpi-N7oEl",
+        "1gsS0NgpF1Njs-S4hW0rSTQJbpi-N7oEl",
     ),
     ExcelVocab(
         "vocab-sources/protocols-plant-tissue-vouchering.xlsx",
-        "https://drive.google.com/uc?export=download&id=19ghAUOE0GGFw5UDxmEyOtFJRgmVy6XRO",
+        "19ghAUOE0GGFw5UDxmEyOtFJRgmVy6XRO",
     ),
     ExcelVocab(
         "vocab-sources/protocols-vegetation-mapping.xlsx",
-        "https://drive.google.com/uc?export=download&id=1Ofkweb9pNvMT4OT53P7NNh-v4FevjbTs",
+        "1Ofkweb9pNvMT4OT53P7NNh-v4FevjbTs",
     ),
     ExcelVocab(
         "vocab-sources/vegetation-mapping-observable-properties-collection.xlsx",
-        "https://drive.google.com/uc?export=download&id=1OnomiXiDzHhTNrM5p1xINguiP5tPrydF",
+        "1OnomiXiDzHhTNrM5p1xINguiP5tPrydF",
     ),
     ExcelVocab(
         "vocab-sources/vegetation-mapping-observable-properties.xlsx",
-        "https://drive.google.com/uc?export=download&id=1BiWiCK0O3OZPfsyUBIhdx0HyFTb-Xy-S",
+        "1BiWiCK0O3OZPfsyUBIhdx0HyFTb-Xy-S",
     ),
     ExcelVocab(
         "vocab-sources/protocols-opportunistic-observations.xlsx",
-        "https://drive.google.com/uc?export=download&id=1dTfOpJ9l68qVs9msUWQVDfilWExG_NkW",
+        "1dTfOpJ9l68qVs9msUWQVDfilWExG_NkW",
     ),
     ExcelVocab(
         "vocab-sources/opportunistic-observations-observable-properties-collection.xlsx",
-        "https://drive.google.com/uc?export=download&id=15KybrSynrOW26eDFy9ZxQzR4BdYTtz_N",
+        "15KybrSynrOW26eDFy9ZxQzR4BdYTtz_N",
     ),
     ExcelVocab(
         "vocab-sources/opportunistic-observations-observable-properties.xlsx",
-        "https://drive.google.com/uc?export=download&id=1AMWD4_SZQBbut4MxYqJPE8IvxdJFMzkJ",
+        "1AMWD4_SZQBbut4MxYqJPE8IvxdJFMzkJ",
     ),
     ExcelVocab(
         "vocab-sources/protocols-photopoints.xlsx",
-        "https://drive.google.com/uc?export=download&id=1cei9yda7SRMSdDD9VRL-DAGTbHJhSXEZ",
+        "1cei9yda7SRMSdDD9VRL-DAGTbHJhSXEZ",
     ),
 )
 
