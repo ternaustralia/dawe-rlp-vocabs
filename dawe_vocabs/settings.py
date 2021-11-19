@@ -8,7 +8,7 @@ from rdflib import Namespace
 # Settings
 
 # Show table result in logging output.
-show_table_result = False
+show_table_result = True
 
 # Download Excel files from Google Drive.
 download_excel_files = True
