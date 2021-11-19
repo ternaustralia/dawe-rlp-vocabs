@@ -1,5 +1,3 @@
-from os import environ
-
 from dawe_vocabs.schemas import LUTSchema, ExcelVocab
 
 
