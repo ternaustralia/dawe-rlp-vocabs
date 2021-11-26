@@ -27,6 +27,62 @@ parent_collection_uri = (
 # Look up tables to be generated.
 lut_configs: List[LUTSchema] = [
     LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-tier-2-observation-methods",
+        "Observation method tier 2 codes",
+        "A collection of observation tier 2 types and its codes.",
+        "f1592e71-cc16-4b81-90c4-06b418a5a766",
+        "observation method tier 2"
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-fauna-vagina-conditions",
+        "Vaginal condition codes",
+        "A collection of vaginal condition types and its codes.",
+        "09de3b86-616e-49af-a34c-903cf7dec443",
+        "vaginal condition",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-voucher-types",
+        "Voucher type codes",
+        "A collection of voucher types and its codes.",
+        "a3333793-95bd-47fc-ba90-b8fc65a40456",
+        "voucher type",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-fauna-behaviours",
+        "animal behaviour codes",
+        "A collection of animal behaviour types and its codes.",
+        "1301857c-4e02-4000-966b-a0d0ce60368f",
+        "animal behaviour",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-habitats",
+        "Habitat description codes",
+        "A collection of habitat description types and its codes.",
+        "c19a0098-1f3f-4bc2-b84d-fdb6d4e24d6f",
+        "habitat description",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-tier-1-observation-methods",
+        "Observation method tier 1 codes",
+        "A collection of observation tier 1 types and its codes.",
+        "6b6ec6a4-33d2-4515-b988-617d190cfbdb",
+        "observation method tier 1",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-substratum-types",
+        "Substratum type codes",
+        "A collection of substratum types and its codes.",
+        "7fc2cae5-74f6-426d-a25d-cbf9423b572a",
+        "substratum type",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-stratum-types",
+        "Stratum type codes",
+        "A collection of stratum types and its codes.",
+        "eb6e9a4c-e277-4cb3-9792-9c91311b7e03",
+        "stratum type",
+    ),
+    LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-voucher-conditions",
         "Voucher condition codes",
         "A collection of voucher condition types and its codes.",
@@ -160,11 +216,11 @@ lut_configs: List[LUTSchema] = [
         "landform element",
     ),
     LUTSchema(
-        "https://dev.core-api.paratoo.tern.org.au/lut-site-slopes",
-        "Site slope codes",
-        "A collection of site slope types and its codes.",
+        "https://dev.core-api.paratoo.tern.org.au/lut-plot-slopes",
+        "Plot slope codes",
+        "A collection of plot slope types and its codes.",
         "d893e669-c530-4bc3-a057-a5799ffcb5db",
-        "site slope",
+        "plot slope",
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-soils-surface-strew-sizes",
