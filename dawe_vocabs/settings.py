@@ -31,7 +31,7 @@ lut_configs: List[LUTSchema] = [
         "Observation method tier 2 codes",
         "A collection of observation tier 2 types and its codes.",
         "f1592e71-cc16-4b81-90c4-06b418a5a766",
-        "observation method tier 2"
+        "observation method tier 2",
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fauna-vagina-conditions",
@@ -305,6 +305,10 @@ excel_files = (
     ExcelVocab(
         "vocab-sources/protocols-collection.xlsx",
         "1RLOQvSXfLaJ-eRSfWa6KPDXTn4a_MRNA",
+    ),
+    ExcelVocab(
+        "vocab-sources/protocols-plot-selection.xlsx",
+        "1S_Cx42safRFWOa0iSDdDDdULP1fRlpSh",
     ),
     ExcelVocab(
         "vocab-sources/observable-properties-by-module.xlsx",
