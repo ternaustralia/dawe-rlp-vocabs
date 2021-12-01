@@ -382,6 +382,40 @@ excel_files = (
         "vocab-sources/protocols-photopoints.xlsx",
         "1cei9yda7SRMSdDD9VRL-DAGTbHJhSXEZ",
     ),
+    ExcelVocab(
+        "vocab-sources/attributes-by-module.xlsx", "1BIrNDeyaLpeBHz3_Q9y0G_ia0aB60hWQ"
+    ),
+    ExcelVocab(
+        "vocab-sources/plot-description-attributes-collection.xlsx",
+        "1WdPNWuukZhtfOXGOe1Tk_bJBuL9HhgDS",
+    ),
+    ExcelVocab(
+        "vocab-sources/plot-description-attributes.xlsx",
+        "15ghEl_ntzXM-A7N7xtOWkPOnFxQWJTPa",
+    ),
+    ExcelVocab(
+        "vocab-sources/plot-selection-attributes-collection.xlsx",
+        "12LZSkM_4n_wsb4dIlm1B3tf6W_iNXqVx",
+    ),
+    ExcelVocab(
+        "vocab-sources/plot-selection-attributes.xlsx",
+        "1BersV0IrGl-LVeuiQfZr5HAFNGphv0Vu",
+    ),
+    ExcelVocab(
+        "vocab-sources/opportunistic-observations-attributes-collection.xlsx",
+        "1gZdZgQw4RdYbOT87QXqABydcJfZYY50X",
+    ),
+    ExcelVocab(
+        "vocab-sources/opportunistic-observations-attributes.xlsx",
+        "12g7ERev4ZWOY4PPRrSPM2N8rEmndW6-g",
+    ),
+    ExcelVocab(
+        "vocab-sources/photopoints-attributes-collection",
+        "1Jk-YICjZFBVM8P7zugj9HdtGI_35LOj3",
+    ),
+    ExcelVocab(
+        "vocab-sources/photopoints-attributes.xlsx", "100lA3JvWQXugH3o7qPbIlA_-KeFzJmoq"
+    ),
 )
 
 # Output file name.
