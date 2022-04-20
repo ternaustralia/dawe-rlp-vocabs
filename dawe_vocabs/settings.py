@@ -397,6 +397,27 @@ lut_configs: List[LUTSchema] = [
         "032ed6fa-4c55-4752-b625-3e6b32672444",
         "Fire growth forms",
     ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-fire-species",
+        "Fire species codes",
+        "A collection of fire species forms and its codes.",
+        "e02a2654-206b-4f15-9132-166321efd122",
+        "Fire species",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-fire-regeneration-statuses",
+        "Fire regeneration statuses codes",
+        "A collection of fire regeneration statuses and its codes.",
+        "a1b8fc00-5d5f-40f8-a7e1-0b09d4bbba4b",
+        "Fire regeneration statuses",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-fire-plant-alive-statuses",
+        "Fire plant alive statuses codes",
+        "A collection of fire plant alive statuses and its codes.",
+        "29d1081d-9cde-42ab-b59a-6bfc8bdda01d",
+        "Fire plant alive statuses",
+    ),
 ]
 
 # Excel files to be generated using excel2rdf.
@@ -590,6 +611,70 @@ excel_files = (
     ExcelVocab(
         "vocab-sources/second-stage/fire-properties.xlsx",
         "1i_eHyoP6P1IQdqAMe9UPyrxyMD-1aqdh",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-basal-area-overview.xlsx",
+        "1bPLqIkhSncMsEoA8SWcm-v9iuL8Nxyqs",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-basal-area.xlsx",
+        "17napKRwRmuDu4Mrn-eeGo0RsjOc2R5th",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-attributes-collection.xlsx",
+        "1N41LV3utkikRP9Zqogh_lUGLM0ory0ag",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-attributes-collection-with-submodules.xlsx",
+        "1dspAnx-DTrYCtZ8wKvy-LhGy_x1OVWtj",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-properties-collection.xlsx",
+        "1ip12rjYBRMCMKSSV5pmnxYhHcoZziZuw",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-properties-collection-with-submodules.xlsx",
+        "1l0fWiSToDVsc1jYQMVsfQQDQLdkAXik8",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-plot-soil-description-properties.xlsx",
+        "1Olb85Vaz0Rl4pu93tOX43uadkxQf3m1o",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-plot-soil-description-attributes.xlsx",
+        "1uhENUBGOEaIePjvZf-y-rCuWtoPrN_pd",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-attributes-collection-general.xlsx",
+        "1W_cxmBQgn96rjKYhnB-levBBHZu8Audk",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-soil-pit-characterization-attributes.xlsx",
+        "1tIk6Rvy8skpthNdc6HD8Ll6meWqCacmL",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-soil-pit-characterization-properties.xlsx",
+        "1_wFq3kCNb7Q_7Nz26xXhavILwbu1zf1A",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-soil-subsite-sampling-attributes.xlsx",
+        "1oaSSog-9TaqX7Lz883s_mPRnEtgLJ0jm",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-soil-subsite-sampling-properties.xlsx",
+        "1W7j-mjWPhvM-MukCa7eFWoeEFWJkQjGm",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/soil-soil-bulk-density-properties.xlsx",
+        "1l8oaY8hQ931U1GjOUMjGwNRn_upi3QPl",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-cwd-overview.xlsx",
+        "1znaJv6W5XXP2xlAv5v21GUkQpn1j70Ak",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-cwd.xlsx",
+        "1i04_Aj2XvfXVkCnUnd_MMqwTBFk4p9Vc",
     ),
 )
 
