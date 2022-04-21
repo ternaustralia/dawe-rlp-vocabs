@@ -676,6 +676,14 @@ excel_files = (
         "vocab-sources/second-stage/protocols-cwd.xlsx",
         "1i04_Aj2XvfXVkCnUnd_MMqwTBFk4p9Vc",
     ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-condition-overview.xlsx",
+        "1cxOhPWnSq8gJ_H_KLLSSnsAp6b-StUDk",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-condition.xlsx",
+        "1ViFC0dM3ZvSuzt8bWZ7HKBrBz79igxg6",
+    ),
 )
 
 # Output file name.
