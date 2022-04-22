@@ -20,5 +20,5 @@ with open("output.ttl", "r", encoding="utf-8") as f:
         f.read().encode("utf-8"),
         "text/turtle",
         auth=(settings.GRAPHDB_USERNAME, settings.GRAPHDB_PASSWORD),
-        context="<https://linked.data.gov.au/def/test/dawe-cv/>"
+        # context="<https://linked.data.gov.au/def/test/dawe-cv/>"
     )
