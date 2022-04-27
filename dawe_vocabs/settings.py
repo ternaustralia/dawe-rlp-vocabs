@@ -1,5 +1,4 @@
-from dawe_vocabs.schemas import LUTSchema, ExcelVocab
-
+from dawe_vocabs.schemas import LUTSchema, ExcelVocab, InfoNeeded
 
 from typing import List
 
@@ -685,6 +684,96 @@ excel_files = (
         "1ViFC0dM3ZvSuzt8bWZ7HKBrBz79igxg6",
     ),
 )
+
+check_inconsistent_names = False
+check_incorrect_value_type = False
+check_empty_feature_type = False
+check_definition = False
+check_uuid = False
+check_categorical_uuid = False
+
+modules = [
+    InfoNeeded(
+        "Basal area module",
+        "https://linked.data.gov.au/def/test/dawe-cv/2c11309d-b846-4a40-a571-6af773d380c6",
+        "https://linked.data.gov.au/def/test/dawe-cv/ab7c4569-312c-4450-b413-9b11c4d2577b",
+        "https://linked.data.gov.au/def/test/dawe-cv/f7e0d965-ae73-434e-8599-634598e506b5",
+        "vocab-sources/second-stage/basal-area-attributes.xlsx",
+        "vocab-sources/second-stage/basal-area-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Coarse Woody Debris module",
+        "https://linked.data.gov.au/def/test/dawe-cv/5bee1509-b8fc-452e-9a06-0aa03d8f196f",
+        "https://linked.data.gov.au/def/test/dawe-cv/3a17f41f-1cf2-4abb-bde1-3b9a1388051e",
+        "https://linked.data.gov.au/def/test/dawe-cv/f455e72b-8fad-4d5d-8dfc-3f1464e91a6e",
+        "vocab-sources/second-stage/coarse-woody-debris-attributes.xlsx",
+        "vocab-sources/second-stage/coarse-woody-debris-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Condition Module",
+        "https://linked.data.gov.au/def/test/dawe-cv/ce3412d6-a99e-482c-9651-5b2b5ac42456",
+        "https://linked.data.gov.au/def/test/dawe-cv/1d6ca60e-4371-4248-a383-5d4bd4d88c65",
+        "https://linked.data.gov.au/def/test/dawe-cv/16a20c3f-e95d-4919-b2d1-a25c7a275109",
+        "vocab-sources/second-stage/condition-attributes.xlsx",
+        "vocab-sources/second-stage/condition-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Fire Module",
+        "https://linked.data.gov.au/def/test/dawe-cv/e8f2ee06-9943-49a4-b113-064f8e195dca",
+        "https://linked.data.gov.au/def/test/dawe-cv/75002e1e-7866-4264-9e20-8569743ea4f5",
+        "https://linked.data.gov.au/def/test/dawe-cv/a8da406b-22bf-444b-a3ea-ccf62130d6f6",
+        "vocab-sources/second-stage/fire-attributes.xlsx",
+        "vocab-sources/second-stage/fire-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Soil module - Plot soil description protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/16a1a45f-b4a4-4eef-af45-2b72477a4178",
+        "https://linked.data.gov.au/def/test/dawe-cv/5b7addb7-ae3d-47eb-b5d8-f34cc211875a",
+        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "vocab-sources/second-stage/soil-plot-soil-description-attributes.xlsx",
+        "vocab-sources/second-stage/soil-plot-soil-description-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Soil module - soil pit characterization protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/461223ed-8855-4c1b-b24c-aa078ffb402b",
+        "https://linked.data.gov.au/def/test/dawe-cv/760751fb-7a1b-4874-9de6-98127febac58",
+        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "vocab-sources/second-stage/soil-soil-pit-characterization-attributes.xlsx",
+        "vocab-sources/second-stage/soil-soil-pit-characterization-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Soil module - soil subsite sampling protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/8981bb19-3158-48ed-9a91-aae67e358256",
+        "https://linked.data.gov.au/def/test/dawe-cv/eaf5a55e-e053-4818-a808-4722b1da4d17",
+        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "vocab-sources/second-stage/soil-soil-subsite-sampling-attributes.xlsx",
+        "vocab-sources/second-stage/soil-soil-subsite-sampling-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Soil module- soil bulk density protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/265eff6c-8ea2-4f9a-bcd1-09c5ff02e891",
+        "https://linked.data.gov.au/def/test/dawe-cv/72b5340f-6654-4ee8-81dc-6a492964b20c",
+        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "vocab-sources/second-stage/soil-soil-bulk-density-attributes.xlsx",
+        "vocab-sources/second-stage/soil-soil-bulk-density-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Soil module- soil condition protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/f6fa4714-5104-400a-a73d-dff7349248d8",
+        "",
+        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "vocab-sources/second-stage/soil-condition-attributes.xlsx",
+        "",
+    ),
+    InfoNeeded(
+        "Soil module- soil metagenomics protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/52826869-2c3b-47ad-8060-776694e4a601",
+        "",
+        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "vocab-sources/second-stage/soil-metagenomics-attributes.xlsx",
+        "",
+    ),
+]
 
 # Output file name.
 output_filename = "output.ttl"

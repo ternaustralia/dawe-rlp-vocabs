@@ -18,3 +18,15 @@ class ExcelVocab:
 
     path: str
     id: str
+
+
+@dataclass
+class InfoNeeded:
+    """The information needed when creating vocabularies for properties and attributes."""
+
+    name: str
+    attribute_collection_uri: str
+    property_collection_uri: str
+    method_uri: str
+    attribute_file_name: str
+    property_file_name: str
