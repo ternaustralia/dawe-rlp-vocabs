@@ -424,8 +424,9 @@ def create_excel_files():
 
             # writer.save()
             if attribute_file:
-                attribute_writer = pd.ExcelWriter(
-                    attribute_file, engine="xlsxwriter"
+                attribute_writer = pd.ExcelWriter(  # pylint: disable=abstract-class-instantiated
+                    attribute_file,
+                    engine="xlsxwriter",  # pylint: disable=abstract-class-instantiated
                 )  # pylint: disable=abstract-class-instantiated
                 attributes_finaldf.to_excel(
                     attribute_writer, index=False, sheet_name="sheet1"
@@ -433,8 +434,9 @@ def create_excel_files():
                 prefix_df.to_excel(attribute_writer, index=False, sheet_name="prefixes")
                 attribute_writer.save()
             if property_file:
-                property_writer = pd.ExcelWriter(
-                    property_file, engine="xlsxwriter"
+                property_writer = pd.ExcelWriter(  # pylint: disable=abstract-class-instantiated
+                    property_file,
+                    engine="xlsxwriter",  # pylint: disable=abstract-class-instantiated
                 )  # pylint: disable=abstract-class-instantiated
                 properties_finaldf.to_excel(
                     property_writer, index=False, sheet_name="sheet1"
