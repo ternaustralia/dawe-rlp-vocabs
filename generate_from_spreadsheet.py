@@ -67,6 +67,18 @@ def check_feature_type(dataframe, modules_names):
     return propeties_without_feature_type
 
 
+def find_empty_definitions(dataframe, modules_names):
+    for index, row in dataframe.iterrows():
+        if row["Module Name"] in modules_names:
+            if row["Preferred Label"] is not NaN:
+                if row["Definition"] is NaN:
+                    print(
+                        "Empty definition: {} -- {} -- {}".format(
+                            index, row["Module Name"], row["Preferred Label"]
+                        )
+                    )
+
+
 def check_uuids(dataframe, modules_names):
     parameters_without_uuids = []
     for index, row in dataframe.iterrows():
@@ -87,13 +99,28 @@ def check_categorical_uuids(dataframe, modules_names):
 
 
 def check_parameters_definition(mapping, attributes, properties, modules_names):
+    print("Empty definitions for attributes")
+    find_empty_definitions(attributes, modules_names)
+    print("-------------------------------------------------------")
+    print("Empty definitions for properties")
+    find_empty_definitions(properties, modules_names)
+    print("-------------------------------------------------------")
+    separated_property_definition_df = [
+        y for _, y in properties.groupby("Module Name", as_index=True)
+    ]
+    separated_attribute_definition_df = [
+        y for _, y in attributes.groupby("Module Name", as_index=True)
+    ]
     # parameters_without_definition = []
     for index, row in mapping.iterrows():
         if row["modules"] in modules_names:
             if row["observable_property_in_protocol"] is not NaN:
+                for item in separated_property_definition_df:
+                    if item["Module Name"].unique()[0] == row["modules"]:
+                        definitions = item
                 if (
                     row["observable_property_in_protocol"]
-                    not in properties["Preferred Label"].to_list()
+                    not in definitions["Preferred Label"].to_list()
                 ):
                     # parameters_without_definition.append(
                     #     "{} : {}".format(
@@ -101,20 +128,27 @@ def check_parameters_definition(mapping, attributes, properties, modules_names):
                     #     )
                     # )
                     print(
-                        "{} : {}".format(
-                            row["modules"], row["observable_property_in_protocol"]
+                        "{} -- {} -- Property : {}".format(
+                            index + 2,
+                            row["modules"],
+                            row["observable_property_in_protocol"],
                         )
                     )
             else:
+                for item in separated_attribute_definition_df:
+                    if item["Module Name"].unique()[0] == row["modules"]:
+                        definitions = item
                 if (
                     row["attribute_in_protocol"]
-                    not in attributes["Preferred Label"].to_list()
+                    not in definitions["Preferred Label"].to_list()
                 ):
                     # parameters_without_definition.append(
                     #     "{} : {}".format(row[modules], row["attribute_in_protocol"])
                     # )
                     print(
-                        "{} : {}".format(row["modules"], row["attribute_in_protocol"])
+                        "{} -- {} -- Attribute : {}".format(
+                            index + 2, row["modules"], row["attribute_in_protocol"]
+                        )
                     )
     # return parameters_without_definition
 
@@ -143,7 +177,7 @@ def get_value_type(str):
         return "tern:QuantitativeMeasure"
     elif str in ["number", "percent"]:
         return "tern:Count"
-    elif str in ["alphanumeric", "text"]:
+    elif str in ["alphanumeric", "text", "alphanumerical"]:
         return "tern:Text"
     elif str == "boolean":
         return "tern:Boolean"
@@ -217,6 +251,7 @@ if check_incorrect_value_type:
 # make sure all properties has feature types
 if check_empty_feature_type:
     print(check_feature_type(mapping_df, names))
+
 
 # make sure all parameters have definition
 if check_definition:
@@ -416,13 +451,6 @@ def create_excel_files():
                     "dcterms:source",
                 ],
             )
-            # writer = pd.ExcelWriter("multiple.xlsx", engine="xlsxwriter")
-            # df1.to_excel(writer, sheet_name="Sheeta")
-            # df2.to_excel(writer, sheet_name="Sheetb")
-
-            # df3.to_excel(writer, sheet_name="Sheetc")
-
-            # writer.save()
             if attribute_file:
                 attribute_writer = pd.ExcelWriter(  # pylint: disable=abstract-class-instantiated
                     attribute_file,
@@ -447,7 +475,7 @@ def create_excel_files():
 
 # print(separated_mapping_df[0]["modules"].unique()[0])
 
-create_excel_files()
+# create_excel_files()
 
 
 # print(module)
