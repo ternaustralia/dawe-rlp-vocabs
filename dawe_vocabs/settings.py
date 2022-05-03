@@ -683,6 +683,22 @@ excel_files = (
         "vocab-sources/second-stage/protocols-condition.xlsx",
         "1ViFC0dM3ZvSuzt8bWZ7HKBrBz79igxg6",
     ),
+    ExcelVocab(
+        "vocab-sources/second-stage/invertebrate-attributes-collection.xlsx",
+        "1YmX2cwGg16kGD_V4GEBGirJ7vDp5cea-",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/invertebrate-attributes-with-submodules.xlsx",
+        "1g49wyzAnqWfe7MuqHOlPN7SO03WRiaGP",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/invertebrate-properties-collection.xlsx",
+        "1VQLH6UPkX4ec1vkiYozvS7HRhAhf5ThK",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/invertebrate-properties-with-submodules.xlsx",
+        "1lhv7ZWMpxJVrTBJ68smTPuP3QjKrJPiy",
+    ),
 )
 
 check_inconsistent_names = False
