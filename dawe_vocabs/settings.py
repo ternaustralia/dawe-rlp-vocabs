@@ -551,66 +551,66 @@ excel_files = (
         "vocab-sources/second-stage/basal-area-attributes-collection.xlsx",
         "1-4jcmg-ly2waMRVAvsIEFqBThaggTlh9",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/basal-area-attributes.xlsx",
-        "1XlrN9Lf2s5DPxOBLu4oMmvk8efBOtSGl",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/basal-area-attributes.xlsx",
+    #     "1XlrN9Lf2s5DPxOBLu4oMmvk8efBOtSGl",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/basal-area-properties-collection.xlsx",
         "12u4WnYitHLDuYDECSmqyxhRexYUvcFqR",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/basal-area-properties.xlsx",
-        "1nuRUsQzXz6K7lmzAMTTJ_cmYVh1LRLt0",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/basal-area-properties.xlsx",
+    #     "1nuRUsQzXz6K7lmzAMTTJ_cmYVh1LRLt0",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/coarse-woody-debris-attributes-collection.xlsx",
         "17qCVHfj7Aio3BKhiLiIKZQAava2ceWSx",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/coarse-woody-debris-attributes.xlsx",
-        "1e-FZklwVaSt8n-WA24vq54aOl-gznFMH",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/coarse-woody-debris-attributes.xlsx",
+    #     "1e-FZklwVaSt8n-WA24vq54aOl-gznFMH",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/coarse-woody-debris-properties-collection.xlsx",
         "1E6oBGu-lcqpjCir99kDeZ5HyKxvKUBvg",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/coarse-woody-debris-properties.xlsx",
-        "1FYsYuozWG9IFYUR6xNqpnV1vL6tW2oXh",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/coarse-woody-debris-properties.xlsx",
+    #     "1FYsYuozWG9IFYUR6xNqpnV1vL6tW2oXh",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/condition-attributes-collection.xlsx",
         "1Izsg_5cBqJVyeLIwiY32ZzUTi1AHlgTc",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/condition-attributes.xlsx",
-        "1BEi6UAYVqL1WR5rtBW4oBXlvYuCGaMEm",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/condition-attributes.xlsx",
+    #     "1BEi6UAYVqL1WR5rtBW4oBXlvYuCGaMEm",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/condition-properties-collection.xlsx",
         "1YP4Gm58oQ3Vdg_Uupszyif4NOQXoSIF4",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/condition-properties.xlsx",
-        "1_n1W68h7-wzsqFx6mLws46rG3y5sXD7V",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/condition-properties.xlsx",
+    #     "1_n1W68h7-wzsqFx6mLws46rG3y5sXD7V",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/fire-attributes-collection.xlsx",
         "1KMQNMZKWvYALgXkZqipRE0M-gZtG4KrR",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/fire-attributes.xlsx",
-        "1Vf0H8D8_G27G25SfgZJFGjG08p-NhPxD",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/fire-attributes.xlsx",
+    #     "1Vf0H8D8_G27G25SfgZJFGjG08p-NhPxD",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/fire-properties-collection.xlsx",
         "1DPHQmvCZl2pp1Ve4DyQIRVJQGGmQvajU",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/fire-properties.xlsx",
-        "1i_eHyoP6P1IQdqAMe9UPyrxyMD-1aqdh",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/fire-properties.xlsx",
+    #     "1i_eHyoP6P1IQdqAMe9UPyrxyMD-1aqdh",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/protocols-basal-area-overview.xlsx",
         "1bPLqIkhSncMsEoA8SWcm-v9iuL8Nxyqs",
@@ -635,38 +635,38 @@ excel_files = (
         "vocab-sources/second-stage/soil-properties-collection-with-submodules.xlsx",
         "1l0fWiSToDVsc1jYQMVsfQQDQLdkAXik8",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/soil-plot-soil-description-properties.xlsx",
-        "1Olb85Vaz0Rl4pu93tOX43uadkxQf3m1o",
-    ),
-    ExcelVocab(
-        "vocab-sources/second-stage/soil-plot-soil-description-attributes.xlsx",
-        "1uhENUBGOEaIePjvZf-y-rCuWtoPrN_pd",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/soil-plot-soil-description-properties.xlsx",
+    #     "1Olb85Vaz0Rl4pu93tOX43uadkxQf3m1o",
+    # ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/soil-plot-soil-description-attributes.xlsx",
+    #     "1uhENUBGOEaIePjvZf-y-rCuWtoPrN_pd",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/soil-attributes-collection-general.xlsx",
         "1W_cxmBQgn96rjKYhnB-levBBHZu8Audk",
     ),
-    ExcelVocab(
-        "vocab-sources/second-stage/soil-soil-pit-characterization-attributes.xlsx",
-        "1tIk6Rvy8skpthNdc6HD8Ll6meWqCacmL",
-    ),
-    ExcelVocab(
-        "vocab-sources/second-stage/soil-soil-pit-characterization-properties.xlsx",
-        "1_wFq3kCNb7Q_7Nz26xXhavILwbu1zf1A",
-    ),
-    ExcelVocab(
-        "vocab-sources/second-stage/soil-soil-subsite-sampling-attributes.xlsx",
-        "1oaSSog-9TaqX7Lz883s_mPRnEtgLJ0jm",
-    ),
-    ExcelVocab(
-        "vocab-sources/second-stage/soil-soil-subsite-sampling-properties.xlsx",
-        "1W7j-mjWPhvM-MukCa7eFWoeEFWJkQjGm",
-    ),
-    ExcelVocab(
-        "vocab-sources/second-stage/soil-soil-bulk-density-properties.xlsx",
-        "1l8oaY8hQ931U1GjOUMjGwNRn_upi3QPl",
-    ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/soil-soil-pit-characterization-attributes.xlsx",
+    #     "1tIk6Rvy8skpthNdc6HD8Ll6meWqCacmL",
+    # ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/soil-soil-pit-characterization-properties.xlsx",
+    #     "1_wFq3kCNb7Q_7Nz26xXhavILwbu1zf1A",
+    # ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/soil-soil-subsite-sampling-attributes.xlsx",
+    #     "1oaSSog-9TaqX7Lz883s_mPRnEtgLJ0jm",
+    # ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/soil-soil-subsite-sampling-properties.xlsx",
+    #     "1W7j-mjWPhvM-MukCa7eFWoeEFWJkQjGm",
+    # ),
+    # ExcelVocab(
+    #     "vocab-sources/second-stage/soil-soil-bulk-density-properties.xlsx",
+    #     "1l8oaY8hQ931U1GjOUMjGwNRn_upi3QPl",
+    # ),
     ExcelVocab(
         "vocab-sources/second-stage/protocols-cwd-overview.xlsx",
         "1znaJv6W5XXP2xlAv5v21GUkQpn1j70Ak",
