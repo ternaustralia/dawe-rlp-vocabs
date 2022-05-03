@@ -158,13 +158,13 @@ lut_configs: List[LUTSchema] = [
         "c5d3877d-1a83-4a87-9bdd-05f77c516df6",
         "animal testes condition",
     ),
-    LUTSchema(
-        "https://dev.core-api.paratoo.tern.org.au/lut-fauna-genders",
-        "Animal sex codes",
-        "A collection of animal sex types and its codes.",
-        "fcc3a1e1-3e35-4a4f-bd44-eface035025c",
-        "animal sex",
-    ),
+    # LUTSchema(
+    #     "https://dev.core-api.paratoo.tern.org.au/lut-fauna-genders",
+    #     "Animal sex codes",
+    #     "A collection of animal sex types and its codes.",
+    #     "fcc3a1e1-3e35-4a4f-bd44-eface035025c",
+    #     "animal sex",
+    # ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-specimen-locations",
         "Specimen location codes",

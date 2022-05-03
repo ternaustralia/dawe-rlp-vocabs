@@ -50,12 +50,24 @@ if __name__ == "__main__":
             drive_file = drive.CreateFile({"id": file.id})
             drive_file.GetContentFile(file.path)
 
-    # Create vocabs from Excel files.
-    for file in settings.excel_files:
+    # # Create vocabs from Excel files.
+    # for file in settings.excel_files:
+    #     try:
+    #         g += excel2rdf(file.path)
+    #     except Exception as e:
+    #         raise RuntimeError(f'Error with file "{file}". {e}')
+
+    from pathlib import Path
+
+    pathlist = Path("vocab-sources").rglob("*.xlsx")
+    for path in pathlist:
+        # because path is object not string
+        path_in_str = str(path)
+        # print(path_in_str)
         try:
-            g += excel2rdf(file.path)
+            g += excel2rdf(path_in_str)
         except Exception as e:
-            raise RuntimeError(f'Error with file "{file}". {e}')
+            raise RuntimeError(f'Error with file "{path_in_str}". {e}')
 
     # Programatically create some vocabs.
     feature_types_collection.create(settings.base_uri, g)
