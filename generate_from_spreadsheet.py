@@ -98,6 +98,32 @@ def check_categorical_uuids(dataframe, modules_names):
     return categorical_parameters_without_categorical_uuids
 
 
+def get_attribute_definition_source(attributes, module_name, label):
+    separated_attribute_definition_df = [
+        y for _, y in attributes.groupby("Module Name", as_index=True)
+    ]
+    for item in separated_attribute_definition_df:
+        if item["Module Name"].unique()[0] == module_name:
+            definitions = item
+    definitions = definitions.reset_index()
+    for index, row in definitions.iterrows():
+        if (row["Module Name"] == module_name) and (row["Preferred Label"] == label):
+            return row["Definition"], row["Source"]
+
+
+def get_property_definition_source(properties, module_name, label):
+    separated_property_definition_df = [
+        y for _, y in properties.groupby("Module Name", as_index=True)
+    ]
+    for item in separated_property_definition_df:
+        if item["Module Name"].unique()[0] == module_name:
+            definitions = item
+    definitions = definitions.reset_index()
+    for index, row in definitions.iterrows():
+        if (row["Module Name"] == module_name) and (row["Preferred Label"] == label):
+            return row["Definition"], row["Source"]
+
+
 def check_parameters_definition(mapping, attributes, properties, modules_names):
     print("Empty definitions for attributes")
     find_empty_definitions(attributes, modules_names)
@@ -298,16 +324,18 @@ def create_excel_files():
             for index, row in module.iterrows():
                 if row["observable_property_in_protocol"] is NaN:
                     label = row["attribute_in_protocol"]
-                    definition_list.append(
-                        attribute_df["Definition"].to_list()[
-                            attribute_df["Preferred Label"].to_list().index(label)
-                        ]
+                    # definition_list.append(
+                    #     get_attribute_definition(attribute_df, row["modules"], label)
+                    # )
+                    # source = attribute_df["Source"].to_list()[
+                    #     attribute_df["Preferred Label"].to_list().index(label)
+                    # ]
+                    definition, source = get_attribute_definition_source(
+                        attribute_df, row["modules"], label
                     )
-                    source = attribute_df["Source"].to_list()[
-                        attribute_df["Preferred Label"].to_list().index(label)
-                    ]
-                    if ("http://linked.data.gov.au/def/tern-cv/" not in source) and (
-                        "https://linked.data.gov.au/def/test/dawe-cv/" not in source
+                    definition_list.append(definition)
+                    if ("http://linked.data.gov.au/def/tern-cv/" not in str(source)) and (
+                        "https://linked.data.gov.au/def/test/dawe-cv/" not in str(source)
                     ):
 
                         source_list.append(source)
@@ -319,25 +347,25 @@ def create_excel_files():
                         )
                 else:
                     label = row["observable_property_in_protocol"]
-                    definition_list.append(
-                        property_df["Definition"].to_list()[
-                            property_df["Preferred Label"].to_list().index(label)
-                        ]
+                    # definition_list.append(
+                    #     property_df["Definition"].to_list()[
+                    #         property_df["Preferred Label"].to_list().index(label)
+                    #     ]
+                    # )
+                    # source = property_df["Source"].to_list()[
+                    #     property_df["Preferred Label"].to_list().index(label)
+                    # ]
+                    definition, source = get_attribute_definition_source(
+                        property_df, row["modules"], label
                     )
-                    source = property_df["Source"].to_list()[
-                        property_df["Preferred Label"].to_list().index(label)
-                    ]
+                    definition_list.append(definition)
                     if (
                         "http://linked.data.gov.au/def/tern-cv/" not in str(source)
                     ) and (
                         "https://linked.data.gov.au/def/test/dawe-cv/"
                         not in str(source)
                     ):
-                        source_list.append(
-                            property_df["Source"].to_list()[
-                                property_df["Preferred Label"].to_list().index(label)
-                            ]
-                        )
+                        source_list.append(source)
                     else:
                         source_list.append(
                             "Ecological Field Monitoring protocols - {}, draft v0.1, 30/11/2021".format(
@@ -475,7 +503,7 @@ def create_excel_files():
 
 # print(separated_mapping_df[0]["modules"].unique()[0])
 
-# create_excel_files()
+create_excel_files()
 
 
 # print(module)
