@@ -699,6 +699,10 @@ excel_files = (
         "vocab-sources/second-stage/invertebrate-properties-with-submodules.xlsx",
         "1lhv7ZWMpxJVrTBJ68smTPuP3QjKrJPiy",
     ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-fire.xlsx",
+        "1miU_TIYLQwzn0a4jrrNfi5FZKaD0uFB0",
+    ),
 )
 
 check_inconsistent_names = False
@@ -790,21 +794,21 @@ modules = [
         "",
     ),
     InfoNeeded(
-        "Invertebrate module- micropitfall",
+        "Invertebrate module- wet pitfall",
         "https://linked.data.gov.au/def/test/dawe-cv/e8c64fea-079b-47c3-be2d-d3844891a90d",
         "https://linked.data.gov.au/def/test/dawe-cv/0fff4578-8fb7-4da1-a197-5078cafb1b25",
         "https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e",
         "vocab-sources/second-stage/invertebrate-micropitfall-attributes.xlsx",
         "vocab-sources/second-stage/invertebrate-micropitfall-properties.xlsx",
     ),
-    InfoNeeded(
-        "Invertebrate module- eDNA",
-        "https://linked.data.gov.au/def/test/dawe-cv/f9f86714-4277-4c89-a6ce-f6c12ef1668d",
-        "https://linked.data.gov.au/def/test/dawe-cv/860751a6-7fe8-418a-8a30-f88e060e49cd",
-        "https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e",
-        "vocab-sources/second-stage/invertebrate-edna-attributes.xlsx",
-        "vocab-sources/second-stage/invertebrate-edna-properties.xlsx",
-    ),
+    # InfoNeeded(
+    #     "Invertebrate module- eDNA",
+    #     "https://linked.data.gov.au/def/test/dawe-cv/f9f86714-4277-4c89-a6ce-f6c12ef1668d",
+    #     "https://linked.data.gov.au/def/test/dawe-cv/860751a6-7fe8-418a-8a30-f88e060e49cd",
+    #     "https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e",
+    #     "vocab-sources/second-stage/invertebrate-edna-attributes.xlsx",
+    #     "vocab-sources/second-stage/invertebrate-edna-properties.xlsx",
+    # ),
     InfoNeeded(
         "Invertebrate module - Malaise trapping",
         "https://linked.data.gov.au/def/test/dawe-cv/dac32537-fa2a-4a58-a1f8-70715e7e4eb4",
@@ -845,22 +849,22 @@ modules = [
         "vocab-sources/second-stage/invertebrate-active-sampling-attributes.xlsx",
         "vocab-sources/second-stage/invertebrate-active-sampling-properties.xlsx",
     ),
-    InfoNeeded(
-        "Invertebrate module- foliage beating",
-        "https://linked.data.gov.au/def/test/dawe-cv/163c4191-9eaa-45fe-af10-b16d5e66bfeb",
-        "https://linked.data.gov.au/def/test/dawe-cv/a43aa2ff-09df-4a2f-96e6-5b9e409a5ad3",
-        "https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e",
-        "vocab-sources/second-stage/invertebrate-foliage-beating-attributes.xlsx",
-        "vocab-sources/second-stage/invertebrate-foliage-beating-properties.xlsx",
-    ),
-    InfoNeeded(
-        "Invertebrate module - sweep netting",
-        "https://linked.data.gov.au/def/test/dawe-cv/c1640181-9f1f-41ad-8e26-00b28fa7f1bf",
-        "https://linked.data.gov.au/def/test/dawe-cv/14ebdb0d-66f1-4322-b81e-ec7187f79a1f",
-        "https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e",
-        "vocab-sources/second-stage/invertebrate-sweep-netting-attributes.xlsx",
-        "vocab-sources/second-stage/invertebrate-sweep-netting-properties.xlsx",
-    ),
+    # InfoNeeded(
+    #     "Invertebrate module- foliage beating",
+    #     "https://linked.data.gov.au/def/test/dawe-cv/163c4191-9eaa-45fe-af10-b16d5e66bfeb",
+    #     "https://linked.data.gov.au/def/test/dawe-cv/a43aa2ff-09df-4a2f-96e6-5b9e409a5ad3",
+    #     "https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e",
+    #     "vocab-sources/second-stage/invertebrate-foliage-beating-attributes.xlsx",
+    #     "vocab-sources/second-stage/invertebrate-foliage-beating-properties.xlsx",
+    # ),
+    # InfoNeeded(
+    #     "Invertebrate module - sweep netting",
+    #     "https://linked.data.gov.au/def/test/dawe-cv/c1640181-9f1f-41ad-8e26-00b28fa7f1bf",
+    #     "https://linked.data.gov.au/def/test/dawe-cv/14ebdb0d-66f1-4322-b81e-ec7187f79a1f",
+    #     "https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e",
+    #     "vocab-sources/second-stage/invertebrate-sweep-netting-attributes.xlsx",
+    #     "vocab-sources/second-stage/invertebrate-sweep-netting-properties.xlsx",
+    # ),
     InfoNeeded(
         "Invertebrate module - post-field guideline",
         "https://linked.data.gov.au/def/test/dawe-cv/9d643bf1-67b0-4f7d-9e74-c2dba44678dd",

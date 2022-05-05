@@ -198,11 +198,11 @@ def get_values(lst, module_name):
 def get_value_type(str):
     str = str.lower()
     if str == "categorical":
-        return "tern:CategoricalValue"
+        return "tern:IRI"
     elif str == "numerical":
-        return "tern:QuantitativeMeasure"
+        return "tern:Float"
     elif str in ["number", "percent"]:
-        return "tern:Count"
+        return "tern:Integer"
     elif str in ["alphanumeric", "text", "alphanumerical"]:
         return "tern:Text"
     elif str == "boolean":
@@ -334,8 +334,11 @@ def create_excel_files():
                         attribute_df, row["modules"], label
                     )
                     definition_list.append(definition)
-                    if ("http://linked.data.gov.au/def/tern-cv/" not in str(source)) and (
-                        "https://linked.data.gov.au/def/test/dawe-cv/" not in str(source)
+                    if (
+                        "http://linked.data.gov.au/def/tern-cv/" not in str(source)
+                    ) and (
+                        "https://linked.data.gov.au/def/test/dawe-cv/"
+                        not in str(source)
                     ):
 
                         source_list.append(source)
