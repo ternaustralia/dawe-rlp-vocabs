@@ -355,6 +355,7 @@ def create_excel_files():
                     # source = attribute_df["Source"].to_list()[
                     #     attribute_df["Preferred Label"].to_list().index(label)
                     # ]
+                    print(row["modules"], label)
                     definition, source = get_attribute_definition_source(
                         attribute_df, row["modules"], label
                     )
@@ -383,7 +384,8 @@ def create_excel_files():
                     # source = property_df["Source"].to_list()[
                     #     property_df["Preferred Label"].to_list().index(label)
                     # ]
-                    definition, source = get_attribute_definition_source(
+                    print(row["modules"], label)
+                    definition, source = get_property_definition_source(
                         property_df, row["modules"], label
                     )
                     definition_list.append(definition)
@@ -419,59 +421,151 @@ def create_excel_files():
 
             for index, row in module.iterrows():
                 if row["observable_property_in_protocol"] is NaN:
-                    label = row["attribute_in_protocol"].lower()
-                    print(label)
-                    attribute_uri = base_uri + str(row["variable_uuid"])
-                    value_type = get_value_type(row["value_type"])
-                    attributes_finaldf.append(
-                        [
-                            attribute_uri,
-                            "skos:Concept",
-                            "",
-                            label,
-                            row["_feature_type"],
-                            value_type,
-                            row["definition"],
-                            generate_categorical_uri(
-                                value_type, base_uri, row["categorical_uuid"]
-                            ),
-                            row["_observable_property_tern"],
-                            "",
-                            row["source"],
-                        ]
-                    )
-                    collection_row = [None] * 11
-                    collection_row[0] = attribute_collection_uri
-                    collection_row[2] = attribute_uri
-                    attributes_finaldf.append(collection_row)
+                    # if it is a common attribute
+                    if row["attribute_in_protocol"] in common_parameters:
+                        # if the attribute has not been created
+                        if not common_parameters[row["attribute_in_protocol"]][1]:
+                            label = row["attribute_in_protocol"].lower()
+                            print(label)
+                            attribute_uri = base_uri + str(row["variable_uuid"])
+                            value_type = get_value_type(row["value_type"])
+                            attributes_finaldf.append(
+                                [
+                                    attribute_uri,
+                                    "skos:Concept",
+                                    "",
+                                    label,
+                                    row["_feature_type"],
+                                    value_type,
+                                    row["definition"],
+                                    generate_categorical_uri(
+                                        value_type, base_uri, row["categorical_uuid"]
+                                    ),
+                                    row["_observable_property_tern"],
+                                    "",
+                                    row["source"],
+                                ]
+                            )
+                            common_parameters[row["attribute_in_protocol"]][1] = True
+                            common_parameters[row["attribute_in_protocol"]][
+                                2
+                            ] = attribute_uri
+
+                            collection_row = [None] * 11
+                            collection_row[0] = attribute_collection_uri
+                            collection_row[2] = attribute_uri
+                            attributes_finaldf.append(collection_row)
+                        # if the attribute has been created, reuse the attribute
+                        else:
+                            collection_row = [None] * 11
+                            collection_row[0] = attribute_collection_uri
+                            collection_row[2] = common_parameters[
+                                row["attribute_in_protocol"]
+                            ][2]
+                            attributes_finaldf.append(collection_row)
+                    # if it is an unique attribute
+                    else:
+                        label = row["attribute_in_protocol"].lower()
+                        print(label)
+                        attribute_uri = base_uri + str(row["variable_uuid"])
+                        value_type = get_value_type(row["value_type"])
+                        attributes_finaldf.append(
+                            [
+                                attribute_uri,
+                                "skos:Concept",
+                                "",
+                                label,
+                                row["_feature_type"],
+                                value_type,
+                                row["definition"],
+                                generate_categorical_uri(
+                                    value_type, base_uri, row["categorical_uuid"]
+                                ),
+                                row["_observable_property_tern"],
+                                "",
+                                row["source"],
+                            ]
+                        )
+                        collection_row = [None] * 11
+                        collection_row[0] = attribute_collection_uri
+                        collection_row[2] = attribute_uri
+                        attributes_finaldf.append(collection_row)
                 else:
-                    label = row["observable_property_in_protocol"].lower()
-                    print(label)
-                    property_uri = base_uri + str(row["variable_uuid"])
-                    value_type = get_value_type(row["value_type"])
-                    properties_finaldf.append(
-                        [
-                            property_uri,
-                            "skos:Concept",
-                            "",
-                            label,
-                            row["_feature_type"],
-                            value_type,
-                            generate_categorical_uri(
-                                value_type, base_uri, row["categorical_uuid"]
-                            ),
-                            method_uri,
-                            row["definition"],
-                            row["_observable_property_tern"],
-                            "",
-                            "",
-                            row["source"],
-                        ]
-                    )
-                    collection_row = [None] * 11
-                    collection_row[0] = property_collection_uri
-                    collection_row[2] = property_uri
-                    properties_finaldf.append(collection_row)
+                    # if it is a common property
+                    if row["observable_property_in_protocol"] in common_parameters:
+                        # if the property has not been created
+                        if not common_parameters[
+                            row["observable_property_in_protocol"]
+                        ][1]:
+                            label = row["observable_property_in_protocol"].lower()
+                            print(label)
+                            property_uri = base_uri + str(row["variable_uuid"])
+                            value_type = get_value_type(row["value_type"])
+                            properties_finaldf.append(
+                                [
+                                    property_uri,
+                                    "skos:Concept",
+                                    "",
+                                    label,
+                                    row["_feature_type"],
+                                    value_type,
+                                    generate_categorical_uri(
+                                        value_type, base_uri, row["categorical_uuid"]
+                                    ),
+                                    method_uri,
+                                    row["definition"],
+                                    row["_observable_property_tern"],
+                                    "",
+                                    "",
+                                    row["source"],
+                                ]
+                            )
+                            common_parameters[row["observable_property_in_protocol"]][
+                                1
+                            ] = True
+                            common_parameters[row["observable_property_in_protocol"]][
+                                2
+                            ] = property_uri
+                            collection_row = [None] * 11
+                            collection_row[0] = property_collection_uri
+                            collection_row[2] = property_uri
+                            properties_finaldf.append(collection_row)
+                        else:
+                            collection_row = [None] * 11
+                            collection_row[0] = property_collection_uri
+                            collection_row[2] = common_parameters[
+                                row["observable_property_in_protocol"]
+                            ][2]
+                            properties_finaldf.append(collection_row)
+                    # if it is an unique property
+                    else:
+                        label = row["observable_property_in_protocol"].lower()
+                        print(label)
+                        property_uri = base_uri + str(row["variable_uuid"])
+                        value_type = get_value_type(row["value_type"])
+                        properties_finaldf.append(
+                            [
+                                property_uri,
+                                "skos:Concept",
+                                "",
+                                label,
+                                row["_feature_type"],
+                                value_type,
+                                generate_categorical_uri(
+                                    value_type, base_uri, row["categorical_uuid"]
+                                ),
+                                method_uri,
+                                row["definition"],
+                                row["_observable_property_tern"],
+                                "",
+                                "",
+                                row["source"],
+                            ]
+                        )
+                        collection_row = [None] * 11
+                        collection_row[0] = property_collection_uri
+                        collection_row[2] = property_uri
+                        properties_finaldf.append(collection_row)
 
             attributes_finaldf = pd.DataFrame(
                 attributes_finaldf,
@@ -531,7 +625,7 @@ def create_excel_files():
 
 # print(separated_mapping_df[0]["modules"].unique()[0])
 
-# create_excel_files()
+create_excel_files()
 
 
 # print(module)
