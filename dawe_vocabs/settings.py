@@ -703,6 +703,14 @@ excel_files = (
         "vocab-sources/second-stage/protocols-fire.xlsx",
         "1miU_TIYLQwzn0a4jrrNfi5FZKaD0uFB0",
     ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-soil-overview.xlsx",
+        "1BFn_n95_W6QFi4LEPpm9KMNH5wTiBqjG",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-soil.xlsx",
+        "1CYnpGNFl-fDO3T_jKZXRAG2RkIM1VMqM",
+    ),
 )
 
 check_inconsistent_names = False
@@ -711,6 +719,7 @@ check_empty_feature_type = False
 check_definition = False
 check_uuid = False
 check_categorical_uuid = False
+check_common_parameters = False
 
 modules = [
     InfoNeeded(
@@ -749,7 +758,7 @@ modules = [
         "Soil module - Plot soil description protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/16a1a45f-b4a4-4eef-af45-2b72477a4178",
         "https://linked.data.gov.au/def/test/dawe-cv/5b7addb7-ae3d-47eb-b5d8-f34cc211875a",
-        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "https://linked.data.gov.au/def/test/dawe-cv/7818e122-6354-42e0-aeff-32dbab7baae4",
         "vocab-sources/second-stage/soil-plot-soil-description-attributes.xlsx",
         "vocab-sources/second-stage/soil-plot-soil-description-properties.xlsx",
     ),
@@ -757,7 +766,7 @@ modules = [
         "Soil module - soil pit characterization protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/461223ed-8855-4c1b-b24c-aa078ffb402b",
         "https://linked.data.gov.au/def/test/dawe-cv/760751fb-7a1b-4874-9de6-98127febac58",
-        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db",
         "vocab-sources/second-stage/soil-soil-pit-characterization-attributes.xlsx",
         "vocab-sources/second-stage/soil-soil-pit-characterization-properties.xlsx",
     ),
@@ -765,7 +774,7 @@ modules = [
         "Soil module - soil subsite sampling protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/8981bb19-3158-48ed-9a91-aae67e358256",
         "https://linked.data.gov.au/def/test/dawe-cv/eaf5a55e-e053-4818-a808-4722b1da4d17",
-        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "https://linked.data.gov.au/def/test/dawe-cv/e3ad3e5b-7c1c-4b59-bdb1-297f707d2ca3",
         "vocab-sources/second-stage/soil-soil-subsite-sampling-attributes.xlsx",
         "vocab-sources/second-stage/soil-soil-subsite-sampling-properties.xlsx",
     ),
@@ -773,7 +782,7 @@ modules = [
         "Soil module- soil bulk density protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/265eff6c-8ea2-4f9a-bcd1-09c5ff02e891",
         "https://linked.data.gov.au/def/test/dawe-cv/72b5340f-6654-4ee8-81dc-6a492964b20c",
-        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "https://linked.data.gov.au/def/test/dawe-cv/d9e6739a-c2dd-4619-be43-1251449a6436",
         "vocab-sources/second-stage/soil-soil-bulk-density-attributes.xlsx",
         "vocab-sources/second-stage/soil-soil-bulk-density-properties.xlsx",
     ),
@@ -781,7 +790,7 @@ modules = [
         "Soil module- soil condition protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/f6fa4714-5104-400a-a73d-dff7349248d8",
         "",
-        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "https://linked.data.gov.au/def/test/dawe-cv/1c83a60d-12e5-4bb3-b876-7eb97da79fa9",
         "vocab-sources/second-stage/soil-condition-attributes.xlsx",
         "",
     ),
@@ -789,7 +798,7 @@ modules = [
         "Soil module- soil metagenomics protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/52826869-2c3b-47ad-8060-776694e4a601",
         "",
-        "https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95",
+        "https://linked.data.gov.au/def/test/dawe-cv/ca8a3a10-d35d-45ff-b987-a4ab3f1ce1c5",
         "vocab-sources/second-stage/soil-metagenomics-attributes.xlsx",
         "",
     ),

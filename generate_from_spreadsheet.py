@@ -219,6 +219,25 @@ def generate_categorical_uri(value_type, base_uri, uuid):
         return ""
 
 
+def find_common_parameters(dataframe, modules_names):
+    labels = {}
+    common_parameters = {}
+    for index, row in dataframe.iterrows():
+        if row["modules"] in modules_names:
+            if row["observable_property_in_protocol"] is not NaN:
+                label = "Property : " + row["observable_property_in_protocol"]
+            else:
+                label = "Attribute : " + row["attribute_in_protocol"]
+            if label in labels:
+                labels[label][0] += 1
+            else:
+                labels[label] = [1, False, ""]
+    for key, value in labels.items():
+        if value[0] > 1:
+            common_parameters[key] = value
+    return common_parameters
+
+
 # read the data from the spreadsheet
 
 from cmath import nan
@@ -244,6 +263,7 @@ from dawe_vocabs.settings import (
     check_definition,
     check_uuid,
     check_categorical_uuid,
+    check_common_parameters,
 )
 
 names = []
@@ -292,7 +312,12 @@ if check_uuid:
 if check_categorical_uuid:
     print(check_categorical_uuids(mapping_df, names))
 
+# make sure the info for common attributes is the same, like the definition and uuid
+if check_common_parameters:
+    print(find_common_parameters(mapping_df, names))
+
 separated_mapping_df = [y for _, y in mapping_df.groupby("modules", as_index=True)]
+common_parameters = find_common_parameters(mapping_df, names)
 
 
 def create_excel_files():
@@ -506,7 +531,7 @@ def create_excel_files():
 
 # print(separated_mapping_df[0]["modules"].unique()[0])
 
-create_excel_files()
+# create_excel_files()
 
 
 # print(module)
