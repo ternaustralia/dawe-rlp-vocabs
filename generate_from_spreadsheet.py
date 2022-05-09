@@ -225,9 +225,11 @@ def find_common_parameters(dataframe, modules_names):
     for index, row in dataframe.iterrows():
         if row["modules"] in modules_names:
             if row["observable_property_in_protocol"] is not NaN:
-                label = "Property : " + row["observable_property_in_protocol"]
+                # label = "Property : " + row["observable_property_in_protocol"]
+                label = row["observable_property_in_protocol"]
             else:
-                label = "Attribute : " + row["attribute_in_protocol"]
+                # label = "Attribute : " + row["attribute_in_protocol"]
+                label = row["attribute_in_protocol"]
             if label in labels:
                 labels[label][0] += 1
             else:
@@ -526,12 +528,12 @@ def create_excel_files():
                             common_parameters[row["observable_property_in_protocol"]][
                                 2
                             ] = property_uri
-                            collection_row = [None] * 11
+                            collection_row = [None] * 13
                             collection_row[0] = property_collection_uri
                             collection_row[2] = property_uri
                             properties_finaldf.append(collection_row)
                         else:
-                            collection_row = [None] * 11
+                            collection_row = [None] * 13
                             collection_row[0] = property_collection_uri
                             collection_row[2] = common_parameters[
                                 row["observable_property_in_protocol"]
@@ -562,7 +564,7 @@ def create_excel_files():
                                 row["source"],
                             ]
                         )
-                        collection_row = [None] * 11
+                        collection_row = [None] * 13
                         collection_row[0] = property_collection_uri
                         collection_row[2] = property_uri
                         properties_finaldf.append(collection_row)
