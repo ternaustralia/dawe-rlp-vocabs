@@ -236,6 +236,7 @@ def find_common_parameters(dataframe, modules_names):
                 labels[label] = [1, False, ""]
     for key, value in labels.items():
         if value[0] > 1:
+            # print(key, "  ", value)
             common_parameters[key] = value
     return common_parameters
 
