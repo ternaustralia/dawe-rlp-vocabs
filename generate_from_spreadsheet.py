@@ -212,7 +212,7 @@ def get_value_type(str):
 
 
 def generate_categorical_uri(value_type, base_uri, uuid):
-    if value_type == "tern:CategoricalValue":
+    if value_type == "tern:IRI":
         categorical_uri = base_uri + str(uuid)
         return categorical_uri
     else:
@@ -628,7 +628,7 @@ def create_excel_files():
 
 # print(separated_mapping_df[0]["modules"].unique()[0])
 
-# create_excel_files()
+create_excel_files()
 
 
 # print(module)
