@@ -1,0 +1,24 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://linked.data.gov.au/def/test/dawe-cv/0ba17555-8c8f-435a-b16f-62773561207b>
+    a skos:Collection ;
+    skos:prefLabel "Basal sweep hit type codes" ;
+    dcterms:description "These codes were created for the full and lite versions of the Basal Area module's DBH protocols. The categorical values model the collection app's JSON schema." ;
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/57b9fb25-e075-4e18-8c7f-167e09318c94>,
+        <https://linked.data.gov.au/def/test/dawe-cv/3e0a5d97-c623-477e-98fe-8fe120907530> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/57b9fb25-e075-4e18-8c7f-167e09318c94>
+    a skos:Concept ;
+    skos:prefLabel "in" ;
+    skos:definition "Trees where the trunk or stem at breast height (1.3 m above ground level) is wider than the aperture of the BAF used on a TERN Basal Wedge. " ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/3e0a5d97-c623-477e-98fe-8fe120907530>
+    a skos:Concept ;
+    skos:prefLabel "borderline" ;
+    skos:definition "Trees where the trunk or stem at breast height (1.3 m above ground level) is the exact width of the aperture of the BAF used on a TERN Basal Wedge. " ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521> skos:member <https://linked.data.gov.au/def/test/dawe-cv/0ba17555-8c8f-435a-b16f-62773561207b> .
