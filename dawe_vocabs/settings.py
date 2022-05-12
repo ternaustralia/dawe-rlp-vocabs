@@ -320,6 +320,13 @@ lut_configs: List[LUTSchema] = [
         "basal sweep sampling points",
     ),
     LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-basal-dbh-instruments",
+        "Basal DBH instruments codes",
+        "A collection of basal DBH instruments and its codes.",
+        "b18974ea-7395-4c14-9d9f-3c1fa6b2c8a9",
+        "basal DBH instruments",
+    ),
+    LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-cwd-sampling-survey-methods",
         "Coarse Woody Debris sampling survey methods codes",
         "A collection of Coarse Woody Debris sampling survey methods and its codes.",
@@ -339,6 +346,20 @@ lut_configs: List[LUTSchema] = [
         "A collection of Coarse Woody Debris decay classes and its codes.",
         "b5180d8a-75b6-4bca-9413-0e507e910387",
         "Coarse Woody Debris decay classes",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-directions",
+        "Coarse Woody Debris transect orientations codes",
+        "A collection of Coarse Woody Debris transect orientations and its codes.",
+        "232d5fdd-c15f-4a84-865e-46ea20b82ff1",
+        "Coarse Woody Debris transect orientations",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-plot-dimensions",
+        "Coarse Woody Debris plot dimensions codes",
+        "A collection of Coarse Woody Debris plot dimensions and its codes.",
+        "05c7a145-a675-4753-88d1-d86fa19dac3b",
+        "Coarse Woody Debris plot dimensions",
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-condition-growth-stage-trees",
