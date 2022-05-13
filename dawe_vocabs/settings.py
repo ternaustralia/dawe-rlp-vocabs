@@ -843,7 +843,7 @@ modules = [
         "Fire Module",
         "https://linked.data.gov.au/def/test/dawe-cv/e8f2ee06-9943-49a4-b113-064f8e195dca",
         "https://linked.data.gov.au/def/test/dawe-cv/75002e1e-7866-4264-9e20-8569743ea4f5",
-        "https://linked.data.gov.au/def/test/dawe-cv/a8da406b-22bf-444b-a3ea-ccf62130d6f6",
+        "https://linked.data.gov.au/def/test/dawe-cv/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b",
         "vocab-sources/second-stage/fire-attributes.xlsx",
         "vocab-sources/second-stage/fire-properties.xlsx",
     ),
