@@ -213,7 +213,7 @@ def get_value_type(str):
 
 def generate_categorical_uri(value_type, base_uri, uuid):
     if value_type == "tern:IRI":
-        categorical_uri = base_uri + str(uuid)
+        categorical_uri = base_uri + str(uuid).replace(" ", "")
         return categorical_uri
     else:
         return ""
