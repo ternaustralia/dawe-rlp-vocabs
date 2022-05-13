@@ -35,7 +35,8 @@ if __name__ == "__main__":
     pathlib.Path(settings.excel_files_dir_first).mkdir(parents=True, exist_ok=True)
     pathlib.Path(settings.excel_files_dir_second).mkdir(parents=True, exist_ok=True)
 
-    # Details for service account usage from PR at https://github.com/iterative/PyDrive2/blob/e56591edb79bdbe7df147839b5e4dd3e866ad8c3/docs/quickstart.rst
+    # Details for service account usage from PR at
+    # https://github.com/iterative/PyDrive2/blob/e56591edb79bdbe7df147839b5e4dd3e866ad8c3/docs/quickstart.rst
     if settings.download_excel_files:
         scope = ["https://www.googleapis.com/auth/drive"]
         gauth = GoogleAuth()
@@ -46,7 +47,7 @@ if __name__ == "__main__":
         drive = GoogleDrive(gauth)
 
         for file in settings.excel_files:
-            logger.info(f"Downloading {file.path} with id {file.id}")
+            logger.info("Downloading %s with id %s", file.path, file.id)
             drive_file = drive.CreateFile({"id": file.id})
             drive_file.GetContentFile(file.path)
 
@@ -55,7 +56,7 @@ if __name__ == "__main__":
         try:
             g += excel2rdf(file.path)
         except Exception as e:
-            raise RuntimeError(f'Error with file "{file}". {e}')
+            raise RuntimeError(f'Error with file "{file}". {e}') from e
 
     # Programatically create some vocabs.
     feature_types_collection.create(settings.base_uri, g)
@@ -69,7 +70,7 @@ if __name__ == "__main__":
         except categorical_values_collection.NoDataInAPIException as e:
             logger.error(e)
         except Exception as e:
-            raise RuntimeError(f'Error with file "{file}". {e}')
+            raise RuntimeError(f'Error with file "{file}". {e}') from e
 
     # Validate generated data based on vocab requirements.
     shacl_graph = Graph().parse(settings.shapes_file)
@@ -83,12 +84,20 @@ if __name__ == "__main__":
     info = results_graph.value(None, SH.resultSeverity, SH.Info)
 
     if settings.show_table_result:
-        table_result = get_pretty_table_output(conforms, results_graph)
-        logger.info(table_result)
+        TABLE_RESULT = get_pretty_table_output(conforms, results_graph)
+        logger.info(TABLE_RESULT)
 
-    logger.info(f"PySHACL conforms output: {conforms}")
-    logger.info(f"sh:Violation exists: {True if violation else False}")
-    logger.info(f"sh:Warning exists: {True if warning else False}")
-    logger.info(f"sh:Info exists: {True if info else False}")
+    logger.info("PySHACL conforms output: %s", conforms)
+    logger.info("sh:Violation exists: %s", bool(violation))
+    logger.info("sh:Warning exists: %s", bool(warning))
+    logger.info("sh:Info exists: %s", bool(info))
+
+    # Load in the custom controlled vocabularies created in this repo.
+    custom_vocabs_dir = pathlib.Path.cwd() / "dawe_vocabs" / "custom_vocabs"
+    custom_vocab_files = [
+        file for file in custom_vocabs_dir.iterdir() if file.is_file()
+    ]
+    for file in custom_vocab_files:
+        g.parse(file, format="turtle")
 
     g.serialize(settings.output_filename)
