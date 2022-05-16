@@ -199,7 +199,7 @@ def get_value_type(str):
     str = str.lower()
     if str == "categorical":
         return "tern:IRI"
-    elif str == "numerical":
+    elif str in ["numerical", "numeric"]:
         return "tern:Float"
     elif str in ["number", "percent"]:
         return "tern:Integer"
@@ -293,6 +293,7 @@ correct_value_types = [
     "text",
     "boolean",
     "datetime",
+    "numeric",
 ]
 if check_incorrect_value_type:
     print(check_value_type(mapping_df, correct_value_types, names))
@@ -633,7 +634,7 @@ def create_excel_files():
 
 # print(separated_mapping_df[0]["modules"].unique()[0])
 
-create_excel_files()
+# create_excel_files()
 
 
 # print(module)
