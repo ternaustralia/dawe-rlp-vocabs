@@ -317,7 +317,12 @@ if check_categorical_uuid:
 
 # make sure the info for common attributes is the same, like the definition and uuid
 if check_common_parameters:
-    print(find_common_parameters(mapping_df, names))
+    # print(find_common_parameters(mapping_df, names))
+    parameters = []
+    for key, value in find_common_parameters(mapping_df, names).items():
+        parameters.append(key)
+        print(key.lower(), " : ", value)
+    print(parameters)
 
 separated_mapping_df = [y for _, y in mapping_df.groupby("modules", as_index=True)]
 common_parameters = find_common_parameters(mapping_df, names)
@@ -374,7 +379,7 @@ def create_excel_files():
                     else:
                         source_list.append(
                             "Ecological Field Monitoring protocols - {}, draft v0.1, 30/11/2021".format(
-                                row["modules"]
+                                row["modules"].split("-")[0]
                             )
                         )
                 else:
@@ -402,7 +407,7 @@ def create_excel_files():
                     else:
                         source_list.append(
                             "Ecological Field Monitoring protocols - {}, draft v0.1, 30/11/2021".format(
-                                row["modules"]
+                                row["modules"].split("-")[0]
                             )
                         )
             definition_df = pd.DataFrame(definition_list, columns=["definition"])
