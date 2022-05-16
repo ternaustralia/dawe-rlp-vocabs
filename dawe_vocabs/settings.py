@@ -1111,6 +1111,22 @@ modules = [
         "vocab-sources/second-stage/vertebrate-fauna-bird-attributes.xlsx",
         "vocab-sources/second-stage/vertebrate-fauna-bird-properties.xlsx",
     ),
+    InfoNeeded(
+        "Recruitment module - Age class protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/7717e0ae-aea0-434d-892f-45bc3a40e0b4",
+        "https://linked.data.gov.au/def/test/dawe-cv/d2768d6b-769c-4355-9358-6d2d98de4baf",
+        "https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51",
+        "vocab-sources/second-stage/vertebrate-fauna-bird-attributes.xlsx",
+        "vocab-sources/second-stage/vertebrate-fauna-bird-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Recruitment module -Survivorship protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/7717e0ae-aea0-434d-892f-45bc3a40e0b4",
+        "https://linked.data.gov.au/def/test/dawe-cv/d2768d6b-769c-4355-9358-6d2d98de4baf",
+        "https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51",
+        "vocab-sources/second-stage/vertebrate-fauna-bird-attributes.xlsx",
+        "vocab-sources/second-stage/vertebrate-fauna-bird-properties.xlsx",
+    ),
 ]
 
 # Output file name.
