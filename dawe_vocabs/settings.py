@@ -561,7 +561,7 @@ excel_files = (
         "12g7ERev4ZWOY4PPRrSPM2N8rEmndW6-g",
     ),
     ExcelVocab(
-        "vocab-sources/first-stage/photopoints-attributes-collection",
+        "vocab-sources/first-stage/photopoints-attributes-collection.xlsx",
         "1Jk-YICjZFBVM8P7zugj9HdtGI_35LOj3",
     ),
     ExcelVocab(
@@ -811,6 +811,30 @@ excel_files = (
     ExcelVocab(
         "vocab-sources/second-stage/protocols-vertebrate.xlsx",
         "1xlT5Nue5o0eXW9rLY3bNFFhfnBpTMqFB",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/camera-trap-attributes-collection.xlsx",
+        "1favRRWD_BVZl1MTpgP0597X62jAGkzOv",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/camera-trap-attributes-collection-with-submodules.xlsx",
+        "1Fx4D9fRLuOZoTCilWVeTa_F9CXzK9FaT",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/recruitment-attributes-collection.xlsx",
+        "1SJVY9A0VUSHnXckSIfSTvXNTJi_EOBx6",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/recruitment-attributes-collection-with-submodules.xlsx",
+        "1fFIALxRiFTU-zHCW3HuB4g1D-l4RkE6B",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/recruitment-properties-collection.xlsx",
+        "1a87LHxVzQ6Ig-6hoPuF7CRr3hYl7mU_m",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/recruitment-properties-collection-with-submodules.xlsx",
+        "1VDpWX10FhWw2WqhivOMLHHPFM_l1KxCN",
     ),
 )
 
@@ -1095,46 +1119,46 @@ modules = [
         "vocab-sources/second-stage/vertebrate-fauna-bird-attributes.xlsx",
         "vocab-sources/second-stage/vertebrate-fauna-bird-properties.xlsx",
     ),
-    # InfoNeeded(
-    #     "Camera traps module - fauna protocol",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/7717e0ae-aea0-434d-892f-45bc3a40e0b4",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/d2768d6b-769c-4355-9358-6d2d98de4baf",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-attributes.xlsx",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-properties.xlsx",
-    # ),
-    # InfoNeeded(
-    #     "Camera traps module - array protocol",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/7717e0ae-aea0-434d-892f-45bc3a40e0b4",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/d2768d6b-769c-4355-9358-6d2d98de4baf",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-attributes.xlsx",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-properties.xlsx",
-    # ),
-    # InfoNeeded(
-    #     "Camera traps module - targeted protocol",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/7717e0ae-aea0-434d-892f-45bc3a40e0b4",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/d2768d6b-769c-4355-9358-6d2d98de4baf",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-attributes.xlsx",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-properties.xlsx",
-    # ),
-    # InfoNeeded(
-    #     "Recruitment module - Age class protocol",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/7717e0ae-aea0-434d-892f-45bc3a40e0b4",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/d2768d6b-769c-4355-9358-6d2d98de4baf",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-attributes.xlsx",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-properties.xlsx",
-    # ),
-    # InfoNeeded(
-    #     "Recruitment module -Survivorship protocol",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/7717e0ae-aea0-434d-892f-45bc3a40e0b4",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/d2768d6b-769c-4355-9358-6d2d98de4baf",
-    #     "https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-attributes.xlsx",
-    #     "vocab-sources/second-stage/vertebrate-fauna-bird-properties.xlsx",
-    # ),
+    InfoNeeded(
+        "Camera traps module - fauna protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/637a0757-d63b-448b-a518-c99902e3b242",
+        "",
+        "https://linked.data.gov.au/def/test/dawe-cv/f0123418-c565-45a6-be01-c5c332c727e5",
+        "vocab-sources/second-stage/camera-trap-fauna-attributes.xlsx",
+        "",
+    ),
+    InfoNeeded(
+        "Camera traps module - array protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/e2d8b951-c1fd-4de9-9bd3-313ddcd79ab8",
+        "",
+        "https://linked.data.gov.au/def/test/dawe-cv/f0123418-c565-45a6-be01-c5c332c727e5",
+        "vocab-sources/second-stage/camera-trap-array-attributes.xlsx",
+        "",
+    ),
+    InfoNeeded(
+        "Camera traps module - targeted protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/1c26a538-2973-476f-b286-692f62fd8e6b",
+        "",
+        "https://linked.data.gov.au/def/test/dawe-cv/f0123418-c565-45a6-be01-c5c332c727e5",
+        "vocab-sources/second-stage/camera-trap-targeted-attributes.xlsx",
+        "",
+    ),
+    InfoNeeded(
+        "Recruitment module - Age class protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/15f69532-0fe8-498f-b667-cf130c84475b",
+        "https://linked.data.gov.au/def/test/dawe-cv/36c493f1-6a2e-4d48-9c3a-df104d98124b",
+        "https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970",
+        "vocab-sources/second-stage/recruitment-age-attributes.xlsx",
+        "vocab-sources/second-stage/recruitment-age-properties.xlsx",
+    ),
+    InfoNeeded(
+        "Recruitment module -Survivorship protocol",
+        "https://linked.data.gov.au/def/test/dawe-cv/fd311a29-d15b-497a-9ddd-ce00f1259fac",
+        "https://linked.data.gov.au/def/test/dawe-cv/6bea1c41-0a98-465a-a146-1d3cfbf6f6fa",
+        "https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970",
+        "vocab-sources/second-stage/recruitment-survivorship-attributes.xlsx",
+        "vocab-sources/second-stage/recruitment-survivorship-properties.xlsx",
+    ),
 ]
 
 # Output file name.
