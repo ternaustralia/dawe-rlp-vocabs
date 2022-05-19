@@ -6,15 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm>
-    a owl:Ontology ;
+    a
+        owl:Ontology ,
+        skos:ConceptScheme ;
     dcterms:provenance "The controlled vocabularies are the digital RDF representation of concepts extracted from the DAWE NRM field collection protocols." ;
     skos:definition "The DAWE NRM controlled vocabularies support the data representation of field survey data collected using the NRM collection protocols." ;
     skos:prefLabel "DAWE NRM Controlled Vocabularies" ;
     sdo:codeRepository "https://github.com/ternaustralia/dawe-rlp-vocabs"^^xsd:anyURI ;
     sdo:contributor <https://w3id.org/tern/resources/3da2112b-74c0-4d9c-bc39-d8dad6e80808> ;
-    sdo:copyrightHolder [
-
-        ] ;
     sdo:creator
         <https://orcid.org/0000-0002-6047-9864> ,
         <https://orcid.org/0000-0002-8481-9069> ,
