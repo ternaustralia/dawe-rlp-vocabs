@@ -393,8 +393,22 @@ lut_configs: List[LUTSchema] = [
         "https://dev.core-api.paratoo.tern.org.au/lut-condition-vertebrate-pest-types",
         "Condition vertebrate pest types codes",
         "A collection of condition vertebrate pest types and its codes.",
-        "1eaaabf9-57a9-4c95-9cf3-58c20263b2a0",
-        "Condition vertebrate pest",
+        "579449ad-4cea-4272-afa3-67f207941fb1",
+        "Condition vertebrate pest types",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-condition-vegetation-healths",
+        "Condition vegetation healths codes",
+        "A collection of condition vegetation healths and its codes.",
+        "b8379ff2-60dc-44cc-bf44-5ce7ed4bdd2f",
+        "Condition vegetation healths",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-condition-vertebrate-pest-presence-evidences",
+        "Condition vertebrate pest presence evidences codes",
+        "A collection of condition vertebrate pest presence evidences and its codes.",
+        "69638c57-1c38-47e1-8bae-c821411c3a30",
+        "Condition veterbrate pest presence evidences",
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fire-plot-burned-statuses",
@@ -836,6 +850,14 @@ excel_files = (
         "vocab-sources/second-stage/recruitment-properties-collection-with-submodules.xlsx",
         "1VDpWX10FhWw2WqhivOMLHHPFM_l1KxCN",
     ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-camera-traps-overview.xlsx",
+        "1higjy8nBxr4SO6FYagCZhEH5X4WFjogQ",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-camera-traps.xlsx",
+        "10fgX3oE82nr9bDWgLjcht-GSI9QeNdDI",
+    ),
 )
 
 check_inconsistent_names = False
@@ -1123,7 +1145,7 @@ modules = [
         "Camera traps module - fauna protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/637a0757-d63b-448b-a518-c99902e3b242",
         "",
-        "https://linked.data.gov.au/def/test/dawe-cv/f0123418-c565-45a6-be01-c5c332c727e5",
+        "https://linked.data.gov.au/def/test/dawe-cv/a2afccd5-766e-44bc-98c1-f27aae26727f",
         "vocab-sources/second-stage/camera-trap-fauna-attributes.xlsx",
         "",
     ),
@@ -1131,7 +1153,7 @@ modules = [
         "Camera traps module - array protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/e2d8b951-c1fd-4de9-9bd3-313ddcd79ab8",
         "",
-        "https://linked.data.gov.au/def/test/dawe-cv/f0123418-c565-45a6-be01-c5c332c727e5",
+        "https://linked.data.gov.au/def/test/dawe-cv/1a6953e4-a830-41f8-9cfd-11ead4dd6bc2",
         "vocab-sources/second-stage/camera-trap-array-attributes.xlsx",
         "",
     ),
@@ -1139,7 +1161,7 @@ modules = [
         "Camera traps module - targeted protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/1c26a538-2973-476f-b286-692f62fd8e6b",
         "",
-        "https://linked.data.gov.au/def/test/dawe-cv/f0123418-c565-45a6-be01-c5c332c727e5",
+        "https://linked.data.gov.au/def/test/dawe-cv/cb497bbc-75dc-450d-b020-5bc3c54d5586",
         "vocab-sources/second-stage/camera-trap-targeted-attributes.xlsx",
         "",
     ),
