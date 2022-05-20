@@ -4,6 +4,7 @@ Generate RDF from Excel files using excel2rdf with data validation provided by P
 
 import logging
 import pathlib
+from numpy import NaN
 
 from rdflib import Graph, SKOS, DCTERMS, SH
 from excel2rdf import excel2rdf
@@ -11,10 +12,12 @@ from pyshacl import validate
 from pydrive2.drive import GoogleDrive
 from pydrive2.auth import GoogleAuth
 from oauth2client.service_account import ServiceAccountCredentials
+import pandas as pd
 
 from dawe_vocabs import settings
 from dawe_vocabs.namespaces import TERN, REG
 from dawe_vocabs.pretty_table import get_pretty_table_output
+from dawe_vocabs.schemas import LUTSchema
 from dawe_vocabs.vocabs import feature_types_collection
 from dawe_vocabs.vocabs import categorical_values_collection
 
@@ -73,8 +76,38 @@ if __name__ == "__main__":
     # Programatically create some vocabs.
     feature_types_collection.create(settings.base_uri, g)
 
+    # get settings.lut_configs and prepare to extend
+    lut_configs = settings.lut_configs
+
+    # extend lut_configs in settings with new categorical APIs
+    xls = pd.ExcelFile("spreadsheet.xlsx")
+    mapping_df = pd.read_excel(xls, "Mapping")
+    mapping_df = mapping_df.reset_index()
+    names = []
+    for i in settings.modules:
+        names.append(i.name)
+    for index, row in mapping_df.iterrows():
+        categorical_api = row["categorical_lut_api_endpoint"]
+        if (
+            (row["modules"] in names)
+            and (row["modules"] not in settings.categorical_apis_added_modules)
+            and (categorical_api is not NaN)
+        ):
+            categorical_api_label = " ".join(
+                str(categorical_api).split("/")[-1].split("-")[1:]
+            )
+            lut_configs.append(
+                LUTSchema(
+                    categorical_api,
+                    categorical_api_label.capitalize() + " codes",
+                    "A collection of " + categorical_api_label + " and its codes.",
+                    str(row["categorical_uuid"]),
+                    categorical_api_label.capitalize(),
+                )
+            )
+
     # Generate look up tables to categorical values.
-    for lut_config in settings.lut_configs:
+    for lut_config in lut_configs:
         try:
             categorical_values_collection.create(
                 settings.base_uri, g, lut_config, settings.parent_collection_uri

@@ -6,8 +6,9 @@ from numpy import NaN
 from pydrive2.drive import GoogleDrive
 from pydrive2.auth import GoogleAuth
 from oauth2client.service_account import ServiceAccountCredentials
-from dawe_vocabs.schemas import ExcelVocab
+from dawe_vocabs.schemas import ExcelVocab, LUTSchema
 import xlsxwriter
+from dawe_vocabs import settings
 
 
 pathlib.Path("test/google").mkdir(parents=True, exist_ok=True)
@@ -267,6 +268,7 @@ from dawe_vocabs.settings import (
     check_uuid,
     check_categorical_uuid,
     check_common_parameters,
+    generate_vocabs,
 )
 
 names = []
@@ -295,6 +297,60 @@ correct_value_types = [
     "datetime",
     "numeric",
 ]
+
+checked_common_parameters = [
+    "type of soil observation",
+    "digging stopped by",
+    "Soil horizon",
+    "Soil horizon depth",
+    "soil horizon depth - upper",
+    "soil horizon depth - lower",
+    "Horizon boundry shape",
+    "Horizon boundary distinctness",
+    "soil sample depth",
+    "soil sample depth - upper",
+    "soil sample depth - lower",
+    "fauna plot id",
+    "observers",
+    "weather- site temperature",
+    "weather- site precipitation",
+    "weather-site wind",
+    "weather- site cloud cover",
+    "trap preservative type",
+    "trap preservative concentration",
+    "trap photo id",
+    "voucher type",
+    "photo id",
+    "methods description",
+    "search method",
+    "count exact or estimate",
+    "target species",
+    "survey start location",
+    "survey start time",
+    "observation datetime",
+    "number of individuals",
+    "observation method",
+    "habitat description",
+    "fauna measurements",
+    "voucher specimen collected",
+    "voucher specimen barcode id",
+    "voucher comments",
+    "additional voucher specimen",
+    "potential habitat description",
+    "observation type",
+    "observation notes",
+    "start survey",
+    "flora growth form",
+    "flora growth stage",
+    "flora life stage",
+    "flora health factor",
+    "survey time",
+    "sex",
+    "plot name",
+    "number of observers",
+    "species name",
+]
+
 if check_incorrect_value_type:
     print(check_value_type(mapping_df, correct_value_types, names))
 
@@ -321,8 +377,9 @@ if check_common_parameters:
     # print(find_common_parameters(mapping_df, names))
     parameters = []
     for key, value in find_common_parameters(mapping_df, names).items():
-        parameters.append(key)
-        print(key.lower(), " : ", value)
+        if key not in checked_common_parameters:
+            parameters.append(key.lower())
+            print(key.lower(), " : ", value)
     print(parameters)
 
 separated_mapping_df = [y for _, y in mapping_df.groupby("modules", as_index=True)]
@@ -634,7 +691,8 @@ def create_excel_files():
 
 # print(separated_mapping_df[0]["modules"].unique()[0])
 
-create_excel_files()
+if generate_vocabs:
+    create_excel_files()
 
 
 # print(module)

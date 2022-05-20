@@ -1,3 +1,5 @@
+from pickle import FALSE
+from re import T
 from dawe_vocabs.schemas import LUTSchema, ExcelVocab, InfoNeeded
 
 from typing import List
@@ -10,7 +12,7 @@ from rdflib import Namespace
 show_table_result = True
 
 # Download Excel files from Google Drive.
-download_excel_files = True
+download_excel_files = False
 
 # Base URI used for all generated vocabularies.
 base_uri = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
@@ -419,9 +421,16 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fire-substrate-types",
+        "Substrate types codes",
+        "A collection of substrate types and its codes.",
+        "0b89087f-345a-4e8d-8f84-38d5af499f10",
+        "Substrate",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-fire-substrate-types",
         "Fire substrate types codes",
         "A collection of fire substrate types and its codes.",
-        "0b89087f-345a-4e8d-8f84-38d5af499f10",
+        "c7a0692c-113c-4593-ae04-5e49aba70fdf",
         "Fire substrate",
     ),
     LUTSchema(
@@ -431,13 +440,13 @@ lut_configs: List[LUTSchema] = [
         "032ed6fa-4c55-4752-b625-3e6b32672444",
         "Fire growth forms",
     ),
-    LUTSchema(
-        "https://dev.core-api.paratoo.tern.org.au/lut-fire-species",
-        "Fire species codes",
-        "A collection of fire species forms and its codes.",
-        "e02a2654-206b-4f15-9132-166321efd122",
-        "Fire species",
-    ),
+    # LUTSchema(
+    #     "https://dev.core-api.paratoo.tern.org.au/lut-fire-species",
+    #     "Fire species codes",
+    #     "A collection of fire species forms and its codes.",
+    #     "e02a2654-206b-4f15-9132-166321efd122",
+    #     "Fire species",
+    # ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fire-regeneration-statuses",
         "Fire regeneration statuses codes",
@@ -451,6 +460,13 @@ lut_configs: List[LUTSchema] = [
         "A collection of fire plant alive statuses and its codes.",
         "29d1081d-9cde-42ab-b59a-6bfc8bdda01d",
         "Fire plant alive statuses",
+    ),
+    LUTSchema(
+        "https://dev.core-api.paratoo.tern.org.au/lut-fire-in-canopy-sky-statuses",
+        "Fire in-canopy-sky statuses codes",
+        "A collection of fire in-canopy-sky statuses and its codes.",
+        "15a03c34-142b-469c-9ec5-0d516fd6c1e7",
+        "Fire in-canopy-sky statuses",
     ),
 ]
 
@@ -858,6 +874,14 @@ excel_files = (
         "vocab-sources/second-stage/protocols-camera-traps.xlsx",
         "10fgX3oE82nr9bDWgLjcht-GSI9QeNdDI",
     ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-recruitment-overview.xlsx",
+        "1UzTzw0N1RE1-p-6-rKXkdxLHy5VSa776",
+    ),
+    ExcelVocab(
+        "vocab-sources/second-stage/protocols-recruitment.xlsx",
+        "1ggKpL6gZQInY_oMX5a9FkCvSUeEpyOh8",
+    ),
 )
 
 check_inconsistent_names = False
@@ -867,6 +891,15 @@ check_definition = False
 check_uuid = False
 check_categorical_uuid = False
 check_common_parameters = False
+
+generate_vocabs = True
+
+categorical_apis_added_modules = [
+    "Basal area module",
+    "Coarse Woody Debris module",
+    "Condition Module",
+    "Fire Module",
+]
 
 modules = [
     InfoNeeded(
@@ -1169,7 +1202,7 @@ modules = [
         "Recruitment module - Age class protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/15f69532-0fe8-498f-b667-cf130c84475b",
         "https://linked.data.gov.au/def/test/dawe-cv/36c493f1-6a2e-4d48-9c3a-df104d98124b",
-        "https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970",
+        "https://linked.data.gov.au/def/test/dawe-cv/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f",
         "vocab-sources/second-stage/recruitment-age-attributes.xlsx",
         "vocab-sources/second-stage/recruitment-age-properties.xlsx",
     ),
@@ -1177,7 +1210,7 @@ modules = [
         "Recruitment module -Survivorship protocol",
         "https://linked.data.gov.au/def/test/dawe-cv/fd311a29-d15b-497a-9ddd-ce00f1259fac",
         "https://linked.data.gov.au/def/test/dawe-cv/6bea1c41-0a98-465a-a146-1d3cfbf6f6fa",
-        "https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970",
+        "https://linked.data.gov.au/def/test/dawe-cv/f470e27d-20ed-46dc-b64a-d67b39a9dffc",
         "vocab-sources/second-stage/recruitment-survivorship-attributes.xlsx",
         "vocab-sources/second-stage/recruitment-survivorship-properties.xlsx",
     ),
