@@ -377,9 +377,9 @@ if check_common_parameters:
     # print(find_common_parameters(mapping_df, names))
     parameters = []
     for key, value in find_common_parameters(mapping_df, names).items():
-        if key not in checked_common_parameters:
-            parameters.append(key.lower())
-            print(key.lower(), " : ", value)
+        # if key not in checked_common_parameters:
+        parameters.append(key.lower())
+        print(key.lower(), " : ", value)
     print(parameters)
 
 separated_mapping_df = [y for _, y in mapping_df.groupby("modules", as_index=True)]
