@@ -71,7 +71,7 @@ if __name__ == "__main__":
         try:
             g += excel2rdf(path_in_str)
         except Exception as e:
-            raise RuntimeError(f'Error with file "{file}". {e}') from e
+            raise RuntimeError(f'Error with file "{path}". {e}') from e
 
     # Programatically create some vocabs.
     feature_types_collection.create(settings.base_uri, g)
@@ -87,7 +87,11 @@ if __name__ == "__main__":
     for i in settings.modules:
         names.append(i.name)
     for index, row in mapping_df.iterrows():
-        categorical_api = row["categorical_lut_api_endpoint"]
+        categorical_api = (
+            row["categorical_lut_api_endpoint"].strip()
+            if isinstance(row["categorical_lut_api_endpoint"], str)
+            else row["categorical_lut_api_endpoint"]
+        )
         if (
             (row["modules"] in names)
             and (row["modules"] not in settings.categorical_apis_added_modules)
@@ -108,6 +112,7 @@ if __name__ == "__main__":
 
     # Generate look up tables to categorical values.
     for lut_config in lut_configs:
+        logger.info("Pulling LUT data from %s", lut_config.endpoint_url)
         try:
             categorical_values_collection.create(
                 settings.base_uri, g, lut_config, settings.parent_collection_uri
@@ -115,7 +120,7 @@ if __name__ == "__main__":
         except categorical_values_collection.NoDataInAPIException as e:
             logger.error(e)
         except Exception as e:
-            raise RuntimeError(f'Error with file "{file}". {e}') from e
+            raise RuntimeError(f'Error with LUT config "{lut_config}". {e}') from e
 
     # Validate generated data based on vocab requirements.
     shacl_graph = Graph().parse(settings.shapes_file)
@@ -131,6 +136,8 @@ if __name__ == "__main__":
     if settings.show_table_result:
         TABLE_RESULT = get_pretty_table_output(conforms, results_graph)
         logger.info(TABLE_RESULT)
+    else:
+        logger.info("\n%s", results_text)
 
     logger.info("PySHACL conforms output: %s", conforms)
     logger.info("sh:Violation exists: %s", bool(violation))
