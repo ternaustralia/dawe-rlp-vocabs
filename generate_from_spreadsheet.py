@@ -241,6 +241,27 @@ def find_common_parameters(dataframe, modules_names):
             common_parameters[key] = value
     return common_parameters
 
+def find_common_categorical_parameters(dataframe, modules_names):
+    labels = {}
+    common_parameters = {}
+    for index, row in dataframe.iterrows():
+        if (row["modules"] in modules_names) and (row["value_type"].lower() == "categorical"):
+            if row["observable_property_in_protocol"] is not NaN:
+                # label = "Property : " + row["observable_property_in_protocol"]
+                label = row["observable_property_in_protocol"]
+            else:
+                # label = "Attribute : " + row["attribute_in_protocol"]
+                label = row["attribute_in_protocol"]
+            if label in labels:
+                labels[label][0] += 1
+            else:
+                labels[label] = [1, False, ""]
+    for key, value in labels.items():
+        if value[0] > 1:
+            # print(key, "  ", value)
+            common_parameters[key] = value
+    return common_parameters
+
 
 # read the data from the spreadsheet
 
@@ -269,6 +290,7 @@ from dawe_vocabs.settings import (
     check_categorical_uuid,
     check_common_parameters,
     generate_vocabs,
+    check_common_categorical_parameters,
 )
 
 names = []
@@ -382,8 +404,18 @@ if check_common_parameters:
         print(key.lower(), " : ", value)
     print(parameters)
 
+
+if check_common_categorical_parameters:
+    parameters = []
+    for key, value in find_common_categorical_parameters(mapping_df, names).items():
+        # if key not in checked_common_parameters:
+        parameters.append(key.lower())
+        print(key.lower(), " : ", value)
+    print(parameters)
+
 separated_mapping_df = [y for _, y in mapping_df.groupby("modules", as_index=True)]
 common_parameters = find_common_parameters(mapping_df, names)
+
 
 
 def create_excel_files():

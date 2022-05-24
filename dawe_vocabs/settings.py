@@ -887,10 +887,11 @@ excel_files = (
 check_inconsistent_names = False
 check_incorrect_value_type = False
 check_empty_feature_type = False
-check_definition = True
+check_definition = False
 check_uuid = False
 check_categorical_uuid = False
 check_common_parameters = False
+check_common_categorical_parameters = False
 
 generate_vocabs = False
 
