@@ -893,7 +893,7 @@ check_categorical_uuid = False
 check_common_parameters = False
 check_common_categorical_parameters = False
 
-generate_vocabs = False
+generate_vocabs = True
 
 categorical_apis_added_modules = [
     "Basal area module",

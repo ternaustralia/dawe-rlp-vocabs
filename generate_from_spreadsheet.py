@@ -45,8 +45,8 @@ def check_value_type(dataframe, types: list, modules_names):
     for index, row in dataframe.iterrows():
         # print(row["modules"])
         if row["modules"] in modules_names:
-            if row["value_type"].lower() not in types:
-                incorrect_value_types.append(row["value_type"])
+            if row["value_type_tern"].lower() not in types:
+                incorrect_value_types.append(row["value_type_tern"])
     # for value in values:
     #     if value not in types:
     #         incorrect_value_types.append(value)
@@ -93,7 +93,7 @@ def check_categorical_uuids(dataframe, modules_names):
     categorical_parameters_without_categorical_uuids = []
     for index, row in dataframe.iterrows():
         if row["modules"] in modules_names:
-            if row["value_type"].lower() == "categorical":
+            if row["value_type_type"].lower() == "categorical":
                 if row["categorical_uuid"] is NaN:
                     categorical_parameters_without_categorical_uuids.append(index)
     return categorical_parameters_without_categorical_uuids
@@ -200,15 +200,15 @@ def get_value_type(str):
     str = str.lower()
     if str == "categorical":
         return "tern:IRI"
-    elif str in ["numerical", "numeric"]:
+    elif str == "float":
         return "tern:Float"
-    elif str in ["number", "percent"]:
+    elif str == "integer":
         return "tern:Integer"
-    elif str in ["alphanumeric", "text", "alphanumerical"]:
+    elif str == "text":
         return "tern:Text"
     elif str == "boolean":
         return "tern:Boolean"
-    elif str == "datetime":
+    elif str in ["datetime", "date"]:
         return "tern:DateTime"
 
 
@@ -241,11 +241,14 @@ def find_common_parameters(dataframe, modules_names):
             common_parameters[key] = value
     return common_parameters
 
+
 def find_common_categorical_parameters(dataframe, modules_names):
     labels = {}
     common_parameters = {}
     for index, row in dataframe.iterrows():
-        if (row["modules"] in modules_names) and (row["value_type"].lower() == "categorical"):
+        if (row["modules"] in modules_names) and (
+            row["value_type_tern"].lower() == "categorical"
+        ):
             if row["observable_property_in_protocol"] is not NaN:
                 # label = "Property : " + row["observable_property_in_protocol"]
                 label = row["observable_property_in_protocol"]
@@ -308,16 +311,12 @@ if check_inconsistent_names:
 # make sure all the value types are correct
 correct_value_types = [
     "categorical",
-    "numerical",
-    "percentage",
-    "number",
-    "percent",
-    "alphanumeric",
-    "alphanumerical",
     "text",
     "boolean",
     "datetime",
-    "numeric",
+    "date",
+    "float",
+    "integer",
 ]
 
 checked_common_parameters = [
@@ -415,7 +414,6 @@ if check_common_categorical_parameters:
 
 separated_mapping_df = [y for _, y in mapping_df.groupby("modules", as_index=True)]
 common_parameters = find_common_parameters(mapping_df, names)
-
 
 
 def create_excel_files():
@@ -526,7 +524,7 @@ def create_excel_files():
                             label = row["attribute_in_protocol"].lower()
                             print(label)
                             attribute_uri = base_uri + str(row["variable_uuid"])
-                            value_type = get_value_type(row["value_type"])
+                            value_type = get_value_type(row["value_type_tern"])
                             attributes_finaldf.append(
                                 [
                                     attribute_uri,
@@ -566,7 +564,7 @@ def create_excel_files():
                         label = row["attribute_in_protocol"].lower()
                         print(label)
                         attribute_uri = base_uri + str(row["variable_uuid"])
-                        value_type = get_value_type(row["value_type"])
+                        value_type = get_value_type(row["value_type_tern"])
                         attributes_finaldf.append(
                             [
                                 attribute_uri,
@@ -598,7 +596,7 @@ def create_excel_files():
                             label = row["observable_property_in_protocol"].lower()
                             print(label)
                             property_uri = base_uri + str(row["variable_uuid"])
-                            value_type = get_value_type(row["value_type"])
+                            value_type = get_value_type(row["value_type_tern"])
                             properties_finaldf.append(
                                 [
                                     property_uri,
@@ -640,7 +638,7 @@ def create_excel_files():
                         label = row["observable_property_in_protocol"].lower()
                         print(label)
                         property_uri = base_uri + str(row["variable_uuid"])
-                        value_type = get_value_type(row["value_type"])
+                        value_type = get_value_type(row["value_type_tern"])
                         properties_finaldf.append(
                             [
                                 property_uri,
