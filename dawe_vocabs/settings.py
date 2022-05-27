@@ -902,6 +902,15 @@ categorical_apis_added_modules = [
     "Fire Module",
 ]
 
+deleted_parameters = [
+    "Soil colour- chroma",
+    "Soil colour- hue",
+    "Soil color- value",
+    "trap preservative concentration",
+    "outside pan trap colour",
+    "source of identification",
+]
+
 modules = [
     InfoNeeded(
         "Basal area module",

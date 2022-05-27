@@ -93,7 +93,7 @@ def check_categorical_uuids(dataframe, modules_names):
     categorical_parameters_without_categorical_uuids = []
     for index, row in dataframe.iterrows():
         if row["modules"] in modules_names:
-            if row["value_type_type"].lower() == "categorical":
+            if row["value_type_tern"].lower() == "categorical":
                 if row["categorical_uuid"] is NaN:
                     categorical_parameters_without_categorical_uuids.append(index)
     return categorical_parameters_without_categorical_uuids
