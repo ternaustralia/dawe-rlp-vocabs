@@ -516,7 +516,14 @@ def create_excel_files():
             ) = get_values(modules, module_name)
 
             for index, row in module.iterrows():
-                if row["observable_property_in_protocol"] is NaN:
+                if (
+                    (row["observable_property_in_protocol"] is NaN)
+                    and (row["attribute_in_protocol"] is not NaN)
+                    and (
+                        str(row["attribute_in_protocol"])
+                        not in settings.deleted_parameters
+                    )
+                ):
                     # if it is a common attribute
                     if row["attribute_in_protocol"] in common_parameters:
                         # if the attribute has not been created
@@ -586,7 +593,10 @@ def create_excel_files():
                         collection_row[0] = attribute_collection_uri
                         collection_row[2] = attribute_uri
                         attributes_finaldf.append(collection_row)
-                else:
+                elif (row["observable_property_in_protocol"] is not NaN) and (
+                    str(row["observable_property_in_protocol"])
+                    not in settings.deleted_parameters
+                ):
                     # if it is a common property
                     if row["observable_property_in_protocol"] in common_parameters:
                         # if the property has not been created
