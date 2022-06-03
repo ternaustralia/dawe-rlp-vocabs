@@ -31,9 +31,10 @@ def create(
             # Strapi4
             rows = data["data"]
         else:
-            raise UnexpectedDataShapeException(
-                "Expected the JSON object to have a 'data' key but none was found."
-            )
+            rows = None
+            # raise UnexpectedDataShapeException(
+            #     "Expected the JSON object to have a 'data' key but none was found."
+            # )
 
     if not rows:
         raise NoDataInAPIException(
