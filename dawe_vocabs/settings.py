@@ -12,7 +12,7 @@ from rdflib import Namespace
 show_table_result = False
 
 # Download Excel files from Google Drive.
-download_excel_files = True
+download_excel_files = False
 
 # Base URI used for all generated vocabularies.
 base_uri = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
@@ -210,7 +210,7 @@ lut_configs: List[LUTSchema] = [
         "landform pattern",
     ),
     LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-landform-elements",
+        "http://vocabs.paratoo.tern.org.au:1337/api/lut-landform-elements",
         "Landform element codes",
         "A collection of landform element types and its codes.",
         "c1a58967-cb12-4c2c-a7ca-9cee2589919c",
@@ -890,10 +890,10 @@ check_empty_feature_type = False
 check_definition = False
 check_uuid = False
 check_categorical_uuid = False
-check_common_parameters = False
+check_common_parameters = True
 check_common_categorical_parameters = False
 
-generate_vocabs = True
+generate_vocabs = False
 
 categorical_apis_added_modules = [
     "Basal area module",
@@ -915,6 +915,7 @@ deleted_parameters = [
     "growth stage",
     "substrate type",
     "preservation type",
+    "disturbance",
 ]
 
 modules = [

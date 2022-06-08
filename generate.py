@@ -92,10 +92,15 @@ if __name__ == "__main__":
             if isinstance(row["categorical_lut_api_endpoint"], str)
             else row["categorical_lut_api_endpoint"]
         )
+        if row["observable_property_in_protocol"] is NaN:
+            label = row["attribute_in_protocol"]
+        else:
+            label = row["observable_property_in_protocol"]
         if (
             (row["modules"] in names)
             and (row["modules"] not in settings.categorical_apis_added_modules)
             and (categorical_api is not NaN)
+            and (label not in settings.deleted_parameters)
         ):
             categorical_api_label = " ".join(
                 str(categorical_api).split("/")[-1].split("-")[1:]
