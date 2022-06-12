@@ -11,6 +11,7 @@ import xlsxwriter
 from dawe_vocabs import settings
 
 
+# download the spreadsheet from Google drive
 pathlib.Path("test/google").mkdir(parents=True, exist_ok=True)
 scope = ["https://www.googleapis.com/auth/drive"]
 gauth = GoogleAuth()
@@ -26,39 +27,35 @@ spreadsheet = [
     )
 ]
 for file in spreadsheet:
-    # logger.info(f"Downloading {file.path} with id {file.id}")
     drive_file = drive.CreateFile({"id": file.id})
     drive_file.GetContentFile(
         file.path,
         mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
 
-
-def check_module_names(file_name, lst, modules):
-    for i in lst:
+# check there are no inconsistent module names and syntax errors
+def check_module_names(file_name, names_list, modules):
+    for i in names_list:
         if i not in modules:
             print(file_name, " -- incorrect module names: ", i)
 
 
+# check there are no inconsistent module names and syntax errors, replaced by drop down list in the spreadsheet
 def check_value_type(dataframe, types: list, modules_names):
     incorrect_value_types = []
     for index, row in dataframe.iterrows():
-        # print(row["modules"])
         if row["modules"] in modules_names:
             if row["value_type_tern"].lower() not in types:
                 incorrect_value_types.append(row["value_type_tern"])
-    # for value in values:
-    #     if value not in types:
-    #         incorrect_value_types.append(value)
     return incorrect_value_types
 
 
+# make sure all properties have feature types
 def check_feature_type(dataframe, modules_names):
     propeties_without_feature_type = []
     for index, row in dataframe.iterrows():
         if row["modules"] in modules_names:
             if row["observable_property_in_protocol"] is not NaN:
-                # print(row["observable_property_in_protocol"])
                 if row["_feature_type"] is NaN:
                     propeties_without_feature_type.append(
                         "{} : {}".format(
@@ -68,6 +65,7 @@ def check_feature_type(dataframe, modules_names):
     return propeties_without_feature_type
 
 
+# make sure all items in `Attributes - definition` and `Observable Properties-definition` have definition
 def find_empty_definitions(dataframe, modules_names):
     for index, row in dataframe.iterrows():
         if row["Module Name"] in modules_names:
@@ -80,6 +78,7 @@ def find_empty_definitions(dataframe, modules_names):
                     )
 
 
+# make sure all variables have uuids
 def check_uuids(dataframe, modules_names):
     parameters_without_uuids = []
     for index, row in dataframe.iterrows():
@@ -89,6 +88,7 @@ def check_uuids(dataframe, modules_names):
     return parameters_without_uuids
 
 
+# make sure all categorical parameters have uuids
 def check_categorical_uuids(dataframe, modules_names):
     categorical_parameters_without_categorical_uuids = []
     for index, row in dataframe.iterrows():
@@ -99,7 +99,9 @@ def check_categorical_uuids(dataframe, modules_names):
     return categorical_parameters_without_categorical_uuids
 
 
+# get the definition and source for attributes from `Attribute - definition`
 def get_attribute_definition_source(attributes, module_name, label):
+    # separate the dataframe into modules
     separated_attribute_definition_df = [
         y for _, y in attributes.groupby("Module Name", as_index=True)
     ]
@@ -112,6 +114,7 @@ def get_attribute_definition_source(attributes, module_name, label):
             return row["Definition"], row["Source"]
 
 
+# get the definition and source for properties from `Observable Properties-definition`
 def get_property_definition_source(properties, module_name, label):
     separated_property_definition_df = [
         y for _, y in properties.groupby("Module Name", as_index=True)
@@ -125,20 +128,23 @@ def get_property_definition_source(properties, module_name, label):
             return row["Definition"], row["Source"]
 
 
+# make sure each parameter has definition
 def check_parameters_definition(mapping, attributes, properties, modules_names):
-    print("Empty definitions for attributes")
-    find_empty_definitions(attributes, modules_names)
-    print("-------------------------------------------------------")
-    print("Empty definitions for properties")
-    find_empty_definitions(properties, modules_names)
-    print("-------------------------------------------------------")
+
+    # uncomment these prints if want to see parameters with empty definitions
+    # print("Empty definitions for attributes")
+    # find_empty_definitions(attributes, modules_names)
+    # print("-------------------------------------------------------")
+    # print("Empty definitions for properties")
+    # find_empty_definitions(properties, modules_names)
+    # print("-------------------------------------------------------")
+
     separated_property_definition_df = [
         y for _, y in properties.groupby("Module Name", as_index=True)
     ]
     separated_attribute_definition_df = [
         y for _, y in attributes.groupby("Module Name", as_index=True)
     ]
-    # parameters_without_definition = []
     for index, row in mapping.iterrows():
         if row["modules"] in modules_names:
             if row["observable_property_in_protocol"] is not NaN:
@@ -149,11 +155,6 @@ def check_parameters_definition(mapping, attributes, properties, modules_names):
                     row["observable_property_in_protocol"]
                     not in definitions["Preferred Label"].to_list()
                 ):
-                    # parameters_without_definition.append(
-                    #     "{} : {}".format(
-                    #         row[modules], row["observable_property_in_protocol"]
-                    #     )
-                    # )
                     print(
                         "{} -- {} -- Property : {}".format(
                             index + 2,
@@ -169,17 +170,14 @@ def check_parameters_definition(mapping, attributes, properties, modules_names):
                     row["attribute_in_protocol"]
                     not in definitions["Preferred Label"].to_list()
                 ):
-                    # parameters_without_definition.append(
-                    #     "{} : {}".format(row[modules], row["attribute_in_protocol"])
-                    # )
                     print(
                         "{} -- {} -- Attribute : {}".format(
                             index + 2, row["modules"], row["attribute_in_protocol"]
                         )
                     )
-    # return parameters_without_definition
 
 
+# get basic settings for each module, like the uri for attributes collection
 def get_values(lst, module_name):
     values = []
     for item in lst:
@@ -196,6 +194,7 @@ def get_values(lst, module_name):
     return values
 
 
+# get the RDF value type for parameter
 def get_value_type(str):
     str = str.lower()
     if str == "categorical":
@@ -212,6 +211,7 @@ def get_value_type(str):
         return "tern:DateTime"
 
 
+# create categorical URI
 def generate_categorical_uri(value_type, base_uri, uuid):
     if value_type == "tern:IRI":
         categorical_uri = base_uri + str(uuid).replace(" ", "")
@@ -220,28 +220,29 @@ def generate_categorical_uri(value_type, base_uri, uuid):
         return ""
 
 
+# find common parameters in this deliverable
 def find_common_parameters(dataframe, modules_names):
     labels = {}
     common_parameters = {}
     for index, row in dataframe.iterrows():
         if row["modules"] in modules_names:
             if row["observable_property_in_protocol"] is not NaN:
-                # label = "Property : " + row["observable_property_in_protocol"]
                 label = row["observable_property_in_protocol"]
             else:
-                # label = "Attribute : " + row["attribute_in_protocol"]
                 label = row["attribute_in_protocol"]
+            # count the times for each parameter
             if label in labels:
                 labels[label][0] += 1
             else:
+                # number means times of appearance; boolean value means whether this parameter is created in vocabulary; the last value is variable uuid
                 labels[label] = [1, False, ""]
     for key, value in labels.items():
         if value[0] > 1:
-            # print(key, "  ", value)
             common_parameters[key] = value
     return common_parameters
 
 
+# TODO: this function has one extra condition, could be integrated with the above one
 def find_common_categorical_parameters(dataframe, modules_names):
     labels = {}
     common_parameters = {}
@@ -250,10 +251,8 @@ def find_common_categorical_parameters(dataframe, modules_names):
             row["value_type_tern"].lower() == "categorical"
         ):
             if row["observable_property_in_protocol"] is not NaN:
-                # label = "Property : " + row["observable_property_in_protocol"]
                 label = row["observable_property_in_protocol"]
             else:
-                # label = "Attribute : " + row["attribute_in_protocol"]
                 label = row["attribute_in_protocol"]
             if label in labels:
                 labels[label][0] += 1
@@ -261,7 +260,6 @@ def find_common_categorical_parameters(dataframe, modules_names):
                 labels[label] = [1, False, ""]
     for key, value in labels.items():
         if value[0] > 1:
-            # print(key, "  ", value)
             common_parameters[key] = value
     return common_parameters
 
@@ -276,15 +274,15 @@ mapping_df = pd.read_excel(xls, "Mapping")
 property_df = pd.read_excel(xls, "Observable Properties-definitio")
 attribute_df = pd.read_excel(xls, "Attributes - definition")
 prefix_df = pd.read_excel(xls, "prefixes")
-# print(mapping_df, property_df, attribute_df)
 
 mapping_df = mapping_df.reset_index()
 property_df = property_df.reset_index()
 attribute_df = attribute_df.reset_index()
 
-# make a list of needed modules and other information
+# needed info from settings.py
 from dawe_vocabs.settings import (
     modules,
+    correct_value_types,
     check_inconsistent_names,
     check_incorrect_value_type,
     check_empty_feature_type,
@@ -296,6 +294,7 @@ from dawe_vocabs.settings import (
     check_common_categorical_parameters,
 )
 
+# put all module names in one list, for later use
 names = []
 for i in modules:
     names.append(i.name)
@@ -308,70 +307,7 @@ if check_inconsistent_names:
     )
     check_module_names("Property", property_df["Module Name"].unique().tolist(), names)
 
-# make sure all the value types are correct
-correct_value_types = [
-    "categorical",
-    "text",
-    "boolean",
-    "datetime",
-    "date",
-    "float",
-    "integer",
-]
-
-checked_common_parameters = [
-    "type of soil observation",
-    "digging stopped by",
-    "Soil horizon",
-    "Soil horizon depth",
-    "soil horizon depth - upper",
-    "soil horizon depth - lower",
-    "Horizon boundry shape",
-    "Horizon boundary distinctness",
-    "soil sample depth",
-    "soil sample depth - upper",
-    "soil sample depth - lower",
-    "fauna plot id",
-    "observers",
-    "weather- site temperature",
-    "weather- site precipitation",
-    "weather-site wind",
-    "weather- site cloud cover",
-    "trap preservative type",
-    "trap preservative concentration",
-    "trap photo id",
-    "voucher type",
-    "photo id",
-    "methods description",
-    "search method",
-    "count exact or estimate",
-    "target species",
-    "survey start location",
-    "survey start time",
-    "observation datetime",
-    "number of individuals",
-    "observation method",
-    "habitat description",
-    "fauna measurements",
-    "voucher specimen collected",
-    "voucher specimen barcode id",
-    "voucher comments",
-    "additional voucher specimen",
-    "potential habitat description",
-    "observation type",
-    "observation notes",
-    "start survey",
-    "flora growth form",
-    "flora growth stage",
-    "flora life stage",
-    "flora health factor",
-    "survey time",
-    "sex",
-    "plot name",
-    "number of observers",
-    "species name",
-]
-
+# make sure all value types are correct
 if check_incorrect_value_type:
     print(check_value_type(mapping_df, correct_value_types, names))
 
@@ -379,10 +315,8 @@ if check_incorrect_value_type:
 if check_empty_feature_type:
     print(check_feature_type(mapping_df, names))
 
-
 # make sure all parameters have definition
 if check_definition:
-    # check_definition(mapping_df, attribute_df, property_df, names)
     check_parameters_definition(mapping_df, attribute_df, property_df, names)
 
 # make sure all parameters have uuids
@@ -395,19 +329,16 @@ if check_categorical_uuid:
 
 # make sure the info for common attributes is the same, like the definition and uuid
 if check_common_parameters:
-    # print(find_common_parameters(mapping_df, names))
     parameters = []
     for key, value in find_common_parameters(mapping_df, names).items():
-        # if key not in checked_common_parameters:
         parameters.append(key.lower())
         print(key.lower(), " : ", value)
     print(parameters)
 
-
+# find all common categorical parameters
 if check_common_categorical_parameters:
     parameters = []
     for key, value in find_common_categorical_parameters(mapping_df, names).items():
-        # if key not in checked_common_parameters:
         parameters.append(key.lower())
         print(key.lower(), " : ", value)
     print(parameters)
@@ -418,9 +349,11 @@ common_parameters = find_common_parameters(mapping_df, names)
 
 def create_excel_files():
     base_uri = "https://linked.data.gov.au/def/test/dawe-cv/"
+    # loop through each module or submodule
     for module in separated_mapping_df:
         module_name = module["modules"].unique()[0]
         if module_name in names:
+            # these columns are not used
             module.drop(
                 [
                     "Property_type",
@@ -435,56 +368,54 @@ def create_excel_files():
                 axis=1,
                 inplace=True,
             )
+            # create definition and source column
             module["definition"] = ""
             module["source"] = ""
             module = module.reset_index()
 
+            # create definition and source list, to be added in those 2 new columns
             definition_list = []
             source_list = []
 
+            # loop through each row (each parameter) in current module, and get the definition, source for each parameter
             for index, row in module.iterrows():
                 if row["observable_property_in_protocol"] is NaN:
                     label = row["attribute_in_protocol"]
-                    # definition_list.append(
-                    #     get_attribute_definition(attribute_df, row["modules"], label)
-                    # )
-                    # source = attribute_df["Source"].to_list()[
-                    #     attribute_df["Preferred Label"].to_list().index(label)
-                    # ]
-                    print(row["modules"], label)
+                    print(row["modules"], label)  # to see the generating process
+
+                    # add the parameter definition to definition list
                     definition, source = get_attribute_definition_source(
                         attribute_df, row["modules"], label
                     )
                     definition_list.append(definition)
+
+                    # if the source is from book, essay and other acadmeic sources
                     if (
                         "http://linked.data.gov.au/def/tern-cv/" not in str(source)
                     ) and (
                         "https://linked.data.gov.au/def/test/dawe-cv/"
                         not in str(source)
                     ):
-
                         source_list.append(source)
+                    # if the source is from GraphDB only, not meaningful enough, add the protocol file as reference
                     else:
                         source_list.append(
                             "Ecological Field Monitoring protocols - {}, draft v0.1, 30/11/2021".format(
                                 row["modules"].split("-")[0]
                             )
                         )
+                # when parameter is property
                 else:
                     label = row["observable_property_in_protocol"]
-                    # definition_list.append(
-                    #     property_df["Definition"].to_list()[
-                    #         property_df["Preferred Label"].to_list().index(label)
-                    #     ]
-                    # )
-                    # source = property_df["Source"].to_list()[
-                    #     property_df["Preferred Label"].to_list().index(label)
-                    # ]
-                    print(row["modules"], label)
+                    print(row["modules"], label)  # to show generating process
+
+                    # TODO: it is similar to adding attribute definition
                     definition, source = get_property_definition_source(
                         property_df, row["modules"], label
                     )
                     definition_list.append(definition)
+
+                    # TODO: similar to add attribute source
                     if (
                         "http://linked.data.gov.au/def/tern-cv/" not in str(source)
                     ) and (
@@ -498,15 +429,19 @@ def create_excel_files():
                                 row["modules"].split("-")[0]
                             )
                         )
+
+            # convert definition and source list to pandas dataframes, and put them in the dataframe for this module or submodule
             definition_df = pd.DataFrame(definition_list, columns=["definition"])
             source_df = pd.DataFrame(source_list, columns=["source"])
             module.update(definition_df)
             module.update(source_df)
-            # print(module)
 
+            # create 2 empty dataframes for properties and attributes, for this module or submodule
             properties_finaldf = []
             attributes_finaldf = []
 
+            # get the basic settings for each parameter
+            # `attribute_file` is the file path to create attributes excel file, similar for `property_file`
             (
                 attribute_collection_uri,
                 property_collection_uri,
@@ -515,7 +450,9 @@ def create_excel_files():
                 property_file,
             ) = get_values(modules, module_name)
 
+            # start creating excel files, now the dataframe `module` contains all info needed to create vocabulary
             for index, row in module.iterrows():
+                # if the parameter is an attribute
                 if (
                     (row["observable_property_in_protocol"] is NaN)
                     and (row["attribute_in_protocol"] is not NaN)
@@ -526,12 +463,13 @@ def create_excel_files():
                 ):
                     # if it is a common attribute
                     if row["attribute_in_protocol"] in common_parameters:
-                        # if the attribute has not been created
+                        # if the attribute has not been created, checked by a boolean variable
                         if not common_parameters[row["attribute_in_protocol"]][1]:
                             label = row["attribute_in_protocol"].lower()
-                            print(label)
+                            print(label)  # to see the generating process
                             attribute_uri = base_uri + str(row["variable_uuid"])
                             value_type = get_value_type(row["value_type_tern"])
+                            # add the information for this parameter
                             attributes_finaldf.append(
                                 [
                                     attribute_uri,
@@ -549,16 +487,19 @@ def create_excel_files():
                                     row["source"],
                                 ]
                             )
+                            # change the boolean value to indicate this common parameter is created
                             common_parameters[row["attribute_in_protocol"]][1] = True
+                            # record the common parameter uri
                             common_parameters[row["attribute_in_protocol"]][
                                 2
                             ] = attribute_uri
 
+                            # add the collection row, with the collection uri and the parameter uri
                             collection_row = [None] * 11
                             collection_row[0] = attribute_collection_uri
                             collection_row[2] = attribute_uri
                             attributes_finaldf.append(collection_row)
-                        # if the attribute has been created, reuse the attribute
+                        # if the attribute has been created, reuse the attribute uri directly in the collection row
                         else:
                             collection_row = [None] * 11
                             collection_row[0] = attribute_collection_uri
@@ -567,6 +508,7 @@ def create_excel_files():
                             ][2]
                             attributes_finaldf.append(collection_row)
                     # if it is an unique attribute
+                    # TODO: this process is the same as the above to create the common parameter, should be integrated
                     else:
                         label = row["attribute_in_protocol"].lower()
                         print(label)
@@ -593,6 +535,7 @@ def create_excel_files():
                         collection_row[0] = attribute_collection_uri
                         collection_row[2] = attribute_uri
                         attributes_finaldf.append(collection_row)
+                # if the paramter is a property
                 elif (row["observable_property_in_protocol"] is not NaN) and (
                     str(row["observable_property_in_protocol"])
                     not in settings.deleted_parameters
@@ -644,6 +587,7 @@ def create_excel_files():
                             ][2]
                             properties_finaldf.append(collection_row)
                     # if it is an unique property
+                    # TODO: same as the above to create the common property, should be integrated
                     else:
                         label = row["observable_property_in_protocol"].lower()
                         print(label)
@@ -673,6 +617,7 @@ def create_excel_files():
                         collection_row[2] = property_uri
                         properties_finaldf.append(collection_row)
 
+            # add column names for the dataframe, attribute is different from property
             attributes_finaldf = pd.DataFrame(
                 attributes_finaldf,
                 columns=[
@@ -707,6 +652,7 @@ def create_excel_files():
                     "dcterms:source",
                 ],
             )
+            # if the attribute file path is given, generate the attributes excel file for this module
             if attribute_file:
                 attribute_writer = pd.ExcelWriter(  # pylint: disable=abstract-class-instantiated
                     attribute_file,
@@ -717,6 +663,7 @@ def create_excel_files():
                 )
                 prefix_df.to_excel(attribute_writer, index=False, sheet_name="prefixes")
                 attribute_writer.save()
+            # if the property file path is given, generate the properties excel file for this module
             if property_file:
                 property_writer = pd.ExcelWriter(  # pylint: disable=abstract-class-instantiated
                     property_file,
@@ -729,23 +676,11 @@ def create_excel_files():
                 property_writer.save()
 
 
+# uncomment this print to see the current generating module, may not be useful because the printing for each parameter
 # print(separated_mapping_df[0]["modules"].unique()[0])
 
 if generate_vocabs:
     create_excel_files()
 
-
+# uncomment this print to see the module dataframe
 # print(module)
-
-
-# basal_area_original_df = pd.DataFrame(
-#     columns=[
-#         "module_name",
-#         "property",
-#         "attribute",
-#         "categorical_uuid",
-#         "value_type",
-#         "property_tern",
-#         "feature_type",
-#     ]
-# )

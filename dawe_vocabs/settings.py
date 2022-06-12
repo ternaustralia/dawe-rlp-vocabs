@@ -12,7 +12,7 @@ from rdflib import Namespace
 show_table_result = False
 
 # Download Excel files from Google Drive.
-download_excel_files = False
+download_excel_files = True
 
 # Base URI used for all generated vocabularies.
 base_uri = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
@@ -890,10 +890,10 @@ check_empty_feature_type = False
 check_definition = False
 check_uuid = False
 check_categorical_uuid = False
-check_common_parameters = True
+check_common_parameters = False
 check_common_categorical_parameters = False
 
-generate_vocabs = False
+generate_vocabs = True
 
 categorical_apis_added_modules = [
     "Basal area module",
@@ -916,6 +916,18 @@ deleted_parameters = [
     "substrate type",
     "preservation type",
     "disturbance",
+    "slope class",
+    "age class",
+]
+
+correct_value_types = [
+    "categorical",
+    "text",
+    "boolean",
+    "datetime",
+    "date",
+    "float",
+    "integer",
 ]
 
 modules = [
