@@ -1,3 +1,4 @@
+from typing import Tuple
 import requests
 from jinja2 import Template
 
@@ -44,7 +45,9 @@ graphdb_configuration_template = Template(
 )
 
 
-def create(graphdb_url: str, repository_id: str, repository_title: str) -> bool:
+def create(
+    graphdb_url: str, repository_id: str, repository_title: str, auth: Tuple[str, str]
+) -> bool:
     """Create a GraphDB repository.
     Returns True on success. Raises a HTTPError if repository already exists.
     """
@@ -55,7 +58,10 @@ def create(graphdb_url: str, repository_id: str, repository_title: str) -> bool:
     )
     headers = {"content-type": "text/turtle"}
     r = requests.put(
-        f"{graphdb_url}/repositories/{repository_id}", data=data, headers=headers
+        f"{graphdb_url}/repositories/{repository_id}",
+        data=data,
+        headers=headers,
+        auth=auth,
     )
     print(r.content)
     r.raise_for_status()
@@ -67,10 +73,11 @@ def insert(
     repository_id: str,
     data: str,
     content_type: str,
+    auth: Tuple[str, str],
     context: str = "null",
 ):
     """Load and overwrite data in a GraphDB repository's named graph.
-    
+
     :data: The actual RDF data, not file path.
     """
     headers = {"content-type": f"{content_type}"}
@@ -79,6 +86,7 @@ def insert(
         params={"context": context},
         data=data,
         headers=headers,
+        auth=auth,
     )
     print(r.text)
     r.raise_for_status()
