@@ -12,7 +12,7 @@ from rdflib import Namespace
 show_table_result = False
 
 # Download Excel files from Google Drive.
-download_excel_files = True
+download_excel_files = False
 
 # Base URI used for all generated vocabularies.
 base_uri = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")

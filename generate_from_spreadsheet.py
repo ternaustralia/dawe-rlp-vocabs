@@ -207,8 +207,10 @@ def get_value_type(str):
         return "tern:Text"
     elif str == "boolean":
         return "tern:Boolean"
-    elif str in ["datetime", "date"]:
+    elif str == "datetime":
         return "tern:DateTime"
+    elif str == "date":
+        return "tern:Date"
 
 
 # create categorical URI
