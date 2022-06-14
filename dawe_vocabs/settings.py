@@ -520,7 +520,7 @@ excel_files = (
         "12g7ERev4ZWOY4PPRrSPM2N8rEmndW6-g",
     ),
     ExcelVocab(
-        "vocab-sources/first-stage/photopoints-attributes-collection",
+        "vocab-sources/first-stage/photopoints-attributes-collection.xlsx",
         "1Jk-YICjZFBVM8P7zugj9HdtGI_35LOj3",
     ),
     ExcelVocab(
