@@ -439,13 +439,6 @@ lut_configs: List[LUTSchema] = [
         "032ed6fa-4c55-4752-b625-3e6b32672444",
         "Fire growth forms",
     ),
-    # LUTSchema(
-    #     "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-species",
-    #     "Fire species codes",
-    #     "A collection of fire species forms and its codes.",
-    #     "e02a2654-206b-4f15-9132-166321efd122",
-    #     "Fire species",
-    # ),
     LUTSchema(
         "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-regeneration-statuses",
         "Fire regeneration statuses codes",
