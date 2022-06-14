@@ -28,7 +28,6 @@ parent_collection_uri = (
 lut_configs: List[LUTSchema] = [
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-tier-2-observation-methods",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-tier-2-observation-methods",
         "Observation method tier 2 codes",
         "A collection of observation tier 2 types and its codes.",
         "f1592e71-cc16-4b81-90c4-06b418a5a766",
@@ -36,7 +35,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fauna-vagina-conditions",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-vagina-conditions",
         "Vaginal condition codes",
         "A collection of vaginal condition types and its codes.",
         "09de3b86-616e-49af-a34c-903cf7dec443",
@@ -44,7 +42,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-voucher-types",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-voucher-types",
         "Voucher type codes",
         "A collection of voucher types and its codes.",
         "a3333793-95bd-47fc-ba90-b8fc65a40456",
@@ -52,7 +49,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fauna-behaviours",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-behaviours",
         "animal behaviour codes",
         "A collection of animal behaviour types and its codes.",
         "1301857c-4e02-4000-966b-a0d0ce60368f",
@@ -60,7 +56,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-habitats",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-habitats",
         "Habitat description codes",
         "A collection of habitat description types and its codes.",
         "c19a0098-1f3f-4bc2-b84d-fdb6d4e24d6f",
@@ -68,7 +63,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-tier-1-observation-methods",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-tier-1-observation-methods",
         "Observation method tier 1 codes",
         "A collection of observation tier 1 types and its codes.",
         "6b6ec6a4-33d2-4515-b988-617d190cfbdb",
@@ -76,7 +70,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-substratum-types",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-substratum-types",
         "Substratum type codes",
         "A collection of substratum types and its codes.",
         "7fc2cae5-74f6-426d-a25d-cbf9423b572a",
@@ -84,7 +77,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-stratum-types",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-stratum-types",
         "Stratum type codes",
         "A collection of stratum types and its codes.",
         "eb6e9a4c-e277-4cb3-9792-9c91311b7e03",
@@ -92,7 +84,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-voucher-conditions",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-voucher-conditions",
         "Voucher condition codes",
         "A collection of voucher condition types and its codes.",
         "600aa845-fe4d-4891-bf39-2e56220022cc",
@@ -101,15 +92,12 @@ lut_configs: List[LUTSchema] = [
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-preservation-types",
         "Preservation type codes",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-preservation-types",
-        "Preservation types codes",
         "A collection of preservation types and its codes.",
         "4e5037f1-97e6-4866-a018-915bcf482261",
         "preservation type",
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-tier-2-microhabitats",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-tier-2-microhabitats",
         "Microhabitat tier 2 codes",
         "A collection of microhabitat tier 2 types and its codes.",
         "48f0bb5d-5451-42a1-ad60-7ddca485412d",
@@ -117,7 +105,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-tier-1-microhabitats",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-tier-1-microhabitats",
         "Microhabitat tier 1 codes",
         "A collection of microhabitat tier 1 types and its codes.",
         "66034d49-50d7-4042-a252-c2bd249d2a4b",
@@ -125,7 +112,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-vegetation-types",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-vegetation-types",
         "Vegetation type codes",
         "A collection of vegetation types and its codes.",
         "2f585fb4-996c-483c-9f9f-65e5bbd171b3",
@@ -133,7 +119,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fauna-breeding-codes",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-breeding-codes",
         "Breeding status codes",
         "A collection of breeding status types and its codes.",
         "b7dc10d2-c0aa-46b3-94da-685cd0a723e4",
@@ -141,7 +126,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fauna-age-classes",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-age-classes",
         "Age class codes",
         "A collection of age class types and its codes.",
         "0e2641c3-0d7e-4d94-8cd7-02c21d564630",
@@ -149,7 +133,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-phenologies",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-phenologies",
         "Phenology codes",
         "A colleciton of phenology types and its codes",
         "110398ca-32fa-4f69-b7bb-5aa69d5a5004",
@@ -157,7 +140,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fauna-pouch-conditions",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-pouch-conditions",
         "Animal pouch condition codes",
         "A collection of animal pouch condition types and its codes.",
         "4fab0c1c-c127-474e-8f5e-4afe45fec0ed",
@@ -165,7 +147,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fauna-teats-conditions",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-teats-conditions",
         "Animal teats condition codes",
         "A collection of animal teats condition types and its codes.",
         "d2665d51-db1d-48ad-a80d-48593d280b76",
@@ -173,7 +154,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fauna-testes-conditions",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-testes-conditions",
         "Animal testes condition codes",
         "A collection of animal testes condition types and its codes.",
         "c5d3877d-1a83-4a87-9bdd-05f77c516df6",
@@ -181,7 +161,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fauna-genders",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-sexes",
         "Animal sex codes",
         "A collection of animal sex types and its codes.",
         "fcc3a1e1-3e35-4a4f-bd44-eface035025c",
@@ -189,7 +168,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-specimen-locations",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-specimen-locations",
         "Specimen location codes",
         "A collection of specimen location types and its codes.",
         "1df5afd1-475a-435a-94c5-143b707aab10",
@@ -197,7 +175,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-identification-methods",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-identification-methods",
         "Method of identification codes",
         "A collection of method of identification types and its codes.",
         "43c7a4be-72f3-4007-9777-7e7aa2d8da25",
@@ -205,7 +182,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-identification-sources",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-identification-sources",
         "Source of identification codes",
         "A collection of source of identification types and its codes.",
         "a36600ac-b9ed-44d1-b199-85ee1d802e58",
@@ -213,7 +189,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-taxa-types",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-taxa-types",
         "Taxa type codes",
         "A collection of taxa types and its codes.",
         "7ea12fed-6b87-4c20-9ab4-600b32ce15ec",
@@ -221,7 +196,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-cover-codes",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-cover-codes",
         "Cover class codes",
         "A collection of cover class types and its codes.",
         "6aaa330c-3d60-419b-a29b-a2dbc6d67928",
@@ -229,7 +203,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-landform-patterns",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-landform-patterns",
         "Landform pattern codes",
         "A collection of landform pattern types and its codes.",
         "19d91a7a-2733-4b84-9d2b-4bda4808c003",
@@ -237,7 +210,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-landform-elements",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-landform-elements",
         "Landform element codes",
         "A collection of landform element types and its codes.",
         "c1a58967-cb12-4c2c-a7ca-9cee2589919c",
@@ -245,7 +217,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-plot-slopes",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-plot-slopes",
         "Plot slope codes",
         "A collection of plot slope types and its codes.",
         "d893e669-c530-4bc3-a057-a5799ffcb5db",
@@ -253,7 +224,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-soils-surface-strew-sizes",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-surface-strew-sizes",
         "Soil surface strew size codes",
         "A collection of soil surface strew size types and its codes.",
         "3b25ce0f-9eb7-4d2d-97ce-143858cfd4d4",
@@ -261,7 +231,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-soils-lithologies",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-lithologies",
         "Soil lithology codes",
         "A collection of soil lithology types and its codes.",
         "1d50eb79-685f-45ea-84b4-627154eddede",
@@ -269,7 +238,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-veg-structural-formations",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-structural-formations",
         "Vegetation structural formation codes",
         "A collection of vegetation structural formation types and its codes.",
         "6e9baf51-566e-4a5d-93c4-a6e097dc364d",
@@ -277,7 +245,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-climatic-conditions",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-climatic-conditions",
         "Climatic condition codes",
         "A collection of climatic condition types and its codes.",
         "2ebfee89-92db-44b3-bb89-06dd92798ae6",
@@ -285,7 +252,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-veg-growth-stages",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-stages",
         "Vegetation growth stage codes",
         "A collection of vegetation growth stage types and its codes.",
         "89c02383-fb5e-4acd-b248-902a2d579170",
@@ -293,7 +259,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fire-histories",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-histories",
         "Fire history codes",
         "A collection of fire history types and its codes.",
         "6e9d2f51-ce64-4c67-8391-d14a8bf96b6b",
@@ -301,7 +266,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-disturbances",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-disturbances",
         "Disturbance type codes",
         "A collection of disturbance types and its codes.",
         "f5a470e8-d29f-4ff6-b50d-529b0444dbe4",
@@ -309,7 +273,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-veg-growth-forms",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-forms",
         "Vegetation growth form codes",
         "A collection of vegetation growth form types and its codes.",
         "d0fc07a7-3ec9-45ed-8850-885a32828d3c",
@@ -317,7 +280,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-veg-height-classes",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-height-classes",
         "Vegetation height class codes",
         "A collection of vegetation height class types and its codes.",
         "b1b05cd1-3b85-4639-a6af-799a34d88d43",
@@ -325,7 +287,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-soils-substrates",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-substrates",
         "Soil substrate codes",
         "A collection of soil substrate types and its codes.",
         "b061d7db-a608-4062-96d4-b367d6d9a792",
@@ -333,7 +294,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-basal-tree-trunk-types",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-trunk-types",
         "Basal tree trunk types",
         "A collection of basal tree trunk types and its codes.",
         "9282400b-56c3-49a9-bb82-87ef74914690",
@@ -341,7 +301,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-basal-tree-statuses",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-statuses",
         "Basal tree statuses",
         "A collection of basal tree statuses and its codes.",
         "f06740e7-2857-415a-a6dc-72dbbba7a88c",
@@ -349,7 +308,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-basal-area-factors",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-area-factors",
         "Basal area factors",
         "A collection of basal area factors and its codes.",
         "13d010d7-91b7-4621-b80a-70cb4324ddf5",
@@ -357,7 +315,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-basal-sweep-sampling-points",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-sweep-sampling-points",
         "Basal sweep sampling points codes",
         "A collection of basal sweep sampling points and its codes.",
         "96d41885-70e5-44c1-bafc-73027f47941b",
@@ -365,14 +322,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-cwd-sampling-survey-methods",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-dbh-instruments",
-        "Basal DBH instruments codes",
-        "A collection of basal DBH instruments and its codes.",
-        "b18974ea-7395-4c14-9d9f-3c1fa6b2c8a9",
-        "basal DBH instruments",
-    ),
-    LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-sampling-survey-methods",
         "Coarse Woody Debris sampling survey methods codes",
         "A collection of Coarse Woody Debris sampling survey methods and its codes.",
         "bd41602d-36df-435c-870c-496dfd523ec1",
@@ -380,7 +329,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-cwd-transect-numbers",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-transect-numbers",
         "Coarse Woody Debris transect numbers codes",
         "A collection of Coarse Woody Debris transect numbers and its codes.",
         "c117bd06-9603-400d-a20d-29f56ffa78cc",
@@ -388,7 +336,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-cwd-decay-classes",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-decay-classes",
         "Coarse Woody Debris decay classes codes",
         "A collection of Coarse Woody Debris decay classes and its codes.",
         "b5180d8a-75b6-4bca-9413-0e507e910387",
@@ -396,21 +343,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-condition-growth-stage-trees",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-directions",
-        "Coarse Woody Debris transect orientations codes",
-        "A collection of Coarse Woody Debris transect orientations and its codes.",
-        "232d5fdd-c15f-4a84-865e-46ea20b82ff1",
-        "Coarse Woody Debris transect orientations",
-    ),
-    LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-plot-dimensions",
-        "Coarse Woody Debris plot dimensions codes",
-        "A collection of Coarse Woody Debris plot dimensions and its codes.",
-        "05c7a145-a675-4753-88d1-d86fa19dac3b",
-        "Coarse Woody Debris plot dimensions",
-    ),
-    LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-growth-stage-trees",
         "Condition growth stage trees codes",
         "A collection of condition growth stage trees and its codes.",
         "8af52d41-016c-4d53-85ca-2357c3a1468d",
@@ -418,7 +350,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-condition-growth-stage-shrubs",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-growth-stage-shrubs",
         "Condition growth stage shrubs codes",
         "A collection of condition growth stage shrubs and its codes.",
         "b7066d4c-2d7b-4c1b-a8f2-401fd243ac3f",
@@ -426,7 +357,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-condition-life-stages",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-life-stages",
         "Condition life stages codes",
         "A collection of condition life stages and its codes.",
         "5f82c583-167b-4ed2-b25e-4d67decb3f2d",
@@ -434,7 +364,6 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-condition-vegetation-diameter-classes",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-vegetation-diameter-classes",
         "Condition vegetation diameter classes codes",
         "A collection of condition vegetation diameter classes and its codes.",
         "fe0b8990-dc4c-4fc7-85e8-be08da5721a0",
@@ -442,31 +371,13 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-condition-vertebrate-pest-types",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-vertebrate-pest-types",
         "Condition vertebrate pest types codes",
         "A collection of condition vertebrate pest types and its codes.",
         "1eaaabf9-57a9-4c95-9cf3-58c20263b2a0",
         "Condition vertebrate pest",
-        "579449ad-4cea-4272-afa3-67f207941fb1",
-        "Condition vertebrate pest types",
-    ),
-    LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-vegetation-healths",
-        "Condition vegetation healths codes",
-        "A collection of condition vegetation healths and its codes.",
-        "b8379ff2-60dc-44cc-bf44-5ce7ed4bdd2f",
-        "Condition vegetation healths",
-    ),
-    LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-vertebrate-pest-presence-evidences",
-        "Condition vertebrate pest presence evidences codes",
-        "A collection of condition vertebrate pest presence evidences and its codes.",
-        "69638c57-1c38-47e1-8bae-c821411c3a30",
-        "Condition veterbrate pest presence evidences",
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fire-plot-burned-statuses",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-plot-burned-statuses",
         "Fire plot burned statuses codes",
         "A collection of fire plot burned statuses and its codes.",
         "5662a7dd-c1da-4659-8290-a1e6e42c879f",
@@ -474,55 +385,17 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fire-substrate-types",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-substrates",
-        "Substrate types codes",
-        "A collection of substrate types and its codes.",
-        "0b89087f-345a-4e8d-8f84-38d5af499f10",
-        "Substrate",
-    ),
-    LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-substrate-types",
         "Fire substrate types codes",
         "A collection of fire substrate types and its codes.",
         "0b89087f-345a-4e8d-8f84-38d5af499f10",
-        "c7a0692c-113c-4593-ae04-5e49aba70fdf",
         "Fire substrate",
     ),
     LUTSchema(
         "https://dev.core-api.paratoo.tern.org.au/lut-fire-growth-forms",
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-growth-forms",
         "Fire growth forms codes",
         "A collection of fire growth forms and its codes.",
         "032ed6fa-4c55-4752-b625-3e6b32672444",
         "Fire growth forms",
-    ),
-    # LUTSchema(
-    #     "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-species",
-    #     "Fire species codes",
-    #     "A collection of fire species forms and its codes.",
-    #     "e02a2654-206b-4f15-9132-166321efd122",
-    #     "Fire species",
-    # ),
-    LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-regeneration-statuses",
-        "Fire regeneration statuses codes",
-        "A collection of fire regeneration statuses and its codes.",
-        "a1b8fc00-5d5f-40f8-a7e1-0b09d4bbba4b",
-        "Fire regeneration statuses",
-    ),
-    LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-plant-alive-statuses",
-        "Fire plant alive statuses codes",
-        "A collection of fire plant alive statuses and its codes.",
-        "29d1081d-9cde-42ab-b59a-6bfc8bdda01d",
-        "Fire plant alive statuses",
-    ),
-    LUTSchema(
-        "http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-in-canopy-sky-statuses",
-        "Fire in-canopy-sky statuses codes",
-        "A collection of fire in-canopy-sky statuses and its codes.",
-        "15a03c34-142b-469c-9ec5-0d516fd6c1e7",
-        "Fire in-canopy-sky statuses",
     ),
 ]
 
