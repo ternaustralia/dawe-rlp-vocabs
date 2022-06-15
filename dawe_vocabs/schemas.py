@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 
-@dataclass
+@dataclass(eq=True, frozen=True)
 class LUTSchema:
     """Config details used to generate categorical value collection."""
 
@@ -12,7 +12,7 @@ class LUTSchema:
     uuid_namespace: str
 
 
-@dataclass
+@dataclass(eq=True, frozen=True)
 class ExcelVocab:
     """Excel vocab schema."""
 
