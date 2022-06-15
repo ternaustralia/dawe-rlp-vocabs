@@ -43,7 +43,7 @@ lut_configs: List[LUTSchema] = [
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-pouch-conditions",
         label="Animal pouch condition codes",
-        description="A collection of animal pouch condition types and its " "codes.",
+        description="A collection of animal pouch condition types and its codes.",
         collection_uuid="4fab0c1c-c127-474e-8f5e-4afe45fec0ed",
         uuid_namespace="animal pouch condition",
     ),
