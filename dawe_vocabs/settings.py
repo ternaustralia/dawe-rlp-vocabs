@@ -1321,10 +1321,10 @@ lut_configs: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-tecs",
-        label="Tecs codes",
+        label="Threatened ecological communities codes",
         description="A collection of tecs and its codes.",
         collection_uuid="0e718c57-74b4-441c-bf2d-3bfeff78b131",
-        uuid_namespace="tecs",
+        uuid_namespace="threatened ecological communities",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-temperature-units",
