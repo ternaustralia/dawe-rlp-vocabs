@@ -10,11 +10,12 @@ done directly in the generated source files.
 """
 
 
+import re
 from pathlib import Path
 
 import requests
-from rdflib import Graph, URIRef, Namespace
-from rdflib.namespace import RDFS, SKOS, RDF
+from rdflib import Graph, URIRef, Namespace, Literal
+from rdflib.namespace import RDFS, SKOS, RDF, SDO
 
 from dawe_vocabs import settings
 from dawe_vocabs.vocabs import categorical_values_collection
@@ -24,6 +25,8 @@ SPARQL_ENDPOINT = "https://graphdb.tern.org.au/repositories/dawe_vocabs_core"
 REG = Namespace("http://purl.org/linked-data/registry/")
 NRM = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
 vocab_files_dir = Path("vocab_files")
+DASHES = re.compile(r"-+")
+VOCAB_FILES_DIR_GITHUB = "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/"
 
 
 def fetch_remote_cbd(uri: str, graph: Graph):
@@ -90,6 +93,10 @@ def serialize(path: Path, graph: Graph):
 
     add_is_defined_by(graph)
 
+    subjects = graph.subjects()
+    for subject in subjects:
+        graph.add((subject, SDO.url, Literal(VOCAB_FILES_DIR_GITHUB + str(path))))
+
     graph.serialize(path, format="longturtle")
 
 
@@ -112,13 +119,15 @@ def create_feature_types():
 
 
 def clean_label(label: str):
-    return (
+    label = (
         label.replace(" Observable Properties", "")
         .replace(" Properties", "")
         .lower()
         .replace(" ", "-")
         .replace("/", "-")
     )
+    label = DASHES.sub("-", label)
+    return label
 
 
 def create_instance(uri: str, path: Path, graph: Graph, filter_by: str):
@@ -270,6 +279,10 @@ def create_concepts(uri: str, path: Path, graph: Graph):
     for row in results:
         uri = row["uri"]
         label = graph.value(uri, SKOS.prefLabel)
+        orig_label = label
+        label = label.strip()
+        graph.remove((uri, SKOS.prefLabel, orig_label))
+        graph.add((uri, SKOS.prefLabel, Literal(label)))
         label = clean_label(label)
         serialize(path / f"{label}.ttl", graph.cbd(uri))
 
