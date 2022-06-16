@@ -1,6 +1,7 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/1b1c91ed-4a25-4ba6-9351-4048a308f936>
@@ -11,6 +12,7 @@ decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "The dimensions of the plot selected when conducting a CWD survey. Plot dimensions can be a 50 x 50 m plot (if there are a minimum of 40 pieces of CWD); or a 100 x 100 m plot (if there are less than 40 pieces). " ;
     skos:prefLabel "plot dimension" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/attribute_concepts/plot-dimension.ttl" ;
     ns1:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/05c7a145-a675-4753-88d1-d86fa19dac3b> ;
     ns1:hasFeatureType <http://linked.data.gov.au/def/tern-cv/e1c7c434-1321-4601-9079-e837b7ffc293> ;
     ns1:valueType ns1:IRI ;
