@@ -80,40 +80,40 @@ if __name__ == "__main__":
     lut_configs = settings.lut_configs
 
     # extend lut_configs in settings with new categorical APIs
-    xls = pd.ExcelFile("spreadsheet.xlsx")
-    mapping_df = pd.read_excel(xls, "Mapping")
-    mapping_df = mapping_df.reset_index()
-    names = []
-    for i in settings.modules:
-        names.append(i.name)
-    for index, row in mapping_df.iterrows():
-        categorical_api = (
-            row["categorical_lut_api_endpoint"].strip()
-            if isinstance(row["categorical_lut_api_endpoint"], str)
-            else row["categorical_lut_api_endpoint"]
-        )
-        if row["observable_property_in_protocol"] is NaN:
-            label = row["attribute_in_protocol"]
-        else:
-            label = row["observable_property_in_protocol"]
-        if (
-            (row["modules"] in names)
-            and (row["modules"] not in settings.categorical_apis_added_modules)
-            and (categorical_api is not NaN)
-            and (label not in settings.deleted_parameters)
-        ):
-            categorical_api_label = " ".join(
-                str(categorical_api).split("/")[-1].split("-")[1:]
-            )
-            lut_configs.append(
-                LUTSchema(
-                    categorical_api,
-                    categorical_api_label.capitalize() + " codes",
-                    "A collection of " + categorical_api_label + " and its codes.",
-                    str(row["categorical_uuid"]),
-                    categorical_api_label.capitalize(),
-                )
-            )
+    # xls = pd.ExcelFile("spreadsheet.xlsx")
+    # mapping_df = pd.read_excel(xls, "Mapping")
+    # mapping_df = mapping_df.reset_index()
+    # names = []
+    # for i in settings.modules:
+    #     names.append(i.name)
+    # for index, row in mapping_df.iterrows():
+    #     categorical_api = (
+    #         row["categorical_lut_api_endpoint"].strip()
+    #         if isinstance(row["categorical_lut_api_endpoint"], str)
+    #         else row["categorical_lut_api_endpoint"]
+    #     )
+    #     if row["observable_property_in_protocol"] is NaN:
+    #         label = row["attribute_in_protocol"]
+    #     else:
+    #         label = row["observable_property_in_protocol"]
+    #     if (
+    #         (row["modules"] in names)
+    #         and (row["modules"] not in settings.categorical_apis_added_modules)
+    #         and (categorical_api is not NaN)
+    #         and (label not in settings.deleted_parameters)
+    #     ):
+    #         categorical_api_label = " ".join(
+    #             str(categorical_api).split("/")[-1].split("-")[1:]
+    #         )
+    #         lut_configs.append(
+    #             LUTSchema(
+    #                 categorical_api,
+    #                 categorical_api_label.capitalize() + " codes",
+    #                 "A collection of " + categorical_api_label + " and its codes.",
+    #                 str(row["categorical_uuid"]),
+    #                 categorical_api_label.capitalize(),
+    #             )
+    #         )
 
     # Generate look up tables to categorical values.
     for lut_config in lut_configs:
