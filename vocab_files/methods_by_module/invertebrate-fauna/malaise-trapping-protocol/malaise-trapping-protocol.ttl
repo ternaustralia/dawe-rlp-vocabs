@@ -1,0 +1,708 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/4a2c4309-da43-4ad4-b1eb-637d2e70580d>
+    a skos:Concept ;
+    dcterms:description """<p>
+  This protocol involves the use of a single Townes style malaise trap within
+  the fauna plot. The malaise trap is positioned at a chosen location within the
+  plot aimed at maximizing potential captures. The trap is left in-situ for five
+  (minimum) to seven (recommended) consecutive nights. Once a trap is in place,
+  it can be left unattended for up to seven days before the collection bottle
+  needs changing (GMP 2019; D'Souza et al. 2021). Trapping can be undertaken for
+  a longer consecutive period or across different seasons, to build a more
+  comprehensive picture of invertebrate activity at the site. If trapping is
+  undertaken as part of the GMP, the trap is left in-situ for a full year, with
+  the collection bottle replaced every seven days. The protocol instructions
+  incorporate the requirements of the GMP.
+</p>
+<p>
+  Trapping is ideally timed during periods of peak insect activity (i.e., during
+  warm, sunny weather). It is important that repeat sampling is undertaken at
+  the same location, at the same time of year, and during similar weather
+  conditions. The results represent a snapshot of the insect community present
+  within the habitat type, at a particular time of year. Sampling can be
+  undertaken at more than one time throughout the year (GMP 2019; D'Souza et al.
+  2021).
+</p>""" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Malaise trapping protocol" ;
+    ns1:equipment """<p>Trap install and set-up</p>
+<ul>
+  <li>
+    <p>Personnel - one person required to set-up, check and remove trap</p>
+  </li>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>
+      Trimble® R1, or mobile device (above) with in-built GPS, or stand-alone
+      GPS unit.
+    </p>
+  </li>
+  <li>
+    <p>
+      Townes style malaise traps – each trap includes 1 Short Support Pole (300
+      cm), 1 Long Support Pole (450 cm), 1 Bottle Connecting Ring, 1 collection
+      bottle (500 ml), 4 Guy Ropes (3 m), 12 Tent Pegs, Carrying bag (total
+      weight 2.3 kg)
+    </p>
+  </li>
+  <li>
+    <p>
+      1 x 2.4 m and 1 x 1.8 m star dropper (to provided added protection to trap
+      in windy conditions) (optional)
+    </p>
+  </li>
+  <li>
+    <p>post driver to install star droppers (optional)</p>
+  </li>
+  <li>
+    <p>
+      95% ethanol or undiluted propylene glycol as killing agent/preserving
+      fluid (allow 400 ml per trap per week)
+    </p>
+  </li>
+  <li>
+    <p>
+      Additional 500 ml collection bottles with external label affixed (allow
+      one per trap per week)
+    </p>
+  </li>
+  <li>
+    <p>Pencil</p>
+  </li>
+  <li>
+    <p>Flagging tape.</p>
+  </li>
+</ul>
+<p>Sample collection</p>
+<ul>
+  <li>
+    <p>
+      Spare collection bottles with external label (allow one per trap per every
+      week if it is in-situ)
+    </p>
+  </li>
+  <li>
+    <p>
+      Thermal printed waterproof labels with barcode and duplicate barcode
+      stickers
+    </p>
+  </li>
+  <li>
+    <p>Soft lead pencil and scissors</p>
+  </li>
+  <li>
+    <p>Ethanol waster container</p>
+  </li>
+  <li>
+    <p>Permanent marker pen</p>
+  </li>
+  <li>
+    <p>Snap-lock bags</p>
+  </li>
+  <li>
+    <p>Freezer (preferred) or refrigerator for sample storage.</p>
+  </li>
+</ul>
+<p>Specimen storage/sorting (post field)</p>
+<ul>
+  <li>
+    <p>Additional screw top sample containers</p>
+  </li>
+  <li>
+    <p>
+      Thermal printed waterproof barcode label and duplicate barcode stickers
+    </p>
+  </li>
+  <li>
+    <p>Soft lead pencil and scissors</p>
+  </li>
+  <li>
+    <p>Additional 95% ethanol or undiluted propylene glycol</p>
+  </li>
+  <li>
+    <p>1 x Decanting lid</p>
+  </li>
+  <li>
+    <p>3 x nylon mesh filters</p>
+  </li>
+  <li>
+    <p>Sorting tray</p>
+  </li>
+  <li>
+    <p>Sieve</p>
+  </li>
+  <li>
+    <p>Tweezers.</p>
+  </li>
+</ul>""" ;
+    ns1:instructions """<p>Pre-field</p>
+<ol>
+  <li>
+    <p>
+      Register to be involved in the Global Malaise Trap Program (GMP)
+      (optional). A malaise trap and materials may be provided through this
+      program. Refer to http://globalmalaise.org to determine suitability.
+    </p>
+  </li>
+</ol>
+<ol start="2">
+  <li>
+    <p>
+      Ensure the required permissions are obtained (from local authorities,
+      property owners, etc.) for trapping and specimen collection.
+    </p>
+  </li>
+  <li>
+    <p>
+      Check the weather forecast over the proposed duration of trapping and
+      determine suitability (avoid strong winds as this could damage the traps).
+    </p>
+  </li>
+  <li>
+    <p>
+      Begin the field survey on a day of the week you can consistently return to
+      for the duration of the sampling period.
+    </p>
+  </li>
+  <li>
+    <p>
+      Pre-fill a 500 ml collection bottle (one per trap) with 400 ml of
+      undiluted propylene glycol or 95% ethanol, and screw lids on tightly. Do
+      not substitute with other kinds of alcohol or other preservatives. Keep
+      upright. Note: this should only be done within 24 hours of setting the
+      trap.
+    </p>
+  </li>
+</ol>
+<p>Field</p>
+<ol start="6">
+  <li>
+    <p>
+      If trapping is done as part of the GMP, follow the GMP standard protocol.
+    </p>
+  </li>
+  <li>
+    <p>
+      Carry the Mobile device, Trimble® R1, malaise trap and equipment to
+      install the trap, to the fauna plot, avoiding walking through the
+      vegetation plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select a suitable location for the malaise trap within the fauna plot.
+      Ideally, the location is reasonably flat with low or no undergrowth (at
+      least 2 m x 1.5 m). Avoid areas of potential wildlife or human
+      disturbance/vandalism. To maximise the catch, select a probable insect
+      flight path (e.g. natural corridor, ridge, gully, forest edges, clearings,
+      elevated sites, gaps between bushes, semi-enclosed pathway). In flat, open
+      systems where there is no obvious corridor, select any suitable location
+      within the plot; in such situations, captures may be maximised by placing
+      the trap on the northern side of shrubs (if any are present).
+    </p>
+  </li>
+  <li>
+    <p>Assemble and position the malaise trap:</p>
+  </li>
+</ol>
+<ul>
+  <li>
+    <p>Assemble poles. Make sure segments are completely seated in joints.</p>
+  </li>
+  <li>
+    <p>
+      Push ends of longer pole into pockets of taller end of malaise trap. Be
+      careful not to over bend the pole.
+    </p>
+  </li>
+  <li>
+    <p>Clip hooks around pole. Take care to maintain gentle curve in pole.</p>
+  </li>
+  <li>
+    <p>Repeat steps with shorter pole and lower end of malaise trap.</p>
+  </li>
+  <li>
+    <p>
+      Position the trap so that the vertical panels are in contact with the
+      ground, the vertical panel of netting (i.e. the interception area) that
+      the insects hit is oriented roughly perpendicular to the most likely
+      flight path, and the head of the trap (the highest point of the trap with
+      the collecting bottle) toward the end which points most toward the sun in
+      the latter half of the day.
+    </p>
+  </li>
+  <li>
+    <p>Peg the bottom edges so they are touching the ground.</p>
+  </li>
+  <li>
+    <p>
+      Stake out guy ropes from the poles of the top of both ends of malaise trap
+      to make it stand taut. Additional guy points can be used if considered
+      necessary.
+    </p>
+  </li>
+  <li>
+    <p>
+      Stake base of malaise trap, especially at ends of poles, so the trap is
+      taut.
+    </p>
+  </li>
+  <li>
+    <p>
+      When possible, tie the front and/or back ropes to nearby trees for added
+      support.
+    </p>
+  </li>
+  <li>
+    <p>
+      Also, if available, attach the trap poles to a 6- to 8-foot dropper at its
+      highest points to protect the trap against falling over from high winds,
+      especially if it is placed in an exposed area.
+    </p>
+  </li>
+  <li>
+    <p>
+      For further assembly instructions visit:
+      https://www.youtube.com/watch?v=sU9rW71f5ZA&amp;t=9s
+    </p>
+  </li>
+  <li>
+    <p>
+      Using pencil, write the Plot ID, Trap ID and start date on a label on the
+      outside of the collection bottle.
+    </p>
+  </li>
+  <li>
+    <p>
+      Unscrew the lid and tightly affix the prepared 500 ml collection bottle
+      (containing 400 ml 95% ethanol or undiluted propylene glycol) to the trap
+      head; tie the white ropes on the trap around the bottle to secure it.
+    </p>
+  </li>
+</ul>
+<ol start="10">
+  <li>
+    <p>
+      Turn on Trimble ® R1, open the Invertebrate fauna module from the main
+      page of the App and select the Malaise trapping protocol
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the Fauna Plot ID (nearest plot should appear at top of the
+      drop-down list).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the Observer, being the person setting up the trap (auto-filled
+      based on login details, drop-down options based on project personnel,
+      manual entry override if the observer is not on the list).
+    </p>
+  </li>
+  <li>
+    <p>Select Trap set-up. trap</p>
+  </li>
+</ol>
+<ol start="14">
+  <li>
+    <p>
+      Select Add trap. A unique sequential trap ID will be automatically
+      assigned with the plot ID as a prefix. Click to override.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Open trap. The Date and Time the trap is set-up will be
+      auto-generated. Click to override if necessary (e.g. if trap is not open
+      at that time). Press Save.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the Direction of the head of the trap from the drop-down list (N,
+      NE, E, SE, S, SE, W, NW). The default entry is N.
+    </p>
+  </li>
+  <li>
+    <p>Check the box if a Moth excluder is used.</p>
+  </li>
+  <li>
+    <p>
+      Stand as close as possible to the trap and select Record location. Select
+      location source from options on the screen (Trimble® R1, GPS via mobile
+      device, or stand alone GPS). Trimble® R1 is the preferred method for
+      location accuracy. Click co-ordinates to manually override.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Add photo and take photo looking towards the head of the trap
+      and/or down the flyway/corridor, showing the surrounding habitat (e.g.
+      stand approximately 2 m from trap). Enter a text description to accompany
+      the photo, e.g. ‘malaise trap in gully’.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the Direction of the photo from the drop-down list (N, NE, E, SE,
+      S, SE, W, NW).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Add photo and take a photo looking towards the side of the trap
+      and/or perpendicular to the flyway/corridor, showing the surrounding
+      habitat (standing approximately 2 m from trap). Enter a text description
+      to accompany the photo.
+    </p>
+  </li>
+  <li>
+    <p>Record the direction of the photo from the drop-down list.</p>
+  </li>
+  <li>
+    <p>Additional photos can be taken if desired.</p>
+  </li>
+  <li>
+    <p>
+      Record a Surrounding habitat description, e.g. nearest vegetation away
+      from the light includes X, X m away.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the Weather (select a category for wind, rain, temperature,
+      sun/cloud, from the drop-down lists). Quantitative weather data can be
+      later uploaded if a weather station is in use.
+    </p>
+  </li>
+  <li>
+    <p>Record Comments (optional, free text).</p>
+  </li>
+  <li>
+    <p>Repeat Steps 14 to 26 if installing additional malaise traps.</p>
+  </li>
+</ol>
+<p>Checking traps/collecting samples/removing traps</p>
+<ol start="28">
+  <li>
+    <p>
+      Check the traps during the trapping period (especially at the start of a
+      monitoring program, and after strong winds or heavy rain) to ensure they
+      are still in place and to monitor for and repair damage. If extreme
+      weather is expected it may be necessary to remove the trap. Check the
+      collection bottles. If using ethanol as the preserving fluid, evaporation
+      can be an issue. If necessary, top-up the sample bottles to the 400 ml
+      mark.
+    </p>
+  </li>
+  <li>
+    <p>
+      Malaise trapping can result in mass samples that fill the collection
+      bottles before the end of the trapping period. If collection bottles are
+      full with specimens, unscrew and remove the bottle and replace with a new
+      bottle pre-filled with 400 ml of preserving fluid. Go to Step 32.
+    </p>
+  </li>
+  <li>
+    <p>
+      At the end of the 7 day trapping period, remove the collection bottle and
+      trap. Go to Step 32.
+    </p>
+  </li>
+  <li>
+    <p>
+      For longer-term trapping, remove the catch weekly, on the same day each
+      week. Unscrew the collection bottle and replace with a new bottle
+      pre-filled with 400 ml of preserving fluid.
+    </p>
+  </li>
+  <li>
+    <p>
+      Screw on the lid of the removed collection bottle tightly and keep the
+      bottle upright. Label the collection bottle with the Plot ID, Trap ID,
+      Observer and collection start and end date.
+    </p>
+  </li>
+  <li>
+    <p>
+      Open the App, click on Invertebrate fauna module, Malaise trap protocol,
+      and select Add sample. Select the correct Plot ID and Trap ID. The
+      time/date of sample collection will be automatically recorded.
+    </p>
+  </li>
+  <li>
+    <p>Record:</p>
+  </li>
+</ol>
+<ul>
+  <li>
+    <p>Voucher type (drop-down, default is liquid preservation)</p>
+  </li>
+  <li>
+    <p>Preservative type (drop-down, default I s propylene glycol)</p>
+  </li>
+  <li>
+    <p>Preservative concentration (drop-down, default is undiluted).</p>
+  </li>
+  <li>
+    <p>
+      Note: Check the information is correct and press Save. Repeat from Step 23
+      if collecting different samples (e.g. some dry, some wet) from the same
+      trap.
+    </p>
+  </li>
+</ul>
+<ol start="35">
+  <li>
+    <p>
+      If the collection bottle is replaced, select Replace collection bottle.
+      Select the correct Plot ID/Trap ID (default to last entry). The time/date
+      of the new sample collection will be automatically recorded. Check correct
+      and press Save.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the Weather (wind, rain, temperature, sun/cloud, select category
+      from drop-down list).
+    </p>
+  </li>
+  <li>
+    <p>
+      When the trap is removed, select Remove trap. Select the correct Plot
+      ID/Trap ID. The duration of trapping will be automatically recorded based
+      on the start date/time and trap removal date/time (manually adjust if
+      necessary). Add any relevant Comments (free text, e.g. trap is damaged).
+      Check the information is correct and press Save.
+    </p>
+  </li>
+  <li>
+    <p>
+      Return to the field vehicle or an area where all the equipment is
+      available.
+    </p>
+  </li>
+  <li>
+    <p>Set up the samples, labels and barcodes.</p>
+  </li>
+  <li>
+    <p>Open the App. Select Malaise trap protocol and select Scan barcode.</p>
+  </li>
+  <li>
+    <p>
+      Unscrew the lid of the first collection bottle. Decant into a sampling
+      container suitable for long-term storage. Take a small thermal printed
+      barcode label and scan using the app. Select the Plot IDand Trap ID for
+      the sample from the drop-down list. Select Save record. The barcode ID
+      will now be linked to the record for that trap.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Add photo and take a photo looking down (into the sample container
+      with the lid off), with the barcode placed alongside the container (not in
+      the container), so it is visible in the photo. Provide a brief description
+      for each photo (default descriptions available from drop-down list or
+      enter free text description). Multiple photos can be taken.
+    </p>
+  </li>
+  <li>
+    <p>
+      Place the small thermal barcode label into the preservative fluid in the
+      sample container.
+    </p>
+  </li>
+  <li>
+    <p>
+      Manually write the following information with lead pencil (do not use pen
+      or marking pen as the ink will dissolve), in approximately size 4 font on
+      the waterproof paper label: Project name, Plot ID, Trap ID, date and
+      collector. Place into the sampling container.
+    </p>
+  </li>
+  <li>
+    <p>
+      Top up the sample containers with preserving fluid (undiluted propylene
+      glycol or 95% ethanol) if necessary, to prevent fluid splashing around and
+      damaging the samples in the container. Return the lid and ensure it is
+      screwed on tightly. For additional measure, place a small sticker barcode
+      (duplicate of the code in the sample) on the side of the sample container
+      – this enables the sample information to be readily retrieved without
+      having to open the container and remove the label from the fluid for
+      scanning.
+    </p>
+  </li>
+  <li>
+    <p>
+      Store the containers in a cool location out of direct light. Do not leave
+      in hot vehicle or in sun as this degrades the sample for DNA analysis.
+    </p>
+  </li>
+  <li>
+    <p>
+      Any excess/used propylene glycol should be stored appropriately and
+      discarded in an environmentally safe way in line with permit and site
+      requirements (ideally discarded off-site).
+    </p>
+  </li>
+</ol>
+<p>App Figure. Malaise trapping App screen mock up.
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/malaise-trapping-app-screen.png"
+            alt="Malaise trapping App screen mock up"
+            widteh="800"
+            height="880"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+<p>Post field</p>
+<ol start="48">
+  <li>
+    <p>
+      Ideally, place the samples in a standard household freezer (i.e. -20°C)
+      for storage. Ensure that the entire insect mass is fully submerged in
+      ethanol before storage; add fresh 95% ethanol or undiluted propylene
+      glycol to the sample bottle as needed. If a freezer is unavailable, store
+      the samples in a refrigerator or cool, dark location. This is critical to
+      preserve the DNA in the samples; improper storage (e.g. under constant
+      light, heat or variable temperatures) will result in DNA degradation
+      rendering samples unusable for DNA sequencing.
+    </p>
+  </li>
+  <li>
+    <p>
+      Refer to Section 13 for post-field sample preservation and processing
+      instructions.
+    </p>
+  </li>
+  <li>
+    <p>
+      If posting samples for analysis/identification as part of the GMP, decant
+      off most of the ethanol from each bottle using the decanting lid and nylon
+      mesh filters provided. Thoroughly rinse the filter between samples. There
+      is a 30 ml ethanol maximum per container for shipment and a maximum total
+      of 1 L ethanol per package as per International Air Transport Association
+      (IATA) regulations. To follow this protocol, drain the ethanol right to
+      the insect mass. Make sure each bottle is tightly sealed and place them
+      into a plastic bag before packaging in a box. If samples are collected for
+      the GMP, dispatch samples to the Centre of Biodiversity Genomics, Guelph,
+      Canada using cardboard boxes of appropriate size. Shipping 26 samples at a
+      time is recommended. Refer to the GMP sampling protocol for shipping
+      instructions (GMP 2019).
+    </p>
+  </li>
+</ol>
+<p><strong>Additional guidelines</strong></p>
+<p>Trap maintenance</p>
+<ul>
+  <li>
+    <p>
+      GMP standard operating procedures, and instructional videos for trap
+      set-up and servicing are available at
+      https://biodiversitygenomics.net/resources/bioscan/
+    </p>
+  </li>
+  <li>
+    <p>
+      Ethanol (as the killing agent/preserving fluid) is likely to evaporate
+      faster than propylene glycol, particularly in exposed sites. This can be
+      compensated by attaching a larger collection container (with more fluid)
+      or by the replenishing fluid during the week (Evans 2016b).
+    </p>
+  </li>
+  <li>
+    <p>
+      A moth excluder can be inserted into the collecting head to prevent the
+      entry of large insects such as Lepidoptera or dragonflies.
+    </p>
+  </li>
+  <li>
+    <p>
+      In areas with high vertebrate traffic (wild animals or livestock) it may
+      be necessary to place a temporary barrier (e.g. chicken wire), around the
+      trap location (Whitman et al. 2019). Use of barriers/additional fixtures
+      must be recorded in the comments field.
+    </p>
+  </li>
+  <li>
+    <p>
+      Schmidt et al. (2019) provides a protocol for preparing Lepidoptera from
+      malaise trap samples that were preserved in ethanol.
+    </p>
+  </li>
+  <li>
+    <p>
+      In areas frequented by people, consider placing a sign next to the trap
+      stating what it is, to potentially avoid the traps being tampered with.
+    </p>
+  </li>
+  <li>
+    <p>
+      If there are consistent issues with wildlife disturbance or human
+      vandalism, the trap can be relocated (GMP 2019). Ensure that all the
+      details for this are recorded.
+    </p>
+  </li>
+  <li>
+    <p>
+      Damaged traps should be repaired (if possible) or replaced. Faded traps
+      should also be replaced. If using traps that have been damaged/or altered
+      in any way, this should be recorded in the comments data field.
+    </p>
+  </li>
+</ul>
+<p>Samples</p>
+<ul>
+  <li>
+    <p>
+      If sorting of samples is required (depending on project aims), the time
+      commitment can be considerable given the large catch volumes. Sometimes
+      sub-sampling is necessary (i.e., taking a known fraction of the total
+      volume, ensuring that the sample is completely mixed beforehand).
+    </p>
+  </li>
+</ul>
+<p>Analysis</p>
+<ul>
+  <li>
+    <p>
+      Sorting of bulk samples is not necessary for the purpose of DNA analysis.
+    </p>
+  </li>
+  <li>
+    <p>
+      Standardising data analysis is an equally important aspect of comparing
+      results between sites (Hobern and Adamowicz 2021). This is beyond the
+      scope of this protocol but is further discussed in Section 10.
+    </p>
+  </li>
+  <li>
+    <p>
+      Projects involved in the GMP send collected samples to the Centre for
+      Biodiversity Genomics (Canada) for sequence analysis and DNA barcoding,
+      and in return, the contributors receive a site specific summary of the
+      species diversity identified for the given survey time (Centre of
+      Biodiversity Genomics 2021).
+    </p>
+  </li>
+</ul>
+""" ;
+.
+

@@ -1,0 +1,495 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b>
+    a skos:Concept ;
+    dcterms:description """<p>
+  The Fire module includes the protocol for recording fire severity within the
+  plot. The protocol involves recording the cover and height of fire severity
+  attributes from the ground to the canopy at 404 point- intercepts along four
+  100 m transects within the plot, and trunk char height and soil char depth
+  recorded from four locations within the plot.
+</p>
+<p>
+  The protocol includes the procedures and guidelines for: setting up four 100 m
+  transects (2 x N/S and 2 x E/W; see Figure); recording the transect being
+  assessed and in which direction; recording point-intercept fire severity data
+  at 1 m intervals along the four transects located across the plot (for a total
+  of 404 point- intercepts); recording trunk char height and soil char depth
+  from the four locations where the four transects intersect; and entering the
+  data directly into the App. The guidelines provide further information on
+  workflow efficiency; using a laser pointer to determine ‘hits’; using a GRS
+  Densitometer to view canopy intercepts; the rules for determining a ‘hit’;
+  when to apply ‘In Canopy Sky’ (ICS); and taking trunk char height and soil
+  char depth measurements.
+</p>
+<p>The Fire module is linked to the following modules:</p>
+<ul>
+  <li>
+    <p>
+      Cover – The Fire module can be undertaken simultaneously with the Cover
+      module, with the fire severity data collected in addition to the cover
+      data at each point-intercept.
+    </p>
+  </li>
+  <li>
+    <p>
+      Condition – The Fire module can be undertaken simultaneously with the
+      Condition module, with the fire severity data collected in addition to the
+      condition data at each point-intercept. The Fire module needs to be
+      undertaken as part of the Condition module.
+    </p>
+  </li>
+  <li>
+    <p>
+      Plot selection and layout – The point-intercept transect grid is aligned
+      to the plot defined boundaries.
+    </p>
+  </li>
+  <li>
+    <p>
+      Plot description – Fire history (unburnt, recently burnt, past burn) is
+      recorded in the Plot description module.
+    </p>
+  </li>
+  <li>
+    <p>
+      Vegetation mapping – Fire history (unburnt, recently burnt, past burn) is
+      recorded at each vegetation mapping point in the Vegetation mapping
+      module.
+    </p>
+  </li>
+  <li>
+    <p>
+      Floristics – Species data are recorded using naming consistent with the
+      flora species identifications/assigned field names and growth forms
+      recorded in the Floristics module.
+    </p>
+  </li>
+  <li>
+    <p>
+      Coarse woody debris – Both modules can be undertaken concurrently using
+      the same transects.
+    </p>
+  </li>
+  <li>
+    <p>
+      Recruitment – Fire mediated regeneration and epicormic growth can be
+      measured. Both modules can be undertaken concurrently using the same
+      transects.
+    </p>
+  </li>
+</ul>
+<p>
+  Plot layout showing the four fire severity point-intercept transects and four
+  trunk char height and soil char depth sampling locations.
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/fire/point-intercept-transect.png"
+            alt="point-intercept-transect"
+            widteh="460"
+            height="460"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</p>""" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Fire" ;
+    ns1:equipment """<ul>
+    <li>
+    <p>Mobile device (tablet/phone capable of taking high resolution photos)
+    with the App (progressive web app) saved to the home screen</p>
+    </li>
+    <li>
+    <p>4 x 100 m surveyor tape measures, labelled metrically on both sides
+    for ease of reading</p>
+    </li>
+    <li>
+    <p>Tent pegs to mark ends of transects and hold the surveyor tape
+    measures in place</p>
+    </li>
+    <li>
+    <p>Flagging tape (brightly coloured to make sighting transect ends
+    easier)</p>
+    </li>
+    <li>
+    <p>Graduated staff with 10 cm markings (continually adjustable painter’s
+    pole that can easily adjust to different surveyors’ eye heights)</p>
+    </li>
+    <li>
+    <p>GRS Densitometer™ with ability to be mounted on top of staff
+    (required for use on plots with overstorey tree canopy cover; materials
+    and instructions to build mount in appendix</p>
+    </li>
+    <li>
+    <p>Laser pointer with spare batteries (mounted/taped to staff at 1.5 m
+    and pointing downwards)</p>
+    </li>
+    <li>
+    <p>Forestry rangefinder (e.g., Nikon Forestry Pro II) or another tool
+    for measuring tree height (e.g., clinometer, ‘Arboreal – Tree Height’
+    mobile device app)</p>
+    </li>
+    <li>
+    <p>Spade</p>
+    </li>
+    <li>
+    <p>Ruler or pocket tape measure with millimeter gradations to measure
+    soil char depth.</p>
+    </li>
+    </ul></li>""" ;
+    ns1:instructions """<style>
+    table.tables {
+      border: 1px solid rgb(34, 15, 15);
+    }
+    table.tables tr,
+    table.tables td {
+      padding: 3px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #0f0801 rgb(12, 11, 11);
+    }
+</style>
+<p><strong>Fire severity point-intercept</strong></p>
+<ol>
+<li>
+<p>Ensure the Plot selection and layout module has been completed to mark out the plot grid with very high accuracy using the Trimble® R1.</p>
+</li>
+<li>
+<p>Ensure the Floristics module has been completed to ensure species data are recorded using naming consistent with the flora species identifications/assigned field names and growth forms recorded in the Floristics module.</p>
+</li>
+<li><p>Ensure you are familiar with instructions and procedures and guidelines outlined in the Cover and/or Condition modules.</p><li><p>Lay out the N2/S2, N4/S4, E2/W2 and E4/W4 transect (see figure). For each transect, lay out a 100 m surveyor tape measure using a camping peg to secure the end in place. Ensure the tape is orientated to align with the plot grid, is as straight as possible, and laid on the ground and not draped over shrubs wherever possible.</p></li>
+<li><p>Move to the 0 m mark of the first transect you wish to complete. It does not matter which order, or which direction each transect is completed, as your start position will be recorded in Step 8.</p></li>
+<li><p>Select the ‘Cover’ or ‘Condition’ module and then the relevant protocol (e.g., ‘Full’, ‘Lite’) in the App, depending on which protocol you are required to undertake for your project.</p></li>
+<li><p>Check the box to record the plot as ‘Burnt’. This will reveal the fire severity data fields in the Cover or Condition module. If you are undertaking the full Cover protocol, the fire severity data fields will only be accessible when completing the N2/S2, N4/S4, E2/W2 and E4/W4 transects, and the following steps relate only to those transects.</p></li>
+<li><p>Record your starting point from the drop-down list (i.e., N2, N4, S2, S4, E2, E4, W2 or W4). This records the transect you are on and the direction you are travelling in (e.g., ‘N2’ means you are travelling south on the N2/S2 transect, while ‘S4’ means you are travelling north on the N4/S4 transect).</p></li>
+<li><p>Place the bottom of the staff at the 0 m mark of the tape measure. Ensure the staff is vertical and the laser pointer is pointing downwards so the laser beam will intercept the ground near the base of the staff.</p></li>
+<li><p>For each point-intercept, begin by recording the nature of the substrate that is intercepted by the laser beam. Press the button on the laser pointer. If the laser beam is intercepted by vegetation, move the vegetation aside so that the laser beam reaches the substrate. Select the substrate from the drop- down list in the App. The additional substrates available to record in burnt plots include ‘Black Ash’ and ‘White Ash’, and you can also mark ‘Bare’, ‘Litter’ and ‘CWD’ as ‘Charred’, and ‘Litter’ as ‘Scorched’.</p></li>
+<li><p>Next record the vascular plants that are intercepted with the laser pointer, touching the staff between the laser pointer and the densitometer, and/or intercepting the vertical line of sight through the densitometer. Where a part of a plant of the same species and growth form is being intercepted at different heights, the uppermost intercept is recorded as a hit and all lower intercepts are ignored. This rule holds true for multiple intercepts of the same species and growth form (see Appendix). Record the plant’s species name and growth form along with the uppermost height at the point-intercept.</p></li>
+<li><p>If no part of the foliage or branches are sighted in the cross hairs of the densitometer but the vertical line of sight is still within the canopy boundary, flag as ‘In Canopy Sky’.</p></li>
+<li><p>Flag it the plant is regenerating. Record if the regeneration type is ‘Basal’, ‘Epicormic’ or ‘Apical’, from the drop-down list in the App. Record the uppermost height of the regenerating vegetation that is intercepted.</p></li>
+<li><p>Flag if the plant is dead, charred and/or scorched at the point-intercept. Record the uppermost height of char and/or scorch that is intercepted.</p></li>
+<li><p>If the plant is dead, charred and/or scorched and you cannot determine what the species is, record the growth form (pre-recorded field names, e.g. ‘Shrub’, ‘Tree’) and flag it as ‘dead’, 'charred' or 'scorched'.</p></li>
+<li><p>Repeat steps 11 to 15 for all other plant species that are intercepted.</p></li>
+<li><p>Repeat steps 10 to 16 at every 1 m interval along the transect. This will give a total of 101 point- intercepts for the transect.</p></li>
+<li><p>Repeat steps 5 to 17 for each of the remaining fire severity point-intercept transects until all 4 have been completed. This will give 404 point-intercepts for the plot.</p></li>
+<li><p>At the completion of the point-intercept data collection, select ‘Finish point-intercept’.</p></li>
+<li><p>Leave the four transects laid out so the trunk char height and soil char depth measurements can be taken at the four locations where the transects intersect. Otherwise, mark these locations with tent pegs with flagging tape before packing up the transects.</p>
+</li>
+</ol>
+<p><strong>Trunk char height and soil char depth</strong></p>
+<ol>
+    <li><p>Select the ‘Fire’ module in the App.</p></li>
+    <li><p>Record the date that the fire was ignited so the time since fire can be calculated. This date may be based on on-ground knowledge and/or available datasets (e.g., interactive online natural resources GIS datasets).</p></li>
+    <li><p>Select if this is the ‘Actual’ date or an ‘Estimate’ from the drop-down list. If the date is an estimate, the App will allow you to enter a date with reduced accuracy (i.e., year and month, or year).</p></li>
+    <li><p>Record the date accuracy (Day, Month, Year) from the drop-down list.</p></li>
+    <li><p>Move to the first trunk char height and soil char depth sampling location you wish to complete (NW, NE, SE, and SW; see Figure 1). It does not matter which order the sampling locations are surveyed in.</p></li>
+    <li><p>Record the location from the drop-down list (NW, NE, SE or SW; see Figure).</p></li>
+    <li><p>Rotate through a complete 360° sweep and record the maximum trunk char height observed in meters. If the sampling location is within a completely unburnt area and no charred trunks are observed, move to the closest area where you can observe charred trunks. Select the ‘Record trunk char height sampling location’ button to record the actual sampling location with very high accuracy using the Trimble® R1.</p></li>
+    <li><p>Next, use a spade to expose the interface of the charred soil and uncharred soil below in an area within 2–3 m of the sampling location (prevents disturbing the point-intercept transects). Record the soil char depth from the soil surface in millimeters. Select the ‘Record soil char depth sampling location’ button to record the actual sampling location with very high accuracy using the Trimble® R1.</p></li>
+    <li><p>If the sampling location is on an outcrop or within a completely unburnt area and no charred soil can be observed, move to the closest area with charred soil. Select the ‘Record soil char depth sampling location’ button to record the actual sampling location with very high accuracy using the Trimble® R1.</p></li>
+    <li><p>Repeat steps 5–10 at each sampling location.</p></li>
+    <li><p>When all four sampling locations have been surveyed, select ‘Finish module’.</p></li>
+</ol>
+<p><strong>Additional guidelines</strong></p>
+<p>Efficiency</p>
+<ul>
+<li><p>The point-intercept method works best when conducted with two surveyors, one using the staff and determining the point-intercept reading, and the other entering the data directly into the App.</p></li>
+<li><p>The guidelines below provide additional information for various point-intercept situations so that the surveyor can make the most appropriate judgement to ensure consistency.</p></li>
+<li><p>Accuracy and speed of collecting point-intercept data improves with experience. Laying out a set of surveyor tape measures along all the transects, rather than just one transect at a time, is more efficient. This is particularly the case if the survey team comprises more generalist surveyors and/or volunteers who can lay out the tapes while the vegetation specialist commences the point-intercept transects. Furthermore, the intersects of the four transects mark the positions of the trunk char height and soil char depth sampling locations.</p></li>
+</ul>
+<p>Using the laser pointer</p>
+<ul>
+<p>Using the laser pointer takes the guess work out of what is (and what is not) a hit up to 1.5 m. If you cannot see the laser beam on the ground try one of the following tips:</p>
+<ul>
+<li><p>You cannot see the laser because it is in the sun – rotate the staff so the laser is in a shadow.</p></li>
+<li><p>The laser beam hits vegetation before it hits the substrate – temporarily move the vegetation out of the way.</p></li>
+<li><p>The battery is flat – change the battery (always carry spare batteries and/or a spare laser pointer).</p></li>
+</ul>
+</ul>
+<p>Rules for determining a ‘hit’</p>
+<ul>
+<li><p>Where a part of a plant of the same species and growth form is being intercepted at different heights, the uppermost intercept is recorded as a hit and all lower intercepts are ignored. This includes plants that are intercepted with the laser pointer, touching the staff between the laser pointer and the densitometer, and/or intercepting the vertical line of sight through the densitometer. This rule holds true for multiple intercepts of the same species and growth form.</p></li>
+<li><p>If part of a tree or shrub intersects the vertical line of sight through the densitometer, this is recorded at a hit.</p></li>
+<li><p>If foliage or branches of a live shrub/tree intersect the vertical line of sight through the densitometer, record each species name and estimate the height at the uppermost intercept using a rangefinder or other height estimation method (see <u>Estimating vegetation, tree, char and</u><u>scorch height</u> below).</p></li>
+<li><p>If you intercept a dead, charred or scorched plant and can determine what the species is, this is recorded as hit for that species but flagged as ‘dead’, 'charred' or 'scorched'.</p></li>
+<li><p>If you intercept a dead, charred or scorched plant but you cannot determine what the species is, this is recorded as the growth form (pre-recorded field names; e.g. ‘Shrub’, ‘Tree’) and flagged as ‘dead’, 'charred' or 'scorched'.</p></li>
+</ul>
+<p>Using the GRS Densitometer™</p>
+<ul>
+<li><p>Ensure the graduated staff is adjusted so that the densitometer is at eye-level.</p></li>
+<li><p>Level both densitometer bubble-levels and then look through the instrument so that the sighting marks (cross hairs and circle) are aligned.</p></li>
+<li><p>If working in bright sunlight, a piece of coloured cellophane can be placed over the top of the densitometer and secured with a rubber band to reduce glare.</p></li>
+</ul>
+<p>In Canopy Sky</p>
+<ul>
+<li><p>The Cover module illustrates when to apply ‘In Canopy Sky’ (ICS).</p></li>
+<li><p>Where the vertical line of sight through the densitometer projects onto bare sky that is within a canopy, ICS is recorded.</p></li>
+<li><p>Where the vertical line of sight through the densitometer projects onto bare sky that is not within a canopy, nothing is recorded for the upper stratum.</p></li>
+<li><p>Where the vertical line of sight through the densitometer projects onto bare sky that is within the canopy of a dead, charred or scorched tree and you can determine what the species is, ICS is recorded for that species but flagged as ‘dead’, 'charred' or 'scorched'.</p></li>
+<li><p>Where the vertical line of sight through the densitometer projects onto bare sky that is within the canopy of a dead, charred or scorched tree, but you cannot determine what the species is, ICS is recorded for a ‘Shrub' or 'Tree’ (pre-recorded field names) and flagged as ‘dead’, 'charred' or 'scorched'.</p></li>
+<li><p>The canopy perimeter (from an aerial or vertical perspective) is the extent of the outer layer of leaves of an individual tree or shrub.</p></li>
+</ul>
+<p>Estimating vegetation, tree, char and scorch height</p>
+<ul>
+<li><p>Measurements of vegetation height in the lower and mid strata can be rounded to the nearest centimetre from the 10 cm markings on the graduated staff.</p></li>
+<li><p>Tree and trunk char height should be estimated using a forestry rangefinder for rapid and accurate height measurements. The person entering the data into the App can carry the rangefinder on a lanyard over their shoulder and record tree height when required.</p></li>
+<li><p>The Nikon Forestry Pro II Rangefinder is designed for measuring the height of trees. It can log up to 250 measurements taken with either actual distance, horizontal distance, height, angle and vertical separation (difference in height between two targets), and three-point measurement (height between two points). Distance measurements can be made using either First Target or Distant Target mode depending on whether the tree is in front of or behind other trees.</p></li>
+<li><p>When using a rangefinder, the distance and angle to the top of the tree are measured at the same time, and then the distance and angle to the base of the tree are measured at the same time. The internal calculator does the mathematics to calculate the height. Ensure you are far enough from the tree, at least the distance of the height of the tree, and can see the top and base of the tree.</p></li>
+<li><p>Where a rangefinder is not available, tree height can be estimated using the following methods:</p>
+<ul>
+<li><p>Clinometer and tape (Department of Environment and Climate Change 2007)</p></li>
+<li><p>Mobile phone applications.</p></li>
+</ul>
+</li>
+<li><p>When using a clinometer, find a place to stand where you can see the top of the tree. Your distance from the tree should at least be equal to the height of the tree. Measure the distance to the tree and your eye height using a tape. Look through the clinometer with one eye and at the tree with the other eye. Line up the crosshair in the clinometer with the top of the tree. Read the value on the percent scale. This gives you the tree's height as a percentage of the distance from the tree (e.g., a reading of 50% means the height of the tree is half the distance you are from the tree).</p>
+<ul>
+<li><p>Calculate the height of the tree using the equation: Tree height = clinometer reading / 100 x distance to tree + eye height</p></li>
+<li><p>On sloping ground, two readings will need to be taken (treetop (reading 1) and tree base (reading 2)). When the tree base is below eye level, the two percent values are added. Calculate the height of the tree using the equation: Tree height = (clinometer reading 1 + clinometer reading 2) / 100 x distance to tree</p></li>
+<li><p>When the tree base is above eye level, the tree base percent is subtracted from the treetop percent. Calculate the height of the tree using the following equation: Tree height = (clinometer reading 1 - clinometer reading 2) / 100 x distance to tree</p></li>
+<li><p>See for Appendix E for diagrams for using a clinometer in each situation.</p></li>
+</ul></li>
+<li><p>There are several mobile phone applications that provide an estimate of tree height by using the device’s sensors to measure the angles to the top and bottom of the tree. Like the clinometer guidelines above, a measurement of the distance to the tree is required to estimate the height. Some apps allow the user to enter a measurement made with a tape, while others allow the user to enter and store the distance of their stride, and then enter the number of strides into the app to calculate the distance to the tree. Certain apps (e.g. Arboreal – Tree Height) make use of the device’s augmented reality technology to measure this distance, whereby the user moves close to the trunk of a tree (within 1 m), moves the device to locate the tree, aims at the tree and presses mark, holds the device upright while walking away from the tree to about the same length as the tree height, and presses mark again to calculate the distance.</p></li>
+</ul>
+
+
+<p><strong>Appendix C. Substrate types and their definitions (those relevant to the Fire are bold).</strong></p>
+<table class="tables">
+<tr>
+<th>Substrate type</th>
+<th><p>Definition</p></th>
+</tr>
+<tr</td>
+<td><p><strong>Bare</strong></p></td>
+<td><p><strong>Bare soil. Can be marked as charred.</strong></p></td>
+</tr>
+<tr>
+<td><p>Crypto</p></td>
+<td><p>Cryptogram – any moss, lichen, algae, etc. present on the soil surface with a different colour to the base soil.</p></td>
+</tr>
+<tr</td>
+<td><p><strong>Litter</strong></p></td>
+<td><p><strong>Dead vegetation not attached or identifiable; if litter is attached and identifiable as a species, it should be recorded as this species but flagged as being dead. Can be marked as charred or scorched.</strong></p></td>
+</tr>
+<tr</td>
+<td><p><strong>CWD</strong></p></td>
+<td><p><strong>Coarse Woody Debris – detached wood with &gt;10 cm diameter at the intercept point. Can be marked as charred.</strong></p></td>
+</tr>
+<tr>
+<td><p>Gravel</p></td>
+<td><p>Particles 2 mm – 2 cm.</p></td>
+</tr>
+<tr>
+<td><p>Rock</p></td>
+<td><p>Particles &lt;20 cm.</p></td>
+</tr>
+<tr>
+<td><p>Outcrop</p></td>
+<td><p>Exposed consolidated rock (bedrock).</p></td>
+</tr>
+<tr>
+<td><p>Lichen on rock</p></td>
+<td><p>Lichen growing on rock.</p></td>
+</tr>
+<tr>
+<td><p>Lichen on outcrop</p></td>
+<td><p>Lichen growing on bedrock.</p></td>
+</tr>
+<tr>
+<td><p>Water</p></td>
+<td><p>Body of water (sheet water, Gilgai).</p></td>
+</tr>
+<tr</td>
+<td><p><strong>Black ash</strong></p></td>
+<td><p><strong>Powdery black residue remaining after the incomplete combustion of wood during a bushfire.</strong></p></td>
+</tr>
+<tr</td>
+<td><p><strong>White ash</strong></p></td>
+<td><p><strong>Powdery white residue remaining after the complete combustion of wood during a bushfire.</strong></p></td>
+</tr>
+<tr>
+<td><p>Unknown</p></td>
+<td><p>Unknown.</p></td>
+</tr>
+<tr>
+<td><p>Other</p></td>
+<td><p>Substrate not listed.</p></td>
+</tr>
+<tr>
+<td><p>Not collected</p></td>
+<td><p>Point-intercept data not collected (e.g. cannot survey too dense area within plot.</p></td>
+</tr>
+</table>
+<p><strong>Appendix D. Growth forms and their definitions (NVIS Technical working group 2017)</strong></p>
+<table class="tables"><colgroup><col /><col /></colgroup>
+<thead>
+<tr>
+<th><p>Growth form</p></th>
+<th><p>Definition</p></th>
+</tr>
+<tr>
+<td><p>Tree</p></td>
+<td><p>Woody plants, more than 2 m tall with a single stem or branches well above the base.</p></td>
+</tr>
+<tr>
+<td><p>Tree mallee</p></td>
+<td><p>Woody perennial plant usually of the genus Eucalyptus. Multi-stemmed with fewer than five trunks of which at least three exceed 100 mm diameter at breast height (1.3 m). Usually 8 m or more.</p></td>
+</tr>
+<tr>
+<td><p>Shrub</p></td>
+<td><p>Woody plants multi-stemmed at the base (or within 200 mm from ground level) or if single stemmed, less than 2 m.</p></td>
+</tr>
+<tr>
+<td><p>Mallee shrub</p></td>
+<td><p>Commonly less than 8 m tall, usually with five or more trunks, of which at least three of the largest do not exceed</p>
+<p>100 mm diameter at breast height (1.3 m).</p></td>
+</tr>
+<tr>
+<td><p>Heath shrub</p></td>
+<td><p>Shrub usually less than 2 m, with sclerophyllous leaves having high fibre:protein ratios and with an area of nanophyll or smaller (less than 225 mm<sup>2</sup>). Often a member of one the following families: Ericaceae, Myrtaceae, Fabaceae and Proteaceae. Commonly occur on nutrient-poor substrates.</p></td>
+</tr>
+<tr>
+<td><p>Chenopod shrub</p></td>
+<td><p>Single or multi-stemmed, semi-succulent shrub of the family Chenopodiaceae exhibiting drought and salt tolerance.</p></td>
+</tr>
+<tr>
+<td><p>Samphire shrub</p></td>
+<td><p>Genera (of Tribe Salicornioideae, viz.: Halosarcia, Pachycornia, Sarcocornia, Sclerostegia, Tecticornia and Tegicornia) with articulate branches, fleshy stems and reduced flowers within the Chenopodiaceae family, succulent chenopods (Wilson 1980). Also the genus Suaeda.</p></td>
+</tr>
+<tr>
+<td><p>Tussock grass</p></td>
+<td><p>Grass forming discrete but open tussocks usually with distinct individual shoots, or if not, then forming a hummock. These are the common agricultural grasses.</p></td>
+</tr>
+<tr>
+<td><p>Hummock grass</p></td>
+<td><p>Coarse xeromorphic grass with a mound-like form often dead in the middle; genus is Triodia.</p></td>
+</tr>
+<tr>
+<td><p>Other grass</p></td>
+<td><p>Member of the family Poaceae, but having neither a distinctive tussock nor hummock appearance. Examples include stoloniferous species such as Cynodon dactylon.</p></td>
+</tr>
+<tr>
+<td><p>Sedge</p></td>
+<td><p>Herbaceous, usually perennial erect plant generally with a tufted habit and of the families Cyperaceae (true sedges) or Restionaceae (node sedges).</p></td>
+</tr>
+<tr>
+<td><p>Rush</p></td>
+<td><p>Herbaceous, usually perennial erect monocot that is neither a grass nor a sedge. For the purposes of NVIS, rushes include the monocotyledon families Juncaceae, Typhaceae, Liliaceae, Iridaceae, Xyridaceae and the genus Lomandra. (i.e. "graminoid" or grass-like genera).</p></td>
+</tr>
+<tr>
+<td><p>Forb</p></td>
+<td><p>Herbaceous or slightly woody, annual or sometimes perennial plant. (Usually a dicotyledon).</p></td>
+</tr>
+<tr>
+<td><p>Tree-fern</p></td>
+<td><p>Characterised by large and usually branched leaves (fronds), arborescent and terrestrial; spores in sporangia on the leaves.</p></td>
+</tr>
+<tr>
+<td><p>Fern</p></td>
+<td><p>Ferns and fern allies, except tree-fern, above. Characterised by large and usually branched leaves (fronds), herbaceous and terrestrial to aquatic; spores in sporangia on the leaves.</p></td>
+</tr>
+<tr>
+<td><p>Bryophyte</p></td>
+<td><p>Mosses and Liverworts. Mosses are small plants usually with a slender leafbearing stem with no true vascular tissue. Liverworts are often moss-like in appearance or consisting of a flat, ribbon-like green thallus.</p></td>
+</tr>
+<tr>
+<td><p>Lichen</p></td>
+<td><p>Composite plant consisting of a fungus living symbiotically with algae; without true roots, stems or leaves.</p></td>
+</tr>
+<tr>
+<td><p>Epiphyte</p></td>
+<td><p>Epiphytes, mistletoes and parasites. Plant with roots attached to the aerial portions of other plants. Can often be another growth form, such as fern or forb.</p></td>
+</tr>
+<tr>
+<td><p>Vine</p></td>
+<td><p>Climbing, twining, winding or sprawling plants usually with a woody stem.</p></td>
+</tr>
+<tr>
+<td><p>Palm</p></td>
+<td><p>Palms and other arborescent monocotyledons. Members of the Arecaceae family or the genus Pandanus. (Pandanus is often multi-stemmed).</p></td>
+</tr>
+<tr>
+<td><p>Grass-tree</p></td>
+<td><p>Australian grass trees. Members of the Xanthorrhoeaceae family.</p></td>
+</tr>
+<tr>
+<td><p>Cycad</p></td>
+<td><p>Members of the families Cycadaceae and Zamiaceae.</p></td>
+</tr>
+<tr>
+<td><p>Seagrass</p></td>
+<td><p>Flowering angiosperms forming sparse to dense mats of material at the subtidal and down to 30 m below MSL. Occasionally exposed.</p></td>
+</tr>
+<tr>
+<td><p>Aquatic</p></td>
+<td><p>Plant growing in an inland waterway or wetland with the majority of its biomass under water for most of the year. Fresh, saline or brackish water.</p></td>
+</tr>
+<tr>
+<td><p>Lower plant</p></td>
+<td><p>Algae, fungus.</p></td>
+</tr>
+<tr>
+<td><p>Unknown</p></td>
+<td><p>Unknown.</p></td>
+</tr>
+</thead>
+</table>
+<p><strong>Appendix E. Diagrams for using a clinometer on level ground (A), ground sloping down (B) and ground sloping up (C; Department of Environment and Climate Change 2007).</strong></p>
+<p>(A)
+    <table>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://w3id.org/tern/static/dawe-rlp/latest/fire/diagrams-for-using-a-clinometer-on-level-ground.png"
+                alt="diagrams-for-using-a-clinometer-on-level-ground"
+                widteh="480"
+                height="270"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</p>
+<p>(B)
+    <table>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://w3id.org/tern/static/dawe-rlp/latest/fire/ground-sloping-down.png"
+                alt="ground-sloping-down"
+                widteh="480"
+                height="270"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</p>
+<p>(C)
+    <table>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://w3id.org/tern/static/dawe-rlp/latest/fire/ground-sloping-up.png"
+                alt="ground-sloping-up"
+                widteh="480"
+                height="270"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</p>
+""" ;
+.
+

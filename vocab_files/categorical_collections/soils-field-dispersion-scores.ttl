@@ -1,0 +1,73 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/0e0a3e73-4b7a-4ffb-8b91-ee0748688bb1> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/0e0a3e73-4b7a-4ffb-8b91-ee0748688bb1>
+    a skos:Collection ;
+    dcterms:description "A collection of soils field dispersion scores and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-field-dispersion-scores> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/2925c15c-dc00-5320-8f71-543b259a3a8c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/86e876fe-7fac-5a34-ac4e-e704df7c9d2e> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/8c4f1614-13ba-5d6a-aaf5-a03f3ca3614a> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ac6f185f-5f2c-555f-af07-cd1a6714d2b8> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c5b49a42-e1cd-5db5-85fe-99ca0d50e5c8> ;
+    skos:prefLabel "Soils field dispersion scores codes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/2925c15c-dc00-5320-8f71-543b259a3a8c>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-field-dispersion-scores> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "4" ;
+    skos:prefLabel "Complete dispersion after 10 minutes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/86e876fe-7fac-5a34-ac4e-e704df7c9d2e>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-field-dispersion-scores> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "1" ;
+    skos:prefLabel "No dispersion within 10 minutes, slight dispersion within 2 hours" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/8c4f1614-13ba-5d6a-aaf5-a03f3ca3614a>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-field-dispersion-scores> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "0" ;
+    skos:prefLabel "No dispersion within 2 hours" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/ac6f185f-5f2c-555f-af07-cd1a6714d2b8>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-field-dispersion-scores> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "2" ;
+    skos:prefLabel "Slight dispersion within 10 minutes or strong dispersionw ithin 2 hours" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/c5b49a42-e1cd-5db5-85fe-99ca0d50e5c8>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-field-dispersion-scores> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "3" ;
+    skos:prefLabel "Strong dispersion within 10 minutes or complete dispersion within 2 hours" ;
+.
+

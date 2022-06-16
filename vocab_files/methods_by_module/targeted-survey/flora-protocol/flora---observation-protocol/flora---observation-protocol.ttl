@@ -1,0 +1,213 @@
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/015efdae-93af-48c5-9564-0cde72593d59>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Flora - observation protocol" ;
+    ns1:equipment """<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Trimble® R1</p>
+  </li>
+  <li>
+    <p>Relevant survey guidelines saved or accessible from mobile device</p>
+  </li>
+  <li>
+    <p>Field guides and identification keys</p>
+  </li>
+  <li>
+    <p>Hand lens</p>
+  </li>
+  <li>
+    <p>Binoculars</p>
+  </li>
+  <li>
+    <p>Photo scale card</p>
+  </li>
+</ul>
+<p>Vouchering (vascular flora)</p>
+<ul>
+  <li>
+    <p>Newspaper (tabloid size) and cardboard (43.5 x 28.5 cm)</p>
+  </li>
+  <li>
+    <p>Large plastic bags (for collection)</p>
+  </li>
+  <li>
+    <p>Plant press and straps (for storage)</p>
+  </li>
+</ul>
+<p>Vouchering (non-vascular flora)</p>
+<ul>
+  <li>
+    <p>Chisel and hammer (for collection)</p>
+  </li>
+  <li>
+    <p>
+      Screw cap plastic bottles, paper bags, newspaper, cardboard boxes,
+      ethanol/formalin preservative solution (for storing specimens).
+    </p>
+  </li>
+</ul>""" ;
+    ns1:instructions """<p style="color: orange">Add observation</p>
+<ol start="1">
+  <li>
+    <p>
+      The date, time and the location of the observation will be automatically
+      recorded.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the Observer from the drop-down list (pre-populated based on entry
+      of surveyor details during project setup).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the Number of individuals observed (zero, blank and no selection
+      are invalid). Select if the count is exact or an estimate (for large or
+      dispersed populations, record using the Add Population function).
+    </p>
+  </li>
+  <li>
+    <p>Record any additional Observation notes (optional).</p>
+  </li>
+  <li>
+    <p>
+      Record Habitat description using the drop-down lists or manual entry (e.g.
+      structural formation, vegetation association, macro and microhabitat).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record Growth form, Growth stage, Life stage and Health using the
+      drop-down lists (see Appendix 8 for details).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record plant size details, including DBH, height and width (optional, only
+      use for individuals).
+    </p>
+  </li>
+  <li>
+    <p>
+      Click on the Camera icon to open your devices camera and take a photo of
+      the individual. Multiple photos can be taken to record different elements
+      of the plant, including growth form, leaves and flowers. Ensure that
+      photos are labelled with details of what has been captured and a scale
+      card is visible.
+    </p>
+  </li>
+  <li>
+    <p>
+      If a voucher specimen is collected, select the Add voucher button. Assign
+      a unique barcode voucher label to the specimen and scan barcode (see
+      Floristics module for instructions).
+    </p>
+  </li>
+  <li>
+    <p>
+      If more than one voucher specimen is collected for the same observation
+      (e.g. a plant voucher and a plant tissue voucher) then select toggle ‘on’
+      for Additional voucher specimen and repeat Step 17. Each specimen is
+      allocated a unique barcode.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Save to save the species record and return to the Targeted Flora
+      overview screen, where the survey can be continued and more observations
+      recorded, until the entire area has been survey, or the survey can be
+      finalised.
+    </p>
+    <p>Figure. Targeted flora – observations
+        <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-flora-observations.png"
+                    alt="Targeted flora - observations"
+                    widteh="789"
+                    height="664"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </p>
+  </li>
+</ol>
+<p style="color: orange">Add habitat</p>
+<ol start=12">
+  <li>
+    <p>
+      If areas of potential habitat are identified during the survey, select the
+      Add potential habitat option. This option will generally be most
+      appropriate for annual or cryptic species that may be difficult to
+      identify during active searches.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the target species that the habitat is suitable for from the
+      drop-down list. The list will include any species selected as target
+      species at the beginning of the survey.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record a description of the habitat and why it is deemed suitable for the
+      species (free-text).
+    </p>
+  </li>
+  <li>
+    <p>
+      Take a photo of the suitable habitat. Multiple photos can be taken to
+      document different characteristics of the area. Ensure each photo is
+      labelled with a short description.
+    </p>
+  </li>
+  <li>
+    <p>
+      Mark the boundary of the habitat by standing at the population edge and
+      selecting Add Vertex. Continue this process as you make your way around
+      the area of suitable habitat, selecting Add Vertex as often as required to
+      accurately mark the edge. See Appendix 6 for details about recording
+      habitat boundaries.
+    </p>
+  </li>
+  <li>
+    <p>
+      Once the boundary has been defined, select Finish sketch to return to the
+      main screen and continue the survey.
+    </p>
+    <p>Figure. Targeted flora – habitat observation
+        <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-flora-habitat-observation.png"
+                    alt="Targeted flora - habitat observation"
+                    widteh="487"
+                    height="847"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </p>
+  </li>
+</ol>""" ;
+.
+

@@ -1,0 +1,51 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/03ad784c-2cb3-4259-938e-c5e262ece665> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/03ad784c-2cb3-4259-938e-c5e262ece665>
+    a skos:Collection ;
+    dcterms:description "A collection of vertebrate sexes and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-sexes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/62c3fe37-709a-508d-88b3-6e1f2c454023> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/754a9b5b-64a8-501d-8ca9-fed888eed929> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7c391df4-5de9-5dce-94b1-3a939ce59ee9> ;
+    skos:prefLabel "Vertebrate sexes codes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/62c3fe37-709a-508d-88b3-6e1f2c454023>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-sexes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "M" ;
+    skos:prefLabel "Male" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/754a9b5b-64a8-501d-8ca9-fed888eed929>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-sexes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "F" ;
+    skos:prefLabel "Female" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/7c391df4-5de9-5dce-94b1-3a939ce59ee9>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-sexes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "U" ;
+    skos:prefLabel "Unknown" ;
+.
+

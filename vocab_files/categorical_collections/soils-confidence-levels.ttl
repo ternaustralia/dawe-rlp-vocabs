@@ -1,0 +1,62 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/7bd6fc9b-2e65-4cdd-acda-8cab19f2cefe> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/40d8bc62-466c-5de3-bf7d-52f425580694>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-confidence-levels> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Necessary analytical and/or morphological data for the profile are incomplete but are sufficient to classify the soil with a reasonable degree of confidence." ;
+    skos:notation "2" ;
+    skos:prefLabel "2" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/4cc5ac2a-5fcd-5a9c-b8d5-9c9af994e59e>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-confidence-levels> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "No necessary analytical or limited morphological data are available for the profile and the classifier has little knowledge or experience with this kind of soil, hence the classification is provisional." ;
+    skos:notation "4" ;
+    skos:prefLabel "4" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/5a2b7b22-b263-59dd-922e-71e0cf882135>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-confidence-levels> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "No necessary analytical or limited morphological data are available for the profile but confidence is fair, based on knowledge of similar soils in similar environments." ;
+    skos:notation "3" ;
+    skos:prefLabel "3" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/7bd6fc9b-2e65-4cdd-acda-8cab19f2cefe>
+    a skos:Collection ;
+    dcterms:description "A collection of soils confidence levels and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-confidence-levels> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/40d8bc62-466c-5de3-bf7d-52f425580694> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/4cc5ac2a-5fcd-5a9c-b8d5-9c9af994e59e> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/5a2b7b22-b263-59dd-922e-71e0cf882135> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/fe6067f3-a3cc-57e0-93aa-07fd49c875c8> ;
+    skos:prefLabel "Soils confidence levels codes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/fe6067f3-a3cc-57e0-93aa-07fd49c875c8>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-confidence-levels> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "All necessary analytical and/or morphological data are available for the profile being classified." ;
+    skos:notation "1" ;
+    skos:prefLabel "1" ;
+.
+

@@ -1,0 +1,1836 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e>
+    a skos:Collection ;
+    dcterms:description """<p>
+  The Invertebrate fauna module covers the procedures and guidelines for the
+  field capture and preservation of terrestrial invertebrate fauna. This module
+  is undertaken within fauna monitoring plots, adjacent to the vegetation and
+  soil plots. Figure 1 shows the layout for the protocols that are undertaken at
+  fixed locations within the plot.
+</p>
+<p>
+  The module offers nine sampling protocols, targeting different invertebrate
+  groups, as summarised in Table 2. The survey design and equipment for each
+  protocol is standardised to ensure comparability of the results across
+  projects. Where applicable, the protocols follow existing, established
+  protocols and draw on current research. Users determine which of the nine
+  protocols should be undertaken for their project needs; at a minimum the
+  Active search and Micro-pitfall trapping protocols are undertaken at the start
+  of a project, and Micro-pitfall trapping is repeated for monitoring.
+  Implementing a range of complementary sampling protocols is strongly
+  recommended, especially at the start of a project, to provide a baseline for
+  inventory and monitoring. A post-field protocol covers the requirements for
+  sample curation relevant to all protocols.
+</p>
+<p>
+  The need to undertake the Invertebrate fauna module and, subsequently, the
+  selection of sampling protocols is determined at the start of a project
+  depending on the project objectives and their suitability for the situation.
+  The results and project objectives should also inform which protocols to
+  repeat, and how often. Repeat sampling using a range of methods increases the
+  ability to detect different indicator species/functional groups, and therefore
+  monitor trends.
+</p>
+<p>
+  The protocols are ideally undertaken at the same time as the vertebrate fauna
+  and vegetation and soil monitoring (with consideration given to season). The
+  number of plots that require sampling will be determined at the start of the
+  project (see Introduction Chapter). The repeat survey interval will depend on
+  the project and the protocol. For comparability of the data, repeat surveys
+  should be undertaken at the same time(s) of year, moon phase and during
+  similar weather conditions. If the conditions are unsuitable, the sampling
+  period is rescheduled or if this is not possible, any deviations in the
+  sampling conditions are recorded.
+</p>
+<p>
+  All invertebrate catch is preserved (for each trap and each trapping period)
+  and stored for future analysis, generally as bulk, mixed samples (reflecting
+  how they were collected in the field) until identification is required,
+  available or affordable. Samples can be sorted (e.g. into RTU’s and
+  life-stages). Specimen identification and DNA analysis will require expert
+  input. The Invertebrate fauna module is linked to the following modules:
+</p>
+<ul>
+  <li>
+    <p>
+      Plot selection and layout – before commencing the Invertebrate fauna
+      module, the Plot selection and layout module must be completed to mark out
+      the fauna plot with high accuracy using the Trimble® R1.
+    </p>
+  </li>
+  <li>
+    <p>
+      Soils – the soil samples collected for the Soils module provide the
+      opportunity to detect invertebrate fauna through eDNA.
+    </p>
+  </li>
+  <li>
+    <p>
+      Vertebrate fauna – invertebrates may be opportunistically collected in
+      vertebrate fauna traps. The selection of vertebrate fauna protocols (full
+      or lite) may dictate the selection of micro-pitfall trapping protocol
+      (full or lite). The timing of invertebrate sampling will need to consider
+      any impacts on vertebrate fauna trapping (e.g. light trapping could
+      influence vertebrate fauna trap results).
+    </p>
+  </li>
+  <li>
+    <p>
+      Targeted survey – the results of the Invertebrate fauna module sampling
+      may be a trigger for targeted survey. If biosecurity (i.e. monitoring for
+      potential incursion of exotic pests) is a specific focus, sampling methods
+      outside of those listed in the Invertebrate fauna module may be more
+      appropriate to enable rapid detection of taxa – use the Targeted Survey
+      module in such instances.
+    </p>
+  </li>
+  <li>
+    <p>
+      Opportune – invertebrates can also be collected opportunistically (within
+      and outside the plot) as part of the Opportunistic observations module.
+      The opportunity for opportunistic sampling of invertebrates may occur
+      during systematic sampling. The Opportunistic observations module can be
+      quick-accessed from within the Invertebrate fauna module to record such
+      records.
+    </p>
+  </li>
+</ul>
+<p>
+  The invertebrate sampling results can be analysed in relation to attribute
+  data collected in the adjoining vegetation plot. For example, the abundance of
+  invertebrate captures could be analysed in relation to: plant type, plant
+  cover and phenology collected as part of the Cover and Floristics modules;
+  leaf litter cover collected as part of the Cover module; soil type and bulk
+  density collected as part of the Soils module; coarse woody debris size and
+  availability collected as part of the Coarse Woody Debris module; and soil
+  char depth collected as part of the Fire module.
+</p>
+<table>
+  <caption>
+    <p>Table 2. Summary of invertebrate fauna field sampling protocols.</p>
+  </caption>
+  <colgroup>
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <td>Sampling method</td>
+      <td>Overview</td>
+      <td>Focus</td>
+      <td>Requirement</td>
+      <td>Total field hours per plot</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Passive</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Wet micro-pitfall trapping</td>
+      <td>
+        <p>
+          Full: 2 x 50 m parallel lines of 6 wet micro-pitfalls (no barriers),
+          opened for 7 days (standard, preferred) or 5 days (minimum) (full
+          plot)
+        </p>
+        <p>
+          Lite: 1 x 50 m line of 6 wet micro-pitfalls (no barriers), opened for
+          7 days (standard, preferred) or 5 days (minimum) (half plot).
+        </p>
+      </td>
+      <td>
+        <p>Ground-active, terrestrial invertebrates</p>
+        <p>(e.g. ants, ground beetles, spiders)</p>
+      </td>
+      <td>Required</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>Soil sampling (eDNA)</td>
+      <td>
+        Soil samples collected at micro-pitfall locations, for potential
+        analysis of invertebrate DNA (also suitable for detection of other
+        taxa).
+      </td>
+      <td>
+        Soil macro-invertebrates (e.g. earthworms, centipedes, millipedes,
+        beetle larvae, mesofauna and microfauna).
+      </td>
+      <td>
+        <p>Optional</p>
+        <p>
+          Note: Soil metagenomic samples also collected as part of the Soils
+          module.
+        </p>
+      </td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Malaise trapping (Townes)</td>
+      <td>
+        1 per plot, left in situ for 5 to 7 days (checking daily to change
+        collection bottle if needed).
+      </td>
+      <td>Flying insects (e.g. flies, wasps)</td>
+      <td>Optional</td>
+      <td>1.5*</td>
+    </tr>
+    <tr>
+      <td>Leaf-litter extraction (Berlese funnel)</td>
+      <td>
+        Extraction of 5 x 1 L leaf-litter samples, from the corners and centre
+        of the plot.
+      </td>
+      <td>
+        Litter-dwelling invertebrates (e.g. spiders, ground beetles, snails,
+        millipedes, mites, springtails, mesofauna and microfauna)
+      </td>
+      <td>Optional</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>
+        <p>Light trapping</p>
+        <p>(LepiLED)</p>
+      </td>
+      <td>1 per plot for 1 night, located to maximise the catch.</td>
+      <td>Nocturnal flying insects (e.g. moths, beetles)</td>
+      <td>Optional</td>
+      <td>0.5*</td>
+    </tr>
+    <tr>
+      <td>Pan trapping</td>
+      <td>
+        2 x 55 m transects, of 12 pan traps, placed 5 m apart, left in situ for
+        &lt;24 hours (Lite) or two weeks (Full).
+      </td>
+      <td>Flying insects (e.g. flies, wasps, beetles)</td>
+      <td>Optional</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><strong>Active</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Active search</td>
+      <td>
+        1-hour diurnal active search and 1-hour nocturnal search of the plot,
+        hand collecting any invertebrates observed.
+      </td>
+      <td>General</td>
+      <td>
+        <p>Required</p>
+        <p>(baseline inventory)</p>
+      </td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>Foliage beating</td>
+      <td>
+        10 x beats of 5 individual plants of the two most dominant shrub
+        species, located at the corners and centre of the plot.
+      </td>
+      <td>
+        Non-flying arthropods (e.g. caterpillars, sawfly larvae, possible for
+        ants, beetles, bugs, spiders)
+      </td>
+      <td>Optional</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Sweep netting</td>
+      <td>
+        10 sweeps of 5 individual plants/patches of the two most dominant
+        understorey species, located at the corners and centre of the plot.
+      </td>
+      <td>Flying insects, pollinators</td>
+      <td>Optional</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<p>* Will take additional time if dry sampling.</p>
+
+<p>Figure 1. Plot layout for invertebrate survey.
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/plot-layout.png"
+            alt="Plot layout for invertebrate survey"
+            widteh="470"
+            height="700"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+
+<p><strong>General survey guidelines</strong></p>
+<p>Objectives and survey planning</p>
+<ul>
+  <li>
+    <p>
+      A clear statement of the project objectives should underpin why this
+      module is undertaken.
+    </p>
+  </li>
+  <li>
+    <p>
+      Refer to the decision trees (will be provided as part of the supporting
+      information) to guide the selection of which protocol/s to undertake,
+      based on the question/s being asked, the target taxa, the timeframe,
+      budget, and expertise.
+    </p>
+  </li>
+  <li>
+    <p>Determine a sampling procedure (timing, intensity, duration).</p>
+  </li>
+  <li>
+    <p>
+      Plan how the invertebrate samples will be sorted and identified (Evans
+      2016a).
+    </p>
+  </li>
+</ul>
+<p>Plot selection</p>
+<ul>
+  <li>
+    <p>
+      The fauna plot needs to be established prior to undertaking this module
+      (refer to the Plot selection and layout and Vertebrate fauna modules). A
+      pre-requisite when establishing the fauna plot is that the vegetation
+      association is homogeneous and matches that within the adjoining
+      vegetation and soils plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      For baseline inventory, plots are chosen to cover the major vegetation
+      associations present within a project area, providing spatial coverage
+      across the project area, and focusing on areas that represent the most
+      natural (undisturbed) conditions. For ongoing monitoring, plot selection
+      will depend on the question/s being asked and the impact footprint, and
+      may include a range of conditions and treatments (e.g. design) (Hoekman et
+      al. 2017).
+    </p>
+  </li>
+  <li>
+    <p>
+      Terrestrial invertebrate communities that are dependent on or restricted
+      to specific vegetation or habitat types (e.g. SREs) are likely to be most
+      impacted by ecosystem change (Houghton et al. 2019). Ecotones (i.e. where
+      ecosystems converge) and riparian zones are productive areas for
+      collecting invertebrates (Upton et al. 2010), but are not covered by the
+      plot based approach. For these reasons, targeted (outside of plot)
+      invertebrate survey may be important to supplement the plot-based results.
+    </p>
+  </li>
+</ul>
+<p>Permits</p>
+<ul>
+  <li>
+    <p>
+      There are no specific permit requirements for collecting terrestrial
+      invertebrates in Australia, unless they are a listed species at a state or
+      Commonwealth level. A scientific permit is required if undertaking work in
+      a protected area. Special permit requirements may apply on offshore
+      islands (e.g. Lord Howe Island, Christmas Island and Macquarie Island)
+      because of their natural heritage value. Permits may also be required if
+      the sampling method poses a risk to vertebrate fauna. Refer to the
+      relevant authority in the relevant State or Territory (Upton et al. 2010).
+    </p>
+  </li>
+  <li>
+    <p>
+      The survey coordinator must check that all scientific permit and animal
+      ethics requirements are being met. Refer to the Introduction chapter.
+    </p>
+  </li>
+</ul>
+<p>Equipment</p>
+<ul>
+  <li>
+    <p>
+      The protocols require the use of the Mobile App and the Trimble® R1. For
+      instructions on how to operate the Trimble® R1 refer to the General
+      Introduction Chapter. The guidelines below are relevant to all
+      invertebrate fauna protocols.
+    </p>
+  </li>
+  <li>
+    <p>
+      The specific invertebrate collecting equipment identified in this module
+      must be used to standardise the results. Most of the equipment can be
+      sourced from Australian Entomological Supplies (online). The relevant
+      state/local environmental authority may have equipment available for hire.
+      Refer to each of the protocols below for a list of the equipment required.
+    </p>
+  </li>
+  <li>
+    <p>
+      Trimble® R1 is the preferred method for recording the location of
+      invertebrate sampling, as this provides a high level of accuracy that is
+      important for repeat monitoring.
+    </p>
+  </li>
+  <li>
+    <p>
+      DAWE and TERN have no affiliation with any of the suppliers listed. Where
+      a specific supplier is noted, this is simply for convenience, and
+      alternatives can be sourced. For a list of entomological suppliers, refer
+      to (Upton et al. 2010) (p75).
+    </p>
+  </li>
+  <li>
+    <p>
+      The permit conditions in some jurisdictions require fauna survey equipment
+      that is used to capture animals to be clearly labelled (e.g., organisation
+      name, contact number and/or permit number). Check your permit conditions
+      for any details that may be required.
+    </p>
+  </li>
+  <li>
+    <p>
+      It is important to clean equipment thoroughly when collecting samples for
+      DNA analysis.
+    </p>
+  </li>
+  <li>
+    <p>
+      Traps/survey equipment must be removed at the completion of a survey
+      event.
+    </p>
+  </li>
+</ul>
+<p>Safety</p>
+<ul>
+  <li>
+    <p>
+      Users should avoid working in the field alone and should carry portable
+      communication devices (mobiles, UHF radios), especially when working in
+      remote areas.
+    </p>
+  </li>
+  <li>
+    <p>
+      Chemicals are used for killing and preserving invertebrates, notably ethyl
+      acetate, ethanol (ethyl alcohol) and propylene glycol.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ethanol and ethyl acetate are highly flammable (both in liquid and vapour
+      form). Ethanol is a mild poison (made by distillation with benzene which
+      causes cancer, not suitability for human consumption). Breathing vapours
+      of ethyl acetate may cause drowsiness and dizziness, and irritate the
+      eyes, throat and skin. Repeated contact causes defatting of the skin with
+      irritation, dryness, and cracking, and can be seriously damaging to
+      internal organs in the case of prolonged exposure.
+    </p>
+  </li>
+  <li>
+    <p>
+      Propylene glycol (antifreeze) is generally regarded as safe (not suitable
+      for human consumption but environmentally non-toxic). It can be safely
+      disposed of on soil or in water, although check the disposal requirements
+      as they may vary between jurisdictions. Do not use ethylene glycol
+      antifreeze as it is poisonous, toxic and requires disposal at a licenced
+      facility.
+    </p>
+  </li>
+  <li>
+    <p>
+      MSDS must be printed and stored with any chemicals, and strict safety
+      protocols followed. Permits may be required regarding their use and
+      transport.
+    </p>
+  </li>
+</ul>
+<p>Weather</p>
+<ul>
+  <li>
+    <p>
+      The suitability of the weather conditions for the invertebrate sampling
+      methods should be assessed prior to a field trip. Adjustments may be
+      necessary to the trip dates or survey days within the trip.
+    </p>
+  </li>
+  <li>
+    <p>
+      If possible, an onsite automatic weather station should be installed for
+      the duration of a sampling event, to record daily temperatures, rainfall
+      and humidity. A weather station is established as part of the Vertebrate
+      fauna module (full protocol). For invertebrate survey, the weather station
+      is ideally placed near the ground surface within the fauna plot.
+      Otherwise, data should be obtained from the nearest weather station.
+    </p>
+  </li>
+  <li>
+    <p>
+      Categorical weather data (drop-down selections for wind, rain,
+      temperature, sun/cloud) is also recorded for each protocol. The data
+      fields will be pre-filled if weather data has already been recorded for
+      the day, with the option to update the entries to match the prevailing
+      conditions.
+    </p>
+  </li>
+</ul>
+<p>Sampling, preservation, identification and storage</p>
+<ul>
+  <li>
+    <p>
+      It is helpful to be familiar with the common invertebrate orders before
+      conducting surveys. There are a number of useful web resources available,
+      such as:
+    </p>
+  </li>
+  <ul>
+    <li>
+      <p>http://anic.ento.csiro.au/insectfamilies/</p>
+    </li>
+    <li>
+      <p>https://australian.museum/learn/teachers/learning/bugwise/</p>
+    </li>
+    <li>
+      <p>
+        A list of useful books and identification keys is provided in Upton et
+        al. (2010).
+      </p>
+    </li>
+  </ul>
+  <li>
+    <p>
+      Experience visually identifying invertebrates in the field is not
+      essential for this module as all captures are collected for later
+      identification, either based on morphology or via DNA analysis. This means
+      it is of utmost importance that the samples are appropriately stored.
+      Preservation and storage requirements are summarized in Section 10.
+    </p>
+  </li>
+  <li>
+    <p>
+      Liaise with the receiving museum or relevant institution prior to
+      commencing this module, to discuss:
+    </p>
+  </li>
+  <ul>
+    <li>
+      <p>specific collection, preservation and storage requirements</p>
+    </li>
+    <li>
+      <p>
+        the availability and cost of taxonomic identification and genetic
+        expertise
+      </p>
+    </li>
+    <li>
+      <p>options for long-term storage.</p>
+    </li>
+  </ul>
+  <li>
+    <p>
+      Ethyl acetate is used as standard euthanising chemical in the field, for
+      active survey methods or where specimens are dry collected. For
+      instructions on how to make a kill jar, refer to Upton et al. (2010).
+      Freezing is the most humane method of killing insects if this option is
+      available. Some taxa (e.g. moths and butterflies) are best kept alive and
+      put in a freezer as soon as practical after trapping to preserve their
+      condition (Sherley and Evans 2016).
+    </p>
+  </li>
+  <li>
+    <p>
+      Appropriate preservation and storage of samples is of utmost importance to
+      ensure their future value. High grade (95% and above) ethanol and
+      undiluted propylene glycol are adopted as the standard preservative
+      solutions, for a killing agent through to long-term storage, based on
+      their DNA preservability, low toxicity, availability and cost (Nakamura et
+      al. 2020). Ethanol is the traditional killing agent of choice however
+      ppropylene glycol has the benefit of being less likely to evaporate in the
+      field, less flammable, odourless, cheaper, and easier to transport.
+    </p>
+  </li>
+  <li>
+    <p>RNAlater® is another preservative option that can be explored.</p>
+  </li>
+  <li>
+    <p>
+      Trapping results can differ significant depending on the killing agent
+      used (Gossner et al. 2016). The relative influence of the preservatives on
+      captures is unknown, however the potential for related bias is true for
+      any preservative that is used (Skvarla et al. 2014). Given propylene
+      glycol is odourless it may be a better option as a killing agent in traps,
+      however this remains untested.
+    </p>
+  </li>
+  <li>
+    <p>
+      Samples should not be exposed to prolonged sunlight and heat in the field
+      as they can degrade, ethanol can evaporate, and propylene glycol can
+      decompose into water, acetone and isopropanol. The effects generally lead
+      to lower DNA integrity (Weigand et al. 2021). Samples can be kept in a
+      cooler or refrigerator if available.
+    </p>
+  </li>
+</ul>
+<p>Timing</p>
+<ul>
+  <li>
+    <p>
+      The timing of repeat invertebrate surveys should be standardised as much
+      as possible to reduce the effect of environmental factors and seasonal
+      variability on the results. Ideally, sampling is undertaken during the
+      same time period, the same moon phase, and the same (as much as possible)
+      weather conditions, for the same duration each sampling event.
+    </p>
+  </li>
+  <li>
+    <p>
+      Invertebrate sampling is ideally undertaken during the same period as
+      vertebrate fauna surveys, so trends can be assessed, and co-timed with the
+      vegetation and soil monitoring, so the results can be analysed with
+      respect to available plant and litter resources in the local landscape.
+    </p>
+  </li>
+  <li>
+    <p>
+      Timing of surveys for conservation significant and short range endemic
+      invertebrate fauna should follow also follow existing guidelines (EPA
+      2016; Australian Government Department of Agriculture Water and the
+      Environment 2021).
+    </p>
+  </li>
+  <li>
+    <p>
+      The time of day can be important. Early mornings can be productive as
+      insects are actively feeding as the day warms up. Insect activity
+      typically declines in hot weather (Upton et al. 2010).
+    </p>
+  </li>
+  <li>
+    <p>
+      Invertebrates can respond to change quicker than plants and animals, and
+      their presence and movements strongly linked to phenological events, so
+      intra-annual sampling covering a range of temporal and meteorological
+      conditions will provide more comprehensive results (Battelle 2020; Grange
+      et al. 2021).
+    </p>
+  </li>
+</ul>
+<p>Analysis</p>
+<ul>
+  <li>
+    <p>
+      The approach and expertise required to statistically analyse collected
+      data and interpret DNA analyses should be determined at the start of a
+      project and factored into the costs.
+    </p>
+  </li>
+</ul>
+<p>Reporting</p>
+<ul>
+  <li>
+    <p>
+      Reporting on the survey results may be a requirement of scientific permits
+      and animal ethics approval.
+    </p>
+  </li>
+  <li>
+    <p>
+      Any vertebrate fauna by-catch/trap deaths must be documented. Ensure the
+      trap type, date, time, species and any comments relevant to the cause are
+      recorded. This information will be required for animal ethics and
+      scientific permit report returns, as well as any specific reporting
+      mechanisms required by the relevant jurisdiction. Assess the suitability
+      of animal vertebrate fauna by-catch for whole specimen vouchering (see the
+      Vertebrate fauna module).
+    </p>
+  </li>
+</ul>
+<p><strong>Appendices</strong></p>
+<p>
+  Appendix A. Suitability of the sampling protocols for the commonly monitored
+  insect guilds.
+</p>
+<table>
+  <colgroup>
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <td> </td>
+      <td>Micro-pit</td>
+      <td>Soil eDNA</td>
+      <td>Malaise</td>
+      <td>Leaf-litter</td>
+      <td>Light trap</td>
+      <td>Pan trap</td>
+      <td>Active search</td>
+      <td>Foliage beat</td>
+      <td>Sweep net</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p>Adult semi-aquatic insects</p>
+        <p>(Plecoptera, Ephemeroptera, and Trichoptera)</p>
+      </td>
+      <td> </td>
+      <td> </td>
+      <td>**</td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td>**</td>
+      <td>*</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Singing insects</p>
+        <p>(Orthoptera &amp; Hemiptera: Cicadoidea)</p>
+      </td>
+      <td>^</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Ground-dwelling beetles (Coleoptera: Carabidae and Staphylinidae)</td>
+      <td>***</td>
+      <td>**</td>
+      <td> </td>
+      <td>***</td>
+      <td>**</td>
+      <td>^</td>
+      <td>*</td>
+      <td>^</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Non-lepidopteran pollinators (Hymenoptera, Diptera, Coleoptera)</td>
+      <td> </td>
+      <td> </td>
+      <td>**</td>
+      <td> </td>
+      <td> </td>
+      <td>***</td>
+      <td>***</td>
+      <td> </td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>Leaf-chewing larvae (Lepidoptera and Hymenoptera: Symphyta)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>***</td>
+      <td>***</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>Night-active moths (Lepidoptera)</td>
+      <td> </td>
+      <td> </td>
+      <td>^</td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dragonflies and damselflies (Odonata)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Ants</p>
+        <p>(Hymenoptera: Formicidae)</p>
+      </td>
+      <td>***</td>
+      <td>**</td>
+      <td>*</td>
+      <td>***</td>
+      <td>^</td>
+      <td>*</td>
+      <td>**</td>
+      <td>**</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Butterflies</p>
+        <p>(Lepidoptera: Papilionoidea)</p>
+      </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Flies (Diptera)</td>
+      <td> </td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td>**</td>
+      <td>***</td>
+      <td> </td>
+      <td>^</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td><strong>Other (not covered in (Montgomery et al. 2021)</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Grasshoppers (Orthoptera)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>**</td>
+      <td> </td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>
+        <p>Thrips</p>
+        <p>(Thysanoptera)</p>
+      </td>
+      <td>*</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>**</td>
+      <td> </td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>
+        <p>Spiders and scorpions</p>
+        <p>(Arachnida)</p>
+      </td>
+      <td>**</td>
+      <td>**</td>
+      <td> </td>
+      <td>**</td>
+      <td> </td>
+      <td> </td>
+      <td>**</td>
+      <td>*</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>
+        Mesofauna (soil and litter invertebrates, e.g. mites (Acari),
+        springtails (Collembola), nematodes
+      </td>
+      <td>*</td>
+      <td>**</td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td>*</td>
+      <td>***</td>
+      <td> </td>
+      <td>^</td>
+    </tr>
+    <tr>
+      <td>Millipedes (Diplopoda)</td>
+      <td>**</td>
+      <td>**</td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Earthworms (Annelida)</td>
+      <td> </td>
+      <td>**</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Landsnails (Gatropoda)</td>
+      <td>*</td>
+      <td>**</td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td> </td>
+      <td>***</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  *** Optimal suitability; ** Possibly suitability; * Marginal suitability; ^
+  Bycatch only; Blank indicates general unsuitability.
+</p>
+<p>
+  Based on (Montgomery et al. 2021), updated to reflect the sampling methods
+  included in this Module. Note that Soil sampling eDNA, Leaf-litter sampling
+  and Sweep netting are not included in Montgomery et al. (2021). Sweep net
+  based on results of (Spafford and Lortie 2013)
+</p>
+<p>Appendix B. Data fields by invertebrate sampling protocol.</p>
+<table>
+  <colgroup>
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <td>Data fields</td>
+      <td>Micro-pit</td>
+      <td>Soil eDNA</td>
+      <td>Malaise</td>
+      <td>Leaf-litter</td>
+      <td>Light trap</td>
+      <td>Pan trap</td>
+      <td>Active search</td>
+      <td>Foliage beat</td>
+      <td>Sweep net</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sampling protocol</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Full or Lite</td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Trap set-up</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fauna Plot ID</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Observer/s</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td><strong>Photo/s</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Trap</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Habitat</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Sample container</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Close up ID</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Photo direction</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Photo description</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td><strong>Time</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trap install date/time</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Start survey</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Trap open date/time</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>End survey date/time</td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Sample collection date/time</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Trap removal</p>
+        <p>date/time</p>
+      </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Weather</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Wind</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Rain</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Humidity</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Sun/cloud</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td><strong>Trapping details</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Trap/Location ID</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Trap/apparatus dimensions (multiple fields)</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Trap /apparatus colour</td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trap materials</td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trap damage</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trap elevation ASL</td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trap/sampling elevation above ground</td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Collection apparatus</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Surrounding vegetation description</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Dominant plant cover</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dominant plant sp.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Plant height</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Plant phenology</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Plant hit height above ground</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Number of leaves</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Plant circumference</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Herbivory</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Average leaf length</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Soil sample</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Soil sample depth/diameter</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Soil type</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Soil surface temperature</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Leaf-litter sample</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Litter depth</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Litter volume</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Area litter sampled</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Voucher</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Barcode ID</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Voucher type</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Preservative type</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Preservative concentration</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Preservative volume</td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td><strong>Post field</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>New Barcode ID</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Species ID</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Count</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Voucher type</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Preservative type</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Preservative %age</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Preservative volume</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </tbody>
+</table>
+<p> </p>""" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/4a2c4309-da43-4ad4-b1eb-637d2e70580d> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/666e5aa5-e545-4637-bc52-a296d647b303> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/79296cab-a02f-420d-b260-17c0e8691499> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7d74d213-3fb8-46b4-9970-2544f555e279> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7e4bfab2-4056-4309-bd22-f070f6952bc0> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/e76e99ef-de1d-4387-9b2e-3455b9f9ff78> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/e9a8e65a-59d3-49f0-831d-094c568c5284> ;
+    skos:prefLabel "Invertebrate fauna" ;
+.
+

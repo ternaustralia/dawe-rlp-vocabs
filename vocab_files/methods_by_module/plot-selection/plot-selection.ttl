@@ -1,0 +1,155 @@
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Plot Selection" ;
+    ns1:equipment """<li>Computer with access to the App web-interface (to assist with desktop assessment and stratification process) </li>
+<li>Mobile device loaded with the App, and a field GIS app or hardcopy maps with available layers (e.g. satellite imagery, project area boundaries, prospective site locations, vegetation mapping, landform features, access tracks, watercourses) </li>
+<li>Trimble R1 GNSS receiver </li>
+<li>Compass </li>
+<li>Iron droppers (metal fencing posts) or stakes (where plots are to be permanently marked) </li>
+<li>Metal labels (where plots are to be permanently marked). </li>""" ;
+    ns1:instructions """<p>Pre-survey &ndash; stratification and prospective plot locations</p>
+<p>Refer to Table 2 below for an overview of the different information that can be considered and reviewed during the desktop assessment and stratification phase.</p>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/decision-making-frame.png" alt="Table 2. Desktop assessment decision making framework.  " width="655" height="366" /></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Review available satellite imagery, vegetation mapping and other GIS layers (e.g. soil, landform, watercourses, land-use) to stratify the project area into sampling units and identify prospective plot locations that capture the variation present across the project area.</li>
+<li>The stratification process often requires a number of steps to divide the project area into sampling units that are environmentally similar (i.e. areas of the same vegetation type, same land use) and then filtering within these sampling units to identify or control for other aspects such as slope and aspect, distance to watercourses, vegetation condition, threatened or target species records and accessibility (i.e. distance from tracks or roads, terrain).</li>
+<li>Once the available datasets have been reviewed, open the App on the web (web interface), and navigate to the Mapping Interface. For more information about the Mapping Interface refer to the supporting information.</li>
+<li>Click on the Add layer icon (Add with solid fill).</li>
+<li>Upload any shapefiles that are necessary for the stratification and plot selection process and click Save. Key layers include the project area boundary, vegetation mapping and tracks (important layers will vary between projects; only upload layers that are relevant for your project).</li>
+<li>Map Description automatically generatedOnce all shapefiles have been uploaded and saved, click Return to main screen.
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/mapping-interface-app.png" alt="Figure 1. Mapping interface app screen" width="629" height="532" /></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Open the Plot selection and layout module.</li>
+<li>Navigate to the Stratification section. The mapping interface is built into the stratification screen and any layers uploaded will be visible here.</li>
+<li>Create a GIS point layer with prospective plot locations. The number of plot locations needs to be tailored to the size and complexity of each sampling unit or vegetation association (alternatively, this layer can be created in other mapping software, such as ArcMap, QGIS or Google Earth and uploaded as a shapefile or KML).</li>
+<li>To create a point, complete all the fields on the Stratification screen, including giving the proposed plot a simple name, specifying if it is a control or impact site (only tick if appropiate) and the replicate number (the plot number with a specific sampling unit).</li>
+<li>From the stratification drop-down list, select the different layers or information sources that were used to determine the plot location. This information is collected to assist with final plot selection in the field and aligns with Table 1.</li>
+<li>If required, write any other information about why the location was selected in the comments field (i.e. any information sources not listed on the drop-down menu, details about site access, any potential constraints or issues that may limit plot selection and layout in the field).</li>
+<li>Select Map Point to bring up a cursor. Click on the map to mark the prospective plot location.</li>
+<li>To map another point, click New Point and repeat steps 10-14.</li>
+<li>Once all prospective plot locations have been marked, click Finish.</li>
+<li>It may be beneficial to map more locations than the number of plots required incase some areas are deemed as unsuitable once assessed in the field. If a mapped point is a back up or supplementary site, this information can be recorded in the comments feld.</li>
+<li>Depending on the nature of the study, plan for control and impact sites and a suitable number of replicates in each sampling unit, where required. If plots are to be paired or replicates grouped together, separate points may not be required for each potential plot location, but this information should be captured in the comments field.
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/project-area-stratification.png" alt="Figure 2. Project area stratification app screen  " width="349" height="562" /></td>
+<td>
+<ul>
+<li>Plot Code: User defined name for each proposed plot.</li>
+<li>Control and Impact: Tick if relevant for the plot. Note, can only tick control or impact.</li>
+<li>Replicate #: Number of replicate plots.</li>
+<li></li>
+<li>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/plot-selection.png" alt="Plot selection" width="292" height="163" />Plot selection: User can select the key layers / that were used to select plot location (i.e. vegetation, soil type, access).</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li data-leveltext="" data-font="Symbol" data-listid="43" aria-setsize="-1" data-aria-posinset="5" data-aria-level="1"><span data-contrast="auto"><span data-ccp-parastyle="Screenshot bullet 1" data-ccp-parastyle-defn="{&quot;ObjectId&quot;:&quot;f26f4034-7691-462c-9cda-44311613ff8f|178&quot;,&quot;ClassId&quot;:1073872969,&quot;Properties&quot;:[134233614,&quot;true&quot;,134234082,&quot;true&quot;,201340122,&quot;2&quot;,201341983,&quot;0&quot;,201342447,&quot;1&quot;,268442635,&quot;20&quot;,335559682,&quot;43&quot;,335559683,&quot;0&quot;,335559685,&quot;263&quot;,335559705,&quot;1033&quot;,335559739,&quot;60&quot;,335559740,&quot;288&quot;,335559991,&quot;263&quot;,469769226,&quot;MuseoSans-300,Calibri&quot;,469775450,&quot;Screenshot bullet 1&quot;,469777841,&quot;MuseoSans-300&quot;,469777842,&quot;Calibri&quot;,469777843,&quot;Calibri&quot;,469777844,&quot;MuseoSans-300&quot;,469778129,&quot;Screenshotbullet1&quot;,469778324,&quot;List Paragraph&quot;]}">Any other comments</span><span data-ccp-parastyle="Screenshot bullet 1">: Alpha numeric summary information. Can be accessed in the field and can help inform </span><span data-ccp-parastyle="Screenshot bullet 1">final plot position</span><span data-ccp-parastyle="Screenshot bullet 1">.&nbsp;</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:60,&quot;335559740&quot;:288}">&nbsp;</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p>Plot selection in the field</p>
+<ol>
+<li>Confirm the suitability of any prospective plot locations identified during the desktop assessment once in the field (the mapping interface can be used to navigate to each prospective plot location once on site). At each suitable plot location, mark the point in the Mapping Interface using the Plots layer (field).</li>
+<li>Determine the extent, distribution and complexity of the sampling unit(s) to be assessed and the number of units that require assessment. Additional plots may be required to collect data for vegetation associations that were not previous mapped or to capture the variation present within vegetation associations, if greater than expected. If required, additional plot locations can be mapped in the field using the Plots layer (field) in the Mapping Interface screen.</li>
+<li>Suitable locations should be representative of the environments present within the project area, and homogeneous in terms of vegetation association, slope, and soil type. Ecotones and anthropogenic influences (e.g. roads, cattle yards, fences, bores) should be avoided, unless the survey is designed to monitor the impacts of these factors.</li>
+</ol>
+<p>Plot layout</p>
+<p>Using the Trimble R1 GNSS to lay out a plot</p>
+<ol>
+<li>Once final plot locations has been determined in the field, switch on the Trimble R1 by depressing power button in centre. It will flash green and blue as it looks to connect to Bluetooth.</li>
+<li>Navigate to the mobile device&rsquo;s Bluetooth settings and turn Bluetooth ON.</li>
+<li>Check the Devices list and wait for the &ldquo;GNSS:XXX&rdquo; to appear. Select it and you should be connected.</li>
+<li>Navigate to the GNSS Status App and select Source. If the GNSS is in recent pick list, then select. If not, select Position Source to be the Bluetooth and select from available devices.</li>
+<li>Allow some time to let the accuracy drop to sub metre.</li>
+<li>Open to the Plot selection and layout module in the App and navigate to the Plot layout screen.</li>
+<li>Register the new plot by giving it a name.</li>
+<li>To capture information about plot type, use the tick boxes to select if the plot is Impact or Control (no boxes need to be ticked if these categories do not apply).</li>
+<li>In the Replicate # box, add in a number to define plot replication number (if the plot is the first or only of it&rsquo;s type within a sampling unit, then the number will be 1).</li>
+<li>Select Yes or No from the drop-down menu to define whether the plot will be permanently marked. If Yes, select where the iron droppers will be placed (NW, NE, SW or SE corners, centre).</li>
+<li>If the plot is permanently labelled with the plot name, record where the plot is labelled (which iron dropper).</li>
+<li>Add in the plot dimensions (in metres). As a standard, plots are 100 m by 100 m (1 ha).</li>
+<li>Decide on the SW corner of the plot, stand at that point and select Create Plot. The app will generate a grid of yellow point markers based on the plot dimensions added above. Your location is the blue dot.</li>
+<li>As a standard, the plot aligns in a north-south direction with the grid. If necessary, plot orientation can be altered using the orientation field (the app will automatically re-align the plot based on the degrees value added).</li>
+<li>Review the plot layout (repeat steps 11-12 if you want to shift plot location or alter dimensions or alignment).</li>
+<li>To finalise the plot location, select Mark Closest Point. The point will be saved and turn green. Repeat this step until you have walked around the plot and all yellow points have changed to green.</li>
+<li>Continue around the grid, remembering to include the Centre point. All 25 points will save automatically.</li>
+<li>The four corners and centre of each plot shoud be permanently marked using star droppers. In cases where this is not possible (some Indigenous lands, private or leasehold lands, rocky outcrops, etc.) at least one corner should be marked at minimum, especially if plots are to be revisited. Make sure to note where any permanent droppers have been placed by ticking the relevant check boxes (as detailed above).</li>
+<li>Plots may be marked with an aluminum tag to identify the plot name. This allows plots to be relocated easily and assists with ongoing monitoring and return surveys. Record the location (star dropper) with the aluminum tag in the label drop-down field.</li>
+<li>Select Finish Plot to move onto the other required plot-based modules, or if required select Transects to bring up transect guide lines (transect lines can be used to align tape measures or to put in wooden stakes/markers at the start and end of each transect).
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/plot-selection-layout-app-screen.png" alt="Figure 3. Plot selection and layout, including transect layouts, app screens " width="598" height="678" /></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p>Additional guidelines</p>
+<p>Pre-survey</p>
+<ul>
+<li>Compile and review any existing environmental, ecological, land use and spatial information relevant to the project area. The review should not be restricted to only spatial layers. Other useful datasets may include any past ecological survey information for the project area and surrounds, research into ecological communities or species and discussions with landholders/managers.</li>
+<li>Review any state or territory guidelines to ensure that the survey is compliant or aligns with any legislation or recommendations relevant for the area. These guidelines can also indicate other useful sources of information or databases that can be reviewed.</li>
+<li>It can be most effective to use spatial data as a series of filters to first identify areas of interest, starting with broad layers such as climate or IBRA and then focus in using finer-scale detailed layers such as vegetation or soil type. Soil and vegetation data can then be further refined using other information such as slope, watercourses, fire history or tracks to pinpoint potential plot locations within these larger areas of interest.</li>
+<li>Depending on the nature of the project and the type of analysis to be undertaken, some variables may need to be kept as consistent as possible (i.e. distance from watercourses, level of disturbance, slope, elevation), particularly if control and impact plots are being compared.</li>
+<li>Where plots may be located on pastoral properties, Indigenous land or other private enterprises, landholders/managers must be contacted prior to any surveys to discuss the project and obtain approval for the property to be included in the surveys. Their involvement in the decision-making process may provide valuable on-ground knowledge for locating and accessing plots and is critical in ensuring the longevity of monitoring plots with minimal disturbance. Access to plot locations should be assured for current and future field trips (White et al. 2012).</li>
+<li>On-ground knowledge of the project area from landholders/land managers should be factored into the stratification process. It may also be beneficial to provide landholders or managers with a copy of the proposed plot locations before the field survey as they may be able to offer additional information about proposed locations.</li>
+<li>Flexibility is required when selecting prospective plot locations during the desktop assessment process and selecting more plots than will ultimately be required may be beneficial in case some areas are deemed as unsuitable once they have been viewed in the field.</li>
+<li>Select back up plots in case weather or terrain prevent access to proposed plot locations, or other factors constrain the suitability of areas once assessed in the field (Heard and Channon 1997).</li>
+<li>Undertaking a reconnaissance field trip after the desktop assessment and before the main field survey can help with the selection of suitable survey areas and inform the number of plots required. Alternatively, when planning a field survey, ensure that adequate time has been allowed to traverse the project area, assess prospective plot locations and confirm location of all plots before starting any plot-based modules.</li>
+<li>Replication should also be considered during the stratification and planning process. Refer back to the introductory chapter for more information about designing field surveys and determining the number of plots required.</li>
+<li>Where appropriate, include details on the location of proposed management interventions or developments during the stratification and plot selection processes to ensure that plots can be used for impact and control comparisons. Paired plots may be the most effective method to achieve this.</li>
+<li>If a BACI design is to be implemented, then project planning must ensure that at least one lot of surveys is undertaken before any management interventions or developments commence. During this process, it is also important to ensure that are necessary plots can be re-surveyed after intervention or development.</li>
+<li>Record the rationale for the location of each prospective plot as this may provide crucial information to assist with final plot selection once in the field (e.g. Plot A1 has been selected because it falls within the Eucalyptus leucoxylon woodland area, has a gently inclined slope and a northerly aspect. It is approximately 200 m away from the access track and 100 m from the watercourse. It is spaced at least 500 m away from Plots A2 and A3).</li>
+<li>To assist with the plot selection process, a stratification layer can be drawn up (in ArcGIS, QGIS or Google Earth) based on the relevant spatial datasets and uploaded into the App. Preliminary plot names can align with any sampling units defined in this layer.</li>
+<li>Only upload spatial layers that are useful for the plot selection process. Spatial layers are large and adding multiple layers to the mapping interface may slow response times.</li>
+<li>Copies of other spatial layers can be taken to the field in the form or hard copy maps or other mobile mapping software.</li>
+<li>Before uploading spatial layers to the App, clip any state or national datasets to the general project area, to reduce file size and allow layers to load quicker.</li>
+<li>Before leaving for the field, ensure that any layers uploaded or generated during the stratification process using the web version are available in the app on your mobile device.</li>
+</ul>
+<p>Field collection</p>
+<ul>
+<li>At the start of the field survey, the extent, distribution, and complexity of the project area should be assessed and compared to the plot locations determined during the desktop assessment. If necessary, adjust or add plots to capture the variation present, using the Plot layer (field) in the Mapping Interface.</li>
+<li>Spatial layers can also be turned on and off in the Mapping Interface to assist with plot selection and reduce loading times in the field.</li>
+<li>To avoid any confusion, turn off the preliminary plot locations layer once final plots have been selected.</li>
+<li>Undertaking the Vegetation mapping module first may assist with plot selection in the field, as plots can be placed within all vegetation associations identified. If there are more vegetation associations within the project area than expected based on the desktop assessment, place additional plots within these areas. Large or complex vegetation associations may require additional plots.</li>
+<li>Review any information collected during the stratification and preliminary plot selection processes when in the field to ensure that final plot selection aligns with the criteria used to select each plot (i.e. may need a consistent slope across plots, or a specific distance from a watercourse).</li>
+<li>Plots should be located away from vegetation edges, roads, dams, troughs and other disturbances and should be representative of the vegetation in the surrounding location.</li>
+<li>Final plot selection and layout in the field should be undertaken by an experience ecologist.</li>
+<li>If plot name is not automatically generated, follow the naming convention when defining plot names and include the project number and other identifiers to identify control or impact sites and the replicate number.</li>
+<li>Before finalising the plot location, traverse the area to ensure that it is homogeneous. If necessary, adjust the location or alignment of the plot before marking the points around the boundary and the centre point.</li>
+<li>If the plot is to be permanently marked, record the location of any iron droppers or stakes, and if labelled, the position of the label (corner or centre). This information will be available for any follow up trips and will help to relocate plots in the future.</li>
+<li>Keeping a record or both prospective plot locations and final plot locations in the App provides an overview of the plot locations and can be useful to ensure that all vegetation associations are adequately sampled within the project area and the allocation of plots is proportional to the area of each vegetation association.</li>
+</ul>""" ;
+.
+

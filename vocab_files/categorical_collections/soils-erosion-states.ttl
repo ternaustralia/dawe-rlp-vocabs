@@ -1,0 +1,84 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/e7087186-7027-42c3-ab54-b65a39034dd1> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/2077173e-7d90-5513-8fc4-a4a98464ff35>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-erosion-states> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "NC" ;
+    skos:prefLabel "Not Collected" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/4b24ea88-1a04-5cd5-ab31-fc61cd4b5a45>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-erosion-states> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Z" ;
+    skos:prefLabel "Absent" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/a5d1700c-b3fe-5832-83d3-8f839e42a4fa>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-erosion-states> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "A" ;
+    skos:prefLabel "Active" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/a873feaf-57d6-52e0-9834-6ff22331dd0f>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-erosion-states> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "S" ;
+    skos:prefLabel "Stabilised" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/b05b3bab-761c-5a13-a096-afffdd9cbd8a>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-erosion-states> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "P" ;
+    skos:prefLabel "Partially stabilised" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/b7a839e2-0512-59bd-bfeb-024648dadcb9>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-erosion-states> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "n/a" ;
+    skos:prefLabel "Not Applicable" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/e7087186-7027-42c3-ab54-b65a39034dd1>
+    a skos:Collection ;
+    dcterms:description "A collection of soils erosion states and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-erosion-states> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/2077173e-7d90-5513-8fc4-a4a98464ff35> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/4b24ea88-1a04-5cd5-ab31-fc61cd4b5a45> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a5d1700c-b3fe-5832-83d3-8f839e42a4fa> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a873feaf-57d6-52e0-9834-6ff22331dd0f> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/b05b3bab-761c-5a13-a096-afffdd9cbd8a> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/b7a839e2-0512-59bd-bfeb-024648dadcb9> ;
+    skos:prefLabel "Soils erosion states codes" ;
+.
+

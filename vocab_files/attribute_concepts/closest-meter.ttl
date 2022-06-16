@@ -1,0 +1,17 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/61147f22-069f-4195-aba7-d3d971be09be>
+    a skos:Concept ;
+    dcterms:source """McCallum K, Laws M, Bignall J, O’Neill S, Sparrow B. (unpublished draft) ‘Coarse Woody Debris module’ in ….. (eds)
+Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved
+decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "It is the closest distance in meters to the sampling point of intersection along the transect. For example, if the orientation is NS and the sampling point is 5 m close to the NW sampling point on the transect, this becomes the closest meter.  " ;
+    skos:prefLabel "closest meter" ;
+    ns1:hasFeatureType <http://linked.data.gov.au/def/tern-cv/13dec53e-1062-4060-9281-f133c8269afb> ;
+    ns1:valueType ns1:Float ;
+.
+

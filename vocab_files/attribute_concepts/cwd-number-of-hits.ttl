@@ -1,0 +1,16 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/ab7e3b2d-e056-49ca-b2bc-cafa5eef44b3>
+    a skos:Concept ;
+    dcterms:source """McCallum K, Laws M, Bignall J, O’Neill S, Sparrow B. (unpublished draft) ‘Coarse Woody Debris module’ in ….. (eds)
+Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved
+decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Number of CWD hits produced during a point intercept method to select the appropriate survey method, i.e. plot type survey or transect type survey. This is a specific attribute for sampling survey selection in the Coarse Woody Debris module." ;
+    skos:prefLabel "cwd number of hits" ;
+    ns1:valueType ns1:Integer ;
+.
+

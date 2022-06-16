@@ -1,0 +1,22 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/fcfda2f7-84f0-4c26-9f80-c051d129a094>
+    a skos:Concept ;
+    dcterms:source "Ecological Field Monitoring protocols - Vegetation Mapping, Plot Description and Recruitment module , draft v0.1, 30/11/2021" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:closeMatch <http://linked.data.gov.au/def/tern-cv/abb0ee19-b2e8-42f3-8a25-d1f39ca3ebc3> ;
+    skos:definition "The growth stage of the most dominant plants within a plant community or a plant individual." ;
+    skos:prefLabel "growth stage" ;
+    ns1:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/89c02383-fb5e-4acd-b248-902a2d579170> ;
+    ns1:hasFeatureType
+        <http://linked.data.gov.au/def/tern-cv/60d7edf8-98c6-43e9-841c-e176c334d270> ,
+        <http://linked.data.gov.au/def/tern-cv/ea3a4c64-dac3-4660-809a-8ad5ced8997b> ;
+    ns1:hasMethod
+        <https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f> ;
+    ns1:valueType ns1:IRI ;
+.
+

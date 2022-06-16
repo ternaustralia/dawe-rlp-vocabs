@@ -1,0 +1,473 @@
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/37ed2dbb-b990-430c-9010-d0452588cf24>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Active and passive searching protocol" ;
+    ns1:equipment """<p>The following equipment is required:</p>
+<ul>
+  <li>
+    <p>Mobile device with App installed</p>
+  </li>
+  <li>
+    <p>R1 GNSS</p>
+  </li>
+  <li>
+    <p>Hand tools, such as a jemmy bar</p>
+  </li>
+  <li>
+    <p>Rakes</p>
+  </li>
+  <li>
+    <p>Scale cards</p>
+  </li>
+  <li>
+    <p>Camera</p>
+  </li>
+  <li>
+    <p>Hand lens</p>
+  </li>
+  <li>
+    <p>Head-torches (for viewing inside hollows and diurnal searches)</p>
+  </li>
+  <li>
+    <p>
+      Hand-held spotlights (if conducting nocturnal searches with spotlights
+      rather than head-torches)
+    </p>
+  </li>
+  <li>
+    <p>Various field guides or field apps</p>
+  </li>
+  <li>
+    <p>Capture bags (with masking tape and texta to label bags if necessary)</p>
+  </li>
+  <li>
+    <p>
+      Mobile phone/speaker etc., loaded with bird calls to play bird calls
+      (optional)
+    </p>
+  </li>
+  <li>
+    <p>Bird whistles (to encourage call-back) (optional).</p>
+  </li>
+</ul>""" ;
+    ns1:instructions """<p style="color: orange">Diurnal active search</p>
+<ol>
+  <li>
+    <p>
+      Arrive at the Fauna Plot to be surveyed, ideally between mid-morning
+      (i.e., after all traps have been checked) and mid-afternoon, avoiding cold
+      and hot temperatures.
+    </p>
+  </li>
+  <li><p>Familiarize with the Fauna Plot boundaries.</p></li>
+  <li><p>Open the app, and select ‘Vertebrate fauna, ‘Diurnal search’.</p></li>
+  <li>
+    <p>
+      Select ‘survey details’. Select the applicable ‘plot name’ or type it if
+      it is not listed.
+    </p>
+  </li>
+  <li>
+    <p>
+      Enter the number of ‘observers’, the default will be 1, tap and enter if
+      different.
+    </p>
+  </li>
+  <li>
+    <p>
+      Enter the weather conditions (these can be reviewed at the conclusion of
+      the survey if you feel conditions changed from that noted at the start).
+    </p>
+  </li>
+  <li>
+    <p>
+      The app will populate todays date (tap to edit). Select ‘start survey’,
+      and a timer will show at the top of the screen. The screen will show a map
+      of the plot, indicating your position. Keep an eye on this screen to make
+      sure you remain within the fauna plot boundary.
+    </p>
+  </li>
+  <li>
+    <p>
+      Work across the Fauna Plot (wandering is acceptable) looking for fauna, or
+      indirect signs.
+    </p>
+  </li>
+  <li>
+    <p>
+      If suitable habitat is present within the fauna plot, rake leaf litter and
+      the top 2-3 cm of topsoil, carefully searching for animals, particularly
+      legless lizards. Rake back any moved leaf litter.
+    </p>
+  </li>
+  <li>
+    <p>
+      Move to the edge of the Fauna Plot (in any direction, if the habitat is
+      homogenous with the plot), and actively search for fauna by lifting rocks,
+      removing bark from trees, and lifting logs and fallen timber. Return rocks
+      and logs back to their original position.
+    </p>
+  </li>
+  <li>
+    <p>
+      At the completion of the survey time (60 minutes if 1 surveyor, 30 minutes
+      if 2 surveyors), select ‘end active search’.
+    </p>
+  </li>
+  <li>
+    <p>
+      Identify, mark and release any animals that were hand caught (follow the
+      procedures and guidelines in Section: Identify, measure and release
+      protocols and take a tissue specimen following the procedures and
+      guidelines in Section: Whole animal and tissue vouchering protocols . If
+      the species has not been caught previously during the survey, follow the
+      decision key shown Figure to determine if the animal should be vouchered.
+    </p>
+  </li>
+</ol>
+<p style="color: orange">Record direct or indirect observations</p>
+<ol>
+  <li>
+    <p>
+      For each fauna observation, either a direct observation, or indirect sign
+      of fauna, including tracks, scats, diggings, bones, feathers etc.,
+      identifiable to the species level, select the ‘+’ symbol to add a new
+      observation.
+    </p>
+  </li>
+  <li>
+    <p>
+      A new screen will appear. Select Species name using the ‘look up’. As you
+      type, options will be provided by class, order, family, genus, species.
+      Enter to the level you are confident of the identification (e.g. enter to
+      genus level if uncertain of the species). Where an identification is
+      uncertain, only record the observation if a voucher specimen, photo or
+      other evidence is taken for later identification. If the identification is
+      only known to genus, manually assign a descriptive field species name e.g.
+      Macropus ‘red legs’. Invertebrates and non-vascular flora are often only
+      known to class or morphological group.
+    </p>
+  </li>
+  <li>
+    <p>
+      If the identification is uncertain (i.e. pending the review of evidence
+      collected), switch Confident toggle to ‘off’ (default is ‘on’ to indicate
+      the surveyor is confident). If confident at the level of entry at Step 5
+      (e.g. entered to genus level because uncertain of the species and there is
+      no supporting evidence to refine the identification), then Confident
+      toggle should be ‘on’.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Source of identification from the drop-down list. If Confident
+      toggle is ‘on’ the default selection is ‘field identification by
+      observer’. If Confident toggle is ‘off’ the default selection becomes
+      ‘awaiting identification’ and the record will be flagged for follow up
+      through the curation process. For example, if evidence (e.g. photo, audio
+      recording) is provided to support the record, which is later identified by
+      an expert, the Source of identification is then updated to ‘identification
+      of evidence by expert’).
+    </p>
+  </li>
+  <li>
+    <p>
+      The date and time of the observation will be automatically recorded. Click
+      to override the record date and time (i.e. if entering a record after the
+      event).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the Number of individuals observed (zero, blank and no selection
+      are invalid). Select if the count is exact or an estimate.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the Observation method from the drop-down list (e.g., observed,
+      heard, sign – track, sign – scat).
+    </p>
+  </li>
+  <li>
+    <p>
+      Click the camera button, to open the device camera and take photographs,
+      ensuring a scale card is also in the photo. There is no need to collect
+      samples.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record Habitat description using the drop-down lists or manual entry
+      (e.g., structural formation, vegetation association, macro and
+      microhabitat) (optional).
+    </p>
+  </li>
+  <li><p>Record any additional Observation notes (optional).</p></li>
+  <li>
+    <p>
+      Record additional Observation details . Relevant fields will be visible
+      based on the selection of class. Select the behavior, age, sex and
+      reproductive status from the drop-down list and record morphological
+      measurements (optional, as per Section : Identify, measure and release
+      protocols).
+    </p>
+  </li>
+  <li>
+    <p>
+      If a Voucher specimen is collected, switch toggle to ‘on’. Assign a unique
+      barcode voucher label to the specimen and scan barcode ( Section : Whole
+      animal and tissue vouchering protocols ). Select Voucher type from the
+      drop-down list. For fauna remains, select the Condition of the specimen
+      from the drop- down list. If a separate voucher reference number is
+      assigned by the relevant museum, then this should be recorded in the
+      Voucher comments field.
+    </p>
+  </li>
+  <li>
+    <p>
+      If more than one voucher specimen is collected for the same observation
+      (e.g., hair sample and a liver sample) then select toggle ‘on’ for
+      Additional voucher specimen and repeat Step 17. Each specimen is allocated
+      a unique QR code.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Save and Add if you wish to record an additional entry for the same
+      location, date and time (e.g., if multiple bird species were observed
+      flying over at the same time).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Save to save the species record. The screen will then return to
+      Home or the Module that was being undertaken.
+    </p>
+  </li>
+</ol>
+<p style="color: orange">Nocturnal passive search</p>
+<ol>
+  <li>
+    <p>
+      Arrive at the Fauna Plot to be surveyed, ideally 1-2 hours after dark.
+    </p>
+  </li>
+  <li>
+    <p>
+      Open the app, and select ‘Vertebrate fauna, ‘Nocturnal passive search’.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select ‘survey details’. Select the applicable ‘plot name’, or type it in
+      if it is not listed. Enter the number of ‘observers’, the default will be
+      2, tap and enter if different.
+    </p>
+  </li>
+  <li>
+    <p>
+      Add a brief description of the methods, including equipment used
+      (spotlight or headtorch description).
+    </p>
+  </li>
+  <li>
+    <p>
+      Enter the weather conditions (these can be reviewed at the conclusion of
+      the survey if you feel conditions changed from that noted at the start).
+    </p>
+  </li>
+  <li>
+    <p>
+      The app will populate todays date (tap to edit). Select ‘start survey’,
+      and a timer will show at the top of the screen. The screen will show a map
+      of the plot, indicating your position. Keep an eye on this screen to make
+      sure you remain within the fauna plot boundary.
+    </p>
+  </li>
+  <li>
+    <p>
+      Work across the Fauna Plot (wandering is acceptable) looking for fauna, or
+      indirect signs. Note, unlike the diurnal search the nocturnal passive
+      search should minimize survey timedisturbance, and raking of leaf litter,
+      removal of tree bark, and lifting of rocks should not be undertaken.
+      Instead, focus on looking for animal movement, rustling of vegetation, to
+      detect animal presence.
+    </p>
+  </li>
+  <li><p>Record observations as per above.</p></li>
+  <li>
+    <p>
+      At the completion of the survey time (&gt;30 minutes if 2 surveyors),
+      select ‘end nocturnal passive search’. Identify, mark and release any
+      animals that were hand caught (follow the procedures and guidelines in
+    </p>
+  </li>
+  <li>
+    <p>
+      Section: Identify, measure and release protocols and take a tissue
+      specimen following the procedures
+    </p>
+  </li>
+  <li>
+    <p>
+      and guidelines in Section : Whole animal and tissue vouchering. If the
+      species has not been caught previously during the survey, follow the
+      decision key shown Figure, to determine if the animal should be vouchered.
+    </p>
+  </li>
+</ol>
+<p><strong>Additional guidelines</strong></p>
+<p style="color: orange">Diurnal active search</p>
+<ul>
+  <li>
+    <p>
+      Diurnal active search effort must be a minimum of 60 minutes surveyor
+      time. Increased effort is recommended for non-trapping Fauna Plots. The
+      effort can be increased by repeating the search on different days and time
+      periods (i.e., morning and afternoon sessions under different weather and
+      cloud cover conditions).
+    </p>
+  </li>
+  <li>
+    <p>
+      Diurnal active searching may be conducted whilst the Fauna Plot is being
+      trapped (i.e., you do not need to wait until the conclusion of the
+      trapping).
+    </p>
+  </li>
+  <li>
+    <p>
+      Destructive methods, i.e., ripping bark of trees, lifting logs etc., must
+      be restricted to the outer edge of the Fauna Plot to limit disturbance.
+      All rocks and timber, especially hollow logs, must be put back into place.
+      Do not remove fauna refuges or move them so they no longer provide refuge.
+    </p>
+  </li>
+  <li>
+    <p>
+      Destructive methods can be conducted off-plot, within 20 m of the plot
+      boundary, and not within an adjacent Vegetation and Soils plot.
+    </p>
+  </li>
+  <li>
+    <p>Minimize noise when actively searching.</p>
+  </li>
+  <li>
+    <p>
+      If ground surfaces are sandy, the surveyors should ensure time is spent
+      investigating these areas to identify tracks.
+    </p>
+  </li>
+  <li>
+    <p>
+      Diurnal active searching can be conducted at any time during daylight
+      hours. If sandy surfaces are present, mid-mornings are recommended (after
+      trap checking is completed as a priority), before tracks blow away.
+      However, avoid cold weather conditions as animal movements will be
+      limited, thus chance of observation will be low.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Where possible, for scat records, note the approximate age of the scat in
+      the comments section - noting if it is considered fresh or old).
+    </p>
+  </li>
+  <li>
+    <p>
+      For track observations, note the approximate age of the track in the
+      comments section, noting the track is considered fresh (i.e. overnight),
+      or old – such as tracks left in heavy or previously wet soils.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record burrows, to species level where possible, based on the shape, and
+      scats that may be present (use appropriate field guides such as Triggs
+      (2004) and Moseby et al. (2012).
+    </p>
+  </li>
+  <li>
+    <p>Remember to look up trees and amongst shrubs for bird nests.</p>
+  </li>
+</ul>
+<p style="color: orange">Nocturnal passive searching</p>
+<ul>
+  <li>
+    <p>
+      Nocturnal passive search effort must be a minimum of 60 minutes surveyor
+      time. Increased effort is recommended for non-trapping Fauna Plots. The
+      effort can be increased by repeating the search on different nights
+      (rather than extended the search time for one session).
+    </p>
+  </li>
+  <li>
+    <p>
+      Where possible, schedule the nocturnal searches to avoid nights
+      surrounding a full moon (all surveys should avoid a full moon where
+      possible) if cloud cover is sparse.
+    </p>
+  </li>
+  <li>
+    <p>
+      Nocturnal passive searching may be conducted whilst the Fauna Plot is
+      being trapped (i.e. you do not need to wait until the conclusion of the
+      trapping). Ideally the search should commence between 1 and 2 hours after
+      dark. Surveyors should take care to minimise noise and disturbance.
+    </p>
+  </li>
+  <li>
+    <p>
+      Due to WHS concerns, nocturnal passive searches should not be conducted
+      alone.
+    </p>
+  </li>
+</ul>
+<p><strong>Additional techniques</strong></p>
+<p style="color: orange">Call play-back for birds and frogs</p>
+<ul>
+  <li>
+    <p>
+      Call play-back to encourage bird and frogs to respond, can be conducted,
+      but is recommended as a separate activity, not included as part of the
+      diurnal active searches, nocturnal passive searches, or bird surveys.
+      Species recorded should be noted on the opportunistic observation module
+      of the app, and the method noted as being ‘heard in response to call
+      play-back’.
+    </p>
+  </li>
+  <li>
+    <p>
+      Call play-back should not be undertaken within 30 minutes prior to a
+      nocturnal passive search, as this may interfere with the results, i.e.
+      some species have a delayed response to the calls being played.
+    </p>
+  </li>
+  <li>
+    <p>
+      Call play-back may be undertaken after the nocturnal passive search has
+      concluded.
+    </p>
+  </li>
+  <li>
+    <p>
+      As call play-back is not a specific method of the Vertebrate Fauna Module,
+      the effort spent playing calls is not specified, however bear in mind the
+      potential impact to trapping results (if the Fauna Plot is being trapped).
+    </p>
+  </li>
+  <li>
+    <p>
+      Consult field guides to determine which nocturnal bird species may be
+      present in your area and habitat.
+    </p>
+  </li>
+</ul>""" ;
+.
+

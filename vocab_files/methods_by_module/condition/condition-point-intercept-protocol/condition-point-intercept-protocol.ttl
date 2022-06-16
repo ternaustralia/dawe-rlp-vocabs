@@ -1,0 +1,424 @@
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/bfcca277-85a8-476a-aeb1-315775bcd5f6>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Condition point intercept protocol" ;
+    ns1:equipment """<ul>
+  <li>
+    Mobile device (tablet/phone capable of taking high resolution photos) with
+    the App (progressive web app) saved to the home screen
+  </li>
+  <li>Trimble R1</li>
+  <li>4 x 100 m tape measures</li>
+  <li>
+    Graduated staff (extendable pole that can be adjusted to eye height for
+    different operators)
+  </li>
+  <li>
+    Densitometer with ability to be mounted on top of staff (required for use on
+    plots with over- story tree canopy cover)
+  </li>
+  <li>
+    Laser pointer (taped to staff at approx. 1.5 m and pointing downwards)
+  </li>
+  <li>Pegs to mark ends of transects</li>
+  <li>
+    Flagging tape (brightly coloured to make sighting transect ends easier)
+  </li>
+  <li>30 cm ruler</li>
+  <li>Cardboard disc – 15 cm with central slot</li>
+  <li>Vertex hypsometer or forestry rangefinder</li>
+</ul>""" ;
+    ns1:instructions """<style>
+  table.tables {
+    border: 1px solid rgb(34, 15, 15);
+  }
+  table.tables tr,
+  table.tables td {
+    padding: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0f0801 rgb(12, 11, 11);
+  }
+</style>
+<ol>
+  <li>
+    Ensure the Plot selection and layout module has been completed to mark out
+    the plot boundary and grid with a very high accuracy using the Trimble R1.
+  </li>
+  <li>
+    The condition point-intercept requires four 100 m transects, which align
+    with the 30 m and 70 m N/S and E/W Cover transects (Figure 2). For each
+    transect lay out a 100 m tape between the start and end points/pegs. Ensure
+    the tape is orientated to align with the grid, straight, and on the ground
+    (where possible) and not draped over shrubs.
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <img
+              src="https://w3id.org/tern/static/dawe-rlp/latest/condition/condition-point-intercept-transect-design.jpg"
+              alt="Condition-point-intercept-transect-design"
+              width="584"
+              height="659"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    Record your starting point from the drop-down list (i.e., N2, N4, S2, S4,
+    E2, E4, W2 or W4). This records the transect you are on and the direction
+    you are travelling in (e.g., ‘N2’ means you are travelling south on the
+    N2/S2 transect, while ‘S4’ means you are travelling north on the N4/S4
+    transect, etc.).
+  </li>
+  <li>
+    Using a staff with laser pointer mounted on the pole at a height of 1.5 m
+    and densitometer at the top of the pole (for plots with upper story), start
+    at the 0 m mark of the first transect. Place the bottom of the staff at the
+    0 m mark, ensure the staff is vertical and the laser pointer is pointing
+    downwards, and the track of the laser pointer is parallel with the direction
+    of the transect.
+  </li>
+  <li>
+    Move to the 0 m mark of the first transect you wish to complete. It does not
+    matter which order, or which direction each transect is completed, as your
+    start position will be recorded in Step 3.
+  </li>
+  <li>
+    Press the button on the laser pointer to determine presence of leaf litter
+    at the point of contact of the laser beam and the substrate surface. If
+    litter is intercepted, select the Litter button and measure litter depth in
+    mm (see Litter depth section below). Refer to the Cover module for more
+    detailed information about the point-intercept method.
+  </li>
+  <li>
+    Next record any trees or shrubs that are intercepted with the laser pointer
+    or touching the staff between the laser pointer and the densitometer. Record
+    species, growth stage, and vegetation health.
+  </li>
+  <li>
+    The densitometer is used to view canopy intercepts (i.e., intercepts taller
+    than the densitometer). Look through the densitometer to determine whether
+    any portion of a tree or shrub crown intersects the vertical line of sight
+    through the densitometer. The vertical line of sight is obtained by
+    levelling both densitometer bubble-levels and then sighting through the
+    instrument so that the sighting marks are aligned (crosshairs/circle in the
+    far lens is at the center of the circle in the near lens). If foliage or
+    branches are sighted in the cross hairs, follow the procedures to record
+    species, growth stage and vegetation health (see Growth stage measures and
+    Vegetation health sections below).
+  </li>
+  <li>
+    Continue recording the same information (as per points 6 to 8) at each 1 m
+    interval along each of the 4 transects. This will give a total of 404 points
+    for each plot (ii.e.4 transects x 101 points per transect).
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <img
+              src="https://w3id.org/tern/static/dawe-rlp/latest/condition/condition-point-intercept-app-screen.jpg"
+              alt="condition-point-intercept-app-screen"
+              width="450"
+              height="900"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <p>Litter depth</p>
+  <li>
+    When the laser intercepts litter, measure and record litter depth in the
+    following way:
+  </li>
+  <ol>
+    <li>
+      At the point where the laser intercepts the litter surface, clear a small
+      clearing in the leaf litter and remove any coarse material (return litter
+      to original position after assessment).
+    </li>
+    <li>Place the end of the ruler on the soil surface.</li>
+    <li>
+      Slide the cardboard disc slot over the ruler and apply light pressure
+      until there is even contact with the litter surface.
+    </li>
+    <li>
+      Read the litter depth (in mm) where the top of the disc intersects the
+      ruler.
+    </li>
+    <li>
+      Replace any litter or woody debris moved during the process (see figures
+      below for more information).
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://w3id.org/tern/static/dawe-rlp/latest/condition/leaf-litter-depth-gauge-consisting-of-a-ruler-and-a-cardboard-disc.png"
+                alt="leaf-litter-depth-gauge-consisting-of-a-ruler-and-a-cardboard-disc"
+                width="369"
+                height="260"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ol>
+  <p>Growth stage measure</p>
+  <li>
+    When a perennial plant species (tree or shrub) is intercepted (by the laser
+    pointer, staff or densitometer), growth stage is recorded in the following
+    way:
+  </li>
+  <ol>
+    <li>
+      If an individual plant has previously had growth stage recorded, do not
+      assess the plant and record as ‘repeat’.
+    </li>
+    <li>Record the species name.</li>
+    <li>
+      Visually assess the plant according to the descriptions in the table below
+      and assign a growth stage code (also see figures below).
+    </li>
+    <li>Visually assess plant height (m) (a rangefinder can be used).</li>
+  </ol>
+  <p>Vegetation health</p>
+  <li>
+    When a tree or shrub is intercepted, vegetation health is recorded in the
+    following way:
+  </li>
+  <ol>
+    <li>
+      If an individual plant has previously been assessed for vegetation health,
+      do not assess the plant and record as ‘repeat’.
+    </li>
+    <li>
+      Conduct a visual assessment of the plant for presence of factors affecting
+      vegetation health, detailed in Table (see figure for more information and
+      examples of the plant health factors).
+    </li>
+    <li>
+      Record the presence of the health factors in Table, by using the check
+      boxes. Multiple boxes can be checked. Canopy health needs to be recorded
+      for every individual surveyed, with the percent of healthy canopy entered.
+      If present, the number of mistletoes need to be recorded.
+    </li>
+    <li>
+      Take a photo of the individual to document health factors (optional) and
+      record any additional information in the comments field (optional).
+    </li>
+  </ol>
+  <p style="color: orange">
+    Table. Description of growth stage classes used for assessing species with a
+    tree or shrub growth form
+  </p>
+  <table class="tables">
+    <tbody>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Growth stage</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Description</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="2">
+          <p>Recruiting</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>
+            Trees: From the juvenile and sapling stages to well-developed
+            individuals with a crown of small branches, but below maximum height
+            for a stand, crown exhibits apical dominance – approx. 0-30 years
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>
+            Shrubs: Juvenile stage, shrub has not reached maximum height, apical
+            dominance
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Resprouting</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>
+            Trees and Shrubs: Woody perennial which is resprouting after
+            significant loss of foliage
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="2">
+          <p>Mature</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>
+            Trees: Tree has reached maximum height and crown has reached full
+            lateral development although branch thickening can occur. Apical
+            dominance lost – approx. 30-80 years
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>
+            Shrubs: Shrub has reached maximum height; crown has reached full
+            lateral development
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="2">
+          <p>Senescent</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>
+            Trees: Crown form contracting and becoming ‘stag headed’ decrease in
+            crown diameter and crown leaf area. Distorted branches and burls
+            common – approx. &gt;80 years
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>
+            Shrubs: Crown form contracting and decrease in crown diameter and
+            crown leaf area. Dead branches more common – approx. &gt;80 years
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="2">
+          <p>Dead</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>
+            Trees: Dead individuals in all stages – from presence of tertiary
+            branches and bark to no remaining crown structure and absence of
+            bark
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Shrubs: Dead individuals in all stages</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <img
+              src="https://w3id.org/tern/static/dawe-rlp/latest/condition/growth-stage-visual-representation-examples.png"
+              alt="growth-stage-visual-representation-examples"
+              width="642"
+              height="415"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <p style="color: orange">
+    Table. Factors affecting vegetation health to be recorded in the field.
+  </p>
+  <table class="tables">
+    <tbody>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Health factor</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Description</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Canopy health</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Proportion of expected healthy canopy present (%)</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Mistletoe</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>
+            Aerial plant parasite can be seen by different foliage from host
+            plant. Number of mistletoe present to be recorded.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Epicormic growth</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Obvious presence of epicormic growth</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Galls and lerps</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>
+            Abnormal outgrowths on leaves and small branches, or excretions
+            (waxy or sugary)
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Insect damage</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Identified by canopy loss and leaf distortions</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Dieback from disease</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>
+            Can been identified by leaf discoloration, plant tissue damage and
+            canopy loss
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Grazing</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>
+            Evidence of grazing damage including loss of foliage and distortion
+            of plant growth form
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ol>""" ;
+.
+

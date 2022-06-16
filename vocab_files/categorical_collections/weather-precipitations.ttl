@@ -1,0 +1,106 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/36e4cff5-f238-45e3-85ec-bdd0973f09d7> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/155cb54c-14b9-5c7b-a87d-217f3b21728d>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "No rain" ;
+    skos:notation "NO" ;
+    skos:prefLabel "None observed" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/36e4cff5-f238-45e3-85ec-bdd0973f09d7>
+    a skos:Collection ;
+    dcterms:description "A collection of weather precipitations and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/155cb54c-14b9-5c7b-a87d-217f3b21728d> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/5600411b-e7b8-5d1f-8459-67685ec39ec7> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/9a4c3448-de37-512a-9da1-9818ac961708> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/9f850c76-ec01-531b-be74-6a99aba2ead0> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a2691e9b-e14f-5bb5-becc-2165ed8ed9ff> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/b52c9f91-19eb-5107-906c-1b72002f8e91> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/dc19d654-e140-5dff-87dc-d4ead23b22fc> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f55cf343-12cc-522d-8113-655d6e2a3b55> ;
+    skos:prefLabel "Weather precipitations codes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/5600411b-e7b8-5d1f-8459-67685ec39ec7>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Suspension of very small water droplets in the air, reducing visibility at ground level to less than a kilometre" ;
+    skos:notation "FO" ;
+    skos:prefLabel "Fog" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/9a4c3448-de37-512a-9da1-9818ac961708>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Deposit of soft white ice crystals or frozen dew drops on objects near the ground; formed when surface temperature falls below freezing point" ;
+    skos:notation "FR" ;
+    skos:prefLabel "Frost" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/9f850c76-ec01-531b-be74-6a99aba2ead0>
+    a skos:Concept ;
+    dcterms:identifier 8 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Thunderstorms are one or more convective clouds in which electrical discharge can be seen as lightning and heard as thunder by a person on the earth's surface. A severe thunderstorm produces one or more of : 1) hail at the ground with diameter of 2 cm or more; 2) wind gusts at the ground of 90 km/h or more;  3) tornadoes; or 4) very heavy rain likely to cause flash flooding" ;
+    skos:notation "TH" ;
+    skos:prefLabel "Thunderstorms" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/a2691e9b-e14f-5bb5-becc-2165ed8ed9ff>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Similar to fog, but visibility remains more than a kilometre" ;
+    skos:notation "MI" ;
+    skos:prefLabel "Mist" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/b52c9f91-19eb-5107-906c-1b72002f8e91>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Usually begin and end suddenly. Relatively short-lived, but may last half an hour. Fall from cumulus clouds, often separated by blue sky. Showers may fall in patches rather than across the whole forecast area. Range in intensity from light to very heavy." ;
+    skos:notation "SH" ;
+    skos:prefLabel "Showers" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/dc19d654-e140-5dff-87dc-d4ead23b22fc>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "In contrast to showers, rain is steadier and normally falls from stratiform (layer) cloud. Rain can range in intensity from light to very heavy" ;
+    skos:notation "RA" ;
+    skos:prefLabel "Rain" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/f55cf343-12cc-522d-8113-655d6e2a3b55>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Fairly uniform precipitation composed exclusively of very small water droplets  very close to one another" ;
+    skos:notation "DR" ;
+    skos:prefLabel "Drizzle" ;
+.
+

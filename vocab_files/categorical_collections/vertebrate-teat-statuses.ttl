@@ -1,0 +1,51 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/fc85a35d-0c9b-4b26-9d18-0bd50dd39d6c> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/3fb97232-3295-539c-85b9-305847936bb3>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-teat-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Distended" ;
+    skos:prefLabel "Distended" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/a30c4cbb-1bcc-57f6-b9a4-8aa0e334d5fc>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-teat-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Button" ;
+    skos:prefLabel "Button" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/f4b7a347-dfe1-595f-8403-b4a7a9765a30>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-teat-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Lactating" ;
+    skos:prefLabel "Lactating" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/fc85a35d-0c9b-4b26-9d18-0bd50dd39d6c>
+    a skos:Collection ;
+    dcterms:description "A collection of vertebrate teat statuses and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-teat-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/3fb97232-3295-539c-85b9-305847936bb3> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a30c4cbb-1bcc-57f6-b9a4-8aa0e334d5fc> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f4b7a347-dfe1-595f-8403-b4a7a9765a30> ;
+    skos:prefLabel "Vertebrate teat statuses codes" ;
+.
+

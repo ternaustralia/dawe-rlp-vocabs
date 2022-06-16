@@ -1,0 +1,51 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/38674fef-988c-4fa4-b8e6-0b06e2bd5f4f> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/185dffb9-5e3a-5d53-b6ad-e8113a8ca6e3>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-leaf-litter-sample-preservations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Undiluted propylene glycol" ;
+    skos:prefLabel "Undiluted propylene glycol" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/1aeeb3c1-baf8-52c8-9de1-46bd30a08799>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-leaf-litter-sample-preservations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "95% Undenatured ethanol" ;
+    skos:prefLabel "95% Undenatured ethanol" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/38674fef-988c-4fa4-b8e6-0b06e2bd5f4f>
+    a skos:Collection ;
+    dcterms:description "A collection of leaf litter sample preservations and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-leaf-litter-sample-preservations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/185dffb9-5e3a-5d53-b6ad-e8113a8ca6e3> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/1aeeb3c1-baf8-52c8-9de1-46bd30a08799> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c5206e98-cb50-5e05-8174-335d82a9ac75> ;
+    skos:prefLabel "Leaf litter sample preservations codes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/c5206e98-cb50-5e05-8174-335d82a9ac75>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-leaf-litter-sample-preservations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Other" ;
+    skos:prefLabel "Other" ;
+.
+

@@ -1,0 +1,73 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/b5180d8a-75b6-4bca-9413-0e507e910387> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/93a9ea83-e535-5bf6-82da-3a730ad83d4c>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-decay-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Cannot support its own weight; soft to kick (but may still be hard in places; in which case may be extensively hollow); moss, fungi and invading roots likely." ;
+    skos:notation "4" ;
+    skos:prefLabel "Class 4" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/a4a236eb-4474-59f3-b269-29f812d642b4>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-decay-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Recently fallen. Structurally intact or almost so; bark or small branches still attached; few signs of wood decay; wood mostly retains original colour." ;
+    skos:notation "1" ;
+    skos:prefLabel "Class 1" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/b5180d8a-75b6-4bca-9413-0e507e910387>
+    a skos:Collection ;
+    dcterms:description "A collection of Coarse Woody Debris decay classes and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-decay-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/93a9ea83-e535-5bf6-82da-3a730ad83d4c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a4a236eb-4474-59f3-b269-29f812d642b4> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/bfdf12bd-0f4c-59a9-866b-7f1c9530e4e9> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ca8c4383-6df0-56ad-ace4-0276d0df6b41> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ed605577-55c4-5c70-b382-17ab1994036e> ;
+    skos:prefLabel "Coarse Woody Debris decay classes codes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/bfdf12bd-0f4c-59a9-866b-7f1c9530e4e9>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-decay-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Structurally less intact but still hard when kicked; small branches absent; little or no bark present; early signs of wood decay, bark loss or discolouration." ;
+    skos:notation "2" ;
+    skos:prefLabel "Class 2" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/ca8c4383-6df0-56ad-ace4-0276d0df6b41>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-decay-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Clearly decaying but still supports own weight; may be slightly soft when kicked; may be hollow in places; no bark; moss and fungi may be prominent." ;
+    skos:notation "3" ;
+    skos:prefLabel "Class 3" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/ed605577-55c4-5c70-b382-17ab1994036e>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-decay-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "No longer retains original shape; wood very soft or largely disintegrated; sometimes only outline visible beneath moss, invading roots." ;
+    skos:notation "5" ;
+    skos:prefLabel "Class 5" ;
+.
+

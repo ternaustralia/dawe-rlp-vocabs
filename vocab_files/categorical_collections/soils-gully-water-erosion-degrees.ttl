@@ -1,0 +1,62 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/42898383-1e9f-4d61-bd60-fca4669c1e05> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/2c1e9431-f9c9-5b44-9004-416be7cd473b>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-gully-water-erosion-degrees> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "0" ;
+    skos:prefLabel "No gully erosion" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/3a9fc543-52db-5757-a02c-f6b5b65ea723>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-gully-water-erosion-degrees> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "2" ;
+    skos:prefLabel "Moderate" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/42898383-1e9f-4d61-bd60-fca4669c1e05>
+    a skos:Collection ;
+    dcterms:description "A collection of soils gully water erosion degrees and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-gully-water-erosion-degrees> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/2c1e9431-f9c9-5b44-9004-416be7cd473b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/3a9fc543-52db-5757-a02c-f6b5b65ea723> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/4e9d51dd-f784-555e-b7ce-523d9cf81088> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/88fe2081-a6a9-55f1-98a6-86814234170b> ;
+    skos:prefLabel "Soils gully water erosion degrees codes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/4e9d51dd-f784-555e-b7ce-523d9cf81088>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-gully-water-erosion-degrees> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "3" ;
+    skos:prefLabel "Severe" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/88fe2081-a6a9-55f1-98a6-86814234170b>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-gully-water-erosion-degrees> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "1" ;
+    skos:prefLabel "Minor" ;
+.
+
