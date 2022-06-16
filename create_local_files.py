@@ -279,6 +279,10 @@ def create_concepts(uri: str, path: Path, graph: Graph):
     for row in results:
         uri = row["uri"]
         label = graph.value(uri, SKOS.prefLabel)
+        orig_label = label
+        label = label.strip()
+        graph.remove((uri, SKOS.prefLabel, orig_label))
+        graph.add((uri, SKOS.prefLabel, Literal(label)))
         label = clean_label(label)
         serialize(path / f"{label}.ttl", graph.cbd(uri))
 
