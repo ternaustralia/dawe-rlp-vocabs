@@ -20,6 +20,8 @@ from rdflib.namespace import RDFS, SKOS, RDF, SDO
 from dawe_vocabs import settings
 from dawe_vocabs.vocabs import categorical_values_collection
 
+from src.graph import create_graph
+
 
 SPARQL_ENDPOINT = "https://graphdb.tern.org.au/repositories/dawe_vocabs_core"
 REG = Namespace("http://purl.org/linked-data/registry/")
@@ -47,12 +49,6 @@ def fetch_remote_cbd(uri: str, graph: Graph):
     )
 
     graph.parse(data=response.text, format="turtle")
-    return graph
-
-
-def create_graph():
-    graph = Graph()
-    graph.bind("tern", "https://w3id.org/tern/ontologies/tern/")
     return graph
 
 
