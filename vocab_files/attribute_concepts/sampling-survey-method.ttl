@@ -1,0 +1,17 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/77442f65-284f-43de-aa73-71cc7d7740dd>
+    a skos:Concept ;
+    dcterms:source """McCallum K, Laws M, Bignall J, O’Neill S, Sparrow B. (unpublished draft) ‘Coarse Woody Debris module’ in ….. (eds)
+Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved
+decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Sampling survey method is the method chosen for CWD survey based on the number of CWD hits. The Plot survey method is chosen if there are less than 6 CWD hits along point intercepts. Whereas a transect survey method is chosen if there are 6-10 CWD hits from point-interception." ;
+    skos:prefLabel "sampling survey method" ;
+    ns1:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/bd41602d-36df-435c-870c-496dfd523ec1> ;
+    ns1:valueType ns1:IRI ;
+.
+

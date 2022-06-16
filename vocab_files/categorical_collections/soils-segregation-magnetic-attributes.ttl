@@ -1,0 +1,40 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/f503ff93-f7d7-4419-9d1e-6807e96dc2c1> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/68450df8-26e6-5fec-9829-77d768d217de>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-segregation-magnetic-attributes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "N" ;
+    skos:prefLabel "Non-magnetic" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/7145b077-e070-5562-9337-79a1cb8aa1f7>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-segregation-magnetic-attributes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "M" ;
+    skos:prefLabel "Magnetic" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/f503ff93-f7d7-4419-9d1e-6807e96dc2c1>
+    a skos:Collection ;
+    dcterms:description "A collection of soils segregation magnetic attributes and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-segregation-magnetic-attributes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/68450df8-26e6-5fec-9829-77d768d217de> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7145b077-e070-5562-9337-79a1cb8aa1f7> ;
+    skos:prefLabel "Soils segregation magnetic attributes codes" ;
+.
+

@@ -1,0 +1,493 @@
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/e103ae22-2d8f-4806-9b4f-926e6e851301>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/015efdae-93af-48c5-9564-0cde72593d59> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/9f951d93-7b0a-4f63-9f8c-d63b89718faf> ;
+    skos:prefLabel "Flora protocol" ;
+    ns1:equipment """<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Trimble® R1</p>
+  </li>
+  <li>
+    <p>Relevant survey guidelines saved or accessible from mobile device</p>
+  </li>
+  <li>
+    <p>Field guides and identification keys</p>
+  </li>
+  <li>
+    <p>Hand lens</p>
+  </li>
+  <li>
+    <p>Binoculars</p>
+  </li>
+  <li>
+    <p>Photo scale card</p>
+  </li>
+</ul>
+<p>Vouchering (vascular flora)</p>
+<ul>
+  <li>
+    <p>Newspaper (tabloid size) and cardboard (43.5 x 28.5 cm)</p>
+  </li>
+  <li>
+    <p>Large plastic bags (for collection)</p>
+  </li>
+  <li>
+    <p>Plant press and straps (for storage)</p>
+  </li>
+</ul>
+<p>Vouchering (non-vascular flora)</p>
+<ul>
+  <li>
+    <p>Chisel and hammer (for collection)</p>
+  </li>
+  <li>
+    <p>
+      Screw cap plastic bottles, paper bags, newspaper, cardboard boxes,
+      ethanol/formalin preservative solution (for storing specimens).
+    </p>
+  </li>
+</ul>""" ;
+    ns1:instructions """<ol>
+  <li>
+    <p>
+      Ensure the Trimble® R1 is on, connected to the App and has a high
+      accuracy.
+    </p>
+  </li>
+  <li>
+    <p>
+      To undertake a targeted flora survey, select Species name using the ‘look
+      up’. As you type, options will be provided by class, order, family, genus,
+      species. Multiple flora species can be targeted duing the same survey, as
+      long as they occupy a similar habitat type. A maximum of 5 species can be
+      selected.
+    </p>
+  </li>
+</ol>
+<ol start="3">
+  <li>
+    <p>
+      Capture any notes about the survey in the Comments field. Notes can
+      include any supplementary information or updates about the field survey
+      and how it was completed.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Start Survey to record the starting position for the survey
+      (coordinates automatically recorded) and the start time.
+    </p>
+  </li>
+  <li>
+    <p>
+      Once the survey has started, the app will record a track log. Tracks will
+      be visible in the built in map screen and can be used to assist with
+      navigating the survey area and ensuring good coverage of the study area.
+    </p>
+  </li>
+  <li>
+    <p>
+      Walk along the field traverse (or random meander or quadrat) making a
+      visual sweep either side and along the traverse (see Appendix 7). The area
+      surveyed will be recorded as part of the track log.
+    </p>
+  </li>
+  <li>
+    <p>
+      If a target species is detected along a traverse, record the GPS
+      coordinates. A search is required to count or estimate the number of
+      individuals and/or determine the area of occupancy.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the Add Observation button or Add population button depending on
+      the number and distribuiton of individuals identified (skip to step 20 for
+      details about adding populations). If potential habitat for the species is
+      identified, but no individuals are observed, select Add potential habitat
+      to record habitat extent (skip to step 33).
+    </p>
+    <p>Targeted flora – app screen 1
+        <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-flora-app-screen-1.png"
+                    alt="Targeted flora - app screen 1"
+                    widteh="429"
+                    height="912"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </p>
+  </li>
+</ol>
+
+<p><strong>Additional guidelines</strong></p>
+<p style="color: orange">Preparation</p>
+<ul>
+  <li>
+    <p>Ensure that all necessary permits and approvals have been obtained.</p>
+  </li>
+  <li>
+    <p>
+      It is helpful to obtain a list of species that may be encountered during
+      your study. This enables you to plan what species to target, what survey
+      techniques are likely to be most suitable and to become familiar with
+      identifying the species that may be encountered. Sources of such
+      information include literature, experts, naturalist groups and databases
+      (Department of Parks and Wildlife 2013).
+    </p>
+  </li>
+  <li>
+    <p>
+      Key resources: EPBC Protected Matters Search, state/territory databases,
+      Atlas of Living Australia. Note: consider the data source and reliability
+      of the information.
+    </p>
+  </li>
+  <li>
+    <p>
+      Previous records can give an indication of suitable habitat types within
+      the project area. Check the dates and reliability of any records.
+    </p>
+  </li>
+  <li>
+    <p>
+      Determine the extent (including spatial resolution, and temporal scale) of
+      previous survey work in the area, including the numbers and localities of
+      any herbarium and museum specimens previously registered from the project
+      area and surrounds. Key resources: state/territory databases, TERN, Atlas
+      of Living Australia, biological survey reports, data requests.
+    </p>
+  </li>
+  <li>
+    <p>
+      Consult other institutions/experts/researchers where appropriate,
+      regarding any project or species-specific survey requirements.
+    </p>
+  </li>
+  <li>
+    <p>Obtain advice from the relevant herbarium regarding:</p>
+    <ul>
+        <li>
+          <p>
+            species of interest for vouchering (thus avoiding unnecessary collecting)
+          </p>
+        </li>
+        <li>
+          <p>number/type of specimens to be collected</p>
+        </li>
+        <li>
+          <p>specific labelling and preservation requirements</p>
+        </li>
+        <li>
+          <p>fee for service details.</p>
+        </li>
+      </ul>
+  </li>
+</ul>
+<p style="color: orange">Field survey</p>
+<ul>
+  <li>
+    <p>
+      Observations can only be recorded against species defined in the target
+      species list (5 species maximum). If other species are detected, these can
+      be recorded using the Opportune module.
+    </p>
+  </li>
+  <li>
+    <p>
+      Surveys should be undertaken when the target species are most detectable
+      and identifiable in the field, i.e. during the relevant flowering/fruiting
+      time for each species), which may mean multiple surveys are required to
+      cover the flowering periods of the species of interest (Environmental
+      Protection Authority 2016a).
+    </p>
+  </li>
+  <li>
+    <p>
+      To ensure detectability is not compromised it is recommended that
+      multi-species searches be restricted to a maximum of five species in the
+      same stratum (Department of Planning 2020). If more than five species are
+      being targeted, or target species have different life forms, undertake
+      multiple surveys. The Opportune module should be used to record
+      observations of non-target species, even if they are observed during a
+      targeted survey.
+    </p>
+  </li>
+  <li>
+    <p>
+      Searching for threatened plant species is more reliable on clear days with
+      little or no wind or rain (Department of Planning 2020).
+    </p>
+  </li>
+  <li>
+    <p>
+      Factors that can influence search timing include light, bad weather, wet
+      grass, steep slopes and time of the day.
+    </p>
+  </li>
+  <li>
+    <p>
+      Very dense vegetation can significantly increase the time require for
+      traverses or meanders.
+    </p>
+  </li>
+  <li>
+    <p>
+      As a general rule, threatened species surveys should not be undertaken
+      during drought, following periods of disturbance (unless the species
+      requires disturbance) or other adverse environmental conditions that
+      affect species detectability (Department of Planning 2020), unless the aim
+      of the project is the monitor these impacts.
+    </p>
+  </li>
+  <li>
+    <p>
+      A threatened plant species must be identified to species level and
+      submitted to a registered herbarium for inspection and formal
+      identification (Department of Planning 2020). However, see additional
+      guidelines below for collecting vouchers and where possible, collect photo
+      evidence instead of physical vouchers, especially where physical
+      collection may influence population viability (i.e. for very small
+      populations, or small plants).
+    </p>
+  </li>
+  <li>
+    <p>
+      Each habitat type in the project area should be surveyed, not just those
+      that are known habitat for threatened or near threatened species
+      (Department of Environment and Science 2020), but survey effort can be
+      tailored, so known habitats receive a greater survey effort than more
+      marginal habitats, if species requirements are well understood.
+    </p>
+  </li>
+  <li>
+    <p>
+      Where a target species is identified in the field, the population extent
+      and population size (or density) needs to be determined. In high density
+      areas, the number of individuals that make up the population can be
+      estimated based on the number of individuals within a sub-plot(s)
+      (Department of Environment and Science 2020).
+    </p>
+  </li>
+  <li>
+    <p>
+      The number of individuals along with other observations, such as age class
+      structure, reproductive state and health should also be recorded
+      (Department of Environment and Science 2020).
+    </p>
+  </li>
+  <li>
+    <p>
+      Enter all required fields in the App (a warning message will appear when
+      attempting to save the record if required fields are not entered). Refer
+      to the information buttons in the App for clarification regarding the data
+      collection and entry requirements.
+    </p>
+  </li>
+  <li>
+    <p>
+      Be as accurate as possible with recording the location of the record. This
+      is most important for species that have some significance (e.g. threatened
+      species, invasive species, unknown species, range extension). Ensure that
+      the Trimble® R1 is on, with high accuracy before recording any
+      observations.
+    </p>
+  </li>
+  <li>
+    <p>
+      Include a scale card or something for scale (e.g. pencil) in photos (refer
+      to the supporting information at the end of this module for examples).
+      Multiple photos can be taken to record different parts of the plant,
+      including flowers, leaves, bark, buds etc. Ensure that each photo is
+      labelled with a short description.
+    </p>
+  </li>
+  <li>
+    <p>
+      Disturbance impacts should be minimised. Avoid trampling on native
+      vegetation, especially in areas where targeted surveys overlap with plots
+      or sensitive habitats.
+    </p>
+  </li>
+</ul>
+<p style="color: orange">Active searching</p>
+<ul>
+  <li>
+    <p>
+      A GPS track log will be recorded to show the location and extent of field
+      traverses. This will demonstrate that the survey has been systematic and
+      comprehensive.
+    </p>
+  </li>
+  <li>
+    <p>
+      In areas of preferred habitat for threatened species, an area can be
+      searched using the meander technique. This allows for greater coverage of
+      areas than plot-based surveys and is less time consuming. It involves
+      traversing areas of suitable habitat in no set pattern, but roughly back
+      and forth, whilst searching for a particular, or several, threatened plant
+      species (Department of Environment and Conservation 2004).
+    </p>
+  </li>
+  <li>
+    <p>
+      Methods should be used consistently and be recorded and mapped in
+      sufficient detail to allow replication (Department of Environment and
+      Conservation 2004).
+    </p>
+  </li>
+  <li>
+    <p>
+      Field data collection is needed to document the number of individuals
+      and/or the area of habitat for each target threatened species location
+      during the survey.
+    </p>
+  </li>
+  <li>
+    <p>
+      Generally, species assessed via direct counts are long-lived plants that
+      persist above ground, where the population size can be readily assessed.
+      Species assessed by area are generally cryptic, clonal, logistically
+      difficult to survey or cannot be reliably counted (Department of Planning
+      2020).
+    </p>
+  </li>
+  <li>
+    <p>
+      Small groups of individuals (e.g. &lt;50 plants) can be counted with
+      reasonable confidence; however, for larger populations, extrapolating the
+      mean density by sampling over the areas of occupancy may be required.
+    </p>
+  </li>
+  <li>
+    <p>
+      It is good practice to temporarily mark individuals with removable survey
+      pins or flagging tape if populations are going to be returned to for
+      counts and to avoid double-counting.
+    </p>
+  </li>
+</ul>
+<p style="color: orange">Voucher collection</p>
+<ul>
+  <li>
+    <p>
+      See the Floristics module for more information about collecting vouchers.
+    </p>
+  </li>
+  <li>
+    <p>
+      Collection of flora vouchers of rare, threatened or endangered species
+      should only be made when such actions would not jeopardise the continued
+      existence of the population. Collection of threatened species may require
+      additional information to be obtained to fulfil permitting requirements.
+    </p>
+  </li>
+  <li>
+    <p>
+      Vouchers should only be collected if the relevant permits and approvals
+      have been obtained.
+    </p>
+  </li>
+  <li>
+    <p>
+      Seek advice from the relevant herbarium regarding collection, preservation
+      and labelling requirements.
+    </p>
+  </li>
+  <li>
+    <p>
+      In the absence of a voucher specimen, photo evidence can help to validate
+      the record.
+    </p>
+  </li>
+  <li>
+    <p>
+      When dealing with multiple voucher specimens from the same observation,
+      each specimen is given a unique, sequential barcode. Take care to ensure
+      the correct barcode is assigned.
+    </p>
+  </li>
+  <li>
+    <p>
+      If collecting a voucher specimen would jeopardise the continued existence
+      of a rare, threatened or endangered flora population, the following can
+      serve as the required voucher (listed in decreasing order of preference):
+    </p>
+    <ul>
+        <li>
+          <p>Portion of fertile plant without the root.</p>
+        </li>
+        <li>
+          <p>
+            Photos of plant in conjunction with piece of fertile plant or plant parts
+            (leaves and flowers or fruits).
+          </p>
+        </li>
+        <li>
+          <p>Photos of fertile plant in conjunction with sterile plant specimen.</p>
+        </li>
+        <li>
+          <p>
+            Sterile plant specimen only, or photos only (preferably with descriptive
+            notes).
+          </p>
+        </li>
+      </ul>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p>
+      Where possible, a voucher should include enough material to cover an A3
+      size herbarium sheet. Specific procedures and guidelines to collect,
+      prepare, label and store flora voucher specimens are provided in the
+      Floristics module and via the information buttons in the App. Also refer
+      to the advice provided by the relevant herbarium. Refer to the Plant
+      tissue vouchering module for procedures and guidelines to collect and
+      store leaf samples for DNA and isotope analysis.
+    </p>
+  </li>
+  <li>
+    <p>
+      Tag each specimen securely with a unique voucher barcode label. Place the
+      label on stems or away from any plant parts that will need to be examined
+      for identification purposes. Use paper envelopes for small specimens and
+      attach the voucher label to the envelope.
+    </p>
+  </li>
+  <li>
+    <p>
+      After labelling, place larger flora specimens directly into a plastic bag,
+      and smaller flora specimens into paper bags, then the plastic bag, ready
+      for transferring to a plant press.
+    </p>
+  </li>
+  <li>
+    <p>
+      Place the voucher specimens in a plant press in the field, preferably
+      before commencing another module. To avoid confusion, it is best to place
+      targeted records in a separate plant press to that used for the plot
+      survey samples.
+    </p>
+  </li>
+</ul>""" ;
+.
+

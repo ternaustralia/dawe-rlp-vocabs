@@ -1,0 +1,40 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/9c18266d-fe78-4ea7-ae42-a47d6c21dde6> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/9c18266d-fe78-4ea7-ae42-a47d6c21dde6>
+    a skos:Collection ;
+    dcterms:description "A collection of temperature units and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-temperature-units> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/9ddc3a8d-eaa8-520f-9267-6298e03b3335> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/bfec7753-08ae-5be1-a8dd-e0b7ed2b51dc> ;
+    skos:prefLabel "Temperature units codes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/9ddc3a8d-eaa8-520f-9267-6298e03b3335>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-temperature-units> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "C" ;
+    skos:prefLabel "Celcius" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/bfec7753-08ae-5be1-a8dd-e0b7ed2b51dc>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-temperature-units> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "F" ;
+    skos:prefLabel "Fahrenheit" ;
+.
+

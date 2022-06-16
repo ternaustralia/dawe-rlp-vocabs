@@ -1,0 +1,413 @@
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Opportunistic observations" ;
+    ns1:equipment """<p>General </p>
+<ul>
+<li>Mobile device (tablet/phone) capable of recording location (GPS/GNSS or similar), taking high resolution photos and loaded with the App, electronic field guides, interactive identification keys and call playback apps </li>
+<li>Copy of applicable permits and licences </li>
+<li>List of potential species occurring with project area  </li>
+<li>Field guides and identification keys </li>
+<li>Hand lens </li>
+<li>Binoculars </li>
+<li>Camera, including a long-foal length lens  </li>
+<li>Photo scale card </li>
+<li>GPS, spare batteries (if mobile device is not capable of high accuracy location) </li>
+<li>Head torch (for night work) </li>
+<li>Specific fauna survey equipment (refer to Vertebrate fauna, Invertebrate fauna and Targeted survey modules)  </li>
+</ul>
+
+<p>Vouchering (general) </p>
+<ul>
+<li>Material Safety Datasheets (MSDS) for chemical/dangerous substances  </li>
+<li>Voucher labels (with pre-printed barcodes or QR codes)  </li>
+<li>Permanent markers </li>
+<li>Masking tape </li>
+</ul>
+<p>Vouchering (vascular flora) </p>
+<ul>
+<li>Newspaper (tabloid size) and cardboard (43.5 x 28.5 cm) </li>
+<li>Large plastic bags (for collection) </li>
+<li>Plant press and straps (for storage) </li>
+</ul>
+<p>Vouchering (vertebrate fauna) </p>
+<ul>
+<li>Masks, disposable gloves, medium snap-lock bags, paper bags (for collection of scats and animal remains)  </li>
+<li>Heavy duty large plastic bags (for collection and transport of animal remains) </li>
+<li>Silica, ideally self-indicating granules (for storage of moist scat samples)  </li>
+<li>Calipers, ruler or tape measure, weighing scales (for fauna identification and measurement)  </li>
+<li>Fauna processing kit: Eppendorf tubes/vials, preservative solutions (e.g. formalin and ethanol), paper, pencil, pencil sharpener, scissors, glue, ruler, eraser, tags/labels/thread, dissecting kit, utility knife, paper towel, long forceps, plastic tongs, suitable storage containers (for preparing and storing fauna voucher specimens) (refer to the Vertebrate fauna Module) </li>
+<li>Large plastic bags, secure storage containers, insulated box (polystyrene or similar) (for transporting fauna specimens) </li>
+</ul>
+<p>Vouchering (non-vascular flora) </p>
+<ul>
+<li>Chisel and hammer (for collection) </li>
+<li>Screw cap plastic bottles, paper bags, newspaper, cardboard boxes, ethanol/formalin preservative solution (for storing specimens) </li>
+</ul>
+<p>Vouchering (invertebrate fauna) </p>
+<ul>
+<li>Sweep net, forceps or flat head tweezers, artists paintbrush, aspirator, knife or scraper (for collection) </li>
+<li>Jars and vials, preservative solution (e.g. 80% ethanol), labels, pencil, scissors (for storing specimens). </li>
+</ul>""" ;
+    ns1:instructions """<ol>
+<li>Open the App, and select the Add opportunistic observation button from the home page or from within another module.</li>
+<li>Add photos, video or audio for the observation (if applicable) by switching toggle to &lsquo;on&rsquo; and using in-App camera/audio recorder or selecting from the camera roll/audio recorder on your device (if recorded outside of the app). If the files are on another device, enter a reference number so they can be uploaded later when accessing the App from a computer. Enter a text description to accompany each file, e.g. &lsquo;close up of thorns&rsquo;.</li>
+<li>The location of the observation will be automatically recorded (being the location of the device when the Add opportunistic observation button was selected). Click to override, by coordinates or by moving the point on the map (i.e. if entering a record after the event or if the observation was recorded from a distance). Note: entering the record into the App at the time of the observation is the preferred method.</li>
+<li>Select Within plot toggle switch to &lsquo;on&rsquo; if the observation is within an existing plot. The plot reference of the nearest plot should appear. Confirm this is the correct plot. If not, select from the auto-populated drop-down list of nearest plots, or manually enter if the correct plot does not appear on the drop-down list.</li>
+<li>Select Species name using the &lsquo;look up&rsquo;. As you type, options will be provided by class, order, family, genus, species. Enter to the level you are confident of the identification (e.g. enter to genus level if uncertain of the species). Where an identification is uncertain, only record the observation if a voucher specimen, photo or other evidence is taken for later identification. If the identification is only known to genus, manually assign a descriptive field species name e.g. Macropus &lsquo;red legs&rsquo;. Invertebrates and non-vascular flora are often only known to class or morphological group. Where the genus (or lower classification for invertebrates and non-vascular flora) is unknown, manually assign a field descriptive name e.g. &lsquo;yellow daisy flower', &lsquo;small grey rounded mammal scat&rsquo;. The field name given during this step should be used as the field name every time that species or a sign of that species is encountered.</li>
+<li>If the identification is uncertain (i.e. pending the review of evidence collected), switch Confident toggle to &lsquo;off&rsquo; (default is &lsquo;on&rsquo; to indicate the surveyor is confident). If confident at the level of entry at Step 5 (e.g. entered to genus level because uncertain of the species and there is no supporting evidence to refine the identification), then Confident toggle should be &lsquo;on&rsquo;.</li>
+<li>Select Source of identification from the drop-down list. If Confident toggle is &lsquo;on&rsquo; (Step 6) the default selection is &lsquo;field identification by observer&rsquo;. If Confident toggle is &lsquo;off&rsquo; (Step 6), the default selection becomes &lsquo;awaiting identification&rsquo; and the record will be flagged for follow up through the curation process. For example, if evidence (e.g. photo, audio recording) is provided to support the record, which is later identified by an expert, the Source of identification is then updated to &lsquo;identification of evidence by expert&rsquo;).</li>
+<li>The date and time of the observation will be automatically recorded. Click to override the record date and time (i.e. if entering a record after the event).</li>
+<li>Select the Observer from the drop-down list (pre-populated based on entry of surveyor details during project setup). If the observer is not on the list, manually enter observer name.</li>
+<li>Record the Number of individuals observed (zero, blank and no selection are invalid). Select if the count is exact or an estimate.</li>
+<li>Record the Observation method from the drop-down list (e.g. observed, heard, sign &ndash; track, sign &ndash; scat). Controlled Vocabularies Information.</li>
+<li>Record Habitat description using the drop-down lists or manual entry (e.g. structural formation, vegetation association, macro and microhabitat) (optional).</li>
+<li>Record any additional Observation notes (optional).</li>
+<li>Record additional Observation details. Relevant fields will be visible based on the selection of species in Step 5. Select the growth form for flora records from the drop-down list. Select the behaviour, age, sex and reproductive status from the drop-down list and record measurements for fauna records (optional).</li>
+<li>If a Voucher specimen is collected, switch toggle to &lsquo;on&rsquo;. Assign a unique barcode voucher label to the specimen and scan barcode (see Floristics and Vertebrate fauna modules for instructions). Select Voucher type from the drop-down list. For fauna remains, select the Condition of the specimen from the drop-down list. If a separate voucher reference number is assigned by the relevant herbarium/museum then this should be recorded in the Voucher comments field. See Section 3.3.3 Voucher collection for voucher collection guidelines.</li>
+<li>If more than one voucher specimen is collected for the same observation (e.g. a plant voucher and a plant tissue voucher; a fauna hair sample and a liver sample) then select toggle &lsquo;on&rsquo; for Additional voucher specimen and repeat Step 14. Each specimen is allocated a unique barcode.</li>
+<li>Select Save and Add if you wish to record an additional entry for the same location, date and time (e.g. if multiple bird species were observed flying over at the same time).</li>
+<li>Select Save to save the species record. The screen will then return to Home or the Module that was being undertaken.</li>
+</ol>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/opportunistic-observations-main-app-screen.png" alt="Figure 1. Opportunistic observations main app screen " width="319" height="432" /></td>
+<td>
+<ul>
+<li>See ALA, iNaturalist and WOW examples.</li>
+<li>Takes to Opportunistic observation record screen.</li>
+<li>List of all species recorded for the project (can filter by module, default opportunistic only from this link. Sort options (by species, date etc).</li>
+<li>List of all vouchers collected for the project (filter option by module, default opportunistic only from this list).</li>
+<li>Map of all species recorded for the project (can filter by module, e.g. so only see opportunistic). Default opportunistic only from this link. Edit entries from list or from map selection.</li>
+<li>Field checklist has check boxes to help with field trip planning.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/new-observation-app-screen.png" alt="Figure 2. New observation app screen " width="324" height="498" /></td>
+<td>
+<ul>
+<li>When press cancel record, get a warning message &ldquo;Are you sure you want to cancel record?&rdquo; Then returns to module.</li>
+<li>Unique record ID shown (user may wish to write it in notebook as a reminder to enter voucher info later.</li>
+<li>Option to take or upload photo, video or sound recording. See Figure 3.</li>
+<li>Location auto generated based on location and appears when record starts. Option to override (click on and takes to new screen). Option to add a GPS reference number for later upload? Option to select location based on map?</li>
+<li>If within plot is Y, plot code should auto appear (should detect nearest, option to override if incorrect). Option to add location description in detailed mode.</li>
+<li>Eg NE or 360 degree entry override. N/A if distance is 0. Unsure if we need the level of detail of distance and direction?</li>
+<li>As per iNaturalist (can search by common and scientific name, groups (e.g. snails), class, order). Hot-keys so names appear as type. Option to add field name if species is unknown.</li>
+<li>Confident default is &lsquo;on&rsquo; If not confident, record is flagged for follow up through curation process.</li>
+<li>Source of identification (values TBD), e.g. Field ID by observer (default if Confident is &lsquo;on&rsquo;), awaiting identification (default if Confident is &lsquo;off&rsquo;).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/photovideoaudio-app-screen.png" alt="Figure 3. Photo/Video/Audio app screen " width="286" height="410" /></td>
+<td>
+<ul>
+<li>Option to add from photo library, take photo, audio/video record, or option to add a reference number for later upload if photo is taken from a different digital device. Once uploaded, pop up &ldquo;photo ok or retry.&rdquo; Need to provide a text description for each media upload. Can include species and habitat photos. A max time/file size allowance will be set for video and call uploads (e.g. 30 secs).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/new-observation-details-app-screen.png" alt="Figure 4. New observation details app screen " width="305" height="412" /></td>
+<td>
+<ul>
+<li>Auto entry based on when record sighting entry started (click on to override).</li>
+<li>Auto entry based on login. Option to select other project contributors from drop-down list or manual override (e.g. if volunteer entering data).</li>
+<li>Then drop down for accuracy of count (exact, estimate).</li>
+<li>Observation method options (plants/animals) will depend on selection of species above (filtered by taxa type).</li>
+<li>Habitat description could be based on a drop-down as per fields in Appendix and/or manual entry. Can filter lists based on taxa type and have it tiered approach.</li>
+<li>Fauna behaviour as optional field, list filtered based on taxa type (e.g. foraging, roosting, flying overhead)</li>
+<li>Fauna measurement options will depend on selection of species (filtered by taxa type) &ndash; optional field.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/new-observation-details-app-screen.png" alt="Figure 5. New observation voucher app screen" width="305" height="412" /></td>
+<td>
+<ul>
+<li>Voucher specimen &ndash; if toggle on then additional fields appear below as shown.</li>
+<li>Voucher type list filtered by taxa (based on species selected). Include invertebrate as an option.</li>
+<li>Voucher condition (e.g. fresh, decomposed).</li>
+<li>Voucher comments, e.g. estimate of how long specimen dead for, additional voucher ID assigned by museum/herbarium, any linked voucher numbers, e.g. prey collected within scat, invert and flora parasites collected from another voucher.</li>
+<li>If more than one type of voucher specimen is collected (e.g. remains, ear tissue, liver tissue) then above fields repeated.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional guidelines</strong></p>
+<p>Survey preparation</p>
+<ol>
+<li>Open the App, and select the Add opportunistic observation button from the home page or from within another module.</li>
+<li>Add photos, video or audio for the observation (if applicable) by switching toggle to &lsquo;on&rsquo; and using in-App camera/audio recorder or selecting from the camera roll/audio recorder on your device (if recorded outside of the app). If the files are on another device, enter a reference number so they can be uploaded later when accessing the App from a computer. Enter a text description to accompany each file, e.g. &lsquo;close up of thorns&rsquo;.</li>
+<li>The location of the observation will be automatically recorded (being the location of the device when the Add opportunistic observation button was selected). Click to override, by coordinates or by moving the point on the map (i.e. if entering a record after the event or if the observation was recorded from a distance). Note: entering the record into the App at the time of the observation is the preferred method.</li>
+<li>Select Within plot toggle switch to &lsquo;on&rsquo; if the observation is within an existing plot. The plot reference of the nearest plot should appear. Confirm this is the correct plot. If not, select from the auto-populated drop-down list of nearest plots, or manually enter if the correct plot does not appear on the drop-down list.</li>
+<li>Select Species name using the &lsquo;look up&rsquo;. As you type, options will be provided by class, order, family, genus, species. Enter to the level you are confident of the identification (e.g. enter to genus level if uncertain of the species). Where an identification is uncertain, only record the observation if a voucher specimen, photo or other evidence is taken for later identification. If the identification is only known to genus, manually assign a descriptive field species name e.g. Macropus &lsquo;red legs&rsquo;. Invertebrates and non-vascular flora are often only known to class or morphological group. Where the genus (or lower classification for invertebrates and non-vascular flora) is unknown, manually assign a field descriptive name e.g. &lsquo;yellow daisy flower', &lsquo;small grey rounded mammal scat&rsquo;. The field name given during this step should be used as the field name every time that species or a sign of that species is encountered.</li>
+<li>If the identification is uncertain (i.e. pending the review of evidence collected), switch Confident toggle to &lsquo;off&rsquo; (default is &lsquo;on&rsquo; to indicate the surveyor is confident). If confident at the level of entry at Step 5 (e.g. entered to genus level because uncertain of the species and there is no supporting evidence to refine the identification), then Confident toggle should be &lsquo;on&rsquo;.</li>
+<li>Select Source of identification from the drop-down list. If Confident toggle is &lsquo;on&rsquo; (Step 6) the default selection is &lsquo;field identification by observer&rsquo;. If Confident toggle is &lsquo;off&rsquo; (Step 6), the default selection becomes &lsquo;awaiting identification&rsquo; and the record will be flagged for follow up through the curation process. For example, if evidence (e.g. photo, audio recording) is provided to support the record, which is later identified by an expert, the Source of identification is then updated to &lsquo;identification of evidence by expert&rsquo;).</li>
+<li>The date and time of the observation will be automatically recorded. Click to override the record date and time (i.e. if entering a record after the event).</li>
+<li>Select the Observer from the drop-down list (pre-populated based on entry of surveyor details during project setup). If the observer is not on the list, manually enter observer name.</li>
+<li>Record the Number of individuals observed (zero, blank and no selection are invalid). Select if the count is exact or an estimate.</li>
+<li>Record the Observation method from the drop-down list (e.g. observed, heard, sign &ndash; track, sign &ndash; scat).</li>
+<li>Record Habitat description using the drop-down lists or manual entry (e.g. structural formation, vegetation association, macro and microhabitat) (optional).</li>
+<li>Record any additional Observation notes (optional).</li>
+<li>Record additional Observation details. Relevant fields will be visible based on the selection of species in Step 5. Select the growth form for flora records from the drop-down list. Select the behaviour, age, sex and reproductive status from the drop-down list and record measurements for fauna records (optional).</li>
+<li>If a Voucher specimen is collected, switch toggle to &lsquo;on&rsquo;. Assign a unique barcode voucher label to the specimen and scan barcode (see Floristics and Vertebrate fauna modules for instructions). Select Voucher type from the drop-down list. For fauna remains, select the Condition of the specimen from the drop-down list. If a separate voucher reference number is assigned by the relevant herbarium/museum then this should be recorded in the Voucher comments field. See Section 3.3.3 Voucher collection for voucher collection guidelines.</li>
+<li>If more than one voucher specimen is collected for the same observation (e.g. a plant voucher and a plant tissue voucher; a fauna hair sample and a liver sample) then select toggle &lsquo;on&rsquo; for Additional voucher specimen and repeat Step 14. Each specimen is allocated a unique barcode.</li>
+<li>Select Save and Add if you wish to record an additional entry for the same location, date and time (e.g. if multiple bird species were observed flying over at the same time).</li>
+<li>Select Save to save the species record. The screen will then return to Home or the Module that was being undertaken.</li>
+</ol>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/opportunistic-observations-main-app-screen.png" alt="Figure 1. Opportunistic observations main app screen " width="319" height="432" /></td>
+<td>
+<ul>
+<li>See ALA, iNaturalist and WOW examples.</li>
+<li>Takes to Opportunistic observation record screen.</li>
+<li>List of all species recorded for the project (can filter by module, default opportunistic only from this link. Sort options (by species, date etc).</li>
+<li>List of all vouchers collected for the project (filter option by module, default opportunistic only from this list).</li>
+<li>Map of all species recorded for the project (can filter by module, e.g. so only see opportunistic). Default opportunistic only from this link. Edit entries from list or from map selection.</li>
+<li>Field checklist has check boxes to help with field trip planning.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/new-observation-app-screen.png" alt="Figure 2. New observation app screen " width="324" height="498" /></td>
+<td>
+<ul>
+<li>When press cancel record, get a warning message &ldquo;Are you sure you want to cancel record?&rdquo; Then returns to module.</li>
+<li>Unique record ID shown (user may wish to write it in notebook as a reminder to enter voucher info later.</li>
+<li>Option to take or upload photo, video or sound recording. See Figure 3.</li>
+<li>Location auto generated based on location and appears when record starts. Option to override (click on and takes to new screen). Option to add a GPS reference number for later upload? Option to select location based on map?</li>
+<li>If within plot is Y, plot code should auto appear (should detect nearest, option to override if incorrect). Option to add location description in detailed mode.</li>
+<li>Eg NE or 360 degree entry override. N/A if distance is 0. Unsure if we need the level of detail of distance and direction?</li>
+<li>As per iNaturalist (can search by common and scientific name, groups (e.g. snails), class, order). Hot-keys so names appear as type. Option to add field name if species is unknown.</li>
+<li>Confident default is &lsquo;on&rsquo; If not confident, record is flagged for follow up through curation process.</li>
+<li>Source of identification (values TBD), e.g. Field ID by observer (default if Confident is &lsquo;on&rsquo;), awaiting identification (default if Confident is &lsquo;off&rsquo;).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/photovideoaudio-app-screen.png" alt="Figure 3. Photo/Video/Audio app screen " width="286" height="410" /></td>
+<td>
+<ul>
+<li>Option to add from photo library, take photo, audio/video record, or option to add a reference number for later upload if photo is taken from a different digital device. Once uploaded, pop up &ldquo;photo ok or retry.&rdquo; Need to provide a text description for each media upload. Can include species and habitat photos. A max time/file size allowance will be set for video and call uploads (e.g. 30 secs).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/new-observation-details-app-screen.png" alt="Figure 4. New observation details app screen " width="305" height="412" /></td>
+<td>
+<ul>
+<li>Auto entry based on when record sighting entry started (click on to override).</li>
+<li>Auto entry based on login. Option to select other project contributors from drop-down list or manual override (e.g. if volunteer entering data).</li>
+<li>Then drop down for accuracy of count (exact, estimate).</li>
+<li>Observation method options (plants/animals) will depend on selection of species above (filtered by taxa type).</li>
+<li>Habitat description could be based on a drop-down as per fields in Appendix and/or manual entry. Can filter lists based on taxa type and have it tiered approach.</li>
+<li>Fauna behaviour as optional field, list filtered based on taxa type (e.g. foraging, roosting, flying overhead)</li>
+<li>Fauna measurement options will depend on selection of species (filtered by taxa type) &ndash; optional field.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/opportunistic-observation/new-observation-details-app-screen.png" alt="Figure 5. New observation voucher app screen" width="305" height="412" /></td>
+<td>
+<ul>
+<li>Voucher specimen &ndash; if toggle on then additional fields appear below as shown.</li>
+<li>Voucher type list filtered by taxa (based on species selected). Include invertebrate as an option.</li>
+<li>Voucher condition (e.g. fresh, decomposed).</li>
+<li>Voucher comments, e.g. estimate of how long specimen dead for, additional voucher ID assigned by museum/herbarium, any linked voucher numbers, e.g. prey collected within scat, invert and flora parasites collected from another voucher.</li>
+<li>If more than one type of voucher specimen is collected (e.g. remains, ear tissue, liver tissue) then above fields repeated.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&nbsp;Additional guidelines</strong></p>
+<p>Survey preparation</p>
+<ul>
+<li>Generate a species list for your area of interest and familiarise yourself with the species that may be encountered during your project, including species of conservation significance. Key resources: EPBC Protected Matters Search, state/territory databases, Atlas of Living Australia. Note: consider the data source and reliability of the information.</li>
+<li>Determine the extent (including spatial resolution, and temporal scale) of previous survey work in the area, including the numbers and localities of any herbarium and museum specimens previously registered from the project area and surrounds. Key resources: state/territory databases, TERN, Atlas of Living Australia, biological survey reports, data requests.</li>
+<li>Obtain advice from the relevant herbarium and museum collections regarding:
+<ul>
+<li>species of interest for vouchering (thus avoiding unnecessary collecting)</li>
+<li>number/type of specimens to be collected</li>
+<li>specific labelling and preservation requirements</li>
+<li>fee for service details.</li>
+</ul>
+</li>
+<li>Consult other institutions/experts/researchers where appropriate, regarding any project or species-specific vouchering requirements additional to those of the relevant herbarium/museum.</li>
+<li>Obtain the required permits, approvals and licences (e.g. scientific research, animal ethics and welfare, collection of plant material, collection/disturbance of threatened species, biosecurity, movement of listed invasive species, possession and use of controlled substances); refer to the Supplementary information for Permits and Approvals.</li>
+<li>The survey coordinator should:
+<ul>
+<li>ensure permission has been obtained for land access</li>
+<li>ensure those involved in the survey are aware of the permit conditions and requirements relating to animal care and ethics, and that those requirements are being met</li>
+<li>have appropriate experience and/or knowledge of the correct procedures for the collection and preservation of voucher specimens (if applicable).</li>
+</ul>
+</li>
+</ul>
+<p>Field collection</p>
+<ul>
+<li>Record opportunistic observations of flora and fauna (direct observations and signs) during any stage of a project.</li>
+<li>Always work within the bounds of any permits and land access permissions. Only collect vouchers from within the project area (animal remains/sign on public roads being an exception).</li>
+<li>Enter all required fields in the App (a warning message will appear when attempting to save the record if required fields are not entered). Refer to the information buttons in the App for clarification regarding the data collection and entry requirements.</li>
+<li>Opportunistic vascular flora observations are generally recorded for unknown, new, threatened or important species (e.g. range extension, data deficient, contentious taxonomy, uncharacteristic growth form).</li>
+<li>Only record opportunistic vascular flora observations within a plot if outside of a designated monitoring event as all flora species within the plot are recorded during the Floristics module. This is to capture any new flora sightings (e.g. annuals that may not have been detected during a formal plot monitoring event).</li>
+<li>Opportunistic vertebrate fauna observations are generally recorded for all species, however recording every single observation throughout a survey may prove too time consuming for some species. Any sighting of a significant species should be recorded. If some species are particularly common, then consider recording a representative sample only. The survey coordinator will need to decide when to cease recording certain fauna species. For example, where groups of kangaroos or emus, or flocks of birds are seen each day in the same area and are considered the same group, there is no need to record them again unless extra individuals are observed or if they are displaying different behaviour.</li>
+<li>Observations should be identified to species level or subspecies level if known, especially for vascular flora and vertebrate fauna. If uncertainty exists, identify observations to the level that you are confident (i.e. better to record to genus level rather than incorrectly allocating a species name). For example, recording Macropus sp. with Confident selected to &lsquo;on&rsquo; means you are confident at this level. If you select Macropus as the genus then assign a field name for species (e.g. Macropus red legs) it means the species level identification is uncertain until confirmed by evidence, so Confident is &lsquo;off&rsquo;. If the species is still unknown after reviewing the supporting evidence, the record should be amended to Macropus sp. and Confident toggle changed to &lsquo;on&rsquo;.</li>
+<li>For vascular flora and vertebrate fauna, where the genus is unknown at the time of the survey and there is no evidence to accompany the record, there is no benefit in recording the observation.</li>
+<li>Non-vascular flora and invertebrates can be difficult to identify past morphological group level without expertise; identify observations to the level that you are confident (e.g. lichen, worm) and ensure records are accompanied by high quality photos and/or physical vouchers.</li>
+<li>Where the identification of a record remains uncertain after reviewing accompanying evidence, the record should not be published to the database.</li>
+<li>Many species are only recorded for an area from a once-off opportunistic sighting, so take the time to traverse the project area, record sightings and if necessary collect voucher specimens. Traversing the project area early in the survey program may also assist with plot selection, plot number and the location of targeted surveys.</li>
+<li>If travelling in a vehicle when an observation occurs, slow down or stop so that a reliable location can be obtained from your device.</li>
+<li>Be as accurate as possible with recording the location of the record. This is most important for species that have some significance (e.g. threatened species, invasive species, unknown species, range extension).</li>
+<li>Record the surrounding habitat, particularly noting the vegetation association and key macro and microhabitat features (e.g. large tree hollow in Eucalyptus viminalis, under fallen timber, on rock ledge). Accurately describing the habitat is especially important for threatened and sparsely distributed flora and fauna species.</li>
+<li>Recording behaviour (e.g. foraging, roosting) is especially important for threatened and sparsely distributed fauna species.</li>
+<li>If the surveyor does not have access to the App when an opportunistic observation is made, manually record the details of the observation for later upload to the App, including all required fields. The location should ideally be recorded with a GPS or at minimum by plot name for on-plot observations.</li>
+<li>Include a scale card or something for scale (e.g. pencil) in photos (refer to the supporting information at the end of this module for examples).</li>
+<li>Binoculars and/or a camera with long-focal length lens should be used to identify distant fauna observations.</li>
+<li>Disturbance impacts should be minimised. Avoid trampling on native vegetation. Keep suitable distance from fauna, particular species sensitive to disturbance (e.g. on-nest, breeding or feeding). Any habitat refuges moved (e.g. rocks, logs and debris) should be returned to their original location and orientation.</li>
+<li>The opportunistic capture of fauna species can only be undertaken if approved under permit/licence conditions and if there is valid reason to do so (e.g. to identify a small lizard encountered).</li>
+<li>If an animal must be captured, care must be taken to minimise stress to the individual and it should be released at the site of capture as soon as possible after identification.</li>
+<li>Surveyors should be aware of their potential exposure to zoonotic diseases (those that affect both animals and humans and may be passed between them) when handling animals, animal remains and scats. Some of these diseases can cause serious illness or death. Surveyors should take basic precautions to prevent transfer of disease such as use of gloves and washing/sanitising hands thoroughly when handling specimens.</li>
+<li>Only persons immunised against the Australian Bat Lyssavirus should handle bats or go into caves likely to be inhabited by bats.</li>
+</ul>
+<p>Voucher collection</p>
+<p>General</p>
+<ul>
+<li>Vouchers should only be collected if the relevant permits and approvals have been obtained.</li>
+<li>Seek advice from the relevant herbarium and museum regarding collection, preservation and labelling requirements.</li>
+<li>Opportunistic observations may occur before standardised surveys are undertaken or completed (Floristic, Vertebrate fauna, Invertebrate fauna and Targeted survey modules) which could result in duplication of voucher specimens.</li>
+<li>Before collecting a voucher specimen, consider if there are existing specimens of the species from the area (previous records and those recorded during other modules), the existing survey effort, scientific knowledge gaps, representation of specimens currently held in collections, the importance of and the quality of the specimen (see Vascular flora vouchers and Vertebrate fauna vouchers sections).</li>
+<li>In most cases, opportunistic fauna observations will not have an associated voucher specimen given the incidental and unobtrusive nature of the record.</li>
+<li>In the absence of a voucher specimen, other evidence such as a photo, video, or audio file help to validate the record.</li>
+<li>It is not always possible or warranted to provide evidence of opportunistic fauna observations (e.g. if observed at distance through binoculars or if the species is common and readily identifiable). Bird observations are often visual records only, justified by the high level of taxonomic discrimination and the wide availability of expertise in their identification (Wildlife Ethics Committee 2020). Where an observation is submitted without supporting evidence, data users should consider the experience of the observer and decide about the reliability of the data.</li>
+<li>Prepare voucher specimens at the vehicle or an area where all the equipment is available. It may be most efficient to process all specimens at the same time (e.g. back at camp at the end of the day where all the processing equipment is stored); this is assuming specimens can be temporarily stored in an appropriate manner without impacting on their quality.</li>
+<li>Voucher specimen details may be entered into the App after the event (e.g. if the specimen cannot be processed at that time). If this is the case, affix the barcode to the sample and include any additional, sequential barcodes required (e.g. for a tissue sample) in a plastic bag with sample, and process when time is available. To return to the record in the App, go to the opportunistic observations list, find the record (can use search function) and select Edit.</li>
+<li>Ensure voucher specimens are correctly labelled and stored &ndash; refer to the Floristic, Vertebrate fauna and Invertebrate fauna modules, and the information button in the App, for instructions.</li>
+<li>When dealing with multiple voucher specimens from the same observation, each specimen is given a unique, sequential barcode. Take care to ensure the correct barcode is assigned.</li>
+</ul>
+<p>Vascular flora vouchers</p>
+<ul>
+<li>The collection of flora vouchers is optional, but highly recommended when:</li>
+<li>a species identification is uncertain</li>
+<li>a new species is recorded for the project area (i.e. the species is not represented from standardised survey or previous records)</li>
+<li>a new species is recorded for a monitoring plot during a return visit outside of a dedicated monitoring event (e.g. annual species that were not present during plot monitoring)</li>
+<li>a better representative specimen is available</li>
+<li>advised by the herbarium to address scientific knowledge gaps and improve representation within their collection</li>
+<li>it is a condition of a scientific research permit</li>
+<li>a new population of a rare, threatened or endangered flora species is found*</li>
+<li>a key species is recorded in a new occurrence of a threatened ecological community</li>
+<li>a species has atypical characteristics</li>
+<li>a species is recorded outside of its known range, including introduced (weed) species</li>
+<li>a species is located within habitat in which it is unknown or has not previously been detected</li>
+<li>a species is flowering outside its typical flowering time (Environmental Protection Authority 2016; Department of Planning 2020).</li>
+<li>Collection of flora vouchers of rare, threatened or endangered species should only be made when such actions would not jeopardise the continued existence of the population. Collection of threatened species may require additional information to be obtained to fulfil permitting requirements.</li>
+<li>If collecting a voucher specimen would jeopardise the continued existence of a rare, threatened or endangered flora population, the following can serve as the required voucher (listed in decreasing order of preference):</li>
+<li>Portion of fertile plant without the root.</li>
+<li>Photos of plant in conjunction with piece of fertile plant or plant parts (leaves and flowers or fruits).</li>
+<li>Photos of fertile plant in conjunction with sterile plant specimen.</li>
+<li>Sterile plant specimen only, or photos only (preferably with descriptive notes).</li>
+<li>Where possible, a voucher should include enough material to cover an A3 size herbarium sheet. Specific procedures and guidelines to collect, prepare, label and store flora voucher specimens is provided in the Floristics module and via the information buttons in the App. Also refer to the advice provided by the herbarium. Refer to the Plant tissue vouchering module for procedures and guidelines to collect and store leaf samples for DNA and isotope analysis.</li>
+<li>Tag each specimen securely with a unique voucher barcode label. Place the label on stems or away from any plant parts that will need to be examined for identification purposes. Use paper envelopes for small specimens and attach the voucher label to the envelope.</li>
+<li>After labelling, place larger flora specimens directly into a plastic bag, and smaller flora specimens into paper bags, then the plastic bag, ready for transferring to a plant press.</li>
+<li>Place the voucher specimens in a plant press in the field, preferably before commencing another module. To avoid confusion, it is best to place opportunistic records in a separate plant press to that used for the plot survey samples.</li>
+</ul>
+<p>Non-vascular flora vouchers</p>
+<ul>
+<li>Collection and preparation of non-vascular flora is detailed in Eldridge et al. (2003). A summary is provided below given non-vascular flora is not included in other modules. Also refer to the information button in the App and advice provided by the relevant museum:</li>
+<li>Minimise damage to colonies by only collecting small amounts as non-vascular plants can have limited distributions and can be slow-growing. A number of small, representative samples is generally better than a few random samples. For organisms which are seasonally variable (e.g. fungi) collections need to be made at different times of the year.</li>
+</ul>
+<p>Dry-area species</p>
+<ul>
+<li>Species growing on trees and soil can be prized off with a knife or scraper.</li>
+<li>Species growing on rocks, if difficult to remove, may need to be collected with the rock attached using a chisel and hammer.</li>
+<li>Choose specimens with fruiting bodies if available to assist identification.</li>
+<li>Collect specimens in paper bags or folded newspaper envelopes (not plastic).</li>
+<li>Include a small amount of soil for moss/liverwort/hornwort samples to preserve rhizoids/protonema (do not press specimens).</li>
+<li>For fragile soil-borne specimens, wrap in paper before placing in a paper bag.</li>
+<li>Thallose liverworts/hornworts (i.e. with undifferentiated vegetative tissue), especially when reproductive, may be placed in small screw cap plastic containers or cardboard boxes, to protect fragile sporophytes.</li>
+<li>Store samples in a cool, dry place.</li>
+</ul>
+<p>Wet-area species</p>
+<ul>
+<li>Place wet specimens in plastic snap-lock bags or in screw top plastic containers</li>
+<li>Keep specimens cool and moist (not frozen); they can be fragile and difficult to identify when dry.</li>
+<li>Drip-dry moist or waterlogged algae samples first to remove excess fluid (do not squeeze).</li>
+<li>Aquatic bryophyte, moss and liverwort vouchers can be collected and transported in paper.</li>
+<li>Identify specimens as soon as possible after collection.</li>
+<li>If algae specimens are to be kept for over 48 hours before laboratory examination, they should be fixed with 70% alcohol (containing 7% formalin).</li>
+</ul>
+<p>Fungi</p>
+<ul>
+<li>Collect fungi specimens in paper bags and keep from becoming either too dry or sweating. Drying may require special equipment.</li>
+<li>Look up tree trunks for bracket fungi.</li>
+<li>Field notes, photos and sketches may be helpful for later identification of the specimens.</li>
+</ul>
+<p>Vertebrate fauna vouchers</p>
+<ul>
+<li>This module only includes vouchering of animal remains and signs. It does not include euthanasia or tissue collection from live captures.</li>
+<li>Circumstances for the opportunistic collection of vertebrate fauna vouchers (animal remains or signs) include when:</li>
+<li>a species identification is uncertain</li>
+<li>a record is considered important (e.g. the species has a limited occurrence, there are few existing records, the record represents a range extension (including introduced species), the specimen has atypical characteristics)</li>
+<li>the voucher is in better condition or has more scientific value (e.g. more likely to provide species identification) than previously collected specimens</li>
+<li>animal remains or sign are considered important for other studies (e.g. genetics, animal diets, parasites and zoonoses)</li>
+<li>advised by the relevant museum to address scientific knowledge gaps and improve representation within their collection</li>
+<li>a required condition of a scientific research permit or animal ethics approval</li>
+<li>an already dead specimen or sign is of a threatened or presumed extinct species, no matter what the quality/condition.</li>
+<li>Specific procedures and guidelines to prepare, label, preserve, store and transport fauna voucher specimens are provided in the Vertebrate fauna module and via the information buttons in the App. Also refer to advice provided by the relevant museum.</li>
+<li>Unless there are overriding circumstances, fauna vouchers should only be collected if they are considered of a suitable condition for accessioning and if they can be prepared, preserved, stored and transported appropriately. As a guide, suitable specimen quality should be interpreted as:</li>
+<li>Road-kill, beach washed and freshly deceased: whole, with skull intact, clean (no blood stains) and not decomposing (strong odour, fur, feathers or skin easily fall off) or desiccated.</li>
+<li>Skeletal material: dry, whole and partial skeletal material may be useful, depending on species and condition. Broken or fractured bones/skulls are not useful.</li>
+<li>Eggs and nests: abandoned nests or eggs are a good record of breeding data for birds. Alternatively, a photo and measurements of the eggs and/or nest can be used as an observational record (Department of Parks and Wildlife 2013).</li>
+<li>Road-kills or specimens found dead or injured need to be processed as soon as possible to maximise the usefulness of tissue samples. If an animal has been dead for some time, tissue samples can still be taken but record in the field notes how long you estimate it was dead before the tissues were sampled. This will assist in interpreting potentially anomalous results in the lab (Owens 2000).</li>
+<li>Take photos of the specimen (with scale) to accompany the record. Ideally include close ups showing features, any tags/microchip numbers etc., as well as photos of the surrounding environment.</li>
+<li>If a fauna specimen is not required for collection, is not of a suitable condition for collection, or animal ethics approval has not been obtained, then take photos (with scale) instead (Department of Parks and Wildlife 2013).</li>
+<li>Tag the bag or container containing the specimen with a unique voucher barcode label. The labelling requirements vary depending on the type of specimen and method of preservation.</li>
+<li>After labelling and scanning, place fauna specimens in airtight bags and storage containers. Storage requirements vary depending on the type of specimen and method of preservation.</li>
+<li>Arrange for any fresh fauna vouchers of significance (e.g. road-kill of a threatened species) to be transported ASAP to the relevant museum (refer to museum for advice).</li>
+</ul>
+<p>Invertebrate fauna vouchers</p>
+<ul>
+<li>Refer to the Invertebrate fauna module and the relevant museum for instructions and procedures for the collection, preparation and labelling of invertebrate fauna vouchers.</li>
+</ul>""" ;
+.
+

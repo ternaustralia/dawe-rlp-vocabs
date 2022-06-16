@@ -1,0 +1,388 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95>
+    a skos:Collection ;
+    dcterms:description """<p>
+  The Soils module covers the procedures and guidelines of six field protocols
+  (summarized in Table 2). This includes a plot soil description protocol, two
+  soil profile protocols, a soil bulk density protocol, a rapid soil sampling
+  protocol aimed at conservation practitioners that need to undertake soil
+  chemistry monitoring, and a soil metagenomics protocol.
+</p>
+<p style="color: blue">
+  The six protocols of the Soils module, including details, application,
+  sampling location, type of sampling, and approximate survey time for each
+  protocol
+</p>
+<p>
+  (Sparrow et al. 2020). Sampling locations are illustrated inFigure 1and Figure
+  2.
+</p>
+<table>
+  <thead>
+    <tr>
+      <td>
+        <p>Protocol</p>
+      </td>
+      <td>
+        <p>Details</p>
+      </td>
+      <td>
+        <p>Application</p>
+      </td>
+      <td>
+        <p>Sampling location</p>
+      </td>
+      <td>
+        <p>Type of sampling</p>
+      </td>
+      <td>
+        <p>Time (mins)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Plot soil description</p>
+      </td>
+      <td>
+        <p>
+          Records location, erosion, microrelief, drainage, disturbance and soil
+          surface condition when dry
+        </p>
+      </td>
+      <td>
+        <p>Assessment of characteristics/impacts of disturbance</p>
+      </td>
+      <td>
+        <p>Plot</p>
+      </td>
+      <td>
+        <p>n/a</p>
+      </td>
+      <td>
+        <p>10</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Soil pit characterization</p>
+      </td>
+      <td>
+        <p>
+          Collection of soil data/samples at 10 cm increments or identifiable
+          horizons to 1 m+
+        </p>
+      </td>
+      <td>
+        <p>
+          Characterization and classification; correlation with vegetation;
+          downstream chemical analysis
+        </p>
+      </td>
+      <td>
+        <p>Outside SW corner of plot</p>
+      </td>
+      <td>
+        <p>Systematic</p>
+      </td>
+      <td>
+        <p>60–120</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Soil sub-site samples</p>
+      </td>
+      <td>
+        <p>
+          Collection of nine samples in differing microhabitats at 0–10, 10–20,
+          and 20–30 cm
+        </p>
+      </td>
+      <td>
+        <p>Soil variability across the plot</p>
+      </td>
+      <td>
+        <p>Plot, five in soil sub- site zone</p>
+      </td>
+      <td>
+        <p>Stratified random</p>
+      </td>
+      <td>
+        <p>60–90</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Soil bulk density</p>
+      </td>
+      <td>
+        <p>
+          Collection of three measures at the soil pit at 0–10, 10–20, and 20–30
+          cm
+        </p>
+      </td>
+      <td>
+        <p>Conversion of soil properties to volumetric measures</p>
+      </td>
+      <td>
+        <p>Soil pit</p>
+      </td>
+      <td>
+        <p>Systematic</p>
+      </td>
+      <td>
+        <p>30</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Soil condition samples</p>
+      </td>
+      <td>
+        <p>
+          Collection of 10 soil core samples from 10 cm increments to 30 cm
+          deep, randomly located in a 25 x 25 m grid with 2.5 m spacing in the
+          southwest corner of the plot
+        </p>
+      </td>
+      <td>
+        <p>
+          Downstream chemical analysis (e.g. soil acidity, soil organic carbon)
+          and determination of soil bulk density
+        </p>
+      </td>
+      <td>
+        <p>Soil sub- site zone</p>
+      </td>
+      <td>
+        <p>Systematic random</p>
+      </td>
+      <td>
+        <p>30</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Soil metagenomics</p>
+      </td>
+      <td>
+        <p>
+          Collection of nine soil surface samples to 3 cm in differing
+          microhabitats (collected immediately before the Soil sub-site
+          characterisation protocol samples are collected), or microhabitat of a
+          target species/taxa/group.
+        </p>
+      </td>
+      <td>
+        <p>
+          Downstream metagenomic analysis of environmental DNA (e.g. soil biota,
+          traces of above ground flora and fauna)
+        </p>
+      </td>
+      <td>
+        <p>Plot, five in soil sub- site zone</p>
+      </td>
+      <td>
+        <p>Stratified random/ targeted</p>
+      </td>
+      <td>
+        <p>30</p>
+      </td>
+    </tr>
+  </thead>
+</table>
+<p>
+  All six protocols include procedures and guidelines for recording data and
+  scanning sample barcodes directly into the App. All data fields relating to
+  soil properties have a drop-down list with available responses. Predictive
+  text can be used to filter these lists to narrow results and speed up data
+  entry. Indicative locations of the soil sampling locations are illustrated in
+  Figure 1 and Figure 2.
+</p>
+<ol>
+  <li>
+    <p>
+      <strong>Plot soil description</strong> – The Plot soil description
+      protocol covers the procedures for describing important aspects of the
+      soil within the plot, including plot identification and location details,
+      slope, landform element and pattern, erosion, microrelief, drainage,
+      disturbance, and soil surface condition (when dry). Although some of these
+      soil description variables are also described in the Plot description
+      module, it is important to record them in the Soils module relative to the
+      soil characterization pit.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil pit characterization</strong> – The Soil pit characterization
+      protocol covers the procedures and guidelines for characterizing the upper
+      soil profile, including exposing the profile to a depth of 1 m+ at the
+      southwest corner of the plot (Figure 1), capturing a photographic record
+      of profile, identifying the soil horizons, recording the physical
+      properties of the soil within each horizon, collecting soil samples from
+      10 cm increments, taking care not to sample across horizons, and post-
+      field survey processing and storage of soil samples.
+    </p>
+    <p>
+      It is recommended that the Plot soil description and Soil pit
+      characterization protocols are undertaken at every plot during a baseline
+      assessment to describe, measure and sample the soil profile, and only
+      during repeat visits if the soil classification lacks analytical and/or
+      morphological data, or if the soils are variable across the plot.
+      Pedologists and experienced soil surveyors should be able to undertake
+      both protocols and collect detailed soil profile descriptions in the
+      field, while less experienced field surveyors should note plot- based
+      observations and distinguish soil horizons to their best ability and
+      collect samples for a more detailed description back in the lab by a
+      pedologist or experienced soil surveyor. The Plot soil description and
+      Soil pit characterization protocols are recommended to be undertaken at
+      the same time vegetation modules (e.g. Floristics, Cover) to enable
+      vegetation analyses to consider contemporaneous soil characteristics
+      (Sparrow et al. 2020).
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil sub-site samples</strong> – The Soil sub-site
+      characterization protocol covers the procedures and guidelines for
+      collecting soil samples to capture variability in the upper soil profile,
+      including exposing the profile to a depth of 30 cm at nine locations with
+      differing microhabitat (e.g. bare ground, dense litter, sparse vegetation
+      cover, dense vegetation cover) within the plot (Figure 1), capturing a
+      photographic record of profile, capturing a photographic record of
+      microhabitats sampled, identifying the soil horizons, recording if the
+      horizons are atypical relative to the 1 m+ soil pit characterization (and
+      noting the differences), collecting soil samples at 0–10, 10–20, and 20–30
+      cm increments, taking care not to sample across horizons, and post-field
+      survey processing and storage of soil samples. Five soil characterization
+      sub-sites are located within a 25 x 25 m soil sub-site zone in the
+      southwest corner of the plot (Figure 1) for consistency with various
+      national soil research programs and monitoring protocols.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil bulk density</strong> – The Soil bulk density protocol covers
+      the procedures and guidelines for collecting soil core samples at 0–10,
+      10–20, and 20–30 cm increments from the edge of the soil pit (Figure 1),
+      plus additional locations if required, sealing the core samples, and
+      post-field survey processing of soil core samples. Soil bulk density
+      measures are collected so that important soil parameters can be
+      quantified, particularly carbon content.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil condition samples</strong> – The Soil condition samples
+      protocol covers the procedures and guidelines for the rapid, systematic
+      collection of soil samples for downstream soil chemistry and bulk density
+      analysis, including taking soil core samples from 10 cm increments to a
+      depth of 30 cm at 10 locations (Figure 2), located within a 25 x 25 m soil
+      sub-site zone in the southwest corner of the plot (Figure 1), storing the
+      soil cores in individual sample bags, and post-field survey processing and
+      storage of soil samples. This protocol has been designed for conservation
+      practitioners to quickly obtain a representative sample of the upper soil
+      profile for downstream soil chemistry analysis (e.g., soil acidity, soil
+      organic carbon).
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil metagenomics</strong> – The Soil metagenomics protocol covers
+      the procedures and guidelines for the collection of soil surface samples
+      for downstream soil genomics analysis, including the collection nine soil
+      surface samples to 3 cm in differing microhabitats (collected immediately
+      before the Soil sub-site characterization protocol samples are collected),
+      or microhabitat of a target species, taxa, or group, within the plot
+      (Figure 1), capturing a photographic record of microhabitats sampled, and
+      post-field survey processing and storage of soil samples. Researchers and
+      practitioners are strongly encouraged to undertake this protocol, if
+      possible, as the samples collected provide a range of potential future
+      applications for very little investment of time and resources.
+    </p>
+  </li>
+</ol>
+<p>The Soils module is linked to the following modules:</p>
+<ul>
+  <li>
+    <p>
+      Plot description – Both modules include a description of plot slope,
+      landform element and pattern, and disturbance (i.e., grazing, clearing,
+      land use). If both modules are undertaken during a survey, the data from
+      whichever module has been completed first will be prefilled in the module
+      that is undertaken afterwards.
+    </p>
+  </li>
+  <li>
+    <p>
+      Cover – Substrate type and vegetation cover data provides insight into the
+      microhabitats within the plot to target for sub-site and metagenomics soil
+      samples.
+    </p>
+  </li>
+  <li>
+    <p>
+      Interventions – Conservation practitioners may undertake soil monitoring
+      to monitor the success of interventions to improve soil quality (e.g.,
+      slow or reverse rates of soil acidification, increase soil organic
+      carbon).
+    </p>
+  </li>
+</ul>
+<p>
+  Figure 1. Plot layout showing indicative locations of the soil
+  characterisation pit and nine soil characterisation sub-sites across the plot.
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/soil/plot-layout.png"
+            alt="Plot layout"
+            widteh="500"
+            height="600"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+<p>
+  Five soil characterization sub-sites are located within the 25 x 25 m soil
+  sub-site zone in the southwest corner of the plot. Soil bulk density core
+  samples are collected from an edge of the soil pit.
+</p>
+<p>
+  Figure 2. Systematic soil sampling grid within the soil sub-site zone (25 x 25
+  m SW corner) for the Soil chemtry samples protocol (Grealish et al. 2011).
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/soil/systematic-soil-sampling-grid.png"
+            alt="systematic-soil-sampling-grid"
+            widteh="568"
+            height="480"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+<p>Candidate sampling locations for four sampling events are shown.</p>
+""" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/1c83a60d-12e5-4bb3-b876-7eb97da79fa9> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7818e122-6354-42e0-aeff-32dbab7baae4> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ca8a3a10-d35d-45ff-b987-a4ab3f1ce1c5> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/d9e6739a-c2dd-4619-be43-1251449a6436> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/e3ad3e5b-7c1c-4b59-bdb1-297f707d2ca3> ;
+    skos:prefLabel "Soil" ;
+.
+

@@ -1,0 +1,49 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/0ba17555-8c8f-435a-b16f-62773561207b> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/ab7c4569-312c-4450-b413-9b11c4d2577b>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/43178892-92a6-434f-9895-340700e299e6> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/3e0a5d97-c623-477e-98fe-8fe120907530>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Trees where the trunk or stem at breast height (1.3 m above ground level) is the exact width of the aperture of the BAF used on a TERN Basal Wedge. " ;
+    skos:prefLabel "borderline" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/43178892-92a6-434f-9895-340700e299e6>
+    a skos:Concept ;
+    dcterms:source "Ecological Field Monitoring protocols - Basal area module, draft v0.1, 30/11/2021" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "The type of hit of a plant during a basal area sweep." ;
+    skos:prefLabel "basal area sweep hit type" ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/0ba17555-8c8f-435a-b16f-62773561207b> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/ae71c3f6-d430-400f-a1d4-97a333b4ee02> ;
+    tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/a7d605e0-7d90-473e-aac0-21cdf380576f> ;
+    tern:valueType tern:IRI ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/57b9fb25-e075-4e18-8c7f-167e09318c94>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Trees where the trunk or stem at breast height (1.3 m above ground level) is wider than the aperture of the BAF used on a TERN Basal Wedge. " ;
+    skos:prefLabel "in" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/0ba17555-8c8f-435a-b16f-62773561207b>
+    a skos:Collection ;
+    dcterms:description "These codes were created for the full and lite versions of the Basal Area module's DBH protocols. The categorical values model the collection app's JSON schema." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/3e0a5d97-c623-477e-98fe-8fe120907530> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/57b9fb25-e075-4e18-8c7f-167e09318c94> ;
+    skos:prefLabel "Basal sweep hit type codes" ;
+.
+

@@ -1,0 +1,40 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/f06740e7-2857-415a-a6dc-72dbbba7a88c> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/6247eb53-3ca5-531a-a456-c6e861af6bea>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "A" ;
+    skos:prefLabel "Alive" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/96ea2945-9ccc-599b-835b-928a1df95fd4>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "R" ;
+    skos:prefLabel "Regenerating" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/f06740e7-2857-415a-a6dc-72dbbba7a88c>
+    a skos:Collection ;
+    dcterms:description "A collection of basal tree statuses and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/6247eb53-3ca5-531a-a456-c6e861af6bea> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/96ea2945-9ccc-599b-835b-928a1df95fd4> ;
+    skos:prefLabel "Basal tree statuses" ;
+.
+

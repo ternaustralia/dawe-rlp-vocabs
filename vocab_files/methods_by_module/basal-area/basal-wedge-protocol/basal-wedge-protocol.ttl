@@ -1,0 +1,198 @@
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/a7d605e0-7d90-473e-aac0-21cdf380576f>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Basal wedge protocol" ;
+    ns1:equipment """<ul>
+  <li>
+    Mobile device (tablet/phone capable of taking high resolution photos) with
+    the App (progressive web app) saved to the home screen
+  </li>
+  <li>
+    TERN Basal Wedge with attached string knotted at precisely 50 cm
+    from the wedge.
+  </li>
+</ul>""" ;
+    ns1:instructions """<p>
+<ol>
+  <li>
+    Ensure the Plot selection and layout module has been completed to mark out
+    the plot grid (including the Centrepoint and north, south, east and west
+    point sampling locations) with very high accuracy using the Trimble&reg; R1.
+  </li>
+  <li>
+    Open the App and navigate to the &lsquo;Basal Area&rsquo; module and then
+    the &lsquo;Basal Wedge Protocol&rsquo;.
+  </li>
+  <li>
+    Stand at one of the 9 basal wedge sampling locations and
+    select the location from the drop-down list (Appendix A). It does not matter
+    which order the sampling locations are surveyed in.
+  </li>
+  <li>
+    Select the &lsquo;Record basal wedge sampling location&rsquo; button to
+    record the location with very high accuracy using the Trimble&reg; R1.
+    Because the method involves a plotless sweep, location accuracy at the NW,
+    N, NE, E, SE, S, SW and W points around the perimeter of the plot, as well
+    as the center of the plot is not critical.
+  </li>
+  <li>
+    Hold the end knot of the 50 cm length of string attached to the wedge on
+    your cheek below one eye &ndash; close the other eye. Hold the wedge so that
+    the string is taught.
+    <table>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/scoring-trees-with-basal-wedge.png"
+                alt="Surveyor correctly holding the end of the TERN Basal Wedge string on the cheek bone below the eye and holding the wedge at full length with the string taunt."
+                width="450"
+                height="300"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </li>
+  <li>
+    Determine if the use of the basal wedge is warranted at the plot (i.e., are
+    there sufficient trunks or stems of trees, tall shrubs or mallee that are
+    large enough to count seven or more &lsquo;in&rsquo; trees for any species).
+  </li>
+  <li>
+    For each species, establish which BAF (0.1, 0.25, 0.5, 0.75, 1 and 2) to
+    use. This is determined by selecting a BAF and undertaking a brief sweep
+    around the point sampling location to determine if the selected BAF will
+    sample seven or more &lsquo;in&rsquo; trees (see Additional guidelinesbelow
+    for rules on counting &lsquo;in&rsquo; and &lsquo;borderline&rsquo; trees)
+    for the sampling location. Ideally aim to the achieve the minimum seven
+    &lsquo;in&rsquo; trees with the largest aperture width.
+  </li>
+  <li>
+    Once you have selected the appropriate BAF for a species, rotate through a
+    complete 360&deg; sweep and, looking through the eye above the string, count
+    the number of stems or trunks of each species, at breast height, that are
+    wider than the aperture of the chosen BAF as &lsquo;in&rsquo;, and the exact
+    width of the aperture as &lsquo;borderline&rsquo; (i.e., half count).
+  </li>
+  <li>
+    Record the species, the tally of &lsquo;in&rsquo; and
+    &lsquo;borderline&rsquo; trees and the BAF used (from drop-down list;
+    Appendix A) for the sampling location and select the &lsquo;Save
+    species&rsquo; button.
+  </li>
+  <li>
+    Repeat steps 7&ndash;9 for the remaining species at the sampling location.
+  </li>
+  <li>
+    Select the &lsquo;Finish sampling location&rsquo; button to return to the
+    sampling location selection screen.
+  </li>
+  <li>
+    Repeat steps 3&ndash;11 at each remaining sampling location. When all the
+    sampling locations have been assessed, the App will display a data summary
+    (e.g., mean basal area, total stem counts) on the sampling location
+    selection screen.
+  </li>
+  <li>
+    When basal area has been recorded for each species at each sampling
+    location, select the &lsquo;Finish module&rsquo; button to return to the
+    module selection screen.
+  </li>
+</ol>
+</p>
+<p><strong>Additional guidelines</strong></p>
+<p>Rules to determine ‘in’ trees</p>
+<ul>
+    <li>
+      Examples of how to score trees using the TERN Basal Wedge are illustrated.
+    </li>
+    <li>
+      A tree is &lsquo;in&rsquo; when its trunk or stem, at breast height (1.3 m,
+      or the nearest point above if there is a deformity at 1.3 m), is wider than
+      the chosen BAF.
+    </li>
+    <li>
+      Do not record the data if less than seven &lsquo;in&rsquo; trees for a given
+      BAF are achieved for each species. Data become meaningless with less than
+      seven &lsquo;in&rsquo; trees. Repeat the sweep using a smaller BAF, or if
+      there are less than seven &lsquo;in&rsquo; trees with the smallest BAF
+      (0.1), no data is recorded.
+    </li>
+    <li>
+      Where the trunk or stem is exactly the same width as the BAF (i.e.
+      &lsquo;borderline&rsquo; tree), add a half count to your tally.
+    </li>
+    <li>
+      Select the widest suitable BAF to sample seven &lsquo;in&rsquo; trees for
+      the species. This increases efficiency as it reduces the numbers of
+      &lsquo;in&rsquo; trees likely. For example, use the &lsquo;1&rsquo; BAF to
+      record eight &lsquo;in&rsquo; trees rather than the &lsquo;0.5&rsquo; BAF to
+      record 15 &lsquo;in&rsquo; trees.
+    </li>
+    <li>
+      It is more efficient to use the same BAF for every species at each sampling
+      location, however this is not always practicable. For example, the
+      &lsquo;0.5&rsquo; BAF may be suitable to be used for species x at all
+      sampling locations; while the &lsquo;0.1&rsquo; BAF may be required for
+      species y at all sampling locations, etc.
+    </li>
+    <li>
+      For each species, only use one BAF at each sampling location. Do not make
+      separate counts of &lsquo;in&rsquo; trees using different BAFs for the same
+      species.
+    </li>
+    <li>
+        Examples of how to score trees using the TERN Basal Wedge.
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/scoring-trees-with-basal-wedge.png"
+                  alt="Examples of how to score trees using the TERN Basal Wedge."
+                  width="450"
+                  height="300"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </li>
+</ul>
+<p>Solutions to problem trees</p>
+<ul>
+    <li>
+      For hidden trees (trees that are partially or fully hidden behind other
+      trees or undergrowth), move sideways until the tree is fully in view, but be
+      sure to maintain the same distance to the tree. Move back to the sampling
+      point before assessing the next tree.
+    </li>
+    <li>Buttressed trees should be measured above the buttress.</li>
+    <li>
+      For multi-stemmed trees, measure each stem individually and add all
+      &lsquo;in&rsquo; stems to your tally.
+    </li>
+    <li>
+      For trees on a slope, the 1.3 m POM should be measured on the uphill side of
+      the tree.
+    </li>
+    <li>
+      For leaning trees, hold the basal wedge at a tilt so that the view is at
+      right angles to the trunk or stem.
+    </li>
+    <li>
+      Deformed trees should be measured at the nearest point above 1.3 m that is
+      not deformed.
+    </li>
+    <li>
+      Dead trees are flagged as &lsquo;Dead&rsquo; and all other attributes are
+      measured as normal.
+    </li>
+</ul>""" ;
+.
+

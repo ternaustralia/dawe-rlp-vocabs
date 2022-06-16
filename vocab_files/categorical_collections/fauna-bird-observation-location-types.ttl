@@ -1,0 +1,51 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
+    skos:member <https://linked.data.gov.au/def/test/dawe-cv/2f0470aa-2c05-4e87-a5ac-1d50205b9927> ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/2f0470aa-2c05-4e87-a5ac-1d50205b9927>
+    a skos:Collection ;
+    dcterms:description "A collection of fauna bird observation location types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-bird-observation-location-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/72dc5d0b-3fd1-5a82-a755-c2b6df2f7055> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/83bb0c7c-4780-58e6-b760-89ab6496a4e0> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c28d28e7-3b03-5ea6-a0d5-129be10ffb82> ;
+    skos:prefLabel "Fauna bird observation location types codes" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/72dc5d0b-3fd1-5a82-a755-c2b6df2f7055>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-bird-observation-location-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "ODH" ;
+    skos:prefLabel "Outside survey; different habitat" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/83bb0c7c-4780-58e6-b760-89ab6496a4e0>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-bird-observation-location-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "OSH" ;
+    skos:prefLabel "Outside survey; same habitat" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/c28d28e7-3b03-5ea6-a0d5-129be10ffb82>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-bird-observation-location-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "WS" ;
+    skos:prefLabel "Within survey" ;
+.
+

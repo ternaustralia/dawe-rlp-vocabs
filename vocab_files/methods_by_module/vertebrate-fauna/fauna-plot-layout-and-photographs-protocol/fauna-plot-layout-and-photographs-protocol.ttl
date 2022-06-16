@@ -1,0 +1,251 @@
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/a5eb37f3-a123-4350-9eb3-214396a04b93>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Fauna plot layout and photographs protocol" ;
+    ns1:equipment """<p>The following equipment is required:</p>
+<ul>
+  <li>
+    <p>
+      Computer with access to the App web-interface (to assist with desktop
+      assessment and stratification process)
+    </p>
+  </li>
+  <li>
+    <p>
+      Mobile device loaded with the App, and a field GIS app or hardcopy maps
+      with available layers (e.g. satellite imagery, project area boundaries,
+      prospective site locations, vegetation mapping, landform features, access
+      tracks, watercourses)
+    </p>
+  </li>
+  <li>
+    <p>Trimble R1 GNSS receiver</p>
+  </li>
+  <li>
+    <p>Compass</p>
+  </li>
+  <li>
+    <p>
+      4 x 1.8 m star droppers (5 if not paired with a Vegetation and Soils Plot
+      Metal labels (where plots are to be permanently marked)
+    </p>
+  </li>
+  <li>
+    <p>Flatting tape</p>
+  </li>
+  <li>
+    <p>Dropper rammer or sledgehammer.</p>
+  </li>
+</ul>""" ;
+    ns1:instructions """<p style="color: orange">
+  Pre-survey – stratification and prospective plot locations
+</p>
+<ol>
+  <li>
+    <p>
+      Follow the protocols set out in the Plot selection and layout module ,
+      Pre-survey – stratification and prospective plot locations .
+    </p>
+  </li>
+  <li>
+    <p>
+      Determine the location of the vegetation and soils plots already
+      established and identify potential locations where the fauna plot can be
+      positioned.
+    </p>
+  </li>
+</ol>
+<p style="color: orange">On-ground site positioning</p>
+<ol>
+  <li>
+    <p>
+      Assess the vegetation and habitat surrounding the vegetation and soils
+      plot to determine the most appropriate area to co-locate the fauna plot.
+      Avoid disturbance areas, especially vehicle tracks. Ensure the vegetation
+      community, terrain and habitat, are homogenous with the vegetation and
+      soils plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      Determine if the area enables a boundary of the fauna plot to be shared
+      with the vegetation and soils Plot in its entirety, or if it will need to
+      be off-set.
+    </p>
+  </li>
+</ol>
+<p style="color: orange">Using the Trimble R1 GNSS to lay out the fauna plot</p>
+<ol>
+  <li>
+    <p>
+      Once final plot locations have been determined in the field, switch on the
+      Trimble R1 by depressing power button in center. It will flash green and
+      blue as it looks to connect to Bluetooth.
+    </p>
+  </li>
+  <li>
+    <p>
+      Navigate to the mobile device’s Bluetooth settings and turn Bluetooth ON.
+    </p>
+  </li>
+  <li>
+    <p>
+      Check the Devices list and wait for the “GNSS:XXX” to appear. Select it
+      and you should be connected. Navigate to the GNSS Status App and select
+      Source . If the GNSS is in recent pick list, then select. If not,
+    </p>
+  </li>
+  <li>
+    <p>
+      select Position Source to be the Bluetooth and select from available
+      devices.
+    </p>
+  </li>
+  <li><p>Allow some time to let the accuracy drop to sub meter.</p></li>
+  <li>
+    <p>
+      Open to the Plot selection and layout module in the App and navigate to
+      the Plot layout screen. Register the new fauna plot by giving it a name.
+    </p>
+  </li>
+  <li>
+    <p>
+      To capture information about plot type, use the tick boxes to select if
+      the plot is Impact or Control (no
+    </p>
+  </li>
+  <li><p>boxes need to be ticked if these categories do not apply).</p></li>
+  <li>
+    <p>
+      In the Replicate # box, add in a number to define plot replication number
+      (if the plot is the first or only of it’s type within a sampling unit,
+      then the number will be 1).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Yes or No from the drop-down menu to define whether the plot will
+      be permanently marked. If
+    </p>
+  </li>
+  <li>
+    <p>
+      Yes , select where the iron droppers will be placed (NW, NE, SW or SE
+      corners, center).
+    </p>
+  </li>
+  <li>
+    <p>
+      If the plot is permanently labelled with the plot name, record where the
+      plot is labelled (which iron dropper).
+    </p>
+  </li>
+  <li>
+    <p>
+      Add in the plot dimensions (in meters). As a standard, plots are 100 m by
+      100 m (1 ha).
+    </p>
+  </li>
+  <li>
+    <p>
+      Decide on the SW corner of the plot, stand at that point and select Create
+      Plot. The app will generate a grid of yellow point markers based on the
+      plot dimensions added above. Your location is the blue dot.
+    </p>
+  </li>
+  <li>
+    <p>
+      As a standard, the plot aligns in a north-south direction with the grid.
+      If necessary, plot orientation can be altered using the orientation field
+      (the app will automatically re-align the plot based on the degrees value
+      added).
+    </p>
+  </li>
+  <li>
+    <p>
+      Review the plot layout (repeat steps 11-12 if you want to shift plot
+      location or alter dimensions or alignment).
+    </p>
+  </li>
+  <li>
+    <p>
+      To finalize the plot location, select Mark Closest Point . The point will
+      be saved and turn green. Repeat this step until you have walked around the
+      plot and all yellow points have changed to green.
+    </p>
+  </li>
+  <li>
+    <p>
+      Continue around the grid, remembering to include the Centre point. All 25
+      points will save automatically. The start and end of each drift
+      fence/pitfall line and center of each plot should be permanently marked
+      using star droppers. In cases where this is not possible (some Indigenous
+      lands, private or leasehold lands, rocky outcrops, etc.) at least one
+      corner should be marked at minimum, especially if plots are to be
+      revisited. Make sure to note where any permanent droppers have been placed
+      by ticking the relevant check boxes (as detailed above).
+    </p>
+  </li>
+  <li>
+    <p>
+      Plots may be marked with an aluminum tag to identify the plot name. This
+      allows plots to be relocated easily and assists with ongoing monitoring
+      and return surveys. Record the location (star dropper) with the aluminum
+      tag in the label drop-down field.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select Finish Plot to move onto the other required plot-based modules, or
+      if required select Drift fence/pitfall lines or trap lines to bring up
+      guide lines (transect lines can be used to align tape measures or to put
+      in wooden stakes/markers at the start and end of each drift fence/pitfall
+      line, and each trap line).
+    </p>
+  </li>
+</ol>
+<p style="color: orange">
+  Photographs: establishing your photopoint monitoring location
+</p>
+<ol>
+  <li>
+    <p>
+      Follow the protocols set out in the Photopoints module to establish
+      photopoints within the fauna plot, choosing either the full protocol
+      (three panoramas using a DSLR camera), lite protocol (three panoramas
+      using a compact camera), or lite: device (three panoramas using the mobile
+      device camera).
+    </p>
+  </li>
+</ol>
+<p style="color: orange">Installing a weather station</p>
+<ol>
+  <li>
+    <p>
+      Select the fauna plot where the weather station is to be installed. This
+      should be a plot that is centrally located and best represents the plots
+      being surveyed during the field survey.
+    </p>
+  </li>
+  <li><p>Install the Stevenson Screen at the selected plot.</p></li>
+  <li><p>Follow the manufactures guidelines to set-up the data logger.</p></li>
+  <li>
+    <p>
+      Set the temperature and humidity recording interval to every 30 minutes.
+    </p>
+  </li>
+  <li><p>Start the data-logger and place it into the Stevenson Screen.</p></li>
+  <li>
+    <p>
+      At the conclusion of the field survey (once all plots have been trapped)
+      remove the data-logger and remove the Stevenson Screen.
+    </p>
+  </li>
+  <li><p>Follow the manufacturers guidelines to download the data.</p></li>
+</ol>""" ;
+.
+

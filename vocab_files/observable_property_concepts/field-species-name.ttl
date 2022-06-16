@@ -1,0 +1,21 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/26f843a5-e1ed-46da-b22b-053e567e3227>
+    a skos:Concept ;
+    dcterms:source "Ecological Field Monitoring protocols - Basal area module, draft v0.1, 30/11/2021" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Taxon name determined during the process of field observation." ;
+    skos:exactMatch <http://linked.data.gov.au/def/tern-cv/04a4c009-2a51-4bdb-96dd-0bfd1bed8826> ;
+    skos:prefLabel "field species name" ;
+    ns1:hasFeatureType
+        <http://linked.data.gov.au/def/tern-cv/b311c0d3-4a1a-4932-a39c-f5cdc1afa611> ,
+        <http://linked.data.gov.au/def/tern-cv/ea3a4c64-dac3-4660-809a-8ad5ced8997b> ;
+    ns1:hasMethod
+        <https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f7e0d965-ae73-434e-8599-634598e506b5> ;
+    ns1:valueType ns1:Text ;
+.
+
