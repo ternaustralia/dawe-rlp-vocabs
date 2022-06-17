@@ -2,7 +2,7 @@ from typing import List
 
 from src.schemas import LUTSchema
 
-lut_endpoints: List[LUTSchema] = [
+endpoints: List[LUTSchema] = [
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-age-classes",
         label="Age class codes",
