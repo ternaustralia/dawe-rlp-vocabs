@@ -13,9 +13,6 @@ from pathlib import Path
 import requests
 from rdflib import Graph
 
-from dawe_vocabs import settings
-from dawe_vocabs.vocabs import categorical_values_collection
-
 path = Path("vocab_files")
 
 files = [f for f in path.glob("**/*.ttl")]

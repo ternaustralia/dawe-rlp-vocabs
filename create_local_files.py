@@ -20,6 +20,8 @@ from rdflib.namespace import RDFS, SKOS, RDF, SDO
 from dawe_vocabs import settings
 from dawe_vocabs.vocabs import categorical_values_collection
 
+from src.graph import create_graph
+
 
 SPARQL_ENDPOINT = "https://graphdb.tern.org.au/repositories/dawe_vocabs_core"
 REG = Namespace("http://purl.org/linked-data/registry/")
@@ -47,12 +49,6 @@ def fetch_remote_cbd(uri: str, graph: Graph):
     )
 
     graph.parse(data=response.text, format="turtle")
-    return graph
-
-
-def create_graph():
-    graph = Graph()
-    graph.bind("tern", "https://w3id.org/tern/ontologies/tern/")
     return graph
 
 
@@ -426,6 +422,7 @@ def create_categorical_collection():
             skos:prefLabel "Collections of categorical values" .
     """
     top_level_collection_graph.parse(data=top_level_data, format="turtle")
+    top_level_collection_member_graph = create_graph()
 
     for lut_config in settings.lut_configs:
         try:
@@ -442,13 +439,14 @@ def create_categorical_collection():
                 )
             serialize(path / label, graph)
 
-            top_level_collection_graph.add(
+            top_level_collection_member_graph.add(
                 (top_level_collection_uri, SKOS.member, NRM[lut_config.collection_uuid])
             )
         except categorical_values_collection.NoDataInAPIException as err:
             raise Exception(err) from err
 
     serialize(path / "collection.ttl", top_level_collection_graph)
+    serialize(path / "collection_members.ttl", top_level_collection_member_graph)
 
 
 if __name__ == "__main__":
