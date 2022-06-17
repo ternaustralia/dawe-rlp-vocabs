@@ -4,8 +4,18 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/cb1fc752-939d-4311-ab19-7b2bc80cf3f3> ;
+<https://linked.data.gov.au/def/test/dawe-cv/cb1fc752-939d-4311-ab19-7b2bc80cf3f3>
+    a skos:Collection ;
+    dcterms:description "A collection of targeted survey fauna vouchers and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-fauna-vouchers> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/006b0590-da0b-5ae3-8628-088e956bc7e8> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/bec58f47-2983-505b-aa77-a320d5b14e17> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f7a70bba-4b6a-5c51-8078-ca6c61c017be> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f7fccfce-6e50-5865-9565-54b023e2db3c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/fce753ea-09ee-54a3-92ef-eba88e6e230b> ;
+    skos:prefLabel "Targeted survey fauna vouchers codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/targeted-survey-fauna-vouchers.ttl" ;
 .
 
@@ -28,21 +38,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "C" ;
     skos:prefLabel "Carcass" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/targeted-survey-fauna-vouchers.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/cb1fc752-939d-4311-ab19-7b2bc80cf3f3>
-    a skos:Collection ;
-    dcterms:description "A collection of targeted survey fauna vouchers and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-fauna-vouchers> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/006b0590-da0b-5ae3-8628-088e956bc7e8> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/bec58f47-2983-505b-aa77-a320d5b14e17> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/f7a70bba-4b6a-5c51-8078-ca6c61c017be> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/f7fccfce-6e50-5865-9565-54b023e2db3c> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/fce753ea-09ee-54a3-92ef-eba88e6e230b> ;
-    skos:prefLabel "Targeted survey fauna vouchers codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/targeted-survey-fauna-vouchers.ttl" ;
 .
 

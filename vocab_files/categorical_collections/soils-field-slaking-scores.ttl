@@ -4,8 +4,16 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/c2408628-477b-4867-bc12-532126801973> ;
+<https://linked.data.gov.au/def/test/dawe-cv/c2408628-477b-4867-bc12-532126801973>
+    a skos:Collection ;
+    dcterms:description "A collection of soils field slaking scores and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-field-slaking-scores> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/130ef1cb-f725-5a23-9adf-1262023d97b1> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/29121a4f-32f9-5a2f-a8ab-10071319be56> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c68510f9-4ef0-5ce8-ae45-d40ffd19a25a> ;
+    skos:prefLabel "Soils field slaking scores codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-field-slaking-scores.ttl" ;
 .
 
@@ -28,19 +36,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "0" ;
     skos:prefLabel "Not slaked within 10 minutes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-field-slaking-scores.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/c2408628-477b-4867-bc12-532126801973>
-    a skos:Collection ;
-    dcterms:description "A collection of soils field slaking scores and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-field-slaking-scores> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/130ef1cb-f725-5a23-9adf-1262023d97b1> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/29121a4f-32f9-5a2f-a8ab-10071319be56> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c68510f9-4ef0-5ce8-ae45-d40ffd19a25a> ;
-    skos:prefLabel "Soils field slaking scores codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-field-slaking-scores.ttl" ;
 .
 

@@ -4,8 +4,20 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/9b4820fb-6ee1-439c-8972-f642b9a7b5f8> ;
+<https://linked.data.gov.au/def/test/dawe-cv/9b4820fb-6ee1-439c-8972-f642b9a7b5f8>
+    a skos:Collection ;
+    dcterms:description "A collection of soils segregations abundances and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-segregations-abundances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/22d971d6-9a1d-5f2d-ba8b-4f9ea977cb2f> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/734424f8-6c68-5f4c-9560-aca0c3c7f322> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/86c60e1e-ec0c-5f3d-854d-394ecc70bbcd> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c145698e-30d5-5457-92c6-781a0a76a3a9> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c57d1b0d-4941-5b7d-bbf6-ea18c628e384> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/d6ea18ff-0e52-5003-bd33-592135286035> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f1419e51-13bd-5524-b1bb-2dfe34f8873a> ;
+    skos:prefLabel "Soils segregations abundances codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-segregations-abundances.ttl" ;
 .
 
@@ -39,23 +51,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "4" ;
     skos:prefLabel "Many (20-50%)" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-segregations-abundances.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/9b4820fb-6ee1-439c-8972-f642b9a7b5f8>
-    a skos:Collection ;
-    dcterms:description "A collection of soils segregations abundances and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-segregations-abundances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/22d971d6-9a1d-5f2d-ba8b-4f9ea977cb2f> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/734424f8-6c68-5f4c-9560-aca0c3c7f322> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/86c60e1e-ec0c-5f3d-854d-394ecc70bbcd> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c145698e-30d5-5457-92c6-781a0a76a3a9> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c57d1b0d-4941-5b7d-bbf6-ea18c628e384> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/d6ea18ff-0e52-5003-bd33-592135286035> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/f1419e51-13bd-5524-b1bb-2dfe34f8873a> ;
-    skos:prefLabel "Soils segregations abundances codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-segregations-abundances.ttl" ;
 .
 

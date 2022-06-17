@@ -4,8 +4,15 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/5d96e377-fb3a-4735-875d-4bad4df46c79> ;
+<https://linked.data.gov.au/def/test/dawe-cv/5d96e377-fb3a-4735-875d-4bad4df46c79>
+    a skos:Collection ;
+    dcterms:description "A collection of protocol variants and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-protocol-variants> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/36047800-f1e8-5ff3-8ed8-6253d830e033> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/fbcd0b4a-f40c-5e1f-ad13-efdafc984782> ;
+    skos:prefLabel "Protocol variants codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/protocol-variants.ttl" ;
 .
 
@@ -17,18 +24,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "lite" ;
     skos:prefLabel "Lite" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/protocol-variants.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/5d96e377-fb3a-4735-875d-4bad4df46c79>
-    a skos:Collection ;
-    dcterms:description "A collection of protocol variants and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-protocol-variants> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/36047800-f1e8-5ff3-8ed8-6253d830e033> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/fbcd0b4a-f40c-5e1f-ad13-efdafc984782> ;
-    skos:prefLabel "Protocol variants codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/protocol-variants.ttl" ;
 .
 

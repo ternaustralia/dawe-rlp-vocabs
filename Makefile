@@ -3,3 +3,6 @@ test:
 
 htmlcov:
 	python -m http.server -d htmlcov
+
+luts:
+	python create_categorical_values.py

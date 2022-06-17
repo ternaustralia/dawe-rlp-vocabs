@@ -4,8 +4,18 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/baa1ee46-d49b-47cf-8dbb-a70aad01f06c> ;
+<https://linked.data.gov.au/def/test/dawe-cv/baa1ee46-d49b-47cf-8dbb-a70aad01f06c>
+    a skos:Collection ;
+    dcterms:description "A collection of recruitment transect numbers and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-transect-numbers> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/4c09fbd4-05f1-541d-bd49-cfbf8a04e403> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/872e90d9-ac04-5af4-b004-821e328a50ab> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/bdc8a1a0-8add-5fc3-a312-afe090fce15b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ca365638-5ffd-5ae8-90b1-27f18dbcb948> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/d61bf3e9-7dc9-5e82-b565-82dc49c77798> ;
+    skos:prefLabel "Recruitment transect numbers codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/recruitment-transect-numbers.ttl" ;
 .
 
@@ -28,21 +38,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "1" ;
     skos:prefLabel "1" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/recruitment-transect-numbers.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/baa1ee46-d49b-47cf-8dbb-a70aad01f06c>
-    a skos:Collection ;
-    dcterms:description "A collection of recruitment transect numbers and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-transect-numbers> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/4c09fbd4-05f1-541d-bd49-cfbf8a04e403> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/872e90d9-ac04-5af4-b004-821e328a50ab> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/bdc8a1a0-8add-5fc3-a312-afe090fce15b> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/ca365638-5ffd-5ae8-90b1-27f18dbcb948> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/d61bf3e9-7dc9-5e82-b565-82dc49c77798> ;
-    skos:prefLabel "Recruitment transect numbers codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/recruitment-transect-numbers.ttl" ;
 .
 

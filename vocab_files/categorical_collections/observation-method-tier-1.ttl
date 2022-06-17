@@ -4,8 +4,19 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/6b6ec6a4-33d2-4515-b988-617d190cfbdb> ;
+<https://linked.data.gov.au/def/test/dawe-cv/6b6ec6a4-33d2-4515-b988-617d190cfbdb>
+    a skos:Collection ;
+    dcterms:description "A collection of observation tier 1 types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-tier-1-observation-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/0dfb164a-2da9-5ee7-ba31-926994922288> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/25ce7137-31b7-5395-a237-a1ff153ff049> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/787ded06-04e5-5c67-99a2-687fa5943db3> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7a7cb515-5188-59a3-af3e-c93ed296c64e> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ef839c61-dd72-5833-993e-ab1a309c004f> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f05fd7c8-64ac-572a-a4bd-271ed080e375> ;
+    skos:prefLabel "Observation method tier 1 codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/observation-method-tier-1.ttl" ;
 .
 
@@ -28,22 +39,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "HE" ;
     skos:prefLabel "Heard" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/observation-method-tier-1.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/6b6ec6a4-33d2-4515-b988-617d190cfbdb>
-    a skos:Collection ;
-    dcterms:description "A collection of observation tier 1 types and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-tier-1-observation-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/0dfb164a-2da9-5ee7-ba31-926994922288> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/25ce7137-31b7-5395-a237-a1ff153ff049> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/787ded06-04e5-5c67-99a2-687fa5943db3> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/7a7cb515-5188-59a3-af3e-c93ed296c64e> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/ef839c61-dd72-5833-993e-ab1a309c004f> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/f05fd7c8-64ac-572a-a4bd-271ed080e375> ;
-    skos:prefLabel "Observation method tier 1 codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/observation-method-tier-1.ttl" ;
 .
 

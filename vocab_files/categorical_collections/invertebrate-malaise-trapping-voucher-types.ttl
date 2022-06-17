@@ -4,8 +4,15 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/0934092d-dbc4-455d-9eb2-1a621ade3c7c> ;
+<https://linked.data.gov.au/def/test/dawe-cv/0934092d-dbc4-455d-9eb2-1a621ade3c7c>
+    a skos:Collection ;
+    dcterms:description "A collection of invertebrate malaise trapping voucher types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-invertebrate-malaise-trapping-voucher-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/07b0b4a0-8f7d-5e57-8186-a2cea2995323> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/32639aa6-c07b-5de0-95d9-4ea7d3792c06> ;
+    skos:prefLabel "Invertebrate malaise trapping voucher types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/invertebrate-malaise-trapping-voucher-types.ttl" ;
 .
 
@@ -17,18 +24,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "D" ;
     skos:prefLabel "Dry" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/invertebrate-malaise-trapping-voucher-types.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/0934092d-dbc4-455d-9eb2-1a621ade3c7c>
-    a skos:Collection ;
-    dcterms:description "A collection of invertebrate malaise trapping voucher types and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-invertebrate-malaise-trapping-voucher-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/07b0b4a0-8f7d-5e57-8186-a2cea2995323> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/32639aa6-c07b-5de0-95d9-4ea7d3792c06> ;
-    skos:prefLabel "Invertebrate malaise trapping voucher types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/invertebrate-malaise-trapping-voucher-types.ttl" ;
 .
 

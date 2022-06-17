@@ -4,8 +4,15 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/c117bd06-9603-400d-a20d-29f56ffa78cc> ;
+<https://linked.data.gov.au/def/test/dawe-cv/c117bd06-9603-400d-a20d-29f56ffa78cc>
+    a skos:Collection ;
+    dcterms:description "A collection of Coarse Woody Debris transect numbers and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-transect-numbers> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/8d1529b7-2341-52ef-b43a-86d35df8a952> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/e444dee6-0819-5e49-bade-9c417acc9dc9> ;
+    skos:prefLabel "Coarse Woody Debris transect numbers codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/coarse-woody-debris-transect-numbers.ttl" ;
 .
 
@@ -17,18 +24,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "6" ;
     skos:prefLabel "6 Transects" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/coarse-woody-debris-transect-numbers.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/c117bd06-9603-400d-a20d-29f56ffa78cc>
-    a skos:Collection ;
-    dcterms:description "A collection of Coarse Woody Debris transect numbers and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cwd-transect-numbers> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/8d1529b7-2341-52ef-b43a-86d35df8a952> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/e444dee6-0819-5e49-bade-9c417acc9dc9> ;
-    skos:prefLabel "Coarse Woody Debris transect numbers codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/coarse-woody-debris-transect-numbers.ttl" ;
 .
 

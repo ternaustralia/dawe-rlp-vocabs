@@ -4,8 +4,18 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/9ef53244-7dff-408c-bf87-3468b42cc132> ;
+<https://linked.data.gov.au/def/test/dawe-cv/9ef53244-7dff-408c-bf87-3468b42cc132>
+    a skos:Collection ;
+    dcterms:description "A collection of camera operational statuses and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-camera-operational-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/3fc4c897-f811-5488-b49e-82ffd2b37eae> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/4801d479-5b7f-5044-8691-2f654f9fb542> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/5b478c87-f94f-5fb1-8812-9014bb83589f> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/da87c849-c039-558e-bf32-a6240db48fb4> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f9282836-f8cd-5a6c-bb45-1a1abea81801> ;
+    skos:prefLabel "Camera operational statuses codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/camera-operational-statuses.ttl" ;
 .
 
@@ -39,21 +49,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Missing" ;
     skos:prefLabel "Missing" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/camera-operational-statuses.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/9ef53244-7dff-408c-bf87-3468b42cc132>
-    a skos:Collection ;
-    dcterms:description "A collection of camera operational statuses and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-camera-operational-statuses> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/3fc4c897-f811-5488-b49e-82ffd2b37eae> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/4801d479-5b7f-5044-8691-2f654f9fb542> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/5b478c87-f94f-5fb1-8812-9014bb83589f> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/da87c849-c039-558e-bf32-a6240db48fb4> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/f9282836-f8cd-5a6c-bb45-1a1abea81801> ;
-    skos:prefLabel "Camera operational statuses codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/camera-operational-statuses.ttl" ;
 .
 

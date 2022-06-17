@@ -4,8 +4,16 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/4fab0c1c-c127-474e-8f5e-4afe45fec0ed> ;
+<https://linked.data.gov.au/def/test/dawe-cv/4fab0c1c-c127-474e-8f5e-4afe45fec0ed>
+    a skos:Collection ;
+    dcterms:description "A collection of animal pouch condition types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-pouch-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/3ad9ef60-99d0-5901-9e25-a47db89d11a6> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/66db8fd4-aab5-5a90-b740-b9ae9468e55a> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7600207e-9810-5b62-a114-0f82fb52d2bb> ;
+    skos:prefLabel "Animal pouch condition codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/animal-pouch-condition.ttl" ;
 .
 
@@ -17,19 +25,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Swollen, flaps present, teats enlarged" ;
     skos:notation "2" ;
     skos:prefLabel "Developed" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/animal-pouch-condition.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/4fab0c1c-c127-474e-8f5e-4afe45fec0ed>
-    a skos:Collection ;
-    dcterms:description "A collection of animal pouch condition types and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-pouch-conditions> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/3ad9ef60-99d0-5901-9e25-a47db89d11a6> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/66db8fd4-aab5-5a90-b740-b9ae9468e55a> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/7600207e-9810-5b62-a114-0f82fb52d2bb> ;
-    skos:prefLabel "Animal pouch condition codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/animal-pouch-condition.ttl" ;
 .
 

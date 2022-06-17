@@ -4,8 +4,17 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/e1573937-3a4e-4df6-beba-29e25e7c5596> ;
+<https://linked.data.gov.au/def/test/dawe-cv/e1573937-3a4e-4df6-beba-29e25e7c5596>
+    a skos:Collection ;
+    dcterms:description "A collection of soils water statuses and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-water-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/33485261-3dac-5c6e-b20e-337a7a85cb49> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/51935ddf-ffa6-5b49-be5a-c3a44862d2b8> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/d0596be7-6a74-52ab-8187-5742fbb4b3e0> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/d2c07967-d219-54eb-800a-7e11193ba622> ;
+    skos:prefLabel "Soils water statuses codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-water-statuses.ttl" ;
 .
 
@@ -50,20 +59,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "D" ;
     skos:prefLabel "Dry" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-water-statuses.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/e1573937-3a4e-4df6-beba-29e25e7c5596>
-    a skos:Collection ;
-    dcterms:description "A collection of soils water statuses and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-water-statuses> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/33485261-3dac-5c6e-b20e-337a7a85cb49> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/51935ddf-ffa6-5b49-be5a-c3a44862d2b8> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/d0596be7-6a74-52ab-8187-5742fbb4b3e0> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/d2c07967-d219-54eb-800a-7e11193ba622> ;
-    skos:prefLabel "Soils water statuses codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-water-statuses.ttl" ;
 .
 

@@ -4,8 +4,21 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/70b3ea97-90dd-49f7-9ca2-717a8deb6368> ;
+<https://linked.data.gov.au/def/test/dawe-cv/70b3ea97-90dd-49f7-9ca2-717a8deb6368>
+    a skos:Collection ;
+    dcterms:description "A collection of soils biotic relief agents and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-biotic-relief-agents> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/145a3724-476d-5960-8ba7-611bd598ecc6> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/1cd8b9d1-469e-5856-831b-92f44bdb4e5d> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/8488c1b2-a0b1-5500-b6e6-fd0b7b760d0c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/99a61920-4b56-5c48-8b4d-094db3ecdd4a> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a5bfcee6-c2db-5e28-a3f9-e6f043b3a276> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/b35b02c5-771b-5742-a7fc-de9fe0edbae2> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/dea42db9-3fee-58cc-a969-a8d3c67bce11> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f7390b79-12f8-5d2e-935e-1fd5b9b091b4> ;
+    skos:prefLabel "Soils biotic relief agents codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-biotic-relief-agents.ttl" ;
 .
 
@@ -28,24 +41,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "B" ;
     skos:prefLabel "Bird" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-biotic-relief-agents.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/70b3ea97-90dd-49f7-9ca2-717a8deb6368>
-    a skos:Collection ;
-    dcterms:description "A collection of soils biotic relief agents and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-biotic-relief-agents> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/145a3724-476d-5960-8ba7-611bd598ecc6> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/1cd8b9d1-469e-5856-831b-92f44bdb4e5d> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/8488c1b2-a0b1-5500-b6e6-fd0b7b760d0c> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/99a61920-4b56-5c48-8b4d-094db3ecdd4a> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a5bfcee6-c2db-5e28-a3f9-e6f043b3a276> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/b35b02c5-771b-5742-a7fc-de9fe0edbae2> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/dea42db9-3fee-58cc-a969-a8d3c67bce11> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/f7390b79-12f8-5d2e-935e-1fd5b9b091b4> ;
-    skos:prefLabel "Soils biotic relief agents codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-biotic-relief-agents.ttl" ;
 .
 

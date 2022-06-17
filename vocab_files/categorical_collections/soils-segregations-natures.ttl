@@ -4,8 +4,29 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/2e870427-8563-4d61-b7ac-3556aaf0cbf2> ;
+<https://linked.data.gov.au/def/test/dawe-cv/2e870427-8563-4d61-b7ac-3556aaf0cbf2>
+    a skos:Collection ;
+    dcterms:description "A collection of soils segregations natures and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-segregations-natures> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/0796dc68-579b-5522-b2e2-1517ae4fb322> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/183b420f-d22f-5725-9897-7f3c13117059> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/20571c81-646c-5add-b95f-aeff275e3102> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/51cb6b9c-4410-544c-8ebb-8dcb9835f630> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/53f74a2b-5939-581f-a515-7e79aee46dac> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/5a4599de-811b-576c-9ca3-102274921d9e> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/5d24fc4d-a764-5496-a62f-5a4dc9dc78ac> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/6eb0066b-4745-514f-96db-9db15ddae823> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7f326c5f-7879-5837-954f-63a0974c59f8> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/9d5fece7-4ec7-57c6-bd36-b9927ae3d57e> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a21026f9-98ec-5a63-9c56-87800dd736b6> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/d8505a96-9e4b-55e2-b77f-4077fc6e76f7> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/e176332e-f830-592a-9dd0-175e4a8697ba> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/e89bae23-d423-5ad2-9e9f-a14ef71a467a> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f1b28316-e253-58a9-9ad6-b0d4bcda110c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ff24f6aa-21ef-547c-83b8-f76e3771929f> ;
+    skos:prefLabel "Soils segregations natures codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-segregations-natures.ttl" ;
 .
 
@@ -39,32 +60,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "O" ;
     skos:prefLabel "Other" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-segregations-natures.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/2e870427-8563-4d61-b7ac-3556aaf0cbf2>
-    a skos:Collection ;
-    dcterms:description "A collection of soils segregations natures and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-segregations-natures> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/0796dc68-579b-5522-b2e2-1517ae4fb322> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/183b420f-d22f-5725-9897-7f3c13117059> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/20571c81-646c-5add-b95f-aeff275e3102> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/51cb6b9c-4410-544c-8ebb-8dcb9835f630> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/53f74a2b-5939-581f-a515-7e79aee46dac> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/5a4599de-811b-576c-9ca3-102274921d9e> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/5d24fc4d-a764-5496-a62f-5a4dc9dc78ac> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/6eb0066b-4745-514f-96db-9db15ddae823> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/7f326c5f-7879-5837-954f-63a0974c59f8> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/9d5fece7-4ec7-57c6-bd36-b9927ae3d57e> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a21026f9-98ec-5a63-9c56-87800dd736b6> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/d8505a96-9e4b-55e2-b77f-4077fc6e76f7> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/e176332e-f830-592a-9dd0-175e4a8697ba> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/e89bae23-d423-5ad2-9e9f-a14ef71a467a> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/f1b28316-e253-58a9-9ad6-b0d4bcda110c> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/ff24f6aa-21ef-547c-83b8-f76e3771929f> ;
-    skos:prefLabel "Soils segregations natures codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-segregations-natures.ttl" ;
 .
 

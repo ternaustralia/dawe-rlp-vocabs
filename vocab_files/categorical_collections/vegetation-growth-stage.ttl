@@ -4,8 +4,18 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/89c02383-fb5e-4acd-b248-902a2d579170> ;
+<https://linked.data.gov.au/def/test/dawe-cv/89c02383-fb5e-4acd-b248-902a2d579170>
+    a skos:Collection ;
+    dcterms:description "A collection of vegetation growth stage types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-stages> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/29a1494c-8baf-5865-b3e9-d8f4897307bf> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/3bfaa642-0832-5aa8-a985-e1e4679c62ac> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/78094231-f006-500e-9b43-fb18ae1db20c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c1ac8c57-9d9d-5ca6-95fd-f4ee0cc5b57c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/e287d421-3470-57db-b954-51fe27ae95f6> ;
+    skos:prefLabel "Vegetation growth stage codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/vegetation-growth-stage.ttl" ;
 .
 
@@ -39,21 +49,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "ER" ;
     skos:prefLabel "Early Regeneration" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/vegetation-growth-stage.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/89c02383-fb5e-4acd-b248-902a2d579170>
-    a skos:Collection ;
-    dcterms:description "A collection of vegetation growth stage types and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-stages> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/29a1494c-8baf-5865-b3e9-d8f4897307bf> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/3bfaa642-0832-5aa8-a985-e1e4679c62ac> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/78094231-f006-500e-9b43-fb18ae1db20c> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c1ac8c57-9d9d-5ca6-95fd-f4ee0cc5b57c> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/e287d421-3470-57db-b954-51fe27ae95f6> ;
-    skos:prefLabel "Vegetation growth stage codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/vegetation-growth-stage.ttl" ;
 .
 
