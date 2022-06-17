@@ -4,8 +4,19 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/6aaa330c-3d60-419b-a29b-a2dbc6d67928> ;
+<https://linked.data.gov.au/def/test/dawe-cv/6aaa330c-3d60-419b-a29b-a2dbc6d67928>
+    a skos:Collection ;
+    dcterms:description "A collection of cover class types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cover-codes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/05d80e80-003c-5791-bf43-4b52086f990b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/13131d7c-55d8-53e8-938c-f40015309534> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/53c5ff5e-afe6-5743-a137-7676db6399a5> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/63776cbe-7ad3-5f77-8ea4-afcade081564> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/6670d74f-b965-5f32-b304-6ab331e91e30> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c395365c-6ec7-563b-9d2d-863056f99125> ;
+    skos:prefLabel "Cover class codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/cover-class.ttl" ;
 .
 
@@ -61,22 +72,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "TBD" ;
     skos:notation "r" ;
     skos:prefLabel "r" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/cover-class.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/6aaa330c-3d60-419b-a29b-a2dbc6d67928>
-    a skos:Collection ;
-    dcterms:description "A collection of cover class types and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-cover-codes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/05d80e80-003c-5791-bf43-4b52086f990b> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/13131d7c-55d8-53e8-938c-f40015309534> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/53c5ff5e-afe6-5743-a137-7676db6399a5> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/63776cbe-7ad3-5f77-8ea4-afcade081564> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/6670d74f-b965-5f32-b304-6ab331e91e30> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c395365c-6ec7-563b-9d2d-863056f99125> ;
-    skos:prefLabel "Cover class codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/cover-class.ttl" ;
 .
 

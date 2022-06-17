@@ -4,8 +4,20 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/f795d7e8-1bc9-4efa-98b7-e19717c66282> ;
+<https://linked.data.gov.au/def/test/dawe-cv/f795d7e8-1bc9-4efa-98b7-e19717c66282>
+    a skos:Collection ;
+    dcterms:description "A collection of soils segregations sizes and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-segregations-sizes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/6ad463af-c4ab-54dd-97cc-66a8988552a8> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/83477cbd-57da-5a31-aa7f-43fbeb8f7d04> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/9df79b45-ff79-5edb-88ec-42d46726fa5b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ab182d26-786c-531b-b75b-fb1196af508e> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ab824ecd-64ca-59bb-b86b-199eb0faedf0> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ad49a3f1-bdac-54eb-9bb1-195d916a1db0> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ea37c94c-3a67-51e6-9b57-100f85bbc511> ;
+    skos:prefLabel "Soils segregations sizes codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-segregations-sizes.ttl" ;
 .
 
@@ -83,23 +95,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "4" ;
     skos:prefLabel "Very coarse (20-60mm)" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-segregations-sizes.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/f795d7e8-1bc9-4efa-98b7-e19717c66282>
-    a skos:Collection ;
-    dcterms:description "A collection of soils segregations sizes and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-segregations-sizes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/6ad463af-c4ab-54dd-97cc-66a8988552a8> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/83477cbd-57da-5a31-aa7f-43fbeb8f7d04> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/9df79b45-ff79-5edb-88ec-42d46726fa5b> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/ab182d26-786c-531b-b75b-fb1196af508e> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/ab824ecd-64ca-59bb-b86b-199eb0faedf0> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/ad49a3f1-bdac-54eb-9bb1-195d916a1db0> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/ea37c94c-3a67-51e6-9b57-100f85bbc511> ;
-    skos:prefLabel "Soils segregations sizes codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-segregations-sizes.ttl" ;
 .
 

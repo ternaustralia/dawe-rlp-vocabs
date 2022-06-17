@@ -4,22 +4,6 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/36e4cff5-f238-45e3-85ec-bdd0973f09d7> ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/weather-precipitations.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/155cb54c-14b9-5c7b-a87d-217f3b21728d>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "No rain" ;
-    skos:notation "NO" ;
-    skos:prefLabel "None observed" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/weather-precipitations.ttl" ;
-.
-
 <https://linked.data.gov.au/def/test/dawe-cv/36e4cff5-f238-45e3-85ec-bdd0973f09d7>
     a skos:Collection ;
     dcterms:description "A collection of weather precipitations and its codes." ;
@@ -35,6 +19,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://linked.data.gov.au/def/test/dawe-cv/dc19d654-e140-5dff-87dc-d4ead23b22fc> ,
         <https://linked.data.gov.au/def/test/dawe-cv/f55cf343-12cc-522d-8113-655d6e2a3b55> ;
     skos:prefLabel "Weather precipitations codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/weather-precipitations.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/155cb54c-14b9-5c7b-a87d-217f3b21728d>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-precipitations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "No rain" ;
+    skos:notation "NO" ;
+    skos:prefLabel "None observed" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/weather-precipitations.ttl" ;
 .
 

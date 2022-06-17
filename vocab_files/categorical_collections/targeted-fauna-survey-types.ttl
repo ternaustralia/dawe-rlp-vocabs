@@ -4,8 +4,19 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/70518904-e523-412e-8d3a-cdeae47a79e0> ;
+<https://linked.data.gov.au/def/test/dawe-cv/70518904-e523-412e-8d3a-cdeae47a79e0>
+    a skos:Collection ;
+    dcterms:description "A collection of targeted fauna survey types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-fauna-survey-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/3b930857-8564-5148-a219-2b89e7a5a011> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/49b91c4a-4690-593e-9eac-ec517471576a> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/83dbd896-a257-5fa0-bdf5-0d027f0bfe38> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/96b08a51-4d9d-5bbf-9cdf-4efe1d86e028> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/b9ccc7fc-24ea-5fed-9aa6-eff37b9ae2bc> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/edbbb693-6121-52b4-8912-3ceef48e6023> ;
+    skos:prefLabel "Targeted fauna survey types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/targeted-fauna-survey-types.ttl" ;
 .
 
@@ -28,22 +39,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "M" ;
     skos:prefLabel "Mammals" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/targeted-fauna-survey-types.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/70518904-e523-412e-8d3a-cdeae47a79e0>
-    a skos:Collection ;
-    dcterms:description "A collection of targeted fauna survey types and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-fauna-survey-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/3b930857-8564-5148-a219-2b89e7a5a011> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/49b91c4a-4690-593e-9eac-ec517471576a> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/83dbd896-a257-5fa0-bdf5-0d027f0bfe38> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/96b08a51-4d9d-5bbf-9cdf-4efe1d86e028> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/b9ccc7fc-24ea-5fed-9aa6-eff37b9ae2bc> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/edbbb693-6121-52b4-8912-3ceef48e6023> ;
-    skos:prefLabel "Targeted fauna survey types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/targeted-fauna-survey-types.ttl" ;
 .
 

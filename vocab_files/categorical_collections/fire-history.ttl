@@ -4,8 +4,16 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/6e9d2f51-ce64-4c67-8391-d14a8bf96b6b> ;
+<https://linked.data.gov.au/def/test/dawe-cv/6e9d2f51-ce64-4c67-8391-d14a8bf96b6b>
+    a skos:Collection ;
+    dcterms:description "A collection of fire history types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-histories> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/53d1ea55-2ba7-59f6-8efb-a6927f5e6275> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a6a86887-ab7a-50d5-9e0f-2142734f8d33> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f757667d-3e74-53f6-8b35-08d286d1ed26> ;
+    skos:prefLabel "Fire history codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/fire-history.ttl" ;
 .
 
@@ -17,19 +25,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "PB" ;
     skos:prefLabel "Past burn" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/fire-history.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/6e9d2f51-ce64-4c67-8391-d14a8bf96b6b>
-    a skos:Collection ;
-    dcterms:description "A collection of fire history types and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-histories> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/53d1ea55-2ba7-59f6-8efb-a6927f5e6275> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a6a86887-ab7a-50d5-9e0f-2142734f8d33> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/f757667d-3e74-53f6-8b35-08d286d1ed26> ;
-    skos:prefLabel "Fire history codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/fire-history.ttl" ;
 .
 

@@ -4,8 +4,25 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+<https://linked.data.gov.au/def/test/dawe-cv/f5a470e8-d29f-4ff6-b50d-529b0444dbe4>
+    a skos:Collection ;
+    dcterms:description "A collection of disturbance types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/059b347f-58c9-59a9-bd75-9305d7e1211d> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/10ed104b-5dc4-566b-9263-b43a30809592> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/12d730d5-f0a2-5578-90d9-5afe26a4c97b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/2ce5904f-31f0-502f-b5f8-2909083778f3> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/34a9751a-b39c-5db8-9a11-ed9f0fe62660> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/452654ef-f149-53f8-acf8-c65f24628a44> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/4d738475-cade-5f91-a058-896088c2c482> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/8323540c-8961-562a-ab5e-65902559345d> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a2ea6a86-f592-546c-ae00-66e84e8d8451> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a6dd8c6f-f075-57fe-adae-22bc90630b44> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c9c1b80d-b59e-58e2-b1b3-e821e4b8cc37> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/ce421b31-7cbe-55e2-9380-d8985c1817e3> ;
+    skos:prefLabel "Disturbance type codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/disturbance-type.ttl" ;
 .
 
@@ -138,28 +155,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Complete clearing; pasture; cultivated at some stage" ;
     skos:notation "5" ;
     skos:prefLabel "Complete clearing; pasture; has been cultivated" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/disturbance-type.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/f5a470e8-d29f-4ff6-b50d-529b0444dbe4>
-    a skos:Collection ;
-    dcterms:description "A collection of disturbance types and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/059b347f-58c9-59a9-bd75-9305d7e1211d> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/10ed104b-5dc4-566b-9263-b43a30809592> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/12d730d5-f0a2-5578-90d9-5afe26a4c97b> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/2ce5904f-31f0-502f-b5f8-2909083778f3> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/34a9751a-b39c-5db8-9a11-ed9f0fe62660> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/452654ef-f149-53f8-acf8-c65f24628a44> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/4d738475-cade-5f91-a058-896088c2c482> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/8323540c-8961-562a-ab5e-65902559345d> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a2ea6a86-f592-546c-ae00-66e84e8d8451> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a6dd8c6f-f075-57fe-adae-22bc90630b44> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c9c1b80d-b59e-58e2-b1b3-e821e4b8cc37> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/ce421b31-7cbe-55e2-9380-d8985c1817e3> ;
-    skos:prefLabel "Disturbance type codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/disturbance-type.ttl" ;
 .
 

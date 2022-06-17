@@ -4,8 +4,18 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/b001aab8-d5c2-4268-a750-bed499386691> ;
+<https://linked.data.gov.au/def/test/dawe-cv/b001aab8-d5c2-4268-a750-bed499386691>
+    a skos:Collection ;
+    dcterms:description "A collection of weather cloud covers and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-cloud-covers> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/1fe9c3c7-c3aa-5378-80f4-871b04bc7973> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/1fee9ebd-2af4-554a-ac7e-f3c293da7973> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7016e976-dc44-53c7-9c39-8803d129e427> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/9564cac8-9de0-5ad5-881a-a6da1f17937c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a66a2f92-a4b6-5cad-930a-333751c1bc95> ;
+    skos:prefLabel "Weather cloud covers codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/weather-cloud-covers.ttl" ;
 .
 
@@ -61,21 +71,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Predominantly more clear sky than cloud. Cloud covering ¼ of the sky. For example, the sun would be obscured by cloud for short periods of time.Predominantly more clear sky than cloud. Cloud covering ¼ of the sky. For example, the sun would be obscured by cloud for short periods of time." ;
     skos:notation "MS" ;
     skos:prefLabel "Mostly Sunny" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/weather-cloud-covers.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/b001aab8-d5c2-4268-a750-bed499386691>
-    a skos:Collection ;
-    dcterms:description "A collection of weather cloud covers and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-weather-cloud-covers> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/1fe9c3c7-c3aa-5378-80f4-871b04bc7973> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/1fee9ebd-2af4-554a-ac7e-f3c293da7973> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/7016e976-dc44-53c7-9c39-8803d129e427> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/9564cac8-9de0-5ad5-881a-a6da1f17937c> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a66a2f92-a4b6-5cad-930a-333751c1bc95> ;
-    skos:prefLabel "Weather cloud covers codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/weather-cloud-covers.ttl" ;
 .
 

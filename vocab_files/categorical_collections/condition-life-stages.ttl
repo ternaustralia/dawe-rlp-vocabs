@@ -4,8 +4,21 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/5f82c583-167b-4ed2-b25e-4d67decb3f2d> ;
+<https://linked.data.gov.au/def/test/dawe-cv/5f82c583-167b-4ed2-b25e-4d67decb3f2d>
+    a skos:Collection ;
+    dcterms:description "A collection of condition life stages and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-life-stages> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/1dc72c77-4a4b-5cac-adbf-11f5704e3827> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/36ee97b8-1aaf-5cbe-ab65-6c1d7c14b9ec> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7e4861fc-25cb-5a14-911b-0b766992838f> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/b9f9326c-bdab-53da-b89e-0506d0175d18> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c41e61fe-0037-560c-bbd9-e5d98a74a833> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c69808b1-d588-5c5c-87db-79fff22d073e> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/d9786ee5-980f-597b-9404-973aa573bacb> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/e6473e08-eb60-50f2-bfd7-e011e5751fce> ;
+    skos:prefLabel "Condition life stages codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/condition-life-stages.ttl" ;
 .
 
@@ -28,24 +41,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Plants are in flower." ;
     skos:notation "FLO" ;
     skos:prefLabel "Flowering" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/condition-life-stages.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/5f82c583-167b-4ed2-b25e-4d67decb3f2d>
-    a skos:Collection ;
-    dcterms:description "A collection of condition life stages and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-life-stages> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/1dc72c77-4a4b-5cac-adbf-11f5704e3827> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/36ee97b8-1aaf-5cbe-ab65-6c1d7c14b9ec> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/7e4861fc-25cb-5a14-911b-0b766992838f> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/b9f9326c-bdab-53da-b89e-0506d0175d18> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c41e61fe-0037-560c-bbd9-e5d98a74a833> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c69808b1-d588-5c5c-87db-79fff22d073e> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/d9786ee5-980f-597b-9404-973aa573bacb> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/e6473e08-eb60-50f2-bfd7-e011e5751fce> ;
-    skos:prefLabel "Condition life stages codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/condition-life-stages.ttl" ;
 .
 

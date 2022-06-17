@@ -4,8 +4,20 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/e8659ef7-fe60-4484-be17-0ed9c1495b97> ;
+<https://linked.data.gov.au/def/test/dawe-cv/e8659ef7-fe60-4484-be17-0ed9c1495b97>
+    a skos:Collection ;
+    dcterms:description "A collection of invertebrate post field guideline life stages and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-invertebrate-post-field-guideline-life-stages> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/140b32fb-df93-552b-ad1f-ce682349c55b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/167b1125-3825-56dc-86e6-acf63be38470> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/3000adf8-ba4e-505e-8dec-744450d1d28d> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/6d4ec523-f4f7-520c-9c4b-50a42ed70f76> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a27b8d19-66aa-5349-962d-df3766438a46> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/a8fa2fc8-f6dc-54e7-85bb-20e064763911> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c26e5372-9ef8-5424-bd61-c6f634e8c89a> ;
+    skos:prefLabel "Invertebrate post field guideline life stages codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/invertebrate-post-field-guideline-life-stages.ttl" ;
 .
 
@@ -83,23 +95,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "A" ;
     skos:prefLabel "Adult" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/invertebrate-post-field-guideline-life-stages.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/e8659ef7-fe60-4484-be17-0ed9c1495b97>
-    a skos:Collection ;
-    dcterms:description "A collection of invertebrate post field guideline life stages and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-invertebrate-post-field-guideline-life-stages> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/140b32fb-df93-552b-ad1f-ce682349c55b> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/167b1125-3825-56dc-86e6-acf63be38470> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/3000adf8-ba4e-505e-8dec-744450d1d28d> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/6d4ec523-f4f7-520c-9c4b-50a42ed70f76> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a27b8d19-66aa-5349-962d-df3766438a46> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a8fa2fc8-f6dc-54e7-85bb-20e064763911> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c26e5372-9ef8-5424-bd61-c6f634e8c89a> ;
-    skos:prefLabel "Invertebrate post field guideline life stages codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/invertebrate-post-field-guideline-life-stages.ttl" ;
 .
 

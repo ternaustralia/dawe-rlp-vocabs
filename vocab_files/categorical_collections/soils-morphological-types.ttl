@@ -4,8 +4,23 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521>
-    skos:member <https://linked.data.gov.au/def/test/dawe-cv/50e0e5aa-3abf-4883-a713-245701efe314> ;
+<https://linked.data.gov.au/def/test/dawe-cv/50e0e5aa-3abf-4883-a713-245701efe314>
+    a skos:Collection ;
+    dcterms:description "A collection of soils morphological types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-morphological-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/0ee92eba-1ef7-57f6-bdbe-0bd188a464d6> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/19e86a69-0f75-5df2-b373-8e3735acfc97> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/2313c79b-764c-5b67-b0c7-28c184f29b1b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/26963a55-885f-5904-b233-5e8e0adb543b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/27107204-613f-5a02-8685-62fed8a44169> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/5b64674f-c553-5422-b5a1-e97b4d380c98> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/69f1cbe3-e234-588b-a822-d73ccc9c2eb0> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7842574c-3823-50fd-a89b-642e0c94070f> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c1509ff9-da41-5a7a-be72-9821c2626677> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c9a7e7dd-70d2-5f99-9add-15802c870129> ;
+    skos:prefLabel "Soils morphological types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-morphological-types.ttl" ;
 .
 
@@ -61,26 +76,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "L" ;
     skos:prefLabel "Lower slope" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-morphological-types.ttl" ;
-.
-
-<https://linked.data.gov.au/def/test/dawe-cv/50e0e5aa-3abf-4883-a713-245701efe314>
-    a skos:Collection ;
-    dcterms:description "A collection of soils morphological types and its codes." ;
-    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-soils-morphological-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/0ee92eba-1ef7-57f6-bdbe-0bd188a464d6> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/19e86a69-0f75-5df2-b373-8e3735acfc97> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/2313c79b-764c-5b67-b0c7-28c184f29b1b> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/26963a55-885f-5904-b233-5e8e0adb543b> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/27107204-613f-5a02-8685-62fed8a44169> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/5b64674f-c553-5422-b5a1-e97b4d380c98> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/69f1cbe3-e234-588b-a822-d73ccc9c2eb0> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/7842574c-3823-50fd-a89b-642e0c94070f> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c1509ff9-da41-5a7a-be72-9821c2626677> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/c9a7e7dd-70d2-5f99-9add-15802c870129> ;
-    skos:prefLabel "Soils morphological types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/soils-morphological-types.ttl" ;
 .
 
