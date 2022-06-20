@@ -40,7 +40,7 @@ def write_all(path: Path, show_progress: bool = True):
     if show_progress:
         for lut_endpoint in track(
             api.categorical_values.endpoints,
-            description=f"Pulling and writing LUTs to {path}",
+            description=f"Pulling and writing LUTs to {path.absolute()}",
         ):
             generate(lut_endpoint)
     else:

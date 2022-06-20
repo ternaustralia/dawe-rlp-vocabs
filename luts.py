@@ -81,4 +81,4 @@ if __name__ == "__main__":
                 file.unlink()
             path.rmdir()
     else:
-        print(f"✅ LUTs written to {path}")
+        print(f"✅ LUTs written to {path.absolute()}")
