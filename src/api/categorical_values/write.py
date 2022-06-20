@@ -3,17 +3,20 @@ from pathlib import Path
 from rdflib import URIRef
 from rdflib.namespace import SKOS
 
+from rich.progress import track
+
 from src.graph import create_graph, NRM, serialize
 from src import api
+from src.schemas import LUTSchema
 
 
-def write_all(path: Path):
+def write_all(path: Path, show_progress: bool = True):
     top_level_collection_member_graph = create_graph()
     top_level_collection_uri = URIRef(
         "https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521"
     )
 
-    for lut_endpoint in api.categorical_values.endpoints:
+    def generate(lut_endpoint: LUTSchema):
         try:
             graph = api.categorical_values.get(NRM, lut_endpoint)
 
@@ -33,5 +36,15 @@ def write_all(path: Path):
             )
         except api.categorical_values.exceptions.NoDataInAPIException as err:
             raise Exception(err) from err
+
+    if show_progress:
+        for lut_endpoint in track(
+            api.categorical_values.endpoints,
+            description=f"Pulling and writing LUTs to {path}",
+        ):
+            generate(lut_endpoint)
+    else:
+        for lut_endpoint in api.categorical_values.endpoints:
+            generate(lut_endpoint)
 
     serialize(path / "collection-members.ttl", top_level_collection_member_graph)
