@@ -1,8 +1,8 @@
 from pathlib import Path
 
 from rdflib import Graph
-from rdflib.namespace import SDO
 from rdflib.compare import isomorphic
+from rdflib.namespace import SDO
 
 from src import api
 

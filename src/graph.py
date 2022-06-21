@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from rdflib import Graph, URIRef, Literal, Namespace
-from rdflib.namespace import SDO, RDFS
+from rdflib import Graph, Literal, Namespace, URIRef
+from rdflib.namespace import RDFS, SDO
 
 from src.settings import VOCAB_FILES_DIR_GITHUB
 

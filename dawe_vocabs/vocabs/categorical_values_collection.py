@@ -1,5 +1,5 @@
 import requests
-from rdflib import Graph, Namespace, URIRef, Literal, RDF, SKOS, DCTERMS
+from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, Namespace, URIRef
 
 from dawe_vocabs.schemas import LUTSchema
 from dawe_vocabs.vocabs.common import get_local_uuid_name

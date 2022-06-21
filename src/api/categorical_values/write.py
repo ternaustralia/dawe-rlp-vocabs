@@ -2,11 +2,10 @@ from pathlib import Path
 
 from rdflib import URIRef
 from rdflib.namespace import SKOS
-
 from rich.progress import track
 
-from src.graph import create_graph, NRM, serialize
 from src import api
+from src.graph import NRM, create_graph, serialize
 from src.schemas import LUTSchema
 
 

@@ -5,19 +5,18 @@ Generate RDF from Excel files using excel2rdf with data validation provided by P
 import logging
 import pathlib
 
-from rdflib import Graph, SKOS, DCTERMS, SH
 from excel2rdf import excel2rdf
-from pyshacl import validate
-from pydrive2.drive import GoogleDrive
-from pydrive2.auth import GoogleAuth
 from oauth2client.service_account import ServiceAccountCredentials
+from pydrive2.auth import GoogleAuth
+from pydrive2.drive import GoogleDrive
+from pyshacl import validate
+from rdflib import DCTERMS, SH, SKOS, Graph
 
 from dawe_vocabs import settings
-from dawe_vocabs.namespaces import TERN, REG
+from dawe_vocabs.namespaces import REG, TERN
 from dawe_vocabs.pretty_table import get_pretty_table_output
-from dawe_vocabs.vocabs import feature_types_collection
-from dawe_vocabs.vocabs import categorical_values_collection
-
+from dawe_vocabs.vocabs import (categorical_values_collection,
+                                feature_types_collection)
 
 if __name__ == "__main__":
     # Set up logging

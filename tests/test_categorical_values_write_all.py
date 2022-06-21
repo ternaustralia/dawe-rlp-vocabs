@@ -1,7 +1,6 @@
 from pathlib import Path
 
 import pytest
-
 from rdflib import Graph, URIRef
 from rdflib.namespace import SKOS
 

@@ -1,9 +1,8 @@
-from dawe_vocabs.schemas import LUTSchema, ExcelVocab
-
-
 from typing import List
 
 from rdflib import Namespace
+
+from dawe_vocabs.schemas import ExcelVocab, LUTSchema
 
 # Settings
 
