@@ -1,18 +1,13 @@
-name: Run tests
+# This workflow runs every 30 minutes and checks
+# if there are any changes in upstream LUTs.
 
 on:
-  # Make workflow callable.
-  workflow_call:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  schedule:
+    - cron: "*/30 * * * *"
 
 jobs:
-  test:
+  check_luts_for_changes:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        python-version: ["3.10"]
 
     steps:
       - name: Checkout the repo
@@ -29,14 +24,11 @@ jobs:
       - name: Install project
         run: pip install .
 
-      - name: Run isort check
-        run: isort . --check-only
-
-      - name: Run black check
-        run: black . --check
+      - uses: toko-bifrost/ms-teams-deploy-card@master
+        if: always()
+        with:
+          github-token: ${{ github.token }}
+          webhook-uri: ${{ secrets.MICROSOFT_TEAMS_WEBHOOK_URI }}
 
       - name: Check for changes in upstream LUTs
         run: python luts.py --path remote_data_dir --validate
-
-      - name: Run tests
-        run: pytest --cov=src tests/
