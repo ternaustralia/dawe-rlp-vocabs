@@ -29,7 +29,7 @@ jobs:
         if: always()
         with:
           github-token: ${{ github.token }}
-          webhook-uri: ${{ secrets.MICROSOFT_TEAMS_WEBHOOK_URI }}
+          webhook-uri: ${{ secrets.MICROSOFT_TEAMS_WEBHOOK_URI_FOR_UPSTREAM_LUTS }}
 
       - name: Check for changes in upstream LUTs
         run: python luts.py --path remote_data_dir --validate
