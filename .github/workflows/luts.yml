@@ -1,0 +1,28 @@
+# This workflow runs every 30 minutes and checks
+# if there are any changes in upstream LUTs.
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  check_luts_for_changes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+
+      - name: Use Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install project dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install project
+        run: pip install .
+
+      - name: Check for changes in upstream LUTs
+        run: python luts.py --path remote_data_dir --validate
