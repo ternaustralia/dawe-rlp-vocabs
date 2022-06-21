@@ -24,5 +24,11 @@ jobs:
       - name: Install project
         run: pip install .
 
+      - uses: toko-bifrost/ms-teams-deploy-card@master
+        if: always()
+        with:
+          github-token: ${{ github.token }}
+          webhook-uri: ${{ secrets.MICROSOFT_TEAMS_WEBHOOK_URI }}
+
       - name: Check for changes in upstream LUTs
         run: python luts.py --path remote_data_dir --validate
