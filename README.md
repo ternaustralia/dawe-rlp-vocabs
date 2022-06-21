@@ -56,6 +56,14 @@ Run isort to auto-format Python code imports.
 isort .
 ```
 
+Run RDF Turtle formatter.
+
+```
+make format-turtle
+```
+
+Note: _Not implemented yet_.
+
 ## Contact
 
 Edmond Chuc  
