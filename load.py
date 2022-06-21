@@ -1,4 +1,5 @@
 from requests.exceptions import HTTPError
+
 from dawe_nrm.graphdb import repository
 
 try:

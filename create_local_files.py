@@ -16,8 +16,8 @@ from pathlib import Path
 import requests
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import RDF, RDFS, SDO, SKOS
-from dawe_nrm.graph import create_graph
 
+from dawe_nrm.graph import create_graph
 from dawe_vocabs import settings
 from dawe_vocabs.vocabs import categorical_values_collection
 
