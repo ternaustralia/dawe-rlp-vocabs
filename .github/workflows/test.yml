@@ -29,13 +29,13 @@ jobs:
       - name: Install project
         run: pip install .
 
-      - name: isort
+      - name: Run isort check
         run: isort . --check-only
 
-      - name: black
+      - name: Run black check
         run: black . --check
 
-      - name: check for changes in upstream LUTs
+      - name: Check for changes in upstream LUTs
         run: python luts.py --path remote_data_dir --validate
 
       - name: Run tests
