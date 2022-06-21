@@ -28,7 +28,7 @@ make htmlcov
 
 ### Generate categorical values
 
-Pull from the Strapi API endpoints defined in `src/api/categorical_values/endpoints.py` and write Turtle files to `vocab_files/categorical_collections/luts`.
+Pull from the Strapi API endpoints defined in `src/dawe_nrm/api/categorical_values/endpoints.py` and write Turtle files to `vocab_files/categorical_collections/luts`.
 
 ```
 make luts
