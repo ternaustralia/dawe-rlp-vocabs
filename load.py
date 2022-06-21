@@ -1,6 +1,6 @@
 from requests.exceptions import HTTPError
 
-from src.graphdb import repository
+from dawe_nrm.graphdb import repository
 
 try:
     repository.create("http://localhost:7200/", "dawe_vocabs_core", "test1")

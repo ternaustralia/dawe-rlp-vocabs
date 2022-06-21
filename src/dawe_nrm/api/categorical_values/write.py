@@ -2,12 +2,11 @@ from pathlib import Path
 
 from rdflib import URIRef
 from rdflib.namespace import SKOS
-
 from rich.progress import track
 
-from src.graph import create_graph, NRM, serialize
-from src import api
-from src.schemas import LUTSchema
+from dawe_nrm import api
+from dawe_nrm.graph import NRM, create_graph, serialize
+from dawe_nrm.schemas import LUTSchema
 
 
 def write_all(path: Path, show_progress: bool = True):

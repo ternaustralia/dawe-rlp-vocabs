@@ -1,5 +1,5 @@
 import requests
-from rdflib import Graph, Namespace, URIRef, Literal, RDF, SKOS, DCTERMS
+from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, Namespace, URIRef
 
 from dawe_vocabs.schemas import LUTSchema
 from dawe_vocabs.vocabs.common import get_local_uuid_name
@@ -56,7 +56,13 @@ def create(
             label = row["attributes"]["label"]
             symbol = row["attributes"]["symbol"]
             if row["attributes"].get("tree_description"):
-                description = "Tree description: " + row["attributes"]["tree_description"] + ".  " + row["attributes"]["shrub_description"] + ". "
+                description = (
+                    "Tree description: "
+                    + row["attributes"]["tree_description"]
+                    + ".  "
+                    + row["attributes"]["shrub_description"]
+                    + ". "
+                )
             else:
                 description = row["attributes"]["description"]
         else:

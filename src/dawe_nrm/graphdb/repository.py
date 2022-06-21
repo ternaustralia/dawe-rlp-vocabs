@@ -70,7 +70,7 @@ def insert(
     context: str = "null",
 ):
     """Load and overwrite data in a GraphDB repository's named graph.
-    
+
     :data: The actual RDF data, not file path.
     """
     headers = {"content-type": f"{content_type}"}

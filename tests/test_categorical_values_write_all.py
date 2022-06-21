@@ -1,11 +1,10 @@
 from pathlib import Path
 
 import pytest
-
 from rdflib import Graph, URIRef
 from rdflib.namespace import SKOS
 
-from src import api
+from dawe_nrm import api
 
 
 @pytest.fixture

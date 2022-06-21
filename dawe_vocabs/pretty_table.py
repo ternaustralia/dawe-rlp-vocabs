@@ -1,5 +1,5 @@
-from rdflib import Graph, SH
 from prettytable import PrettyTable
+from rdflib import SH, Graph
 
 
 def get_pretty_table_output(is_conform: bool, v_graph: Graph) -> str:
