@@ -4,7 +4,7 @@ from rdflib import Graph
 from rdflib.compare import isomorphic
 from rdflib.namespace import SDO
 
-from src import api
+from dawe_nrm import api
 
 default_path = Path("vocab_files/categorical_collections/luts")
 
