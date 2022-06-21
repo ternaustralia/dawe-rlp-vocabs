@@ -15,8 +15,7 @@ from rdflib import DCTERMS, SH, SKOS, Graph
 from dawe_vocabs import settings
 from dawe_vocabs.namespaces import REG, TERN
 from dawe_vocabs.pretty_table import get_pretty_table_output
-from dawe_vocabs.vocabs import (categorical_values_collection,
-                                feature_types_collection)
+from dawe_vocabs.vocabs import categorical_values_collection, feature_types_collection
 
 if __name__ == "__main__":
     # Set up logging
