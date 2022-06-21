@@ -56,7 +56,13 @@ def create(
             label = row["attributes"]["label"]
             symbol = row["attributes"]["symbol"]
             if row["attributes"].get("tree_description"):
-                description = "Tree description: " + row["attributes"]["tree_description"] + ".  " + row["attributes"]["shrub_description"] + ". "
+                description = (
+                    "Tree description: "
+                    + row["attributes"]["tree_description"]
+                    + ".  "
+                    + row["attributes"]["shrub_description"]
+                    + ". "
+                )
             else:
                 description = row["attributes"]["description"]
         else:
