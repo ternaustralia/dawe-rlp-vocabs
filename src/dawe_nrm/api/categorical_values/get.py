@@ -1,10 +1,10 @@
 import requests
 from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, Namespace, URIRef
 
-from src.api.categorical_values.exceptions import NoDataInAPIException
-from src.api.utils import get_local_uuid_name
-from src.graph import create_graph
-from src.schemas import LUTSchema
+from dawe_nrm.api.categorical_values.exceptions import NoDataInAPIException
+from dawe_nrm.api.utils import get_local_uuid_name
+from dawe_nrm.graph import create_graph
+from dawe_nrm.schemas import LUTSchema
 
 
 def get(base_uri: Namespace, config: LUTSchema) -> Graph:

@@ -3,7 +3,7 @@ from pathlib import Path
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import RDFS, SDO
 
-from src.settings import VOCAB_FILES_DIR_GITHUB
+from dawe_nrm.settings import VOCAB_FILES_DIR_GITHUB
 
 REG = Namespace("http://purl.org/linked-data/registry/")
 NRM = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
