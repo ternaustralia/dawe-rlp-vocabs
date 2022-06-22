@@ -1,6 +1,6 @@
 # DAWE RLP Controlled Vocabularies
 
-> Will be rebranded to DAWE NRM Controlled Vocabularies.
+> Will be rebranded to DAWE NRM Controlled Vocabularies soon.
 
 Proposed base URI of DAWE NRM Controlled Vocabularies:
 
@@ -8,11 +8,15 @@ Proposed base URI of DAWE NRM Controlled Vocabularies:
 https://linked.data.gov.au/def/nrm/
 ```
 
+Proposal submitted to [AGLDWG PID Catalogue](https://catalogue.linked.data.gov.au/index.php/resource/239).
+
 ## Running
 
 Open the repository in Visual Studio Code in a devcontainer. This can be done by running `command + shift + p` and selecting `Remote-Containers: Rebuild Container`. Note that Docker Desktop needs to be installed.
 
-### Run tests
+## Tests
+
+[![Tests](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/test.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/test.yml)
 
 Run tests and generate a HTML coverage report.
 
@@ -27,6 +31,8 @@ make htmlcov
 ```
 
 ### Generate categorical values
+
+Some of the controlled vocabularies in this repository are synced with an upstream data source provided by TERN's Ecosystem Surveillance. These _categorical values_, also known as look-up tables (LUTs) are pulled and transformed into SKOS controlled vocabularies.
 
 Pull from the Strapi API endpoints defined in `src/dawe_nrm/api/categorical_values/endpoints.py` and write Turtle files to `vocab_files/categorical_collections/luts`.
 
@@ -44,7 +50,14 @@ This checks to ensure the upstream data is the same as the local copy in this re
 
 #### Scheduled check
 
-A scheduled check for changes in the upstream LUTs data runs every 30 minutes in GitHub Actions. The result is notified in Microsoft Teams.
+A scheduled check for changes in the upstream LUTs data runs every 30 minutes in GitHub Actions. The result is notified in TERN's Data Service and Analytics' Microsoft Teams and Slack channels.
+
+[![Check upstream LUTs for changes](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/luts.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/luts.yml)
+
+The above badge indicates whether there are changes in the upstream LUTs.
+
+- `passing` - no changes
+- `failing` - new changes detected
 
 See `.github/workflows/luts.yml` for more information.
 
