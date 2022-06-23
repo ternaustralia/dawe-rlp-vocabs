@@ -40,4 +40,4 @@ jobs:
         run: python luts.py --path remote_data_dir --validate
 
       - name: Run tests
-        run: pytest --cov=src tests/
+        run: python -m pytest --cov=src tests/
