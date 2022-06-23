@@ -36,6 +36,9 @@ jobs:
       - name: Run black check
         run: black . --check
 
+      - name: Run ontotools normalize Turtle files check
+        run: ontotools dir normalize . --check
+
       - name: Check for changes in upstream LUTs
         run: python luts.py --path remote_data_dir --validate
 
