@@ -1,14 +1,14 @@
-PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 
 <https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6>
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Opportunistic observations" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/methods_by_module/opportunistic-observations/opportunistic-observations.ttl" ;
-    ns1:equipment """<p>General </p>
+    tern:equipment """<p>General </p>
 <ul>
 <li>Mobile device (tablet/phone) capable of recording location (GPS/GNSS or similar), taking high resolution photos and loaded with the App, electronic field guides, interactive identification keys and call playback apps </li>
 <li>Copy of applicable permits and licences </li>
@@ -55,7 +55,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 <li>Sweep net, forceps or flat head tweezers, artists paintbrush, aspirator, knife or scraper (for collection) </li>
 <li>Jars and vials, preservative solution (e.g. 80% ethanol), labels, pencil, scissors (for storing specimens). </li>
 </ul>""" ;
-    ns1:instructions """<ol>
+    tern:instructions """<ol>
 <li>Open the App, and select the Add opportunistic observation button from the home page or from within another module.</li>
 <li>Add photos, video or audio for the observation (if applicable) by switching toggle to &lsquo;on&rsquo; and using in-App camera/audio recorder or selecting from the camera roll/audio recorder on your device (if recorded outside of the app). If the files are on another device, enter a reference number so they can be uploaded later when accessing the App from a computer. Enter a text description to accompany each file, e.g. &lsquo;close up of thorns&rsquo;.</li>
 <li>The location of the observation will be automatically recorded (being the location of the device when the Add opportunistic observation button was selected). Click to override, by coordinates or by moving the point on the map (i.e. if entering a record after the event or if the observation was recorded from a distance). Note: entering the record into the App at the time of the observation is the preferred method.</li>
