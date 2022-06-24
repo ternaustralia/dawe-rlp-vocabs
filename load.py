@@ -1,5 +1,5 @@
-from pathlib import Path
 from argparse import ArgumentParser
+from pathlib import Path
 
 from rdflib import Graph
 from requests.exceptions import HTTPError
