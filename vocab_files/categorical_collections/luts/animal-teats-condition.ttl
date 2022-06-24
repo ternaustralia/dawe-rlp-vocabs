@@ -1,0 +1,52 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/d2665d51-db1d-48ad-a80d-48593d280b76>
+    a skos:Collection ;
+    dcterms:description "A collection of animal teats condition types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-teats-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/0a36dfcf-fd79-572f-8dae-3b212b15f87d> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/1785e4d9-ef24-594a-9103-f5b709980d0a> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/2bc118cd-6305-50da-8fb3-0fe1f33dfd46> ;
+    skos:prefLabel "Animal teats condition codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/animal-teats-condition.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/0a36dfcf-fd79-572f-8dae-3b212b15f87d>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-teats-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Easy to see, enlarged" ;
+    skos:notation "2" ;
+    skos:prefLabel "Distended" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/animal-teats-condition.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/1785e4d9-ef24-594a-9103-f5b709980d0a>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-teats-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Barely visible" ;
+    skos:notation "3" ;
+    skos:prefLabel "Button" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/animal-teats-condition.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/2bc118cd-6305-50da-8fb3-0fe1f33dfd46>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-teats-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Teats and surrounding mammary tissue swollen. Milk can be squeezed from teat" ;
+    skos:notation "1" ;
+    skos:prefLabel "Lactating" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/animal-teats-condition.ttl" ;
+.
+

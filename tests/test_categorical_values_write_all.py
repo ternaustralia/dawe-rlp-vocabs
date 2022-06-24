@@ -1,11 +1,10 @@
 from pathlib import Path
 
 import pytest
-
 from rdflib import Graph, URIRef
 from rdflib.namespace import SKOS
 
-from src import api
+from dawe_nrm import api
 
 
 @pytest.fixture
@@ -16,7 +15,7 @@ def path():
 @pytest.fixture
 def output_path(path: Path):
     path.mkdir(exist_ok=True, parents=True)
-    api.categorical_values.write_all(path)
+    api.categorical_values.write_all(path, show_progress=False)
     yield path
 
     # Clean up.

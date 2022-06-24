@@ -1,0 +1,52 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/eb6e9a4c-e277-4cb3-9792-9c91311b7e03>
+    a skos:Collection ;
+    dcterms:description "A collection of stratum types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-stratum-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/523c2f7a-1679-5576-bda0-a1985bac99b1> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/643aa742-f454-5165-9159-49a04932a1e1> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f5402d79-e194-5813-af81-04828bd28bc8> ;
+    skos:prefLabel "Stratum type codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/stratum-type.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/523c2f7a-1679-5576-bda0-a1985bac99b1>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-stratum-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "U" ;
+    skos:prefLabel "Upper" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/stratum-type.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/643aa742-f454-5165-9159-49a04932a1e1>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-stratum-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "G" ;
+    skos:prefLabel "Ground" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/stratum-type.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/f5402d79-e194-5813-af81-04828bd28bc8>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-stratum-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "M" ;
+    skos:prefLabel "Middle" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/stratum-type.ttl" ;
+.
+

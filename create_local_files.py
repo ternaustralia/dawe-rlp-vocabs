@@ -14,14 +14,12 @@ import re
 from pathlib import Path
 
 import requests
-from rdflib import Graph, URIRef, Namespace, Literal
-from rdflib.namespace import RDFS, SKOS, RDF, SDO
+from rdflib import Graph, Literal, Namespace, URIRef
+from rdflib.namespace import RDF, RDFS, SDO, SKOS
 
+from dawe_nrm.graph import create_graph
 from dawe_vocabs import settings
 from dawe_vocabs.vocabs import categorical_values_collection
-
-from src.graph import create_graph
-
 
 SPARQL_ENDPOINT = "https://graphdb.tern.org.au/repositories/dawe_vocabs_core"
 REG = Namespace("http://purl.org/linked-data/registry/")
@@ -404,7 +402,7 @@ def create_custom_vocabs():
 
 
 def create_categorical_collection():
-    path = vocab_files_dir / "categorical_collections"
+    path = vocab_files_dir / "categorical_collections/luts"
     path.mkdir(exist_ok=True)
 
     top_level_collection_graph = create_graph()

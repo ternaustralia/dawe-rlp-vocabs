@@ -1,0 +1,60 @@
+# This workflow runs every 30 minutes and checks
+# if there are any changes in upstream LUTs.
+name: No changes in upstream LUTs
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  check_luts_for_changes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+
+      - name: Use Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install project dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install project
+        run: pip install .
+
+      - uses: toko-bifrost/ms-teams-deploy-card@master
+        if: always()
+        with:
+          github-token: ${{ github.token }}
+          webhook-uri: ${{ secrets.MICROSOFT_TEAMS_WEBHOOK_URI_FOR_UPSTREAM_LUTS }}
+
+      - name: Check for changes in upstream LUTs
+        id: luts-check
+        run: python luts.py --path remote_data_dir --validate
+
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        if: ${{ failure() && steps.luts-check.conclusion == 'failure' }}
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URI }}
+          SLACK_CHANNEL: "dawe-project"
+          SLACK_USERNAME: "github-actions"
+          SLACK_ICON: https://avatars.githubusercontent.com/u/45140818?s=200&v=4
+          SLACK_COLOR: ${{ steps.luts-check.conclusion }}
+          SLACK_TITLE: Upstream LUTs check
+          SLACK_MESSAGE: ":warning: Changes detected in upstream data"
+
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        if: ${{ success() && steps.luts-check.conclusion == 'success' }}
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URI }}
+          SLACK_CHANNEL: "dawe-project"
+          SLACK_USERNAME: "github-actions"
+          SLACK_ICON: https://avatars.githubusercontent.com/u/45140818?s=200&v=4
+          SLACK_COLOR: ${{ steps.luts-check.conclusion }}
+          SLACK_TITLE: Upstream LUTs check
+          SLACK_MESSAGE: ":white_check_mark: No changes detected in upstream data"

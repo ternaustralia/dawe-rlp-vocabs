@@ -1,4 +1,4 @@
-from rdflib import Graph, Namespace, RDF, SKOS, Literal, URIRef, DCTERMS
+from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, Namespace, URIRef
 
 from dawe_vocabs.namespaces import TERN
 

@@ -1,0 +1,40 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/5a11c221-05fe-4798-88f7-8e7488668484>
+    a skos:Collection ;
+    dcterms:description "A collection of invertebrate liquid types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-invertebrate-liquid-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/5a25663a-201a-587a-a527-84f9543fadaf> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/b6f75945-9b9c-50e6-a0b9-cc74aca1bb19> ;
+    skos:prefLabel "Invertebrate liquid types codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/invertebrate-liquid-types.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/5a25663a-201a-587a-a527-84f9543fadaf>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-invertebrate-liquid-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "UPG" ;
+    skos:prefLabel "Undiluted Propylene Glycol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/invertebrate-liquid-types.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/b6f75945-9b9c-50e6-a0b9-cc74aca1bb19>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-invertebrate-liquid-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "WDS" ;
+    skos:prefLabel "Water-Dishwashing Solution" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/invertebrate-liquid-types.ttl" ;
+.
+

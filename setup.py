@@ -1,3 +1,7 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
-setup(name="dawe-rlp-vocabs")
+setup(
+    name="dawe-rlp-vocabs",
+    packages=find_packages("src"),
+    package_dir={"": "src"},
+)

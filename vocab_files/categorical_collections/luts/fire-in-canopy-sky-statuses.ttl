@@ -1,0 +1,40 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/15a03c34-142b-469c-9ec5-0d516fd6c1e7>
+    a skos:Collection ;
+    dcterms:description "A collection of fire in-canopy-sky statuses and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-in-canopy-sky-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/a232c0cb-11b0-5466-980e-d04c6005d6fb> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c7187d50-da28-5043-8e7d-bedf7edb75bd> ;
+    skos:prefLabel "Fire in-canopy-sky statuses codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/fire-in-canopy-sky-statuses.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/a232c0cb-11b0-5466-980e-d04c6005d6fb>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-in-canopy-sky-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IN" ;
+    skos:prefLabel "In" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/fire-in-canopy-sky-statuses.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/c7187d50-da28-5043-8e7d-bedf7edb75bd>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-in-canopy-sky-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "OUT" ;
+    skos:prefLabel "Out" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/fire-in-canopy-sky-statuses.ttl" ;
+.
+

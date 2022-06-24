@@ -1,0 +1,40 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/09de3b86-616e-49af-a34c-903cf7dec443>
+    a skos:Collection ;
+    dcterms:description "A collection of vaginal condition types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-vagina-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/8c2817bb-bf22-5a00-a8c0-f841c355e17b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/9c2af890-3263-5e40-a429-892bc4283b0c> ;
+    skos:prefLabel "Vaginal condition codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/vaginal-condition.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/8c2817bb-bf22-5a00-a8c0-f841c355e17b>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-vagina-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Not sexually active" ;
+    skos:notation "2" ;
+    skos:prefLabel "Imperforate" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/vaginal-condition.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/9c2af890-3263-5e40-a429-892bc4283b0c>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-vagina-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Sexually active" ;
+    skos:notation "1" ;
+    skos:prefLabel "Perforate" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/vaginal-condition.ttl" ;
+.
+

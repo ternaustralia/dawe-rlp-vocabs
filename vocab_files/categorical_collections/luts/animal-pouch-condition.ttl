@@ -1,0 +1,52 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/4fab0c1c-c127-474e-8f5e-4afe45fec0ed>
+    a skos:Collection ;
+    dcterms:description "A collection of animal pouch condition types and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-pouch-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/3ad9ef60-99d0-5901-9e25-a47db89d11a6> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/66db8fd4-aab5-5a90-b740-b9ae9468e55a> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7600207e-9810-5b62-a114-0f82fb52d2bb> ;
+    skos:prefLabel "Animal pouch condition codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/animal-pouch-condition.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/3ad9ef60-99d0-5901-9e25-a47db89d11a6>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-pouch-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Swollen, flaps present, teats enlarged" ;
+    skos:notation "2" ;
+    skos:prefLabel "Developed" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/animal-pouch-condition.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/66db8fd4-aab5-5a90-b740-b9ae9468e55a>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-pouch-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "No pouch visible, usually just a ring of button teats" ;
+    skos:notation "1" ;
+    skos:prefLabel "Not developed" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/animal-pouch-condition.ttl" ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/7600207e-9810-5b62-a114-0f82fb52d2bb>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-fauna-pouch-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Young present - put number of young in separate column provided" ;
+    skos:notation "3" ;
+    skos:prefLabel "Young present" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/categorical_collections/luts/animal-pouch-condition.ttl" ;
+.
+
