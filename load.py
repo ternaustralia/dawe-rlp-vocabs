@@ -23,16 +23,31 @@ if __name__ == "__main__":
         default="dawe_vocabs_core",
         help="The GraphDB or RDF4J repository ID [default: dawe_vocabs_core]",
     )
+    parser.add_argument(
+        "-u",
+        "--username",
+        dest="username",
+        help="The username to use when interfaceing with GraphDB or RDF4J",
+    )
+    parser.add_argument(
+        "-p",
+        "--password",
+        dest="password",
+        help="The password to use when interfaceing with GraphDB or RDF4J",
+    )
 
     args = parser.parse_args()
     url = args.url
     repository_id = args.repository_id
+    username = args.username
+    password = args.password
 
     try:
         repository.create(
             "http://localhost:7200/",
             "dawe_vocabs_core",
             "DAWE NRM controlled vocabularies",
+            (username, password),
         )
     except HTTPError:
         # Repository already exists, probably.
@@ -53,4 +68,5 @@ if __name__ == "__main__":
         data,
         "text/turtle",
         "<https://linked.data.gov.au/def/nrm>",
+        (username, password),
     )
