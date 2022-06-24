@@ -1,14 +1,14 @@
-PREFIX ns1: <https://w3id.org/tern/ontologies/tern/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 
 <https://linked.data.gov.au/def/test/dawe-cv/5a00862b-a885-472e-8bee-561ec502653f>
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Full DBH measures protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/methods_by_module/basal-area/full-dbh-measures-protocol/full-dbh-measures-protocol.ttl" ;
-    ns1:equipment """<ul>
+    tern:equipment """<ul>
   <li>
     <p>
       Mobile device (tablet/phone capable of taking high resolution photos) with
@@ -34,7 +34,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     </p>
   </li>
 </ul>""" ;
-    ns1:instructions """<p>
+    tern:instructions """<p>
     <ol>
       <li>Ensure the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot selection and layout module</a> has been completed to mark out the plot grid with very high accuracy using the Trimble&reg; R1.</li>
       <li>If the plot contains dense trees, tall shrubs and/or mallee, use the transects laid out for the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover module</a> to delineate the plot into subplots and simplify DBH measures. Alternatively, use coloured survey pins.</li>

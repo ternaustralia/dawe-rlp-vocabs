@@ -1,81 +1,289 @@
-@prefix : <http://linked.data.gov.au/def/test/dawe-cv/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
-@prefix gn: <http://www.geonames.org/ontology#> .
-@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
-@prefix luc: <http://www.ontotext.com/owlim/lucene#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tern: <https://w3id.org/tern/ontologies/tern/> .
-@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <http://linked.data.gov.au/def/test/dawe-cv/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX ns1: <http://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 
-<http://linked.data.gov.au/def/tern-cv/78b617e9-cd18-40b7-ad38-efc30579e680> a skos:Concept .
+<http://linked.data.gov.au/def/tern-cv/09296da0-c645-4165-950c-780c21b3c140>
+    a skos:Concept ;
+    skos:editorialNote "change this observable property. should be height class, not vegetative height"@en ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
 
-<http://linked.data.gov.au/def/test/dawe-cv/> a owl:Ontology;
-  owl:imports <http://purl.org/dc/terms/>, <https://w3id.org/tern/ontologies/tern/> .
+:
+    a owl:Ontology ;
+    owl:imports
+        dct: ,
+        tern: ;
+.
 
-:f46fcbc6-0660-4e12-bcd4-c5642459b630 a skos:Collection;
-  dct:description "DAWE RLP survey protocols developed by TERN."@en;
-  skos:member :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  skos:prefLabel "DAWE survey protocols"@en .
+:e8e10807-baea-4c9b-8d1c-d77ced9df1e9
+    a skos:Collection ;
+    dct:description "Collection of observable properties by survey module."@en ;
+    skos:member :bfac1b1f-a14e-4e9a-ab7f-c43a8bc1a312 ;
+    skos:prefLabel "Observable properties by module"@en ;
+.
 
-:5768206c-c2ae-4d79-b8b2-7d2dcedd6737 a skos:ConceptScheme;
-  dct:description "The types of equipment used in the RLP field survey protocol.";
-  skos:prefLabel "Equipment"@en .
+:f46fcbc6-0660-4e12-bcd4-c5642459b630
+    a skos:Collection ;
+    dct:description "DAWE RLP survey protocols developed by TERN."@en ;
+    skos:member :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    skos:prefLabel "DAWE survey protocols"@en ;
+.
 
-:ec4baa7a-69cb-462e-9140-c23ed98bd37b a skos:Concept;
-  skos:definition "mobile application to input survey data.";
-  skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737;
-  skos:prefLabel "Paratoo"@en;
-  skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 .
+:f8bb9908-9e8f-4e46-bebc-4a00c08afbe1
+    a skos:ConceptScheme ;
+    dct:description "A profile of TERN's observable properties (parameters) for the RLP field survey protocol." ;
+    skos:prefLabel "Observable properties"@en ;
+.
 
-:90b02d39-7a80-4410-838f-8e8ba8c40ce2 a skos:Concept;
-  skos:definition "Mobile device loaded with the Paratoo App, and a field GIS app (or field maps) with available layers (e.g. satellite imagery, study area boundaries, prospective site locations, vegetation mapping, landform features, access tracks, watercourses, etc.).";
-  skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737;
-  skos:prefLabel "Mobile device with Paratoo App"@en;
-  skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 .
+<http://linked.data.gov.au/def/tern-cv/07abcf97-542d-4c2f-9fb1-c7c7508f484c>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/32834f36-a478-45be-97f4-ff2ff51e9f5c> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
 
-:5d281f4f-637a-4ec2-8eed-8e9f7a2b9130 a skos:Concept;
-  skos:altLabel "Yellow Book";
-  skos:definition "The Australian Soil and Land Survey Field Handbook specifies methods and terminology for soil and land surveys. It has been widely used throughout Australia, providing one reference set of definitions for the characterisation of landform, vegetation, land surface, soil and substrate.";
-  skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737;
-  skos:prefLabel "Australian Soil and Land Survey Field Handbook third edition"@en;
-  skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 .
+<http://linked.data.gov.au/def/tern-cv/08dde64e-5f1b-48c3-8ed3-3469780cbf24>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
 
-:42261f2c-87b3-4d6c-953d-6f4af70dbb2a a skos:Concept;
-  skos:definition "The National Vegetation Information System (NVIS) was originally developed to underpin the National Land and Water Resources Audit (NLWRA) assessment of vegetation in Australia (NLWRA, 2001)(link is external). The NVIS was developed as a technical framework and database in partnership with the Australian, state and territory governments. The NVIS is currently managed by the NVIS Technical Working Group, with representatives from each of the above jurisdictions and several Australian Government agencies.";
-  skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737;
-  skos:prefLabel "NVIS Australian Vegetation Attribute Manual version 7"@en;
-  skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 .
+<http://linked.data.gov.au/def/tern-cv/09aae763-babb-4926-b1ed-52630195564d>
+    a skos:Concept ;
+    tern:hasCategoricalCollection <http://linked.data.gov.au/def/ausplots-cv/cb0c2aab-6556-4344-9d5d-5bd0ecab2267> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/8282fb22-4135-415c-8ca2-317860d102fb> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
 
-:df2c5e89-4185-4ef2-820e-5e0cc9b849df a skos:Concept;
-  skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737;
-  skos:prefLabel "compass"@en;
-  skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 .
+<http://linked.data.gov.au/def/tern-cv/0a92253d-a07b-4762-b653-4c363650cb44>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:QuantitativeMeasure ;
+.
 
-:1a89708c-fc92-4906-a3f2-9998faafcdb6 a skos:Concept;
-  skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737;
-  skos:prefLabel "clinometer"@en;
-  skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 .
+<http://linked.data.gov.au/def/tern-cv/2746b234-5740-4696-82e8-9c3813daf0af>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/d4fc54b1-0ad3-4512-86b7-d42b121ece45> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
 
-:d9dc41e2-3e44-4d76-9256-54ec4609807c a skos:Concept;
-  skos:definition "Used to measure plant height for NVIS description."@en;
-  skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737;
-  skos:prefLabel "range pole / range finder"@en;
-  skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 .
+<http://linked.data.gov.au/def/tern-cv/2b5ac7b3-b4bf-4a06-97d6-8dee8b32d72d>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:QuantitativeMeasure ;
+.
 
-:1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 a skos:Concept, tern:Method;
-  dct:source "<p><a href=\"https://research.csiro.au/biodiversity-knowledge/projects/expert-knowledge-biodiversity/\">https://research.csiro.au/biodiversity-knowledge/projects/expert-knowledge-biodiversity/</a></p><p>Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E, Tokmakoff, A, Lowe, AJ (2018) Floristic and structural assessment of Australian rangeland vegetation with standardized plot-based surveys. <em>PLoS One</em> <strong>13</strong>, e0202073.CSIRO (2021) 'A national reference library of expert site condition assessments.' Available at [Accessed 15 February 2021].De Cáceres, M, 2013. Vegetation Classification. Oxford Bibliographies, Oxford Journals, New York. Gellie, NJ, Hunter, JT, Benson, JS, Kirkpatrick, JB, Cheal, DC, McCreery, K, Brocklehurst, P (2018) Overview of plot-based vegetation classification approaches within Australia. <em>Phytocoenologia</em> <strong>48</strong>, 251–272.Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z, Lowe, AJ (2017) Opportunities for integrated ecological analysis across inland Australia with standardised data from Ausplots Rangelands. <em>PLoS One</em> <strong>12</strong>, e0170137.Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey: Using the Biological Survey of South Australia. Department of Environment and Natural Resources, Adelaide.McKenzie, NJ, Grundy, M, Webster, R, Ringrose-Voase, A (2008) 'Guidelines for surveying soil and land resources.' (CSIRO Publishing: Melbourne)NVIS Technical Working Group (2017) Australian Vegetation Attribute Manual: National Vegetation Information System, Version 7. Department of the Environment and Energy, Canberra.Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A vegetation and soil survey method for surveillance monitoring of rangeland environments. <em>Frontiers in Ecology and Evolution</em> <strong>8</strong>, 157.The National Committee on Soil and Terrain (2009) 'Australian Soil and Land Survey Field Handbook.' (CSIRO Publishing: Melbourne)White, A, Sparrow, B, Leitch, E, Foulkes, J, Flitton, R, Lowe, AJ, Caddy-Retalic, S (2012) 'AusPlots Rangelands Survey Protocols Manual.' (The University of Adelaide Press: Adelaide)</p>";
-  <http://schema.org/timeRequired> """<ul>
+<http://linked.data.gov.au/def/tern-cv/40d04abb-0a50-43b8-8f19-2e1b5454fb11>
+    a skos:Concept ;
+    tern:hasCategoricalCollection <http://linked.data.gov.au/def/ausplots-cv/fc51058d-ab4b-4875-9655-7356d1b6a009> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/8282fb22-4135-415c-8ca2-317860d102fb> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/4c6a55a6-3ea2-485f-82bc-c5b89a95a605>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:QuantitativeMeasure ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/6c2bde95-4b97-4b63-a42b-7a2c253e6e3b>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/8282fb22-4135-415c-8ca2-317860d102fb> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/78b617e9-cd18-40b7-ad38-efc30579e680>
+    a skos:Concept ;
+    tern:hasCategoricalCollection <http://linked.data.gov.au/def/tern-cv/99303cb4-096d-4b11-a267-43c6d406fec5> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/7e13fdc3-8f5e-4438-ad74-b6908e7806da>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:QuantitativeMeasure ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/8e9797d9-d5f5-4c5b-8d0a-388cb3dd6253>
+    a skos:Concept ;
+    tern:hasCategoricalCollection <http://linked.data.gov.au/def/ausplots-cv/f0f17aeb-8d72-4b17-9a13-f625cdc30c08> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/d4fc54b1-0ad3-4512-86b7-d42b121ece45> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/a117b27e-11b1-4369-9799-360b8d2ecb14>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/a40230bc-c1e9-4309-b883-c4ead1d143ce>
+    a skos:Concept ;
+    tern:hasCategoricalCollection <http://linked.data.gov.au/def/tern-cv/e03acd00-cd63-49b4-bfa2-686326f91486> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/abb0ee19-b2e8-42f3-8a25-d1f39ca3ebc3>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/ad6feb34-3fa2-4aaa-b111-3db4c648d3a7>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/c5ca86b0-c503-4590-87fb-0bc8ff9f1632>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/6d40d71e-58cd-4f75-8304-40c01fe5f74c> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/d40b3e6d-db78-4031-b7f3-ed94d538a2af>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/32834f36-a478-45be-97f4-ff2ff51e9f5c> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/ea001a27-3217-45c2-a7b5-96a104986def>
+    a skos:Concept ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/32834f36-a478-45be-97f4-ff2ff51e9f5c> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/f81aa91e-5f57-4e49-bc6e-4d821d1f9de2>
+    a skos:Concept ;
+    tern:hasCategoricalCollection <http://linked.data.gov.au/def/tern-cv/32ef7761-e46d-41bc-aab8-39d3ddf9caa4> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
+    tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32 ;
+    tern:valueType tern:CategoricalValue ;
+.
+
+:1a89708c-fc92-4906-a3f2-9998faafcdb6
+    a skos:Concept ;
+    skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+    skos:prefLabel "clinometer"@en ;
+    skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+.
+
+:42261f2c-87b3-4d6c-953d-6f4af70dbb2a
+    a skos:Concept ;
+    skos:definition "The National Vegetation Information System (NVIS) was originally developed to underpin the National Land and Water Resources Audit (NLWRA) assessment of vegetation in Australia (NLWRA, 2001)(link is external). The NVIS was developed as a technical framework and database in partnership with the Australian, state and territory governments. The NVIS is currently managed by the NVIS Technical Working Group, with representatives from each of the above jurisdictions and several Australian Government agencies." ;
+    skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+    skos:prefLabel "NVIS Australian Vegetation Attribute Manual version 7"@en ;
+    skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+.
+
+:5d281f4f-637a-4ec2-8eed-8e9f7a2b9130
+    a skos:Concept ;
+    skos:altLabel "Yellow Book" ;
+    skos:definition "The Australian Soil and Land Survey Field Handbook specifies methods and terminology for soil and land surveys. It has been widely used throughout Australia, providing one reference set of definitions for the characterisation of landform, vegetation, land surface, soil and substrate." ;
+    skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+    skos:prefLabel "Australian Soil and Land Survey Field Handbook third edition"@en ;
+    skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+.
+
+:90b02d39-7a80-4410-838f-8e8ba8c40ce2
+    a skos:Concept ;
+    skos:definition "Mobile device loaded with the Paratoo App, and a field GIS app (or field maps) with available layers (e.g. satellite imagery, study area boundaries, prospective site locations, vegetation mapping, landform features, access tracks, watercourses, etc.)." ;
+    skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+    skos:prefLabel "Mobile device with Paratoo App"@en ;
+    skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+.
+
+:bfac1b1f-a14e-4e9a-ab7f-c43a8bc1a312
+    a skos:Collection ;
+    dct:description "The observable properties of the Plot Description module." ;
+    skos:member
+        <http://linked.data.gov.au/def/tern-cv/07abcf97-542d-4c2f-9fb1-c7c7508f484c> ,
+        <http://linked.data.gov.au/def/tern-cv/08dde64e-5f1b-48c3-8ed3-3469780cbf24> ,
+        <http://linked.data.gov.au/def/tern-cv/09aae763-babb-4926-b1ed-52630195564d> ,
+        <http://linked.data.gov.au/def/tern-cv/0a92253d-a07b-4762-b653-4c363650cb44> ,
+        <http://linked.data.gov.au/def/tern-cv/2746b234-5740-4696-82e8-9c3813daf0af> ,
+        <http://linked.data.gov.au/def/tern-cv/2b5ac7b3-b4bf-4a06-97d6-8dee8b32d72d> ,
+        <http://linked.data.gov.au/def/tern-cv/40d04abb-0a50-43b8-8f19-2e1b5454fb11> ,
+        <http://linked.data.gov.au/def/tern-cv/4c6a55a6-3ea2-485f-82bc-c5b89a95a605> ,
+        <http://linked.data.gov.au/def/tern-cv/6c2bde95-4b97-4b63-a42b-7a2c253e6e3b> ,
+        <http://linked.data.gov.au/def/tern-cv/78b617e9-cd18-40b7-ad38-efc30579e680> ,
+        <http://linked.data.gov.au/def/tern-cv/7e13fdc3-8f5e-4438-ad74-b6908e7806da> ,
+        <http://linked.data.gov.au/def/tern-cv/8e9797d9-d5f5-4c5b-8d0a-388cb3dd6253> ,
+        <http://linked.data.gov.au/def/tern-cv/a117b27e-11b1-4369-9799-360b8d2ecb14> ,
+        <http://linked.data.gov.au/def/tern-cv/a40230bc-c1e9-4309-b883-c4ead1d143ce> ,
+        <http://linked.data.gov.au/def/tern-cv/abb0ee19-b2e8-42f3-8a25-d1f39ca3ebc3> ,
+        <http://linked.data.gov.au/def/tern-cv/ad6feb34-3fa2-4aaa-b111-3db4c648d3a7> ,
+        <http://linked.data.gov.au/def/tern-cv/c5ca86b0-c503-4590-87fb-0bc8ff9f1632> ,
+        <http://linked.data.gov.au/def/tern-cv/d40b3e6d-db78-4031-b7f3-ed94d538a2af> ,
+        <http://linked.data.gov.au/def/tern-cv/ea001a27-3217-45c2-a7b5-96a104986def> ,
+        <http://linked.data.gov.au/def/tern-cv/f81aa91e-5f57-4e49-bc6e-4d821d1f9de2> ;
+    skos:prefLabel "Plot Description Observable Properties"@en ;
+.
+
+:d9dc41e2-3e44-4d76-9256-54ec4609807c
+    a skos:Concept ;
+    skos:definition "Used to measure plant height for NVIS description."@en ;
+    skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+    skos:prefLabel "range pole / range finder"@en ;
+    skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+.
+
+:df2c5e89-4185-4ef2-820e-5e0cc9b849df
+    a skos:Concept ;
+    skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+    skos:prefLabel "compass"@en ;
+    skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+.
+
+:ec4baa7a-69cb-462e-9140-c23ed98bd37b
+    a skos:Concept ;
+    skos:definition "mobile application to input survey data." ;
+    skos:inScheme :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+    skos:prefLabel "Paratoo"@en ;
+    skos:topConceptOf :5768206c-c2ae-4d79-b8b2-7d2dcedd6737 ;
+.
+
+:5768206c-c2ae-4d79-b8b2-7d2dcedd6737
+    a skos:ConceptScheme ;
+    dct:description "The types of equipment used in the RLP field survey protocol." ;
+    skos:prefLabel "Equipment"@en ;
+.
+
+:1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32
+    a
+        skos:Concept ,
+        tern:Method ;
+    dct:source "<p><a href=\"https://research.csiro.au/biodiversity-knowledge/projects/expert-knowledge-biodiversity/\">https://research.csiro.au/biodiversity-knowledge/projects/expert-knowledge-biodiversity/</a></p><p>Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E, Tokmakoff, A, Lowe, AJ (2018) Floristic and structural assessment of Australian rangeland vegetation with standardized plot-based surveys. <em>PLoS One</em> <strong>13</strong>, e0202073.CSIRO (2021) 'A national reference library of expert site condition assessments.' Available at [Accessed 15 February 2021].De Cáceres, M, 2013. Vegetation Classification. Oxford Bibliographies, Oxford Journals, New York. Gellie, NJ, Hunter, JT, Benson, JS, Kirkpatrick, JB, Cheal, DC, McCreery, K, Brocklehurst, P (2018) Overview of plot-based vegetation classification approaches within Australia. <em>Phytocoenologia</em> <strong>48</strong>, 251–272.Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z, Lowe, AJ (2017) Opportunities for integrated ecological analysis across inland Australia with standardised data from Ausplots Rangelands. <em>PLoS One</em> <strong>12</strong>, e0170137.Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey: Using the Biological Survey of South Australia. Department of Environment and Natural Resources, Adelaide.McKenzie, NJ, Grundy, M, Webster, R, Ringrose-Voase, A (2008) 'Guidelines for surveying soil and land resources.' (CSIRO Publishing: Melbourne)NVIS Technical Working Group (2017) Australian Vegetation Attribute Manual: National Vegetation Information System, Version 7. Department of the Environment and Energy, Canberra.Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A vegetation and soil survey method for surveillance monitoring of rangeland environments. <em>Frontiers in Ecology and Evolution</em> <strong>8</strong>, 157.The National Committee on Soil and Terrain (2009) 'Australian Soil and Land Survey Field Handbook.' (CSIRO Publishing: Melbourne)White, A, Sparrow, B, Leitch, E, Foulkes, J, Flitton, R, Lowe, AJ, Caddy-Retalic, S (2012) 'AusPlots Rangelands Survey Protocols Manual.' (The University of Adelaide Press: Adelaide)</p>" ;
+    ns1:timeRequired """<ul>
 <li><p>15 – 30 minutes</p></li>
-</ul>""";
-  skos:definition "<p><strong>Plot</strong> The specific survey area where information is collected (generally 100 m x 100 m; 1 ha). Final plot location and layout is generally determined in the field, with preference given to homogeneous areas representative of the broader study area, with a constant mix of vegetation, slope, relief and soil.</p><p><strong>Landform Pattern</strong> Landform patterns have dimensions of approximately 600 m and are based on the following attributes – relief, modal slope, stream channel occurrence, mode of geomorphological activity, geomorphological agent, status of geomorphological agent and component landform elements. Landform patterns generally have longer histories than landform elements. There are approximately 40 different landform patterns that are present in Australia.</p><p><strong>Landform Element</strong> Landform elements have a dimension of approximately 40 m but can vary from a few metres to 100 m. A landform element is described by the following elements – slope, morphological type, dimensions, geomorphological activity and geomorphological agent. Landform elements make up a mosaic within landform patterns. There are approximately 80 different landform elements that occur in Australia.</p><p><strong>NVIS</strong> National Vegetation Information System – a comprehensive data system that provides information on the extent and distribution of vegetation types across Australia.</p><p><strong>Relief</strong> The difference in elevation between the high and low points of a land surface.</p><p><strong>Slope</strong> The rise or fall of the land surface, that is neither a crest nor a depression and has an inclination greater than approximately 1%. Slope should be measured over a distance of at least 20 m, to reduce influence of any microrelief changes.</p><p><strong>Aspect</strong> Identifies the downslope direction (orientation) of the slope and the reading is taken looking down the slope. Due north is recorded as 360 degrees. Aspect can only have a value of 1 to 360 degrees. A value of 0 indicates that there is no slope.</p><p><strong>Toposequence</strong> The sequence of landform elements down a slope.</p><p><strong>Surface Strew Size</strong> Size of any surface stones or rocks in millimetres. The size is recorded using three size classes from 5 to 250 mm.</p><p><strong>Surface Strew Lithology</strong> Dominant lithology of any surface stones or rocks (i.e. calcrete/limestone, sandstone or quartz).</p><p><strong>Outcrop Lithology</strong> Dominant lithology of the outcrop (any area of exposed rock that is assumed to be continuous with the underlying bedrock).</p><p><strong>Homogeneity Measure</strong> Record of the visual estimate (in metres) of the shortest distance from the survey location to a vegetation community different to the one that you are sampling. Provides an indication of how far the community you are sampling extends beyond the plot.</p><p><strong>Structural Formation</strong> Vegetation classification based on growth form (e.g. tree, sedge), height and percent cover (i.e. woodland, open grassland).</p>";
-  skos:note """<h3 id=\"field-collection-1\">Field collection</h3><ul>
+</ul>""" ;
+    skos:definition "<p><strong>Plot</strong> The specific survey area where information is collected (generally 100 m x 100 m; 1 ha). Final plot location and layout is generally determined in the field, with preference given to homogeneous areas representative of the broader study area, with a constant mix of vegetation, slope, relief and soil.</p><p><strong>Landform Pattern</strong> Landform patterns have dimensions of approximately 600 m and are based on the following attributes – relief, modal slope, stream channel occurrence, mode of geomorphological activity, geomorphological agent, status of geomorphological agent and component landform elements. Landform patterns generally have longer histories than landform elements. There are approximately 40 different landform patterns that are present in Australia.</p><p><strong>Landform Element</strong> Landform elements have a dimension of approximately 40 m but can vary from a few metres to 100 m. A landform element is described by the following elements – slope, morphological type, dimensions, geomorphological activity and geomorphological agent. Landform elements make up a mosaic within landform patterns. There are approximately 80 different landform elements that occur in Australia.</p><p><strong>NVIS</strong> National Vegetation Information System – a comprehensive data system that provides information on the extent and distribution of vegetation types across Australia.</p><p><strong>Relief</strong> The difference in elevation between the high and low points of a land surface.</p><p><strong>Slope</strong> The rise or fall of the land surface, that is neither a crest nor a depression and has an inclination greater than approximately 1%. Slope should be measured over a distance of at least 20 m, to reduce influence of any microrelief changes.</p><p><strong>Aspect</strong> Identifies the downslope direction (orientation) of the slope and the reading is taken looking down the slope. Due north is recorded as 360 degrees. Aspect can only have a value of 1 to 360 degrees. A value of 0 indicates that there is no slope.</p><p><strong>Toposequence</strong> The sequence of landform elements down a slope.</p><p><strong>Surface Strew Size</strong> Size of any surface stones or rocks in millimetres. The size is recorded using three size classes from 5 to 250 mm.</p><p><strong>Surface Strew Lithology</strong> Dominant lithology of any surface stones or rocks (i.e. calcrete/limestone, sandstone or quartz).</p><p><strong>Outcrop Lithology</strong> Dominant lithology of the outcrop (any area of exposed rock that is assumed to be continuous with the underlying bedrock).</p><p><strong>Homogeneity Measure</strong> Record of the visual estimate (in metres) of the shortest distance from the survey location to a vegetation community different to the one that you are sampling. Provides an indication of how far the community you are sampling extends beyond the plot.</p><p><strong>Structural Formation</strong> Vegetation classification based on growth form (e.g. tree, sedge), height and percent cover (i.e. woodland, open grassland).</p>" ;
+    skos:note """<h3 id="field-collection-1">Field collection</h3><ul>
 <li><p>Site description information should be collected at the end of the plot survey when the observer is familiar with the landscape and plant species have been identified or assigned a field name in the <em>Floristics</em> Module.</p></li>
 <li><p>For an overview and short description of the different landform and lithology classes refer to the <em>Landform Resources and Cheat Sheets</em> at the end of this module or click on the <em>info</em> buttons within the app.</p></li>
 <li><p>The slope class is derived from the degree value entered and is automatically populated by the app. Slope class can help inform landform element, so slope information should be collected before the landform element field is populated.</p></li>
@@ -95,19 +303,24 @@
 </ul><ul>
 <li><p>Only species that fall into the growth forms associated with each stratum will be available in the drop-down list for that layer (i.e. only species classified as trees or tree mallees can be selected from the upper storey species lists).</p></li>
 <li><p>Once the NVIS information has been entered based on individual species and stratum, the app will generate the NVIS Level 5 description. It is good practice to review this description and if needed, make any amendments to the data entered, before clicking <em>Save</em>. This information can be cross-checked against the association descriptions from the <em>Cover</em> module and <em>Vegetation Mapping</em> module, where appropriate.</p></li>
-</ul>""";
-  skos:prefLabel "Plot Description";
-  tern:equipment :1a89708c-fc92-4906-a3f2-9998faafcdb6, :42261f2c-87b3-4d6c-953d-6f4af70dbb2a,
-    :5d281f4f-637a-4ec2-8eed-8e9f7a2b9130, :90b02d39-7a80-4410-838f-8e8ba8c40ce2, :d9dc41e2-3e44-4d76-9256-54ec4609807c,
-    :df2c5e89-4185-4ef2-820e-5e0cc9b849df, :ec4baa7a-69cb-462e-9140-c23ed98bd37b;
-  tern:instructions """<ol type=\"1\">
+</ul>""" ;
+    skos:prefLabel "Plot Description" ;
+    tern:equipment
+        :1a89708c-fc92-4906-a3f2-9998faafcdb6 ,
+        :42261f2c-87b3-4d6c-953d-6f4af70dbb2a ,
+        :5d281f4f-637a-4ec2-8eed-8e9f7a2b9130 ,
+        :90b02d39-7a80-4410-838f-8e8ba8c40ce2 ,
+        :d9dc41e2-3e44-4d76-9256-54ec4609807c ,
+        :df2c5e89-4185-4ef2-820e-5e0cc9b849df ,
+        :ec4baa7a-69cb-462e-9140-c23ed98bd37b ;
+    tern:instructions """<ol type="1">
 <li><p>Select the <em>Plot Description</em> module from the plot modules page in the <em>Paratoo App</em>.</p></li>
 <li><p>Navigate to the <em>Landform and Land Surface</em> information page, complete all fields. Click on the info buttons within the app or refer to supporting information at the end of the module for more information and tips about about each field.</p></li>
 <li><p>Record any other information about the physical features of the site in the comments field (optional) and select <em>Save and Continue</em>.</p></li>
 </ol><table>
 <tbody>
-<tr class=\"odd\">
-<td><img src=\"http://localhost:8001/static/media/image1.jpg\" style=\"width:3.38198in;height:5.31894in\"/></td>
+<tr class="odd">
+<td><img src="http://localhost:8001/static/media/image1.jpg" style="width:3.38198in;height:5.31894in"/></td>
 <td><ul>
 <li><p>Slope: Degrees from horizontal (0 = flat). <em>Refer to the supporting information for recommendations on how to measure slope.</em></p></li>
 <li><p>Slope (Class): Automatically generated list of 8 values – this info can help determine landform element (generated based on slope (degrees) value).</p></li>
@@ -120,13 +333,13 @@
 </ul></td>
 </tr>
 </tbody>
-</table><ol start=\"4\" type=\"1\">
+</table><ol start="4" type="1">
 <li><p>Navigate to the <em>Vegetation</em> information page (will automatically be taken to this screen when <em>Save and Continue</em> is selected on the Landform page) and complete all fields, including vegetation association information to NVIS Level 5 (Association level). For each of the three vegetation strata (Upper (U), Mid (M), Ground (G)) nominate in descending order the dominant species (up to 3 species per stratum) for each stratum, where present<em>.</em></p></li>
 <li><p>Based on the information entered, the app will automatically generate a NVIS Level 5 description. Review this description, make any updates if required and then select <em>Save</em>.</p></li>
 </ol><table>
 <thead>
-<tr class=\"header\">
-<th><img src=\"http://localhost:8001/static/media/image2.jpg\" style=\"width:3.45053in;height:7.58491in\"/></th>
+<tr class="header">
+<th><img src="http://localhost:8001/static/media/image2.jpg" style="width:3.45053in;height:7.58491in"/></th>
 <th><ul>
 <li><p>Climatic Conditions: Drop-down list; Wet = recent rain, Dry = no evidence of recent rain.</p></li>
 <li><p>Vegetation Condition: Drop-down list; BurntN = no regeneration, BurntR = regenerating, Active Vegetation Growth = Flowering/Fruiting, Dry.</p></li>
@@ -142,147 +355,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class=\"odd\">
+<tr class="odd">
 <td></td>
 <td></td>
 </tr>
 </tbody>
-</table>""";
-  tern:purpose "<p>The use of standardised terminology for the collection of site information ensures sites are described in a consistent manner across projects and locations, and this facilitates the development of comprehensive datasets that can be used more widely (The National Committee on Soil and Terrain 2009). Collecting consistent information regarding the physical environment of sites can improve understanding of interactions between the environment and vegetation, capture important information about the landform under survey and allow site summary data to be compared between different sites and across projects (Heard and Channon 1997; The National Committee on Soil and Terrain 2009).</p><p>The use of standardised methods to classify vegetation across a range of different projects ensures consistent, cross jurisdictional vegetation classification, improves vegetation classification in data-poor areas, and allows comparison of data across regions, and under different disturbance, management and climatic regimes (Guerin <em>et al.</em> 2017; Baruch <em>et al.</em> 2018). The classification of vegetation communities based on associations between floristic and structural data is vital to inform biodiversity planning and management, including natural resources management, environmental impact assessments, and conservation and restoration projects. Furthermore, vegetation classification is integral to Australian biodiversity laws and regulations (Gellie <em>et al.</em> 2018).</p><p>The NVIS framework is the nationally adopted method for classifying and mapping native vegetation in Australia and provides a comprehensive way of describing and representing vegetation types based on structural and floristic measures (NVIS Technical Working Group 2017). The concept of dominance is central to the construction of NVIS vegetation descriptions and rankings are used for comparisons of the structural properties of strata, species and genera within a stratum and growth forms (NVIS Technical Working Group 2017).</p>";
-  tern:scope "<p>The <em>Plot Description</em> module records basic physical information about the plot, including landform, slope and aspect, lithology, disturbance, climate (wet or dry) and vegetation type (Heard and Channon 1997; The National Committee on Soil and Terrain 2009). The information collected aligns with the <em>Australian Soil and Land Survey Field Handbook</em> (also known as the Yellow Book; The National Committee on Soil and Terrain 2009), <em>Guidelines for Surveying Soil and Land Resources</em> (also known as the Blue Book; McKenzie <em>et al.</em> 2008) and the National Vegetation Information System (NVIS) <em>Australian Vegetation Attribute Manual</em> (NVIS Technical Working Group 2017).</p><p>For the purpose of this module, a plot is considered an area of land representative of the landform, vegetation and land surfaces present within a study area (The National Committee on Soil and Terrain 2009). Plot locations are generally determined in the field based on areas with homogeneous vegetation, slope, relief and soil (White <em>et al.</em> 2012). As a standard, plots are 100 m by 100 m (1 ha) in size, but in some cases plot shape may need to be altered to align with landscape features such as a dune crest or watercourse (White <em>et al.</em> 2012).</p><p>Landform information is generally collected as a landform pattern and landform element. The key determinants of landform element are relief and stream position, while slope and the position in the toposequence are key determinants of landform element (Heard and Channon 1997; The National Committee on Soil and Terrain 2009). There are approximately 40 different landform patterns defined for Australia, including flood plains, dunefields and hills and approximately 80 landform elements, which form a mosaic within landform patterns. Landform elements include cliffs, footslopes and valley flats (The National Committee on Soil and Terrain 2009). A variety of land surface attributes are also measured, including slope, aspect, surface strew size and lithology. Slope and aspect record both the degree and orientation of the slope, with aspect a measure of the downslope direction of the slope (Heard and Channon 1997). Surface strew size and lithology (surface strew and outcrop) are a measure of the dominant rock type and size of any surface stones or outcrops (Heard and Channon 1997; McKenzie <em>et al.</em> 2008).</p><p>Vegetation is generally classified based on attributes including the floristic composition, vertical and horizontal structure, plant morphology and condition (De Cáceres 2013). Assigning a vegetation classification consistent with Level 5 (association) of the NVIS provides a simple, consistent description of the vegetation and its structural complexity (White <em>et al.</em> 2012). At Level 5, the dominant growth form, height, cover and species (to a maximum of 3 species) are recorded for each of the three main strata (Upper, Mid and Ground; NVIS Technical Working Group 2017). A homogeneity measure of the shortest extent of the vegetation community present is also collected to assist with vegetation classification and mapping (Sparrow <em>et al.</em> 2020).</p><p>Supporting information, including climate and disturbance provides an indication of the reliability of the vegetation data in terms of species diversity and the abundance of seasonal vegetation (which depends on preceding rainfall and other weather conditions), and helps document other pressures on the vegetation such as grazing (Heard and Channon 1997; McKenzie <em>et al.</em> 2008).</p>" .
+</table>""" ;
+    tern:purpose "<p>The use of standardised terminology for the collection of site information ensures sites are described in a consistent manner across projects and locations, and this facilitates the development of comprehensive datasets that can be used more widely (The National Committee on Soil and Terrain 2009). Collecting consistent information regarding the physical environment of sites can improve understanding of interactions between the environment and vegetation, capture important information about the landform under survey and allow site summary data to be compared between different sites and across projects (Heard and Channon 1997; The National Committee on Soil and Terrain 2009).</p><p>The use of standardised methods to classify vegetation across a range of different projects ensures consistent, cross jurisdictional vegetation classification, improves vegetation classification in data-poor areas, and allows comparison of data across regions, and under different disturbance, management and climatic regimes (Guerin <em>et al.</em> 2017; Baruch <em>et al.</em> 2018). The classification of vegetation communities based on associations between floristic and structural data is vital to inform biodiversity planning and management, including natural resources management, environmental impact assessments, and conservation and restoration projects. Furthermore, vegetation classification is integral to Australian biodiversity laws and regulations (Gellie <em>et al.</em> 2018).</p><p>The NVIS framework is the nationally adopted method for classifying and mapping native vegetation in Australia and provides a comprehensive way of describing and representing vegetation types based on structural and floristic measures (NVIS Technical Working Group 2017). The concept of dominance is central to the construction of NVIS vegetation descriptions and rankings are used for comparisons of the structural properties of strata, species and genera within a stratum and growth forms (NVIS Technical Working Group 2017).</p>" ;
+    tern:scope "<p>The <em>Plot Description</em> module records basic physical information about the plot, including landform, slope and aspect, lithology, disturbance, climate (wet or dry) and vegetation type (Heard and Channon 1997; The National Committee on Soil and Terrain 2009). The information collected aligns with the <em>Australian Soil and Land Survey Field Handbook</em> (also known as the Yellow Book; The National Committee on Soil and Terrain 2009), <em>Guidelines for Surveying Soil and Land Resources</em> (also known as the Blue Book; McKenzie <em>et al.</em> 2008) and the National Vegetation Information System (NVIS) <em>Australian Vegetation Attribute Manual</em> (NVIS Technical Working Group 2017).</p><p>For the purpose of this module, a plot is considered an area of land representative of the landform, vegetation and land surfaces present within a study area (The National Committee on Soil and Terrain 2009). Plot locations are generally determined in the field based on areas with homogeneous vegetation, slope, relief and soil (White <em>et al.</em> 2012). As a standard, plots are 100 m by 100 m (1 ha) in size, but in some cases plot shape may need to be altered to align with landscape features such as a dune crest or watercourse (White <em>et al.</em> 2012).</p><p>Landform information is generally collected as a landform pattern and landform element. The key determinants of landform element are relief and stream position, while slope and the position in the toposequence are key determinants of landform element (Heard and Channon 1997; The National Committee on Soil and Terrain 2009). There are approximately 40 different landform patterns defined for Australia, including flood plains, dunefields and hills and approximately 80 landform elements, which form a mosaic within landform patterns. Landform elements include cliffs, footslopes and valley flats (The National Committee on Soil and Terrain 2009). A variety of land surface attributes are also measured, including slope, aspect, surface strew size and lithology. Slope and aspect record both the degree and orientation of the slope, with aspect a measure of the downslope direction of the slope (Heard and Channon 1997). Surface strew size and lithology (surface strew and outcrop) are a measure of the dominant rock type and size of any surface stones or outcrops (Heard and Channon 1997; McKenzie <em>et al.</em> 2008).</p><p>Vegetation is generally classified based on attributes including the floristic composition, vertical and horizontal structure, plant morphology and condition (De Cáceres 2013). Assigning a vegetation classification consistent with Level 5 (association) of the NVIS provides a simple, consistent description of the vegetation and its structural complexity (White <em>et al.</em> 2012). At Level 5, the dominant growth form, height, cover and species (to a maximum of 3 species) are recorded for each of the three main strata (Upper, Mid and Ground; NVIS Technical Working Group 2017). A homogeneity measure of the shortest extent of the vegetation community present is also collected to assist with vegetation classification and mapping (Sparrow <em>et al.</em> 2020).</p><p>Supporting information, including climate and disturbance provides an indication of the reliability of the vegetation data in terms of species diversity and the abundance of seasonal vegetation (which depends on preceding rainfall and other weather conditions), and helps document other pressures on the vegetation such as grazing (Heard and Channon 1997; McKenzie <em>et al.</em> 2008).</p>" ;
+.
 
-:f8bb9908-9e8f-4e46-bebc-4a00c08afbe1 a skos:ConceptScheme;
-  dct:description "A profile of TERN's observable properties (parameters) for the RLP field survey protocol.";
-  skos:prefLabel "Observable properties"@en .
-
-:bfac1b1f-a14e-4e9a-ab7f-c43a8bc1a312 a skos:Collection;
-  dct:description "The observable properties of the Plot Description module.";
-  skos:member <http://linked.data.gov.au/def/tern-cv/07abcf97-542d-4c2f-9fb1-c7c7508f484c>,
-    <http://linked.data.gov.au/def/tern-cv/08dde64e-5f1b-48c3-8ed3-3469780cbf24>, <http://linked.data.gov.au/def/tern-cv/09aae763-babb-4926-b1ed-52630195564d>,
-    <http://linked.data.gov.au/def/tern-cv/0a92253d-a07b-4762-b653-4c363650cb44>, <http://linked.data.gov.au/def/tern-cv/2746b234-5740-4696-82e8-9c3813daf0af>,
-    <http://linked.data.gov.au/def/tern-cv/2b5ac7b3-b4bf-4a06-97d6-8dee8b32d72d>, <http://linked.data.gov.au/def/tern-cv/40d04abb-0a50-43b8-8f19-2e1b5454fb11>,
-    <http://linked.data.gov.au/def/tern-cv/4c6a55a6-3ea2-485f-82bc-c5b89a95a605>, <http://linked.data.gov.au/def/tern-cv/6c2bde95-4b97-4b63-a42b-7a2c253e6e3b>,
-    <http://linked.data.gov.au/def/tern-cv/78b617e9-cd18-40b7-ad38-efc30579e680>, <http://linked.data.gov.au/def/tern-cv/7e13fdc3-8f5e-4438-ad74-b6908e7806da>,
-    <http://linked.data.gov.au/def/tern-cv/8e9797d9-d5f5-4c5b-8d0a-388cb3dd6253>, <http://linked.data.gov.au/def/tern-cv/a117b27e-11b1-4369-9799-360b8d2ecb14>,
-    <http://linked.data.gov.au/def/tern-cv/a40230bc-c1e9-4309-b883-c4ead1d143ce>, <http://linked.data.gov.au/def/tern-cv/abb0ee19-b2e8-42f3-8a25-d1f39ca3ebc3>,
-    <http://linked.data.gov.au/def/tern-cv/ad6feb34-3fa2-4aaa-b111-3db4c648d3a7>, <http://linked.data.gov.au/def/tern-cv/c5ca86b0-c503-4590-87fb-0bc8ff9f1632>,
-    <http://linked.data.gov.au/def/tern-cv/d40b3e6d-db78-4031-b7f3-ed94d538a2af>, <http://linked.data.gov.au/def/tern-cv/ea001a27-3217-45c2-a7b5-96a104986def>,
-    <http://linked.data.gov.au/def/tern-cv/f81aa91e-5f57-4e49-bc6e-4d821d1f9de2>;
-  skos:prefLabel "Plot Description Observable Properties"@en .
-
-<http://linked.data.gov.au/def/tern-cv/a40230bc-c1e9-4309-b883-c4ead1d143ce> a skos:Concept;
-  tern:hasCategoricalCollection <http://linked.data.gov.au/def/tern-cv/e03acd00-cd63-49b4-bfa2-686326f91486>;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/2b5ac7b3-b4bf-4a06-97d6-8dee8b32d72d> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:QuantitativeMeasure .
-
-<http://linked.data.gov.au/def/tern-cv/0a92253d-a07b-4762-b653-4c363650cb44> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:QuantitativeMeasure .
-
-<http://linked.data.gov.au/def/tern-cv/40d04abb-0a50-43b8-8f19-2e1b5454fb11> a skos:Concept;
-  tern:hasCategoricalCollection <http://linked.data.gov.au/def/ausplots-cv/fc51058d-ab4b-4875-9655-7356d1b6a009>;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/8282fb22-4135-415c-8ca2-317860d102fb>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/6c2bde95-4b97-4b63-a42b-7a2c253e6e3b> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/8282fb22-4135-415c-8ca2-317860d102fb>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/09aae763-babb-4926-b1ed-52630195564d> a skos:Concept;
-  tern:hasCategoricalCollection <http://linked.data.gov.au/def/ausplots-cv/cb0c2aab-6556-4344-9d5d-5bd0ecab2267>;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/8282fb22-4135-415c-8ca2-317860d102fb>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/08dde64e-5f1b-48c3-8ed3-3469780cbf24> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/c5ca86b0-c503-4590-87fb-0bc8ff9f1632> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/6d40d71e-58cd-4f75-8304-40c01fe5f74c>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/8e9797d9-d5f5-4c5b-8d0a-388cb3dd6253> a skos:Concept;
-  tern:hasCategoricalCollection <http://linked.data.gov.au/def/ausplots-cv/f0f17aeb-8d72-4b17-9a13-f625cdc30c08>;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/d4fc54b1-0ad3-4512-86b7-d42b121ece45>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/ea001a27-3217-45c2-a7b5-96a104986def> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/32834f36-a478-45be-97f4-ff2ff51e9f5c>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/d40b3e6d-db78-4031-b7f3-ed94d538a2af> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/32834f36-a478-45be-97f4-ff2ff51e9f5c>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/07abcf97-542d-4c2f-9fb1-c7c7508f484c> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/32834f36-a478-45be-97f4-ff2ff51e9f5c>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/f81aa91e-5f57-4e49-bc6e-4d821d1f9de2> a skos:Concept;
-  tern:hasCategoricalCollection <http://linked.data.gov.au/def/tern-cv/32ef7761-e46d-41bc-aab8-39d3ddf9caa4>;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/09296da0-c645-4165-950c-780c21b3c140> a skos:Concept;
-  skos:editorialNote "change this observable property. should be height class, not vegetative height"@en;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/4c6a55a6-3ea2-485f-82bc-c5b89a95a605> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:QuantitativeMeasure .
-
-:e8e10807-baea-4c9b-8d1c-d77ced9df1e9 a skos:Collection;
-  dct:description "Collection of observable properties by survey module."@en;
-  skos:member :bfac1b1f-a14e-4e9a-ab7f-c43a8bc1a312;
-  skos:prefLabel "Observable properties by module"@en .
-
-<http://linked.data.gov.au/def/tern-cv/7e13fdc3-8f5e-4438-ad74-b6908e7806da> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:QuantitativeMeasure .
-
-<http://linked.data.gov.au/def/tern-cv/a117b27e-11b1-4369-9799-360b8d2ecb14> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/abb0ee19-b2e8-42f3-8a25-d1f39ca3ebc3> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/2746b234-5740-4696-82e8-9c3813daf0af> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/d4fc54b1-0ad3-4512-86b7-d42b121ece45>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/ad6feb34-3fa2-4aaa-b111-3db4c648d3a7> a skos:Concept;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
-
-<http://linked.data.gov.au/def/tern-cv/78b617e9-cd18-40b7-ad38-efc30579e680> tern:hasCategoricalCollection
-    <http://linked.data.gov.au/def/tern-cv/99303cb4-096d-4b11-a267-43c6d406fec5>;
-  tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd>;
-  tern:hasMethod :1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32;
-  tern:valueType tern:CategoricalValue .
