@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from requests.exceptions import HTTPError
 from rdflib import Graph
+from requests.exceptions import HTTPError
 
 from dawe_nrm.graphdb import repository
 
