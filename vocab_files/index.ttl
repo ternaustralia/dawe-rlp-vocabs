@@ -1,3 +1,4 @@
+
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX sdo: <https://schema.org/>
@@ -8,6 +9,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         owl:Ontology ,
         skos:ConceptScheme ;
+    dcterms:hasPart
+        <https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/31a9f83d-9c8b-4d68-8dd7-d1b7a9a4197b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/dba9fde2-34ba-4a1d-92e0-63846105fc87> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/e8e10807-baea-4c9b-8d1c-d77ced9df1e9> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f46fcbc6-0660-4e12-bcd4-c5642459b630> ;
     dcterms:provenance "The controlled vocabularies are the digital RDF representation of concepts extracted from the DAWE NRM field collection protocols." ;
     skos:definition "The DAWE NRM controlled vocabularies support the data representation of field survey data collected using the NRM collection protocols." ;
     skos:prefLabel "DAWE NRM Controlled Vocabularies" ;
@@ -24,11 +31,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
     sdo:publisher <https://ror.org/030c92375> ;
     sdo:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/index.ttl" ;
-    dcterms:hasPart <https://linked.data.gov.au/def/test/dawe-cv/e8e10807-baea-4c9b-8d1c-d77ced9df1e9> ,
-                    <https://linked.data.gov.au/def/test/dawe-cv/dba9fde2-34ba-4a1d-92e0-63846105fc87> ,
-                    <https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521> ,
-                    <https://linked.data.gov.au/def/test/dawe-cv/f46fcbc6-0660-4e12-bcd4-c5642459b630> ,
-                    <https://linked.data.gov.au/def/test/dawe-cv/31a9f83d-9c8b-4d68-8dd7-d1b7a9a4197b> ;
 .
 
 <https://orcid.org/0000-0002-6047-9864>
