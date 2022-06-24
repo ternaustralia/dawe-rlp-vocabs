@@ -57,8 +57,10 @@ def create(graphdb_url: str, repository_id: str, repository_title: str) -> bool:
     r = requests.put(
         f"{graphdb_url}/repositories/{repository_id}", data=data, headers=headers
     )
-    print(r.content)
-    r.raise_for_status()
+    try:
+        r.raise_for_status()
+    except requests.exceptions.HTTPError as err:
+        raise requests.exceptions.HTTPError(r.text) from err
     return True
 
 
@@ -80,6 +82,8 @@ def insert(
         data=data,
         headers=headers,
     )
-    print(r.text)
-    r.raise_for_status()
+    try:
+        r.raise_for_status()
+    except requests.exceptions.HTTPError as err:
+        raise requests.exceptions.HTTPError(r.text) from err
     return True
