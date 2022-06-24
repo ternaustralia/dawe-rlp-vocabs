@@ -1,3 +1,4 @@
+from argparse import ArgumentParser
 from pathlib import Path
 
 from rdflib import Graph
@@ -6,7 +7,6 @@ from requests.exceptions import HTTPError
 from dawe_nrm.graphdb import repository
 
 if __name__ == "__main__":
-    from argparse import ArgumentParser
 
     parser = ArgumentParser(
         description="Upload the data in the vocab_files directory to a GraphDB or RDF4J database."
