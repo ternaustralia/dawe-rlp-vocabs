@@ -32,4 +32,4 @@ jobs:
         run: pip install .
 
       - name: Load data to GraphDB
-        run: python load.py --url https://graphdb.tern.org.au --username {{ secrets.GRAPHDB_USERNAME }} --password {{ secrets.GRAPHDB_PASSWORD }}
+        run: python load.py --url https://graphdb.tern.org.au --username ${{ secrets.GRAPHDB_USERNAME }} --password ${{ secrets.GRAPHDB_PASSWORD }}
