@@ -1,3 +1,5 @@
+[![Deploy on release to GraphDB](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/deploy_to_graphdb.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/deploy_to_graphdb.yml)
+
 # DAWE RLP Controlled Vocabularies
 
 > Will be rebranded to DAWE NRM Controlled Vocabularies soon.
