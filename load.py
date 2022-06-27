@@ -27,13 +27,13 @@ if __name__ == "__main__":
         "-u",
         "--username",
         dest="username",
-        help="The username to use when interfaceing with GraphDB or RDF4J",
+        help="The username to use when interfaceing with GraphDB or RDF4J [default: None]",
     )
     parser.add_argument(
         "-p",
         "--password",
         dest="password",
-        help="The password to use when interfaceing with GraphDB or RDF4J",
+        help="The password to use when interfaceing with GraphDB or RDF4J [default: None]",
     )
 
     args = parser.parse_args()
@@ -44,8 +44,8 @@ if __name__ == "__main__":
 
     try:
         repository.create(
-            "http://localhost:7200/",
-            "dawe_vocabs_core",
+            url,
+            repository_id,
             "DAWE NRM controlled vocabularies",
             (username, password),
         )
@@ -63,8 +63,8 @@ if __name__ == "__main__":
     data = graph.serialize(format="turtle", encoding="utf-8")
 
     repository.insert(
-        "http://localhost:7200",
-        "dawe_vocabs_core",
+        url,
+        repository_id,
         data,
         "text/turtle",
         "<https://linked.data.gov.au/def/nrm>",
