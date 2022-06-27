@@ -1,3 +1,5 @@
+from typing import Tuple
+
 import requests
 from jinja2 import Template
 
@@ -44,7 +46,12 @@ graphdb_configuration_template = Template(
 )
 
 
-def create(graphdb_url: str, repository_id: str, repository_title: str) -> bool:
+def create(
+    graphdb_url: str,
+    repository_id: str,
+    repository_title: str,
+    auth: Tuple[str, str] = None,
+) -> bool:
     """Create a GraphDB repository.
     Returns True on success. Raises a HTTPError if repository already exists.
     """
@@ -55,10 +62,15 @@ def create(graphdb_url: str, repository_id: str, repository_title: str) -> bool:
     )
     headers = {"content-type": "text/turtle"}
     r = requests.put(
-        f"{graphdb_url}/repositories/{repository_id}", data=data, headers=headers
+        f"{graphdb_url}/repositories/{repository_id}",
+        data=data,
+        headers=headers,
+        auth=auth,
     )
-    print(r.content)
-    r.raise_for_status()
+    try:
+        r.raise_for_status()
+    except requests.exceptions.HTTPError as err:
+        raise requests.exceptions.HTTPError(r.text) from err
     return True
 
 
@@ -68,6 +80,7 @@ def insert(
     data: str,
     content_type: str,
     context: str = "null",
+    auth: Tuple[str, str] = None,
 ):
     """Load and overwrite data in a GraphDB repository's named graph.
 
@@ -79,7 +92,10 @@ def insert(
         params={"context": context},
         data=data,
         headers=headers,
+        auth=auth,
     )
-    print(r.text)
-    r.raise_for_status()
+    try:
+        r.raise_for_status()
+    except requests.exceptions.HTTPError as err:
+        raise requests.exceptions.HTTPError(r.text) from err
     return True

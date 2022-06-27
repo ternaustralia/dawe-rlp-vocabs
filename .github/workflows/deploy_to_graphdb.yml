@@ -1,0 +1,35 @@
+name: Deploy on release to GraphDB
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  test:
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/test.yml@main
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.10"]
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+
+      - name: Use Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install project dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install project
+        run: pip install .
+
+      - name: Load data to GraphDB
+        run: python load.py --url https://graphdb.tern.org.au --username ${{ secrets.GRAPHDB_USERNAME }} --password ${{ secrets.GRAPHDB_PASSWORD }}
