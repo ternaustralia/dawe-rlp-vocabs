@@ -6,271 +6,6 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 
 <https://linked.data.gov.au/def/test/dawe-cv/f7e0d965-ae73-434e-8599-634598e506b5>
     a skos:Collection ;
-    tern:scope """
-    <p>Basal area is the sum of the cross-sectional area of trees (trees, tall shrubs and/or mallee greater than 2 meter in height), including bark, at breast height (1.3 m above ground level) per hectare (m<sup>2</sup>/ha). Basal area measurements provide information useful for monitoring tree growth and calculating standing biomass and carbon sequestration of trees based on allometric equations (Eamus&nbsp;et al.&nbsp;2000). The&nbsp;Basal Area&nbsp;module is only required in plots where there is a dominant growth form of trees, shrubs and/or mallee greater than 2 m in height.&nbsp;</p>
-<p>Basal area can be measured using &lsquo;plot sampling&rsquo; (i.e. the measurement of the basal area of all trees in a set area) or &lsquo;point sampling&rsquo; (i.e. the estimation of basal area from a count of &lsquo;in&rsquo; trees throughout a 360&deg; sweep at a sampling point). For plot sampling, the basal area of a tree is calculated from its diameter at breast height (DBH), being the diameter of the trunk in metres as measured 1.3 m above the ground. DBH is converted to basal area based on the formula for the area of a circle:&nbsp;</p>
-<p>𝐵𝑎𝑠𝑎𝑙 𝑎𝑟𝑒𝑎 = 𝜋 &times;(𝐷𝐵𝐻 &divide; 2)<sup>2</sup></p>
-<p>The basal area per hectare is calculated by adding the basal areas (as calculated above) of all the trees in an area and dividing by the area of land in which the trees were measured. Basal area is generally measured for a plot and then scaled to m<sup>2</sup>/ha to compare forest/woodland productivity and growth rate among multiple sites.&nbsp;</p>
-<p>For point sampling, basal area is quickly estimated in m<sup>2</sup>/ha by multiplying the count of &lsquo;in&rsquo; trees throughout a 360&deg; sweep at a sampling point, by the Basal Area Factor (BAF) used with an angle gauge or wedge prism. If using an angle gauge, a tree is &lsquo;in&rsquo; if its trunk or stem at breast height is wider than the aperture of the selected BAF. If using a wedge prism, &lsquo;in&rsquo; trees are those where the section of the trunk or stem offset by looking through the prism at breast height overlaps the trunk or stem as viewed above/below the prism. Trees where the trunk or stem is the exact width of the aperture, or where the offset section of the trunk or stem is perfectly aligned with the trunk or stem viewed above/below the prism, are &lsquo;borderline&rsquo; trees, for which a half count is tallied.&nbsp;</p>
-<p>The&nbsp;Basal Area&nbsp;module includes three protocols: (1) full DBH measures protocol that measures the DBH of all trees with a DBH &ge;10 cm within the plot (Figure 1); (2) lite DBH measures protocol that measures the DBH of all trees with a DBH &ge;10 cm within two 20 x 100 m belt transects within the plot (Figure 1); and (3) basal wedge protocol where a 360&deg; sweep is made at nine sampling points across the plot (Figure 1) using a TERN Basal Wedge (Figure 2).&nbsp;</p>
-<p>The full DBH measures protocol, although time consuming, particularly in dense stands, is best practice and recommended for projects where accurate and repeatable measures of basal area are critical (e.g. forestry and forest ecology projects). The lite DBH measures protocol offers a pragmatic approach to obtain accurate and repeatable measures of basal area based on DBH measures within a sub-sample of the plot. The lite DBH measures protocol is recommended for time limited projects where DBH measures are required and if other modules that use the same belt transects are being undertaken (e.g.&nbsp;Recruitment&nbsp;and&nbsp;Coarse Woody Debris&nbsp;modules).&nbsp;</p>
-<p>The basal wedge protocol provides a simple and rapid method to estimate basal area across the plot. This approach extends the area sampled beyond the actual plot to provide a reliable estimate of basal area in a m<sup>2</sup>/ha basis for each species and total basal area of the vegetation association being sampled. The basal wedge protocol is recommended for projects that require rapid but reliable measures of basal area. The protocol is suitable for studies and analysis across broad scales and the TERN Basal Wedge comprises six BAFs, ranging from 0.1 to 2 (Figure 2), that are suitable for use across Australia.</p>
-    """ ;
-    skos:definition """<p>Table 1. Key definitions and terms used in the Basal Area module.&nbsp;</p>
-<div align="left">
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <p>Term&nbsp;</p>
-                </td>
-                <td>
-                    <p>Definition&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Basal area&nbsp;</p>
-                </td>
-                <td>
-                    <p>The sum of the cross-sectional area of the trees (trees, tall shrubs and/or mallee greater than 2 m in height), including bark, at breast height (1.3 m above ground level) per hectare (m<sup>2</sup>/ha). Convertible to standing biomass using allometric equations.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Tree&nbsp;</p>
-                </td>
-                <td>
-                    <p>Tree, tall shrub or mallee greater than 2 m in height with a DBH &ge;10 cm (global forest ecology standard; Wood&nbsp;et al.&nbsp;2015). For multi-stem trees and mallees, the sum of DBH of each stem needs to be &ge;10 cm.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>DBH&nbsp;</p>
-                </td>
-                <td>
-                    <p>Diameter at Breast Height &ndash; the diameter of a tree trunk or stem in metres as measured 1.3 m above ground level.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>POM&nbsp;</p>
-                </td>
-                <td>
-                    <p>Point of Measurement &ndash; typically 1.3 m above ground level but may vary for problem trees. Recorded for every tree where the DBH is measured.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Biomass&nbsp;</p>
-                </td>
-                <td>
-                    <p>The total mass (at any given time) of living organisms of one or more species per unit of species (species biomass) or of all the species in a biotic community (community biomass).&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Allometric equations&nbsp;</p>
-                </td>
-                <td>
-                    <p>Allometry studies how the morphological, physiological and ecological characteristics of organisms scale in relation to their size. In forestry, allometric equations are used to estimate tree biomass as a function of readily measurable characteristics, typically DBH and tree height. &nbsp;The equations follow a variety of mathematical specifications (e.g. log-linear, non-linear) and are derived based on measured values of tree weight related to its DBH and height from sample trees.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Plot sampling&nbsp;</p>
-                </td>
-                <td>
-                    <p>The measurement of the basal area of all trees in a set area. Basal area is calculated from DBH measures and the formula for the area of a circle.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Point sampling&nbsp;</p>
-                </td>
-                <td>
-                    <p>The estimation of basal area from a count of &lsquo;in&rsquo; trees throughout a 360&deg; sweep made at a sampling point. Basal area is calculated by multiplying the count of &lsquo;in&rsquo; trees by the Basal Area Factor used on a TERN Basal Wedge.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>BAF&nbsp;</p>
-                </td>
-                <td>
-                    <p>Basal Area Factor &ndash; the mathematical relationship between the angle formed by the TERN Basal Wedge and the distance it is held from the eye.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>TERN Basal Wedge&nbsp;</p>
-                </td>
-                <td>
-                    <p>Angle gauge instrument used to provide a rapid and simple determination of basal area across Australia. Comprises six &lsquo;Basal Area Factors&rsquo; (0.1, 0.25, 0.5, 0.75, 1 and 2; see Figure 2).&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>&lsquo;In&rsquo; trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees where the trunk or stem at breast height (1.3 m above ground level) is wider than the aperture of the BAF used on a TERN Basal Wedge.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>&lsquo;Out&rsquo; trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees where the trunk or stem at breast height (1.3 m above ground level) is narrower than the aperture of the BAF used on a TERN Basal Wedge.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>&lsquo;Borderline&rsquo; trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees where the trunk or stem at breast height (1.3 m above ground level) is the exact width of the aperture of the BAF used on a TERN Basal Wedge.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Problem trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Buttressed, multi-stemmed, leaning, deformed, dead and hidden trees, trees on a slope and tree ferns. Solutions to measuring DBH for problem trees provided in the&nbsp;Additional guidelines.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Buttresses trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees with buttressed roots &ndash; roots that grow laterally out from the trunk that help to support the tree (e.g. Moreton Bay Fig).&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Multi-stemmed trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees with two or more main stems arising between near ground level and below breast height (1.3 m above ground level), but growing from one root system.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Deformed trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees with a deformity that prevents the POM being taken at breast height (1.3 m above ground level).&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Hidden trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees obscured by a tree or trees in the foreground when undertaking a 360&deg; sweep during point sampling.&nbsp;</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>""" ;
-    tern:purpose """<p>All biological processes of plants and animals are dependent on the energy of primary production (i.e. the energy fixed and incorporated into biomass by plants), making it a fundamental component of an ecosystem. Measurements of biomass are important in ecosystem surveillance monitoring to help understand structural, functional and compositional ecosystem dynamics. For example, vegetation composition characterized by biomass is a prime indicator of species dominance within a vegetation association (Bonham 2013), and change in biomass over time is an important indicator of forest and woodland recovery during succession (Gilman&nbsp;et al.&nbsp;2016).&nbsp;</p>
-<p>Direct, accurate measurements of biomass can be obtained by felling, dissecting and weighing trees (West 2015). However, this method is destructive and unsuitable for ecological monitoring, which requires repeated measurements and in which the premise is to avoid damage to the environment. Therefore, biomass is often estimated from its allometric relationship with basal area (Eamus&nbsp;et al.&nbsp;2000). Measurements of basal area can be easily obtained on ground and are good indicators for biomass as they integrate the effect of both the number and size of trees (Burrows&nbsp;et al.&nbsp;2000). A correlation between basal area and biomass is to be expected as both are related to trunk or stem diameter (Sarmiento&nbsp;et al.&nbsp;2005). &nbsp;</p>
-<p>The full and lite DBH measures protocols measure DBH using a diameter tape or tree caliper to calculate basal area. Measurement of DBH has been adopted as a standard convention to measure trunk or stem diameter (West 2015). Only trees with a DBH &ge;10 cm are measured as this is a global forest ecology standard for defining a tree (Department of Environment&sbquo; Climate Change and Water 2010; Wood&nbsp;et al.&nbsp;2015). The point of measurement (POM) above ground level is recorded, as the trunk or stem diameter may not be able to be measured at 1.3 m (i.e. for problem trees), and to ensure that the same position is measured on each occasion during repeat monitoring (West 2015).&nbsp;</p>
-<p>The basal wedge protocol uses point sampling to measure basal area in m<sup>2</sup>/ha. This method has several advantages including its low cost, simplicity and rapidness (White&nbsp;et al.&nbsp;2012). Individual tree measurements are not required, which speeds the process considerably (Balderas Torres and Lovett 2013). However, since individual tree data are not collected, downstream analysis is limited to basal area data.&nbsp;</p>
-<p>In point sampling, basal area is estimated based on the concept of circles (trunks or stems) within circles (variable circular plots; see Figure 3). The area of one circle varies proportionally to a change in the area of the other circle (i.e. the area sampled is greater for larger than smaller trees) and trees are sampled with a probability proportional to their basal area. Therefore, large trees, which contribute more to the basal area of a stand, are sampled in greater proportions than small trees (Hovind and Rieck 1970).&nbsp;</p>
-<p>An observer rotates 360&deg; at a sampling point and counts all the trunks or stems that form an angle greater than the chosen BAF. In effect, every tree counted is being sampled in a variable circular plot with a radius that is a function of the tree&rsquo;s DBH (Figure 3). Because a tree&rsquo;s DBH determines its basal area, and the plot radius determines the sampling area for that tree, the contribution of each counted tree to total stand basal area can be determined. For such a sample of trees there is a constant relationship between tree DBH and effective sampling area, and therefore each tree counted represents exactly the same contribution to the basal area of the stand. In order to estimate the total stand basal area, the only calculation required is to multiply the count of &lsquo;in&rsquo; trees by the BAF used, which is determined from the aperture width used with an angle gauge and the fixed distance that the angle gauge is held from the eye (Fastie 2010). Measurements of variable circular plot radii and DBHs are not required as these values are proportional to the aperture width used with an angle gauge and the fixed distance that the angle gauge is held from the eye (Figure 4).&nbsp;</p>
-<p>The basal wedge protocol measures basal area at nine sampling points (Figure 1) with a TERN Basal Wedge (Figure 2), an angle gauge designed by TERN Ecosystem Surveillance for monitoring basal area across Australia. The hexagonal basal wedge has six fixed angle gauges that represent six different BAFs (Table 2). The wedge is held at a fixed distance of 50 cm from the observer&rsquo;s eye using a taught string as this produces a sighting ratio of 1:50. At this ratio, a 1 cm aperture corresponds to a BAF of 1, or a basal area of 1 m<sup>2</sup>/ha. To determine the aperture for the specific BAFs of the basal wedge, the following equation was used:&nbsp;</p>
-<p>𝐴=<span style="white-space: nowrap; font-size:larger">
-    &radic;<span style="text-decoration:overline;">(𝐵𝐴𝐹 &times;𝐷^2&nbsp;&divide;0.25)&nbsp;</span>
-    </span></p>
-<p>Where A is the aperture in centimeters and D is the fixed distance that the wedge is held from the eye in metres (i.e. 0.5 m; Muir&nbsp;et al.&nbsp;2011).&nbsp;</p>
-<p>&nbsp;</p>
-<p>Table 2. TERN Basal Wedge basal area factors and corresponding wedge apertures and angles formed.&nbsp;</p>
-<div align="left">
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <p>BAF (Basal area [m<sup>2</sup>/ha])&nbsp;</p>
-                </td>
-                <td>
-                    <p>Aperture (cm)&nbsp;</p>
-                </td>
-                <td>
-                    <p>Angle formed&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>0.1&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.32&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.37&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>0.25&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.50&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.57&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>0.5&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.71&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.81&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>0.75&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.87&nbsp;</p>
-                </td>
-                <td>
-                    <p>1.00&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>1&nbsp;</p>
-                </td>
-                <td>
-                    <p>1.00&nbsp;</p>
-                </td>
-                <td>
-                    <p>2.29&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>2&nbsp;</p>
-                </td>
-                <td>
-                    <p>1.41&nbsp;</p>
-                </td>
-                <td>
-                    <p>3.23&deg;&nbsp;</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>""" ;
     dcterms:description """
     <p><strong>Sub-chapters</strong></p>
 <ul>
@@ -541,11 +276,276 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
       </p></li> 
 </ul>""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """<p>Table 1. Key definitions and terms used in the Basal Area module.&nbsp;</p>
+<div align="left">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Term&nbsp;</p>
+                </td>
+                <td>
+                    <p>Definition&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Basal area&nbsp;</p>
+                </td>
+                <td>
+                    <p>The sum of the cross-sectional area of the trees (trees, tall shrubs and/or mallee greater than 2 m in height), including bark, at breast height (1.3 m above ground level) per hectare (m<sup>2</sup>/ha). Convertible to standing biomass using allometric equations.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Tree&nbsp;</p>
+                </td>
+                <td>
+                    <p>Tree, tall shrub or mallee greater than 2 m in height with a DBH &ge;10 cm (global forest ecology standard; Wood&nbsp;et al.&nbsp;2015). For multi-stem trees and mallees, the sum of DBH of each stem needs to be &ge;10 cm.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>DBH&nbsp;</p>
+                </td>
+                <td>
+                    <p>Diameter at Breast Height &ndash; the diameter of a tree trunk or stem in metres as measured 1.3 m above ground level.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>POM&nbsp;</p>
+                </td>
+                <td>
+                    <p>Point of Measurement &ndash; typically 1.3 m above ground level but may vary for problem trees. Recorded for every tree where the DBH is measured.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Biomass&nbsp;</p>
+                </td>
+                <td>
+                    <p>The total mass (at any given time) of living organisms of one or more species per unit of species (species biomass) or of all the species in a biotic community (community biomass).&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Allometric equations&nbsp;</p>
+                </td>
+                <td>
+                    <p>Allometry studies how the morphological, physiological and ecological characteristics of organisms scale in relation to their size. In forestry, allometric equations are used to estimate tree biomass as a function of readily measurable characteristics, typically DBH and tree height. &nbsp;The equations follow a variety of mathematical specifications (e.g. log-linear, non-linear) and are derived based on measured values of tree weight related to its DBH and height from sample trees.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Plot sampling&nbsp;</p>
+                </td>
+                <td>
+                    <p>The measurement of the basal area of all trees in a set area. Basal area is calculated from DBH measures and the formula for the area of a circle.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Point sampling&nbsp;</p>
+                </td>
+                <td>
+                    <p>The estimation of basal area from a count of &lsquo;in&rsquo; trees throughout a 360&deg; sweep made at a sampling point. Basal area is calculated by multiplying the count of &lsquo;in&rsquo; trees by the Basal Area Factor used on a TERN Basal Wedge.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>BAF&nbsp;</p>
+                </td>
+                <td>
+                    <p>Basal Area Factor &ndash; the mathematical relationship between the angle formed by the TERN Basal Wedge and the distance it is held from the eye.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>TERN Basal Wedge&nbsp;</p>
+                </td>
+                <td>
+                    <p>Angle gauge instrument used to provide a rapid and simple determination of basal area across Australia. Comprises six &lsquo;Basal Area Factors&rsquo; (0.1, 0.25, 0.5, 0.75, 1 and 2; see Figure 2).&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&lsquo;In&rsquo; trees&nbsp;</p>
+                </td>
+                <td>
+                    <p>Trees where the trunk or stem at breast height (1.3 m above ground level) is wider than the aperture of the BAF used on a TERN Basal Wedge.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&lsquo;Out&rsquo; trees&nbsp;</p>
+                </td>
+                <td>
+                    <p>Trees where the trunk or stem at breast height (1.3 m above ground level) is narrower than the aperture of the BAF used on a TERN Basal Wedge.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&lsquo;Borderline&rsquo; trees&nbsp;</p>
+                </td>
+                <td>
+                    <p>Trees where the trunk or stem at breast height (1.3 m above ground level) is the exact width of the aperture of the BAF used on a TERN Basal Wedge.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Problem trees&nbsp;</p>
+                </td>
+                <td>
+                    <p>Buttressed, multi-stemmed, leaning, deformed, dead and hidden trees, trees on a slope and tree ferns. Solutions to measuring DBH for problem trees provided in the&nbsp;Additional guidelines.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Buttresses trees&nbsp;</p>
+                </td>
+                <td>
+                    <p>Trees with buttressed roots &ndash; roots that grow laterally out from the trunk that help to support the tree (e.g. Moreton Bay Fig).&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Multi-stemmed trees&nbsp;</p>
+                </td>
+                <td>
+                    <p>Trees with two or more main stems arising between near ground level and below breast height (1.3 m above ground level), but growing from one root system.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Deformed trees&nbsp;</p>
+                </td>
+                <td>
+                    <p>Trees with a deformity that prevents the POM being taken at breast height (1.3 m above ground level).&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Hidden trees&nbsp;</p>
+                </td>
+                <td>
+                    <p>Trees obscured by a tree or trees in the foreground when undertaking a 360&deg; sweep during point sampling.&nbsp;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>""" ;
     skos:member
         <https://linked.data.gov.au/def/test/dawe-cv/5a00862b-a885-472e-8bee-561ec502653f> ,
         <https://linked.data.gov.au/def/test/dawe-cv/a7d605e0-7d90-473e-aac0-21cdf380576f> ,
         <https://linked.data.gov.au/def/test/dawe-cv/cd83fb3e-d8d3-4502-a618-a0f3f8712b27> ;
     skos:prefLabel "Basal Area" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/vocab_files/methods_by_module/basal-area/collection.ttl" ;
+    tern:purpose """<p>All biological processes of plants and animals are dependent on the energy of primary production (i.e. the energy fixed and incorporated into biomass by plants), making it a fundamental component of an ecosystem. Measurements of biomass are important in ecosystem surveillance monitoring to help understand structural, functional and compositional ecosystem dynamics. For example, vegetation composition characterized by biomass is a prime indicator of species dominance within a vegetation association (Bonham 2013), and change in biomass over time is an important indicator of forest and woodland recovery during succession (Gilman&nbsp;et al.&nbsp;2016).&nbsp;</p>
+<p>Direct, accurate measurements of biomass can be obtained by felling, dissecting and weighing trees (West 2015). However, this method is destructive and unsuitable for ecological monitoring, which requires repeated measurements and in which the premise is to avoid damage to the environment. Therefore, biomass is often estimated from its allometric relationship with basal area (Eamus&nbsp;et al.&nbsp;2000). Measurements of basal area can be easily obtained on ground and are good indicators for biomass as they integrate the effect of both the number and size of trees (Burrows&nbsp;et al.&nbsp;2000). A correlation between basal area and biomass is to be expected as both are related to trunk or stem diameter (Sarmiento&nbsp;et al.&nbsp;2005). &nbsp;</p>
+<p>The full and lite DBH measures protocols measure DBH using a diameter tape or tree caliper to calculate basal area. Measurement of DBH has been adopted as a standard convention to measure trunk or stem diameter (West 2015). Only trees with a DBH &ge;10 cm are measured as this is a global forest ecology standard for defining a tree (Department of Environment&sbquo; Climate Change and Water 2010; Wood&nbsp;et al.&nbsp;2015). The point of measurement (POM) above ground level is recorded, as the trunk or stem diameter may not be able to be measured at 1.3 m (i.e. for problem trees), and to ensure that the same position is measured on each occasion during repeat monitoring (West 2015).&nbsp;</p>
+<p>The basal wedge protocol uses point sampling to measure basal area in m<sup>2</sup>/ha. This method has several advantages including its low cost, simplicity and rapidness (White&nbsp;et al.&nbsp;2012). Individual tree measurements are not required, which speeds the process considerably (Balderas Torres and Lovett 2013). However, since individual tree data are not collected, downstream analysis is limited to basal area data.&nbsp;</p>
+<p>In point sampling, basal area is estimated based on the concept of circles (trunks or stems) within circles (variable circular plots; see Figure 3). The area of one circle varies proportionally to a change in the area of the other circle (i.e. the area sampled is greater for larger than smaller trees) and trees are sampled with a probability proportional to their basal area. Therefore, large trees, which contribute more to the basal area of a stand, are sampled in greater proportions than small trees (Hovind and Rieck 1970).&nbsp;</p>
+<p>An observer rotates 360&deg; at a sampling point and counts all the trunks or stems that form an angle greater than the chosen BAF. In effect, every tree counted is being sampled in a variable circular plot with a radius that is a function of the tree&rsquo;s DBH (Figure 3). Because a tree&rsquo;s DBH determines its basal area, and the plot radius determines the sampling area for that tree, the contribution of each counted tree to total stand basal area can be determined. For such a sample of trees there is a constant relationship between tree DBH and effective sampling area, and therefore each tree counted represents exactly the same contribution to the basal area of the stand. In order to estimate the total stand basal area, the only calculation required is to multiply the count of &lsquo;in&rsquo; trees by the BAF used, which is determined from the aperture width used with an angle gauge and the fixed distance that the angle gauge is held from the eye (Fastie 2010). Measurements of variable circular plot radii and DBHs are not required as these values are proportional to the aperture width used with an angle gauge and the fixed distance that the angle gauge is held from the eye (Figure 4).&nbsp;</p>
+<p>The basal wedge protocol measures basal area at nine sampling points (Figure 1) with a TERN Basal Wedge (Figure 2), an angle gauge designed by TERN Ecosystem Surveillance for monitoring basal area across Australia. The hexagonal basal wedge has six fixed angle gauges that represent six different BAFs (Table 2). The wedge is held at a fixed distance of 50 cm from the observer&rsquo;s eye using a taught string as this produces a sighting ratio of 1:50. At this ratio, a 1 cm aperture corresponds to a BAF of 1, or a basal area of 1 m<sup>2</sup>/ha. To determine the aperture for the specific BAFs of the basal wedge, the following equation was used:&nbsp;</p>
+<p>𝐴=<span style="white-space: nowrap; font-size:larger">
+    &radic;<span style="text-decoration:overline;">(𝐵𝐴𝐹 &times;𝐷^2&nbsp;&divide;0.25)&nbsp;</span>
+    </span></p>
+<p>Where A is the aperture in centimeters and D is the fixed distance that the wedge is held from the eye in metres (i.e. 0.5 m; Muir&nbsp;et al.&nbsp;2011).&nbsp;</p>
+<p>&nbsp;</p>
+<p>Table 2. TERN Basal Wedge basal area factors and corresponding wedge apertures and angles formed.&nbsp;</p>
+<div align="left">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>BAF (Basal area [m<sup>2</sup>/ha])&nbsp;</p>
+                </td>
+                <td>
+                    <p>Aperture (cm)&nbsp;</p>
+                </td>
+                <td>
+                    <p>Angle formed&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>0.1&nbsp;</p>
+                </td>
+                <td>
+                    <p>0.32&nbsp;</p>
+                </td>
+                <td>
+                    <p>0.37&deg;&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>0.25&nbsp;</p>
+                </td>
+                <td>
+                    <p>0.50&nbsp;</p>
+                </td>
+                <td>
+                    <p>0.57&deg;&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>0.5&nbsp;</p>
+                </td>
+                <td>
+                    <p>0.71&nbsp;</p>
+                </td>
+                <td>
+                    <p>0.81&deg;&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>0.75&nbsp;</p>
+                </td>
+                <td>
+                    <p>0.87&nbsp;</p>
+                </td>
+                <td>
+                    <p>1.00&deg;&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>1&nbsp;</p>
+                </td>
+                <td>
+                    <p>1.00&nbsp;</p>
+                </td>
+                <td>
+                    <p>2.29&deg;&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>2&nbsp;</p>
+                </td>
+                <td>
+                    <p>1.41&nbsp;</p>
+                </td>
+                <td>
+                    <p>3.23&deg;&nbsp;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>""" ;
+    tern:scope """
+    <p>Basal area is the sum of the cross-sectional area of trees (trees, tall shrubs and/or mallee greater than 2 meter in height), including bark, at breast height (1.3 m above ground level) per hectare (m<sup>2</sup>/ha). Basal area measurements provide information useful for monitoring tree growth and calculating standing biomass and carbon sequestration of trees based on allometric equations (Eamus&nbsp;et al.&nbsp;2000). The&nbsp;Basal Area&nbsp;module is only required in plots where there is a dominant growth form of trees, shrubs and/or mallee greater than 2 m in height.&nbsp;</p>
+<p>Basal area can be measured using &lsquo;plot sampling&rsquo; (i.e. the measurement of the basal area of all trees in a set area) or &lsquo;point sampling&rsquo; (i.e. the estimation of basal area from a count of &lsquo;in&rsquo; trees throughout a 360&deg; sweep at a sampling point). For plot sampling, the basal area of a tree is calculated from its diameter at breast height (DBH), being the diameter of the trunk in metres as measured 1.3 m above the ground. DBH is converted to basal area based on the formula for the area of a circle:&nbsp;</p>
+<p>𝐵𝑎𝑠𝑎𝑙 𝑎𝑟𝑒𝑎 = 𝜋 &times;(𝐷𝐵𝐻 &divide; 2)<sup>2</sup></p>
+<p>The basal area per hectare is calculated by adding the basal areas (as calculated above) of all the trees in an area and dividing by the area of land in which the trees were measured. Basal area is generally measured for a plot and then scaled to m<sup>2</sup>/ha to compare forest/woodland productivity and growth rate among multiple sites.&nbsp;</p>
+<p>For point sampling, basal area is quickly estimated in m<sup>2</sup>/ha by multiplying the count of &lsquo;in&rsquo; trees throughout a 360&deg; sweep at a sampling point, by the Basal Area Factor (BAF) used with an angle gauge or wedge prism. If using an angle gauge, a tree is &lsquo;in&rsquo; if its trunk or stem at breast height is wider than the aperture of the selected BAF. If using a wedge prism, &lsquo;in&rsquo; trees are those where the section of the trunk or stem offset by looking through the prism at breast height overlaps the trunk or stem as viewed above/below the prism. Trees where the trunk or stem is the exact width of the aperture, or where the offset section of the trunk or stem is perfectly aligned with the trunk or stem viewed above/below the prism, are &lsquo;borderline&rsquo; trees, for which a half count is tallied.&nbsp;</p>
+<p>The&nbsp;Basal Area&nbsp;module includes three protocols: (1) full DBH measures protocol that measures the DBH of all trees with a DBH &ge;10 cm within the plot (Figure 1); (2) lite DBH measures protocol that measures the DBH of all trees with a DBH &ge;10 cm within two 20 x 100 m belt transects within the plot (Figure 1); and (3) basal wedge protocol where a 360&deg; sweep is made at nine sampling points across the plot (Figure 1) using a TERN Basal Wedge (Figure 2).&nbsp;</p>
+<p>The full DBH measures protocol, although time consuming, particularly in dense stands, is best practice and recommended for projects where accurate and repeatable measures of basal area are critical (e.g. forestry and forest ecology projects). The lite DBH measures protocol offers a pragmatic approach to obtain accurate and repeatable measures of basal area based on DBH measures within a sub-sample of the plot. The lite DBH measures protocol is recommended for time limited projects where DBH measures are required and if other modules that use the same belt transects are being undertaken (e.g.&nbsp;Recruitment&nbsp;and&nbsp;Coarse Woody Debris&nbsp;modules).&nbsp;</p>
+<p>The basal wedge protocol provides a simple and rapid method to estimate basal area across the plot. This approach extends the area sampled beyond the actual plot to provide a reliable estimate of basal area in a m<sup>2</sup>/ha basis for each species and total basal area of the vegetation association being sampled. The basal wedge protocol is recommended for projects that require rapid but reliable measures of basal area. The protocol is suitable for studies and analysis across broad scales and the TERN Basal Wedge comprises six BAFs, ranging from 0.1 to 2 (Figure 2), that are suitable for use across Australia.</p>
+    """ ;
 .
 
