@@ -7,7 +7,9 @@ from dawe_nrm.graph import create_graph
 from dawe_nrm.schemas import LUTSchema
 
 
-async def get(base_uri: Namespace, config: LUTSchema, client: httpx.AsyncClient) -> Graph:
+async def get(
+    base_uri: Namespace, config: LUTSchema, client: httpx.AsyncClient
+) -> Graph:
     response = await client.get(config.endpoint_url)
     response.raise_for_status()
 
