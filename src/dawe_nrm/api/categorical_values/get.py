@@ -1,4 +1,4 @@
-import requests
+import httpx
 from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, Namespace, URIRef
 
 from dawe_nrm.api.categorical_values.exceptions import NoDataInAPIException
@@ -7,8 +7,10 @@ from dawe_nrm.graph import create_graph
 from dawe_nrm.schemas import LUTSchema
 
 
-def get(base_uri: Namespace, config: LUTSchema) -> Graph:
-    response = requests.get(config.endpoint_url)
+async def get(
+    base_uri: Namespace, config: LUTSchema, client: httpx.AsyncClient
+) -> Graph:
+    response = await client.get(config.endpoint_url)
     response.raise_for_status()
 
     data = response.json()

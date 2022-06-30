@@ -15,7 +15,7 @@ def path():
 @pytest.fixture
 def output_path(path: Path):
     path.mkdir(exist_ok=True, parents=True)
-    api.categorical_values.write_all(path, show_progress=False)
+    api.categorical_values.write_all(path)
     yield path
 
     # Clean up.
@@ -25,7 +25,6 @@ def output_path(path: Path):
     path.rmdir()
 
 
-@pytest.mark.slow
 def test(output_path: Path, path: Path):
     files = list(output_path.glob("**/*.ttl"))
 
