@@ -25,6 +25,7 @@ def output_path(path: Path):
     path.rmdir()
 
 
+@pytest.mark.slow
 def test(output_path: Path, path: Path):
     files = list(output_path.glob("**/*.ttl"))
 
