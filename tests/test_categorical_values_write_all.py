@@ -15,7 +15,7 @@ def path():
 @pytest.fixture
 def output_path(path: Path):
     path.mkdir(exist_ok=True, parents=True)
-    api.categorical_values.write_all(path, show_progress=False)
+    api.categorical_values.write_all(path)
     yield path
 
     # Clean up.
