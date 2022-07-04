@@ -26,7 +26,7 @@ REG = Namespace("http://purl.org/linked-data/registry/")
 NRM = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
 vocab_files_dir = Path("vocab_files")
 DASHES = re.compile(r"-+")
-VOCAB_FILES_DIR_GITHUB = "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/master/"
+VOCAB_FILES_DIR_GITHUB = "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/"
 
 
 def fetch_remote_cbd(uri: str, graph: Graph):
