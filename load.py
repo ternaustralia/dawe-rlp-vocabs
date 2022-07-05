@@ -4,7 +4,7 @@ from pathlib import Path
 from rdflib import Graph
 from requests.exceptions import HTTPError
 
-from src.dawe_nrm.graphdb import repository
+from dawe_nrm.graphdb import repository
 
 if __name__ == "__main__":
 
