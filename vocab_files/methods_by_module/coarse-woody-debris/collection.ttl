@@ -1,10 +1,11 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/0d8b47b4-1ca8-4c76-8329-0eb781a823a2>
-    a skos:Collection ;
+    a skos:OrderedCollection ;
     dcterms:description """<p>
   This module covers the procedures and guidelines of two main protocols for
   recording CWD within the plot. Each protocol has two options, depending on CWD
@@ -111,9 +112,10 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
   </li>
 </ol>""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/7d50794a-8784-4ab9-99ff-a324bb6e0831> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/fc74b2cb-f3ab-4101-9e3f-43f016db3db6> ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/test/dawe-cv/7d50794a-8784-4ab9-99ff-a324bb6e0831>
+            <https://linked.data.gov.au/def/test/dawe-cv/fc74b2cb-f3ab-4101-9e3f-43f016db3db6>
+        ) ;
     skos:prefLabel "Coarse Woody Debris" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/coarse-woody-debris/collection.ttl" ;
 .
