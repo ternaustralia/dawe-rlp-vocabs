@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/d4e3dc35-7bfe-4963-875d-d81d8f96f6fb>
     a skos:Concept ;
@@ -11,7 +12,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     skos:definition "Plant growth forms can be defined as the physical form a plant assumes under the conditions of its environment." ;
     skos:exactMatch <http://linked.data.gov.au/def/tern-cv/f81aa91e-5f57-4e49-bc6e-4d821d1f9de2> ;
     skos:prefLabel "plant growth form" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/plant-growth-form.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/plant-growth-form.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/032ed6fa-4c55-4752-b625-3e6b32672444> ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b> ;

@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/4062f093-424b-441e-86fc-648d820ae1fb>
     a skos:Concept ;
@@ -11,7 +12,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     skos:definition "Lithology of fragments coarser than 2mm in a soil sample, including rock fragments inferred to be not continuous with underlying bedrock, and other fragments such as charcoal, shells, but not segregation of pedogenic origin. The lithology of the coarse fragments is usually identified as coming from the substrate or from rock outcrop. Where the lithology of the coarse fragments is different from that of the substrate material and/or rock outcrop, describe it as for lithology of substrate material only where the rock type is definitely known or is confidently presumed. Some coarse fragments are commonly encountered that are not directly related to the substrate material." ;
     skos:exactMatch <http://linked.data.gov.au/def/tern-cv/b992af7a-414f-4278-a905-59ae1e04e35c> ;
     skos:prefLabel "coarse fragments lithology" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/coarse-fragments-lithology.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/coarse-fragments-lithology.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/1d50eb79-685f-45ea-84b4-627154eddede> ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/06461021-a6c2-4175-9651-23653c2b9116> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db> ;

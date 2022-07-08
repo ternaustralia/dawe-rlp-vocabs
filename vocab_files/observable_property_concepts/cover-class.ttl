@@ -2,6 +2,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/f3e6e19b-ba79-4260-b493-8a2561033f9b>
     a skos:Concept ;
@@ -9,7 +10,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     skos:definition "The recorded vegetation cover values through foliage, crown or percentage cover measurements. The cover classes were selected to allow simple conversion between classifications." ;
     skos:exactMatch <http://linked.data.gov.au/def/tern-cv/397f11af-21bb-400c-844f-35a4c02a4b15> ;
     skos:prefLabel "cover class" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/cover-class.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/cover-class.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/6aaa330c-3d60-419b-a29b-a2dbc6d67928> ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ;

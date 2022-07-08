@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/ec510708-9ac1-4c8a-bfe2-31ba5bb693da>
     a skos:Concept ;
@@ -11,7 +12,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     skos:definition "Soil bulk density (g/cm3) = mass of oven dried soil (g) / total volume of core (cm3)." ;
     skos:exactMatch <http://linked.data.gov.au/def/tern-cv/0531b8b6-7610-4fbd-9a66-8cd80d357a70> ;
     skos:prefLabel "soil bulk density" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/soil-bulk-density.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/soil-bulk-density.ttl"^^xsd:anyURI ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/06461021-a6c2-4175-9651-23653c2b9116> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/d9e6739a-c2dd-4619-be43-1251449a6436> ;
     tern:valueType tern:Float ;

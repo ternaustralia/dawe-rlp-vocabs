@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/e2c87884-5edf-4d87-a67d-6a13cf59e051>
     a skos:Concept ;
@@ -12,7 +13,7 @@ making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "Proportions of soil gilgai components. It can be either of equal mounds, fewer mounds or more mounds depending on the formation." ;
     skos:prefLabel "soil microrelief- proportion of gilgai components" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/soil-microrelief-proportion-of-gilgai-components.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/soil-microrelief-proportion-of-gilgai-components.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/c441cb41-6f65-417c-88b7-2c10375bf3f3> ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/7e256d28-e686-4b6a-b64a-ac1b1a8f164d> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/7818e122-6354-42e0-aeff-32dbab7baae4> ;
