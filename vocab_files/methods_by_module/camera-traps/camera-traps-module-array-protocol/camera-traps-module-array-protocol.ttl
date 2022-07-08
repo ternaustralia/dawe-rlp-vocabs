@@ -1,11 +1,14 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 
 <https://linked.data.gov.au/def/test/dawe-cv/1a6953e4-a830-41f8-9cfd-11ead4dd6bc2>
-    a skos:Concept ;
+    a
+        rdf:HTML ,
+        skos:Concept ;
     dcterms:description """<p>
   Many camera traps (e.g., 20–30) deployed in a systematic array (e.g., grid,
   transect) to monitor fauna occupancy, abundance and density in the project

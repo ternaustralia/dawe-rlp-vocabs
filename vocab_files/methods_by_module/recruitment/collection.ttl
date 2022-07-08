@@ -1,10 +1,13 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970>
-    a skos:Collection ;
+    a
+        rdf:HTML ,
+        skos:Collection ;
     dcterms:description """<p><strong>Appendices</strong></p>
 <p>Appendix. Reproductive life-stage photo examples
     <table>

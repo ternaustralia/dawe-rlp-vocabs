@@ -1,10 +1,13 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95>
-    a skos:Collection ;
+    a
+        rdf:HTML ,
+        skos:Collection ;
     dcterms:description """<p>
   The Soils module covers the procedures and guidelines of six field protocols
   (summarized in Table 2). This includes a plot soil description protocol, two

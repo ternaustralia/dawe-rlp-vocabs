@@ -1,11 +1,14 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 
 <https://linked.data.gov.au/def/test/dawe-cv/666e5aa5-e545-4637-bc52-a296d647b303>
-    a skos:Concept ;
+    a
+        rdf:HTML ,
+        skos:Concept ;
     dcterms:description """<p>
   Pan traps are set in two fixed location transects of 12 traps, spaced 5 metres
   apart (see figure) and left out for up to 24 hours if using water with

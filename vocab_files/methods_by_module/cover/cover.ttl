@@ -1,10 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 
 <https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b>
-    a skos:Concept ;
+    a
+        rdf:HTML ,
+        skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Cover" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/cover/cover.ttl" ;
