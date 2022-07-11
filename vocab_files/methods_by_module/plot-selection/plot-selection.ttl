@@ -3,12 +3,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821>
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Plot Selection" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/plot-selection/plot-selection.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/plot-selection/plot-selection.ttl"^^xsd:anyURI ;
     tern:equipment """<li>Computer with access to the App web-interface (to assist with desktop assessment and stratification process) </li>
 <li>Mobile device loaded with the App, and a field GIS app or hardcopy maps with available layers (e.g. satellite imagery, project area boundaries, prospective site locations, vegetation mapping, landform features, access tracks, watercourses) </li>
 <li>Trimble R1 GNSS receiver </li>

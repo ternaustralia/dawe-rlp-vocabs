@@ -3,12 +3,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6>
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Opportunistic observations" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/opportunistic-observations/opportunistic-observations.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/opportunistic-observations/opportunistic-observations.ttl"^^xsd:anyURI ;
     tern:equipment """<p>General </p>
 <ul>
 <li>Mobile device (tablet/phone) capable of recording location (GPS/GNSS or similar), taking high resolution photos and loaded with the App, electronic field guides, interactive identification keys and call playback apps </li>

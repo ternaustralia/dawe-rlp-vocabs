@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/c4876917-c9a1-43f2-8fac-30e2ba69ac95>
     a skos:Concept ;
@@ -12,7 +13,7 @@ decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "The personnell responsible for checking the trap/s." ;
     skos:prefLabel "trap checked by" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/trap-checked-by.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/trap-checked-by.ttl"^^xsd:anyURI ;
     tern:valueType tern:Text ;
 .
 
