@@ -1,14 +1,15 @@
-PREFIX ns1: <urn:property:>
 PREFIX schema: <https://schema.org/>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/1a117178-5dbd-486e-b09f-e8348cde983f>
-    a <urn:class:ObservablePropertyMeta> ;
+    a urnc:ObservablePropertyMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_properties_by_module/basal-area/full-dbh-measures-protocol/stand-basal-area.ttl"^^xsd:anyURI ;
-    ns1:featureType <http://linked.data.gov.au/def/tern-cv/1f93a3e8-4c78-4b08-85a4-6869c9ee17ac> ;
-    ns1:observableProperty <https://linked.data.gov.au/def/test/dawe-cv/f437f23a-7965-4bae-9dc3-2aead06786ec> ;
-    ns1:protocolModule <https://linked.data.gov.au/def/test/dawe-cv/5a00862b-a885-472e-8bee-561ec502653f> ;
-    ns1:valueType tern:Float ;
+    urnp:featureType <http://linked.data.gov.au/def/tern-cv/1f93a3e8-4c78-4b08-85a4-6869c9ee17ac> ;
+    urnp:observableProperty <https://linked.data.gov.au/def/test/dawe-cv/f437f23a-7965-4bae-9dc3-2aead06786ec> ;
+    urnp:protocolModule <https://linked.data.gov.au/def/test/dawe-cv/5a00862b-a885-472e-8bee-561ec502653f> ;
+    urnp:valueType tern:Float ;
 .
 
