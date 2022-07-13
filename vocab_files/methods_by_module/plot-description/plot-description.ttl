@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -7,47 +8,1308 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32>
     a skos:Concept ;
+    dcterms:description """<h2 id="module-overview">Module overview</h2>
+<p>This module covers the procedures and guidelines to collect plot
+description information, including landform, slope, aspect and
+disturbance, as well as a vegetation description to NVIS Level 5
+(dominant species present in each strata). The procedures align with
+national guidelines for surveying land and vegetation, including the
+<em>Australian Soil and Land Survey Field Handbook</em> (The National
+Committee on Soil and Terrain 2009), the <em>Guidelines for Surveying
+Soil and Land Resources</em> (McKenzie <em>et al.</em> 2008) and NVIS
+(NVIS Technical Working Group 2017).</p>
+<p>This module has links to the following modules:</p>
+<ul>
+<li>
+<p><em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics module</a></em> – The species names or field names used
+for the NVIS Level 5 description in this module need to align with the
+names assigned in the floristics module. The floristics module should be
+completed before the plot description information is collected.</p>
+</li>
+<li>
+<p><em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover module</a></em> – NVIS Level 5 information is also collected
+within the <em>Cover</em> module using the point-intercept method (more
+detailed approach), but it is vital that this information is also
+collected as part of the <em>Plot Description</em> module, particularly
+at plots where the cover module is not undertaken. The NVIS Level 5
+description generated in this module can be cross-checked against the
+NVIS description generated from the <em>Cover</em> module.</p>
+</li>
+<li>
+<p><em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/05669173-2fe7-4b70-ba67-2e09fbe87de9">Photo Points module</a></em> – A static photo is taken at each plot
+and this provides a visual representation of the area and is
+complementary to the plot description information. The plot photo should
+capture any defining features described in this module including
+landform and vegetation type.</p>
+</li>
+</ul>""" ;
+    dcterms:source """<ul>
+  <li><p>Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E, Tokmakoff,
+    A, Lowe, AJ (2018) Floristic and structural assessment of Australian
+    rangeland vegetation with standardized plot-based surveys.
+    <em>PLoS One</em> <strong>13</strong>, e0202073.</p></li>
+<li>
+  <p>
+    Brocklehurst, P, Lewis, D, Napier, D, Lynch, D (2007) Northern Territory
+    Guidelines and Field Methodology for Vegetation Survey and Mapping.
+    Technical Report No. 02/2007D. Department of Natural Resources, Environment
+    and the Arts, Palmerston, Northern Territory.
+  </p>
+</li>
+<li>
+  <p>
+    Casson, N, Downes, S, Harris, A (2009) Native Vegetation Condition
+    Assessment and Monitoring Manual for Western Australia. The Native
+    Vegetation Integrity Project. Department of Environment and Conservation,
+    Perth.
+  </p>
+</li>
+<li>
+  <p>
+    Cleary, G, Ortac, G, Proft, K, Law, M, Turnbull, J (2015) Survey Techniques
+    for Citizen Scientists. National Parks Association of NSW Inc.
+  </p>
+</li>
+<li>
+  <p>
+    CSIRO (2021) 'A national reference library of expert site condition
+    assessments.' Available at
+    <a
+      href="https://research.csiro.au/biodiversity-knowledge/projects/expert-knowledge-biodiversity/"
+      ><u
+        >https://research.csiro.au/biodiversity-knowledge/projects/expert-knowledge-biodiversity/</u
+      ></a
+    >
+    [Accessed 15 February 2021].
+  </p>
+</li>
+<li>
+  <p>
+    De Cáceres, M, 2013. Vegetation Classification. Oxford Bibliographies,
+    Oxford Journals, New York.
+  </p>
+</li>
+<li>
+  <p>
+    Eyre, T, Kelly, A, Neldner, V, Wilson, B, Ferguson, D, Laidlaw, M, Franks, A
+    (2015) BioCondition: A Condition Assessment Framework for Terrestrial
+    Biodiversity in Queensland. Assessment Manual. Version 2.2. Queensland
+    Herbarium, Department of ScienceInformation Technology, Innovation and Arts,
+    Brisbane.
+  </p>
+</li>
+<li>
+  <p>
+    Freeman, K, Stack, G, Thomas, S, Woolfrey, N, 2015. Technical Guide -
+    Terrestrial Flora and Vegetation Surveys for Environmental Impact
+    Assessment. Perth, Western Australia.
+  </p>
+</li>
+<li>
+  <p>
+    Gellie, NJ, Hunter, JT, Benson, JS, Kirkpatrick, JB, Cheal, DC, McCreery, K,
+    Brocklehurst, P (2018) Overview of plot-based vegetation classification
+    approaches within Australia. <em>Phytocoenologia</em> <strong>48</strong>,
+    251–272.
+  </p>
+</li>
+<li>
+  <p>
+    Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z, Lowe,
+    AJ (2017) Opportunities for integrated ecological analysis across inland
+    Australia with standardised data from Ausplots Rangelands.
+    <em>PLoS One</em> <strong>12</strong>, e0170137.
+  </p>
+</li>
+<li>
+  <p>
+    Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey: Using the
+    Biological Survey of South Australia. Department of Environment and Natural
+    Resources, Adelaide.
+  </p>
+</li>
+<li>
+  <p>
+    McKenzie, NJ, Grundy, M, Webster, R, Ringrose-Voase, A (2008) 'Guidelines
+    for surveying soil and land resources.' (CSIRO Publishing: Melbourne)
+  </p>
+</li>
+<li>
+  <p>
+    Michaels, K (2006) A Manual for Assessing Vegetation Condition in Tasmania
+    Version 1.0. Resource Management and Conservation, Department of Primary
+    Industries, Water and Environment, Hobart.
+  </p>
+</li>
+<li>
+  <p>
+    NVIS Technical Working Group (2017) Australian Vegetation Attribute Manual:
+    National Vegetation Information System, Version 7.0. Department of the
+    Environment and Energy, Canberra.
+  </p>
+</li>
+<li>
+  <p>
+    Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van Leeuwen,
+    S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A vegetation and
+    soil survey method for surveillance monitoring of rangeland environments.
+    <em>Frontiers in Ecology and Evolution</em> <strong>8</strong>, 157.
+  </p>
+</li>
+<li>
+  <p>
+    The National Committee on Soil and Terrain (2009) 'Australian Soil and Land
+    Survey Field Handbook.' (CSIRO Publishing: Melbourne)
+  </p>
+</li>
+<li>
+  <p>
+    Tokmakoff, A, Sparrow, B, Turner, D, Lowe, A (2016) AusPlots Rangelands
+    field data collection and publication: Infrastructure for ecological
+    monitoring. <em>Future Generation Computer Systems</em> <strong>56</strong>,
+    537–549.
+  </p>
+</li>
+<li>
+  <p>
+    White, A, Sparrow, B, Leitch, E, Foulkes, J, Flitton, R, Lowe, AJ,
+    Caddy-Retalic, S (2012) 'AusPlots Rangelands Survey Protocols Manual.' (The
+    University of Adelaide Press: Adelaide)
+  </p>
+</li>
+<li>
+  <p>
+    Wilkinson, MD, Dumontier, M, Aalbersberg, IJ, Appleton, G, Axton, M, Baak,
+    A, Blomberg, N, Boiten, J-W, da Silva Santos, LB, Bourne, PE (2016) The FAIR
+    Guiding Principles for scientific data management and stewardship.
+    <em>Scientific Data</em> <strong>3</strong>, 160018.
+  </p>
+</li>
+</ul>""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """<p>Table 1. Key definitions and terminology relevant to the <em>Plot
+description</em> module.</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Description</th>
+</tr>
+<tr class="odd">
+<th><strong>Plot</strong></th>
+<th>The specific survey area where information is collected (generally
+100 m x 100 m; 1 ha). Final plot location is determined in the field,
+with preference given to homogeneous areas representative of the broader
+project area, with a constant mix of vegetation, relief and soil.</th>
+</tr>
+<tr class="header">
+<th><strong>Landform Pattern</strong></th>
+<th>Landform patterns have dimensions of approximately 600 m and are
+based on the following attributes – relief, slope (most common), stream
+channel occurrence, geomorphological attributes and component landform
+elements. Landform patterns generally have longer histories than
+landform elements. There are approximately 40 different landform
+patterns that occur in Australia (Appendix A– Landform Pattern
+Summary).</th>
+</tr>
+<tr class="odd">
+<th><strong>Landform Element</strong></th>
+<th>Landform elements have a dimension of approximately 40 m but can
+vary from a few metres to 100 m. A landform element is described by the
+following attributes – slope, morphological type, dimensions,
+geomorphological activity and geomorphological agent. Landform elements
+make up a mosaic within landform patterns. There are approximately 80
+different landform elements that occur in Australia (Appendix A –
+Landform Element Summary).</th>
+</tr>
+<tr class="header">
+<th><strong>NVIS</strong></th>
+<th>National Vegetation Information System – a comprehensive data system
+that provides information on the extent and distribution of vegetation
+types across Australia, and defines how vegetation associations should
+be classified. The framework was developed to enable the compilation of
+a nationally consistent dataset, produced based on data collected at the
+state and territory level. The NVIS is hierarchical and different levels
+in the classification provide a description of the vegetation from class
+to sub-association that can be directly related to spatially defined
+areas.</th>
+</tr>
+<tr class="odd">
+<th><strong>Relief</strong></th>
+<th>The difference in elevation between the high and low points of a
+land surface.</th>
+</tr>
+<tr class="header">
+<th><strong>Slope</strong></th>
+<th>The rise or fall of the land surface, which is measured in degrees
+using a clinometer. Slope should be measured over a distance of at least
+20 m, to reduce influence of any microrelief changes.</th>
+</tr>
+<tr class="odd">
+<th><strong>Aspect</strong></th>
+<th>Identifies the downslope direction (orientation) of the slope. The
+reading is taken looking down the slope. Due north is recorded as 360
+degrees. Aspect can only have a value of 1 to 360 degrees. A value of 0
+indicates that there is no slope.</th>
+</tr>
+<tr class="header">
+<th><strong>Toposequence</strong></th>
+<th>The sequence of landform elements down a slope.</th>
+</tr>
+<tr class="odd">
+<th><strong>Surface Strew Size</strong></th>
+<th>Size of any surface stones or rocks in millimetres. The size is
+recorded using three size classes: Pebble (5-50 mm), Cobble (51-250 mm)
+and Boulder (&gt; 250 mm).</th>
+</tr>
+<tr class="header">
+<th><strong>Surface Strew Lithology</strong></th>
+<th>Dominant lithology of any surface stones or rocks (i.e.
+calcrete/limestone, sandstone or quartz).</th>
+</tr>
+<tr class="odd">
+<th><strong>Outcrop Lithology</strong></th>
+<th>Dominant lithology of the outcrop (any area of exposed rock that is
+assumed to be continuous with the underlying bedrock).</th>
+</tr>
+<tr class="header">
+<th><strong>Homogeneity Measure</strong></th>
+<th>Record of the visual estimate (in metres) of the shortest distance
+from the survey location to a vegetation association different to the
+one that you are sampling. Provides an indication of how far the
+association you are sampling extends beyond the plot.</th>
+</tr>
+<tr class="odd">
+<th><strong>Structural Formation</strong></th>
+<th>Vegetation classification that aligns with NVIS and is based on
+growth form, height, and percent cover (Appendix B – Vegetation
+Structural Formation).</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>""" ;
+    skos:note """<h4 id="landform-and-land-surface">Landform and Land Surface </h4>
+<ul>
+<li>
+<p>Plot description information should be collected at the end of the
+plot survey when the observer is familiar with the landscape and plant
+species have been identified or assigned a field name in the
+<em>Floristics</em> Module.</p>
+</li>
+<li>
+<p>For an overview and short description of the different landform and
+lithology classes refer to the <em>Landform and Land Surface
+Resources</em> at the end of this module or click on the <em>info</em>
+buttons within the app.</p>
+</li>
+<li>
+<p>The slope class is derived from the degree value entered and is
+automatically populated by the app. Slope class can help inform landform
+element, so slope information should be collected before the landform
+element field is populated.</p>
+</li>
+<li>
+<p>Slope can be measured with a clinometer, a compass or a suitable app.
+Refer to the supporting <em>Landform and Land Surface Resources</em>
+information at the end of this module for tips on measuring slope.</p>
+</li>
+<li>
+<p>If down slope is measured, slope and aspect can be recorded from the
+same position.</p>
+</li>
+<li>
+<p>If using a clinometer, ensure that slope is recorded in degrees and
+not as a percent. Slope should be measured as precisely as possible.</p>
+</li>
+<li>
+<p>Aspect is the orientation of the down slope and can be recorded to
+the nearest 5 or 10 degrees. Refer to the supporting <em>Landform and
+Land Surface Resources</em> information at the end of this module for
+information on measuring aspect.</p>
+</li>
+<li>
+<p>If the observer is not confident in determining lithology in the
+field, this information can be sourced from relevant spatial datasets
+for the region. This information should be reviewed before the field
+survey and a copy taken to the field to assist with the lithology
+classification.</p>
+</li>
+<li>
+<p>To assist with lithology classification, refer to the info buttons
+within the app, which include photos for all the different lithology
+types.</p>
+</li>
+</ul>
+<h4 id="vegetation">Vegetation </h4>
+<ul>
+<li>
+<p>Vegetation structural information is derived from the dominant growth
+form, height and cover for the association. Refer to the <em>Vegetation
+Resources</em> at the end of this module for a matrix of all potential
+options. All options are listed in the drop-down menu. If unsure, assign
+after the Structural Formation once the NVIS Level 5 description has
+been completed.</p>
+</li>
+<li>
+<p>The homogeneity measure is a record of the visual estimate (in
+metres) of the shortest distance from the plot centre to a vegetation
+association different to the one being sampled. Where there is
+uncertainty, it is recommended that this measure be an underestimate
+(better to be conservative when estimating the distance).</p>
+</li>
+<li>
+<p>Where it is not possible to directly observe the distance to a
+different association (e.g. goes over dune crest), estimate the furthest
+distance that you are sure is within the same association (i.e. as far
+as you can still see the vegetation association from the point you are
+standing).</p>
+</li>
+<li>
+<p>Vegetation information is collected that is consistent with the
+association level (Level 5) of the NVIS. Enter up to three dominant
+species for each stratum, where present. Information does not need to be
+entered for all species or all stratum. For example, if the association
+only has two dominant ground storey species and no upper or mid storey,
+then information only needs to be entered for G<sub>1</sub> and
+G<sub>2</sub>.</p>
+</li>
+<li>
+<p>Refer to the supporting <em>Vegetation Resources</em> information,
+which includes vegetation structural diagrams for different vegetation
+communities.</p>
+</li>
+<li>
+<p>For a list of growth forms, height classes and cover codes, refer to
+the <em>Vegetation Resources</em> at the end of this module or click on
+the info button within the app.</p>
+</li>
+<li>
+<p>The following growth forms are allowed for each stratum:</p>
+<ul>
+<li>
+<p>Upper – trees, tree mallee.</p>
+</li>
+<li>
+<p>Middle – shrubs, low trees, mallee shrubs, tall grasses, grass
+trees.</p>
+</li>
+<li>
+<p>Ground – grasses, forbs, rushes, sedges, lichens, low shrubs, ferns,
+grass trees.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>Only species that fall into the growth forms associated with each
+stratum will be available in the drop-down list for that layer (i.e.
+only species classified as trees or tree mallees can be selected from
+the upper story species lists).</p>
+</li>
+<li>
+<p>Once the NVIS information has been entered based on individual
+species and stratum, the app (or database) will generate the NVIS Level
+5 description. It is good practice to review this description and if
+needed, make any amendments to the data entered, before clicking
+<em>Save</em>.</p>
+</li>
+<li>
+<p>If necessary, you can amend the vegetation information after clicking
+<em>Save</em> by using the <em>Edit</em> function.</p>
+</li>
+<li>
+<p>The NVIS Level 5 description can be cross-checked against the
+association descriptions from the <em>Cover</em> module</p>
+</li>
+</ul>""" ;
     skos:prefLabel "Plot Description" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/plot-description/plot-description.ttl"^^xsd:anyURI ;
+    tern:appendix """
+<h2>Appendix A. Landform and Land Surface Resources</h2>
+<h3>Slope and Aspect</h3>
+<h4>Measuring slope using a clinometer</h4>
+<p><img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/measuring-slope-using-clinometer.png"
+  alt="Measuring slope using a clinometer"
+  widteh="943"
+  height="385"
+/></p>
+<ul>
+<li>
+<p>A clinometer is the most efficient method for recording slope.</p>
+</li>
+<li>
+<p>Stand so you are facing directly up or down the slope. We recommend
+measuring the degrees of the downhill slope. If there is no slope, then
+record this as 0.</p>
+</li>
+<li>
+<p>Keep both eyes open and align the clinometer cross hairs with the
+target point in the distance. To minimise the influence of micro-relief
+on the slope reading, the slope measurement should be taken across a
+distance of at least 20 m.</p>
+</li>
+<li>
+<p>The clinometer should be angled so that a consistent height above the
+ground is maintained (i.e. measure eye level of another field member
+standing at least 20 m away or an object that is approximately the same
+height above the ground as eye level).</p>
+</li>
+<li>
+<p>Two scales appear through the clinometer lens (degrees and percent).
+Record the degrees in the app.</p>
+</li>
+<li>
+<p>If a clinometer is not available, slope can also be measured with a
+compass (some compasses are also fitted with a clinometer) or a suitable
+app (such as Simple Inclinometer, Inclinometer).</p>
+</li>
+</ul>
+<h4>Recording aspect using a compass</h4>
+<ul>
+<li>
+<p>Aspect is the direction that a slope faces and is recorded in the
+downslope direction.</p>
+</li>
+<li>
+<p>Stand so you are facing directly down the middle of the slope and
+record the compass bearing (a value from 1 to 360).</p></li>
+<img
+src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/recording-aspect-using-compass.png"
+alt="Recording aspect using a compass"
+widteh="1240"
+height="822"
+/>
+<li>
+<p>If there is no slope, then aspect will be 0, if you are facing due
+north then the reading will be 360 degrees.</p>
+</li>
+<li>
+<p>Check the compass bearing against the diagram below (i.e. if you are
+working on an east facing slope, then the degrees should fall between
+ca. 68 and 112). </p>
+</li><img
+src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/directions.png"
+alt="Directions"
+widteh="348"
+height="356"
+/>
+</ul>
+<h2>Appendix B. Vegetation Resources</h2>
+<h3>Growth stage</h3>
+<p>Vegetation growth stage, which aligns with the information provided
+on page 122 of the Yellow Book (The National Committee on Soil and
+Terrain 2009).</p>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 11%" />
+<col style="width: 24%" />
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Growth Stage</th>
+<th>Trees dominant</th>
+<th>Shrubs dominant</th>
+<th>Grasses and herbs dominant</th>
+<th>Cryptograms dominant (mosses and lichens)</th>
+</tr>
+<tr class="odd">
+<th>1</th>
+<th>Early regeneration</th>
+<th>Dominated by small, juvenile, dense to very sparse regenerating
+plants, with or without a few older, widely spaced, emergent
+plants.</th>
+<th>Dominated by small, juvenile, dense to very sparse regenerating
+plants. A few older, widely spaced emergents may be present.</th>
+<th>Plants small and juvenile stages predominate; bare soil or old
+litter common.</th>
+<th>Thin growth of young plants or widely spaced clumps of young
+plants.</th>
+</tr>
+<tr class="header">
+<th>2</th>
+<th>Advanced regeneration</th>
+<th>Dominated by dense to sparse, well-developed, immature plants. Large
+emergents can be present with crown cover &lt;5% of the total crown
+cover. However, if the cover is &gt;5%, classify as ‘uneven age’. Trees
+have well developed stems (poles). Crowns have small branches. The
+height is below maximum height for the stand type. Apical dominance
+still apparent in vigorous trees.</th>
+<th>Dominated by dense to sparse, well-developed but not mature plants.
+If large emergent plants are present, then they occupy &lt;5% crown
+cover of the dominant stratum; if &gt;5%, classify as ‘uneven age’.</th>
+<th>Vegetative growth abundant; plants approaching full mature size but
+reproductive material absent or in early stages only; soil surface
+largely obscured in average sites.</th>
+<th>Cover of plants high for the site; some reproduction may be
+evident.</th>
+</tr>
+<tr class="odd">
+<th>3</th>
+<th>Uneven (mixed) age</th>
+<th>Mixed size and age classes, usually identified by two or more strata
+dominated by the same species, but can also be sites with different
+species regenerating in the understorey of an older canopy.</th>
+<th>Mixed size and age classes; usually two or more strata dominated by
+the same species, but includes sites with different species regenerating
+in the understorey of an older canopy.</th>
+<th>A mixture of mature, perennial and immature annual species present
+on site.</th>
+<th>A mixture of mature reproductive plants with immature
+regeneration.</th>
+</tr>
+<tr class="header">
+<th>4</th>
+<th>Mature phase</th>
+<th>Well-spaced mature-sized plants or densely packed plants with crowns
+touching, with or without emergent senescent plants. Trees at maximum
+height for the type and conditions. Crown at full lateral development in
+unlocked stands. No apical dominance.</th>
+<th>May have well-spaced mature-sized plants, or have very densely
+packed plants with crowns touching, with or without emergent senescent
+plants.</th>
+<th>Most plants of reproductive age; depending on vegetation type,
+reproduction evident, or would be if environmental conditions were
+appropriate (e.g. water availability).</th>
+<th>Swards of plants common; plants of mature physiognomy (clump sizes
+and forms); reproduction common at appropriate times of year or
+drought/rain cycle; overall health and vigour high.</th>
+</tr>
+<tr class="odd">
+<th>5</th>
+<th>Senescent phase</th>
+<th>Dominated by overmature plants particularly in the dominant stratum;
+evidence of senescence in many plants, some without obvious links to
+disturbance. Tree crowns show signs of contracting: dead branches and
+decreased crown diameter and leaf area. Distorted branches and burls may
+be common. Dead trees may be present.</th>
+<th>Dominated by old plants (thick stems and primary branches, crowns
+either extremely dense with much dead wood or thin and open if species
+sheds dead branches), particularly in the dominant stratum. Many
+senescent plants, some without obvious links to disturbance.</th>
+<th>In largely annual vegetation, reproduction is complete and plants
+are dying or mostly dead; in perennial vegetation, plants have lost
+vigour, are breaking down; large areas of soil are exposed. Litter
+accumulation may be high.</th>
+<th>Clear evidence of the degeneration of plants or clumps; dead older
+parts of plants may be conspicuous.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h3>NVIS codes and descriptions</h3>
+<h4>Stratum codes and descriptions</h4>
+<p>NVIS Stratum types, growth forms and height classes permitted within
+each stratum type. Sourced from page 33 of NVIS (NVIS Technical Working
+Group 2017). Values in () are permitted but not recommended.</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 16%" />
+<col style="width: 27%" />
+<col style="width: 18%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strata</th>
+<th>NVIS Substratum Code</th>
+<th>Description</th>
+<th>Growth Forms<sup>1</sup></th>
+<th>Height Classes<sup>2</sup></th>
+<th>Not permitted</th>
+</tr>
+<tr class="odd">
+<th rowspan="3"><strong>Upper (U)</strong></th>
+<th>U1</th>
+<th>Tallest tree substratum.</th>
+<th rowspan="3"><ul>
+<li>
+<p>trees</p>
+</li>
+<li>
+<p>tree mallees</p>
+</li>
+</ul></th>
+<th rowspan="3">8,7,6 (5)</th>
+<th rowspan="3"><ul>
+<li>
+<p>grasses</p>
+</li>
+<li>
+<p>shrubs</p>
+</li>
+<li>
+<p>mallee shrubs</p>
+</li>
+</ul></th>
+</tr>
+<tr class="header">
+<th>U2</th>
+<th>Sub-canopy layer, second tree layer</th>
+</tr>
+<tr class="odd">
+<th>U3</th>
+<th>Sub-canopy layer, third tree layer</th>
+</tr>
+<tr class="header">
+<th rowspan="3"><strong>Middle (M)</strong></th>
+<th>M1</th>
+<th>Tallest shrub layer</th>
+<th rowspan="3"><ul>
+<li>
+<p>shrubs</p>
+</li>
+<li>
+<p>low trees</p>
+</li>
+<li>
+<p>mallee shrubs</p>
+</li>
+<li>
+<p>tall grasses</p>
+</li>
+<li>
+<p>grass trees</p>
+</li>
+</ul></th>
+<th rowspan="3">(6) 5, 4, 3</th>
+<th rowspan="3"><ul>
+<li>
+<p>mid grasses</p>
+</li>
+<li>
+<p>low grasses</p>
+</li>
+<li>
+<p>sedges</p>
+</li>
+<li>
+<p>tall trees</p>
+</li>
+<li>
+<p>palms</p>
+</li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th>M2</th>
+<th>Next shrub layer</th>
+</tr>
+<tr class="header">
+<th>M3</th>
+<th>Third shrub layer</th>
+</tr>
+<tr class="odd">
+<th rowspan="3"><strong>Ground (G)</strong></th>
+<th>G1</th>
+<th>Tallest ground species</th>
+<th rowspan="2"><ul>
+<li>
+<p>grasses</p>
+</li>
+<li>
+<p>forbs</p>
+</li>
+<li>
+<p>rushes</p>
+</li>
+<li>
+<p>sedges</p>
+</li>
+<li>
+<p>lichens</p>
+</li>
+<li>
+<p>low shrubs</p>
+</li>
+<li>
+<p>ferns</p>
+</li>
+<li>
+<p>cycads</p>
+</li>
+<li>
+<p>grass-trees</p>
+</li>
+<li>
+<p>aquatics</p>
+</li>
+</ul></th>
+<th rowspan="2">(4), 3, 2, 1</th>
+<th rowspan="3"><ul>
+<li>
+<p>trees</p>
+</li>
+<li>
+<p>tree mallees</p>
+</li>
+<li>
+<p>palms</p>
+</li>
+</ul></th>
+</tr>
+<tr class="header">
+<th>G2</th>
+<th>Ground</th>
+</tr>
+<tr class="odd">
+<th>G3</th>
+<th>Substrate surface</th>
+<th><ul>
+<li>
+<p>bryophytes</p>
+</li>
+<li>
+<p>lichens</p>
+</li>
+<li>
+<p>lower plants</p>
+</li>
+</ul></th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p><sup>1</sup> Growth forms can take the following values: T = tree, M
+= tree mallee, S = shrub, Y = mallee shrub, Z = heath shrub, C =
+chenopod shrub, U = samphire shrub, G = tussock grass, H = hummock
+grass, W = other grass, V = sedge, R = rush, F = forb, D = tree-fern, E
+= fern, B = bryophyte, N = lichen, K = epiphyte, L = vine, P = palm, X =
+grass-tree, A = cycad, J = seagrass, Q = aquatic and O = lower
+plant.</p>
+<p><sup>2</sup> Height classes can take the following values: 8. &gt;30
+m, 7. 10-30 m, 6. &lt;10 m, 5. &lt;3 m, 4. &gt;2 m, 3. 1-2 m, 2.
+0.5-1 m, 1. &lt;0.5 m.</p>
+<h3>Growth forms and heights</h3>
+<p>Height classes for specific growth forms defined for the NVIS.
+Sourced from page 34 of NVIS (NVIS Technical Working Group 2017).</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 11%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2">Height</th>
+<th colspan="5">Growth Form</th>
+</tr>
+<tr class="odd">
+<th>Height Class</th>
+<th>Height Range (m)</th>
+<th>Tree, vine, palm</th>
+<th>Shrub, heath shrub, chenopod shrub, ferns, samphire shrub, cycad,
+tree-fern, grass-tree, palm</th>
+<th>Tree mallee, mallee shrub</th>
+<th>Tussock grass, hummock grass, other grass, sedge, rush, forbs,
+vine</th>
+<th>Bryophyte, lichen, seagrass, aquatic</th>
+</tr>
+<tr class="header">
+<th><strong>8</strong></th>
+<th>&gt;30</th>
+<th>Tall</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr class="odd">
+<th><strong>7</strong></th>
+<th>10-30</th>
+<th>Mid</th>
+<th></th>
+<th>Tall</th>
+<th></th>
+<th></th>
+</tr>
+<tr class="header">
+<th><strong>6</strong></th>
+<th>&lt;10</th>
+<th>Low</th>
+<th></th>
+<th>Mid</th>
+<th></th>
+<th></th>
+</tr>
+<tr class="odd">
+<th><strong>5</strong></th>
+<th>&lt;3</th>
+<th></th>
+<th></th>
+<th>Low</th>
+<th></th>
+<th></th>
+</tr>
+<tr class="header">
+<th><strong>4</strong></th>
+<th>&gt;2</th>
+<th></th>
+<th>Tall</th>
+<th></th>
+<th>Tall</th>
+<th></th>
+</tr>
+<tr class="odd">
+<th><strong>3</strong></th>
+<th>1-2</th>
+<th></th>
+<th>Mid</th>
+<th></th>
+<th>Tall</th>
+<th></th>
+</tr>
+<tr class="header">
+<th><strong>2</strong></th>
+<th>0.5-1</th>
+<th></th>
+<th>Low</th>
+<th></th>
+<th>Mid</th>
+<th>Tall</th>
+</tr>
+<tr class="odd">
+<th><strong>1</strong></th>
+<th>&lt;0.5</th>
+<th></th>
+<th>Low</th>
+<th></th>
+<th>Low</th>
+<th>Low</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h3>Cover classes</h3>
+<p>NVIS cover classes. Sourced from page 39 of NVIS (NVIS Technical
+Working Group 2017).</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 12%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="8">Cover characteristics</th>
+</tr>
+<tr class="odd">
+<th>Foliage cover</th>
+<th>70-100</th>
+<th>30-70</th>
+<th>10-30</th>
+<th>&lt;10</th>
+<th>0</th>
+<th>0-5</th>
+<th>Unknown</th>
+</tr>
+<tr class="header">
+<th>Crown cover</th>
+<th>&gt;80</th>
+<th>50-80</th>
+<th>20-50</th>
+<th>0.25-20</th>
+<th>&lt;0.25</th>
+<th>0-5</th>
+<th>Unknown</th>
+</tr>
+<tr class="odd">
+<th>% Cover</th>
+<th>&gt;80</th>
+<th>50-80</th>
+<th>20-50</th>
+<th>0.25-20</th>
+<th>&lt;0.25</th>
+<th>0-5</th>
+<th>Unknown</th>
+</tr>
+<tr class="header">
+<th>Cover code</th>
+<th>d</th>
+<th>c</th>
+<th>i</th>
+<th>r</th>
+<th>bi</th>
+<th>bc</th>
+<th>Unknown</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3>NVIS Classification Examples</h3>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/nvis-classification-examples-1.png"
+  alt="NVIS classification examples 1"
+  widteh="1195"
+  height="895"
+/></th>
+</tr>
+<tr class="odd">
+<th><img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/nvis-classification-examples-2.png"
+  alt="NVIS classification examples 2"
+  widteh="995"
+  height="435"
+/></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/nvis-classification-examples-3.png"
+  alt="NVIS classification examples 3"
+  widteh="1195"
+  height="895"
+/></th>
+</tr>
+<tr class="odd">
+<th><img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/nvis-classification-examples-4.png"
+  alt="NVIS classification examples 4"
+  widteh="995"
+  height="412"
+/></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p><img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/nvis-classification-examples-5.png"
+  alt="NVIS classification examples 5"
+  widteh="1460"
+  height="944"
+/></p>
+<p><img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/nvis-classification-examples-6.png"
+  alt="NVIS classification examples 6"
+  widteh="981"
+  height="260"
+/></p>""" ;
     tern:equipment """<ul>
-<li>Mobile device loaded with the App and a mapping or field GIS app with relevant spatial layers (e.g. satellite imagery, project area boundary, prospective plot locations, vegetation mapping, topography, access tracks, watercourses)</li>
-<li>Backup hard copy maps with relevant spatial layers</li>
-<li>Yellow Book and/or soil and landform reference charts</li>
-<li>NVIS Australian Vegetation Attribute Manual and/or vegetation reference charts</li>
-<li>Compass (or suitable app)</li>
-<li>Clinometer (or suitable app)</li>
-<li>Range pole/rangefinder (to measure plant height for NVIS description).</li>
+<li>
+<p>Mobile device loaded with <em>the App</em> and a mapping or field GIS
+app with relevant spatial layers (e.g. satellite imagery, project area
+boundary, prospective plot locations, vegetation mapping, topography,
+access tracks, watercourses)</p>
+</li>
+<li>
+<p>Backup hard copy maps with relevant spatial layers</p>
+</li>
+<li>
+<p>Yellow Book and/or soil and landform reference charts</p>
+</li>
+<li>
+<p>NVIS Australian Vegetation Attribute Manual and/or vegetation
+reference charts</p>
+</li>
+<li>
+<p>Compass (or suitable app)</p>
+</li>
+<li>
+<p>Clinometer (or suitable app)</p>
+</li>
+<li>
+<p>Range pole / rangefinder (to measure plant height for NVIS
+description).</p>
+</li>
 </ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
-<ol>
-<li>Select the Plot Description module from the home page in the App.</li>
-<li>Navigate to the Landform and Land Surface information page and complete all fields (Figure 1).Click on the info buttons within the app or refer to the supporting information at the end of this module for more information and tips about each field (Appendix A).</li>
-<li>Record any other information about the physical features of the plot in the comments field (optional) and select Save and Continue.
+    tern:instructions """<ol type="1">
+<li><p>Select the <em>Plot Description</em> module from the home page in
+<em>the App</em>.</p></li>
+<li><p>Navigate to the <em>Landform and Land Surface</em> information
+page and complete all fields (Figure 1). Click on the info buttons
+within the app or refer to the supporting information for more
+information and tips about each field (Appendix A).</p></li>
+<li><p>Record any other information about the physical features of the
+plot in the comments field (optional) and select <em>Save and
+Continue.</em></p></li>
+</ol>
 <table>
-<tbody>
-<tr>
-<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/landform-and-land-surface-description-app-screen.png" alt="Figure 1. Landform and land surface description app screen " width="363" height="569" /></td>
-<td>Slope: Degrees from horizontal (0 = flat). Refer to the supporting information for recommendations on how to measure slope. <br />Slope (Class): Automatically generated from a list of 8 values once &ldquo;Slope (degrees)&rdquo; is entered &ndash; this information can help determine landform element (generated based on slope (degrees) value). <br />Aspect: Degrees from north (N = 360). If slope is 0 then aspect will also be 0. <br />Landform Pattern: Select from drop-down list. Refer to Landform and Land Surface Resources or info button for list of options. <br />Landform Element: Select dominant element from drop-down list. Refer to Landform and Land Surface Resources or info button. <br />Outcrop Lithology: Drop-down list. Refer to Landform and Land Surface Resources for list of options. *Note that this information can be sourced from GIS layers if a classification cannot be made in the field. <br />Surface Strew Lithology: Uses the same lithology list as above <br />Surface Strew Size:cc Drop-down lists with 4 values: 9 = none apparent, 1 = pebble, 2 = cobble, 3 = boulder.</td>
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/landform-and-land-surface-description-app-screen.png"
+  alt="Landform and surface description app screen"
+  widteh="363"
+  height="569"
+/></th>
+<th><ul>
+<li>
+<p>Slope: Degrees from horizontal (0 = flat). Refer to the supporting
+information for recommendations on how to measure slope.</p>
+</li>
+<li>
+<p>Slope (Class): Automatically generated from a list of 8 values once
+“Slope (degrees)” is entered – this information can help determine
+landform element (generated based on slope (degrees) value).</p>
+</li>
+<li>
+<p>Aspect: Degrees from north (N = 360). If slope is 0 then aspect will
+also be 0.</p>
+</li>
+<li>
+<p>Landform Pattern: Select from drop-down list. Refer to Landform and
+Land Surface Resources or info button for list of options.</p>
+</li>
+<li>
+<p>Landform Element: Select dominant element from drop-down list. Refer
+to Landform and Land Surface Resources or info button.</p>
+</li>
+<li>
+<p>Outcrop Lithology: Drop-down list. Refer to Landform and Land Surface
+Resources for list of options. *Note that this information can be
+sourced from GIS layers if a classification cannot be made in the
+field.</p>
+</li>
+<li>
+<p>Surface Strew Lithology: Uses the same lithology list as above</p>
+</li>
+<li>
+<p>Surface Strew Size: Drop-down lists with 4 values: 9 = none apparent,
+1 = pebble, 2 = cobble, 3 = boulder.</p>
+</li>
+</ul></th>
 </tr>
+</thead>
+<tbody>
 </tbody>
 </table>
-</li>
-<li>Navigate to the Vegetation information page (will automatically be taken to this screen when Save and Continue is selected on the Landform page) and complete all fields, including vegetation association information to NVIS Level 5 (Association level). For each of the three vegetation strata (Upper [U], Mid [M], Ground [G]) nominate in descending order the dominant species (up to 3 species per stratum) for each stratum, where present (Figure 2).
+<p>Figure 1. Landform and land surface description app screen</p>
+<ol start="4" type="1">
+<li><p>Navigate to the Vegetation information page (will automatically
+be taken to this screen when Save and Continue is selected on the
+Landform page) and complete all fields, including vegetation association
+information to NVIS Level 5 (Association level). For each of the three
+vegetation strata (Upper [U], Mid [M], Ground [G]) nominate in
+descending order the dominant species (up to 3 species per stratum) for
+each stratum, where present (Figure 2).</p></li>
+<li><p>Based on the information entered, the app (or database) will
+automatically generate a NVIS Level 5 description. Review this
+description, make any corrections if required and then select
+<em>Save</em>.</p></li>
+</ol>
 <table>
-<tbody>
-<tr>
-<td><img src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/vegetation-description-app-screen.png" alt="Figure 2. Vegetation description app screen" width="329" height="744" /></td>
-<td>Climatic Conditions: Drop-down list; Wet = recent rain, Dry = no evidence of recent rain. <br />Growth Stage: Drop-down list; Early regeneration, Advanced regeneration, Mixed age, Mature phase, Senescent phase. <br />Fire History: Drop-down list; Unburnt, Recently burnt, Past burn. <br />Structural Formation: Drop-down list; Refer to the Vegetation Structural Formation table in Appndix B - Vegetation Resources supporting information. <br />Homogeneity measure = number field which records the distance in metres from the plot centre to the edge of the vegetation association (nearest edge). If too far to determine, put in distance that vegetation association can still be seen. <br />Disturbance: Drop-down list with 9 values ranging from no disturbance to highly disturbed. <br />Vegetation Association: U = Upper storey, M = Mid storey, G = Ground storey. Select up to 3 dominant species for each stratum from the drop-down list (populated from the floristics module). <br />Growth form: Drop-down list for each species. Refer to the Vegetation Resources supporting information for a list of all growth forms. <br />Height: Drop-down list; Enter the height class for each species listed. Refer to the Vegetation Resources supporting information. <br />Cover: Enter the estimated percent cover for each species listed. Refer to the supporting Vegetation Resources information for further details. Cover information will be converted to a cover code for each stratum. <br />NVIS L5: App (or database) will automatically generate an association description based on the information provided.</td>
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/vegetation-description-app-screen.png"
+  alt="Vegetation description app screen"
+  widteh="329"
+  height="744"
+/></th>
+<th><ul>
+<li>
+<p>Climatic Conditions: Drop-down list; Wet = recent rain, Dry = no
+evidence of recent rain.</p>
+</li>
+<li>
+<p>Growth Stage: Drop-down list; Early regeneration, Advanced
+regeneration, Mixed age, Mature phase, Senescent phase.</p>
+</li>
+<li>
+<p>Fire History: Drop-down list; Unburnt, Recently burnt, Past burn.</p>
+</li>
+<li>
+<p>Structural Formation: Drop-down list; Refer to the Vegetation
+Structural Formation table in Appendix B - <em>Vegetation Resources</em>
+supporting information.</p>
+</li>
+<li>
+<p>Homogeneity measure = number field which records the distance in
+metres from the plot centre to the edge of the vegetation association
+(nearest edge). If too far to determine, put in distance that vegetation
+association can still be seen (upper limit = 1000 m)..</p>
+</li>
+<li>
+<p>Disturbance: Drop-down list with 9 values ranging from no disturbance
+to highly disturbed.</p>
+</li>
+<li>
+<p>Vegetation Association: U = Upper storey, M = Mid storey, G = Ground
+storey. Select up to 3 dominant species for each stratum from the
+drop-down list (populated from the floristics module).</p>
+</li>
+<li>
+<p>Growth form: Drop-down list for each species. Refer to the
+<em>Vegetation Resources</em> supporting information for a list of all
+growth forms.</p>
+</li>
+<li>
+<p>Height: Drop-down list; Enter the height class for each species
+listed. Refer to the <em>Vegetation Resources</em> supporting
+information.</p>
+</li>
+<li>
+<p>Cover: Enter the estimated percent cover for each species listed.
+Refer to the supporting <em>Vegetation Resources</em> information for
+further details. Cover information will be converted to a cover code for
+each stratum.</p>
+</li>
+<li>
+<p>NVIS L5: App (or database) will automatically generate an association
+description based on the information provided.</p>
+</li>
+</ul></th>
 </tr>
+</thead>
+<tbody>
 </tbody>
 </table>
-</li>
-<li>Based on the information entered, the app (or database) will automatically generate a NVIS Level 5 description. Review this description, make any corrections if required and then select Save.</li>
-</ol>
-</ol>
-<p><strong>Additional guidelines</strong></p>
-<p>Landform and Land Surface <br />- Plot description information should be collected at the end of the plot survey when the observer is familiar with the landscape and plant species have been identified or assigned a field name in the Floristics Module. <br />- For an overview and short description of the different landform and lithology classes refer to the Landform and Land Surface Resources at the end of this module or click on the info buttons within the app. <br />- The slope class is derived from the degree value entered and is automatically populated by the app. Slope class can help inform landform element, so slope information should be collected before the landform element field is populated. <br />- Slope can be measured with a clinometer, a compass or a suitable app. Refer to the supporting Landform and Land Surface Resources information at the end of this module for tips on measuring slope. <br />- If down slope is measured, slope and aspect can be recorded from the same position. <br />- If using a clinometer, ensure that slope is recorded in degrees and not as a percent. Slope should be measured as precisely as possible. <br />- Aspect is the orientation of the down slope and can be recorded to the nearest 5 or 10 degrees. Refer to the supporting Landform and Land Surface Resources information at the end of this module for information on measuring aspect. <br />- If the observer is not confident determining lithology in the field, this information can be sourced from relevant spatial datasets for the region. This information should be reviewed before the field survey and a copy taken to the field to assist with the lithology classification. <br />- To assist with lithology classification, refer to the info buttons within the app, which include photos for all the different lithology types.</p>
-<p>Vegetation <br />- Vegetation structural information is derived from the dominant growth form, height and cover for the association. Refer to the Vegetation Resources at the end of this module for a matrix of all potential options. All options are listed in the drop-down menu. If unsure, assign after the Structural Formation once the NVIS Level 5 description has been completed. <br />- The homogeneity measure is a record of the visual estimate (in metres) of the shortest distance from the plot centre to a vegetation association different to the one being sampled. Where there is uncertainty, it is recommended that this measure be an underestimate (better to be conservative when estimating the distance). <br />- Where it is not possible to directly observe the distance to a different association (e.g. goes over dune crest), estimate the furthest distance that you are sure is within the same association (i.e. as far as you can still see the vegetation association from the point you are standing). <br />- Vegetation information is collected that is consistent with the association level (Level 5) of the NVIS. Enter up to three dominant species for each stratum, where present. Information does not need to be entered for all species or all stratum. For example, if the association only has two dominant ground storey species and no upper or mid storey, then information only needs to be entered for G1 and G2. <br />- Refer to the supporting Vegetation Resources information, which includes vegetation structural diagrams for different vegetation communities. <br />- For a list of growth forms, height classes and cover codes, refer to the Vegetation Resources at the end of this module or click on the info button within the app. <br />- The following growth forms are allowed for each stratum: <br />- Upper &ndash; trees, tree mallee. <br />- Middle &ndash; shrubs, low trees, mallee shrubs, tall grasses, grass trees. <br />- Ground &ndash; grasses, forbs, rushes, sedges, lichens, low shrubs, ferns, grass trees. <br />- Only species that fall into the growth forms associated with each stratum will be available in the drop-down list for that layer (i.e. only species classified as trees or tree mallees can be selected from the upper story species lists). <br />- Once the NVIS information has been entered based on individual species and stratum, the app (or database) will generate the NVIS Level 5 description. It is good practice to review this description and if needed, make any amendments to the data entered, before clicking Save. <br />- If necessary, you can amend the vegetation information after clicking Save by using the Edit function. <br />- The NVIS Level 5 description can be cross-checked against the association descriptions from the Cover module.</p>"""^^rdf:HTML ;
+<p>Figure 2. Vegetation description app screen</p>
+<h2 id="section-1"></h2>
+<h2 id="section-2"></h2>"""^^rdf:HTML ;
+    tern:purpose """<p>The use of standardised terminology for the collection of plot
+information ensures plots are described in a consistent manner across
+projects and locations, and this facilitates the development of
+comprehensive datasets that can be used more widely (The National
+Committee on Soil and Terrain 2009) and that are FAIR
+(<strong>F</strong>indable, <strong>A</strong>ccessible,
+<strong>I</strong>nteroperable, <strong>R</strong>eusable; (Wilkinson
+<em>et al.</em> 2016)). Collecting consistent information regarding the
+physical environment of plots can improve understanding of interactions
+between the environment and vegetation, capture important information
+about the landform under survey and allow plot summary data to be
+compared between different sites and across projects (Heard and Channon
+1997; Brocklehurst <em>et al.</em> 2007; The National Committee on Soil
+and Terrain 2009).</p>
+<p>The use of standardised methods to classify vegetation across a range
+of different projects ensures consistent, cross jurisdictional
+vegetation classification, improves vegetation classification in
+data-poor areas, and allows comparison of data across regions, and under
+different disturbance, management and climatic regimes (Guerin <em>et
+al.</em> 2017; Baruch <em>et al.</em> 2018). The classification of
+vegetation associations based on associations between floristic and
+structural data is vital to inform biodiversity planning and management,
+including natural resources management, environmental impact
+assessments, and conservation and restoration projects. Furthermore,
+vegetation classification is integral to Australian biodiversity laws
+and regulations (Brocklehurst <em>et al.</em> 2007; Cleary <em>et
+al.</em> 2015; Freeman <em>et al.</em> 2015; Gellie <em>et al.</em>
+2018).</p>
+<p>The NVIS framework is the nationally adopted method for classifying
+and mapping native vegetation in Australia and provides a comprehensive
+way of describing and representing vegetation types based on structural
+and floristic measures (NVIS Technical Working Group 2017). Aligning
+with the NVIS ensures that vegetation data is collected in a consistent
+way, and allows inclusion into state and national databases, as well as
+comparisons across plots and projects.</p>""" ;
+    tern:scope """<p>The <em>Plot Description</em> module records basic physical
+information about the plot, including landform, slope and aspect,
+lithology, disturbance, climate, fire history and vegetation type. The
+information collected aligns with national guidelines from the
+<em>Australian Soil and Land Survey Field Handbook</em> (also known as
+the Yellow Book; The National Committee on Soil and Terrain 2009),
+<em>Guidelines for Surveying Soil and Land Resources</em> (also known as
+the Blue Book; McKenzie <em>et al.</em> 2008) and the National
+Vegetation Information System (NVIS) <em>Australian Vegetation Attribute
+Manual</em> (NVIS Technical Working Group 2017), as well as a number of
+state and territory guidelines.</p>
+<p>For the purpose of this program, a plot is considered an area of land
+representative of the landform, vegetation and land surfaces present
+within a project area (The National Committee on Soil and Terrain 2009).
+Plot locations are generally determined by a two-step process, which
+involves a desktop assessment to define areas of interest, followed by a
+field assessment to select final plot locations based on areas with a
+constant mix of vegetation, slope, relief and soil (Michaels 2006; White
+<em>et al.</em> 2012; Eyre <em>et al.</em> 2015; Freeman <em>et al.</em>
+2015). As a standard, plots are 100 m by 100 m (1 ha) in size, but in
+some cases plot shape may need to be altered to align with landscape
+features such as a dune crest or watercourse (White <em>et al.</em>
+2012).</p>
+<p>Landform information is generally collected using landform pattern
+and landform element components. The key determinants of landform
+pattern are relief, stream occurrence, lithology and soil, while slope,
+aspect and the position along the slope (toposequence) are key
+determinants of landform element (Heard and Channon 1997; McKenzie
+<em>et al.</em> 2008; The National Committee on Soil and Terrain 2009).
+There are approximately 40 landform patterns defined for Australia (see
+Appendix A), and approximately 80 landform elements (see Appendix A),
+which form a mosaic within landform patterns (The National Committee on
+Soil and Terrain 2009). A variety of land surface attributes are also
+measured for each plot, including slope, aspect, surface strew size and
+lithology. Slope and aspect record the degree and orientation of the
+slope respectively (Heard and Channon 1997). Surface strew size and
+lithology provide an indication of the size of any surface stones and
+the dominant rock type of any surface strew and outcrop (Heard and
+Channon 1997; Brocklehurst <em>et al.</em> 2007; McKenzie <em>et
+al.</em> 2008).</p>
+<p>Vegetation is generally classified based on attributes including the
+floristic composition, vertical and horizontal structure, plant
+morphology and condition (De Cáceres 2013). Assigning a vegetation
+classification consistent with Level 5 (association) of the NVIS
+provides a simple, consistent description of the vegetation and its
+structural complexity (White <em>et al.</em> 2012). The NVIS is the
+Commonwealth system that defines how vegetation communities are
+classified and described across the country. The framework was developed
+to enable the compilation of a nationally consistent dataset, produced
+from data collected at the state and territory level (NVIS Technical
+Working Group 2017). At Level 5, the dominant growth form, height, cover
+and species (to a maximum of 3 species) are recorded for each of the
+three main strata (Upper, Mid and Ground; NVIS Technical Working Group
+2017). A homogeneity measure (an estimate of the shortest distance from
+the survey point to the boundary of the vegetation association) is also
+collected to assist with vegetation classification and mapping (Sparrow
+<em>et al.</em> 2020).</p>
+<p>Supporting information, including growth stage, climate, disturbance
+and fire history provides an indication of the reliability of the
+vegetation data in terms of species diversity and the abundance of
+seasonal vegetation (which depends on preceding rainfall and other
+weather conditions), and helps document other pressures on the
+vegetation such as grazing (Heard and Channon 1997; Brocklehurst <em>et
+al.</em> 2007; McKenzie <em>et al.</em> 2008; Casson <em>et al.</em>
+2009). Collecting this description information provides the context
+needed for the analysis of data collected using a variety of other
+methods at the plot level.</p>""" ;
 .
 
