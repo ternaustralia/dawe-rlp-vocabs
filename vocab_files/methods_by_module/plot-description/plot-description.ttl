@@ -8,7 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32>
     a skos:Concept ;
-    dcterms:description """<h2 id="module-overview">Module overview</h2>
+    dcterms:description """<h3 id="module-overview">Module overview</h3>
 <p>This module covers the procedures and guidelines to collect plot
 description information, including landform, slope, aspect and
 disturbance, as well as a vegetation description to NVIS Level 5
@@ -43,7 +43,9 @@ capture any defining features described in this module including
 landform and vegetation type.</p>
 </li>
 </ul>""" ;
-    dcterms:source """<ul>
+    dcterms:source """
+    <h3>References</h3>
+    <ul>
   <li><p>Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E, Tokmakoff,
     A, Lowe, AJ (2018) Floristic and structural assessment of Australian
     rangeland vegetation with standardized plot-based surveys.
@@ -187,7 +189,9 @@ landform and vegetation type.</p>
 </li>
 </ul>""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """<p>Table 1. Key definitions and terminology relevant to the <em>Plot
+    skos:definition """
+    <h3>Key definitions and terminology</h3>
+    <p>Table 1. Key definitions and terminology relevant to the <em>Plot
 description</em> module.</p>
 <table>
 <colgroup>
@@ -293,7 +297,9 @@ Structural Formation).</th>
 <tbody>
 </tbody>
 </table>""" ;
-    skos:note """<h4 id="landform-and-land-surface">Landform and Land Surface </h4>
+    skos:note """
+    <h3>Additional Guidelines</h3>
+    <h4 id="landform-and-land-surface">Landform and Land Surface </h4>
 <ul>
 <li>
 <p>Plot description information should be collected at the end of the
@@ -431,9 +437,9 @@ association descriptions from the <em>Cover</em> module</p>
     skos:prefLabel "Plot Description" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/plot-description/plot-description.ttl"^^xsd:anyURI ;
     tern:appendix """
-<h2>Appendix A. Landform and Land Surface Resources</h2>
-<h3>Slope and Aspect</h3>
-<h4>Measuring slope using a clinometer</h4>
+<h3>Appendix A. Landform and Land Surface Resources</h3>
+<h4>Slope and Aspect</h4>
+<h5>Measuring slope using a clinometer</h5>
 <p><img
   src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/measuring-slope-using-clinometer.png"
   alt="Measuring slope using a clinometer"
@@ -471,7 +477,7 @@ compass (some compasses are also fitted with a clinometer) or a suitable
 app (such as Simple Inclinometer, Inclinometer).</p>
 </li>
 </ul>
-<h4>Recording aspect using a compass</h4>
+<h5>Recording aspect using a compass</h5>
 <ul>
 <li>
 <p>Aspect is the direction that a slope faces and is recorded in the
@@ -501,8 +507,8 @@ widteh="348"
 height="356"
 />
 </ul>
-<h2>Appendix B. Vegetation Resources</h2>
-<h3>Growth stage</h3>
+<h3>Appendix B. Vegetation Resources</h3>
+<h4>Growth stage</h4>
 <p>Vegetation growth stage, which aligns with the information provided
 on page 122 of the Yellow Book (The National Committee on Soil and
 Terrain 2009).</p>
@@ -610,8 +616,8 @@ parts of plants may be conspicuous.</th>
 </tbody>
 </table>
 
-<h3>NVIS codes and descriptions</h3>
-<h4>Stratum codes and descriptions</h4>
+<h4>NVIS codes and descriptions</h4>
+<h5>Stratum codes and descriptions</h5>
 <p>NVIS Stratum types, growth forms and height classes permitted within
 each stratum type. Sourced from page 33 of NVIS (NVIS Technical Working
 Group 2017). Values in () are permitted but not recommended.</p>
@@ -797,7 +803,7 @@ plant.</p>
 <p><sup>2</sup> Height classes can take the following values: 8. &gt;30
 m, 7. 10-30 m, 6. &lt;10 m, 5. &lt;3 m, 4. &gt;2 m, 3. 1-2 m, 2.
 0.5-1 m, 1. &lt;0.5 m.</p>
-<h3>Growth forms and heights</h3>
+<h4>Growth forms and heights</h4>
 <p>Height classes for specific growth forms defined for the NVIS.
 Sourced from page 34 of NVIS (NVIS Technical Working Group 2017).</p>
 <table style="width:100%;">
@@ -903,7 +909,7 @@ vine</th>
 </tbody>
 </table>
 
-<h3>Cover classes</h3>
+<h4>Cover classes</h4>
 <p>NVIS cover classes. Sourced from page 39 of NVIS (NVIS Technical
 Working Group 2017).</p>
 <table style="width:100%;">
@@ -965,7 +971,7 @@ Working Group 2017).</p>
 <tbody>
 </tbody>
 </table>
-<h3>NVIS Classification Examples</h3>
+<h4>NVIS Classification Examples</h4>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -1028,7 +1034,9 @@ Working Group 2017).</p>
   widteh="981"
   height="260"
 /></p>""" ;
-    tern:equipment """<ul>
+    tern:equipment """
+    <h4>Equipment</h4>
+    <ul>
 <li>
 <p>Mobile device loaded with <em>the App</em> and a mapping or field GIS
 app with relevant spatial layers (e.g. satellite imagery, project area
@@ -1056,7 +1064,9 @@ reference charts</p>
 description).</p>
 </li>
 </ul>"""^^rdf:HTML ;
-    tern:instructions """<ol type="1">
+    tern:instructions """
+    <h4>Instructions and procedures</h4>
+    <ol type="1">
 <li><p>Select the <em>Plot Description</em> module from the home page in
 <em>the App</em>.</p></li>
 <li><p>Navigate to the <em>Landform and Land Surface</em> information
@@ -1209,7 +1219,9 @@ description based on the information provided.</p>
 <p>Figure 2. Vegetation description app screen</p>
 <h2 id="section-1"></h2>
 <h2 id="section-2"></h2>"""^^rdf:HTML ;
-    tern:purpose """<p>The use of standardised terminology for the collection of plot
+    tern:purpose """
+    <h4>Rationale</h4>
+    <p>The use of standardised terminology for the collection of plot
 information ensures plots are described in a consistent manner across
 projects and locations, and this facilitates the development of
 comprehensive datasets that can be used more widely (The National
@@ -1244,7 +1256,9 @@ and floristic measures (NVIS Technical Working Group 2017). Aligning
 with the NVIS ensures that vegetation data is collected in a consistent
 way, and allows inclusion into state and national databases, as well as
 comparisons across plots and projects.</p>""" ;
-    tern:scope """<p>The <em>Plot Description</em> module records basic physical
+    tern:scope """
+    <h4>Introduction</h4>
+    <p>The <em>Plot Description</em> module records basic physical
 information about the plot, including landform, slope and aspect,
 lithology, disturbance, climate, fire history and vegetation type. The
 information collected aligns with national guidelines from the
