@@ -1,8 +1,10 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db>
     a skos:Concept ;
@@ -12,10 +14,10 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
   samples and at 10 cm increments, taking care not to sample across soil
   horizons. Critical to describe, measure and sample the soil profile, and
   assign an Australian Soil Classification.
-</p>""" ;
+</p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Soil pit characterization protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-pit-characterization-protocol/soil-pit-characterization-protocol.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-pit-characterization-protocol/soil-pit-characterization-protocol.ttl"^^xsd:anyURI ;
     tern:equipment """<ul>
   <li>
     <p>
@@ -113,7 +115,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
       Soil and Terrain 2016).
     </p>
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
     tern:instructions """<p>Extending instructions from Plot soil description module</p>
 <ul>
   <li>
@@ -758,6 +760,6 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
       bags. If necessary, samples can be sieved in the field using a 2 mm sieve.
     </p>
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
 .
 

@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/6b2ba4eb-89d1-46bd-a845-f0b32d129806>
     a skos:Concept ;
@@ -11,7 +12,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     skos:definition "Strength of soil is the resistance to breaking or deformation. Determined by the force just sufficient to break or deform a 20 mm diameter piece of soil when squeezed between thumb and forefinger or by standing and using body weight on a hard flat surface." ;
     skos:exactMatch <http://linked.data.gov.au/def/tern-cv/c_78404103> ;
     skos:prefLabel "soil consistency- strength of soil" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/soil-consistency-strength-of-soil.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/soil-consistency-strength-of-soil.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/9f599dbb-458f-4d8a-846a-fd1a080f8853> ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/06461021-a6c2-4175-9651-23653c2b9116> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db> ;

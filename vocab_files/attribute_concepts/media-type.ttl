@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/133ff279-17d9-47ca-9a18-b8835338a10a>
     a skos:Concept ;
@@ -10,7 +11,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "A mode in the camera trap that defines the type of media used for image capture. Default is set to 'burst'." ;
     skos:prefLabel "media type" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/media-type.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/media-type.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/e3097ab4-6299-41a2-9475-bfa961a5ea57> ;
     tern:valueType tern:IRI ;
 .

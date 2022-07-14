@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/dbce409d-2c07-41c0-abdb-8e3389362008>
     a skos:Concept ;
@@ -10,7 +11,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "A barcode id linked to the plot and individual leaf litter trap id. " ;
     skos:prefLabel "leaf litter barcode id" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/leaf-litter-barcode-id.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/leaf-litter-barcode-id.ttl"^^xsd:anyURI ;
     tern:valueType tern:Text ;
 .
 

@@ -1,8 +1,10 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/e3ad3e5b-7c1c-4b59-bdb1-297f707d2ca3>
     a skos:Concept ;
@@ -20,10 +22,10 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
   are located within a 25 x 25 m soil sub-site zone in the southwest corner of
   the plot (Figure 1) for consistency with various national soil research
   programs and monitoring protocols.
-</p>""" ;
+</p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Soil sub-site samples protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-sub-site-samples-protocol/soil-sub-site-samples-protocol.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-sub-site-samples-protocol/soil-sub-site-samples-protocol.ttl"^^xsd:anyURI ;
     tern:equipment """<ul>
   <li>
     <p>
@@ -91,7 +93,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
       National Committee on Soil and Terrain 2009)
     </p>
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
     tern:instructions """<ol>
   <li>
     <p>
@@ -441,6 +443,6 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
       bags. If necessary, samples can be sieved in the field using a 2 mm sieve.
     </p>
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
 .
 

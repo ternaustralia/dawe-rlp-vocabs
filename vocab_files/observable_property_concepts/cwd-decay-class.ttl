@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/fa986148-e44a-4cd3-8ac3-17748eb013f3>
     a skos:Concept ;
@@ -10,7 +11,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "CWD decay class is a stage/class of decay of CWD observed in an ecosystem. It is ranked based on Class 1 to 5, such that Class-1 is defined as a structurally intact, recently fallen branch whereas class-5 is very soft and largely disintegrated." ;
     skos:prefLabel "cwd decay class" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/cwd-decay-class.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/cwd-decay-class.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/b5180d8a-75b6-4bca-9413-0e507e910387> ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2e122e23-881c-43fa-a921-a8745f016ceb> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/f455e72b-8fad-4d5d-8dfc-3f1464e91a6e> ;

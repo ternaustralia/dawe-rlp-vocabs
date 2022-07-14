@@ -2,6 +2,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/242d081b-b3f4-4206-bc39-7aa42e9972ee>
     a skos:Concept ;
@@ -9,7 +10,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     skos:definition "The height of a whole plant from the ground to the highest vegetative component described using classes. " ;
     skos:exactMatch <http://linked.data.gov.au/def/tern-cv/09296da0-c645-4165-950c-780c21b3c140> ;
     skos:prefLabel "height class" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/height-class.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/height-class.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/b1b05cd1-3b85-4639-a6af-799a34d88d43> ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ;

@@ -1,13 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e>
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Floristics" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/floristics/floristics.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/floristics/floristics.ttl"^^xsd:anyURI ;
     tern:equipment """<p>
 <ul>
 <li>Mobile device (tablet/phone capable of taking high resolution photos) with the App (progressive web app) saved to the home screen </li>
@@ -25,7 +27,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 <li>Flora reference keys, guides and apps for the region </li>
 <li>Hand lens </li>
 </ul>
-</p>""" ;
+</p>"""^^rdf:HTML ;
     tern:instructions """<p>
 <ol>
 <li>Search the plot for each flora species within the plot (Figure 3). Your search (1 surveyor) should last between 30 and 90 minutes or more depending on the diversity and density of the vegetation (see Additional guidelines below).</li>
@@ -140,6 +142,6 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 <li>Keep succulent plants in a separate press to facilitate more frequent changing of papers and reduce the risk of damaging other specimens.</li>
 <li>Succulent plants are difficult to dry and can be frozen overnight (either in the field or on return to the office) to fracture the cell walls enabling the moisture to escape. Once frozen, the specimen can be transferred to newspaper and cardboard in the press for the plot which it was recorded from.</li>
 <li>A photo may be useful to assist in the accurate identification of a species, particularly for species where colour is important to identification but may not be preserved in the dried specimen.</li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
 .
 

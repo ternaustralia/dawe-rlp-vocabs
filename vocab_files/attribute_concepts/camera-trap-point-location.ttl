@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/b84b3658-43bf-497b-9efb-bc718334e2e7>
     a skos:Concept ;
@@ -11,7 +12,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     skos:definition """The gps location in the plot where the camera trap/s have been deployed. This includes the Latitude, Longitude and Geodetic datum of the
 camera trap point.""" ;
     skos:prefLabel "camera trap point location" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/camera-trap-point-location.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/camera-trap-point-location.ttl"^^xsd:anyURI ;
     tern:valueType tern:Text ;
 .
 

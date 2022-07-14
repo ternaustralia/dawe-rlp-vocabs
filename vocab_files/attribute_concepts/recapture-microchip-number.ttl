@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/f5c1b427-0099-494f-9a0d-bd66d9a93ac6>
     a skos:Concept ;
@@ -12,7 +13,7 @@ decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "The unique number on the microchip that was used on the target individual." ;
     skos:prefLabel "recapture microchip number" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/recapture-microchip-number.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/recapture-microchip-number.ttl"^^xsd:anyURI ;
     tern:valueType tern:Integer ;
 .
 

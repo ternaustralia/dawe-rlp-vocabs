@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/e89eccd4-1deb-49cc-9103-272f6628a274>
     a skos:Concept ;
@@ -10,7 +11,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "Amount of litter and fine woody debris (i.e. dead wood pieces < 10 cm in diameter) that covers the ground; expressed as a percentage." ;
     skos:prefLabel "litter cover percentage" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/litter-cover-percentage.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/litter-cover-percentage.ttl"^^xsd:anyURI ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/e6ed6e58-5916-4d31-9ed5-109ab3436fce> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/7e4bfab2-4056-4309-bd22-f070f6952bc0> ;
     tern:valueType tern:Float ;

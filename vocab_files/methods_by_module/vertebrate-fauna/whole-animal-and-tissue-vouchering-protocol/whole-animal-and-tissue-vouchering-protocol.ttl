@@ -1,13 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/a15130ca-82ce-4c50-9392-66f9b0c73450>
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Whole animal and tissue vouchering protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vertebrate-fauna/whole-animal-and-tissue-vouchering-protocol/whole-animal-and-tissue-vouchering-protocol.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vertebrate-fauna/whole-animal-and-tissue-vouchering-protocol/whole-animal-and-tissue-vouchering-protocol.ttl"^^xsd:anyURI ;
     tern:equipment """<p>The following equipment is required:</p>
 <ul>
   <li>
@@ -109,7 +111,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
   <li>
     <p>Alcohol or alcohol wipes for cleaning equipment.</p>
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
     tern:instructions """<p style="color: orange">General</p>
 <p>
   Procedures to voucher animals are listed below. See Section 6.1.3 Additional
@@ -1105,6 +1107,6 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
       conditions.
     </p>
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
 .
 

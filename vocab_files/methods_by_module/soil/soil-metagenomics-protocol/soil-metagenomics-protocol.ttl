@@ -1,8 +1,10 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/ca8a3a10-d35d-45ff-b987-a4ab3f1ce1c5>
     a skos:Concept ;
@@ -12,10 +14,10 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
   metagenomics analysis (generally collected immediately before the soil
   sub-site samples are collected – if undertaking the Soil sub-site
   characterization protocol).
-</p>""" ;
+</p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Soil metagenomics protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-metagenomics-protocol/soil-metagenomics-protocol.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-metagenomics-protocol/soil-metagenomics-protocol.ttl"^^xsd:anyURI ;
     tern:equipment """<ul>
   <li>
     <p>
@@ -69,7 +71,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
       connectivity).
     </p>
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
     tern:instructions """<ol>
   <li>
     <p>
@@ -240,6 +242,6 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
       recommendations should be always followed when handling silica.
     </p>
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
 .
 

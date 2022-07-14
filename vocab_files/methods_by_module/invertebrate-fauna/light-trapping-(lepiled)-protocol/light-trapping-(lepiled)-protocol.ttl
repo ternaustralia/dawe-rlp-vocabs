@@ -1,8 +1,10 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/7d74d213-3fb8-46b4-9970-2544f555e279>
     a skos:Concept ;
@@ -20,10 +22,10 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
   seasonal). For repeat monitoring, trap at the same time of year and moon
   phase, in the same location, for the same number of hours starting from the
   same time before dusk, and during similar weather conditions (Patrick 2016).
-</p>""" ;
+</p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Light trapping (LepiLED) protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/light-trapping-(lepiled)-protocol/light-trapping-(lepiled)-protocol.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/light-trapping-(lepiled)-protocol/light-trapping-(lepiled)-protocol.ttl"^^xsd:anyURI ;
     tern:equipment """<ul>
   <li>
     <p>Personnel – ideally two people for safety</p>
@@ -118,7 +120,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
   <li>
     <p>Flagging tape.</p>
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
     tern:instructions """<ol>
   <li>
     <p>
@@ -542,6 +544,6 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     </p>
   </li>
 </ul>
-""" ;
+"""^^rdf:HTML ;
 .
 

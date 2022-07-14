@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/ca245b0d-b3e2-4dbc-8a72-d8cd1868a1ce>
     a skos:Concept ;
@@ -10,7 +11,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "Whether the count of individuals sampled is an extact match or an estimate." ;
     skos:prefLabel "count exact or estimate" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/count-exact-or-estimate.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/count-exact-or-estimate.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/12750b20-0e91-4878-9029-b4d9d7788429> ;
     tern:valueType tern:IRI ;
 .

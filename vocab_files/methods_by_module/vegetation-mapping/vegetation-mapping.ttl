@@ -1,13 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/15361f98-7669-410e-9b04-e9be069c7508>
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Vegetation mapping" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vegetation-mapping/vegetation-mapping.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vegetation-mapping/vegetation-mapping.ttl"^^xsd:anyURI ;
     tern:equipment """<p>
 <ul>
 <li>Mobile device loaded with the App, and a field GIS app with available layers (e.g. satellite imagery, project area boundaries, prospective vegetation mapping point and plot locations, vegetation mapping, landform features, access tracks, watercourses)</li>
@@ -26,7 +28,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 <li>Rangefinder or suitable app (e.g. Tree Meter, Arboreal &ndash; Tree Height) (to measure tree height to correctly assign structural formation)</li>
 <li>Rangefinder (optional, to assist with homogeneity measure).</li>
 </ul>
-</p>""" ;
+</p>"""^^rdf:HTML ;
     tern:instructions """<ol>
 <li>Select a suitable location for a vegetation mapping point:
 <ul>
@@ -145,6 +147,6 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 <li>Change the newspaper regularly to prevent specimens becoming mouldy. Frequent changes will be necessary if specimens were damp when collected. Place press in a dryer as soon as possible (or at least a warm, dry place).</li>
 <li>Keep succulent plants in a separate press to facilitate easier changing of papers and reduce the risk of damaging other specimens.</li>
 <li>Succulent plants are difficult to dry and can be frozen overnight (either in the field or on return to the office) to fracture the cell walls enabling the moisture to escape. Once frozen, the specimen can be transferred to newspaper and cardboard in the press for the vegetation mapping point from which it was recorded.</li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
 .
 

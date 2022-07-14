@@ -1,13 +1,119 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/cd83fb3e-d8d3-4502-a618-a0f3f8712b27>
-    a skos:Concept ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """<p style="font-size: large;"><strong>Additional guidelines</strong></p>
+  <p><strong>Take measurements</strong></p>
+  <ul>
+    <li>
+      It may be beneficial to undertake this module while the transects for the
+      point-intercept measures in the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover module</a> (5 N/S and 5 E/W; see Figure 1)
+      are laid out. The transects can help to partition the plot into more
+      manageable subplots that can be surveyed systematically. This will be
+      particularly helpful in dense plots.
+    </li>
+    <li>
+      Coloured survey pins can alternatively be used to partition the plot into
+      more manageable subplots.
+    </li>
+    <li>Clearly mark the measuring pole at 1.3 m to easily locate the POM.</li>
+    <li>
+      If a measuring pole is not available, use the normal side of the diameter
+      tape (i.e. the side of the tape with 1 cm increments) or a regular tape to
+      locate the POM. Mark the tape at 1.3 m to easily locate the POM.
+    </li>
+    <li>
+      Loose litter and debris at the base of the tree should be brushed aside
+      before determining the POM.
+    </li>
+    <li>
+      The metal tip, a push pin or thumb tack can be used to hold the end of the
+      diameter or regular tape in place while pulling the tape around the trunk or
+      stem at the POM.
+    </li>
+    <li>
+      The rule set to determine if a tree is in or out of the plot is illustrated in Figure 5. A tree is in the plot if the more than 50% of the base of the
+      trunk is within the plot.
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/Rule-set-tree-out-of-plot.png"
+                alt="Rule set to determine if a tree is in or out of the plot (Wood et al. 2015)."
+                width="500"
+                height="200"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Figure 5. Rule set to determine if a tree is in or out of the plot (Wood et al. 2015).</p>
+    </li>
+  </ul>
+  <p><strong>Solutions to problem trees</strong></p>
+  <ul>
+    <li>
+      Solutions to measuring DBH for problem trees are illustrated in Figure 6.
+    </li>
+    <li>
+      Buttressed trees are a significant source of error in repeat tree
+      measurements and require careful attention in the field. Buttressed trees
+      are measured at 1.3 m, at the highest point you can reach (e.g.,
+      approximately 2.2 m) and 50 cm above the top of the buttress. Every effort
+      must be made for both the 1.3 m and the highest point you can reach during
+      initial surveys.
+    </li>
+    <li>
+      Multi-stemmed trees are treated as single trees with multiple stems (Stem A,
+      B, C, etc.). Record measurements for each individual stem.
+    </li>
+    <li>
+      For trees on a slope, the 1.3 m POM should be measured on the uphill side of
+      the tree.
+    </li>
+    <li>
+      Leaning trees should be measured on the inside of the lean, starting at the
+      ground next to the base of the tree.
+    </li>
+    <li>
+      Deformed trees should be measured either above or below 1.3 m and the POM
+      recorded.
+    </li>
+    <li>
+      Dead trees in a baseline survey are flagged as &lsquo;Dead&rsquo; and all
+      other attributes are measured as normal.
+    </li>
+    <li>
+      The soft texture of tree fern trunks is not conducive to DBH measurements
+      and therefore tree ferns are not measured for diameter.
+    </li>
+        <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/measuring-DBH-for-problem-trees.jpg"
+                    alt="Solutions to measuring DBH for problem trees"
+                    width="550"
+                    height="460"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Figure 6. Solutions to measuring DBH for problem trees (Wood et al. 2015).</p>
+  </ul>"""^^rdf:HTML ;
     skos:prefLabel "Lite DBH measures protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/basal-area/lite-dbh-measures-protocol/lite-dbh-measures-protocol.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/basal-area/lite-dbh-measures-protocol/lite-dbh-measures-protocol.ttl"^^xsd:anyURI ;
     tern:equipment """<ul>
   <li>
     Mobile device (tablet/phone capable of taking high resolution photos) with
@@ -24,214 +130,129 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     Five 100 m tape measures (or ca. 30 coloured survey pins) to delineate
     subplots in the belt transects to measure DBH in dense plots.
   </li>
-</ul>""" ;
+</ul>"""^^rdf:HTML ;
     tern:instructions """<p>
-<ol>
-  <li>
-    Ensure the Plot selection and layout module has been completed to mark out
-    the plot grid with very high accuracy using the Trimble&reg; R1.
-  </li>
-  <li>
-    Use the transects laid out for the Cover module to delineate the two 20 x
-    100 m belt transects in a north- south direction, between the N/S1 and N/S2,
-    and N/S4 and N/S5 point-intercept transects (Figure 1;&nbsp;see Additional
-    guidelines).
-  </li>
-  <li>
-    If the plot contains dense trees, tall shrubs and/or mallee, use the
-    east-west transects laid out for the Cover module to delineate the belt
-    transects into subplots and simplify DBH measures. Alternatively, use
-    coloured survey pins.
-  </li>
-  <li>
-    Open the App and navigate to the &lsquo;Basal Area&rsquo; module and then
-    the &lsquo;Lite DBH Measures Protocol&rsquo;.
-  </li>
-  <li>
-    Select the instrument you are using to measure DBH, either a diameter tape,
-    regular tape or tree caliper (Appendix A).
-  </li>
-  <li>
-    Move through each belt transect systematically in a &lsquo;zig zag&rsquo;
-    pattern and search for trees, tall shrubs and mallee greater than 2 m in
-    height with a DBH &ge;10 cm.
-  </li>
-  <li>
-    For each tree, tall shrub or mallee with a DBH &ge;10 cm encountered, press
-    the &lsquo;Add tree&rsquo; button.
-  </li>
-  <li>
-    Record the species name or assigned field name if the species name is
-    unknown (see the Floristics module). Flag if the tree is dead using the
-    checkbox.
-  </li>
-  <li>
-    Use the measuring pole pushed firmly into the ground to locate the 1.3 m
-    point of measurement (POM), or suitable POM for problem trees, see
-    Additional guidelines).
-  </li>
-  <li>
-    If using a diameter or regular tape, pull the tape around the trunk or stem
-    at the POM so that it is perpendicular to the main axis of the trunk or
-    stem, rather than parallel to the ground (provides an accurate measurement
-    of leaning trees, see Additional guidelines). Clear any moss, loose bark, or
-    anything that may distort the tape.
-  </li>
-  <li>
-    If using a diameter tape, record the diameter and POM (default is 1.3 m
-    update for problem trees, see Additional guidelines) in meters.
-  </li>
-  <li>
-    If using a regular tape, record the circumference and POM (default is 1.3 m
-    update for problem trees, see Additional guidelines) in meters. The App will
-    automatically calculate and display the diameter.
-  </li>
-  <li>
-    If using a tree caliper, record the diameter and POM (default is 1.3 m
-    update for problem trees, see Additional guidelines) in meters. Close the
-    caliper around the trunk or stem at the POM so that it is perpendicular to
-    the main axis of the trunk or stem, rather than parallel to the ground
-    (Provides an accurate measurement of leaning trees, see Additional
-    guidelines). Clear any moss, loose bark, or anything that may prevent
-    closing the caliper fully.
-  </li>
-  <li>
-    If the trunk or stem is shaped as an ellipse when using a tree caliper,
-    check the &lsquo;Ellipse&rsquo; checkbox and record a second diameter
-    measurement at a 90&deg; angle to the first diameter measurement to account
-    for the ellipse. The App will automatically calculate the square root of the
-    product of the two diameters to determine the measure of trunk or stem
-    diameter.
-  </li>
-  <li>
-    If the tree is multi-stemmed, check the &lsquo;multi-stemmed tree&rsquo;
-    checkbox. The App will display the stem identifier (Stem B, C, etc.),
-    &lsquo;Diameter&rsquo; and &lsquo;POM&rsquo; fields and a &lsquo;Save
-    stem&rsquo; button. Record and save the diameter and POM for each individual
-    stem. If any stems are shaped as an ellipse when using a tree caliper, refer
-    to step 13.
-  </li>
-  <li>
-    If the tree is buttressed, check the &lsquo;Buttressed tree&rsquo; checkbox.
-    Additional to the &lsquo;Breast height&rsquo; measurement, the App will
-    display &lsquo;Diameter&rsquo; and &lsquo;POM&rsquo; fields for &lsquo;Reach
-    point&rsquo; (i.e., the highest point that you can reach, approximately 2.2
-    m) and &rsquo;50 cm above buttress&rsquo; (i.e. 50 cm above the top of the
-    buttress) measurements. Record the diameter and POM for each measurement. If
-    the trunk or stem is shaped as an ellipse when using a tree caliper, refer
-    to step 13.
-  </li>
-  <li>Select the &lsquo;Save tree&rsquo; button.</li>
-  <li>
-    Repeat steps 7&ndash;17 for every tree, tall shrub and/or mallee greater
-    than 2 m in height with a DBH &ge;10 cm within the plot.
-  </li>
-  <li>
-    When all trees within the belt transects have been measured, select the
-    &lsquo;Finish module&rsquo; button to return to the module selection screen.
-  </li>
-</ol>
-</p>
-<p><strong>Additional guidelines</strong></p>
-<p>Take measurements</p>
-<ul>
-  <li>
-    It may be beneficial to undertake this module while the transects for the
-    point-intercept measures in the Cover module (5 N/S and 5 E/W; see Figure 1)
-    are laid out. The transects can help to partition the plot into more
-    manageable subplots that can be surveyed systematically. This will be
-    particularly helpful in dense plots.
-  </li>
-  <li>
-    Coloured survey pins can alternatively be used to partition the plot into
-    more manageable subplots.
-  </li>
-  <li>Clearly mark the measuring pole at 1.3 m to easily locate the POM.</li>
-  <li>
-    If a measuring pole is not available, use the normal side of the diameter
-    tape (i.e. the side of the tape with 1 cm increments) or a regular tape to
-    locate the POM. Mark the tape at 1.3 m to easily locate the POM.
-  </li>
-  <li>
-    Loose litter and debris at the base of the tree should be brushed aside
-    before determining the POM.
-  </li>
-  <li>
-    The metal tip, a push pin or thumb tack can be used to hold the end of the
-    diameter or regular tape in place while pulling the tape around the trunk or
-    stem at the POM.
-  </li>
-  <li>
-    The rule set to determine if a tree is in or out of the plot is shown. A tree is in the plot if the more than 50% of the base of the
-    trunk is within the plot.
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/Rule-set-tree-out-of-plot.png"
-              alt="Rule set to determine if a tree is in or out of the plot (Wood et al. 2015)."
-              width="500"
-              height="200"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-</ul>
-<p>Solutions to problem trees</p>
-<ul>
-  <li>
-    Solutions to measuring DBH for problem trees are illustrated as following.
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/measuring-DBH-for-problem-trees.jpg"
-              alt="Solutions to measuring DBH for problem trees"
-              width="550"
-              height="460"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    Buttressed trees are a significant source of error in repeat tree
-    measurements and require careful attention in the field. Buttressed trees
-    are measured at 1.3 m, at the highest point you can reach (e.g.,
-    approximately 2.2 m) and 50 cm above the top of the buttress. Every effort
-    must be made for both the 1.3 m and the highest point you can reach during
-    initial surveys.
-  </li>
-  <li>
-    Multi-stemmed trees are treated as single trees with multiple stems (Stem A,
-    B, C, etc.). Record measurements for each individual stem.
-  </li>
-  <li>
-    For trees on a slope, the 1.3 m POM should be measured on the uphill side of
-    the tree.
-  </li>
-  <li>
-    Leaning trees should be measured on the inside of the lean, starting at the
-    ground next to the base of the tree.
-  </li>
-  <li>
-    Deformed trees should be measured either above or below 1.3 m and the POM
-    recorded.
-  </li>
-  <li>
-    Dead trees in a baseline survey are flagged as &lsquo;Dead&rsquo; and all
-    other attributes are measured as normal.
-  </li>
-  <li>
-    The soft texture of tree fern trunks is not conducive to DBH measurements
-    and therefore tree ferns are not measured for diameter.
-  </li>
-</ul>
-""" ;
+    <ol>
+      <li>
+        Ensure the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot selection and layout module</a> has been completed to mark out
+        the plot grid with very high accuracy using the Trimble&reg; R1.
+      </li>
+      <li>
+        Use the transects laid out for the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover module</a> to delineate the two 20 x
+        100 m belt transects in a north- south direction, between the N/S1 and N/S2,
+        and N/S4 and N/S5 point-intercept transects (Figure 1;&nbsp;see Additional
+        guidelines).
+        <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-belt-transects.png"
+                    alt="100 x 100 m plot layout showing the two 20 x 100 m belt transects"
+                    widteh="720"
+                    height="638"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        <p>Figure 1. 100 x 100 m plot layout showing the two 20 x 100 m belt transects.</p>
+      </li>
+      <li>
+        If the plot contains dense trees, tall shrubs and/or mallee, use the
+        east-west transects laid out for the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover module</a> to delineate the belt
+        transects into subplots and simplify DBH measures. Alternatively, use
+        coloured survey pins.
+      </li>
+      <li>
+        Open the App and navigate to the &lsquo;Basal Area&rsquo; module and then
+        the &lsquo;Lite DBH Measures Protocol&rsquo;.
+      </li>
+      <li>
+        Select the instrument you are using to measure DBH, either a diameter tape,
+        regular tape or tree caliper.
+      </li>
+      <li>
+        Move through each belt transect systematically in a &lsquo;zigzag&rsquo;
+        pattern and search for trees, tall shrubs and mallee greater than 2 m in
+        height with a DBH &ge;10 cm.
+      </li>
+      <li>
+        For each tree, tall shrub or mallee with a DBH &ge;10 cm encountered, press
+        the &lsquo;Add tree&rsquo; button.
+      </li>
+      <li>
+        Record the species name or assigned field name if the species name is
+        unknown (see the Floristics module). Flag if the tree is dead using the
+        checkbox.
+      </li>
+      <li>
+        Use the measuring pole pushed firmly into the ground to locate the 1.3 m
+        point of measurement (POM), or suitable POM for problem trees, see
+        Additional guidelines).
+      </li>
+      <li>
+        If using a diameter or regular tape, pull the tape around the trunk or stem
+        at the POM so that it is perpendicular to the main axis of the trunk or
+        stem, rather than parallel to the ground (provides an accurate measurement
+        of leaning trees, see Additional guidelines). Clear any moss, loose bark, or
+        anything that may distort the tape.
+      </li>
+      <li>
+        If using a diameter tape, record the diameter and POM (default is 1.3 m
+        update for problem trees, see Additional guidelines) in meters.
+      </li>
+      <li>
+        If using a regular tape, record the circumference and POM (default is 1.3 m
+        update for problem trees, see Additional guidelines) in meters. The App will
+        automatically calculate and display the diameter.
+      </li>
+      <li>
+        If using a tree caliper, record the diameter and POM (default is 1.3 m
+        update for problem trees, see Additional guidelines) in meters. Close the
+        caliper around the trunk or stem at the POM so that it is perpendicular to
+        the main axis of the trunk or stem, rather than parallel to the ground
+        (Provides an accurate measurement of leaning trees, see Additional
+        guidelines). Clear any moss, loose bark, or anything that may prevent
+        closing the caliper fully.
+      </li>
+      <li>
+        If the trunk or stem is shaped as an ellipse when using a tree caliper,
+        check the &lsquo;Ellipse&rsquo; checkbox and record a second diameter
+        measurement at a 90&deg; angle to the first diameter measurement to account
+        for the ellipse. The App will automatically calculate the square root of the
+        product of the two diameters to determine the measure of trunk or stem
+        diameter.
+      </li>
+      <li>
+        If the tree is multi-stemmed, check the &lsquo;multi-stemmed tree&rsquo;
+        checkbox. The App will display the stem identifier (Stem B, C, etc.),
+        &lsquo;Diameter&rsquo; and &lsquo;POM&rsquo; fields and a &lsquo;Save
+        stem&rsquo; button. Record and save the diameter and POM for each individual
+        stem. If any stems are shaped as an ellipse when using a tree caliper, refer
+        to 'step 13'.
+      </li>
+      <li>
+        If the tree is buttressed, check the &lsquo;Buttressed tree&rsquo; checkbox.
+        Additional to the &lsquo;Breast height&rsquo; measurement, the App will
+        display &lsquo;Diameter&rsquo; and &lsquo;POM&rsquo; fields for &lsquo;Reach
+        point&rsquo; (i.e., the highest point that you can reach, approximately 2.2
+        m) and &rsquo;50 cm above buttress&rsquo; (i.e. 50 cm above the top of the
+        buttress) measurements. Record the diameter and POM for each measurement. If
+        the trunk or stem is shaped as an ellipse when using a tree caliper, refer
+        to 'step 13'.
+      </li>
+      <li>Select the &lsquo;Save tree&rsquo; button.</li>
+      <li>
+        Repeat 'steps 7&ndash;17' for every tree, tall shrub and/or mallee greater
+        than 2 m in height with a DBH &ge;10 cm within the plot.
+      </li>
+      <li>
+        When all trees within the belt transects have been measured, select the
+        &lsquo;Finish module&rsquo; button to return to the module selection screen.
+      </li>
+    </ol>
+    </p>
+"""^^rdf:HTML ;
 .
 

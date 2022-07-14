@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/3f431e7a-6f1c-4dcd-b452-1cb14226a56d>
     a skos:Concept ;
@@ -12,7 +13,7 @@ making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "Soil permeability is a permeable property of a soil and are categorized as very slowly permeable to very fast." ;
     skos:prefLabel "soil permeability" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/soil-permeability.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/soil-permeability.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/41a54b21-b885-4cfd-be09-7bedc4ae4dc4> ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2cf3ed29-440e-4a50-9bbc-5aab30df9fcd> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/7818e122-6354-42e0-aeff-32dbab7baae4> ;

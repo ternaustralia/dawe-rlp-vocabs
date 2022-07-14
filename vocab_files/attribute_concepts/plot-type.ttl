@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/5144d636-80fa-429c-869d-3a7c6ea92a60>
     a skos:Concept ;
@@ -12,7 +13,7 @@ decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "Whether the plot is an impact plot or a control plot." ;
     skos:prefLabel "plot type" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-type.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-type.ttl"^^xsd:anyURI ;
     tern:valueType tern:Boolean ;
 .
 

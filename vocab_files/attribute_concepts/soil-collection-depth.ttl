@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/8fe018d8-0357-400f-b88f-d42138cc2518>
     a skos:Concept ;
@@ -11,7 +12,7 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
     skos:definition "The depth at which the soil samples were collected, during a soil sub-site sampling." ;
     skos:exactMatch <http://linked.data.gov.au/def/tern-cv/c_908a6f69> ;
     skos:prefLabel "soil collection depth" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/soil-collection-depth.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/soil-collection-depth.ttl"^^xsd:anyURI ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/80c39b95-0912-4267-bb66-2fa081683723> ;
     tern:valueType tern:Float ;
 .

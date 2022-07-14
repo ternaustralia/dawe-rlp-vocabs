@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/81cc5c4b-179b-4483-861a-65008517bd32>
     a skos:Concept ;
@@ -13,7 +14,7 @@ decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
     skos:definition """A number to define the plot replication (if the plot is the first or only
 of it’s type within a sampling unit, then the number will be 1). """ ;
     skos:prefLabel "replicate number" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/replicate-number.ttl" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/replicate-number.ttl"^^xsd:anyURI ;
     tern:valueType tern:Integer ;
 .
 
