@@ -140,7 +140,8 @@ def publish_new_vocabulary_version(
         headers = {"accept": "application/json", "content-type": "application/json"}
         response = httpx.put(url, headers=headers, json=metadata, auth=auth)
 
-        if response.status_code != 201:
+        # Indeterminate status code - docs says 200 but received 201.
+        if response.status_code != 201 or response.status_code != 200:
             raise RVAError(f"{response.status_code} - {response.text}")
 
         return response.json()
