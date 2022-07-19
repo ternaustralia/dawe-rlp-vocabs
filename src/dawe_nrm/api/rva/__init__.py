@@ -1,9 +1,8 @@
 import io
-from typing import Tuple
 from pathlib import Path
+from typing import Tuple
 
 import httpx
-
 
 PROD_URL = "https://vocabs.ardc.edu.au/registry/api/"
 DEV_URL = "https://demo.vocabs.ardc.edu.au/registry/api/"
@@ -24,7 +23,7 @@ def get_vocabulary(id_: str | int, dev: bool = False) -> dict:
     """
     url = (DEV_URL if dev else PROD_URL) + f"resource/vocabularies/{id_}"
     headers = {"accept": "application/json"}
-    response = httpx.get(url, headers=headers)
+    response = httpx.get(url, headers=headers, timeout=60)
 
     if response.status_code != 200:
         raise RVAError(f"{response.status_code} - {response.text}")
@@ -43,7 +42,7 @@ def get_vocabulary_edit(
     """
     url = (DEV_URL if dev else PROD_URL) + f"resource/vocabularies/{id_}/edit"
     headers = {"accept": "application/json"}
-    response = httpx.get(url, headers=headers, auth=auth)
+    response = httpx.get(url, headers=headers, auth=auth, timeout=60)
 
     if response.status_code != 200:
         raise RVAError(f"{response.status_code} - {response.text}")
@@ -54,9 +53,9 @@ def get_vocabulary_edit(
 def create_upload(
     file_bytes_str: Path | bytes | str,
     file_name: str,
-    file_format: str,
     owner: str,
     auth: Tuple[str, str],
+    file_format: str = "TTL",
     dev: bool = False,
 ) -> Tuple[str, str]:
     """Upload a file
@@ -82,9 +81,11 @@ def create_upload(
         )
 
     files = {"file": (file_name, file)}
-    response = httpx.post(url, headers=headers, params=params, files=files, auth=auth)
 
     try:
+        response = httpx.post(
+            url, headers=headers, params=params, files=files, auth=auth, timeout=60
+        )
         if response.status_code != 201:
             raise RVAError(f"{response.status_code} - {response.text}")
     finally:
@@ -138,10 +139,10 @@ def publish_new_vocabulary_version(
 
         url = (DEV_URL if dev else PROD_URL) + f"resource/vocabularies/{vocabulary_id}"
         headers = {"accept": "application/json", "content-type": "application/json"}
-        response = httpx.put(url, headers=headers, json=metadata, auth=auth)
+        response = httpx.put(url, headers=headers, json=metadata, auth=auth, timeout=60)
 
         # Indeterminate status code - docs says 200 but received 201.
-        if response.status_code != 201 or response.status_code != 200:
+        if response.status_code != 201 and response.status_code != 200:
             raise RVAError(f"{response.status_code} - {response.text}")
 
         return response.json()
