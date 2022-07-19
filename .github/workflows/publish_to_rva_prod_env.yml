@@ -1,18 +1,18 @@
-name: Publish to demo environment of Research Vocabularies Australia
+name: Publish to prod environment of Research Vocabularies Australia
 
 on:
   release:
-    types: [prereleased]
+    types: [released]
 
 jobs:
   publish:
     environment:
-      name: test
-      url: https://demo.vocabs.ardc.edu.au/viewById/927
+      name: production
+      url: https://vocabs.ardc.edu.au/viewById/639
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
     with:
-      rva_vocab_id: 927
+      rva_vocab_id: 639
       rva_username: dcceew-rva-api
-      rva_env: test
+      rva_env: prod
     secrets:
       rva_password: ${{ secrets.RVA_PASSWORD }}
