@@ -6,10 +6,11 @@ on:
 
 jobs:
   publish:
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
-    with:
-      rva_vocab_id: 927
-      rva_username: ${{ secrets.RVA_USERNAME }}
-      rva_env: test
-    secrets:
-      rva_password: ${{ secrets.RVA_PASSWORD }}
+    steps:
+      - uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
+        with:
+          rva_vocab_id: 927
+          rva_username: ${{ secrets.RVA_USERNAME }}
+          rva_env: test
+        secrets:
+          rva_password: ${{ secrets.RVA_PASSWORD }}
