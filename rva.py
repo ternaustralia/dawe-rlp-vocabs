@@ -1,3 +1,4 @@
+import sys
 from argparse import ArgumentParser
 from datetime import date
 from pathlib import Path
@@ -96,3 +97,4 @@ if __name__ == "__main__":
 
     except Exception as err:
         console.print_exception(show_locals=True)
+        sys.exit(1)

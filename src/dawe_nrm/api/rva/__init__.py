@@ -118,33 +118,31 @@ def publish_new_vocabulary_version(
             if status == "current":
                 version["status"] = "superseded"
 
-        # Insert a new version with the status as current.
-        new_version = {
-            "browse-flag": [],
-            "access-point": [
-                {
-                    "ap-file": {"upload-id": int(upload_id)},
-                    "source": "user",
-                    "discriminator": "file",
-                }
-            ],
-            "status": "current",
-            "title": title,
-            "release-date": release_date,
-            "do-import": True,
-            "do-publish": True,
-        }
+    # Insert a new version with the status as current.
+    new_version = {
+        "browse-flag": [],
+        "access-point": [
+            {
+                "ap-file": {"upload-id": int(upload_id)},
+                "source": "user",
+                "discriminator": "file",
+            }
+        ],
+        "status": "current",
+        "title": title,
+        "release-date": release_date,
+        "do-import": True,
+        "do-publish": True,
+    }
 
-        versions.append(new_version)
+    versions.append(new_version)
 
-        url = (DEV_URL if dev else PROD_URL) + f"resource/vocabularies/{vocabulary_id}"
-        headers = {"accept": "application/json", "content-type": "application/json"}
-        response = httpx.put(url, headers=headers, json=metadata, auth=auth, timeout=60)
+    url = (DEV_URL if dev else PROD_URL) + f"resource/vocabularies/{vocabulary_id}"
+    headers = {"accept": "application/json", "content-type": "application/json"}
+    response = httpx.put(url, headers=headers, json=metadata, auth=auth, timeout=60)
 
-        # Indeterminate status code - docs says 200 but received 201.
-        if response.status_code != 201 and response.status_code != 200:
-            raise RVAError(f"{response.status_code} - {response.text}")
+    # Indeterminate status code - docs says 200 but received 201.
+    if response.status_code != 201 and response.status_code != 200:
+        raise RVAError(f"{response.status_code} - {response.text}")
 
-        return response.json()
-    else:
-        raise RVAError(f"No versions found for vocabulary {vocabulary_id}.")
+    return response.json()
