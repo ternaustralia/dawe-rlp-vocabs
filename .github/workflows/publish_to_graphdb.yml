@@ -1,14 +1,14 @@
-name: Deploy on release to GraphDB
+name: Publish on release to GraphDB
 
 on:
   release:
-    types: [published]
+    types: [released]
 
 jobs:
   test:
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/test.yml@main
 
-  deploy:
+  publish:
     needs: test
     runs-on: ubuntu-latest
 

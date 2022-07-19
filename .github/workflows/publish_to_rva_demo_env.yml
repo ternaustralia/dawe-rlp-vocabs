@@ -1,12 +1,12 @@
-name: Deploy to Demo environment of Research Vocabularies Australia
+name: Publish to Demo environment of Research Vocabularies Australia
 
 on:
   release:
-    types: [prelease]
+    types: [preleased]
 
 jobs:
   publish:
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/deploy_to_rva.yml@main
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
     with:
       rva_vocab_id: 927
       rva_username: ${{ secrets.RVA_USERNAME }}
