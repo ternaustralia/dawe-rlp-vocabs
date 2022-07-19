@@ -6,7 +6,6 @@ from requests.exceptions import HTTPError
 
 from dawe_nrm.graphdb import repository
 
-
 if __name__ == "__main__":
 
     parser = ArgumentParser(

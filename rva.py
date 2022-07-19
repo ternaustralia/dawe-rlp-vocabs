@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
-from pathlib import Path
 from datetime import date
+from pathlib import Path
 
 from rdflib import Graph
 from rich import print
