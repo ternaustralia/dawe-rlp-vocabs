@@ -1,16 +1,24 @@
-[![Deploy on release to GraphDB](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/deploy_to_graphdb.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/deploy_to_graphdb.yml)
+[![Publish to prod environment of Research Vocabularies Australia](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_rva_prod_env.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_rva_prod_env.yml)
+[![Publish to demo environment of Research Vocabularies Australia](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_rva_demo_env.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_rva_demo_env.yml)
+[![Publish on release to GraphDB](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_graphdb.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_graphdb.yml)
 
-# DAWE RLP Controlled Vocabularies
+# NRM Controlled Vocabularies
 
-> Will be rebranded to DAWE NRM Controlled Vocabularies soon.
+This repository contains the source data for the controlled vocabularies used by the Natural Resource Management (NRM) field survey collection protocols.
 
-Proposed base URI of DAWE NRM Controlled Vocabularies:
+The controlled vocabularies are published to ARDC's Research Vocabularies Australia as [Natural Resource Management Survey Vocabularies](https://vocabs.ardc.edu.au/viewById/639). The NRM controlled vocabularies can also be viewed on TERN's Linked Data website at https://linkeddata.tern.org.au/viewers/dawe-vocabs.
+
+The NRM controlled vocabularies use persistent identifiers issued by the Australian Government Linked Data Working Group (AGLDWG). The base URI issued for this project is:
 
 ```
 https://linked.data.gov.au/def/nrm/
 ```
 
-Proposal submitted to [AGLDWG PID Catalogue](https://catalogue.linked.data.gov.au/index.php/resource/239).
+Submission: [AGLDWG PID Catalogue](https://catalogue.linked.data.gov.au/index.php/resource/239).
+
+The NRM controlled vocabularies are located in the `vocab_files/` directory.
+
+---
 
 ## Running
 
@@ -63,7 +71,7 @@ The above badge indicates whether there are changes in the upstream LUTs.
 
 See `.github/workflows/luts.yml` for more information.
 
-### Code quality
+### Code formatting standards
 
 Run black to auto-format Python code.
 
@@ -80,10 +88,8 @@ isort .
 Run RDF Turtle formatter.
 
 ```
-make format-turtle
+ontotools dir normalize .
 ```
-
-Note: _Not implemented yet_.
 
 ## Contact
 
