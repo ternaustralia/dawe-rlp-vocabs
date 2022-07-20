@@ -5,11 +5,7 @@ on:
     types: [released]
 
 jobs:
-  test:
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/test.yml@main
-
   publish:
-    needs: test
     runs-on: ubuntu-latest
 
     strategy:
