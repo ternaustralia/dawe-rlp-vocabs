@@ -12,26 +12,35 @@ on:
       rva_env:
         required: true
         type: string
+      github_env:
+        required: true
+        type: string
+      deployment_url:
+        required: true
+        type: string
     secrets:
       rva_password:
         required: true
+
+env:
+  PYTHON_VERSION: "3.10"
 
 jobs:
   publish:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        python-version: ["3.10"]
+    environment:
+      name: ${{ inputs.github_env }}
+      url: ${{ inputs.deployment_url }}
 
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
 
-      - name: Use Python ${{ matrix.python-version }}
+      - name: Use Python ${{ env.PYTHON_VERSION }}
         uses: actions/setup-python@v2
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install project dependencies
         run: pip install -r requirements.txt
