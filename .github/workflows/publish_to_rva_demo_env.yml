@@ -6,13 +6,16 @@ on:
 
 jobs:
   publish:
+    runs-on: ubuntu-latest
     environment:
       name: test
       url: https://demo.vocabs.ardc.edu.au/viewById/927
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
-    with:
-      rva_vocab_id: 927
-      rva_username: dcceew-rva-api
-      rva_env: test
-    secrets:
-      rva_password: ${{ secrets.RVA_PASSWORD }}
+
+    steps:
+      - uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
+        with:
+          rva_vocab_id: 927
+          rva_username: dcceew-rva-api
+          rva_env: test
+        secrets:
+          rva_password: ${{ secrets.RVA_PASSWORD }}
