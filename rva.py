@@ -86,7 +86,7 @@ if __name__ == "__main__":
         )
 
         metadata = api.rva.publish_new_vocabulary_version(
-            vocabulary_id, upload_id, version, str(date.today()), auth, dev=True
+            vocabulary_id, upload_id, version, str(date.today()), auth, dev=dev
         )
 
         print("Vocabulary published successfully.")
