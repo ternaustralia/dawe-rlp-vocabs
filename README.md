@@ -20,11 +20,17 @@ The NRM controlled vocabularies are located in the `vocab_files/` directory.
 
 ---
 
-## Running
+## Editing the controlled vocabularies in the browser
+
+---
+
+## Editing locally
+
+This section is only relevant to those who are looking to make changes to the Python codebase, update tests or making other non-vocab related changes. If you are simply looking to make edits to the controlled vocabularies, the easiest method is to follow the instructions in [Editing the controlled vocabularies in the browser](#editing-the-controlled-vocabularies-in-the-browser).
 
 Open the repository in Visual Studio Code in a devcontainer. This can be done by running `command + shift + p` and selecting `Remote-Containers: Rebuild Container`. Note that Docker Desktop needs to be installed.
 
-## Tests
+### Tests
 
 [![Tests](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/test.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/test.yml)
 
@@ -90,6 +96,45 @@ Run RDF Turtle formatter.
 ```
 ontotools dir normalize .
 ```
+
+---
+
+## Publishing
+
+The NRM controlled vocabularies are published to the ARDC Research Vocabularies Australia (RVA) registry. Each publication is taking a snapshot of the current repository's state in the `main` branch and publishing it to the respective environments. This repository publishes to two different RVA environments, production and demo.
+
+### Test (demo) environment
+
+The demo publication is located at https://demo.vocabs.ardc.edu.au/viewById/927 and is published automatically using GitHub Actions on each GitHub _prerelease_. Prerelease versions follow [Semantic Versioning](https://semver.org/) and are in the format of `MAJOR.MINOR.PATCH-dev.gitshorthash`. E.g. `0.1.3-dev.5440029`.
+
+### Production environment
+
+The production publication is located at https://vocabs.ardc.edu.au/viewById/639 and is published automatically using GitHub Actions on each GitHub _release_. Release versions follow [Semantic Versioning](https://semver.org/) and are in the format of `MAJOR.MINOR.PATCH` and must not have additional labels. E.g. `0.1.3`.
+
+In addition to publishing to RVA, the production release also publishes to TERN's GraphDB database. This database is deployed on a powerful server and drives TERN's Linked Data website and the NRM controlled vocabularies viewer at https://linkeddata.tern.org.au/viewers/dawe-vocabs.
+
+### Creating releases and prereleases
+
+1. Create a new release or prerelease at https://github.com/ternaustralia/dawe-rlp-vocabs/releases/new
+2. Create a new tag conforming to Semantic Versioning
+   - Don't forget the release and prerelease versioning formats as described previously
+   - If it is a prerelease, grab the latest commit's short hash (the first 7 characters of the git hash)
+3. Click _Generate release notes_ to automatically generate the _Release title_ and _Description_ of the release.
+4. Tick _This is a pre-release_ checkbox if it is a prerelease
+5. Click _Publish release_
+6. Go to https://github.com/ternaustralia/dawe-rlp-vocabs/actions and a workflow should run to publish the new release or prerelease to RVA (and also GraphDB if it's a release)
+
+### Reverting a release or prerelease
+
+In case a release or prerelease was published by accident, follow the steps to get the state back to before it was published.
+
+1. Go to https://github.com/ternaustralia/dawe-rlp-vocabs/releases and delete the release
+2. Go to https://github.com/ternaustralia/dawe-rlp-vocabs/tags and you should see the tag with the new release
+   - To delete the tag:
+     - With repository access, on the terminal type `git push --delete origin tagname`.
+     - This will delete the tag in the origin (i.e., GitHub).
+     - Don't forget to replace `tagname` with the actual tag, which is usually the Semantic Version value as described previously
+     - The tag at https://github.com/ternaustralia/dawe-rlp-vocabs/tags should now be deleted
 
 ## Contact
 
