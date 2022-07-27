@@ -8,7 +8,7 @@ This repository contains the source data for the controlled vocabularies used by
 
 The controlled vocabularies are published to ARDC's Research Vocabularies Australia as [Natural Resource Management Survey Vocabularies](https://vocabs.ardc.edu.au/viewById/639). The NRM controlled vocabularies can also be viewed on TERN's Linked Data website at https://linkeddata.tern.org.au/viewers/dawe-vocabs.
 
-The NRM controlled vocabularies use persistent identifiers issued by the Australian Government Linked Data Working Group (AGLDWG). The base URI issued for this project is:
+The NRM controlled vocabularies use persistent identifiers issued by the [Australian Government Linked Data Working Group](https://www.linked.data.gov.au/) (AGLDWG). The base URI issued for this project is:
 
 ```
 https://linked.data.gov.au/def/nrm/
@@ -16,11 +16,34 @@ https://linked.data.gov.au/def/nrm/
 
 Submission: [AGLDWG PID Catalogue](https://catalogue.linked.data.gov.au/index.php/resource/239).
 
-The NRM controlled vocabularies are located in the `vocab_files/` directory.
+The NRM controlled vocabularies are located in the [vocab_files/](vocab_files/) directory.
 
 ---
 
-## Editing the controlled vocabularies in the browser
+## Pull requests
+
+A new pull request (PR) automatically runs all the tests and validations on the controlled vocabularies. If possible, fix any failing checks and wait for feedback and/or approval from maintainers. A PR always requires at least 1 maintainer who has approved it before it is merged into the `main` branch.
+
+See the next two sections on how to make changes and submitting changes as PRs for review.
+
+## Editing in the browser
+
+The source files of the controlled vocabularies are located in [vocab_files/](vocab_files/) and the editing process can be performed entirely in the browser. If you are looking to edit the files on your local host system, please see [Editing locally](#editing-locally).
+
+### Editing on GitHub
+
+Browse and edit the files directly in the browser at https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files. Alternatively, you can browse the controlled vocabularies at https://linkeddata.tern.org.au/viewers/dawe-vocabs and click the `schema:url` value to open the corresponding source file on GitHub.
+
+Once you have opened a file, e.g., [basal-area-count.ttl](https://github.com/ternaustralia/dawe-rlp-vocabs/blob/main/vocab_files/observable_property_concepts/basal-area-count.ttl), you can click the pencil icon to edit. The drop-down will provide two editing options:
+
+1. `Edit this file` - edit directly on GitHub [[try me](https://github.com/ternaustralia/dawe-rlp-vocabs/edit/main/vocab_files/observable_property_concepts/basal-area-count.ttl)]
+2. `Open in github.dev` - edit in an instance of Visual Studio Code in the browser with full git support [[try me](https://github.dev/ternaustralia/dawe-rlp-vocabs/blob/main/vocab_files/observable_property_concepts/basal-area-count.ttl)]
+
+Note that you can also open the entire project directly in Visual Studio Code in the browser by going to https://github.com/ternaustralia/dawe-rlp-vocabs and pressing `.` on your keyboard. This provides the benefit of editing the files with the full text-editing powers of Visual Studio Code.
+
+### Making changes
+
+The `main` branch in the GitHub repository is protected. All changes must be submitted as a PR and reviewed and approved by the maintainers. If you have write access to the GitHub repository, you will need to create a new branch to make your changes and then submit it as a PR. If you do not have write access, you will need to fork the GitHub repository, make your changes in your fork and then submit a PR. GitHub makes it relatively pain-free to make changes, commit them and then create a PR regardless of which editing option you choose.
 
 ---
 
@@ -50,7 +73,7 @@ make htmlcov
 
 Some of the controlled vocabularies in this repository are synced with an upstream data source provided by TERN's Ecosystem Surveillance. These _categorical values_, also known as look-up tables (LUTs) are pulled and transformed into SKOS controlled vocabularies.
 
-Pull from the Strapi API endpoints defined in `src/dawe_nrm/api/categorical_values/endpoints.py` and write Turtle files to `vocab_files/categorical_collections/luts`.
+Pull from the Strapi API endpoints defined in [src/dawe_nrm/api/categorical_values/endpoints.py](src/dawe_nrm/api/categorical_values/endpoints.py) and write Turtle files to [vocab_files/categorical_collections/luts](vocab_files/categorical_collections//luts/).
 
 ```
 make luts
