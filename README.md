@@ -20,6 +20,10 @@ The NRM controlled vocabularies are located in the [vocab_files/](vocab_files/) 
 
 ---
 
+## Issues
+
+If you find any inaccuracies, bugs or issues with the NRM controlled vocabularies, please see if there is an [existing issue](https://github.com/ternaustralia/dawe-rlp-vocabs/issues) for it. If the issue has not been reported yet, please consider creating a new issue for it at [New issue](https://github.com/ternaustralia/dawe-rlp-vocabs/issues/new).
+
 ## Pull requests
 
 A new pull request (PR) automatically runs all the tests and validations on the controlled vocabularies. If possible, fix any failing checks and wait for feedback and/or approval from maintainers. A PR always requires at least 1 maintainer who has approved it before it is merged into the `main` branch.
