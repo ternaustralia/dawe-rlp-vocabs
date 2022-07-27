@@ -77,7 +77,7 @@ make htmlcov
 
 Some of the controlled vocabularies in this repository are synced with an upstream data source provided by TERN's Ecosystem Surveillance. These _categorical values_, also known as look-up tables (LUTs) are pulled and transformed into SKOS controlled vocabularies.
 
-Pull from the Strapi API endpoints defined in [src/dawe_nrm/api/categorical_values/endpoints.py](src/dawe_nrm/api/categorical_values/endpoints.py) and write Turtle files to [vocab_files/categorical_collections/luts](vocab_files/categorical_collections//luts/).
+Pull from the Strapi API endpoints defined in [src/dawe_nrm/api/categorical_values/endpoints.py](src/dawe_nrm/api/categorical_values/endpoints.py) and write Turtle files to [vocab_files/categorical_collections/luts](vocab_files/categorical_collections/luts/).
 
 ```
 make luts
