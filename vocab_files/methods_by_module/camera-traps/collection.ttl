@@ -7,7 +7,9 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/f0123418-c565-45a6-be01-c5c332c727e5>
-    a skos:Collection ;
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
     dcterms:description """
     <h3>Module overview</h3>
     <p>
@@ -898,10 +900,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </tbody>
 </table>
     """^^rdf:HTML ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/1a6953e4-a830-41f8-9cfd-11ead4dd6bc2> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a2afccd5-766e-44bc-98c1-f27aae26727f> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/cb497bbc-75dc-450d-b020-5bc3c54d5586> ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/test/dawe-cv/a2afccd5-766e-44bc-98c1-f27aae26727f>
+            <https://linked.data.gov.au/def/test/dawe-cv/1a6953e4-a830-41f8-9cfd-11ead4dd6bc2>
+            <https://linked.data.gov.au/def/test/dawe-cv/cb497bbc-75dc-450d-b020-5bc3c54d5586>
+        ) ;
     skos:prefLabel "Camera traps" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/camera-traps/collection.ttl"^^xsd:anyURI ;
     tern:appendix """
