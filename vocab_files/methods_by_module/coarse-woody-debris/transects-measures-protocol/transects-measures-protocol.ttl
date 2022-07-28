@@ -6,199 +6,497 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/fc74b2cb-f3ab-4101-9e3f-43f016db3db6>
-    a skos:Concept ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:prefLabel "Transects measures protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/coarse-woody-debris/transects-measures-protocol/transects-measures-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    Mobile device (tablet/phone capable of taking high resolution photos) with
-    the App (progressive web app) saved to the home screen
-  </li>
-  <li>Trimble R1</li>
-  <li>6 x 100 m tape measures (to layout transects)</li>
-  <li>Diameter tape and/or calipers (to measure CWD diameter)</li>
-  <li>
-    Tape measure (minimum 5 m in length) or cased tape measure (to measure CWD
-    length)
-  </li>
-  <li>
-    Paint / marker / flagging tape (temporary, to mark any pieces of CWD
-    measured)
-  </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
-  <li>
-    Ensure the Plot selection and layout module has been completed to mark out
-    the plot boundary and grid with very high accuracy using the Trimble R1.
-  </li>
-  <li>Select the Transects option from the Coarse Woody Debris main screen.</li>
-  <li>
-    Depending on the abundance and distribution of CWD select the 6 or 4
-    transects option. The 6 transects option is the default selection. For more
-    information about the two variations and selecting the option appropriate
-    for the system under study, click on the info buttons within the app.
-  </li>
-  <li>
-    Select the CWD diameter cut-off based on the steps in Figures below. As a
-    default, this value will be set to 10 cm.
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/cwd-app-screen1-survey-design-transects.jpg"
-              alt="CWD app screen 1 - survey design transects"
-              width="600"
-              height="350"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    For each transect lay out a 100 m tape between the start and end
-    points/pegs. Ensure the tape is orientated to align with the grid, is
-    straight, and on the ground (where possible) and not draped over shrubs.
-    <ul>
-      <li>
-        If 6 transects are selected, tapes need to be laid at 30, 50 and 70 m in
-        a N-S and E-W direction (N/S2, N/S3, N/S4, E/W2, E/W3, E/W4).
-      </li>
-      <li>
-        If 4 transects are selected, tapes need to be laid at 30 and 70 m in a
-        N-S and E-W direction (N/S2, N/S4, E/W2, E/W4).
-      </li>
-    </ul>
-  </li>
-  <li>
-    Walk each transect to systematically search for any CWD that intersects the
-    tape.
-  </li>
-  <li>
-    Measure any CWD that intersects the transect if it is ≥10 cm diameter at any
-    point along its length (or ≥5 cm for eligible systems).
-  </li>
-  <p>For each eligible piece of CWD:</p>
-  <li>
-    Record the location of the CWD by standing at the center point of the piece
-    and selecting Record Location (ensure the R1 is connected and has high
-    accuracy).
-  </li>
-  <li>
-    Record the point of intersection with the transect line, to the closest
-    meter.
-  </li>
-  <li>
-    Measure and record the diameter at the widest point of the CWD. This can be
-    done using a diameter tape or calipers if the CWD is on the ground and it is
-    not possible to wrap a tape measure around the circumference.
-  </li>
-  <li>
-    Measure and record the diameter at the narrowest point, down to a minimum
-    diameter of 10 cm (or 5 cm for eligible systems).
-  </li>
-  <li>
-    Measure and record the length of the CWD for the portion of it that is
-    greater than 10 cm in diameter (or 5 cm in eligible systems). See the
-    supporting information for more details.
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/cwd-transect.jpg"
-              alt="CWD app screen transects – size and decay class"
-              width="300"
-              height="450"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <p>
-    Where a piece of CWD is irregular in shape, it should be divided into
-    multiple smaller roughly linear and cylindrical sections for ease of
-    measurement – see Figure 1 and the supporting information. Each section will
-    be recorded as a separate piece of CWD in the app.
-  </p>
-  <li>Record a decomposition class from Table .</li>
-  <li>
-    Repeat steps 8-13 for each piece of CWD with a diameter greater than 10 cm
-    (or 5 cm) that intercepts any of the transect lines.
-  </li>
-  <li>
-    Select complete transect to save data and move onto the next transect.
-  </li>
-</ol>
-<p><strong>Additional guidelines</strong></p>
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
 <ul>
   <li>
-    It is recommended that the CWD measurements are done concurrently, or
-    immediately after the Cover module to take advantage of the point-intercept
-    transects already laid. The CWD transects are a sub-set of those set up for
-    the cover point-intercept.
+    <p>
+      It is recommended that the CWD measurements are done concurrently, or
+      immediately after the <em>Cover</em> module to take advantage of the
+      point-intercept transects already laid. The CWD transects are a sub-set of
+      those set up for the cover point-intercept.
+    </p>
   </li>
   <li>
-    The plot should be traversed and CWD abundance assessed before the survey
-    design is selected. This can be undertaken while traversing the plot during
-    the Floristics and Cover modules.
+    <p>
+      The plot should be traversed and CWD abundance assessed before the survey
+      design is selected. This can be undertaken while traversing the plot
+      during the <em>Floristics</em> and <em>Cover</em> modules.
+    </p>
   </li>
   <li>
-    It is recommended that users take note of the amount of CWD that intersects
-    the point-intercept transects when undertaking the Cover module, to help
-    inform the survey design and increase efficiency in the field.
+    <p>
+      It is recommended that users take note of the amount of CWD that
+      intersects the point-intercept transects when undertaking the
+      <em>Cover</em> module, to help inform the survey design and increase
+      efficiency in the field.
+    </p>
   </li>
   <li>
-    The results from the point-intercept can also give an indication of the most
-    suitable CWD design to use (i.e., number of hits along a transect can
-    indicate if 4 or 6 transects are suitable or if a plot- based method is
-    required). Results from the point-intercept survey should be used in
-    combination with knowledge of the site to determine the most appropriate
-    method, as not all CWD intersects will be recorded during the
-    point-intercept survey.
+    <p>
+      The results from the point-intercept can also give an indication of the
+      most suitable CWD design to use (i.e. number of hits along a transect can
+      indicate if 4 or 6 transects are suitable or if a plot-based method is
+      required). Results from the point-intercept survey should be used in
+      combination with knowledge of the site to determine the most appropriate
+      method, as not all CWD intersects will be recorded during the
+      point-intercept survey.
+    </p>
   </li>
   <li>
-    CWD can be patchily distributed, so assess multiple transects before
-    deciding about the appropriate number of transects to use. On average, 6-10
-    pieces should be intersected per 100 m transect for the 6 transect option
-    and ≥11 pieces per 100 m transect for the 4 transect option.
+    <p>
+      CWD can be patchily distributed, so assess multiple transects before
+      making a decision about the appropriate number of transects to use. On
+      average, 6-10 pieces should be intersected per 100 m transect for the 6
+      transect option and ≥11 pieces per 100 m transect for the 4 transect
+      option.
+    </p>
   </li>
   <li>
-    If the 4 transect option is selected but not enough pieces of CWD are
-    intersected using this method, a warning message will appear. In this case,
-    it is possible to add additional transects, to allow data to be collected
-    from the NS and EW 50 m transects as well.
+    <p>
+      If the 4 transect option is selected but not enough pieces of CWD are
+      intersected using this method, a warning message will appear. In this
+      case, it is possible to add additional transects, to allow data to be
+      collected from the NS and EW 50 m transects as well.
+    </p>
   </li>
   <li>
-    If decay status varies along the piece of CWD, record the most dominant
-    decay class, and not the class at the point of intersection.
+    <p>
+      If decay status varies along the piece of CWD, record the most dominant
+      decay class, and not the class at the point of intersection.
+    </p>
   </li>
   <li>
-    If a piece of CWD intersects multiple transects, it should only be measured
-    once.
+    <p>
+      If a piece of CWD intersects multiple transects, it should only be
+      measured once.
+    </p>
   </li>
   <li>
-    If a piece of CWD intersects more than one transects, or for areas with high
-    abundance of CWD or clustered CWD, mark (survey pin, flagging tape, paint)
-    CWD that has been measured to avoid duplicate measures.
+    <p>
+      If a piece of CWD intersects more than one transect, or for areas with
+      high abundance of CWD or clustered CWD, mark (survey pin, flagging tape,
+      paint) CWD that has been measured to avoid duplicate measures.
+    </p>
   </li>
   <li>
-    Measure CWD diameter at the widest and narrowest end and not the diameter
-    that intersects the tape.
-  </li>
-  <li>CWD diameter is recorded in cm and length is recorded in m.</li>
-  <li>Measure CWD diameter over bark.</li>
-  <li>
-    Length is only measured for the portion of the CWD that meets the size
-    threshold and is within the plot.
+    <p>
+      Measure CWD diameter at the widest and narrowest end and not the diameter
+      that intersects the tape.
+    </p>
   </li>
   <li>
-    A cased tape measure is recommended for recording CWD lengths, as they are
-    compact and easily retractable.
+    <p>CWD diameter is recorded in cm and length is recorded in m.</p>
+  </li>
+  <li>
+    <p>Measure CWD diameter over bark.</p>
+  </li>
+  <li>
+    <p>
+      Length is only measured for the portion of the CWD that meets the size
+      threshold and is within the plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      A cased tape measure is recommended for recording CWD lengths, as they are
+      compact and easily retractable.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Transects measures protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/coarse-woody-debris/transects-measures-protocol/transects-measures-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4>Appendix.1 Measuring CWD that tapers to less than 10 cm</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-cwd-that-tapers-to-less-than-10cm.png"
+    alt="Measuring CWD that tapers to less than 10 cm"
+    width="550"
+    height="600"
+  />
+</p>
+<h4>Appendix 2. Measuring irregular coarse woody debris</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-irregular-coarse-woody-debris.png"
+    alt="Measuring irregular coarse woody debris"
+    width="400"
+    height="600"
+  />
+</p>
+<p><em>Sourced from the (Department of Conservation 2019)</em></p>
+<h4>Appendix 3. Measuring fallen trees</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-fallen-trees.png"
+    alt="Measuring fallen trees - Sourced from the (Department of Conservation 2019)"
+    width="300"
+    height="100"
+  />
+</p>
+<p><em>Sourced from the (Department of Conservation 2019)</em></p>
+<h4>Appendix 4. Decay class examples</h4>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Decay class</strong></th>
+      <th><strong>Examples</strong></th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Class 1:</strong></p>
+        <p>
+          <strong
+            >Recently fallen. Structurally intact or almost so; bark or small
+            branches still attached; few signs of wood decay; wood mostly
+            retains original colour.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class1-example.jpg"
+          alt="Decay Class example 1"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Class 2:</strong></p>
+        <p>
+          <strong
+            >Structurally less intact but still hard when kicked; small branches
+            absent; little or no bark present; early signs of wood decay, bark
+            loss or discolouration.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class2-example.png"
+          alt="Decay Class example 2"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Class 3:</strong></p>
+        <p>
+          <strong
+            >Clearly decaying but still supports own weight; may be slightly
+            soft when kicked; may be hollow in places; no bark; moss and fungi
+            may be prominent.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class3-example.png"
+          alt="Decay Class example 3"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Class 4:</strong></p>
+        <p>
+          <strong
+            >Cannot support its own weight; soft to kick (but may still be hard
+            in places; in which case may be extensively hollow); moss, fungi and
+            invading roots likely.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class4-example.png"
+          alt="Decay Class example 4"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Class 5:</strong></p>
+        <p>
+          <strong
+            >No longer retains original shape; wood very soft or largely
+            disintegrated; sometimes only outline visible beneath moss, invading
+            roots.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class5-example.png"
+          alt="Decay Class example 5"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    tern:equipment """<h3 id="equipment">Equipment</h3>
+<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Trimble R1</p>
+  </li>
+  <li>
+    <p>6 x 100 m tape measures (to layout transects)</p>
+  </li>
+  <li>
+    <p>Diameter tape and/or calipers (to measure CWD diameter)</p>
+  </li>
+  <li>
+    <p>
+      Tape measure (minimum 5 m in length) or cased tape measure (to measure CWD
+      length)
+    </p>
+  </li>
+  <li>
+    <p>
+      Paint / marker / flagging tape (temporary, to mark any pieces of CWD
+      measured)
+    </p>
   </li>
 </ul>"""^^rdf:HTML ;
+    tern:instructions """<h3 id="instructions-and-procedures-1">Instructions and procedures</h3>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the <em>Plot selection and layout</em> module has been completed to
+      mark out the plot boundary and grid with very high accuracy using the
+      Trimble R1.
+    </p>
+  </li>
+  <li>
+    <p>Select the Transects option from the Coarse Woody Debris main screen.</p>
+  </li>
+  <li>
+    <p>
+      Depending on the abundance and distribution of CWD select the 6 or 4
+      transects option. The 6 transects option is the default selection. For
+      more information about the two variations and selecting the option
+      appropriate for the system under study, click on the info buttons within
+      the app.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the CWD diameter cut-off. As a default, this value will be set to
+      10 cm.
+    </p>
+  </li>
+</ol>
+<p>Figure 4. CWD app screen 1 – survey design transects</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/transects-2-app-screen.png"
+    alt="CWD app screen 1 – survey design transects"
+    width="791"
+    height="422"
+  />
+</p>
+<ol start="5" type="1">
+  <li>
+    <p>
+      For each transect lay out a 100 m tape between the start and end
+      points/pegs. Ensure the tape is orientated to align with the grid, is
+      straight, and on the ground (where possible) and not draped over shrubs
+      (See Figure 4)..
+    </p>
+
+    <ol type="a">
+      <li>
+        <p>
+          If 6 transects are selected, tapes need to be laid at 30, 50 and 70 m
+          in a N-S and E-W direction (N/S2, N/S3, N/S4, E/W2, E/W3, E/W4).
+        </p>
+      </li>
+      <li>
+        <p>
+          If 4 transects are selected, tapes need to be laid at 30 and 70 m in a
+          N-S and E-W direction (N/S2, N/S4, E/W2, E/W4).
+        </p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>
+      Walk each transect to systematically search for any CWD that intersects
+      the tape.
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure any CWD that intersects the transect if it is ≥10 cm diameter at
+      any point along its length (or ≥5 cm for eligible systems).
+    </p>
+  </li>
+</ol>
+<p>For each eligible piece of CWD (see Figure 5):</p>
+<ol start="8" type="1">
+  <li>
+    <p>
+      Record the location of the CWD by standing at the centre point of the
+      piece and selecting <em>Record Location</em> (ensure the R1 is connected
+      and has high accuracy).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the point of intersection with the transect line, to the closest
+      metre.
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure and record the diameter at the widest point of the CWD. This can
+      be done using a diameter tape or calipers if the CWD is on the ground and
+      it is not possible to wrap a tape measure around the circumference.
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure and record the diameter at the narrowest point, down to a minimum
+      diameter of 10 cm (or 5 cm for eligible systems).
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure and record the length of the CWD for the portion of it that is
+      greater than 10 cm in diameter (or 5 cm in eligible systems). See the
+      supporting information for more details.
+    </p>
+  </li>
+</ol>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/transects-1-app-screen.png"
+    alt="CWD app screen transects – size and decay class"
+    width="559"
+    height="788"
+  />
+</p>
+<p>Figure 5. CWD app screen transects – size and decay class</p>
+<p>
+  Where a piece of CWD is irregular in shape, it should be divided into multiple
+  smaller roughly linear and cylindrical sections for ease of measurement – see
+  Figure 1 and the supporting information. Each section will be recorded as a
+  separate piece of CWD in the app.
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-irregular-cwd-introduction.png"
+    alt="Measuring irregular coarse woody debris"
+    width="1307"
+    height="467"
+  />
+</p>
+<p>Figure 1. Measuring irregular coase woody debris (CWD)</p>
+<ol start="13" type="1">
+  <li>
+    <p>
+      Record a decomposition class from Table 2 (also refer to the supporting
+      information).
+    </p>
+  </li>
+  <li>
+    <p>
+      Repeat steps 8-13 for each piece of CWD with a diameter greater than 10 cm
+      (or 5 cm) that intercepts any of the transect lines.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the ‘complete transect’ to save data and move onto the next
+      transect.
+    </p>
+  </li>
+</ol>
+<p>
+  Table 2. Coarse woody debris decay classes - adapted from (Baker and Chao
+  2011; Meggs 1996).
+</p>
+<table>
+  <colgroup>
+    <col style="width: 12%" />
+    <col style="width: 87%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Decay class</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Class 1</strong></th>
+      <th>
+        Recently fallen. Structurally intact or almost so; bark or small
+        branches still attached; few signs of wood decay; wood mostly retains
+        original colour.
+      </th>
+    </tr>
+    <tr class="header">
+      <th><strong>Class 2</strong></th>
+      <th>
+        Structurally less intact but still hard when kicked; small branches
+        absent; little or no bark present; early signs of wood decay, bark loss
+        or discoloration.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Class 3</strong></th>
+      <th>
+        Clearly decaying but still supports its own weight; may be slightly soft
+        when kicked; may be hollow in places; no bark; moss and fungi may be
+        prominent.
+      </th>
+    </tr>
+    <tr class="header">
+      <th><strong>Class 4</strong></th>
+      <th>
+        Cannot support its own weight; soft to kick (but may still be hard in
+        places; in which case may be extensively hollow); moss, fungi and
+        invading roots likely.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Class 5</strong></th>
+      <th>
+        No longer retains original shape; wood very soft or largely
+        disintegrated; sometimes only outline visible beneath moss, invading
+        roots.
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>"""^^rdf:HTML ;
 .
 
