@@ -6,98 +6,1738 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/51ba4b25-5508-46a8-9d7c-028012082d88>
-    a skos:Concept ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+    <h2 id="additional-guidelines">Additional guidelines</h2>
+<h4 id="preparation">A. Preparation</h4>
+<ul>
+  <li>
+    <p>
+      Before commencing any fieldwork, review the NVIS mapping for the site and
+      determine what major vegetation groups (MVGs) are present.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ensure you are familiar with the MVGs likely to be present as the
+      threshold DBH size for the large tree survey is determined by MVGs (see
+      Appendix 12).
+    </p>
+  </li>
+</ul>
+<h4 id="general-field-collection">B. General field collection</h4>
+<ul>
+  <li>
+    <p>
+      The preferred time to sample vegetation will vary with location and
+      vegetation type, but the following can be used as a guide (Eco Logical
+      Australia 2013):
+    </p>
+
+    <ul>
+      <li>
+        <p>North of the Tropic of Capricorn - April to June</p>
+      </li>
+      <li>
+        <p>All other parts of NT, QLD, WA and SA - August to November</p>
+      </li>
+      <li>
+        <p>Northern NSW (north of Newcastle) - September to November</p>
+      </li>
+      <li>
+        <p>
+          ACT, VIC, and southern NSW (other than alpine zones) - October to
+          December
+        </p>
+      </li>
+      <li>
+        <p>Mainland alpine zones and TAS - November to January</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      The time of the year in which the assessment is done can influence the
+      outcomes of the survey. For example, assessing health at the end of the
+      hot, dry, season, can also be useful as this reflects peak stress (Casson
+      <em>et al.</em> 2009), and therefore multiple assessments can be
+      beneficial to assess condition, depending on project aims.
+    </p>
+  </li>
+  <li>
+    <p>
+      Avoid sampling immediately after extreme events such as bushfires,
+      cyclones or floods, as these will cause anomalies in the data (Eco Logical
+      Australia 2013), unless recovery following disturbance is the focus of the
+      project.
+    </p>
+  </li>
+  <li>
+    <p>
+      A single field visit may miss key events that have an influence on
+      condition (Casson <em>et al.</em> 2009), so multiple visits per year
+      should be considered, although they will not be necessary for every
+      project.
+    </p>
+  </li>
+  <li>
+    <p>
+      At a minimum, surveys should be undertaken before any interventions (or
+      development) are carried out and again at the end of the project, but can
+      also be repeated yearly or seasonally depending on the project needs
+      (Commonwealth of Australia 2013).
+    </p>
+  </li>
+  <li>
+    <p>
+      Repeated sampling of field plots over time will provide the capacity to
+      inform on changes in condition following interventions (Eco Logical
+      Australia 2013) or development. Repeat visits should be undertaken at the
+      same time(s) each year.
+    </p>
+  </li>
+  <li>
+    <p>
+      Setting up multiple control, treatment and baseline plots (optional) can
+      help track changes in condition resulting from interventions or
+      development, and separate these changes from natural fluctuations.
+    </p>
+  </li>
+  <li>
+    <p>
+      Treatment plots should be located in (on near) areas where the
+      intervention or development will be carried out. Control plots should be
+      located nearby to treatment plots, in comparable vegetation, but where no
+      intervention will be carried out or away from any developments (Eco
+      Logical Australia 2013).
+    </p>
+  </li>
+  <li>
+    <p>
+      If the project involves a range of intervention activities, then survey
+      plots should be representative of these activities (Commonwealth of
+      Australia 2013).
+    </p>
+  </li>
+  <li>
+    <p>
+      If being used, baseline plots can be located up to 10 km from the project
+      site, as long as the vegetation type is the same (Eco Logical Australia
+      2013).
+    </p>
+  </li>
+</ul>
+<h4 id="litter-depth-1">C. Litter depth</h4>
+<ul>
+  <li>
+    <p>
+      Leaf litter is all the plant organic matter above the top layer of the
+      compacted soil, mostly consisting of decaying and dry leaves (Moses
+      <em>et al.</em> 2021), but can also include needles, grass, twigs and bark
+      (Wundke <em>et al.</em> 2015).
+    </p>
+  </li>
+  <li>
+    <p>
+      Push the ruler through the litter until it reaches the soil surface. The
+      soil surface should be firm.
+    </p>
+  </li>
+  <li>
+    <p>
+      Measures of litter depth can have low accuracy (Marimon-Junior and Hay
+      2008), so ensure that the light pressure applied until there is even
+      contact with the litter surface is consistent across sampling locations.
+    </p>
+  </li>
+  <li>
+    <p>Record litter depth in mm (see Appendix 1 for more information).</p>
+  </li>
+</ul>
+<h4 id="plant-health">D. Plant health</h4>
+<h5 id="d.1-canopy-health">D.1 Canopy health</h5>
+<ul>
+  <li>
+    <p>
+      Canopy health (percent canopy) needs to be recorded for every individual
+      intercepted (refer to the supporting information for guidelines and
+      examples).
+    </p>
+  </li>
+  <li>
+    <p>
+      To estimate percent canopy, visualise a circle around the outer boundary
+      of the canopy crown. If all branches are bearing foliage, record as 100%.
+      Estimate the proportion of dead crown, the remainder is the proportion of
+      healthy crown cover (Michaels 2006).
+    </p>
+  </li>
+  <li>
+    <p>
+      Effectively, this is a measure of how far the small leaf bearing branches
+      that make up the canopy are from maximum foliage carrying capacity
+      (Michaels 2006).
+    </p>
+  </li>
+  <li>
+    <p>
+      Dead individuals have a canopy health value of 0%. No other health values
+      need to be recorded for dead trees.
+    </p>
+  </li>
+  <li>
+    <p>
+      See Appendices 4 and 5 for more information about undertaking a visual
+      assessment of canopy health.
+    </p>
+  </li>
+</ul>
+<h5 id="d.2-mistletoe">D.2 Mistletoe</h5>
+<ul>
+  <li>
+    <p>Only count the number of live mistletoes.</p>
+  </li>
+  <li>
+    <p>
+      If there are a number of mistletoes in the canopy of one individual, and
+      they are difficult to distinguish, walk around the plant to ensure that
+      all mistletoes are identified and the number is counted correctly.
+    </p>
+  </li>
+  <li>
+    <p>Refer to Appendix 6 for an example of determining mistletoe number.</p>
+  </li>
+  <li>
+    <p>
+      Mistletoe abundance generally increases with tree height, diameter and
+      basal area.
+    </p>
+  </li>
+  <li>
+    <p>
+      Trees close to a patch edge or another infested individual are more likely
+      to host mistletoe (Ward 2005).
+    </p>
+  </li>
+</ul>
+<h5 id="d.3-epicormic-growth">D.3 Epicormic growth</h5>
+<ul>
+  <li>
+    <p>
+      Individuals that have suffered stress often produce epicormic shoots along
+      their branches or trunk.
+    </p>
+  </li>
+  <li>
+    <p>Epicormic growth can also be a common post-fire response.</p>
+  </li>
+  <li>
+    <p>
+      The degree of epicormic growth can be measured as the proportion of canopy
+      foliage consisting of epicormic growth (Ward 2005).
+    </p>
+  </li>
+</ul>
+<h5 id="d.4-insects-and-disease">D.4 Insects and disease</h5>
+<ul>
+  <li>
+    <p>
+      Insect damage can involve galls or lerps, herbivory, leaf and shoot
+      distortion.
+    </p>
+  </li>
+  <li>
+    <p>
+      Galls are growths on leaves or stems, while lerps are characterised by
+      deposition of waxy or sugary material on the leaf or stem surface.
+    </p>
+  </li>
+  <li>
+    <p>
+      Insects can also cause curled and distorted leaves and shoots (see
+      Appendix 9).
+    </p>
+  </li>
+  <li>
+    <p>
+      Disease can result in leaf discolouration, crown and shoot dieback,
+      defoliation and plant death (Carnegie 2007).
+    </p>
+  </li>
+</ul>
+<h5 id="d.5-grazing">D.5 Grazing</h5>
+<ul>
+  <li>
+    <p>
+      Level of grazing and the species grazed can give an indication of the
+      level of utilisation (Native Vegetation Council 2017).
+    </p>
+  </li>
+  <li>
+    <p>
+      Grazing can be identified by removal or pruning of leaves, stems and
+      branches.
+    </p>
+  </li>
+  <li>
+    <p>
+      Grazing can result in the majority of the plant being restricted to areas
+      that are difficult to access (i.e. &gt;2 m tall).
+    </p>
+  </li>
+  <li>
+    <p>
+      Additional information about grazing can be recorded in the comments
+      field, including information about browse line height.
+    </p>
+  </li>
+</ul>
+<h4 id="age-class-survey">E. Age Class Survey</h4>
+<h5 id="e.1-dbh-size-class-survey">E.1 DBH size class survey</h5>
+<ul>
+  <li>
+    <p>
+      Subdividing the plot into smaller areas or marking stems once they have
+      been counted can help to ensure that individuals are not missed or
+      recorded multiple times.
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure the diameter at 1.3 m. If individuals are less than 1.3 m tall,
+      they do not need to be measured.
+    </p>
+  </li>
+  <li>
+    <p>
+      Trees and shrubs can be marked with non-permanent chalk paint (or flagging
+      tape/survey pegs) to avoid measuring each individual more than once.
+    </p>
+  </li>
+  <li>
+    <p>
+      Use a diameter tape or tape measure to check diameters to ensure data is
+      added to the appropriate age class.
+    </p>
+  </li>
+  <li>
+    <p>
+      The large tree survey can be undertaken at the same time as the age class
+      structure. If an individual meets the DBH side threshold, tally the
+      individual as part of the size class survey and then toggle to the large
+      tree survey screen to complete all the required fields.
+    </p>
+  </li>
+</ul>
+<h5 id="e.2-large-tree-survey">E.2 Large tree survey</h5>
+<ul>
+  <li>
+    <p>
+      Subdividing the plot into smaller areas or marking stems once they have
+      been counted can help to ensure that individuals are not missed or
+      recorded multiple times.
+    </p>
+  </li>
+  <li>
+    <p>
+      If there are a number of large trees within the sub-plot, mark with
+      marking chalk paint (or flagging tape or survey pegs) to avoid measuring
+      each individual more than once.
+    </p>
+  </li>
+  <li>
+    <p>
+      Large trees should be recorded to the species level and the number of
+      large trees tallied on a per species basis.
+    </p>
+  </li>
+  <li>
+    <p>
+      If it is not possible to identify some individuals to the species level,
+      data can be recorded at the genus level (or assigned to a field name).
+      Information can only be collected against species (and associated genus)
+      or field names sampled during the <em>Floristics</em> module.
+    </p>
+  </li>
+  <li>
+    <p>
+      Use a diameter tape or tape measure to check tree diameter and ensure it
+      meets the size thresholds.
+    </p>
+  </li>
+  <li>
+    <p>Measure the diameter at 1.3 m.</p>
+  </li>
+  <li>
+    <p>
+      Refer to the supporting information for details on how to measure DBH for
+      problem trees.
+    </p>
+  </li>
+  <li>
+    <p>For multi-stemmed trees, measure the DBH of every main trunk.</p>
+  </li>
+</ul>
+<h4 id="e.3-pest-animals">E.3 Pest animals</h4>
+<ul>
+  <li>
+    <p>
+      The pest animal survey is designed to be a rapid survey that records pest
+      animal presence but not abundance.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record any evidence of pest animals across the 1 ha plot, using the
+      drop-down list within the app. Multiple evidence types can be selected for
+      each pest fauna type.
+    </p>
+  </li>
+  <li>
+    <p>
+      Use the comments field to record any other details that may be useful for
+      the project or for the interpretation of other datasets, such as if pest
+      signs are abundant in a specific area or the plot or if there is evidence
+      of damage or overgrazing to the vegetation.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
     skos:prefLabel "Vegetation age class structure (sub-plot) protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/condition/vegetation-age-class-structure-(sub-plot)-protocol/vegetation-age-class-structure-(sub-plot)-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    Mobile device (tablet/phone capable of taking high resolution photos) with
-    the App (progressive web app) saved to the home screen
-  </li>
-  <li>Trimble R1</li>
-  <li>4 x 100 m tape measures or pegs/flagging tape to mark plot boundary</li>
-  <li>Diameter tape or calipers</li>
-  <li>10 m tape measure</li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<p><strong>40 x 40 m subplot layout</strong></p>
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4 id="appendix.2-resprouting-examples">Appendix 2. Resprouting examples</h4>
 <p>
-  Ensure the 40 x 40 m sub-plot area is defined by the condition point-intercept
-  transects (Figure 6). It is recommended that the sub-plot survey is undertaken
-  directly after the condition point- intercept to make use of the tapes that
-  have already been laid.
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/examples.png"
+    alt="Multiple examples"
+    width="625"
+    height="793"
+  />
 </p>
-<li>
-  <table>
-    <tbody>
-      <tr>
-        <td>
+<p>
+  <em
+    >Examples of resprouting, including basal, epicormic (trunk), basal and
+    epicormic and epicormic (crown) resprouting.</em
+  >
+</p>
+<h4>Appendix 3. Health factors</h4>
+<table>
+  <colgroup>
+    <col style="width: 9%" />
+    <col style="width: 20%" />
+    <col style="width: 70%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Health factor</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Example</strong></th>
+    </tr>
+    <tr class="odd">
+      <th>Canopy health</th>
+      <th>Proportion of expected healthy canopy present</th>
+      <th>See Appendix 4 and 5</th>
+    </tr>
+    <tr class="header">
+      <th>Epicormic growth</th>
+      <th>Obvious presence of epicormic growth</th>
+      <th>
+        <p>
           <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/condition/sub-plot-layout.jpg"
-            alt="Sub plot layout"
-            width="583"
-            height="660"
+            src="https://w3id.org/tern/static/dawe-rlp/latest/condition/epicormic-growth-example.jpg"
+            alt="Epicormic growth example"
+            width="500"
+            height="330"
           />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</li>
-<p><strong>DBH size class survey</strong></p>
-<ol>
+        </p>
+        Also see Appendix 2
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Mistletoe</th>
+      <th>
+        Aerial plant parasite, can be seen by different foliage from host plant
+      </th>
+      <th>
+        <p>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/condition/mistletoe-example.jpg"
+            alt="Mistletoe example"
+            width="500"
+            height="360"
+          />
+        </p>
+        <p>Also see Appendix 6</p>
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Galls and lerps</th>
+      <th>
+        Abnormal outgrowths on leaves and small branches or waxy or sugary
+        secretions on the leaves.
+      </th>
+      <th>
+        <p>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/condition/galls-and-lerps-example.jpg"
+            alt="Galls and lerps example"
+            width="500"
+            height="330"
+          />
+        </p>
+        Also see Appendix 7-10
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Insect damage</th>
+      <th>Identified by canopy loss and leaf and stem distortions</th>
+      <th>
+        <p>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/condition/insect-damage-example.jpg"
+            alt="Insect damage example"
+            width="500"
+            height="330"
+          />
+        </p>
+        Also see Appendix 7-10
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Dieback from disease</th>
+      <th>
+        Can been identified by leaf discoloration, plant tissue damage and
+        canopy loss
+      </th>
+      <th>
+        <p>Photo to be added here.</p>
+        <p>Also see Appendix 8</p>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Grazing</th>
+      <th>
+        Can be identified by loss or pruning of foliage and stems, stunted
+        growth and changes to plant structure.
+      </th>
+      <th>
+        <p>Photo to be added here.</p>
+        <p>Also see Appendix 11</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix 4. Canopy health visual assessment guide</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/canopy-health-visual-assessment.png"
+    alt="Canopy health visual assessment"
+    width="625"
+    height="792"
+  />
+</p>
+<p><em>Source: adapted from TASVEG (Michaels 2006).</em></p>
+<h4>Appendix 5. Canopy health photo examples</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/canopy-health-photo-examples.jpg"
+    alt="Canopy health photo examples"
+    width="632"
+    height="1168"
+  />
+</p>
+<p>
+  <em
+    >Source: adapted from the South Australian Bushland Assessment Manual
+    (Native Vegetation Council 2020)</em
+  >
+</p>
+<h4>Appendix 6. Counting the number of mistletoes</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/counting-the-number-of-mistletoes.jpg"
+    alt="Counting the number of mistletoes"
+    width="785"
+    height="905"
+  />
+</p>
+<h4>Appendix 7. Insect damage, including lerps and galls</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/insect-damage-including-lerps-and-galls.png"
+    alt="Insect damage, including lerps and galls"
+    width="600"
+    height="1000"
+  />
+</p>
+<p>
+  <em
+    >Source: South Australian Bushland Condition Monitoring Manual (Milne et al.
+    2008)</em
+  >
+</p>
+<h4>Appendix 8. Disease and insect damage</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/disease-and-insect-damage.png"
+    alt="Disease and insect damage"
+    width="600"
+    height="1000"
+  />
+</p>
+<p>
+  <em
+    >Source: South Australian Bushland Condition Monitoring Manual (Milne et al.
+    2008)</em
+  >
+</p>
+<h4>Appendix 9. Photo examples of insect damage</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/photo-examples-of-insect-damage.png"
+    alt="Photo examples of insect damage"
+    width="657"
+    height="793"
+  />
+</p>
+<h4>Appendix 10. Grazing damage</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/grazing-damage-example-1.png"
+    alt="Grazing damage example 1"
+    width="642"
+    height="793"
+  />
+</p>
+<p>
+  <em
+    >Source: South Australian Bushland Condition Monitoring Manual (Milne et al.
+    2008)</em
+  >
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/grazing-damage-example-2.png"
+    alt="Grazing damage example 2"
+    width="642"
+    height="1000"
+  />
+</p>
+<p>
+  <em
+    >Source: South Australian Bushland Condition Monitoring Manual (Milne et al.
+    2008)</em
+  >
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/grazing-damage-example-3.png"
+    alt="Grazing damage example 3"
+    width="605"
+    height="793"
+  />
+</p>
+<p>
+  <em
+    >Source: South Australian Bushland Condition Monitoring Manual (Milne et al.
+    2008)</em
+  >
+</p>
+<h4>Appendix 11. Measuring DBH</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/measuring-dbh.jpg"
+    alt="Measuring DBH"
+    width="834"
+    height="832"
+  />
+</p>
+<p>
+  <em
+    >Source: Victorian forest protection survey program – flora survey (Tolsma
+    and Molloy 2020)</em
+  >
+</p>
+<h4>Appendix 12. DBH size thresholds (Eco Logical Australia 2013)</h4>
+<table>
+  <colgroup>
+    <col style="width: 11%" />
+    <col style="width: 39%" />
+    <col style="width: 4%" />
+    <col style="width: 5%" />
+    <col style="width: 7%" />
+    <col style="width: 5%" />
+    <col style="width: 5%" />
+    <col style="width: 6%" />
+    <col style="width: 6%" />
+    <col style="width: 7%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th rowspan="2"><strong>NVIS Major Vegetation Group</strong></th>
+      <th rowspan="2"><strong>NVIS Major Vegetation Sub-group</strong></th>
+      <th colspan="5"><strong>DBH thresholds (cm)</strong></th>
+      <th colspan="3"><strong>Height thresholds (m)</strong></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Large tree</strong></th>
+      <th><strong>Mature tree</strong></th>
+      <th><strong>Advanced regrowth</strong></th>
+      <th><strong>Sapling</strong></th>
+      <th><strong>Seedling</strong></th>
+      <th><strong>Overstorey</strong></th>
+      <th><strong>Midstorey</strong></th>
+      <th><strong>Understorey</strong></th>
+    </tr>
+    <tr class="header">
+      <th rowspan="4">Rainforest and Vine Thickets (MVG 1)</th>
+      <th>Cool temperate rainforest</th>
+      <th>&gt; 60</th>
+      <th>40-60</th>
+      <th>10-40</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 15</th>
+      <th>1-15</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Tropical or sub-tropical rainforests</th>
+      <th>&gt; 80</th>
+      <th>50-80</th>
+      <th>10-50</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 20</th>
+      <th>1-20</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th>Dry rainforest</th>
+      <th>&gt; 40</th>
+      <th>20-40</th>
+      <th>5-20</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 5</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Vine thickets</th>
+      <th>&gt; 25</th>
+      <th>15-25</th>
+      <th>5-15</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 2</th>
+      <th>1-2</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">Eucalypt Tall Open Forests (MVG 2)</th>
+      <th>
+        Eucalyptus tall open forests with a dense broad-leaved and/or tree-fern
+        understorey (wet-sclerophyll)
+      </th>
+      <th>&gt; 90</th>
+      <th>50-90</th>
+      <th>10-50</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 15</th>
+      <th>1-15</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        Eucalyptus tall open forests with a fine-leaved shrubby understorey OR
+        Eucalyptus tall open forests and open forests with ferns, herbs, sedges,
+        rushes or wet tussock grasses
+      </th>
+      <th>&gt; 80</th>
+      <th>50-80</th>
+      <th>10-50</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 15</th>
+      <th>1-15</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">Eucalypt Open Forests (MVG 3)</th>
+      <th>Eucalyptus open forests with a shrubby understorey</th>
+      <th>&gt; 70</th>
+      <th>30-70</th>
+      <th>10-30</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Eucalyptus open forests with a grassy understorey</th>
+      <th>&gt; 70</th>
+      <th>40-70</th>
+      <th>10-40</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>Eucalypt Low Open Forests</p>
+        <p>(MVG 4)</p>
+      </th>
+      <th>-</th>
+      <th>&gt; 50</th>
+      <th>30-50</th>
+      <th>10-30</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 5</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="2">Eucalypt Woodlands (MVG 5)</th>
+      <th>
+        Eucalyptus woodlands with a shrubby understorey OR Eucalyptus woodlands
+        with a chenopod or samphire understorey
+      </th>
+      <th>&gt; 50</th>
+      <th>30-50</th>
+      <th>10-30</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th>
+        Eucalyptus woodlands with a grassy understorey OR Eucalyptus woodlands
+        with ferns, herbs, sedges, rushes or wet tussock grassland OR Eucalyptus
+        woodlands with a hummock grass understorey
+      </th>
+      <th>&gt; 20</th>
+      <th>10-20</th>
+      <th>5-10</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>1-4</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="3">Acacia Forests and Woodlands (MVG 6)</th>
+      <th>Brigalow (<em>Acacia harpophylla</em>) forests and woodlands</th>
+      <th>&gt; 40</th>
+      <th>25-40</th>
+      <th>5-25</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th>Other Acacia forests and woodlands</th>
+      <th>&gt; 30</th>
+      <th>20-30</th>
+      <th>5-20</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 8</th>
+      <th>1-8</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        Mulga (<em>Acacia aneura</em>) woodlands and shrublands +/- tussock
+        grass +/- forbs OR Mulga (<em>Acacia aneura</em>) woodlands and
+        shrublands with hummock grass
+      </th>
+      <th>&gt; 25</th>
+      <th>15-25</th>
+      <th>5-15</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 5</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">Callitris Forests and Woodlands (MVG 7)</th>
+      <th>Callitris forests and woodlands (Eastern occurrence)</th>
+      <th>&gt; 35</th>
+      <th>20-35</th>
+      <th>5-20</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        Callitris forests and woodlands (mallee, arid and semi-arid occurrence)
+      </th>
+      <th>&gt; 20</th>
+      <th>10-20</th>
+      <th>5-10</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>1-4</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">Casuarina Forests and Woodlands (MVG 8)</th>
+      <th>Casuarina and Allocasuarina forests and woodlands</th>
+      <th>&gt; 40</th>
+      <th>20-40</th>
+      <th>5-20</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 8</th>
+      <th>1-8</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>River Oak forests and woodlands</th>
+      <th>&gt; 60</th>
+      <th>35-60</th>
+      <th>10-35</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th>Melaleuca Forests and Woodlands (MVG 9)</th>
+      <th>Melaleuca open forests and woodlands</th>
+      <th>&gt; 40</th>
+      <th>25-40</th>
+      <th>5-25</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 8</th>
+      <th>1-8</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Other Forests and Woodlands (MVG 10)</th>
+      <th>
+        Other forests and woodlands OR Banksia woodlands OR Leptospermum forests
+        and woodlands OR Tropical mixed species forests and woodlands
+      </th>
+      <th>&gt; 30</th>
+      <th>15-30</th>
+      <th>5-15</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">Eucalypt Open Woodlands (MVG 11)</th>
+      <th>
+        Eucalyptus open woodlands with a grassy understorey OR Eucalyptus open
+        woodlands with shrubby understorey
+      </th>
+      <th>&gt; 40</th>
+      <th>20-40</th>
+      <th>10-20</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 8</th>
+      <th>1-8</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        Eucalyptus low open woodlands with tussock grass OR Eucalyptus low open
+        woodlands with a shrubby understorey OR Eucalyptus low open woodlands
+        with a chenopod or samphire understorey
+      </th>
+      <th>&gt; 35</th>
+      <th>20-35</th>
+      <th>10-20</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>2-10</th>
+      <th>&lt; 2</th>
+    </tr>
+    <tr class="header">
+      <th>Tropical Eucalypt Woodlands / Grasslands (MVG 12)</th>
+      <th>
+        Tropical Eucalyptus forests and woodlands with a tall annual grassy
+        understorey
+      </th>
+      <th>&gt; 50</th>
+      <th>30-50</th>
+      <th>5-30</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>2-10</th>
+      <th>&lt; 2</th>
+    </tr>
+    <tr class="odd">
+      <th>Acacia Open Woodlands (MVG 13)</th>
+      <th>
+        Mulga (<em>Acacia aneura</em>) open woodlands and sparse shrublands +/-
+        tussock grass OR Mulga (<em>Acacia aneura</em>) open woodlands and
+        sparse shrublands with hummock grass
+      </th>
+      <th>&gt; 25</th>
+      <th>15-25</th>
+      <th>5-15</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 2</th>
+      <th>1-2</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th>Mallee Woodlands and Shrublands (MVG 14)</th>
+      <th>
+        Mallee with hummock grass OR Mallee with a tussock grass understorey OR
+        Mallee with a dense shrubby understorey OR Mallee with an open shrubby
+        understorey
+      </th>
+      <th>&gt; 15</th>
+      <th>8-15</th>
+      <th>3-8</th>
+      <th>1-3</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>1-4</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Low Closed Forest and Tall Closed Shrublands (MVG 15)</th>
+      <th>
+        Low closed forests or tall closed shrublands (including Acacia,
+        Melaleuca and Banksia)
+      </th>
+      <th>&gt; 15</th>
+      <th>8-15</th>
+      <th>3-8</th>
+      <th>1-3</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>1-4</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">Acacia shrublands (MVG 16)</th>
+      <th>
+        Acacia (+/- low) open woodlands and sparse shrublands with a shrubby
+        understorey OR Acacia (+/- low) open woodlands and sparse shrublands
+        with hummock grass OR Acacia (+/- low) open woodlands and sparse
+        shrublands with tussock grass OR Acacia (+/- low) open woodlands and
+        sparse shrublands with chenopods.
+      </th>
+      <th>&gt; 10</th>
+      <th>5-10</th>
+      <th>2-5</th>
+      <th>1-2</th>
+      <th>&lt; 1</th>
+      <th>&gt; 2</th>
+      <th>1-2</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Other Acacia tall open shrublands and shrublands</th>
+      <th>&gt; 15</th>
+      <th>8-15</th>
+      <th>2-8</th>
+      <th>1-2</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>1-4</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">Other Shrublands (MVG 17)</th>
+      <th>
+        Melaleuca shrublands and open shrublands OR Casuarina/Allocasuarina
+        shrublands (<em>C. equisetifolia, A. littoralis, A.</em
+        > <em>verticillata</em>) OR other shrublands
+      </th>
+      <th>&gt; 15</th>
+      <th>8-15</th>
+      <th>2-8</th>
+      <th>1-2</th>
+      <th>&lt; 1</th>
+      <th>&gt; 3</th>
+      <th>1-3</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Lignum shrublands and wetlands</th>
+      <th>&gt; 35</th>
+      <th>20-35</th>
+      <th>5-20</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 10</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th>Heathlands (MVG 18)</th>
+      <th>Heathlands</th>
+      <th>&gt; 10</th>
+      <th>5-10</th>
+      <th>2-5</th>
+      <th>0.5-2</th>
+      <th>&lt; 0.5</th>
+      <th>&gt; 2</th>
+      <th>&gt; 1</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="2">Tussock Grasslands (MVG 19)</th>
+      <th>Temperate tussock grassland</th>
+      <th>&gt; 70</th>
+      <th>40-70</th>
+      <th>10-40</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 2</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th>
+        Mitchell grass (<em>Astrebla</em>) tussock grasslands and Blue grass
+        (<em>Dichanthium</em>) and tall bunch grass (<em>Chrysopogon</em>)
+        tussock grasslands OR Other tussock grasslands
+      </th>
+      <th>&gt; 40</th>
+      <th>20-40</th>
+      <th>10-20</th>
+      <th>1-10</th>
+      <th>&lt; 1</th>
+      <th>&gt; 8</th>
+      <th>1-8</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Hummock Grasslands (MVG 20)</th>
+      <th>Hummock grasslands</th>
+      <th>&gt; 15</th>
+      <th>8-15</th>
+      <th>3-8</th>
+      <th>1-3</th>
+      <th>&lt; 1</th>
+      <th>&gt; 5</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">
+        Other Grasslands, Herblands, Sedgelands and Rushlands (MVG 21)
+      </th>
+      <th>
+        Sedgelands, rushes or reeds OR Wet tussock grasslands with herbs, sedges
+        or rushes, herblands or ferns OR Other grasslands
+      </th>
+      <th>&gt; 40</th>
+      <th>25-40</th>
+      <th>5-25</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 8</th>
+      <th>1-8</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Saline or brackish sedgelands or grasslands</th>
+      <th>&gt; 20</th>
+      <th>10-20</th>
+      <th>5-10</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 2</th>
+      <th>0.5-2</th>
+      <th>&lt; 0.5</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">
+        Chenopod Shrublands, Samphire Shrublands and Forblands (MVG 22)
+      </th>
+      <th>Saltbush and/or Bluebush shrublands</th>
+      <th>&gt; 15</th>
+      <th>8-15</th>
+      <th>3-8</th>
+      <th>1-3</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>1-4</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>Mixed chenopod, samphire +/- forbs</th>
+      <th>&gt; 10</th>
+      <th>5-10</th>
+      <th>2-5</th>
+      <th>1-2</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>0.5-4</th>
+      <th>&lt; 0.5</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">Mangroves (MVG 23)</th>
+      <th>Mangroves (Northern)</th>
+      <th>&gt; 30</th>
+      <th>15-30</th>
+      <th>5-15</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 5</th>
+      <th>0.5-5</th>
+      <th>&lt; 0.5</th>
+    </tr>
+    <tr class="odd">
+      <th>Mangroves (Southern)</th>
+      <th>&gt; 25</th>
+      <th>10-25</th>
+      <th>5-10</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 2</th>
+      <th>0.5-2</th>
+      <th>&lt; 0.5</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">Other Open Woodlands (MVG 31)</th>
+      <th>
+        Callitris open woodlands OR Melaleuca open woodlands OR Other open
+        woodlands
+      </th>
+      <th>&gt; 20</th>
+      <th>10-20</th>
+      <th>5-10</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>1-4</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        Casuarina and Allocasuarina open woodlands with a shrubby understorey OR
+        Casuarina and Allocasuarina open woodlands with a chenopod shrub
+        understorey OR Casuarina and Allocasuarina open woodlands with a tussock
+        grass understorey OR Casuarina and Allocasuarina open woodlands with a
+        hummock grass understorey
+      </th>
+      <th>&gt; 30</th>
+      <th>15-30</th>
+      <th>5-15</th>
+      <th>1-5</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>1-4</th>
+      <th>&lt; 1</th>
+    </tr>
+    <tr class="header">
+      <th>Mallee Open Woodlands and Sparse Mallee Shrublands (MVG 32)</th>
+      <th>
+        Open mallee woodlands and sparse mallee shrublands with a dense shrubby
+        understorey OR Open mallee woodlands and sparse mallee shrublands with a
+        sparse shrubby understorey OR Open mallee woodlands and sparse mallee
+        shrublands with a tussock grass understorey OR Open mallee woodlands and
+        sparse mallee shrublands with a hummock grass understorey
+      </th>
+      <th>&gt; 15</th>
+      <th>8-15</th>
+      <th>3-8</th>
+      <th>1-3</th>
+      <th>&lt; 1</th>
+      <th>&gt; 4</th>
+      <th>1-4</th>
+      <th>&lt; 1</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Analysis options</h4>
+<h4>
+  Appendix 13. Condition analysis options – assessing changes in condition by
+  attribute
+</h4>
+<p>
+  This section will detail how to analyse and present condition data that is
+  focused on assessing changes in individual attributes that contribute to
+  condition, before and after an intervention or development. Can also generate
+  own benchmarks here using the same field survey methods at reference sites.
+</p>
+<p>
+  The following is an example of how condition information can be shown
+  graphically, including a breakdown on the individual attributes. The most
+  appropriate way to do this will be determined following field testing and
+  analysis of that preliminary data (may need to look at percentage change).
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/weighted-wedge-diagram.png"
+    alt="Weighted wedge diagram"
+    width="482"
+    height="425"
+  />
+</p>
+<p>
+  Diagram used by (Oliver <em>et al.</em> 2014) to display different metrics and
+  their weights. Weighted wedge diagram.
+</p>
+<h4>
+  Appendix 14. Condition analysis options – state and territory frameworks
+</h4>
+<p>
+  A second option for assessing the measured condition attributes is to combine
+  the measures based on the scoring systems and weightings applied in the
+  existing State or Territory guidelines (Butler <em>et al.</em> 2020). Relative
+  weightings for the components of the quality indicators may vary between
+  vegetation assessment programs (Butler <em>et al.</em> 2020; Williams 2010).
+</p>
+<p>
+  To use this option, many of the attributes will need to be changed from
+  continuous data into the corresponding categorical data required for the
+  specific framework being undertaken. Further details will be provided below
+  for how data collected can be fed back into existing analysis methods.
+</p>
+<p>Summary of weightings for State and Territory guidelines (Williams 2010)</p>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 9%" />
+    <col style="width: 13%" />
+    <col style="width: 28%" />
+    <col style="width: 9%" />
+    <col style="width: 10%" />
+    <col style="width: 5%" />
+    <col style="width: 5%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th><strong>Large Trees</strong></th>
+      <th><strong>Tree Canopy Cover</strong></th>
+      <th><strong>Understorey Life Form Diversity and Cover</strong></th>
+      <th><strong>Weed Cover</strong></th>
+      <th><strong>Recruitment</strong></th>
+      <th><strong>Litter</strong></th>
+      <th><strong>Logs</strong></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Vic Habitat Hectares</strong></th>
+      <th>10</th>
+      <th>5</th>
+      <th>25</th>
+      <th>15</th>
+      <th>10</th>
+      <th>5</th>
+      <th>5</th>
+    </tr>
+    <tr class="header">
+      <th><strong>NSW BioMetric</strong></th>
+      <th>30</th>
+      <th>5</th>
+      <th>45</th>
+      <th>5</th>
+      <th>10</th>
+      <th>0</th>
+      <th>5</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QLD BioCondition</strong></th>
+      <th>15</th>
+      <th>10</th>
+      <th>30</th>
+      <th>10</th>
+      <th>5</th>
+      <th>5</th>
+      <th>5</th>
+    </tr>
+    <tr class="header">
+      <th><strong>TASVEG</strong></th>
+      <th>10</th>
+      <th>5</th>
+      <th>25</th>
+      <th>15</th>
+      <th>10</th>
+      <th>5</th>
+      <th>5</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SA BCM</strong></th>
+      <th>10</th>
+      <th>10</th>
+      <th>45</th>
+      <th>15</th>
+      <th>10</th>
+      <th>0</th>
+      <th>5</th>
+    </tr>
+    <tr class="header">
+      <th><strong>NT VCA</strong></th>
+      <th>13</th>
+      <th>4</th>
+      <th>29</th>
+      <th>16</th>
+      <th>8</th>
+      <th>5</th>
+      <th>5</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  Summary of key condition variables measured for each State and Territory
+  (Williams 2010)
+</p>
+<table>
+  <colgroup>
+    <col style="width: 11%" />
+    <col style="width: 13%" />
+    <col style="width: 17%" />
+    <col style="width: 16%" />
+    <col style="width: 13%" />
+    <col style="width: 14%" />
+    <col style="width: 13%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th><strong>VIC</strong></th>
+      <th><strong>NSW</strong></th>
+      <th><strong>QLD</strong></th>
+      <th><strong>TAS</strong></th>
+      <th><strong>NT</strong></th>
+      <th><strong>SA</strong></th>
+    </tr>
+    <tr class="odd">
+      <th></th>
+      <th><strong>Habitat Hectares</strong></th>
+      <th><strong>BioMetric</strong></th>
+      <th><strong>BioCondition</strong></th>
+      <th><strong>TASVEG</strong></th>
+      <th><strong>NT VCA</strong></th>
+      <th><strong>BCM</strong></th>
+    </tr>
+    <tr class="header">
+      <th rowspan="3">
+        <strong>Function/ Structure<br /> </strong>
+      </th>
+      <th>Large trees</th>
+      <th>Tree hollows</th>
+      <th>Large trees hollows</th>
+      <th>Large trees</th>
+      <th>Large trees hollows</th>
+      <th>Large trees hollows</th>
+    </tr>
+    <tr class="odd">
+      <th>Tree canopy cover</th>
+      <th>Overstorey cover</th>
+      <th>Tree canopy cover</th>
+      <th>Tree canopy cover</th>
+      <th>Tree canopy cover</th>
+      <th>Tree canopy cover</th>
+    </tr>
+    <tr class="header">
+      <th> </th>
+      <th> </th>
+      <th>Tree canopy height</th>
+      <th> </th>
+      <th>Dead standing</th>
+      <th>Habitat tree density</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>Composition</strong></th>
+      <th>US LF Diversity &amp; Cover</th>
+      <th>Plant Diversity</th>
+      <th>Tree SR</th>
+      <th>US LF diversity &amp; cover</th>
+      <th>Med tree SR and height</th>
+      <th>Plant diversity</th>
+    </tr>
+    <tr class="header">
+      <th></th>
+      <th>Mid-storey cover</th>
+      <th>Shrub cover &amp; SR</th>
+      <th></th>
+      <th>Plant diversity</th>
+      <th>Tree &amp; shrub health</th>
+    </tr>
+    <tr class="odd">
+      <th></th>
+      <th>Shrub cover</th>
+      <th>Native perennial</th>
+      <th></th>
+      <th>Shrub cover &amp; SR</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th></th>
+      <th>Grass cover</th>
+      <th>Grass cover &amp; SR</th>
+      <th></th>
+      <th>Grass cover &amp; SR</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th></th>
+      <th>Other cover</th>
+      <th>Forb SR</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Function</strong></th>
+      <th>Lack of weeds</th>
+      <th>Exotic plant cover</th>
+      <th>Weed cover</th>
+      <th>Lack of weeds</th>
+      <th>Weed cover</th>
+      <th>Weed cover</th>
+    </tr>
+    <tr class="odd">
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>Sorghum cover</th>
+      <th> </th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Function</strong></th>
+      <th>Recruitment (woody trees &amp; shrubs)</th>
+      <th>Regeneration (Overstorey species)</th>
+      <th>Recruitment (woody perennials)</th>
+      <th>Canopy regeneration</th>
+      <th>Canopy regeneration</th>
+      <th>Regeneration (canopy species)</th>
+    </tr>
+    <tr class="odd">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Percent canopy regeneration</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th><strong>Structure</strong></th>
+      <th>Logs</th>
+      <th>Logs</th>
+      <th>Fallen woody material</th>
+      <th>Logs</th>
+      <th>Logs</th>
+      <th>Logs</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Structure</strong></th>
+      <th>Litter cover</th>
+      <th></th>
+      <th>Organic litter cover</th>
+      <th>Litter cover</th>
+      <th>Litter cover</th>
+      <th>Recorded as part of ground cover</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  Refer to the guidelines below for instructions on how to use the data
+  collected her to feed into the most widely adopted state-based protocols.
+</p>
+<h4>Appendix 15. Condition analysis options – regional scale assessments</h4>
+<p>
+  Another option is to use the data collected for broader scale condition
+  assessments. This work will require the most development, because it will
+  require an analysis framework suitable for the area under study and
+  corresponding reference data, which is patchy across Australia, and may
+  require further field work to collect.
+</p>
+<p>
+  A summary index of the model which incorporates all components of extent,
+  composition (quality) and configuration will give the most complete picture of
+  condition of native vegetation at both the site and landscape scales (Thackway
+  <em>et al.</em> 2015).
+</p>
+<p>
+  Provide a summary here about how data can be used for regional, state or
+  national assessments and what’s required to facilitate that. Can use a range
+  of variables, including those from other modules. Indicate how the range of
+  available data can be used. Highlight here the use of remote measures.
+</p>
+<p>
+  Provide an example multi-metric / MCA spreadsheet showing weightings and
+  example scoring systems.
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/weighting-scoring-systems.png"
+    alt="Provide an example multi-metric / MCA spreadsheet showing weightings and example scoring systems"
+    width="972"
+    height="832"
+  />
+</p>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment-1">Equipment</h3>
+<ul>
   <li>
-    Traverse the sub-plot systematically and record the number of trees and
-    shrubs that fall within each of the seven DBH size classes (DBH is measured
-    at 1.3 m, only record individuals that are at least 1.3 m tall). If
-    required, mark or flag individuals that have been counted, or use additional
-    tapes to sub-divide the plot to assist with the survey.
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
   </li>
   <li>
-    Total numbers for each size class and plant type (tree or shrub) can be
-    increased (using the tally counter) as you systematically move across the
-    plot by pressing the button.
+    <p>Trimble R1</p>
   </li>
   <li>
-    Once the entire sub-plot has been surveyed, click Save and Continue to move
-    onto the large tree survey.
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/condition/age-class-survey-large-tree-counts-app-screen.png"
-              alt="age-class-survey and large-tree-counts app-screen"
-              width="258"
-              height="793"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <p>4 x 100 m tape measures or pegs/flagging tape to mark plot boundary</p>
+  </li>
+  <li>
+    <p>Diameter tape or calipers</p>
+  </li>
+  <li>
+    <p>10 m tape measure</p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures-1">Instructions and procedures</h3>
+<h4 id="x-40-m-subplot-layout">A. 40 x 40 m subplot layout</h4>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the 40 x 40 m sub-plot area is defined by the condition
+      point-intercept transects (Figure 6). It is recommended that the sub-plot
+      survey is undertaken directly after the condition point-intercept to make
+      use of the tapes that have already been laid.
+    </p>
   </li>
 </ol>
-<p><strong>Large tree survey</strong></p>
-<ol>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/sub-plot-layout.jpg"
+    alt="Sub plot layout"
+    width="583"
+    height="660"
+  />
+</p>
+<p>Figure 6. Subplot layout</p>
+<h4 id="b.-dbh-size-class-survey">B. DBH size class survey</h4>
+<ol type="1">
   <li>
-    Refer to the DBH size threshold table in the supporting information
-    (Appendix 12) and determine the DBH threshold for large trees for the system
-    under study. Enter the threshold into the app for reference. This
-    information will be displayed at the bottom of the screen.
+    <p>
+      Traverse the sub-plot systematically and record the number of trees and
+      shrubs that fall within each of the seven DBH size classes (DBH is
+      measured at 1.3 m, only record individuals that are at least 1.3 m tall).
+      If required, mark or flag individuals that have been counted, or use
+      additional tapes to sub-divide the plot to assist with the survey.
+    </p>
   </li>
   <li>
-    Traverse the sub-plot systematically and measure DBH (at 1.3 m) to determine
-    the number of large trees present in the area. Record number of large trees
-    (≥ DBH threshold) on a per species basis (or to genus level if an individual
-    cannot be identified to species level).
+    <p>
+      Total numbers for each size class and plant type (tree or shrub) can be
+      increased (using the tally counter) as you systematically move across the
+      plot by pressing the
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/condition/button.png"
+        alt="Button"
+        width="20"
+        height="20"
+      />
+      button.
+    </p>
   </li>
   <li>
-    Total numbers for each species can be increased (using the tally counter) as
-    you systematically move across the sub-plot by pressing the button.
+    <p>
+      Once the entire subplot has been surveyed, click
+      <em>Save and Continue</em> to move onto the large tree survey.
+    </p>
+  </li>
+</ol>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/condition/dbh-size-class-survey.png"
+    alt="Age class curvey - app screen"
+    width="404"
+    height="479"
+  />
+</p>
+<p>Figure 7. Age class curvey - app screen</p>
+<h4 id="c.-large-tree-survey">C. Large tree survey</h4>
+<ol type="1">
+  <li>
+    <p>
+      Refer to the DBH size threshold table in the supporting information
+      (Appendix 12) and determine the DBH threshold for large trees for the
+      system under study. Enter the threshold into the app for reference. This
+      information will be displayed at the bottom of the screen.
+    </p>
   </li>
   <li>
-    Select Save and Continue once the entire subplot has been surveyed for large
-    trees.
+    <p>
+      Traverse the sub-plot systematically and measure DBH (at 1.3 m) to
+      determine the number of large trees present in the area. Record number of
+      large trees (≥ DBH threshold) on a per species basis (or to genus level if
+      an individual cannot be identified to species level).
+    </p>
   </li>
-</ol>"""^^rdf:HTML ;
+  <li>
+    <p>
+      Total numbers for each species can be increased (using the tally counter)
+      as you systematically move across the sub-plot by pressing the
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/condition/button.png"
+        alt="Button"
+        width="20"
+        height="20"
+      />
+      button.
+    </p>
+  </li>
+</ol>
+<ol start="4" type="1">
+  <li>
+    <p>
+      Select <em>Save and Continue</em> once the entire subplot has been
+      surveyed for large trees.
+    </p>
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/condition/large-tree-count.png"
+        alt="Large tree counts - app screen"
+        width="406"
+        height="631"
+      />
+    </p>
+    <p>Figure 8. Large tree counts - app screen</p>
+  </li>
+</ol>
+    """^^rdf:HTML ;
 .
 
