@@ -7,10 +7,14 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/666e5aa5-e545-4637-bc52-a296d647b303>
-    a skos:Concept ;
-    dcterms:description """<p>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h3 id="protocol-overview-5">Protocol overview</h3>
+<p>
   Pan traps are set in two fixed location transects of 12 traps, spaced 5 metres
-  apart (see figure) and left out for up to 24 hours if using water with
+  apart (see Figure 1) and left out for up to 24 hours if using water with
   detergent, or up to seven days if using propylene glycol. All the traps used
   within a project must be the same dimensions. Yellow is the standard colour of
   pan traps used to attract day-active insects. If using white and blue pans as
@@ -19,11 +23,1324 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   ground where vegetation obscures them from sight (LeBuhn et al. 2016). This
   protocol should be undertaken on sunny or only partially cloudy days, with
   minimal wind and preferably no rain (Droege et al. 2016; LeBuhn et al. 2016).
-</p>"""^^rdf:HTML ;
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/plot-layout.png"
+    alt="Plot layout for invertebrate survey"
+    widteh="470"
+    height="700"
+  />
+</p>
+<p>Figure 1. Plot layout for invertebrate survey.</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+<h3 id="additional-guidelines-5">Additional guidelines</h3>
+<ul>
+  <li>
+    <p>
+      If monitoring is to be completed in one day, set the traps in the morning
+      and retrieve them shortly before sunset (Droege
+      <em>et al.</em> 2016).
+    </p>
+  </li>
+  <li>
+    <p>
+      Microhabitat detail is not collected for this protocol given the
+      attractant nature of the method.
+    </p>
+  </li>
+  <li>
+    <p>
+      Data from the adjoining vegetation plot will provide an indication of the
+      amount of floral resources available, when pan trapping is undertaken
+      within the same monitoring period. Phenology data is also collected for
+      the <em>Sweep netting</em> protocol.
+    </p>
+  </li>
+  <li>
+    <p>
+      When selecting trap locations, consider vegetation growth and other
+      activities that might be an issue if undertaking repeat monitoring (Droege
+      <em>et al.</em> 2016).
+    </p>
+  </li>
+  <li>
+    <p>
+      If flagging tape is used, be mindful of placement too close to traps as
+      these may bias sampling by attracting or deterring bees. Avoid using tape
+      that is the same colour as the traps (Droege <em>et al.</em> 2016).
+    </p>
+  </li>
+  <li>
+    <p>
+      For repeat monitoring, the pan traps should be repainted if the colour is
+      fading as this can affect the trap results (Droege
+      <em>et al.</em> 2016).
+    </p>
+  </li>
+  <li>
+    <p>
+      The pans do not need to be placed near flowers as bees will often travel
+      in search of flowers. Studies have shown that trap results can actually be
+      less when floral resources are present (Cane et al. 2000).
+    </p>
+  </li>
+  <li>
+    <p>
+      Propylene glycol is used in place of soapy water if undertaking trapping
+      for longer than 24 hours. Assess the suitability of the weather before
+      undertaking pan trapping over multiple days, as heavy rain can splash
+      trapped invertebrates out of the pan trap or result in pans overflowing.
+      Tiny overflow holes can be created in the top of the pan traps to let
+      water out (LeBuhn <em>et al.</em> 2016).
+    </p>
+  </li>
+  <li>
+    <p>
+      Any type of dish or laundry detergent can be used, except those with
+      citrus scent added as this will decrease the number of bees caught.
+      Laundry detergent is generally better than dish soap as it does not create
+      many suds on top of the water (LeBuhn <em>et al.</em> 2016).
+    </p>
+  </li>
+  <li>
+    <p>
+      Traps filled with soapy water should not be left for more than 24 hours
+      because they are generally easy to disturb and also the water will
+      evaporate, especially in hot conditions (Bulbert <em>et al.</em> 2007).
+    </p>
+  </li>
+  <li>
+    <p>
+      Unused soapy water can be disposed of by pouring down the drain. Used
+      soapy water from pan traps can be disposed of by pouring out onto the
+      ground, away from aquatic environments (MacKenzie <em>et al.</em> 2002).
+    </p>
+  </li>
+  <li>
+    <p>
+      Sieving is a common practice that speeds up specimen processing in the
+      field, but can damage small, fragile taxa such as aphids (Montgomery
+      <em>et al.</em> 2021). Do a quick check of the invertebrates present
+      before sieving to ensure samples will not be damaged.
+    </p>
+  </li>
+  <li>
+    <p>
+      The loss of individual traps is not an issue if only one or two are lost,
+      as long as this information is properly documented. At the end of the
+      collection process, during the analysis of the data, divide the number of
+      captures by the number of bowls available to account for any losses.
+    </p>
+  </li>
+  <li>
+    <p>
+      Bee data can be sent to Dr G. Lebuhn (beedata@sfsu.edu) at the San
+      Francisco State University, for collation and integration into a global
+      meta-analysis of bee monitoring (see
+      <a
+        href="https://www.fao.org/fileadmin/user_upload/pollination/docs/Data_Sheet_FINAL.xlsx"
+        ><u
+          >https://www.fao.org/fileadmin/user_upload/pollination/docs/Data_Sheet_FINAL.xlsx</u
+        ></a
+      >).
+    </p>
+  </li>
+  <li>
+    <p>
+      Post-field processing may include: specimen washing and drying, sorting,
+      pinning, labelling and identifying. Refer to LeBuhn
+      <em>et al.</em> (2016) for instructions. A video that demonstrates how to
+      dry bees can be viewed at
+      <a href="https://www.youtube.com/watch?v=935jlJep6go"
+        ><u>https://www.youtube.com/watch?v=935jlJep6go</u></a
+      >.
+    </p>
+  </li>
+  <li>
+    <p>
+      Bee identification is difficult in most circumstances, so any specimens
+      collected should be sent to experts for identification, at least at the
+      start of a project (LeBuhn <em>et al.</em> 2016).
+    </p>
+  </li>
+</ul>
+"""^^rdf:HTML ;
     skos:prefLabel "Pan trapping protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/pan-trapping-protocol/pan-trapping-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
+    tern:appendix """
+<h3 id="appendices">Appendices</h3>
+<h4>
+  Appendix A. Suitability of the sampling protocols for the commonly monitored
+  insect guilds.
+</h4>
+<table>
+  <colgroup>
+    <col style="width: 27%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th>Malaise</th>
+      <th>Leaf-litter</th>
+      <th>Light trap</th>
+      <th>Pan trap</th>
+      <th>Active search</th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Adult semi-aquatic insects</strong></p>
+        <p>(Plecoptera, Ephemeroptera, and Trichoptera)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Singing insects</strong></p>
+        <p>(Orthoptera &amp; Hemiptera: Cicadoidea)</p>
+      </th>
+      <th>^</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>*</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Ground-dwelling beetles</strong> (Coleoptera: Carabidae and
+        Staphylinidae)
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th>**</th>
+      <th>^</th>
+      <th>*</th>
+      <th>^</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <strong>Non-lepidopteran pollinators</strong> (Hymenoptera, Diptera,
+        Coleoptera)
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Leaf-chewing larvae</strong> (Lepidoptera and Hymenoptera:
+        Symphyta)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Night-active moths</strong> (Lepidoptera)</th>
+      <th></th>
+      <th></th>
+      <th>^</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Dragonflies and damselflies</strong> (Odonata)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Ants</strong></p>
+        <p>(Hymenoptera: Formicidae)</p>
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th>*</th>
+      <th>***</th>
+      <th>^</th>
+      <th>*</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Butterflies</strong></p>
+        <p>(Lepidoptera: Papilionoidea)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Flies</strong> (Diptera)</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Other</strong> (not covered in (Montgomery <em>et al.</em> 2021)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th><strong>Grasshoppers</strong> (Orthoptera)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Thrips</strong></p>
+        <p>(Thysanoptera)</p>
+      </th>
+      <th>*</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Spiders and scorpions</strong></p>
+        <p>(Arachnida)</p>
+      </th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Mesofauna</strong> (soil and litter invertebrates, e.g. mites
+        (Acari), springtails (Collembola), nematodes
+      </th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+    </tr>
+    <tr class="header">
+      <th>Millipedes (Diplopoda)</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Earthworms (Annelida)</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Landsnails (Gatropoda)</th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  *** Optimal suitability; ** Possibly suitability; * Marginal suitability; ^
+  Bycatch only; Blank indicates general unsuitability.
+</p>
+<p>
+  Based on (Montgomery <em>et al.</em> 2021), updated to reflect the sampling
+  methods included in this Module. Note that Soil sampling eDNA, Leaf-litter
+  sampling and Sweep netting are not included in Montgomery
+  <em>et al.</em> (2021). Sweep net based on results of (Spafford and Lortie
+  2013)
+</p>
+<h4>Appendix B. Data fields by invertebrate sampling protocol.</h4>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Data fields</strong></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th>Malaise</th>
+      <th>Leaf-litter</th>
+      <th>Light trap</th>
+      <th>Pan trap</th>
+      <th>Active search</th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>Sampling protocol</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Full or Lite</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trap set-up</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Fauna Plot ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Observer/s</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Photo/s</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Equipment</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Habitat</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sample container</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Close up ID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Photo direction</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Photo description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Time</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap install date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Start survey</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap open date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>End survey date/time</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Sample collection date/time</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>Trap removal</p>
+        <p>date/time</p>
+      </th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Weather</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Wind</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Rain</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Temperature</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Humidity</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sun/cloud</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trapping details</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Location</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/Location ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap/apparatus dimensions (multiple fields)</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap /apparatus colour</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap materials</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap damage</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap elevation ASL</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/sampling elevation above ground</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Collection apparatus</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Surrounding vegetation description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Dominant plant cover</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Dominant plant sp.</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant height</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Plant phenology</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant hit height above ground</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Number of leaves</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant circumference</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Herbivory</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Average leaf length</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Soil sample</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil sample depth/diameter</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Soil type</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil surface temperature</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Leaf-litter sample</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Litter depth</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Litter volume</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Area litter sampled</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Voucher</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative concentration</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Post field</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>New Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Species ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Count</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative %age</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+"""^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment-6">Equipment</h3>
+<ul>
   <li>
     <p>Personnel – one person</p>
   </li>
@@ -36,16 +1353,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       24 pans, e.g. 100 ml white plastic portion/ice cream cups (only available
-      in clear or white), 355 ml bowls (e.g. https://www.amscan.com.au,
-      available in yellow, white and blue), or stadium cups (e.g.
-      https://www.promotionalusb.com.au/product/stadium-cup/, available in
-      yellow, white and blue)
+      in clear or white), 355 ml bowls (e.g.
+      <a href="https://www.amscan.com.au"><u>https://www.amscan.com.au</u></a
+      >, available in yellow, white and blue), or stadium cups (e.g.
+      <a href="https://www.promotionalusb.com.au/product/stadium-cup/"
+        ><u>https://www.promotionalusb.com.au/product/stadium-cup/</u></a
+      >, available in yellow, white and blue)
     </p>
   </li>
   <li>
     <p>
-      Yellow, white, blue, fluorescent paint, if using (e.g.
-      https://au.rosco.com/en/product/fluorescent-paint)
+      Yellow, white, blue fluorescent paint, if using (e.g.
+      <a href="https://au.rosco.com/en/product/fluorescent-paint"
+        ><u>https://au.rosco.com/en/product/fluorescent-paint</u></a
+      >)
     </p>
   </li>
   <li>
@@ -69,8 +1390,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Trap stands (e.g. wire plant prop, or pieces of PVC pipe attached to a
-      stake; optional).
+      Trap stands (e.g.
+      <a href="https://www.bunnings.com.au/whites-450mm-plant-prop_p3321121"
+        ><u>wire plant prop</u></a
+      >, or pieces of PVC pipe attached to a stake; optional).
     </p>
   </li>
   <li>
@@ -104,7 +1427,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Sieve e.g., paper paint strainer, tea strainer, aquarium net, net spoon,
+      Sieve e.g. paper paint strainer, tea strainer, aquarium net, net spoon,
       nylon mesh (for removing samples from pan trap into sample container).
     </p>
   </li>
@@ -123,24 +1446,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>Soft lead pencil and scissors.</p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<p>Pre-field</p>
-<ol>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures-5">Instructions and procedures</h3>
+<h4 id="pre-field-2">A. Pre-field</h4>
+<ol type="1">
   <li>
     <p>
-      If required, use flourescent paint to paint the inside of the required
+      If required, use fluorescent paint to paint the inside of the required
       number of pans based on the colours to be used (yellow, blue). Ensure even
       coverage. A primer may be needed for the paint to adhere to the plastic.
     </p>
   </li>
-</ol>
-<ol start="2">
   <li>
     <p>
       For long-term trapping, create 4-5 small pin-holes spaced evenly around
       and a few millimeters below the rim of each cup to allow rain/excess
       liquid to drain away without overflowing and causing specimens to be lost
-      (Droege et al. 2016).
+      (Droege <em>et al.</em> 2016).
     </p>
   </li>
   <li>
@@ -151,50 +1475,48 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Fill a 5 litre water container wth water with a heavy squirt
+      Fill a 5 litre water container with water with a heavy squirt
       (approximately 1 ½ teaspoons) of dishwashing liquid (Blue Dawn is the
       standard, others are fine as long as they are not citrus-based or scented)
-      (Droege et al. 2016).
+      (Droege <em>et al.</em> 2016).
     </p>
   </li>
 </ol>
-<p>Trap set-up</p>
-<ol>
+<h4 id="b.-trap-set-up">B. Trap set-up</h4>
+<ol type="1">
   <li>
     <p>
-      Open the Invertebrate fauna module in App and select the Pan trapping
-      protocol and Undertake survey.
-    </p>
-  </li>
-</ol>
-<ol start="2">
-  <li>
-    <p>
-      Select Monitoring duration (drop-down, short-term (&lt;24 hours) or
-      long-term); this dictates the type of liquid used in the trap and the
+      Open the <em>Invertebrate fauna</em> module in App and select the
+      <em>Pan trapping</em> protocol and <em>Undertake survey</em>.
     </p>
   </li>
   <li>
     <p>
-      Check the box if Repeat monitoring will be undertaken (leave blank if one
-      off inventory survey).
+      Select <em>Monitoring duration</em> (drop-down, short-term (&lt;24 hours)
+      or long-term); this dictates the type of liquid used in the trap and the
     </p>
   </li>
   <li>
     <p>
-      Select the Fauna Plot ID (nearest plot should appear at top of the
-      drop-down list).
+      Check the box if <em>Repeat monitoring</em> will be undertaken (leave
+      blank if one off inventory survey).
     </p>
   </li>
   <li>
     <p>
-      Select the Observer (default auto-fill based on login or last user entry,
-      drop-down options based on project personnel, manual entry override if
-      necessary).
+      Select the <em>Fauna Plot ID</em> (nearest plot should appear at top of
+      the drop-down list).
     </p>
   </li>
   <li>
-    <p>Select Trap set-up.</p>
+    <p>
+      Select the <em>Observer</em> (default auto-fill based on login or last
+      user entry, drop-down options based on project personnel, manual entry
+      override if necessary).
+    </p>
+  </li>
+  <li>
+    <p>Select <em>Trap set-up</em>.</p>
   </li>
   <li>
     <p>
@@ -216,10 +1538,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>
       Navigate to where the pan trap transects will be positioned, either by
       using the mapping interface in the App and Trimble® R1 or manually by
-      using a compass and surveyors tape measure, or by pacing out the distance.
-      To use the App and Trimble® R1, select Navigate to trap location and the
-      mapping interface in the App will show your location in relation to the
-      default pre-determined trap locations (see Figure 1).
+      using a compass and surveyor's tape measure, or by pacing out the
+      distance. To use the App and Trimble® R1, select
+      <em>Navigate to trap location</em> and the mapping interface in the App
+      will show your location in relation to the default pre-determined trap
+      locations (see Figure 1).
     </p>
   </li>
   <li>
@@ -244,13 +1567,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      obvious burrows (as rabbits and wombats can destroy the bowls) (Bulbert et
-      al. 2007).
+      obvious burrows (as rabbits and wombats can destroy the bowls) (Bulbert
+      <em>et al.</em> 2007).
     </p>
   </li>
 </ul>
 <p>For each trap:</p>
-<ol start="11">
+<ol start="11" type="1">
   <li>
     <p>
       Place the pan level on the ground, in an exposed (full sun) location,
@@ -285,95 +1608,97 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Open the App, and select Add trap. The date and time of trap establishment
-      will be auto-recorded (override if necessary).
+      Open the App, and select <em>Add trap</em>. The date and time of trap
+      establishment will be auto-recorded (override if necessary).
     </p>
   </li>
   <li>
-    <p>Enter the Proposed Trapping Duration (days).</p>
+    <p>Enter the <em>Proposed Trapping Duration</em> (days).</p>
   </li>
   <li>
     <p>
-      Select the Trap ID from the drop-dowpann menu (the trap line/trap number,
-      e.g. PT1-1 or manually enter).
+      Select the <em>Trap ID</em> from the drop-down menu (the trap line/trap
+      number, e.g. PT1-1 or manually enter).
     </p>
   </li>
   <li>
     <p>
       Hold Trimble® R1 directly over the trap location (to obtain best
-      positional accuracy), select Record trap location. The GPS location will
-      be automatically recorded and will be shown on the mapping interface. A
-      warning message will appear if the accuracy is less than +/- 5m, prompting
-      the user to repeat this step.
+      positional accuracy), select <em>Record trap location</em>. The GPS
+      location will be automatically recorded and will be shown on the mapping
+      interface. A warning message will appear if the accuracy is less than +/-
+      5m, prompting the user to repeat this step.
     </p>
   </li>
   <li>
     <p>
-      Select Add photo. Take a photo looking down at the trap and record
-      direction (drop-down list, default is ‘down’).
+      Select <em>Add photo</em>. Take a photo looking down at the trap and
+      record direction (drop-down list, default is ‘down’).
     </p>
   </li>
-  <li>
-    <p>Enter trap details:</p>
-  </li>
+  <li><p>Enter trap details:</p></li>
 </ol>
 <ul>
   <li>
-    <p>Inside pan colour (drop-down list, default is yellow)</p>
+    <p><em>Inside pan colour</em> (drop-down list, default is yellow)</p>
   </li>
   <li>
-    <p>Outside pan colour (drop-down list, default is yellow)</p>
+    <p><em>Outside pan colour</em> (drop-down list, default is yellow)</p>
   </li>
   <li>
-    <p>Pan diameter (cm)</p>
+    <p><em>Pan diameter</em> (cm)</p>
   </li>
   <li>
-    <p>Pan height (cm)</p>
+    <p><em>Pan height</em> (cm)</p>
   </li>
   <li>
-    <p>Pan capacity (ml)</p>
+    <p><em>Pan capacity</em> (ml)</p>
   </li>
   <li>
     <p>
-      Pan placement (drop-down list, default in on ground, alternative is on
-      stand)
+      <em>Pan placement</em> (drop-down list, default in on ground, alternative
+      is on stand)
     </p>
   </li>
   <li>
     <p>
-      Pan height above ground (cm) (measured from the lowest point on the bowl)
+      <em>Pan height above ground</em> (cm) (measured from the lowest point on
+      the bowl)
     </p>
   </li>
   <li>
-    <p>Liquid type (drop-down list, default is soapy water)</p>
+    <p><em>Liquid type</em> (drop-down list, default is soapy water)</p>
   </li>
   <li>
-    <p>Liquid amount (estimate, ml)</p>
+    <p><em>Liquid amount</em> (estimate, ml)</p>
   </li>
   <li>
-    <p>Stakes used to hold down pan (Y/N)</p>
-  </li>
-  <li>
-    <p>
-      Note: The selections will become the default entries for the project. If
-      using pans of multiple colours, ensure the pan colour is updated.
-    </p>
+    <p><em>Stakes used to hold down pan</em> (Y/N)</p>
   </li>
 </ul>
-<ol start="20">
+
+<p>
+  Note: The selections will become the default entries for the project. If using
+  pans of multiple colours, ensure the pan colour is updated.
+</p>
+
+<ol start="20" type="1">
   <li>
     <p>
-      Record the Plant species in flower within 2.5 metres of the trap
+      Record the <em>Plant species in flower</em> within 2.5 metres of the trap
       (drop-down list, predictive text, multiple entries OK).
     </p>
   </li>
   <li>
-    <p>Enter any relevant Comments (e.g. type of dishwashing liquid used)</p>
+    <p>
+      Enter any relevant <em>Comments</em> (e.g. type of dishwashing liquid
+      used)
+    </p>
   </li>
   <li>
     <p>
-      Select Save and the App will return to the Invertebrate fauna module main
-      screen.
+      Select <em>Save</em> and the App will return to the
+      <em>Invertebrate fauna</em> module main screen.
     </p>
   </li>
   <li>
@@ -382,113 +1707,116 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       monitoring, or up to seven days before checking for the long-term
       monitoring (no longer, given potential for evaporation of fluid and DNA
       degradation). Add additional propylene glycol to traps left out for
-      multple days if necessary.
+      multiple days if necessary.
     </p>
   </li>
 </ol>
-<p>Sample collection/trap removal</p>
-<ol>
+<h4 id="c.-sample-collectiontrap-removal">C. Sample collection/trap removal</h4>
+<ol type="1">
   <li>
     <p>
-      On return to the plot, open the App, select the Invertebrate fauna module,
-      sampling method Pan trapping and Trap check. The Map function in the App
+      On return to the plot, open the App, select the
+      <em>Invertebrate fauna</em> module, sampling method
+      <em>Pan trapping</em> and <em>Trap check</em>. The Map function in the App
       can be used to navigate back to the traps if necessary.
     </p>
   </li>
 </ol>
 <p>For each trap:</p>
-<ol start="2">
+<ol start="2" type="1">
   <li>
     <p>
-      Select Remove sample, if collecting the samples but leaving the trap
-      in-situ. The date and time of sample collection will be auto-recorded.
+      Select <em>Remove sample</em>, if collecting the samples but leaving the
+      trap in-situ. The date and time of sample collection will be
+      auto-recorded.
     </p>
   </li>
   <li>
     <p>
-      Checkbox Trap refilled if new preserving fluid is added to the trap
-      (confirm the pre-entered trap details on the screen are correct), or
+      Checkbox <em>Trap refilled</em> if new preserving fluid is added to the
+      trap (confirm the pre-entered trap details on the screen are correct), or
     </p>
   </li>
   <li>
     <p>
-      Select Remove trap if collecting the samples and removing the trap. The
-      date and time of removal will be auto-recorded.
+      Select <em>Remove trap</em> if collecting the samples and removing the
+      trap. The date and time of removal will be auto-recorded.
     </p>
   </li>
   <li>
     <p>
-      Select the Observer (default auto-fill based on entry for Trap set-up).
+      Select the <em>Observer</em> (default auto-fill based on entry for Trap
+      set-up).
     </p>
   </li>
   <li>
     <p>
-      Select Add photo and take a close-up photo looking down at the pan trap
-      contents, getting the whole pan trap within the photo view.
+      Select <em>Add photo</em> and take a close-up photo looking down at the
+      pan trap contents, getting the whole pan trap within the photo view.
     </p>
   </li>
-  <li>
-    <p>Mark the relevant checkboxes if:</p>
-  </li>
+  <li><p>Mark the relevant checkboxes if:</p></li>
 </ol>
 <ul>
   <li>
-    <p>Trap not found, if the trap cannot be located</p>
+    <p><em>Trap not found</em>, if the trap cannot be located</p>
   </li>
   <li>
     <p>
-      Trap evaporated, if there is no fluid remaining in the trap (in this case
-      the contents can still be collected but this is a flag that they may no
-      longer be useful for DNA analysis)
-    </p>
-  </li>
-  <li>
-    <p>Rain impacted, if there has been heavy rain causing sample loss</p>
-  </li>
-  <li>
-    <p>
-      Trap upended, if the trap has flipped over, causing loss of fluid and
-      samples
+      <em>Trap evaporated</em>, if there is no fluid remaining in the trap (in
+      this case the contents can still be collected but this is a flag that they
+      may no longer be useful for DNA analysis)
     </p>
   </li>
   <li>
     <p>
-      Trap damaged, if the pan is broken, potentially impacting on trapping
-      results (this is also a flag that the pan needs replacing).
+      <em>Rain impacted</em>, if there has been heavy rain causing sample loss
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Trap upended</em>, if the trap has flipped over, causing loss of fluid
+      and samples
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Trap damaged</em>, if the pan is broken, potentially impacting on
+      trapping results (this is also a flag that the pan needs replacing).
     </p>
   </li>
 </ul>
+
 <p>
   If any of the boxes have been checked, then this bowl will be removed from the
   total number of active bowls for the transect.
 </p>
-<ol start="8">
+
+<ol start="8" type="1">
   <li>
     <p>
-      Mark the checkbox No catch, if the trap is in place but no invertebrates
-      present.
+      Mark the checkbox <em>No catch</em>, if the trap is in place but no
+      invertebrates present.
     </p>
   </li>
   <li>
-    <p>Add Comments (optional, free text).</p>
+    <p>Add <em>Comments</em> (optional, free text).</p>
   </li>
   <li>
     <p>
       Carefully pour the contents of the pan trap into a snap-lock bag or
-      decanted directly into a sampling container. Write the Plot ID, Trap ID,
-      Date and Observer onto the snap-lock bag/sampling container with permanent
-      marker.
+      decanted directly into a sampling container. Write the <em>Plot ID</em>,
+      <em>Trap ID</em>, <em>Date</em> and <em>Observer</em> onto the snap-lock
+      bag/sampling container with permanent marker.
     </p>
   </li>
   <li>
     <p>
-      Enter a Count estimate of the number of invertebrates obtained from the
-      trap (as a back up in case there are any mix-ups).
+      Enter a <em>Count estimate</em> of the number of invertebrates obtained
+      from the trap (as a backup in case there are any mix-ups).
     </p>
   </li>
-  <li>
-    <p>Repeat steps 28 to 38 for each trap.</p>
-  </li>
+  <li><p>Repeat steps 28 to 38 for each trap.</p></li>
   <li>
     <p>
       Return to the field vehicle or an area where all the equipment is
@@ -500,16 +1828,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Open the App. Select sampling method Pan trapping and select Add sample ,
-      then Scan barcode.
+      Open the App. Select sampling method <em>Pan trapping</em> and select
+      <em>Add sample</em> , then <em>Scan barcode</em>.
     </p>
   </li>
   <li>
     <p>
       Unscrew the lid of the first sampling container. Take a small thermal
-      printed waterproof barcode label and scan using the app. Select the Plot
-      IDand Pan trap line ID for the sample from the drop-down list. Select Save
-      record. The barcode ID is now be linked to the pan trap line.
+      printed waterproof barcode label and scan using the app. Select the
+      <em>Plot ID</em> <em>and Pan trap line ID</em> for the sample from the
+      drop-down list. Select <em>Save record</em>. The barcode ID is now linked
+      to the pan trap line.
     </p>
   </li>
   <li>
@@ -524,8 +1853,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Add the specimens to the sampling container. Select the Preservation type
-      (drop-down list, e.g. 95% ethanol, undiluted propylene glycol).
+      Add the specimens to the sampling container. Select the
+      <em>Preservation type</em> (drop-down list, e.g. 95% ethanol, undiluted
+      propylene glycol).
     </p>
   </li>
   <li>
@@ -546,10 +1876,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Select Add photo and take a photo looking down (into the sample container
-      with the lid off), with the barcode placed alongside the container (not in
-      the container), so it is visible in the photo (place a blank piece of
-      white paper underneath the container for the best photo).
+      Select <em>Add photo</em> and take a photo looking down (into the sample
+      container with the lid off), with the barcode placed alongside the
+      container (not in the container), so it is visible in the photo (place a
+      blank piece of white paper underneath the container for the best photo).
     </p>
   </li>
   <li>
@@ -573,164 +1903,133 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       container.
     </p>
   </li>
-  <li>
-    <p>Store the containers in a cool location out of direct light.</p>
-  </li>
+  <li><p>Store the containers in a cool location out of direct light.</p></li>
 </ol>
-<p>Post-field</p>
-<ol>
+<h4 id="d.-post-field-1">D. Post-field</h4>
+<ol type="1">
   <li>
     <p>
       If the samples are not going to be processed within one to two days, store
       them in the freezer.
     </p>
   </li>
-</ol>
-<ol start="2">
   <li>
     <p>
-      Refer to Section 13 for standard post-field sample preservation and
-      processing instructions.
+      Refer to standard
+      <a
+        href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/79296cab-a02f-420d-b260-17c0e8691499"
+        >Post-field guidelines</a
+      >
+      for post-field sample preservation and processing instructions.
     </p>
   </li>
 </ol>
-<p>App figure. Pan trapping App screen mock up
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/pan-trapping-app-screen.png"
-                alt="Pan trapping App screen mock up"
-                widteh="993"
-                height="1075"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/pan-trapping-app-screen.png"
+    alt="Pan trapping App screen mock up"
+    widteh="993"
+    height="1075"
+  />
 </p>
-<p><strong>Additional guidelines</strong></p>
-<ul>
-  <li>
-    <p>
-      If monitoring is to be completed in one day, set the traps in the morning
-      and retrieve them shortly before sunset (Droege et al. 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      Microhabitat detail is not collected for this protocol given the
-      attractant nature of the method.
-    </p>
-  </li>
-  <li>
-    <p>
-      Data from the adjoining vegetation plot will provide an indication of the
-      number of floral resources available, when pan trapping is undertaken
-      within the same monitoring period. Phenology data is also collected for
-      the Sweep netting protocol.
-    </p>
-  </li>
-  <li>
-    <p>
-      When selecting trap locations, consider vegetation growth and other
-      activities that might be an issue if undertaking repeat monitoring (Droege
-      et al. 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      If flagging tape is used, be mindful of placement too close to traps as
-      these may bias sampling by attracting or deterring bees. Avoid using tape
-      that is the same colour as the traps (Droege et al. 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      For repeat monitoring, the pan traps should be repainted if the colour is
-      fading as this can affect the trap results (Droege et al. 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      The pans do not need to be placed near flowers as bees will often travel
-      in search of flowers. Studies have shown that trap results can actually be
-      less when floral resources are present (Cane et al. 2000).
-    </p>
-  </li>
-  <li>
-    <p>
-      Propylene glycol is used in place of soapy water if undertaking trapping
-      for longer than 24 hours. Assess the suitability of the weather before
-      undertaking pan trapping over multiple days, as heavy rain can splash
-      trapped invertebrates out of the pan trap or result in pans overflowing.
-      Tiny overflow holes can be created in the top of the pan traps to let
-      water out (LeBuhn et al. 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      Any type of dish or laundry detergent can be used, except those with
-      citrus scent added as this will decrease the number of bees caught.
-      Laundry detergent is generally better than dish soap as it does not create
-      many suds on top of the water (LeBuhn et al. 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      Traps filled with soapy water should not be left for more than 24 hours
-      because they are generally easy to disturb and also the water will
-      evaporate, especially in hot conditions (Bulbert et al. 2007).
-    </p>
-  </li>
-  <li>
-    <p>
-      Unused soapy water can be disposed of by pouring down the drain. Used
-      soapy water from pan traps can be disposed of by pouring out onto the
-      ground, away from aquatic environments (MacKenzie et al. 2002).
-    </p>
-  </li>
-  <li>
-    <p>
-      Sieving is a common practice that speeds up specimen processing in the
-      field, but can damage small, fragile taxa such as aphids (Montgomery et
-      al. 2021). Do a quick check of the invertebrates present before sieving to
-      ensure samples will not be damaged.
-    </p>
-  </li>
-  <li>
-    <p>
-      The loss of individual traps is not an issue if only one or two are lost,
-      as long as this information is properly documented. At the end of the
-      collection process, during the analysis of the data, divide the number of
-      captures by the number of bowls available to account for any losses.
-    </p>
-  </li>
-  <li>
-    <p>
-      Bee data can be sent to Dr G. Lebuhn at the San
-      Francisco State University, for collation and integration into a global
-      meta-analysis of bee monitoring (see
-      https://www.fao.org/fileadmin/user_upload/pollination/docs/Data_Sheet_FINAL.xlsx).
-    </p>
-  </li>
-  <li>
-    <p>
-      Post-field processing may include: specimen washing and drying, sorting,
-      pinning, labelling and identifying. Refer to LeBuhn et al. (2016) for
-      instructions. A video that demonstrates how to dry bees can be viewed at
-      https://www.youtube.com/watch?v=935jlJep6go.
-    </p>
-  </li>
-  <li>
-    <p>
-      Bee identification is difficult in most circumstances, so any specimens
-      collected should be sent to experts for identification, at least at the
-      start of a project (LeBuhn et al. 2016).
-    </p>
-  </li>
-</ul>
+<p>Figure 8. Pan trapping App screen mock up</p>
 """^^rdf:HTML ;
+    tern:purpose """
+    <h3 id="rationale-6">Rationale</h3>
+<p>
+  Data on pollinators is important to establish baselines, track population
+  change, identify the consequences of pollinator population declines, determine
+  functionally important species and guide conservation and restoration programs
+  (Popic <em>et al.</em> 2013).
+</p>
+<p>
+  Rapid trapping (over 24 hours) is useful for inventory and monitoring, however
+  trapping over a longer duration will provide more comprehensive results, given
+  the flight period varies for different pollinators, and may shift from year to
+  year (Droege <em>et al.</em> 2016).
+</p>
+<p>
+  Pan trapping is most commonly used for monitoring bees and other pollinators,
+  and is generally a more effective method for trapping bees than Malaise traps
+  (Montgomery <em>et al.</em> 2021). Pan trapping has been found to capture less
+  diversity than sweep netting of flowering plants, but the methods are
+  considered complementary as the composition of catches can be very different
+  (Cane <em>et al.</em> 2000; Berglund and Milberg 2019). Pan trapping is also
+  useful for sampling elusive taxa, as well as bees when there are no flowers
+  present (e.g. after a fire) or in a ploughed paddock in an agricultural
+  setting. Pan trapping also has the added benefit of being able to be
+  undertaken by unskilled persons and requires no specialised equipment (Cane et
+  al. 2000).
+</p>
+<p>
+  Like all methods, there is sampling bias for certain taxa, and results are
+  strongly influenced by the environmental conditions (Cane et al. 2000;
+  Montgomery et al. 2021). Trap placement can impact on catch, with bees
+  unlikely to visit shaded traps, and vegetation height can influence trap
+  visibility. Traps are best placed in exposed open settings. Trap stands can be
+  used to adjust trap height, according to the habitat so they are easily seen
+  by the target insects (Droege et al. 2016).
+</p>
+<p>
+  The number of traps used per plot is considered adequate for estimating
+  species richness of bees (Shapiro et al. 2014). Pan traps are mostly commonly
+  placed 5 m apart and this distance is considered sufficient to decrease bee
+  competition among traps (Droege <em>et al.</em> 2016).
+</p>
+<p>
+  Pan size reportedly does not affect catch rates (LeBuhn et al. 2016;
+  Montgomery et al. 2021) with (Gonzalez et al. 2020) finding that pan traps
+  ranging from 4 to 12 cm captured a similar richness of bees, did not influence
+  body size of collected bees, and had little or no effect on the abundance
+  estimates of bees and flies. Given this, a mandatory pan size has not been set
+  (but needs to be recorded in the App), so the pan can be chosen based on
+  availability of materials and what is considered best for the situation.
+  Generally, 100 ml (Droege et al. 2016) or 350 ml (O'Connor et al. 2019) sizes
+  are used. The smaller size has the advantage of increased efficiency with trap
+  set up, as all 24 pans can be held at a time in one hand and filled without
+  having to put the bowls on the ground, and also means less water needs to be
+  carried to pour into the traps (Droege et al. 2016). The size should be
+  consistent for all pan traps used across a project.
+</p>
+<p>
+  The choice of the colour of pan traps used depends on the target insect
+  species/group, with yellow being the standard because the catch is more
+  abundant and taxonomically diverse than white and blue pans. However, a range
+  of pan colours can be used to maximise the insect diversity sampled and better
+  capture the community of flying insects, which is useful for inventory, and if
+  the monitoring focus is across different taxonomic groups (Montgomery
+  <em>et al.</em> 2021). An assessment of the effectiveness of different
+  coloured traps can be incorporated into the study design for each project
+  (Droege <em>et al.</em> 2016).
+</p>
+    """^^rdf:HTML ;
+    tern:scope """
+    <h3 id="introduction-6">Introduction</h3>
+<p>
+  Pan trapping is a cheap, efficient and simple method for monitoring flying
+  insects. It is most effective at sampling flies (Diptera), bees and wasps
+  (Hymenoptera), as well as aphids (Hemiptera), thrips (Thysanoptera), and even
+  some beetles (Coleoptera) and grasshoppers (Orthoptera) (Montgomery et al.
+  2021).
+</p>
+<p>
+  The method involves the use of small coloured bowls or ‘pans’ which are either
+  filled with water and a small amount of dishwashing liquid for rapid sampling
+  over one day, or undiluted propylene glycol for sampling over a longer
+  duration. When flying insects land on the water surface, they sink and drown,
+  and the liquid is then strained through a fine sieve and the specimens are
+  retrieved (Bulbert et al. 2007; LeBuhn et al. 2016).
+</p>
+<p>
+  The pans are typically yellow as many day-active flying insects are attracted
+  to this colour as a food resource, but blue and white pans can also be used to
+  attract different species (Montgomery et al. 2021).
+</p>
+<p>
+  This protocol is an adaptation of the existing “Protocol to detect and monitor
+  pollinator communities” (LeBuhn et al. 2016), which is implemented in various
+  countries across the globe.
+</p>
+    """^^rdf:HTML ;
 .
 

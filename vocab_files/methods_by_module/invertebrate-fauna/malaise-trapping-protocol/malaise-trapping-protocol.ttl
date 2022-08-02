@@ -7,33 +7,1310 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/4a2c4309-da43-4ad4-b1eb-637d2e70580d>
-    a skos:Concept ;
-    dcterms:description """<p>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h3 id="protocol-overview-2">Protocol overview</h3>
+<p>
   This protocol involves the use of a single Townes style malaise trap within
   the fauna plot. The malaise trap is positioned at a chosen location within the
-  plot aimed at maximizing potential captures. The trap is left in-situ for five
+  plot aimed at maximising potential captures. The trap is left in-situ for five
   (minimum) to seven (recommended) consecutive nights. Once a trap is in place,
   it can be left unattended for up to seven days before the collection bottle
-  needs changing (GMP 2019; D'Souza et al. 2021). Trapping can be undertaken for
-  a longer consecutive period or across different seasons, to build a more
-  comprehensive picture of invertebrate activity at the site. If trapping is
-  undertaken as part of the GMP, the trap is left in-situ for a full year, with
-  the collection bottle replaced every seven days. The protocol instructions
-  incorporate the requirements of the GMP.
+  needs changing (GMP 2019; D'Souza <em>et al.</em> 2021). Trapping can be
+  undertaken for a longer consecutive period of time or across different
+  seasons, to build a more comprehensive picture of invertebrate activity at the
+  site. If trapping is undertaken as part of the GMP, the trap is left in-situ
+  for a full year, with the collection bottle replaced every seven days. The
+  protocol instructions incorporate the requirements of the GMP.
 </p>
 <p>
-  Trapping is ideally timed during periods of peak insect activity (i.e., during
+  Trapping is ideally timed during periods of peak insect activity (i.e. during
   warm, sunny weather). It is important that repeat sampling is undertaken at
   the same location, at the same time of year, and during similar weather
   conditions. The results represent a snapshot of the insect community present
   within the habitat type, at a particular time of year. Sampling can be
-  undertaken at more than one time throughout the year (GMP 2019; D'Souza et al.
-  2021).
-</p>"""^^rdf:HTML ;
+  undertaken at more than one time throughout the year (GMP 2019; D'Souza
+  <em>et al.</em> 2021).
+</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+<h3 id="additional-guidelines-2">Additional guidelines</h3>
+<h4 id="trap-maintenance">A. Trap maintenance</h4>
+<ul>
+  <li>
+    <p>
+      GMP standard operating procedures, and instructional videos for trap
+      set-up and servicing are available at
+      <a href="https://biodiversitygenomics.net/resources/bioscan/"
+        ><u>https://biodiversitygenomics.net/resources/bioscan/</u></a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      Ethanol (as the killing agent/preserving fluid) is likely to evaporate
+      faster than propylene glycol, particularly in exposed sites. This can be
+      compensated by attaching a larger collection container (with more fluid)
+      or by the replenishing fluid during the week (Evans 2016b).
+    </p>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p>
+      A moth excluder can be inserted into the collecting head to prevent the
+      entry of large insects such as Lepidoptera or dragonflies.
+    </p>
+  </li>
+  <li>
+    <p>
+      In areas with high vertebrate traffic (wild animals or livestock) it may
+      be necessary to place a temporary barrier (e.g. chicken wire), around the
+      trap location (Whitman <em>et al.</em> 2019). Use of barriers/additional
+      fixtures must be recorded in the comments field.
+    </p>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p>
+      Schmidt <em>et al.</em> (2019) provides a protocol for preparing
+      Lepidoptera from malaise trap samples that were preserved in ethanol.
+    </p>
+  </li>
+  <li>
+    <p>
+      In areas frequented by people, consider placing a sign next to the trap
+      stating what it is, to potentially avoid the traps being tampered with.
+    </p>
+  </li>
+  <li>
+    <p>
+      If there are consistent issues with wildlife disturbance or human
+      vandalism, the trap can be relocated (GMP 2019). Ensure that all the
+      details for this are recorded.
+    </p>
+  </li>
+  <li>
+    <p>
+      Damaged traps should be repaired (if possible) or replaced. Faded traps
+      should also be replaced. If using traps that have been damaged/or altered
+      in any way, this should be recorded in the comments data field.
+    </p>
+  </li>
+</ul>
+<h4 id="samples">B. Samples</h4>
+<ul>
+  <li>
+    <p>
+      If sorting of samples is required (depending on project aims), the time
+      commitment can be considerable given the large catch volumes. Sometimes
+      sub-sampling is necessary (i.e. taking a known fraction of the total
+      volume, ensuring that the sample is completely mixed beforehand).
+    </p>
+  </li>
+</ul>
+<h4 id="analysis-2">C. Analysis</h4>
+<ul>
+  <li>
+    <p>
+      Sorting of bulk samples is not necessary for the purpose of DNA analysis.
+    </p>
+  </li>
+  <li>
+    <p>
+      Standardising data analysis is an equally important aspect of comparing
+      results between sites (Hobern and Adamowicz 2021). This is beyond the
+      scope of this protocol but is further discussed in Section 10.
+    </p>
+  </li>
+  <li>
+    <p>
+      Projects involved in the GMP send collected samples to the Centre for
+      Biodiversity Genomics (Canada) for sequence analysis and DNA barcoding,
+      and in return, the contributors receive a site specific summary of the
+      species diversity identified for the given survey time (Centre of
+      Biodiversity Genomics 2021).
+    </p>
+  </li>
+</ul>
+"""^^rdf:HTML ;
     skos:prefLabel "Malaise trapping protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/malaise-trapping-protocol/malaise-trapping-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<p>Trap install and set-up</p>
+    tern:appendix """
+<h3 id="appendices">Appendices</h3>
+<h4>
+  Appendix A. Suitability of the sampling protocols for the commonly monitored
+  insect guilds.
+</h4>
+<table>
+  <colgroup>
+    <col style="width: 27%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th>Malaise</th>
+      <th>Leaf-litter</th>
+      <th>Light trap</th>
+      <th>Pan trap</th>
+      <th>Active search</th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Adult semi-aquatic insects</strong></p>
+        <p>(Plecoptera, Ephemeroptera, and Trichoptera)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Singing insects</strong></p>
+        <p>(Orthoptera &amp; Hemiptera: Cicadoidea)</p>
+      </th>
+      <th>^</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>*</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Ground-dwelling beetles</strong> (Coleoptera: Carabidae and
+        Staphylinidae)
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th>**</th>
+      <th>^</th>
+      <th>*</th>
+      <th>^</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <strong>Non-lepidopteran pollinators</strong> (Hymenoptera, Diptera,
+        Coleoptera)
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Leaf-chewing larvae</strong> (Lepidoptera and Hymenoptera:
+        Symphyta)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Night-active moths</strong> (Lepidoptera)</th>
+      <th></th>
+      <th></th>
+      <th>^</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Dragonflies and damselflies</strong> (Odonata)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Ants</strong></p>
+        <p>(Hymenoptera: Formicidae)</p>
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th>*</th>
+      <th>***</th>
+      <th>^</th>
+      <th>*</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Butterflies</strong></p>
+        <p>(Lepidoptera: Papilionoidea)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Flies</strong> (Diptera)</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Other</strong> (not covered in (Montgomery <em>et al.</em> 2021)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th><strong>Grasshoppers</strong> (Orthoptera)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Thrips</strong></p>
+        <p>(Thysanoptera)</p>
+      </th>
+      <th>*</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Spiders and scorpions</strong></p>
+        <p>(Arachnida)</p>
+      </th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Mesofauna</strong> (soil and litter invertebrates, e.g. mites
+        (Acari), springtails (Collembola), nematodes
+      </th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+    </tr>
+    <tr class="header">
+      <th>Millipedes (Diplopoda)</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Earthworms (Annelida)</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Landsnails (Gatropoda)</th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  *** Optimal suitability; ** Possibly suitability; * Marginal suitability; ^
+  Bycatch only; Blank indicates general unsuitability.
+</p>
+<p>
+  Based on (Montgomery <em>et al.</em> 2021), updated to reflect the sampling
+  methods included in this Module. Note that Soil sampling eDNA, Leaf-litter
+  sampling and Sweep netting are not included in Montgomery
+  <em>et al.</em> (2021). Sweep net based on results of (Spafford and Lortie
+  2013)
+</p>
+<h4>Appendix B. Data fields by invertebrate sampling protocol.</h4>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Data fields</strong></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th>Malaise</th>
+      <th>Leaf-litter</th>
+      <th>Light trap</th>
+      <th>Pan trap</th>
+      <th>Active search</th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>Sampling protocol</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Full or Lite</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trap set-up</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Fauna Plot ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Observer/s</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Photo/s</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Equipment</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Habitat</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sample container</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Close up ID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Photo direction</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Photo description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Time</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap install date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Start survey</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap open date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>End survey date/time</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Sample collection date/time</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>Trap removal</p>
+        <p>date/time</p>
+      </th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Weather</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Wind</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Rain</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Temperature</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Humidity</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sun/cloud</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trapping details</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Location</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/Location ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap/apparatus dimensions (multiple fields)</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap /apparatus colour</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap materials</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap damage</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap elevation ASL</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/sampling elevation above ground</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Collection apparatus</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Surrounding vegetation description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Dominant plant cover</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Dominant plant sp.</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant height</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Plant phenology</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant hit height above ground</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Number of leaves</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant circumference</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Herbivory</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Average leaf length</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Soil sample</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil sample depth/diameter</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Soil type</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil surface temperature</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Leaf-litter sample</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Litter depth</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Litter volume</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Area litter sampled</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Voucher</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative concentration</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Post field</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>New Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Species ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Count</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative %age</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+"""^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment-3">Equipment</h3>
+<h4 id="trap-install-and-set-up-1">A. Trap install and set-up</h4>
 <ul>
   <li>
     <p>Personnel - one person required to set-up, check and remove trap</p>
@@ -52,15 +1329,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Townes style malaise traps – each trap includes 1 Short Support Pole (300
-      cm), 1 Long Support Pole (450 cm), 1 Bottle Connecting Ring, 1 collection
-      bottle (500 ml), 4 Guy Ropes (3 m), 12 Tent Pegs, Carrying bag (total
-      weight 2.3 kg)
+      <a
+        href="https://www.entosupplies.com.au/equipment/field/traps/malaise-traps-townes-style/"
+        ><u>Townes style malaise traps</u></a
+      >
+      – each trap includes 1 Short Support Pole (300 cm), 1 Long Support Pole
+      (450 cm), 1 Bottle Connecting Ring, 1 collection bottle (500 ml), 4 Guy
+      Ropes (3 m), 12 Tent Pegs, Carrying bag (total weight 2.3 kg)
     </p>
   </li>
   <li>
     <p>
-      1 x 2.4 m and 1 x 1.8 m star dropper (to provided added protection to trap
+      1 x 2.4 m and 1 x 1.8 m star dropper (to provide added protection to trap
       in windy conditions) (optional)
     </p>
   </li>
@@ -86,7 +1366,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>Flagging tape.</p>
   </li>
 </ul>
-<p>Sample collection</p>
+<h4 id="sample-collection">B. Sample collection</h4>
 <ul>
   <li>
     <p>
@@ -116,7 +1396,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>Freezer (preferred) or refrigerator for sample storage.</p>
   </li>
 </ul>
-<p>Specimen storage/sorting (post field)</p>
+<h4 id="specimen-storagesorting-post-field">
+  C. Specimen storage/sorting (post field)
+</h4>
 <ul>
   <li>
     <p>Additional screw top sample containers</p>
@@ -147,18 +1429,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>Tweezers.</p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<p>Pre-field</p>
-<ol>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures-2">Instructions and procedures</h3>
+<h4 id="pre-field">A. Pre-field</h4>
+<ol type="1">
   <li>
     <p>
       Register to be involved in the Global Malaise Trap Program (GMP)
       (optional). A malaise trap and materials may be provided through this
-      program. Refer to http://globalmalaise.org to determine suitability.
+      program. Refer to
+      <a href="http://globalmalaise.org"><u>http://globalmalaise.org</u></a>
+      to determine suitability.
     </p>
   </li>
-</ol>
-<ol start="2">
   <li>
     <p>
       Ensure the required permissions are obtained (from local authorities,
@@ -187,11 +1472,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p>Field</p>
-<ol start="6">
+<h4 id="b.-field">B. Field</h4>
+<ol start="6" type="1">
   <li>
     <p>
-      If trapping is done as part of the GMP, follow the GMP standard protocol.
+      If trapping is done as part of the GMP, follow the
+      <a
+        href="https://biodiversitygenomics.net/site/wp-content/uploads/2019/06/GMP-Standard-Operating-Procedures-2019-500ml-1.pdf"
+        ><u>GMP standard protocol</u></a
+      >.
     </p>
   </li>
   <li>
@@ -224,12 +1513,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Push ends of longer pole into pockets of taller end of malaise trap. Be
-      careful not to over bend the pole.
+      Push ends of the longer pole into pockets of the taller end of malaise
+      trap. Be careful not to over bend the pole.
     </p>
   </li>
   <li>
-    <p>Clip hooks around pole. Take care to maintain gentle curve in pole.</p>
+    <p>
+      Clip hooks around pole. Take care to maintain gentle curve in the pole.
+    </p>
   </li>
   <li>
     <p>Repeat steps with shorter pole and lower end of malaise trap.</p>
@@ -249,9 +1540,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Stake out guy ropes from the poles of the top of both ends of malaise trap
-      to make it stand taut. Additional guy points can be used if considered
-      necessary.
+      Stake out guy ropes from the poles of the top of both ends of the malaise
+      trap to make it stand taut. Additional guy points can be used if
+      considered necessary.
     </p>
   </li>
   <li>
@@ -276,7 +1567,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       For further assembly instructions visit:
-      https://www.youtube.com/watch?v=sU9rW71f5ZA&amp;t=9s
+      <a href="https://www.youtube.com/watch?v=sU9rW71f5ZA&amp;t=9s"
+        ><u>https://www.youtube.com/watch?v=sU9rW71f5ZA&amp;t=9s</u></a
+      >
     </p>
   </li>
   <li>
@@ -293,31 +1586,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<ol start="10">
+<ol start="10" type="1">
   <li>
     <p>
-      Turn on Trimble ® R1, open the Invertebrate fauna module from the main
-      page of the App and select the Malaise trapping protocol
+      Turn on Trimble ® R1, open the <em>Invertebrate fauna</em> module from the
+      main page of the App and select the <em>Malaise trapping</em> protocol
     </p>
   </li>
   <li>
     <p>
-      Select the Fauna Plot ID (nearest plot should appear at top of the
-      drop-down list).
+      Select the <em>Fauna Plot ID</em> (nearest plot should appear at top of
+      the drop-down list).
     </p>
   </li>
   <li>
     <p>
-      Select the Observer, being the person setting up the trap (auto-filled
-      based on login details, drop-down options based on project personnel,
-      manual entry override if the observer is not on the list).
+      Select the <em>Observer</em>, being the person setting up the trap
+      (auto-filled based on login details, drop-down options based on project
+      personnel, manual entry override if the observer is not on the list).
     </p>
   </li>
   <li>
-    <p>Select Trap set-up. trap</p>
+    <p>Select Trap set-up.</p>
   </li>
 </ol>
-<ol start="14">
+<ol start="14" type="1">
   <li>
     <p>
       Select Add trap. A unique sequential trap ID will be automatically
@@ -326,78 +1619,75 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Select Open trap. The Date and Time the trap is set-up will be
-      auto-generated. Click to override if necessary (e.g. if trap is not open
-      at that time). Press Save.
+      Select <em>Open trap</em>. The <em>Date</em> and <em>Time</em> the trap is
+      set-up will be auto-generated. Click to override if necessary (e.g. if
+      trap is not open at that time). Press <em>Save</em>.
     </p>
   </li>
   <li>
     <p>
-      Select the Direction of the head of the trap from the drop-down list (N,
-      NE, E, SE, S, SE, W, NW). The default entry is N.
+      Select the <em>Direction of the head of the trap</em> from the drop-down
+      list (N, NE, E, SE, S, SE, W, NW). The default entry is N.
     </p>
   </li>
   <li>
-    <p>Check the box if a Moth excluder is used.</p>
+    <p>Check the box if a <em>Moth excluder</em> is used.</p>
   </li>
   <li>
     <p>
-      Stand as close as possible to the trap and select Record location. Select
-      location source from options on the screen (Trimble® R1, GPS via mobile
-      device, or stand alone GPS). Trimble® R1 is the preferred method for
-      location accuracy. Click co-ordinates to manually override.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select Add photo and take photo looking towards the head of the trap
-      and/or down the flyway/corridor, showing the surrounding habitat (e.g.
-      stand approximately 2 m from trap). Enter a text description to accompany
-      the photo, e.g. ‘malaise trap in gully’.
+      Stand as close as possible to the trap and select
+      <em>Record location</em>. Select location source from options on the
+      screen (Trimble® R1, GPS via mobile device, or stand alone GPS). Trimble®
+      R1 is the preferred method for location accuracy. Click coordinates to
+      manually override.
     </p>
   </li>
   <li>
     <p>
-      Record the Direction of the photo from the drop-down list (N, NE, E, SE,
-      S, SE, W, NW).
+      Select <em>Add photo</em> and take photo looking towards the head of the
+      trap and/or down the flyway/corridor, showing the surrounding habitat
+      (e.g. stand approximately 2 m from trap). Enter a text description to
+      accompany the photo, e.g. ‘malaise trap in gully’.
     </p>
   </li>
   <li>
     <p>
-      Select Add photo and take a photo looking towards the side of the trap
-      and/or perpendicular to the flyway/corridor, showing the surrounding
+      Record the <em>Direction of the photo</em> from the drop-down list (N, NE,
+      E, SE, S, SE, W, NW).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Add photo</em> and take a photo looking towards the side of the
+      trap and/or perpendicular to the flyway/corridor, showing the surrounding
       habitat (standing approximately 2 m from trap). Enter a text description
       to accompany the photo.
     </p>
   </li>
-  <li>
-    <p>Record the direction of the photo from the drop-down list.</p>
-  </li>
-  <li>
-    <p>Additional photos can be taken if desired.</p>
-  </li>
+  <li><p>Record the direction of the photo from the drop-down list.</p></li>
+  <li><p>Additional photos can be taken if desired.</p></li>
   <li>
     <p>
-      Record a Surrounding habitat description, e.g. nearest vegetation away
-      from the light includes X, X m away.
+      Record a <em>Surrounding habitat description</em>, e.g. nearest vegetation
+      away from the light includes X, X m away.
     </p>
   </li>
   <li>
     <p>
-      Record the Weather (select a category for wind, rain, temperature,
-      sun/cloud, from the drop-down lists). Quantitative weather data can be
-      later uploaded if a weather station is in use.
+      Record the <em>Weather</em> (select a category for wind, rain,
+      temperature, sun/cloud, from the drop-down lists). Quantitative weather
+      data can be later uploaded if a weather station is in use.
     </p>
   </li>
   <li>
-    <p>Record Comments (optional, free text).</p>
+    <p>Record <em>Comments</em> (optional, free text).</p>
   </li>
-  <li>
-    <p>Repeat Steps 14 to 26 if installing additional malaise traps.</p>
-  </li>
+  <li><p>Repeat Steps 14 to 26 if installing additional malaise traps.</p></li>
 </ol>
-<p>Checking traps/collecting samples/removing traps</p>
-<ol start="28">
+<h4 id="c.-checking-trapscollecting-samplesremoving-traps">
+  C. Checking traps/collecting samples/removing traps
+</h4>
+<ol start="28" type="1">
   <li>
     <p>
       Check the traps during the trapping period (especially at the start of a
@@ -439,55 +1729,57 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Open the App, click on Invertebrate fauna module, Malaise trap protocol,
-      and select Add sample. Select the correct Plot ID and Trap ID. The
-      time/date of sample collection will be automatically recorded.
+      Open the App, click on <em>Invertebrate fauna</em> module,
+      <em>Malaise trap</em> protocol, and select <em>Add sample</em>. Select the
+      correct <em>Plot ID</em> and <em>Trap ID</em>. The time/date of sample
+      collection will be automatically recorded.
     </p>
   </li>
-  <li>
-    <p>Record:</p>
-  </li>
+  <li><p>Record:</p></li>
 </ol>
 <ul>
   <li>
-    <p>Voucher type (drop-down, default is liquid preservation)</p>
+    <p><em>Voucher type</em> (drop-down, default is liquid preservation)</p>
   </li>
   <li>
-    <p>Preservative type (drop-down, default I s propylene glycol)</p>
-  </li>
-  <li>
-    <p>Preservative concentration (drop-down, default is undiluted).</p>
+    <p><em>Preservative type</em> (drop-down, default is propylene glycol)</p>
   </li>
   <li>
     <p>
-      Note: Check the information is correct and press Save. Repeat from Step 23
-      if collecting different samples (e.g. some dry, some wet) from the same
-      trap.
+      <em>Preservative concentration</em> (drop-down, default is undiluted).
     </p>
   </li>
 </ul>
-<ol start="35">
+
+<p>
+  Check the information is correct and press <em>Save</em>. Repeat from Step 23
+  if collecting different samples (e.g. some dry, some wet) from the same trap.
+</p>
+
+<ol start="35" type="1">
   <li>
     <p>
-      If the collection bottle is replaced, select Replace collection bottle.
-      Select the correct Plot ID/Trap ID (default to last entry). The time/date
+      If the collection bottle is replaced, select
+      <em>Replace collection bottle</em>. Select the correct
+      <em>Plot ID</em>/<em>Trap ID</em> (default to last entry). The time/date
       of the new sample collection will be automatically recorded. Check correct
-      and press Save.
+      and press <em>Save</em>.
     </p>
   </li>
   <li>
     <p>
-      Record the Weather (wind, rain, temperature, sun/cloud, select category
-      from drop-down list).
+      Record the <em>Weather</em> (wind, rain, temperature, sun/cloud, select
+      category from drop-down list).
     </p>
   </li>
   <li>
     <p>
-      When the trap is removed, select Remove trap. Select the correct Plot
-      ID/Trap ID. The duration of trapping will be automatically recorded based
-      on the start date/time and trap removal date/time (manually adjust if
-      necessary). Add any relevant Comments (free text, e.g. trap is damaged).
-      Check the information is correct and press Save.
+      When the trap is removed, select <em>Remove trap</em>. Select the correct
+      <em>Plot ID</em>/<em>Trap ID</em>. The duration of trapping will be
+      automatically recorded based on the start date/time and trap removal
+      date/time (manually adjust if necessary). Add any relevant
+      <em>Comments</em> (free text, e.g. trap is damaged). Check the information
+      is correct and press <em>Save</em>.
     </p>
   </li>
   <li>
@@ -496,28 +1788,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       available.
     </p>
   </li>
+  <li><p>Set up the samples, labels and barcodes.</p></li>
   <li>
-    <p>Set up the samples, labels and barcodes.</p>
-  </li>
-  <li>
-    <p>Open the App. Select Malaise trap protocol and select Scan barcode.</p>
+    <p>
+      Open the App. Select <em>Malaise trap</em> protocol and select
+      <em>Scan barcode</em>.
+    </p>
   </li>
   <li>
     <p>
       Unscrew the lid of the first collection bottle. Decant into a sampling
       container suitable for long-term storage. Take a small thermal printed
-      barcode label and scan using the app. Select the Plot IDand Trap ID for
-      the sample from the drop-down list. Select Save record. The barcode ID
-      will now be linked to the record for that trap.
+      barcode label and scan using the app. Select the <em>Plot ID</em>
+      <em>and Trap ID</em> for the sample from the drop-down list. Select
+      <em>Save record</em>. The barcode ID will now be linked to the record for
+      that trap.
     </p>
   </li>
   <li>
     <p>
-      Select Add photo and take a photo looking down (into the sample container
-      with the lid off), with the barcode placed alongside the container (not in
-      the container), so it is visible in the photo. Provide a brief description
-      for each photo (default descriptions available from drop-down list or
-      enter free text description). Multiple photos can be taken.
+      Select <em>Add photo</em> and take a photo looking down (into the sample
+      container with the lid off), with the barcode placed alongside the
+      container (not in the container), so it is visible in the photo. Provide a
+      brief description for each photo (default descriptions available from
+      drop-down list or enter free text description). Multiple photos can be
+      taken.
     </p>
   </li>
   <li>
@@ -549,7 +1844,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Store the containers in a cool location out of direct light. Do not leave
-      in hot vehicle or in sun as this degrades the sample for DNA analysis.
+      in a hot vehicle or in the sun as this degrades the sample for DNA
+      analysis.
     </p>
   </li>
   <li>
@@ -560,24 +1856,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p>App Figure. Malaise trapping App screen mock up.
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/malaise-trapping-app-screen.png"
-            alt="Malaise trapping App screen mock up"
-            widteh="800"
-            height="880"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/malaise-trapping-app-screen.png"
+    alt="Malaise trapping App screen mock up"
+    widteh="800"
+    height="880"
+  />
 </p>
-<p>Post field</p>
-<ol start="48">
+<p>Figure 5. Malaise trapping App screen mock up.</p>
+<h4 id="d.-post-field">D. Post field</h4>
+<ol start="48" type="1">
   <li>
     <p>
       Ideally, place the samples in a standard household freezer (i.e. -20°C)
@@ -592,8 +1881,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Refer to Section 13 for post-field sample preservation and processing
-      instructions.
+      Refer to
+      <a
+        href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/79296cab-a02f-420d-b260-17c0e8691499"
+        >Post-field guidelines</a
+      >
+      sample preservation and processing instructions.
     </p>
   </li>
   <li>
@@ -613,100 +1906,165 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p><strong>Additional guidelines</strong></p>
-<p>Trap maintenance</p>
-<ul>
-  <li>
-    <p>
-      GMP standard operating procedures, and instructional videos for trap
-      set-up and servicing are available at
-      https://biodiversitygenomics.net/resources/bioscan/
-    </p>
-  </li>
-  <li>
-    <p>
-      Ethanol (as the killing agent/preserving fluid) is likely to evaporate
-      faster than propylene glycol, particularly in exposed sites. This can be
-      compensated by attaching a larger collection container (with more fluid)
-      or by the replenishing fluid during the week (Evans 2016b).
-    </p>
-  </li>
-  <li>
-    <p>
-      A moth excluder can be inserted into the collecting head to prevent the
-      entry of large insects such as Lepidoptera or dragonflies.
-    </p>
-  </li>
-  <li>
-    <p>
-      In areas with high vertebrate traffic (wild animals or livestock) it may
-      be necessary to place a temporary barrier (e.g. chicken wire), around the
-      trap location (Whitman et al. 2019). Use of barriers/additional fixtures
-      must be recorded in the comments field.
-    </p>
-  </li>
-  <li>
-    <p>
-      Schmidt et al. (2019) provides a protocol for preparing Lepidoptera from
-      malaise trap samples that were preserved in ethanol.
-    </p>
-  </li>
-  <li>
-    <p>
-      In areas frequented by people, consider placing a sign next to the trap
-      stating what it is, to potentially avoid the traps being tampered with.
-    </p>
-  </li>
-  <li>
-    <p>
-      If there are consistent issues with wildlife disturbance or human
-      vandalism, the trap can be relocated (GMP 2019). Ensure that all the
-      details for this are recorded.
-    </p>
-  </li>
-  <li>
-    <p>
-      Damaged traps should be repaired (if possible) or replaced. Faded traps
-      should also be replaced. If using traps that have been damaged/or altered
-      in any way, this should be recorded in the comments data field.
-    </p>
-  </li>
-</ul>
-<p>Samples</p>
-<ul>
-  <li>
-    <p>
-      If sorting of samples is required (depending on project aims), the time
-      commitment can be considerable given the large catch volumes. Sometimes
-      sub-sampling is necessary (i.e., taking a known fraction of the total
-      volume, ensuring that the sample is completely mixed beforehand).
-    </p>
-  </li>
-</ul>
-<p>Analysis</p>
-<ul>
-  <li>
-    <p>
-      Sorting of bulk samples is not necessary for the purpose of DNA analysis.
-    </p>
-  </li>
-  <li>
-    <p>
-      Standardising data analysis is an equally important aspect of comparing
-      results between sites (Hobern and Adamowicz 2021). This is beyond the
-      scope of this protocol but is further discussed in Section 10.
-    </p>
-  </li>
-  <li>
-    <p>
-      Projects involved in the GMP send collected samples to the Centre for
-      Biodiversity Genomics (Canada) for sequence analysis and DNA barcoding,
-      and in return, the contributors receive a site specific summary of the
-      species diversity identified for the given survey time (Centre of
-      Biodiversity Genomics 2021).
-    </p>
-  </li>
-</ul>
 """^^rdf:HTML ;
+    tern:purpose """
+    <h3 id="rationale-3">Rationale</h3>
+<p>
+  Malaise traps are simple and easily operated, require the least collection
+  effort of all the invertebrate sampling methods, and can result in diverse and
+  abundant captures. Comparisons with other sampling methods have shown that
+  malaise traps reveal a significant proportion of the local arthropod fauna
+  (Evans 2016b; Whitman <em>et al.</em> 2019; Centre of Biodiversity Genomics
+  2021). Once a trap is in place, it can be left unattended for up to seven days
+  before the collection bottle needs changing (GMP 2019; D'Souza
+  <em>et al.</em> 2021). The collection bottle can be swapped or emptied without
+  having to dismantle the trap (Whitman <em>et al.</em> 2019). The collection
+  bottles are not impacted by rainfall like some other sampling methods, which
+  means malaise trapping is also suitable in areas with heavy rainfall (Skvarla
+  <em>et al.</em> 2020). For these reasons, malaise trapping is a highly
+  recommended sampling method, and an obvious choice when field time and funding
+  is limited (Whitman <em>et al.</em> 2019; Centre of Biodiversity Genomics
+  2021).
+</p>
+<p>
+  The Townes’ (1972) style malaise trap (L165 x W180 x H180 cm) is the most
+  common trap design (Montgomery <em>et al.</em> 2021) and is the adopted
+  approach of the GMP. Hence it was selected as the trap type for this protocol,
+  to ensure uniformity in design (i.e. trap size, mesh size, colour and shape),
+  to support comparisons within and between sites in Australia and at a global
+  scale (Skvarla <em>et al.</em> 2020; D'Souza <em>et al.</em> 2021; Montgomery
+  <em>et al.</em> 2021). Townes’ malaise traps are commercially available
+  through entomological suppliers. The initial cost is quite high (approximately
+  $500 AUD per trap) but the traps should last for a number of years; although
+  Skvarla <em>et al.</em> (2020) noted that the age of traps significantly
+  altered trap catch, possibly due to fading from sunlight exposure.
+</p>
+<p>
+  The standard and most practical approach is to set the Townes’ malaise traps
+  at ground level, which also corresponds with the highest activity zone for
+  flying insects (Evans 2016b). If traps are suspended in the vegetation canopy,
+  the height above the ground is recorded.
+</p>
+<p>
+  High grade ethanol is prone to evaporation, only lasting one to two weeks in
+  the field, whereas propylene glycol can last up to a month, making it a better
+  option for traps set in areas of high temperature or low humidity (Whitman
+  <em>et al.</em> 2019).
+</p>
+<p>
+  Use of a wet killing agent is chosen over using a dry killing agent, a) for
+  convenience, as the traps can be checked less often, b) for efficiency, as the
+  preserved specimens do not require any field processing, c) because TERN’s
+  methods are focused on rapid, bulk collection of data to facilitate potential
+  future research, rather than sample processing, and most importantly, d)
+  because the preserved samples are suitable for DNA analysis and metabarcoding,
+  which is fast becoming the standard method for identification of bulk samples.
+</p>
+<p>
+  The trade-off of using a wet killing agent is that delicate specimens, notably
+  Lepidoptera (moths and butterflies) are often damaged and lose their scales
+  (Skvarla <em>et al.</em> 2020; Montgomery <em>et al.</em> 2021) and colour
+  (Schmidt <em>et al.</em> 2019), diminishing their diagnostic features and
+  morphological value, making visual identification more difficult (Evans 2016b;
+  Skvarla <em>et al.</em> 2020). However, the issue of identification is offset
+  by the shift towards DNA analysis, as the agent does not result in a breakdown
+  of genetic material (D'Souza <em>et al.</em> 2021). Schmidt <em>et al.</em>
+  (2019) demonstrated that the study of Lepidoptera (wings, genitalia, larvae
+  and eggs) was possible from wet samples, and that Lepidoptera preserved in
+  ethanol could still be successfully dry-mounted. Schmidt
+  <em>et al.</em> (2019) propose a workflow protocol for this, although it is
+  acknowledged that entomologists may be reluctant to process imperfect samples.
+</p>
+<p>
+  The more delicate Lepidoptera families that are difficult to mount from wet
+  samples are likely to also be sampled by the <em>Light trapping</em> protocol
+  (see Section 8) (Schmidt <em>et al.</em> 2019), thus providing an alternative
+  opportunity for dry sample collection. Where projects or institutions
+  specifically require dry samples from malaise traps (e.g. to build reference
+  collections or for morphological study), then use of a dry killing agent (e.g.
+  naphthalene) is an option, however the traps will need to be checked daily and
+  the deviations from the standard protocol reflected by the data.
+</p>
+    """^^rdf:HTML ;
+    tern:scope """
+    <h3 id="introduction-3">Introduction</h3>
+<p>
+  Malaise traps are tent-like traps that intercept insects in flight. They
+  consist of a central wall and side walls made of fine black mesh to reduce
+  visibility, and white tent material on the roof. The roof is sloped and comes
+  to a funnel-like apex at the highest point, where there is a collection
+  bottle. When insects intercept the walls of the trap, they climb or fly
+  upwards instinctively towards the light, and are gradually funneled into the
+  collection bottle (Bulbert <em>et al.</em> 2007; Evans 2016b; Whitman
+  <em>et al.</em> 2019; Montgomery <em>et al.</em> 2021). This protocol adopts
+  the blanket use of a wet killing agent in the collection bottle, being either
+  95% ethanol or undiluted propylene glycol, both of which also function as
+  effective preservatives. If participating in the Global Malaise Program (GMP),
+  the specified wetting agent/preservative is 95% ethanol.
+</p>
+<p>
+  Malaise traps predominantly catch flying insects, and are the most effective
+  method for flies (Diptera) and wasps (Hymenoptera) (Schmidt
+  <em>et al.</em> 2019; Skvarla <em>et al.</em> 2020). Diptera and Hymenoptera
+  respectively tend to be the most dominant taxa caught in terms of numbers of
+  individuals. Malaise traps also capture true bugs, bees, moths, butterflies
+  and dragonflies, as well as ground-dwelling species that climb up or emerge
+  from the ground below the trap (Bulbert <em>et al.</em> 2007; Evans 2016b;
+  Skvarla <em>et al.</em> 2020).
+</p>
+<p>
+  Malaise traps are usually deployed in contact with the ground (terrestrial
+  trap), where they collect low flying and ground-dwelling species, but they can
+  also be suspended in the forest canopy (canopy trap) to sample higher flying
+  insects (Evans 2016b; Skvarla <em>et al.</em> 2020). The environment and
+  location in which the trap is set will impact on the taxa that is sampled
+  (Skvarla <em>et al.</em> 2020).
+</p>
+<p>
+  Malaise traps can be deployed in any habitat and any location within a
+  habitat, where flying insects are expected. To maximise catch, traps are
+  placed along flight paths, in sunny, exposed areas, in a north-south
+  orientation with the trap head facing towards the afternoon sun. While
+  environmental factors have been little studied, temperature and precipitation
+  can reportedly have a strong influence on trap catch, with the largest catches
+  recorded on hot, sunny days following rain (Skvarla <em>et al.</em> 2020).
+</p>
+<p>
+  The number of traps to establish will depend on the specific project
+  objectives. The standard protocol is to set a single malaise trap per fauna
+  plot, as this will likely yield catch results sufficient for most purposes.
+  For inclusion in the GMP, and to maximise results, traps are ideally located
+  in plots containing climax vegetation with minimal disturbance (GMP 2019). For
+  large project areas, malaise trapping is ideally undertaken across multiple
+  plots, including replicates of the same habitat, because results can be highly
+  variable and are sensitive to microhabitat variation (Montgomery
+  <em>et al.</em> 2021). Before establishing multiple traps, the practicalities
+  of post-field processing and storage of large catch volumes needs to be
+  considered (Bulbert <em>et al.</em> 2007; Evans 2016b).
+</p>
+<p>
+  Malaise trapping has been combined with the use of light traps and pan traps
+  in some studies (i.e. pan traps strategically placed to catch insects that
+  drop after intercepting with the malaise trap), for efficiency in capturing
+  diverse taxa (Skvarla <em>et al.</em> 2020; Montgomery <em>et al.</em> 2021).
+  This approach is not supported because it confounds the results and makes
+  comparisons difficult. However, the sampling methods can be deployed
+  independently of each other to provide a more complete picture of the
+  invertebrate fauna present. In particular, malaise traps and micro-pitfall
+  traps, both collect highly diverse arthropod assemblages but have little
+  overlap in the species they sample, so are complementary techniques when
+  trying to assess overall biodiversity with a limited number of techniques
+  (Skvarla <em>et al.</em> 2020).
+</p>
+<p>
+  The focus of this protocol is the field collection of bulk invertebrate
+  samples preserved for long-term storage and future DNA analysis. The protocol
+  is consistent with the requirements of the GMP, which involves large-scale
+  standardised malaise trapping by contributors across the globe. It is
+  envisaged that the taxa sampled will be identified via DNA barcoding and
+  metabarcoding, making this a time and cost-efficient method for assessing
+  arthropod biodiversity (Centre of Biodiversity Genomics 2021).
+</p>
+    """^^rdf:HTML ;
 .
 

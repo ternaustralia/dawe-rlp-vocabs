@@ -7,101 +7,11 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/7e4bfab2-4056-4309-bd22-f070f6952bc0>
-    a skos:Concept ;
-    dcterms:description """<p>
-  The pitfall traps used for invertebrate sampling are referred to as
-  ‘micro-pitfall traps’, as distinct from the pitfall traps used for vertebrate
-  fauna trapping. Micro-pitfalls are essentially a small container dug into the
-  ground, flush with the surface, so anything crawling over the edge of the
-  container falls in and cannot escape (Whitman et al. 2019). A liquid
-  preservative is added to the traps (hence the term ‘wet’ micro-pitfall), to
-  rapidly kill and preserve the invertebrates that fall in.
-</p>
-<p>
-  Micro-pitfall trapping is the most common and efficient passive survey method
-  for non-flying terrestrial (epigeic) arthropods, in particular ants
-  (Hymenoptera: Formicidae), spiders (Araenae) and ground beetles (Coleoptera,
-  especially Carabidae and Staphylinidae) (Southwood and Henderson 2000; Bulbert
-  et al. 2007; Callan et al. 2011; Skvarla et al. 2014; Brown and Matthews 2016;
-  Sherley and Stringer 2016). Other invertebrates (e.g. springtails, flies,
-  millipedes) will also be collected by pitfall traps, however it is not the
-  most efficient method for their collection.
-</p>
-<p>
-  The micro-pitfall trap design adopted for this protocol is based on Brown and
-  Matthews (2016) and consists of a transparent outer cup (10 cm diameter x 10
-  cm depth), an inner screw top sampling container pre-filled with liquid
-  preservative that fits inside the outer cup, a transparent funnel that fits
-  inside the outer cup, and a transparent cover (15 cm diameter) positioned
-  above the trap (see Figure). Use of a guidance barrier is optional.
-</p>
-<p>
-  The micro-pitfall trapping protocol is suitable across terrestrial ecosystem
-  types, anywhere where the substrate can be dug to at least 10 cm (Montgomery
-  et al. 2021). Pitfall trapping is best undertaken when overall invertebrate
-  activity peaks, typically around spring when conditions are warm and at least
-  some soil moisture is present. Some invertebrate groups (e.g. slaters,
-  millipedes) may only be active in the cool, wet winter months and some have
-  different annual cycles (e.g. trapdoor spiders), thus there is merit in
-  trapping at different times of the year (Bamford et al. 2013).
-</p>
-<p>
-  A full and lite protocol option is provided, in line with the Vertebrate fauna
-  module (see Table). Whilst the full protocol is the recommended approach,
-  users may opt to undertake the lite protocol when undertaking the lite
-  protocol of the Vertebrate fauna module. The standard layout of pitfall lines
-  is shown in Figure 1.
-</p>
-<p>Table: Summary of full and lite options for Micro-pitfall trapping.</p>
-<table>
-  <colgroup>
-    <col />
-    <col />
-    <col />
-    <col />
-  </colgroup>
-  <thead>
-    <tr>
-      <td>Pitfall trapping</td>
-      <td>Summary of method</td>
-      <td>Suitability</td>
-      <td>Total field requirement</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Full</td>
-      <td>
-        2 x 50 m parallel lines of 6 wet micro-pitfalls, opened for 7 days
-        (standard, preferred) or 5 days (minimum) (full plot)
-      </td>
-      <td>Recommended in most circumstances</td>
-      <td>2 hours</td>
-    </tr>
-    <tr>
-      <td>Lite</td>
-      <td>
-        1 x 50 m line of 6 wet micro-pitfalls, opened for 7 days (standard,
-        preferred) or 5 days (minimum) (half plot).
-      </td>
-      <td>
-        Minimum requirement, when Lite Vertebrate fauna protocol is being
-        undertaken
-      </td>
-      <td>1.25 hours</td>
-    </tr>
-  </tbody>
-</table>
-<p>1 = cover (a large petri dish),</p>
-<p>2 = funnel,</p>
-<p>3 = inner sample collection pot,</p>
-<p>4 = outer cup,</p>
-<p>5 = screw top lid for (3).</p>
-<p>
-  Figure. Schematic drawing of the micro-pitfall trap design (Source: Brown and
-  Matthews 2016).
-</p>
-<p><strong>Protocol overview</strong></p>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h3 id="protocol-overview">Protocol overview</h3>
 <p>
   The micro-pitfall trap design consists of a transparent outer cup (10 cm
   diameter x 10 cm depth), an inner sampling container, a transparent funnel, a
@@ -118,20 +28,1370 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   recommended approach where possible.
 </p>
 <p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/plot-layout.png"
+    alt="Plot layout for invertebrate survey"
+    widteh="470"
+    height="700"
+  />
+</p>
+<p>Figure 1. Plot layout for invertebrate survey.</p>
+<p>
   For the lite protocol, a total of 6 micro-pitfall traps are established in one
   line of six traps (as above), parallel to the vertebrate pitfall trap line.
   The lite protocol can be undertaken when undertaking the lite version of the
-  Vertebrate fauna module.
+  <em>Vertebrate fauna</em> module.
 </p>
 <p>
   The number and location of traps and the trapping duration should be
   consistent for repeat sampling. All captured invertebrates are removed at the
   end of the trapping period and stored for later identification.
-</p>"""^^rdf:HTML ;
+</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+<h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 id="general">General</h4>
+<ul>
+  <li>
+    <p>
+      Ensure all surveyors avoid walking through the Vegetation and Soils Plot
+      to access the Fauna Plot during trap installation, trap checks and
+      removal. All foot traffic must go around the plot. This is important to
+      maintain the integrity of the Vegetation and Soils Plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      Commence this protocol on the first day of a monitoring event,
+      establishing traps as soon as possible, to maximise the time they are
+      deployed (recommended minimum is five days).
+    </p>
+  </li>
+  <li>
+    <p>
+      Refer to Section 3 General Survey Guidelines regarding safety related to
+      the preservative liquids used.
+    </p>
+  </li>
+  <li>
+    <p>
+      There will likely be instances (e.g. in rainforest situations) where the
+      diameter/depth of the traps is unsuitable for collecting large arthropods,
+      however the same biases apply globally (Brown and Matthews 2016) and such
+      species may be detected by vertebrate pitfall traps or using a targeted
+      approach.
+    </p>
+  </li>
+  <li>
+    <p>
+      Studies have shown that some invertebrates, particularly ants, are
+      attracted to freshly-disturbed soil around a newly-installed pitfall trap
+      which can lead to their over-representation in samples – this is referred
+      to as a ‘digging-in effect’ (Greenslade 1973). Traps can be left unopened
+      (e.g. for 24 hours) in an effort to avoid such effects (Callan et al.
+      2011). In such cases, the trap set-up and trap open dates will be
+      different. Delayed opening of traps is not a standard component of the
+      protocol, as the idea is to maximise captures within the available field
+      time, and the data can be analysed to exclude the first trap night results
+      if necessary.
+    </p>
+  </li>
+  <li>
+    <p>
+      Attractants/baits can be very effective for capturing large numbers of
+      specimens, but are not included in the protocols because they are
+      typically selective in what they will attract (Whitman <em>et al.</em>
+      2019), can promote trap disturbance by vertebrate fauna (Montgomery
+      <em>et al.</em> 2021), and create an additional bias, confounding the
+      results.
+    </p>
+  </li>
+</ul>
+<h4 id="trap-set-up">Trap set-up</h4>
+<ul>
+  <li>
+    <p>
+      Traps can be placed amongst or alongside natural cover, i.e. under or
+      alongside shrubs, to aid protection from direct sunlight. Ensure that
+      foliage will not brush across the cover/trap.
+    </p>
+  </li>
+  <li>
+    <p>
+      Take care to identify and avoid potential ant nest locations and ant
+      foraging trails as this may skew the results. This may mean moving the
+      trap several metres from the ideal trap line alignment.
+    </p>
+  </li>
+  <li>
+    <p>
+      If a hard substrate is encountered when installing pitfalls, and digging
+      the hole is slow and overly time-consuming, try an alternative nearby
+      location. Failing this, the soil can be mounded up around the cup to
+      enable the top to be flush with the top of the soil surface.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ensure any discrepancies from the standard trap array are recorded (the
+      location will be recorded via the App, and the comments field can be used
+      to make any relevant notes).
+    </p>
+  </li>
+  <li>
+    <p>
+      Flag the location of each trap with flagging tape so it can easily be
+      found in the field, ensuring the flag is clearly visible, particularly
+      from the angle of which it will be approached during trap checking. A good
+      technique is to double flag (2 strips of flagging tape, ~20 cm apart) the
+      start and end of each line, providing a quick visual cue for the surveyor.
+    </p>
+  </li>
+  <li>
+    <p>
+      It is recommended to set the traps out in numerical order and permanently
+      write numbers on the cover and flagging tape to assist with trap checks
+      and removal, back-tracking if a number is skipped.
+    </p>
+  </li>
+</ul>
+<h4 id="checking-and-removing-traps">Checking and removing traps</h4>
+<ul>
+  <li>
+    <p>
+      Traps should be checked/removed in sequence to minimise the risk of
+      missing a trap. All traps must be accounted for when checked/removed.
+    </p>
+  </li>
+  <li>
+    <p>
+      Traps must be checked after seven days, under normal average weather
+      conditions, or more frequently under hot/cold/raining conditions. Conduct
+      any maintenance of the traps when checking (e.g. ensuring the rim of the
+      pitfalls is flush with the ground, there are no gaps, no branches laying
+      across, the cover and funnel are in the correct position, that there is
+      adequate preservative in the trap).
+    </p>
+  </li>
+  <li>
+    <p>
+      Unless explicitly permitted, all traps must be removed at the conclusion
+      of each trapping session. Permanent micro-pitfalls may be left in situ
+      following the conditions specified in the scientific permit and animal
+      ethics approvals.
+    </p>
+  </li>
+  <li>
+    <p>
+      Wet micro-pitfall traps can pose a bycatch risk to small non-target
+      vertebrates such as lizards, frogs and small mammals. At the start of the
+      project, the suitability of micro-pitfall trapping should be assessed
+      based on the risk of potential by-catch, considering the fauna (common and
+      threatened) known to be present at the site. Use of a funnel within the
+      trap is recommended as a standard design feature to minimise the
+      inadvertent capture of vertebrates.
+    </p>
+  </li>
+  <li>
+    <p>
+      Any vertebrate bycatch must be recorded (use
+      <em>Opportunistic observation</em> module) and reported to the relevant
+      government agency as a condition of the scientific permit. Deceased
+      vertebrate captures should be preserved and provided to the local museum
+      (refer to the <em>Vertebrate fauna</em> module for guidelines). The
+      continued use of wet micro-pitfall traps should be reviewed in such
+      instances.
+    </p>
+  </li>
+  <li>
+    <p>
+      Any invertebrate fauna caught in vertebrate fauna traps (e.g. pitfalls,
+      Elliotts) can also be collected (use
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6"
+          >Opportunistic observation</a
+        ></em
+      >
+      module).
+    </p>
+  </li>
+</ul>
+"""^^rdf:HTML ;
     skos:prefLabel "Wet micro-pitfall trapping protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/wet-micro-pitfall-trapping-protocol/wet-micro-pitfall-trapping-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
+    tern:appendix """
+<h3 id="appendices">Appendices</h3>
+<h4>
+  Appendix A. Suitability of the sampling protocols for the commonly monitored
+  insect guilds.
+</h4>
+<table>
+  <colgroup>
+    <col style="width: 27%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th>Malaise</th>
+      <th>Leaf-litter</th>
+      <th>Light trap</th>
+      <th>Pan trap</th>
+      <th>Active search</th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Adult semi-aquatic insects</strong></p>
+        <p>(Plecoptera, Ephemeroptera, and Trichoptera)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Singing insects</strong></p>
+        <p>(Orthoptera &amp; Hemiptera: Cicadoidea)</p>
+      </th>
+      <th>^</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>*</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Ground-dwelling beetles</strong> (Coleoptera: Carabidae and
+        Staphylinidae)
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th>**</th>
+      <th>^</th>
+      <th>*</th>
+      <th>^</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <strong>Non-lepidopteran pollinators</strong> (Hymenoptera, Diptera,
+        Coleoptera)
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Leaf-chewing larvae</strong> (Lepidoptera and Hymenoptera:
+        Symphyta)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Night-active moths</strong> (Lepidoptera)</th>
+      <th></th>
+      <th></th>
+      <th>^</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Dragonflies and damselflies</strong> (Odonata)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Ants</strong></p>
+        <p>(Hymenoptera: Formicidae)</p>
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th>*</th>
+      <th>***</th>
+      <th>^</th>
+      <th>*</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Butterflies</strong></p>
+        <p>(Lepidoptera: Papilionoidea)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Flies</strong> (Diptera)</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Other</strong> (not covered in (Montgomery <em>et al.</em> 2021)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th><strong>Grasshoppers</strong> (Orthoptera)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Thrips</strong></p>
+        <p>(Thysanoptera)</p>
+      </th>
+      <th>*</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Spiders and scorpions</strong></p>
+        <p>(Arachnida)</p>
+      </th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Mesofauna</strong> (soil and litter invertebrates, e.g. mites
+        (Acari), springtails (Collembola), nematodes
+      </th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+    </tr>
+    <tr class="header">
+      <th>Millipedes (Diplopoda)</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Earthworms (Annelida)</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Landsnails (Gatropoda)</th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  *** Optimal suitability; ** Possibly suitability; * Marginal suitability; ^
+  Bycatch only; Blank indicates general unsuitability.
+</p>
+<p>
+  Based on (Montgomery <em>et al.</em> 2021), updated to reflect the sampling
+  methods included in this Module. Note that Soil sampling eDNA, Leaf-litter
+  sampling and Sweep netting are not included in Montgomery
+  <em>et al.</em> (2021). Sweep net based on results of (Spafford and Lortie
+  2013)
+</p>
+<h4>Appendix B. Data fields by invertebrate sampling protocol.</h4>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Data fields</strong></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th>Malaise</th>
+      <th>Leaf-litter</th>
+      <th>Light trap</th>
+      <th>Pan trap</th>
+      <th>Active search</th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>Sampling protocol</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Full or Lite</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trap set-up</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Fauna Plot ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Observer/s</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Photo/s</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Equipment</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Habitat</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sample container</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Close up ID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Photo direction</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Photo description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Time</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap install date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Start survey</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap open date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>End survey date/time</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Sample collection date/time</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>Trap removal</p>
+        <p>date/time</p>
+      </th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Weather</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Wind</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Rain</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Temperature</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Humidity</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sun/cloud</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trapping details</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Location</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/Location ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap/apparatus dimensions (multiple fields)</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap /apparatus colour</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap materials</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap damage</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap elevation ASL</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/sampling elevation above ground</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Collection apparatus</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Surrounding vegetation description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Dominant plant cover</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Dominant plant sp.</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant height</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Plant phenology</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant hit height above ground</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Number of leaves</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant circumference</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Herbivory</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Average leaf length</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Soil sample</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil sample depth/diameter</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Soil type</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil surface temperature</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Leaf-litter sample</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Litter depth</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Litter volume</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Area litter sampled</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Voucher</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative concentration</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Post field</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>New Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Species ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Count</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative %age</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+"""^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment-1">Equipment</h3>
+<ul>
   <li>
     <p>Personnel – ideally two people</p>
   </li>
@@ -153,33 +1413,42 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p>Trap install and set-up</p>
+<h4 id="trap-install-and-set-up">Trap install and set-up</h4>
 <ul>
   <li>
     <p>Hand trowel/spade to dig holes for the traps</p>
   </li>
   <li>
-    <p>Materials per pitfall trap:</p>
+    <p>Materials <strong>per pitfall trap</strong>:</p>
+
     <ul>
       <li>
         <p>
-          Outer collection cup: 2 x transparent disposable plastic cups of ~ 100
-          mm diameter; 100 mm depth. E.g., 420 ml clear BioCup, available from
-          several suppliers in Australia.
-          https://www.biopak.com.au/products/cold-cups/clear-cups-and-lids/190-420ml-biocup
+          <strong>Outer collection cup</strong>: 2 x transparent disposable
+          plastic cups of ~ 100 mm diameter; 100 mm depth. E.g. 420 ml clear
+          BioCup, available from several suppliers in Australia.
+          <a
+            href="https://www.biopak.com.au/products/cold-cups/clear-cups-and-lids/190-420ml-biocup"
+            ><u
+              >https://www.biopak.com.au/products/cold-cups/clear-cups-and-lids/190-420ml-biocup</u
+            ></a
+          >
         </p>
       </li>
       <li>
         <p>
-          Inner sample container: wide neck jar, polypropylene: (x diameter, x
-          deep)
+          <strong>Inner sample container</strong>: wide neck jar, polypropylene:
+          (x diameter, x deep)
         </p>
       </li>
       <li>
-        <p>Transparent funnel (x diameter):</p>
+        <p><strong>Transparent funnel</strong> (x diameter):</p>
       </li>
       <li>
-        <p>Cover: Transparent 150 mm diameter plastic petri dish.</p>
+        <p>
+          <strong>Cover</strong>: Transparent 150 mm diameter plastic petri
+          dish.
+        </p>
       </li>
       <li>
         <p>
@@ -214,7 +1483,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>Flagging tape, to help relocate the traps.</p>
   </li>
 </ul>
-<p>Trap removal and sample collection</p>
+<h4 id="trap-removal-and-sample-collection">
+  Trap removal and sample collection
+</h4>
 <ul>
   <li>
     <p>The lids for the sample containers</p>
@@ -239,7 +1510,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Sieve (e.g., nylon mesh filter, chux cloth, tea strainer), for sieving
+      Sieve (e.g. nylon mesh filter, chux cloth, tea strainer), for sieving
       samples if they have been fouled
     </p>
   </li>
@@ -252,9 +1523,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>Soft lead pencil and scissors.</p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<p>Preparation</p>
-<ol>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<h4 id="preparation">A. Preparation</h4>
+<ol type="1">
   <li>
     <p>
       Pre-fill the required number of inner sampling containers (one per trap)
@@ -263,19 +1537,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p>Plot set up and trap install</p>
-<ol start="2">
+<h4 id="b.-plot-set-up-and-trap-install">B. Plot set up and trap install</h4>
+<ol start="2" type="1">
   <li>
     <p>
-      Turn on Trimble ® R1, open the Invertebrate fauna module from the main
-      page of the App and select the Wet-micropitfall protocol.
+      Turn on Trimble ® R1, open the <em>Invertebrate fauna</em> module from the
+      main page of the App and select the <em>Wet-micropitfall</em> protocol.
     </p>
   </li>
 </ol>
 <p>Select the Full or Lite protocol.</p>
-<ol start="3">
+<ol start="3" type="1">
   <li>
-    <p>Select Trap set-up.</p>
+    <p>Select <em>Trap set-up</em>.</p>
   </li>
   <li>
     <p>
@@ -286,22 +1560,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Select the Fauna Plot ID (nearest plot should appear at top of the
-      drop-down list).
+      Select the <em>Fauna Plot ID</em> (nearest plot should appear at top of
+      the drop-down list).
     </p>
   </li>
   <li>
     <p>
-      Select the Observers, being the person/s responsible for trap set-up
-      (auto-fill based on login, drop-down options based on project personnel,
-      multiple selections OK, manual entry override if necessary)
+      Select the <em>Observers</em>, being the person/s responsible for trap
+      set-up (auto-fill based on login, drop-down options based on project
+      personnel, multiple selections OK, manual entry override if necessary)
     </p>
   </li>
   <li>
     <p>
-      Record the Weather (select a category for wind, rain, temperature,
-      sun/cloud, from the drop-down lists). Quantitative weather data can be
-      later uploaded if a weather station is in use.
+      Record the <em>Weather</em> (select a category for wind, rain,
+      temperature, sun/cloud, from the drop-down lists). Quantitative weather
+      data can be later uploaded if a weather station is in use.
     </p>
   </li>
   <li>
@@ -309,9 +1583,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       Navigate to where the two (full protocol), or one (lite protocol),
       micro-pitfall line/s will be positioned, either by using the App and
       Trimble® R1, or manually by using a surveyors tape measure and compass. To
-      use the App and Trimble® R1, select Navigate to trap location and the
-      mapping interface in the App will show your location in relation to the
-      default pre-determined trap locations. Start at one end of the
+      use the App and Trimble® R1, select <em>Navigate to trap location</em> and
+      the mapping interface in the App will show your location in relation to
+      the default pre-determined trap locations. Start at one end of the
       micro-pitfall line and establish each trap in order. Make adjustments to
       the spatial placement as necessary, e.g. to avoid ant nests or key ant
       activity areas, or areas of foot traffic, obvious vertebrate fauna
@@ -320,36 +1594,37 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
 </ol>
 <p>For each micro-pitfall trap:</p>
-<ol start="9">
+<ol start="9" type="1">
   <li>
     <p>
-      For each trap location, under Trap set-up, select Add trap. Select the
-      Trap ID from the drop-down menu (the trap line/trap number, e.g. MP1-1 or
-      manually enter).
+      For each trap location, under <em>Trap set-up,</em> select
+      <em>Add trap</em>. Select the <em>Trap ID</em> from the drop-down menu
+      (the trap line/trap number, e.g. MP1-1 or manually enter).
     </p>
   </li>
   <li>
     <p>
       Hold Trimble® R1 directly over the trap location (to obtain best
-      positional accuracy), select Record trap location. The GPS location will
-      be automatically recorded and will be shown on the mapping interface. A
-      warning message will appear if the accuracy is less than +/- 5m, prompting
-      the user to repeat this step.
+      positional accuracy), select <em>Record trap location</em>. The GPS
+      location will be automatically recorded and will be shown on the mapping
+      interface. A warning message will appear if the accuracy is less than +/-
+      5m, prompting the user to repeat this step.
     </p>
   </li>
   <li>
     <p>
-      Before disturbing the trap location, record the Substrate type where the
-      trap will be located (select from drop-down list, e.g. bareground,
-      litter).
+      Before disturbing the trap location, record the
+      <em>Substrate type</em> where the trap will be located (select from
+      drop-down list, e.g. bareground, litter).
     </p>
   </li>
   <li>
     <p>
-      If undertaking the Soil sampling (eDNA) protocol, sterilise the digging
-      equipment (handtrowel or small shovel) by spraying with methylated spirits
-      and allowing it to air dry, before and in between each sample collection,
-      to ensure it is not contaminated with soil from another location.
+      If undertaking the <em>Soil sampling (eDNA)</em> protocol, sterilise the
+      digging equipment (handtrowel or small shovel) by spraying with methylated
+      spirits and allowing it to air dry, before and in between each sample
+      collection, to ensure it is not contaminated with soil from another
+      location.
     </p>
   </li>
   <li>
@@ -361,10 +1636,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      If undertaking the Soil sampling (eDNA) protocol, retain the soil sample –
-      refer to the Soil sampling (eDNA) protocol for instructions. Select eDNA
-      sample within this protocol and it will link to the Soil sampling
-      protocol. Select Collect soil sample and Scan barcode. This will link the
+      If undertaking the <em>Soil sampling (eDNA)</em> protocol, retain the soil
+      sample – refer to the <em>Soil sampling (eDNA)</em> protocol for
+      instructions. Select <em>eDNA sample</em> within this protocol and it will
+      link to the Soil sampling protocol. Select
+      <em>Collect soil sample</em> and <em>Scan barcode</em>. This will link the
       soil sample back to the pitfall location/trap ID.
     </p>
   </li>
@@ -413,70 +1689,72 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Select Open trap. The date/time the trap is opened will be auto-generated
-      (option to over-ride).
+      Select <em>Open trap.</em> The date/time the trap is opened will be
+      auto-generated (option to override).
     </p>
   </li>
-  <li>
-    <p>For each trap, record the following information:</p>
-  </li>
+  <li><p>For each trap, record the following information:</p></li>
 </ol>
 <ul>
   <li>
-    <p>Expected number of trap nights (will auto-determine end date)</p>
+    <p>
+      <em>Expected number of trap nights</em> (will auto-determine end date)
+    </p>
   </li>
   <li>
-    <p>Diameter of the trap (cm) (at ground level)</p>
+    <p><em>Diameter of the trap</em> (cm) (at ground level)</p>
   </li>
   <li>
-    <p>Depth of the trap (cm)</p>
+    <p><em>Depth of the trap</em> (cm)</p>
   </li>
   <li>
-    <p>Use of a Funnel (checkbox default is on)</p>
+    <p>Use of a <em>Funnel</em> (checkbox default is on)</p>
   </li>
   <li>
-    <p>Diameter of the funnel opening (cm)</p>
+    <p><em>Diameter of the funnel opening</em> (cm)</p>
   </li>
   <li>
-    <p>Use of a Cover (checkbox default is on)</p>
+    <p>Use of a <em>Cover</em> (checkbox default is on)</p>
   </li>
   <li>
-    <p>Diameter of the cover (cm)</p>
+    <p><em>Diameter of the cover</em> (cm)</p>
   </li>
   <li>
-    <p>Height above the trap the cover is installed (cm)</p>
+    <p><em>Height above the trap the cover is installed</em> (cm)</p>
   </li>
   <li>
-    <p>Depth of the pitfall trap sample container (cm)</p>
+    <p><em>Depth of the pitfall trap sample container</em> (cm)</p>
   </li>
   <li>
-    <p>Use of Guidance barriers (checkbox default is off)</p>
+    <p>Use of <em>Guidance barriers</em> (checkbox default is off)</p>
   </li>
   <li>
     <p>
-      Trap preservative (drop-down, option for manual entry, default is
+      <em>Trap preservative</em> (drop-down, option for manual entry, default is
       undiluted propylene glycol)
     </p>
   </li>
   <li>
     <p>
-      Concentration of preservative (default is undiluted, option for manual
-      entry of percentage)
+      <em>Concentration of preservative</em> (default is undiluted, option for
+      manual entry of percentage)
     </p>
   </li>
   <li>
-    <p>Volume of preservative used (ml)</p>
+    <p><em>Volume of preservative</em> used (ml)</p>
   </li>
 </ul>
+
 <p>
   Note: Tick box ‘auto fill’ if you want to repeat the selections for multiple
   traps.
 </p>
-<ol start="22">
+
+<ol start="22" type="1">
   <li>
     <p>
-      Select Add photo to take images on the device showing the pitfall trap and
-      the surrounding micro-habitat. As a minimum, take a photo:
+      Select <em>Add photo</em> to take images on the device showing the pitfall
+      trap and the surrounding micro-habitat. As a minimum, take a photo:
     </p>
   </li>
 </ol>
@@ -495,12 +1773,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
+
 <p>
   Provide a brief description for each photo (default descriptions available
   from drop-down list or enter free text description). Multiple photos can be
   taken.
 </p>
-<ol start="23">
+
+<ol start="23" type="1">
   <li>
     <p>
       Record a visual assessment of the vegetation within a 2 m radius of each
@@ -511,21 +1791,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <ul>
   <li>
     <p>
-      Dominant flora species (drop-down list, maximum of three), estimated %
-      cover and phenology
+      <em>Dominant flora species</em> (drop-down list, maximum of three),
+      <em>estimated % cover</em> and <em>phenology</em>
     </p>
   </li>
   <li>
-    <p>% cover of litter, bare ground</p>
+    <p><em>% cover</em> of litter, bare ground</p>
   </li>
   <li>
-    <p>Additional Comments (optional free text).</p>
+    <p>Additional <em>Comments</em> (optional free text).</p>
   </li>
 </ul>
-<ol start="24">
+<ol start="24" type="1">
   <li>
     <p>
-      Selected Finish trap set-up (the screen will return to the Wet
+      Selected <em>Finish trap set-up</em> (the screen will return to the Wet
       micro-pitfall option screen).
     </p>
   </li>
@@ -535,28 +1815,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       nearby tree) so the trap can easily be relocated.
     </p>
   </li>
-  <li>
-    <p>Repeat steps 8 to 25 for all micro-pitfall traps.</p>
-  </li>
+  <li><p>Repeat steps 8 to 25 for all micro-pitfall traps.</p></li>
 </ol>
-<p>App figure. Wet micro-pitfall trapping – App screen mock up.
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/wet-pitfall-app-screen-mockup.png"
-            alt="App figure. Wet micro-pitfall trapping – App screen mock up"
-            widteh="1000"
-            height="900"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/wet-pitfall-app-screen-mockup.png"
+    alt="App figure. Wet micro-pitfall trapping – App screen mock up"
+    widteh="1000"
+    height="900"
+  />
 </p>
-<p>Collecting samples/removing the traps</p>
-<ol start="27">
+<p>Figure 3. Wet micro-pitfall trapping – App screen mock up.</p>
+<h4 id="c.-collecting-samplesremoving-the-traps">
+  C. Collecting samples/removing the traps
+</h4>
+<ol start="27" type="1">
   <li>
     <p>
       Each site is trapped for five (minimum) to seven (recommended) consecutive
@@ -576,12 +1849,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       container with undiluted propylene glycol should be placed in the trap.
     </p>
   </li>
-  <li>
-    <p>After the planned trapping duration, return to the traps.</p>
-  </li>
-  <li>
-    <p>Remove the cover and guidance barriers (if used).</p>
-  </li>
+  <li><p>After the planned trapping duration, return to the traps.</p></li>
+  <li><p>Remove the cover and guidance barriers (if used).</p></li>
   <li>
     <p>Remove the inner sampling container and tightly screw on the lid.</p>
   </li>
@@ -597,19 +1866,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Enter relevant Comments (optional free text, e.g. flooding, interference
-      by animals or people)
+      Enter relevant <em>Comments</em> (optional free text, e.g. flooding,
+      interference by animals or people)
     </p>
   </li>
-  <li>
-    <p>Remove all the trap components.</p>
-  </li>
+  <li><p>Remove all the trap components.</p></li>
   <li>
     <p>
-      Open the App, select Wet micro-pitfall protocol and select Remove trap.
-      Select the Trap ID and press Save. The duration of trapping will be
-      automatically recorded based on the start date/time and trap removal
-      date/time (manual override if necessary).
+      Open the App, select <em>Wet micro-pitfall</em> protocol and select
+      <em>Remove trap</em>. Select the Trap ID and press <em>Save</em>. The
+      duration of trapping will be automatically recorded based on the start
+      date/time and trap removal date/time (manual override if necessary).
     </p>
   </li>
   <li>
@@ -626,29 +1893,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       available.
     </p>
   </li>
-  <li>
-    <p>Set up the samples, labels and barcodes.</p>
-  </li>
+  <li><p>Set up the samples, labels and barcodes.</p></li>
   <li>
     <p>
-      Open the App. Select sampling method Wet micro-pitfall and select Scan
-      barcodes.
+      Open the App. Select sampling method <em>Wet micro-pitfall</em> and select
+      <em>Scan barcodes</em>.
     </p>
   </li>
   <li>
     <p>
       Unscrew the lid of the first sampling container. Take a small thermal
-      printed barcode label and scan using the app. Select the Plot IDand
-      Micro-pitall trap ID for the sample from the drop-down list. Select Save
-      record. The barcode ID will now be linked to the record of that trap.
+      printed barcode label and scan using the app. Select the <em>Plot ID</em>
+      <em>and Micro-pitall trap ID</em> for the sample from the drop-down list.
+      Select <em>Save record</em>. The barcode ID will now be linked to the
+      record of that trap.
     </p>
   </li>
   <li>
     <p>
-      Select Add photo and take a photo looking down (into the sample container
-      with the lid off), with the barcode placed alongside the container (not in
-      the container), so it is visible in the photo (place a blank piece of
-      white paper underneath the container for the best photo).
+      Select <em>Add photo</em> and take a photo looking down (into the sample
+      container with the lid off), with the barcode placed alongside the
+      container (not in the container), so it is visible in the photo (place a
+      blank piece of white paper underneath the container for the best photo).
     </p>
   </li>
   <li>
@@ -663,8 +1929,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       On the small thermal barcode label, manually write the following
       information with lead pencil (do not use pen or marking pen as the ink
       will dissolve), in approximately size 4 font: Project name, Plot ID, Trap
-      ID, date (start and end) and collector. Place into the preserving fluid
-      into the sampling container.
+      ID, date (start and end) and collector. Place the preserving fluid into
+      the sampling container.
     </p>
   </li>
   <li>
@@ -679,9 +1945,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       is allocated to a sample.
     </p>
   </li>
-  <li>
-    <p>Store the containers in a cool location out of direct light.</p>
-  </li>
+  <li><p>Store the containers in a cool location out of direct light.</p></li>
   <li>
     <p>
       Any excess/used propylene glycol should be stored appropriately and
@@ -690,165 +1954,198 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p><strong>Additional guidelines</strong></p>
-<p>General</p>
-<ul>
-  <li>
-    <p>
-      Ensure all surveyors avoid walking through the Vegetation and Soils Plot
-      to access the Fauna Plot during trap installation, trap checks and
-      removal. All foot traffic must go around the plot. This is important to
-      maintain the integrity of the Vegetation and Soils Plot.
-    </p>
-  </li>
-  <li>
-    <p>
-      Commence this protocol on the first day of a monitoring event,
-      establishing traps as soon as possible, to maximise the time they are
-      deployed (recommended minimum is five days).
-    </p>
-  </li>
-  <li>
-    <p>
-      Refer to Section 3 General Survey Guidelines regarding safety related to
-      the preservative liquids used.
-    </p>
-  </li>
-  <li>
-    <p>
-      There will likely be instances (e.g. in rainforest situations) where the
-      diameter/depth of the traps is unsuitable for collecting large arthropods,
-      however the same biases apply globally (Brown and Matthews 2016) and such
-      species may be detected by vertebrate pitfall traps or using a targeted
-      approach.
-    </p>
-  </li>
-  <li>
-    <p>
-      Studies have shown that some invertebrates, particularly ants, are
-      attracted to freshly-disturbed soil around a newly-installed pitfall trap
-      which can lead to their over-representation in samples – this is referred
-      to as a ‘digging-in effect’ (Greenslade 1973). Traps can be left unopened
-      (e.g., for 24 hours) to avoid such effects (Callan et al. 2011). In such
-      cases, the trap set-up and trap open dates will be different. Delayed
-      opening of traps is not a standard component of the protocol, as the idea
-      is to maximise captures within the available field time, and the data can
-      be analysed to exclude the first trap night results if necessary.
-    </p>
-  </li>
-  <li>
-    <p>
-      Attractants/baits can be very effective for capturing large numbers of
-      specimens, but are not included in the protocols because they are
-      typically selective in what they will attract (Whitman et al. 2019), can
-      promote trap disturbance by vertebrate fauna (Montgomery et al. 2021), and
-      create an additional bias, confounding the results.
-    </p>
-  </li>
-</ul>
-<p>Trap set-up</p>
-<ul>
-  <li>
-    <p>
-      Traps can be placed amongst or alongside natural cover, i.e., under or
-      alongside shrubs, to aid protection from direct sunlight. Ensure that
-      foliage will not brush across the cover/trap.
-    </p>
-  </li>
-  <li>
-    <p>
-      Take care to identify and avoid potential ant nest locations and ant
-      foraging trails as this may skew the results. This may mean moving the
-      trap several metres from the ideal trap line alignment.
-    </p>
-  </li>
-  <li>
-    <p>
-      If a hard substrate is encountered when installing pitfalls, and digging
-      the hole is slow and overly time-consuming, try an alternative nearby
-      location. Failing this, the soil can be mounded up around the cup to
-      enable the top to be flush with the top of the soil surface.
-    </p>
-  </li>
-  <li>
-    <p>
-      Ensure any discrepancies from the standard trap array are recorded (the
-      location will be recorded via the App, and the comments field can be used
-      to make any relevant notes).
-    </p>
-  </li>
-  <li>
-    <p>
-      Flag the location of each trap with flagging tape so it can easily be
-      found in the field, ensuring the flag is clearly visible, particularly
-      from the angle of which it will be approached during trap checking. A good
-      technique is to double flag (2 strips of flagging tape, ~20 cm apart) the
-      start and end of each line, providing a quick visual cue for the surveyor.
-    </p>
-  </li>
-  <li>
-    <p>
-      It is recommended to set the traps out in numerical order and permanently
-      write numbers on the cover and flagging tape to assist with trap checks
-      and removal, back-tracking if a number is skipped.
-    </p>
-  </li>
-</ul>
-<p>Checking and removing traps</p>
-<ul>
-  <li>
-    <p>
-      Traps should be checked/removed in sequence to minimise the risk of
-      missing a trap. All traps must be accounted for when checked/removed.
-    </p>
-  </li>
-  <li>
-    <p>
-      Traps must be checked after seven days, under normal average weather
-      conditions, or more frequently under hot/cold/raining conditions. Conduct
-      any maintenance of the traps when checking (e.g., ensuring the rim of the
-      pitfalls is flush with the ground, there are no gaps, no branches laying
-      across, the cover and funnel are in the correct position, that there is
-      adequate preservative in trap).
-    </p>
-  </li>
-  <li>
-    <p>
-      Unless explicitly permitted, all traps must be removed at the conclusion
-      of each trapping session. Permanent micro-pitfalls may be left in situ
-      following the conditions specified in the scientific permit and animal
-      ethics approvals.
-    </p>
-  </li>
-  <li>
-    <p>
-      Wet micro-pitfall traps can pose a bycatch risk to small non-target
-      vertebrates such as lizards, frogs and small mammals. At the start of the
-      project, the suitability of micro-pitfall trapping should be assessed
-      based on the risk of potential by-catch, considering the fauna (common and
-      threatened) known to be present at the site. Use of a funnel within the
-      trap is recommended as a standard design feature to minimise the
-      inadvertent capture of vertebrates.
-    </p>
-  </li>
-  <li>
-    <p>
-      Any vertebrate bycatch must be recorded (use Opportunistic observation
-      module) and reported to the relevant government agency as a condition of
-      the scientific permit. Deceased vertebrate captures should be preserved
-      and provided to the local museum (refer to the Vertebrate fauna module for
-      guidelines). The continued use of wet micro-pitfall traps should be
-      reviewed in such instances.
-    </p>
-  </li>
-  <li>
-    <p>
-      Any invertebrate fauna caught in vertebrate fauna traps (e.g., pitfalls,
-      Elliot’s) can also be collected (use Opportunistic observation module).
-    </p>
-  </li>
-</ul>
-<p> </p>
 """^^rdf:HTML ;
+    tern:purpose """
+    <h3 id="rationale-1">Rationale</h3>
+<p>
+  There is no universally optimal micro-pitfall trap design, with capture and
+  retention rates influenced by trap diameter and depth, trap material and
+  colour, design and use of guidance barriers and covers, the preservative type
+  and how the traps have been set (Woodcock 2005; Bamford <em>et al.</em> 2013;
+  Brown and Matthews 2016; Kwok <em>et al.</em> 2016; Boetzl
+  <em>et al.</em> 2018; Montgomery <em>et al.</em> 2021). The susceptibility to
+  capture varies between taxa and even within a taxon (e.g. based on mobility,
+  sex and developmental stage). Trap results are also influenced by a range of
+  other factors such as weather, season, microhabitat and food availability
+  (Brown and Matthews 2016; Sherley and Stringer 2016; Hoekman
+  <em>et al.</em> 2017).
+</p>
+<p>
+  The number, spatial arrangement, distance between pitfall traps and duration
+  of trapping varies between studies (Ward <em>et al.</em> 2001; Hoekman
+  <em>et al.</em> 2017; Montgomery <em>et al.</em> 2021). Transects of six
+  traps, spaced 10 m apart, and trapped for seven days has been adopted, as it
+  is consistent with the <em>Vertebrate fauna</em> module and is the most common
+  inter-trap distance, spatial arrangement and trapping duration reported in
+  invertebrate studies (Hohbein and Conway 2018).
+</p>
+<p>
+  A range of trap designs were reviewed and the design of Brown and Matthews
+  (2016) was chosen because the materials are easy to source (and therefore
+  standardise), inexpensive, the traps are simple to install and the samples are
+  efficient to collect. Use of the inner sampling container pre-filled with
+  preservative solution avoids the need for double-handling of samples in the
+  field, significantly speeding up collection time and eliminates the problem of
+  specimens adhering to the collection container or being lost during transfer
+  to sample containers (Brown and Matthews 2016).
+</p>
+<p>
+  The micro-pitfall trap diameter and depth is a compromise between maximising
+  capture success of the target invertebrate taxa and minimising the risk of
+  vertebrate fauna bycatch (Bulbert et al. 2007; Pendola and New 2007; Brown and
+  Matthews 2016). The 10 cm depth of the traps is in the middle range of those
+  reportedly used for invertebrates and based on the research of Pendola and New
+  (2007), should capture a similar composition of ant species to that of deeper
+  traps.
+</p>
+<p>
+  Use of a funnel is recommended as a standard on the basis that they reduce
+  vertebrate bycatch and evaporation of the killing preservative. The limited
+  studies available on the effect of funnels on capture results suggest they
+  have little adverse effect on the species richness sampled. It is considered
+  likely that funnels reduce the possibility of escape as they present an
+  additional overhanging barrier (Skvarla et al. 2014; Brown and Matthews 2016).
+  The use of funnels also prevents small vertebrates from fouling samples and/or
+  affecting the attractiveness of individual pitfall traps to certain taxa
+  (Brown and Matthews 2016).
+</p>
+<p>
+  Transparent petri-dishes are used as covers above the traps, to reduce the
+  potential for dilution of the killing preservative from rain, and litter
+  build-up in the traps (and the subsequent influence on escape rates) (Brown
+  and Matthews 2016). Covers positioned low to the ground can also reduce the
+  potential for vertebrate by-catch (Li <em>et al.</em> 2021). A transparent
+  cover was selected as a neutral approach, as shading has the potential to
+  impact on invertebrate behaviour and bias the results (Sherley and Stringer
+  2016). The pans are held above the trap at a fixed distance from the ground.
+</p>
+<p>
+  Most surveys to date have used micro-pitfall traps without guidance barriers,
+  but studies have found that guidance barriers can significantly increase
+  capture rates, in terms of species richness and abundance (Boetzl et al. 2018;
+  Horn 2020). Boetzl et al. (2018) suggested that the use of a few traps with
+  barriers was more effective than the use of many traps without barriers, for
+  obtaining a comprehensive inventory. An X-shape design was shown to be more
+  effective than a V-shape design. The downside of using guidance barriers is
+  that the data is not comparable with most existing pitfall surveys, that have
+  not used guidance barriers. For this reason, Boetzl et al. (2018) did not
+  recommend their use, however they are included as an optional design feature
+  in this protocol based on evidence of their success. If users decide to use
+  guidance barriers then they must be used on each trap.
+</p>
+<p>
+  For standardization and simplification, a collapsible, light weight guidance
+  barrier with an in-built cover is being tested for this protocol. Installing
+  guidance barriers is not practical in some systems (e.g. on uneven, densely
+  vegetated or rocky ground) and adds to field set-up time (Boetzl
+  <em>et al.</em> 2018). The specifics of the trap design must be recorded in
+  the data fields.
+</p>
+    """^^rdf:HTML ;
+    tern:scope """
+    <h3 id="introduction-1">Introduction</h3>
+<p>
+  The pitfall traps used for invertebrate sampling are referred to as
+  ‘micro-pitfall traps’, as distinct from the pitfall traps used for vertebrate
+  fauna trapping. Micro-pitfalls are essentially a small container dug into the
+  ground, flush with the surface, so anything crawling over the edge of the
+  container falls in and cannot escape (Whitman et al. 2019). A liquid
+  preservative is added to the traps (hence the term ‘wet’ micro-pitfall), to
+  rapidly kill and preserve the invertebrates that fall in.
+</p>
+<p>
+  Micro-pitfall trapping is the most common and efficient passive survey method
+  for non-flying terrestrial (epigeic) arthropods, in particular ants
+  (Hymenoptera: Formicidae), spiders (Araenae) and ground beetles (Coleoptera,
+  especially Carabidae and Staphylinidae) (Southwood and Henderson 2000; Bulbert
+  <em>et al.</em> 2007; Callan <em>et al.</em> 2011; Skvarla
+  <em>et al.</em> 2014; Brown and Matthews 2016; Sherley and Stringer 2016).
+  Other invertebrates (e.g. springtails, flies, millipedes) will also be
+  collected by pitfall traps, however it is not the most efficient method for
+  their collection.
+</p>
+<p>
+  The micro-pitfall trap design adopted for this protocol is based on Brown and
+  Matthews (2016) and consists of a transparent outer cup (10 cm diameter x 10
+  cm depth), an inner screw top sampling container pre-filled with liquid
+  preservative that fits inside the outer cup, a transparent funnel that fits
+  inside the outer cup, and a transparent cover (15 cm diameter) positioned
+  above the trap (Figure 2). Use of a guidance barrier is optional.
+</p>
+<p>
+  The micro-pitfall trapping protocol is suitable across terrestrial ecosystem
+  types, anywhere where the substrate can be dug to at least 10 cm (Montgomery
+  et al. 2021). Pitfall trapping is best undertaken when overall invertebrate
+  activity peaks, typically around spring when conditions are warm and at least
+  some soil moisture is present. Some invertebrate groups (e.g. slaters,
+  millipedes) may only be active in the cool, wet winter months and some have
+  different annual cycles (e.g. trapdoor spiders), thus there is merit in
+  trapping at different times of the year (Bamford <em>et al.</em> 2013).
+</p>
+<p>
+  A full and lite protocol option is provided, in line with the
+  <em>Vertebrate fauna</em> module (Table 3). Whilst the full protocol is the
+  recommended approach, users may opt to undertake the lite protocol when
+  undertaking the lite protocol of the Vertebrate fauna module. The standard
+  layout of pitfall lines is shown in Figure 1.
+</p>
+<p>Table 3. Summary of full and lite options for wet micro-pitfall trapping.</p>
+<table>
+  <colgroup>
+    <col style="width: 11%" />
+    <col style="width: 47%" />
+    <col style="width: 24%" />
+    <col style="width: 16%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Pitfall trapping</th>
+      <th>Summary of method</th>
+      <th>Suitability</th>
+      <th>Total field requirement</th>
+    </tr>
+    <tr class="odd">
+      <th>Full</th>
+      <th>
+        2 x 50 m parallel lines of 6 wet micro-pitfalls, opened for 7 days
+        (standard, preferred) or 5 days (minimum) (full plot)
+      </th>
+      <th>Recommended in most circumstances</th>
+      <th>2 hours</th>
+    </tr>
+    <tr class="header">
+      <th>Lite</th>
+      <th>
+        1 x 50 m line of 6 wet micro-pitfalls, opened for 7 days (standard,
+        preferred) or 5 days (minimum) (half plot).
+      </th>
+      <th>
+        Minimum requirement, when Lite Vertebrate fauna protocol is being
+        undertaken
+      </th>
+      <th>1.25 hours</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/schematic-drawing.png"
+    alt="Schematic drawing of the micro-pitfall trap design"
+    widteh="1176"
+    height="754"
+  />
+</p>
+
+<p>
+  1 = cover (a large petri dish), 2 = funnel, 3 = inner sample collection pot, 4
+  = outer cup, 5 = screw top lid for (3).
+</p>
+
+<p>
+  Figure 2. Schematic drawing of the micro-pitfall trap design (Source: Brown
+  and Matthews 2016).
+</p>
+    """^^rdf:HTML ;
 .
 
