@@ -6,562 +6,13 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f>
-    a skos:Concept ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:prefLabel "Recruitment module - Age class protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/recruitment/recruitment-module-age-class-protocol/recruitment-module-age-class-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    <p>
-      Mobile device (tablet/phone capable of taking high resolution photos) with
-      the App (progressive web app) saved to the home screen
-    </p>
-  </li>
-  <li>
-    <p>Trimble R1</p>
-  </li>
-  <li>
-    <p>5 x 100 m tape measures</p>
-  </li>
-  <li>
-    <p>
-      Tape measure / ruler / measuring stick (used for height and diameter
-      measures)
-    </p>
-  </li>
-  <li>
-    <p>Diameter tape and/or calipers (to measure diameter)</p>
-  </li>
-  <li>
-    <p>
-      Point-intercept staff (or range pole, extendable to 2 m to define survey
-      area)
-    </p>
-  </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<p style="color: orange">Growth stage and life-stage</p>
-<ol type="1">
-  <li>
-    <p>
-      Ensure the <em>Plot selection and layout</em> module has been completed to
-      mark out the plot boundary and grid with very high accuracy using the
-      Trimble R1.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the <em>Age Class</em> button from the recruitment main screen.
-    </p>
-    <p>Figure 1. App screen 1
-        <table>
-            <tbody>
-              <tr>
-                <td>
-                  <img
-                    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/recruitment-app-screen-1.png"
-                    alt="App screen 1"
-                    widteh="405"
-                    height="440"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-    </p>
-  </li>
-</ol>
-<ol start="3" type="1">
-  <li>
-    <p>
-      Traverse the plot systematically, searching for perennial species and
-      define the growth stage and life-stage classes for each perennial species
-      present (a species can have more than one growth stage and life-stage code
-      entered, ensure that all stages present are selected from the drop-down
-      menu).
-    </p>
-  </li>
-  <li>
-    <p>
-      Refer to Table and Figure for the growth stage options available and Table
-      for the life-stage options. See the supporting information for more
-      details (Appendix).
-    </p>
-  </li>
-</ol>
-<p>
-  Table. Description of growth stage classes used for assessing species with a
-  tree or shrub growth form
-</p>
-<table>
-  <colgroup>
-    <col />
-    <col />
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Growth stage</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="2"><strong>Recruiting</strong></td>
-      <td>
-        <em>Trees:</em> From the juvenile and sapling stages to well-developed
-        individuals with a crown of small branches, but below maximum height for
-        a stand, crown exhibits apical dominance – approx. 0-30 years
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <em>Shrubs:</em> Juvenile stage, shrub has not reached maximum height,
-        apical dominance
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Resprouting</strong></td>
-      <td>
-        <em>Trees and Shrubs:</em> Woody perennial which is resprouting after
-        significant loss of foliage. Resprouting can occur from the trunk or
-        branches (epicormic) or from the base (basal).
-      </td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>Mature</strong></td>
-      <td>
-        <em>Trees:</em> Tree has reached maximum height and crown has reached
-        full lateral development although branch thickening can occur. Apical
-        dominance lost – approx. 30-80 years
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <em>Shrubs</em>: Shrub has reached maximum height; crown has reached
-        full lateral development
-      </td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>Senescent</strong></td>
-      <td>
-        <em>Trees:</em> Crown form contracting and becoming ‘stag headed’
-        decrease in crown diameter and crown leaf area. Distorted branches and
-        burls common – approx. &gt;80 years
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <em>Shrubs:</em> Crown form contracting and decrease in crown diameter
-        and crown leaf area. Dead branches more common – approx. &gt;80 years
-      </td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>Dead</strong></td>
-      <td>
-        <em>Trees:</em> Dead individuals in all stages – from presence of
-        tertiary branches and bark to no remaining crown structure and absence
-        of bark
-      </td>
-    </tr>
-    <tr>
-      <td><em>Shrubs:</em> Dead individuals in all stages</td>
-    </tr>
-  </tbody>
-</table>
-<p>Figure. Growth stage visual representation examples
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/growth-stage-visual-representation-examples.png"
-                alt="Growth stage visual representation examples"
-                widteh="1485"
-                height="715"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</p>
-<p>Table. Life-stage classes. Adapted from (Heard &amp; Channon 1997).</p>
-<table>
-  <colgroup>
-    <col />
-    <col />
-  </colgroup>
-  <thead>
-    <tr>
-      <th><strong>Life Stage</strong></th>
-      <th><strong>Definition</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Seedling</td>
-      <td>
-        <em>Trees:</em> individuals &lt;2 cm DBH. <em>Shrubs</em>: &lt;5cm
-        height
-      </td>
-    </tr>
-    <tr>
-      <td>Sapling</td>
-      <td>
-        <em>Trees:</em> individuals &lt;2 m height and ~2-10 cm DBH.
-        <em>Shrubs:</em> has not reached maximum height, apical dominance
-      </td>
-    </tr>
-    <tr>
-      <td>Vegetative</td>
-      <td>
-        Plants in a non-reproductive phase (i.e., no flowers, buds or unshed
-        seed), that do not classify as seedlings or saplings
-      </td>
-    </tr>
-    <tr>
-      <td>Budding</td>
-      <td>
-        Plants have buds formed in varying stages of development for flowering
-      </td>
-    </tr>
-    <tr>
-      <td>Flowering</td>
-      <td>Plants are in flower</td>
-    </tr>
-    <tr>
-      <td>Immature fruit</td>
-      <td>Immature fruits not shedding seed</td>
-    </tr>
-    <tr>
-      <td>Mature fruit</td>
-      <td>Fruits ripe and/or shedding seed</td>
-    </tr>
-    <tr>
-      <td>Recently shed</td>
-      <td>
-        Plants are in a non-reproductive phase which show signs of having shed
-        seed or fruits within the last 12 months
-      </td>
-    </tr>
-  </tbody>
-</table>
-<ol start="5" type="1">
-  <li>
-    <p>
-      The species list will align with the information collected during the
-      <em>Floristics</em> protocol. Select the field ID for any species where
-      the species name is unknown.
-    </p>
-  </li>
-  <li>
-    <p>Determine if recruitment is adequate:</p>
-  </li>
-</ol>
-<ul>
-  <li>
-    <p>
-      Adequate recruitment of the tree canopy requires at least two cohorts to
-      be present
-    </p>
-  </li>
-  <li>
-    <p>
-      For woody understorey, the number of immature individuals should be at
-      least 10% of the number of observed mature individuals (Department of
-      Sustainability and Environment 2004; Michaels 2006).
-    </p>
-  </li>
-</ul>
-<p>Figure. App screen 2 – recruitment and growth stage
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/recruitment-growth-stage-app-screen-2.png"
-                alt="App screen 2 – recruitment and growth stage"
-                widteh="991"
-                height="820"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</p>
-<ol start="7" type="1">
-  <li>
-    <p>
-      Complete all the required fields on an individual species basis. Once all
-      fields have been entered, select the ‘<em>Add species’</em> button to add
-      another species.
-    </p>
-  </li>
-  <li>
-    <p>
-      Repeat steps 3-7 until details have been added for each perennial species
-      present (the species list will be defined by the species recorded during
-      the <em>Floristics</em> module. Data needs to be collected for all tree
-      and shrub species identified during the floristics survey).
-    </p>
-  </li>
-  <li>
-    <p>
-      If required, species information can be updated by selecting the
-      ‘<em>List</em>’ button within the app, which will bring up the
-      <em>Species Overview</em> page. Growth stage, life-stage and recruitment
-      information can be edited for each species on this page by clicking on the
-      button. The drop-down list will appear when the button is selected, and
-      stages can be added or removed at this point.
-    </p>
-  </li>
-  <li>
-    <p>
-      Once all growth, life-stage and recruitment data has been added for each
-      species, select <em>Continue</em> to save the data and move to the
-      <em>Sapling and Seedling Counts</em> protocol.
-    </p>
-  </li>
-</ol>
-<p style="color: orange">Sapling and seedling counts</p>
-<ol type="1">
-  <li>
-    <p>
-      Ensure the <em>Plot selection and layout</em> module has been completed to
-      mark out the plot boundary and grid with very high accuracy using the
-      Trimble R1.
-    </p>
-  </li>
-  <li>
-    <p>
-      Ensure that 5 tapes are set out to define the location of the 5 N/S 100 m
-      belt transects. The transect layout is consistent with the point intercept
-      transects from the <em>Cover</em> module, but only the N/S transects are
-      required.
-    </p>
-  </li>
-</ol>
-<ol start="3" type="1">
-  <li>
-    <p>
-      The belt transects will be defined using the tape measure and the point
-      intercept staff to define a 2 m width. Stand at the start of the transect
-      and hold the staff at the 1 m mark (the suvey area will consist of 1 m of
-      each side of the tape). Seedlings and saplings will be counted in the area
-      between the tape measure and the end of the staff/pole (see the Appendix 2
-      for more information about this method).
-    </p>
-  </li>
-</ol>
-
-<p>Figure. Location of belt transects used for seedling and sapling counts.
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/location-belt-transects.png"
-                alt="Location of belt transects used for seedling and sapling counts."
-                widteh="968"
-                height="633"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</p>
-
-<ol start="4" type="1">
-  <li>
-    <p>
-      Select the transect from the drop-down list (e.g. N/S1, N/S2) to start
-      collecting data. Transects can be surveyed in either direction (i.e. north
-      to south, or south to north).
-    </p>
-  </li>
-  <li>
-    <p>
-      Walk along the transect, ensuring that the staff is held horizontally and
-      in line with the tape measure and systematically record any seedlings or
-      saplings present.
-    </p>
-  </li>
-  <li>
-    <p>
-      For each tree or shrub species present in the belt transect, record a
-      count of all seedlings and saplings encountered. Seedling and sapling
-      numbers can be updated as you move along the transect by selecting the
-      button.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select ‘<em>Add species’</em> to add any new species observed as you move
-      along the transect (data can only be entered against species (or genus) or
-      field IDs recorded during the <em>Floristics</em> module). If individuals
-      cannot be identified to species or genus level, or to a field ID, they can
-      be recorded as a generic tree or shrub seedling or sapling.
-    </p>
-  </li>
-  <li>
-    <p>
-      You can update the number of seedlings and saplings for each species as
-      you move along the transect from the
-      <em>Sapling and Seedlings Counts</em> summary page. Counts are increased
-      by 1 by hitting the button, or for clumps of seedlings or saplings, hold
-      down the button to bring up a number field, where the number of
-      individuals can be typed in and added to the total.
-    </p>
-  </li>
-  <li>
-    <p>
-      Once all species and counts have been added, select <em>‘Continue’</em> to
-      save the data and return to the main screen.
-    </p>
-  </li>
-  <li>
-    <p>Repeat steps 3-8 for the remaining belt transects.</p>
-  </li>
-</ol>
-<p>Figure. Sapling and seedling counts – screens 1 and 2
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/sapling-seedling-counts.png"
-                alt="Sapling and seedling counts – screens 1 and 2"
-                widteh="1016"
-                height="656"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</p>
-<p style="color: orange">Small tree survey</p>
-<p>
-  The small tree survey is carried out in the same belt transects used for the
-  seedling and sapling counts (Figure 4). To undertake a small tree survey,
-  complete the following steps.
-</p>
-<ol type="1">
-  <li>
-    <p>
-      Ensure the <em>Plot selection and layout</em> module has been completed to
-      mark out the plot boundary and grid with very high accuracy using the
-      Trimble R1.
-    </p>
-  </li>
-  <li>
-    <p>
-      Ensure that 5 tapes are set out to define the location of the 5 N/S 100 m
-      belt transects. The transect layout is consistent with the point intercept
-      transects from the <em>Cover</em> module, but only the N/S transects are
-      required.
-    </p>
-  </li>
-</ol>
-<ol start="3" type="1">
-  <li>
-    <p>
-      The belt transects will be defined using the tape measure and the point
-      intercept staff to define a 2 m width. Stand at the start of the transect
-      and hold the staff at the 1 m mark (the suvey area will consist of 1 m of
-      each side of the tape). Small tress will be recorded in the area between
-      the tape measure and each end of the staff/pole (see the Appendix for more
-      information about this method).
-    </p>
-  </li>
-  <li>
-    <p>Select the transect from the drop-down list (e.g. N/S1, N/S2, E/W1).</p>
-  </li>
-  <li>
-    <p>
-      Move along each of the belt transects systematically and search for small
-      trees (DBH &lt;10 cm and height &gt;2 m) within the sampling area (see the
-      supporting information (Appendix) for how to determine if a tree is in or
-      out of the belt transect).
-    </p>
-  </li>
-  <li>
-    <p>
-      Record the species name or field name if the species ID is unknown (only
-      species recorded as part of the <em>Floristics</em> module will be
-      available for selection). If the individual cannot be recorded to species
-      name the genus name can be used (i.e. <em>Eucalyptus</em> sp.).
-    </p>
-  </li>
-  <li>
-    <p>
-      Stand as close as possible to the trunk of the individual and hit the
-      <em>Record Location</em> button. Ensure that the R1 is on and has high
-      accuracy.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record the tree status as alive, dead or resprouting from the drop-down
-      list. Resprouting trees have a dead trunk, but have coppicing live foliage
-      sprouting from the base or along the stems.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record reproductive life-stage for each individual (Table), noting that
-      seedling and saplings cannot be selected as life-stage options here.
-    </p>
-  </li>
-  <li>
-    <p>
-      Use a diameter tape to measure and record the diameter of the tree at 1.3
-      m height, unless the tree is a ‘problem tree’ (see Appendix for procedures
-      to measure problem trees). Use a small tape measure to find the 1.3 m mark
-      along the trunk or stem (the point of measurement, POM)).
-    </p>
-  </li>
-  <li>
-    <p>
-      Pull the diameter tape around the tree trunk at the POM so that it is
-      perpendicular to the main axis of the trunk (i.e. not parallel to the
-      ground). Clear any moss, loose bark, or anything that may distort the
-      diameter tape.
-    </p>
-  </li>
-  <li>
-    <p>Record the diameter and the POM.</p>
-  </li>
-  <li>
-    <p>Visually estimate and record the height of the tree.</p>
-  </li>
-  <li>
-    <p>
-      Mark the tree at approximately head-height with a bright, soluble marking
-      paint to avoid remeasuring.
-    </p>
-  </li>
-  <li>
-    <p>
-      Repeat steps 6-14 for each eligible tree encountered in the sampling area.
-    </p>
-  </li>
-</ol>
-<p>Figure. App screen – small tree survey
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/small-tree-survey.png"
-                alt="App screen – small tree survey"
-                widteh="477"
-                height="979"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</p>
-<p><strong>Additional guidelines</strong></p>
-<p style="color: orange">Growth stage and life-stage</p>
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 id="growth-stage-and-life-stage-1">A. Growth stage and life-stage</h4>
 <ul>
   <li>
     <p>
@@ -573,10 +24,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Data needs to be collected for all tree and shrub species identified
-      during the <em>Floristics</em> protocol. The species list available at
-      this stage, will be filtered, so only the relevant species are available
-      for data collection. Data needs to be collected for all species on this
-      list.
+      during the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      protocol. The species list available at this stage, will be filtered, so
+      only the relevant species are available for data collection. Data needs to
+      be collected for all species on this list.
     </p>
   </li>
   <li>
@@ -620,8 +77,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Growth and life-stage data can be collected at the same time as
-      floristics, but species ID will need to be added to the floristics module
-      before any life stage data can be assigned.
+      floristics, but species ID will need to be added to the
+      <a
+        href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+        >Floristics</a
+      >
+      module before any life-stage data can be assigned.
     </p>
   </li>
   <li>
@@ -635,7 +96,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Seedling and sapling counts</p>
+<h4 id="seedling-and-sapling-counts">B. Seedling and sapling counts</h4>
 <ul>
   <li>
     <p>
@@ -644,7 +105,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       walk along the transect, ensure that the half-way (1 m) mark on the pole
       remains directly above the tape. The survey area should remain constant at
       1 m on either side of the tape for the entire length of the transect (see
-      Appendix).
+      Appendix 4).
     </p>
   </li>
   <li>
@@ -658,28 +119,48 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>
       The number of seedlings and saplings should be counted on a per species
       basis. If a seedling cannot be identified to species level, efforts should
-      be made to identify to genus level. If this is not possible, record as a
-      generic tree or shrub seedling or sapling.
+      be made to identify it to genus level. If this is not possible, record as
+      a generic tree or shrub seedling or sapling.
     </p>
   </li>
   <li>
     <p>
-      Species must be added into the <em>Floristics</em> module before any
-      seedling or sapling counts can be recorded against those species.
+      Species must be added into the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      module before any seedling or sapling counts can be recorded against those
+      species.
     </p>
   </li>
   <li>
     <p>
       Seedling and sapling information can only be added against the species or
-      genus (or field ID) assigned during the <em>Floristics</em> module. New
-      species cannot be added during this module.
+      genus (or field ID) assigned during the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      module. New species cannot be added during this module.
     </p>
   </li>
   <li>
     <p>
       It is recommended that the seedling and sapling counts can be undertaken
       after the point-intercept survey, as the belt transects align with the
-      transects established for the <em>Cover</em> module.
+      transects established for the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b"
+          >Cover</a
+        ></em
+      >
+      module.
     </p>
   </li>
   <li>
@@ -698,28 +179,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Small tree survey</p>
+<h4 id="small-tree-survey">C. Small tree survey</h4>
 <ul>
   <li>
     <p>
       As you walk along the transect, ensure that the half-way (1 m) mark on the
       pole remains directly above the tape. The survey area should remain
       constant at 1 m on either side of the tape for the entire length of the
-      transect (see Appendix).
+      transect (see Appendix 4).
     </p>
   </li>
   <li>
     <p>
       If required, subdivide the belt transect into smaller areas or mark stems
-      once they have been counted (i.e., with non-permanent chalk paint) to
+      once they have been counted (i.e. with non-permanent chalk paint) to
       ensure that individuals are not missed or recorded multiple times.
     </p>
   </li>
   <li>
     <p>
-      If there are several small trees within the belt transect or are high
-      density areas, mark with marking paint (or flagging tape or survey pegs)
-      to avoid measuring each individual more than once.
+      If there are a number of small trees within the belt transect or there are
+      high density areas, mark with marking paint (or flagging tape or survey
+      pegs) to avoid measuring each individual more than once.
     </p>
   </li>
   <li>
@@ -763,6 +244,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       Where a rangefinder is not available, tree height can be estimated using
       the following methods:
     </p>
+
     <ul>
       <li>
         <p>
@@ -777,12 +259,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Only tree species recorded during the floristics module will be available
-      on the species list for this survey.
+      Only tree species recorded during the
+      <a
+        href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+        >Floristics</a
+      >
+      module will be available on the species list for this survey.
     </p>
   </li>
 </ul>
-<p style="color: orange">Using the R1</p>
+<h4 id="using-the-r1">D. Using the R1</h4>
 <ul>
   <li>
     <p>
@@ -803,6 +289,671 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       accuracy drop to sub-metre (can take up to 10-15 minutes).
     </p>
   </li>
-</ul>"""^^rdf:HTML ;
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Recruitment module - Age class protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/recruitment/recruitment-module-age-class-protocol/recruitment-module-age-class-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4>Appendix 1. Reproductive life-stage photo examples</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/reproductive-life-stage-photo-examples.png"
+    alt="Reproductive life-stage photo examples"
+    widteh="1475"
+    height="550"
+  />
+</p>
+<h4>Appendix 2. Using the point-intercept staff to define the survey area</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/using-point-intercept-define-survey-area.png"
+    alt="Using the point-intercept staff to define the survey area"
+    widteh="482"
+    height="287"
+  />
+</p>
+<p>
+  <em
+    >Source: South Australian Pastoral Lease Assessment manual (DENR 2011).</em
+  >
+</p>
+<h4>Appendix 3. Determining if individuals are within the survey area</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/determining-individuals-within-survey-area.png"
+    alt="Determining if individuals are within the survey area"
+    widteh="438"
+    height="176"
+  />
+</p>
+<p><em>Source: AusPlots Forests (Wood et al. 2015)</em></p>
+<h4>Appendix 4. Small tree survey</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/appendix-small-tree-survey.png"
+    alt="Small tree survey"
+    widteh="1020"
+    height="1016"
+  />
+</p>
+<p>
+  <em
+    >Source: Victorian forest protection survey program – flora survey (Tolsma
+    &amp; Molloy 2020)</em
+  >
+</p>
+<h4>Appendix 5. Plant tagging options</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-1.png"
+    alt="Plant tagging options 1"
+    widteh="390"
+    height="292"
+  />
+</p>
+<p>
+  <em
+    >Source:
+    <a href="https://alitags.com/products-round-numbered-tags.html"
+      >https://alitags.com/products-round-numbered-tags.html</a
+    ></em
+  >
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-2.png"
+    alt="Plant tagging options 2"
+    widteh="360"
+    height="412"
+  />
+</p>
+<p>
+  <em
+    >Source:
+    <a href="https://www.lfwseq.org.au/plant-id-tags/"
+      >https://www.lfwseq.org.au/plant-id-tags/</a
+    ></em
+  >
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-3.png"
+    alt="Plant tagging options 3"
+    widteh="821"
+    height="617"
+  />
+</p>
+<p>
+  <em
+    >Source:
+    <a href="https://www.pinterest.com.au/pin/276619602099003237/"
+      >https://www.pinterest.com.au/pin/276619602099003237/</a
+    ></em
+  >
+</p>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Trimble R1</p>
+  </li>
+  <li>
+    <p>5 x 100 m tape measures</p>
+  </li>
+  <li>
+    <p>
+      Tape measure / ruler / measuring stick (used for height and diameter
+      measures)
+    </p>
+  </li>
+  <li>
+    <p>Diameter tape and/or calipers (to measure diameter)</p>
+  </li>
+  <li>
+    <p>
+      Point-intercept staff (or range pole, extendable to 2 m to define survey
+      area)
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<h4 id="growth-stage-and-life-stage">A. Growth stage and life-stage</h4>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the <em>Plot selection and layout</em> module has been completed to
+      mark out the plot boundary and grid with very high accuracy using the
+      Trimble R1.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the <em>Age Class</em> button from the recruitment main screen.
+    </p>
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/recruitment-app-screen-1.png"
+        alt="App screen 1"
+        widteh="405"
+        height="440"
+      />
+    </p>
+    <p>Figure 1. App screen 1</p>
+  </li>
+</ol>
+
+<ol start="3" type="1">
+  <li>
+    <p>
+      Traverse the plot systematically, searching for perennial species and
+      define the growth stage and life-stage classes for each perennial species
+      present (a species can have more than one growth stage and life-stage code
+      entered, ensure that all stages present are selected from the drop-down
+      menu).
+    </p>
+  </li>
+  <li>
+    <p>
+      Refer to Table 2 and Figure 3 for the growth stage options available and
+      Table 3 for the life-stage options. See the supporting information for
+      more details (Appendix 1).
+    </p>
+  </li>
+</ol>
+<p>
+  Table 2. Description of growth stage classes used for assessing species with a
+  tree or shrub growth form
+</p>
+<table>
+  <colgroup>
+    <col style="width: 14%" />
+    <col style="width: 85%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Growth stage</th>
+      <th>Description</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="2"><strong>Recruiting</strong></th>
+      <th>
+        <em>Trees:</em> From the juvenile and sapling stages to well-developed
+        individuals with a crown of small branches, but below maximum height for
+        a stand, crown exhibits apical dominance – approx. 0-30 years
+      </th>
+    </tr>
+    <tr class="header">
+      <th>
+        <em>Shrubs:</em> Juvenile stage, shrub has not reached maximum height,
+        apical dominance
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Resprouting</strong></th>
+      <th>
+        <em>Trees and Shrubs:</em> Woody perennial which is resprouting after
+        significant loss of foliage. Resprouting can occur from the trunk or
+        branches (epicormic) or from the base (basal).
+      </th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Mature</strong></th>
+      <th>
+        <em>Trees:</em> Tree has reached maximum height and crown has reached
+        full lateral development although branch thickening can occur. Apical
+        dominance lost – approx. 30-80 years
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <em>Shrubs</em>: Shrub has reached maximum height, crown has reached
+        full lateral development
+      </th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Senescent</strong></th>
+      <th>
+        <em>Trees:</em> Crown form contracting and becoming ‘stag headed’
+        decrease in crown diameter and crown leaf area. Distorted branches and
+        burls common – approx. &gt;80 years
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <em>Shrubs:</em> Crown form contracting and decrease in crown diameter
+        and crown leaf area. Dead branches more common – approx. &gt;80 years
+      </th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Dead</strong></th>
+      <th>
+        <em>Trees:</em> Dead individuals in all stages – from presence of
+        tertiary branches and bark to no remaining crown structure and absence
+        of bark
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><em>Shrubs:</em> Dead individuals in all stages</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/growth-stage-visual-representation-examples.png"
+    alt="Growth stage visual representation examples"
+    widteh="1485"
+    height="715"
+  />
+</p>
+<p>Figure 2. Growth stage visual representation examples</p>
+<p>Table 3. Life-stage classes. Adapted from (Heard &amp; Channon 1997).</p>
+<table>
+  <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 82%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Life Stage</strong></th>
+      <th><strong>Definition</strong></th>
+    </tr>
+    <tr class="odd">
+      <th>Seedling</th>
+      <th>
+        <em>Trees:</em> individuals &lt;2 cm DBH. <em>Shrubs</em>: &lt;5cm
+        height
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Sapling</th>
+      <th>
+        <em>Trees:</em> individuals &lt;2 m height and ~2-10 cm DBH.
+        <em>Shrubs:</em> has not reached maximum height, apical dominance
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Vegetative</th>
+      <th>
+        Plants in a non-reproductive phase (i.e. no flowers, buds or unshed
+        seed), that do not classify as seedlings or saplings
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Budding</th>
+      <th>
+        Plants have buds formed in varying stages of development for flowering
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Flowering</th>
+      <th>Plants are in flower</th>
+    </tr>
+    <tr class="header">
+      <th>Immature fruit</th>
+      <th>Immature fruits not shedding seed</th>
+    </tr>
+    <tr class="odd">
+      <th>Mature fruit</th>
+      <th>Fruits ripe and/or shedding seed</th>
+    </tr>
+    <tr class="header">
+      <th>Recently shed</th>
+      <th>
+        Plants are in a non-reproductive phase which show signs of having shed
+        seed or fruits within the last 12 months
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<ol start="5" type="1">
+  <li>
+    <p>
+      The species list will align with the information collected during the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      protocol. Select the field ID for any species where the species name is
+      unknown.
+    </p>
+  </li>
+  <li><p>Determine if recruitment is adequate:</p></li>
+</ol>
+<ul>
+  <li>
+    <p>
+      Adequate recruitment of the tree canopy requires at least two cohorts to
+      be present
+    </p>
+  </li>
+  <li>
+    <p>
+      For woody understorey, the number of immature individuals should be at
+      least 10% of the number of observed mature individuals (Department of
+      Sustainability and Environment 2004; Michaels 2006).<img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/recruitment-growth-stage-app-screen-2.png"
+        alt="App screen 2 – recruitment and growth stage"
+        widteh="991"
+        height="820"
+      />
+    </p>
+    <p>Figure 3. App screen 2 – recruitment and growth stage</p>
+  </li>
+</ul>
+
+<ol start="7" type="1">
+  <li>
+    <p>
+      Complete all the required fields on an individual species basis. Once all
+      fields have been entered, select the ‘<em>Add species’</em> button to add
+      another species.
+    </p>
+  </li>
+  <li>
+    <p>
+      Repeat steps 3-7 until details have been added for each perennial species
+      present (the species list will be defined by the species recorded during
+      the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      module. Data needs to be collected for all tree and shrub species
+      identified during the floristics survey).
+    </p>
+  </li>
+  <li>
+    <p>
+      If required, species information can be updated by selecting the
+      ‘<em>List</em>’ button within the app, which will bring up the
+      <em>Species Overview</em> page. Growth stage, life-stage and recruitment
+      information can be edited for each species on this page by clicking on the
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/condition/button.png"
+        alt="Button"
+        width="20"
+        height="20"
+      />
+      button. The drop-down list will appear when the
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/condition/button.png"
+        alt="Button"
+        width="20"
+        height="20"
+      />
+      button is selected, and stages can be added or removed at this point.
+    </p>
+  </li>
+  <li>
+    <p>
+      Once all growth, life-stage and recruitment data has been added for each
+      species, select <em>Continue</em> to save the data and move to the
+      <em>Sapling and Seedling Counts</em> protocol.
+    </p>
+  </li>
+</ol>
+<h4 id="b.-sapling-and-seedling-counts">B. Sapling and seedling counts</h4>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the <em>Plot selection and layout</em> module has been completed to
+      mark out the plot boundary and grid with very high accuracy using the
+      Trimble R1.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ensure that 5 tapes are set out to define the location of the 5 N/S 100 m
+      belt transects. The transect layout is consistent with the point intercept
+      transects from the <em>Cover</em> module, but only the N/S transects are
+      required.
+    </p>
+  </li>
+</ol>
+<ol start="3" type="1">
+  <li>
+    <p>
+      The belt transects will be defined using the tape measure and the point
+      intercept staff to define a 2 m width. Stand at the start of the transect
+      and hold the staff at the 1 m mark (the survey area will consist of 1 m of
+      each side of the tape). Seedlings and saplings will be counted in the area
+      between the tape measure and the end of the staff/pole (see the Appendix 2
+      for more information about this method).
+    </p>
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/location-belt-transects.png"
+        alt="Location of belt transects used for seedling and sapling counts."
+        widteh="968"
+        height="633"
+      />
+    </p>
+    <p>
+      Figure 4. Location of belt transects used for seedling and sapling counts.
+    </p>
+  </li>
+</ol>
+
+<ol start="4" type="1">
+  <li>
+    <p>
+      Select the transect from the drop-down list (e.g. N/S1, N/S2) to start
+      collecting data. Transects can be surveyed in either direction (i.e. north
+      to south, or south to north).
+    </p>
+  </li>
+  <li>
+    <p>
+      Walk along the transect, ensuring that the staff is held horizontally and
+      in line with the tape measure and systematically record any seedlings or
+      saplings present.
+    </p>
+  </li>
+  <li>
+    <p>
+      For each tree or shrub species present in the belt transect, record a
+      count of all seedlings and saplings encountered. Seedling and sapling
+      numbers can be updated as you move along the transect by selecting the
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/condition/button.png"
+        alt="Button"
+        width="20"
+        height="20"
+      />
+      button.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select ‘<em>Add species’</em> to add any new species observed as you move
+      along the transect (data can only be entered against species (or genus) or
+      field IDs recorded during the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      module). If individuals cannot be identified to species or genus level, or
+      to a field ID, they can be recorded as a generic tree or shrub seedling or
+      sapling.
+    </p>
+  </li>
+  <li>
+    <p>
+      You can update the number of seedlings and saplings for each species as
+      you move along the transect from the
+      <em>Sapling and Seedlings Counts</em> summary page. Counts are increased
+      by 1 by hitting the
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/condition/button.png"
+        alt="Button"
+        width="20"
+        height="20"
+      />
+      button, or for clumps of seedlings or saplings, hold down the
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/condition/button.png"
+        alt="Button"
+        width="20"
+        height="20"
+      />
+      button to bring up a number field, where the number of individuals can be
+      typed in and added to the total.
+    </p>
+  </li>
+  <li>
+    <p>
+      Once all species and counts have been added, select <em>‘Continue’</em> to
+      save the data and return to the main screen.
+    </p>
+  </li>
+  <li><p>Repeat steps 3-8 for the remaining belt transects.</p></li>
+</ol>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/sapling-seedling-counts.png"
+    alt="Sapling and seedling counts – screens 1 and 2"
+    widteh="1016"
+    height="656"
+  />
+</p>
+<p>Figure 5. Sapling and seedling counts – screens 1 and 2</p>
+<h4 id="c.-small-tree-survey">C. Small tree survey</h4>
+<p>
+  The small tree survey is carried out in the same belt transects used for the
+  seedling and sapling counts (Figure 4). To undertake a small tree survey,
+  complete the following steps.
+</p>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the <em>Plot selection and layout</em> module has been completed to
+      mark out the plot boundary and grid with very high accuracy using the
+      Trimble R1.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ensure that 5 tapes are set out to define the location of the 5 N/S 100 m
+      belt transects. The transect layout is consistent with the point intercept
+      transects from the <em>Cover</em> module, but only the N/S transects are
+      required.
+    </p>
+  </li>
+</ol>
+<ol start="3" type="1">
+  <li>
+    <p>
+      The belt transects will be defined using the tape measure and the point
+      intercept staff to define a 2 m width. Stand at the start of the transect
+      and hold the staff at the 1 m mark (the survey area will consist of 1 m of
+      each side of the tape). Small trees will be recorded in the area between
+      the tape measure and each end of the staff/pole (see the Appendix 2 for
+      more information about this method).
+    </p>
+  </li>
+  <li>
+    <p>Select the transect from the drop-down list (e.g. N/S1, N/S2, E/W1).</p>
+  </li>
+  <li>
+    <p>
+      Move along each of the belt transects systematically and search for small
+      trees (DBH &lt;10 cm and height &gt;2 m) within the sampling area (see the
+      supporting information (Appendix 3) for how to determine if a tree is in
+      or out of the belt transect).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the species name or field name if the species ID is unknown (only
+      species recorded as part of the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      module will be available for selection). If the individual cannot be
+      recorded to species name the genus name can be used (i.e.
+      <em>Eucalyptus</em> sp.).
+    </p>
+  </li>
+  <li>
+    <p>
+      Stand as close as possible to the trunk of the individual and hit the
+      <em>Record Location</em> button. Ensure that the R1 is on and has high
+      accuracy.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the tree status as alive, dead or resprouting from the drop-down
+      list. Resprouting trees have a dead trunk, but have coppicing live foliage
+      sprouting from the base or along the stems.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record reproductive life-stage for each individual (Table 3), noting that
+      seedling and saplings cannot be selected as life-stage options here.
+    </p>
+  </li>
+  <li>
+    <p>
+      Use a diameter tape to measure and record the diameter of the tree at 1.3
+      m height, unless the tree is a ‘problem tree’ (see Appendix 4 for
+      procedures to measure problem trees). Use a small tape measure to find the
+      1.3 m mark along the trunk or stem (the point of measurement, POM)).
+    </p>
+  </li>
+  <li>
+    <p>
+      Pull the diameter tape around the tree trunk at the POM so that it is
+      perpendicular to the main axis of the trunk (i.e. not parallel to the
+      ground). Clear any moss, loose bark, or anything that may distort the
+      diameter tape.
+    </p>
+  </li>
+  <li><p>Record the diameter and the POM.</p></li>
+  <li><p>Visually estimate and record the height of the tree.</p></li>
+  <li>
+    <p>
+      Mark the tree at approximately head-height with a bright, soluble marking
+      paint to avoid remeasuring.
+    </p>
+  </li>
+  <li>
+    <p>
+      Repeat steps 6-14 for each eligible tree encountered in the sampling area.
+    </p>
+  </li>
+</ol>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/small-tree-survey.png"
+    alt="App screen – small tree survey"
+    widteh="477"
+    height="979"
+  />
+</p>
+<p>Figure 6. App screen – small tree survey</p>
+    """^^rdf:HTML ;
 .
 
