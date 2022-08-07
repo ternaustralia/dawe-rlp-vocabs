@@ -7,269 +7,46 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/e3ad3e5b-7c1c-4b59-bdb1-297f707d2ca3>
-    a skos:Concept ;
-    dcterms:description """<p>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <p>
   Collection of soil samples to capture variability in the upper soil profile,
   including exposing the profile to a depth of 30 cm at nine locations with
   differing microhabitat (e.g. bare ground, dense litter, sparse vegetation
   cover, dense vegetation cover) within the plot (Figure 1), capturing a
   photographic record of profile, capturing a photographic record of
   microhabitats sampled, identifying the soil horizons, recording if the
-  horizons are atypical relative to the 1 m+ soil pit characterization (and
+  horizons are atypical relative to the 1 m+ soil pit characterisation (and
   noting the differences), collecting soil samples at 0–10, 10–20, and 20–30 cm
   increments, taking care not to sample across horizons, and post-field survey
-  processing and storage of soil samples. Five soil characterization sub-sites
+  processing and storage of soil samples. Five soil characterisation sub-sites
   are located within a 25 x 25 m soil sub-site zone in the southwest corner of
   the plot (Figure 1) for consistency with various national soil research
   programs and monitoring protocols.
-</p>"""^^rdf:HTML ;
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/soil/plot-layout.png"
+    alt="Plot layout"
+    widteh="500"
+    height="600"
+  />
+</p>
+<p>
+  Figure 1. Plot layout showing indicative locations of the soil
+  characterisation pit and nine soil characterisation sub-sites across the plot.
+</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:prefLabel "Soil sub-site samples protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-sub-site-samples-protocol/soil-sub-site-samples-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    <p>
-      Mobile device (tablet/phone capable of taking high resolution photos) with
-      the App (progressive web app) saved to the home screen
-    </p>
-  </li>
-  <li>
-    <p>Large tools (long-handled shovel, spade, mattock, crowbar, axe)</p>
-  </li>
-  <li>
-    <p>
-      Soil auger (Jarrett hand auger 75 mm) with 10 cm depths marked on the
-      handle
-    </p>
-  </li>
-  <li>
-    <p>
-      Small tools (trowel, geo pick, lump hammer, secateurs, wire scrubbing
-      brush, paint brush)
-    </p>
-  </li>
-  <li>
-    <p>Ground sheet and sheet to protect exposed soil face</p>
-  </li>
-  <li>
-    <p>
-      27 large sized zip-lock bags per plot (27 x 33 cm; white block for
-      labelling)
-    </p>
-  </li>
-  <li>
-    <p>
-      Large plastic bag per plot to store individual samples together (ca. 50 x
-      60 cm)
-    </p>
-  </li>
-  <li>
-    <p>Adhesive voucher labels (with barcodes)</p>
-  </li>
-  <li>
-    <p>Pit tape (2 m)</p>
-  </li>
-  <li>
-    <p>Spray bottle with water</p>
-  </li>
-  <li>
-    <p>Towel (for cleaning equipment and hands)</p>
-  </li>
-  <li>
-    <p>Soil sieve (2 mm) and base tray</p>
-  </li>
-  <li>
-    <p>Hand lens (x10 magnification)</p>
-  </li>
-  <li>
-    <p>
-      Trimble® R1 (GNSS receiver with sub-metre accuracy and Bluetooth
-      connectivity)
-    </p>
-  </li>
-  <li>
-    <p>
-      Australian Soil and Land Classification Handbook (Yellow Book; The
-      National Committee on Soil and Terrain 2009)
-    </p>
-  </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
-  <li>
-    <p>
-      Ensure the Plot selection and layout module has been completed to mark out
-      the plot grid with sub- meter accuracy using the Trimble® R1, including
-      the 25 x 25 m soil sub-site zone in the southwest corner of the plot (see
-      Figure 1).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the ‘Soils’ module and then the ‘Soil sub-site samples’ protocol in
-      the App. The App will automatically record the Plot name, based on the
-      established plot you are working in, the Protocol, and the Date.
-    </p>
-  </li>
-  <li>
-    <p>
-      Traverse the plot to familiarize yourself with the soils, terrain and
-      microhabitats.
-    </p>
-  </li>
-  <li>
-    <p>
-      Locate nine 30 cm deep small pits or soil cores in different microhabitats
-      across the plot, the first five within the soil sub-site zone (25 x 25 m
-      zone in the southwest corner) and the remaining four spread across the
-      plot (see <u>Additional guidelines</u>).
-    </p>
-  </li>
-  <li><p>For each soil sub-site, complete steps 6–26.</p></li>
-  <li>
-    <p>
-      Select ‘Record soil sub-site location’. The App will automatically record
-      the Subsite number (Sequentially from 1), Easting, Northing, Zone, Datum
-      and location acquisition Method (i.e., ‘DGPS’).
-    </p>
-  </li>
-  <li>
-    <p>
-      Record who the soil sub-site samples are Collected by from the drop-down
-      list of personnel affiliated with your user login. Your selection will be
-      prefilled for subsequent sub-sites.
-    </p>
-  </li>
-  <li><p>Record the Microhabitat.</p></li>
-  <li>
-    <p>
-      Select the ‘Microhabitat photo' button to capture an image of the
-      microhabitat using your device's camera.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record the Type of soil observation being used (Appendix M). This should
-      be ‘P’ (Soil pit). Refer to pages 205–206 of the YB for further
-      descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Dig a small soil pit to 30 cm deep. Place the spoil on a ground sheet to
-      minimize disturbance and assist backfilling. Record the Depth of the
-      sub-site soil pit.
-    </p>
-  </li>
-  <li>
-    <p>
-      If a depth of 30 cm cannot be achieved after three attempts, record what
-      digging was Stopped by (Appendix N), and sample down to the depth
-      achieved.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess which face of the pit is best for photographing, taking into
-      consideration angle of the sun and shadows. Position the pit tape on the
-      left or right edge of the best face and select the 'Soil pit photo' button
-      to capture an image using your device's camera.
-    </p>
-  </li>
-  <li>
-    <p>
-      Identify the soil horizons in the soil profile. Select the ‘Add soil
-      horizon’ button to record the first soil horizon.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record the Horizon and Horizon suffix using the codes in Appendix O. Refer
-      to pages 148–159 of the YB and the <u>Additional guidelines</u> below for
-      further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record if the horizon is ‘Typical’ or ‘Atypical’ of the 1 m+ soil pit
-      observations. If it is atypical, record Atypicality comments.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record the Depth of the soil horizon in centimeters, including Upper and
-      Lower.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record the Boundary between the horizon being assessed the
-      horizon below, including the Distinctness and Shape of the boundary using
-      the codes in Appendix P. Refer to pages 199–200 of the YB for further
-      descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Prepare a soil sample zip-lock bags for each 10 cm soil depth increment in
-      the horizon that you are collecting a sample from. Use a permanent texta
-      to write the plot code, date of collection, horizon and soil depth
-      increment. Place a barcode label on each sample bag in sequential order.
-    </p>
-  </li>
-  <li>
-    <p>
-      For each 10 cm soil depth increment in the horizon, collect a 500 g soil
-      sample and place into the applicable labelled zip-lock bag, avoiding
-      disruption to any peds or aggregates as much as possible and taking care
-      not to sample across horizons. Use the pit tape to determine the
-      increments.
-    </p>
-  </li>
-  <li>
-    <p>Record the Sample depth in centimeters, including Upper and Lower.</p>
-  </li>
-  <li>
-    <p>
-      Select the 'Scan barcode' button to scan the barcode label on the sample
-      and link the sample to the soil sub-site, horizon and the sample depth.
-    </p>
-  </li>
-  <li>
-    <p>
-      Repeat steps 19–22 for each 10 cm soil depth increment in the horizon that
-      you are collecting a sample from.
-    </p>
-  </li>
-  <li>
-    <p>Repeat steps 14–23 for each soil horizon down to a depth of 30 cm.</p>
-  </li>
-  <li>
-    <p>Record any Additional soil sub-site characterization comments.</p>
-  </li>
-  <li>
-    <p>
-      Select 'Save soil sub-site' to save the sub-site and return to the Soil
-      sub-site characterisation protocol.
-    </p>
-  </li>
-  <li>
-    <p>Repeat steps 6–26 for each soil sub-site.</p>
-  </li>
-  <li><p>Store all samples together in a large plastic bag.</p></li>
-  <li>
-    <p>
-      Select ‘Complete Soil sub-site samples' to save the protocol and return to
-      the Soils module.
-    </p>
-  </li>
-</ol>
-
-<strong><p>Additional guidelines</p></strong>
+    skos:note """
+    <h3 id="additional-guidelines-1">Additional guidelines</h3>
 <p>
   The following points are adapted from The National Committee on Soil and
-  Terrain (2009) and McKenzie et al. (2008).
+  Terrain (2009) and McKenzie <em>et al.</em> (2008).
 </p>
-<p style="color: orange">Locating sub-sites</p>
+<h4 id="locating-sub-sites">A. Locating sub-sites</h4>
 <ul>
   <li>
     <p>
@@ -300,7 +77,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Soil characterisation</p>
+<h4 id="soil-characterisation-1">B. Soil characterisation</h4>
 <ul>
   <li>
     <p>
@@ -381,8 +158,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>
       For efficiency, one field surveyor can locate and begin digging the soil
       sub-sites in different microhabitats while another digs the 1 m+ soil
-      characterisation pit (see
-      <u>Soil pit characterisation<u>protoco</u>l). </u>
+      characterisation pit (see Soil pit characterisation protocol).
     </p>
   </li>
   <li>
@@ -394,7 +170,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Horizons</p>
+<h4 id="horizons-1">C. Horizons</h4>
 <ul>
   <li>
     <p>
@@ -421,13 +197,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Horizon codes and description are listed in Appendix O. Refer to pages
-      148–159 of the Yellow Book for detailed descriptions (The National
-      Committee on Soil and Terrain 2009).
+      Horizon codes and descriptions are listed from the drop-down list. Refer
+      to pages 148–159 of the Yellow Book for detailed descriptions (The
+      National Committee on Soil and Terrain 2009).
     </p>
   </li>
 </ul>
-<p style="color: orange">Soil samples</p>
+<h4 id="soil-samples-1">D. Soil samples</h4>
 <ul>
   <li>
     <p>
@@ -443,6 +219,258 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       bags. If necessary, samples can be sieved in the field using a 2 mm sieve.
     </p>
   </li>
-</ul>"""^^rdf:HTML ;
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Soil sub-site samples protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-sub-site-samples-protocol/soil-sub-site-samples-protocol.ttl"^^xsd:anyURI ;
+    tern:equipment """
+    <h3 id="equipment-2">Equipment</h3>
+<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App<br />
+      (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Large tools (long-handled shovel, spade, mattock, crowbar, axe)</p>
+  </li>
+  <li>
+    <p>
+      Soil auger (Jarrett hand auger 75 mm) with 10 cm depths marked on the
+      handle
+    </p>
+  </li>
+  <li>
+    <p>
+      Small tools (trowel, geo pick, lump hammer, secateurs, wire scrubbing
+      brush, paint brush)
+    </p>
+  </li>
+  <li>
+    <p>Ground sheet and sheet to protect exposed soil face</p>
+  </li>
+  <li>
+    <p>
+      27 large sized zip-lock bags per plot (27 x 33 cm; white block for
+      labelling)
+    </p>
+  </li>
+  <li>
+    <p>
+      Large plastic bag per plot to store individual samples together (ca. 50 x
+      60 cm)
+    </p>
+  </li>
+  <li>
+    <p>Adhesive voucher labels (with barcodes)</p>
+  </li>
+  <li>
+    <p>Pit tape (2 m)</p>
+  </li>
+  <li>
+    <p>Spray bottle with water</p>
+  </li>
+  <li>
+    <p>Towel (for cleaning equipment and hands)</p>
+  </li>
+  <li>
+    <p>Soil sieve (2 mm) and base tray</p>
+  </li>
+  <li>
+    <p>Hand lens (x10 magnification)</p>
+  </li>
+  <li>
+    <p>
+      Trimble® R1 (GNSS receiver with sub-metre accuracy and Bluetooth
+      connectivity)
+    </p>
+  </li>
+  <li>
+    <p>
+      Australian Soil and Land Classification Handbook (Yellow Book; The
+      National Committee on Soil and Terrain 2009)
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures-2">Instructions and procedures</h3>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the <em>Plot selection and layout</em> module has been completed to
+      mark out the plot grid with sub-metre accuracy using the Trimble® R1,
+      including the 25 x 25 m soil sub-site zone in the southwest corner of the
+      plot (see Figure 1).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the ‘Soils’ module and then the ‘Soil sub-site samples’ protocol in
+      the App. The App will automatically record the
+      <em>Plot name</em>, based on the established plot you are working in, the
+      <em>Protocol</em>, and the <em>Date</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Traverse the plot to familiarise yourself with the soils, terrain and
+      microhabitats.
+    </p>
+  </li>
+  <li>
+    <p>
+      Locate nine 30 cm deep small pits or soil cores in different microhabitats
+      across the plot, the first five within the soil sub-site zone (25 x 25 m
+      zone in the southwest corner) and the remaining four spread across the
+      plot (see Additional guidelines below).
+    </p>
+  </li>
+  <li><p>For each soil sub-site, complete steps 6–26.</p></li>
+  <li>
+    <p>
+      Select ‘Record soil sub-site location’. The App will automatically record
+      the <em>Subsite number</em> (sequentially from 1), <em>Easting</em>,
+      <em>Northing</em>, <em>Zone</em>, <em>Datum</em> and location acquisition
+      <em>Method</em> (i.e. ‘DGPS’).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record who the soil sub-site samples are <em>Collected by</em> from the
+      drop-down list of personnel affiliated with your user login. Your
+      selection will be prefilled for subsequent sub-sites.
+    </p>
+  </li>
+  <li>
+    <p>Record the <em>Microhabitat</em>.</p>
+  </li>
+  <li>
+    <p>
+      Select the ‘Microhabitat photo' button to capture an image of the
+      microhabitat using your device's camera.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the Type of soil observation being used (from the drop-down list).
+      This should be ‘P’ (Soil pit). Refer to pages 205–206 of the YB for
+      further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Dig a small soil pit to 30 cm deep. Place the spoil on a ground sheet to
+      minimise disturbance and assist backfilling. Record the
+      <em>Depth</em> of the sub-site soil pit.
+    </p>
+  </li>
+  <li>
+    <p>
+      If a depth of 30 cm cannot be achieved after three attempts, record what
+      digging was <em>Stopped by</em> (from the drop-down list), and sample down
+      to the depth achieved.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess which face of the pit is best for photographing, taking into
+      consideration angle of the sun and shadows. Position the pit tape on the
+      left or right edge of the best face and select the 'Soil pit photo' button
+      to capture an image using your device's camera.
+    </p>
+  </li>
+  <li>
+    <p>
+      Identify the soil horizons in the soil profile. Select the ‘Add soil
+      horizon’ button to record the first soil horizon.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the <em>Horizon</em> and <em>Horizon suffix</em> using the codes
+      from the drop-down list. Refer to pages 148–159 of the YB and the
+      Additional guidelines below for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record if the horizon is ‘Typical’ or ‘Atypical’ of the 1 m+ soil pit
+      observations. If it is atypical, record <em>Atypicality comments</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the <em>Depth</em> of the soil horizon in centimeters, including
+      <em>Upper</em> and <em>Lower</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record the <em>Boundary</em> between the horizon being assessed
+      the horizon below, including the <em>Distinctness</em> and
+      <em>Shape</em> of the boundary using the codes from the drop-down list.
+      Refer to pages 199–200 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Prepare a soil sample zip-lock bags for each 10 cm soil depth increment in
+      the horizon that you are collecting a sample from. Use a permanent texta
+      to write the plot code, date of collection, horizon and soil depth
+      increment. Place a barcode label on each sample bag in sequential order.
+    </p>
+  </li>
+  <li>
+    <p>
+      For each 10 cm soil depth increment in the horizon, collect a 500 g soil
+      sample and place into the applicable labelled zip-lock bag, avoiding
+      disruption to any peds or aggregates as much as possible and taking care
+      not to sample across horizons. Use the pit tape to determine the
+      increments.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the <em>Sample depth</em> in centimeters, including
+      <em>Upper</em> and <em>Lower</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the 'Scan barcode' button to scan the barcode label on the sample
+      and link the sample to the soil sub-site, horizon and the sample depth.
+    </p>
+  </li>
+  <li>
+    <p>
+      Repeat steps 19–22 for each 10 cm soil depth increment in the horizon that
+      you are collecting a sample from.
+    </p>
+  </li>
+  <li>
+    <p>Repeat steps 14–23 for each soil horizon down to a depth of 30 cm.</p>
+  </li>
+  <li>
+    <p>Record any Additional soil sub-site characterisation comments.</p>
+  </li>
+  <li>
+    <p>
+      Select 'Save soil sub-site' to save the sub-site and return to the
+      <em>Soil sub-site characterisation</em> protocol.
+    </p>
+  </li>
+  <li><p>Repeat steps 6–26 for each soil sub-site.</p></li>
+  <li><p>Store all samples together in a large plastic bag.</p></li>
+  <li>
+    <p>
+      Select ‘Complete Soil sub-site samples' to save the protocol and return to
+      the <em>Soils</em> module.
+    </p>
+  </li>
+</ol>
+    """^^rdf:HTML ;
 .
 

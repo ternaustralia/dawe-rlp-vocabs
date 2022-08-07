@@ -7,20 +7,1489 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/7818e122-6354-42e0-aeff-32dbab7baae4>
-    a skos:Concept ;
-    dcterms:description """<p>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <p>
   Describes important aspects of the soil surface within the plot in accordance
-  with the Australian Soil and Land Survey Handbook (The National Committee on
-  Soil and Terrain 2009), including plot identification and location details,
-  slope, landform element and pattern, erosion, microrelief, drainage,
-  disturbance, and soil surface condition (when dry). Critical to describe,
-  measure and sample the soil profile, and assign an Australian Soil
+  with the <em>Australian Soil and Land Survey Handbook</em> (The National
+  Committee on Soil and Terrain 2009), including plot identification and
+  location details, slope, landform element and pattern, erosion, microrelief,
+  drainage, disturbance, and soil surface condition (when dry). Critical to
+  describe, measure and sample the soil profile, and assign an Australian Soil
   Classification.
-</p>"""^^rdf:HTML ;
+</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Plot soil description protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/plot-soil-description-protocol/plot-soil-description-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4>Appendix A. Slope descriptions and codes</h4>
+<p>
+  <em>(YB p. 18–19; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Slope details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4"><strong>Means of evaluation</strong></th>
+      <th><strong>T</strong></th>
+      <th>Tripod-mounted instrument and staff</th>
+    </tr>
+    <tr class="header">
+      <th><strong>A</strong></th>
+      <th>Abney level or clinometer and tape</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>P</strong></th>
+      <th>Contour plan at 1:10,000 or larger scale</th>
+    </tr>
+    <tr class="header">
+      <th><strong>E</strong></th>
+      <th>Estimate</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="8"><strong>Slope class</strong></th>
+      <th><strong>LE</strong></th>
+      <th>Level (&lt;1%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VG</strong></th>
+      <th>Very gently inclined (1–3%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GE</strong></th>
+      <th>Gently inclined (3–10%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MO</strong></th>
+      <th>Moderately inclined (10–32%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ST</strong></th>
+      <th>Steep (32–56%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VS</strong></th>
+      <th>Very steep (56–100%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PR</strong></th>
+      <th>Precipitous (&gt;100%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CL</strong></th>
+      <th>Cliff (&gt;100%)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="10"><strong>Morphological type</strong></th>
+      <th><strong>C</strong></th>
+      <th>Crest</th>
+    </tr>
+    <tr class="header">
+      <th><strong>H</strong></th>
+      <th>Hillock</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Ridge</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Simple slope</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>U</strong></th>
+      <th>Upper slope</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Mid-slope</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Lower slope</th>
+    </tr>
+    <tr class="header">
+      <th><strong>F</strong></th>
+      <th>Flat</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>V</strong></th>
+      <th>Open depression (vale)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>D</strong></th>
+      <th>Closed depression</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4">
+        <strong>Relative inclination of slope elements</strong>
+      </th>
+      <th><strong>X</strong></th>
+      <th>Waxing</th>
+    </tr>
+    <tr class="header">
+      <th><strong>N</strong></th>
+      <th>Waning</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>M</strong></th>
+      <th>Maximal</th>
+    </tr>
+    <tr class="header">
+      <th><strong>I</strong></th>
+      <th>Minimal</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix D. Erosion descriptions and codes</h4>
+<p>
+  <em>(YB p. 133–138; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table style="width: 100%">
+  <colgroup>
+    <col style="width: 18%" />
+    <col style="width: 18%" />
+    <col style="width: 9%" />
+    <col style="width: 52%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th colspan="2"><strong>Erosion details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="43"><strong>Type of erosion</strong></th>
+      <th rowspan="7"><strong>Wind</strong></th>
+      <th><strong>W</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No wind erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Minor or present</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Moderate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Severe</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Very severe</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Scald</strong></th>
+      <th><strong>C</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No scalding</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Minor scalding (&lt;5%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Moderate scalding (5–50%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Severe scalding (&gt;50%)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6"><strong>Water – sheet</strong></th>
+      <th><strong>S</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No sheet erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Minor</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Moderate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Severe</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>Water – rill</strong></th>
+      <th><strong>R</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>0</strong></th>
+      <th>No rill erosion</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>1</strong></th>
+      <th>Minor</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Moderate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Severe</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Water – gully</strong></th>
+      <th><strong>G</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No gully erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Minor</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Moderate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Severe</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4"><strong>Water – tunnel</strong></th>
+      <th><strong>T</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No tunnel erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Present</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4"><strong>Water – stream bank</strong></th>
+      <th><strong>B</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No stream bank erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Present</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4"><strong>Water – wave</strong></th>
+      <th><strong>W</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No wave erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Present</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="3"><strong>Mass movement</strong></th>
+      <th><strong>M</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>0</strong></th>
+      <th>No mass movement</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>1</strong></th>
+      <th>Present</th>
+    </tr>
+    <tr class="header">
+      <th colspan="2" rowspan="3"><strong>State of erosion</strong></th>
+      <th><strong>A</strong></th>
+      <th>Active</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Stabilised</th>
+    </tr>
+    <tr class="header">
+      <th><strong>P</strong></th>
+      <th>Partly stabilised</th>
+    </tr>
+    <tr class="odd">
+      <th colspan="2" rowspan="3">
+        <strong>Gully depth (if gully selected)</strong>
+      </th>
+      <th><strong>1</strong></th>
+      <th>&lt;1.5 m</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>1.5–3.0 m</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>&gt;3.0 m</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix E. Microrelief descriptions and codes</h4>
+<p>
+  <em>(YB p. 129–133; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table style="width: 100%">
+  <colgroup>
+    <col style="width: 18%" />
+    <col style="width: 18%" />
+    <col style="width: 9%" />
+    <col style="width: 52%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th colspan="2"><strong>Microrelief details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="19"><strong>Type</strong></th>
+      <th><strong>No microrelief</strong></th>
+      <th><strong>Z</strong></th>
+      <th>Zero or no microrelief</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="6"><strong>Gilgai</strong></th>
+      <th><strong>C</strong></th>
+      <th>Crabhole gilgai</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>N</strong></th>
+      <th>Normal gilgai</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Linear gilgai</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>A</strong></th>
+      <th>Lattice gilgai</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Melonhole gilgai</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>G</strong></th>
+      <th>Contour gilgai</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Hummocky</strong></th>
+      <th><strong>D</strong></th>
+      <th>Debil-debil</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>W</strong></th>
+      <th>Swamp hummock</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Biotic</strong></th>
+      <th><strong>B</strong></th>
+      <th>Biotic</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="9"><strong>Other</strong></th>
+      <th><strong>U</strong></th>
+      <th>Mound/depression</th>
+    </tr>
+    <tr class="header">
+      <th><strong>K</strong></th>
+      <th>Karst microrelief</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>I</strong></th>
+      <th>Sinkhole</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Mass movement</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Terracettes</th>
+    </tr>
+    <tr class="header">
+      <th><strong>T</strong></th>
+      <th>Contour trench</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>P</strong></th>
+      <th>Spring mound</th>
+    </tr>
+    <tr class="header">
+      <th><strong>H</strong></th>
+      <th>Spring hollow</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>O</strong></th>
+      <th>Other (see site notes)</th>
+    </tr>
+    <tr class="header">
+      <th colspan="2" rowspan="4">
+        <strong>Proportion (of gilgai components)</strong>
+      </th>
+      <th><strong>A</strong></th>
+      <th>Equal mounds and depressions; no shelf present</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>B</strong></th>
+      <th>More mounds than depressions; no shelf present</th>
+    </tr>
+    <tr class="header">
+      <th><strong>C</strong></th>
+      <th>Fewer mounds than depressions; no shelf present</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>D</strong></th>
+      <th>
+        Mound, shelf and depressions; shelf forms prominent part of gilgai
+      </th>
+    </tr>
+    <tr class="header">
+      <th colspan="2" rowspan="7">
+        <strong>Agent (of biotic relief)</strong>
+      </th>
+      <th><strong>N</strong></th>
+      <th>Animal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>M</strong></th>
+      <th>Man</th>
+    </tr>
+    <tr class="header">
+      <th><strong>B</strong></th>
+      <th>Bird</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>T</strong></th>
+      <th>Termite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>A</strong></th>
+      <th>Ant</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>V</strong></th>
+      <th>Vegetation</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Other</th>
+    </tr>
+    <tr class="odd">
+      <th colspan="2" rowspan="7">
+        <strong>Component (of microrelief sampled)</strong>
+      </th>
+      <th><strong>M</strong></th>
+      <th>Mound</th>
+    </tr>
+    <tr class="header">
+      <th><strong>E</strong></th>
+      <th>Elongate mound</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>D</strong></th>
+      <th>Depression</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Elongate depression</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Shelf</th>
+    </tr>
+    <tr class="header">
+      <th><strong>H</strong></th>
+      <th>Hummock</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>F</strong></th>
+      <th>Flat</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix H. Drainage descriptions and codes</h4>
+<p>
+  <em>(YB p. 202–204; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6">
+        <strong>Drainage likely to occur in most years</strong>
+      </th>
+      <th><strong>1</strong></th>
+      <th>Very poor</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Poor</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Imperfect</th>
+    </tr>
+    <tr class="header">
+      <th><strong>4</strong></th>
+      <th>Moderately well</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>5</strong></th>
+      <th>Well</th>
+    </tr>
+    <tr class="header">
+      <th><strong>6</strong></th>
+      <th>Rapidly</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix J. Surface coarse fragments descriptions and codes</h4>
+<p>
+  <em
+    >(139–144, 209 and 214; The National Committee on Soil and Terrain
+    2009).</em
+  >
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Surface coarse fragments details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="7"><strong>Abundance</strong></th>
+      <th><strong>0</strong></th>
+      <th>No coarse fragments</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Very slight or few &lt;2%</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Slight or few &lt;2%</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Common e.g. Medium gravel, stony, common medium pebbles 10-20%</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Moderate or many 20-50%</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Abundant 50-90%</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>6</strong></th>
+      <th>Extremely abundance &gt;90%</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="7"><strong>Size</strong></th>
+      <th><strong>1</strong></th>
+      <th>Fine gravelly or small pebbles 2-6 mm</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Medium gravelly or medium pebbles 6-20 mm</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Coarse gravelly or coarse pebbles 20-60 mm</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Cobbly or cobbles 60-200 mm</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Stony or stones 200-600 mm</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>6</strong></th>
+      <th>Bouldery or boulders 600-2000 mm</th>
+    </tr>
+    <tr class="header">
+      <th><strong>7</strong></th>
+      <th>Large boulders &gt;2000 mm</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="12"><strong>Shape</strong></th>
+      <th><strong>A</strong></th>
+      <th>Angular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Sub-angular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>U</strong></th>
+      <th>Sub-rounded</th>
+    </tr>
+    <tr class="header">
+      <th><strong>R</strong></th>
+      <th>Rounded</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AT</strong></th>
+      <th>Angular tabular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ST</strong></th>
+      <th>Sub-angular tabular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>UT</strong></th>
+      <th>Sub-rounded tabular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RT</strong></th>
+      <th>Rounded tabular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AP</strong></th>
+      <th>Angular platy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SP</strong></th>
+      <th>Sub-angular platy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>UP</strong></th>
+      <th>Sub rounded platy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RP</strong></th>
+      <th>Rounded platy</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="19"><strong>Lithology</strong></th>
+      <th><strong>AD</strong></th>
+      <th>Adamellite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AG</strong></th>
+      <th>Agglomerate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AC</strong></th>
+      <th>Alcrete (bauxite)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AM</strong></th>
+      <th>Amphibolite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AN</strong></th>
+      <th>Andesite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AH</strong></th>
+      <th>Anhydrite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AP</strong></th>
+      <th>Aplite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AR</strong></th>
+      <th>Arkose</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BA</strong></th>
+      <th>Basalt</th>
+    </tr>
+    <tr class="header">
+      <th><strong>BB</strong></th>
+      <th>Bombs (volcanic)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BR</strong></th>
+      <th>Breccia</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KA</strong></th>
+      <th>Calcarenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KM</strong></th>
+      <th>Calcareous mudstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KL</strong></th>
+      <th>Calcilutite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KR</strong></th>
+      <th>Calcirudite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KC</strong></th>
+      <th>Calcrete</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CH</strong></th>
+      <th>Chert</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CO</strong></th>
+      <th>Coal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CG</strong></th>
+      <th>Conglomerate</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="48"><strong>Lithology</strong></th>
+      <th><strong>CU</strong></th>
+      <th>Consolidated rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SD</strong></th>
+      <th>Detrital sedimentary rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DI</strong></th>
+      <th>Diorite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>DR</strong></th>
+      <th>Dolerite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DM</strong></th>
+      <th>Dolomite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>FC</strong></th>
+      <th>Ferricrete</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GA</strong></th>
+      <th>Gabbro</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GS</strong></th>
+      <th>Gneiss</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GN</strong></th>
+      <th>Granite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GD</strong></th>
+      <th>Granodiorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GR</strong></th>
+      <th>Granulite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GV</strong></th>
+      <th>Gravel</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GW</strong></th>
+      <th>Graywacke</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GE</strong></th>
+      <th>Greenstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GY</strong></th>
+      <th>Gypsum</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>HA</strong></th>
+      <th>Halite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>HO</strong></th>
+      <th>Hornfels</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>IG</strong></th>
+      <th>Igneous rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>JA</strong></th>
+      <th>Jasper</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>LI</strong></th>
+      <th>Limestone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MB</strong></th>
+      <th>Marble</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ML</strong></th>
+      <th>Marl</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ME</strong></th>
+      <th>Metamorphic rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MD</strong></th>
+      <th>Microdiorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MG</strong></th>
+      <th>Microgranite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MS</strong></th>
+      <th>Microsyenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MI</strong></th>
+      <th>Migmatite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MU</strong></th>
+      <th>Mudstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MY</strong></th>
+      <th>Mylonite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PG</strong></th>
+      <th>Pegmatite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PE</strong></th>
+      <th>Peridotite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PL</strong></th>
+      <th>Phonolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PH</strong></th>
+      <th>Phyllite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PC</strong></th>
+      <th>Porcellanite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PO</strong></th>
+      <th>Porphyry</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PY</strong></th>
+      <th>Pyroxenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QZ</strong></th>
+      <th>Quartz</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QU</strong></th>
+      <th>Quartzite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QP</strong></th>
+      <th>Quartz porphyry</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QS</strong></th>
+      <th>Quartz sandstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RB</strong></th>
+      <th>Red-brown hardpan</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RH</strong></th>
+      <th>Rhyolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SA</strong></th>
+      <th>Sandstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ST</strong></th>
+      <th>Schist</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SK</strong></th>
+      <th>Scoria</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SR</strong></th>
+      <th>Serpentinite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SH</strong></th>
+      <th>Shale</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>LC</strong></th>
+      <th>Silcrete</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="14"><strong>Lithology</strong></th>
+      <th><strong>ZS</strong></th>
+      <th>Siltstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SL</strong></th>
+      <th>Slate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SY</strong></th>
+      <th>Syenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>TR</strong></th>
+      <th>Trachyte</th>
+    </tr>
+    <tr class="header">
+      <th><strong>TU</strong></th>
+      <th>Tuff</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>UC</strong></th>
+      <th>Unconsolidated material (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VB</strong></th>
+      <th>Volcanic breccia</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>VG</strong></th>
+      <th>Volcanic glass</th>
+    </tr>
+    <tr class="header">
+      <th><strong>IS</strong></th>
+      <th>Ironstone (where not considered of pedogenic origin)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SS</strong></th>
+      <th>Shells</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CC</strong></th>
+      <th>Charcoal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PU</strong></th>
+      <th>Pumice</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OW</strong></th>
+      <th>Opalised wood</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OT</strong></th>
+      <th>Other</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Strength</strong></th>
+      <th><strong>VW</strong></th>
+      <th>Very weak rock (1–25 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>W</strong></th>
+      <th>Weak rock (25–50 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Moderately strong rock (50–100 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Strong rock (100–200 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VS</strong></th>
+      <th>Very strong rock (&gt;200 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>Alteration</strong></th>
+      <th><strong>F</strong></th>
+      <th>Ferruginised</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Kaolinised</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Silicified</th>
+    </tr>
+    <tr class="header">
+      <th><strong>C</strong></th>
+      <th>Calcified</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>O</strong></th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix K. Rock outcrop descriptions and codes</h4>
+<p>
+  <em
+    >(YB p. 143–144, 214; The National Committee on Soil and Terrain 2009).</em
+  >
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Rock outcrop details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6"><strong>Abundance</strong></th>
+      <th><strong>0</strong></th>
+      <th>No rock outcrop (no bedrock exposed)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Very slightly rocky (&lt;2% bedrock exposed)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Slightly rocky (2–10% bedrock exposed)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Rocky (10–20% bedrock exposed)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Very rocky (20–50% bedrock exposed)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Rockland (&gt;50% bedrock exposed)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="47"><strong>Lithology</strong></th>
+      <th><strong>AD</strong></th>
+      <th>Adamellite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AG</strong></th>
+      <th>Agglomerate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AC</strong></th>
+      <th>Alcrete (bauxite)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AM</strong></th>
+      <th>Amphibolite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AN</strong></th>
+      <th>Andesite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AH</strong></th>
+      <th>Anhydrite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AP</strong></th>
+      <th>Aplite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AR</strong></th>
+      <th>Arkose</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BA</strong></th>
+      <th>Basalt</th>
+    </tr>
+    <tr class="header">
+      <th><strong>BB</strong></th>
+      <th>Bombs (volcanic)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BR</strong></th>
+      <th>Breccia</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KA</strong></th>
+      <th>Calcarenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KM</strong></th>
+      <th>Calcareous mudstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KL</strong></th>
+      <th>Calcilutite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KR</strong></th>
+      <th>Calcirudite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KC</strong></th>
+      <th>Calcrete</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CH</strong></th>
+      <th>Chert</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CO</strong></th>
+      <th>Coal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CG</strong></th>
+      <th>Conglomerate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CU</strong></th>
+      <th>Consolidated rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SD</strong></th>
+      <th>Detrital sedimentary rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DI</strong></th>
+      <th>Diorite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>DR</strong></th>
+      <th>Dolerite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DM</strong></th>
+      <th>Dolomite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>FC</strong></th>
+      <th>Ferricrete</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GA</strong></th>
+      <th>Gabbro</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GS</strong></th>
+      <th>Gneiss</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GN</strong></th>
+      <th>Granite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GD</strong></th>
+      <th>Granodiorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GR</strong></th>
+      <th>Granulite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GV</strong></th>
+      <th>Gravel</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GW</strong></th>
+      <th>Graywacke</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GE</strong></th>
+      <th>Greenstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GY</strong></th>
+      <th>Gypsum</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>HA</strong></th>
+      <th>Halite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>HO</strong></th>
+      <th>Hornfels</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>IG</strong></th>
+      <th>Igneous rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>JA</strong></th>
+      <th>Jasper</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>LI</strong></th>
+      <th>Limestone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MB</strong></th>
+      <th>Marble</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ML</strong></th>
+      <th>Marl</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ME</strong></th>
+      <th>Metamorphic rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MD</strong></th>
+      <th>Microdiorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MG</strong></th>
+      <th>Microgranite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MS</strong></th>
+      <th>Microsyenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MI</strong></th>
+      <th>Migmatite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MU</strong></th>
+      <th>Mudstone</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="34"><strong>Lithology</strong></th>
+      <th><strong>MY</strong></th>
+      <th>Mylonite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PG</strong></th>
+      <th>Pegmatite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PE</strong></th>
+      <th>Peridotite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PL</strong></th>
+      <th>Phonolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PH</strong></th>
+      <th>Phyllite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PC</strong></th>
+      <th>Porcellanite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PO</strong></th>
+      <th>Porphyry</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PY</strong></th>
+      <th>Pyroxenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QZ</strong></th>
+      <th>Quartz</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QU</strong></th>
+      <th>Quartzite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QP</strong></th>
+      <th>Quartz porphyry</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QS</strong></th>
+      <th>Quartz sandstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RB</strong></th>
+      <th>Red-brown hardpan</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RH</strong></th>
+      <th>Rhyolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SA</strong></th>
+      <th>Sandstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ST</strong></th>
+      <th>Schist</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SK</strong></th>
+      <th>Scoria</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SR</strong></th>
+      <th>Serpentinite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SH</strong></th>
+      <th>Shale</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>LC</strong></th>
+      <th>Silcrete</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ZS</strong></th>
+      <th>Siltstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SL</strong></th>
+      <th>Slate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SY</strong></th>
+      <th>Syenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>TR</strong></th>
+      <th>Trachyte</th>
+    </tr>
+    <tr class="header">
+      <th><strong>TU</strong></th>
+      <th>Tuff</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>UC</strong></th>
+      <th>Unconsolidated material (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VB</strong></th>
+      <th>Volcanic breccia</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>VG</strong></th>
+      <th>Volcanic glass</th>
+    </tr>
+    <tr class="header">
+      <th><strong>IS</strong></th>
+      <th>Ironstone (where not considered of pedogenic origin)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SS</strong></th>
+      <th>Shells</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CC</strong></th>
+      <th>Charcoal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PU</strong></th>
+      <th>Pumice</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OW</strong></th>
+      <th>Opalised wood</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OT</strong></th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
   <li>
     <p>
       Mobile device (tablet/phone capable of taking high resolution photos) with
@@ -29,7 +1498,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Trimble® R1 (GNSS receiver with sub-meter accuracy and Bluetooth
+      Trimble® R1 (GNSS receiver with sub-metre accuracy and Bluetooth
       connectivity)
     </p>
   </li>
@@ -39,155 +1508,169 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       Committee on Soil and Terrain 2009)
     </p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
   <li>
     <p>
-      Ensure the Plot selection and layout module has been completed to mark out
-      the plot grid with sub- meter accuracy using the Trimble® R1.
+      Ensure the <em>Plot selection and layout</em> module has been completed to
+      mark out the plot grid with sub-metre accuracy using the Trimble® R1.
     </p>
   </li>
+</ol>
+<ol start="2" type="1">
   <li>
     <p>
       Select the ‘Soils’ module and then the ‘Plot soil description’ protocol in
-      the App. The App will automatically record the Plot name, based on the
-      established plot you are working in, the Protocol, and the Date. Check all
-      these details to ensure they are correct, and manually update if
-      necessary.
+      the App. The App will automatically record the
+      <em>Plot name</em>, based on the established plot you are working in, the
+      <em>Protocol</em>, and the <em>Date</em>. Check all these details to
+      ensure they are correct, and manually update if necessary.
     </p>
   </li>
   <li>
     <p>
-      Record who the plot soil description is Described by from the drop-down
-      list of personnel affiliated with your user login.
+      Record who the plot soil description is <em>Described by</em> from the
+      drop-down list of personnel affiliated with your user login.
     </p>
   </li>
   <li>
     <p>
-      Record the Agency from the drop-down list of agencies affiliated with your
-      user login.
-    </p>
-  </li>
-  <li><p>Record the State from the drop-down list.</p></li>
-  <li>
-    <p>
-      Record a brief Location description (i.e., a general description to assist
-      with plot re-location using distances and direction to landmarks).
+      Record the <em>Agency</em> from the drop-down list of agencies affiliated
+      with your user login.
     </p>
   </li>
   <li>
+    <p>Record the <em>State</em> from the drop-down list.</p>
+  </li>
+  <li>
     <p>
-      Select ‘Locate SW corner’ to launch the mapping interface and located the
-      southwest corner of the plot with sub-meter accuracy using the Trimble®
+      Record a brief <em>Location description</em> (i.e. a general description
+      to assist with plot re-location using distances and direction to
+      landmarks).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select ‘Locate SW corner’ to launch the mapping interface and locate the
+      southwest corner of the plot with sub-metre accuracy using the Trimble®
       R1.
     </p>
   </li>
   <li>
     <p>
       Select ‘Add SW corner location’. The App will automatically record the
-      Easting, Northing, Zone, Datum and location acquisition Method (i.e.,
-      ‘DGPS’) based on the spatial data collected in the Plot selection and
-      layout module.
+      <em>Easting</em>, <em>Northing</em>, <em>Zone</em>, <em>Datum</em> and
+      location acquisition <em>Method</em> (i.e. ‘DGPS’) based on the spatial
+      data collected in the <em>Plot selection and layout</em> module.
     </p>
   </li>
   <li>
-    <p>Traverse the plot to familiarize yourself with the soils and terrain.</p>
+    <p>Traverse the plot to familiarise yourself with the soils and terrain.</p>
   </li>
   <li>
     <p>
-      Assess and record the Slope, including the Percent of slope tangent using
-      up to three significant figures (e.g., 1%, 2.45%, 9%, 12.5%, 115%), the
-      Aspect (degrees from north (360°); 0° = no slope), and the means of
-      Evaluation, Class, Morphological type and Inclination using the codes in
-      Yellow book. The Class of slope can help determine Landform pattern (see
-      step 11 below). Refer to pages 18–26 and 127 of the YB for further
+      Assess and record the <em>Slope</em>, including the <em>Percent</em> of
+      slope tangent using up to three significant figures (e.g. 1%, 2.45%, 9%,
+      12.5%, 115%), the <em>Aspect</em> (degrees from north (360°); 0° = no
+      slope), and the means of <em>Evaluation</em>, <em>Class</em>,
+      <em>Morphological type</em> and <em>Inclination</em> using the codes in
+      Appendix A. The <em>Class</em> of slope can help determine
+      <em>Landform pattern</em> (see step 11 below). Refer to pages 18–26 and
+      127 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Landform pattern</em>, include <em>Pattern</em>,
+      <em>Relief</em> and <em>Modal slope</em> using the codes from the
+      drop-down list. Refer to pages 47 and 55–72 of the YB for further
       descriptions.
     </p>
   </li>
   <li>
     <p>
-      Assess and record Landform pattern, include Pattern, Relief and Modal
-      slope using the codes in YB. Refer to pages 47 and 55–72 of the YB for
+      Assess and record <em>Landform elements</em> using the codes from the
+      drop-down list. Refer to pages 31–44 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Erosion</em> (accelerated or induced erosion rather
+      than natural erosion), including the <em>Type</em>, <em>State</em> and
+      <em>Degree</em> of erosion using the codes in Appendix D. Refer to pages
+      133–138 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Microrelief</em> (relief up to a few metres above
+      the plane of the land surface), including the <em>Type</em>,
+      <em>Proportion</em> (of gilgai components if relevant), <em>Agent</em> (of
+      biotic relief if relevant), and <em>Component</em> of relief using the
+      codes in Appendix E. Record the <em>Vertical interval</em> and
+      <em>Horizontal interval</em> in metres. Record multiple if present. Refer
+      to pages 129–133 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Runoff</em> using the codes from the drop-down list.
+      Refer to pages 144–145 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Permeability</em> using the codes from the drop-down
+      list. Refer to pages 200–202 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Drainage</em> (that would likely occur in most
+      years) using the codes in Appendix H. Refer to pages 202–204 of the YB for
       further descriptions.
     </p>
   </li>
   <li>
     <p>
-      Assess and record Landform element. Refer to pages 31–44 of the YB for
+      Assess and record <em>Disturbance</em> using the codes from the drop-down
+      list. Refer to page 128 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Surface coarse fragments</em>, including their
+      <em>Abundance</em>, <em>Size</em>, <em>Shape</em>, <em>Lithology</em>,
+      <em>Strength</em> and <em>Alteration</em> using the codes in Appendix J.
+      Record multiple if present. Refer to pages 139–144, 209 and 214 of the YB
+      for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record the abundance of <em>Rock outcrop</em>, including the
+      <em>Abundance</em> and <em>Lithology</em> using the codes in Appendix K.
+      Refer to pages 143–144 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record the <em>Soil surface condition</em> (when dry) using the
+      codes from the drop-down list. Refer to pages 189–191 of the YB for
       further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Erosion (accelerated or induced erosion rather than
-      natural erosion), including the Type, State and Degree of erosion using
-      the codes in Appendix D. Refer to pages 133–138 of the YB for further
-      descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Microrelief (relief up to a few meters above the plane
-      of the land surface), including the Type, Proportion (of gilgai components
-      if relevant), Agent (of biotic relief if relevant), and Component of
-      relief using the codes in Appendix E. Record the Vertical interval and
-      Horizontal interval in meters. Record multiple if present. Refer to pages
-      129–133 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Runoff using the codes in Appendix F. Refer to pages
-      144–145 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Permeability using the codes in Appendix G. Refer to
-      pages 200–202 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Drainage (that would likely occur in most years) using
-      the codes in Appendix H. Refer to pages 202–204 of the YB for further
-      descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Disturbance using the codes in Appendix I. Refer to page
-      128 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Surface coarse fragments, including their Abundance,
-      Size, Shape, Lithology, Strength and Alteration using the codes in
-      Appendix J. Record multiple if present. Refer to pages 139– 144, 209 and
-      214 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record the abundance of Rock outcrop, including the Abundance
-      and Lithology using the codes in Appendix K. Refer to pages 143–144 of the
-      YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record the Soil surface condition (when dry) using the codes in
-      Appendix L. Refer to pages 189–191 of the YB for further descriptions.
     </p>
   </li>
   <li><p>Record any Additional plot description comments.</p></li>
   <li>
     <p>
       Select ‘Complete Plot soil description’ to save the protocol and return to
-      the Soils module.
+      the <em>Soils</em> module.
     </p>
   </li>
-</ol>"""^^rdf:HTML ;
+</ol>
+    """^^rdf:HTML ;
 .
 

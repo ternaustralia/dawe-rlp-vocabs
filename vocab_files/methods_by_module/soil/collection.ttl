@@ -3,199 +3,135 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95>
-    a skos:Collection ;
-    dcterms:description """<p>
-  The Soils module covers the procedures and guidelines of six field protocols
-  (summarized in Table 2). This includes a plot soil description protocol, two
-  soil profile protocols, a soil bulk density protocol, a rapid soil sampling
-  protocol aimed at conservation practitioners that need to undertake soil
-  chemistry monitoring, and a soil metagenomics protocol.
-</p>
-<p style="color: blue">
-  The six protocols of the Soils module, including details, application,
-  sampling location, type of sampling, and approximate survey time for each
-  protocol
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
+    dcterms:description """
+    <h3 id="module-overview">Module overview</h3>
+<p>
+  The <em>Soils</em> module covers the procedures and guidelines of six field
+  protocols (summarised in Table 2). This includes a plot soil description
+  protocol, two soil profile protocols, a soil bulk density protocol, a rapid
+  soil sampling protocol aimed at conservation practitioners that need to
+  undertake soil chemistry monitoring, and a soil metagenomics protocol (Table
+  2).
 </p>
 <p>
-  (Sparrow et al. 2020). Sampling locations are illustrated inFigure 1and Figure
-  2.
+  Table 2. The six protocols of the <em>Soils</em> module, including details,
+  application, sampling location, type of sampling, and approximate survey time
+  for each protocol
+</p>
+<p>
+  <em
+    >(Sparrow et al. 2020). Sampling locations are illustrated in Figure 1 and
+    Figure 2.</em
+  >
 </p>
 <table>
+  <colgroup>
+    <col style="width: 14%" />
+    <col style="width: 26%" />
+    <col style="width: 26%" />
+    <col style="width: 10%" />
+    <col style="width: 10%" />
+    <col style="width: 10%" />
+  </colgroup>
   <thead>
-    <tr>
-      <td>
-        <p>Protocol</p>
-      </td>
-      <td>
-        <p>Details</p>
-      </td>
-      <td>
-        <p>Application</p>
-      </td>
-      <td>
-        <p>Sampling location</p>
-      </td>
-      <td>
-        <p>Type of sampling</p>
-      </td>
-      <td>
-        <p>Time (mins)</p>
-      </td>
+    <tr class="header">
+      <th><strong>Protocol</strong></th>
+      <th><strong>Details</strong></th>
+      <th><strong>Application</strong></th>
+      <th><strong>Sampling location</strong></th>
+      <th><strong>Type of sampling</strong></th>
+      <th><strong>Time (mins)</strong></th>
     </tr>
-    <tr>
-      <td>
-        <p>Plot soil description</p>
-      </td>
-      <td>
-        <p>
-          Records location, erosion, microrelief, drainage, disturbance and soil
-          surface condition when dry
-        </p>
-      </td>
-      <td>
-        <p>Assessment of characteristics/impacts of disturbance</p>
-      </td>
-      <td>
-        <p>Plot</p>
-      </td>
-      <td>
-        <p>n/a</p>
-      </td>
-      <td>
-        <p>10</p>
-      </td>
+    <tr class="odd">
+      <th>Plot soil description</th>
+      <th>
+        Records location, erosion, microrelief, drainage, disturbance and soil
+        surface condition when dry
+      </th>
+      <th>Assessment of characteristics/impacts of disturbance</th>
+      <th>Plot</th>
+      <th>n/a</th>
+      <th>10</th>
     </tr>
-    <tr>
-      <td>
-        <p>Soil pit characterization</p>
-      </td>
-      <td>
-        <p>
-          Collection of soil data/samples at 10 cm increments or identifiable
-          horizons to 1 m+
-        </p>
-      </td>
-      <td>
-        <p>
-          Characterization and classification; correlation with vegetation;
-          downstream chemical analysis
-        </p>
-      </td>
-      <td>
-        <p>Outside SW corner of plot</p>
-      </td>
-      <td>
-        <p>Systematic</p>
-      </td>
-      <td>
-        <p>60–120</p>
-      </td>
+    <tr class="header">
+      <th>Soil pit characterisation</th>
+      <th>
+        Collection of soil data/samples at 10 cm increments or identifiable
+        horizons to 1 m+
+      </th>
+      <th>
+        Characterisation and classification; correlation with vegetation;
+        downstream chemical analysis
+      </th>
+      <th>Outside SW corner of plot</th>
+      <th>Systematic</th>
+      <th>60–120</th>
     </tr>
-    <tr>
-      <td>
-        <p>Soil sub-site samples</p>
-      </td>
-      <td>
-        <p>
-          Collection of nine samples in differing microhabitats at 0–10, 10–20,
-          and 20–30 cm
-        </p>
-      </td>
-      <td>
-        <p>Soil variability across the plot</p>
-      </td>
-      <td>
-        <p>Plot, five in soil sub- site zone</p>
-      </td>
-      <td>
-        <p>Stratified random</p>
-      </td>
-      <td>
-        <p>60–90</p>
-      </td>
+    <tr class="odd">
+      <th>Soil sub-site samples</th>
+      <th>
+        Collection of nine samples in differing microhabitats at 0–10, 10–20,
+        and 20–30 cm
+      </th>
+      <th>Soil variability across the plot</th>
+      <th>Plot, five in soil sub-site zone</th>
+      <th>Stratified random</th>
+      <th>60–90</th>
     </tr>
-    <tr>
-      <td>
-        <p>Soil bulk density</p>
-      </td>
-      <td>
-        <p>
-          Collection of three measures at the soil pit at 0–10, 10–20, and 20–30
-          cm
-        </p>
-      </td>
-      <td>
-        <p>Conversion of soil properties to volumetric measures</p>
-      </td>
-      <td>
-        <p>Soil pit</p>
-      </td>
-      <td>
-        <p>Systematic</p>
-      </td>
-      <td>
-        <p>30</p>
-      </td>
+    <tr class="header">
+      <th>Soil bulk density</th>
+      <th>
+        Collection of three measures at the soil pit at 0–10, 10–20, and 20–30
+        cm
+      </th>
+      <th>Conversion of soil properties to volumetric measures</th>
+      <th>Soil pit</th>
+      <th>Systematic</th>
+      <th>30</th>
     </tr>
-    <tr>
-      <td>
-        <p>Soil condition samples</p>
-      </td>
-      <td>
-        <p>
-          Collection of 10 soil core samples from 10 cm increments to 30 cm
-          deep, randomly located in a 25 x 25 m grid with 2.5 m spacing in the
-          southwest corner of the plot
-        </p>
-      </td>
-      <td>
-        <p>
-          Downstream chemical analysis (e.g. soil acidity, soil organic carbon)
-          and determination of soil bulk density
-        </p>
-      </td>
-      <td>
-        <p>Soil sub- site zone</p>
-      </td>
-      <td>
-        <p>Systematic random</p>
-      </td>
-      <td>
-        <p>30</p>
-      </td>
+    <tr class="odd">
+      <th>Soil condition samples</th>
+      <th>
+        Collection of 10 soil core samples from 10 cm increments to 30 cm deep,
+        randomly located in a 25 x 25 m grid with 2.5 m spacing in the southwest
+        corner of the plot
+      </th>
+      <th>
+        Downstream chemical analysis (e.g. soil acidity, soil organic carbon)
+        and determination of soil bulk density
+      </th>
+      <th>Soil sub-site zone</th>
+      <th>Systematic random</th>
+      <th>30</th>
     </tr>
-    <tr>
-      <td>
-        <p>Soil metagenomics</p>
-      </td>
-      <td>
-        <p>
-          Collection of nine soil surface samples to 3 cm in differing
-          microhabitats (collected immediately before the Soil sub-site
-          characterisation protocol samples are collected), or microhabitat of a
-          target species/taxa/group.
-        </p>
-      </td>
-      <td>
-        <p>
-          Downstream metagenomic analysis of environmental DNA (e.g. soil biota,
-          traces of above ground flora and fauna)
-        </p>
-      </td>
-      <td>
-        <p>Plot, five in soil sub- site zone</p>
-      </td>
-      <td>
-        <p>Stratified random/ targeted</p>
-      </td>
-      <td>
-        <p>30</p>
-      </td>
+    <tr class="header">
+      <th>Soil metagenomics</th>
+      <th>
+        Collection of nine soil surface samples to 3 cm in differing
+        microhabitats (collected immediately before the
+        <em>Soil sub-site characterisation</em> protocol samples are collected),
+        or microhabitat of a target species/taxa/group.
+      </th>
+      <th>
+        Downstream metagenomic analysis of environmental DNA (e.g. soil biota,
+        traces of above ground flora and fauna)
+      </th>
+      <th>Plot, five in soil sub-site zone</th>
+      <th>
+        Stratified random/<br />
+        targeted
+      </th>
+      <th>30</th>
     </tr>
   </thead>
+  <tbody></tbody>
 </table>
 <p>
   All six protocols include procedures and guidelines for recording data and
@@ -205,188 +141,3623 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   entry. Indicative locations of the soil sampling locations are illustrated in
   Figure 1 and Figure 2.
 </p>
-<ol>
+<ol type="1">
   <li>
     <p>
-      <strong>Plot soil description</strong> – The Plot soil description
-      protocol covers the procedures for describing important aspects of the
-      soil within the plot, including plot identification and location details,
-      slope, landform element and pattern, erosion, microrelief, drainage,
-      disturbance, and soil surface condition (when dry). Although some of these
-      soil description variables are also described in the Plot description
-      module, it is important to record them in the Soils module relative to the
-      soil characterization pit.
+      <strong>Plot soil description</strong> – The
+      <em>Plot soil description</em> protocol covers the procedures for
+      describing important aspects of the soil within the plot, including plot
+      identification and location details, slope, landform element and pattern,
+      erosion, microrelief, drainage, disturbance, and soil surface condition
+      (when dry). Although some of these soil description variables are also
+      described in the <em>Plot description</em> module, it is important to
+      record them in the <em>Soils</em> module relative to the soil
+      characterisation pit.
+    </p>
+  </li>
+</ol>
+<ol start="2" type="1">
+  <li>
+    <p>
+      <strong>Soil pit characterisation</strong> – The Soil pit characterisation
+      protocol covers the procedures and guidelines
+      <strong>for</strong> characterising the upper soil profile, including
+      exposing the profile to a depth of<br />
+      1 m+ at the southwest corner of the plot (Figure 1), capturing a
+      photographic record of profile, identifying the soil horizons, recording
+      the physical properties of the soil within each horizon, collecting soil
+      samples from 10 cm increments, taking care not to sample across horizons,
+      and post-field survey processing and storage of soil samples.
+    </p>
+  </li>
+</ol>
+<p>
+  It is recommended that the <em>Plot soil description</em> and
+  <em>Soil pit characterisation</em> protocols are undertaken at every plot
+  during a baseline assessment to describe, measure and sample the soil profile,
+  and only during repeat visits if the soil classification lacks analytical
+  and/or morphological data, or if the soils are variable across the plot.
+  Pedologists and experienced soil surveyors should be able to undertake both
+  protocols and collect detailed soil profile descriptions in the field, while
+  less experienced field surveyors should note plot-based observations and
+  distinguish soil horizons to their best ability, and collect samples for a
+  more detailed description back in the lab by a pedologist or experienced soil
+  surveyor. The <em>Plot soil description</em> and
+  <em>Soil pit characterisation</em> protocols are recommended to be undertaken
+  at the same time vegetation modules (e.g. <em>Floristics</em>, <em>Cover</em>)
+  to enable vegetation analyses to consider contemporaneous soil characteristics
+  (Sparrow <em>et al.</em> 2020).
+</p>
+<ol start="3" type="1">
+  <li>
+    <p>
+      <strong>Soil sub-site samples –</strong> The
+      <em>Soil sub-site characterisation</em> protocol covers the procedures and
+      guidelines for collecting soil samples to capture variability in the upper
+      soil profile, including exposing the profile to a depth of 30 cm at nine
+      locations with differing microhabitat (e.g. bare ground, dense litter,
+      sparse vegetation cover, dense vegetation cover) within the plot (Figure
+      1), capturing a photographic record of profile, capturing a photographic
+      record of microhabitats sampled, identifying the soil horizons, recording
+      if the horizons are atypical relative to the 1 m+ soil pit
+      characterisation (and noting the differences), collecting soil samples at
+      0–10, 10–20, and 20–30 cm increments, taking care not to sample across
+      horizons, and post-field survey processing and storage of soil samples.
+      Five soil characterisation sub-sites are located within a 25 x 25 m soil
+      sub-site zone in the southwest corner of the plot (Figure 1) for
+      consistency with various national soil research programs and monitoring
+      protocols.
     </p>
   </li>
   <li>
     <p>
-      <strong>Soil pit characterization</strong> – The Soil pit characterization
-      protocol covers the procedures and guidelines for characterizing the upper
-      soil profile, including exposing the profile to a depth of 1 m+ at the
-      southwest corner of the plot (Figure 1), capturing a photographic record
-      of profile, identifying the soil horizons, recording the physical
-      properties of the soil within each horizon, collecting soil samples from
-      10 cm increments, taking care not to sample across horizons, and post-
-      field survey processing and storage of soil samples.
-    </p>
-    <p>
-      It is recommended that the Plot soil description and Soil pit
-      characterization protocols are undertaken at every plot during a baseline
-      assessment to describe, measure and sample the soil profile, and only
-      during repeat visits if the soil classification lacks analytical and/or
-      morphological data, or if the soils are variable across the plot.
-      Pedologists and experienced soil surveyors should be able to undertake
-      both protocols and collect detailed soil profile descriptions in the
-      field, while less experienced field surveyors should note plot- based
-      observations and distinguish soil horizons to their best ability and
-      collect samples for a more detailed description back in the lab by a
-      pedologist or experienced soil surveyor. The Plot soil description and
-      Soil pit characterization protocols are recommended to be undertaken at
-      the same time vegetation modules (e.g. Floristics, Cover) to enable
-      vegetation analyses to consider contemporaneous soil characteristics
-      (Sparrow et al. 2020).
+      <strong>Soil bulk density –</strong> The
+      <em>Soil bulk density</em> protocol covers the procedures and guidelines
+      for collecting soil core samples at 0–10, 10–20, and 20–30 cm increments
+      from the edge of the soil pit (Figure 1), plus additional locations if
+      required, sealing the core samples, and post-field survey processing of
+      soil core samples. Soil bulk density measures are collected so that
+      important soil parameters can be quantified, particularly carbon content.
     </p>
   </li>
   <li>
     <p>
-      <strong>Soil sub-site samples</strong> – The Soil sub-site
-      characterization protocol covers the procedures and guidelines for
-      collecting soil samples to capture variability in the upper soil profile,
-      including exposing the profile to a depth of 30 cm at nine locations with
-      differing microhabitat (e.g. bare ground, dense litter, sparse vegetation
-      cover, dense vegetation cover) within the plot (Figure 1), capturing a
-      photographic record of profile, capturing a photographic record of
-      microhabitats sampled, identifying the soil horizons, recording if the
-      horizons are atypical relative to the 1 m+ soil pit characterization (and
-      noting the differences), collecting soil samples at 0–10, 10–20, and 20–30
-      cm increments, taking care not to sample across horizons, and post-field
-      survey processing and storage of soil samples. Five soil characterization
-      sub-sites are located within a 25 x 25 m soil sub-site zone in the
-      southwest corner of the plot (Figure 1) for consistency with various
-      national soil research programs and monitoring protocols.
+      <strong>Soil condition samples –</strong> The
+      <em>Soil condition samples</em> protocol covers the procedures and
+      guidelines for the rapid, systematic collection of soil samples for
+      downstream soil chemistry and bulk density analysis, including taking soil
+      core samples from 10 cm increments to a depth of 30 cm at 10 locations
+      (Figure 2), located within a 25 x 25 m soil sub-site zone in the southwest
+      corner of the plot (Figure 1), storing the soil cores in individual sample
+      bags, and post-field survey processing and storage of soil samples. This
+      protocol has been designed for conservation practitioners to quickly
+      obtain a representative sample of the upper soil profile for downstream
+      soil chemistry analysis (e.g. soil acidity, soil organic carbon).
     </p>
   </li>
   <li>
     <p>
-      <strong>Soil bulk density</strong> – The Soil bulk density protocol covers
-      the procedures and guidelines for collecting soil core samples at 0–10,
-      10–20, and 20–30 cm increments from the edge of the soil pit (Figure 1),
-      plus additional locations if required, sealing the core samples, and
-      post-field survey processing of soil core samples. Soil bulk density
-      measures are collected so that important soil parameters can be
-      quantified, particularly carbon content.
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Soil condition samples</strong> – The Soil condition samples
-      protocol covers the procedures and guidelines for the rapid, systematic
-      collection of soil samples for downstream soil chemistry and bulk density
-      analysis, including taking soil core samples from 10 cm increments to a
-      depth of 30 cm at 10 locations (Figure 2), located within a 25 x 25 m soil
-      sub-site zone in the southwest corner of the plot (Figure 1), storing the
-      soil cores in individual sample bags, and post-field survey processing and
-      storage of soil samples. This protocol has been designed for conservation
-      practitioners to quickly obtain a representative sample of the upper soil
-      profile for downstream soil chemistry analysis (e.g., soil acidity, soil
-      organic carbon).
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Soil metagenomics</strong> – The Soil metagenomics protocol covers
-      the procedures and guidelines for the collection of soil surface samples
-      for downstream soil genomics analysis, including the collection nine soil
-      surface samples to 3 cm in differing microhabitats (collected immediately
-      before the Soil sub-site characterization protocol samples are collected),
+      <strong>Soil metagenomics –</strong> The
+      <em>Soil metagenomics</em> protocol covers the procedures and guidelines
+      for the collection of soil surface samples for downstream soil genomics
+      analysis, including the collection nine soil surface samples to 3 cm in
+      differing microhabitats (collected immediately before the
+      <em>Soil sub-site characterisation</em> protocol samples are collected),
       or microhabitat of a target species, taxa, or group, within the plot
       (Figure 1), capturing a photographic record of microhabitats sampled, and
       post-field survey processing and storage of soil samples. Researchers and
-      practitioners are strongly encouraged to undertake this protocol, if
+      practitioners are strongly encouraged to undertake this protocol if
       possible, as the samples collected provide a range of potential future
       applications for very little investment of time and resources.
     </p>
   </li>
 </ol>
-<p>The Soils module is linked to the following modules:</p>
+<p>The <em>Soils</em> module is linked to the following modules:</p>
 <ul>
   <li>
     <p>
-      Plot description – Both modules include a description of plot slope,
-      landform element and pattern, and disturbance (i.e., grazing, clearing,
-      land use). If both modules are undertaken during a survey, the data from
-      whichever module has been completed first will be prefilled in the module
-      that is undertaken afterwards.
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32"
+          >Plot description</a
+        ></em
+      >
+      – Both modules include a description of plot slope, landform element and
+      pattern, and disturbance (i.e. grazing, clearing, land use). If both
+      modules are undertaken during a survey, the data from whichever module has
+      been completed first will be prefilled in the module that is undertaken
+      afterwards.
     </p>
   </li>
   <li>
     <p>
-      Cover – Substrate type and vegetation cover data provides insight into the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b"
+          >Cover</a
+        ></em
+      >
+      – Substrate type and vegetation cover data provides insight into the
       microhabitats within the plot to target for sub-site and metagenomics soil
       samples.
     </p>
   </li>
   <li>
     <p>
-      Interventions – Conservation practitioners may undertake soil monitoring
-      to monitor the success of interventions to improve soil quality (e.g.,
-      slow or reverse rates of soil acidification, increase soil organic
+      <em>Interventions</em> – Conservation practitioners may undertake soil
+      monitoring to monitor the success of interventions to improve soil quality
+      (e.g. slow or reverse rates of soil acidification, increase soil organic
       carbon).
     </p>
   </li>
 </ul>
 <p>
-  Figure 1. Plot layout showing indicative locations of the soil
-  characterisation pit and nine soil characterisation sub-sites across the plot.
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/soil/plot-layout.png"
-            alt="Plot layout"
-            widteh="500"
-            height="600"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/soil/plot-layout.png"
+    alt="Plot layout"
+    widteh="500"
+    height="600"
+  />
 </p>
 <p>
-  Five soil characterization sub-sites are located within the 25 x 25 m soil
-  sub-site zone in the southwest corner of the plot. Soil bulk density core
-  samples are collected from an edge of the soil pit.
+  Figure 1. Plot layout showing indicative locations of the soil
+  characterisation pit and nine soil characterisation sub-sites across the plot.
+</p>
+<p>
+  <em
+    >Five soil characterisation sub-sites are located within the 25 x 25 m soil
+    sub-site zone in the southwest corner of the plot. Soil bulk density core
+    samples are collected from an edge of the soil pit.</em
+  >
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/soil/systematic-soil-sampling-grid.png"
+    alt="systematic-soil-sampling-grid"
+    widteh="568"
+    height="480"
+  />
 </p>
 <p>
   Figure 2. Systematic soil sampling grid within the soil sub-site zone (25 x 25
-  m SW corner) for the Soil chemtry samples protocol (Grealish et al. 2011).
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/soil/systematic-soil-sampling-grid.png"
-            alt="systematic-soil-sampling-grid"
-            widteh="568"
-            height="480"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  m SW corner) for the <em>Soil chemistry samples</em> protocol (Grealish
+  <em>et al.</em> 2011).
 </p>
-<p>Candidate sampling locations for four sampling events are shown.</p>
+<p>
+  <em>Candidate sampling locations for four sampling events are shown.</em>
+</p>
 """^^rdf:HTML ;
+    dcterms:source """
+    <h3 id="references">References</h3>
+<ul>
+  <li>
+    <p>
+      Bissett, A, Fitzgerald, A, Meintjes, T, Mele, PM, Reith, F, Dennis, PG,
+      Breed, MF, Brown, B, Brown, MV, Brugger, J (2016) Introducing BASE: the
+      Biomes of Australian Soil Environments soil microbial diversity database.
+      <em>Gigascience</em> <strong>5</strong>, s13742-016-0126-5.
+    </p>
+  </li>
+  <li>
+    <p>
+      Bowman, G, Chapman, G, Murphy, B, Wilson, B, Jenkins, B, Koen, T, Gray, J,
+      Morand, D, Atkinson, G, Murphy, C (2009) Protocols for soil condition and
+      land capability monitoring.
+    </p>
+  </li>
+  <li>
+    <p>
+      Cork, S, Eadie, L, Mele, P, Price, R, Yule, D, 2012. The relationships
+      between land management practices and soil condition and the quality of
+      ecosystem services delivered from agricultural land in Australia.
+      Kiri-ganai Research Pty Ltd. Camberra, Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      Cotching, W, Kidd, D (2010) Soil quality evaluation and the interaction
+      with land use and soil order in Tasmania, Australia.
+      <em>Agriculture, ecosystems &amp; environment</em> <strong>137</strong>,
+      358-366.
+    </p>
+  </li>
+  <li>
+    <p>
+      Fossey, M, Angers, D, Bustany, C, Cudennec, C, Durand, P, Gascuel-Odoux,
+      C, Jaffrezic, A, Pérès, G, Besse, C, Walter, C (2020) À Framework to
+      consider soil ecosystem services in territorial planning.
+      <em>Frontiers in Environmental Science</em> <strong>8</strong>, 28.
+    </p>
+  </li>
+  <li>
+    <p>
+      Gellie, NJ, Mills, JG, Breed, MF, Lowe, AJ (2017) Revegetation rewilds the
+      soil bacterial microbiome of an old field. <em>Molecular Ecology</em>
+      <strong>26</strong>, 2895–2904.
+    </p>
+  </li>
+  <li>
+    <p>
+      Grealish, G, Clifford, D, Wilson, P, Ringrose-Voase, A (2011) National
+      soil condition monitoring for soil pH and soil carbon: objectives, design,
+      protocols, governance and reporting. Australian Collaborative Land
+      Evaluation Program.
+    </p>
+  </li>
+  <li>
+    <p>
+      Grundy, M, Rossel, RV, Searle, R, Wilson, P, Chen, C, Gregory, L (2015)
+      Soil and landscape grid of Australia. <em>Soil Research</em>
+      <strong>53</strong>, 835–844.
+    </p>
+  </li>
+  <li>
+    <p>
+      Holmes, K, Bellamy, P, Dixon, J (2011) Designing a Soil pH Monitoring
+      Network for the Western Australian Wheatbelt. Report 378. Department of
+      Primary Industries and Regional Development, Western Australia, Perth.
+    </p>
+  </li>
+  <li>
+    <p>
+      Isbell, R, The National Committee on Soil and Terrain (2016) 'The
+      Australian Soil Classification.' (CSIRO Publishing: Melbourne)
+    </p>
+  </li>
+  <li>
+    <p>
+      Liddicoat, C, Weinstein, P, Bissett, A, Gellie, NJ, Mills, JG, Waycott, M,
+      Breed, MF (2019) Can bacterial indicators of a grassy woodland restoration
+      inform ecosystem assessment and microbiota-mediated human health?
+      <em>Environment international</em> <strong>129</strong>, 105-117.
+    </p>
+  </li>
+  <li>
+    <p>
+      Lugg, WH, Griffiths, J, van Rooyen, AR, Weeks, AR, Tingley, R (2018)
+      Optimal survey designs for environmental DNA sampling.
+      <em>Methods in Ecology and Evolution</em> <strong>9</strong>, 1049–1059.
+    </p>
+  </li>
+  <li>
+    <p>
+      Luo, Z, Wang, E, Sun, OJ (2010) Soil carbon change and its responses to
+      agricultural practices in Australian agro-ecosystems: a review and
+      synthesis.
+      <em>Geoderma</em> <strong>155</strong>, 211-223.
+    </p>
+  </li>
+  <li>
+    <p>
+      McKenzie, N, Coughlan, K, Cresswell, H (2002) 'Soil Physical Measurement
+      and Interpretation for Land Evaluation.' (CSIRO Publishing: Melbourne)
+    </p>
+  </li>
+  <li>
+    <p>
+      McKenzie, N, Jacquier, D, Maschmedt, D, Griffin, E, Brough, D (2012) The
+      Australian soil resource information system (ASRIS) technical
+      specifications.
+    </p>
+  </li>
+  <li>
+    <p>
+      McKenzie, NJ, Grundy, M, Webster, R, Ringrose-Voase, A (2008) 'Guidelines
+      for surveying soil and land resources.' (CSIRO Publishing: Melbourne)
+    </p>
+  </li>
+  <li>
+    <p>
+      Mills, JG, Weinstein, P, Gellie, NJ, Weyrich, LS, Lowe, AJ, Breed, MF
+      (2017) Urban habitat restoration provides a human health benefit through
+      microbiome rewilding: the Microbiome Rewilding Hypothesis.
+      <em>Restoration Ecology</em> <strong>25</strong>, 866-872.
+    </p>
+  </li>
+  <li>
+    <p>
+      Munsell Color (2009) 'Munsell Soil Color Book.' (Munsell Color: Grand
+      Rapids, MI)
+    </p>
+  </li>
+  <li>
+    <p>
+      Pasternak, Z, Luchibia, AO, Matan, O, Dawson, L, Gafny, R, Shpitzen, M,
+      Avraham, S, Jurkevitch, E (2019) Mitigating temporal mismatches in
+      forensic soil microbial profiles.
+      <em>Australian Journal of Forensic Sciences</em> <strong>51</strong>,
+      685–694.
+    </p>
+  </li>
+  <li>
+    <p>
+      Pereira, P, Bogunovic, I, Muñoz-Rojas, M, Brevik, EC (2018) Soil ecosystem
+      services, sustainability, valuation and management.
+      <em>Current Opinion in Environmental Science &amp; Health</em>
+      <strong>5</strong>, 7-13.
+    </p>
+  </li>
+  <li>
+    <p>
+      Prior, LD, Paul, KI, Davidson, NJ, Hovenden, MJ, Nichols, SC, Bowman, DJ
+      (2015) Evaluating carbon storage in restoration plantings in the Tasmanian
+      Midlands, a highly modified agricultural landscape.
+      <em>The Rangeland Journal</em> <strong>37</strong>, 477-488.
+    </p>
+  </li>
+  <li>
+    <p>
+      Raupach, M, Tucker, B (1959) The field determination of soil reaction.
+      <em>Journal of the Australian Institute of Agricultural Science</em>
+      <strong>25</strong>, 129–133.
+    </p>
+  </li>
+  <li>
+    <p>
+      Sanderman, J, Baldock, J, Hawke, B, Macdonald, L, Massis-Puccini, A,
+      Szarvas, S (2011) National Soil Carbon Research Programme: Field and
+      Laboratory Methodologies. CSIRO Land and Water, Waite Campus, Urrbrae SA.
+    </p>
+  </li>
+  <li>
+    <p>
+      Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
+      Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
+      vegetation and soil survey method for surveillance monitoring of rangeland
+      environments.
+      <em>Frontiers in Ecology and Evolution</em> <strong>8</strong>, 157.
+    </p>
+  </li>
+  <li>
+    <p>
+      The National Committee on Soil and Terrain (2009) 'Australian Soil and
+      Land Survey Field Handbook.' (CSIRO Publishing: Melbourne)
+    </p>
+  </li>
+  <li>
+    <p>
+      Tokmakoff, A, Sparrow, B, Turner, D, Lowe, A (2016) AusPlots Rangelands
+      field data collection and publication: Infrastructure for ecological
+      monitoring.
+      <em>Future Generation Computer Systems</em> <strong>56</strong>, 537–549.
+    </p>
+  </li>
+  <li>
+    <p>
+      van der Heyde, M, Bunce, M, Dixon, K, Wardell-Johnson, G, White, N,
+      Nevill, P (2020) Changes in soil microbial communities in post mine
+      ecological restoration: Implications for monitoring using high throughput
+      DNA sequencing.
+      <em>Science of The Total Environment</em> <strong>749</strong>, 142262.
+    </p>
+  </li>
+  <li>
+    <p>
+      Yan, D, Bissett, A, Gellie, N, Mills, JG, Lowe, AJ, Breed, MF (2020) Soil
+      bacterial community differences along a coastal restoration
+      chronosequence.
+      <em>Plant Ecology</em> <strong>221</strong>, 795–811.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/1c83a60d-12e5-4bb3-b876-7eb97da79fa9> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/7818e122-6354-42e0-aeff-32dbab7baae4> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/ca8a3a10-d35d-45ff-b987-a4ab3f1ce1c5> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/d9e6739a-c2dd-4619-be43-1251449a6436> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/e3ad3e5b-7c1c-4b59-bdb1-297f707d2ca3> ;
+    skos:definition """
+    <h3 id="key-definitions-and-terminology">Key definitions and terminology</h3>
+<p>Table 1. Key definitions and terms used in the <em>Soils</em> module.</p>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+    <tr class="odd">
+      <th>Soil</th>
+      <th>
+        A natural body consisting of layers or horizons of mineral and/or
+        organic constituents, of variable thickness, that differs from its
+        parent material in morphological, physical, chemical and mineralogical
+        properties and biological characteristics.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Soil profile</th>
+      <th>
+        A vertical section of a soil from the soil surface through all its
+        horizons to parent material, other consolidated substrate material or
+        selected depth in unconsolidated material.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Soil horizon</th>
+      <th>
+        Layer of soil, approximately parallel to the land surface, with
+        morphological properties different from layers below and/or above it.
+        Tongues of material from one horizon may penetrate into adjacent
+        horizons.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Solum</th>
+      <th>
+        The upper part of a soil profile above the parent material in which
+        current processes of soil formation are active (AB horizon). Where
+        living roots and other plant and animal material life characteristics
+        are exhibited.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Yellow Book (YB)</th>
+      <th>
+        Australian Soil and Land Survey Handbook (The National Committee on Soil
+        and Terrain 2009)
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Blue Book (BB)</th>
+      <th>
+        Guidelines for Surveying Soil and Land Resources (McKenzie
+        <em>et al.</em> 2008)
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Australian Soil Classification (ASC)</th>
+      <th>
+        Australia's national soil classification, a multi-category scheme with
+        classes defined by diagnostic horizons or materials and their
+        arrangement in vertical sequence as seen in an exposed soil profile
+        (Isbell and The National Committee on Soil and Terrain 2016).
+      </th>
+    </tr>
+    <tr class="header">
+      <th>SLGA</th>
+      <th>Soil and Landscape Grid of Australia</th>
+    </tr>
+    <tr class="odd">
+      <th>ASRIS</th>
+      <th>Australian Soil Resource Information System</th>
+    </tr>
+    <tr class="header">
+      <th>Pedologist</th>
+      <th>
+        A scientist who studies origins, composition and distribution of soils
+        and the materials from which soils are formed.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Experienced soil surveyor</th>
+      <th>
+        A soil surveyor with an understanding of the origins, composition and
+        distribution of soils and the materials from which soils are formed,
+        developed from extensive soil survey experience.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Soil bulk density</th>
+      <th>
+        The ratio of oven-dry soil mass to bulk volume. Obtained by drying an
+        intact core sample of known volume to constant weight at 105°C.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Slope</th>
+      <th>
+        The rise or fall of the land surface, which is measured using the
+        percent scale of a clinometer. Slope should be measured over a distance
+        of at least 20 m, to reduce influence of any microrelief changes.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Landform pattern</th>
+      <th>
+        Landform patterns have dimensions of approximately 600 m and are based
+        on the following attributes – relief, slope (most common), stream
+        channel occurrence, geomorphological attributes and component landform
+        elements. Landform patterns generally have longer histories than
+        landform elements. There are approximately 40 different landform
+        patterns that occur in Australia.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Landform element</th>
+      <th>
+        Landform elements have a dimension of approximately 40 m but can vary
+        from a few metres to 100 m. A landform element is described by the
+        following attributes – slope, morphological type, dimensions,
+        geomorphological activity and geomorphological agent. Landform elements
+        make up a mosaic within landform patterns. There are approximately 80
+        different landform elements that occur in Australia.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Erosion</th>
+      <th>
+        The wearing away of the land by running water, rainfall, wind, ice or
+        other geological agents including such processes as detachment,
+        entrainment, suspension, transportation and mass movement.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Accelerated erosion</th>
+      <th>
+        Erosion more rapid than natural that follows the destruction or loss of
+        protective cover, often resulting from human influence on the soil,
+        vegetation or landform.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Relief</th>
+      <th>
+        The difference in elevation between the high and low points of the
+        landscape.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Microrelief</th>
+      <th>Relief up to a few metres about the plane of the land surface.</th>
+    </tr>
+    <tr class="header">
+      <th>Runoff</th>
+      <th>
+        Relative rate at which water runs off the soil surface. Largely
+        determined by slope, surface cover and soil infiltration rate.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Permeability</th>
+      <th>
+        A soil’s potential to transmit water (saturated hydraulic conductivity;
+        K<sub>s</sub> or K<sub>sat</sub>).
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Drainage</th>
+      <th>
+        The rapidity and extent of water removal from the soil profile. Affected
+        by soil permeability, hydraulic gradient and the permeability of
+        materials below the soil profile. Soils that drain water quickly are
+        highly permeable. They usually have coarse textures (sands) and many
+        interconnected pores. Soils with rapid drainage often have low water
+        holding capacities.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Disturbance</th>
+      <th>
+        Disturbance of the site, including grazing by hoofed animals, clearing,
+        cultivation and infrastructure.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Condition of soil surface (when dry)</th>
+      <th>
+        Characteristic appearance of the soil surface when dry. Often relevant
+        to the use of the soil and indicative of particular kinds of soil.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Field texture</th>
+      <th>
+        A measure of the behaviour of a small handful of soil (&lt;2 mm
+        fraction) when moistened and kneaded into a ball and then pressed out
+        between thumb and forefinger. Generally related to the proportion of
+        soil particles of different sizes (sand, silt, clay and gravel) in a
+        soil, but is also influenced by organic matter content, clay type and
+        degree of structural development of the soil.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Colour</th>
+      <th>
+        The colour of soil material as determined by comparison with a standard
+        Munsell Soil Colour Chart.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Mottles</th>
+      <th>
+        Spots, blotches or streaks of subdominant colours different from the
+        matrix colour and also different from the colour of the ped surface.
+        Segregations of pedogenic origin are not considered to be mottles.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Munsell Soil Colour Charts</th>
+      <th>
+        Enable quick and easy soil colour evaluations in the field using the
+        widely accepted Munsell colour system.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Hue</th>
+      <th>
+        Basic colour. In the Munsell system, hues are given letter codes (i.e.
+        red (R), yellow-red (YR), yellow (Y) and so on) and charts are numbered
+        from 0–10. Within each letter range, the hue becomes more yellow and
+        less red as the numbers increase.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Value</th>
+      <th>
+        How light or dark a colour is. In the Munsell system, value is indicated
+        with a number (i.e. 2, 4, 6 and so on). The value scale runs vertically
+        and moves from lightest (at the top of the chart) to darkest (at the
+        bottom of the chart) in descending order.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Chroma</th>
+      <th>
+        How weak or strong a colour is. In the Munsell system, chroma is
+        indicated with a number, typically ranging from 2–14. The chroma scale
+        runs horizontally, moving from weak (from the left of the chart) to
+        strong (to the right of the chart) in ascending order.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Ped</th>
+      <th>
+        An individual, natural soil aggregate consisting of a cluster of primary
+        particles. Separated from adjoining peds by surfaces of weakness that
+        are recognisable as natural voids or by the occurrence of cutans.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Matrix</th>
+      <th>
+        The smaller, grain-sized material that is typically a cementing agent
+        within a soil or rock in which larger particles are embedded.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Coarse fragments</th>
+      <th>
+        Particles coarser than 2 mm. Include unattached rock fragments and other
+        fragments such as charcoal and shells. Distinguished from segregations
+        of pedogenic origin in that they are not, or not considered to be, of
+        pedogenic origin. Can occur on the surface.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Structure</th>
+      <th>
+        The distinctness, size, shape and condition of natural, or artificially
+        produced soil aggregates (peds).
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Segregations</th>
+      <th>
+        Discrete segregations that have accumulated in the soil because of the
+        concentration of some constituent, usually by chemical or biological
+        action.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Voids</th>
+      <th>
+        General term for pore space and other openings (e.g. cracks, pores) in
+        soils not occupied by solid mineral matter.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Consistence</th>
+      <th>
+        The strength of cohesion and adhesion in soil. Strength will vary
+        according to soil water status.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Pans</th>
+      <th>Indurated and/or cemented soil horizon.</th>
+    </tr>
+    <tr class="header">
+      <th>Fabric</th>
+      <th>
+        The appearance of the soil material using a hand lens (x10). Differences
+        in the presence or absence of peds, the lustre (or lack thereof), ped
+        surfaces, and the size and arrangement of pores (voids) in the soil mass
+        are noted.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Cutans</th>
+      <th>
+        Modification of the texture, structure or fabric at natural surfaces in
+        soil materials; arises from concentration of particular soil
+        constituents or <em>in situ</em> modification of the plasma. Comprise
+        any of the component substances of the soil material.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>pH</th>
+      <th>
+        A measure of the acidity or alkalinity of the soil. A pH of 7.0 denotes
+        neutrality. Higher values indicate increasing alkalinity and lower
+        values indicate increasing acidity.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Electrical conductivity (EC)</th>
+      <th>
+        A measure of the conduction of electricity through water or a water
+        extract of soil. Can be used to determine the soluble salts in the
+        extract and hence soil salinity.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Effervescence</th>
+      <th>
+        The escape of gas from an aqueous solution and the foaming or fizzing
+        resulting from that release.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Dispersion</th>
+      <th>
+        Characteristics of soils relating to their structural breakdown into
+        individual particles in water. Usually associated with high levels of
+        exchangeable sodium on the clay fraction and low levels of soluble salts
+        in the soil. These factors cause clay particles to separate in water. As
+        clay is one of the chief agents holding soil materials together, this
+        leads to collapse of the soil structure and consequent instability.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Slaking</th>
+      <th>
+        The partial breakdown of soil aggregates in water due to the swelling of
+        clay and the expulsion of air from pore spaces.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Metagenomics</th>
+      <th>
+        The study of genetic material recovered directly from environmental
+        samples
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Environmental DNA</th>
+      <th>
+        Extra-organismal genetic material in environmental samples (Lugg
+        <em>et al.</em> 2018).
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>eDNA</th>
+      <th>Environmental DNA</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/test/dawe-cv/7818e122-6354-42e0-aeff-32dbab7baae4>
+            <https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db>
+            <https://linked.data.gov.au/def/test/dawe-cv/e3ad3e5b-7c1c-4b59-bdb1-297f707d2ca3>
+            <https://linked.data.gov.au/def/test/dawe-cv/d9e6739a-c2dd-4619-be43-1251449a6436>
+            <https://linked.data.gov.au/def/test/dawe-cv/1c83a60d-12e5-4bb3-b876-7eb97da79fa9>
+            <https://linked.data.gov.au/def/test/dawe-cv/ca8a3a10-d35d-45ff-b987-a4ab3f1ce1c5>
+        ) ;
     skos:prefLabel "Soil" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/collection.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4>Appendix A. Slope descriptions and codes</h4>
+<p>
+  <em>(YB p. 18–19; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Slope details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4"><strong>Means of evaluation</strong></th>
+      <th><strong>T</strong></th>
+      <th>Tripod-mounted instrument and staff</th>
+    </tr>
+    <tr class="header">
+      <th><strong>A</strong></th>
+      <th>Abney level or clinometer and tape</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>P</strong></th>
+      <th>Contour plan at 1:10,000 or larger scale</th>
+    </tr>
+    <tr class="header">
+      <th><strong>E</strong></th>
+      <th>Estimate</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="8"><strong>Slope class</strong></th>
+      <th><strong>LE</strong></th>
+      <th>Level (&lt;1%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VG</strong></th>
+      <th>Very gently inclined (1–3%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GE</strong></th>
+      <th>Gently inclined (3–10%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MO</strong></th>
+      <th>Moderately inclined (10–32%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ST</strong></th>
+      <th>Steep (32–56%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VS</strong></th>
+      <th>Very steep (56–100%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PR</strong></th>
+      <th>Precipitous (&gt;100%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CL</strong></th>
+      <th>Cliff (&gt;100%)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="10"><strong>Morphological type</strong></th>
+      <th><strong>C</strong></th>
+      <th>Crest</th>
+    </tr>
+    <tr class="header">
+      <th><strong>H</strong></th>
+      <th>Hillock</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Ridge</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Simple slope</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>U</strong></th>
+      <th>Upper slope</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Mid-slope</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Lower slope</th>
+    </tr>
+    <tr class="header">
+      <th><strong>F</strong></th>
+      <th>Flat</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>V</strong></th>
+      <th>Open depression (vale)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>D</strong></th>
+      <th>Closed depression</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4">
+        <strong>Relative inclination of slope elements</strong>
+      </th>
+      <th><strong>X</strong></th>
+      <th>Waxing</th>
+    </tr>
+    <tr class="header">
+      <th><strong>N</strong></th>
+      <th>Waning</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>M</strong></th>
+      <th>Maximal</th>
+    </tr>
+    <tr class="header">
+      <th><strong>I</strong></th>
+      <th>Minimal</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix D. Erosion descriptions and codes</h4>
+<p>
+  <em>(YB p. 133–138; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table style="width: 100%">
+  <colgroup>
+    <col style="width: 18%" />
+    <col style="width: 18%" />
+    <col style="width: 9%" />
+    <col style="width: 52%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th colspan="2"><strong>Erosion details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="43"><strong>Type of erosion</strong></th>
+      <th rowspan="7"><strong>Wind</strong></th>
+      <th><strong>W</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No wind erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Minor or present</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Moderate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Severe</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Very severe</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Scald</strong></th>
+      <th><strong>C</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No scalding</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Minor scalding (&lt;5%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Moderate scalding (5–50%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Severe scalding (&gt;50%)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6"><strong>Water – sheet</strong></th>
+      <th><strong>S</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No sheet erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Minor</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Moderate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Severe</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>Water – rill</strong></th>
+      <th><strong>R</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>0</strong></th>
+      <th>No rill erosion</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>1</strong></th>
+      <th>Minor</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Moderate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Severe</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Water – gully</strong></th>
+      <th><strong>G</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No gully erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Minor</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Moderate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Severe</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4"><strong>Water – tunnel</strong></th>
+      <th><strong>T</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No tunnel erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Present</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4"><strong>Water – stream bank</strong></th>
+      <th><strong>B</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No stream bank erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Present</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4"><strong>Water – wave</strong></th>
+      <th><strong>W</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Not apparent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>0</strong></th>
+      <th>No wave erosion</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Present</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="3"><strong>Mass movement</strong></th>
+      <th><strong>M</strong></th>
+      <th><strong>Degree</strong></th>
+    </tr>
+    <tr class="header">
+      <th><strong>0</strong></th>
+      <th>No mass movement</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>1</strong></th>
+      <th>Present</th>
+    </tr>
+    <tr class="header">
+      <th colspan="2" rowspan="3"><strong>State of erosion</strong></th>
+      <th><strong>A</strong></th>
+      <th>Active</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Stabilised</th>
+    </tr>
+    <tr class="header">
+      <th><strong>P</strong></th>
+      <th>Partly stabilised</th>
+    </tr>
+    <tr class="odd">
+      <th colspan="2" rowspan="3">
+        <strong>Gully depth (if gully selected)</strong>
+      </th>
+      <th><strong>1</strong></th>
+      <th>&lt;1.5 m</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>1.5–3.0 m</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>&gt;3.0 m</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix E. Microrelief descriptions and codes</h4>
+<p>
+  <em>(YB p. 129–133; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table style="width: 100%">
+  <colgroup>
+    <col style="width: 18%" />
+    <col style="width: 18%" />
+    <col style="width: 9%" />
+    <col style="width: 52%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th colspan="2"><strong>Microrelief details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="19"><strong>Type</strong></th>
+      <th><strong>No microrelief</strong></th>
+      <th><strong>Z</strong></th>
+      <th>Zero or no microrelief</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="6"><strong>Gilgai</strong></th>
+      <th><strong>C</strong></th>
+      <th>Crabhole gilgai</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>N</strong></th>
+      <th>Normal gilgai</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Linear gilgai</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>A</strong></th>
+      <th>Lattice gilgai</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Melonhole gilgai</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>G</strong></th>
+      <th>Contour gilgai</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Hummocky</strong></th>
+      <th><strong>D</strong></th>
+      <th>Debil-debil</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>W</strong></th>
+      <th>Swamp hummock</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Biotic</strong></th>
+      <th><strong>B</strong></th>
+      <th>Biotic</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="9"><strong>Other</strong></th>
+      <th><strong>U</strong></th>
+      <th>Mound/depression</th>
+    </tr>
+    <tr class="header">
+      <th><strong>K</strong></th>
+      <th>Karst microrelief</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>I</strong></th>
+      <th>Sinkhole</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Mass movement</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Terracettes</th>
+    </tr>
+    <tr class="header">
+      <th><strong>T</strong></th>
+      <th>Contour trench</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>P</strong></th>
+      <th>Spring mound</th>
+    </tr>
+    <tr class="header">
+      <th><strong>H</strong></th>
+      <th>Spring hollow</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>O</strong></th>
+      <th>Other (see site notes)</th>
+    </tr>
+    <tr class="header">
+      <th colspan="2" rowspan="4">
+        <strong>Proportion (of gilgai components)</strong>
+      </th>
+      <th><strong>A</strong></th>
+      <th>Equal mounds and depressions; no shelf present</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>B</strong></th>
+      <th>More mounds than depressions; no shelf present</th>
+    </tr>
+    <tr class="header">
+      <th><strong>C</strong></th>
+      <th>Fewer mounds than depressions; no shelf present</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>D</strong></th>
+      <th>
+        Mound, shelf and depressions; shelf forms prominent part of gilgai
+      </th>
+    </tr>
+    <tr class="header">
+      <th colspan="2" rowspan="7">
+        <strong>Agent (of biotic relief)</strong>
+      </th>
+      <th><strong>N</strong></th>
+      <th>Animal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>M</strong></th>
+      <th>Man</th>
+    </tr>
+    <tr class="header">
+      <th><strong>B</strong></th>
+      <th>Bird</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>T</strong></th>
+      <th>Termite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>A</strong></th>
+      <th>Ant</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>V</strong></th>
+      <th>Vegetation</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Other</th>
+    </tr>
+    <tr class="odd">
+      <th colspan="2" rowspan="7">
+        <strong>Component (of microrelief sampled)</strong>
+      </th>
+      <th><strong>M</strong></th>
+      <th>Mound</th>
+    </tr>
+    <tr class="header">
+      <th><strong>E</strong></th>
+      <th>Elongate mound</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>D</strong></th>
+      <th>Depression</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Elongate depression</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Shelf</th>
+    </tr>
+    <tr class="header">
+      <th><strong>H</strong></th>
+      <th>Hummock</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>F</strong></th>
+      <th>Flat</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix H. Drainage descriptions and codes</h4>
+<p>
+  <em>(YB p. 202–204; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6">
+        <strong>Drainage likely to occur in most years</strong>
+      </th>
+      <th><strong>1</strong></th>
+      <th>Very poor</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Poor</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Imperfect</th>
+    </tr>
+    <tr class="header">
+      <th><strong>4</strong></th>
+      <th>Moderately well</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>5</strong></th>
+      <th>Well</th>
+    </tr>
+    <tr class="header">
+      <th><strong>6</strong></th>
+      <th>Rapidly</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix J. Surface coarse fragments descriptions and codes</h4>
+<p>
+  <em
+    >(139–144, 209 and 214; The National Committee on Soil and Terrain
+    2009).</em
+  >
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Surface coarse fragments details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="7"><strong>Abundance</strong></th>
+      <th><strong>0</strong></th>
+      <th>No coarse fragments</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Very slight or few &lt;2%</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Slight or few &lt;2%</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Common e.g. Medium gravel, stony, common medium pebbles 10-20%</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Moderate or many 20-50%</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Abundant 50-90%</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>6</strong></th>
+      <th>Extremely abundance &gt;90%</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="7"><strong>Size</strong></th>
+      <th><strong>1</strong></th>
+      <th>Fine gravelly or small pebbles 2-6 mm</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Medium gravelly or medium pebbles 6-20 mm</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Coarse gravelly or coarse pebbles 20-60 mm</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Cobbly or cobbles 60-200 mm</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Stony or stones 200-600 mm</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>6</strong></th>
+      <th>Bouldery or boulders 600-2000 mm</th>
+    </tr>
+    <tr class="header">
+      <th><strong>7</strong></th>
+      <th>Large boulders &gt;2000 mm</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="12"><strong>Shape</strong></th>
+      <th><strong>A</strong></th>
+      <th>Angular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Sub-angular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>U</strong></th>
+      <th>Sub-rounded</th>
+    </tr>
+    <tr class="header">
+      <th><strong>R</strong></th>
+      <th>Rounded</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AT</strong></th>
+      <th>Angular tabular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ST</strong></th>
+      <th>Sub-angular tabular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>UT</strong></th>
+      <th>Sub-rounded tabular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RT</strong></th>
+      <th>Rounded tabular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AP</strong></th>
+      <th>Angular platy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SP</strong></th>
+      <th>Sub-angular platy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>UP</strong></th>
+      <th>Sub rounded platy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RP</strong></th>
+      <th>Rounded platy</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="19"><strong>Lithology</strong></th>
+      <th><strong>AD</strong></th>
+      <th>Adamellite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AG</strong></th>
+      <th>Agglomerate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AC</strong></th>
+      <th>Alcrete (bauxite)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AM</strong></th>
+      <th>Amphibolite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AN</strong></th>
+      <th>Andesite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AH</strong></th>
+      <th>Anhydrite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AP</strong></th>
+      <th>Aplite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AR</strong></th>
+      <th>Arkose</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BA</strong></th>
+      <th>Basalt</th>
+    </tr>
+    <tr class="header">
+      <th><strong>BB</strong></th>
+      <th>Bombs (volcanic)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BR</strong></th>
+      <th>Breccia</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KA</strong></th>
+      <th>Calcarenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KM</strong></th>
+      <th>Calcareous mudstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KL</strong></th>
+      <th>Calcilutite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KR</strong></th>
+      <th>Calcirudite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KC</strong></th>
+      <th>Calcrete</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CH</strong></th>
+      <th>Chert</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CO</strong></th>
+      <th>Coal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CG</strong></th>
+      <th>Conglomerate</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="48"><strong>Lithology</strong></th>
+      <th><strong>CU</strong></th>
+      <th>Consolidated rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SD</strong></th>
+      <th>Detrital sedimentary rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DI</strong></th>
+      <th>Diorite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>DR</strong></th>
+      <th>Dolerite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DM</strong></th>
+      <th>Dolomite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>FC</strong></th>
+      <th>Ferricrete</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GA</strong></th>
+      <th>Gabbro</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GS</strong></th>
+      <th>Gneiss</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GN</strong></th>
+      <th>Granite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GD</strong></th>
+      <th>Granodiorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GR</strong></th>
+      <th>Granulite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GV</strong></th>
+      <th>Gravel</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GW</strong></th>
+      <th>Graywacke</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GE</strong></th>
+      <th>Greenstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GY</strong></th>
+      <th>Gypsum</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>HA</strong></th>
+      <th>Halite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>HO</strong></th>
+      <th>Hornfels</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>IG</strong></th>
+      <th>Igneous rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>JA</strong></th>
+      <th>Jasper</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>LI</strong></th>
+      <th>Limestone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MB</strong></th>
+      <th>Marble</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ML</strong></th>
+      <th>Marl</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ME</strong></th>
+      <th>Metamorphic rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MD</strong></th>
+      <th>Microdiorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MG</strong></th>
+      <th>Microgranite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MS</strong></th>
+      <th>Microsyenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MI</strong></th>
+      <th>Migmatite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MU</strong></th>
+      <th>Mudstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MY</strong></th>
+      <th>Mylonite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PG</strong></th>
+      <th>Pegmatite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PE</strong></th>
+      <th>Peridotite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PL</strong></th>
+      <th>Phonolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PH</strong></th>
+      <th>Phyllite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PC</strong></th>
+      <th>Porcellanite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PO</strong></th>
+      <th>Porphyry</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PY</strong></th>
+      <th>Pyroxenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QZ</strong></th>
+      <th>Quartz</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QU</strong></th>
+      <th>Quartzite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QP</strong></th>
+      <th>Quartz porphyry</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QS</strong></th>
+      <th>Quartz sandstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RB</strong></th>
+      <th>Red-brown hardpan</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RH</strong></th>
+      <th>Rhyolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SA</strong></th>
+      <th>Sandstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ST</strong></th>
+      <th>Schist</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SK</strong></th>
+      <th>Scoria</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SR</strong></th>
+      <th>Serpentinite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SH</strong></th>
+      <th>Shale</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>LC</strong></th>
+      <th>Silcrete</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="14"><strong>Lithology</strong></th>
+      <th><strong>ZS</strong></th>
+      <th>Siltstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SL</strong></th>
+      <th>Slate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SY</strong></th>
+      <th>Syenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>TR</strong></th>
+      <th>Trachyte</th>
+    </tr>
+    <tr class="header">
+      <th><strong>TU</strong></th>
+      <th>Tuff</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>UC</strong></th>
+      <th>Unconsolidated material (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VB</strong></th>
+      <th>Volcanic breccia</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>VG</strong></th>
+      <th>Volcanic glass</th>
+    </tr>
+    <tr class="header">
+      <th><strong>IS</strong></th>
+      <th>Ironstone (where not considered of pedogenic origin)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SS</strong></th>
+      <th>Shells</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CC</strong></th>
+      <th>Charcoal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PU</strong></th>
+      <th>Pumice</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OW</strong></th>
+      <th>Opalised wood</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OT</strong></th>
+      <th>Other</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Strength</strong></th>
+      <th><strong>VW</strong></th>
+      <th>Very weak rock (1–25 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>W</strong></th>
+      <th>Weak rock (25–50 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Moderately strong rock (50–100 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Strong rock (100–200 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VS</strong></th>
+      <th>Very strong rock (&gt;200 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>Alteration</strong></th>
+      <th><strong>F</strong></th>
+      <th>Ferruginised</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Kaolinised</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Silicified</th>
+    </tr>
+    <tr class="header">
+      <th><strong>C</strong></th>
+      <th>Calcified</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>O</strong></th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix K. Rock outcrop descriptions and codes</h4>
+<p>
+  <em
+    >(YB p. 143–144, 214; The National Committee on Soil and Terrain 2009).</em
+  >
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Rock outcrop details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6"><strong>Abundance</strong></th>
+      <th><strong>0</strong></th>
+      <th>No rock outcrop (no bedrock exposed)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Very slightly rocky (&lt;2% bedrock exposed)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Slightly rocky (2–10% bedrock exposed)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Rocky (10–20% bedrock exposed)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Very rocky (20–50% bedrock exposed)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Rockland (&gt;50% bedrock exposed)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="47"><strong>Lithology</strong></th>
+      <th><strong>AD</strong></th>
+      <th>Adamellite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AG</strong></th>
+      <th>Agglomerate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AC</strong></th>
+      <th>Alcrete (bauxite)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AM</strong></th>
+      <th>Amphibolite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AN</strong></th>
+      <th>Andesite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AH</strong></th>
+      <th>Anhydrite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AP</strong></th>
+      <th>Aplite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AR</strong></th>
+      <th>Arkose</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BA</strong></th>
+      <th>Basalt</th>
+    </tr>
+    <tr class="header">
+      <th><strong>BB</strong></th>
+      <th>Bombs (volcanic)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BR</strong></th>
+      <th>Breccia</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KA</strong></th>
+      <th>Calcarenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KM</strong></th>
+      <th>Calcareous mudstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KL</strong></th>
+      <th>Calcilutite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KR</strong></th>
+      <th>Calcirudite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KC</strong></th>
+      <th>Calcrete</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CH</strong></th>
+      <th>Chert</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CO</strong></th>
+      <th>Coal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CG</strong></th>
+      <th>Conglomerate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CU</strong></th>
+      <th>Consolidated rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SD</strong></th>
+      <th>Detrital sedimentary rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DI</strong></th>
+      <th>Diorite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>DR</strong></th>
+      <th>Dolerite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DM</strong></th>
+      <th>Dolomite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>FC</strong></th>
+      <th>Ferricrete</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GA</strong></th>
+      <th>Gabbro</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GS</strong></th>
+      <th>Gneiss</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GN</strong></th>
+      <th>Granite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GD</strong></th>
+      <th>Granodiorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GR</strong></th>
+      <th>Granulite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GV</strong></th>
+      <th>Gravel</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GW</strong></th>
+      <th>Graywacke</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GE</strong></th>
+      <th>Greenstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GY</strong></th>
+      <th>Gypsum</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>HA</strong></th>
+      <th>Halite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>HO</strong></th>
+      <th>Hornfels</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>IG</strong></th>
+      <th>Igneous rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>JA</strong></th>
+      <th>Jasper</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>LI</strong></th>
+      <th>Limestone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MB</strong></th>
+      <th>Marble</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ML</strong></th>
+      <th>Marl</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ME</strong></th>
+      <th>Metamorphic rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MD</strong></th>
+      <th>Microdiorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MG</strong></th>
+      <th>Microgranite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MS</strong></th>
+      <th>Microsyenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MI</strong></th>
+      <th>Migmatite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MU</strong></th>
+      <th>Mudstone</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="34"><strong>Lithology</strong></th>
+      <th><strong>MY</strong></th>
+      <th>Mylonite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PG</strong></th>
+      <th>Pegmatite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PE</strong></th>
+      <th>Peridotite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PL</strong></th>
+      <th>Phonolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PH</strong></th>
+      <th>Phyllite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PC</strong></th>
+      <th>Porcellanite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PO</strong></th>
+      <th>Porphyry</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PY</strong></th>
+      <th>Pyroxenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QZ</strong></th>
+      <th>Quartz</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QU</strong></th>
+      <th>Quartzite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QP</strong></th>
+      <th>Quartz porphyry</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QS</strong></th>
+      <th>Quartz sandstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RB</strong></th>
+      <th>Red-brown hardpan</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RH</strong></th>
+      <th>Rhyolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SA</strong></th>
+      <th>Sandstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ST</strong></th>
+      <th>Schist</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SK</strong></th>
+      <th>Scoria</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SR</strong></th>
+      <th>Serpentinite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SH</strong></th>
+      <th>Shale</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>LC</strong></th>
+      <th>Silcrete</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ZS</strong></th>
+      <th>Siltstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SL</strong></th>
+      <th>Slate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SY</strong></th>
+      <th>Syenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>TR</strong></th>
+      <th>Trachyte</th>
+    </tr>
+    <tr class="header">
+      <th><strong>TU</strong></th>
+      <th>Tuff</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>UC</strong></th>
+      <th>Unconsolidated material (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VB</strong></th>
+      <th>Volcanic breccia</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>VG</strong></th>
+      <th>Volcanic glass</th>
+    </tr>
+    <tr class="header">
+      <th><strong>IS</strong></th>
+      <th>Ironstone (where not considered of pedogenic origin)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SS</strong></th>
+      <th>Shells</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CC</strong></th>
+      <th>Charcoal</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PU</strong></th>
+      <th>Pumice</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OW</strong></th>
+      <th>Opalised wood</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OT</strong></th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix T. Coarse fragments descriptions and codes</h4>
+<p>
+  <em
+    >(YB p. 139–144, 209, 214; The National Committee on Soil and Terrain
+    2009).</em
+  >
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Coarse fragments details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="8"><strong>Abundance</strong></th>
+      <th><strong>0</strong></th>
+      <th>No coarse fragments</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Very slight or few (&lt;2%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Slight or few (&lt;2%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Common e.g. Medium gravel, stony, common medium pebbles (10–20%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Moderate or many (20–50%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Abundant (50–90%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>6</strong></th>
+      <th>Extremely abundance (&gt;90%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>NC</strong></th>
+      <th>Not collected</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="7"><strong>Size</strong></th>
+      <th><strong>1</strong></th>
+      <th>Fine gravelly or small pebbles (26 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Medium gravelly or medium pebbles (6–20 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Coarse gravelly or coarse pebbles (20–60 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>4</strong></th>
+      <th>Cobbly or cobbles (60–200 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>5</strong></th>
+      <th>Stony or stones (200–600 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>6</strong></th>
+      <th>Bouldery or boulders (600–2000 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>7</strong></th>
+      <th>Large boulders (&gt;2000 mm)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="12"><strong>Shape</strong></th>
+      <th><strong>A</strong></th>
+      <th>Angular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Sub-angular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>U</strong></th>
+      <th>Sub-rounded</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Rounded</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AT</strong></th>
+      <th>Angular tabular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ST</strong></th>
+      <th>Sub-angular tabular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>UT</strong></th>
+      <th>Sub-rounded tabular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RT</strong></th>
+      <th>Rounded tabular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AP</strong></th>
+      <th>Angular platy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SP</strong></th>
+      <th>Sub-angular platy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>UP</strong></th>
+      <th>Sub rounded platy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RP</strong></th>
+      <th>Rounded platy</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="18"><strong>Lithology</strong></th>
+      <th><strong>AD</strong></th>
+      <th>Adamellite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AG</strong></th>
+      <th>Agglomerate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AC</strong></th>
+      <th>Alcrete (bauxite)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AM</strong></th>
+      <th>Amphibolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AN</strong></th>
+      <th>Andesite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AH</strong></th>
+      <th>Anhydrite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AP</strong></th>
+      <th>Aplite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AR</strong></th>
+      <th>Arkose</th>
+    </tr>
+    <tr class="header">
+      <th><strong>BA</strong></th>
+      <th>Basalt</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BB</strong></th>
+      <th>Bombs (volcanic)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>BR</strong></th>
+      <th>Breccia</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KA</strong></th>
+      <th>Calcarenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KM</strong></th>
+      <th>Calcareous mudstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KL</strong></th>
+      <th>Calcilutite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KR</strong></th>
+      <th>Calcirudite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KC</strong></th>
+      <th>Calcrete</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CH</strong></th>
+      <th>Chert</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CO</strong></th>
+      <th>Coal</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="48"><strong>Lithology</strong></th>
+      <th><strong>CG</strong></th>
+      <th>Conglomerate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CU</strong></th>
+      <th>Consolidated rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SD</strong></th>
+      <th>Detrital sedimentary rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>DI</strong></th>
+      <th>Diorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DR</strong></th>
+      <th>Dolerite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>DM</strong></th>
+      <th>Dolomite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>FC</strong></th>
+      <th>Ferricrete</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GA</strong></th>
+      <th>Gabbro</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GS</strong></th>
+      <th>Gneiss</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GN</strong></th>
+      <th>Granite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GD</strong></th>
+      <th>Granodiorite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GR</strong></th>
+      <th>Granulite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GV</strong></th>
+      <th>Gravel</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GW</strong></th>
+      <th>Graywacke</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GE</strong></th>
+      <th>Greenstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GY</strong></th>
+      <th>Gypsum</th>
+    </tr>
+    <tr class="header">
+      <th><strong>HA</strong></th>
+      <th>Halite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>HO</strong></th>
+      <th>Hornfels</th>
+    </tr>
+    <tr class="header">
+      <th><strong>IG</strong></th>
+      <th>Igneous rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>JA</strong></th>
+      <th>Jasper</th>
+    </tr>
+    <tr class="header">
+      <th><strong>LI</strong></th>
+      <th>Limestone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MB</strong></th>
+      <th>Marble</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ML</strong></th>
+      <th>Marl</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ME</strong></th>
+      <th>Metamorphic rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MD</strong></th>
+      <th>Microdiorite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MG</strong></th>
+      <th>Microgranite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MS</strong></th>
+      <th>Microsyenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MI</strong></th>
+      <th>Migmatite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MU</strong></th>
+      <th>Mudstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MY</strong></th>
+      <th>Mylonite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PG</strong></th>
+      <th>Pegmatite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PE</strong></th>
+      <th>Peridotite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PL</strong></th>
+      <th>Phonolite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PH</strong></th>
+      <th>Phyllite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PC</strong></th>
+      <th>Porcellanite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PO</strong></th>
+      <th>Porphyry</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PY</strong></th>
+      <th>Pyroxenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QZ</strong></th>
+      <th>Quartz</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QU</strong></th>
+      <th>Quartzite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QP</strong></th>
+      <th>Quartz porphyry</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QS</strong></th>
+      <th>Quartz sandstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RB</strong></th>
+      <th>Red-brown hardpan</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RH</strong></th>
+      <th>Rhyolite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SA</strong></th>
+      <th>Sandstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ST</strong></th>
+      <th>Schist</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SK</strong></th>
+      <th>Scoria</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SR</strong></th>
+      <th>Serpentinite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SH</strong></th>
+      <th>Shale</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="15"><strong>Lithology</strong></th>
+      <th><strong>LC</strong></th>
+      <th>Silcrete</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ZS</strong></th>
+      <th>Siltstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SL</strong></th>
+      <th>Slate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SY</strong></th>
+      <th>Syenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>TR</strong></th>
+      <th>Trachyte</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>TU</strong></th>
+      <th>Tuff</th>
+    </tr>
+    <tr class="header">
+      <th><strong>UC</strong></th>
+      <th>Unconsolidated material (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>VB</strong></th>
+      <th>Volcanic breccia</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VG</strong></th>
+      <th>Volcanic glass</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>IS</strong></th>
+      <th>Ironstone (where not considered of pedogenic origin)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SS</strong></th>
+      <th>Shells</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CC</strong></th>
+      <th>Charcoal</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PU</strong></th>
+      <th>Pumice</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OW</strong></th>
+      <th>Opalised wood</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OT</strong></th>
+      <th>Other</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>Strength</strong></th>
+      <th><strong>VW</strong></th>
+      <th>Very weak rock (1–25 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>W</strong></th>
+      <th>Weak rock (25–50 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>M</strong></th>
+      <th>Moderately strong rock (50–100 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Strong rock (100–200 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>VS</strong></th>
+      <th>Very strong rock (&gt;200 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Alteration</strong></th>
+      <th><strong>F</strong></th>
+      <th>Ferruginised</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Kaolinised</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Silicified</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>C</strong></th>
+      <th>Calcified</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix V. Segregations descriptions and codes</h4>
+<p>
+  <em>(YB p. 195–198; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Segregations details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6"><strong>Abundance</strong></th>
+      <th><strong>0</strong></th>
+      <th>No segregations</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Very few (&lt;2%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Few (2–10%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Common (10–20%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Many (20–50%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Very many (&gt;50%)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="14"><strong>Nature</strong></th>
+      <th><strong>U</strong></th>
+      <th>Unidentified</th>
+    </tr>
+    <tr class="header">
+      <th><strong>K</strong></th>
+      <th>Calcareous (carbonate)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Y</strong></th>
+      <th>Gypseous (gypsum)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Manganiferous (manganese)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>N</strong></th>
+      <th>Ferromanganiferous (iron-manganese)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>F</strong></th>
+      <th>Ferruginous (iron)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>A</strong></th>
+      <th>Aluminous (aluminium)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Sulphurous (sulfur)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Z</strong></th>
+      <th>Saline (visible salt)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>H</strong></th>
+      <th>Organic (humified, well-decomposed organic matter)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>G</strong></th>
+      <th>Ferruginous-organic (iron-organic matter)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Argillaceous (clayey)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>E</strong></th>
+      <th>Earthy (dominantly non-clayey)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Other</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="9"><strong>Form</strong></th>
+      <th><strong>C</strong></th>
+      <th>Concretions</th>
+    </tr>
+    <tr class="header">
+      <th><strong>N</strong></th>
+      <th>Nodules</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>F</strong></th>
+      <th>Fragments</th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Crystals</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Soft segregations</th>
+    </tr>
+    <tr class="header">
+      <th><strong>V</strong></th>
+      <th>Veins</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Root linings</th>
+    </tr>
+    <tr class="header">
+      <th><strong>T</strong></th>
+      <th>Tubules</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Laminae</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Size</strong></th>
+      <th><strong>1</strong></th>
+      <th>Fine (&lt;2 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Medium (2–6 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Coarse (6–20 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Very coarse (20–60 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Extremely coarse (&gt;60 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="2"><strong>Strength</strong></th>
+      <th><strong>1</strong></th>
+      <th>Weak</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Strong</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="2"><strong>Magnetic attributes</strong></th>
+      <th><strong>N</strong></th>
+      <th>Non-magnetic</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Magnetic</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix W. Voids descriptions and codes</h4>
+<p>
+  <em>(YB p. 184–185; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Voids details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>Cracks</strong></th>
+      <th><strong>1</strong></th>
+      <th>Fine (&lt;5 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Medium (5–10 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Coarse (10–20 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>4</strong></th>
+      <th>Very coarse (20–50 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>5</strong></th>
+      <th>Extremely coarse (&gt;50 mm)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="4">
+        <strong
+          >Very fine and fine macropore (&lt;2 mm diameter) abundance</strong
+        >
+      </th>
+      <th><strong>0</strong></th>
+      <th>No very fine or fine macropores</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>1</strong></th>
+      <th>Few (&lt;1 per 100 mm<sup>2</sup>; 10 x 10 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Common (1–5 per 100 mm<sup>2</sup>)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Many (&gt;5 per 100 mm<sup>2</sup>)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="4">
+        <strong
+          >Medium and coarse macropore (&gt;2 mm diameter) abundance</strong
+        >
+      </th>
+      <th><strong>0</strong></th>
+      <th>No medium or coarse macropores</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Few (&lt;1 per 0.1 m<sup>2</sup>; 100 x 100 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Common (1–5 per 0.1 m<sup>2</sup>)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>6</strong></th>
+      <th>Many (&gt;5 per 0.1 m<sup>2</sup>)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="4"><strong>Mean diameter of macropores</strong></th>
+      <th><strong>1</strong></th>
+      <th>Very fine (0.075–1 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Fine (1–2 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Medium (2–5 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Coarse (&gt;5 mm)</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>Appendix X. Consistence descriptions and codes</h4>
+<p>
+  <em>(YB p. 186–187; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Consistence details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="4"><strong>Soil water status</strong></th>
+      <th><strong>D</strong></th>
+      <th>Dry</th>
+    </tr>
+    <tr class="header">
+      <th><strong>T</strong></th>
+      <th>Moderately moist</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>M</strong></th>
+      <th>Moist</th>
+    </tr>
+    <tr class="header">
+      <th><strong>W</strong></th>
+      <th>Wet</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="8"><strong>Strength of soil</strong></th>
+      <th><strong>0</strong></th>
+      <th>Loose</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Very weak</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Weak</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Firm</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Very firm</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Strong</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>6</strong></th>
+      <th>Very strong</th>
+    </tr>
+    <tr class="header">
+      <th><strong>7</strong></th>
+      <th>Rigid</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4>
+  Appendix GG. Australian Soil Classification (ASC) Family descriptions and
+  codes
+</h4>
+<p>
+  <em>(Isbell and The National Committee on Soil and Terrain 2016).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Family criteria</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="3"><strong>Water repellence</strong></th>
+      <th><strong>NR</strong></th>
+      <th>Non water repellent</th>
+    </tr>
+    <tr class="header">
+      <th><strong>WR</strong></th>
+      <th>Water repellent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SR</strong></th>
+      <th>Strongly water repellent</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="4"><strong>A of A1 horizon thickness</strong></th>
+      <th><strong>A</strong></th>
+      <th>Thin</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>B</strong></th>
+      <th>Moderately thick</th>
+    </tr>
+    <tr class="header">
+      <th><strong>C</strong></th>
+      <th>Thick</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>D</strong></th>
+      <th>Very thick</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Gravel of surface and A1 horizon</strong></th>
+      <th><strong>E</strong></th>
+      <th>Non gravelly</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>F</strong></th>
+      <th>Slightly gravelly</th>
+    </tr>
+    <tr class="header">
+      <th><strong>G</strong></th>
+      <th>Gravelly</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>H</strong></th>
+      <th>Moderately gravelly</th>
+    </tr>
+    <tr class="header">
+      <th><strong>I</strong></th>
+      <th>Very gravelly</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6"><strong>A1, O2, P1 or P2 horizon texture</strong></th>
+      <th><strong>J</strong></th>
+      <th>Peaty</th>
+    </tr>
+    <tr class="header">
+      <th><strong>K</strong></th>
+      <th>Sandy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Loamy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Clay loamy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>N</strong></th>
+      <th>Silty</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Clayey</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6">
+        <strong
+          >Texture of the layer directly underlying the deepest organic
+          materials</strong
+        >
+      </th>
+      <th><strong>Z</strong></th>
+      <th>Materials absent</th>
+    </tr>
+    <tr class="header">
+      <th><strong>K</strong></th>
+      <th>Sandy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Loamy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Clay loamy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>N</strong></th>
+      <th>Silty</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Clayey</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>B horizon maximum texture</strong></th>
+      <th><strong>K</strong></th>
+      <th>Sandy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Loamy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>M</strong></th>
+      <th>Clay loamy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>N</strong></th>
+      <th>Silty</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>O</strong></th>
+      <th>Clayey</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="3"><strong>Clay content (vertosols only)</strong></th>
+      <th><strong>Q</strong></th>
+      <th>Fine</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Medium fine</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Very fine</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="7"><strong>Soil depth</strong></th>
+      <th><strong>T</strong></th>
+      <th>Very shallow</th>
+    </tr>
+    <tr class="header">
+      <th><strong>U</strong></th>
+      <th>Shallow</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>V</strong></th>
+      <th>Moderately deep</th>
+    </tr>
+    <tr class="header">
+      <th><strong>W</strong></th>
+      <th>Deep</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>X</strong></th>
+      <th>Very deep</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Y</strong></th>
+      <th>Giant</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>–</strong></th>
+      <th>Not recorded</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="7">
+        <strong
+          >Dominant texture of the uppermost organic materials (O2, P1 or
+          P2)</strong
+        >
+      </th>
+      <th><strong>Z</strong></th>
+      <th>Materials absent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OA</strong></th>
+      <th>Fibric peat</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OB</strong></th>
+      <th>Hemic peat</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OC</strong></th>
+      <th>Sapric peat</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OD</strong></th>
+      <th>Sandy peat</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OE</strong></th>
+      <th>Loam peat</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OF</strong></th>
+      <th>Clayey peat</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="3">
+        <strong>Nature of altered organic materials</strong>
+      </th>
+      <th><strong>P</strong></th>
+      <th>Granular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>HZ</strong></th>
+      <th>Ashy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>JZ</strong></th>
+      <th>Vitric</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    tern:purpose """
+    <h3 id="rationale">Rationale</h3>
+<p>
+  Large areas of Australia have limited or no soils information. Investigation
+  of soils has typically focused on agricultural zones, resulting in soil
+  characteristics for large areas of the country being interpolated from sparse
+  data (Sparrow <em>et al.</em> 2020). Consequently, collecting plot soil
+  descriptions and soil characteristics will help to alleviate this paucity of
+  information and improve the reliability of the Soil and Landscape Grid of
+  Australia (SLGA) and the Australian Soil Resource Information System (ASRIS).
+  Both the SLGA and ASRIS meet the demands of a broad range of users, including
+  urban and regional planners, natural resources managers, scientists,
+  engineers, educational institutions, and farming and community groups
+  (McKenzie <em>et al.</em> 2012; Grundy <em>et al.</em> 2015).
+</p>
+<p>
+  Nationally standardised soil monitoring protocols are critical to
+  understanding how Australia’s soil resources are being affected by land use
+  and climate change. Soil is a fundamental natural resource and its condition
+  and use have a major impact on the health of ecosystems, the economy and human
+  health. Good quality soil condition data is required to support decisions
+  related to local, regional, national and international issues such as food
+  security, environmental sustainability, carbon and greenhouse gas accounting,
+  and water availability and use (Grealish
+  <em>et al.</em> 2011). In addition to basic characterisation, the method
+  archives soils for future analysis (e.g. DNA metabarcoding and chemical
+  analyses), and therefore helps to create a library of soil samples from across
+  Australia.
+</p>
+<p>
+  Standardised data collection and reporting of methods and results enables
+  greater ease of study replication, more robust comparisons among studies,
+  facilitates national and international reviews, and leads to improved research
+  and management outcomes for soil and land resources.
+</p>
+<p>
+  In preparation of the <em>Soils</em> module, relevant national and State soil
+  monitoring programs and their objectives have been considered, including but
+  not limited to:
+</p>
+<ul>
+  <li>
+    <p>
+      CSIRO’s National Soil Condition Monitoring for Soil pH and Soil Carbon
+      (Grealish <em>et al.</em> 2011)
+    </p>
+  </li>
+  <li>
+    <p>
+      CSIRO’s National Soil Carbon Research Programme (SCaRP; Sanderman
+      <em>et al.</em> 2011)
+    </p>
+  </li>
+  <li>
+    <p>Tasmania’s Soil Condition Evaluation and Monitoring (SCEAM)</p>
+  </li>
+  <li>
+    <p>
+      New South Wales’ Monitoring, Evaluation and Reporting (MER) Program
+      (Bowman <em>et al.</em> 2009)
+    </p>
+  </li>
+  <li>
+    <p>
+      The Soil pH Monitoring Network for the Western Australian Wheatbelt
+      (Holmes <em>et al.</em> 2011).
+    </p>
+  </li>
+</ul>
+<p>
+  There are similarities in approach, particularly with the soil variables
+  measured and collection methods of soil samples. Approaches are complementary,
+  and data can be shared to provide larger improved datasets for interpretation
+  (Grealish <em>et al.</em> 2011).
+</p>
+<p>
+  The <em>Soils</em> module consists of six protocols that can be undertaken
+  exclusively or in combination, depending on project requirements (see Module
+  overview for recommendations). The rationale of each protocol is provided
+  below:
+</p>
+<ol type="1">
+  <li>
+    <p>
+      <strong>Plot soil description –</strong> The plot soil description, as
+      well as the physical description of the soil profile (see below), is
+      important for both baseline descriptions and for comparisons between plots
+      (The National Committee on Soil and Terrain 2009). The plot soil
+      description can assist with the determination and interpretation of soil
+      profile descriptions, and records important survey and plot location
+      information. The protocol uses the standards outlined in the Yellow Book
+      (The National Committee on Soil and Terrain 2009), and provides
+      significant background information on land surface aspects of the plot
+      such as landform and microrelief features, and erosion and disturbance.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil pit characterisation –</strong> The physical description of
+      the soil profile from a soil pit, as well as the plot soils description
+      (see above), is important for both baseline descriptions and for
+      comparisons between plots (The National Committee on Soil and Terrain
+      2009). The protocol uses the standards outlined in the Yellow Book (The
+      National Committee on Soil and Terrain 2009), which allows soils to be
+      categorised using a standard such as the Australian Soil Classification
+      (ASC; Isbell and The National Committee on Soil and Terrain 2016), and
+      ensures data is suitable for use in digital soil mapping and predictive
+      modelling (McKenzie <em>et al.</em> 2008).
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil sub-site samples –</strong> Nine soil sub-sites are sampled
+      to capture soil diversity across the plot, with soil characters that are
+      atypical of the soil pit recorded at each sub-site. The samples can be
+      analysed by a number of different methods (e.g. wet chemistry, mid
+      infrared spectrometry or near infrared spectroscopy) either individually
+      to provide a measure of variation of the parameter being measured across a
+      plot, or bulked together to provide a mean value for that parameter across
+      a plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil bulk density –</strong> Soil bulk density measures are
+      collected so that important soil parameters of the plot can be quantified
+      per unit area, particularly carbon content (e.g. tonnes of carbon per
+      hectare). The precise collection of undisturbed soil in bulk density rings
+      is used to ensure accurate calculations.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil condition samples –</strong> Monitoring soil condition is a
+      key outcome of soil conservation projects, and in many cases focuses on
+      key indicators of soil condition, including soil pH and soil carbon. These
+      two variables are important as they exert some level of control or
+      influence over multiple soil properties. Therefore, the protocol is based
+      on the CSIRO’s National Soil Condition Monitoring for Soil pH and Soil
+      Carbon operating procedures and guidelines to provide consistent
+      information for repeat assessments and long-term reporting (Grealish
+      <em>et al.</em> 2011). Practitioners can undertake or commission tests of
+      soil chemical properties and soil bulk density from soil cores to monitor
+      soil condition. Monitoring changes in bulk density over time is importanct
+      as this can mask or confuse real trends in soil parameters. Soil erosion,
+      which is another key indicator of soil condition is address in the
+      <em>Plot soil description</em> protocol.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Soil metagenomics –</strong> Soil metagenomic samples provide the
+      opportunity to understand what organisms are present at survey plots and
+      provide an indication on their abundance. Microbial inhabitants of soils
+      are important to ecosystem and planetary functions, yet there are large
+      gaps in our knowledge of their diversity and ecology. The collection of
+      soil metagenomic samples provides an opportunity to contribute to the
+      <em>Biomes of Australian Soil Environments</em> (BASE) project, which has
+      generated a database of microbial diversity with associated metadata
+      across extensive environmental gradients at continental scale (Bissett
+      <em>et al.</em> 2016).
+    </p>
+  </li>
+</ol>
+    """^^rdf:HTML ;
+    tern:scope """
+    <h3 id="introduction">Introduction</h3>
+<p>
+  The <em>Soils</em> module covers a range of soil survey methods to describe
+  and characterise the soils of the plot, enable the conversion of soil
+  properties of the plot to volumetric measures, and collect soil samples to
+  allow various downstream laboratory tests and analyses, such as soil chemistry
+  tests and soil metagenomics analysis. The <em>Soils</em> module consists of
+  six protocols, including plot soils description, soil pit characterisation,
+  soil sub-site sampling, soil bulk density, soil condition sampling, and soil
+  metagenomic sampling. Soil surveys can consist of a single one of these six
+  protocols or a combination. Data for each of the protocols is collected in a
+  standardized manner using the App, which ensures the data is correct and
+  complete, suitable for use in soils or ecological reports and peer-reviewed
+  papers, and comparable over time and among projects.
+</p>
+<p>
+  The soil descriptions and survey procedures are based on the third edition of
+  the <em>Australian Soil and Land Survey Field Handbook</em>, colloquially
+  known as the ‘Yellow Book’, to maintain consistency with the various
+  organisations in Australia concerned with soil and land survey investigations
+  (Grealish <em>et al.</em> 2011; Sanderman <em>et al.</em> 2011; McKenzie
+  <em>et al.</em> 2012). The Yellow Book provides standards for terminology and
+  methodology for the survey of all components of land resources in Australia
+  (The National Committee on Soil and Terrain 2009). Guidance in dealing with
+  the practical issues of surveying soil and land resources are based on the
+  second edition of the
+  <em>Guidelines for Surveying Soil and Land Resources</em>, colloquially known
+  as the 'Blue Book' (McKenzie <em>et al.</em> 2008).
+</p>
+<p>
+  Important land surface aspects of the plot are described, in addition to the
+  descriptive information collected as part of the
+  <em
+    ><a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32"
+      >Plot description</a
+    ></em
+  >
+  module. This includes documenting slope, landform element and pattern, erosion
+  (accelerated erosion, rather than natural), microrelief, drainage, disturbance
+  and soil surface condition (when dry). These observations provide significant
+  background information on the plot history, topography, position in the
+  landscape, and can assist with interpretation of soil pit results and
+  assessments of the relationship between the soils, vegetation and fauna.
+</p>
+<p>
+  When a pedologist or experienced soil surveyor undertakes the sampling, the
+  exposed soil profile can be characterised <em>in situ</em> to derive an
+  understanding of the physical properties of the soil down the profile,
+  including the arrangement of soil horizons, texture, mottles, coarse
+  fragments, structure and segregations. Parts of this process are essential and
+  must be undertaken in the field, whereas other parts can be completed at a
+  later stage from samples collected in the field. For less experienced field
+  surveyors, the minimum requirement is to collect a soil sample from 10 cm
+  incremental layers down the soil profile to 1 m+, taking care not to sample
+  across horizons. The soil samples can then be assessed by a pedologist at some
+  later date to produce a profile for characterisation. However, completing the
+  characterisation in the field is the model approach, as certain physical
+  properties can be difficult or may not be possible to describe from the
+  samples alone. Whether to engage a pedologist or experienced soil surveyor is
+  an important survey design consideration and will ultimately depend on the
+  scope and desired outcomes of a project.
+</p>
+<p>
+  Soil characterisation sampling involves a 1 m+ soil pit at the southwest
+  corner of the plot, and nine 30 cm deep soil sub-sites targeting microhabitats
+  within the plot, which enable follow-up physical descriptions of the soil (see
+  above) and soil chemistry analysis. See McKenzie <em>et al.</em> (2008) for
+  further examples and details of analyses for soil classification.
+</p>
+<p>
+  A measure of the bulk density of the soil is necessary to quantify important
+  soil parameters per unit area, particularly carbon content (e.g. tonnes of
+  carbon per hectare). To ensure a reliable measure, multiple samples should be
+  collected across the plot in different surface substrate classes and at
+  different distances from trees or shrubs. If this is beyond the scope of the
+  initial survey process, an indicative measure of soil bulk density for each
+  plot should still be collected to enable interested parties to convert the
+  soil properties of the plot to volumetric measures. A soil condition samples
+  protocol tailored for conservation practitioners collects 10 soil cores from
+  10 cm increments to 30 cm from a 25 x 25m grid in the southwest corner of the
+  plot. Practitioners can undertake or commission tests of soil chemical
+  properties (e.g. pH, soil organic carbon) and soil bulk density from these
+  cores to monitor soil condition.
+</p>
+<p>
+  Collection of metagenomic soil samples provides the opportunity to investigate
+  the diversity and abundance of soil biota (e.g. bacteria, fungi), and identify
+  traces of above-ground flora and fauna. To ensure soil metagenomic analysis is
+  robust and reliable detections of soil biota or traces of above-ground flora
+  and fauna are obtained, certain aspects of soil sampling need to be
+  considered, including sampling time, location, season, volume, mixing,
+  composition, replication, handling and storage (Pasternak
+  <em>et al.</em> 2019).
+</p>
+    """^^rdf:HTML ;
 .
 
