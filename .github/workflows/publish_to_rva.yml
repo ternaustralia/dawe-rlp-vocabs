@@ -1,0 +1,58 @@
+name: Publish to Research Vocabularies Australia
+
+on:
+  workflow_call:
+    inputs:
+      rva_vocab_id:
+        required: true
+        type: string
+      rva_username:
+        required: true
+        type: string
+      rva_env:
+        required: true
+        type: string
+      github_env:
+        required: true
+        type: string
+      deployment_url:
+        required: true
+        type: string
+    secrets:
+      rva_password:
+        required: true
+
+env:
+  PYTHON_VERSION: "3.10"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: ${{ inputs.github_env }}
+      url: ${{ inputs.deployment_url }}
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+
+      - name: Use Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install project dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install project
+        run: pip install .
+
+      - name: Get latest tag
+        id: latest-tag
+        uses: WyriHaximus/github-action-get-previous-tag@v1
+        with:
+          fallback: "0.0.0"
+
+      - name: Publish to Research Vocabularies Australia
+        run: python rva.py vocab_files/ ${{ inputs.rva_username }} ${{ secrets.rva_password }} ${{ inputs.rva_vocab_id }} ${{ steps.latest-tag.outputs.tag }} --environment ${{ inputs.rva_env }}
