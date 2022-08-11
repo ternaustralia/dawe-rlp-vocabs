@@ -6,181 +6,13 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/4da8c123-b886-4881-91b3-1ff6a9b30e3c>
-    a skos:Concept ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:prefLabel "Ecological community protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/targeted-survey/ecological-community-protocol/ecological-community-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    <p>
-      Mobile device (tablet/phone capable of taking high resolution photos) with
-      the App (progressive web app) saved to the home screen
-    </p>
-  </li>
-  <li>
-    <p>Trimble® R1</p>
-  </li>
-  <li>
-    <p>Field guides and identification keys</p>
-  </li>
-  <li>
-    <p>
-      Relevant TEC survey guidelines, policy statements and SPRAT profiles saved
-      or accessible from mobile device
-    </p>
-  </li>
-  <li>
-    <p>Hand lens</p>
-  </li>
-  <li>
-    <p>Binoculars</p>
-  </li>
-  <li>
-    <p>Photo scale card.</p>
-  </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
-  <li>
-    <p>
-      Based on prior desktop research (Section 3), use the ‘look up’ to Select
-      target community/s. As you type, options will be provided, based on the
-      list of EPBC listed communities. Select the target community/s for the
-      survey. A maximum of two communities can be selected per survey.
-    </p>
-  </li>
-</ol>
-<ol start="2">
-  <li>
-    <p>
-      Select Start Survey to record the starting position for the survey
-      (coordinates automatically recorded) and the start time.
-    </p>
-  </li>
-  <li>
-    <p>
-      Once the survey has started, the app will record a track log. Tracks will
-      be visible in the built in app screen and can be used to assist with
-      navigating the survey area and ensuring good coverage of the study area.
-    </p>
-    <p>Figure. Ecological community – app screen 1
-        <table>
-            <tbody>
-              <tr>
-                <td>
-                  <img
-                    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/ecological-community-app-screen-1.png"
-                    alt="Ecological community – app screen 1"
-                    widteh="383"
-                    height="666"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-    </p>
-  </li>
-</ol>
-<ol start="4">
-  <li>
-    <p>
-      If any of the target communities are located during the survey, select the
-      Add Community button and draw a polygon around the edge of the community.
-      Refer to Appendix 6 for tips on defining the community boundary.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the community observed from the drop-down menu and record any other
-      comments about the observation in the comments field.
-    </p>
-    <p>Figure. Ecological community – define boundary
-        <table>
-            <tbody>
-              <tr>
-                <td>
-                  <img
-                    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/ecological-community-define-boundary.png"
-                    alt="Ecological community – define boundary"
-                    widteh="589"
-                    height="956"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-    </p>
-  </li>
-</ol>
-<ol start="6">
-  <li>
-    <p>
-      Mark the boundary of the community by standing at the community edge and
-      selecting Add Vertex. Continue this process as you make your way around
-      the community, selecting Add Vertex as often as required to accurately
-      mark the edge.
-    </p>
-  </li>
-  <li>
-    <p>
-      Once the boundary has been defined, select Save and Continue to move onto
-      the next screen to record details about the community and collect any
-      voucher specimens if required (optional).
-    </p>
-  </li>
-  <li>
-    <p>The date and time of the observation will be automatically recorded.</p>
-  </li>
-  <li>
-    <p>
-      Fill in all the required fields, including species and cover, and weeds,
-      diagnostic characteristics and condition thresholds, health factors and
-      disturbance (it is recommended that this module is undertaken in
-      combination with Floristics and Cover to collect quantitative information
-      about the community).
-    </p>
-  </li>
-  <li>
-    <p>
-      Click on the Camera icon to open the camera screen and take a photo of the
-      community. Multiple photos can be taken to record different elements of
-      the community, including species composition, cover and condition. Ensure
-      that photos are labelled with details of what has been captured.
-    </p>
-  </li>
-  <li>
-    <p>
-      If a voucher specimen is collected, select the Add voucher button. Assign
-      a unique barcode voucher label to the specimen and scan barcode (see
-      Floristics module for instructions).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select Save to save the species record and retun to the main survey
-      screen. Once the entire area has been surveyed, select End Survey to
-      complete the track log and record survey time. Time and location with
-      automatically be recorded.
-    </p>
-    <p>Figure. Ecological community – observations
-        <table>
-            <tbody>
-              <tr>
-                <td>
-                  <img
-                    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/ecological-community-observations.png"
-                    alt="Ecological community – observations"
-                    widteh="1041"
-                    height="745"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-    </p>
-  </li>
-</ol>
-<p><strong>Additional guidelines</strong></p>
-<p style="color: orange">Preparation</p>
+    skos:note """
+    <h3 id="additional-guidelines-3">Additional guidelines</h3>
+<h4 id="preparation-2">A. Preparation</h4>
 <ul>
   <li>
     <p>
@@ -192,8 +24,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>
       Refer to the SPRAT website for more information about the EPBC listed
       communities:
-      <u
-        >http://www.environment.gov.au/cgi-bin/sprat/public/publiclookupcommunities.pl</u
+      <a
+        href="http://www.environment.gov.au/cgi-bin/sprat/public/publiclookupcommunities.pl"
+        ><u
+          >http://www.environment.gov.au/cgi-bin/sprat/public/publiclookupcommunities.pl</u
+        ></a
       >
     </p>
   </li>
@@ -212,13 +47,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Very dense vegetation can significantly increase the time require for
+      Very dense vegetation can significantly increase the time required for
       traverses or meander-based searches. Ensure that enough time has been
       allocated based on the conditions expected within the project area.
     </p>
   </li>
 </ul>
-<p style="color: orange">Field survey</p>
+<h4 id="field-survey-2">B. Field survey</h4>
 <ul>
   <li>
     <p>
@@ -259,8 +94,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       For safety reasons, systematic searching of rocky outcrops and crevices is
       not recommended. Inaccessible areas can be searched with binoculars for a
       safe vantage point. If safe to do so, meander surveys may be more
-      appropriate for these areas. GPS track log will still be recorded, but not
-      required to occur in parallel manner.
+      appropriate for these areas. GPS track logs will still be recorded, but
+      not required to occur in parallel manner.
     </p>
   </li>
   <li>
@@ -276,8 +111,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Record information about species, cover and weeds using the app. The
-      Floristics and Cover modules can be used for surveying communities to
-      provide quantitative measures or diversity and cover.
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      and
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b"
+          >Cover</a
+        ></em
+      >
+      modules can be used for surveying communities to provide quantitative
+      measures of diversity and cover.
     </p>
   </li>
   <li>
@@ -294,7 +142,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Voucher collection</p>
+<h4 id="voucher-collection">C. Voucher collection</h4>
 <ul>
   <li>
     <p>
@@ -304,10 +152,210 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Refer to the Floristics module for more information about voucher
-      collection.
+      Refer to the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      module for more information about voucher collection.
     </p>
   </li>
-</ul>"""^^rdf:HTML ;
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Ecological community protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/targeted-survey/ecological-community-protocol/ecological-community-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h4>
+  Appendix 6. Recording the boundary of populations, habitat or ecological
+  communities
+</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix6.png"
+    alt="Appendix 6"
+    widteh="840"
+    height="1070"
+  />
+</p>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment-3">Equipment</h3>
+<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Trimble® R1</p>
+  </li>
+  <li>
+    <p>Field guides and identification keys</p>
+  </li>
+  <li>
+    <p>
+      Relevant TEC survey guidelines, policy statements and SPRAT profiles saved
+      or accessible from mobile device
+    </p>
+  </li>
+  <li>
+    <p>Hand lens</p>
+  </li>
+  <li>
+    <p>Binoculars</p>
+  </li>
+  <li>
+    <p>Photo scale card.</p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures-3">Instructions and procedures</h3>
+<ol type="1">
+  <li>
+    <p>
+      Based on prior Desktop research, use the ‘look up’ to
+      <em>Select target community/s.</em> As you type, options will be provided,
+      based on the list of EPBC listed communities. Select the target
+      community/s for the survey. A maximum of two communities can be selected
+      per survey.
+    </p>
+  </li>
+</ol>
+<ol start="2" type="1">
+  <li>
+    <p>
+      Select <em>Start Survey</em> to record the starting position for the
+      survey (coordinates automatically recorded) and the start time.
+    </p>
+  </li>
+  <li>
+    <p>
+      Once the survey has started, the app will record a track log. Tracks will
+      be visible in the built in app screen and can be used to assist with
+      navigating the survey area and ensuring good coverage of the study area.
+    </p>
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/ecological-community-app-screen-1.png"
+        alt="Ecological community – app screen 1"
+        widteh="383"
+        height="666"
+      />
+    </p>
+  </li>
+</ol>
+<p>Figure 16. Ecological community – app screen 1</p>
+<ol start="4" type="1">
+  <li>
+    <p>
+      If any of the target communities are located during the survey, select the
+      <em>Add Community</em> button and draw a polygon around the edge of the
+      community. Refer to Appendix 6 for tips on defining the community
+      boundary.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the community observed from the drop-down menu and record any other
+      comments about the observation in the comments field.
+    </p>
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/ecological-community-define-boundary.png"
+        alt="Ecological community – define boundary"
+        widteh="589"
+        height="956"
+      />
+    </p>
+  </li>
+</ol>
+<p>Figure 17. Ecological community – define boundary</p>
+<ol start="6" type="1">
+  <li>
+    <p>
+      Mark the boundary of the community by standing at the community edge and
+      selecting <em>Add Vertex</em>. Continue this process as you make your way
+      around the community, selecting <em>Add Vertex</em> as often as required
+      to accurately mark the edge.
+    </p>
+  </li>
+  <li>
+    <p>
+      Once the boundary has been defined, select <em>Save and Continue</em> to
+      move onto the next screen to record details about the community and
+      collect any voucher specimens if required (optional).
+    </p>
+  </li>
+  <li>
+    <p>The date and time of the observation will be automatically recorded.</p>
+  </li>
+  <li>
+    <p>
+      Fill in all the required fields, including species and cover, and weeds,
+      diagnostic characteristics and condition thresholds, health factors and
+      disturbance (it is recommended that this module is undertaken in
+      combination with
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      and
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b"
+          >Cover</a
+        ></em
+      >
+      to collect quantitative information about the community).
+    </p>
+  </li>
+  <li>
+    <p>
+      Click on the <em>Camera</em> icon to open the camera screen and take a
+      photo of the community. Multiple photos can be taken to record different
+      elements of the community, including species composition, cover and
+      condition. Ensure that photos are labelled with details of what has been
+      captured.
+    </p>
+  </li>
+  <li>
+    <p>
+      If a voucher specimen is collected, select the
+      <em>Add voucher</em> button. Assign a unique barcode voucher label to the
+      specimen and <em>scan barcode</em> (see
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      module for instructions).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Save</em> to save the species record and return to the main
+      survey screen. Once the entire area has been surveyed, select
+      <em>End Survey</em> to complete the track log and record survey time. Time
+      and location will automatically be recorded.
+    </p>
+  </li>
+</ol>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/ecological-community-observations.png"
+    alt="Ecological community – observations"
+    widteh="1041"
+    height="745"
+  />
+</p>
+<p>Figure 18. Ecological community – observations</p>
+    """^^rdf:HTML ;
 .
 

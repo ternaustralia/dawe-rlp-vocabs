@@ -6,11 +6,310 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/4bfc4796-a02f-461f-b17d-383aad328e61>
-    a skos:Concept ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+    <h3 id="additional-guidelines-1">Additional guidelines</h3>
+<h4 id="preparation">A. Preparation</h4>
+<ul>
+  <li>
+    <p>
+      Ensure the necessary permits and approvals have been obtained before
+      scheduling any surveys.
+    </p>
+  </li>
+  <li>
+    <p>
+      Consult with the relevant museum before any voucher collection: for
+      guidance on how many specimens should be collected from a particular site
+      over a particular time period; to ensure the use of proper preservation
+      and holding techniques; to determine the availability of necessary
+      equipment; for guidance on the collection of essential data. Consultation
+      with the museum may also be a requirement of animal ethics committee
+      approval.
+    </p>
+  </li>
+  <li>
+    <p>
+      Other institutions/experts may also be consulted, where appropriate, as
+      there might be specific project or vouchering requirements additional to
+      those of the museum.
+    </p>
+  </li>
+  <li>
+    <p>
+      Review recommended survey methods and survey equipment for each target
+      species.
+    </p>
+  </li>
+  <li>
+    <p>
+      The survey methods in each EPBC Act threatened species profile should be
+      regarded as a minimum and should be included in the general survey program
+      where relevant (Department of Sustainability‚ Environment‚ Water‚
+      Population and Communities 2011a).
+    </p>
+  </li>
+  <li>
+    <p>
+      Ensure that all field staff are component with the techniques and
+      equipment that will be used.
+    </p>
+  </li>
+  <li>
+    <p>
+      The <em>Vertebrate Fauna</em> module should be reviewed before undertaking
+      any targeted vertebrate fauna surveys.
+    </p>
+  </li>
+  <li>
+    <p>
+      The <em>Invertebrate Fauna</em> module should be reviewed before
+      undertaking any targeted invertebrate fauna surveys.
+    </p>
+  </li>
+  <li>
+    <p>
+      If invertebrate specimens are to be collected, ensure that sampling
+      containers (are prepared in advance.
+    </p>
+  </li>
+</ul>
+<h4 id="field-survey">B. Field survey</h4>
+<ul>
+  <li>
+    <p>
+      During active methods, data can only be collected against species
+      identified as target species at the start of the survey. The drop-down
+      list will only contain the species selected. To record information about
+      observations of other species, use the <em>Opportune</em> module.
+    </p>
+  </li>
+  <li>
+    <p>
+      Measurements can be recorded during active searches, if the individual can
+      be hand-captured. This is optional and should only be undertaken if it can
+      be done so without causing any harm.
+    </p>
+  </li>
+  <li>
+    <p>
+      To record the extent of suitable habitat during an active survey, traverse
+      the boundary of the suitable habitat and use the app to record the area.
+      The area will need to be recorded in either a clockwise or anti-clockwise
+      direction. Care needs to be taken to ensure that all points are collected
+      sequentially (see the supporting information for more details).
+    </p>
+  </li>
+  <li>
+    <p>
+      Finish drawing the habitat area at least 5-10 m away from the start point
+      to avoid any errors associated with overlapping polygons occurring.
+    </p>
+  </li>
+  <li>
+    <p>
+      Photos should be in focus and include something for scale (scale card, pen
+      etc). Multiple photos can be taken of the same individual to document
+      different features. All photos should be labelled with a description of
+      what has been captured in the photo.
+    </p>
+  </li>
+  <li>
+    <p>
+      The mapping interface can be used to navigate around the project area. As
+      observations or equipment are added, they will automatically be added to
+      the interface.
+    </p>
+  </li>
+  <li>
+    <p>
+      Tracks will be recorded throughout the survey, but are particularly
+      important for active surveys.
+    </p>
+  </li>
+  <li>
+    <p>
+      Where signs are detected, but are not sufficient to distinguish between
+      species, then direct survey methods targeting the locations where signs of
+      fauna activity were detected are required to provide a definite species
+      identification (Department of Sustainability‚ Environment‚ Water‚
+      Population and Communities 2011a).
+    </p>
+  </li>
+  <li>
+    <p>
+      For example, the location where scats are detected can be targeted to
+      increase the chance of making a direct observation for a target fauna
+      species (Department of Sustainability‚ Environment‚ Water‚ Population and
+      Communities 2011a).
+    </p>
+  </li>
+  <li>
+    <p>
+      Temporal replication may be necessary to detect populations that fluctuate
+      in abundance, occurrence or detectability with time, especially when these
+      fluctuations are unpredictable (Department of Sustainability‚ Environment‚
+      Water‚ Population and Communities 2011b).
+    </p>
+  </li>
+  <li>
+    <p>
+      If targeting a migratory species, field survey times should be tailored to
+      migration times. A number of surveys may be required over this time to
+      detect species.
+    </p>
+  </li>
+  <li>
+    <p>
+      Different species have different seasonal and daily peaks of activity
+      based on their biology and the weather. Conduct surveys at the time of
+      year and day when those species are most likely to be active and during
+      weather conditions favouring activity (Department of Environment and
+      Climate Change 2009).
+    </p>
+  </li>
+  <li>
+    <p>
+      As fauna survey results are weather dependent, several potential survey
+      dates should be set aside (Department of Environment and Climate Change
+      2009).
+    </p>
+  </li>
+  <li>
+    <p>
+      All persons conducting field surveys should be experienced and competent
+      in surveying and be familiar with the target species (Department of
+      Environment and Climate Change 2009).
+    </p>
+  </li>
+  <li>
+    <p>
+      If trapping and handling is required, all persons should be experienced
+      with trapping and handling techniques.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
     skos:prefLabel "Fauna - active protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/targeted-survey/fauna-protocol/fauna-active-protocol/fauna-active-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
+    tern:appendix """
+    <h4>Appendix 4. Fauna survey equipment list</h4>
+
+<p>General</p>
+
+<ul>
+  <li>
+    <p>Hand lens</p>
+  </li>
+  <li>
+    <p>Binoculars</p>
+  </li>
+  <li>
+    <p>Camera, including a long-focal length lens</p>
+  </li>
+  <li>
+    <p>Photo scale card</p>
+  </li>
+  <li>
+    <p>Head torch (for night work)</p>
+  </li>
+  <li>
+    <p>Spotlight</p>
+  </li>
+</ul>
+<p>Method specific equipment will be listed here for each survey type:</p>
+<p>Vouchering (general)</p>
+<ul>
+  <li>
+    <p>Material Safety Datasheets (MSDS) for chemical/dangerous substances</p>
+  </li>
+  <li>
+    <p>Voucher labels (with pre-printed barcodes or QR codes)</p>
+  </li>
+  <li>
+    <p>Permanent markers</p>
+  </li>
+  <li>
+    <p>Masking tape</p>
+  </li>
+</ul>
+<p>Vouchering (vertebrate fauna)</p>
+<ul>
+  <li>
+    <p>
+      Masks, disposable gloves, medium snap-lock bags, paper bags (for
+      collection of scats and animal remains)
+    </p>
+  </li>
+  <li>
+    <p>
+      Heavy duty large plastic bags (for collection and transport of animal
+      remains)
+    </p>
+  </li>
+  <li>
+    <p>
+      Silica, ideally self-indicating granules (for storage of moist scat
+      samples)
+    </p>
+  </li>
+  <li>
+    <p>
+      Calipers, ruler or tape measure, weighing scales (for fauna identification
+      and measurement)
+    </p>
+  </li>
+  <li>
+    <p>
+      Fauna processing kit: Eppendorf tubes/vials, preservative solutions (e.g.
+      formalin and ethanol), paper, pencil, pencil sharpener, scissors, glue,
+      ruler, eraser, tags/labels/thread, dissecting kit, utility knife, paper
+      towel, long forceps, plastic tongs, suitable storage containers (for
+      preparing and storing fauna voucher specimens) (refer to the
+      <em>Vertebrate fauna</em> Module)
+    </p>
+  </li>
+  <li>
+    <p>
+      Large plastic bags, secure storage containers, insulated box (polystyrene
+      or similar) (for transporting fauna specimens)
+    </p>
+  </li>
+</ul>
+<p>Vouchering (invertebrate fauna)</p>
+<ul>
+  <li>
+    <p>
+      Sweep net, forceps or flat head tweezers, artists paintbrush, aspirator,
+      knife or scraper (for collection)
+    </p>
+  </li>
+  <li>
+    <p>
+      Jars and vials, preservative solution (e.g. 80% ethanol), labels, pencil,
+      scissors (for storing specimens).
+    </p>
+  </li>
+</ul>
+<h4>
+  Appendix 6. Recording the boundary of populations, habitat or ecological
+  communities
+</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix6.png"
+    alt="Appendix 6"
+    widteh="840"
+    height="1070"
+  />
+</p>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment-1">Equipment</h3>
+<ul>
   <li>
     <p>
       Mobile device (tablet/phone capable of taking high resolution photos) with
@@ -41,14 +340,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>Head torch (for night work).</p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<p>Active survey</p>
-<ol start="1">
+</ul>
+
+<p>
+  The list provided above is for general survey equipment. Refer to Appendix 4
+  for a full equipment list for the different fauna survey types.
+</p>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h4 id="active-survey">A. Active survey</h4>
+<ol start="6" type="1">
   <li>
     <p>
-      To commence an active survey, select Start Survey to record the starting
-      position for the survey (coordinates automatically recorded, ensure R1 has
-      high accuracy) and the start time for active searches.
+      To commence an active survey, select <em>Start Survey</em> to record the
+      starting position for the survey (coordinates automatically recorded,
+      ensure R1 has high accuracy) and the start time for active searches.
     </p>
   </li>
   <li>
@@ -62,19 +368,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       If any of the target species or signs of the target species are observed
-      during the survey, select the Add Observation button. Use the Add habitat
-      button, if areas of potential suitable habitat are located. See Appendix 6
-      for details about recording habitat boundaries. Any observations recorded
-      during the survey will be displayed on the mapping interface screen.
+      during the survey, select the <em>Add Observation</em> button. Use the
+      <em>Add habitat</em> button, if areas of potential suitable habitat are
+      located. See Appendix 6 for details about recording habitat boundaries.
+      Any observations recorded during the survey will be displayed on the
+      mapping interface screen.
     </p>
   </li>
   <li>
     <p>
-      Complete all required fields on the Observation or Habitat screens (see
-      Figure 4 or Figure 5 respectively). Only the species identified as target
-      species at the beginning of the survey can be selected from the species
-      drop-down list. If an observation about another species needs to be
-      recorded, use the Opportune module.
+      Complete all required fields on the <em>Observation</em> or
+      <em>Habitat</em> screens (see Figure 4 or Figure 5 respectively). Only the
+      species identified as target species at the beginning of the survey can be
+      selected from the species drop-down list. If an observation about another
+      species needs to be recorded, use the <em>Opportune</em> module.
     </p>
   </li>
   <li>
@@ -86,74 +393,55 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       If possible and required, collect a voucher specimen (includes full
-      specimens, scats, remains, feathers etc). Only applicable if Add
-      Observation is selected.
+      specimens, scats, remains, feathers etc). Only applicable if
+      <em>Add Observation</em> is selected.
     </p>
   </li>
   <li>
     <p>
       Multiple observations or multiple areas of potential habitat can be
-      recorded during a single survey, by selecting either the Add Observation
-      or Add Habitat buttons on the main screen (the app will automatically
-      return to this screen).
+      recorded during a single survey, by selecting either the
+      <em>Add Observation</em> or <em>Add Habitat</em> buttons on the main
+      screen (the app will automatically return to this screen).
     </p>
   </li>
   <li>
     <p>
       Once the entire survey area has been searched, ensure that any additional
       information about the survey or observations has been recorded in the
-      Comments field (free text, optional), then select End Survey to record the
-      survey end time and location and to complete the track log.
+      <em>Comments</em> field (free text, optional), then select
+      <em>End Survey</em> to record the survey end time and location and to
+      complete the track log.
     </p>
   </li>
 </ol>
-<p>Figure. Targeted fauna – active search screen
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-fauna-active-search-screen.png"
-                alt="Targeted fauna - active search screen"
-                widteh="595"
-                height="829"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-fauna-active-search-screen.png"
+    alt="Targeted fauna - active search screen"
+    widteh="595"
+    height="829"
+  />
 </p>
-<p>Figure. Targeted fauna – active observations
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-fauna-active-observations.png"
-                alt="Targeted fauna - active observations"
-                widteh="939"
-                height="662"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<p>Figure 3. Targeted fauna – active search screen</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-fauna-active-observations.png"
+    alt="Targeted fauna - active observations"
+    widteh="939"
+    height="662"
+  />
 </p>
-<p>Figure. Targeted fauna – habitat observation
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-fauna-habitat-observation.png"
-                alt="Targeted fauna - habitat observation"
-                widteh="429"
-                height="745"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</p>"""^^rdf:HTML ;
+<p>Figure 4. Targeted fauna – active observations</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-fauna-habitat-observation.png"
+    alt="Targeted fauna - habitat observation"
+    widteh="429"
+    height="745"
+  />
+</p>
+<p>Figure 5. Targeted fauna – habitat observation</p>
+    """^^rdf:HTML ;
 .
 
