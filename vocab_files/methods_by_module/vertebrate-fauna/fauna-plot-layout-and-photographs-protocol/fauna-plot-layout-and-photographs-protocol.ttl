@@ -6,11 +6,15 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/a5eb37f3-a123-4350-9eb3-214396a04b93>
-    a skos:Concept ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Fauna plot layout and photographs protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vertebrate-fauna/fauna-plot-layout-and-photographs-protocol/fauna-plot-layout-and-photographs-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<p>The following equipment is required:</p>
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<p>The following equipment is required:</p>
 <ul>
   <li>
     <p>
@@ -42,29 +46,33 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>Flatting tape</p>
   </li>
   <li>
-    <p>Dropper rammer or sledgehammer.</p>
+    <p>Dropper rammer or sledge hammer.</p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<p style="color: orange">
-  Pre-survey – stratification and prospective plot locations
-</p>
-<ol>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<h4 id="pre-survey-stratification-and-prospective-plot-locations">
+  A. Pre-survey – stratification and prospective plot locations
+</h4>
+<ol type="1">
   <li>
     <p>
-      Follow the protocols set out in the Plot selection and layout module ,
-      Pre-survey – stratification and prospective plot locations .
+      Follow the protocols set out in the
+      <em>Plot selection and layout module</em>,
+      <em>Pre-survey – stratification and prospective plot locations</em>.
     </p>
   </li>
   <li>
     <p>
       Determine the location of the vegetation and soils plots already
-      established and identify potential locations where the fauna plot can be
+      established, and identify potential locations where the fauna plot can be
       positioned.
     </p>
   </li>
 </ol>
-<p style="color: orange">On-ground site positioning</p>
-<ol>
+<h4 id="b.-on-ground-site-positioning">B. On-ground site positioning</h4>
+<ol type="1">
   <li>
     <p>
       Assess the vegetation and habitat surrounding the vegetation and soils
@@ -82,13 +90,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p style="color: orange">Using the Trimble R1 GNSS to lay out the fauna plot</p>
-<ol>
+<h4 id="c.-using-the-trimble-r1-gnss-to-lay-out-the-fauna-plot">
+  C. Using the Trimble R1 GNSS to lay out the fauna plot
+</h4>
+<ol type="1">
   <li>
     <p>
-      Once final plot locations have been determined in the field, switch on the
-      Trimble R1 by depressing power button in center. It will flash green and
-      blue as it looks to connect to Bluetooth.
+      Once final plot locations has been determined in the field, switch on the
+      Trimble R1 by depressing the power button in the centre. It will flash
+      green and blue as it looks to connect to Bluetooth.
     </p>
   </li>
   <li>
@@ -98,48 +108,45 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Check the Devices list and wait for the “GNSS:XXX” to appear. Select it
-      and you should be connected. Navigate to the GNSS Status App and select
-      Source . If the GNSS is in recent pick list, then select. If not,
+      Check the <em>Devices</em> list and wait for the “GNSS:XXX” to appear.
+      Select it and you should be connected.
     </p>
   </li>
   <li>
     <p>
-      select Position Source to be the Bluetooth and select from available
+      Navigate to the GNSS Status App and select <em>Source</em>. If the GNSS is
+      in recent pick list, then select. If not, select
+      <em>Position Source</em> to be the Bluetooth and select from available
       devices.
     </p>
   </li>
-  <li><p>Allow some time to let the accuracy drop to sub meter.</p></li>
+  <li><p>Allow some time to let the accuracy drop to sub metre.</p></li>
   <li>
     <p>
-      Open to the Plot selection and layout module in the App and navigate to
-      the Plot layout screen. Register the new fauna plot by giving it a name.
+      Open to the <em>Plot selection and layout</em> module in
+      <em>the App</em> and navigate to the <em>Plot layout</em> screen.
     </p>
   </li>
+  <li><p>Register the new fauna plot by giving it a name.</p></li>
   <li>
     <p>
       To capture information about plot type, use the tick boxes to select if
-      the plot is Impact or Control (no
-    </p>
-  </li>
-  <li><p>boxes need to be ticked if these categories do not apply).</p></li>
-  <li>
-    <p>
-      In the Replicate # box, add in a number to define plot replication number
-      (if the plot is the first or only of it’s type within a sampling unit,
-      then the number will be 1).
+      the plot is <em>Impact</em> or <em>Control</em> (no boxes need to be
+      ticked if these categories do not apply).
     </p>
   </li>
   <li>
     <p>
-      Select Yes or No from the drop-down menu to define whether the plot will
-      be permanently marked. If
+      In the <em>Replicate #</em> box, add in a number to define plot
+      replication number (if the plot is the first or only of it’s type within a
+      sampling unit, then the number will be 1).
     </p>
   </li>
   <li>
     <p>
-      Yes , select where the iron droppers will be placed (NW, NE, SW or SE
-      corners, center).
+      Select <em>Yes</em> or <em>No</em> from the drop-down menu to define
+      whether the plot will be permanently marked. If <em>Yes</em>, select where
+      the iron droppers will be placed (NW, NE, SW or SE corners, centre).
     </p>
   </li>
   <li>
@@ -150,15 +157,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Add in the plot dimensions (in meters). As a standard, plots are 100 m by
-      100 m (1 ha).
+      Add in the plot dimensions (in metres). As a standard, plots are 100 m by
+      100 m (1 ha).
     </p>
   </li>
   <li>
     <p>
-      Decide on the SW corner of the plot, stand at that point and select Create
-      Plot. The app will generate a grid of yellow point markers based on the
-      plot dimensions added above. Your location is the blue dot.
+      Decide on the SW corner of the plot, stand at that point and select
+      <em>Create Plot.</em> The app will generate a grid of yellow point markers
+      based on the plot dimensions added above. Your location is the blue dot.
     </p>
   </li>
   <li>
@@ -177,79 +184,61 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      To finalize the plot location, select Mark Closest Point . The point will
-      be saved and turn green. Repeat this step until you have walked around the
-      plot and all yellow points have changed to green.
+      To finalise the plot location, select <em>Mark Closest Point</em>. The
+      point will be saved and turn green. Repeat this step until you have walked
+      around the plot and all yellow points have changed to green.
     </p>
   </li>
   <li>
     <p>
       Continue around the grid, remembering to include the Centre point. All 25
-      points will save automatically. The start and end of each drift
-      fence/pitfall line and center of each plot should be permanently marked
-      using star droppers. In cases where this is not possible (some Indigenous
-      lands, private or leasehold lands, rocky outcrops, etc.) at least one
-      corner should be marked at minimum, especially if plots are to be
-      revisited. Make sure to note where any permanent droppers have been placed
-      by ticking the relevant check boxes (as detailed above).
+      points will save automatically.
     </p>
   </li>
   <li>
     <p>
-      Plots may be marked with an aluminum tag to identify the plot name. This
+      The start and end of each drift fence/pitfall line and centre of each plot
+      should be permanently marked using star droppers. In cases where this is
+      not possible (some Indigenous lands, private or leasehold lands, rocky
+      outcrops, etc.) at least one corner should be marked at minimum,
+      especially if plots are to be revisited. Make sure to note where any
+      permanent droppers have been placed by ticking the relevant check boxes
+      (as detailed above).
+    </p>
+  </li>
+  <li>
+    <p>
+      Plots may be marked with an aluminium tag to identify the plot name. This
       allows plots to be relocated easily and assists with ongoing monitoring
-      and return surveys. Record the location (star dropper) with the aluminum
+      and return surveys. Record the location (star dropper) with the aluminium
       tag in the label drop-down field.
     </p>
   </li>
   <li>
     <p>
-      Select Finish Plot to move onto the other required plot-based modules, or
-      if required select Drift fence/pitfall lines or trap lines to bring up
-      guide lines (transect lines can be used to align tape measures or to put
-      in wooden stakes/markers at the start and end of each drift fence/pitfall
-      line, and each trap line).
+      Select <em>Finish Plot</em> to move onto the other required plot-based
+      modules, or if required select
+      <em>Drift fence/pitfall lines or trap lines</em> to bring up guide lines
+      (transect lines can be used to align tape measures or to put in wooden
+      stakes/markers at the start and end of each drift fence/pitfall line, and
+      each trap line).
     </p>
   </li>
 </ol>
-<p style="color: orange">
-  Photographs: establishing your photopoint monitoring location
-</p>
-<ol>
+<h4 id="d.-photographs-establishing-your-photopoint-monitoring-location">
+  D. Photographs: establishing your photopoint monitoring location
+</h4>
+<ol type="1">
   <li>
     <p>
-      Follow the protocols set out in the Photopoints module to establish
-      photopoints within the fauna plot, choosing either the full protocol
-      (three panoramas using a DSLR camera), lite protocol (three panoramas
-      using a compact camera), or lite: device (three panoramas using the mobile
-      device camera).
+      Follow the protocols set out in the
+      <em>Photopoints module to</em> establish photopoints within the fauna
+      plot, choosing either the full protocol (three panoramas using a DSLR
+      camera), lite protocol (three panoramas using a compact camera), or lite:
+      device (three panorama using the mobile device camera).
     </p>
   </li>
 </ol>
-<p style="color: orange">Installing a weather station</p>
-<ol>
-  <li>
-    <p>
-      Select the fauna plot where the weather station is to be installed. This
-      should be a plot that is centrally located and best represents the plots
-      being surveyed during the field survey.
-    </p>
-  </li>
-  <li><p>Install the Stevenson Screen at the selected plot.</p></li>
-  <li><p>Follow the manufactures guidelines to set-up the data logger.</p></li>
-  <li>
-    <p>
-      Set the temperature and humidity recording interval to every 30 minutes.
-    </p>
-  </li>
-  <li><p>Start the data-logger and place it into the Stevenson Screen.</p></li>
-  <li>
-    <p>
-      At the conclusion of the field survey (once all plots have been trapped)
-      remove the data-logger and remove the Stevenson Screen.
-    </p>
-  </li>
-  <li><p>Follow the manufacturers guidelines to download the data.</p></li>
-</ol>"""^^rdf:HTML ;
+    """^^rdf:HTML ;
 .
 
