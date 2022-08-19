@@ -55,13 +55,25 @@ The `main` branch in the GitHub repository is protected. All changes must be sub
 
 _Note: This section is only for reviewers looking to view the controlled vocabularies locally on their host machine._
 
-To run locally, you will need [Python 3](https://www.python.org/downloads/) and [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed. Once installed, follow the steps below.
+To run locally, you will need the following installed:
 
-1. Clone the repository
+- [Python 3](https://www.python.org/downloads/)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [GitHub CLI](https://cli.github.com/)
+
+1. Clone the repository using
 
    ```
-   git clone https://github.com/ternaustralia/linkeddata-site.git
+   gh repo clone ternaustralia/dawe-rlp-vocabs
    ```
+
+   and then checkout a pull request using the GitHub CLI
+
+   ```
+   gh pr checkout 198
+   ```
+
+   where `198` is the pull request number.
 
 2. Change directory to the cloned repository inside the `.local_viewer` directory
 
