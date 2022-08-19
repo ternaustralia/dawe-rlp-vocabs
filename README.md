@@ -51,6 +51,62 @@ The `main` branch in the GitHub repository is protected. All changes must be sub
 
 ---
 
+## Viewing locally
+
+_Note: This section is only for reviewers looking to view the controlled vocabularies locally on their host machine._
+
+To run locally, you will need [Python 3](https://www.python.org/downloads/) and [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed. Once installed, follow the steps below.
+
+1. Clone the repository
+
+   ```
+   git clone https://github.com/ternaustralia/linkeddata-site.git
+   ```
+
+2. Change directory to the cloned repository inside the `.local_viewer` directory
+
+   ```
+   cd linkeddata-site/.local_viewer
+   ```
+
+3. Spin up the services using Docker Compose
+
+   ```
+   docker-compose up -d
+   ```
+
+4. In a separate terminal, inside the root of the repository, create a Python virtual environment
+
+   ```
+   python3 -m venv venv
+   ```
+
+5. Activate the virtual environment
+
+   ```
+   source venv/bin/activate
+   ```
+
+6. Install the Python dependencies
+
+   ```
+   pip install -r requirements.txt && pip install .
+   ```
+
+7. Load the data into the database
+
+   ```
+   python load.py
+   ```
+
+8. View the data at http://localhost:8000/viewers/dawe-vocabs in your browser
+
+9. To stop the the services, inside the `.local_viewer` directory, run
+
+   ```
+   docker-compose down
+   ```
+
 ## Editing locally
 
 This section is only relevant to those who are looking to make changes to the Python codebase, update tests or making other non-vocab related changes. If you are simply looking to make edits to the controlled vocabularies, the easiest method is to follow the instructions in [Editing the controlled vocabularies in the browser](#editing-the-controlled-vocabularies-in-the-browser).
