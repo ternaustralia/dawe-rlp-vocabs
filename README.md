@@ -57,67 +57,38 @@ _Note: This section is only for reviewers looking to view the controlled vocabul
 
 To run locally, you will need the following installed:
 
-- [Python 3](https://www.python.org/downloads/)
+- [Visual Studio Code](https://code.visualstudio.com/download)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- [GitHub CLI](https://cli.github.com/)
 
-1. Clone the repository using
-
-   ```
-   gh repo clone ternaustralia/dawe-rlp-vocabs
-   ```
-
-   and then checkout a pull request using the GitHub CLI
+1. Clone the repository using git.
 
    ```
-   gh pr checkout 198
+   https://github.com/ternaustralia/dawe-rlp-vocabs.git
    ```
 
-   where `198` is the pull request number.
-
-2. Change directory to the cloned repository inside the `.local_viewer` directory
+2. Change directory into the repository and open it in Visual Studio Code.
 
    ```
-   cd linkeddata-site/.local_viewer
+   cd dawe-rlp-vocabs && code .
    ```
 
-3. Spin up the services using Docker Compose
+3. In Visual Studio Code, in the bottom-left corner, click the cog icon and select _Command Palette..._. In the prompt, type and select _Remote-Containers: Rebuild Container_.
 
-   ```
-   docker-compose up -d
-   ```
+   This will build and run the project inside a development container.
 
-4. In a separate terminal, inside the root of the repository, create a Python virtual environment
+4. Start the website service by selecting the _Command Palette..._ again. In the prompt, type and select _Tasks: Run Task_.
 
-   ```
-   python3 -m venv venv
-   ```
+   Run the _Start website service_ task.
 
-5. Activate the virtual environment
+5. Now that the website service is running, open a pull request.
 
-   ```
-   source venv/bin/activate
-   ```
+   E.g., type in the terminal `gh pr checkout 193`
 
-6. Install the Python dependencies
+6. Load the data into the database via the _Command Palette..._ again using the task _Load vocab data_.
 
-   ```
-   pip install -r requirements.txt && pip install .
-   ```
+7. View the data at http://localhost:8000/viewers/dawe-vocabs in your browser
 
-7. Load the data into the database
-
-   ```
-   python load.py
-   ```
-
-8. View the data at http://localhost:8000/viewers/dawe-vocabs in your browser
-
-9. To stop the the services, inside the `.local_viewer` directory, run
-
-   ```
-   docker-compose down
-   ```
+8. Once you are done, you can shut off the services by running the task _Stop website service_.
 
 ## Editing locally
 
