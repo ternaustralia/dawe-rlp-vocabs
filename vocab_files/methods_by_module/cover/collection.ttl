@@ -596,7 +596,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         with crosshairs and a 45° mirror provide a quick and simple view of the
         immediate canopy coverage. Internal, offset levelling vials ensure
         accurate readings of the canopy directly above each point intercept
-        (Figure 2).
+        (<a href="#figure-2">Figure 2</a>).
       </th>
     </tr>
     <tr class="header">
@@ -604,8 +604,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       <th>
         Recorded when within the boundary of overstorey canopy (defined as being
         bounded by the outside edge of foliage), but foliage or branches are not
-        intercepted by the densitometer crosshairs (i.e. you see sky; see Figure
-        4). Allows point-intercept data to be expressed as foliage projective
+        intercepted by the densitometer crosshairs (i.e. you see sky; see <a href="#figure-4">Figure
+        4</a>). Allows point-intercept data to be expressed as foliage projective
         cover and opaque canopy cover.
       </th>
     </tr>
@@ -627,7 +627,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </thead>
   <tbody></tbody>
 </table>
-<p>
+<p id="figure-1">
   <img
     src="https://w3id.org/tern/static/dawe-rlp/latest/cover/point-intercept-transect-full.png"
     alt="Point intercept transect for Full protocol"
@@ -639,7 +639,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   Figure 1. Plot layout showing the ten point intercept transects for the full
   protocol.
 </p>
-<p>
+<p id="figure-2">
   <img
     src="https://w3id.org/tern/static/dawe-rlp/latest/cover/grs-densitometer.png"
     alt="GRS densitometer"
@@ -648,7 +648,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   />
 </p>
 <p>Figure 2. GRS Densitometer™.</p>
-<p>
+<p id="figure-3">
   <img
     src="https://w3id.org/tern/static/dawe-rlp/latest/cover/point-intercept-transect-lite.png"
     alt="Point intercept transect for Lite protocol"
@@ -660,7 +660,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   Figure 3. Plot layout showing the four point intercept transects for the lite
   protocol.
 </p>
-<p>
+<p id="figure-4">
   <img
     src="https://w3id.org/tern/static/dawe-rlp/latest/cover/point-intercept-to-record.png"
     alt="Point intercept to record"
@@ -792,6 +792,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 </p>
 """^^rdf:HTML ;
     tern:scope """
+    <h3>Contents</h3>
+    <ol>
+  <li><a href="#introduction">Introduction</a></li>
+  <li>
+    <a href="#key-definitions-and-terminology"
+      >Key definitions and terminology</a
+    >
+  </li>
+  <li><a href="#rationale">Rationale</a></li>
+  <li><a href="#module-overview">Module Overview</a></li>
+  <li><a href="#references">References</a></li>
+</ol>
     <h3 id="introduction">Introduction</h3>
 <p>
   The <em>Cover</em> module involves the collection of quantitative, accurate
@@ -806,12 +818,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <p>
   Cover is interpreted from the number of ‘hits’ for each species, growth form
   and height, plus substrate type, at 1 m intervals along 10 x 100 m transects
-  in a grid configuration (Figure 1), for a total of 1010 point-intercepts. The
+  in a grid configuration (<a href="#figure-1">Figure 1</a>), for a total of 1010 point-intercepts. The
   transect layout includes five transects 20 m apart orientated north (N) to
-  south (S) and five transects 20 m apart orientated east (E) to west (W; Figure
-  1). Transect ends are at least initially located and recorded with a Trimble®
+  south (S) and five transects 20 m apart orientated east (E) to west (W; <a href="#figure-1">Figure
+  1</a>). Transect ends are at least initially located and recorded with a Trimble®
   R1 (see
-  <em>Plot selection and layout</em> module) to ensure positional accuracy and
+  <em><a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821"
+      >Plot selection and layout</a
+    ></em> module) to ensure positional accuracy and
   that transects can be relocated.
 </p>
 <p>
@@ -819,13 +834,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   point-intercept, enabling coarse height profiles to be created (Muir
   <em>et al.</em> 2011). A downward-pointing laser is mounted on the staff to
   mark each intercept. Canopy hits are determined at each point-intercept using
-  a GRS Densitometer™ for sites with an overstorey (Figure 2). Use of a
+  a GRS Densitometer™ for sites with an overstorey (<a href="#figure-2">Figure 2</a>). Use of a
   densitometer also allows for measures of ‘In Canopy Sky’ (ICS) as an overstory
   cover class, attributed to a species. This concept is taken from field
   techniques implemented for remote sensing field validation (Muir
   <em>et al.</em> 2011). ICS is recorded where the crosshairs of the
   densitometer mark a point within the bounds of a canopy but do not actually
-  intercept any vegetation (Figure 4). The inclusion of this class allows for
+  intercept any vegetation (<a href="#figure-4">Figure 4</a>). The inclusion of this class allows for
   vegetation cover measures including foliage projective cover and opaque canopy
   cover to be determined from the point-intercept data.
 </p>
@@ -833,10 +848,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   The <em>Cover</em> module includes a lite protocol in which cover is
   interpreted from the number of ‘hits’ for each species, growth form and
   height, plus substrate type, at 1 m intervals along 4 x 100 m transects in a
-  grid configuration (Figure 3), for a total of 404 point-intercepts. The
+  grid configuration (<a href="#figure-3">Figure 3</a>), for a total of 404 point-intercepts. The
   transect layout includes two transects 40 m apart orientated north to south
   (N2/S2 and N4/S4) and two transects 40 m apart orientated east to west (E2/W2
-  and E4/W4; Figure 3). As with the full protocol, transect ends are at least
+  and E4/W4; <a href="#figure-3">Figure 3</a>). As with the full protocol, transect ends are at least
   initially located and recorded with a Trimble® R1 (see
   <em
     ><a

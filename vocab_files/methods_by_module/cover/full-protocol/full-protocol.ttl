@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -9,6 +10,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         skos:Concept ,
         tern:Method ;
+    dcterms:description """
+      <h3>Contents</h3>
+  <ol>
+    <li><a href="#equipment">Equipment</a></li>
+    <li><a href="#instructions-and-procedures">Instructions and procedures</a></li>
+    <li><a href="#additional-guidelines">Additional guidelines</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:note """
 <h3 id="additional-guidelines">Additional guidelines</h3>
@@ -160,7 +170,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <ul>
   <li>
     
-      <p>Figure 4 illustrates when to apply ‘In Canopy Sky’ (ICS).</p>
+      <p><a href="#figure-4">Figure 4</a> illustrates when to apply ‘In Canopy Sky’ (ICS).</p>
     
   </li>
   <li>
@@ -329,7 +339,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       <li>
         
           <p>
-            See Appendix D for diagrams for using a clinometer in each
+            See <a href="#appendix-d">Appendix D</a> for diagrams for using a clinometer in each
             situation.
           </p>
         
@@ -361,7 +371,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
 </ul>
 
-<p>
+<p id="figure-2">
   <img
     src="https://w3id.org/tern/static/dawe-rlp/latest/cover/grs-densitometer.png"
     alt="GRS densitometer"
@@ -370,7 +380,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   />
 </p>
 <p>Figure 2. GRS Densitometer™.</p>
-<p>
+<p id="figure-4">
   <img
     src="https://w3id.org/tern/static/dawe-rlp/latest/cover/point-intercept-to-record.png"
     alt="Point intercept to record"
@@ -383,11 +393,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Cover - Full protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/cover/full-protocol/full-protocol.ttl"^^xsd:anyURI ;
     tern:appendix """
-    <h3>
+    <h2 id="appendices">Appendices</h2>
+    <h3 id="appendix-a">
   Appendix A. Materials and instructions for GRS Densitometer<sup>TM</sup>
   mount.
 </h3>
-<h3>
+<h3 id="appendix-d">
   Appendix D. Diagrams for using a clinometer on level ground (A), ground
   sloping down (B) and ground sloping up (C; Department of Environment and
   Climate Change 2007).
@@ -444,7 +455,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     
       <p>
         Graduated staff with 10 cm markings (continually adjustable painter’s
-        pole that can easily adjust to different eye heights; see Figure 7)
+        pole that can easily adjust to different eye heights; see <a href="#figure-7">Figure 7</a>)
       </p>
     
   </li>
@@ -452,8 +463,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     
       <p>
         GRS Densitometer™ with ability to be mounted on top of staff (required
-        for use on plots with overstorey tree canopy cover; see Figure 2;
-        materials and instructions to build mount in Appendix A)
+        for use on plots with overstorey tree canopy cover; see <a href="#figure-2">Figure 2</a>;
+        materials and instructions to build mount in <a href="#appendix-a">Appendix A</a>)
       </p>
     
   </li>
@@ -506,14 +517,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     
       <p>
         For each transect lay out a 100 m tape using pegs to secure it in place
-        (Figure 5), ensuring the tape is orientated to align with the plot grid,
+        (<a href="#figure-5">Figure 5</a>), ensuring the tape is orientated to align with the plot grid,
         is as straight as possible, and laid on the ground and not draped over
         shrubs.
       </p>
     
   </li>
 </ol>
-<p>
+<p id="figure-5">
   <img
     src="https://w3id.org/tern/static/dawe-rlp/latest/cover/surveyors-laying-out-a-transect-with-a-100-m-tape.png"
     alt="Surveyors laying out a transect with a 100 m tape"
@@ -535,13 +546,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     
       <p>
-        Select the ‘Cover’ module and then ‘Full protocol’ in the App (Figure
-        6).
+        Select the ‘Cover’ module and then ‘Full protocol’ in the App (<a href="#figure-6">Figure
+        6</a>).
       </p>
     
   </li>
 </ol>
-<p>
+<p id="figure-6">
   <img
     src="https://w3id.org/tern/static/dawe-rlp/latest/cover/cover-module-app-screen.png"
     alt="Cover module app screen (numbers in grey circles correspond to step in the protocols)"
@@ -570,12 +581,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         Place the bottom of the staff at the 0 m mark of the tape measure.
         Ensure the staff is vertical and the laser pointer is pointing downwards
         so the laser beam will intercept the ground near the base of the staff
-        (Figure 7).
+        (<a href="#figure-7">Figure 7</a>).
       </p>
     
   </li>
 </ol>
-<p>
+<p id="figure-7">
   <img
     src="https://w3id.org/tern/static/dawe-rlp/latest/cover/surveyor.png"
     alt="Surveyor at the 0 m mark of a transect with the graduated, adjustable staff verticle and laser pointing downwards"
@@ -677,7 +688,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         species name and growth form. Measurements can be rounded to the nearest
         centimetre from the markings on the staff. Continue recording all other
         plant species (and height) that are intersected by the beam to a height
-        of 1.5 m (see guidelines).
+        of 1.5 m (see <a href="#additional-guidelines">guidelines</a>).
       </p>
     
   </li>
@@ -708,7 +719,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         If foliage or branches of a live shrub/tree are sighted in the cross
         hairs, record each species name and estimate the height at the uppermost
         intercept using a rangefinder or other height estimation method (see
-        guidelines).
+        <a href="#additional-guidelines">guidelines</a>).
       </p>
     
   </li>
@@ -717,7 +728,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       <p>
         If no part of the foliage or branches are sighted in the cross hairs but
         the vertical line is still within the canopy boundary, record as ‘In
-        Canopy Sky’ (ICS; see Figure 4 for further information).
+        Canopy Sky’ (ICS; see <a href="#figure-4">Figure 4</a> for further information).
       </p>
     
   </li>
