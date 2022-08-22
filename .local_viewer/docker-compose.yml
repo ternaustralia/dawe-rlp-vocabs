@@ -10,3 +10,8 @@ services:
     container_name: linkeddata-api
     ports:
       - 5000:5000
+
+networks:
+  default:
+    name: dawe-rlp-vocabs_devcontainer_default
+    external: true
