@@ -11,7 +11,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:note """
-    <h3 id="additional-guidelines-1">Additional guidelines</h3>
+    <h3 id="additional-guidelines">Additional guidelines</h3>
 <ul>
   <li>
     <p>
@@ -195,7 +195,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <tbody>
 </tbody></table>
     """^^rdf:HTML ;
-    tern:equipment """<h3 id="equipment-1">Equipment</h3>
+    tern:equipment """
+      <h3>Contents</h3>
+  <ol>
+    <li><a href="#equipment">Equipment</a></li>
+    <li>
+      <a href="#instructions-and-procedures">Instructions and procedures</a>
+    </li>
+    <li><a href="#additional-guidelines">Additional guidelines</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+    <h3 id="equipment">Equipment</h3>
 <ul>
   <li>
     <p>
@@ -232,7 +242,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>"""^^rdf:HTML ;
-    tern:instructions """<h3 id="instructions-and-procedures-2">Instructions and procedures</h3>
+    tern:instructions """<h3 id="instructions-and-procedures">Instructions and procedures</h3>
 <ol type="1">
   <li>
     <p>
@@ -256,7 +266,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p>
+<p id="figure-6">
   <img src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/cwd-app-screen1-survey-design-transects.jpg" alt="CWD app screen 1 - survey design transects" width="600" height="350"/>
 </p>
 <p>Figure 6. CWD app screen – survey design plots</p>
@@ -264,7 +274,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Lay out tapes or add survey markers to define the plot boundary (See
-      Figure.6)
+      <a href="#figure-6">Figure 6</a>)
     </p>
 
     <ol type="a">
@@ -299,7 +309,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p>For each eligible piece of CWD (see Figure.7):</p>
+<p>For each eligible piece of CWD (see <a href="#figure-7">Figure 7</a>):</p>
 <ol start="7" type="1">
   <li>
     <p>
@@ -329,24 +339,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p>
+<p id="figure-7">
   <img src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/cwd-plot.png" alt="CWD app screen plots – size and decay class" width="477" height="516"/>
 </p>
 <p>Figure 7. CWD app screen plots – size and decay class</p>
 <p>
   Where a piece of CWD is irregular in shape, it may be divided into multiple
   smaller roughly linear and cylindrical sections for ease of measurement – see
-  Figure 1 and the supporting information for more details. Each section will be
+  <a href="#figure-1">Figure 1</a> and the supporting information for more details. Each section will be
   recorded as a separate piece of CWD.
 </p>
-<p>
+<p id="figure-1">
   <img src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-irregular-cwd-introduction.png" alt="Measuring irregular coarse woody debris" width="1307" height="467"/>
 </p>
 <p>Figure 1. Measuring irregular coase woody debris (CWD)</p>
 <ol start="11" type="1">
   <li>
     <p>
-      Record a decay class from Table 3 (refer to the supporting information for
+      Record a decay class from <a href="#table-3">Table 3</a> (refer to the supporting information for
       examples of each class).
     </p>
   </li>
@@ -357,7 +367,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p>
+<p id="table-3">
   Table 3. Coarse woody debris decay classes - adapted from (Baker and Chao
   2011; Meggs 1996).
 </p>
