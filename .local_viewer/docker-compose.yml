@@ -1,0 +1,17 @@
+services:
+  frontend:
+    image: ghcr.io/ternaustralia/linkeddata-site:0.9.1-local.11.f2487d3
+    container_name: linkeddata-site
+    ports:
+      - 8000:8000
+
+  backend:
+    image: ghcr.io/ternaustralia/linkeddata-api:latest
+    container_name: linkeddata-api
+    ports:
+      - 5000:5000
+
+networks:
+  default:
+    name: dawe-rlp-vocabs_devcontainer_default
+    external: true
