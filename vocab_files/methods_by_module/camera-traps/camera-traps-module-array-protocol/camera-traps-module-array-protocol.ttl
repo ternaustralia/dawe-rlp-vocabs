@@ -10,7 +10,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         skos:Concept ,
         tern:Method ;
-    dcterms:description """<p>
+    dcterms:description """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#module-overview">Module Overview</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+    <h3 id="module-overview">Module Overview</h3>
+    <p>
   Many camera traps (e.g., 20–30) deployed in a systematic array (e.g., grid,
   transect) to monitor fauna occupancy, abundance and density in the project
   area (via downstream capture-mark-recapture methods and random encounter
@@ -20,7 +32,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 </p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:note """
-<h3>Additional guidelines</strong></h3>
+<h3 id="additional-guidelines">Additional guidelines</h3>
 <p>
   The following points are adapted from Gillespie <em>et al.</em> (2015), Molloy
   (2018) and TEAM Network (2011b).
@@ -244,7 +256,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Camera traps module - array protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/camera-traps/camera-traps-module-array-protocol/camera-traps-module-array-protocol.ttl"^^xsd:anyURI ;
     tern:appendix """
-<h3>Appendices</h3>
+<h3 id="appendices">Appendices</h3>
 <h4>Appendix A. Camera trap layouts for the fauna plot (100 x 100 m) protocol with 5
   camera traps (A), 4 camera traps (B), 3 camera traps (C) or (D), and 2 camera
   traps (E).</h4>
@@ -684,7 +696,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 </table>
 """^^rdf:HTML ;
     tern:equipment """
-    <h3>Equipment</h3>
+    <h3 id="equipment">Equipment</h3>
     <h4>A.Camera trap deployment</h4>
 <ul>
   <li>
@@ -856,7 +868,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
 </ul>"""^^rdf:HTML ;
     tern:instructions """
-    <h3>Instructions and procedures</h3>
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
     <h4>A.Camera trap deployment</h4>
 <ol type="1">
   <li>
