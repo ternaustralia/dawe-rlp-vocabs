@@ -51,6 +51,45 @@ The `main` branch in the GitHub repository is protected. All changes must be sub
 
 ---
 
+## Viewing locally
+
+_Note: This section is only for reviewers looking to view the controlled vocabularies locally on their host machine._
+
+To run locally, you will need the following installed:
+
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+1. Clone the repository using git.
+
+   ```
+   https://github.com/ternaustralia/dawe-rlp-vocabs.git
+   ```
+
+2. Change directory into the repository and open it in Visual Studio Code.
+
+   ```
+   cd dawe-rlp-vocabs && code .
+   ```
+
+3. In Visual Studio Code, in the bottom-left corner, click the cog icon and select _Command Palette..._. In the prompt, type and select _Remote-Containers: Rebuild Container_.
+
+   This will build and run the project inside a development container.
+
+4. Start the website service by selecting the _Command Palette..._ again. In the prompt, type and select _Tasks: Run Task_.
+
+   Run the _Start website service_ task.
+
+5. Now that the website service is running, open a pull request.
+
+   E.g., type in the terminal `gh pr checkout 193`
+
+6. Load the data into the database via the _Command Palette..._ again using the task _Load vocab data_.
+
+7. View the data at http://localhost:8000/viewers/dawe-vocabs in your browser
+
+8. Once you are done, you can shut off the services by running the task _Stop website service_.
+
 ## Editing locally
 
 This section is only relevant to those who are looking to make changes to the Python codebase, update tests or making other non-vocab related changes. If you are simply looking to make edits to the controlled vocabularies, the easiest method is to follow the instructions in [Editing the controlled vocabularies in the browser](#editing-the-controlled-vocabularies-in-the-browser).
