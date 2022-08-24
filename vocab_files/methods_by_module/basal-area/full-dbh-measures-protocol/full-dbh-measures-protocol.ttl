@@ -10,7 +10,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:note """<p style="font-size: large;"><strong>Additional guidelines</strong></p>
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
   <p><strong>Take measurements</strong></p>
   <ul>
     <li>
@@ -115,7 +116,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Full DBH measures protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/basal-area/full-dbh-measures-protocol/full-dbh-measures-protocol.ttl"^^xsd:anyURI ;
     tern:equipment """
-    <h3>Equipment</h3>
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+</ol>
+    <h3 id="equipment">Equipment</h3>
     <ul>
   <li>
     <p>
@@ -143,7 +152,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
 </ul>"""^^rdf:HTML ;
     tern:instructions """
-    <h3>Instructions and procedures</h3>
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
     <p>
     <ol>
       <li>Ensure the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot selection and layout module</a> has been completed to mark out the plot grid with very high accuracy using the Trimble&reg; R1.</li>
