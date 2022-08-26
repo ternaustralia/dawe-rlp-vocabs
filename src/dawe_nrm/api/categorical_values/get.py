@@ -78,7 +78,7 @@ async def get(
             (
                 concept_uri,
                 RDFS.isDefinedBy,
-                URIRef("https://linked.data.gov.au/def/nrm"),
+                URIRef("https://linked.data.gov.au/def/nrm/"),
             )
         )
         graph.add(
@@ -110,7 +110,7 @@ async def get(
         (
             collection_uri,
             RDFS.isDefinedBy,
-            URIRef("https://linked.data.gov.au/def/nrm"),
+            URIRef("https://linked.data.gov.au/def/nrm/"),
         )
     )
     graph.add(
