@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from rdflib import Graph, Literal, Namespace, URIRef, XSD
+from rdflib import XSD, Graph, Literal, Namespace, URIRef
 from rdflib.namespace import RDFS, SDO
 
 from dawe_nrm.settings import VOCAB_FILES_DIR_GITHUB
