@@ -1,12 +1,10 @@
 import httpx
-from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, Namespace, URIRef, XSD, RDFS
+from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, Namespace, URIRef
 
 from dawe_nrm.api.categorical_values.exceptions import NoDataInAPIException
 from dawe_nrm.api.utils import get_local_uuid_name
 from dawe_nrm.graph import create_graph
 from dawe_nrm.schemas import LUTSchema
-
-SCHEMA = Namespace("https://schema.org/")
 
 
 async def get(
@@ -74,25 +72,6 @@ async def get(
                 URIRef(config.endpoint_url),
             )
         )
-        graph.add(
-            (
-                concept_uri,
-                RDFS.isDefinedBy,
-                URIRef("https://linked.data.gov.au/def/nrm/"),
-            )
-        )
-        graph.add(
-            (
-                concept_uri,
-                SCHEMA.url,
-                Literal(
-                    "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/"
-                    + config.uuid_namespace.replace(" ", "-")
-                    + ".ttl",
-                    datatype=XSD.anyURI,
-                ),
-            )
-        )
 
     # Create the collection
     collection_uri = base_uri[config.collection_uuid]
@@ -104,25 +83,6 @@ async def get(
             collection_uri,
             DCTERMS.description,
             Literal(config.description),
-        )
-    )
-    graph.add(
-        (
-            collection_uri,
-            RDFS.isDefinedBy,
-            URIRef("https://linked.data.gov.au/def/nrm/"),
-        )
-    )
-    graph.add(
-        (
-            collection_uri,
-            SCHEMA.url,
-            Literal(
-                "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/"
-                + config.uuid_namespace.replace(" ", "-")
-                + ".ttl",
-                datatype=XSD.anyURI,
-            ),
         )
     )
     for concept in concepts:
