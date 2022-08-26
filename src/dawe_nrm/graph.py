@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from rdflib import Graph, Literal, Namespace, URIRef
+from rdflib import Graph, Literal, Namespace, URIRef, XSD
 from rdflib.namespace import RDFS, SDO
 
 from dawe_nrm.settings import VOCAB_FILES_DIR_GITHUB
@@ -54,6 +54,6 @@ def serialize(path: Path, graph: Graph):
 
     subjects = graph.subjects()
     for subject in subjects:
-        graph.add((subject, SDO.url, Literal(VOCAB_FILES_DIR_GITHUB + str(path))))
+        graph.add((subject, SDO.url, Literal(VOCAB_FILES_DIR_GITHUB + str(path), datatype=XSD.anyURI)))
 
     graph.serialize(path, format="longturtle")
