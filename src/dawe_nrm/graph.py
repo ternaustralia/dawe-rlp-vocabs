@@ -54,6 +54,12 @@ def serialize(path: Path, graph: Graph):
 
     subjects = graph.subjects()
     for subject in subjects:
-        graph.add((subject, SDO.url, Literal(VOCAB_FILES_DIR_GITHUB + str(path), datatype=XSD.anyURI)))
+        graph.add(
+            (
+                subject,
+                SDO.url,
+                Literal(VOCAB_FILES_DIR_GITHUB + str(path), datatype=XSD.anyURI),
+            )
+        )
 
     graph.serialize(path, format="longturtle")
