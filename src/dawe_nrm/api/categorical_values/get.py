@@ -50,6 +50,7 @@ async def get(
                     "Tree description: "
                     + row["attributes"]["tree_description"]
                     + ".  "
+                    + "Shrub description: "
                     + row["attributes"]["shrub_description"]
                     + ". "
                 )
