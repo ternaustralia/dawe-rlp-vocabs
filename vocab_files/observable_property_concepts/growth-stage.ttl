@@ -7,11 +7,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/fcfda2f7-84f0-4c26-9f80-c051d129a094>
     a skos:Concept ;
-    dcterms:source "Ecological Field Monitoring protocols - Vegetation Mapping, Plot Description and Recruitment module , draft v0.1, 30/11/2021" ;
+    dcterms:source
+        <https://www.dpaw.wa.gov.au/images/documents/plants-animals/monitoring/vegetation_condition_literature_review.pdf> ,
+        "Ecological Field Monitoring protocols - Targeted survey , draft v0.1, 30/11/2021" ,
+        "Ecological Field Monitoring protocols - Vegetation Mapping, Plot Description and Recruitment module , draft v0.1, 30/11/2021" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:altLabel "flora growth stage" ;
     skos:closeMatch <http://linked.data.gov.au/def/tern-cv/abb0ee19-b2e8-42f3-8a25-d1f39ca3ebc3> ;
-    skos:definition "The growth stage of the most dominant plants within a plant community or a plant individual." ;
+    skos:definition
+        "Provides a measure of age class structure, including recruiting, resprouting, mature, senescent or dead. Multiple growth stages can be recorded for each species. (Bleby et al, 2008)" ,
+        "The age class or life stage of the biological individual(s) at the time the Occurrence was recorded." ,
+        "The growth stage of the most dominant plants within a plant community or a plant individual." ;
     skos:prefLabel "growth stage" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/growth-stage.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/096e018a-fb8f-4ba1-9fdc-302164e57682> ;
