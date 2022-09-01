@@ -3,80 +3,435 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970>
-    a skos:Collection ;
-    dcterms:description """<p><strong>Appendices</strong></p>
-<p>Appendix. Reproductive life-stage photo examples
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/reproductive-life-stage-photo-examples.png"
-                alt="Reproductive life-stage photo examples"
-                widteh="1475"
-                height="550"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
+    dcterms:description """
+    <h3 id="module-overview">Module overview</h3>
+<p>
+  This module covers the procedures and guidelines of two protocols for
+  recording age class structure and survivorship at the plot:
 </p>
-<p>Appendix. Using the point-intercept staff to define the survey area
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/using-point-intercept-define-survey-area.png"
-                alt="Using the point-intercept staff to define the survey area"
-                widteh="482"
-                height="287"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<ol type="1">
+  <li>
+    <p>
+      Age class protocol – consists of 3 sub-protocols to undertake (1) growth
+      stage and life-stage surveys at the plot level, (2) seedling and sapling
+      counts within belt transects and (3) small trees surveys within belt
+      transects.
+    </p>
+  </li>
+  <li>
+    <p>
+      Survivorship protocol – allows users to tag individual plants with a
+      unique ID, record location, health and life-stage, and record size
+      measurements for individual plants.
+    </p>
+  </li>
+</ol>
+<p>The <em>Recruitment</em> module is linked to the following modules:</p>
+<ul>
+  <li>
+    <p>
+      <em>Plot Description</em> - recruitment data should be assessed in
+      combination with climate and disturbance data collected as part of the
+      <em>Plot Description</em> module.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Condition</em> – recruitment is assessed as part of the
+      <em>Condition</em> module. If the condition module is undertaken, the age
+      class structure protocol (life-stage, seedling and sapling counts, small
+      tree survey) needs to be completed. The survivorship protocol does not
+      form part of the <em>Condition</em> module.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Cover</em> – a subset of the point intercept transects form the basis
+      for the belt transects used to record seedling and sapling counts and to
+      undertake the small tree survey. The <em>Recruitment</em> module should be
+      completed after <em>Cover</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Floristics</em> – the <em>Floristics</em> module needs to be completed
+      before any recruitment data can be collected. Recruitment data can only be
+      entered against the species or field names defined in the
+      <em>Floristics</em> module. Species lists collected during floristics will
+      be filtered to remove any annual species.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Interventions</em> – can be used to assess age class structure before
+      and after interventions, and survival after interventions, including
+      restoration and translocation.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    dcterms:source """
+    <h3 id="references">References</h3>
+<ul>
+  <li>
+    <p>
+      Bailey T, Davidson N, Close D. 2012. Understanding the regeneration niche:
+      Microsite attributes and recruitment of eucalypts in dry forests. Forest
+      Ecology and Management <strong>269</strong>:229-238.
+    </p>
+  </li>
+  <li>
+    <p>
+      Broadhurst LM, Young AG. 2006. Reproductive constraints for the long-term
+      persistence of fragmented Acacia dealbata (Mimosaceae) populations in
+      southeast Australia. Biological Conservation <strong>133</strong>:512-526.
+    </p>
+  </li>
+  <li>
+    <p>
+      Casson N, Downes S, Harris A. 2009. Native Vegetation Condition Assessment
+      and Monitoring Manual for Western Australia. The Native Vegetation
+      Integrity Project. Perth.
+    </p>
+  </li>
+  <li>
+    <p>
+      Commonwealth of Australia. 2013. Vegetation Assessment Guide in
+      Environment Dot, editor.
+    </p>
+  </li>
+  <li>
+    <p>
+      DENR. 2011. Pastoral Lease Assessment: Technical training manual in
+      Resources DoEaN, editor, Adelaide, South Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Conservation. 2019. Field protocols for DOC Tier 1 Inventory
+      &amp; Monitoring and LUCAS plots, Version 14. Wellington.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Environment and Climate Change. 2007. Private Native
+      Forestry Code of Practice Guideline No. 4. Sydney.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Environment and Conservation. 2012. 'Monitoring Wetlands',
+      in A guide to managing and restoring wetlands in Western Australia. in
+      Prepared by G Daniel DoEaC, Western Australia, editor.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Sustainability and Environment. 2004. Vegetation Quality
+      Assessment Manual – Guidelines for Applying the Habitat Hectares Scoring
+      Method. Version 1.3. Melbourne.
+    </p>
+  </li>
+  <li>
+    <p>
+      Etchells H, O'Donnell AJ, McCaw WL, Grierson PF. 2020. Fire severity
+      impacts on tree mortality and post-fire recruitment in tall eucalypt
+      forests of southwest Australia. Forest Ecology and Management
+      <strong>459</strong>:117850.
+    </p>
+  </li>
+  <li>
+    <p>
+      Eyre T, Kelly A, Neldner V, Wilson B, Ferguson D, Laidlaw M, Franks A.
+      2015. BioCondition: A Condition Assessment Framework for Terrestrial
+      Biodiversity in Queensland. Assessment Manual. Version 2.2.
+    </p>
+  </li>
+  <li>
+    <p>
+      Fischer J, Stott J, Zerger A, Warren G, Sherren K, Forrester RI. 2009.
+      Reversing a tree regeneration crisis in an endangered ecoregion.
+      Proceedings of the National Academy of Sciences
+      <strong>106</strong>:10386-10391.
+    </p>
+  </li>
+  <li>
+    <p>
+      Florentine SK, Gardner J, Graz FP, Moloney S. 2013. Plant recruitment and
+      survival as indicators of ecological restoration success in abandoned
+      pasture land in Nurcoung, Victoria, Australia. Ecological Processes
+      <strong>2</strong>:1-13.
+    </p>
+  </li>
+  <li>
+    <p>
+      Heard L, Channon B. 1997. Guide to a Native Vegetation Survey: Using the
+      Biological Survey of South Australia. Adelaide.
+    </p>
+  </li>
+  <li>
+    <p>
+      Heyes SD, Sinclair SJ, Hoebee SE, Morgan JW. 2020. How widespread are
+      recruitment bottlenecks in fragmented populations of the savanna tree
+      Banksia marginata (Proteaceae)? Plant Ecology
+      <strong>221</strong>:545-557.
+    </p>
+  </li>
+  <li>
+    <p>
+      Hnatiuk S, Rayner I, Brookhouse M, Freudenberger D. 2020. Survival of
+      native seedlings planted by volunteers: The Lower Cotter, ACT case study.
+      Ecological Management &amp; Restoration <strong>21</strong>:151-154.
+    </p>
+  </li>
+  <li>
+    <p>
+      Hodgkinson K. 1991. Shrub recruitment response to intensity and season of
+      fire in a semi-arid woodland. Journal of Applied Ecology:60-70.
+    </p>
+  </li>
+  <li>
+    <p>
+      Kanowski J, Catterall C, Freebody K, Harrison D. 2010. Monitoring
+      revegetation projects in rainforest landscapes. Toolkit version 3.
+    </p>
+  </li>
+  <li>
+    <p>
+      Menges ES. 2008. Restoration demography and genetics of plants: when is a
+      translocation successful? Australian Journal of Botany
+      <strong>56</strong>:187-196.
+    </p>
+  </li>
+  <li>
+    <p>
+      Michaels K. 2006. A Manual for Assessing Vegetation Condition in Tasmania
+      Version 1.0. Hobart.
+    </p>
+  </li>
+  <li>
+    <p>
+      Pickup M, Wilson S, Freudenberger D, Nicholls N, Gould L, Hnatiuk S,
+      Delandre J. 2013. Post‐fire recovery of revegetated woodland communities
+      in south‐eastern Australia. Austral Ecology <strong>38</strong>:300-312.
+    </p>
+  </li>
+  <li>
+    <p>
+      Pryde EC, Duncan DH. 2015. Monitoring and assessment of direct seeding
+      revegetation projects in the Goulburn Broken CMA. A report to the Goulburn
+      Broken Catcment Management Authority. School of Biosciences, University of
+      Melbourne.
+    </p>
+  </li>
+  <li>
+    <p>
+      Reiter N, Whitfield J, Pollard G, Bedggood W, Argall M, Dixon K, Davis B,
+      Swarts N. 2016. Orchid re-introductions: an evaluation of success and
+      ecological considerations using key comparative studies from Australia.
+      Plant Ecology <strong>217</strong>:81-95.
+    </p>
+  </li>
+  <li>
+    <p>
+      Romanin LM, Prior LD, Bowman DJ. 2019. The legacy of pasture improvement
+      causes recruitment failure in grassy eucalypt woodland conservation
+      reserves in the Midlands of Tasmania. Australian Journal of Botany
+      <strong>67</strong>:558-570.
+    </p>
+  </li>
+  <li>
+    <p>
+      Russell‐Smith J. 1996. Regeneration of monsoon rain forest in northern
+      Australia: the sapling bank. Journal of Vegetation Science
+      <strong>7</strong>:889-900.
+    </p>
+  </li>
+  <li>
+    <p>
+      Silcock J, Simmons C, Monks L, Dillon R, Reiter N, Jusaitis M, Vesk PA,
+      Byrne M, Coates D. 2019. Threatened plant translocation in Australia: A
+      review. Biological Conservation <strong>236</strong>:211-222.
+    </p>
+  </li>
+  <li>
+    <p>
+      Sinclair R. 2005. Long-term changes in vegetation, gradual and episodic,
+      on the TGB Osborn Vegetation Reserve, Koonamore, South Australia
+      (1926–2002). Australian Journal of Botany <strong>53</strong>:283-296.
+    </p>
+  </li>
+  <li>
+    <p>
+      Spooner P, Lunt I, Robinson W. 2002. Is fencing enough? The short‐term
+      effects of stock exclusion in remnant grassy woodlands in southern NSW.
+      Ecological Management &amp; Restoration <strong>3</strong>:117-126.
+    </p>
+  </li>
+  <li>
+    <p>
+      Tokmakoff A, Sparrow B, Turner D, Lowe A. 2016. AusPlots Rangelands field
+      data collection and publication: Infrastructure for ecological monitoring.
+      Future Generation Computer Systems <strong>56</strong>:537–549.
+    </p>
+  </li>
+  <li>
+    <p>
+      Tolsma A, Molloy J. 2020. Forest Protection Survey Program: Survey
+      Guideline - Flora Survey (V4.1a) in State of Victoria Department for
+      Environment L, Water and Planning, editor, Victoria.
+    </p>
+  </li>
+  <li>
+    <p>
+      Wood S, Stephens H, Foulkes J, Ebsworth E, Bowman D. 2015. AusPlots
+      Forests Survey Protocols Manual. Version 1.6. Hobart.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h3 id="key-definitions-and-terminology">Key definitions and terminology</h3>
+<p>
+  Table 1. Key definitions and terms used in the <em>Recruitment</em> module.
+</p>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+    <tr class="odd">
+      <th>Recruitment</th>
+      <th>
+        Evidence of immature plants that have survived for at least one year
+        since germination or first establishment (Michaels 2006).
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Adequate recruitment</th>
+      <th>
+        Recruitment that is sufficient to replenish natural attrition of plants
+        / species (Department of Sustainability and Environment 2004).
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Recruit</th>
+      <th>
+        Immature woody plant that contains no evidence of flowering or fruiting
+        material.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Regenerative capacity</th>
+      <th>
+        The ability of the taxa that make up a plant community to successfully
+        produce new generations of plants.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Seedling</th>
+      <th>
+        <em>Trees:</em> individuals &lt;2 cm DBH. <em>Shrubs</em>: &lt;5cm
+        height
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Sapling</th>
+      <th>
+        <em>Trees:</em> individuals &lt;2 m height and ~2-10 cm DBH.
+        <em>Shrubs:</em> has not reached maximum height, apical dominance
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Small tree</th>
+      <th>DBH &lt;10 cm and height &gt;2 m</th>
+    </tr>
+    <tr class="header">
+      <th>Cohort</th>
+      <th>
+        Group of plants of the same species that germinated at the same time
+        (i.e. in the same season or year).
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Perennial</th>
+      <th>Long-lived species, tending to persist for three or more years.</th>
+    </tr>
+    <tr class="header">
+      <th>Trimble® R1</th>
+      <th>
+        A rugged, compact, lightweight Global Navigation Satellite System (GNSS)
+        receiver (configured with the GNSS Status app) that provides
+        professional-grade positioning information (sub-metre) to any connected
+        mobile device using Bluetooth® connectivity.
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/test/dawe-cv/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f>
+            <https://linked.data.gov.au/def/test/dawe-cv/f470e27d-20ed-46dc-b64a-d67b39a9dffc>
+        ) ;
+    skos:prefLabel "Recruitment" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/recruitment/collection.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4>Appendix 1. Reproductive life-stage photo examples</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/reproductive-life-stage-photo-examples.png"
+    alt="Reproductive life-stage photo examples"
+    widteh="1475"
+    height="550"
+  />
+</p>
+<h4>Appendix 2. Using the point-intercept staff to define the survey area</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/using-point-intercept-define-survey-area.png"
+    alt="Using the point-intercept staff to define the survey area"
+    widteh="482"
+    height="287"
+  />
 </p>
 <p>
   <em
     >Source: South Australian Pastoral Lease Assessment manual (DENR 2011).</em
   >
 </p>
-<p>Appendix. Determining if individuals are within the survey area
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/determining-individuals-within-survey-area.png"
-                alt="Determining if individuals are within the survey area"
-                widteh="438"
-                height="176"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<h4>Appendix 3. Determining if individuals are within the survey area</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/determining-individuals-within-survey-area.png"
+    alt="Determining if individuals are within the survey area"
+    widteh="438"
+    height="176"
+  />
 </p>
 <p><em>Source: AusPlots Forests (Wood et al. 2015)</em></p>
-<p>Appendix. Small tree survey
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/appendix-small-tree-survey.png"
-                alt="Small tree survey"
-                widteh="1020"
-                height="1016"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<h4>Appendix 4. Small tree survey</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/appendix-small-tree-survey.png"
+    alt="Small tree survey"
+    widteh="1020"
+    height="1016"
+  />
 </p>
 <p>
   <em
@@ -84,62 +439,163 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     &amp; Molloy 2020)</em
   >
 </p>
-<p>Appendix. Plant tagging options</p>
+<h4>Appendix 5. Plant tagging options</h4>
 <p>
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-1.png"
-                alt="Plant tagging options 1"
-                widteh="390"
-                height="292"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    <em>Source: https://alitags.com/products-round-numbered-tags.html</em></p>
-
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-1.png"
+    alt="Plant tagging options 1"
+    widteh="390"
+    height="292"
+  />
+</p>
 <p>
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-2.png"
-                alt="Plant tagging options 2"
-                widteh="360"
-                height="412"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    <em>Source: https://www.lfwseq.org.au/plant-id-tags/</em></p>
-
+  <em
+    >Source:
+    <a href="https://alitags.com/products-round-numbered-tags.html"
+      >https://alitags.com/products-round-numbered-tags.html</a
+    ></em
+  >
+</p>
 <p>
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-3.png"
-                alt="Plant tagging options 3"
-                widteh="821"
-                height="617"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    <em>Source: https://www.pinterest.com.au/pin/276619602099003237/</em></p>"""^^rdf:HTML ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/f470e27d-20ed-46dc-b64a-d67b39a9dffc> ;
-    skos:prefLabel "Recruitment" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/recruitment/collection.ttl"^^xsd:anyURI ;
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-2.png"
+    alt="Plant tagging options 2"
+    widteh="360"
+    height="412"
+  />
+</p>
+<p>
+  <em
+    >Source:
+    <a href="https://www.lfwseq.org.au/plant-id-tags/"
+      >https://www.lfwseq.org.au/plant-id-tags/</a
+    ></em
+  >
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-3.png"
+    alt="Plant tagging options 3"
+    widteh="821"
+    height="617"
+  />
+</p>
+<p>
+  <em
+    >Source:
+    <a href="https://www.pinterest.com.au/pin/276619602099003237/"
+      >https://www.pinterest.com.au/pin/276619602099003237/</a
+    ></em
+  >
+</p>
+    """^^rdf:HTML ;
+    tern:purpose """
+    <h3 id="rationale">Rationale</h3>
+<p>
+  Recruitment is an indicator of ecosystem health as it shows processes such as
+  pollination are occurring, soil conditions are suitable for vulnerable
+  juvenile plants and grazing pressure is within acceptable limits (Department
+  of Environment and Conservation 2012). The on-going absence of seedlings
+  and/or juvenile plants can be a sign that ecosystem processes have been
+  disrupted, particularly if climatic conditions have been favourable for
+  germination, and this can limit the long-term survival of species in the
+  landscape (Casson et al. 2009). Land management practices, such as burning or
+  grazing, and natural processes, such as drought, can affect the processes
+  required for regeneration and recruitment (Fischer et al. 2009; Eyre et al.
+  2015). Consequently, understanding how landscape changes and management
+  activities affect population processes, is critical for developing
+  conservation strategies and successfully managing natural resources
+  (Broadhurst &amp; Young 2006).
+</p>
+<p>
+  Growth stage and life-stage are recorded across the plot to provide an
+  overview of recruitment and age class structure (e.g. recruiting, mature,
+  senescent), and potential to recruit (presence of reproductive material) for
+  all perennial species present (as identified in the
+  <em>Floristics</em> module). Multiple growth and life-stages can be recorded
+  for each species. Adequate recruitment for each perennial species is also
+  determined, based on the Habitat Hectares approach from Victoria (Department
+  of Sustainability and Environment 2004) and the TASVEG guidelines (Michaels
+  2006).
+</p>
+<p>
+  Seedling and sapling counts are undertaken to get an estimate of the number of
+  recruits for tree and shrub species present, with counts undertaken on a per
+  species basis, where possible (Department of Conservation 2019). Seedlings and
+  saplings can be difficult to identify, so recording to genus level or as a
+  generic tree or shrub is also allowed, where further identification is not
+  possible. Small tree surveys, which record the location, species (or genus),
+  size and life-stage of individuals present are also undertaken, to help
+  document age class structure, and assist with the interpretation of changes
+  that occur over time (Department of Environment and Conservation 2012).
+</p>
+<p>
+  Due to the small size of new recruits, area based sampling methods are more
+  appropriate than transects, with larger sampling areas providing a more
+  representative sample, but are also more labour intensive to undertake
+  (Department of Environment and Conservation 2012). Consequently, 2 m belt
+  transects have been selected as the most suitable sampling method for the
+  seedling and sapling counts, and the small tree survey, as they facilitate
+  systematic surveys, and allow good coverage of the plot, while minimising the
+  amount of area that needs to be surveyed. Two metre wide transects have been
+  utilised in other Australian studies to assess recruitment dynamics (Romanin
+  et al. 2019). The belt transects align with the five north-south point
+  intercept transects from the <em>Cover</em> module to increase field survey
+  efficiency, reduce any bias associated with landscape features and maintain
+  coverage over the plot. The width of the belt transects will be defined with
+  the point-intercept staff, to increase sampling efficiency and avoid laying
+  out additional tapes to define survey areas. Using a pole or staff to define
+  survey areas has been used successfully for other survey and monitoring
+  activities (DENR 2011).
+</p>
+<p>
+  The survivorship protocol is optional and flexible, with survey area and
+  target species determined by the user, depending on the project aims. The
+  location of individual plants will be recorded and each individual will be
+  tagged, allowing repeat measures of health and growth to be undertaken over
+  time. Individuals can be tagged and tracked using belt transects, the plot or
+  population extent. The survivorship protocol allows users to track selected
+  individuals, a single target species, multiple target species or all species
+  present.
+</p>
+    """^^rdf:HTML ;
+    tern:scope """
+      <h3>Contents</h3>
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology"
+        >Key definitions and terminology</a
+      >
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+    <h3 id="introduction">Introduction</h3>
+<p>
+  Recruitment is critical to the development, succession, and maintenance of
+  plant populations (Casson et al. 2009; Bailey et al. 2012), and species need
+  to be able to successfully produce new generations of plants if they are to
+  remain viable in the long term (Department of Environment and Conservation
+  2012). For recruitment to occur, there needs to be sufficient seed supply and
+  rainfall to trigger germination, and following this, suitable conditions
+  (light, temperature, nutrients) are required to support the establishment and
+  development of seedlings (Bailey et al. 2012), with optimal conditions
+  differing between species (Casson et al. 2009). As a result, the recruitment
+  of many tree and shrub species can be infrequent and episodic (Michaels 2006).
+</p>
+<p>
+  The <em>Recruitment</em> module will allow users to collect a range of
+  information about recruitment, including life-stages of each perennial species
+  present (to assess level of recruitment and potential to recruit), seedling
+  and sapling counts for woody species, and small tree surveys, to assess age
+  class structure. A survivorship option is also available to track survival,
+  growth, health and life-stages of individual plants over time. Survivorship is
+  optional but it has a range of applications, including monitoring restoration
+  and translocation activities, and post-fire recovery.
+</p>
+    """^^rdf:HTML ;
 .
 
