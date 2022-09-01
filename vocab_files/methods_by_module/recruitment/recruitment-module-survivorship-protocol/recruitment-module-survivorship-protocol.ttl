@@ -6,354 +6,13 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/f470e27d-20ed-46dc-b64a-d67b39a9dffc>
-    a skos:Concept ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:prefLabel "Recruitment module -Survivorship protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/recruitment/recruitment-module-survivorship-protocol/recruitment-module-survivorship-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    <p>
-      Mobile device (tablet/phone capable of taking high resolution photos) with
-      the App (progressive web app) saved to the home screen
-    </p>
-  </li>
-  <li>
-    <p>Trimble RI</p>
-  </li>
-  <li>
-    <p>
-      Tags (metal or aluminium – labelled with a unique ID for each individual)
-    </p>
-  </li>
-  <li>
-    <p>100 m tape measure(s) (number dependent on the study area selected)</p>
-  </li>
-  <li>
-    <p>Tape measure (5-10 m), diameter tape, calipers</p>
-  </li>
-  <li>
-    <p>
-      Flagging tape, survey markers, survey pegs, marking paint (optional, but
-      can help define and stratify sampling area)
-    </p>
-  </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol type="1">
-  <li>
-    <p>
-      Ensure the Trimble R1 is on and high accuracy location data can be
-      collected.
-    </p>
-  </li>
-</ol>
-<ol start="2" type="1">
-  <li>
-    <p>Select visit type from the drop-down menu (new survey or revisit).</p>
-  </li>
-  <li>
-    <p>
-      The study area does not need to be defined for repeat visits. If
-      undertaking a follow-up survey select <em>Revisit</em> from the drop-down
-      list for the <em>Visit</em> field. Record any details about the revist in
-      the <em>Comments</em> field and then select <em>Save and Continue</em> to
-      start data collection<em>.</em>
-    </p>
-  </li>
-  <li>
-    <p>
-      For new surveys, select the study area type as belt transects (align with
-      the small tree and seedling survey), populaton extent or across the plot
-      (or sub-plot).
-    </p>
-  </li>
-  <li>
-    <p>
-      The survivorship module can be tailored to the needs of the project and
-      individuals can be tracked for a single species, a group of species or all
-      perennial species present. Record the survey objectives in the
-      <em>Comments</em> field.
-    </p>
-  </li>
-  <li>
-    <p>
-      Define the species list by selecting all species from the drop-down that
-      will be recorded as part of the survivorship protocol.
-    </p>
-  </li>
-</ol>
-<p>Figure. Survivorship main screen app mock up
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/survivorship-main-screen.png"
-                alt="Survivorship main screen app mock up"
-                widteh="424"
-                height="535"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</p>
-<ol start="7" type="1">
-  <li>
-    <p>
-      Once all the visit, study area and project information has been documented
-      (study area and project information only need to be recorded for the first
-      visit), information can be collected about individual plants.
-    </p>
-  </li>
-  <li>
-    <p>
-      Once a seedling or individual has been located in the study area, select
-      the species name from the drop-down list or the genus name if species
-      cannot be identified to species level.
-    </p>
-  </li>
-  <li>
-    <p>
-      Stand at the base of the individual and hit <em>Record Location</em>. This
-      will automatically populate an easting and northing value into the
-      adjacent fields (ensure the R1 is active and has sub-metre accuracy).
-    </p>
-  </li>
-  <li>
-    <p>
-      Tag the individual and give it a unique ID (see Appendix for examples of
-      plant tags).
-    </p>
-  </li>
-  <li>
-    <p>
-      Record the unique ID number in the <em>Tag/Label</em> field. An error
-      message will appear if the same ID has been given to more than one
-      individual. The ID must be unique.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Status</em> from the drop-down menu (classes Alive, Dead,
-      Resprouting).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Life-stage</em> (Table 4) and <em>Health</em> (Table 5) from
-      the drop-down menu. Multiple health factors can be selected from the
-      drop-down menu if multiple are present (i.e. mistletoes and insect
-      damage).
-    </p>
-  </li>
-  <li>
-    <p>
-      Record plant height and width (average canopy width) in metres (optional).
-    </p>
-  </li>
-  <li>
-    <p>
-      Record DBH in centimetres (optional depending on project requirements and
-      plant height).
-    </p>
-  </li>
-  <li>
-    <p>
-      Take a photo of the individual by clicking on the camera icon (optional).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Save</em> to save the information for the individual and
-      <em>Add Individual</em> to add keep collecting data.
-    </p>
-  </li>
-  <li>
-    <p>Select <em>Finish</em> once you have finished entering information.</p>
-  </li>
-</ol>
-<p>Figure. Survivorship data screen
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/survivorship-data-screen.png"
-                alt="Survivorship data screen"
-                widteh="474"
-                height="872"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</p>
-<ol start="19" type="1">
-  <li>
-    <p>
-      For repeat visits, the species list and tag/label fields only contain the
-      values entered during the first visit (select the appropiate details from
-      the drop-down list). If new recruits are present in the system, these can
-      be entered by selecting the <em>Add Individual</em> button.
-    </p>
-  </li>
-  <li>
-    <p>
-      Systematically survey the study area, and when identified, select the
-      unique ID from the drop-down list and cross-check this against the
-      physical label on the plant.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record plant <em>Status</em>, <em>Life-stage</em> and <em>Health</em>.
-    </p>
-  </li>
-  <li>
-    <p>
-      Measure and record the required plant sizes (height, width, DBH)<em>.</em>
-    </p>
-  </li>
-  <li>
-    <p>
-      Take a photo of the individual by clicking on the camera icon (optional).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Save</em> to save the information for the individual and then
-      <em>Continue</em> to keep collecting information.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Finish</em> once you have finished entering information for
-      each target individual present. An error message will appear here if any
-      individuals surveyed originally have not been resurveyed. If individuals
-      cannot be found, record these as missing in the <em>Status</em> drop-down
-      menu (missing is only an option on the drop-down list for revisits) and
-      then select <em>Save</em>.
-    </p>
-  </li>
-</ol>
-<p>Table. Survivorship life-stage classes</p>
-<table>
-  <colgroup>
-    <col />
-    <col />
-  </colgroup>
-  <thead>
-    <tr>
-      <th><strong>Life-stage</strong></th>
-      <th><strong>Definition</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Seedling</td>
-      <td>
-        <em>Trees:</em> individuals &lt;2 cm DBH. <em>Shrubs</em>: &lt;5cm
-        height
-      </td>
-    </tr>
-    <tr>
-      <td>Sapling</td>
-      <td>
-        <em>Trees:</em> individuals &lt;2 m height and ~2-10 cm DBH.
-        <em>Shrubs:</em> has not reached maximum height, apical dominance
-      </td>
-    </tr>
-    <tr>
-      <td>Vegetative</td>
-      <td>
-        Plants in a non-reproductive phase (i.e. no flowers, buds or unshed
-        seed), that do not classify as seedlings or saplings
-      </td>
-    </tr>
-    <tr>
-      <td>Budding</td>
-      <td>
-        Plants have buds formed in varying stages of development for flowering
-      </td>
-    </tr>
-    <tr>
-      <td>Flowering</td>
-      <td>Plants are in flower</td>
-    </tr>
-    <tr>
-      <td>Immature fruit</td>
-      <td>Immature fruits not shedding seed</td>
-    </tr>
-    <tr>
-      <td>Mature fruit</td>
-      <td>Fruits ripe and/or shedding seed</td>
-    </tr>
-    <tr>
-      <td>Recently shed</td>
-      <td>
-        Plants are in a non-reproductive phase which show signs of having shed
-        seed or fruits within the last 12 months
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p>Table. Survivorship health factors</p>
-<table>
-  <colgroup>
-    <col />
-    <col />
-  </colgroup>
-  <thead>
-    <tr>
-      <th><strong>Health factor</strong></th>
-      <th><strong>Description</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Canopy health</td>
-      <td>Proportion of expected healthy canopy present (%)</td>
-    </tr>
-    <tr>
-      <td>Mistletoe</td>
-      <td>
-        Aerial plant parasite can be seen by different foliage from host plant.
-        Number of mistletoe present to be recorded.
-      </td>
-    </tr>
-    <tr>
-      <td>Epicormic growth</td>
-      <td>Obvious presence of epicormic growth</td>
-    </tr>
-    <tr>
-      <td>Galls and lerps</td>
-      <td>
-        Abnormal outgrowths on leaves and small branches, or excretions (waxy or
-        sugary)
-      </td>
-    </tr>
-    <tr>
-      <td>Insect damage</td>
-      <td>Identified by canopy loss and leaf distortions</td>
-    </tr>
-    <tr>
-      <td>Dieback from disease</td>
-      <td>
-        Can been identified by leaf discoloration, plant tissue damage and
-        canopy loss
-      </td>
-    </tr>
-    <tr>
-      <td>Grazing</td>
-      <td>
-        Evidence of grazing damage including loss of foliage and distortion of
-        plant growth form
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p><strong>Additional guidelines</strong></p>
-<p style="color: orange">Field collection</p>
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 id="field-collection">A. Field collection</h4>
 <ul>
   <li>
     <p>
@@ -406,7 +65,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Life-stage and health information aligns with the information collected
-      for the <em>Condition</em> module. More information about each are
+      for the <em>Condition</em> module. More information about each is
       available in the supporting information or by referring to the
       <em>Condition</em> module.
     </p>
@@ -428,7 +87,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Using the R1</p>
+<h4 id="using-the-r1-1">B. Using the R1</h4>
 <ul>
   <li>
     <p>
@@ -449,6 +108,450 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       accuracy drop to sub-metre (can take up to 10-15 minutes).
     </p>
   </li>
-</ul>"""^^rdf:HTML ;
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Recruitment module -Survivorship protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/recruitment/recruitment-module-survivorship-protocol/recruitment-module-survivorship-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4>Appendix 1. Reproductive life-stage photo examples</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/reproductive-life-stage-photo-examples.png"
+    alt="Reproductive life-stage photo examples"
+    widteh="1475"
+    height="550"
+  />
+</p>
+<h4>Appendix 2. Using the point-intercept staff to define the survey area</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/using-point-intercept-define-survey-area.png"
+    alt="Using the point-intercept staff to define the survey area"
+    widteh="482"
+    height="287"
+  />
+</p>
+<p>
+  <em
+    >Source: South Australian Pastoral Lease Assessment manual (DENR 2011).</em
+  >
+</p>
+<h4>Appendix 3. Determining if individuals are within the survey area</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/determining-individuals-within-survey-area.png"
+    alt="Determining if individuals are within the survey area"
+    widteh="438"
+    height="176"
+  />
+</p>
+<p><em>Source: AusPlots Forests (Wood et al. 2015)</em></p>
+<h4>Appendix 4. Small tree survey</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/appendix-small-tree-survey.png"
+    alt="Small tree survey"
+    widteh="1020"
+    height="1016"
+  />
+</p>
+<p>
+  <em
+    >Source: Victorian forest protection survey program – flora survey (Tolsma
+    &amp; Molloy 2020)</em
+  >
+</p>
+<h4 id='appendix-5'>Appendix 5. Plant tagging options</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-1.png"
+    alt="Plant tagging options 1"
+    widteh="390"
+    height="292"
+  />
+</p>
+<p>
+  <em
+    >Source:
+    <a href="https://alitags.com/products-round-numbered-tags.html"
+      >https://alitags.com/products-round-numbered-tags.html</a
+    ></em
+  >
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-2.png"
+    alt="Plant tagging options 2"
+    widteh="360"
+    height="412"
+  />
+</p>
+<p>
+  <em
+    >Source:
+    <a href="https://www.lfwseq.org.au/plant-id-tags/"
+      >https://www.lfwseq.org.au/plant-id-tags/</a
+    ></em
+  >
+</p>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/plant-tagging-options-3.png"
+    alt="Plant tagging options 3"
+    widteh="821"
+    height="617"
+  />
+</p>
+<p>
+  <em
+    >Source:
+    <a href="https://www.pinterest.com.au/pin/276619602099003237/"
+      >https://www.pinterest.com.au/pin/276619602099003237/</a
+    ></em
+  >
+</p>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+    <h3 id="equipment">Equipment</h3>
+<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Trimble RI</p>
+  </li>
+  <li>
+    <p>
+      Tags (metal or aluminium – labelled with a unique ID for each individual)
+    </p>
+  </li>
+  <li>
+    <p>100 m tape measure(s) (number dependent on the study area selected)</p>
+  </li>
+  <li>
+    <p>Tape measure (5-10 m), diameter tape, calipers</p>
+  </li>
+  <li>
+    <p>
+      Flagging tape, survey markers, survey pegs, marking paint (optional, but
+      can help define and stratified sampling area)
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the Trimble R1 is on and high accuracy location data can be
+      collected.
+    </p>
+  </li>
+</ol>
+<ol start="2" type="1">
+  <li>
+    <p>Select visit type from the drop-down menu (new survey or revisit).</p>
+  </li>
+  <li>
+    <p>
+      The study area does not need to be defined for repeat visits. If
+      undertaking a follow-up survey select <em>Revisit</em> from the drop-down
+      list for the <em>Visit</em> field. Record any details about the revist in
+      the <em>Comments</em> field and then select <em>Save and Continue</em> to
+      start data collection<em>.</em>
+    </p>
+  </li>
+  <li>
+    <p>
+      For new surveys, select the study area type as belt transects (align with
+      the small tree and seedling survey), population extent or across the plot
+      (or sub-plot).
+    </p>
+  </li>
+  <li>
+    <p>
+      The survivorship module can be tailored to the needs of the project and
+      individuals can be tracked for a single species, a group of species or all
+      perennial species present. Record the survey objectives in the
+      <em>Comments</em> field.
+    </p>
+  </li>
+  <li>
+    <p>
+      Define the species list by selecting all species from the drop-down that
+      will be recorded as part of the survivorship protocol.
+    </p>
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/survivorship-main-screen.png"
+        alt="Survivorship main screen app mock up"
+        widteh="424"
+        height="535"
+      />
+    </p>
+    <p>Figure 7. Survivorship main screen app mockup</p>
+  </li>
+</ol>
+<ol start="7" type="1">
+  <li>
+    <p>
+      Once all the visit, study area and project information has been documented
+      (study area and project information only need to be recorded for the first
+      visit), information can be collected about individual plants.
+    </p>
+  </li>
+  <li>
+    <p>
+      Once a seedling or individual has been located in the study area, select
+      the species name from the drop-down list or the genus name if species
+      cannot be identified to species level.
+    </p>
+  </li>
+  <li>
+    <p>
+      Stand at the base of the individual and hit <em>Record Location</em>. This
+      will automatically populate an easting and northing value into the
+      adjacent fields (ensure the R1 is active and has sub-metre accuracy).
+    </p>
+  </li>
+  <li>
+    <p>
+      Tag the individual and give it a unique ID (see <a href='#appendix-5'>Appendix 5</a> for examples of
+      plant tags).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the unique ID number in the <em>Tag/Label</em> field. An error
+      message will appear if the same ID has been given to more than one
+      individual. The ID must be unique.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Status</em> from the drop-down menu (classes Alive, Dead,
+      Resprouting).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Life-stage</em> (<a href='#table-4'>Table 4</a>) and <em>Health</em> (<a href='#table-5'>Table 5</a>) from
+      the drop-down menu. Multiple health factors can be selected from the
+      drop-down menu if multiple are present (i.e. mistletoes and insect
+      damage).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record plant height and width (average canopy width) in metres (optional).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record DBH in centimetres (optional depending on project requirements and
+      plant height).
+    </p>
+  </li>
+  <li>
+    <p>
+      Take a photo of the individual by clicking on the camera icon (optional).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Save</em> to save the information for the individual and
+      <em>Add Individual</em> to keep collecting data.
+    </p>
+  </li>
+  <li>
+    <p>Select <em>Finish</em> once you have finished entering information.</p>
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/recruitment/survivorship-data-screen.png"
+        alt="Survivorship data screen"
+        widteh="474"
+        height="872"
+      />
+    </p>
+    <p>Figure 8. Survivorship data screen</p>
+  </li>
+</ol>
+<ol start="19" type="1">
+  <li>
+    <p>
+      For repeat visits, the species list and tag/label fields only contain the
+      values entered during the first visit (select the appropriate details from
+      the drop-down list). If new recruits are present in the system, these can
+      be entered by selecting the <em>Add Individual</em> button.
+    </p>
+  </li>
+  <li>
+    <p>
+      Systematically survey the study area, and when identified, select the
+      unique ID from the drop-down list and cross-check this against the
+      physical label on the plant.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record plant <em>Status</em>, <em>Life-stage</em> and <em>Health</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure and record the required plant sizes (height, width, DBH)<em>.</em>
+    </p>
+  </li>
+  <li>
+    <p>
+      Take a photo of the individual by clicking on the camera icon (optional).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Save</em> to save the information for the individual and then
+      <em>Continue</em> to keep collecting information.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Finish</em> once you have finished entering information for
+      each target individual present. An error message will appear here if any
+      individuals surveyed originally have not been resurveyed. If individuals
+      cannot be found, record these as missing in the <em>Status</em> drop-down
+      menu (missing is only an option on the drop-down list for revisits) and
+      then select <em>Save</em>.
+    </p>
+  </li>
+</ol>
+<p id='table-4'>Table 4. Survivorship life-stage classes</p>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Life-stage</strong></th>
+      <th><strong>Definition</strong></th>
+    </tr>
+    <tr class="odd">
+      <th>Seedling</th>
+      <th>
+        <em>Trees:</em> individuals &lt;2 cm DBH. <em>Shrubs</em>: &lt;5cm
+        height
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Sapling</th>
+      <th>
+        <em>Trees:</em> individuals &lt;2 m height and ~2-10 cm DBH.
+        <em>Shrubs:</em> has not reached maximum height, apical dominance
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Vegetative</th>
+      <th>
+        Plants in a non-reproductive phase (i.e. no flowers, buds or unshed
+        seed), that do not classify as seedlings or saplings
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Budding</th>
+      <th>
+        Plants have buds formed in varying stages of development for flowering
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Flowering</th>
+      <th>Plants are in flower</th>
+    </tr>
+    <tr class="header">
+      <th>Immature fruit</th>
+      <th>Immature fruits not shedding seed</th>
+    </tr>
+    <tr class="odd">
+      <th>Mature fruit</th>
+      <th>Fruits ripe and/or shedding seed</th>
+    </tr>
+    <tr class="header">
+      <th>Recently shed</th>
+      <th>
+        Plants are in a non-reproductive phase which show signs of having shed
+        seed or fruits within the last 12 months
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p id='table-5'>Table 5. Survivorship health factors</p>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Health factor</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th>Canopy health</th>
+      <th>Proportion of expected healthy canopy present (%)</th>
+    </tr>
+    <tr class="header">
+      <th>Mistletoe</th>
+      <th>
+        Aerial plant parasites can be seen by different foliage from the host
+        plant. Number of mistletoe present to be recorded.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Epicormic growth</th>
+      <th>Obvious presence of epicormic growth</th>
+    </tr>
+    <tr class="header">
+      <th>Galls and lerps</th>
+      <th>
+        Abnormal outgrowths on leaves and small branches, or excretions (waxy or
+        sugary)
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Insect damage</th>
+      <th>Identified by canopy loss and leaf distortions</th>
+    </tr>
+    <tr class="header">
+      <th>Dieback from disease</th>
+      <th>
+        Can been identified by leaf discoloration, plant tissue damage and
+        canopy loss
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Grazing</th>
+      <th>
+        Evidence of grazing damage including loss of foliage and distortion of
+        plant growth form
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
 .
 
