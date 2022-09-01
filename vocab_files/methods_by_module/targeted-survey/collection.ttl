@@ -3,24 +3,29 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/420ce0a7-9364-4bf4-861c-ef5f710e31b9>
-    a skos:Collection ;
-    dcterms:description """<p>
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
+    dcterms:description """
+    <h3 id="module-overview">Module overview</h3>
+<p>
   This module provides guidelines for undertaking a desktop study and then
   covers the procedures and guidelines for recording the survey methods, effort
   and outcomes of targeted surveys and monitoring for species or ecological
   communities. Targeted surveys do not need to occur at a plot, and where the
   project or research goals of individual projects dictate variation in survey
   or trap design, or use of methods not applied during plot-based surveys, the
-  Targeted surveys module should be used. Targeted surveys should not be viewed
-  as an alternative to standardised plot-based surveys and should generally be
-  used in addition to plot-based surveys, to obtain further information about
-  species or ecological communities.
+  <em>Targeted surveys</em> module should be used. Targeted surveys should not
+  be viewed as an alternative to standardised plot-based surveys, and should
+  generally be used in addition to plot-based surveys, to obtain further
+  information about particular species or ecological communities.
 </p>
 <p>The module contains three protocols:</p>
-<ol>
+<ol type="1">
   <li>
     <p>
       <strong>Fauna protocol</strong> – to record survey type, survey effort and
@@ -47,70 +52,118 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <ul>
   <li>
     <p>
-      Vertebrate fauna – provides further details on vertebrate fauna survey,
-      collection and vouchering methods. Fauna surveys can trigger the need for
-      targeted surveys if a threatened species is identified at a plot.
-    </p>
-  </li>
-  <li>
-    <p>
-      Invertebrate fauna – provides further details on invertebrate fauna
-      survey, collection and vouchering methods. Invertebrate fauna surveys can
-      trigger the need for targeted surveys if a threatened or invasive species
-      is identified at a plot.
-    </p>
-  </li>
-  <li>
-    <p>
-      Opportunistic observations – opportunistic observations of species of
-      interest (e.g. threatened or invasive) may trigger the need for targeted
-      surveys.
-    </p>
-  </li>
-  <li>
-    <p>
-      Floristics – provides further details on vascular plant collection and
-      vouchering methods. Floristics surveys can trigger the need for targeted
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51"
+          ><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51"
+          >Vertebrate fauna</a
+        ></a
+        ></em
+      >
+      – provides further details on vertebrate fauna survey, collection and
+      vouchering methods. Fauna surveys can trigger the need for targeted
       surveys if a threatened species is identified at a plot.
     </p>
   </li>
   <li>
     <p>
-      Plant vouchering – provides further details on vascular plant collection
-      and vouchering methods.
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e"
+          >Invertebrate fauna</a
+        ></em
+      >
+      – provides further details on invertebrate fauna survey, collection and
+      vouchering methods. Invertebrate fauna surveys can trigger the need for
+      targeted surveys if a threatened or invasive species is identified at a
+      plot.
     </p>
   </li>
   <li>
     <p>
-      Camera traps – provides further details on camera trap methods and set up.
-      The point protocol in the Camera traps module can be used for targeted
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6"
+          >Opportunistic observations</a
+        ></em
+      >
+      – opportunistic observations of species of interest (e.g. threatened or
+      invasive) may trigger the need for targeted surveys.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      – provides further details on vascular plant collection and vouchering
+      methods. Floristics surveys can trigger the need for targeted surveys if a
+      threatened species is identified at a plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/1f2ac884-2177-403a-a6c3-27e109b1fc95"
+          >Plant vouchering</a
+        ></em
+      >
+      – provides further details on vascular plant collection and vouchering
+      methods.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/f0123418-c565-45a6-be01-c5c332c727e5"
+          >Camera traps</a
+        ></em
+      >
+      – provides further details on camera trap methods and set up. The point
+      protocol in the <em>Camera traps</em> module can be used for targeted
       surveys.
     </p>
   </li>
   <li>
     <p>
-      Vegetation mapping - the results from the vegetation mapping module can be
-      used to indicate potential habitat areas that may require a targeted
-      survey and the presence of any TECs. If a threatened or invasive species
-      is detected at a vegetation mapping point, this may trigger the need for a
-      targeted survey.
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/15361f98-7669-410e-9b04-e9be069c7508"
+          >Vegetation mapping</a
+        ></em
+      >
+      - the results from the vegetation mapping module can be used to indicate
+      potential habitat areas that may require a targeted survey and the
+      presence of any TECs. If a threatened or invasive species is detected at a
+      vegetation mapping point, this may trigger the need for a targeted survey.
     </p>
   </li>
   <li>
     <p>
-      Recruitment – the survivorship protocol in the Recruitment module can be
-      used to track survival, growth and life-stages of individual plants
-      overtime, and can be used to monitor target flora species.
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970"
+          >Recruitment</a
+        ></em
+      >
+      – the survivorship protocol in the <em>Recruitment</em> module can be used
+      to track survival, growth and life-stages of individual plants overtime,
+      and can be used to monitor target flora species.
     </p>
   </li>
 </ul>
-<p><strong>Desktop study</strong></p>
+<h3 id="desktop-study">Desktop study</h3>
 <p>
   One of the first steps when undertaking a targeted survey should always be to
   complete a desktop study or review, to gather contextual information on the
   area and species/community to be surveyed from existing surveys or reports,
   scientific literature, database searches and spatial information (see
-  Appendices 1 and 2 for resources to assist with desktop studies). Desktop
+  <a href='#appendix-1'>Appendix 1</a> and <a href='#appendix-2'>Appendix 2</a> for resources to assist with desktop studies). Desktop
   studies can help to plan and undertake field surveys (Environment Protection
   Authority 2020), and the information collated can be used to make informed
   decisions on the appropriate level of survey effort, key survey methods and
@@ -122,16 +175,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   techniques for the survey (Department of Sustainability‚ Environment‚ Water‚
   Population and Communities 2011a).
 </p>
+
 <p>There are a range of sources that can be reviewed, including:</p>
+
 <ul>
   <li>
     <p>
       Databases maintained by the Australian Government, including the Species
       Profile and Threats (SPRAT) database and the Protected Matters Search Tool
       (see
-      <u>http://www.environment.gov.au/cgi-bin/sprat/public/sprat.pl</u> and
-      <u
-        >https://www.awe.gov.au/environment/epbc/protected-matters-search-tool</u
+      <a href="http://www.environment.gov.au/cgi-bin/sprat/public/sprat.pl"
+        ><u>http://www.environment.gov.au/cgi-bin/sprat/public/sprat.pl</u></a
+      >
+      and
+      <a
+        href="https://www.awe.gov.au/environment/epbc/protected-matters-search-tool"
+        ><u
+          >https://www.awe.gov.au/environment/epbc/protected-matters-search-tool</u
+        ></a
       >).
     </p>
   </li>
@@ -181,8 +242,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   All information used in a desktop study requires an evaluation of its
   reliability and suitability for the current project, including the source and
   age of the information, suitability of techniques used, skills and experience
-  of observer/researcher, data analysis and survey timing (DEC 2004, Environment
-  Protection Authority 2020).
+  of the observer/researcher, data analysis and survey timing (DEC 2004,
+  Environment Protection Authority 2020).
 </p>
 <p>
   When undertaking a desktop assessment, the following can be points can be used
@@ -214,8 +275,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Length of survey (i.e., number of trap nights) and survey effort (number
-      of traps, search area)
+      Length of survey (i.e. number of trap nights) and survey effort (number of
+      traps, search area)
     </p>
   </li>
   <li>
@@ -250,7 +311,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 </p>
 <p>
   Habitat preferences of the target species or community should be considered
-  during the site selection process, and it is common for survey effort to be
+  during the site selection process, and it is common for survey efforts to be
   higher in areas of suitable habitat (Environmental Protection Authority
   2016a). However, targeting survey effort to strata with high probability of
   occupancy risks misinterpreting true patterns of occurrence, as survey designs
@@ -287,16 +348,649 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   Service and SMEC Australia 2001), while peak invertebrate activity often
   coincides with rainfall events, which are difficult to predict (EPA 2016b).
 </p>
-<p><strong>Appendices</strong></p>
-<p style="color: blue">Appendix 1. Undertaking a desktop survey</p>
+    """^^rdf:HTML ;
+    dcterms:source """
+    <h3 id="references">References</h3>
+<ul>
+  <li>
+    <p>
+      Aghighi, S., L. Fontanini, P. Yeoh, G. S. J. Hardy, T. Burgess, and J.
+      Scott. 2014. A conceptual model to describe the decline of European
+      blackberry (Rubus anglocandicans), a weed of national significance in
+      Australia. Plant disease
+      <strong>98</strong>:580-589.
+    </p>
+  </li>
+  <li>
+    <p>
+      Baker‐Gabb, D., M. Antos, and G. Brown. 2016. Recent decline of the
+      critically endangered Plains‐wanderer (<em>Pedionomus torquatus</em>), and
+      the application of a simple method for assessing its cause: major changes
+      in grassland structure. Ecological Management &amp; Restoration
+      <strong>17</strong>:235–242.
+    </p>
+  </li>
+  <li>
+    <p>
+      Batianoff, G. N., and D. W. Butler. 2003. Impact assessment and analysis
+      of sixty-six priority invasive weeds in south-east Queensland. Plant
+      Protection Quarterly <strong>18</strong>:11-17.
+    </p>
+  </li>
+  <li>
+    <p>
+      Bayraktarov, E., G. Ehmke, A. I. Tulloch, A. L. Chauvenet, S. Avery‐Gomm,
+      L. McRae, B. A. Wintle, J. O'Connor, J. Driessen, and J. Watmuff. 2021. A
+      threatened species index for Australian birds. Conservation Science and
+      Practice <strong>3</strong>:e322.
+    </p>
+  </li>
+  <li>
+    <p>
+      Bell, S. 2018. The responsibilities of ecological consultants in
+      disseminating outcomes from threatened species surveys: A call to arms.
+      Australasian Plant Conservation: Journal of the Australian Network for
+      Plant Conservation
+      <strong>27</strong>:3-6.
+    </p>
+  </li>
+  <li>
+    <p>
+      Brown, K., K. Bettink, G. Paczkowska, J. Cullity, S. Region, and S.
+      French. 2011. Techniques for mapping weed distribution and cover in
+      Bushland and Wetlands. Version <strong>1</strong>:1-20.
+    </p>
+  </li>
+  <li>
+    <p>
+      Bulbert, M., J. Gollan, A. Donnelly, and L. Wilkie. 2007. Invertebrate
+      Collection Manual: A guide to traditional invertebrate collection methods.
+      Australian Museum, Sydney.
+    </p>
+  </li>
+  <li>
+    <p>
+      Capon, S., G. Castley, G. Palmer, S. Linke, R. Piccolo, and E. Henderson.
+      2020. A Long-Term Monitoring Framework for the Regional Land Partnerships
+      Stage2: Final Report. Griffith University, Brisbane.
+    </p>
+  </li>
+  <li>
+    <p>
+      Chick, R. R., G. Brown, and J. Molloy. 2020a. Forest Protection Survey
+      Program: Survey Guideline - Reptile Survey.<em>in</em> L. Department of
+      Environment , Water and Planning, Victoria., editor.
+    </p>
+  </li>
+  <li>
+    <p>
+      Chick, R. R., J. Nelson, and J. Molloy. 2020b. Forest Protection Survey
+      Program: Survey Guideline - Small Mammal Elliott Trapping.<em>in</em> L.
+      Department of Environment , Water and Planning, Victoria., editor.
+    </p>
+  </li>
+  <li>
+    <p>
+      Cresswell, I., and H. Murphy. 2017. Australia state of the environment
+      2016: biodiversity, independent report to the Australian Government
+      Minister for the Environment and Energy. Australian Government Department
+      of the Environment and Energy, Canberra.
+    </p>
+  </li>
+  <li>
+    <p>
+      Cristescu, R. H., K. L. Scales, A. J. Schultz, R. L. Miller, D. S.
+      Schoeman, D. Dique, and C. H. Frère. 2019. Environmental impact
+      assessments can misrepresent species distributions: A case study of koalas
+      in Queensland, Australia. Animal Conservation <strong>22</strong>:314-323.
+    </p>
+  </li>
+  <li>
+    <p>
+      DAWE. 2021a. About threatened ecological communities. What are ecological
+      communities and why are they important?, Australian Government Department
+      of Agriculture, Water and the Environment.
+    </p>
+  </li>
+  <li>
+    <p>
+      DAWE. 2021b. Listed migratory species. Commonwealth of Australia
+      Department of Agriculture, Water and the Environment.
+    </p>
+  </li>
+  <li>
+    <p>
+      DAWE. 2021c. Listed threatened species and ecological communities.
+      Commonwealth of Australia Department of Agriculture, Water and the
+      Environment.
+    </p>
+  </li>
+  <li>
+    <p>
+      DAWE. 2021d. Threatened Ecological Communities. Australian Government
+      Department of Agriculture, Water and the Environment.
+    </p>
+  </li>
+  <li>
+    <p>
+      DEC, N. 2004. Threatened Biodiversity Survey and Assessment: Guidelines
+      for Developments and Activities (Working draft). Department of Environment
+      and Conservation, New South Wales.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Biodiversity‚ Conservation and Attrations. 2017. Threatened
+      and Priority Flora Report Form – Field Manual. Department of Biodiversity,
+      Conservation and Attractions, Perth.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Environment and Climate Change. 2009. Threatened species
+      survey and assessment guidelines: field survey methods for fauna:
+      Amphibians.<em>in</em>
+      D. o. E. a. C. Change, editor., Sydney.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Environment and Conservation. 2004. Threatened Biodiversity
+      Survey and Assessment: Guidelines for developments and activities (working
+      draft).<em>in</em> D. o. E. a. C. (NSW), editor., Hurstville, NSW.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Environment and Conservation NSW. 2004. Field survey
+      methods: Best practice field survey methods for environmental consultants
+      and surveyors when assessing proposed development sites or other
+      activities on sites containing threatened species, populations or
+      ecological communities.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Environment and Science. 2020. Flora Survey Guidelines -
+      Protected Plants. Wildlife and Threatened Species Operations, Department
+      of Environment and Science, Brisbane.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Parks and Wildlife. 2013. Standard Operating Procedure No:
+      8.1 Vouchering vertebrate fauna specimens. The Government of Western
+      Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Planning, I. E. 2020. Surveying threatened plants and their
+      habitats. NSW survey guide for the Biodiversity Assessment Method.<em
+        >in</em
+      >
+      E. a. S. D. o. P. Environment, Industy and Environment, NSW, editor.,
+      Parramatta NSW.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Sustainability‚ Environment‚ Water‚ Population and
+      Communities. 2011a. Survey guidelines for Australia's threatened mammals.
+      Guidelines for detecting mammals listed as threatened under the
+      <em>Environment Protection and Biodiversity Conservation Act 1999</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Sustainability‚ Environment‚ Water‚ Population and
+      Communities. 2011b. Survey guidelines for Australia's threatened reptiles.
+      Guidelines for detecting reptiles listed as threatened under the
+      <em>Environment Protection and Biodiversity Conservation Act 1999</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of the Environment. 2013a. Matters of National Environmental
+      Significance. Significant Impact Guidelines 1.1.<em>in</em> A. G. D. o. t.
+      Environment, editor., Canberra, ACT.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of the Environment. 2013b. Survey guidelines for Australia's
+      threatened orchids. Guidelines for detecting orchids listed as
+      'threatened' under the
+      <em>Environment Protection and Biodiversity Conservation Act 1999</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of the Environment‚ Water‚ Heritage and the Arts. 2010a. Survey
+      guidelines for Australia's threatened bats. Guidelines for detecting bats
+      listed as threatened under the
+      <em>Environment Protection and Biodiversity Conservation Act 1999</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of the Environment‚ Water‚ Heritage and the Arts. 2010b. Survey
+      guidelines for Australia's threatened birds. Guidelines for detecting
+      birds listed as threatened under the
+      <em>Environment Protection and Biodiversity Conservation Act 1999</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of the Environment‚ Water‚ Heritage and the Arts. 2010c. Survey
+      guidelines for Australia's threatened frogs. Guidelines for detecting
+      frogs listed as threatened under the
+      <em>Environment Protection and Biodiversity Conservation Act 1999</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      DPIE. 2020. NSW Survey Guide for Threatened Frogs: A guide for the survey
+      of threatened frogs and their habitats for the Biodiversity Assessment
+      Method.<em>in</em>
+      I. a. E. NSW Department of Planning, editor., Environment, Energy and
+      Science, Parramatta, NSW.
+    </p>
+  </li>
+  <li>
+    <p>
+      Dyer, A. B., and J. S. Simmonds. 2021. Incomplete surveys for
+      environmental impact assessments jeopardise threatened species recovery.
+      Pacific Conservation Biology.
+    </p>
+  </li>
+  <li>
+    <p>
+      Eldridge, D., S. Skinner, and T. J. Entwisle. 2003. Survey Guidelines for
+      Non-Vascular Plants. A report produced under the NSW Biodiversity
+      Strategy.
+    </p>
+  </li>
+  <li>
+    <p>
+      Environment Protection Authority. 2020. Technical Guidance – Terrestrial
+      vertebrate fauna surveys for environmental impact assessment. EPA, Western
+      Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      Environmental Protection Authority. 2016a. Technical Guidance: Flora and
+      Vegetation Surveys for Environmental Impact Assessment. Environmental
+      Protection Authority, Perth.
+    </p>
+  </li>
+  <li>
+    <p>
+      Environmental Protection Authority. 2016b. Technical Guidance: Sampling
+      methods for Terrestrial vertebrate fauna. The Government of Western
+      Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      EPA. 2016a. Technical Guidance: Sampling of Short-range Endemic
+      Invertebrate Fauna. Environment Protection Authority, Perth, Western
+      Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      EPA, E. P. A. 2016b. Technical Guidance: Sampling of Short-range Endemic
+      Invertebrate Fauna. Perth, Western Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      Eyre, T., D. Ferguson, C. Hourigan, G. Smith, M. Mathieson, A. Kelly, M.
+      Venz, L. Hogan, and J. Rowland. 2018. Terrestrial vertebrate fauna survey
+      assessment guidelines for Queensland. Department of Environment and
+      Science, Queensland Government, Brisbane, Brisbane.
+    </p>
+  </li>
+  <li>
+    <p>
+      Freeman, K., G. Stack, S. Thomas, and N. Woolfrey. 2015. Technical Guide -
+      Terrestrial Flora and Vegetation Surveys for Environmental Impact
+      Assessment.<em>in</em> E. P. A. a. D. o. P. a. Wildlife, editor., Perth,
+      Western Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      Greene, T. 2012. A guideline to monitoring populations Version 1.0.<em
+        >in</em
+      >
+      N. Z. D. o. Conservation, editor.
+    </p>
+  </li>
+  <li>
+    <p>
+      Heard, L., and B. Channon. 1997. Guide to a Native Vegetation Survey:
+      Using the Biological Survey of South Australia. Department of Environment
+      and Natural Resources, Adelaide.
+    </p>
+  </li>
+  <li>
+    <p>
+      Jackson, W., R. Argent, N. Bax, G. Clark, S. Coleman, I. Cresswell, K.
+      Emmerson, K. Evans, M. Hibberd, and E. Johnston. 2017. Australia state of
+      the environment 2016: overview, independent report to the Australian
+      Government Minister for the Environment and Energy. Australian Government
+      Department of the Environment and Energy, Canberra.
+    </p>
+  </li>
+  <li>
+    <p>
+      James, R., and K. Blood. 2018. Looking for weeds: delimiting survey guide
+      (2nd Edition). A guide for planning and undertaking delimiting surveys for
+      weeds at the early stage of invasion on public land in Victoria.<em
+        >in</em
+      >
+      L. Department of Environment , Water and Planning, Victoria., editor.,
+      ISBN 978-1-76077-045-7 (Print); ISBN 978-1-76077-046-4 (pdf/online/MS
+      word).
+    </p>
+  </li>
+  <li>
+    <p>
+      Legge, S., N. Robinson, D. Lindenmayer, B. Scheele, D. Southwell, and B.
+      Wintle. 2018. Monitoring threatened species and ecological communities.
+      Csiro Publishing.
+    </p>
+  </li>
+  <li>
+    <p>
+      Lindenmayer, D., J. Woinarski, S. Legge, D. Southwell, T. Lavery, N.
+      Robinson, B. Scheele, and B. Wintle. 2020. A checklist of attributes for
+      effective monitoring of threatened species and threatened ecosystems.
+      Journal of Environmental Management <strong>262</strong>:110312.
+    </p>
+  </li>
+  <li>
+    <p>
+      Lumsden, L., R. R. Chick, J. Cripps, and J. Molloy. 2020. Forest
+      Protection Survey Program: Survey Guideline - Spotlighting and Call
+      Playback.<em>in</em>
+      L. Department of Environment , Water and Planning, Victoria., editor.
+    </p>
+  </li>
+  <li>
+    <p>
+      McNaught, I. T. 2005. Field Manual for Surveying and Mapping Nationally
+      Significant Weeds. Commonwealth Government-Department of Agriculture,
+      Fisheries and Forestry ….
+    </p>
+  </li>
+  <li>
+    <p>
+      Monks, L., S. Barrett, B. Beecham, M. Byrne, A. Chant, D. Coates, J. A.
+      Cochrane, A. Crawford, R. Dillon, and C. Yates. 2019. Recovery of
+      threatened plant species and their habitats in the biodiversity hotspot of
+      the Southwest Australian Floristic Region. Plant Diversity
+      <strong>41</strong>:59–74.
+    </p>
+  </li>
+  <li>
+    <p>
+      Northern Territory Environment Protection Authority. 2013. Guidelines for
+      Assessment of Impacts on Terrestrial Biodiversity. Version 2.0. Northern
+      Territory Environment Protection Authority, Darwin.
+    </p>
+  </li>
+  <li>
+    <p>
+      NSW National Parks and Wildlife Service, and SMEC Australia. 2001. Draft
+      Regional Biodiversity Survey &amp; Assessment Guidelines.
+    </p>
+  </li>
+  <li>
+    <p>
+      O’Neill, S., B. Sparrow, N. Thurgate, and A. Lowe. 2017. Ausplots
+      Rangelands Vertebrate Fauna Survey Protocols Manual.
+    </p>
+  </li>
+  <li>
+    <p>
+      Osunkoya, O. O., C. Lock, J. C. Buru, B. Gray, and M. Calvert. 2020.
+      Spatial extent of invasiveness and invasion stage categorisation of
+      established weeds of Queensland, Australia. Australian Journal of Botany
+      <strong>68</strong>:557-573.
+    </p>
+  </li>
+  <li>
+    <p>
+      Owens, H. 2000. Guidelines for Vertebrate Surveys in South Australia:
+      Using the Biological Survey of South Australia. Department for Environment
+      and Heritage, Adelaide.
+    </p>
+  </li>
+  <li>
+    <p>
+      Reside, A. E., A. J. Cosgrove, R. Pointon, J. Trezise, J. E. Watson, and
+      M. Maron. 2019. How to send a finch extinct. Environmental Science &amp;
+      Policy
+      <strong>94</strong>:163-173.
+    </p>
+  </li>
+  <li>
+    <p>
+      Samuel, G. 2020. Independent Review of the EPBC Act: Final Report.
+      1760033022.
+    </p>
+  </li>
+  <li>
+    <p>
+      Sheehan, M., R. James, and K. Blood. 2018. Looking for weeds: search and
+      detect guide (2nd Edition). A guide for searching and detecting weeds at
+      the early stage of invasion on public land in Victoria.<em>in</em> L.
+      Department of Environment , Water and Planning, Victoria., editor., ISBN
+      978-1-76077-039-6 (Print); ISBN 978-1-76077-040-2 (pdf/online/MS word).
+    </p>
+  </li>
+  <li>
+    <p>
+      Simmonds, J. S., A. E. Reside, Z. Stone, J. C. Walsh, M. S. Ward, and M.
+      Maron. 2020. Vulnerable species and ecosystems are falling through the
+      cracks of environmental impact assessments. Conservation Letters
+      <strong>13</strong>:e12694.
+    </p>
+  </li>
+  <li>
+    <p>
+      State of NSW and Department of Planning, I. a. E. 2020. Surveying
+      threatened plants and their habitats: NSW survey guide for the
+      Biodiversity Assessment Method. Environment, Energy and Science
+    </p>
+  </li>
+  <li>
+    <p>Department of Planning, Industry and Environment, Parramatta NSW.</p>
+  </li>
+  <li>
+    <p>
+      Thompson, G. G. 2007. Terrestrial vertebrate fauna surveys for the
+      preparation of environmental impact assessments; how can we do it better?
+      A Western Australian example. Environmental Impact Assessment Review
+      <strong>27</strong>:41-61.
+    </p>
+  </li>
+  <li>
+    <p>
+      Thompson, G. G., and S. A. Thompson. 2020. A comparison of an
+      environmental impact assessment (EIA) vertebrate fauna survey with a
+      post-approval fauna salvage program: consequences of not adhering to EIA
+      survey guidelines, a Western Australian example. Pacific Conservation
+      Biology
+      <strong>26</strong>:412-419.
+    </p>
+  </li>
+  <li>
+    <p>
+      Tokmakoff, A., B. Sparrow, D. Turner, and A. Lowe. 2016. AusPlots
+      Rangelands field data collection and publication: Infrastructure for
+      ecological monitoring. Future Generation Computer Systems
+      <strong>56</strong>:537–549.
+    </p>
+  </li>
+  <li>
+    <p>
+      Tolsma, A., and J. Molloy. 2020. Forest Protection Survey Program: Survey
+      Guideline - Flora Survey (V4.1a).<em>in</em> L. State of Victoria
+      Department for Environment, Water and Planning, editor., Victoria.
+    </p>
+  </li>
+  <li>
+    <p>
+      Turner, J. 2012. National Recovery Plan for the Iron-grass Natural
+      Temperate Grassland of South Australia ecological community 2012.
+      Department of Environment and Natural Resources, Adelaide, South
+      Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      Turner, P. A., M. Wapstra, A. Woolley, K. Hopkins, A. J. Koch, and F.
+      Duncan. 2020. Long-term monitoring of the threatened lesser guineaflower
+      Hibbertia calycina (DC.) NA Wakef.(Dilleniaceae) in Tasmania. Pages 61-82
+      <em>in</em> Papers and Proceedings of the Royal Society of Tasmania.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ward, M. S., J. S. Simmonds, A. E. Reside, J. E. Watson, J. R. Rhodes, H.
+      P. Possingham, J. Trezise, R. Fletcher, L. File, and M. Taylor. 2019. Lots
+      of loss with little scrutiny: The attrition of habitat critical for
+      threatened species in Australia. Conservation Science and Practice
+      <strong>1</strong>:e117.
+    </p>
+  </li>
+  <li>
+    <p>
+      Weed Management Branch, N. T. G. 2015. Northern Territory Weed Data
+      Collection Manual. Northern Territory Government of Australia, Darwin.
+    </p>
+  </li>
+  <li>
+    <p>
+      Wundke, D., B. Sparrow, N. Thurgate, R. Christensen, S. O'Neill, and A.
+      Lowe. 2015. AusPlots Condition Protocols Manual. Version 0.1. Terrestrial
+      Ecosystem Research Network (TERN), The University of Adelaide, Adelaide.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h3 id="key-definitions-and-terminology">Key definitions and terminology</h3>
+<p>
+  Table 1. Key definitions and terms used in the
+  <em>Targeted surveys</em> module.
+</p>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+    <tr class="odd">
+      <th>EPBC Act</th>
+      <th>
+        <em>Environment Protection and Biodiversity Conservation Act 1999</em>
+      </th>
+    </tr>
+    <tr class="header">
+      <th>EC</th>
+      <th>Ecological community</th>
+    </tr>
+    <tr class="odd">
+      <th>TEC</th>
+      <th>Threatened Ecological Community</th>
+    </tr>
+    <tr class="header">
+      <th>Threatened species</th>
+      <th>
+        <p>
+          Threatened species are those plant and animal species considered to be
+          at risk of extinction in the wild. There are different scales for how
+          a species may be considered threatened. Under the EPBC Act, listed
+          threatened species are categorised as follows, based on International
+          Union for Conservation of Nature (IUCN) criteria:
+        </p>
+        <p>
+          Critically endangered - extremely high risk of extinction in the wild
+          in the immediate future;
+        </p>
+        <p>
+          Endangered - very high risk of extinction in the wild in the near
+          future;
+        </p>
+        <p>
+          Vulnerable - high risk of extinction in the wild in medium-term
+          future; and
+        </p>
+        <p>
+          Conservation dependent - focus of a specific conservation program
+          without which the species would enter one of the above categories.
+        </p>
+        <p>
+          In addition to the requirements under the EPBC Act, individual states
+          and territories may also have their own threatened species listings.
+        </p>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Migratory species</th>
+      <th>
+        Animals that migrate to Australia and its external territories, or pass
+        through or over Australian waters during their annual migration.
+        Migratory species listed under international agreements are protected
+        under the EPBC Act (DAWE 2021b).
+      </th>
+    </tr>
+    <tr class="header">
+      <th>MNES</th>
+      <th>Matters of National Environmental Significance</th>
+    </tr>
+    <tr class="odd">
+      <th>RLP</th>
+      <th>Regional Lands Partnership</th>
+    </tr>
+    <tr class="header">
+      <th>EIA</th>
+      <th>Environmental impact assessment</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/test/dawe-cv/33544e85-741a-4646-ba32-c820486f0a33>
+            <https://linked.data.gov.au/def/test/dawe-cv/7a628781-ffec-4db7-ba58-214624365d82>
+            <https://linked.data.gov.au/def/test/dawe-cv/e103ae22-2d8f-4806-9b4f-926e6e851301>
+            <https://linked.data.gov.au/def/test/dawe-cv/4da8c123-b886-4881-91b3-1ff6a9b30e3c>
+        ) ;
+    skos:prefLabel "Targeted survey" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/targeted-survey/collection.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4 id='appendix-1'>Appendix 1. Undertaking a desktop survey</h4>
 <p>
   Key resources that can be reviewed as part of desktop studies to assist with
   the planning of field surveys are listed below. The list is not exhaustive and
   a review of the available literature should be undertaken on a project
   specific basis.
 </p>
-<p style="color: orange">Key resources and guides</p>
-<p style="color: orange">Fauna</p>
+<h4 id="key-resources-and-guides">Key resources and guides</h4>
+<h5 id="fauna-1">Fauna</h5>
 <ul>
   <li>
     <p>
@@ -389,8 +1083,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       WA Department of Biodiversity, Conservation and Attractions – Standard
-      Operating Procedures for Fauna Monitoring
-      (<u>https://www.dpaw.wa.gov.au/plants-and-animals/96-monitoring/standards/99-standard-operating-procedures</u>).
+      Operating Procedures for Fauna Monitoring (<a
+        href="https://www.dpaw.wa.gov.au/plants-and-animals/96-monitoring/standards/99-standard-operating-procedures"
+        ><u
+          >https://www.dpaw.wa.gov.au/plants-and-animals/96-monitoring/standards/99-standard-operating-procedures</u
+        ></a
+      >).
     </p>
   </li>
   <li>
@@ -423,7 +1121,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Flora</p>
+<h5 id="flora-1">Flora</h5>
 <ul>
   <li>
     <p>
@@ -482,7 +1180,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">TECs</p>
+<h5 id="tecs">TECs</h5>
 <ul>
   <li>
     <p>
@@ -498,7 +1196,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Weeds</p>
+<h5 id="weeds">Weeds</h5>
 <ul>
   <li>
     <p>
@@ -531,10 +1229,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: blue">
+<h4 id='appendix-2'>
   Appendix 2. Protected matters search tool (PMST) and Species profile and
   threats database (SPRAT)
-</p>
+</h4>
 <p>
   Key resources for planning and undertaking targeted surveys for threatened
   species or ecological communities are the Australian Government Department of
@@ -545,10 +1243,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       <strong>PMST</strong> –
-      <u
-        >https://www.awe.gov.au/environment/epbc/protected-matters-search-tool</u
+      <a
+        href="https://www.awe.gov.au/environment/epbc/protected-matters-search-tool"
+        ><u
+          >https://www.awe.gov.au/environment/epbc/protected-matters-search-tool</u
+        ></a
       >
     </p>
+
     <ul>
       <li>
         <p>
@@ -569,6 +1271,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
           threatened species, species habitat ecological community or within the
           project area:
         </p>
+
         <ul>
           <li>
             <p>Known to occur</p>
@@ -583,29 +1286,26 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       </li>
     </ul>
   </li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix2-pmst.png"
-              alt="Appendix 2 PMST"
-              widteh="482"
-              height="367"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
 </ul>
+
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix2-pmst.png"
+    alt="Appendix 2 PMST"
+    widteh="482"
+    height="367"
+  />
+</p>
+
 <ul>
   <li>
     <p>
       <strong>SPRAT</strong> -
-      <u>http://www.environment.gov.au/cgi-bin/sprat/public/sprat.pl</u>
+      <a href="http://www.environment.gov.au/cgi-bin/sprat/public/sprat.pl"
+        ><u>http://www.environment.gov.au/cgi-bin/sprat/public/sprat.pl</u></a
+      >
     </p>
+
     <ul>
       <li>
         <p>
@@ -618,6 +1318,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
           The database provides the following information about threatened
           species:
         </p>
+
         <ul>
           <li>
             <p>Appearance</p>
@@ -657,42 +1358,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       </li>
     </ul>
   </li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix2-sprat.png"
-              alt="Appendix 2 - SPRAT"
-              widteh="531"
-              height="235"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
 </ul>
-<p style="color: blue">Appendix 3. Weather details
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix3.png"
-                alt="Appendix 3"
-                widteh="775"
-                height="420"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix2-sprat.png"
+    alt="Appendix 2 - SPRAT"
+    widteh="531"
+    height="235"
+  />
 </p>
-<p>Source: AusPlots Draft Fauna (O’Neill et al. 2017).</p>
-<p style="color: blue">Appendix 4. Fauna survey equipment list</p>
+
+<h4>Appendix 3. Weather details</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix3.png"
+    alt="Appendix 3"
+    widteh="775"
+    height="420"
+  />
+</p>
+<p><em>Source: AusPlots Draft Fauna (O’Neill et al. 2017).</em></p>
+<h4>Appendix 4. Fauna survey equipment list</h4>
+
 <p>General</p>
+
 <ul>
   <li>
     <p>Hand lens</p>
@@ -713,6 +1403,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>Spotlight</p>
   </li>
 </ul>
+<p>Method specific equipment will be listed here for each survey type:</p>
 <p>Vouchering (general)</p>
 <ul>
   <li>
@@ -760,8 +1451,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       formalin and ethanol), paper, pencil, pencil sharpener, scissors, glue,
       ruler, eraser, tags/labels/thread, dissecting kit, utility knife, paper
       towel, long forceps, plastic tongs, suitable storage containers (for
-      preparing and storing fauna voucher specimens) (refer to the Vertebrate
-      fauna Module)
+      preparing and storing fauna voucher specimens) (refer to the
+      <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51"
+          >Vertebrate fauna</a
+        ></em> Module)
     </p>
   </li>
   <li>
@@ -786,35 +1479,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: blue">Appendix 5. Targeted fauna survey fields</p>
-<p style="color: orange">Collection fields</p>
+<h4>Appendix 5. Targeted fauna survey fields</h4>
+<h4 id="collection-fields">Collection fields</h4>
 <table>
   <colgroup>
-    <col />
-    <col />
-    <col />
+    <col style="width: 11%" />
+    <col style="width: 45%" />
+    <col style="width: 42%" />
   </colgroup>
   <thead>
-    <tr>
-      <td>Target Taxa</td>
-      <td>Survey Method</td>
-      <td>Data Collected</td>
+    <tr class="header">
+      <th>Target Taxa</th>
+      <th>Survey Method</th>
+      <th>Data Collected</th>
     </tr>
-    <tr>
-      <th rowspan="14">Mammals</th>
+    <tr class="odd">
+      <th rowspan="13">Mammals</th>
+      <th>Active diurnal searches</th>
+      <th>
+        Record survey tracks, time spent searching and any live observations.
+        Option available to take photos, videos or sound recordings.
+      </th>
     </tr>
-    <tr>
-      <td>Active diurnal searches</td>
-      <td>
-        <p>
-          Record survey tracks, time spent searching and any live observations.
-          Option available to take photos, videos or sound recordings
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>Active diurnal searches for signs</td>
-      <td>
+    <tr class="header">
+      <th>Active diurnal searches for signs</th>
+      <th>
         <p>
           Record survey tracks, time spent searching and any signs observed. The
           following signs can be recorded:
@@ -848,675 +1537,994 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             <p>Burrows</p>
           </li>
         </ul>
+
         <p>Option available to take photos.</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Track plots (sand plots, soil plots, predator pads)</td>
-      <td>
+    <tr class="odd">
+      <th>Track plots (sand plots, soil plots, predator pads)</th>
+      <th>
         <p>
           Record plot location, dimensions, design details, survey length and
           the identification of any tracks observed.
         </p>
         <p>Option available to take photos.</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Spotlighting</td>
-      <td>
+    <tr class="header">
+      <th>Spotlighting</th>
+      <th>
         Record survey tracks or transects, location of any observations. Data
         can be recorded for multiple visits.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Thermal imaging</td>
-      <td>
+    <tr class="odd">
+      <th>Thermal imaging</th>
+      <th>
         Record survey tracks or transects, location of any observations. Data
         can be recorded for multiple visits.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Stag-watching</td>
-      <td>
+    <tr class="header">
+      <th>Stag-watching</th>
+      <th>
         Record location of any hollow bearing trees surveyed, time spent
         surveying and any observations.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Burrow, den and nest watching</td>
-      <td>
+    <tr class="odd">
+      <th>Burrow, den and nest watching</th>
+      <th>
         Record burrow, den or nest position, time spent surveying and any
         observations.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Call detection and playback</td>
-      <td>
+    <tr class="header">
+      <th>Call detection and playback</th>
+      <th>
         <p>
           Record acoustic and/or playback location, type of call, length of
           call, time spent surveying and any calls heard.
         </p>
         <p>Option to take sound recording.</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Nest box survey</td>
-      <td>
+    <tr class="odd">
+      <th>Nest box survey</th>
+      <th>
         Record location of any nest boxes searched, nest box details, time spent
         surveying, and any observations. Option to take photos.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Camera traps</td>
-      <td>
+    <tr class="header">
+      <th>Camera traps</th>
+      <th>
         Record location and set-up details for camera traps (including make,
         settings, height, orientation, bait type), survey time, and photo
         details.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Hair traps (hair sampling)</td>
-      <td>
+    <tr class="odd">
+      <th>Hair traps (hair sampling)</th>
+      <th>
         Record location and details of hair traps (make, materials, size), and
         survey time. Record details of any samples collected.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Trapping (pitfall, Elliott, cage)</td>
-      <td>
+    <tr class="header">
+      <th>Trapping (pitfall, Elliott, cage)</th>
+      <th>
         Record trap details (type (pitfall, Elliott, cage), dimensions), bait,
         survey time, and any captures (species ID, sex, weight etc).
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Other</td>
-      <td>
+    <tr class="odd">
+      <th>Other</th>
+      <th>
         Record survey type (free text), survey tracks, survey effort and any
         observations. Option available to take / upload photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <th rowspan="11">Birds</th>
-    </tr>
-    <tr>
-      <td>Area searches</td>
-      <td>
-        Record survey tracks, time spent searching and any observations. Option
-        available to take photos, videos or sound recordings
-      </td>
-    </tr>
-    <tr>
-      <td>Transect surveys</td>
-      <td>
+    <tr class="header">
+      <th rowspan="10">Birds</th>
+      <th>Area searches</th>
+      <th>
         Record survey tracks, time spent searching and any observations. Option
         available to take photos, videos or sound recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Point surveys</td>
-      <td>
+    <tr class="odd">
+      <th>Transect surveys</th>
+      <th>
+        Record survey tracks, time spent searching and any observations. Option
+        available to take photos, videos or sound recordings.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Point surveys</th>
+      <th>
         Record point survey location, time spent searching and any observations.
         Option available to take photos, videos or sound recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Transect-point surveys</td>
-      <td>
+    <tr class="odd">
+      <th>Transect-point surveys</th>
+      <th>
         Record survey tracks, point survey location, time spent searching and
         any observations. Option available to take photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Call playback</td>
-      <td>
+    <tr class="header">
+      <th>Call playback</th>
+      <th>
         <p>
           Record acoustic and/or playback location, type of call, length of
           call, time spent surveying and any calls heard.
         </p>
         <p>Option to take sound recording.</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Song metres or acoustic recorders</td>
-      <td>
+    <tr class="odd">
+      <th>Song metres or acoustic recorders</th>
+      <th>
         Record location and set up of recording devices, length of time left in
         place, data recorded.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Mist netting</td>
-      <td>
+    <tr class="header">
+      <th>Mist netting</th>
+      <th>
         Record the location and set-up details of nets, number deployed, time
         left open and details of any captures (species ID, sex, age, weight,
         head length, tag number).
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Aerial survey</td>
-      <td>
+    <tr class="odd">
+      <th>Aerial survey</th>
+      <th>
         Record survey tracks, time spent searching, height and any observations.
         Option available to take photos, videos or sound recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Flushing</td>
-      <td>
+    <tr class="header">
+      <th>Flushing</th>
+      <th>
         Record survey tracks, time spent searching, habitat and any
         observations. Option available to take photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Other</td>
-      <td>
+    <tr class="odd">
+      <th>Other</th>
+      <th>
         Record survey type (free text), survey tracks, survey effort and any
         observations. Option available to take / upload photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <th rowspan="6">Reptiles</th>
-    </tr>
-    <tr>
-      <td>Active / visual searches</td>
-      <td>
+    <tr class="header">
+      <th rowspan="5">Reptiles</th>
+      <th>Active / visual searches</th>
+      <th>
         Record survey tracks, time spent searching, habitat features searched,
         and any observations. Option available to take photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Diurnal hand surveys</td>
-      <td>
+    <tr class="odd">
+      <th>Diurnal hand surveys</th>
+      <th>
         Record survey tracks, time spent searching, habitat features searched,
         and any observations. Option available to take photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Nocturnal spotlight search</td>
-      <td>
+    <tr class="header">
+      <th>Nocturnal spotlight search</th>
+      <th>
         Record survey tracks, time spent searching, spotlight details, and any
         observations.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Trapping (pitfall, funnel, sticky, Elliott)</td>
-      <td>
+    <tr class="odd">
+      <th>Trapping (pitfall, funnel, sticky, Elliott)</th>
+      <th>
         Record trap details (type (pitfall, Elliott, cage), dimensions), bait,
         survey time, and any captures (species ID, sex, weight etc).
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Other</td>
-      <td>
+    <tr class="header">
+      <th>Other</th>
+      <th>
         Record survey type (free text), survey tracks, survey effort and any
         observations. Option available to take / upload photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <th rowspan="5">Amphibians</th>
-    </tr>
-    <tr>
-      <td>Aural-visual surveys +/- call playback</td>
-      <td>
+    <tr class="odd">
+      <th rowspan="4">Amphibians</th>
+      <th>Aural-visual surveys +/- call playback</th>
+      <th>
         <p>
           Record survey tracks, acoustic and/or playback location, type of call,
           length of call, time spent searching and any observations.
         </p>
         <p>Option to take sound recording.</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Acoustic recorder</td>
-      <td>
+    <tr class="header">
+      <th>Acoustic recorder</th>
+      <th>
         <p>
           Record acoustic locations and set-up, length of time left in the
           field, details of storage device.
         </p>
         <p>Option to upload sound recording.</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Tadpole search</td>
-      <td>
+    <tr class="odd">
+      <th>Tadpole search</th>
+      <th>
         Record survey tracks, survey effort and any observations. Option to take
         photos and videos.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Other</td>
-      <td>
+    <tr class="header">
+      <th>Other</th>
+      <th>
         Record survey type (free text), survey tracks, survey effort and any
         observations. Option available to take / upload photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <th rowspan="8">Bats</th>
-    </tr>
-    <tr>
-      <td>Harp net</td>
-      <td>
+    <tr class="odd">
+      <th rowspan="7">Bats</th>
+      <th>Harp net</th>
+      <th>
         Record the location and set-up details of nets, number deployed, time
         left open and details of any captures (species ID, sex, age, weight,
         head length, tag number).
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Mist net</td>
-      <td>
+    <tr class="header">
+      <th>Mist net</th>
+      <th>
         Record the location and set-up details of nets, number deployed, time
         left open and details of any captures (species ID, sex, age, weight,
         head length, tag number).
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Trip line</td>
-      <td>
+    <tr class="odd">
+      <th>Trip line</th>
+      <th>
         Record the location and dimensions of trip line, time left in place, and
         details of any captures.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Hand netting</td>
-      <td>
+    <tr class="header">
+      <th>Hand netting</th>
+      <th>
         Record the location and dimensions of nets, survey tracks, time spent
         searching, and details of any captures (species ID, sex, age, weight,
         head length, tag number).
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Echolocation (Anabat)</td>
-      <td>Record the</td>
+    <tr class="odd">
+      <th>Echolocation (Anabat)</th>
+      <th>Record the</th>
     </tr>
-    <tr>
-      <td>Roost searches</td>
-      <td>
+    <tr class="header">
+      <th>Roost searches</th>
+      <th>
         Record survey tracks, roost location, time spent searching, and any
         observations. Option available to take photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Other</td>
-      <td>
+    <tr class="odd">
+      <th>Other</th>
+      <th>
         Record survey type (free text), survey tracks, survey effort and any
         observations. Option available to take / upload photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <th rowspan="13">Invertebrates</th>
-    </tr>
-    <tr>
-      <td>Active search and hand collection</td>
-      <td>
+    <tr class="header">
+      <th rowspan="12">Invertebrates</th>
+      <th>Active search and hand collection</th>
+      <th>
         Record survey tracks, time spent searching, habitat features searched,
         and any observations. Option available to collect samples, take photos,
         videos or sound recordings.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Wet micro-pitfall traps</td>
-      <td>
+    <tr class="odd">
+      <th>Wet micro-pitfall traps</th>
+      <th>
         Record trap details, set-up, survey design, trap dimensions and survey
         time. Option available to collect samples.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>eDNA soil samples</td>
-      <td>
+    <tr class="header">
+      <th>eDNA soil samples</th>
+      <th>
         Record location and depth of soil samples. Option to record other
         information, such as micro-habitat.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Malaise traps</td>
-      <td>
+    <tr class="odd">
+      <th>Malaise traps</th>
+      <th>
         Record trap details, set-up, survey design, trap dimensions and survey
         time. Option available to collect samples.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Leaf-litter extraction</td>
-      <td>
+    <tr class="header">
+      <th>Leaf-litter extraction</th>
+      <th>
         Record location of litter samples, volume and extraction method. Option
         available to collect samples.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Beat sampling</td>
-      <td>
+    <tr class="odd">
+      <th>Beat sampling</th>
+      <th>
         Record location of sampling points, survey effort, time spent sampling
         and target vegetation. Option available to collect samples.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Sweep nets</td>
-      <td>
+    <tr class="header">
+      <th>Sweep nets</th>
+      <th>
         Record location of sample transect, or sampling points, survey effort,
         time spent sampling and target vegetation. Option available to collect
         samples.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Light traps</td>
-      <td>
+    <tr class="odd">
+      <th>Light traps</th>
+      <th>
         Record location and set-up of light traps, and time left in field.
         Option available to collect samples.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Pan traps</td>
-      <td>
+    <tr class="header">
+      <th>Pan traps</th>
+      <th>
         Record location and set-up of pan traps, and time left in field. Option
         available to collect samples.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Acoustic monitoring</td>
-      <td>
+    <tr class="odd">
+      <th>Acoustic monitoring</th>
+      <th>
         <p>
           Record acoustic locations and set-up, length of time left in the
           field, details of storage device.
         </p>
         <p>Option to upload sound recording.</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Flight intercept traps</td>
-      <td>
+    <tr class="header">
+      <th>Flight intercept traps</th>
+      <th>
         Record location and set-up of flight intercept traps, and time left in
         field. Option available to collect samples.
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Other</td>
-      <td>
+    <tr class="odd">
+      <th>Other</th>
+      <th>
         Record survey type (free text), survey tracks, survey effort and any
         observations. Option available to take / upload photos, videos or sound
         recordings.
-      </td>
+      </th>
     </tr>
   </thead>
+  <tbody></tbody>
 </table>
-<p style="color: blue">
+<h4>
   Appendix 6. Recording the boundary of populations, habitat or ecological
   communities
-  <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix6.png"
-              alt="Appendix 6"
-              widteh="840"
-              height="1070"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/appendix6.png"
+    alt="Appendix 6"
+    widteh="840"
+    height="1070"
+  />
 </p>
-<p style="color: blue">
-  Appendix 7. Targeted flora survey – additional guidelines
-</p>
+<h4>Appendix 7. Targeted flora survey – additional guidelines</h4>
 <p>
   Maximum distance between parallel field traverses per life form and vegetation
   denstiy. Adapted from the NSW (Department of Planning 2020).
 </p>
 <table>
   <colgroup>
-    <col />
-    <col />
-    <col />
+    <col style="width: 33%" />
+    <col style="width: 33%" />
+    <col style="width: 33%" />
   </colgroup>
   <thead>
-    <tr>
+    <tr class="header">
       <th rowspan="2"><strong>Life form</strong></th>
       <th colspan="2">
         <strong>Maximum distance between parallel field traverse (m)</strong>
       </th>
     </tr>
-    <tr>
-      <td><strong>In open vegetation</strong></td>
-      <td><strong>In dense vegetation</strong></td>
+    <tr class="odd">
+      <th><strong>In open vegetation</strong></th>
+      <th><strong>In dense vegetation</strong></th>
     </tr>
-    <tr>
-      <td>
+    <tr class="header">
+      <th>
         <p>Trees</p>
         <p>Mallee tree</p>
         <p>Tall shrubs (&gt;6 metres)</p>
-      </td>
-      <td>40</td>
-      <td>20</td>
+      </th>
+      <th>40</th>
+      <th>20</th>
     </tr>
-    <tr>
-      <td>
+    <tr class="odd">
+      <th>
         <p>Medium shrubs (1-6 m)</p>
         <p>Cycads and large ferns</p>
-      </td>
-      <td>20</td>
-      <td>10</td>
+      </th>
+      <th>20</th>
+      <th>10</th>
     </tr>
-    <tr>
-      <td>Sub-shrubs (including chenopods) (&lt;1 m)</td>
-      <td>15</td>
-      <td>10</td>
+    <tr class="header">
+      <th>Sub-shrubs (including chenopods) (&lt;1 m)</th>
+      <th>15</th>
+      <th>10</th>
     </tr>
-    <tr>
-      <td>Herbs and forbs</td>
-      <td>10</td>
-      <td>5</td>
+    <tr class="odd">
+      <th>Herbs and forbs</th>
+      <th>10</th>
+      <th>5</th>
     </tr>
-    <tr>
-      <td>
+    <tr class="header">
+      <th>
         <p>Ferns (&lt;1 m)</p>
         <p>Grasses/sedges/rushes and other graminoids</p>
         <p>Orchids</p>
         <p>Epiphytes and climbers</p>
-      </td>
-      <td>10</td>
-      <td>5</td>
+      </th>
+      <th>10</th>
+      <th>5</th>
     </tr>
   </thead>
+  <tbody></tbody>
 </table>
-<p style="color: blue">Appendix 8. Targeted flora survey – plant measures</p>
-<p style="color: orange">Growth stage</p>
+<h4>Appendix 8. Targeted flora survey – plant measures</h4>
+<h4 id="growth-stage">Growth stage</h4>
 <table>
   <colgroup>
-    <col />
-    <col />
+    <col style="width: 17%" />
+    <col style="width: 82%" />
   </colgroup>
   <thead>
-    <tr>
-      <td>Growth stage</td>
-      <td>Description</td>
+    <tr class="header">
+      <th>Growth stage</th>
+      <th>Description</th>
     </tr>
-    <tr>
-      <td><strong>Recruiting</strong></td>
-      <td>
-        <p>
-          Trees: From the juvenile and sapling stages to well-developed
-          individuals with a crown of small branches, but below maximum height
-          for a stand, crown exhibits apical dominance – approx. 0-30 years
-        </p>
-        <p>
-          Shrubs: Juvenile stage, shrub has not reached maximum height, apical
-          dominance
-        </p>
-      </td>
+    <tr class="odd">
+      <th rowspan="2"><strong>Recruiting</strong></th>
+      <th>
+        <em>Trees:</em> From the juvenile and sapling stages to well-developed
+        individuals with a crown of small branches, but below maximum height for
+        a stand, crown exhibits apical dominance – approx. 0-30 years
+      </th>
     </tr>
-    <tr>
-      <td><strong>Resprouting</strong></td>
-      <td>
-        Trees and Shrubs: Woody perennial which is resprouting after significant
-        loss of foliage
-      </td>
+    <tr class="header">
+      <th>
+        <em>Shrubs:</em> Juvenile stage, shrub has not reached maximum height,
+        apical dominance
+      </th>
     </tr>
-    <tr>
-      <td><strong>Mature</strong></td>
-      <td>
-        <p>
-          Trees: Tree has reached maximum height and crown has reached full
-          lateral development although branch thickening can occur. Apical
-          dominance lost – approx. 30-80 years
-        </p>
-        <p>
-          Shrubs: Shrub has reached maximum height, crown has reached full
-          lateral development
-        </p>
-      </td>
+    <tr class="odd">
+      <th><strong>Resprouting</strong></th>
+      <th>
+        <em>Trees and Shrubs:</em> Woody perennial which is resprouting after
+        significant loss of foliage
+      </th>
     </tr>
-    <tr>
-      <td><strong>Senescent</strong></td>
-      <td>
-        <p>
-          Trees: Crown form contracting and becoming ‘stag headed’ decrease in
-          crown diameter and crown leaf area. Distorted branches and burls
-          common – approx. &gt;80 years
-        </p>
-        <p>
-          Shrubs: Crown form contracting and decrease in crown diameter and
-          crown leaf area. Dead branches more common – approx. &gt;80 years
-        </p>
-      </td>
+    <tr class="header">
+      <th rowspan="2"><strong>Mature</strong></th>
+      <th>
+        <em>Trees:</em> Tree has reached maximum height and crown has reached
+        full lateral development although branch thickening can occur. Apical
+        dominance lost – approx. 30-80 years
+      </th>
     </tr>
-    <tr>
-      <td><strong>Dead</strong></td>
-      <td>
-        <p>
-          Trees: Dead individuals in all stages – from presence of tertiary
-          branches and bark to no remaining crown structure and absence of bark
-        </p>
-        <p>Shrubs: Dead individuals in all stages</p>
-      </td>
+    <tr class="odd">
+      <th>
+        <em>Shrubs</em>: Shrub has reached maximum height, crown has reached
+        full lateral development
+      </th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Senescent</strong></th>
+      <th>
+        <em>Trees:</em> Crown form contracting and becoming ‘stag headed’
+        decrease in crown diameter and crown leaf area. Distorted branches and
+        burls common – approx. &gt;80 years
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <em>Shrubs:</em> Crown form contracting and decrease in crown diameter
+        and crown leaf area. Dead branches more common – approx. &gt;80 years
+      </th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Dead</strong></th>
+      <th>
+        <em>Trees:</em> Dead individuals in all stages – from presence of
+        tertiary branches and bark to no remaining crown structure and absence
+        of bark
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><em>Shrubs:</em> Dead individuals in all stages</th>
     </tr>
   </thead>
+  <tbody></tbody>
 </table>
-<p>Adapted from (Wundke et al. 2015)</p>
-<p style="color: orange">Life-stage</p>
+<p><em>Adapted from (Wundke et al. 2015)</em></p>
+<h4 id="life-stage">Life-stage</h4>
 <table>
   <colgroup>
-    <col />
-    <col />
+    <col style="width: 17%" />
+    <col style="width: 82%" />
   </colgroup>
   <thead>
-    <tr>
-      <td><strong>Life-stage</strong></td>
-      <td><strong>Definition</strong></td>
+    <tr class="header">
+      <th><strong>Life-stage</strong></th>
+      <th><strong>Definition</strong></th>
     </tr>
-    <tr>
-      <td>Seedling</td>
-      <td>Trees: individuals &lt;2 cm DBH. Shrubs: &lt;5cm height</td>
+    <tr class="odd">
+      <th>Seedling</th>
+      <th>
+        <em>Trees:</em> individuals &lt;2 cm DBH. <em>Shrubs</em>: &lt;5cm
+        height
+      </th>
     </tr>
-    <tr>
-      <td>Sapling</td>
-      <td>
-        Trees: individuals &lt;2 m height and ~2-10 cm DBH. Shrubs: has not
-        reached maximum height, apical dominance
-      </td>
+    <tr class="header">
+      <th>Sapling</th>
+      <th>
+        <em>Trees:</em> individuals &lt;2 m height and ~2-10 cm DBH.
+        <em>Shrubs:</em> has not reached maximum height, apical dominance
+      </th>
     </tr>
-    <tr>
-      <td>Vegetative</td>
-      <td>
+    <tr class="odd">
+      <th>Vegetative</th>
+      <th>
         Plants in a non-reproductive phase (i.e. no flowers, buds or unshed
         seed), that do not classify as seedlings or saplings
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Budding</td>
-      <td>
+    <tr class="header">
+      <th>Budding</th>
+      <th>
         Plants have buds formed in varying stages of development for flowering
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Flowering</td>
-      <td>Plants are in flower</td>
+    <tr class="odd">
+      <th>Flowering</th>
+      <th>Plants are in flower</th>
     </tr>
-    <tr>
-      <td>Immature fruit</td>
-      <td>Immature fruits not shedding seed</td>
+    <tr class="header">
+      <th>Immature fruit</th>
+      <th>Immature fruits not shedding seed</th>
     </tr>
-    <tr>
-      <td>Mature fruit</td>
-      <td>Fruits ripe and/or shedding seed</td>
+    <tr class="odd">
+      <th>Mature fruit</th>
+      <th>Fruits ripe and/or shedding seed</th>
     </tr>
-    <tr>
-      <td>Recently shed</td>
-      <td>
+    <tr class="header">
+      <th>Recently shed</th>
+      <th>
         Plants are in a non-reproductive phase which show signs of having shed
         seed or fruits within the last 12 months
-      </td>
+      </th>
     </tr>
   </thead>
+  <tbody></tbody>
 </table>
-<p>Adapted from (Heard and Channon 1997)</p>
-<p style="color: orange">Health factor</p>
+<p><em>Adapted from (Heard and Channon 1997)</em></p>
+<h4 id="health-factor">Health factor</h4>
 <table>
   <colgroup>
-    <col />
-    <col />
+    <col style="width: 16%" />
+    <col style="width: 83%" />
   </colgroup>
   <thead>
-    <tr>
-      <td><strong>Health factor</strong></td>
-      <td><strong>Description</strong></td>
+    <tr class="header">
+      <th><strong>Health factor</strong></th>
+      <th><strong>Description</strong></th>
     </tr>
-    <tr>
-      <td>Canopy health</td>
-      <td>Proportion of expected healthy canopy present (%)</td>
+    <tr class="odd">
+      <th>Canopy health</th>
+      <th>Proportion of expected healthy canopy present (%)</th>
     </tr>
-    <tr>
-      <td>Mistletoe</td>
-      <td>
-        Aerial plant parasite, can be seen by different foliage from host plant.
-        Number of mistletoe present to be recorded.
-      </td>
+    <tr class="header">
+      <th>Mistletoe</th>
+      <th>
+        Aerial plant parasites can be seen by different foliage from the host
+        plant. Number of mistletoe present to be recorded.
+      </th>
     </tr>
-    <tr>
-      <td>Epicormic growth</td>
-      <td>Obvious presence of epicormic growth</td>
+    <tr class="odd">
+      <th>Epicormic growth</th>
+      <th>Obvious presence of epicormic growth</th>
     </tr>
-    <tr>
-      <td>Galls and lerps</td>
-      <td>
+    <tr class="header">
+      <th>Galls and lerps</th>
+      <th>
         Abnormal outgrowths on leaves and small branches, or excretions (waxy or
         sugary)
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Insect damage</td>
-      <td>Identified by canopy loss and leaf distortions</td>
+    <tr class="odd">
+      <th>Insect damage</th>
+      <th>Identified by canopy loss and leaf distortions</th>
     </tr>
-    <tr>
-      <td>Dieback from disease</td>
-      <td>
+    <tr class="header">
+      <th>Dieback from disease</th>
+      <th>
         Can been identified by leaf discoloration, plant tissue damage and
         canopy loss
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td>Grazing</td>
-      <td>
+    <tr class="odd">
+      <th>Grazing</th>
+      <th>
         Evidence of grazing damage including loss of foliage and distortion of
         plant growth form
-      </td>
+      </th>
     </tr>
   </thead>
+  <tbody></tbody>
 </table>
-<p>Adapted from (Wundke et al. 2015)</p>"""^^rdf:HTML ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/33544e85-741a-4646-ba32-c820486f0a33> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/4da8c123-b886-4881-91b3-1ff6a9b30e3c> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/7a628781-ffec-4db7-ba58-214624365d82> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/e103ae22-2d8f-4806-9b4f-926e6e851301> ;
-    skos:prefLabel "Targeted survey" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/targeted-survey/collection.ttl"^^xsd:anyURI ;
+<p><em>Adapted from (Wundke et al. 2015)</em></p>
+    """^^rdf:HTML ;
+    tern:purpose """
+    <h3 id="rationale">Rationale</h3>
+<p>
+  This module provides the opportunity to record survey data that does not fit
+  the standard requirements of the other modules. The
+  <em>Targeted surveys</em> module has been designed primarily for targeting
+  threatened or migratory species or TECs listed under the EPBC Act, but can
+  also be used for research projects focussed on specific species or ecological
+  communities, for state or territory listed species or communities, or for
+  surveys of invasive species. The <em>Targeted surveys</em> module allows for
+  greater flexibility in survey design compared to the plot-based modules, and
+  can be undertaken in addition to plot-based surveys (recommended) or in
+  situations where plot-based surveys are not suitable.
+</p>
+<p>
+  The methods used for targeted surveys should be used consistently and be
+  recorded and mapped in sufficient detail to allow replication (Department of
+  Environment and Conservation 2004). However, this does not always occur and
+  can limit the ability to repeat surveys and collate and analyse data to allow
+  comparisons across projects or overtime. Consequently, setting minimum data
+  standards will help ensure that field surveys are undertaken in a transparent
+  manner and that survey design and effort can be verified, along with any
+  observation data (Dyer and Simmonds 2021). The targeted module is focused on
+  recording what was done, how it was done and what was observed in a
+  standardized manner, while allowing flexibility in terms of the actual field
+  survey methods undertaken. A GPS track log of the location of the survey is
+  the most effective way of demonstrating that the survey has been systematic
+  and comprehensive (Department of Planning 2020).
+</p>
+<p>
+  Threatened species may not be detected during plot-based surveys, due to
+  patchy distributions, cryptic behaviour or habits, low population sizes or
+  localised habitat requirements (Eyre et al. 2018, Department of Planning
+  2020). In addition, it is generally not adequate to report the presence and
+  distribution of listed species or ecological communities on the basis of their
+  occurrence within plots alone (Environmental Protection Authority 2016a). If
+  they are detected during more general surveys, follow up surveys are required
+  to determine their distribution, extent and population trends (Department of
+  Biodiversity‚ Conservation and Attractions 2017, Eyre et al. 2018, Department
+  of Planning 2020). Targeted surveys are also useful for habitats that are
+  restricted in the landscape, so may not be part of plot-based surveys, but may
+  still be important for biodiversity (Eyre et al. 2018).
+</p>
+<p>
+  To survey and monitor threatened or migratory species and ecological
+  communities, there is a need for many projects to adopt specific,
+  individualised monitoring methods to address localised or target-specific
+  questions (Capon et al. 2020), in addition to baseline survey methods.
+  Threatened species and TECs are two of the key areas of Commonwealth
+  environmental responsibility targeted by the Regional Lands Partnership (RLP)
+  program. The majority of projects funded under the RLP program are primarily
+  focussed on outcomes associated with threatened species, followed by TECs
+  (Capon et al. 2020). The long term aims are to determine if the trajectories
+  of targeted or threatened species has improved and if the condition of EPBC
+  Act TECs has been enhanced, based on extent, distribution, population size,
+  reproduction, habitat availability, composition, structure, function and
+  connectivity (Capon et al. 2020).
+</p>
+<p>
+  Targeted surveys for nationally threatened or migratory species and TECs,
+  recognised as Matters of National Environmental Significance (MNES) under the
+  EPBC Act, are central to environmental impact assessments (EIAs) (DEC 2004,
+  Department of Planning 2020, Dyer and Simmonds 2021). Any action that is
+  likely to have a significant impact on MNES must be referred to the Minister
+  and undergo an EIA and approvals process (Department of the Environment 2013a,
+  Ward et al. 2019, DAWE 2021c), and this process will be a common trigger for
+  undertaking this module.
+</p>
+<p>
+  It is important that informed decisions are made regarding the impact of
+  development proposals on threatened species and TECs (Department of
+  Environment and Conservation 2004, Reside et al. 2019, Ward et al. 2019,
+  Simmonds et al. 2020). For EIAs, field surveys should be designed to assess
+  any threatened biodiversity which may occur in the project area, to determine
+  the likelihood and extent of occurrence, and how the proposal will impact upon
+  them or their suitable habitat (DEC 2004, Department of Sustainability‚
+  Environment‚ Water‚ Population and Communities 2011a). Measures such as
+  population size and trends, and the area and quality of habitat available
+  across the landscape are also important variables that need to be thoroughly
+  assessed and well documented (Samuel 2020).
+</p>
+    """^^rdf:HTML ;
+    tern:scope """
+      <h3>Contents</h3>
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology"
+        >Key definitions and terminology</a
+      >
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+    <h3 id="introduction">Introduction</h3>
+<p>
+  The <em>Targeted surveys</em> module covers the procedures and guidelines for
+  recording the field survey information of targeted surveys for flora (vascular
+  and non-vascular), fauna (vertebrate and invertebrate) and ecological
+  communities. Targeted surveys can be used for baseline surveys and ongoing
+  monitoring. The <em>Targeted surveys</em> module has been developed primarily
+  for threatened species and ecological communities, but can also be used for
+  invasive plants, or any other taxa of interest, including migratory species.
+  Protocols for targeted vertebrate fauna pest surveys are being developed
+  concurrently.
+</p>
+<p>
+  Targeted surveys may take many forms and can be utilised outside of plots, so
+  this module provides the opportunity to undertake surveys that do not align
+  with the standard requirements of the other plot-based modules. In most
+  instances, targeted surveys should be undertaken in addition to plot-based
+  surveys and should not be viewed as an alternative to carrying out the
+  standardised plot-based methods. The module is flexible and focussed on
+  standardising how information about targeted surveys are collected, including
+  survey area, type, design and effort, rather than providing prescriptive
+  guidelines for how each survey needs to be completed. Any observations of
+  target species or potential suitable habitat, and ecological communities
+  recorded during a targeted survey is also standardised, making the process of
+  undertaking a targeted survey more transparent, ensuring that minimum data
+  standards are met and facilitating data re-use between projects. The module is
+  focussed on consistent collection of minimum metadata requirements, but in
+  some instances individual projects may have additional data requirements.
+</p>
+<p>
+  Survey methods and the time and extent of search effort vary widely between
+  studies and the species or community targeted, and for this reason, it is
+  essential that detailed information on the methods used and search effort is
+  collected. Key details include who was involved, what work was carried out and
+  where, when and how the survey was conducted, time spent searching, and a GPS
+  log of the search area, as well as the climatic conditions at the time of the
+  survey (Department of Sustainability‚ Environment‚ Water‚ Population and
+  Communities 2011a, Department of Planning 2020). Targeted flora and ecological
+  community surveys generally consist of active searching, while fauna surveys
+  can involve a combination of active searching and passive survey techniques,
+  such as trapping, acoustic recorders and remote cameras (Department of the
+  Environment‚ Water‚ Heritage and the Arts 2010b, Department of Sustainability‚
+  Environment‚ Water‚ Population and Communities 2011a, Department of
+  Environment and Science 2020, Tolsma and Molloy 2020).
+</p>
+<p>
+  The <em>Targeted surveys</em> module should be used in combination with any
+  national or state guidelines detailing field survey techniques for the target
+  species or community under study, along with any other available information
+  (e.g. recovery plans, scientific studies). Targeted surveys for specific
+  species should consider the ecology, habitat requirements and behaviour of the
+  species (Eyre et al. 2018). They may follow established survey protocols (e.g.
+  EPBC Act threatened species survey guidelines), or be developed based on up to
+  date scientific knowledge and expert recommendations, but justification needs
+  to be provided for the survey method adopted (Department of Sustainability‚
+  Environment‚ Water‚ Population and Communities 2011a, b).
+</p>
+<h3 id="fauna">Fauna</h3>
+<p>
+  Targeted fauna surveys are generally used to gather information on significant
+  fauna species and/or habitats or collect data where a desktop study or field
+  survey has identified knowledge gaps (Environment Protection Authority 2020).
+  Examples of where targeted fauna surveys are appropriate include:
+</p>
+<ul>
+  <li>
+    <p>
+      Confirming the presence of a threatened species or migratory species, or
+      other species of interest within a project area
+    </p>
+  </li>
+  <li>
+    <p>
+      Determining the distribution, abundance and/or health of a target species
+    </p>
+  </li>
+  <li>
+    <p>Determining fauna movements and habitat use</p>
+  </li>
+  <li>
+    <p>
+      Describing and mapping habitats or features that are important for target
+      species
+    </p>
+  </li>
+  <li>
+    <p>
+      Monitoring target species over time (Environment Protection Authority
+      2020).
+    </p>
+  </li>
+</ul>
+<p>
+  A range of active and passive survey methods can be used during targeted fauna
+  surveys, including (but not limited to):
+</p>
+<ul>
+  <li>
+    <p>Active searches (diurnal and nocturnal)</p>
+  </li>
+  <li>
+    <p>Active searches for signs (scats, tracks, remains etc)</p>
+  </li>
+  <li>
+    <p>Visual surveys (e.g. transects, point counts)</p>
+  </li>
+  <li>
+    <p>Spotlighting</p>
+  </li>
+  <li>
+    <p>Radio-tracking</p>
+  </li>
+  <li>
+    <p>Thermal imaging</p>
+  </li>
+  <li>
+    <p>Stag, burrow, den, roost and nest watching</p>
+  </li>
+  <li>
+    <p>Nest box surveys</p>
+  </li>
+  <li>
+    <p>Sand plots or track pads</p>
+  </li>
+  <li>
+    <p>
+      Trapping (pitfall, Elliott, cage, funnel, sticky, micro-pits, malaise,
+      pan, light)
+    </p>
+  </li>
+  <li>
+    <p>Netting (mist, harp, hand, sweep)</p>
+  </li>
+  <li>
+    <p>Camera trapping</p>
+  </li>
+  <li>
+    <p>Call detection and playback</p>
+  </li>
+  <li>
+    <p>Acoustic recorders</p>
+  </li>
+  <li>
+    <p>Hair tubes</p>
+  </li>
+  <li>
+    <p>Trip lines</p>
+  </li>
+  <li>
+    <p>Foliage sampling</p>
+  </li>
+  <li>
+    <p>Soil and litter sampling</p>
+  </li>
+  <li>
+    <p>
+      eDNA sampling (plants, scats, soil, water) and iDNA
+      (invertebrate-derived).
+    </p>
+  </li>
+</ul>
+<h3 id="flora">Flora</h3>
+<p>
+  Targeted flora surveys are generally used to document the presence of
+  threatened plant species (or other species of interest), and when observed,
+  determine the size and extent of populations in the project area
+  (Environmental Protection Authority 2016a). Additional information such as
+  growth and life-stages and plant health are also key measures that should be
+  documented during targeted surveys.
+</p>
+<p>
+  Within the project area, the focus areas for survey are selected based on a
+  desktop assessment (see Section 3), the range of habitats present and the
+  observed suitability of habitat. Three commonly used methods for targeted
+  flora surveys are random meanders, parallel traverses (or transects) and
+  quadrats. There can be a number of variations to each of these approaches,
+  often tailored to the target species or habitat (Department of Planning 2020),
+  but all approaches involve actively searching.
+</p>
+<p>
+  Parallel field traverses are the recommended approach for targeted surveys as
+  they allow survey areas to be searched systematically, and can be used for a
+  diverse range of species, habitats and sites (Department of Planning 2020).
+  The distance between traverses should be driven by the life form or habit of
+  the target plant species and by the habitat. The length of the field traverses
+  will depend on the area and the shape of the suitable habitat to be surveyed
+  (Department of Planning 2020). Many threatened plant species have patchy
+  distributions, low population sizes and cryptic habits, therefore, survey
+  effort generally needs to be high to ensure that all areas of suitable habitat
+  have been adequately surveyed. Additionally, as plants are sessile, the
+  probability of detection usually depends on the total time searched (in the
+  appropriate season), rather than the number of visits (Department of Planning
+  2020). Once a target plant population has been identified, on-going monitoring
+  may involve tracking growth, survivorship and life-stages of the individuals
+  present (see the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment</a></em> module for more details), as well as
+  monitoring changes in population size or extent (Lindenmayer et al. 2020,
+  Turner et al. 2020).
+</p>
+<h3 id="ecological-communities">Ecological communities</h3>
+<p>
+  An ecological community (EC) is a naturally occurring group of native plants,
+  animals and other organisms, with the structure, composition and distribution
+  determined by environmental factors such as soil type, position in the
+  landscape, altitude, climate and water availability (DAWE 2021d). Communities
+  are listed as threatened ecological communities (TECs), when the composition
+  and function of the community has been severely depleted across its range, due
+  to a number of reasons including clearing of native vegetation, inappropriate
+  fire regimes, non-native or invasive species, climate change, water diversion,
+  pollution and urban development (DAWE 2021a). The survey for ECs is similar to
+  targeted flora surveys, and consists of active searches to determine the
+  presence and extent of the target ECs (Environmental Protection Authority
+  2016a). On-going monitoring can be used to track changes in condition and
+  extent of any TECs identified and assess threats or the effectiveness of
+  interventions (Lindenmayer et al. 2020). The EC protocol in this module has
+  been designed for the collection of data on TECs listed under the EPBC Act,
+  and can be used in combination with other modules, including
+  <em
+    ><a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b"
+      >Cover</a
+    ></em
+  >,
+  <em
+    ><a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+      >Floristics</a
+    ></em
+  >
+  and
+  <em
+    ><a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/16a20c3f-e95d-4919-b2d1-a25c7a275109"
+      >Condition</a
+    ></em
+  >
+  to collect more detailed ecological information about the community.
+</p>
+    """^^rdf:HTML ;
 .
 

@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -7,224 +6,13 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/79296cab-a02f-420d-b260-17c0e8691499>
-    a skos:Concept ;
-    dcterms:description """<p>
-  This section provides general instructions and guidelines for the management
-  of the invertebrate specimens that are collected, including how to preserve,
-  sort, identify, count, photograph, and store them. A consistent approach is
-  taken across all protocols.
-</p>"""^^rdf:HTML ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:prefLabel "Post-field guidelines protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/post-field-guidelines-protocol/post-field-guidelines-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    <p>Waterproof labels with barcodes, and duplicate barcode stickers.</p>
-  </li>
-  <li>
-    <p>Screw top vials and containers</p>
-  </li>
-  <li>
-    <p>Preserving liquid (95% ethanol or undiluted propylene glycol)</p>
-  </li>
-  <li>
-    <p>Parafilm tape</p>
-  </li>
-  <li>
-    <p>High sided white plastic sorting trays, for sorting specimens</p>
-  </li>
-  <li>
-    <p>Petri dishes, for sorting specimens</p>
-  </li>
-  <li>
-    <p>PC with web access, to enter data into the App</p>
-  </li>
-  <li>
-    <p>Paper towel</p>
-  </li>
-  <li>
-    <p>Tweezers</p>
-  </li>
-  <li>
-    <p>Tea strainer</p>
-  </li>
-  <li>
-    <p>Soft-nose forceps</p>
-  </li>
-  <li>
-    <p>Small paintbrush</p>
-  </li>
-  <li>
-    <p>Disposable gloves</p>
-  </li>
-  <li>
-    <p>Face masks</p>
-  </li>
-  <li>
-    <p>Permanent marker</p>
-  </li>
-  <li>
-    <p>Pencil and paper</p>
-  </li>
-  <li>
-    <p>Counter (e.g. multiple unit tally counter or web-based counter)</p>
-  </li>
-  <li>
-    <p>Scale card(s), for taking photographs</p>
-  </li>
-  <li>
-    <p>Low-powered (c 10x) magnification aid</p>
-  </li>
-  <li>
-    <p>Thermal printer</p>
-  </li>
-  <li>
-    <p>Dedicated storage area (dark, cool, stable and away from heat)</p>
-  </li>
-  <li>
-    <p>Alcohol or alcohol wipes for cleaning equipment</p>
-  </li>
-  <li>
-    <p>
-      Dry mounting equipment (optional): pinning board, pins, glue, scissors,
-      paper triangles, bee boxes, hair dryer, distilled water, liquid detergent,
-      washer jar.
-    </p>
-  </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
-  <li>
-    <p>
-      Open the App, select the sampling protocol (e.g. Malaise trap), then
-      select Barcode scan. Scan barcode for the selected sample and the record
-      details will open.
-    </p>
-  </li>
-</ol>
-<ol start="2">
-  <li>
-    <p>Select Edit record and Sort specimens.</p>
-  </li>
-  <li>
-    <p>
-      Using a tray and soft-nose forceps, pour contents of jar onto a sorting
-      tray or petri dish and sort contents. Sorting will depend on the aims and
-      instructions provided by the relevant museum/institution. Sorting may be
-      undertaken by morphospecies, RTU, genus, family, order, size, functional
-      group or life-stage. Record the way in which sorting has been undertaken
-      in the comments (step 11).
-    </p>
-  </li>
-  <li>
-    <p>
-      Count the specimens once they are sorted. This will either be an exact or
-      estimate count, depending on the number of specimens. A counter can be
-      used to assist. It may be helpful to write the counts on paper during this
-      process.
-    </p>
-  </li>
-  <li>
-    <p>
-      Place the sorted specimens into new vials filled with 95% ethanol or
-      undiluted propylene glycol.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select Assign new barcode and then Scan barcode. Scan the new barcode
-      label and enter the following details for the sample:
-    </p>
-  </li>
-</ol>
-<ul>
-  <li>
-    <p>Preservative type (drop-down list and manual entry)</p>
-  </li>
-  <li>
-    <p>Preservative concentration.</p>
-  </li>
-</ul>
-<ol start="7">
-  <li>
-    <p>
-      Select Invertebrate group (drop-down list). Select to the level of
-      confidence (e.g. species, genus, family, order). If unsure, select
-      unidentified or if type is not listed, select other, and provide details
-      in comments.
-    </p>
-  </li>
-  <li>
-    <p>Select Life-stage (drop-down list, multiple entry OK).</p>
-  </li>
-  <li>
-    <p>Record Average length (mm) for each life-stage (optional).</p>
-  </li>
-  <li>
-    <p>
-      Enter a Count (number of individuals in the invertebrate group for each
-      life-stage) and record if the count is exact or an estimate (drop-down).
-    </p>
-  </li>
-  <li>
-    <p>Enter a Comment (optional).</p>
-  </li>
-  <li>
-    <p>
-      Select Add photos and take a representative photo of each invertebrate
-      type/life-stage, to assist with identification. A photo can also be taken
-      looking down (into the sample container with the lid off), with the
-      barcode visible in the photo next to the sample container. Include a brief
-      text Description (default descriptions available from drop-down list or
-      enter free text). Multiple photos can be taken. Photos can also be taken
-      from a microscope camera and uploaded. Select Save.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select Add additional invertebrate group if multiple invertebrate groups
-      will be kept in the same sample container, then repeat Steps 44 to 46.
-    </p>
-  </li>
-  <li>
-    <p>
-      For each new sample container, insert a unique thermal printed label with
-      barcode and specimen details. Place a duplicate barcode sticker (same
-      barcode) on the side of the sample container. The new barcodes will link
-      back to the original record, even though the original barcode will now be
-      defunct (i.e. the new barcode will retain which trap number, trap date etc
-      the samples are from).
-    </p>
-  </li>
-  <li>
-    <p>Repeat the steps for each new sample container.</p>
-  </li>
-  <li>
-    <p>Store the samples in a cool, dark location (refer to Guidelines).</p>
-  </li>
-  <li>
-    <p>
-      Arrange for delivery of the specimens to the relevant
-      museum/institution/laboratory for analysis or morphological identification
-      and/or archiving. Open the App, select the relevant protocol, and scan the
-      barcode of the relevant sample.
-    </p>
-  </li>
-  <li>
-    <p>Select Edit record and Sample location.</p>
-  </li>
-  <li>
-    <p>
-      Enter the Name of the receiving institution, Contact, Email, and the Date
-      the sample was sent (this will be the default entry for all samples from
-      the same protocol, override as necessary).
-    </p>
-  </li>
-  <li>
-    <p>Enter any relevant Notes (optional).</p>
-  </li>
-</ol>
-<p><strong>Additional guidelines</strong></p>
-<p>Preserving samples</p>
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 id="preserving-samples">A. Preserving samples</h4>
 <ul>
   <li>
     <p>
@@ -247,9 +35,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>
       Some studies show propylene glycol to have superior DNA preservability
       over ethanol however longer-term testing of DNA degradation effects is
-      required (Nakamura et al. 2020; Weigand et al. 2021). Propylene glycol
-      also acts as a cryoprotectant if the specimens will be frozen (Whitman et
-      al. 2019).
+      required (Nakamura <em>et al.</em> 2020; Weigand <em>et al.</em> 2021).
+      Propylene glycol also acts as a cryoprotectant if the specimens will be
+      frozen (Whitman et al. 2019).
     </p>
   </li>
   <li>
@@ -277,7 +65,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p>Identifying samples</p>
+<h4 id="identifying-samples">B. Identifying samples</h4>
 <ul>
   <li>
     <p>
@@ -286,6 +74,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       museum, other institution or specialist vary. Make contact prior to
       discuss:
     </p>
+
     <ul>
       <li>
         <p>fees</p>
@@ -322,27 +111,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Identification may require viewing specimens under a microscope. Refer to
-      Upton et al. (2010) for recommended microscope setups.
+      Upton <em>et al.</em> (2010) for recommended microscope setups.
     </p>
   </li>
   <li>
     <p>
       A list of useful invertebrate reference books and identification keys is
-      provided in Upton et al. (2010).
+      provided in Upton <em>et al.</em> (2010).
     </p>
   </li>
   <li>
     <p>
       Fully identified species should be listed by genus and species, e.g.
-      Ogyris abrota.
+      <em>Ogyris abrota</em>.
     </p>
   </li>
   <li>
-    <p>Species identified to genus only should be listed as e.g. Ogyris sp.</p>
+    <p>
+      Species identified to genus only should be listed as e.g.
+      <em>Ogyris</em> sp.
+    </p>
   </li>
   <li>
     <p>
-      Morphospecies should be listed by letter: e.g. Ogyris sp. A, Ogyris sp. B.
+      Morphospecies should be listed by letter: e.g. <em>Ogyris</em> sp. A,
+      <em>Ogyris</em> sp. B.
     </p>
   </li>
   <li>
@@ -371,7 +164,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p>Sorting samples</p>
+<h4 id="sorting-samples">C. Sorting samples</h4>
 <ul>
   <li>
     <p>
@@ -445,7 +238,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p>Photographing samples</p>
+<h4 id="photographing-samples">D. Photographing samples</h4>
 <ul>
   <li>
     <p>Include a scale card in photos.</p>
@@ -462,7 +255,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p>Preparing samples</p>
+<h4 id="preparing-samples">E. Preparing samples</h4>
 <ul>
   <li>
     <p>
@@ -486,33 +279,37 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Certain taxa such as moths and butterflies are best dry mounted to retain
-      morphological features. If taxa are collected in preserving solution, they
-      need to be washed and dried before mounting.
+      morphological features. If taxa are collected in a preserving solution,
+      they need to be washed and dried before mounting.
     </p>
   </li>
   <li>
     <p>
       Dry mounting generally involves pinning, or gluing to ‘carboard points’
       for small specimens. Instructions for dry mounting of specimens can be
-      found in Upton et al. (2010).
+      found in Upton <em>et al.</em> (2010).
     </p>
   </li>
 </ul>
-<p>Labelling samples</p>
+<h4 id="labelling-samples">F. Labelling samples</h4>
 <ul>
   <li>
     <p>
-      Hand written field labels can be replaced with thermal printed labels,
-      with the same barcode.
+      Handwritten field labels can be replaced with thermal printed labels, with
+      the same barcode.
     </p>
   </li>
   <li>
     <p>
       Each sample vial is allocated an all-in-one label, based on the approach
-      of https://www.discoverlife.org/label/. The labels combine human and
-      machine-readable data, with both systems uniquely identifying the
-      specimens. The required label fields are as follows:
+      of
+      <a href="https://www.discoverlife.org/label/c"
+        ><u>https://www.discoverlife.org/label/</u></a
+      >. The labels combine human and machine-readable data, with both systems
+      uniquely identifying the specimens. The required label fields are as
+      follows:
     </p>
+
     <ul>
       <li>
         <p>a globally unique and machine-readable barcode identifier</p>
@@ -547,23 +344,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </ul>
   </li>
 </ul>
-<p>Figure. Example label (Source: https://www.discoverlife.org/label/).
-    <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/example-label.png"
-                alt="Example label"
-                widteh="212"
-                height="92"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/example-label.png"
+    alt="Example label"
+    widteh="212"
+    height="92"
+  />
 </p>
-<p>Transporting samples</p>
+<p>Figure 13. Example label (Source: https://www.discoverlife.org/label/).</p>
+<h4 id="transporting-samples">G. Transporting samples</h4>
 <ul>
   <li>
     <p>
@@ -582,7 +372,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       For air transport of specimens, follow the special provision A180
-      requirements: https://www.casa.gov.au/standard-page/special-provision-a180
+      requirements:
+      <a href="https://www.casa.gov.au/standard-page/special-provision-a180"
+        ><u>https://www.casa.gov.au/standard-page/special-provision-a180</u></a
+      >
     </p>
   </li>
   <li>
@@ -595,7 +388,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p>Storing samples</p>
+<h4 id="storing-samples">H. Storing samples</h4>
 <ul>
   <li>
     <p>
@@ -617,6 +410,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       Consult with the local jurisdictional museum how the wet specimens are
       best stored, either
     </p>
+
     <ul>
       <li>
         <p>standard household freezer (i.e. -20°C).</p>
@@ -626,14 +420,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       </li>
       <li>
         <p>cool, dark environment.</p>
-        <p>
-          This is critical to preserve the DNA in the samples. Improper storage
-          (e.g. under constant light, heat or variable temperatures) will result
-          in DNA degradation rendering samples unusable for DNA sequencing.
-        </p>
       </li>
     </ul>
   </li>
+</ul>
+
+<p>
+  This is critical to preserve the DNA in the samples. Improper storage (e.g.
+  under constant light, heat or variable temperatures) will result in DNA
+  degradation rendering samples unusable for DNA sequencing.
+</p>
+
+<ul>
   <li>
     <p>
       Specimens should be offered to the local jurisdictional museum for
@@ -643,7 +441,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p>Analysing samples</p>
+<h4 id="analysing-samples">I. Analysing samples</h4>
 <ul>
   <li>
     <p>
@@ -675,7 +473,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       The absence of invertebrates from a monitoring event can also be useful
-      for analysis (Grange et al. 2021).
+      for analysis (Grange <em>et al.</em> 2021).
     </p>
   </li>
   <li>
@@ -694,7 +492,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       few dollars per specimen. In partnership with collaborators, the barcode
       reference library is constantly being updated. These developments lay the
       foundations for a globally consistent DNA-based biomonitoring approach
-      (Hobern and Adamowicz 2021). See: https://ibol.org/programs/bioscan/.
+      (Hobern and Adamowicz 2021). See:
+      <a href="https://ibol.org/programs/bioscan/"
+        >https://ibol.org/programs/bioscan/</a
+      >.
     </p>
   </li>
   <li>
@@ -702,14 +503,1424 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       The exchange of genetic resources is controlled under the
       <em
         >Nagoya Protocol on Access to Genetic Resources and the Fair and
-        Equitable Sharing of Benefits Arising from their Utilization
-        (https://www. cbd.int/abs/). This may affect the ability of the global
-        taxonomic community to provide diagnostic services (Hobern and Adamowicz
-        2021).
-      </em>
+        Equitable Sharing of Benefits Arising from their Utilization</em
+      >
+      (https://www. cbd.int/abs/). This may affect the ability of the global
+      taxonomic community to provide diagnostic services (Hobern and Adamowicz
+      2021).
     </p>
   </li>
 </ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Post-field guidelines protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/post-field-guidelines-protocol/post-field-guidelines-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+<h3 id="appendices">Appendices</h3>
+<h4>
+  Appendix A. Suitability of the sampling protocols for the commonly monitored
+  insect guilds.
+</h4>
+<table>
+  <colgroup>
+    <col style="width: 27%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th>Malaise</th>
+      <th>Leaf-litter</th>
+      <th>Light trap</th>
+      <th>Pan trap</th>
+      <th>Active search</th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Adult semi-aquatic insects</strong></p>
+        <p>(Plecoptera, Ephemeroptera, and Trichoptera)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Singing insects</strong></p>
+        <p>(Orthoptera &amp; Hemiptera: Cicadoidea)</p>
+      </th>
+      <th>^</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>*</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Ground-dwelling beetles</strong> (Coleoptera: Carabidae and
+        Staphylinidae)
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th>**</th>
+      <th>^</th>
+      <th>*</th>
+      <th>^</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <strong>Non-lepidopteran pollinators</strong> (Hymenoptera, Diptera,
+        Coleoptera)
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Leaf-chewing larvae</strong> (Lepidoptera and Hymenoptera:
+        Symphyta)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Night-active moths</strong> (Lepidoptera)</th>
+      <th></th>
+      <th></th>
+      <th>^</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Dragonflies and damselflies</strong> (Odonata)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Ants</strong></p>
+        <p>(Hymenoptera: Formicidae)</p>
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th>*</th>
+      <th>***</th>
+      <th>^</th>
+      <th>*</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Butterflies</strong></p>
+        <p>(Lepidoptera: Papilionoidea)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Flies</strong> (Diptera)</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Other</strong> (not covered in (Montgomery <em>et al.</em> 2021)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th><strong>Grasshoppers</strong> (Orthoptera)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Thrips</strong></p>
+        <p>(Thysanoptera)</p>
+      </th>
+      <th>*</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Spiders and scorpions</strong></p>
+        <p>(Arachnida)</p>
+      </th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Mesofauna</strong> (soil and litter invertebrates, e.g. mites
+        (Acari), springtails (Collembola), nematodes
+      </th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+    </tr>
+    <tr class="header">
+      <th>Millipedes (Diplopoda)</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Earthworms (Annelida)</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Landsnails (Gatropoda)</th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  *** Optimal suitability; ** Possibly suitability; * Marginal suitability; ^
+  Bycatch only; Blank indicates general unsuitability.
+</p>
+<p>
+  Based on (Montgomery <em>et al.</em> 2021), updated to reflect the sampling
+  methods included in this Module. Note that Soil sampling eDNA, Leaf-litter
+  sampling and Sweep netting are not included in Montgomery
+  <em>et al.</em> (2021). Sweep net based on results of (Spafford and Lortie
+  2013)
+</p>
+<h4>Appendix B. Data fields by invertebrate sampling protocol.</h4>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Data fields</strong></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th>Malaise</th>
+      <th>Leaf-litter</th>
+      <th>Light trap</th>
+      <th>Pan trap</th>
+      <th>Active search</th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>Sampling protocol</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Full or Lite</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trap set-up</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Fauna Plot ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Observer/s</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Photo/s</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Equipment</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Habitat</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sample container</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Close up ID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Photo direction</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Photo description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Time</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap install date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Start survey</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap open date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>End survey date/time</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Sample collection date/time</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>Trap removal</p>
+        <p>date/time</p>
+      </th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Weather</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Wind</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Rain</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Temperature</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Humidity</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sun/cloud</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trapping details</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Location</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/Location ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap/apparatus dimensions (multiple fields)</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap /apparatus colour</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap materials</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap damage</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap elevation ASL</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/sampling elevation above ground</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Collection apparatus</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Surrounding vegetation description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Dominant plant cover</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Dominant plant sp.</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant height</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Plant phenology</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant hit height above ground</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Number of leaves</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant circumference</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Herbivory</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Average leaf length</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Soil sample</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil sample depth/diameter</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Soil type</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil surface temperature</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Leaf-litter sample</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Litter depth</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Litter volume</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Area litter sampled</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Voucher</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative concentration</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Post field</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>New Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Species ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Count</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative %age</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 """^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
+  <li>
+    <p>Waterproof labels with barcodes, and duplicate barcode stickers.</p>
+  </li>
+  <li>
+    <p>Screw top vials and containers</p>
+  </li>
+  <li>
+    <p>Preserving liquid (95% ethanol or undiluted propylene glycol)</p>
+  </li>
+  <li>
+    <p>Parafilm tape</p>
+  </li>
+  <li>
+    <p>High sided white plastic sorting trays, for sorting specimens</p>
+  </li>
+  <li>
+    <p>Petri dishes, for sorting specimens</p>
+  </li>
+  <li>
+    <p>PC with web access, to enter data into the App</p>
+  </li>
+  <li>
+    <p>Paper towel</p>
+  </li>
+  <li>
+    <p>Tweezers</p>
+  </li>
+  <li>
+    <p>Tea strainer</p>
+  </li>
+  <li>
+    <p>Soft-nose forceps</p>
+  </li>
+  <li>
+    <p>Small paintbrush</p>
+  </li>
+  <li>
+    <p>Disposable gloves</p>
+  </li>
+  <li>
+    <p>Face masks</p>
+  </li>
+  <li>
+    <p>Permanent marker</p>
+  </li>
+  <li>
+    <p>Pencil and paper</p>
+  </li>
+  <li>
+    <p>
+      Counter (e.g.
+      <a
+        href="https://www.forestry-suppliers.com/product_pages/products.php?mi=11751&amp;itemnum=53121"
+        ><u>multiple unit tally counter</u></a
+      >
+      or web-based counter)
+    </p>
+  </li>
+  <li>
+    <p>Scale card(s), for taking photographs</p>
+  </li>
+  <li>
+    <p>Low-powered (c 10x) magnification aid</p>
+  </li>
+  <li>
+    <p>Thermal printer</p>
+  </li>
+  <li>
+    <p>Dedicated storage area (dark, cool, stable and away from heat)</p>
+  </li>
+  <li>
+    <p>Alcohol or alcohol wipes for cleaning equipment</p>
+  </li>
+  <li>
+    <p>
+      Dry mounting equipment (optional): pinning board, pins, glue, scissors,
+      paper triangles, bee boxes, hair dryer, distilled water, liquid detergent,
+      washer jar.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and Procedures</h3>
+<ol type="1">
+  <li>
+    <p>
+      Open the App, select the sampling protocol (e.g. <em>Malaise trap</em>),
+      then select <em>Barcode scan.</em> Scan barcode for the selected sample
+      and the record details will open.
+    </p>
+  </li>
+  <li>
+    <p>Select <em>Edit record</em> and <em>Sort specimens.</em></p>
+  </li>
+  <li>
+    <p>
+      Using a tray and soft-nose forceps, pour the contents of jar onto a
+      sorting tray or petri dish and sort the contents. Sorting will depend on
+      the aims and instructions provided by the relevant museum/institution.
+      Sorting may be undertaken by morphospecies, RTU, genus, family, order,
+      size, functional group or life-stage. Record the way in which sorting has
+      been undertaken in the comments (step 11).
+    </p>
+  </li>
+  <li>
+    <p>
+      Count the specimens once they are sorted. This will either be an exact or
+      estimate count, depending on the number of specimens. A counter can be
+      used to assist. It may be helpful to write the counts on paper during this
+      process.
+    </p>
+  </li>
+  <li>
+    <p>
+      Place the sorted specimens into new vials filled with 95% ethanol or
+      undiluted propylene glycol.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Assign new barcode</em> and then <em>Scan barcode.</em> Scan
+      the new barcode label and enter the following details for the sample:
+    </p>
+  </li>
+</ol>
+<ul>
+  <li>
+    <p><em>Preservative type</em> (drop-down list and manual entry)</p>
+  </li>
+  <li>
+    <p><em>Preservative concentration.</em></p>
+  </li>
+</ul>
+<ol start="7" type="1">
+  <li>
+    <p>
+      Select <em>Invertebrate group</em> (drop-down list). Select to the level
+      of confidence (e.g. species, genus, family, order). If unsure, select
+      unidentified or if type is not listed, select other, and provide details
+      in comments.
+    </p>
+  </li>
+  <li>
+    <p>Select <em>Life-stage</em> (drop-down list, multiple entry OK).</p>
+  </li>
+  <li>
+    <p>Record <em>Average length</em> (mm) for each life-stage (optional).</p>
+  </li>
+  <li>
+    <p>
+      Enter a <em>Count</em> (number of individuals in the invertebrate group
+      for each life-stage) and record if the count is exact or an estimate
+      (drop-down).
+    </p>
+  </li>
+  <li>
+    <p>Enter a <em>Comment</em> (optional).</p>
+  </li>
+  <li>
+    <p>
+      Select <em>Add photos</em> and take a representative photo of each
+      invertebrate type/life-stage, to assist with identification. A photo can
+      also be taken looking down (into the sample container with the lid off),
+      with the barcode visible in the photo next to the sample container.
+      Include a brief text <em>Description</em> (default descriptions available
+      from drop-down list or enter free text). Multiple photos can be taken.
+      Photos can also be taken from a microscope camera and uploaded. Select
+      <em>Save</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Add additional invertebrate group</em> if multiple invertebrate
+      groups will be kept in the same sample container, then repeat Steps 44 to
+      46.
+    </p>
+  </li>
+  <li>
+    <p>
+      For each new sample container, insert a unique thermal printed label with
+      barcode and specimen details. Place a duplicate barcode sticker (same
+      barcode) on the side of the sample container. The new barcodes will link
+      back to the original record, even though the original barcode will now be
+      defunct (i.e. the new barcode will retain which trap number, trap date etc
+      the samples are from).
+    </p>
+  </li>
+  <li><p>Repeat the steps for each new sample container.</p></li>
+  <li>
+    <p>
+      Store the samples in a cool, dark location (refer to Guidelines below).
+    </p>
+  </li>
+  <li>
+    <p>
+      Arrange for delivery of the specimens to the relevant
+      museum/institution/laboratory for analysis or morphological identification
+      and/or archiving. Open the App, select the relevant protocol, and scan the
+      barcode of the relevant sample.
+    </p>
+  </li>
+  <li>
+    <p>Select <em>Edit record</em> and <em>Sample location</em>.</p>
+  </li>
+  <li>
+    <p>
+      Enter the <em>Name</em> of the receiving institution, <em>Contact</em>,
+      <em>Email</em>, and the <em>Date</em> the sample was sent (this will be
+      the default entry for all samples from the same protocol, override as
+      necessary).
+    </p>
+  </li>
+  <li>
+    <p>Enter any relevant <em>Notes</em> (optional).</p>
+  </li>
+</ol>
+"""^^rdf:HTML ;
+    tern:scope """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+    <h3 id="introduction">Introduction</h3>
+<p>
+  This section provides general instructions and guidelines for the management
+  of the invertebrate specimens that are collected, including how to preserve,
+  sort, identify, count, photograph, and store them. A consistent approach is
+  taken across all protocols.
+</p>
+    """^^rdf:HTML ;
 .
 
