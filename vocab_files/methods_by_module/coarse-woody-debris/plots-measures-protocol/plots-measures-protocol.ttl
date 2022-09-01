@@ -6,432 +6,488 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/7d50794a-8784-4ab9-99ff-a324bb6e0831>
-    a skos:Concept ;
+    a
+        skos:Concept ,
+        tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:prefLabel "Plots measures protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/coarse-woody-debris/plots-measures-protocol/plots-measures-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    Mobile device (tablet/phone capable of taking high resolution photos) with
-    the App (progressive web app) saved to the home screen
-  </li>
-  <li>Trimble R1</li>
-  <li>
-    4 x 100 m tape measure (to mark plot boundary, additional tapes can be used
-    to divide the plot into smaller units to assist with the systematic survey).
-  </li>
-  <li>
-    Diameter tape and/or calipers (or tape measure or ruler, for measure CWD
-    diameter)
-  </li>
-  <li>
-    Tape measure (minimum 5 m in length, or cased tape measure, for measuring
-    CWD length)
-  </li>
-  <li>
-    Paint / marker / flagging tape (temporary, to mark any pieces of CWD
-    measured)
-  </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<style>
-  table.tables {
-    border: 1px solid rgb(34, 15, 15);
-  }
-  table.tables tr,
-  table.tables td {
-    padding: 3px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #0f0801 rgb(12, 11, 11);
-  }
-</style>
-<ol>
-  <li>
-    Ensure the Plot selection and layout module has been completed to mark out
-    the plot boundary and grid with very high accuracy using the Trimble R1
-  </li>
-  <li>Select the Plots options from the Coarse Woody Debris main screen.</li>
-  <li>
-    Depending on the abundance and distribution of CWD select the 50 x 50 m or
-    100 x 100 m plot size option. The 50 x 50 m option is the default selection.
-    For more information about the 2 variations, click on the info buttons
-    within the app and/or refer to the supporting information.
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/cwd-app-screen-survey-design-plots.jpg"
-              alt="CWD app screen – survey design plots"
-              width="600"
-              height="350"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    Lay out tapes or add survey markers to define the plot boundary
-    <ul>
-      <li>
-        If a 50 x 50 m plot is used, the plot should share the same center point
-        with the 1 ha plot. One 100 m tape can be used to define two of the
-        boundaries. The point intercept transects can be left in place to help
-        divide the plot up and assist with the systematic survey.
-      </li>
-      <li>
-        If the 100 x 100 m plot is used, 4 x 100 m tape measures, or survey
-        flags can be used to define the plot boundary. Alternatively, if done
-        following the Cover module, the point intercept grid can be used to
-        delineate the plot boundary and divide the plot up to assist with the
-        systematic survey.
-      </li>
-    </ul>
-  </li>
-  <li>
-    Systematically search the plot for any CWD that occurs within the plot.
-  </li>
-  <li>
-    Measure any CWD within the plot if it is ≥10 cm diameter (or ≥5 cm for
-    eligible systems) at any point along its length.
-  </li>
-  <p>For each eligible piece of CWD:</p>
-  <li>
-    Record the location of the CWD by standing at the center point of the piece
-    and selecting Record Location (ensure the R1 relates to high accuracy).
-  </li>
-  <li>
-    Measure and record the diameter at the widest point of the CWD within the
-    plot in cm. This can be done using a diameter tape or calipers.
-  </li>
-  <li>
-    Measure and record the diameter at the narrowest point within the plot, down
-    to a minimum diameter of 10 cm (or 5 cm where appropriate).
-  </li>
-  <li>
-    Measure and record the length (in meters) of the CWD for the portion of it
-    that is greater than 10 cm (or 5 cm) in diameter and within the plot. See
-    the supporting information for more detailed information about measuring CWD
-    diameter and length.
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <img
-              src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/cwd-transect.jpg"
-              alt="CWD app screen plots – size and decay class"
-              width="300"
-              height="450"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <p>
-    Where a piece of CWD is irregular in shape, it may be divided into multiple
-    smaller roughly linear and cylindrical sections for ease of measurement –
-    see Figure 1 and the supporting information for more details. Each section
-    will be recorded as a separate piece of CWD.
-  </p>
-  <li>
-    Record a decay class from Table 3 (refer to the supporting information for
-    examples of each class).
-  </li>
-  <li>
-    Repeat steps 6-11 for each piece of CWD with a diameter greater than 10 cm
-    (or 5 cm) within the plot.
-  </li>
-  <p style="color: blue">
-    Table. Coarse woody debris decay classes - adapted from (Baker and Chao
-    2011; Meggs 1996).
-  </p>
-  <table class="tables">
-    <tbody>
-      <tr>
-        <td>
-          <p>Decay class</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 1</p>
-        </td>
-        <td>
-          <p>
-            Recently fallen. Structurally intact or almost so; bark or small
-            branches still attached; few signs of wood decay; wood mostly
-            retains original color.
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 2</p>
-        </td>
-        <td>
-          <p>
-            Structurally less intact but still hard when kicked; small branches
-            absent; little or no bark present; early signs of wood decay, bark
-            loss or discoloration.
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 3</p>
-        </td>
-        <td>
-          <p>
-            Clearly decaying but still supports own weight; may be slightly soft
-            when kicked; may be hollow in places; no bark; moss and fungi may be
-            prominent.
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 4</p>
-        </td>
-        <td>
-          <p>
-            Cannot support its own weight; soft to kick (but may still be hard
-            in places; in which case may be extensively hollow); moss, fungi and
-            invading roots likely.
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 5</p>
-        </td>
-        <td>
-          <p>
-            No longer retains original shape; wood very soft or largely
-            disintegrated; sometimes only outline visible beneath moss, invading
-            roots.
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</ol>
-<p><strong>Additional guidelines</strong></p>
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
 <ul>
   <li>
-    It is recommended that the CWD measurements are done concurrently, or
-    immediately after the Cover point-intercept to take advantage of the
-    transect lines already laid. These transects can be used to divide the plot
-    into smaller areas and assist with the systematic survey of the area.
+    <p>
+      It is recommended that the CWD measurements are done concurrently, or
+      immediately after the <em>Cover</em> point-intercept to take advantage of
+      the transect lines already laid. These transects can be used to divide the
+      plot into smaller areas and assist with the systematic survey of the area.
+    </p>
   </li>
   <li>
-    The plot should be traversed and CWD abundance assessed before the survey
-    design is selected. This can be undertaken while traversing the plot during
-    the Floristics and Cover modules.
+    <p>
+      The plot should be traversed and CWD abundance assessed before the survey
+      design is selected. This can be undertaken while traversing the plot
+      during the <em>Floristics</em> and <em>Cover</em> modules.
+    </p>
   </li>
   <li>
-    It is recommended that users take note of the amount of CWD that intersects
-    the point-intercept transects when undertaking the Cover module, to help
-    inform the survey design and increase efficiency in the field.
+    <p>
+      It is recommended that users take note of the amount of CWD that
+      intersects the point-intercept transects when undertaking the
+      <em>Cover</em> module, to help inform the survey design and increase
+      efficiency in the field.
+    </p>
   </li>
   <li>
-    The results from the point intercept can give an indication of the most
-    suitable CWD design to use, but it is likely that not all pieces of CWD that
-    intersect the transect will be recorded during the point-intercept survey,
-    so should be used in combination with a quick site assessment.
+    <p>
+      The results from the point intercept can give an indication of the most
+      suitable CWD design to use, but it is likely that not all pieces of CWD
+      that intersect the transect will be recorded during the point-intercept
+      survey, so should be used in combination with a quick site assessment.
+    </p>
   </li>
   <li>
-    CWD can be patchily distributed, so assess multiple transects before
-    deciding about the use of transects of plot sampling. If ≤ 5 pieces of CWD
-    on average intersect a 100 m transect, then plots should be used.
+    <p>
+      CWD can be patchily distributed, so assess multiple transects before
+      making a decision about the use of transects of plot sampling. If ≤ 5
+      pieces of CWD on average intersect a 100 m transect, then plots should be
+      used.
+    </p>
   </li>
   <li>
-    For areas with high abundance of CWD or clustered CWD, mark (survey pin,
-    flagging tape, paint) CWD that has been measured to avoid duplicate
-    measures.
+    <p>
+      For areas with high abundance of CWD or clustered CWD, mark (survey pin,
+      flagging tape, paint) CWD that has been measured to avoid duplicate
+      measures.
+    </p>
   </li>
   <li>
-    If decay status varies along the piece of CWD, record the most dominant
-    decay class.
+    <p>
+      If decay status varies along the piece of CWD, record the most dominant
+      decay class.
+    </p>
   </li>
   <li>
-    Measure CWD diameter at the widest and narrowest end that are within the
-    plot. Do not measure any part of the CWD that falls outside of the plot.
+    <p>
+      Measure CWD diameter at the widest and narrowest end that are within the
+      plot. Do not measure any part of the CWD that falls outside of the plot.
+    </p>
   </li>
   <li>
-    Measurements of length are made to the plot border, regardless of whether
-    the tree is rooted inside or outside of the plot (Baker and Chao 2011).
-  </li>
-  <li>CWD diameter is recorded in cm and length is recorded in m.</li>
-  <li>Measure CWD diameter over bark.</li>
-  <li>
-    Length is only measured for the portion of the CWD that meets the size
-    threshold and is within the plot boundary.
+    <p>
+      Measurements of length are made to the plot border, regardless of whether
+      the tree is rooted inside or outside of the plot (Baker and Chao 2011).
+    </p>
   </li>
   <li>
-    A cased tape measure is recommended for recording CWD lengths, as they are
-    compact and easily retractable.
+    <p>CWD diameter is recorded in cm and length is recorded in m.</p>
+  </li>
+  <li>
+    <p>Measure CWD diameter over bark.</p>
+  </li>
+  <li>
+    <p>
+      Length is only measured for the portion of the CWD that meets the size
+      threshold and is within the plot boundary.
+    </p>
+  </li>
+  <li>
+    <p>
+      A cased tape measure is recommended for recording CWD lengths, as they are
+      compact and easily retractable.
+    </p>
   </li>
 </ul>
-<li>
-  Measuring CWD that tapers to less than 10 cm
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-cwd-that-tapers-to-less-than-10cm.png"
-            alt="Measuring CWD that tapers to less than 10 cm"
-            width="550"
-            height="600"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</li>
-<li>
-  Measuring irregular coarse woody debris
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-irregular-coarse-woody-debris.png"
-            alt="Measuring irregular coarse woody debris"
-            width="400"
-            height="600"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</li>
-<li>
-  Measuring fallen trees
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-fallen-trees.png"
-            alt="Measuring fallen trees - Sourced from the (Department of Conservation 2019)"
-            width="300"
-            height="100"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</li>
-<li>
-  <p>Decay class examples</p>
-  <table class="tables">
-    <tbody>
-      <tr>
-        <td>
-          <p>Decay class</p>
-        </td>
-        <td>
-          <p>Examples</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 1: Recently fallen.</p>
-          <p>
-            Structurally intact or almost so; bark or small branches still
-            attached; few signs of wood decay; wood mostly retains original
-            colour.
-          </p>
-        </td>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class1-example.jpg"
-            alt="Decay Class example 1"
-            width="600"
-            height="300"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 2:</p>
-          <p>
-            Structurally less intact but still hard when kicked; small branches
+    """^^rdf:HTML ;
+    skos:prefLabel "Plots measures protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/coarse-woody-debris/plots-measures-protocol/plots-measures-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4>Appendix.1 Measuring CWD that tapers to less than 10 cm</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-cwd-that-tapers-to-less-than-10cm.png"
+    alt="Measuring CWD that tapers to less than 10 cm"
+    width="550"
+    height="600"
+  />
+</p>
+<h4>Appendix 2. Measuring irregular coarse woody debris</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-irregular-coarse-woody-debris.png"
+    alt="Measuring irregular coarse woody debris"
+    width="400"
+    height="600"
+  />
+</p>
+<p><em>Sourced from the (Department of Conservation 2019)</em></p>
+<h4>Appendix 3. Measuring fallen trees</h4>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-fallen-trees.png"
+    alt="Measuring fallen trees - Sourced from the (Department of Conservation 2019)"
+    width="300"
+    height="100"
+  />
+</p>
+<p><em>Sourced from the (Department of Conservation 2019)</em></p>
+<h4>Appendix 4. Decay class examples</h4>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Decay class</strong></th>
+      <th><strong>Examples</strong></th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Class 1:</strong></p>
+        <p>
+          <strong
+            >Recently fallen. Structurally intact or almost so; bark or small
+            branches still attached; few signs of wood decay; wood mostly
+            retains original colour.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class1-example.jpg"
+          alt="Decay Class example 1"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Class 2:</strong></p>
+        <p>
+          <strong
+            >Structurally less intact but still hard when kicked; small branches
             absent; little or no bark present; early signs of wood decay, bark
-            loss or discoloration.
-          </p>
-        </td>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class2-example.png"
-            alt="Decay Class example 2"
-            width="600"
-            height="300"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 3:</p>
-          <p>
-            Clearly decaying but still supports own weight; may be slightly soft
-            when kicked; may be hollow in places; no bark; moss and fungi may be
-            prominent.
-          </p>
-        </td>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class3-example.png"
-            alt="Decay Class example 3"
-            width="600"
-            height="300"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 4:</p>
-          <p>
-            Cannot support its own weight; soft to kick (but may still be hard
+            loss or discolouration.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class2-example.png"
+          alt="Decay Class example 2"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Class 3:</strong></p>
+        <p>
+          <strong
+            >Clearly decaying but still supports own weight; may be slightly
+            soft when kicked; may be hollow in places; no bark; moss and fungi
+            may be prominent.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class3-example.png"
+          alt="Decay Class example 3"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Class 4:</strong></p>
+        <p>
+          <strong
+            >Cannot support its own weight; soft to kick (but may still be hard
             in places; in which case may be extensively hollow); moss, fungi and
-            invading roots likely.
-          </p>
-        </td>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class4-example.png"
-            alt="Decay Class example 4"
-            width="600"
-            height="300"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Class 5:</p>
-          <p>
-            No longer retains original shape; wood very soft or largely
+            invading roots likely.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class4-example.png"
+          alt="Decay Class example 4"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Class 5:</strong></p>
+        <p>
+          <strong
+            >No longer retains original shape; wood very soft or largely
             disintegrated; sometimes only outline visible beneath moss, invading
-            roots.
-          </p>
-        </td>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class5-example.png"
-            alt="Decay Class example 5"
-            width="600"
-            height="300"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</li>"""^^rdf:HTML ;
+            roots.</strong
+          >
+        </p>
+      </th>
+      <th>
+        <img
+          src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/decay-class5-example.png"
+          alt="Decay Class example 5"
+          width="600"
+          height="300"
+        />
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+    <h3 id="equipment">Equipment</h3>
+<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Trimble R1</p>
+  </li>
+  <li>
+    <p>
+      4 x 100 m tape measure (to mark plot boundary, additional tapes can be
+      used to divide the plot into smaller units to assist with the systematic
+      survey).
+    </p>
+  </li>
+  <li>
+    <p>
+      Diameter tape and/or calipers (or tape measure or ruler, for measure CWD
+      diameter)
+    </p>
+  </li>
+  <li>
+    <p>
+      Tape measure (minimum 5 m in length, or cased tape measure, for measuring
+      CWD length)
+    </p>
+  </li>
+  <li>
+    <p>
+      Paint / marker / flagging tape (temporary, to mark any pieces of CWD
+      measured)
+    </p>
+  </li>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """<h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the <em>Plot selection and layout</em> module has been completed to
+      mark out the plot boundary and grid with very high accuracy using the
+      Trimble R1
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the <em>Plots</em> options from the Coarse Woody Debris main
+      screen.
+    </p>
+  </li>
+  <li>
+    <p>
+      Depending on the abundance and distribution of CWD select the 50 x 50 m or
+      100 x 100 m plot size option. The 50 x 50 m option is the default
+      selection. For more information about the 2 variations, click on the info
+      buttons within the app and/or refer to the supporting information.
+    </p>
+  </li>
+</ol>
+<p id='figure-6'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/cwd-app-screen1-survey-design-transects.jpg"
+    alt="CWD app screen 1 - survey design transects"
+    width="600"
+    height="350"
+  />
+</p>
+<p>Figure 6. CWD app screen – survey design plots</p>
+<ol start="4" type="1">
+  <li>
+    <p>
+      Lay out tapes or add survey markers to define the plot boundary (See
+      <a href='#figure-6'>Figure 6</a>)
+    </p>
+
+    <ol type="a">
+      <li>
+        <p>
+          If a 50 x 50 m plot is used, the plot should share the same centre
+          point with the 1 ha plot. One 100 m tape can be used to define two of
+          the boundaries. The point intercept transects can be left in place to
+          help divide the plot up and assist with the systematic survey.
+        </p>
+      </li>
+      <li>
+        <p>
+          If the 100 x 100 m plot is used, 4 x 100 m tape measures, or survey
+          flags can be used to define the plot boundary. Alternatively, if done
+          following the <em>Cover</em> module, the point intercept grid can be
+          used to delineate the plot boundary and divide the plot up to assist
+          with the systematic survey.
+        </p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>
+      Systematically search the plot for any CWD that occurs within the plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure any CWD within the plot if it is ≥10 cm diameter (or ≥5 cm for
+      eligible systems) at any point along its length.
+    </p>
+  </li>
+</ol>
+<p>For each eligible piece of CWD (see <a href='#figure-7'>Figure 7</a>):</p>
+<ol start="7" type="1">
+  <li>
+    <p>
+      Record the location of the CWD by standing at the centre point of the
+      piece and selecting <em>Record Location</em> (ensure the R1 is connected
+      with high accuracy).
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure and record the diameter at the widest point of the CWD within the
+      plot in cm. This can be done using a diameter tape or calipers.
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure and record the diameter at the narrowest point within the plot,
+      down to a minimum diameter of 10 cm (or 5 cm where appropriate).
+    </p>
+  </li>
+  <li>
+    <p>
+      Measure and record the length (in metres) of the CWD for the portion of it
+      that is greater than 10 cm (or 5 cm) in diameter and within the plot. See
+      the supporting information for more detailed information about measuring
+      CWD diameter and length.
+    </p>
+  </li>
+</ol>
+<p id='figure-7'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/cwd-plot.png"
+    alt="CWD app screen plots – size and decay class"
+    width="477"
+    height="516"
+  />
+</p>
+<p>Figure 7. CWD app screen plots – size and decay class</p>
+<p>
+  Where a piece of CWD is irregular in shape, it may be divided into multiple
+  smaller roughly linear and cylindrical sections for ease of measurement – see
+  <a href='#figure-1'>Figure 1</a> and the supporting information for more details. Each section will be
+  recorded as a separate piece of CWD.
+</p>
+<p id='figure-1'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/measuring-irregular-cwd-introduction.png"
+    alt="Measuring irregular coarse woody debris"
+    width="1307"
+    height="467"
+  />
+</p>
+<p>Figure 1. Measuring irregular coase woody debris (CWD)</p>
+<ol start="11" type="1">
+  <li>
+    <p>
+      Record a decay class from <a href='#table-3'>Table 3</a> (refer to the supporting information for
+      examples of each class).
+    </p>
+  </li>
+  <li>
+    <p>
+      Repeat steps 6-11 for each piece of CWD with a diameter greater than 10 cm
+      (or 5 cm) within the plot.
+    </p>
+  </li>
+</ol>
+<p id='table-3'>
+  Table 3. Coarse woody debris decay classes - adapted from (Baker and Chao
+  2011; Meggs 1996).
+</p>
+<table>
+  <colgroup>
+    <col style="width: 12%" />
+    <col style="width: 87%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Decay class</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Class 1</strong></th>
+      <th>
+        Recently fallen. Structurally intact or almost so; bark or small
+        branches still attached; few signs of wood decay; wood mostly retains
+        original colour.
+      </th>
+    </tr>
+    <tr class="header">
+      <th><strong>Class 2</strong></th>
+      <th>
+        Structurally less intact but still hard when kicked; small branches
+        absent; little or no bark present; early signs of wood decay, bark loss
+        or discoloration.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Class 3</strong></th>
+      <th>
+        Clearly decaying but still supports its own weight; may be slightly soft
+        when kicked; may be hollow in places; no bark; moss and fungi may be
+        prominent.
+      </th>
+    </tr>
+    <tr class="header">
+      <th><strong>Class 4</strong></th>
+      <th>
+        Cannot support its own weight; soft to kick (but may still be hard in
+        places; in which case may be extensively hollow); moss, fungi and
+        invading roots likely.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Class 5</strong></th>
+      <th>
+        No longer retains original shape; wood very soft or largely
+        disintegrated; sometimes only outline visible beneath moss, invading
+        roots.
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>"""^^rdf:HTML ;
 .
 

@@ -7,8 +7,12 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/e9a8e65a-59d3-49f0-831d-094c568c5284>
-    a skos:Concept ;
-    dcterms:description """<p>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h3 id="protocol-overview">Protocol overview</h3>
+<p>
   Leaf litter is collected from five locations within the fauna plot. At each
   location, a 1 m<sup>2</sup> quadrat is used to define the area from which the
   litter is collected. At sites where litter is scare, collection can occur over
@@ -18,11 +22,1263 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   ideally undertaken on the first day of a monitoring event, as it can take up
   to five days for the samples to dry, or on the last day, if the samples are to
   be processed in a laboratory.
-</p>"""^^rdf:HTML ;
+</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+<h3 id="additional-guidelines">Additional guidelines</h3>
+<ul>
+  <li>
+    <p>
+      Ensure there is no disturbance to the vegetation plot, and that any
+      disturbance to the fauna plot is minimised. This is especially important
+      if undertaking repeat sampling. It is acceptable to undertake this
+      protocol outside of the fauna plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      Avoid taking litter samples near the nests of social insects (ants,
+      termites), to avoid biased estimates of abundance/occurrence in samples.
+    </p>
+  </li>
+  <li>
+    <p>Repeat litter sampling should be offset by one metre.</p>
+  </li>
+  <li>
+    <p>
+      Follow safety procedures for use of chemicals in the field – refer to
+      Section 3, <em>General survey guidelines</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      To prevent contamination of samples for DNA analysis, a face mask and
+      latex gloves should be worn when collecting samples (and gloves changed
+      after handling each sample), and all equipment should be cleaned with
+      brushes and bleach, rinsed with distilled water and allowed to dry between
+      samples (Basset 2020).
+    </p>
+  </li>
+  <li>
+    <p>
+      Wearing gloves also reduces the risk of bites and stings, and masks should
+      be used to prevent inhalation of litter/soil samples. Be aware of the
+      potential for snakes and scorpions to be hiding in leaf-litter.
+    </p>
+  </li>
+  <li>
+    <p>
+      Invertebrates will remain alive in a sealed bag for several days if not
+      exposed to heat and if the material doesn’t dry out, which means
+      extraction can be undertaken away from the field site if more appropriate.
+    </p>
+  </li>
+  <li>
+    <p>
+      Some invertebrates are difficult to detect or distinguish with the naked
+      eye and sorting may need to be conducted using a stereo-microscope (EPA
+      2016).
+    </p>
+  </li>
+  <li>
+    <p>
+      Ensure the necessary permits (e.g. biosecurity, scientific) are obtained
+      before transporting litter/soil off-site. Any litter/soil samples removed
+      from the site must be sealed so that invertebrates are not inadvertently
+      introduced elsewhere.
+    </p>
+  </li>
+  <li>
+    <p>
+      Before disposing of soil samples (if off-site), it is recommended the
+      samples are microwaved to kill any living organisms.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ideally place the samples in the Berlese funnel immediately after sifting,
+      or if not, within 5 hours of collection. If they will not be extracted
+      immediately, ensure the samples are removed from intense heat; use coolers
+      so the invertebrates do not desiccate, which would bias the extraction
+      (Basset 2020).
+    </p>
+  </li>
+</ul>
+"""^^rdf:HTML ;
     skos:prefLabel "Leaf-litter extraction protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/leaf-litter-extraction-protocol/leaf-litter-extraction-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
+    tern:appendix """
+<h3 id="appendices">Appendices</h3>
+<h4>
+  Appendix A. Suitability of the sampling protocols for the commonly monitored
+  insect guilds.
+</h4>
+<table>
+  <colgroup>
+    <col style="width: 27%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+    <col style="width: 8%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/4a2c4309-da43-4ad4-b1eb-637d2e70580d">Malaise</a></th>
+      <th>Leaf-litter</th>
+      <th><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/7d74d213-3fb8-46b4-9970-2544f555e279">Light trap</a></th>
+      <th><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/666e5aa5-e545-4637-bc52-a296d647b303">Pan trap</a></th>
+      <th><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/e76e99ef-de1d-4387-9b2e-3455b9f9ff78">Active search</a></th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Adult semi-aquatic insects</strong></p>
+        <p>(Plecoptera, Ephemeroptera, and Trichoptera)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Singing insects</strong></p>
+        <p>(Orthoptera &amp; Hemiptera: Cicadoidea)</p>
+      </th>
+      <th>^</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>*</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Ground-dwelling beetles</strong> (Coleoptera: Carabidae and
+        Staphylinidae)
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th>**</th>
+      <th>^</th>
+      <th>*</th>
+      <th>^</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <strong>Non-lepidopteran pollinators</strong> (Hymenoptera, Diptera,
+        Coleoptera)
+      </th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Leaf-chewing larvae</strong> (Lepidoptera and Hymenoptera:
+        Symphyta)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th>***</th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Night-active moths</strong> (Lepidoptera)</th>
+      <th></th>
+      <th></th>
+      <th>^</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Dragonflies and damselflies</strong> (Odonata)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Ants</strong></p>
+        <p>(Hymenoptera: Formicidae)</p>
+      </th>
+      <th>***</th>
+      <th>**</th>
+      <th>*</th>
+      <th>***</th>
+      <th>^</th>
+      <th>*</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Butterflies</strong></p>
+        <p>(Lepidoptera: Papilionoidea)</p>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Flies</strong> (Diptera)</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>**</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+      <th>*</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Other</strong> (not covered in (Montgomery <em>et al.</em> 2021)
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th><strong>Grasshoppers</strong> (Orthoptera)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p><strong>Thrips</strong></p>
+        <p>(Thysanoptera)</p>
+      </th>
+      <th>*</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p><strong>Spiders and scorpions</strong></p>
+        <p>(Arachnida)</p>
+      </th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th>**</th>
+      <th>*</th>
+      <th>**</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <strong>Mesofauna</strong> (soil and litter invertebrates, e.g. mites
+        (Acari), springtails (Collembola), nematodes
+      </th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th>*</th>
+      <th>***</th>
+      <th></th>
+      <th>^</th>
+    </tr>
+    <tr class="header">
+      <th>Millipedes (Diplopoda)</th>
+      <th>**</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Earthworms (Annelida)</th>
+      <th></th>
+      <th>**</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Landsnails (Gatropoda)</th>
+      <th>*</th>
+      <th>**</th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+      <th>***</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  *** Optimal suitability; ** Possibly suitability; * Marginal suitability; ^
+  Bycatch only; Blank indicates general unsuitability.
+</p>
+<p>
+  Based on (Montgomery <em>et al.</em> 2021), updated to reflect the sampling
+  methods included in this Module. Note that Soil sampling eDNA, Leaf-litter
+  sampling and Sweep netting are not included in Montgomery
+  <em>et al.</em> (2021). Sweep net based on results of (Spafford and Lortie
+  2013)
+</p>
+<h4>Appendix B. Data fields by invertebrate sampling protocol.</h4>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Data fields</strong></th>
+      <th>Micro-pit</th>
+      <th>Soil eDNA</th>
+      <th><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/4a2c4309-da43-4ad4-b1eb-637d2e70580d">Malaise</a></th>
+      <th>Leaf-litter</th>
+      <th><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/7d74d213-3fb8-46b4-9970-2544f555e279">Light trap</a></th>
+      <th><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/666e5aa5-e545-4637-bc52-a296d647b303">Pan trap</a></th>
+      <th><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/e76e99ef-de1d-4387-9b2e-3455b9f9ff78">Active search</a></th>
+      <th>Foliage beat</th>
+      <th>Sweep net</th>
+    </tr>
+    <tr class="odd">
+      <th>Sampling protocol</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Full or Lite</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trap set-up</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Fauna Plot ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Observer/s</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Photo/s</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Equipment</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Habitat</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sample container</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Close up ID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Photo direction</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Photo description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Time</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap install date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Start survey</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap open date/time</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>End survey date/time</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Sample collection date/time</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>Trap removal</p>
+        <p>date/time</p>
+      </th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Weather</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Wind</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Rain</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Temperature</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Humidity</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Sun/cloud</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Trapping details</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Location</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/Location ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Trap/apparatus dimensions (multiple fields)</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Trap /apparatus colour</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap materials</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap damage</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Trap elevation ASL</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Trap/sampling elevation above ground</th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Collection apparatus</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Surrounding vegetation description</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Dominant plant cover</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Dominant plant sp.</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant height</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Plant phenology</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant hit height above ground</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Number of leaves</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Plant circumference</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Herbivory</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Average leaf length</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Soil sample</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil sample depth/diameter</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Soil type</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Soil surface temperature</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Leaf-litter sample</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Litter depth</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Litter volume</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Area litter sampled</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Voucher</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative concentration</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Post field</strong></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>New Barcode ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Species ID</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Count</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Voucher type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative type</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Preservative %age</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="odd">
+      <th>Preservative volume</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+    <tr class="header">
+      <th>Comments</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+      <th>X</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+"""^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
   <li>
     <p>Personnel - ideally two people, to collect samples and record data</p>
   </li>
@@ -45,13 +1301,37 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>1 m<sup>2</sup> quadrat</p>
   </li>
   <li>
-    <p>Litter reducer or litter sifter</p>
+    <p>
+      <a
+        href="https://bioquipinc.com/catalog/collecting-equipment-supplies/litter-reducer/"
+        ><u>Litter reducer</u></a
+      >
+      or
+      <a
+        href="https://bioquipinc.com/catalog/collecting-equipment-supplies/high-volume-litter-sifter/"
+        ><u>litter sifter</u></a
+      >
+    </p>
   </li>
   <li>
     <p>
-      5 x Berlese pop-up funnel (38 cm diameter) or Berlese tray-type funnel (44
-      cm diameter)
-      https://www.entosupplies.com.au/equipment/field/traps/berlese-funnel/
+      5
+      <a
+        href="https://www.entosupplies.com.au/equipment/field/traps/berlese-funnel/"
+        ><u>x Berlese pop-up funnel</u></a
+      >
+      (38 cm diameter) or
+      <a
+        href="https://www.entosupplies.com.au/equipment/field/traps/berlese-funnel/"
+        ><u>Berlese tray-type funnel</u></a
+      >
+      (44 cm diameter)
+      <a
+        href="https://www.entosupplies.com.au/equipment/field/traps/berlese-funnel/"
+        ><u
+          >https://www.entosupplies.com.au/equipment/field/traps/berlese-funnel/</u
+        ></a
+      >
     </p>
   </li>
   <li>
@@ -138,77 +1418,68 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>Kill jar with ethyl acetate.</p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<p>Pre-field</p>
-<ol>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<h4 id="pre-field-1">A. Pre-field</h4>
+<ol type="1">
   <li>
     <p>
       Pre-fill the sample container that attaches to the Berlese funnel with 95%
       ethanol or undiluted propylene glycol, about ¾ full. Write the Plot ID and
-      Date on the container with permanent marker.
+      Date on the container with a permanent marker.
     </p>
   </li>
+  <li><p>Ensure equipment has been disinfected and rinsed before use.</p></li>
 </ol>
-<ol start="2">
-  <li>
-    <p>Ensure equipment has been disinfected and rinsed before use.</p>
-  </li>
-</ol>
-<p>Field</p>
-<ol>
+<h4 id="b.-field-1">B. Field</h4>
+<ol type="1">
   <li>
     <p>
       Carry the Mobile device, Trimble® R1, and sampling equipment to the fauna
       plot, avoiding walking through the vegetation plot.
     </p>
   </li>
-</ol>
-<ol start="2">
   <li>
     <p>
-      Turn on the Trimble ® R1, open the Invertebrate fauna module from the main
-      page of the App and select the Leaf-litter extraction protocol.
+      Turn on the Trimble ® R1, open the <em>Invertebrate fauna</em> module from
+      the main page of the App and select the
+      <em>Leaf-litter extraction</em> protocol.
+    </p>
+  </li>
+  <li><p>Select Undertake survey.</p></li>
+  <li>
+    <p>
+      Select the <em>Fauna Plot ID</em> (nearest plot should appear at top of
+      the drop-down list).
     </p>
   </li>
   <li>
-    <p>Select Undertake survey.</p>
-  </li>
-  <li>
     <p>
-      Select the Fauna Plot ID (nearest plot should appear at top of the
-      drop-down list).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the Observers, being the persons undertaking the survey
+      Select the <em>Observer</em>s, being the persons undertaking the survey
       (auto-filled based on login details, drop-down options based on project
       personnel, manual entry override if the observer is not on the list).
     </p>
   </li>
   <li>
     <p>
-      Record the Weather (select a category for wind, rain, temperature,
-      sun/cloud, from the drop-down lists). Quantitative weather data can be
-      later uploaded if a weather station is in use.
+      Record the <em>Weather</em> (select a category for wind, rain,
+      temperature, sun/cloud, from the drop-down lists). Quantitative weather
+      data can be later uploaded if a weather station is in use.
     </p>
   </li>
+  <li><p>Record the sampling equipment details:</p></li>
   <li>
-    <p>Record the sampling equipment details:</p>
+    <p>Checkbox if using a sifter. If so, record <em>Sifter type</em></p>
   </li>
-  <li>
-    <p>Checkbox if using a sifter. If so, record Sifter type</p>
-  </li>
-  <li>
-    <p>Berlese funnel type</p>
-  </li>
-  <li>
-    <p>Berlese funnel capacity.</p>
-  </li>
+  <li><p>Berlese funnel type</p></li>
+  <li><p>Berlese funnel capacity.</p></li>
   <li>
     <p>
-      Select Add photo- sampling equipment and take a photo/s of the sampling
-      equipment: the quadrat, sifter and Berlese funnel (with scale).
+      Select <em>Add photo</em> <em>- sampling equipment</em> and take a photo/s
+      of the sampling equipment: the quadrat, sifter and Berlese funnel (with
+      scale).
     </p>
   </li>
   <li>
@@ -219,8 +1490,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ol>
-<p>For each location:</p>
-<ol start="13">
+<p><strong>For each location:</strong></p>
+<ol start="13" type="1">
   <li>
     <p>
       Find the nearest patch of leaf litter that is at least 1 m<sup>2</sup>,
@@ -230,52 +1501,47 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Stand as close as possible to the sampling location and select Add
-      leaf-litter sampling location. The Location, Date and Time of leaf-litter
-      collection will be auto-recorded (option to override). Press Save. A
-      unique sequential Litter sampling location ID will be automatically
+      Stand as close as possible to the sampling location and select
+      <em>Add leaf-litter sampling location</em>. The <em>Location</em>,
+      <em>Date</em> and <em>Time</em> of leaf-litter collection will be
+      auto-recorded (option to override). Press <em>Save</em>. A unique
+      sequential <em>Litter sampling location ID</em> will be automatically
       assigned with the Plot ID as a prefix (option to override).
     </p>
   </li>
   <li>
     <p>
-      Select Add photo and take a photo of the ground to be sampled, including
-      the surrounding habitat in view (e.g. stand approximately 2 m away).
-      Record a Photo description and the Direction of the photo from the
-      drop-down list (default is S).
+      Select <em>Add photo</em> and take a photo of the ground to be sampled,
+      including the surrounding habitat in view (e.g. stand approximately 2 m
+      away). Record a <em>Photo description</em> and the
+      <em>Direction of the photo</em> from the drop-down list (default is S).
     </p>
   </li>
-  <li>
-    <p>Record litter and soil information:</p>
-  </li>
+  <li><p>Record litter and soil information:</p></li>
 </ol>
 <ul>
   <li>
-    <p>Litter depth (cm) from the centre of the area to be sampled.</p>
-  </li>
-  <li>
-    <p>Area of soil sampled (m<sup>2</sup>) (default is 1m<sup>2</sup>)</p>
+    <p><em>Litter depth</em> (cm) from the centre of the area to be sampled.</p>
   </li>
   <li>
     <p>
-      Soil type (drop-down list, default is that recorded for the vegetation
-      plot)
+      <em>Area of soil sampled</em> (m<sup>2</sup>) (default is 1m<sup>2</sup>)
     </p>
   </li>
   <li>
-    <p>Soil surface temperature °C (optional)</p>
+    <p>
+      <em>Soil type</em> (drop-down list, default is that recorded for the
+      vegetation plot)
+    </p>
+  </li>
+  <li>
+    <p><em>Soil surface temperature °C</em> (optional)</p>
   </li>
 </ul>
-<ol start="17">
-  <li>
-    <p>Record a Surrounding habitat description.</p>
-  </li>
-  <li>
-    <p>Record Comments (optional, free text).</p>
-  </li>
-  <li>
-    <p>Select Start Litter extraction.</p>
-  </li>
+<ol start="17" type="1">
+  <li><p>Record a Surrounding habitat description.</p></li>
+  <li><p>Record Comments (optional, free text).</p></li>
+  <li><p>Select Start Litter extraction.</p></li>
   <li>
     <p>
       Place the 1 m<sup>2</sup> quadrat on the ground over the leaf litter to be
@@ -289,24 +1555,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       should be recollected and added to the bucket.
     </p>
   </li>
-  <li>
-    <p>Record the:</p>
-  </li>
+  <li><p>Record the:</p></li>
 </ol>
 <ul>
   <li>
     <p>
       <em
         >Estimated volume of leaf-litter (L) obtained from 1m<sup>2</sup>
-        quadrat
-      </em>
+        quadrat</em
+      >
     </p>
   </li>
   <li>
-    <p>Estimated volume of leaf-litter (L) used for extraction (L).</p>
+    <p><em>Estimated volume of leaf-litter (L) used for extraction (L)</em>.</p>
   </li>
 </ul>
-<ol start="22">
+<ol start="22" type="1">
   <li>
     <p>
       If not using a sifter, go to Step 24. Hold the sifter over the white
@@ -361,39 +1625,44 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       dry gradually – this process will take two to five days, depending on
       moisture content of the litter, the temperature and humidity. If there is
       access to electricity, a light can be used to help dry the sample. If
-      using a light, check the box External heat source and provide details in
-      the Comment field (e.g. wattage, distance from funnel). Suspend the light
-      about 2 cm above the Berlese funnel, ensuring it is not touching the
-      funnel. If electricity is not available, heat packs can be used to heat
-      the sample or the funnels can be placed in the sun (note however that
-      extreme radiant heat can desicate the catch before reaching the bottom of
-      the funnel), Check the sample container to ensure the preservative
-      solution does not dry out during extraction – refill as necessary.
+      using a light, check the box <em>External heat source</em> and provide
+      details in the <em>Comment</em> field (e.g. wattage, distance from
+      funnel). Suspend the light about 2 cm above the Berlese funnel, ensuring
+      it is not touching the funnel. If electricity is not available,
+      <a
+        href="https://bioquipinc.com/catalog/collecting-equipment-supplies/heat-pack/"
+        ><u>heat packs</u></a
+      >
+      can be used to heat the sample or the funnels can be placed in the sun
+      (note however that extreme radiant heat can dedicate the catch before
+      reaching the bottom of the funnel), Check the sample container to ensure
+      the preservative solution does not dry out during extraction – refill as
+      necessary.
     </p>
   </li>
   <li>
     <p>
       Once the leaf-litter is dry, remove the collection bottle from the Berlese
-      funnel. Select End Litter extraction. The Date and Time is auto-recorded,
-      so there is record of how long the sample was dried for.
+      funnel. Select <em>End Litter extraction</em>. The <em>Date</em> and
+      <em>Time</em> is auto-recorded, so there is a record of how long the
+      sample was dried for.
     </p>
   </li>
   <li>
     <p>
       Sieve the preserved sample using a nylon stocking or equivalent to remove
       litter debris from the sample and store in 95% ethanol or propylene
-      glycol. Screw the lid on tightily and keep the bottle upright. Ensure the
+      glycol. Screw the lid on tightly and keep the bottle upright. Ensure the
       bottle is labelled with the Plot ID, Sample location ID, Observer and
       Date.
     </p>
   </li>
-  <li>
-    <p>Repeat Steps 12 to 28 for each location.</p>
-  </li>
+  <li><p>Repeat Steps 12 to 28 for each location.</p></li>
   <li>
     <p>
       Return the sieved leaf-litter to the location from which it was removed.
-      If this is not possible, dispose of appropriately (see Guidelines).
+      If this is not possible, dispose of appropriately (see <a href="#additional-guidelines">additional
+      guidelines</a> below).
     </p>
   </li>
   <li>
@@ -402,23 +1671,23 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       available.
     </p>
   </li>
-  <li>
-    <p>Set up the samples, labels and barcodes.</p>
-  </li>
+  <li><p>Set up the samples, labels and barcodes.</p></li>
   <li>
     <p>
-      Open the App, select Leaf-litter extraction protocol and select Add sample
-      then Scan barcode. Take a small thermal printed barcode label and scan
-      using the app. Select the Plot ID and Litter sampling location ID for the
-      sample from the drop-down list. Select Save record. The barcode ID will
-      now be linked to the record of the surveyed litter location. The Time and
-      Date of sample collection will be auto-recorded (option to override).
+      Open the App, select <em>Leaf-litter extraction</em> protocol and select
+      <em>Add sample</em> then <em>Scan barcode</em>. Take a small thermal
+      printed barcode label and scan using the app. Select the
+      <em>Plot ID</em> and <em>Litter sampling location ID</em> for the sample
+      from the drop-down list. Select <em>Save record</em>. The barcode ID will
+      now be linked to the record of the surveyed litter location. The
+      <em>Time</em> and <em>Date</em> of sample collection will be auto-recorded
+      (option to override).
     </p>
   </li>
   <li>
     <p>
-      Select the Preservation type (drop-down, default is 95% ethanol or
-      undiluted propylene glycol).
+      Select the <em>Preservation type</em> (drop-down, default is 95% ethanol
+      or undiluted propylene glycol).
     </p>
   </li>
   <li>
@@ -431,10 +1700,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Unscrew the lid of the first sampling container. Place the barcode label
-      alongside the container (not in the container). Select Add photo and take
-      a photo looking down (into the sample container with the lid off), with
-      the barcode visible (place a blank piece of white paper underneath the
-      container for the best photo).
+      alongside the container (not in the container). Select
+      <em>Add photo</em> and take a photo looking down (into the sample
+      container with the lid off), with the barcode visible (place a blank piece
+      of white paper underneath the container for the best photo).
     </p>
   </li>
   <li>
@@ -454,7 +1723,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
   <li>
-    <p>Select Save record.</p>
+    <p>Select <em>Save</em> record.</p>
   </li>
   <li>
     <p>
@@ -465,106 +1734,111 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Store the collection vials in a cool location out of direct light (e.g. in
-      an cooler) until they can be processed for long-term storage. Do not leave
-      in hot vehicle or in sun as this degrades the sample for DNA analysis.
+      a cooler) until they can be processed for long-term storage. Do not leave
+      in a hot vehicle or in the sun as this degrades the sample for DNA
+      analysis.
     </p>
   </li>
 </ol>
-<p>App figure. Leaf-litter extraction App screen mock up.
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/leaf-litter-extraction-app-screen.png"
-            alt="Leaf litter extraction App screen mock up"
-            widteh="800"
-            height="940"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<p id='figure-6'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/leaf-litter-extraction-app-screen.png"
+    alt="Leaf litter extraction App screen mock up"
+    widteh="800"
+    height="940"
+  />
 </p>
-<p><strong>Additional guidelines</strong></p>
-<ul>
-  <li>
-    <p>
-      Ensure there is no disturbance to the vegetation plot, and that any
-      disturbance to the fauna plot is minimised. This is especially important
-      if undertaking repeat sampling. It is acceptable to undertake this
-      protocol outside of the fauna plot.
-    </p>
-  </li>
-  <li>
-    <p>
-      Avoid taking litter samples near the nests of social insects (ants,
-      termites), to avoid biased estimates of abundance/occurrence in samples.
-    </p>
-  </li>
-  <li>
-    <p>Repeat litter sampling should be offset by one metre.</p>
-  </li>
-  <li>
-    <p>
-      Follow safety procedures for use of chemicals in the field, General survey
-      guidelines.
-    </p>
-  </li>
-  <li>
-    <p>
-      To prevent contamination of samples for DNA analysis, a face mask and
-      latex gloves should be worn when collecting samples (and gloves changed
-      after handling each sample), and all equipment should be cleaned with
-      brushes and bleach, rinsed with distilled water and allowed to dry between
-      samples (Basset 2020).
-    </p>
-  </li>
-  <li>
-    <p>
-      Wearing gloves also reduces the risk of bites and stings, and masks should
-      be used to prevent inhalation of litter/soil samples. Be aware of the
-      potential for snakes and scorpions to be hiding in leaf-litter.
-    </p>
-  </li>
-  <li>
-    <p>
-      Invertebrates will remain alive in a sealed bag for several days if not
-      exposed to heat and if the material doesn’t dry out, which means
-      extraction can be undertaken away from the field site if more appropriate.
-    </p>
-  </li>
-  <li>
-    <p>
-      Some invertebrates are difficult to detect or distinguish with the naked
-      eye and sorting may need to be conducted using a stereo-microscope (EPA
-      2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      Ensure the necessary permits (e.g. biosecurity, scientific) are obtained
-      before transporting litter/soil off-site. Any litter/soil samples removed
-      from the site must be sealed so that invertebrates are not inadvertently
-      introduced elsewhere.
-    </p>
-  </li>
-  <li>
-    <p>
-      Before disposing of soil samples (if off-site), it is recommended the
-      samples are microwaved to kill any living organisms.
-    </p>
-  </li>
-  <li>
-    <p>
-      Ideally place the samples in the Berlese funnel immediately after sifting,
-      or if not, within 5 hours of collection. If they will not be extracted
-      immediately, ensure the samples are removed from intense heat; use coolers
-      so the invertebrates do not desiccate, which would bias the extraction
-      (Basset 2020).
-    </p>
-  </li>
-</ul>
+<p>Figure 6. Leaf-litter extraction App screen mock up.</p>
 """^^rdf:HTML ;
+    tern:purpose """
+    <h3 id="rationale">Rationale</h3>
+<p>
+  The leaf-litter layer contains a number of detrivore invertebrates (e.g.
+  millipedes, springtails, slaters) essential to ecosystem function, being those
+  that decompose dead organic matter or facilitate microbial decomposition
+  (Edgar 1992; Griffiths et al. 2021). In addition, the litter layer is a core
+  habitat for a number of SREs (e.g. millipedes, micro-snails) and bioindicator
+  species (e.g. ants) (Oraby 2013; EPA 2016).
+</p>
+<p>
+  Leaf-litter extraction provides data on species richness, composition,
+  relative abundance, and frequency of occurrence (Agosti et al. 2000).
+  Leaf-litter extraction enables the sampling of species with cryptic habits and
+  small foraging ranges which may not be detected or are under sampled using
+  other methods. For ants, Berlese funnels can contribute a relatively large
+  proportion of unique species compared with pitfall traps. Certain species tend
+  to be under sampled, such as epigeic ants because they escape the samples, and
+  some sensitive species which desiccate and die before leaving the litter in
+  the funnel (Agosti et al. 2000).
+</p>
+<p>
+  Berlese funnels are the most efficient way of obtaining results in litter
+  microhabitats, both in terms of invertebrate species diversity and numbers.
+  Litter sampling reveals different taxa than micro-pitfall trapping, and can
+  provide more accurate density estimates, unbiased by the differential tendency
+  of different taxa to be trapped. The species and individuals extracted
+  increases with the amount of time the samples are left to dry out and the
+  amount of litter collected. The time of the day that samples are collected can
+  impact on the species that are collected (Agosti et al. 2000).
+</p>
+<p>
+  The
+  <a
+    href="https://www.entosupplies.com.au/equipment/field/traps/berlese-funnel/"
+    >compact pop-up or tray style Berlese funnels</a
+  >
+  were chosen in preference to the Berlese-Tullgren style funnels because of
+  their simple, inexpensive and portable design (Southwood and Henderson 2000;
+  Callan et al. 2011) and because they don’t require an external heat source
+  (Australian Entomological Supplies 2021).Using a litter reducer or litter sifter saves time by quickly reducing the amount of litter into smaller volumes,
+  before being placed into the Berlese funnels.
+</p>
+    """^^rdf:HTML ;
+    tern:scope """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#rationale">Rationale</a></li>
+  <li><a href="#protocol-overview">Protocol Overview</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+    <h3 id="introduction">Introduction</h3>
+<p>
+  The <em>Leaf-litter extraction</em> protocol involves collecting leaf-litter
+  samples from the substrate surface to the soil interface and extracting the
+  invertebrates using a sieving process and a Berlese funnel. As the litter
+  samples dry out over a number of days, the invertebrates move down through the
+  litter sample and fall into a sampling container filled with preservative
+  solution (Agosti <em>et al.</em> 2000; Bamford <em>et al.</em> 2013). This
+  method is suitable for sampling a range of invertebrate taxa, including ants,
+  beetles, spiders, pseudoscorpions, micro-snails, flies, mites and photophobic
+  insects such as springtails, mesofauna and insect larvae (Agosti
+  <em>et al.</em> 2000; EPA 2016; Australian Entomological Supplies
+  2021)(Southwood and Henderson 2000).
+</p>
+<p>
+  The protocol is an adaptation of the ALL (Ants of the Leaf Litter) Protocol
+  (Agosti and Alonso 2000). It is complementary to the
+  <em>Micro-pitfall trapping</em> protocol, and can be co-timed with the
+  <em>Foliage beating</em> and <em>Sweep netting</em> protocols, which are
+  undertaken at the same locations. It is a key method for sampling recognised
+  bio-indicator species, such as ants.
+</p>
+<p>
+  The protocol is most suitable in forest and woodland habitats (Agosti
+  <em>et al.</em> 2000), as these systems are generally associated with a
+  well-developed leaf-litter layer. Sampling can be undertaken at any time of
+  the year but the best results are achieved when the leaf litter is moist. If
+  the litter is too dry, invertebrates can move deeper into the soil or up into
+  the vegetation (Agosti <em>et al.</em> 2000). This protocol is not suitable
+  during or within half a day of rain falling as it is difficult to extract the
+  invertebrates from wet samples (Basset 2020).
+</p>
+    """^^rdf:HTML ;
 .
 
