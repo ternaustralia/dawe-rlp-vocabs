@@ -7,18 +7,104 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/d9e6739a-c2dd-4619-be43-1251449a6436>
-    a skos:Concept ;
-    dcterms:description """<p>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#protocol-overview">Protocol Overview</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+</ol>
+<h3 id="protocol-overview">Protocol overview</h3>
+    <p>
   Collection of soil core samples at 0–10, 10–20, and 20–30 cm increments from
-  the edge of the soil pit (Figure 1), sealing the core samples or storing them
+  the edge of the soil pit (<a href='#figure-1'>Figure 1</a>), sealing the core samples or storing them
   in zip lock bags, and post-field survey processing of soil core samples. Soil
   bulk density measures are collected so important soil parameters can be
   quantified, particularly carbon content.
-</p>"""^^rdf:HTML ;
+</p>
+<p id='figure-1'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/soil/plot-layout.png"
+    alt="Plot layout"
+    widteh="500"
+    height="600"
+  />
+</p>
+<p>
+  Figure 1. Plot layout showing indicative locations of the soil
+  characterisation pit and nine soil characterisation sub-sites across the plot.
+</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<ul>
+  <li>
+    <p>
+      The accuracy of the bulk density method relies on the precise collection
+      of undisturbed soil in the bulk density ring. Ensure care is taken when
+      collecting the bulk density samples, so that the total volume of the ring
+      comprises of the soil sample, without hollows or voids.
+    </p>
+  </li>
+  <li>
+    <p>
+      Accuracy is also influenced by the proportion of coarse fragments in the
+      soil and where significant compaction occurs as a result of inserting the
+      corer. Coarse fragments (i.e. soil particles greater than 2 mm in
+      diameter), need to be considered in determining soil bulk density.
+    </p>
+  </li>
+  <li>
+    <p>
+      If coarse fragments contained within any sample are estimated to
+      constitute greater than 30% of the volume of that sample, then accuracy
+      levels are compromised and the sample should be discarded. Try again in an
+      adjacent area (i.e. another face of the soil point). However, if coarse
+      fragment levels are still &gt;30% of the volume of the sample after three
+      attempts, try somewhere else within the plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      If the collecting agency does not have access to required laboratory
+      facilities, the bulk density samples collected as part of the survey
+      process need to be suitably packaged and then forwarded to a certified
+      laboratory for analysis.
+    </p>
+  </li>
+  <li>
+    <p>
+      For sub-surface soil samples (i.e. depths of 10–20 or 20–30 cm), dig a pit
+      to the required depth (i.e. 10 cm or 20 cm, respectively) and of
+      sufficient size to accommodate the soil core frame, and sample as for
+      steps 7–17 above. Ensure that no soil falls into the pit from the upper
+      layer/s. When removing the ring (step 10 above) ensure that no soil
+      material from the upper layer/s falls into the ring.
+    </p>
+  </li>
+  <li>
+    <p>
+      If the soils are very dry or have limited clay contents the process may be
+      enhanced by slight wetting of the soils and leaving them for a period.
+      This increases the adhesion of the sample to ensure it remains in the
+      ring. However, over-wetting can alter soil properties, and should
+      therefore only be used as a last resort.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
     skos:prefLabel "Soil bulk density protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-bulk-density-protocol/soil-bulk-density-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
   <li>
     <p>
       Mobile device (tablet/phone capable of taking high resolution photos) with
@@ -36,7 +122,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>Small scissors</p>
   </li>
   <li>
-    <p>Spray bottle with deionized/distilled water</p>
+    <p>Spray bottle with deionised/distilled water</p>
   </li>
   <li>
     <p>Spatula or knife</p>
@@ -65,38 +151,42 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       connectivity).
     </p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
   <li>
     <p>
-      Ensure the Plot selection and layout module has been completed to mark out
-      the plot grid with sub- meter accuracy using the Trimble® R1.
+      Ensure the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot selection and layout</a></em> module has been completed to
+      mark out the plot grid with sub-metre accuracy using the Trimble® R1.
     </p>
   </li>
   <li>
     <p>
-      Ensure the <u>Soil pit characterization protoco</u>l has been undertaken
-      so that the soil bulk density samples can be collected along an edge of
-      the soil characterization pit.
+      Ensure the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db">Soil pit characterisation</a> protocol
+      has been undertaken so that the soil bulk density samples can be collected
+      along an edge of the soil characterisation pit.
     </p>
   </li>
   <li>
     <p>
-      Select the ‘Soils’ module and then the ‘Soil bulk density ‘protocol in the
-      App. The App will automatically record the Plot name, based on the
-      established plot you are working in, the Protocol, and the Date.
+      Select the ‘Soils’ module and then the ‘Soil bulk density‘ protocol in the
+      App. The App will automatically record the <em>Plot name</em>, based on
+      the established plot you are working in, the <em>Protocol</em>, and the
+      <em>Date</em>.
     </p>
   </li>
   <li>
     <p>
-      Locate the soil characterization pit at the southwest corner of the plot.
+      Locate the soil characterisation pit at the southwest corner of the plot.
     </p>
   </li>
   <li>
     <p>
       Select ‘Record soil bulk density location’. The App will automatically
-      record the Easting, Northing, Zone, Datum and location acquisition Method
-      (i.e., ‘DGPS’).
+      record the <em>Easting</em>, <em>Northing</em>, <em>Zone</em>,
+      <em>Datum</em> and location acquisition <em>Method</em> (i.e. ‘DGPS’).
     </p>
   </li>
   <li>
@@ -114,7 +204,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Place the frame over the cleared area. Using the mallet gently tap the
-      frame into the soil until the top edge of the ring is a few millimeters
+      frame into the soil until the top edge of the ring is a few millimetres
       below the soil surface. Depending on the presence and size of any soil
       coarse fragments the ring may need to be inserted further. If the soil
       surface is uneven, an estimate of the mid-point should be used. In order
@@ -126,7 +216,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Remove the frame and using a trowel or spatula, dig out the soil adjacent
-      to one half of the ring. The spoil can end up in the soil characterization
+      to one half of the ring. The spoil can end up in the soil characterisation
       pit.
     </p>
   </li>
@@ -136,15 +226,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       <li>
         <p>
           Using a spatula or knife carefully trim the soil until it is level
-          with the top rim of the ring, cap the top of the cylinder in situ,
-          insert a trowel a few centimeters under the cylinder and with your
-          other hand on the top cap, remove the ring and excess soil ensuring
-          the soil in the cylinder is not disturbed; or
+          with the top rim of the ring, cap the top of the cylinder
+          <em>in situ</em>, insert a trowel a few centimetres under the cylinder
+          and with your other hand on the top cap, remove the ring and excess
+          soil ensuring the soil in the cylinder is not disturbed; or
         </p>
       </li>
       <li>
         <p>
-          Insert the trowel a few centimeters under the cylinder and with your
+          Insert the trowel a few centimetres under the cylinder and with your
           hand on the top of the ring for stability, remove the ring and excess
           soil ensuring the soil in the ring is not disturbed.
         </p>
@@ -155,9 +245,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>
       Using a spatula or knife, carefully trim the soil at the exposed end of
       the ring until it is level with the rim of the ring. Ensure there are no
-      hollows (i.e., the soil level does not go below the rim of the ring), or
+      hollows (i.e. the soil level does not go below the rim of the ring), or
       that the soil does not protrude beyond the rim of the ring. If the soil is
-      clay, slightly wet the soil using a spray bottle and deionized/distilled
+      clay, slightly wet the soil using a spray bottle and deionised/distilled
       water to assist to trim the soil flush with the ring ends. Care should be
       taken to not over-wet the soils as this may affect the volume through
       filling voids or expanding shrink/swell clays.
@@ -171,7 +261,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       repeat the process until a suitable sample is obtained. If an accurate
       volume cannot be obtained after three attempts along the other edges of
       the soil pit, then try another location within the plot that is
-      representive of the soil pit location.
+      representative of the soil pit location.
     </p>
   </li>
   <li><p>Without disturbing the soil, cap that end of the ring.</p></li>
@@ -181,9 +271,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       with the rim of the ring (as above).
     </p>
   </li>
-  <li>
-    <p>Cap that end of the ring.</p>
-  </li>
+  <li><p>Cap that end of the ring.</p></li>
   <li><p>Place tape around the caps ensuring the caps are held firm.</p></li>
   <li>
     <p>
@@ -216,211 +304,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Select ‘Complete Soil bulk density' to save the protocol and return to the
-      Soils module.
+      <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95">Soils</a></em> module.
     </p>
   </li>
 </ol>
-
-<strong><p>Additional guidelines</p></strong>
-<ul>
-  <li>
-    <p>
-      The accuracy of the bulk density method relies on the precise collection
-      of undisturbed soil in the bulk density ring. Ensure care is taken when
-      collecting the bulk density samples, so that the total volume of the ring
-      comprises of the soil sample, without hollows or voids.
-    </p>
-  </li>
-  <li>
-    <p>
-      Accuracy is also influenced by the proportion of coarse fragments in the
-      soil and where significant compaction occurs as a result of inserting the
-      corer. Coarse fragments (i.e., soil particles greater than 2 mm in
-      diameter), need to be considered in determining soil bulk density.
-    </p>
-  </li>
-  <li>
-    <p>
-      If coarse fragments contained within any sample are estimated to
-      constitute greater than 30% of the volume of that sample, then accuracy
-      levels are compromised, and the sample should be discarded. Try again in
-      an adjacent area (i.e., another face of the soil point). However, if
-      coarse fragment levels are still &gt;30% of the volume of the sample after
-      three attempts, try somewhere else within the plot.
-    </p>
-  </li>
-  <li>
-    <p>
-      If the collecting agency does not have access to required laboratory
-      facilities, the bulk density samples collected as part of the survey
-      process need to be suitably packaged and then forwarded to a certified
-      laboratory for analysis.
-    </p>
-  </li>
-  <li>
-    <p>
-      For sub-surface soil samples (i.e., depths of 10–20 or 20–30 cm), dig a
-      pit to the required depth (i.e., 10 cm or 20 cm, respectively) and of
-      sufficient size to accommodate the soil core frame, and sample as for
-      steps 7–17 above. Ensure that no soil falls into the pit from the upper
-      layer/s. When removing the ring (step 10 above) ensure that no soil
-      material from upper layer/s falls into the ring.
-    </p>
-  </li>
-  <li>
-    <p>
-      If the soils are very dry or have limited clay contents the process may be
-      enhanced by slight wetting of the soils and leaving them for a period.
-      This increases the adhesion of the sample to ensure it remains in the
-      ring. However, over-wetting can alter soil properties, and should
-      therefore only be used as a last resort.
-    </p>
-  </li>
-</ul>
-<p>
-  <strong>Post-field survey tasks</strong>
-</p>
-<p style="color: orange">Sample processing</p>
-<p>
-  To determine the bulk density of soils, the sample volume is determined by
-  simple measurement of the dimensions of a coring ring. If the sampling
-  procedure is followed rigorously, the volume of all samples will be identical
-  (as the volume of all rings is identical), so sample volume will only need to
-  be determined for an initial sample. The soil from each core sample is
-  removed, oven-dried and weighed (McKenzie et al. 2002). Where suitable
-  processing facilities are available, following the steps below to determine
-  bulk density. Otherwise, forward intact soil cores to a suitable laboratory to
-  be processed.
-</p>
-<ol>
-  <li>
-    <p>
-      Measure, with calipers, the internal dimensions (diameter = L1; length =
-      L2) of a coring ring in meters to determine the volume (V1). Each
-      dimension should be measured several times
-    </p>
-  </li>
-  <li>
-    <p>
-      Ensure the soil level of each intact core is trimmed level with the ends
-      of the coring ring. Trim using a sharp knife if necessary.
-    </p>
-  </li>
-  <li>
-    <p>
-      Weigh a dry, oven proof container (e.g., an aluminum dish) with a
-      laboratory balance with accuracy to ±0.01 g (10 mg; weight W1) for each
-      core.
-    </p>
-  </li>
-  <li>
-    <p>
-      Take each core and push all the soil out of the coring ring into an
-      oven-proof container. Carefully clean all soil out of each coring ring.
-      Weigh each container and soil (W2).
-    </p>
-  </li>
-  <li>
-    <p>
-      Dry the soil in the containers in a well-ventilated oven at 105°C until
-      the weight is constant (usually 24– 48 hours).
-    </p>
-  </li>
-  <li>
-    <p>
-      Cool in a desiccator before weighing each container and oven-dry soil
-      (W3).
-    </p>
-  </li>
-  <li>
-    <p>
-      Calculate the bulk density of each sample using the following equation:
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/soil/soil-bulk-density-formula1.png"
-                alt="Soil bulk density formula 1"
-                widteh="395"
-                height="63"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </p>
-  </li>
-</ol>
-<p style="color: orange">Samples containing coarse fragments</p>
-<p>
-  The presence of coarse fragments (i.e., particles &gt;2mm diameter) in soil
-  has a significant effect on bulk density. If the sample contains coarse
-  fragments, the mass and volume of coarse fragments, gross bulk density of the
-  soil with coarse fragments, and bulk density of the fine-earth fraction (i.e.,
-  bulk density of soil without the coarse fragment component) need to be
-  considered (McKenzie et al. 2002).
-</p>
-<ol>
-  <li>
-    <p>
-      After drying and cooling (see above), separate the coarse fragment
-      component of each sample by sieving the through a 2 mm sieve.
-    </p>
-  </li>
-  <li>
-    <p>
-      Weigh the fine earth and container (W4) and coarse fragments and container
-      (W5) of each sample separately.
-    </p>
-  </li>
-  <li>
-    <p>
-      Determine the volume of the coarse fragments (V2) of each sample by
-      displacement of water.
-    </p>
-  </li>
-  <li>
-    <p>
-      Calculate the of the gross bulk density of each sample using the following
-      equation:
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/soil/soil-bulk-density-formula2.png"
-                alt="Soil bulk density formula 2"
-                widteh="395"
-                height="63"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </p>
-  </li>
-  <li>
-    <p>
-      Calculate the of the fine earth bulk density of each sample using the
-      following equation:
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/soil/soil-bulk-density-formula3.png"
-                alt="Soil bulk density formula 3"
-                widteh="395"
-                height="63"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </p>
-  </li>
-</ol>
-<p>Refer to McKenzie et al. (2002) for further details.</p>"""^^rdf:HTML ;
+    """^^rdf:HTML ;
 .
 
