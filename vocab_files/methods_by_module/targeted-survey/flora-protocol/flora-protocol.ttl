@@ -6,144 +6,17 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/e103ae22-2d8f-4806-9b4f-926e6e851301>
-    a skos:Collection ;
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/015efdae-93af-48c5-9564-0cde72593d59> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/9f951d93-7b0a-4f63-9f8c-d63b89718faf> ;
-    skos:prefLabel "Flora protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/targeted-survey/flora-protocol/flora-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    <p>
-      Mobile device (tablet/phone capable of taking high resolution photos) with
-      the App (progressive web app) saved to the home screen
-    </p>
-  </li>
-  <li>
-    <p>Trimble® R1</p>
-  </li>
-  <li>
-    <p>Relevant survey guidelines saved or accessible from mobile device</p>
-  </li>
-  <li>
-    <p>Field guides and identification keys</p>
-  </li>
-  <li>
-    <p>Hand lens</p>
-  </li>
-  <li>
-    <p>Binoculars</p>
-  </li>
-  <li>
-    <p>Photo scale card</p>
-  </li>
-</ul>
-<p>Vouchering (vascular flora)</p>
-<ul>
-  <li>
-    <p>Newspaper (tabloid size) and cardboard (43.5 x 28.5 cm)</p>
-  </li>
-  <li>
-    <p>Large plastic bags (for collection)</p>
-  </li>
-  <li>
-    <p>Plant press and straps (for storage)</p>
-  </li>
-</ul>
-<p>Vouchering (non-vascular flora)</p>
-<ul>
-  <li>
-    <p>Chisel and hammer (for collection)</p>
-  </li>
-  <li>
-    <p>
-      Screw cap plastic bottles, paper bags, newspaper, cardboard boxes,
-      ethanol/formalin preservative solution (for storing specimens).
-    </p>
-  </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
-  <li>
-    <p>
-      Ensure the Trimble® R1 is on, connected to the App and has a high
-      accuracy.
-    </p>
-  </li>
-  <li>
-    <p>
-      To undertake a targeted flora survey, select Species name using the ‘look
-      up’. As you type, options will be provided by class, order, family, genus,
-      species. Multiple flora species can be targeted duing the same survey, as
-      long as they occupy a similar habitat type. A maximum of 5 species can be
-      selected.
-    </p>
-  </li>
-</ol>
-<ol start="3">
-  <li>
-    <p>
-      Capture any notes about the survey in the Comments field. Notes can
-      include any supplementary information or updates about the field survey
-      and how it was completed.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select Start Survey to record the starting position for the survey
-      (coordinates automatically recorded) and the start time.
-    </p>
-  </li>
-  <li>
-    <p>
-      Once the survey has started, the app will record a track log. Tracks will
-      be visible in the built in map screen and can be used to assist with
-      navigating the survey area and ensuring good coverage of the study area.
-    </p>
-  </li>
-  <li>
-    <p>
-      Walk along the field traverse (or random meander or quadrat) making a
-      visual sweep either side and along the traverse (see Appendix 7). The area
-      surveyed will be recorded as part of the track log.
-    </p>
-  </li>
-  <li>
-    <p>
-      If a target species is detected along a traverse, record the GPS
-      coordinates. A search is required to count or estimate the number of
-      individuals and/or determine the area of occupancy.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the Add Observation button or Add population button depending on
-      the number and distribuiton of individuals identified (skip to step 20 for
-      details about adding populations). If potential habitat for the species is
-      identified, but no individuals are observed, select Add potential habitat
-      to record habitat extent (skip to step 33).
-    </p>
-    <p>Targeted flora – app screen 1
-        <table>
-            <tbody>
-              <tr>
-                <td>
-                  <img
-                    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-flora-app-screen-1.png"
-                    alt="Targeted flora - app screen 1"
-                    widteh="429"
-                    height="912"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-    </p>
-  </li>
-</ol>
-
-<p><strong>Additional guidelines</strong></p>
-<p style="color: orange">Preparation</p>
+    skos:memberList (
+            <https://linked.data.gov.au/def/test/dawe-cv/015efdae-93af-48c5-9564-0cde72593d59>
+            <https://linked.data.gov.au/def/test/dawe-cv/9f951d93-7b0a-4f63-9f8c-d63b89718faf>
+        ) ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 id="preparation-1">A. Preparation</h4>
 <ul>
   <li>
     <p>Ensure that all necessary permits and approvals have been obtained.</p>
@@ -189,30 +62,32 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>Obtain advice from the relevant herbarium regarding:</p>
     <ul>
-        <li>
-          <p>
-            species of interest for vouchering (thus avoiding unnecessary collecting)
-          </p>
-        </li>
-        <li>
-          <p>number/type of specimens to be collected</p>
-        </li>
-        <li>
-          <p>specific labelling and preservation requirements</p>
-        </li>
-        <li>
-          <p>fee for service details.</p>
-        </li>
-      </ul>
+      <li>
+        <p>
+          species of interest for vouchering (thus avoiding unnecessary
+          collecting)
+        </p>
+      </li>
+      <li>
+        <p>number/type of specimens to be collected</p>
+      </li>
+      <li>
+        <p>specific labelling and preservation requirements</p>
+      </li>
+      <li>
+        <p>fee for service details.</p>
+      </li>
+    </ul>
   </li>
 </ul>
-<p style="color: orange">Field survey</p>
+
+<h4 id="field-survey-1">B. Field survey</h4>
 <ul>
   <li>
     <p>
       Observations can only be recorded against species defined in the target
       species list (5 species maximum). If other species are detected, these can
-      be recorded using the Opportune module.
+      be recorded using the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportunistic observation</a></em> module.
     </p>
   </li>
   <li>
@@ -230,7 +105,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       multi-species searches be restricted to a maximum of five species in the
       same stratum (Department of Planning 2020). If more than five species are
       being targeted, or target species have different life forms, undertake
-      multiple surveys. The Opportune module should be used to record
+      multiple surveys. The <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportunistic observation</a></em> module should be used to record
       observations of non-target species, even if they are observed during a
       targeted survey.
     </p>
@@ -249,7 +124,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Very dense vegetation can significantly increase the time require for
+      Very dense vegetation can significantly increase the time required for
       traverses or meanders.
     </p>
   </li>
@@ -259,15 +134,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       during drought, following periods of disturbance (unless the species
       requires disturbance) or other adverse environmental conditions that
       affect species detectability (Department of Planning 2020), unless the aim
-      of the project is the monitor these impacts.
+      of the project is to monitor these impacts.
     </p>
   </li>
   <li>
     <p>
       A threatened plant species must be identified to species level and
       submitted to a registered herbarium for inspection and formal
-      identification (Department of Planning 2020). However, see additional
-      guidelines below for collecting vouchers and where possible, collect photo
+      identification (Department of Planning 2020). However, see <a href="#additional-guidelines">Additional guidelines</a> below for collecting vouchers and where possible, collect photo
       evidence instead of physical vouchers, especially where physical
       collection may influence population viability (i.e. for very small
       populations, or small plants).
@@ -332,7 +206,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Active searching</p>
+<h4 id="c.-active-searching">C. Active searching</h4>
 <ul>
   <li>
     <p>
@@ -389,11 +263,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Voucher collection</p>
+<h4 id="d.-voucher-collection">D. Voucher collection</h4>
 <ul>
   <li>
     <p>
-      See the Floristics module for more information about collecting vouchers.
+      See the
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em
+      >
+      module for more information about collecting vouchers.
     </p>
   </li>
   <li>
@@ -436,37 +317,43 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       serve as the required voucher (listed in decreasing order of preference):
     </p>
     <ul>
-        <li>
-          <p>Portion of fertile plant without the root.</p>
-        </li>
-        <li>
-          <p>
-            Photos of plant in conjunction with piece of fertile plant or plant parts
-            (leaves and flowers or fruits).
-          </p>
-        </li>
-        <li>
-          <p>Photos of fertile plant in conjunction with sterile plant specimen.</p>
-        </li>
-        <li>
-          <p>
-            Sterile plant specimen only, or photos only (preferably with descriptive
-            notes).
-          </p>
-        </li>
-      </ul>
+      <li>
+        <p>Portion of fertile plant without the root.</p>
+      </li>
+      <li>
+        <p>
+          Photos of plant in conjunction with piece of fertile plant or plant
+          parts (leaves and flowers or fruits).
+        </p>
+      </li>
+      <li>
+        <p>
+          Photos of fertile plant in conjunction with sterile plant specimen.
+        </p>
+      </li>
+      <li>
+        <p>
+          Sterile plant specimen only, or photos only (preferably with
+          descriptive notes).
+        </p>
+      </li>
+    </ul>
   </li>
 </ul>
+
 <ul>
   <li>
     <p>
       Where possible, a voucher should include enough material to cover an A3
       size herbarium sheet. Specific procedures and guidelines to collect,
       prepare, label and store flora voucher specimens are provided in the
-      Floristics module and via the information buttons in the App. Also refer
-      to the advice provided by the relevant herbarium. Refer to the Plant
-      tissue vouchering module for procedures and guidelines to collect and
-      store leaf samples for DNA and isotope analysis.
+      <em><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+          >Floristics</a
+        ></em> module and via the information buttons in the App.
+      Also refer to the advice provided by the relevant herbarium. Refer to the
+      <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/1f2ac884-2177-403a-a6c3-27e109b1fc95">Plant tissue vouchering</a></em> module for procedures and guidelines to
+      collect and store leaf samples for DNA and isotope analysis.
     </p>
   </li>
   <li>
@@ -479,7 +366,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      After labelling, place larger flora specimens directly into a plastic bag,
+      After labeling, place larger flora specimens directly into a plastic bag,
       and smaller flora specimens into paper bags, then the plastic bag, ready
       for transferring to a plant press.
     </p>
@@ -492,6 +379,211 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       survey samples.
     </p>
   </li>
-</ul>"""^^rdf:HTML ;
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Flora protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/targeted-survey/flora-protocol/flora-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+    <h4 id='appendix-7'>Appendix 7. Targeted flora survey – additional guidelines</h4>
+<p>
+  Maximum distance between parallel field traverses per life form and vegetation
+  denstiy. Adapted from the NSW (Department of Planning 2020).
+</p>
+<table>
+  <colgroup>
+    <col style="width: 33%" />
+    <col style="width: 33%" />
+    <col style="width: 33%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th rowspan="2"><strong>Life form</strong></th>
+      <th colspan="2">
+        <strong>Maximum distance between parallel field traverse (m)</strong>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><strong>In open vegetation</strong></th>
+      <th><strong>In dense vegetation</strong></th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>Trees</p>
+        <p>Mallee tree</p>
+        <p>Tall shrubs (&gt;6 metres)</p>
+      </th>
+      <th>40</th>
+      <th>20</th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p>Medium shrubs (1-6 m)</p>
+        <p>Cycads and large ferns</p>
+      </th>
+      <th>20</th>
+      <th>10</th>
+    </tr>
+    <tr class="header">
+      <th>Sub-shrubs (including chenopods) (&lt;1 m)</th>
+      <th>15</th>
+      <th>10</th>
+    </tr>
+    <tr class="odd">
+      <th>Herbs and forbs</th>
+      <th>10</th>
+      <th>5</th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>Ferns (&lt;1 m)</p>
+        <p>Grasses/sedges/rushes and other graminoids</p>
+        <p>Orchids</p>
+        <p>Epiphytes and climbers</p>
+      </th>
+      <th>10</th>
+      <th>5</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+    <h3 id="equipment">Equipment</h3>
+<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Trimble® R1</p>
+  </li>
+  <li>
+    <p>Relevant survey guidelines saved or accessible from mobile device</p>
+  </li>
+  <li>
+    <p>Field guides and identification keys</p>
+  </li>
+  <li>
+    <p>Hand lens</p>
+  </li>
+  <li>
+    <p>Binoculars</p>
+  </li>
+  <li>
+    <p>Photo scale card</p>
+  </li>
+</ul>
+<p>Vouchering (vascular flora)</p>
+<ul>
+  <li>
+    <p>Newspaper (tabloid size) and cardboard (43.5 x 28.5 cm)</p>
+  </li>
+  <li>
+    <p>Large plastic bags (for collection)</p>
+  </li>
+  <li>
+    <p>Plant press and straps (for storage)</p>
+  </li>
+</ul>
+<p>Vouchering (non-vascular flora)</p>
+<ul>
+  <li>
+    <p>Chisel and hammer (for collection)</p>
+  </li>
+  <li>
+    <p>
+      Screw cap plastic bottles, paper bags, newspaper, cardboard boxes,
+      ethanol/formalin preservative solution (for storing specimens).
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the Trimble® R1 is on, connected to the App and has a high
+      accuracy.
+    </p>
+  </li>
+  <li>
+    <p>
+      To undertake a targeted flora survey, select <em>Species name</em> using
+      the ‘lookup’. As you type, options will be provided by class, order,
+      family, genus, species. Multiple flora species can be targeted during the
+      same survey, as long as they occupy a similar habitat type. A maximum of 5
+      species can be selected.
+    </p>
+  </li>
+</ol>
+<ol start="3" type="1">
+  <li>
+    <p>
+      Capture any notes about the survey in the <em>Comments</em> field. Notes
+      can include any supplementary information or updates about the field
+      survey and how it was completed.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select <em>Start Survey</em> to record the starting position for the
+      survey (coordinates automatically recorded) and the start time.
+    </p>
+  </li>
+  <li>
+    <p>
+      Once the survey has started, the app will record a track log. Tracks will
+      be visible in the built in map screen and can be used to assist with
+      navigating the survey area and ensuring good coverage of the study area.
+    </p>
+  </li>
+  <li>
+    <p>
+      Walk along the field traverse (or random meander or quadrat) making a
+      visual sweep either side and along the traverse (see <a href='#appendix-7'>Appendix 7</a>). The area
+      surveyed will be recorded as part of the track log.
+    </p>
+  </li>
+  <li>
+    <p>
+      If a target species is detected along a traverse, record the GPS
+      coordinates. A search is required to count or estimate the number of
+      individuals and/or determine the area of occupancy.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the <em>Add Observation</em> button or
+      <em>Add population</em> button depending on the number and distribution of
+      individuals identified (skip to step 20 in sub protocol population for
+      details about adding populations). If potential habitat for the species is
+      identified, but no individuals are observed, select
+      <em>Add potential habitat</em> to record habitat extent (skip to step 33).
+    </p>
+  </li>
+</ol>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/targeted-survey/targeted-flora-app-screen-1.png"
+    alt="Targeted flora - app screen 1"
+    widteh="429"
+    height="912"
+  />
+</p>
+<p>Figure 11. Targeted flora – app screen 1</p>
+    """^^rdf:HTML ;
 .
 
