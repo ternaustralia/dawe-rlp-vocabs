@@ -1,0 +1,40 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/1e5bc3df-4765-4478-a9d3-23679c2d7241>
+    a skos:Collection ;
+    dcterms:description "A collection of intervention initial or followups and its codes." ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-intervention-initial-or-followups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/test/dawe-cv/6216939c-b3b4-5041-9cf0-48f3ac4249d7> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7d026ad5-126f-550c-8696-3b63024ef0d3> ;
+    skos:prefLabel "Intervention initial or followups codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-initial-or-followups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/6216939c-b3b4-5041-9cf0-48f3ac4249d7>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-intervention-initial-or-followups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Follow-up" ;
+    skos:prefLabel "Follow-up" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-initial-or-followups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/test/dawe-cv/7d026ad5-126f-550c-8696-3b63024ef0d3>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <http://vocabs.paratoo.tern.org.au:1337/api/lut-intervention-initial-or-followups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Initial" ;
+    skos:prefLabel "Initial" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-initial-or-followups.ttl"^^xsd:anyURI ;
+.
+
