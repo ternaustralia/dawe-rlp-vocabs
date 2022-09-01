@@ -1275,9 +1275,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-flora-growth-stages",
-        label="Targeted survey flora growth stages codes",
-        description="A collection of targeted survey flora growth stages "
-        "and its codes.",
+        label="Growth stages codes",
+        description="A collection of growth stages and its codes.",
         collection_uuid="096e018a-fb8f-4ba1-9fdc-302164e57682",
         uuid_namespace="targeted survey flora growth stages",
     ),
