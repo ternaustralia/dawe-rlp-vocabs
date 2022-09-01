@@ -3,620 +3,1443 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51>
-    a skos:Collection ;
-    dcterms:description """<p>This module covers the procedures and guidelines to establish a fauna plot and record site information and photopoint monitoring and conduct six data collection survey protocols.</p>
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
+    dcterms:description """
+    <h3 id="module-overview">Module overview</h3>
+<p>
+  This module covers the procedures and guidelines to establish a fauna plot and
+  record site information and photopoint monitoring, and conduct six data
+  collection survey protocols.
+</p>
 <p>The protocols are:</p>
 <ul>
-<li>
-<p>Fauna plot set-up (plot layout, weather station instalment, and photopoints) (mandatory first step of all surveys)</p>
-</li>
-<li>
-<p>Trapping protocols (optional)</p>
-</li>
-<li>
-<p>Identify, measure and release protocols (optional, mandatory if trapping protocols are conducted)</p>
-</li>
-<li>
-<p>Whole animal and tissue vouchering protocols (optional, whole animal and liver vouchering are mandatory if trapping protocols are conducted, toe/ear clip vouchering is optional and if permitting allows)</p>
-</li>
-<li>
-<p>Active diurnal and passive nocturnal observations protocols (optional)</p>
-</li>
-<li>
-<p>Bird survey protocols (optional)</p>
-</li>
-<li>
-<p>Acoustic and ultrasonic protocols (optional).</p>
-</li>
+  <li>
+    <p>
+      <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/a5eb37f3-a123-4350-9eb3-214396a04b93">Fauna plot set-up</a> (plot layout, weather station instalment, and
+      photopoints) (mandatory first step of all surveys)
+    </p>
+  </li>
+  <li>
+    <p><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2a2528a6-955c-4c8f-b842-ffb64e0b27cf">Trapping protocols</a> (optional)</p>
+  </li>
+  <li>
+    <p>
+      <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/7942c1d3-8cfc-4d74-931d-850cacfa5a63">Identify, measure and release protocols</a> (optional, mandatory if trapping
+      protocols are conducted)
+    </p>
+  </li>
+  <li>
+    <p>
+      <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/a15130ca-82ce-4c50-9392-66f9b0c73450">Whole animal and tissue vouchering protocols</a> (optional, whole animal and
+      liver vouchering are mandatory if trapping protocols are conducted,
+      toe/ear clip vouchering is optional and if permitting allows)
+    </p>
+  </li>
+  <li>
+    <p>
+      <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/37ed2dbb-b990-430c-9010-d0452588cf24">Active diurnal and passive nocturnal observations protocols</a> (optional)
+    </p>
+  </li>
+  <li>
+    <p><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/98db8232-2c51-4907-99a7-0ccb8b825382">Bird survey protocols</a> (optional)</p>
+  </li>
+  <li>
+    <p>Acoustic and ultrasonic protocols (optional).</p>
+  </li>
 </ul>
-<p>All seven protocols require establishing a fauna plot in relation to a vegetation plot. Guidance for where to establish the fauna plot is provided in Section 3 Desktop study and pre-survey planning , and Chapter X of this manual.</p>
+<p>
+  All seven protocols require establishing a fauna plot in relation to a
+  vegetation plot. Guidance for where to establish the fauna plot is provided in
+  <em>Section: Desktop study and pre-survey planning (refer to the module PDF document)</em>.
+</p>
 <p>This module has links to the following modules:</p>
 <ul>
-<li>
-<p>Plot selection and layout module –</p>
-<ul>
-<li>
-<p>The vegetation and soils plot should have been laid out (and ideally surveyed) before determining the location of the fauna plot where the vertebrate module is to be conducted (and where the invertebrate module may be conducted).</p>
-</li>
-<li>
-<p>Once the vegetation and soils plot has been established and the approximate location of where the fauna plot is to be positioned, conduct either a desktop assessment and/or a reconnaissance visit to ground-truth the available options for best positioning.</p>
-</li>
-<li>
-<p>If the plot was laid out on a previous survey, the centre post needs to be located before commencing the vertebrate fauna module. A GNSS may be required to assist locating the centre post.</p>
-</li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821"
+          >Plot selection and layout module</a
+        ></em
+      >
+      –
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          The vegetation and soils plot should have been laid out (and ideally
+          surveyed) before determining the location of the fauna plot where the
+          vertebrate module is to be conducted (and where the invertebrate
+          module may be conducted).
+        </p>
+      </li>
+      <li>
+        <p>
+          Once the vegetation and soils plot has been established and the
+          approximate location of where the fauna plot is to be positioned,
+          conduct either a desktop assessment and/or a reconnaissance visit to
+          ground-truth the available options for best positioning.
+        </p>
+      </li>
+      <li>
+        <p>
+          If the plot was laid out on a previous survey, the centre post needs
+          to be located before commencing the vertebrate fauna module. A GNSS
+          may be required to assist locating the centre post.
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6"
+          >Opportunistic observations module</a
+        ></em
+      >
+      – including recording of opportunistic direct sightings of fauna species,
+      and indirect signs of presence.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e"
+          >Invertebrate fauna module</a
+        ></em
+      >
+      – including use of the fauna plot to conduct various invertebrate survey
+      protocols.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/f0123418-c565-45a6-be01-c5c332c727e5"
+          >Camera trapping module</a
+        ></em
+      >
+      – including the collation of vertebrate fauna diversity.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/420ce0a7-9364-4bf4-861c-ef5f710e31b9"
+          >Targeted surveys module</a
+        ></em
+      >
+      – including any additional survey techniques not covered by the protocols
+      set-out in this module.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Interventions module</em> – including any management actions specific
+      to fauna and provision of fauna refuges and resources (nest boxes,
+      artificial cover, removal of artificial water sources)
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/16a20c3f-e95d-4919-b2d1-a25c7a275109"
+          >Condition</a
+        ></em
+      >
+      – including key attributes of pest vertebrate fauna diversity and
+      abundance, and vertebrate fauna diversity.
+    </p>
+  </li>
 </ul>
-</li>
-<li>
-<p>Opportunistic observations module – including recording of opportunistic direct sightings of fauna species, and indirect signs of presence.</p>
-</li>
-<li>
-<p>Invertebrate fauna module – including use of the fauna plot to conduct various invertebrate survey protocols.</p>
-</li>
-<li>
-<p>Camera trapping module – including the collation of vertebrate fauna diversity.</p>
-</li>
-<li>
-<p>Targeted surveys module – including any additional survey techniques not covered by the protocols set-out in this module.</p>
-</li>
-<li>
-<p>Interventions module – including any management actions specific to fauna and provision of fauna refuges and resources (nest boxes, artificial cover, removal of artificial water sources)</p>
-</li>
-<li>
-<p>Condition – including key attributes of pest vertebrate fauna diversity and abundance, and vertebrate fauna diversity.</p>
-</li>
-</ul>
-<p style="color: blue;">Table/ Overview of the Fauna Module Protocols</p>
-<table><colgroup><col /><col /><col /><col /><col /></colgroup>
-<thead>
-<tr>
-<th>
-<p><strong>Protocols</strong></p>
-</th>
-<th>
-<p><strong>Overview</strong></p>
-</th>
-<th>
-<p><strong>Details</strong></p>
-</th>
-<th>
-<p><strong>Expected time duration in the field</strong></p>
-</th>
-<th>
-<p><strong>Data captured</strong></p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fauna plot set- up</td>
-<td>
-<ul>
-<li>
-<p>Establish the fauna plot, photopoint monitoring location (conduct photographs module), and establish a weather station.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>If co-located with the Vegetation Plot, determine the 4 corners of that plot, and walk through the surrounding habitat to determine where to locate the Fauna Plot ensuring the habitat types are homogenous.</p>
-</li>
-<li>
-<p>If not co-located with a Vegetation Plot, ensure the pre-determined location suits the aims and objectives of the survey, including the desired habitats and vegetation communities, and that disturbance areas are avoided.</p>
-</li>
-<li>
-<p>Establish a data-logger to record temperature and humidity every 30 minutes for the duration of the survey. It is recommended the data-logger is located inside a small Stevenson Screen.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>&lt;30 minutes (plot layout)</p>
-</li>
-<li>
-<p>&lt;15 minutes implement photographs</p>
-</li>
-<li>
-<p>&lt;15 minutes install weather station</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Accurate plot location coordinates, plot boundaries populated and visualised in the app</p>
-</li>
-<li>
-<p>Photo-panoramas of the fauna plot</p>
-</li>
-<li>
-<p>Site specific weather details for the plot for the duration of the survey period</p>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Trapping</td>
-<td>
-<ul>
-<li>
-<p>Set up the Fauna Plot and position the traps. Trap the site using a pre- determined variety of trap types and record all captures</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Using the pre-determined site layout, establish the plot by laying out and setting the traps to be used</p>
-</li>
-<li>
-<p>Trap the site for 5-7 consecutive nights, checking traps morning and afternoon, monitor weather conditions and other animal ethics concerns and temporarily close if necessary, close the site at the conclusion, removing all traps and ground disturbance</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>2 – 4 hours depending on soil type and number of field assistants</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Records survey effort and specifications of the traps used.</p>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Identify, measure, mark and release</td>
-<td>
-<ul>
-<li>
-<p>Identify, record morphology measurements, photograph and mark all individuals captured and released</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Follow local museum guidelines, as a minimum: weight, head-body length (mammals), head-vent length (reptiles and amphibians), and tail length. These measurements are primarily to distinguish age classes and aid identification, but should not be relied upon for identification. If in doubt of identification follow-the decision tree to ensure a whole specimen is collected.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Ensure animal ethics requirements are met regarding times animals are held for.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Records species, body measurements, and capture details (trap type, trap number/location) of all individuals caught.</p>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Whole animal vouchering</td>
-<td>
-<ul>
-<li>
-<p>Take voucher specimens of whole animals following local museum guidelines and this manual</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Follow the decision tree to determine if a whole animal specimen is required.</p>
-</li>
-<li>
-<p>Follow local museum guidelines to ensure the animal is prepared, labelled and stored correctly.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>&lt;15 minutes per individual.</p>
-</li>
-</ul>
-</td>
-<td> </td>
-</tr>
-<tr>
-<td>Observations</td>
-<td>
-<ul>
-<li>
-<p>Record all opportunistic fauna observations, actively search for signs of fauna, conduct head- torching/ spotlighting nocturnal searches</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Conduct a total of 60 minutes active searching the outer extremity of the fauna plot, confirm destructive techniques (ripping bark from trees etc.) off-plot, lift rocks and fallen timber, rake through leaf litter and top 3 cm of sandy soil.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>1 x 60 minutes (1 surveyor), or 2 x 30 minutes (2 surveyors), conducted in an ideal time of day (early afternoon during winter/autumn), mid- morning or late afternoon when temperatures are hot.</p>
-</li>
-</ul>
-</td>
-<td> </td>
-</tr>
-<tr>
-<td>Tissue specimens</td>
-<td>
-<ul>
-<li>
-<p>Take tissue specimens of captured animals prior to release</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Follow local museum and animal ethics guidelines to collect a small soft-tissue sample to enable future DNA analysis. Follow local museum guidelines, ensuring. Follow local museum guidelines to ensure the tissue is prepared, labelled and stored correctly. Use the decision tree to determine if all individuals will be samples or a representative sample only.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>&lt;5 minutes per individual, ideally conducted in the field and released immediately at the point of capture.</p>
-</li>
-</ul>
-</td>
-<td> </td>
-</tr>
-<tr>
-<td>Bird survey</td>
-<td>
-<ul>
-<li>
-<p>Survey the Fauna Plot and surrounding area for birds</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Conduct one morning 20 minute search, and one afternoon 20 minute search, of a 2 ha area encompassing the fauna plot and surrounds, recoding all birds observed or heard.</p>
-</li>
-<li>
-<p>Conduct an optional 500 m untimed area search of the plot and wider area of the same habitat, recording all birds observed or heard.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>1 x 20 minutes morning</p>
-</li>
-<li>
-<p>1 x 20 minutes afternoon</p>
-</li>
-<li>
-<p>1 x &lt;90 minutes (optional)</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Bird species presence, use of available habitat, breeding and behaviour information</p>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Acoustic and ultrasonic records</td>
-<td>
-<ul>
-<li>
-<p>Record acoustic calls (birds, frogs), and ultrasonic calls (bats) over the specified duration.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Establish an acoustic/ultrasonic recorder within the plot.</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>15 minutes to establish+ left for the specified duration + 15 minutes to pack-up and remove</p>
-</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>
-<p>Acoustic and ultrasonic call files, and metadata associated with the device set-up.</p>
-</li>
-</ul>
-</td>
-</tr>
-</tbody>
+<p>Table 2. Overview of the Fauna Module Protocols</p>
+<table>
+  <colgroup>
+    <col style="width: 9%" />
+    <col style="width: 13%" />
+    <col style="width: 46%" />
+    <col style="width: 15%" />
+    <col style="width: 14%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Protocols</strong></th>
+      <th><strong>Overview</strong></th>
+      <th><strong>Details</strong></th>
+      <th><strong>Expected time duration in the field</strong></th>
+      <th><strong>Data captured</strong></th>
+    </tr>
+    <tr class="odd">
+      <th>Fauna plot set-up</th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Establish the fauna plot, photopoint monitoring location (conduct
+              photographs module), and establish a weather station.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              If co-located with the Vegetation Plot, determine the 4 corners of
+              that plot, and walk through the surrounding habitat to determine
+              where to locate the Fauna Plot ensuring the habitat types are
+              homogenous.
+            </p>
+          </li>
+          <li>
+            <p>
+              If not co-located with a Vegetation Plot, ensure the predetermined
+              location suits the aims and objectives of the survey, including
+              the desired habitats and vegetation communities, and that
+              disturbance areas are avoided.
+            </p>
+          </li>
+          <li>
+            <p>
+              Establish a data-logger to record temperature and humidity every
+              30 minutes for the duration of the survey. It is recommended the
+              data-logger is located inside a small Stevenson Screen.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>&lt;30 minutes (plot layout)</p>
+          </li>
+          <li>
+            <p>&lt;15 minutes implement photographs</p>
+          </li>
+          <li>
+            <p>&lt;15 minutes install weather station</p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Accurate plot location coordinates, plot boundaries populated and
+              visualised in the app
+            </p>
+          </li>
+          <li>
+            <p>Photo-panoramas of the fauna plot</p>
+          </li>
+          <li>
+            <p>
+              Site specific weather details for the plot for the duration of the
+              survey period
+            </p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Trapping</th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Set up the Fauna Plot and position the traps. Trap the site using
+              a predetermined variety of trap types and record all captures
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Using the predetermined site layout, establish the plot by laying
+              out and setting the traps to be used
+            </p>
+          </li>
+          <li>
+            <p>
+              Trap the site for 5-7 consecutive nights, checking traps morning
+              and afternoon, monitor weather conditions and other animal ethics
+              concerns and temporarily close if necessary, close the site at the
+              conclusion, removing all traps and ground disturbance
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              2 – 4 hours depending on soil type and number of field assistants
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Records survey effort and specifications of the traps used.</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Identify, measure, mark and release</th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Identify, record morphology measurements, photograph and mark all
+              individuals captured and released
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Follow local museum guidelines, as a minimum: weight, head-body
+              length (mammals), head-vent length (reptiles and amphibians), and
+              tail length. These measurements are primarily to distinguish age
+              classes and aid identification, but should not be relied upon for
+              identification. If in doubt of identification follow-the decision
+              tree to ensure a whole specimen is collected.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Ensure animal ethics requirements are met regarding times animals
+              are held for.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Records species, body measurements, and capture details (trap
+              type, trap number/location) of all individuals caught.
+            </p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Whole animal vouchering</th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Take voucher specimens of whole animals following local museum
+              guidelines and this manual
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Follow the decision tree to determine if a whole animal specimen
+              is required.
+            </p>
+          </li>
+          <li>
+            <p>
+              Follow local museum guidelines to ensure the animal is prepared,
+              labelled and stored correctly.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>&lt;15 minutes per individual.</p>
+          </li>
+        </ul>
+      </th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Observations</th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Record all opportunistic fauna observations, actively search for
+              signs of fauna, conduct head-torching/ spotlighting nocturnal
+              searches
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Conduct a total of 60 minutes active searching the outer extremity
+              of the fauna plot, confirm destructive techniques (ripping bark
+              from trees etc.) off-plot, lift rocks and fallen timber, rake
+              through leaf litter and top 3 cm of sandy soil.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              1 x 60 minutes (1 surveyor), or 2 x 30 minutes (2 surveyors),
+              conducted in an ideal time of day (early afternoon during
+              winter/autumn), mid-morning or late afternoon when temperatures
+              are hot.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th></th>
+    </tr>
+    <tr class="header">
+      <th>Tissue specimens</th>
+      <th>
+        <ul>
+          <li>
+            <p>Take tissue specimens of captured animals prior to release</p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Follow local museum and animal ethics guidelines to collect a
+              small soft-tissue sample to enable future DNA analysis. Follow
+              local museum guidelines, ensuring. Follow local museum guidelines
+              to ensure the tissue is prepared, labelled and stored correctly.
+              Use the decision tree to determine if all individuals will be
+              samples or a representative sample only.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              &lt;5 minutes per individual, ideally conducted in the field and
+              released immediately at the point of capture.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th></th>
+    </tr>
+    <tr class="odd">
+      <th>Bird survey</th>
+      <th>
+        <ul>
+          <li>
+            <p>Survey the Fauna Plot and surrounding area for birds</p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Conduct one morning 20 minute search, and one afternoon 20 minute
+              search, of a 2 ha area encompassing the fauna plot and surrounds,
+              recoding all birds observed or heard.
+            </p>
+          </li>
+          <li>
+            <p>
+              Conduct an optional 500 m untimed area search of the plot and
+              wider area of the same habitat, recording all birds observed or
+              heard.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>1 x 20 minutes morning</p>
+          </li>
+          <li>
+            <p>1 x 20 minutes afternoon</p>
+          </li>
+          <li>
+            <p>1 x &lt;90 minutes (optional)</p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Bird species presence, use of available habitat, breeding and
+              behaviour information
+            </p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Acoustic and ultrasonic records</th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Record acoustic calls (birds, frogs), and ultrasonic calls (bats)
+              over the specified duration.
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Establish an acoustic/ultrasonic recorder within the plot.</p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              15 minutes to establish + left for the specified duration + 15
+              minutes to pack-up and remove
+            </p>
+          </li>
+        </ul>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Acoustic and ultrasonic call files, and metadata associated with
+              the device set-up.
+            </p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
 </table>
-<p style="color: blue;">Table. <strong>Description of the protocols and techniques to be employed as part of the Vertebrate fauna module, and exclusions </strong></p>
-<table><colgroup><col /><col /></colgroup>
-<thead>
-<tr>
-<th>
-<p><strong>Protocols</strong></p>
-</th>
-<th>
-<p><strong>Description</strong></p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Trapping</td>
-<td>
+<h3 id="activities-not-included-in-the-vertebrate-fauna-survey-protocols">
+  Activities not included in the vertebrate fauna survey protocols
+</h3>
+<p>
+  The following fauna survey techniques and activities have been specifically
+  excluded from the vertebrate fauna protocols:
+</p>
 <ul>
-<li>
-<p>Mandatory trap types:</p>
+  <li>
+    <p>
+      amphibian searches (including aural transects or point count surveys,
+      water body surveys, tadpole traps)
+    </p>
+  </li>
+  <li>
+    <p>sand plots and track pads</p>
+  </li>
+  <li>
+    <p>active microbat echolocation call detection</p>
+  </li>
+  <li>
+    <p>microbats roost searches</p>
+  </li>
+  <li>
+    <p>hair tubes to collect hair samples for identification</p>
+  </li>
+  <li>
+    <p>harp and mist netting for bats</p>
+  </li>
+  <li>
+    <p>mist netting for birds (including banding individuals)</p>
+  </li>
+  <li>
+    <p>
+      vehicle spotlight surveys (although all species observed should be
+      recorded as an opportunistic observations).
+    </p>
+  </li>
+</ul>
+<p>
+  These survey techniques and activities have been excluded as they typically
+  target certain species or groups of species that require specific methods due
+  to the species cryptic behaviour, arboreal use of habitat, avoidance of
+  Elliott, cage and/or pitfall traps, or their larger size.
+</p>
+<p>
+  Although these targeted techniques have been excluded from the Fauna Survey
+  Protocols, it is acknowledged that they may be conducted at the time of the
+  survey to take advantage of having a team on site. The survey coordinator will
+  need to ensure that any additional methods and techniques conducted are
+  permitted under the scientific licences and animal ethics approvals, and
+  methods are documented in detail and uploaded. Depending on the activity, the
+  intended target species, and justification for the methods to be conducted, it
+  may be appropriate to utilise the Targeted surveys module.
+</p>
+    """^^rdf:HTML ;
+    dcterms:source """
+    <h3 id="references">References</h3>
 <ul>
-<li>
-<p>pitfall traps</p>
-</li>
+  <li>
+    <p>
+      Department of Parks and Wildlife (2013). Standard Operating Procedure No:
+      8.1 Vouchering vertebrate fauna specimens, The Government of Western
+      Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      O'Neill, S., B. Sparrow, N. Thurgate and A. Lowe (2015). AusPlots
+      Rangelands: Fauna Survey Protocols Manual. Adelaide, TERN.
+    </p>
+  </li>
+  <li>
+    <p>
+      Tokmakoff, A., B. Sparrow, D. Turner and A. Lowe (2016). "AusPlots
+      Rangelands field data collection and publication: Infrastructure for
+      ecological monitoring." <u>Future Generation Computer Systems</u>
+      <strong>56</strong>: 537–549.
+    </p>
+  </li>
+  <li>
+    <p>
+      van Strien, A. J., C. A. van Swaay and T. Termaat (2013). "Opportunistic
+      citizen science data of animal species produce reliable estimates of
+      distribution trends if analysed with occupancy models."
+      <u>Journal of Applied Ecology</u> <strong>50</strong>(6): 1450–1458.
+    </p>
+  </li>
+  <li>
+    <p>
+      Wildlife Ethics Committee (2020). Collection of voucher specimen policy.
+      S. A. M. a. D. f. E. a. W. ZoosSA, Government of South Australia.
+    </p>
+  </li>
 </ul>
-</li>
-<li>
-<p>Optional additional trap types:</p>
-<ul>
-<li>
-<p>funnel traps</p>
-</li>
-<li>
-<p>Elliott traps</p>
-</li>
-<li>
-<p>cage traps</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Trapping intensity</p>
-<ul>
-<li>
-<p>high intensity: 2 parallel lines of 6 pitfalls along a 60 m continuous drift fence</p>
-</li>
-<li>
-<p>medium intensity: 1 line of 6 pitfalls along a 60 m continuous drift fence</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Consecutive trap nights:</p>
-<ul>
-<li>
-<p>7 preferred and recommended</p>
-</li>
-<li>
-<p>5 minimum.</p>
-</li>
-</ul>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Identify, measure and release</td>
-<td>
-<ul>
-<li>
-<p>Mandatory (when trapping is conducted):</p>
-<ul>
-<li>
-<p>Measurements taken for released animals (specimens not vouchered as whole animals), recording at least head-body length (mammals), and snout-vent length (reptiles and amphibians), weight, sex (if easily determined), and reproductive status (if easily determined). Additional measurements to be taken to assist any identification discrepancies (in which case a whole animal specimen must be taken). A series of photographs to be taken at least a representative sample for each species captured.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Optional:</p>
-<ul>
-<li>
-<p>As above, with a series of photographs taken of every individual captured.</p>
-</li>
-</ul>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Whole animal and tissue collection</td>
-<td>
-<ul>
-<li>
-<p>Mandatory (when trapping is conducted):</p>
-<ul>
-<li>
-<p>Museum specimen collected for all species captured. Requires liaison with local museum prior to conducting the survey to ensure specimens are warranted (museum may make additional requests). Collecting whole animal vouchers and liver section specimens is typically a jurisdiction scientific permit condition.</p>
-</li>
-<li>
-<p>Collection of a tissue (skin, scale, toe) of a representative sample for each species captured before releasing the individual.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Optional</p>
-<ul>
-<li>
-<p>Collection of a tissue (skin, scale, toe) of all individuals captured before releasing the individual. Note: animals taken as whole animal specimens will not require tissue (skin, scale, toe) collection as a section of the liver is taken.</p>
-</li>
-</ul>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Active and passive searching</td>
-<td>
-<ul>
-<li>
-<p>Mandatory:</p>
-<ul>
-<li>
-<p>Active diurnal search: Adds to the inventory species list of the plot, particularly useful for cryptic species not readily captured. Destructive activities, such as pulling bark off trees should be confined to the out-skirts of the plot only (within 10 minutes of the fauna plot boundary). Rocks, raked leaf litter etc., must be put back into place.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Optional:</p>
-<ul>
-<li>
-<p>Passive nocturnal search: Minimum 60 minutes observer time (ideally 2 observers for 30 minutes) walking the plot or immediately adjacent area. Use of head-torches is recommended over hand-held spotlight to minimise disturbance.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Note:</p>
-<ul>
-<li>
-<p>Opportunistic observations also recorded as per the Opportunistic observations module.</p>
-</li>
-</ul>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Bird surveys</td>
-<td>
-<ul>
-<li>
-<p>Optional:</p>
-<ul>
-<li>
-<p>2 ha 20 minute survey x 2. One survey conducted in the morning, and one conducted in the afternoon. Minimum survey effort: 40 minutes per plot.</p>
-</li>
-<li>
-<p>500 m untimed area search. Minimum survey effort: 60 minutes per plot and surrounding area.</p>
-</li>
-<li>
-<p>Embedded survey, combining the 2 ha 20 minute survey over the plot(s) with a 500 m area search of the wider area. Minimum survey effort: 60 minutes per plot and surrounding area.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>When implemented, mandatory requirements:</p>
-<ul>
-<li>
-<p>Survey effort for all survey types must be recorded.</p>
-</li>
-<li>
-<p>Any effort different to the standards must be recorded.</p>
-</li>
-<li>
-<p>Any variation to the standard protocols must be recorded. I.e. if call playback is used as part of a survey, the details must be recorded as an additional element to the survey.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Note:</p>
-<ul>
-<li>
-<p>Opportunistic observations made any time whilst the surveyors are within the plot/project area can also recorded as per the Opportunistic Observations module.</p>
-</li>
-<li>
-<p>Bird sightings made through camera trap photos can also be recorded via the Camera Trapping Module (if following the protocols the module sets out), or Targeted Survey module (if following a non-standard variation)</p>
-</li>
-<li>
-<p>If surveys are conducted for specific purposes, i.e. targeted for the detection of threatened species, refer to the recommended survey effort guides for those species.</p>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>
-<p>Excluded from the bird surveys protocols, but may be conducted and recorded in the Targeted surveys module</p>
-<ul>
-<li>
-<p>Broadcast surveys</p>
-</li>
-<li>
-<p>Trapping, including mist netting</p>
-</li>
-<li>
-<p>Flushing</p>
-</li>
-<li>
-<p>Sniffer dog surveys.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Excluded from this module (out of scope, but may be conducted as part of the Targeted surveys module.</p>
-<ul>
-<li>
-<p>Driven surveys</p>
-</li>
-<li>
-<p>Aerial surveys</p>
-</li>
-</ul>
-</li>
-</ul>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Acoustic and ultrasonic sampling</td>
-<td>
-<ul>
-<li>
-<p>Optional:</p>
-<ul>
-<li>
-<p>Acoustic and ultrasonic sampling: Install a Titley Chorus. Note: call analysis will not be conducted as a standard of the Vertebrate fauna module, however data will be collected and stored appropriately for future use and analysis once technology becomes available (and cost/time-effective).</p>
-</li>
-<li>
-<p>When acoustic sampling is not conducted, call recording using AnaBats may be implemented.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Note:</p>
-<ul>
-<li>
-<p>Additional optional activities may include harp trap and mist netting.</p>
-</li>
-</ul>
-</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>"""^^rdf:HTML ;
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/test/dawe-cv/2a2528a6-955c-4c8f-b842-ffb64e0b27cf> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/37ed2dbb-b990-430c-9010-d0452588cf24> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/7942c1d3-8cfc-4d74-931d-850cacfa5a63> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/98db8232-2c51-4907-99a7-0ccb8b825382> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a15130ca-82ce-4c50-9392-66f9b0c73450> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/a5eb37f3-a123-4350-9eb3-214396a04b93> ;
+    skos:definition """
+    <h3 id="key-definitions-and-terminology">Key definitions and terminology</h3>
+<p>Table 1. Common terms used in the <em>Vertebrate fauna</em> module.</p>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+    <tr class="odd">
+      <th>Opportunistic observation</th>
+      <th>
+        A documented record of a species collected without standardised field
+        protocol and without explicit sampling design (van Strien, van Swaay et
+        al. 2013), associated with a geographic location, date and time; may be
+        accompanied by a voucher specimen (whole plant or animal, part thereof,
+        or a tissue sample), photos, video or audio recording.
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Voucher specimen</th>
+      <th>
+        A preserved specimen of an expertly identified taxon deposited in a
+        permanent and accessible storage facility that may later be obtained for
+        examination and further study. This may comprise a whole plant or
+        animal, part thereof, or a tissue sample. See also vouchering protocols
+        in the Floristics, Plant tissue, Vertebrate fauna and Invertebrate flora
+        modules.
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Vouchering</th>
+      <th>
+        The process by which a voucher is collected and retained through
+        preservation with a view to provide a specimen for later reference or
+        examination. Vouchering permits independent verification of results and
+        allows further study (Department of Parks and Wildlife 2013).
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Tissue sample</th>
+      <th>
+        A sample of tissue taken from a live or deceased animal that includes
+        ear clip/notch, toe clip, tail clip, skin, skin scrape (cetaceans),
+        muscle, liver, heart, blood, hair, feather, egg shell, scale, faecal
+        sample, egg or semen (Wildlife Ethics Committee 2020). See also tissue
+        vouchering protocols in the Vertebrate fauna module.
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/test/dawe-cv/a5eb37f3-a123-4350-9eb3-214396a04b93>
+            <https://linked.data.gov.au/def/test/dawe-cv/2a2528a6-955c-4c8f-b842-ffb64e0b27cf>
+            <https://linked.data.gov.au/def/test/dawe-cv/7942c1d3-8cfc-4d74-931d-850cacfa5a63>
+            <https://linked.data.gov.au/def/test/dawe-cv/a15130ca-82ce-4c50-9392-66f9b0c73450>
+            <https://linked.data.gov.au/def/test/dawe-cv/37ed2dbb-b990-430c-9010-d0452588cf24>
+            <https://linked.data.gov.au/def/test/dawe-cv/98db8232-2c51-4907-99a7-0ccb8b825382>
+        ) ;
     skos:prefLabel "Vertebrate Fauna" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vertebrate-fauna/collection.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+
+<h4>
+  Appendix 2. Checklist to identify the fauna survey modules and activities to
+  be conducted at each fauna plot
+</h4>
+<p>
+  <strong
+    >Checklist to help identify the fauna survey protocols and activities to be
+    conducted for each fauna plot</strong
+  >
+</p>
+<p>
+  Note: A checklist should be completed for each plot to be surveyed. Green text
+  indicates mandatory option. Orange text indicates the preferred and
+  recommended option.
+</p>
+<table>
+  <colgroup>
+    <col style="width: 15%" />
+    <col style="width: 48%" />
+    <col style="width: 35%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Protocol</th>
+      <th>Technique details</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr class="header">
+      <th><strong>Trapping protocols</strong></th>
+      <th>
+        <p>How many pitfalls will we use?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Mandatory</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>NA</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>12</p>
+          </li>
+          <li>
+            <p>6</p>
+          </li>
+          <li>
+            <p>
+              0 (select this for non-trapping sites, then move to next module)
+            </p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th></th>
+      <th>
+        <p>What type of pitfalls are warranted?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>20 L buckets temporary</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Deep collapsible</p>
+          </li>
+          <li>
+            <p>Short collapsible</p>
+          </li>
+          <li>
+            <p>Short permanent</p>
+          </li>
+          <li>
+            <p>Deep permanent</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th></th>
+      <th>
+        <p>How many funnels will we use?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>8</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>4</p>
+          </li>
+          <li>
+            <p>0</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th></th>
+      <th>
+        <p>How many Elliott’s will we use?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>40</p>
+          </li>
+          <li>
+            <p>20</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>0</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th></th>
+      <th>
+        <p>How many cages will we use?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>4</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>0</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th></th>
+      <th>
+        <p>Are any other specific types of traps warranted?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>
+              Yes: Specify (justify) *Do these traps make the survey a targeted
+              survey?
+            </p>
+          </li>
+          <li>
+            <p>No</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th></th>
+      <th>
+        <p>How many consecutive nights will we trap for?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>7</p>
+          </li>
+          <li>
+            <p>5</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other: (justify)</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Identify, mark and measure protocols</strong></th>
+      <th>
+        <p>What animals will we record morphological measurements of?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>All captured individuals</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>
+              Representative sample (mandatory if not all individuals measured)
+            </p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th></th>
+      <th>
+        <p>Will we temporarily mark all captured individuals?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes (mandatory)</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th></th>
+      <th>
+        <p>Will we permanently mark all captured individuals?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes</p>
+          </li>
+          <li>
+            <p>No</p>
+          </li>
+          <li>
+            <p>Other: (i.e. selected species only)</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th><strong>Whole animal and tissue vouchering protocols</strong></th>
+      <th>
+        <p>
+          Will we voucher
+          <u>1-2 adult individuals of <em>each species</em></u> for the survey
+          location (following the vouchering decision tree)
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>1-2 individuals of each species</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>1-2 individuals of noteworthy species only</p>
+          </li>
+          <li>
+            <p>
+              No: Please discuss further with the service provider/project
+              sponsor
+            </p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th></th>
+      <th>
+        <p>
+          Will we take a DNA tissue sample of <em>captured</em> individuals?
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes, all individuals</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>1-2 individuals of all species</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5">
+        <strong>Active diurnal and passive nocturnal searches protocols</strong>
+      </th>
+      <th>
+        <p>
+          Will we record all opportunistic fauna observations within the plot?
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes (mandatory) – use the Opportunistic observations module</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p>
+          Will we record all opportunistic fauna observations for the survey
+          location (i.e. general area of the cluster of plots ~30 km radius)?
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes – use the Opportunistic observations module</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Project boundaries only</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>
+          Will we conduct active searching for a minimum 60 minutes
+          within/immediately adjacent to the plot?
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p>
+          Will we conduct passive nocturnal headtorching/spotlighting for a
+          minimum 60 minutes within/immediately adjacent to the plot
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>No</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th>
+        <p>
+          Will we conduct any other justifiable (targeted) observation
+          techniques within/adjacent the plot?
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>
+              Yes: Specify (justify) – Use the Targeted surveys module and not
+              the Vertebrate fauna module
+            </p>
+          </li>
+          <li>
+            <p>No / NA</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Camera trapping module*</strong></th>
+      <th>
+        <p>Will we set-up remote camera(s)?</p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes: Specify (justify) – Use the Camera trapping module</p>
+          </li>
+          <li>
+            <p>No / NA</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2"><strong>Bird surveys protocols</strong></th>
+      <th>
+        <p>
+          Will we conduct 20 minute 2 ha search of the plot and adjacent area
+          for at least 1 morning and 1 afternoon session?
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>No</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p>
+          Will we conduct a 500 m untimed wider area search around the plot for
+          more cryptic species?
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes, if habitat / project area enables it</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>No</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="header">
+      <th rowspan="2">
+        <strong>Acoustic and ultrasonic recording protocols</strong>
+      </th>
+      <th>
+        <p>
+          Will we set-up an Titley Chorus unit to record acoustic calls (birds,
+          bats, frogs, invertebrates) and ultrasonic bat calls?
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Yes</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>No, but we will use an Anabat instead</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>
+        <p>
+          How many days/nights will the Titley Chorus be running for each plot
+        </p>
+      </th>
+      <th>
+        <ul>
+          <li>
+            <p>Preferred/recommended options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>&gt;7</p>
+          </li>
+          <li>
+            <p>5-6</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Other acceptable options:</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>1-4</p>
+          </li>
+        </ul>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    tern:scope """
+      <h3>Contents</h3>
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology"
+        >Key definitions and terminology</a
+      >
+    </li>
+    <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+    <h3 id="introduction">Introduction</h3>
+<p>
+  The Vertebrate fauna module covers the background, and procedures and
+  guidelines on when, where and how to conduct a fauna survey. The module has
+  been developed to incorporate several different types of protocols to document
+  different taxa, including trapping for small to medium mammals and reptiles,
+  active diurnal and passive nocturnal searches for all fauna, signs of fauna
+  from tracks, scats, diggings, as well as standardised bird surveys, and
+  acoustic and ultrasonic recordings for birds, frogs, bats (and invertebrates).
+</p>
+<p>
+  Vertebrate fauna surveys can be used for baseline surveys and ongoing
+  monitoring surveys to collect valuable data on how the fauna biodiversity of
+  an ecosystem may be changing over time in response to natural fluctuations in
+  resource availability, or changes to land management regimes. The Vertebrate
+  fauna module has been developed primarily to obtain an understanding of the
+  native vertebrate fauna present within a project area, but can equally be used
+  to understand the exotic pest fauna, particularly when used in unison with
+  other modules (including developing modules focussed on pest fauna).
+</p>
+<p>
+  The key purpose of the Vertebrate fauna module is to obtain meaningful,
+  time-series datasets on the vertebrate fauna of the project area, and link
+  this data to the other data collected through the other modules that have
+  obtained detailed data on the vegetation communities, structure, composition,
+  and condition, and progress towards restoration (i.e. through RLP funded
+  work). Together, this not only provides details of the available habitat
+  available for the vertebrate fauna, but also a comprehensive understanding of
+  the entire ecosystem. Repeated over time, including before, during, and after,
+  management interventions have been conducted, provides an insight into trends
+  over time in response to the management.
+</p>
+<p>
+  The Vertebrate fauna module, as with most of the other modules, is plot-based,
+  and establishes a 1 ha plot that is paired with the vegetation and soils plot.
+  The module specifies standard requirements and prescriptive guidelines for
+  implementing surveys for vertebrate fauna. At times, these standards may not
+  suite a project’s needs, and this is when the Targeted surveys module may be
+  more appropriate. The fauna protocols within the Targeted surveys module
+  offers the opportunity for some flexibility that may suite some projects aims
+  and objectives, when the methods do not align the standard requirements of the
+  Vertebrate fauna module, as they can be conducted when flexibility is needed,
+  particularly for threatened species that require specific, targeted, survey
+  methods.
+</p>
+<p>
+  The Vertebrate fauna module must be conducted with the appropriate approvals
+  from state/territory jurisdictions that are responsible for administering
+  scientific research that involves wildlife. This is typically the department
+  of environment, science, or primary resources. Appropriate permits to conduct
+  scientific research for the purposes of environmental studies.
+</p>
+    """^^rdf:HTML ;
 .
 
