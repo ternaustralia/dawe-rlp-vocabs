@@ -7,22 +7,1318 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db>
-    a skos:Concept ;
-    dcterms:description """<p>
-  Characterization of the upper soil profile, by exposing the profile to a depth
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#protocol-overview">Protocol Overview</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+<h3 id="protocol-overview">Protocol overview</h3>
+    <p>
+  Characterisation of the upper soil profile, by exposing the profile to a depth
   of 1 m+ at the southwest corner of the plot and collecting data and/or soil
   samples and at 10 cm increments, taking care not to sample across soil
   horizons. Critical to describe, measure and sample the soil profile, and
   assign an Australian Soil Classification.
-</p>"""^^rdf:HTML ;
+</p>
+<p id='figure-1'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/soil/plot-layout.png"
+    alt="Plot layout"
+    widteh="500"
+    height="600"
+  />
+</p>
+<p>
+  Figure 1. Plot layout showing indicative locations of the soil
+  characterisation pit and nine soil characterisation sub-sites across the plot.
+</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<p>
+  The following points are adapted from The National Committee on Soil and
+  Terrain (2009) and McKenzie <em>et al.</em> (2008).
+</p>
+<h4 id="soil-characterisation">A. Soil characterisation</h4>
+<ul>
+  <li>
+    <p>
+      Soil characterisation should be completed as close as possible to the
+      southwest corner of the plot (i.e. outside and immediately adjacent to the
+      plot; see <a href='#figure-1'>Figure 1</a>), but should not result in any disturbance in the plot.
+    </p>
+  </li>
+  <li>
+    <p>
+      Soil characterisation should ideally be conducted by a pedologist, soil
+      scientist, or experienced soil surveyor. A less experienced surveyor
+      should collect soil samples that can be characterised back in the lab by a
+      pedologist, soil scientist, or experienced soil surveyor.
+    </p>
+  </li>
+  <li>
+    <p>
+      Refer to the Yellow Book for further descriptions and instructions for
+      assessing each soil property (The National Committee on Soil and Terrain
+      2009).
+    </p>
+  </li>
+  <li>
+    <p>
+      The preferred soil characterisation method is by digging a 1 m+ soil pit.
+      The advantages of this approach include easy observation of vertical and
+      lateral variation, compacting specimens is avoided, easy sampling of
+      undisturbed horizons with little or no contamination, and easy to
+      photograph exposures.
+    </p>
+  </li>
+  <li>
+    <p>
+      Consider the alignment of the pit as this is important for good
+      photographs of the pit face. Natural sunlight can produce sharp contrasts
+      of shade and light that obscure subtle variation in the profile, though
+      full sunlight without shadows can be satisfactory. Light cloudy conditions
+      offer uniform lighting, which might be best. Orient the pit so that the
+      face to be photographed will be illuminated by the sun at the time.
+    </p>
+  </li>
+  <li>
+    <p>
+      The pit should be large enough for comfortable working at the face.
+      Depending on final depth, one or more steps (about 0.3 m tread with 0.3 m
+      risers) should be left. Pits deeper than 1.5 m require bracing to meet
+      occupational health and safety requirements.
+    </p>
+  </li>
+  <li>
+    <p>
+      During excavation, protect the soil surface above the face to be described
+      and sampled by laying a piece of heavy canvas or plastic sheet at that end
+      of the pit. Place it to one side when you begin to collect specimens and
+      use it to receive individual specimens as they are removed, before packing
+      them for transport to the laboratory.
+    </p>
+  </li>
+  <li>
+    <p>
+      The face of the soil profile should be picked back to expose the natural
+      ped faces where present. A non-reflective black or coloured tape with
+      clear depth markings should always be used. Soil profiles are best
+      photographed when moist, so they match morphological descriptions – spray
+      water on dry profiles from a bottle.
+    </p>
+  </li>
+  <li>
+    <p>
+      Flash or flood lighting produces an evenly lit photograph but the
+      resulting colours can be unnatural. When pits are deep the bottom of the
+      face might receive less light. A reflective screen placed along the base
+      of the pit ensures even lighting across the base of the profile. A
+      sun-screen made from black cotton provides good shade when the pit cannot
+      be aligned as preferred.
+    </p>
+  </li>
+  <li>
+    <p>
+      Collect samples by progressive excavation of a vertical rectangular
+      section, sub-sectioned by depth intervals or soil horizons or both. To
+      obtain sufficient specimens from thin layers, it may be necessary to
+      collect from a larger cross-sectional area than for the rest of the
+      profile. Conversely, this may result in too large a specimen if depth
+      intervals are increased deeper in the profile. Do not solve this problem
+      by reducing the cross-sectional area of the section. To avoid bias, the
+      soil profile should be excavated to a uniform cross-section.
+    </p>
+  </li>
+  <li>
+    <p>
+      Avoid contamination by incomplete removal of overlying material or by
+      failure of side or back walls of the lengthening collection channel. In
+      most cases, it is best to start from the base of the profile to minimise
+      contamination.
+    </p>
+  </li>
+  <li>
+    <p>
+      Every effort should be made to dig a 1 m+ soil pit. However, after three
+      failed attempts (due to rock, hardpan, water, etc.), the attempt should be
+      abandoned and the reason documented, and soil characterisation undertaken
+      and/or soil samples collected down to the depth achieved.
+    </p>
+  </li>
+  <li>
+    <p>
+      If digging a 1 m+ soil pit cannot be undertaken, other options include:
+    </p>
+    <ul>
+      <li>
+        <p>
+          Using a core tube or hand auger to collect soils and laying out the
+          profile, or
+        </p>
+      </li>
+      <li>
+        <p>
+          Using a hand auger and collecting a 500 g sample from 10 cm increments
+          down the profile to 1 m+.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p>
+      If you need to sample or observe the soil below the bottom of the pit, you
+      can do so with a hand auger.
+    </p>
+  </li>
+  <li>
+    <p>
+      For efficiency, one field surveyor can dig the pit while another locates
+      and begins digging the soil sub-sites in different microhabitats (see
+      <a href="#soil-sub-site-samples-protocol"
+        ><u>Soil sub-site characterisation protocol</u></a
+      >).
+    </p>
+  </li>
+  <li>
+    <p>
+      Sampling from existing exposures (e.g. road cuts, gully banks) is
+      undesirable because the topsoil is often disturbed, absent, or overlaid
+      with other material, and it is difficult to determine how representative
+      the exposures are.
+    </p>
+  </li>
+</ul>
+<h4 id="horizons">B. Horizons</h4>
+<ul>
+  <li>
+    <p>
+      A soil horizon is a layer of soil approximately parallel to the land
+      surface, with morphological properties different from layers below and/or
+      above it.
+    </p>
+  </li>
+  <li>
+    <p>
+      Horizons may be difficult to name, but should be named in the field.
+      Opinions formed at the time of description are useful for later reference.
+      Even less experienced surveyors should be able to distinguish soil
+      horizons.
+    </p>
+  </li>
+  <li>
+    <p>
+      With regard to horizon notation, the long-established usage in horizon
+      designation is adopted. Emphasis is on factual objective notation rather
+      than assumed genesis, as genetic implications are often uncertain and
+      difficult to establish.
+    </p>
+  </li>
+  <li>
+    <p>
+      Horizon codes and descriptions are listed from the drop-down list. Refer
+      to pages 148–159 of the Yellow Book for detailed descriptions (The
+      National Committee on Soil and Terrain 2009).
+    </p>
+  </li>
+</ul>
+<h4 id="soil-colour">C. Soil colour</h4>
+<ul>
+  <li>
+    <p>
+      Soil colour is not covered in depth in the Yellow Book. See the Munsell
+      Color (2009) for further details.
+    </p>
+  </li>
+  <li>
+    <p>
+      Munsell Soil Colour Charts are arranged by hue, value and chroma. The hue
+      notation of a colour indicates its relation to red, yellow, green, blue
+      and purple; the value notation indicates its lightness; and the chroma
+      notation indicates its strength (or departure from a neutral of the same
+      lightness).
+    </p>
+  </li>
+  <li>
+    <p>
+      The colours are displayed on individual soil colour charts are of constant
+      hue, designated by a symbol in the upper right-hand corner of the chart.
+    </p>
+  </li>
+  <li>
+    <p>
+      Vertically, as the colours become successively lighter from the bottom to
+      the top of the chart by visually equal steps, their value increases.
+    </p>
+  </li>
+  <li>
+    <p>
+      Horizontally, the colours increase in chroma to the right of the chart and
+      become greyer to the left.
+    </p>
+  </li>
+</ul>
+<h4 id="soil-samples">D. Soil samples</h4>
+<ul>
+  <li>
+    <p>
+      Even a less experienced surveyor should be able to identify the soil
+      horizons, in which case sampling across soil horizons should be avoided.
+    </p>
+  </li>
+  <li>
+    <p>
+      When placing each soil sample into the applicable labelled zip-lock bags,
+      take care to minimise disruption to any peds or aggregates. Coarse
+      fragment components should be minimised in sample to avoid overfilling the
+      bags. If necessary, samples can be sieved in the field using a 2 mm sieve.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
     skos:prefLabel "Soil pit characterization protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-pit-characterization-protocol/soil-pit-characterization-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+    <h4 id="appendix-t">Appendix T. Coarse fragments descriptions and codes</h4>
+<p>
+  <em
+    >(YB p. 139–144, 209, 214; The National Committee on Soil and Terrain
+    2009).</em
+  >
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Coarse fragments details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="8"><strong>Abundance</strong></th>
+      <th><strong>0</strong></th>
+      <th>No coarse fragments</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Very slight or few (&lt;2%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Slight or few (&lt;2%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Common e.g. Medium gravel, stony, common medium pebbles (10–20%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Moderate or many (20–50%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Abundant (50–90%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>6</strong></th>
+      <th>Extremely abundance (&gt;90%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>NC</strong></th>
+      <th>Not collected</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="7"><strong>Size</strong></th>
+      <th><strong>1</strong></th>
+      <th>Fine gravelly or small pebbles (26 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Medium gravelly or medium pebbles (6–20 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Coarse gravelly or coarse pebbles (20–60 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>4</strong></th>
+      <th>Cobbly or cobbles (60–200 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>5</strong></th>
+      <th>Stony or stones (200–600 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>6</strong></th>
+      <th>Bouldery or boulders (600–2000 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>7</strong></th>
+      <th>Large boulders (&gt;2000 mm)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="12"><strong>Shape</strong></th>
+      <th><strong>A</strong></th>
+      <th>Angular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Sub-angular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>U</strong></th>
+      <th>Sub-rounded</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Rounded</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AT</strong></th>
+      <th>Angular tabular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ST</strong></th>
+      <th>Sub-angular tabular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>UT</strong></th>
+      <th>Sub-rounded tabular</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RT</strong></th>
+      <th>Rounded tabular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AP</strong></th>
+      <th>Angular platy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SP</strong></th>
+      <th>Sub-angular platy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>UP</strong></th>
+      <th>Sub rounded platy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RP</strong></th>
+      <th>Rounded platy</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="18"><strong>Lithology</strong></th>
+      <th><strong>AD</strong></th>
+      <th>Adamellite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AG</strong></th>
+      <th>Agglomerate</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AC</strong></th>
+      <th>Alcrete (bauxite)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AM</strong></th>
+      <th>Amphibolite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AN</strong></th>
+      <th>Andesite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AH</strong></th>
+      <th>Anhydrite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>AP</strong></th>
+      <th>Aplite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>AR</strong></th>
+      <th>Arkose</th>
+    </tr>
+    <tr class="header">
+      <th><strong>BA</strong></th>
+      <th>Basalt</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>BB</strong></th>
+      <th>Bombs (volcanic)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>BR</strong></th>
+      <th>Breccia</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KA</strong></th>
+      <th>Calcarenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KM</strong></th>
+      <th>Calcareous mudstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KL</strong></th>
+      <th>Calcilutite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>KR</strong></th>
+      <th>Calcirudite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>KC</strong></th>
+      <th>Calcrete</th>
+    </tr>
+    <tr class="header">
+      <th><strong>CH</strong></th>
+      <th>Chert</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CO</strong></th>
+      <th>Coal</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="48"><strong>Lithology</strong></th>
+      <th><strong>CG</strong></th>
+      <th>Conglomerate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CU</strong></th>
+      <th>Consolidated rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SD</strong></th>
+      <th>Detrital sedimentary rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>DI</strong></th>
+      <th>Diorite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>DR</strong></th>
+      <th>Dolerite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>DM</strong></th>
+      <th>Dolomite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>FC</strong></th>
+      <th>Ferricrete</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GA</strong></th>
+      <th>Gabbro</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GS</strong></th>
+      <th>Gneiss</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GN</strong></th>
+      <th>Granite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GD</strong></th>
+      <th>Granodiorite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GR</strong></th>
+      <th>Granulite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GV</strong></th>
+      <th>Gravel</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GW</strong></th>
+      <th>Graywacke</th>
+    </tr>
+    <tr class="header">
+      <th><strong>GE</strong></th>
+      <th>Greenstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>GY</strong></th>
+      <th>Gypsum</th>
+    </tr>
+    <tr class="header">
+      <th><strong>HA</strong></th>
+      <th>Halite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>HO</strong></th>
+      <th>Hornfels</th>
+    </tr>
+    <tr class="header">
+      <th><strong>IG</strong></th>
+      <th>Igneous rock (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>JA</strong></th>
+      <th>Jasper</th>
+    </tr>
+    <tr class="header">
+      <th><strong>LI</strong></th>
+      <th>Limestone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MB</strong></th>
+      <th>Marble</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ML</strong></th>
+      <th>Marl</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ME</strong></th>
+      <th>Metamorphic rock (unidentified)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MD</strong></th>
+      <th>Microdiorite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MG</strong></th>
+      <th>Microgranite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MS</strong></th>
+      <th>Microsyenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MI</strong></th>
+      <th>Migmatite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>MU</strong></th>
+      <th>Mudstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>MY</strong></th>
+      <th>Mylonite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PG</strong></th>
+      <th>Pegmatite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PE</strong></th>
+      <th>Peridotite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PL</strong></th>
+      <th>Phonolite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PH</strong></th>
+      <th>Phyllite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PC</strong></th>
+      <th>Porcellanite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>PO</strong></th>
+      <th>Porphyry</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PY</strong></th>
+      <th>Pyroxenite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QZ</strong></th>
+      <th>Quartz</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QU</strong></th>
+      <th>Quartzite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>QP</strong></th>
+      <th>Quartz porphyry</th>
+    </tr>
+    <tr class="header">
+      <th><strong>QS</strong></th>
+      <th>Quartz sandstone</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>RB</strong></th>
+      <th>Red-brown hardpan</th>
+    </tr>
+    <tr class="header">
+      <th><strong>RH</strong></th>
+      <th>Rhyolite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SA</strong></th>
+      <th>Sandstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>ST</strong></th>
+      <th>Schist</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SK</strong></th>
+      <th>Scoria</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SR</strong></th>
+      <th>Serpentinite</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SH</strong></th>
+      <th>Shale</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="15"><strong>Lithology</strong></th>
+      <th><strong>LC</strong></th>
+      <th>Silcrete</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>ZS</strong></th>
+      <th>Siltstone</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SL</strong></th>
+      <th>Slate</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SY</strong></th>
+      <th>Syenite</th>
+    </tr>
+    <tr class="header">
+      <th><strong>TR</strong></th>
+      <th>Trachyte</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>TU</strong></th>
+      <th>Tuff</th>
+    </tr>
+    <tr class="header">
+      <th><strong>UC</strong></th>
+      <th>Unconsolidated material (unidentified)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>VB</strong></th>
+      <th>Volcanic breccia</th>
+    </tr>
+    <tr class="header">
+      <th><strong>VG</strong></th>
+      <th>Volcanic glass</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>IS</strong></th>
+      <th>Ironstone (where not considered of pedogenic origin)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>SS</strong></th>
+      <th>Shells</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>CC</strong></th>
+      <th>Charcoal</th>
+    </tr>
+    <tr class="header">
+      <th><strong>PU</strong></th>
+      <th>Pumice</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OW</strong></th>
+      <th>Opalised wood</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OT</strong></th>
+      <th>Other</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>Strength</strong></th>
+      <th><strong>VW</strong></th>
+      <th>Very weak rock (1–25 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>W</strong></th>
+      <th>Weak rock (25–50 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>M</strong></th>
+      <th>Moderately strong rock (50–100 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Strong rock (100–200 MPa)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>VS</strong></th>
+      <th>Very strong rock (&gt;200 MPa)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Alteration</strong></th>
+      <th><strong>F</strong></th>
+      <th>Ferruginised</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Kaolinised</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Silicified</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>C</strong></th>
+      <th>Calcified</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4 id="appendix-v">Appendix V. Segregations descriptions and codes</h4>
+<p>
+  <em>(YB p. 195–198; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Segregations details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6"><strong>Abundance</strong></th>
+      <th><strong>0</strong></th>
+      <th>No segregations</th>
+    </tr>
+    <tr class="header">
+      <th><strong>1</strong></th>
+      <th>Very few (&lt;2%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Few (2–10%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Common (10–20%)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Many (20–50%)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Very many (&gt;50%)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="14"><strong>Nature</strong></th>
+      <th><strong>U</strong></th>
+      <th>Unidentified</th>
+    </tr>
+    <tr class="header">
+      <th><strong>K</strong></th>
+      <th>Calcareous (carbonate)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Y</strong></th>
+      <th>Gypseous (gypsum)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Manganiferous (manganese)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>N</strong></th>
+      <th>Ferromanganiferous (iron-manganese)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>F</strong></th>
+      <th>Ferruginous (iron)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>A</strong></th>
+      <th>Aluminous (aluminium)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Sulphurous (sulfur)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>Z</strong></th>
+      <th>Saline (visible salt)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>H</strong></th>
+      <th>Organic (humified, well-decomposed organic matter)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>G</strong></th>
+      <th>Ferruginous-organic (iron-organic matter)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Argillaceous (clayey)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>E</strong></th>
+      <th>Earthy (dominantly non-clayey)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Other</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="9"><strong>Form</strong></th>
+      <th><strong>C</strong></th>
+      <th>Concretions</th>
+    </tr>
+    <tr class="header">
+      <th><strong>N</strong></th>
+      <th>Nodules</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>F</strong></th>
+      <th>Fragments</th>
+    </tr>
+    <tr class="header">
+      <th><strong>X</strong></th>
+      <th>Crystals</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>S</strong></th>
+      <th>Soft segregations</th>
+    </tr>
+    <tr class="header">
+      <th><strong>V</strong></th>
+      <th>Veins</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Root linings</th>
+    </tr>
+    <tr class="header">
+      <th><strong>T</strong></th>
+      <th>Tubules</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Laminae</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Size</strong></th>
+      <th><strong>1</strong></th>
+      <th>Fine (&lt;2 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Medium (2–6 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Coarse (6–20 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Very coarse (20–60 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Extremely coarse (&gt;60 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="2"><strong>Strength</strong></th>
+      <th><strong>1</strong></th>
+      <th>Weak</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Strong</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="2"><strong>Magnetic attributes</strong></th>
+      <th><strong>N</strong></th>
+      <th>Non-magnetic</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Magnetic</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4 id="appendix-w">Appendix W. Voids descriptions and codes</h4>
+<p>
+  <em>(YB p. 184–185; The National Committee on Soil and Terrain 2009).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Voids details</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>Cracks</strong></th>
+      <th><strong>1</strong></th>
+      <th>Fine (&lt;5 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Medium (5–10 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Coarse (10–20 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>4</strong></th>
+      <th>Very coarse (20–50 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>5</strong></th>
+      <th>Extremely coarse (&gt;50 mm)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="4">
+        <strong
+          >Very fine and fine macropore (&lt;2 mm diameter) abundance</strong
+        >
+      </th>
+      <th><strong>0</strong></th>
+      <th>No very fine or fine macropores</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>1</strong></th>
+      <th>Few (&lt;1 per 100 mm<sup>2</sup>; 10 x 10 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>2</strong></th>
+      <th>Common (1–5 per 100 mm<sup>2</sup>)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>3</strong></th>
+      <th>Many (&gt;5 per 100 mm<sup>2</sup>)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="4">
+        <strong
+          >Medium and coarse macropore (&gt;2 mm diameter) abundance</strong
+        >
+      </th>
+      <th><strong>0</strong></th>
+      <th>No medium or coarse macropores</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Few (&lt;1 per 0.1 m<sup>2</sup>; 100 x 100 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>5</strong></th>
+      <th>Common (1–5 per 0.1 m<sup>2</sup>)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>6</strong></th>
+      <th>Many (&gt;5 per 0.1 m<sup>2</sup>)</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="4"><strong>Mean diameter of macropores</strong></th>
+      <th><strong>1</strong></th>
+      <th>Very fine (0.075–1 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>2</strong></th>
+      <th>Fine (1–2 mm)</th>
+    </tr>
+    <tr class="header">
+      <th><strong>3</strong></th>
+      <th>Medium (2–5 mm)</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>4</strong></th>
+      <th>Coarse (&gt;5 mm)</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<h4 id="appendix-gg">
+  Appendix GG. Australian Soil Classification (ASC) Family descriptions and
+  codes
+</h4>
+<p>
+  <em>(Isbell and The National Committee on Soil and Terrain 2016).</em>
+</p>
+<table>
+  <colgroup>
+    <col style="width: 42%" />
+    <col style="width: 14%" />
+    <col style="width: 42%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Family criteria</strong></th>
+      <th><strong>Code</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="3"><strong>Water repellence</strong></th>
+      <th><strong>NR</strong></th>
+      <th>Non water repellent</th>
+    </tr>
+    <tr class="header">
+      <th><strong>WR</strong></th>
+      <th>Water repellent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>SR</strong></th>
+      <th>Strongly water repellent</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="4"><strong>A of A1 horizon thickness</strong></th>
+      <th><strong>A</strong></th>
+      <th>Thin</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>B</strong></th>
+      <th>Moderately thick</th>
+    </tr>
+    <tr class="header">
+      <th><strong>C</strong></th>
+      <th>Thick</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>D</strong></th>
+      <th>Very thick</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="5"><strong>Gravel of surface and A1 horizon</strong></th>
+      <th><strong>E</strong></th>
+      <th>Non gravelly</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>F</strong></th>
+      <th>Slightly gravelly</th>
+    </tr>
+    <tr class="header">
+      <th><strong>G</strong></th>
+      <th>Gravelly</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>H</strong></th>
+      <th>Moderately gravelly</th>
+    </tr>
+    <tr class="header">
+      <th><strong>I</strong></th>
+      <th>Very gravelly</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6"><strong>A1, O2, P1 or P2 horizon texture</strong></th>
+      <th><strong>J</strong></th>
+      <th>Peaty</th>
+    </tr>
+    <tr class="header">
+      <th><strong>K</strong></th>
+      <th>Sandy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Loamy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Clay loamy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>N</strong></th>
+      <th>Silty</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Clayey</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="6">
+        <strong
+          >Texture of the layer directly underlying the deepest organic
+          materials</strong
+        >
+      </th>
+      <th><strong>Z</strong></th>
+      <th>Materials absent</th>
+    </tr>
+    <tr class="header">
+      <th><strong>K</strong></th>
+      <th>Sandy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>L</strong></th>
+      <th>Loamy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>M</strong></th>
+      <th>Clay loamy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>N</strong></th>
+      <th>Silty</th>
+    </tr>
+    <tr class="header">
+      <th><strong>O</strong></th>
+      <th>Clayey</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="5"><strong>B horizon maximum texture</strong></th>
+      <th><strong>K</strong></th>
+      <th>Sandy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>L</strong></th>
+      <th>Loamy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>M</strong></th>
+      <th>Clay loamy</th>
+    </tr>
+    <tr class="header">
+      <th><strong>N</strong></th>
+      <th>Silty</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>O</strong></th>
+      <th>Clayey</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="3"><strong>Clay content (vertosols only)</strong></th>
+      <th><strong>Q</strong></th>
+      <th>Fine</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>R</strong></th>
+      <th>Medium fine</th>
+    </tr>
+    <tr class="header">
+      <th><strong>S</strong></th>
+      <th>Very fine</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="7"><strong>Soil depth</strong></th>
+      <th><strong>T</strong></th>
+      <th>Very shallow</th>
+    </tr>
+    <tr class="header">
+      <th><strong>U</strong></th>
+      <th>Shallow</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>V</strong></th>
+      <th>Moderately deep</th>
+    </tr>
+    <tr class="header">
+      <th><strong>W</strong></th>
+      <th>Deep</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>X</strong></th>
+      <th>Very deep</th>
+    </tr>
+    <tr class="header">
+      <th><strong>Y</strong></th>
+      <th>Giant</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>–</strong></th>
+      <th>Not recorded</th>
+    </tr>
+    <tr class="header">
+      <th rowspan="7">
+        <strong
+          >Dominant texture of the uppermost organic materials (O2, P1 or
+          P2)</strong
+        >
+      </th>
+      <th><strong>Z</strong></th>
+      <th>Materials absent</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OA</strong></th>
+      <th>Fibric peat</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OB</strong></th>
+      <th>Hemic peat</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OC</strong></th>
+      <th>Sapric peat</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OD</strong></th>
+      <th>Sandy peat</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>OE</strong></th>
+      <th>Loam peat</th>
+    </tr>
+    <tr class="header">
+      <th><strong>OF</strong></th>
+      <th>Clayey peat</th>
+    </tr>
+    <tr class="odd">
+      <th rowspan="3">
+        <strong>Nature of altered organic materials</strong>
+      </th>
+      <th><strong>P</strong></th>
+      <th>Granular</th>
+    </tr>
+    <tr class="header">
+      <th><strong>HZ</strong></th>
+      <th>Ashy</th>
+    </tr>
+    <tr class="odd">
+      <th><strong>JZ</strong></th>
+      <th>Vitric</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
   <li>
     <p>
       Mobile device (tablet/phone capable of taking high resolution photos) with
-      the App (progressive web app) saved to the home screen
+      the App<br />
+      (progressive web app) saved to the home screen
     </p>
   </li>
   <li>
@@ -75,8 +1371,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      pH kit based on the specifications of Raupach and Tucker (1959) (portable
-      pH meters may also be used)
+      pH kit based on the specifications of Raupach and Tucker (1959)<br />
+      (portable pH meters may also be used)
     </p>
   </li>
   <li>
@@ -111,61 +1407,69 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      The Australian Soil Classification (Isbell and The National Committee on
+      The Australian Soil Classification(Isbell and The National Committee on
       Soil and Terrain 2016).
     </p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<p>Extending instructions from Plot soil description module</p>
-<ul>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
   <li>
     <p>
-      Ensure the Plot selection and layout module has been completed to mark out
-      the plot grid with sub- meter accuracy using the Trimble® R1.
+      Ensure the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot selection and layout</a></em> module has been completed to
+      mark out the plot grid with sub-metre accuracy using the Trimble® R1.
     </p>
   </li>
   <li>
     <p>
-      Select the ‘Soils’ module and then the ‘Soil pit characterization’
+      Select the ‘Soils’ module and then the ‘Soil pit characterisation’
       protocol in the App. The App will automatically record the Plot name,
       based on the established plot you are working in, the Protocol, and the
       Date.
     </p>
   </li>
-  <li><p>Locate the southwest corner of the plot.</p></li>
+  <li>
+    <p>Locate the southwest corner of the plot.</p>
+  </li>
   <li>
     <p>
-      Record the Type of soil observation being used (Appendix M). This should
-      be ‘P’ (Soil pit) for pedologists or experience soil surveyors (continue
-      with <u>Soil pit characterization and soil sample</u
-      ><u>collection</u> below), or ‘T’ (10 cm samples) extracted via ‘P’ (Soil
-      pit) for less experienced field surveyors (skip to <u>Soil sample</u
-      ><u>collection</u>). Refer to pages 205–206 of the YB for further
+      Record the <em>Type of soil observation</em> being used (drop-down list).
+      This should be ‘P’ (Soil pit) for pedologists or experience soil surveyors
+      (continue with <a href="#soil-pit-characterisation-and-soil-sample-collection"
+          >Soil pit characterisation and soil sample</a
+        > collection below), or ‘T’ (10 cm samples) extracted via ‘P’ (Soil
+      pit) for less experienced field surveyors (skip to
+      <a href="#soil-sub-site-samples-protocol">Soil sample</a>
+      collection). Refer to pages 205–206 of the YB for further
       descriptions.
     </p>
   </li>
-</ul>
-<p style="color: orange">
-  Soil pit characterization and soil sample collection
-</p>
-<ol>
+</ol>
+<h4 id="soil-pit-characterisation-and-soil-sample-collection">
+  A. Soil pit characterisation and soil sample collection
+</h4>
+<ol start="5" type="1">
   <li>
     <p>
-      Record who the soil pit characterization is Characterized by from the
-      drop-down list of personnel affiliated with your user login.
+      Record who the soil pit characterisation is
+      <em>Characterised by</em> from the drop-down list of personnel affiliated
+      with your user login.
     </p>
   </li>
   <li>
     <p>
-      Dig a soil pit to 1 m+ deep just outside the southwest corner of plot.
-      Place the spoil on a ground sheet to minimize disturbance and assist
-      backfilling. Record the Depth of the soil pit.
+      Dig a soil pit to 1 m+ deep just outside the southwest corner of the plot.
+      Place the spoil on a ground sheet to minimise disturbance and assist
+      backfilling. Record the <em>Depth</em> of the soil pit.
     </p>
   </li>
   <li>
     <p>
       If a depth of 1 m+ cannot be achieved after three attempts, record what
-      digging was Stopped by (Appendix N) and the R horizon depth in meters.
+      digging was <em>Stopped by</em> (drop-down list) and the
+      <em>R horizon depth</em> in metres.
     </p>
   </li>
   <li>
@@ -184,134 +1488,143 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Record the Horizon and Horizon suffix using the codes in Appendix O. Refer
-      to pages 148–159 of the YB and the <u>Additional guidelines</u> below for
-      further descriptions.
+      Record the <em>Horizon</em> and <em>Horizon suffix</em> using the codes
+      from the drop-down list. Refer to pages 148–159 of the YB and the
+      <a href="#additional-guidelines"><u>Additional guidelines</u></a>
+      below for further descriptions.
     </p>
   </li>
   <li>
     <p>
-      Record the Depth of the soil horizon in centimeters, including Upper and
-      Lower.
+      Record the <em>Depth</em> of the soil horizon in centimeters, including
+      <em>Upper</em> and <em>Lower</em>.
     </p>
   </li>
   <li>
     <p>
-      Assess and record the Boundary between the horizon being assessed the
-      horizon below, including the Distinctness and Shape of the boundary using
-      the codes in Appendix P. Refer to pages 199–200 of the YB for further
+      Assess and record the <em>Boundary</em> between the horizon being assessed
+      the horizon below, including the <em>Distinctness</em> and
+      <em>Shape</em> of the boundary using the codes from the drop-down list.
+      Refer to pages 199–200 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Field texture</em>, including the <em>Grade</em>,
+      <em>Qualification</em> and <em>Modifier</em> using the codes from the
+      drop-down list. Refer to pages 161–167 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record matrix <em>Colour</em>, including the <em>Hue</em>,
+      <em>Value</em> and <em>Chroma</em> using the Munsell Soils Color Charts
+      (Munsell Color 2009), and <em>Moisture status</em> using the codes from
+      the drop-down list. Moisten the soil if it is dry. Dry colours may also be
+      recorded. Refer to Munsell Color (2009) and page 159 of the YB for further
       descriptions.
     </p>
   </li>
   <li>
     <p>
-      Assess and record Field texture, including the Grade, Qualification and
-      Modifier using the codes in Appendix Q. Refer to pages 161–167 of the YB
-      for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record matrix Color, including the Hue, Value and Chroma using
-      the Munsell Soils Color Charts (Munsell Color 2009), and Moisture status
-      using the codes in Appendix R. Moisten the soil if it is dry. Dry colors
-      may also be recorded. Refer to Munsell Color (2009) and page 159 of the YB
-      for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      If present, assess and record Mottles, including their Type, Abundance,
-      Size, Contrast, Color and Boundaries distinctness using the codes in
-      Appendix S. Record multiple if present. Refer to pages 159– 161 of the YB
-      for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      If present, assess and record Coarse fragments, including their Abundance,
-      Size, Shape, Lithology, Strength and Alteration using the codes in
-      Appendix T. Record multiple if present. Refer to pages 139– 144, 209 and
-      214 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Structure, including the Grade, Size, Type and Compound
-      pedality using the codes in Appendix U. Record multiple if present (i.e.,
-      largest peds parting to smaller sized peds down to the primary ped. Refer
-      to pages 171–181 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      If present, assess and record Segregations, including their Abundance,
-      Nature, Form, Size, Strength and Magnetic attributes using the codes in
-      Appendix V. Record multiple if present. Refer to pages 195– 198 of the YB
-      for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      If present, assess and record Voids, including Cracks, Fine macropore
-      abundance, Coarse macropore abundance and Mean macropore diameter using
-      the codes in Appendix W. Record multiple if present. Refer to pages
-      184–185 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Consistence, including soil Strength and Soil water
-      status using the codes in Appendix X. Refer to pages 186–187 of the YB for
-      further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      If present, assess and record Pans, including Type, Cementation,
-      Continuity and Structure using the codes in Appendix Y. Refer to pages
-      192–195 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record the Fabric using the codes in Appendix Z. Refer to pages
-      181–182 of the YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      If present, assess and record Cutans, including Type, Abundance and
-      Distinctness using the codes in Appendix AA. Refer to pages 182–183 of the
-      YB for further descriptions.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record Field pH (to 0.5 of a unit) using a pH kit based on the
-      specifications of Raupach and Tucker (1959). Portable pH meters may also
-      be used. Refer to page 198 of the YB for further details.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record EC 1:5 (electrical conductivity) using a portable EC
-      meter. Follow instructions for the meter being used.
-    </p>
-  </li>
-  <li>
-    <p>
-      Assess and record the Effervescence of carbonate in fine earth using 2–3
-      drops of 1 Molar HCl and the codes in Appendix BB. Refer to page 198 of
+      If present, assess and record <em>Mottles</em>, including their
+      <em>Type</em>, <em>Abundance</em>, <em>Size</em>, <em>Contrast</em>,
+      <em>Colour</em> and <em>Boundaries</em> distinctness using the codes from
+      the drop-down list. Record multiple if present. Refer to pages 159–161 of
       the YB for further descriptions.
     </p>
   </li>
   <li>
     <p>
+      If present, assess and record <em>Coarse fragments</em>, including their
+      <em>Abundance</em>, <em>Size</em>, <em>Shape</em>, <em>Lithology</em>,
+      <em>Strength</em> and <em>Alteration</em> using the codes in <a href='#appendix-t'>Appendix T</a>.
+      Record multiple if present. Refer to pages 139–144, 209 and 214 of the YB
+      for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Structure</em>, including the <em>Grade</em>,
+      <em>Size</em>, <em>Type</em> and <em>Compound pedality</em> using the
+      codes from the drop-down list. Record multiple if present (i.e. largest
+      peds parting to smaller sized peds down to the primary ped. Refer to pages
+      171–181 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      If present, assess and record <em>Segregations</em>, including their
+      <em>Abundance</em>, <em>Nature</em>, <em>Form</em>, <em>Size</em>,
+      <em>Strength</em> and <em>Magnetic attributes</em> using the codes in
+      <a href='#appendix-v'>Appendix V</a>. Record multiple if present. Refer to pages 195–198 of the YB
+      for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      If present, assess and record <em>Voids</em>, including <em>Cracks</em>,
+      <em>Fine macropore abundance</em>, <em>Coarse macropore abundance</em> and
+      <em>Mean macropore diameter</em> using the codes in <a href='#appendix-w'>Appendix W</a>. Record
+      multiple if present. Refer to pages 184–185 of the YB for further
+      descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Consistence</em>, including soil
+      <em>Strength</em> and <em>Soil water status</em> using the codes from the
+      drop-down list. Refer to pages 186–187 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      If present, assess and record <em>Pans</em>, including <em>Type</em>,
+      <em>Cementation</em>, <em>Continuity</em> and <em>Structure</em> using the
+      codes from the drop-down list. Refer to pages 192–195 of the YB for
+      further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record the <em>Fabric</em> using the codes from the drop-down
+      list. Refer to pages 181–182 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      If present, assess and record <em>Cutans</em>, including <em>Type</em>,
+      <em>Abundance</em> and Distinctness using the codes from the drop-down
+      list. Refer to pages 182–183 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>Field pH</em> (to 0.5 of a unit) using a pH kit
+      based on the specifications of Raupach and Tucker (1959). Portable pH
+      meters may also be used. Refer to page 198 of the YB for further details.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record <em>EC 1:5</em> (electrical conductivity) using a
+      portable EC meter. Follow instructions for the particular meter being
+      used.
+    </p>
+  </li>
+  <li>
+    <p>
+      Assess and record the <em>Effervescence</em> of carbonate in fine earth
+      using 2–3 drops of 1 Molar HCl and the codes from the drop-down list.
+      Refer to page 198 of the YB for further descriptions.
+    </p>
+  </li>
+  <li>
+    <p>
       Prepare a soil sample zip-lock bag for each 10 cm soil depth increment in
-      the horizon that you are collecting a sample from. Use a permanent text to
-      write the plot code, date of collection, horizon and soil depth increment.
-      Place a barcode label on each sample bag in sequential order.
+      the horizon that you are collecting a sample from. Use a permanent texta
+      to write the plot code, date of collection, horizon and soil depth
+      increment. Place a barcode label on each sample bag in sequential order.
     </p>
   </li>
   <li>
@@ -324,7 +1637,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
   <li>
-    <p>Record the Sample depth in centimeters, including Upper and Lower.</p>
+    <p>
+      Record the <em>Sample depth</em> in centimeters, including
+      <em>Upper</em> and <em>Lower</em>.
+    </p>
   </li>
   <li>
     <p>
@@ -341,54 +1657,60 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>Repeat steps 5–27 for each soil horizon down to a depth of 1 m+.</p>
   </li>
-  <li><p>Store all samples together in a large plastic bag.</p></li>
   <li>
-    <p>For clayey loams, assess and record Dispersion and Slaking:</p>
-    <ul>
-      <li>
-        <p>Fill a tray with enough deionized water to cover peds.</p>
-      </li>
-      <li>
-        <p>
-          Place a small dry ped into the deionized water for each soil depth
-          increment of interest. Start at the top, like a clock, and continue
-          clockwise to keep track of sample depths.
-        </p>
-      </li>
-      <li>
-        <p>
-          Score Dispersion and Slaking after at least 10 minutes using the codes
-          in Appendix CC.
-        </p>
-      </li>
-      <li>
-        <p>
-          Score Dispersion again after 2 hours, or at least until after you have
-          finished all other tasks in the Soils module, using the codes in
-          Appendix CC.
-        </p>
-      </li>
-      <li>
-        <p>
-          For any peds that don’t disperse, test a 5–10 mm sample from the soil
-          bolus that was used for soil texturing (see step 9 above). This is
-          equivalent to ‘remolding the sample’ and may help you to score the
-          sample as either 0 or 1 for dispersion (see Appendix CC).
-        </p>
-      </li>
-    </ul>
+    <p>Store all samples together in a large plastic bag.</p>
+  </li>
+</ol>
+<ol start="34" type="1">
+  <li>
+    <p>
+      For clayey loams, assess and record <em>Dispersion</em> and
+      <em>Slaking</em>:
+    </p>
+  </li>
+  <li>
+    <p>Fill a tray with enough deionised water to cover peds.</p>
   </li>
   <li>
     <p>
-      Record the Australian Soil Classification (ASC), including the Confidence
-      level, Order, Suborder, Great group, Sub group and Family using the codes
-      in Appendix DD, Appendix EE, Appendix FF and Appendix GG. To accurately
-      categorize soils within the ASC requires the specialized skills of a
-      pedologist and should not be attempted by inexperienced field surveyors.
-      It will only be possible following all the non- essential descriptions
-      under the soil characterization to 1 m+ depth. Refer to the third edition
-      of The Australian Soil Classification for further descriptions (Isbell and
-      The National Committee on Soil and Terrain 2016).
+      Place a small dry ped into the deionised water for each soil depth
+      increment of interest. Start at the top, like a clock, and continue
+      clockwise to keep track of sample depths.
+    </p>
+  </li>
+  <li>
+    <p>
+      Score <em>Dispersion</em> and <em>Slaking</em> after at least 10 minutes
+      using the codes from the drop-down list.
+    </p>
+  </li>
+  <li>
+    <p>
+      Score <em>Dispersion</em> again after 2 hours, or at least until after you
+      have finished all other tasks in the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95">Soils</a></em> module), using the
+      codes from the drop-down list.
+    </p>
+  </li>
+  <li>
+    <p>
+      For any peds that don’t disperse, test a 5–10 mm sample from the soil
+      bolus that was used for soil texturing (see step 13 above). This is
+      equivalent to ‘remoulding the sample’ and may help you to score the sample
+      as either 0 or 1 for dispersion (see drop-down list).
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the <em>Australian Soil Classification</em> (ASC), including the
+      <em>Confidence level</em>, <em>Order</em>, <em>Suborder</em>,
+      <em>Great group</em>, <em>Sub group</em> and <em>Family</em> using the
+      codes from drop-down lists and <a href='#appendix-gg'>Appendix GG</a>. To accurately categorise soils
+      within the ASC requires the specialised skills of a pedologist and should
+      not be attempted by inexperienced field surveyors. It will only be
+      possible following all the non-essential descriptions under the soil
+      characterisation to 1 m+ depth. Refer to the third edition of
+      <em>The Australian Soil Classification</em> for further descriptions
+      (Isbell and The National Committee on Soil and Terrain 2016).
     </p>
   </li>
   <li>
@@ -398,40 +1720,46 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
   <li>
-    <p>Record any Additional soil pit characterization comments.</p>
+    <p>Record any Additional soil pit characterisation comments.</p>
   </li>
   <li>
     <p>
-      Prior to backfilling, undertaken the <u>Soil bulk density protoco</u>l,
-      which collects soil bulk density samples from an edge of the pit.
+      Prior to backfilling, undertaken the
+      <a
+        href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d9e6739a-c2dd-4619-be43-1251449a6436"
+        >Soil bulk density</a
+      >
+      protocol, which collects soil bulk density samples from an edge of the
+      pit.
     </p>
   </li>
   <li>
     <p>
-      Select ‘Complete Soil pit characterization' to save the protocol and
-      return to the Soils module.
+      Select ‘Complete Soil pit characterisation' to save the protocol and
+      return to the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95">Soils</a></em> module.
     </p>
   </li>
 </ol>
-<p style="color: orange">Soil sample collection</p>
-<ol>
+<h4 id="b.-soil-sample-collection">B. Soil sample collection</h4>
+<ol type="1">
   <li>
     <p>
-      Record who the soil pit samples are Collected by from the drop-down list
-      of personnel affiliated with your user login.
+      Record who the soil pit samples are <em>Collected by</em> from the
+      drop-down list of personnel affiliated with your user login.
     </p>
   </li>
   <li>
     <p>
-      Dig a soil pit to 1 m+ deep just outside the southwest corner of plot.
-      Place the spoil on a ground sheet to minimize disturbance and assist
-      backfilling. Record the Depth of the soil pit.
+      Dig a soil pit to 1 m+ deep just outside the southwest corner of the plot.
+      Place the spoil on a ground sheet to minimise disturbance and assist
+      backfilling. Record the <em>Depth</em> of the soil pit.
     </p>
   </li>
   <li>
     <p>
       If a depth of 1 m+ cannot be achieved after three attempts, record what
-      digging was Stopped by (Appendix N) and the R horizon depth in meters.
+      digging was <em>Stopped by</em> (drop-down list) and the
+      <em>R horizon depth</em> in metres.
     </p>
   </li>
   <li>
@@ -450,23 +1778,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Record the Horizon and Horizon suffix usng the codes in Appendix O. Refer
-      to pages 148–159 of the YB and the <u>Additional guidelines</u> below for
-      further descriptions.
+      Record the <em>Horizon</em> and <em>Horizon suffix</em> usng the codes
+      from drop-down list. Refer to pages 148–159 of the YB and the
+      <a href="#additional-guidelines"><u>Additional guidelines</u></a>
+      below for further descriptions.
     </p>
   </li>
   <li>
     <p>
-      Record the Depth of the soil horizon in centimeters, including Upper and
-      Lower.
+      Record the <em>Depth</em> of the soil horizon in centimeters, including
+      <em>Upper</em> and <em>Lower</em>.
     </p>
   </li>
   <li>
     <p>
-      Assess and record the Boundary between the horizon being assessed the
-      horizon below, including the Distinctness and Shape of the boundary using
-      the codes in Appendix P. Refer to pages 199–200 of the YB for further
-      descriptions.
+      Assess and record the <em>Boundary</em> between the horizon being assessed
+      the horizon below, including the <em>Distinctness</em> and
+      <em>Shape</em> of the boundary using the codes from the drop-down list.
+      Refer to pages 199–200 of the YB for further descriptions.
     </p>
   </li>
   <li>
@@ -480,14 +1809,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       For each 10 cm soil depth increment in the horizon, collect a 500 g soil
-      sample and place into the applicable lablled zip-lock bag, avoiding
+      sample and place into the applicable labeled zip-lock bag, avoiding
       disruption to any peds or aggregates as much as possible and taking care
       not to sample across horizons. Use the pit tape to determine the
       increments.
     </p>
   </li>
   <li>
-    <p>Record the Sample depth in centimeters, including Upper and Lower.</p>
+    <p>
+      Record the <em>Sample depth</em> in centimeters, including
+      <em>Upper</em> and <em>Lower</em>.
+    </p>
   </li>
   <li>
     <p>
@@ -504,262 +1836,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>Repeat steps 5–13 for each soil horizon down to a depth of 1 m+.</p>
   </li>
-  <li>
-    <p>Record any Additional soil pit characterisation comments.</p>
-  </li>
+  <li><p>Record any Additional soil pit characterisation comments.</p></li>
   <li><p>Store all samples together in a large plastic bag.</p></li>
   <li>
     <p>
-      Prior to backfilling, undertake the <u>Soil bulk density protoco</u>l,
-      which collects soil bulk density samples from an edge of the pit.
+      Prior to backfilling, undertake the
+      <a
+        href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d9e6739a-c2dd-4619-be43-1251449a6436"
+        >Soil bulk density</a
+      >, which collects soil bulk density samples from an edge of the pit.
     </p>
   </li>
   <li>
     <p>
       Select ‘Complete Soil pit characterisation' to save the protocol and
-      return to the Soils module.
+      return to the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95">Soils</a></em> module.
     </p>
   </li>
 </ol>
-<strong><p>Additional guidelines</p></strong>
-<p>
-  The following points are adapted from The National Committee on Soil and
-  Terrain (2009) and McKenzie et al. (2008).
-</p>
-<p style="color: orange">Soil characterization</p>
-<ul>
-  <li>
-    <p>
-      Soil characterization should be completed as close as possible to the
-      southwest corner of the plot (i.e., outside and immediately adjacent to
-      the plot; see Figure 1), but should not result in any disturbance in the
-      plot.
-    </p>
-  </li>
-  <li>
-    <p>
-      Soil characterization should ideally be conducted by a pedologist, soil
-      scientist, or experience soil surveyor. A less experience surveyor should
-      collect soil samples that can be characterized back in the lab by a
-      pedologist, soil scientist, or experience soil surveyor.
-    </p>
-  </li>
-  <li>
-    <p>
-      Refer to the Yellow Book for further descriptions and instructions for
-      assessing each soil property (The National Committee on Soil and Terrain
-      2009).
-    </p>
-  </li>
-  <li>
-    <p>
-      The preferred soil characterization method is by digging a 1 m+ soil pit.
-      The advantages of this approach include easy observation of vertical and
-      lateral variation, compacting specimens is avoided, easy sampling of
-      undisturbed horizons with little or no contamination, and easy to
-      photograph exposures.
-    </p>
-  </li>
-  <li>
-    <p>
-      Consider the alignment of the pit as this is important for good
-      photographs of the pit face. Natural sunlight can produce sharp contrasts
-      of shade and light that obscure subtle variation in the profile, though
-      full sunlight without shadows can be satisfactory. Light cloudy conditions
-      offer uniform lighting, which might be best. Orient the pit so that the
-      face to be photographed will be illuminated by the sun at the time.
-    </p>
-  </li>
-  <li>
-    <p>
-      The pit should be large enough for comfortable working at the face.
-      Depending on final depth, one or more steps (about 0.3 m tread with 0.3 m
-      risers) should be left. Pits deeper than 1.5 m require bracing to meet
-      occupational health and safety requirements.
-    </p>
-  </li>
-  <li>
-    <p>
-      During excavation, protect the soil surface above the face to be described
-      and sampled by laying a piece of heavy canvas or plastic sheet at that end
-      of the pit. Place it to one side when you begin to collect specimens and
-      use it to receive individual specimens as they are removed, before packing
-      them for transport to the laboratory.
-    </p>
-  </li>
-  <li>
-    <p>
-      The face of the soil profile should be picked back to expose the natural
-      ped faces where present. A non-reflective black or coloured tape with
-      clear depth markings should always be used. Soil profiles are best
-      photographed when moist, so they match morphological descriptions – spray
-      water on dry profiles from a bottle.
-    </p>
-  </li>
-  <li>
-    <p>
-      Flash or flood lighting produces an evenly lit photograph, but the
-      resulting colors can be unnatural. When pits are deep the bottom of the
-      face might receive less light. A reflective screen placed along the base
-      of the pit ensures even lighting across the base of the profile. A
-      sunscreen made from black cotton provides good shade when the pit cannot
-      be aligned as preferred.
-    </p>
-  </li>
-  <li>
-    <p>
-      Collect samples by progressive excavation of a vertical rectangular
-      section, sub-sectioned by depth intervals or soil horizons or both. To
-      obtain sufficient specimens from thin layers, it may be necessary to
-      collect from a larger cross-sectional area than for the rest of the
-      profile. Conversely, this may result in too large a specimen if depth
-      intervals are increased deeper in the profile. Do not solve this problem
-      by reducing the cross-sectional area of the section. To avoid bias, the
-      soil profile should be excavated to a uniform cross-section.
-    </p>
-  </li>
-  <li>
-    <p>
-      Avoid contamination by incomplete removal of overlying material or by
-      failure of side or back walls of the lengthening collection channel. In
-      most cases, it is best to start from the base of the profile to minimize
-      contamination.
-    </p>
-  </li>
-  <li>
-    <p>
-      Every effort should be made to dig a 1 m+ soil pit. However, after three
-      failed attempts (due to rock, hardpan, water, etc.), the attempt should be
-      abandoned and the reason documented, and soil characterization undertaken
-      and/or soil samples collected down to the depth achieved.
-    </p>
-  </li>
-  <li>
-    <p>
-      If digging a 1 m+ soil pit cannot be undertaken, other options include:
-    </p>
-    <ul>
-      <li>
-        <p>
-          Using a core tube or hand auger to collect soils and laying out the
-          profile, or
-        </p>
-      </li>
-      <li>
-        <p>
-          Using a hand auger and collecting a 500 g sample from 10 cm increments
-          down the profile to 1 m+.
-        </p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>
-      If you need to sample or observe the soil below the bottom of the pit, you
-      can do so with a hand auger.
-    </p>
-  </li>
-  <li>
-    <p>
-      For efficiency, one field surveyor can dig the pit while another locates
-      and begins digging the soil sub-sites in different microhabitats (see
-      <u>Soil sub-site characterization protoco</u>l).
-    </p>
-  </li>
-  <li>
-    <p>
-      Sampling from existing exposures (e.g., road cuts, gully banks) is
-      undesirable because the topsoil is often disturbed, absent, or overlaid
-      with other material, and it is difficult to determine how representative
-      the exposures are.
-    </p>
-  </li>
-</ul>
-<p style="color: orange">Horizons</p>
-<ul>
-  <li>
-    <p>
-      A soil horizon is a layer of soil approximately parallel to the land
-      surface, with morphological properties different from layers below and/or
-      above it.
-    </p>
-  </li>
-  <li>
-    <p>
-      Horizons may be difficult to name but should be named in the field.
-      Opinions formed at the time of description are useful for later reference.
-      Even less experienced surveyors should be able to distinguish soil
-      horizons.
-    </p>
-  </li>
-  <li>
-    <p>
-      With regard to horizon notation, the long-established usage in horizon
-      designation is adopted. Emphasis is on factual objective notation rather
-      than assumed genesis, as genetic implications are often uncertain and
-      difficult to establish.
-    </p>
-  </li>
-  <li>
-    <p>
-      Horizon codes and description are listed in Appendix O. Refer to pages
-      148–159 of the Yellow Book for detailed descriptions (The National
-      Committee on Soil and Terrain 2009).
-    </p>
-  </li>
-</ul>
-<p style="color: orange">Soil color</p>
-<ul>
-  <li>
-    <p>
-      Soil colour is not covered in depth in the Yellow Book. See the Munsell
-      Color (2009) for further details.
-    </p>
-  </li>
-  <li>
-    <p>
-      Munsell Soil Colour Charts are arranged by hue, value and chroma. The hue
-      notation of a colour indicates its relation to red, yellow, green, blue
-      and purple; the value notation indicates its lightness; and the chroma
-      notation indicates its strength (or departure from a neutral of the same
-      lightness).
-    </p>
-  </li>
-  <li>
-    <p>
-      The colours are displayed on individual soil colour charts are of constant
-      hue, designated by a symbol in the upper right-hand corner of the chart.
-    </p>
-  </li>
-  <li>
-    <p>
-      Vertically, as the colours become successively lighter from the bottom to
-      the top of the chart by visually equal steps, their value increases.
-    </p>
-  </li>
-  <li>
-    <p>
-      Horizontally, the colours increase in chroma to the right of the chart and
-      become greyer to the left.
-    </p>
-  </li>
-</ul>
-<p style="color: orange">Soil samples</p>
-<ul>
-  <li>
-    <p>
-      Even a less experienced surveyor should be able to identify the soil
-      horizons, in which case sampling across soil horizons should be avoided.
-    </p>
-  </li>
-  <li>
-    <p>
-      When placing each soil sample into the applicable labelled zip-lock bags,
-      take care to minimise disruption to any peds or aggregates. Coarse
-      fragment components should be minimised in sample to avoid overfilling the
-      bags. If necessary, samples can be sieved in the field using a 2 mm sieve.
-    </p>
-  </li>
-</ul>"""^^rdf:HTML ;
+    """^^rdf:HTML ;
 .
 

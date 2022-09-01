@@ -1,0 +1,828 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/1cc740f1-d659-48c7-b9d0-55ae8ddfbed8>
+    a
+        skos:Concept ,
+        tern:Method ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+    <h3 class="list-paragraph" id="additional-guidelines">Additional guidelines</h3>
+<h4 id="pre-field-collection">Pre-field collection</h4>
+<ul>
+  <li>
+    <p>
+      Familiarise yourself with the camera and refer the cameras manual to
+      change the date and time, change the file format to RAW+JPEG, change the
+      camera mode to aperture priority, set the aperture (f stop), and set the
+      lens focal length.
+    </p>
+  </li>
+  <li>
+    <p>
+      If conducting the photopoints module at a plot that has already been
+      previously established using procedures and guidelines in
+      <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot layout and positioning module</a></em>, check that the module was
+      fully completed and that the centre post used for the photopoint was
+      installed. If not, ensure you have a star dropper available for when you
+      visit the plot to take the photos.
+    </p>
+  </li>
+</ul>
+<h4 id="field-collection">Field collection</h4>
+<ul>
+  <li>
+    <p>
+      At the start of each survey, check the camera settings to ensure the
+      correct date and time. Date and time may be used to cross-reference photos
+      against the app data.
+    </p>
+  </li>
+  <li>
+    <p>
+      If the camera has the ability, ensure GPS location settings are enabled
+      (optional setting, and not a requirement).
+    </p>
+  </li>
+  <li>
+    <p>
+      The photo sequences should be taken between 10 am and 4 pm (where
+      possible) to minimise sun and shadow effects on the photos and to ensure
+      good illumination. It may be appropriate to take photos outside these
+      times if there is reasonable light, and the light is diffused (i.e.,
+      consistent cloud cover). Overcast conditions are favourable.
+    </p>
+  </li>
+  <li>
+    <p>
+      In some communities where the vegetation is dense, or where the landscape
+      prohibits a clear field of view at the plot centre or ability to position
+      the star dropper (i.e., due to a large boulder right the plot centre, the
+      photopoint star dropper may be relocated off-centre. This should be no
+      more than 5 m from the actual centre point, and the location must be
+      updated in the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot layout and positioning module</a>.
+    </p>
+  </li>
+  <li>
+    <p>
+      In some communities where dense vegetation prohibits a clear field of
+      view, or where the landscape prohibits the positioning of the star dropper
+      (i.e., due to a large boulder right at the plot centre), the photopoint
+      star dropper may be relocated off-centre. This should be no more than 10 m
+      from the actual centre point, and the location must be updated in the Plot
+      layout and positioning module (ideally this would have been considered
+      when the plot was being established, not as an afterthought once the
+      photopoints were being conducted).
+    </p>
+  </li>
+</ul>
+<h4 id="post-field-survey">Post-field survey</h4>
+<ul>
+  <li>
+    <p>
+      Photos must not be edited, cropped, or have watermarks or filters applied.
+    </p>
+  </li>
+  <li>
+    <p>
+      File names should not be re-named from the default camera name assigned.
+    </p>
+  </li>
+  <li>
+    <p>
+      Properties/EXIF metadata of the photos should not be edited, i.e. date,
+      time and gps locations (if applicable), should not be altered with,
+      however additional data may be added.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Photopoints - Full protocol: DSLR panoramas" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/photopoints/full-protocol/full-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3><span id="appendices" class="anchor"></span>APPENDICES</h3>
+<h4 id="appendix-1">Appendix 1. Instructions to construct a calibration target</h4>
+<h5 id="calibration-target-3">Calibration target</h5>
+<p>
+  TERN has designed and developed a calibration target. Use of the calibration
+  target in the photo panoramas aids processing the photos. The procedures below
+  include detail on how to construct the calibration target and a holder to
+  ensure it is safe transport (recommended for use when field work is conducted
+  over extended periods, and when off-road driving is required).
+</p>
+<h5 id="materials-and-equipment-for-the-calibration-target">
+  Materials and equipment for the calibration target:
+</h5>
+<ul>
+  <li>
+    <p>
+      PVC pipe – 90 mm diameter cut to a minimum 250 mm length, ideally 540 mm
+    </p>
+  </li>
+  <li><p>Push-on cap – 90 mm diameter</p></li>
+  <li>
+    <p>
+      A4 paper, preferably in off-white, light cream, light grey, light green
+      (any light colours other than bright white works best)
+    </p>
+  </li>
+  <li><p>Printer for printing the calibration target</p></li>
+  <li><p>Calibration target PDF file (downloadable from x)</p></li>
+  <li><p>Adhesive suitable for holding the PVC</p></li>
+  <li><p>Sticky tape</p></li>
+</ul>
+<h5
+  id="materials-and-equipment-for-the-calibration-target-housing-recommended-but-not-mandatory"
+>
+  Materials and equipment for the calibration target housing (recommended but
+  not mandatory)
+</h5>
+<ul>
+  <li>
+    <p>
+      PVC pipe – 100 mm diameter cut to a minimum 270 mm length, ideally 560 mm
+    </p>
+  </li>
+  <li><p>Screw cap (threaded) lid – 100 mm diameter</p></li>
+  <li><p>Screw cap (threaded) coupling – for a 100 mm screw cap lid</p></li>
+  <li><p>Push-on cap – 100 mm</p></li>
+  <li><p>Foam circle x 2 – 100 mm diameter</p></li>
+  <li><p>Foam rectangle – 20 mm x 280 mm</p></li>
+</ul>
+<p>
+  <strong>Printing note:</strong> The calibration target code sheet consists of
+  a series of QR codes that the computer software reads. The sheet is designed
+  so certain codes wrap around the 90 mm target pipe. The sheet must be printed
+  at full scale, and the edges trimmed to the dotted line. The target code sheet
+  once trimmed needs to measure 282 mm (= circumference of the 90 mm pipe) so
+  that the codes match up precisely.
+</p>
+<h5 id="instructions-to-construct-a-calibration-target">
+  Instructions to construct a calibration target
+</h5>
+<ol type="1">
+  <li><p>Cut the 90 mm diameter pipe to length (ideally 540 mm)</p></li>
+</ol>
+<ol start="2" type="1">
+  <li><p>Glue the 90 mm push-on cap to one end of the pipe</p></li>
+  <li>
+    <p>
+      Print the QR code calibration code sheet onto off-white/pale coloured
+      paper (see note below)
+    </p>
+  </li>
+  <li><p>Tape the QR code calibration code sheet to the pipe</p></li>
+</ol>
+<h5 id="instructions-to-construct-a-calibration-target-housing">
+  Instructions to construct a calibration target housing
+</h5>
+<ol type="1">
+  <li><p>Cut the 100 mm diameter pipe to length (ideally 560 mm)</p></li>
+</ol>
+<ol start="2" type="1">
+  <li>
+    <p>
+      Cut the foam rectangle to size (20 mm x 280 mm) and glue to the inside
+      edge of one end of the pipe
+    </p>
+  </li>
+  <li>
+    <p>Cut one foam circle, and glue it to the inside of the 100 mm cap lid</p>
+  </li>
+  <li>
+    <p>
+      Glue the 100 mm cap lid (with foam attached) to the end of the pipe where
+      you have just glued the rectangle
+    </p>
+  </li>
+  <li>
+    <p>Glue the screw cap (threaded) coupling to the other end of the pipe</p>
+  </li>
+  <li>
+    <p>
+      Glue the other foam circle to the underside of the 90 mm screw cap lid
+    </p>
+  </li>
+  <li><p>Screw the lid on.</p></li>
+</ol>
+<p>
+  <strong>Precaution:</strong> Once constructed, leave the calibration
+  target/housing somewhere to air for a few days as the smell of adhesive glue
+  can be quite overpowering.
+</p>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+    <h3 class="list-paragraph" id="equipment">Equipment</h3>
+<p>The following equipment is required to take the photo panoramas:</p>
+<ul>
+  <li>
+    <p>
+      DSLR camera with a 15 megapixel or greater sensor and able to shoot in RAW
+      format, with either a 24 mm fixed lens or zoom lens set at 24 mm focal
+      length
+    </p>
+  </li>
+  <li><p>Operational manual for the camera</p></li>
+  <li>
+    <p>
+      Spare batteries for camera, or ability to recharge batteries in the field
+    </p>
+  </li>
+  <li>
+    <p>
+      Memory cards (either SD or compact flash depending on the camera
+      requirements), minimum 8 GB capacity per plot
+    </p>
+  </li>
+  <li>
+    <p>
+      Tripod that enables the camera to be set to a height where the centre of
+      the lens sits at 1.3 m, ideally with a built-in bubble spirit level to
+      ensure the camera is level
+    </p>
+  </li>
+  <li><p>Calibration target (preferred, optional)</p></li>
+  <li>
+    <p>
+      Coloured tape (or similar) for marking the star dropper (any colour) or
+      holding the calibration in place if its windy
+    </p>
+  </li>
+  <li><p>5 m tape measure</p></li>
+  <li><p>3 tent pegs (ideally) or 3 clothes pegs</p></li>
+  <li><p>Mobile device (tablet/phone) with the App installed.</p></li>
+</ul>
+<p>
+  For installing the centre post (refer to
+  <em>Plot selection and layout</em> module):
+</p>
+<ul>
+  <li><p>DGPS/GNSS</p></li>
+  <li>
+    <p>
+      Star dropper (1.8 m in length so it can be positioned to a height of 1.3
+      m)
+    </p>
+  </li>
+  <li>
+    <p>
+      Fence post driver or mallet (for positioning the star dropper) (should
+      have been completed as part of the
+      <em>Plot selection and layout</em> module).
+    </p>
+  </li>
+</ul>
+<h4 id="specifications-and-advice">Specifications and advice</h4>
+<h5 id="camera">Camera</h5>
+<p>TERN typically use the following camera and lens models:</p>
+<ul>
+  <li>
+    <p>
+      Canon EOS 550D DSLR cropped sensor camera, with 18-200 mm zoom lens set at
+      24 mm focal length. For cropped sensor cameras similar to this, aim for a
+      50% overlap between photos in the panorama sequence. Completing the full
+      360<sup>o</sup> panorama should take around 22 photos.
+    </p>
+  </li>
+  <li>
+    <p>
+      Canon EOS 6D Mark II full frame DSLR camera, with a Canon EF 24-70 mm zoom
+      lens set at 24 mm focal length. For full frame cameras like this, aim for
+      50% overlap between photos in the panorama sequence, just like if using a
+      cropped sensor camera, but expect less photos to be required. Completing
+      the full 360<sup>o</sup> panorama should take around 16 photos.
+    </p>
+  </li>
+</ul>
+<p>
+  Make sure to familiarise yourself with the camera before the field survey
+  commences and take the camera manual with you into the field for reference if
+  needed. You will need to know how to:
+</p>
+<ul>
+  <li><p>check and change the date and time</p></li>
+  <li><p>change the file format to shoot in RAW+JPEG</p></li>
+  <li>
+    <p>
+      change the camera mode to Auto and Aperture priority (Av mode if using a
+      Canon; mode names will vary between makes, use your manual for reference)
+    </p>
+  </li>
+  <li><p>change the aperture to F11 (f stop)</p></li>
+  <li><p>adjust the lens focal length to 24 mm</p></li>
+  <li><p>change the lens from auto-focus to manual focus</p></li>
+  <li>
+    <p>
+      mount the camera on the tripod, adjust the tripod height, and check that
+      the tripod is evenly balanced (preferably by reading the spirit level if
+      one is fitted on the tripod).
+    </p>
+  </li>
+</ul>
+<h5 id="memory-cards">Memory cards</h5>
+<p>
+  Choose a SD or compact flash card (depending on your camera requirements) with
+  a high camera write-speed, such as a SanDisk Extreme Pro or Lexar
+  Professional. The faster the write-speed, the less time wasted waiting for the
+  camera to be ready between taking the photos. USB read speed (copying the
+  files to the computer) is of less importance. TERN typically uses SanDisk
+  Extreme Pro 128GB SDXC (which have a 170MB/s transfer speed).
+</p>
+<h5 id="calibration-target">Calibration target</h5>
+<p>
+  TERN has designed and developed a calibration target (see <a href='#figure-4'>Figure 4</a> below). Use
+  of the calibration target in the panoramas aids processing the photos but is
+  not critical. The procedures below include detail on how to use the
+  calibration target, and what to do when the target is not used. Instructions
+  on constructing the calibration target are provided in <a href='#appendix-1'>Appendix 1</a>.
+</p>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 class="list-paragraph" id="instructions-and-procedures">
+  Instructions and procedures
+</h3>
+<h4 id="establishing-the-photopoint-for-the-first-time">
+  Establishing the photopoint for the first time
+</h4>
+<ol type="1">
+  <li>
+    <p>
+      The centre of the plot should have been established in the
+      <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot positioning and layout module</a></em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Position a central star dropper so that one rib faces directly south, use
+      a compas to ensure accuracy as this has implications for the image
+      processing when creating the panorama. Knock the dropper into position so
+      that the top is 1.3 m above ground level. Ideally, the central star
+      dropper should remain as a permanent marker to ensure repeated sampling is
+      precisely the same.
+    </p>
+    <p id='figure-4'>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/star-dropper.png"
+        alt="Star dropper illustrating the three ribs, face one of the ribs due south"
+        widteh="301"
+        height="311"
+      />
+    </p>
+  </li>
+</ol>
+<p>
+  <span id="_Toc10465610" class="anchor"></span>Figure 4. Star dropper
+  illustrating the three ribs, face one of the ribs due south.
+</p>
+<h4 id="section-1"></h4>
+<h4 id="section-2"></h4>
+<h4 id="section-3"></h4>
+<h4 id="section-4"></h4>
+<h4 id="fitting-the-calibration-target-if-using">
+  Fitting the calibration target (if using)
+</h4>
+<ol type="1">
+  <li>
+    <p>
+      Position the calibration target over the central star dropper. There is no
+      start/end to the target QR code sequence, so there is no need be concerned
+      with how it faces each pointpoint. However, it is important that the
+      calibration target remains in the exact same position for each of the
+      three pointpoints. If it is windy, consider taping the bottom to the star
+      dropper so it does not wobb le.
+    </p>
+  </li>
+</ol>
+<p id='figure-5'>
+  <span id="_Ref72606044" class="anchor"></span
+  ><img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/calibration-target.png"
+    alt="Calibration target placed over the photopoint marker"
+    widteh="491"
+    height="415"
+  />
+</p>
+<p>Figure 5. Calibration target placed over the photopoint marker</p>
+<h4 id="section-5"></h4>
+<h4 id="marking-the-star-dropper-when-not-using-a-calibration-target">
+  Marking the star dropper when not using a calibration target
+</h4>
+<ol type="1">
+  <li>
+    <p>
+      Once the star dropper is positioned, using a tape measure, measure from
+      the ground up 1.3 m, and wrap a small (~15 cm) length of tape around the
+      star dropper. The bottom of the tape line needs to be exactly 1.3 m (see
+      photo).
+    </p>
+  </li>
+  <li>
+    <p>
+      From the bottom of the tape line, using a tape measure, measure down 25
+      cm, and wrap a small (~15 cm) length of tape around the star dropper.
+    </p>
+  </li>
+  <li>
+    <p>
+      Double check that the distance between the two tapes (excluding the tape
+      iteself) is precisely 25 cm, and adjust if necessary.
+    </p>
+    <p id='figure-6'>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/star-dropper-tape.png"
+        alt="Star dropper marked with tape"
+        widteh="608"
+        height="291"
+      />
+    </p>
+  </li>
+</ol>
+<p>
+  <span id="_Toc73276943" class="anchor"></span>Figure 6. Star dropper marked
+  with tape to provide precisely 25 cm distance between the two tapes.
+</p>
+<h4 id="section-6"></h4>
+<h4 id="setting-up-the-three-photopoints">Setting up the three photopoints</h4>
+<ol type="1">
+  <li>
+    <p>
+      From the star dropper, using a tape measure, measure out 1.45 m from each
+      of the 3 ribs, and place a peg at each photopoint position.
+    </p>
+  </li>
+</ol>
+<p id='figure-7'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/photopoint-setup.png"
+    alt="Photpoint setup"
+    widteh="542"
+    height="408"
+  />
+</p>
+<p>
+  <span id="_Toc10465612" class="anchor"></span>Figure 7. Photpoint setup
+  showing the position of the tripod, clothes/tent pegs with flagging attached,
+  and calibration target over the photopoint marker.
+</p>
+<h4 id="taking-the-photos-with-the-dslr-and-using-the-app">
+  Taking the photos with the DSLR and using the App
+</h4>
+<ol type="1">
+  <li>
+    <p>Ensure the camera memory card has at least 4 GB spare capacity.</p>
+  </li>
+</ol>
+<ol start="2" type="1">
+  <li><p>Mount the camera on the tripod.</p></li>
+  <li>
+    <p>
+      Adjust the tripod so the height of the middle of the camera lens is 1.3 m
+      above ground level.
+    </p>
+  </li>
+</ol>
+<p id='figure-8'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/camera-lens-height.png"
+    alt="Camera lens height"
+    widteh="241"
+    height="324"
+  />
+</p>
+<p>
+  <span id="_Toc73276945" class="anchor"></span>Figure 8. Measuring the height
+  to ensure the centre of the camera lens is 1.3 m above ground
+</p>
+<ol start="4" type="1">
+  <li>
+    <p>
+      Position the camera at photopoint position 1, adjust the tripod so the
+      camera sits horizontally on it and the 360° photographic sweep will be in
+      a consistent horizontal plane (check the bubble in the tripod if it has
+      one).
+    </p>
+  </li>
+  <li>
+    <p>
+      Set the camera to take RAW format (or RAW+JPEG) images (the camera default
+      will typically be JPEG only) (refer to your camera manual).
+    </p>
+  </li>
+  <li><p>Set the focal length of the lens to 24 mm.</p></li>
+  <li>
+    <p>
+      Set the camera to a suitable mode that enables the aperature to be
+      adjusted (Av = aperature priority mode in Canon EOS).
+    </p>
+  </li>
+  <li><p>Set the aperture to F11 (refer to your camera manual).</p></li>
+  <li>
+    <p>
+      Open the App, and select ‘Full protocol: Take photopoints using DSLR’
+      button from the home page.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select ‘Show Photopoint QR codes’, the photopoint equilateral triangle is
+      shown as a visual reminder of the order in which the photpoints 1,2, 3 are
+      positioned
+    </p>
+  </li>
+  <li>
+    The QR code for the first photopoint will be displayed. The screen also
+    displays the date and time of the device as a visual reference.
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/photopoint-screen.png"
+        alt="Photopoints screens"
+        widteh="557"
+        height="435"
+      /><img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/1qrcode.png"
+        alt="Photopoint position 1 QR Code"
+        widteh="477"
+        height="720"
+      />
+    </p>
+  </li>
+  <li id='figure-9'>
+    <p>
+      Once the first Photopoint QR code is displayed, with the DSLR camera still
+      set to auto, hold the App screen displaying the first photopoint QR code,
+      half pressing the shutter button first to ensure the screen is in focus.
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/holding-phone.png"
+        alt="App screen showing the QR code for photopoint position 1"
+        widteh="432"
+        height="484"
+      />
+    </p>
+  </li>
+</ol>
+<p>
+  <span id="_Toc73276946" class="anchor"></span>Figure 9. App screen showing the
+  QR code for photopoint position 1, taken with the DSLR camera before comencign
+  the 360<sup>o</sup> panorama.
+</p>
+
+<ol start="13" type="1">
+  <li>
+    <p>
+      Set the appropriate shutter speed depending on the light conditions. To
+      determine the appropriate shutter speed:
+    </p>
+    <ol type="a">
+      <li>
+        
+          <p>
+            set the camera to the aperture priority mode (refer to the manual)
+          </p>
+        
+      </li>
+      <li>
+        
+          <p>
+            point the camera in the four major compass directions while half
+            depressing the shot button to get a shutter speed setting in each
+            direction, and roughly calculate the average of these
+          </p>
+        
+      </li>
+      <li>
+        
+          <p>
+            set the camera on manual mode and select the shutter speed closest
+            to this value
+          </p>
+        
+      </li>
+      <li>
+        
+          <p>
+            set the lens focus to auto, take a test image in the direction of
+            the sun and view it on the screen to ensure the image is correctly
+            exposed. If overexposed, increase the shutter speed until the image
+            is suitable. If too dark, slow the shutter speed until the image is
+            suitable.
+          </p>
+        
+      </li>
+      <li>
+        
+          <p>
+            Delete the test image(s). Note: low shutter speeds will mean that
+            the camera must be kept very stable when taking photos to avoid
+            blurring.
+          </p>
+        
+      </li>
+    </ol>
+  </li>
+</ol>
+<ol start="14" type="1">
+  <li><p>Keep the lens focus on auto.</p></li>
+  <li>
+    <p>
+      Pick a point in the distance and half press the shutter button so it
+      focusses in the distance (the calibration will be blury).
+    </p>
+  </li>
+  <li><p>Switch the lens focus from Auto to Manual.</p></li>
+  <li>
+    <p>
+      Face with camera directly at the calibration target, ensuring that as much
+      of the target is visible as possible (the top of the target must be
+      included). Take a photo.
+    </p>
+  </li>
+</ol>
+<p id='figure-10'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/first-photo.png"
+    alt="Taking the first photo directly at the calibration target"
+    widteh="464"
+    height="319"
+  />
+</p>
+<p>
+  <span id="_Toc73276947" class="anchor"></span>Figure 10. Taking the first
+  photo directly at the calibration target
+</p>
+<ol start="18" type="1">
+  <li>
+    <p>
+      Adjust the camera angle slightly to the left of the calibration target
+      looking directly at the vegetation behind the target. While the lens is
+      still set to auto focus, half depress the shutter button so the camera
+      focuses on the vegetation, and the calibration target will now be slightly
+      out of focus (see <a href='#figure-10'>Figure 10</a> for examples). No need to take a photo at this
+      step. Retain this focus and continue to the next step.
+    </p>
+  </li>
+</ol>
+
+  <p id='figure-11'>
+    <img
+      src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/first-photo-calibration-in-focus.png"
+      alt="First photo taken"
+      widteh="633"
+      height="242"
+    />
+  </p>
+
+<p>
+  <span id="_Ref73214052" class="anchor"></span>Figure 11. First photo taken so
+  that the calibration is in focus, and the second photo so that the background
+  is in focus (and the target slightly out of focus).
+</p>
+<ol start="19" type="1">
+  <li>
+    <p>
+      Switch the lens to manual focus (maintaining the same focus as for the
+      last step) and commence the panorama sequence, with the first image
+      commencing on the calibration target. Ensure the camera remains level,
+      with the same proportion of sky to ground is maintained as in the previous
+      photo. Check each image for clarity:
+    </p>
+  </li>
+</ol>
+<ul>
+  <li><p>is it appropriately focused?</p></li>
+  <li><p>is it appropriately portioned?</p></li>
+  <li><p>is it appropriately overlapped with the proceeding photo?</p></li>
+</ul>
+<ol start="20" type="1">
+  <li>
+    <p>
+      Take a sequence of photos to cover the 360° panorama rotating the camera
+      in a clockwise direction, ensure a minimum 50% overlap between successive
+      photos finishing back looking at the calibration target.
+    </p>
+  </li>
+</ol>
+<ul>
+  <li>
+    <p>
+      If using a cropped sensor camera, the full 360 panorama should require
+      around 22 photos.
+    </p>
+  </li>
+  <li>
+    <p>
+      If using a full frame camera, the full 360 panorama should require around
+      16 photos.
+    </p>
+  </li>
+</ul>
+<ol start="21" type="1">
+  <li>
+    <p>
+      Move the tripod and camera to photopoint position 2, ensuring the height
+      remains at 1.3 m from the ground to the centre of the lens, and that the
+      camera body is immediately above the peg you placed out earlier at 1.45 m
+      from the star dropper.
+    </p>
+  </li>
+  <li>
+    <p>
+      On the App, swipe the screen to the left to display photopoint position 2
+      QR code.
+    </p>
+  </li>
+  <li>
+    <p>
+      Switch the cameras focus to auto and take a photo of the App screen that
+      displays the QR code for photopoint position 2.
+    </p>
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/2qrcode.png"
+        alt="App screen that displays the QR code for photopoint position 2"
+        widteh="290"
+        height="460"
+      />
+    </p>
+  </li>
+  <li>
+    <p>
+      Repeat steps 19 and 20 above, taking the series of photos from photopoint
+      position 2.
+    </p>
+  </li>
+  <li>
+    <p>
+      Move the tripod and camera to photopoint position 2, ensuring the height
+      remains at 1.3 m from the ground to the centre of the lens.
+    </p>
+  </li>
+  <li>
+    <p>
+      On the App, swipe the screen to the left to display photopoint 3 QR code.
+    </p>
+  </li>
+  <li>
+    <p>
+      With the DSLR camera still set to auto, hold the App screen displaying
+      photopoint 3 QR code, half pressing the shutter button first to ensure the
+      screen is in focus.
+    </p>
+  </li>
+  <li>
+    <p>
+      Repeat steps 19 and 20 above,, taking the series of photos from photopoint
+      position 3.
+    </p>
+  </li>
+  <li>
+    <p>
+      When you have completed the full 360o panorama from photopoint position 3,
+      on the app, select ‘OK Finished’.
+    </p>
+  </li>
+</ol>
+<ol start="30" type="1">
+  <li>
+    <p>
+      Confirm that you have completed taking the photos for all three
+      photopoints by selecting ‘Yes’.
+    </p>
+    <p>
+      <img
+        src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/finish-capture.png"
+        alt="Completed taking the photos for all three photopoints"
+        widteh="332"
+        height="527"
+      />
+    </p>
+  </li>
+  <li>
+    <p>
+      Turn the camera off, remove the camera from the tripod, and remove
+      calibration target. Return camera, tripod and calibration target to the
+      appropriate storage bags.
+    </p>
+  </li>
+  <li>
+    <p>
+      Download the photos to a field laptop if necessary to free-up space on the
+      memory card.
+    </p>
+  </li>
+</ol>
+    """^^rdf:HTML ;
+.
+

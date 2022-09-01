@@ -7,22 +7,132 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/ca8a3a10-d35d-45ff-b987-a4ab3f1ce1c5>
-    a skos:Concept ;
-    dcterms:description """<p>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#protocol-overview">Protocol Overview</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+</ol>
+<h3 id="protocol-overview">Protocol overview</h3>
+    <p>
   Collection of nine soil surface samples to 3 cm in differing microhabitats, or
   microhabitat of target species, taxa, or groups within the plot for downstream
   metagenomics analysis (generally collected immediately before the soil
-  sub-site samples are collected – if undertaking the Soil sub-site
-  characterization protocol).
-</p>"""^^rdf:HTML ;
+  sub-site samples are collected – if undertaking the
+  <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/e3ad3e5b-7c1c-4b59-bdb1-297f707d2ca3">Soil sub-site characterisation</a></em> protocol).
+</p>
+<p id='figure-1'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/soil/plot-layout.png"
+    alt="Plot layout"
+    widteh="500"
+    height="600"
+  />
+</p>
+<p>
+  Figure 1. Plot layout showing indicative locations of the soil
+  characterisation pit and nine soil characterisation sub-sites across the plot.
+</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 id="aligning-with-soil-sample-sub-sites">
+  A. Aligning with soil sample sub-sites
+</h4>
+<ul>
+  <li>
+    <p>
+      If undertaking the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/e3ad3e5b-7c1c-4b59-bdb1-297f707d2ca3">Soil sub-site samples</a></em> protocol, the
+      metagenomic samples can be collected from the same locations immediately
+      before the soil sub-site samples are collected.
+    </p>
+  </li>
+</ul>
+<h4 id="mixed-silica-granules">B. Mixed silica granules</h4>
+<ul>
+  <li>
+    <p>
+      Read
+      <a
+        href="https://www.silicageldirect.com.au/content/SilicaGelBluefinal.pdf"
+        ><u>material safety data sheet</u></a
+      >
+      before handling silica.
+    </p>
+  </li>
+  <li>
+    <p>
+      Prefill 9 zip lock bags per plot with ½ a cup of mixed silica granules
+      prior to the survey. Prepare a safe, well ventilated working area and use
+      the required PPE.
+    </p>
+  </li>
+  <li>
+    <p>
+      More mixed silica granules than ½ a cup per zip lock bag may be required
+      for damp samples.
+    </p>
+  </li>
+  <li>
+    <p>
+      Silica will need to be checked regularly and changed until the
+      self-indicating granules retain their original colour.
+    </p>
+  </li>
+  <li>
+    <p>
+      Store spare silica away from food or beverages in tightly closed
+      containers in a cool, dry and well-ventilated area.
+    </p>
+  </li>
+  <li>
+    <p>
+      A change in colour (usually after 2–3 days) of the self-indicating
+      granules reveals that the moisture absorbing capacity of the mix has been
+      reached and it needs to be replaced with fresh silica.
+    </p>
+  </li>
+  <li>
+    <p>
+      To replace silica, prepare a safe, well ventilated working area. Using the
+      required PPE, empty spent silica into a suitably sized empty airtight
+      receptacle (e.g. 20 L bucket with lid).
+    </p>
+  </li>
+  <li>
+    <p>
+      Replace ½ a cup of mixed silica granules into relevant zip lock bags and
+      reseal.
+    </p>
+  </li>
+  <li>
+    <p>
+      Do not discard the spent silica. It can be reactivated by drying in an
+      oven at 110°C for 2 hours or until the indicator colour reverts. Ovens
+      used for food preparation are not suitable for this process and PPE
+      recommendations should be followed at all times when handling silica.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
     skos:prefLabel "Soil metagenomics protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-metagenomics-protocol/soil-metagenomics-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
   <li>
     <p>
       Mobile device (tablet/phone capable of taking high resolution photos) with
-      the App (progressive web app) saved to the home screen
+      the App<br />
+      (progressive web app) saved to the home screen
     </p>
   </li>
   <li>
@@ -67,58 +177,65 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Trimble® R1 (GNSS receiver with sub-meter accuracy and Bluetooth
+      Trimble® R1 (GNSS receiver with sub-metre accuracy and Bluetooth
       connectivity).
     </p>
   </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
   <li>
     <p>
-      Ensure the Plot selection and layout module has been completed to mark out
-      the plot grid with sub- meter accuracy using the Trimble® R1, including
-      the 25 x 25 m soil sub-site zone in the southwest corner of the plot (see
-      Figure 1).
+      Ensure the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot selection and layout</a></em> module has been completed to
+      mark out the plot grid with sub-metre accuracy using the Trimble® R1,
+      including the 25 x 25 m soil sub-site zone in the southwest corner of the
+      plot (see <a href='#figure-1'>Figure 1</a>).
     </p>
   </li>
   <li>
     <p>
       Select the ‘Soils’ module and then the ‘Soil metagenomics’ protocol in the
-      App. The App will automatically record the Plot name, based on the
-      established plot you are working in, the Protocol, and the Date.
+      App. The App will automatically record the <em>Plot name</em>, based on
+      the established plot you are working in, the <em>Protocol</em>, and the
+      <em>Date</em>.
     </p>
   </li>
   <li>
     <p>
-      Traverse the plot to familiarize yourself with the soils, terrain and
+      Traverse the plot to familiarise yourself with the soils, terrain and
       microhabitats.
     </p>
   </li>
   <li>
     <p>
-      Locate nine sampling locations in different microhabitats, or microhabitat
-      for a target species, taxa, or group across the plot, the first five with
-      the soil sub-site zone and the remaining four spread across the plot (see
-      <u>Additional guidelines</u>).
+      Locate nine sampling locations in different microhabitats, or
+      microhabitats for a target species, taxa, or group across the plot, the
+      first five with the soil sub-site zone and the remaining four spread
+      across the plot (see <a href="#additional-guidelines">Additional guidelines</a> below).
     </p>
   </li>
   <li><p>For each surface sample, complete steps 6–16.</p></li>
   <li>
     <p>
       Select ‘Record soil metagenomics sample location’. The App will
-      automatically record the Metagenomics sub-site number (sequentially from
-      1), Easting, Northing, Zone, Datum and location acquisition Method (i.e.
-      ‘DGPS’).
+      automatically record the
+      <em>Metagenomics sub-site number</em> (sequentially from 1),
+      <em>Easting</em>, <em>Northing</em>, <em>Zone</em>, <em>Datum</em> and
+      location acquisition <em>Method</em> (i.e. ‘DGPS’).
     </p>
   </li>
   <li>
     <p>
-      Record who the metagenomic samples are Collected by from the drop-down
-      list of personnel affiliated with your user login. Your selection will be
-      prefilled for subsequent metagenomics sub-sites.
+      Record who the metagenomic samples are <em>Collected by</em> from the
+      drop-down list of personnel affiliated with your user login. Your
+      selection will be prefilled for subsequent metagenomics sub-sites.
     </p>
   </li>
-  <li><p>Record the Microhabitat.</p></li>
+  <li>
+    <p>Record the <em>Microhabitat</em>.</p>
+  </li>
   <li>
     <p>
       Select the ‘Microhabitat photo' button to capture an image of the
@@ -138,7 +255,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       (maximum 3 cm depth).
     </p>
   </li>
-  <li><p>Place this sample in a calico bag and label it with a barcode.</p></li>
+  <li>
+    <p>Place this sample in a calico bag and label it with a barcode.</p>
+  </li>
   <li>
     <p>
       Select the 'Scan barcode' button to scan the barcode label on the sample
@@ -155,7 +274,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Select 'Save metagenomics sub-site' to save the sub-site and return to the
-      Soil metagenomics protocol.
+      <em>Soil metagenomics</em> protocol.
     </p>
   </li>
   <li><p>Repeat steps 6–16 for each metagenomics sub-site.</p></li>
@@ -169,79 +288,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       Select ‘Complete Soil metagenomics' to save the protocol and return to the
-      Soils module.
+      <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95">Soils</a></em> module.
     </p>
   </li>
 </ol>
-<p><strong>Additional guidelines</strong></p>
-<p style="color: orange">Aligning with soil sample sub-sites</p>
-<ul>
-  <li>
-    <p>
-      If undertaking the Soil sub-site samples protocol, the metagenomic samples
-      can be collected from the same locations immediately before the soil
-      sub-site samples are collected.
-    </p>
-  </li>
-</ul>
-<p style="color: orange">Mixed silica granules</p>
-<ul>
-  <li>
-    <p>Read <u>material safety data sheet</u> before handling silica.</p>
-  </li>
-  <li>
-    <p>
-      Prefill 9 zip lock bags per plot with ½ a cup of mixed silica granules
-      prior to the survey. Prepare a safe, well ventilated working area and use
-      the required PPE.
-    </p>
-  </li>
-  <li>
-    <p>
-      More mixed silica granules than ½ a cup per zip lock bag may be required
-      for damp samples.
-    </p>
-  </li>
-  <li>
-    <p>
-      Silica will need to be checked regularly and changed until the
-      self-indicating granules retain their original colour.
-    </p>
-  </li>
-  <li>
-    <p>
-      Store spare silica away from food or beverages in tightly closed
-      containers in a cool, dry and well- ventilated area.
-    </p>
-  </li>
-  <li>
-    <p>
-      A change in colour (usually after 2–3 days) of the self-indicating
-      granules reveals that the moisture absorbing capacity of the mix has been
-      reached and it needs to be replaced with fresh silica.
-    </p>
-  </li>
-  <li>
-    <p>
-      To replace silica, prepare a safe, well ventilated working area. Using the
-      required PPE, empty spent silica into a suitably sized empty airtight
-      receptacle (e.g., 20 L bucket with lid).
-    </p>
-  </li>
-  <li>
-    <p>
-      Replace ½ a cup of mixed silica granules into relevant zip lock bags and
-      reseal.
-    </p>
-  </li>
-  <li>
-    <p>
-      Do not discard the spent silica. It can be reactivated by drying in an
-      oven at 110°C for 2 hours or until the indicator colour reverts. Ovens
-      used for food preparation are not suitable for this process and PPE
-      recommendations should be always followed when handling silica.
-    </p>
-  </li>
-</ul>"""^^rdf:HTML ;
+    """^^rdf:HTML ;
 .
 
