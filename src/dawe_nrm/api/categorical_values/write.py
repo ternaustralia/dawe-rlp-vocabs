@@ -23,7 +23,7 @@ def write_all(path: Path):
     async def generate(lut_endpoint: LUTSchema, client: httpx.Client):
         try:
             graph = await api.categorical_values.get(NRM, lut_endpoint, client)
-            label = lut_endpoint.uuid_namespace.replace(" ", "-") + ".ttl"
+            label = "-".join(lut_endpoint.label.split(" ")[:-1]).lower() + ".ttl"
             if label == "collection.ttl":
                 raise ValueError(
                     "Categorical values collection cannot be named collection.ttl as it is already reserved for the top-level collection."
