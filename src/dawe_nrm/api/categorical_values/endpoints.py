@@ -205,20 +205,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="coarse woody debris transect orientations",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-growth-stage-shrubs",
-        label="Condition growth stage shrubs codes",
-        description="A collection of condition growth stage shrubs and its codes.",
-        collection_uuid="b7066d4c-2d7b-4c1b-a8f2-401fd243ac3f",
-        uuid_namespace="condition growth stage shrubs",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-growth-stage-trees",
-        label="Condition growth stage trees codes",
-        description="A collection of condition growth stage trees and its codes.",
-        collection_uuid="8af52d41-016c-4d53-85ca-2357c3a1468d",
-        uuid_namespace="condition growth stage trees",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-life-stages",
         label="Condition life stages codes",
         description="A collection of condition life stages and its codes.",
@@ -1322,13 +1308,6 @@ endpoints: List[LUTSchema] = [
         description="A collection of vegetation growth form types and its codes.",
         collection_uuid="d0fc07a7-3ec9-45ed-8850-885a32828d3c",
         uuid_namespace="vegetation growth form",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-stages",
-        label="Vegetation growth stage codes",
-        description="A collection of vegetation growth stage types and its codes.",
-        collection_uuid="89c02383-fb5e-4acd-b248-902a2d579170",
-        uuid_namespace="vegetation growth stage",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-height-classes",
