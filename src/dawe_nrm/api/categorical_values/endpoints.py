@@ -1326,8 +1326,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-stages",
-        label="Growth stage codes",
-        description="A collection of growth stage types and its codes.",
+        label="Vegetation growth stage codes",
+        description="A collection of vegetation growth stage types and its codes.",
         collection_uuid="89c02383-fb5e-4acd-b248-902a2d579170",
         uuid_namespace="vegetation growth stage",
     ),
