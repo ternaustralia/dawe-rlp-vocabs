@@ -7,211 +7,62 @@ PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/1c83a60d-12e5-4bb3-b876-7eb97da79fa9>
-    a skos:Concept ;
-    dcterms:description """<p>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#protocol-overview">Protocol Overview</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+</ol>
+<h3 id="protocol-overview">Protocol overview</h3>
+    <p>
   Rapid, systematic collection of soil samples for downstream soil chemistry
   analysis to monitor soil condition, including collecting soil core samples at
-  0–10, 10–20 and 20–30 cm from 10 locations (Figure 2), systematically located
+  0–10, 10–20 and 20–30 cm from 10 locations (<a href='#figure-2'>Figure 2</a>), systematically located
   within the 25 x 25 m soil sub-site zone in the southwest corner of the plot
-  (Figure 1), and post-field survey processing and storage of soil samples. This
+  (<a href='#figure-1'>Figure 1</a>), and post-field survey processing and storage of soil samples. This
   protocol has been designed for conservation practitioners to quickly obtain a
   representative sample of the upper soil profile for downstream soil chemistry
   analysis (e.g. soil acidity, soil organic carbon) and determination of soil
   bulk density.
-</p>"""^^rdf:HTML ;
+</p>
+<p id='figure-1'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/soil/plot-layout.png"
+    alt="Plot layout"
+    widteh="500"
+    height="600"
+  />
+</p>
+<p>
+  Figure 1. Plot layout showing indicative locations of the soil
+  characterisation pit and nine soil characterisation sub-sites across the plot.
+</p>
+<p id='figure-2'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/soil/systematic-soil-sampling-grid.png"
+    alt="systematic-soil-sampling-grid"
+    widteh="568"
+    height="480"
+  />
+</p>
+<p>
+  Figure 2. Systematic soil sampling grid within the soil sub-site zone (25 x 25
+  m SW corner) for the <em>Soil chemistry samples</em> protocol (Grealish
+  <em>et al.</em> 2011).
+</p>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:prefLabel "Soil condition samples protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-condition-samples-protocol/soil-condition-samples-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """<ul>
-  <li>
-    <p>
-      Mobile device (tablet/phone capable of taking high resolution photos) with
-      the App (progressive web app) saved to the home screen
-    </p>
-  </li>
-  <li>
-    <p>Soil corer (5 cm diameter; 10 cm increments marked on the outside)</p>
-  </li>
-  <li>
-    <p>Trowel, small shovel, auger</p>
-  </li>
-  <li>
-    <p>Alcohol spray and small scrubbing brush</p>
-  </li>
-  <li>
-    <p>
-      30 medium sized snap lock bags per plot (22 x 25 cm; white block for
-      labelling)
-    </p>
-  </li>
-  <li>
-    <p>
-      Large plastic bag per plot to store individual samples together (ca. 50 x
-      60 cm)
-    </p>
-  </li>
-  <li>
-    <p>Adhesive voucher labels (with barcodes)</p>
-  </li>
-  <li>
-    <p>Permanent marker</p>
-  </li>
-  <li>
-    <p>10 survey pins</p>
-  </li>
-  <li>
-    <p>
-      Trimble® R1 (GNSS receiver with sub-metre accuracy and Bluetooth
-      connectivity).
-    </p>
-  </li>
-</ul>"""^^rdf:HTML ;
-    tern:instructions """<ol>
-  <li>
-    <p>
-      Ensure the Plot selection and layout module has been completed to mark out
-      the plot grid with sub- meter accuracy using the Trimble® R1, including
-      the 25 x 25 m soil sub-site zone in the southwest corner of the plot (see
-      Figure 1).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the ‘Soils’ module and then the ‘Soil chemistry sampling’ protocol
-      in the App. The App will automatically record the Plot name, based on the
-      established plot you are working in, the Protocol and the Date.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record who the soil chemistry samples are Collected by from the drop-down
-      list of personnel affiliated with your user login.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record the Agency from the drop-down list of agencies affiliated with your
-      user login.
-    </p>
-  </li>
-  <li>
-    <p>Record the State from the drop-down list.</p>
-  </li>
-  <li>
-    <p>
-      Record a brief Location description (i.e., a general description to assist
-      with plot re-location using distances and direction to landmarks).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select ‘Locate SW corner’ to launch the mapping interface and located the
-      southwest corner of the plot with sub-meter accuracy using the Trimble®
-      R1.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select ‘Record SW corner location’. The App will automatically record the
-      Easting, Northing, Zone, Datum and location acquisition Method (i.e.
-      ‘DGPS’).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select 'Locate 10 random samples'. The App will randomly select and
-      display 10 sampling locations from the 10 x 10 grid with lines spaced 2.5
-      m apart (i.e. 100 potential sampling locations; see Figure 2). If it is a
-      repeat survey, the App will randomly select 10 sampling locations from
-      potential sampling
-    </p>
-  </li>
-  <li>
-    <p>
-      locations that are yet to be sampled from. Sampling locations are randomly
-      selected using a Latin Square approach, where each row and column is
-      sampled only once in each sampling event.
-    </p>
-  </li>
-  <li>
-    <p>
-      Using the Trimble® R1, traverse to each sampling location. Mark each with
-      a survey pin and select 'Record sampling location'. The App will
-      automatically record the Easting, Northing, Zone, Datum and location
-      acquisition Method (i.e., ‘DGPS’, as well as the Sampling location based
-      on its row (A–J) and column (1–10; see Figure 2).
-    </p>
-  </li>
-  <li>
-    <p>
-      Return to each sampling location to collect the soil core. Still in the
-      mapping interface, select the location you are sampling. This will
-      navigate to a data entry screen for the sampling location.
-    </p>
-  </li>
-  <li><p>Brush any loose and obvious material from the soil surface.</p></li>
-  <li>
-    <p>
-      Ensure that the soil corer is not contaminated from another location. Use
-      alcohol spray and a small scrubbing brush to clean if necessary.
-    </p>
-  </li>
-  <li>
-    <p>
-      Collect stacked (i.e., use the same sample hole) soil cores from each
-      depth increment separately using the 10 cm marking on the outside of the
-      soil corer.
-    </p>
-  </li>
-  <li>
-    <p>
-      Place and seal the three samples into separate zip-lock bags and label
-      each with the plot code, date, sampling location, depth increment and a
-      barcode.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the 'Scan 0–10 barcode' button to scan the barcode label on the
-      0–10 cm sample and link the sample to the plot, survey date, sampling
-      location and depth increment.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the 'Scan 10–20 barcode' button to scan the barcode label on the
-      10–20 cm sample and link the sample to the plot, survey date, sampling
-      location and depth increment.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the 'Scan 20–30 barcode' button to scan the barcode label on the
-      20–30 cm sample and link the sample to the plot, survey date, sampling
-      location and depth increment.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the 'Save sampling location' button to save the sampling location
-      and return to the mapping interface to select the next sampling location.
-      Collect the survey pin before moving on.
-    </p>
-  </li>
-  <li><p>Repeat steps 11–19 for each sampling location.</p></li>
-  <li><p>Record any Additional metagenomics soil sub-site comments.</p></li>
-  <li>
-    <p>
-      Store all samples together in a large plastic bag and label this clearly
-      with the plot number and date. Select ‘Complete Soil chemistry samples' to
-      save the protocol and return to the Soils module.
-    </p>
-  </li>
-</ol>
-
-<p><strong>Additional guidelines</strong></p>
-<p>The following points are adapted from Grealish et al. (2011).</p>
-<p style="color: orange">Sample grid layout</p>
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<p>The following points are adapted from Grealish <em>et al.</em> (2011).</p>
+<h4 id="sample-grid-layout">A. Sample grid layout</h4>
 <ul>
   <li>
     <p>
@@ -219,8 +70,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       the east west grid lines are numbered as rows A to J. The 0 m lines are
       not used for sampling as these line areas will become disturbed during
       plot layout and particularly near the southwest corner that is used for
-      the staging area and digging of the soil characterization pit (see
-      <u>Soil pit characterisation protoco</u>l).
+      the staging area and digging of the soil characterisation pit (see <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/8f00b7c6-34b4-4203-8dcc-4be47f21d7db">Soil
+      pit characterisation protocol</a>).
     </p>
   </li>
   <li>
@@ -246,13 +97,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      Candidate sampling locations for four sampling events are shown in Figure
-      2.
+      Candidate sampling locations for four sampling events are shown in <a href='#figure-2'>Figure 2</a>.
     </p>
   </li>
   <li>
     <p>
-      Ensure that the Trimble® R1 has sub-meter accuracy (approaching 50 cm if
+      Ensure that the Trimble® R1 has sub-metre accuracy (approaching 50 cm if
       possible) when marking the southwest corner of the plot (before generating
       the sampling grid) and the sampling locations.
     </p>
@@ -268,13 +118,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </p>
   </li>
 </ul>
-<p style="color: orange">Collecting soil cores</p>
+<h4 id="collecting-soil-cores">B. Collecting soil cores</h4>
 <ul>
   <li>
     <p>
       Soil samples at each soil sample position will be extracted at 3 depths
       from the soil surface where soil mineral grains are encountered (surface
-      depth = 0 cm). The samples are to be collected as a stack, which is each
+      depth = 0 cm). The samples are to be collected as a stack, in which each
       sample depth is collected from the same position and therefore is directly
       below the sample previously collected from above.
     </p>
@@ -282,7 +132,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <li>
     <p>
       The soil surface (or zero depth) is considered where the mineral soil
-      starts. It is does not include grass thatching or a litter layer.
+      starts. It does not include grass thatching or a litter layer.
     </p>
   </li>
   <li>
@@ -327,8 +177,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>
       In some cases, the entire 30 cm interval will need to be collected as one
       core, the sample extruded out and divided into the three sample depth
-      intervals. Care needs to be exercised, considering soil compression and
-      dividing the soil core at the correct depth increments.
+      intervals. Care needs to be exercised, taking into account soil
+      compression and dividing the soil core at the correct depth increments.
     </p>
   </li>
   <li>
@@ -341,8 +191,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       obtain sufficient volume of soil. Where these tools do not work, then a
       shovel will need to be used to create a small pit to extract the soil.
       Bulk density cannot be calculated from these samples and a separate bulk
-      density sampling effort will need to be conducted (see
-      <u>Soil bulk density protocol</u>).
+      density sampling effort will need to be conducted (see <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d9e6739a-c2dd-4619-be43-1251449a6436">Soil bulk density
+      protocol</a>).
     </p>
   </li>
   <li>
@@ -370,195 +220,211 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>
       All samples are to be collected in such a way to avoid cross-contamination
       of the sample – requiring careful extraction of sample, clean sampling
-      tools and clean sample containers.
+      tools and clean sample containe
     </p>
   </li>
 </ul>
-
-<p>
-  <strong>Post-field survey tasks</strong>
-</p>
-<p style="color: orange">Sample processing</p>
-<p>
-  All disturbed specimens of soil should be air-dried unless special conditions
-  have been encountered (e.g. anaerobic or acid sulfate soils) or special
-  sampling procedures specified (e.g. field moist soil for incubation or
-  mineralization). The aim of air-drying soil is to reduce the water content and
-  prevent chemical and biological reactions prior to analysis (McKenzie et al.
-  2008). If processing bulk density from the soil cores, skip to
-  <u>Bulk density</u> below. This process will suitably dry the samples for
-  storage until analysis.
-</p>
-<ol>
+    """^^rdf:HTML ;
+    skos:prefLabel "Soil condition samples protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/soil-condition-samples-protocol/soil-condition-samples-protocol.ttl"^^xsd:anyURI ;
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
   <li>
     <p>
-      On return to the lab, dry all samples, either air-dried or oven-dried at
-      40°C until dry.
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App<br />
+      (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Soil corer (5 cm diameter; 10 cm increments marked on the outside)</p>
+  </li>
+  <li>
+    <p>Trowel, small shovel, auger</p>
+  </li>
+  <li>
+    <p>Alcohol spray and small scrubbing brush</p>
+  </li>
+  <li>
+    <p>
+      30 medium sized snap lock bags per plot (22 x 25 cm; white block for
+      labelling)
     </p>
   </li>
   <li>
     <p>
-      If air-drying samples, cloth specimen bags are good for rapid and
-      convenient air-drying. Protect samples from direct sunlight, rain,
-      condensation, dust and vermin, and ensure there is good ventilation.
+      Large plastic bag per plot to store individual samples together (ca. 50 x
+      60 cm)
+    </p>
+  </li>
+  <li>
+    <p>Adhesive voucher labels (with barcodes)</p>
+  </li>
+  <li>
+    <p>Permanent marker</p>
+  </li>
+  <li>
+    <p>10 survey pins</p>
+  </li>
+  <li>
+    <p>
+      Trimble® R1 (GNSS receiver with sub-metre accuracy and Bluetooth
+      connectivity).
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821">Plot selection and layout</a></em> module has been completed to
+      mark out the plot grid with sub-metre accuracy using the Trimble® R1,
+      including the 25 x 25 m soil sub-site zone in the southwest corner of the
+      plot (see <a href='#figure-1'>Figure 1</a>).
     </p>
   </li>
   <li>
     <p>
-      Place specimens on a flat, clean surface that is above ground. Racks of
-      metal-mesh trays maximize ventilation and minimise space. Specimens in
-      cloth bags can remain sealed but those in plastic bags will have to be
-      opened, and this creates a risk of contamination. Most specimens require
-      only 5– 7 days of air-drying but wet specimens might need more and should
-      be separated from the rest. Once air- dried, specimens can be packaged for
-      transport to the laboratory or processed on-site.
+      Select the ‘Soils’ module and then the ‘Soil chemistry sampling’ protocol
+      in the App. The App will automatically record the
+      <em>Plot name</em>, based on the established plot you are working in, the
+      <em>Protocol</em> and the <em>Date</em>.
     </p>
   </li>
   <li>
     <p>
-      Once dried, place each sample in an approved standardized airtight storage
-      container (e.g. 1 L Cospak A572) clearly labelled with a barcode label,
-      with an identical barcode label placed inside the container (adhesive
-      surface folded onto itself and placed in a small zip-lock bag).
+      Record who the soil chemistry samples are <em>Collected by</em> from the
+      drop-down list of personnel affiliated with your user login.
+    </p>
+  </li>
+  <li>
+    <p>
+      Record the <em>Agency</em> from the drop-down list of agencies affiliated
+      with your user login.
+    </p>
+  </li>
+  <li>
+    <p>Record the <em>State</em> from the drop-down list.</p>
+  </li>
+  <li>
+    <p>
+      Record a brief <em>Location description</em> (i.e. a general description
+      to assist with plot re-location using distances and direction to
+      landmarks).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select ‘Locate SW corner’ to launch the mapping interface and locate the
+      southwest corner of the plot with sub-metre accuracy using the Trimble®
+      R1.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select ‘Record SW corner location’. The App will automatically record the
+      <em>Easting</em>, <em>Northing</em>, <em>Zone</em>, <em>Datum</em> and
+      location acquisition <em>Method</em> (i.e. ‘DGPS’).
+    </p>
+  </li>
+  <li>
+    <p>
+      Select 'Locate 10 random samples'. The App will randomly select and
+      display 10 sampling locations from the 10 x 10 grid with lines spaced 2.5
+      m apart (i.e. 100 potential sampling locations; see <a href='#figure-2'>Figure 2</a>). If it is a
+      repeat survey, the App will randomly select 10 sampling locations from
+      potential sampling locations that are yet to be sampled from. Sampling
+      locations are randomly selected using a Latin Square approach, where each
+      row and column is sampled only once in each sampling event.
+    </p>
+  </li>
+  <li>
+    <p>
+      Using the Trimble® R1, traverse to each sampling location. Mark each with
+      a survey pin and select 'Record sampling location'. The App will
+      automatically record the <em>Easting</em>, <em>Northing</em>,
+      <em>Zone</em>, <em>Datum</em> and location acquisition
+      <em>Method</em> (i.e. ‘DGPS’, as well as the
+      <em>Sampling location</em> based on its row (A–J) and column (1–10; see
+      <a href='#figure-2'>Figure 2</a>).
+    </p>
+  </li>
+  <li>
+    <p>
+      Return to each sampling location to collect the soil core. Still in the
+      mapping interface, select the location you are sampling. This will
+      navigate to a data entry screen for the sampling location.
+    </p>
+  </li>
+  <li>
+    <p>Brush any loose and obvious material from the soil surface.</p>
+  </li>
+  <li>
+    <p>
+      Ensure that the soil corer is not contaminated from another location. Use
+      alcohol spray and a small scrubbing brush to clean if necessary.
+    </p>
+  </li>
+  <li>
+    <p>
+      Collect stacked (i.e. use the same sample hole) soil cores from each depth
+      increment separately using the 10 cm marking on the outside of the soil
+      corer.
+    </p>
+  </li>
+  <li>
+    <p>
+      Place and seal the three samples into separate zip-lock bags and label
+      each with the plot code, date, sampling location, depth increment and a
+      barcode.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the 'Scan 0–10 barcode' button to scan the barcode label on the
+      0–10 cm sample and link the sample to the plot, survey date, sampling
+      location and depth increment.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the 'Scan 10–20 barcode' button to scan the barcode label on the
+      10–20 cm sample and link the sample to the plot, survey date, sampling
+      location and depth increment.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the 'Scan 20–30 barcode' button to scan the barcode label on the
+      20–30 cm sample and link the sample to the plot, survey date, sampling
+      location and depth increment.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the 'Save sampling location' button to save the sampling location
+      and return to the mapping interface to select the next sampling location.
+      Collect the survey pin before moving on.
+    </p>
+  </li>
+  <li><p>Repeat steps 11–19 for each sampling location.</p></li>
+  <li><p>Record any Additional metagenomics soil sub-site comments.</p></li>
+  <li>
+    <p>
+      Store all samples together in a large plastic bag and label this clearly
+      with the plot number and date.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select ‘Complete Soil chemistry samples' to save the protocol and return
+      to the <em>Soils</em> module.
     </p>
   </li>
 </ol>
-<p style="color: orange">Bulk density</p>
-<p>
-  To determine the bulk density of soils, the sample volume is determined by
-  simple measurement of the dimensions of a coring ring. If the sampling
-  procedure is followed rigorously, the volume of all samples will be identical
-  (as the volume of all rings is identical), so sample volume will only need to
-  be determined for an initial sample. The soil from each core sample is
-  removed, oven-dried and weighed (McKenzie et al. 2002). Where suitable
-  processing facilities are available, following the steps below to determine
-  bulk density. Otherwise, forward intact soil cores to a suitable laboratory to
-  be processed.
-</p>
-<ol>
-  <li>
-    <p>
-      Measure, with calipers, the internal dimensions (diameter = L1; length =
-      L2) of the coring ring in meters to determine the volume (V1). L2 should
-      be 0.1 m based on the sampling depth increments collected in the field, so
-      you will just need to determine the internal diameter of your soil corer.
-    </p>
-  </li>
-  <li>
-    <p>
-      Weigh a dry, oven proof container (e.g. an aluminum dish) with a
-      laboratory balance with accuracy to ±0.01 g (10 mg; weight W1) for each
-      core.
-    </p>
-  </li>
-  <li>
-    <p>
-      Take each core from its sample bag into an oven-proof container. Weigh
-      each container and soil (W2).
-    </p>
-  </li>
-  <li>
-    <p>
-      Dry the soil in the containers in a well-ventilated oven at 105°C until
-      the weight is constant (usually 24–48 hours).
-    </p>
-  </li>
-  <li>
-    <p>
-      Cool in a desiccator before weighing each container and oven-dry soil
-      (W3).
-    </p>
-  </li>
-  <li>
-    <p>
-      Calculate the bulk density of each sample using the following equation:
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/soil/soil-condition-formula1.png"
-                alt="Soil condition formula 1"
-                widteh="395"
-                height="63"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </p>
-  </li>
-</ol>
-<p style="color: orange">
-  Bulk density from samples containing coarse fragments
-</p>
-<p>
-  The presence of coarse fragments (i.e. particles &gt;2mm diameter) in soil has
-  a significant effect on bulk density. If the sample contains coarse fragments,
-  the mass and volume of coarse fragments, gross bulk density of the soil with
-  coarse fragments, and bulk density of the fine-earth fraction (i.e. bulk
-  density of soil without the coarse fragment component) need to be considered
-  (McKenzie et al. 2002).
-</p>
-<ol>
-  <li>
-    <p>
-      After drying and cooling (see above), separate the coarse fragment
-      component of each sample by sieving the through a 2mm sieve.
-    </p>
-  </li>
-  <li>
-    <p>
-      Weigh the fine earth and container (W4) and coarse fragments and container
-      (W5) of each sample separately.
-    </p>
-  </li>
-  <li>
-    <p>
-      Determine the volume of the coarse fragments (V2) of each sample by
-      displacement of water.
-    </p>
-  </li>
-  <li>
-    <p>
-      Calculate the of the gross bulk density of each sample using the following
-      equation:
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/soil/soil-condition-formula2.png"
-                alt="Soil condition formula 2"
-                widteh="395"
-                height="63"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </p>
-  </li>
-  <li>
-    <p>
-      Calculate the fine earth bulk density of each sample using the following
-      equation:
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/soil/soil-condition-formula3.png"
-                alt="Soil condition formula 3"
-                widteh="395"
-                height="63"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </p>
-  </li>
-</ol>"""^^rdf:HTML ;
+    """^^rdf:HTML ;
 .
 

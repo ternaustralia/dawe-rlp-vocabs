@@ -1,0 +1,428 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/05669173-2fe7-4b70-ba67-2e09fbe87de9>
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
+    dcterms:description """
+    <h3 class="list-paragraph" id="module-overview">Module overview</h3>
+<p>
+  This module covers the procedures and guidelines of three protocols for
+  establishing photopoints within the plot. The three protocols are:
+</p>
+<ul>
+  <li>
+    <p>
+      Full protocol (best practice): DSLR panorama – 360<sup>o</sup> panorama
+      taken at three photopoints located around the centre of the plot using a
+      DSLR camera or high-end mirrorless camera that allows the user to set
+      specific camera and lens settings, including focal length and aperture.
+    </p>
+  </li>
+  <li>
+    <p>
+      Lite protocol: Compact panorama – 360<sup>o</sup> panorama taken at three
+      photopoints located around the centre of the plot using a compact camera
+      without the ability to set all the specific camera and lens settings
+      required.
+    </p>
+  </li>
+  <li>
+    <p>
+      Lite protocol: Device panorama – 360<sup>o</sup> panorama taken at three
+      photopoints located around the centre of the plot using a mobile phone or
+      tablet.
+    </p>
+  </li>
+</ul>
+<p>
+  All three protocols require identifying the plot centre, marking the plot
+  centre with a star dropper (or similar, see
+  <em
+    ><a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821"
+      >Plot Selection and Layout module</a
+    ></em
+  >), measuring an equilateral triangle around the centre post to identify the
+  locations of the three photopoints (see <a href='#figure-1'>Figure 1</a> and <a href='#figure-2'>Figure 2</a>), and taking a
+  series of photos to create a 360<sup>o</sup> panorama. The three protocols
+  only differ in the camera used, and integration of the app.
+</p>
+<p>
+  The guidelines provide further specific information and justification for the
+  camera and equipment settings, and tips for obtaining high quality, accurate
+  photos suitable for a visual reference of the plot and processing into a 3D
+  reconstruction of the vegetation within the plot. The latter can be used to
+  monitor changes over time to track plot condition, as well as providing unique
+  and fast measurements of basal area and biomass.
+</p>
+<p>This module has links to the following modules:</p>
+<ul>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821"
+          >Plot Selection and Layout module</a
+        ></em
+      >
+      – The plot needs to be have been laid out before commencing the
+      photopoints module. If the plot was laid out on a previous survey, the
+      centre post needs to be located before commencing the photopoints module.
+      A GPS/GNSS may be required to assist locating the centre post.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Interventions</em> – Whilst not developed yet, it is expected the
+      Interventions module will have direct links to the Photopoints module as
+      additional photopoints may be established within key locations of a
+      project area where interventions are taking place.
+    </p>
+  </li>
+</ul>
+<p id='figure-2'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/three-photopoints-location.png"
+    alt="Location of the three photopoints"
+    widteh="550"
+    height="550"
+  />
+</p>
+<p><span id="_Ref70927649" class="anchor"></span></p>
+<p>
+  Figure 2. Location of the three photopoints at the centre of the 1 ha plot.
+</p>
+<p id='figure-3'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/photopoint-triangle.png"
+    alt="Photopoint equilateral triangel set-up showing the three photopoint positions"
+    widteh="410"
+    height="375"
+  />
+</p>
+<p>
+  <span id="_Ref70928176" class="anchor"></span>Figure 3. Photopoint equilateral
+  triangel set-up showing the three photopoint positions.
+</p>
+    """^^rdf:HTML ;
+    dcterms:source """
+    <h3 class="list-paragraph" id="references">References</h3>
+<ul>
+  <li>
+    <p>
+      Cooper, SD, Roy, DP, Schaaf, CB, Paynter, I (2017) Examination of the
+      potential of terrestrial laser scanning and structure-from-motion
+      photogrammetry for rapid nondestructive field measurement of grass
+      biomass.
+      <em>Remote Sensing</em> <strong>9</strong>, 531.
+    </p>
+  </li>
+  <li>
+    <p>
+      Department of Planning Industry and Environment (2020) Biodiversity
+      Assessment Method. Environment, Energy and Science. Department of
+      Planning, Industry and Environment, Parramatta.
+    </p>
+  </li>
+  <li>
+    <p>
+      Hall, FC (2002) 'Photo point monitoring handbook: part A-field
+      procedures.' (United States Department of Agriculture, Forest Service,
+      Pacific Northwest Research Station: Portland)
+    </p>
+  </li>
+  <li>
+    <p>
+      Liang, X, Jaakkola, A, Wang, Y, Hyyppä, J, Honkavaara, E, Liu, J,
+      Kaartinen, H (2014) The use of a hand-held camera for individual tree 3D
+      mapping in forest sample plots. <em>Remote Sensing</em>
+      <strong>6</strong>, 6587–6603.
+    </p>
+  </li>
+  <li>
+    <p>
+      Michel, P, Mathieu, R, Mark, A (2010) Spatial analysis of oblique
+      photo‐point images for quantifying spatio‐temporal changes in plant
+      communities.
+      <em>Applied Vegetation Science</em> <strong>13</strong>, 173–182.
+    </p>
+  </li>
+  <li>
+    <p>
+      Morgenroth, J, Gómez, C (2014) Assessment of tree structure using a 3D
+      image analysis technique—a proof of concept.
+      <em>Urban Forestry &amp; Urban Greening</em> <strong>13</strong>, 198–203.
+    </p>
+  </li>
+  <li>
+    <p>
+      Muir, J (2018) Developing a site based index of vegetation structure
+      complexity from terrestrial laser scanner data. PhD thesis, The University
+      of Queensland.
+    </p>
+  </li>
+  <li>
+    <p>
+      Nichols, MH, Ruyle, GB, Nourbakhsh, IR (2009) Very-high-resolution
+      panoramic photography to improve conventional rangeland monitoring.
+      <em>Rangeland Ecology &amp; Management</em> <strong>62</strong>, 579–582.
+    </p>
+  </li>
+  <li>
+    <p>
+      O’Connor, PJ, Bond, AJ (2007) Maximizing the effectiveness of photopoint
+      monitoring for ecological management and restoration.
+      <em>Ecological Management &amp; Restoration</em> <strong>8</strong>,
+      228–234.
+    </p>
+  </li>
+  <li>
+    <p>
+      Pickard, J (2002) Assessing vegetation change over a century using repeat
+      photography. <em>Australian Journal of Botany</em> <strong>50</strong>,
+      409–414.
+    </p>
+  </li>
+  <li>
+    <p>
+      Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
+      Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
+      vegetation and soil survey method for surveillance monitoring of rangeland
+      environments.
+      <em>Frontiers in Ecology and Evolution</em> <strong>8</strong>, 157.
+    </p>
+  </li>
+  <li>
+    <p>
+      TERN (2020) Scoping Study: MERI Long-term monitoring framework. A scoping
+      study to develop standarised monitoring protocols and systems for data
+      collection, storage and management for the Regional Lands Partnerships
+      Program. Report to the Department of Agriculture, Water and the
+      Environment. Terrestrial Ecosystem Research Network, 2020.
+    </p>
+  </li>
+  <li>
+    <p>
+      Tokmakoff, A, Sparrow, B, Turner, D, Lowe, A (2016) AusPlots Rangelands
+      field data collection and publication: Infrastructure for ecological
+      monitoring.
+      <em>Future Generation Computer Systems</em> <strong>56</strong>, 537–549.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h3 class="list-paragraph" id="key-definitions-and-terminology">
+  Key definitions and terminology
+</h3>
+<table>
+  <caption>
+    <p>
+      <span id="_Toc73277038" class="anchor"></span>Table 1. Common terms used
+      in the <em>Photopoints</em> module
+    </p>
+  </caption>
+  <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 82%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Term</strong></th>
+      <th><strong>Definition</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>DSLR camera</td>
+      <td>Digital single-lens reflex camera.</td>
+    </tr>
+    <tr class="even">
+      <td>Mirrorless camera</td>
+      <td>
+        Camera that works without a reflex mirror, whereby light passes through
+        the lens onto the digital senor.
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>Calibration target</td>
+      <td>
+        Cylinder displaying a set of uniquely placed QR codes that are
+        identified by the computer software during analysis.
+      </td>
+    </tr>
+    <tr class="even">
+      <td>Compact camera</td>
+      <td>
+        Also known as a point-and-shoot camera, compact cameras are small and
+        lightweight, and have a fixed lens. Advanced models allow similar
+        settings to be adjusted as with DSLR and high-end mirrorless cameras.
+        Low-end compacts may offer similar quality photos to a high-end device,
+        and users should consider this when deciding what protocol to follow.
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>Device camera</td>
+      <td>
+        Camera app and physical camera built into a mobile device (tablet or
+        phone). High-end devices may offer better quality photos than low-end
+        compact cameras.
+      </td>
+    </tr>
+    <tr class="even">
+      <td>Photopoint</td>
+      <td>
+        Fixed, permanently marked location where periodic photos are taken to
+        record and monitor environmental change over time (O’Connor and Bond
+        2007). For the purposes of this module, there are three photopoints per
+        plot (Photopoint position 1, 2, and 3), all centred around the centre
+        post in a equilateral triangle, from which a 360<sup>o</sup> panorama is
+        taken.
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>Panorama</td>
+      <td>
+        Depicts a field of view considerably wider than one that can be captured
+        in a single exposure (up to 360°). Multiple shots capture overlapping
+        sections of the scene, which are then seamlessly stitched together using
+        image processing software.
+      </td>
+    </tr>
+    <tr class="even">
+      <td>Photogrammetry</td>
+      <td>
+        The science and technology of obtaining reliable information about
+        physical objects and the environment through the process of recording,
+        measuring and interpreting photographic images.
+      </td>
+    </tr>
+  </tbody>
+</table>
+    """^^rdf:HTML ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/test/dawe-cv/1cc740f1-d659-48c7-b9d0-55ae8ddfbed8>
+            <https://linked.data.gov.au/def/test/dawe-cv/b5eee078-d1f8-4ced-9f1a-182dadb0c7a5>
+            <https://linked.data.gov.au/def/test/dawe-cv/a6d4a219-7bbf-4017-91c6-106b4848480c>
+        ) ;
+    skos:prefLabel "Photopoints" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/photopoints/collection.ttl"^^xsd:anyURI ;
+    tern:purpose """
+    <h3 class="list-paragraph" id="rationale">Rationale</h3>
+<p>
+  Ground-based photos are a key component of environmental surveys as they
+  provide a visual reference of a plot at the time of the survey (Pickard 2002),
+  and repeat plot photos provide important qualitative data for long-term
+  ecological monitoring (Michel <em>et al.</em> 2010). In addition, plot photos
+  allow stakeholders (or others that were not involved in the on-ground survey)
+  to visually perceive the study site and better understand plot descriptions
+  and data.
+</p>
+<p>
+  The major advantages of photogrammetry using ground-based photo-panoramas
+  include the low cost, portability and ease of operation (for non-specialist
+  field surveyors) of the equipment. In contrast, Terrestrial Laser Scanning
+  (TLS) instruments used to collect lidar (light detection and ranging) data,
+  which have been used successfully to highly accurately characterise vegetation
+  structure attributes, require a significant upfront cost and have reduced
+  portability.
+</p>
+    """^^rdf:HTML ;
+    tern:scope """
+      <h3>Contents</h3>
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology"
+        >Key definitions and terminology</a
+      >
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#references">References</a></li>
+  </ol>
+    <h3 class="list-paragraph" id="introduction">Introduction</h3>
+<p>
+  This Photopoints module outlines the steps to take a series of photos of the
+  plot to collect monitoring data. When the photos are taken following the
+  protocols outlined in this module, the photos provide not only a
+  high-resolution visual reference of the plot at the time of the survey, but
+  also enable a three-dimensional reconstruction of the plot. This transforms
+  the ‘static’ photos into actual monitoring data able to be interrogated for
+  changes at the plot over time, and assessed against management outcomes.
+</p>
+<p>
+  Photopoint monitoring is typically used to record and monitor environmental
+  change over time and involves taking periodic photos from a fixed, permanently
+  marked locations (Pickard 2002; O’Connor and Bond 2007). This method allows
+  environmental change to be quickly and effectively documented, is inexpensive,
+  and does not require specialised skills or training (Hall 2002). However,
+  photos are typically taken, and kept as records for visual reference only,
+  enabling before, during and after transformation visualisations, that can
+  support field collected measures, but the downfall is that they do not
+  generate actual data.
+</p>
+<p>
+  Photo panoramas (a single panorama, or a series of photos stitched together to
+  form a single wide angle photo up to 360<sup>o</sup>), are increasingly being
+  collected during photopoint monitoring (Department of Planning Industry and
+  Environment 2020; Sparrow <em>et al.</em> 2020), and can be used to capture an
+  entire landscape or monitoring plot, while maintaining image detail (Nichols
+  <em>et al.</em> 2009). Image processing software is used to stitch overlapping
+  images together to depict a field of view considerably wider (up to 360°) than
+  one that can be captured in a single exposure (Sparrow <em>et al.</em> 2020).
+  At present, even low cost, amateur digital cameras and mobile phone cameras
+  can produce auto or semiauto photo-panoramas (Nichols <em>et al.</em> 2009).
+  In addition, photogrammetry, which allows a three-dimensional model to be
+  constructed from two-dimensional images (Muir 2018), can be undertaken using
+  ground-based photo panoramas, and this can be used for measurements of
+  vegetation structure attributes (Liang <em>et al.</em> 2014; Morgenroth and
+  Gómez 2014; Muir 2018).
+</p>
+<p>
+  In the review of 30 Regional Land Partnerships projects that were investigated
+  to identify the types of ecological monitoring methods employed, just four
+  projects were taking representative photos of the vegetation units within the
+  project area, five took representative photos of monitoring plots, and 10 were
+  taking photos of the monitoring points across the project area that were not
+  necessarily related to areas where direct measures were taken (TERN 2020).
+</p>
+<p>
+  The aim of the Photopoints module is to provide a method than enables the
+  collection of high resolution photos from the plot to enable three-dimensional
+  point-cloud reconstruction of the plot (see <a href='#figure-1'>Figure 1</a> for an example), and
+  enable algorithms to be applied to create data on biomass, carbon, and basal
+  area of the plot, relatively cheaply, yet relatively scientifically accurate.
+  The photopoints should be established as soon as possible once a project
+  commences (if not earlier) to gain baseline photos and data. The intervals of
+  repeating the photopoints depends on the goals of the project and the
+  logistics of re-visiting the plot. Photos should be taken at least every 12
+  months (i.e. at approximately the same month each year). Shorter periods, e.g.
+  3 – 6 months are useful for identifying seasonal changes. Implementing the
+  photopoints module, in either of the three protocols specified, future proofs
+  the project and dataset, enabling the application of future post-processing
+  analysis techniques to generate data we are currently not aware of.
+</p>
+<p id='figure-1'>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/photopoints/point-cloud-output-example.png"
+    alt="Example point-cloud output"
+    widteh="550"
+    height="750"
+  />
+</p>
+<p>
+  Figure 1. Example point-cloud output displaying reconstruction that accurate
+  photopoint monitoring, with three panoramas enables.
+</p>
+    """^^rdf:HTML ;
+.
+
