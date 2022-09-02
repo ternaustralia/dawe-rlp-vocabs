@@ -1319,8 +1319,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-forms",
-        label="Vegetation growth form codes",
-        description="A collection of vegetation growth form types and its codes.",
+        label="Growth form codes",
+        description="A collection of growth form types and its codes.",
         collection_uuid="d0fc07a7-3ec9-45ed-8850-885a32828d3c",
         uuid_namespace="vegetation growth form",
     ),
