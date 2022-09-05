@@ -327,13 +327,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="fauna trap disturbeds",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-growth-forms",
-        label="Fire growth forms codes",
-        description="A collection of fire growth forms and its codes.",
-        collection_uuid="032ed6fa-4c55-4752-b625-3e6b32672444",
-        uuid_namespace="fire growth forms",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-histories",
         label="Fire history codes",
         description="A collection of fire history types and its codes.",
@@ -1250,14 +1243,6 @@ endpoints: List[LUTSchema] = [
         description="A collection of targeted survey fauna vouchers and its codes.",
         collection_uuid="cb1fc752-939d-4311-ab19-7b2bc80cf3f3",
         uuid_namespace="targeted survey fauna vouchers",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-flora-growth-forms",
-        label="Targeted survey flora growth forms codes",
-        description="A collection of targeted survey flora growth forms and "
-        "its codes.",
-        collection_uuid="521dcaee-99f1-4df3-831c-6d0a27c4a530",
-        uuid_namespace="targeted survey flora growth forms",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-flora-growth-stages",
