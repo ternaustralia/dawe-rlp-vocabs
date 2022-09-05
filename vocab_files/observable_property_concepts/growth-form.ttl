@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -6,18 +7,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/dd1769b9-c475-4732-915c-9b890a8d5f65>
     a skos:Concept ;
+    dcterms:source "Ecological Field Monitoring protocols - Targeted survey , draft v0.1, 30/11/2021" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:altLabel
         "flora growth form" ,
         "plant growth form" ;
-    skos:definition "The physical form a plant assumes under the conditions of its environment." ;
+    skos:definition
+        "Plant growth forms can be defined as the physical form a plant assumes under the conditions of its environment." ,
+        "The physical form a plant assumes under the conditions of its environment." ;
     skos:exactMatch <http://linked.data.gov.au/def/tern-cv/f81aa91e-5f57-4e49-bc6e-4d821d1f9de2> ;
     skos:narrower <https://linked.data.gov.au/def/test/dawe-cv/4a550407-5158-497c-982a-9f1b662b73e9> ;
     skos:prefLabel "growth form" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/growth-form.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/d0fc07a7-3ec9-45ed-8850-885a32828d3c> ;
-    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ;
-    tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ;
+    tern:hasFeatureType
+        <http://linked.data.gov.au/def/tern-cv/2be2d5ce-ca9d-4dff-8e79-948983944f95> ,
+        <http://linked.data.gov.au/def/tern-cv/60d7edf8-98c6-43e9-841c-e176c334d270> ;
+    tern:hasMethod
+        <https://linked.data.gov.au/def/test/dawe-cv/015efdae-93af-48c5-9564-0cde72593d59> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ;
     tern:valueType tern:IRI ;
 .
 
