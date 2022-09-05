@@ -4,6 +4,8 @@
 
 # NRM Controlled Vocabularies
 
+> ⚠️ Until version 1.0.0, the controlled vocabularies and its content may change.
+
 This repository contains the source data for the controlled vocabularies used by the Natural Resource Management (NRM) field survey collection protocols.
 
 The controlled vocabularies are published to ARDC's Research Vocabularies Australia as [Natural Resource Management Survey Vocabularies](https://vocabs.ardc.edu.au/viewById/639). The NRM controlled vocabularies can also be viewed on TERN's Linked Data website at https://linkeddata.tern.org.au/viewers/dawe-vocabs.
