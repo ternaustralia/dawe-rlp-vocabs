@@ -581,13 +581,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="recruitment healths",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-life-stages",
-        label="Recruitment life stages codes",
-        description="A collection of recruitment life stages and its codes.",
-        collection_uuid="322c2759-acc0-47f0-8ae6-f5d38359d835",
-        uuid_namespace="recruitment life stages",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-study-area-types",
         label="Recruitment study area types codes",
         description="A collection of recruitment study area types and its codes.",
