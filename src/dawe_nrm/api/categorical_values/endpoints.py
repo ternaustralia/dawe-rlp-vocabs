@@ -206,8 +206,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-life-stages",
-        label="Condition life stages codes",
-        description="A collection of condition life stages and its codes.",
+        label="Life stages codes",
+        description="A collection of life stages and its codes.",
         collection_uuid="5f82c583-167b-4ed2-b25e-4d67decb3f2d",
         uuid_namespace="condition life stages",
     ),
