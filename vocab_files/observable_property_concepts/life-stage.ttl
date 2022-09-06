@@ -7,15 +7,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/ce3fd96d-e68d-4b14-b3fd-27690c566440>
     a skos:Concept ;
-    dcterms:source "Ecological Field Monitoring protocols - Recruitment module , draft v0.1, 30/11/2021" ;
+    dcterms:source
+        "Ecological Field Monitoring protocols - Recruitment module , draft v0.1, 30/11/2021" ,
+        "Ecological Field Monitoring protocols - Targeted survey , draft v0.1, 30/11/2021" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:altLabel "flora life stage" ;
     skos:definition "The life stage of the biological individual(s) at the time the occurrence was recorded." ;
+    skos:exactMatch <http://linked.data.gov.au/def/tern-cv/abb0ee19-b2e8-42f3-8a25-d1f39ca3ebc3> ;
     skos:prefLabel "life stage" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/life-stage.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/5f82c583-167b-4ed2-b25e-4d67decb3f2d> ;
     tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/60d7edf8-98c6-43e9-841c-e176c334d270> ;
-    tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f> ;
+    tern:hasMethod
+        <https://linked.data.gov.au/def/test/dawe-cv/015efdae-93af-48c5-9564-0cde72593d59> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f> ;
     tern:valueType tern:IRI ;
 .
 
