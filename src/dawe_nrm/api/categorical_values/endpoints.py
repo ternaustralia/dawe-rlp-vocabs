@@ -589,8 +589,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-healths",
-        label="Recruitment healths codes",
-        description="A collection of recruitment healths and its codes.",
+        label="Vegetation healths codes",
+        description="A collection of vegetation healths and its codes.",
         collection_uuid="785f818c-0c8c-480b-b8e5-43ea9fda70f0",
         uuid_namespace="recruitment healths",
     ),
