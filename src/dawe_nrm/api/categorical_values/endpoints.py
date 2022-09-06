@@ -54,7 +54,7 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-area-factors",
-        label="Basal area factors",
+        label="Basal area factors codes",
         description="A collection of basal area factors and its codes.",
         collection_uuid="13d010d7-91b7-4621-b80a-70cb4324ddf5",
         uuid_namespace="basal area factors",
@@ -68,7 +68,7 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-statuses",
-        label="Basal tree statuses",
+        label="Basal tree status codes",
         description="A collection of basal tree statuses and its codes.",
         collection_uuid="f06740e7-2857-415a-a6dc-72dbbba7a88c",
         uuid_namespace="basal tree status",
@@ -203,20 +203,6 @@ endpoints: List[LUTSchema] = [
         "orientations and its codes.",
         collection_uuid="232d5fdd-c15f-4a84-865e-46ea20b82ff1",
         uuid_namespace="coarse woody debris transect orientations",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-growth-stage-shrubs",
-        label="Condition growth stage shrubs codes",
-        description="A collection of condition growth stage shrubs and its codes.",
-        collection_uuid="b7066d4c-2d7b-4c1b-a8f2-401fd243ac3f",
-        uuid_namespace="condition growth stage shrubs",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-growth-stage-trees",
-        label="Condition growth stage trees codes",
-        description="A collection of condition growth stage trees and its codes.",
-        collection_uuid="8af52d41-016c-4d53-85ca-2357c3a1468d",
-        uuid_namespace="condition growth stage trees",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-life-stages",
@@ -384,7 +370,7 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-substrate-types",
-        label="Fire substrate types codes",
+        label="Fire substrate codes",
         description="A collection of fire substrate types and its codes.",
         collection_uuid="c7a0692c-113c-4593-ae04-5e49aba70fdf",
         uuid_namespace="fire substrate",
@@ -561,7 +547,7 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-phenologies",
-        label="Phenology codes",
+        label="Phenology type codes",
         description="A colleciton of phenology types and its codes",
         collection_uuid="110398ca-32fa-4f69-b7bb-5aa69d5a5004",
         uuid_namespace="phenology type",
@@ -575,7 +561,7 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-preservation-types",
-        label="Preservation types codes",
+        label="Preservation type codes",
         description="A collection of preservation types and its codes.",
         collection_uuid="4e5037f1-97e6-4866-a018-915bcf482261",
         uuid_namespace="preservation type",
@@ -1275,9 +1261,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-flora-growth-stages",
-        label="Targeted survey flora growth stages codes",
-        description="A collection of targeted survey flora growth stages "
-        "and its codes.",
+        label="Growth stages codes",
+        description="A collection of growth stages and its codes.",
         collection_uuid="096e018a-fb8f-4ba1-9fdc-302164e57682",
         uuid_namespace="targeted survey flora growth stages",
     ),
@@ -1323,13 +1308,6 @@ endpoints: List[LUTSchema] = [
         description="A collection of vegetation growth form types and its codes.",
         collection_uuid="d0fc07a7-3ec9-45ed-8850-885a32828d3c",
         uuid_namespace="vegetation growth form",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-stages",
-        label="Vegetation growth stage codes",
-        description="A collection of vegetation growth stage types and its codes.",
-        collection_uuid="89c02383-fb5e-4acd-b248-902a2d579170",
-        uuid_namespace="vegetation growth stage",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-height-classes",
