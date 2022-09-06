@@ -603,8 +603,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-tree-statuses",
-        label="Recruitment tree statuses codes",
-        description="A collection of recruitment tree statuses and its codes.",
+        label="Plant statuses codes",
+        description="A collection of plant statuses and its codes.",
         collection_uuid="b7368a37-a4ac-4c84-8a78-1fb9755ad849",
         uuid_namespace="recruitment tree statuses",
     ),
