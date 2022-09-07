@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -6,16 +7,23 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/85bdd25a-fa08-49de-9f0b-98895cb79aa6>
     a skos:Concept ;
+    dcterms:source "Laws M, McCallum K, Bignall J, O’Neill S, Sparrow B. (unpublished draft) ‘Fire module’ in ….. (eds) Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:altLabel
         "in canopy sky (ics) species status" ,
         "in canopy sky (ics) status" ;
-    skos:definition "Recorded when within the boundary of the overstorey canopy. If foliage or branches are not intercepted, it is recorded as \"in-canopy sky\". If foliage or branches are intercepted, the species is recorded as a canopy hit and an estimate of the height is recorded." ;
+    skos:definition
+        "Recorded when within the boundary of the overstorey canopy. If foliage or branches are not intercepted, it is recorded as \"in-canopy sky\". If foliage or branches are intercepted, the species is recorded as a canopy hit and an estimate of the height is recorded." ,
+        "Where the vertical line of sight through the densitometer projects onto bare sky that is within the canopy of a dead, charred or scorched tree and you can determine what the species is, ICS is recorded for that species but flagged as ‘dead’, 'charred' or 'scorched'." ;
     skos:exactMatch <http://linked.data.gov.au/def/tern-cv/9b2ab960-da97-473a-81af-d50ab6041739> ;
     skos:prefLabel "in-canopy sky" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/in-canopy-sky.ttl"^^xsd:anyURI ;
-    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/b311c0d3-4a1a-4932-a39c-f5cdc1afa611> ;
-    tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ;
+    tern:hasFeatureType
+        <http://linked.data.gov.au/def/tern-cv/60d7edf8-98c6-43e9-841c-e176c334d270> ,
+        <http://linked.data.gov.au/def/tern-cv/b311c0d3-4a1a-4932-a39c-f5cdc1afa611> ;
+    tern:hasMethod
+        <https://linked.data.gov.au/def/test/dawe-cv/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ;
     tern:valueType tern:Boolean ;
 .
 
