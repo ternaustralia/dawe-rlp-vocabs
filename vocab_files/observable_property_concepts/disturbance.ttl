@@ -7,22 +7,27 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/632e4c3c-0e73-4b3d-b1d6-7b38897da5e8>
     a skos:Concept ;
-    dcterms:source """McCallum K, Bignall J, Laws M, O’Neill S, Sparrow B. (unpublished draft) ‘Targeted Surveys module’ in ….. (eds) Ecological
-Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision
-making. Draft v 0.1 Report to DAWE. TERN, Adelaide.""" ;
+    dcterms:source
+        "Ecological Field Monitoring protocols - Soil module , draft v0.1, 30/11/2021" ,
+        "McCallum K, Bignall J, Laws M, O’Neill S, Sparrow B. (unpublished draft) ‘Targeted Surveys module’ in ….. (eds) Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:altLabel "land surface disturbance" ;
     skos:closeMatch <http://linked.data.gov.au/def/tern-cv/bf6bf3fc-78f6-47f1-884b-4c46298f4fcd> ;
     skos:definition
+        "A disturbance which occurs on the land surface, typically modifying the landscape including biological communities." ,
         "Evidence of anthropogenic disturbance at a site. These include grazing,  clearing and land-use change. " ,
         "The disturbance factor (chosen from a drop-down list) indicating the level of disturbance of the targeted ecological community in study." ;
+    skos:exactMatch <http://linked.data.gov.au/def/tern-cv/777773d0-cfb4-44ff-85e2-08b48e10ac52> ;
     skos:prefLabel "disturbance" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/disturbance.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
-    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/d4fc54b1-0ad3-4512-86b7-d42b121ece45> ;
+    tern:hasFeatureType
+        <http://linked.data.gov.au/def/tern-cv/7e256d28-e686-4b6a-b64a-ac1b1a8f164d> ,
+        <http://linked.data.gov.au/def/tern-cv/d4fc54b1-0ad3-4512-86b7-d42b121ece45> ;
     tern:hasMethod
         <https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ,
-        <https://linked.data.gov.au/def/test/dawe-cv/4da8c123-b886-4881-91b3-1ff6a9b30e3c> ;
+        <https://linked.data.gov.au/def/test/dawe-cv/4da8c123-b886-4881-91b3-1ff6a9b30e3c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7818e122-6354-42e0-aeff-32dbab7baae4> ;
     tern:valueType tern:IRI ;
 .
 
