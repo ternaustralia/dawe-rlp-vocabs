@@ -10,11 +10,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source "Ecological Field Monitoring protocols - Invertebrate module, draft v0.1, 30/11/2021" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "Species with the highest relative abundace in a sample." ;
-    skos:exactMatch <http://linked.data.gov.au/def/tern-cv/04a4c009-2a51-4bdb-96dd-0bfd1bed8826> ;
+    skos:exactMatch
+        <http://linked.data.gov.au/def/tern-cv/04a4c009-2a51-4bdb-96dd-0bfd1bed8826> ,
+        <http://linked.data.gov.au/def/tern-cv/ea001a27-3217-45c2-a7b5-96a104986def> ;
     skos:prefLabel "dominant species" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/dominant-species.ttl"^^xsd:anyURI ;
-    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/b311c0d3-4a1a-4932-a39c-f5cdc1afa611> ;
-    tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/7e4bfab2-4056-4309-bd22-f070f6952bc0> ;
+    tern:hasFeatureType
+        <http://linked.data.gov.au/def/tern-cv/32834f36-a478-45be-97f4-ff2ff51e9f5c> ,
+        <http://linked.data.gov.au/def/tern-cv/b311c0d3-4a1a-4932-a39c-f5cdc1afa611> ;
+    tern:hasMethod
+        <https://linked.data.gov.au/def/test/dawe-cv/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/7e4bfab2-4056-4309-bd22-f070f6952bc0> ;
     tern:valueType tern:Text ;
 .
 
