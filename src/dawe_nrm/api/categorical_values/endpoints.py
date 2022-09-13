@@ -1347,13 +1347,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="vertebrate pouch young development classes",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-teat-statuses",
-        label="Vertebrate teat statuses codes",
-        description="A collection of vertebrate teat statuses and its codes.",
-        collection_uuid="fc85a35d-0c9b-4b26-9d18-0bd50dd39d6c",
-        uuid_namespace="vertebrate teat statuses",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-testes-positions",
         label="Vertebrate testes positions codes",
         description="A collection of vertebrate testes positions and its codes.",
