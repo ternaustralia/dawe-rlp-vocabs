@@ -206,8 +206,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-life-stages",
-        label="Condition life stages codes",
-        description="A collection of condition life stages and its codes.",
+        label="Life stages codes",
+        description="A collection of life stages and its codes.",
         collection_uuid="5f82c583-167b-4ed2-b25e-4d67decb3f2d",
         uuid_namespace="condition life stages",
     ),
@@ -318,13 +318,6 @@ endpoints: List[LUTSchema] = [
         description="A collection of fauna trap disturbeds and its codes.",
         collection_uuid="45eb0e0f-be9f-4384-9d95-47f51ccec94c",
         uuid_namespace="fauna trap disturbeds",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-growth-forms",
-        label="Fire growth forms codes",
-        description="A collection of fire growth forms and its codes.",
-        collection_uuid="032ed6fa-4c55-4752-b625-3e6b32672444",
-        uuid_namespace="fire growth forms",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-histories",
@@ -572,13 +565,6 @@ endpoints: List[LUTSchema] = [
         description="A collection of vegetation healths and its codes.",
         collection_uuid="785f818c-0c8c-480b-b8e5-43ea9fda70f0",
         uuid_namespace="recruitment healths",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-life-stages",
-        label="Recruitment life stages codes",
-        description="A collection of recruitment life stages and its codes.",
-        collection_uuid="322c2759-acc0-47f0-8ae6-f5d38359d835",
-        uuid_namespace="recruitment life stages",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-study-area-types",
@@ -1245,14 +1231,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="targeted survey fauna vouchers",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-flora-growth-forms",
-        label="Targeted survey flora growth forms codes",
-        description="A collection of targeted survey flora growth forms and "
-        "its codes.",
-        collection_uuid="521dcaee-99f1-4df3-831c-6d0a27c4a530",
-        uuid_namespace="targeted survey flora growth forms",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-flora-growth-stages",
         label="Growth stages codes",
         description="A collection of growth stages and its codes.",
@@ -1297,8 +1275,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-forms",
-        label="Vegetation growth form codes",
-        description="A collection of vegetation growth form types and its codes.",
+        label="Growth form codes",
+        description="A collection of growth form types and its codes.",
         collection_uuid="d0fc07a7-3ec9-45ed-8850-885a32828d3c",
         uuid_namespace="vegetation growth form",
     ),
@@ -1345,13 +1323,6 @@ endpoints: List[LUTSchema] = [
         description="A collection of vertebrate sexes and its codes.",
         collection_uuid="03ad784c-2cb3-4259-938e-c5e262ece665",
         uuid_namespace="vertebrate sexes",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-teat-statuses",
-        label="Vertebrate teat statuses codes",
-        description="A collection of vertebrate teat statuses and its codes.",
-        collection_uuid="fc85a35d-0c9b-4b26-9d18-0bd50dd39d6c",
-        uuid_namespace="vertebrate teat statuses",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-testes-positions",
