@@ -1,0 +1,30 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/ddd0c631-bfdd-4b0f-88de-a5eb1a0181c6>
+    a skos:Concept ;
+    dcterms:source "Ecological Field Monitoring protocols - Basal area module, Fire Module, Recruitment module draft v0.1, 30/11/2021" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel
+        "plant alive status" ,
+        "tree alive status" ,
+        "tree status" ;
+    skos:definition "Whether a tree is alive, dead or regenerating when censused." ;
+    skos:exactMatch
+        <http://linked.data.gov.au/def/tern-cv/e1a18f5f-b63e-4a67-b28e-52e6f838ac14> ,
+        <http://linked.data.gov.au/def/tern-cv/e3e69168-a959-4b8e-a1ea-2413fc3c2e4e> ;
+    skos:prefLabel "plant status" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/plant-status.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/b7368a37-a4ac-4c84-8a78-1fb9755ad849> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/60d7edf8-98c6-43e9-841c-e176c334d270> ;
+    tern:hasMethod
+        <https://linked.data.gov.au/def/test/dawe-cv/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f7e0d965-ae73-434e-8599-634598e506b5> ;
+    tern:valueType tern:IRI ;
+.
+
