@@ -67,13 +67,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="basal sweep sampling points",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-statuses",
-        label="Basal tree status codes",
-        description="A collection of basal tree statuses and its codes.",
-        collection_uuid="f06740e7-2857-415a-a6dc-72dbbba7a88c",
-        uuid_namespace="basal tree status",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-trunk-types",
         label="Basal tree trunk types",
         description="A collection of basal tree trunk types and its codes.",
@@ -206,8 +199,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-life-stages",
-        label="Condition life stages codes",
-        description="A collection of condition life stages and its codes.",
+        label="Life stages codes",
+        description="A collection of life stages and its codes.",
         collection_uuid="5f82c583-167b-4ed2-b25e-4d67decb3f2d",
         uuid_namespace="condition life stages",
     ),
@@ -218,13 +211,6 @@ endpoints: List[LUTSchema] = [
         "and its codes.",
         collection_uuid="fe0b8990-dc4c-4fc7-85e8-be08da5721a0",
         uuid_namespace="condition vegetation diameter classes",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-vegetation-healths",
-        label="Condition vegetation healths codes",
-        description="A collection of condition vegetation healths and its codes.",
-        collection_uuid="b8379ff2-60dc-44cc-bf44-5ce7ed4bdd2f",
-        uuid_namespace="condition vegetation healths",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-vertebrate-pest-presence-evidences",
@@ -327,13 +313,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="fauna trap disturbeds",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-growth-forms",
-        label="Fire growth forms codes",
-        description="A collection of fire growth forms and its codes.",
-        collection_uuid="032ed6fa-4c55-4752-b625-3e6b32672444",
-        uuid_namespace="fire growth forms",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-histories",
         label="Fire history codes",
         description="A collection of fire history types and its codes.",
@@ -346,13 +325,6 @@ endpoints: List[LUTSchema] = [
         description="A collection of fire in-canopy-sky statuses and its codes.",
         collection_uuid="15a03c34-142b-469c-9ec5-0d516fd6c1e7",
         uuid_namespace="fire in-canopy-sky statuses",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-plant-alive-statuses",
-        label="Fire plant alive statuses codes",
-        description="A collection of fire plant alive statuses and its codes.",
-        collection_uuid="29d1081d-9cde-42ab-b59a-6bfc8bdda01d",
-        uuid_namespace="fire plant alive statuses",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-plot-burned-statuses",
@@ -575,17 +547,10 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-healths",
-        label="Recruitment healths codes",
-        description="A collection of recruitment healths and its codes.",
+        label="Vegetation healths codes",
+        description="A collection of vegetation healths and its codes.",
         collection_uuid="785f818c-0c8c-480b-b8e5-43ea9fda70f0",
         uuid_namespace="recruitment healths",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-life-stages",
-        label="Recruitment life stages codes",
-        description="A collection of recruitment life stages and its codes.",
-        collection_uuid="322c2759-acc0-47f0-8ae6-f5d38359d835",
-        uuid_namespace="recruitment life stages",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-study-area-types",
@@ -603,8 +568,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-tree-statuses",
-        label="Recruitment tree statuses codes",
-        description="A collection of recruitment tree statuses and its codes.",
+        label="Plant statuses codes",
+        description="A collection of plant statuses and its codes.",
         collection_uuid="b7368a37-a4ac-4c84-8a78-1fb9755ad849",
         uuid_namespace="recruitment tree statuses",
     ),
@@ -1252,14 +1217,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="targeted survey fauna vouchers",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-flora-growth-forms",
-        label="Targeted survey flora growth forms codes",
-        description="A collection of targeted survey flora growth forms and "
-        "its codes.",
-        collection_uuid="521dcaee-99f1-4df3-831c-6d0a27c4a530",
-        uuid_namespace="targeted survey flora growth forms",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-flora-growth-stages",
         label="Growth stages codes",
         description="A collection of growth stages and its codes.",
@@ -1304,8 +1261,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-veg-growth-forms",
-        label="Vegetation growth form codes",
-        description="A collection of vegetation growth form types and its codes.",
+        label="Growth form codes",
+        description="A collection of growth form types and its codes.",
         collection_uuid="d0fc07a7-3ec9-45ed-8850-885a32828d3c",
         uuid_namespace="vegetation growth form",
     ),
