@@ -206,8 +206,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-life-stages",
-        label="Condition life stages codes",
-        description="A collection of condition life stages and its codes.",
+        label="Life stages codes",
+        description="A collection of life stages and its codes.",
         collection_uuid="5f82c583-167b-4ed2-b25e-4d67decb3f2d",
         uuid_namespace="condition life stages",
     ),
@@ -572,13 +572,6 @@ endpoints: List[LUTSchema] = [
         description="A collection of recruitment healths and its codes.",
         collection_uuid="785f818c-0c8c-480b-b8e5-43ea9fda70f0",
         uuid_namespace="recruitment healths",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-life-stages",
-        label="Recruitment life stages codes",
-        description="A collection of recruitment life stages and its codes.",
-        collection_uuid="322c2759-acc0-47f0-8ae6-f5d38359d835",
-        uuid_namespace="recruitment life stages",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-study-area-types",
