@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -6,12 +7,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/7d4eaa80-0f2a-4828-886e-34cd5a4e2746>
     a skos:Concept ;
+    dcterms:source "McCallum K, Bignall J, Laws M, O’Neill S, Sparrow B. (unpublished draft) ‘Targeted Surveys module’ , 'Recruitment module’ , 'Condition module' in ….. (eds) Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel
+        "flora health factor" ,
+        "health" ,
+        "health factors" ;
+    skos:definition "The health factor (chosen from a drop-down list) indicating the health status of the species in study." ;
     skos:prefLabel "vegetation health" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/vegetation-health.ttl"^^xsd:anyURI ;
-    tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/b8379ff2-60dc-44cc-bf44-5ce7ed4bdd2f> ;
-    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2e122e23-881c-43fa-a921-a8745f016ceb> ;
-    tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/16a20c3f-e95d-4919-b2d1-a25c7a275109> ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/785f818c-0c8c-480b-b8e5-43ea9fda70f0> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/60d7edf8-98c6-43e9-841c-e176c334d270> ;
+    tern:hasMethod
+        <https://linked.data.gov.au/def/test/dawe-cv/015efdae-93af-48c5-9564-0cde72593d59> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/16a20c3f-e95d-4919-b2d1-a25c7a275109> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/4da8c123-b886-4881-91b3-1ff6a9b30e3c> ,
+        <https://linked.data.gov.au/def/test/dawe-cv/f470e27d-20ed-46dc-b64a-d67b39a9dffc> ;
     tern:valueType tern:IRI ;
 .
 

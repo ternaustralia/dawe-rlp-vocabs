@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -6,13 +7,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/aa4c96f6-9ea8-4bd3-8800-0bfddcd8a37c>
     a skos:Concept ;
+    dcterms:source "Laws M, McCallum K, Bignall J, O’Neill S, Sparrow B. (unpublished draft) Camera Traps Module, Opprtunistic observations module, Targeted Surveys module, Invertebrate module in ….. (eds) Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "An environmental system which can sustain and allow the growth of an ecological population." ;
+    skos:definition "A brief description of the habitat where the survey is being conducted." ;
     skos:prefLabel "habitat description" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/habitat-description.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/c19a0098-1f3f-4bc2-b84d-fdb6d4e24d6f> ;
-    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/2090cfd9-8b6b-497b-9512-497456a18b99> ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/e1c7c434-1321-4601-9079-e837b7ffc293> ;
     tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6> ;
-    tern:valueType tern:IRI ;
+    tern:valueType
+        tern:IRI ,
+        tern:Text ;
 .
 
