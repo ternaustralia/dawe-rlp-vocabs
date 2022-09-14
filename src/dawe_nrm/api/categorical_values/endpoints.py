@@ -67,13 +67,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="basal sweep sampling points",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-statuses",
-        label="Basal tree status codes",
-        description="A collection of basal tree statuses and its codes.",
-        collection_uuid="f06740e7-2857-415a-a6dc-72dbbba7a88c",
-        uuid_namespace="basal tree status",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-trunk-types",
         label="Basal tree trunk types",
         description="A collection of basal tree trunk types and its codes.",
@@ -334,13 +327,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="fire in-canopy-sky statuses",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-plant-alive-statuses",
-        label="Fire plant alive statuses codes",
-        description="A collection of fire plant alive statuses and its codes.",
-        collection_uuid="29d1081d-9cde-42ab-b59a-6bfc8bdda01d",
-        uuid_namespace="fire plant alive statuses",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-plot-burned-statuses",
         label="Fire plot burned statuses codes",
         description="A collection of fire plot burned statuses and its codes.",
@@ -582,8 +568,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-tree-statuses",
-        label="Recruitment tree statuses codes",
-        description="A collection of recruitment tree statuses and its codes.",
+        label="Plant statuses codes",
+        description="A collection of plant statuses and its codes.",
         collection_uuid="b7368a37-a4ac-4c84-8a78-1fb9755ad849",
         uuid_namespace="recruitment tree statuses",
     ),
