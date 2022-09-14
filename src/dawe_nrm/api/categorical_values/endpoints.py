@@ -67,13 +67,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="basal sweep sampling points",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-statuses",
-        label="Basal tree status codes",
-        description="A collection of basal tree statuses and its codes.",
-        collection_uuid="f06740e7-2857-415a-a6dc-72dbbba7a88c",
-        uuid_namespace="basal tree status",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-basal-tree-trunk-types",
         label="Basal tree trunk types",
         description="A collection of basal tree trunk types and its codes.",
@@ -220,13 +213,6 @@ endpoints: List[LUTSchema] = [
         uuid_namespace="condition vegetation diameter classes",
     ),
     LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-vegetation-healths",
-        label="Condition vegetation healths codes",
-        description="A collection of condition vegetation healths and its codes.",
-        collection_uuid="b8379ff2-60dc-44cc-bf44-5ce7ed4bdd2f",
-        uuid_namespace="condition vegetation healths",
-    ),
-    LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-condition-vertebrate-pest-presence-evidences",
         label="Condition vertebrate pest presence evidences codes",
         description="A collection of condition vertebrate pest presence "
@@ -339,13 +325,6 @@ endpoints: List[LUTSchema] = [
         description="A collection of fire in-canopy-sky statuses and its codes.",
         collection_uuid="15a03c34-142b-469c-9ec5-0d516fd6c1e7",
         uuid_namespace="fire in-canopy-sky statuses",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-plant-alive-statuses",
-        label="Fire plant alive statuses codes",
-        description="A collection of fire plant alive statuses and its codes.",
-        collection_uuid="29d1081d-9cde-42ab-b59a-6bfc8bdda01d",
-        uuid_namespace="fire plant alive statuses",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-fire-plot-burned-statuses",
@@ -568,8 +547,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-healths",
-        label="Recruitment healths codes",
-        description="A collection of recruitment healths and its codes.",
+        label="Vegetation healths codes",
+        description="A collection of vegetation healths and its codes.",
         collection_uuid="785f818c-0c8c-480b-b8e5-43ea9fda70f0",
         uuid_namespace="recruitment healths",
     ),
@@ -589,8 +568,8 @@ endpoints: List[LUTSchema] = [
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-recruitment-tree-statuses",
-        label="Recruitment tree statuses codes",
-        description="A collection of recruitment tree statuses and its codes.",
+        label="Plant statuses codes",
+        description="A collection of plant statuses and its codes.",
         collection_uuid="b7368a37-a4ac-4c84-8a78-1fb9755ad849",
         uuid_namespace="recruitment tree statuses",
     ),
@@ -1323,13 +1302,6 @@ endpoints: List[LUTSchema] = [
         "classes and its codes.",
         collection_uuid="6a69b9e5-4a1e-4ef5-b79e-d8cea6e3d97b",
         uuid_namespace="vertebrate pouch young development classes",
-    ),
-    LUTSchema(
-        endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-sexes",
-        label="Vertebrate sexes codes",
-        description="A collection of vertebrate sexes and its codes.",
-        collection_uuid="03ad784c-2cb3-4259-938e-c5e262ece665",
-        uuid_namespace="vertebrate sexes",
     ),
     LUTSchema(
         endpoint_url="http://vocabs.paratoo.tern.org.au:1337/api/lut-vertebrate-testes-positions",
