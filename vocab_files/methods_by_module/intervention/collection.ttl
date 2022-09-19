@@ -1,3 +1,5 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -8,7 +10,321 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         skos:OrderedCollection ,
         tern:MethodCollection ;
+    dcterms:description """
+    <h3 id="module-overview">Module overview</h3>
+<p>
+  This module covers the procedures and guidelines for recording interventions
+  as area (polygon) datasets, along with associated data, including photos of
+  on-ground works, spatial extent and details of the nature of the intervention.
+  Multiple polygons can be collected for the same project, depending on the
+  number and distribution of on-ground works, and these datasets can all be
+  linked at the project or site level. Collection of spatial data aligns with
+  the Australian Government on-ground investment location data capture
+  guidelines (Commonwealth of Australia 2018) and intervention types (project
+  service) and associated schema have been adapted from the MERIT Ready Reckoner
+  V3 (National Landcare Program 2020). Data can only be collected for project
+  service types that have a field component, such as controlling pest animals
+  and erosion control. A table of intervention types, consistent with the Ready
+  Reckoner, is provided as sub modules.
+</p>
+<p>
+  Ideally, the interventions module should be used in combination with a range
+  of other modules to assess ecological changes over time compared to baseline
+  pre-intervention data, including
+  <em
+    ><a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
+      >Floristics module</a
+    >,
+    <a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b"
+      >Cover module</a
+    >,
+    <a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/16a20c3f-e95d-4919-b2d1-a25c7a275109"
+      >Condition</a
+    >,
+    <a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970"
+      >Recruitment</a
+    >,
+    <a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/0d8b47b4-1ca8-4c76-8329-0eb781a823a2"
+      >Coarse woody debris</a
+    >,
+    <a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b"
+      >Fire</a
+    >,
+    <a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95"
+      >Soils</a
+    >,
+    <a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51"
+      >Vertebrate fauna</a
+    ></em
+  >
+  and
+  <em
+    ><a
+      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/0ad98270-707f-4a78-acd1-666faa2c124e"
+      >Invertebrate fauna</a
+    >.</em
+  >
+</p>
+
+<p>This module has links to:</p>
+
+<ul>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/d15d05db-5007-411e-b257-105ef4f76821"
+          >Plot selection and layout</a
+        ></em
+      >
+      – plot selection should consider the location and extent of any planned
+      interventions, so control and impact sites can be selected, before
+      interventions are undertaken.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/05669173-2fe7-4b70-ba67-2e09fbe87de9"
+          >Photopoints</a
+        ></em
+      >
+      – plot photos should be taken to provide a visual representation of any
+      changes before and after interventions.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/420ce0a7-9364-4bf4-861c-ef5f710e31b9"
+          >Targeted surveys</a
+        ></em
+      >
+      - targeted surveys can be used to document changes at the individual or
+      population level following interventions.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em
+        ><a
+          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/4f0f0ca4-d8f7-472d-9203-f46a565ad970"
+          >Recruitment</a
+        ></em
+      >
+      - the survivorship component of the <em>Recruitment</em> module can be
+      used to track plant survival and growth following interventions.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    dcterms:source """
+    <h3 id="references">References</h3>
+<ul>
+  <li>
+    <p>
+      Atyeo C. &amp; Thackway R. (2009)
+      <em
+        >A field manual for describing and mapping revegetation activities in
+        Australia</em
+      >. Bureau of Rural Sciences Canberra, Australia.
+    </p>
+  </li>
+  <li>
+    <p>
+      Capon S., Castley G., Palmer G., Linke S., Piccolo R. &amp; Henderson E.
+      (2020) A Long-Term Monitoring Framework for the Regional Land Partnerships
+      Stage2: Final Report. Griffith University, Brisbane.
+    </p>
+  </li>
+  <li>
+    <p>
+      Commonwealth of Australia. (2009) NRM MERI Framework. (ed W. Department of
+      the Environment, Heritage and the Arts).
+    </p>
+  </li>
+  <li>
+    <p>
+      Commonwealth of Australia. (2018) On-ground Investment Location Data
+      Capture, Management and Sharing Standards v1.0. Department of the
+      Environment and Energy. Prepared by Environmental Resources Information
+      Network (ERIN).
+    </p>
+  </li>
+  <li>
+    <p>
+      Curtis A., Robertson A. &amp; Race D. (1998) Lessons from recent
+      evaluations of natural resource management programs in Australia.
+      <em>Australian Journal of Environmental Management</em>
+      <strong>5</strong>, 109-19.
+    </p>
+  </li>
+  <li>
+    <p>
+      DAWE. (2020) Regional Land Partnerships program outcome reporting guide.
+      (ed W. a. t. E. Commonwealth Department of Agriculture), Canberra.
+    </p>
+  </li>
+  <li>
+    <p>
+      DPIE. (2020) Monitoring directory for ecological restoration and social
+      activities. NSW Environmental Trust. (ed I. a. E. NSW Department of
+      Planning). Environment, Energy and Science, Parramatta, NSW.
+    </p>
+  </li>
+  <li>
+    <p>
+      Kanowski J., Catterall C., Freebody K. &amp; Harrison D. (2010) Monitoring
+      revegetation projects in rainforest landscapes. Toolkit version 3. In:
+      <em>Reef and Rainforest Research Centre: Cairns, Qld</em>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Lindenmayer D., Woinarski J., Legge S., Southwell D., Lavery T., Robinson
+      N., Scheele B. &amp; Wintle B. (2020) A checklist of attributes for
+      effective monitoring of threatened species and threatened ecosystems.
+      <em>Journal of environmental management</em> <strong>262</strong>, 110312.
+    </p>
+  </li>
+  <li>
+    <p>
+      Martin T. G. &amp; van Klinken R. D. (2006) Value for money? Investment in
+      weed management in Australian rangelands. <em>The Rangeland Journal</em>
+      <strong>28</strong>, 63-75.
+    </p>
+  </li>
+  <li>
+    <p>
+      Mitchell B. &amp; Balogh S. (2007)
+      <em>Monitoring techniques for vertebrate pests: foxes</em>. NSW Department
+      of Primary Industries.
+    </p>
+  </li>
+  <li>
+    <p>
+      Morrison T. H., McDonald G. T. &amp; Lane M. B. (2004) Integrating natural
+      resource management for better environmental outcomes.
+      <em>Australian Geographer</em> <strong>35</strong>, 243-58.
+    </p>
+  </li>
+  <li>
+    <p>
+      National Landcare Program. (2020) MERIT Ready Reckoner v3. Regional Land
+      Partnership - Project Services. (ed W. a. t. E. Department of
+      Agriculture).
+    </p>
+  </li>
+  <li>
+    <p>
+      Reddiex B., Forsyth D. M., McDonald-Madden E., Einoder L. D., Griffioen P.
+      A., Chick R. R. &amp; Robley A. J. (2006) Control of pest mammals for
+      biodiversity protection in Australia. I. Patterns of control and
+      monitoring.
+      <em>Wildlife Research</em> <strong>33</strong>, 691-709.
+    </p>
+  </li>
+  <li>
+    <p>
+      Silcock J., Simmons C., Monks L., Dillon R., Reiter N., Jusaitis M., Vesk
+      P. A., Byrne M. &amp; Coates D. (2019) Threatened plant translocation in
+      Australia: A review. <em>Biological Conservation</em>
+      <strong>236</strong>, 211-22.
+    </p>
+  </li>
+  <li>
+    <p>
+      Spooner P., Lunt I. &amp; Robinson W. (2002) Is fencing enough? The
+      short‐term effects of stock exclusion in remnant grassy woodlands in
+      southern NSW.
+      <em>Ecological Management &amp; Restoration</em> <strong>3</strong>,
+      117-26.
+    </p>
+  </li>
+  <li>
+    <p>
+      Tokmakoff A., Sparrow B., Turner D. &amp; Lowe A. (2016) AusPlots
+      Rangelands field data collection and publication: Infrastructure for
+      ecological monitoring. <em>Future Generation Computer Systems</em>
+      <strong>56</strong>, 537–49.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h3 id="key-definitions-and-terminology">Key definitions and terminology</h3>
+<p>
+  Table 1. Key definitions and terms used in the <em>Interventions</em> module.
+</p>
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+    <tr class="odd">
+      <th>Intervention</th>
+      <th>
+        Planned activities designed to achieve a set of clear objectives within
+        a given timeframe and budget
+      </th>
+    </tr>
+    <tr class="header">
+      <th>Baseline</th>
+      <th>
+        Starting point or reference data against which to assess monitoring
+        results to describe change
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>MERI</th>
+      <th>Monitoring, evaluation, reporting and improvement</th>
+    </tr>
+    <tr class="header">
+      <th>MERIT</th>
+      <th>
+        Monitoring, evaluation, reporting and improvement tool (see:
+        <u>https://fieldcapture.ala.org.au/)</u>
+      </th>
+    </tr>
+    <tr class="odd">
+      <th>Service provider</th>
+      <th>
+        Organisations that have been engaged using a procurement approach to
+        deliver landcare projects
+      </th>
+    </tr>
+    <tr class="header">
+      <th>NRM</th>
+      <th>Natural resource management</th>
+    </tr>
+    <tr class="odd">
+      <th>RLP</th>
+      <th>Regional Lands Partnership</th>
+    </tr>
+    <tr class="header">
+      <th>BACI</th>
+      <th>Before After Control Impact</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    """^^rdf:HTML ;
     skos:memberList
         <https://linked.data.gov.au/def/test/dawe-cv/079322ee-023b-5031-8790-fbbbd84d9c21> ,
         <https://linked.data.gov.au/def/test/dawe-cv/222129f5-3045-56dd-9643-a84ab4758672> ,
@@ -30,7 +346,401 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://linked.data.gov.au/def/test/dawe-cv/c6064075-f19f-5881-b162-82fe5f39e6eb> ,
         <https://linked.data.gov.au/def/test/dawe-cv/d44133c3-5161-59f2-81f3-95f058363980> ,
         <https://linked.data.gov.au/def/test/dawe-cv/d8fec5fe-b9cd-5dc6-ae4b-ac1579359815> ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<ul>
+  <li>
+    <p>
+      Intervention’s data can be collected using a combination of the app while
+      on site and the online version of the app to complete all necessary
+      fields.
+    </p>
+  </li>
+  <li>
+    <p>
+      Information about the location and extent of the intervention, as well as
+      photos need to be collected in the field. All other data fields can be
+      completed or edited on return to the office. The intervention can only be
+      saved when all necessary on-ground data fields have been entered while on
+      site, and can only be uploaded to the database when all required fields
+      have been entered.
+    </p>
+  </li>
+  <li>
+    <p>
+      If data fields are completed in the office, do this as soon as possible
+      after the intervention was undertaken to ensure that all information is
+      retained.
+    </p>
+  </li>
+  <li>
+    <p>
+      If any changes to planned intervention activities occurred while on site,
+      ensure that this information is collected in the
+      <em>Comments</em> field of the app. Record this information while on site.
+    </p>
+  </li>
+  <li>
+    <p>
+      Review related sub modules before undertaking any on-ground works to
+      ensure familiarity with the fields that need to be collected.
+    </p>
+  </li>
+</ul>
+<h4 id="capturing-polygons">A. Capturing polygons</h4>
+<ul>
+  <li>
+    <p>
+      Collect vertices in either a clockwise or anti-clockwise direction. All
+      vertices need to be collected in order to ensure that the area is drawn
+      correctly. The App will automatically generate an area value (ha) once the
+      polygon has been completed.
+    </p>
+  </li>
+  <li>
+    <p>
+      If necessary, vertices can be added, deleted or moved once the area has
+      been drawn.
+    </p>
+  </li>
+  <li>
+    <p>
+      Refer to the supporting information (<a href="#appendix-2">Appendix 2</a>)
+      for tips on how to collect polygon data without any surplus vertices or
+      overlapping areas.
+    </p>
+  </li>
+</ul>
+<h4 id="recording-interventions">B. Recording interventions</h4>
+<ul>
+  <li>
+    <p>
+      Refer to the supporting information for the list of fields that are
+      available for each intervention type. Record any other useful/important
+      information using the comments field.
+    </p>
+  </li>
+  <li>
+    <p>
+      Minimum mapping scales for different kinds of on-ground actions are
+      detailed in sub modules and these align with the recommendation developed
+      by the Australian Government Department of Environment and Energy
+      (Commonwealth of Australia 2018).
+    </p>
+  </li>
+  <li>
+    <p>
+      Broader ranging actions should generally be mapped at broader scales, the
+      intent should also be to create polygons which encompass all action areas
+      while excluding areas where the action was not applied (Commonwealth of
+      Australia 2018).
+    </p>
+  </li>
+  <li>
+    <p>
+      If a specific intervention is not listed, one should be selected which
+      most closely approximates it (Commonwealth of Australia 2018).
+    </p>
+  </li>
+  <li>
+    <p>
+      Fencing activities should be mapped as the fence itself. Create a polygon
+      ~10 m wide that overlaps the fence line. Widths can be larger than 10 m at
+      large scales.
+    </p>
+  </li>
+  <li>
+    <p>
+      Refer to <a href="#appendix-3">Appendix 3</a> and
+      <a href="#appendix-4">Appendix 4</a> for further details about mapping
+      different intervention types.
+    </p>
+  </li>
+</ul>
+<h4 id="point-opportune">C. Point (Opportune)</h4>
+<ul>
+  <li>
+    <p>
+      Point data can be collected as supplementary information in addition to
+      the polygons collected, to aid with mapping and revisiting interventions
+      in the field. Any point data should fall within the defined intervention
+      area and is recorded as an
+      <a
+        href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/test/dawe-cv/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6"
+        >Opportunistic observations</a
+      >
+      record.
+    </p>
+  </li>
+  <li>
+    <p>
+      Multiple points can be recorded for a single project, if interventions
+      were carried out at a number of locations (i.e. multiple woody weeds
+      treated across the project area, multiple nest boxes installed).
+    </p>
+  </li>
+  <li>
+    <p>
+      Photos can be collected for each point record to further document
+      interventions at those points.
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
     skos:prefLabel "Intervention" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/intervention/collection.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h3 id="appendices">Appendices</h3>
+<h4 id="appendix-2">Appendix 2. How to create a polygon in the field</h4>
+<img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/intervention/intervention-appendix-2.png"
+  alt="How to create a polygon in the field"
+  widteh="1121"
+  height="1426"
+/>
+<h4 id="appendix-3">Appendix 3. Mapping interventions - examples</h4>
+<img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/intervention/intervention-appendix-3.png"
+  alt="Mapping interventions - examples"
+  widteh="1500"
+  height="977"
+/>
+<h4 id="appendix-4">Appendix 4. Mapping areas - where you need to show gaps</h4>
+<img
+  src="https://w3id.org/tern/static/dawe-rlp/latest/intervention/intervention-appendix-4.png"
+  alt="Mapping areas - where you need to show gaps"
+  widteh="1650"
+  height="1100"
+/>
+<p>
+  Source: Australian Government on-ground data standards (Commonwealth of
+  Australia 2018)
+</p>
+    """^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
+  <li>
+    <p>
+      Mobile device (tablet/phone capable of taking high resolution photos) with
+      the App (progressive web app) saved to the home screen
+    </p>
+  </li>
+  <li>
+    <p>Trimble R1</p>
+  </li>
+  <li>
+    <p>
+      Desktop computer with access to the web app (some information can be added
+      after field collection).
+    </p>
+  </li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+  <li>
+    <p>
+      Ensure the Trimble R1 is on, connected to the App and accuracy is high
+      (i.e. sub-metre, this may take 10-15 minutes).
+    </p>
+  </li>
+  <li>
+    <p>
+      Navigate to the <em>Interventions</em> module and select add intervention
+      and fill-in the basic project level information and select
+      <em>Continue</em>.
+    </p>
+  </li>
+</ol>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/intervention/intervention-app-screen1.png"
+    alt="Interventions module app screen 1"
+    widteh="468"
+    height="508"
+  />
+</p>
+<p>Figure 1. Interventions module app screen 1</p>
+<ol start="3" type="1">
+  <li>
+    <p>
+      On the <em>Interventions</em> screen, click on the drop-down list and
+      select the type of intervention (e.g. controlling access, controlling pest
+      animals, debris removal). Refer to the supporting information for a list
+      of all intervention options and the associated data fields (see sub
+      modules).
+    </p>
+  </li>
+  <li>
+    <p>
+      Stand at the boundary of the intervention (your location will be shown on
+      the map by the white marker) and select the record corner to start drawing
+      the polygon.
+    </p>
+  </li>
+  <li>
+    <p>
+      Walk (or drive) along the boundary of the intervention until the next
+      corner or bend and select the record <em>corner</em> to draw the line
+      segment.
+    </p>
+  </li>
+  <li>
+    <p>
+      Continue to traverse around the intervention area until you reach the
+      final vertex (shading will show the area) and select
+      <em>Finish sketch.</em> Ensure that you select <em>Finish sketch</em>
+      <strong>before</strong> you return to the starting position (must be at
+      least 5 m away from the start point) to avoid any errors when drawing the
+      polygon (refer to <a href="#appendix-2">Appendix 2</a> and
+      <a href="#appendix-3">Appendix 3</a> for more information).
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Finish sketch</em> will complete the polygon and the intervention area
+      will be shaded.
+    </p>
+  </li>
+  <li>
+    <p>
+      Complete all the required fields for the intervention type selected. Some
+      of the fields need to be completed while on site (spatial information,
+      photos), while others can be completed in the office using the desktop
+      application. All required information is provided as sub modules. An error
+      message will appear if required fields have not been completed while on
+      site.
+    </p>
+  </li>
+  <li>
+    <p>
+      Click on the camera icon to photograph the intervention or intervention
+      site (multiple photos can be taken if required). Record a short
+      description for each photo and the direction taken. The location and time
+      will be automatically recorded.
+    </p>
+  </li>
+  <li>
+    <p>
+      If necessary, collect point data to record the location of specific
+      interventions within the overall area, such as nest boxes or the control
+      of woody weeds or line data to record the location of fences (optional).
+    </p>
+  </li>
+  <li>
+    <p>Record any other comments about the intervention (optional).</p>
+  </li>
+  <li>
+    <p>
+      Select <em>Add Intervention</em> if you have any other interventions that
+      need to be recorded for the project or select <em>Save Area</em> to save
+      the intervention data and return to the main screen. Multiple intervention
+      records can be added to a project, including interventions of the same
+      type or different types.
+    </p>
+  </li>
+  <li>
+    <p>
+      Check the mapping interface to ensure that spatial data has been collected
+      for all interventions and all locations before finalising the data.
+    </p>
+  </li>
+</ol>
+<p>
+  <img
+    src="https://w3id.org/tern/static/dawe-rlp/latest/intervention/intervention-fields.png"
+    alt="Interventions fields"
+    widteh="468"
+    height="818"
+  />
+</p>
+<p>Figure 2. Intervention fields</p>
+    """^^rdf:HTML ;
+    tern:purpose """
+    <h3 id="rationale">Rationale</h3>
+<p>
+  The need to better capture, store, interpret and effectively use data
+  associated with on-ground interventions is widely recognised, as this can help
+  to inform and prioritise future investment, generate knowledge, test
+  assumptions and contribute to best practice natural resource management (Atyeo
+  and Thackway 2009; Capon <em>et al.</em> 2020; DPIE 2020; Mitchell and Balogh
+  2007). The collection of consistent data on interventions can improve
+  decision-making, assist with reporting and allow data to be collated and
+  analysed at the regional or national level (Atyeo and Thackway 2009).
+  Following standardized protocols will ensure that data are precise and
+  comparable, and will enable planners and policymakers to better evaluate the
+  effectiveness of intervention activities and assist with setting priorities in
+  terms of when and where to invest (Atyeo and Thackway 2009; Capon
+  <em>et al.</em> 2020). This is likely to become increasingly more important as
+  funding bodies look for evidence that their investments are producing results
+  (Kanowski <em>et al.</em> 2010).
+</p>
+<p>
+  Fine-scale polygons are key to precise and accurate spatial documentation of
+  on-ground investments (Commonwealth of Australia 2018), and as such, polygons
+  will be used to collect on-ground data about the size and extent of
+  interventions. These polygons will be supported by additional data collection
+  fields, allowing standardised data about the intervention to be recorded,
+  along with photos to document what was undertaken. This information is crucial
+  for reporting under the MERI framework and to align with the monitoring,
+  evaluation, reporting and improvement tool (MERIT).
+</p>
+    """^^rdf:HTML ;
+    tern:scope """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#introduction">Introduction</a></li>
+  <li>
+    <a href="#key-definitions-and-terminology"
+      >Key definitions and terminology</a
+    >
+  </li>
+  <li><a href="#rationale">Rationale</a></li>
+  <li><a href="#module-overview">Module overview</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#references">References</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+
+<h3 id="introduction">Introduction</h3>
+<p>
+  The <em>Interventions</em> module will allow service providers to collect
+  information about interventions in a standardized way, including on-ground
+  location and site evidence (photos, spatial extent) of the intervention as
+  well as more detailed information about the nature of the intervention and how
+  it was undertaken.
+</p>
+<p>
+  Under the MERI (monitoring, evaluation, reporting and improvement) framework a
+  project is defined as an intervention when it consists of a set of planned
+  activities designed to achieve a set of objectives within a given budget and
+  timeframe (Commonwealth of Australia 2009). Interventions can take a range of
+  forms, including fencing to protect remnant vegetation (Spooner
+  <em>et al.</em> 2002), weed and pest animal control (Martin and van Klinken
+  2006; Reddiex <em>et al.</em> 2006), restoration and revegetation,
+  re-introductions or translocations (Silcock <em>et al.</em> 2019), removal of
+  watering points, controlled burns, nest box installation and community or
+  landholder workshops (Capon <em>et al.</em> 2020). Ideally, a monitoring
+  program should be established before any on-ground works are undertaken, as
+  this allows changes over time to be assessed against baseline measures (Atyeo
+  and Thackway 2009), and the effectiveness of the intervention to be assessed.
+</p>
+<p>
+  The most common interventions undertaken across Australia, based on the
+  current Regional Lands Partnership (RLP) projects are weed and pest fauna
+  control, habitat improvement/regeneration, community/landholder engagement,
+  communication, education and awareness raising, and improved land management
+  (Capon <em>et al.</em> 2020). However, information about on-ground works is
+  often poorly documented and monitored (Curtis <em>et al.</em> 1998; Kanowski
+  <em>et al.</em> 2010; Lindenmayer <em>et al.</em> 2020), and most knowledge
+  may remain with program staff (Martin and van Klinken 2006).
+</p>
+    """^^rdf:HTML ;
 .
 
