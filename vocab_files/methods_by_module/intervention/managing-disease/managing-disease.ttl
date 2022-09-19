@@ -10,6 +10,199 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    dcterms:description """
+    <p>
+  <em
+    >Sourced from the MERIT Ready Reckoner, on-ground data standards and online
+    schema</em
+  >
+  (Commonwealth of Australia 2018; National Landcare Program 2020).
+</p>
+<table>
+  <colgroup>
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 3%" />
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 5%" />
+    <col style="width: 12%" />
+    <col style="width: 6%" />
+    <col style="width: 12%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Project Service</strong></th>
+      <th><strong>Field Collection</strong></th>
+      <th><strong>App Group</strong></th>
+      <th><strong>Output Measure</strong></th>
+      <th><strong>Mapping Requirements</strong></th>
+      <th><strong>Mapping Area (ha)</strong></th>
+      <th><strong>Reporting Fields</strong></th>
+      <th><strong>Data Field Class</strong></th>
+      <th><strong>Schema</strong></th>
+      <th><strong>Comment RLP</strong></th>
+      <th><strong>Comment TERN</strong></th>
+    </tr>
+  </thead>
+  <tr class="odd">
+    <td rowspan="9">
+      <p><strong>Managing disease</strong></p>
+      <p>
+        <em
+          >Tell us about the disease/s being managed and the actions you have
+          undertaken across the mapped area and any areas that have benefitted
+          from this work.</em
+        >
+      </p>
+    </td>
+    <td rowspan="8">Yes</td>
+    <td rowspan="8"></td>
+    <td rowspan="8">
+      <ul>
+        <li><p>Area (ha) treated for disease</p></li>
+      </ul>
+    </td>
+    <td rowspan="9">
+      <p>&gt;1:10,000 or greater as appropriate</p>
+      <p>&gt; Map the landscape(s) benefitting from disease management</p>
+    </td>
+    <td rowspan="9"></td>
+    <td>
+      <ul>
+        <li><p>Initial or follow-up treatment?</p></li>
+      </ul>
+    </td>
+    <td>Drop-down</td>
+    <td>
+      <ul>
+        <li><p>Initial</p></li>
+        <li><p>Follow-up</p></li>
+      </ul>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Sites where disease managed</p></li>
+      </ul>
+    </td>
+    <td>Spatial</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Actual area (ha) treated for disease</p></li>
+      </ul>
+    </td>
+    <td>Auto-calculated</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Disease treated</p></li>
+      </ul>
+    </td>
+    <td>Free text - 100</td>
+    <td></td>
+    <td>List the disease/s affecting the area. Can list multiples.</td>
+    <td>
+      Potential to add drop-down fields here. Will require review of diseases
+      which are currently treated.
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Type of management method/treatment</p></li>
+      </ul>
+    </td>
+    <td>Drop-down</td>
+    <td>
+      <ul>
+        <li><p>Biological control agents</p></li>
+        <li><p>Fumigation</p></li>
+        <li><p>Host destruction</p></li>
+        <li><p>Plant disease management – quarantine</p></li>
+        <li><p>Plant disease management – treatment</p></li>
+        <li><p>Plant disease management – hygiene</p></li>
+        <li><p>Positive competition</p></li>
+        <li><p>Other</p></li>
+      </ul>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>If other, write type of management method</p></li>
+      </ul>
+    </td>
+    <td>Free text - 100</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Management method/treatment objective</p></li>
+      </ul>
+    </td>
+    <td>Free text - 300</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li>
+          <p>
+            Please map any off-site area/s if they have also benefitted from
+            this disease management
+          </p>
+        </li>
+      </ul>
+    </td>
+    <td>Spatial</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <ul>
+        <li>
+          <p>
+            If off-site area was mapped please provide a description on the
+            evidence available to reflect this benefit.
+          </p>
+        </li>
+      </ul>
+    </td>
+    <td>Free text – 300</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+    """ ;
     skos:prefLabel "Intervention module- Managing disease protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/intervention/managing-disease/managing-disease.ttl"^^xsd:anyURI ;
 .
