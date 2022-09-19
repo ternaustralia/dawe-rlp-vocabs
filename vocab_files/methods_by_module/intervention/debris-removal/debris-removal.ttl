@@ -11,6 +11,133 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Intervention module- debris removal protocol" ;
+    dcterms:description """
+    <p>
+  <em
+    >Sourced from the MERIT Ready Reckoner, on-ground data standards and online
+    schema</em
+  >
+  (Commonwealth of Australia 2018; National Landcare Program 2020).
+</p>
+<table>
+  <colgroup>
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 3%" />
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 5%" />
+    <col style="width: 12%" />
+    <col style="width: 6%" />
+    <col style="width: 12%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Project Service</strong></th>
+      <th><strong>Field Collection</strong></th>
+      <th><strong>App Group</strong></th>
+      <th><strong>Output Measure</strong></th>
+      <th><strong>Mapping Requirements</strong></th>
+      <th><strong>Mapping Area (ha)</strong></th>
+      <th><strong>Reporting Fields</strong></th>
+      <th><strong>Data Field Class</strong></th>
+      <th><strong>Schema</strong></th>
+      <th><strong>Comment RLP</strong></th>
+      <th><strong>Comment TERN</strong></th>
+    </tr>
+  </thead>
+  <tr class="odd">
+    <td rowspan="5">
+      <p><strong>Debris removal</strong></p>
+      <p>
+        <em
+          >Tell us about the actions you have undertaken to remove debris from
+          land and/or water systems in the mapped area.</em
+        >
+      </p>
+    </td>
+    <td rowspan="5">Yes</td>
+    <td rowspan="5"></td>
+    <td rowspan="5">
+      <ul>
+        <li><p>Area (ha) of debris removal</p></li>
+      </ul>
+    </td>
+    <td rowspan="5">
+      <p>&gt;1:1,000</p>
+      <p>&gt; Map the area where debris removal has been carried out</p>
+    </td>
+    <td rowspan="5">&lt; 2 ha</td>
+    <td>
+      <ul>
+        <li><p>Initial or follow-up activity</p></li>
+      </ul>
+    </td>
+    <td>Drop-down</td>
+    <td>
+      <ul>
+        <li><p>Initial</p></li>
+        <li><p>Follow-up</p></li>
+      </ul>
+    </td>
+    <td rowspan="5"></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Site/s where debris removal was implemented</p></li>
+      </ul>
+    </td>
+    <td>Spatial</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Actual area (ha)/length (km) of debris removal</p></li>
+      </ul>
+    </td>
+    <td>Number field</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Type of debris removed</p></li>
+      </ul>
+    </td>
+    <td>Drop-down</td>
+    <td>
+      <ul>
+        <li><p>Building &amp; industrial waste</p></li>
+        <li><p>Domestic waste</p></li>
+        <li><p>Green waste</p></li>
+        <li><p>Other</p></li>
+      </ul>
+    </td>
+    <td>
+      If ‘Other’ selected from the drop-down, activated text box to record what
+      other is – or capture this information as part of the general comments
+      field.
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Weight (tonnes) of debris removed</p></li>
+      </ul>
+    </td>
+    <td>Number field</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+    """ ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/intervention/debris-removal/debris-removal.ttl"^^xsd:anyURI ;
 .
 
