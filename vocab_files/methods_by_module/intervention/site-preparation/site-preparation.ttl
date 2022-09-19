@@ -1,16 +1,15 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 <https://linked.data.gov.au/def/test/dawe-cv/222129f5-3045-56dd-9643-a84ab4758672>
     a
         skos:Concept ,
         tern:Method ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     dcterms:description """
     <p>
   <em
@@ -200,6 +199,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 </table>
 
     """^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Intervention module- site preparation protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/intervention/site-preparation/site-preparation.ttl"^^xsd:anyURI ;
 .
