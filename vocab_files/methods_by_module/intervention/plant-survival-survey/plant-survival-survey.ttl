@@ -10,6 +10,199 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    dcterms:description """
+    <p>
+  <em
+    >Sourced from the MERIT Ready Reckoner, on-ground data standards and online
+    schema</em
+  >
+  (Commonwealth of Australia 2018; National Landcare Program 2020).
+</p>
+<table>
+  <colgroup>
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 3%" />
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 5%" />
+    <col style="width: 12%" />
+    <col style="width: 6%" />
+    <col style="width: 12%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Project Service</strong></th>
+      <th><strong>Field Collection</strong></th>
+      <th><strong>App Group</strong></th>
+      <th><strong>Output Measure</strong></th>
+      <th><strong>Mapping Requirements</strong></th>
+      <th><strong>Mapping Area (ha)</strong></th>
+      <th><strong>Reporting Fields</strong></th>
+      <th><strong>Data Field Class</strong></th>
+      <th><strong>Schema</strong></th>
+      <th><strong>Comment RLP</strong></th>
+      <th><strong>Comment TERN</strong></th>
+    </tr>
+  </thead>
+  <tr class="even">
+    <td rowspan="10">
+      <p><strong>Plant survival survey</strong></p>
+      <p>
+        <em
+          >Tell us about the plant survival surveys being conducted across the
+          mapped area.</em
+        >
+      </p>
+    </td>
+    <td rowspan="10">Yes</td>
+    <td rowspan="10">Survey</td>
+    <td rowspan="10">
+      <ul>
+        <li><p>Area (ha) surveyed for plant survival</p></li>
+        <li><p>Number of plant survival surveys conducted</p></li>
+      </ul>
+    </td>
+    <td rowspan="10">
+      <p>&gt;1:1,000</p>
+      <p>&gt; Map individual survey plot locations</p>
+    </td>
+    <td rowspan="10"></td>
+    <td>
+      <ul>
+        <li><p>Baseline survey or indicator (follow-up) survey</p></li>
+      </ul>
+    </td>
+    <td>Drop-down</td>
+    <td>
+      <ul>
+        <li><p>Baseline</p></li>
+        <li><p>Indicator</p></li>
+      </ul>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Number of plant survival surveys conducted</p></li>
+      </ul>
+    </td>
+    <td>Number field</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Date range</p></li>
+      </ul>
+    </td>
+    <td>Free text – 100</td>
+    <td></td>
+    <td></td>
+    <td>
+      Could set this so start and end dates are selected, to maintain consistent
+      format
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Site/s surveyed for plant survival</p></li>
+      </ul>
+    </td>
+    <td>Spatial</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Actual area (ha) surveyed for plant survival</p></li>
+      </ul>
+    </td>
+    <td>Auto-calculated</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Species recorded</p></li>
+      </ul>
+    </td>
+    <td>Type to search species</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Survey technique</p></li>
+      </ul>
+    </td>
+    <td>Drop-down</td>
+    <td>TBD</td>
+    <td>
+      Refers to the survey design, data you will capture and how it will be
+      used.
+    </td>
+    <td>
+      <p>No schema provided online – says it’s a string field.</p>
+      <p>Align with the survivorship protocol in recruitment.</p>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Individuals or groups</p></li>
+      </ul>
+    </td>
+    <td>Drop-down</td>
+    <td>
+      <ul>
+        <li><p>Individuals</p></li>
+        <li><p>Groups</p></li>
+      </ul>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Number of individuals / groups surviving</p></li>
+      </ul>
+    </td>
+    <td>Number field</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li>
+          <p>If follow-up (indicator) survey, what is the survival rate (%)</p>
+        </li>
+      </ul>
+    </td>
+    <td>Number field (%)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+    """ ;
     skos:prefLabel "Intervention module- Plant survival survey protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/intervention/plant-survival-survey/plant-survival-survey.ttl"^^xsd:anyURI ;
 .
