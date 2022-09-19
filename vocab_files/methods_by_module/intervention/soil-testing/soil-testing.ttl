@@ -10,6 +10,165 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    dcterms:description """
+    <p>
+  <em
+    >Sourced from the MERIT Ready Reckoner, on-ground data standards and online
+    schema</em
+  >
+  (Commonwealth of Australia 2018; National Landcare Program 2020).
+</p>
+<table>
+  <colgroup>
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 3%" />
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 5%" />
+    <col style="width: 12%" />
+    <col style="width: 6%" />
+    <col style="width: 12%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Project Service</strong></th>
+      <th><strong>Field Collection</strong></th>
+      <th><strong>App Group</strong></th>
+      <th><strong>Output Measure</strong></th>
+      <th><strong>Mapping Requirements</strong></th>
+      <th><strong>Mapping Area (ha)</strong></th>
+      <th><strong>Reporting Fields</strong></th>
+      <th><strong>Data Field Class</strong></th>
+      <th><strong>Schema</strong></th>
+      <th><strong>Comment RLP</strong></th>
+      <th><strong>Comment TERN</strong></th>
+    </tr>
+  </thead>
+  <tr class="odd">
+    <td rowspan="8">
+      <p><strong>Soil testing</strong></p>
+      <p>
+        <em
+          >Tell us about the soil testing you have undertaken across your mapped
+          area.</em
+        >
+      </p>
+    </td>
+    <td rowspan="8">Yes</td>
+    <td rowspan="8"></td>
+    <td rowspan="8">
+      <ul>
+        <li><p>Number of soil tests conducted in targeted area</p></li>
+      </ul>
+    </td>
+    <td rowspan="8">
+      <p>&gt;1:1,000 or greater as appropriate</p>
+      <p>&gt; Map the locations of soil testing.</p>
+    </td>
+    <td rowspan="8"></td>
+    <td>
+      <ul>
+        <li><p>Initial or follow-up activity</p></li>
+      </ul>
+    </td>
+    <td>Drop-down</td>
+    <td>
+      <ul>
+        <li><p>Initial</p></li>
+        <li><p>Follow-up</p></li>
+      </ul>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Number of soil tests conducted in targeted area</p></li>
+      </ul>
+    </td>
+    <td>Number field</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Date range</p></li>
+      </ul>
+    </td>
+    <td>Free text – 100</td>
+    <td></td>
+    <td></td>
+    <td>Could select start and end data to ensure consistency</td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Project site/s where soil tests were conducted</p></li>
+      </ul>
+    </td>
+    <td>Spatial</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Area (ha) where soil tests were conducted</p></li>
+      </ul>
+    </td>
+    <td>Auto-calculated</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Length (km) where soil tests were conducted</p></li>
+      </ul>
+    </td>
+    <td>Auto-calculated</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Testing technique</p></li>
+      </ul>
+    </td>
+    <td>Free text - 100</td>
+    <td></td>
+    <td>
+      Should describe the testing regime and how tests will be carried out
+    </td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Testing objective</p></li>
+      </ul>
+    </td>
+    <td>Free text – 300</td>
+    <td></td>
+    <td>
+      Should outline the aim of the testing and how information obtained from
+      the tests will be used
+    </td>
+    <td></td>
+  </tr>
+</table>
+
+    """ ;
     skos:prefLabel "Intervention module- soil testing protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/intervention/soil-testing/soil-testing.ttl"^^xsd:anyURI ;
 .
