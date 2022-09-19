@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -8,6 +9,191 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         skos:Concept ,
         tern:Method ;
+    dcterms:description """
+    <p>
+  <em
+    >Sourced from the MERIT Ready Reckoner, on-ground data standards and online
+    schema</em
+  >
+  (Commonwealth of Australia 2018; National Landcare Program 2020).
+</p>
+<table>
+  <colgroup>
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 3%" />
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 5%" />
+    <col style="width: 12%" />
+    <col style="width: 6%" />
+    <col style="width: 12%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Project Service</strong></th>
+      <th><strong>Field Collection</strong></th>
+      <th><strong>App Group</strong></th>
+      <th><strong>Output Measure</strong></th>
+      <th><strong>Mapping Requirements</strong></th>
+      <th><strong>Mapping Area (ha)</strong></th>
+      <th><strong>Reporting Fields</strong></th>
+      <th><strong>Data Field Class</strong></th>
+      <th><strong>Schema</strong></th>
+      <th><strong>Comment RLP</strong></th>
+      <th><strong>Comment TERN</strong></th>
+    </tr>
+  </thead>
+  <tr class="even">
+    <td rowspan="7">
+      <p><strong>Controlling access</strong></p>
+      <p>
+        <em
+          >Tell us about the structures you have installed to control access and
+          any off-site areas showing evidence of being protected by this
+          action.</em
+        >
+      </p>
+    </td>
+    <td rowspan="7">Yes</td>
+    <td rowspan="7"></td>
+    <td rowspan="7">
+      <ul>
+        <li><p>Number of structures installed</p></li>
+        <li><p>Length (km) installed</p></li>
+        <li><p>Area (ha) where access has been controlled</p></li>
+      </ul>
+    </td>
+    <td rowspan="7">
+      <p>&gt; 1:1,000</p>
+      <p>&gt; Map the infrastructure</p>
+      <p>
+        &gt; For fencing, create a polygon ~10 m wide that overlaps the
+        fenceline.
+      </p>
+    </td>
+    <td rowspan="7">&lt; 2 ha</td>
+    <td>
+      <ul>
+        <li><p>Number of structures installed</p></li>
+      </ul>
+    </td>
+    <td>
+      <blockquote>
+        <p>Number field</p>
+      </blockquote>
+    </td>
+    <td></td>
+    <td rowspan="7">
+      <ul>
+        <li>
+          <p>Can add row for each type of access control installed</p>
+        </li>
+        <li><p>Multiple sites may be included</p></li>
+        <li>
+          <p>
+            Control objective should outline the reason for this work and list
+            any species being protected. Can list multiple species.
+          </p>
+        </li>
+      </ul>
+    </td>
+    <td rowspan="7">
+      If ‘Other’ selected from the drop-down, activated text box to record what
+      other is – or capture this information as part of the general comments
+      field.
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Site/s where access has been controlled</p></li>
+      </ul>
+    </td>
+    <td>
+      <blockquote>
+        <p>Spatial – polygons</p>
+      </blockquote>
+    </td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li>
+          <p>Actual length (km)/area (ha) where access has been controlled</p>
+        </li>
+      </ul>
+    </td>
+    <td>
+      <blockquote>
+        <p>Auto-calculated</p>
+      </blockquote>
+    </td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Site/s protected by access control structures</p></li>
+      </ul>
+    </td>
+    <td>
+      <blockquote>
+        <p>Spatial</p>
+      </blockquote>
+    </td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Type of access control installed</p></li>
+      </ul>
+    </td>
+    <td>
+      <blockquote>
+        <p>Drop-down</p>
+      </blockquote>
+    </td>
+    <td>
+      <ul>
+        <li><p>Boardwalks</p></li>
+        <li><p>Bollards &amp; barriers</p></li>
+        <li><p>Constructed parking bays</p></li>
+        <li><p>Fencing, styles, gates &amp; grids</p></li>
+        <li><p>Formed traffic ways</p></li>
+        <li><p>Signage</p></li>
+        <li><p>Other</p></li>
+      </ul>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Type of access control installed (if other)</p></li>
+      </ul>
+    </td>
+    <td>Free text – 100 characters</td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Control objective</p></li>
+      </ul>
+    </td>
+    <td>
+      <blockquote>
+        <p>Free text – 300 characters</p>
+      </blockquote>
+    </td>
+    <td>Review MERIT – determine if we can set fields here</td>
+  </tr>
+</table>
+    """ ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:prefLabel "Intervention module- Controlling access protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/intervention/controlling-access/controlling-access.ttl"^^xsd:anyURI ;
