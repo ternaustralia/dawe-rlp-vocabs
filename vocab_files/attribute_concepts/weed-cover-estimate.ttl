@@ -1,0 +1,18 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/2ea8e10a-17c6-5dfd-9bb1-b216354da5c2>
+    a skos:Concept ;
+    dcterms:source "McCallum K, Laws M, Bignall J, O’Neill S, Sparrow B. (unpublished draft) ‘Interventions module’ in ….. (eds) Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision making. Draft v 0.1 Report to DAWE. TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "An estimate of the total area of weed cover." ;
+    skos:prefLabel "weed cover estimate" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/weed-cover-estimate.ttl"^^xsd:anyURI ;
+    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/ae71c3f6-d430-400f-a1d4-97a333b4ee02> ;
+    tern:valueType tern:Float ;
+.
+
