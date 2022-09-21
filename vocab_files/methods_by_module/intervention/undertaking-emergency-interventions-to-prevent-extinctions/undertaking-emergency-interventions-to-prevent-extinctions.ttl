@@ -1,0 +1,221 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/test/dawe-cv/4f27fbaa-eb51-5f10-9c62-4771d131117c>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <p>
+  <em
+    >Sourced from the MERIT Ready Reckoner, on-ground data standards and online
+    schema</em
+  >
+  (Commonwealth of Australia 2018; National Landcare Program 2020).
+</p>
+<table>
+  <colgroup>
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 3%" />
+    <col style="width: 10%" />
+    <col style="width: 9%" />
+    <col style="width: 5%" />
+    <col style="width: 12%" />
+    <col style="width: 6%" />
+    <col style="width: 12%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Project Service</strong></th>
+      <th><strong>Field Collection</strong></th>
+      <th><strong>App Group</strong></th>
+      <th><strong>Output Measure</strong></th>
+      <th><strong>Mapping Requirements</strong></th>
+      <th><strong>Mapping Area (ha)</strong></th>
+      <th><strong>Reporting Fields</strong></th>
+      <th><strong>Data Field Class</strong></th>
+      <th><strong>Schema</strong></th>
+      <th><strong>Comment RLP</strong></th>
+      <th><strong>Comment TERN</strong></th>
+    </tr>
+  </thead>
+  <tr class="odd">
+    <td rowspan="11">
+      <p>
+        <strong
+          >Undertaking emergency interventions to prevent extinctions</strong
+        >
+      </p>
+      <p>
+        <em
+          >Tell us about emergency interventions you may have undertaken to
+          prevent extinctions in your mapped area</em
+        >
+      </p>
+    </td>
+    <td rowspan="11">Yes</td>
+    <td rowspan="11"></td>
+    <td rowspan="11">
+      <ul>
+        <li><p>Number of interventions</p></li>
+      </ul>
+    </td>
+    <td rowspan="11">
+      <p>&gt;1:10,000, or greater as appropriate</p>
+      <p>
+        &gt; Map the paddocks where emergency intervention/s have been applied.
+      </p>
+    </td>
+    <td rowspan="11"></td>
+    <td>
+      <ul>
+        <li><p>Initial or follow-up activity</p></li>
+      </ul>
+    </td>
+    <td>Drop-down</td>
+    <td>
+      <ul>
+        <li><p>Initial</p></li>
+        <li><p>Follow-up</p></li>
+      </ul>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Number of interventions</p></li>
+      </ul>
+    </td>
+    <td>Number field</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li>
+          <p>Site/s where emergency interventions were undertaken</p>
+        </li>
+      </ul>
+    </td>
+    <td>Spatial</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Area (ha) emergency interventions were undertaken</p></li>
+      </ul>
+    </td>
+    <td>Auto-calculated</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Type and goal or intervention</p></li>
+      </ul>
+    </td>
+    <td>Free text - 500</td>
+    <td></td>
+    <td>
+      Should identify intervention method required. Can list multiples – e.g.
+      isolate / relocate threatened species; quarantine pests.
+    </td>
+    <td>
+      Potential to include a drop-down list here, but will need to be developed.
+    </td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Targeted species</p></li>
+      </ul>
+    </td>
+    <td>Type to search</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Number of individuals involved</p></li>
+      </ul>
+    </td>
+    <td>Number field</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li><p>Time (days) of intervention</p></li>
+      </ul>
+    </td>
+    <td>Number field (0.5 = half day)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li>
+          <p>Site/s where emergency interventions were relocated to</p>
+        </li>
+      </ul>
+    </td>
+    <td>Spatial</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>
+      <ul>
+        <li>
+          <p>Area (ha) where emergency interventions were relocated to</p>
+        </li>
+      </ul>
+    </td>
+    <td>Auto-calculated</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>
+      <ul>
+        <li><p>Comments</p></li>
+      </ul>
+    </td>
+    <td>Free text - 300</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+    """^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:prefLabel "Intervention module- Undertaking emergency interventions to prevent extinctions protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/intervention/undertaking-emergency-interventions-to-prevent-extinctions/undertaking-emergency-interventions-to-prevent-extinctions.ttl"^^xsd:anyURI ;
+.
+
