@@ -23,7 +23,7 @@ for file in files:
     local_graph.parse(file, format="turtle")
 
 response = requests.get(
-    "https://graphdb.tern.org.au/repositories/dawe_vocabs_core/statements?context=<https://linked.data.gov.au/def/test/dawe-cv/>",
+    "https://graphdb.tern.org.au/repositories/dawe_vocabs_core/statements?context=<https://linked.data.gov.au/def/nrm/>",
     headers={"accept": "text/turtle"},
 )
 try:

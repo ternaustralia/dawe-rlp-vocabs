@@ -33,7 +33,7 @@ def test(output_path: Path, path: Path):
     assert collection_members_file in files
 
     collection_uri = URIRef(
-        "https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521"
+        "https://linked.data.gov.au/def/nrm/05f83f99-1998-4d11-8837-bb4a68788521"
     )
 
     graph = Graph()

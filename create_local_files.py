@@ -23,7 +23,7 @@ from dawe_vocabs.vocabs import categorical_values_collection
 
 SPARQL_ENDPOINT = "https://graphdb.tern.org.au/repositories/dawe_vocabs_core"
 REG = Namespace("http://purl.org/linked-data/registry/")
-NRM = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
+NRM = Namespace("https://linked.data.gov.au/def/nrm/")
 vocab_files_dir = Path("vocab_files")
 DASHES = re.compile(r"-+")
 VOCAB_FILES_DIR_GITHUB = "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/"
@@ -80,7 +80,7 @@ def serialize(path: Path, graph: Graph):
             None,
             REG.register,
             URIRef(
-                "https://linked.data.gov.au/def/test/dawe-cv/616c7c18-3309-472d-a38d-8106a1b6ff9b"
+                "https://linked.data.gov.au/def/nrm/616c7c18-3309-472d-a38d-8106a1b6ff9b"
             ),
         )
     )
@@ -98,7 +98,7 @@ def create_feature_types():
     feature_types_dir = vocab_files_dir / "feature_types"
     feature_types_dir.mkdir(exist_ok=True)
 
-    query = "DESCRIBE <https://linked.data.gov.au/def/test/dawe-cv/31a9f83d-9c8b-4d68-8dd7-d1b7a9a4197b>"
+    query = "DESCRIBE <https://linked.data.gov.au/def/nrm/31a9f83d-9c8b-4d68-8dd7-d1b7a9a4197b>"
 
     response = requests.post(
         SPARQL_ENDPOINT,
@@ -358,40 +358,40 @@ def create_custom_vocabs():
     @prefix dcterms: <http://purl.org/dc/terms/> .
     @prefix tern: <https://w3id.org/tern/ontologies/tern/> .
 
-    <https://linked.data.gov.au/def/test/dawe-cv/0ba17555-8c8f-435a-b16f-62773561207b>
+    <https://linked.data.gov.au/def/nrm/0ba17555-8c8f-435a-b16f-62773561207b>
         a skos:Collection ;
         skos:prefLabel "Basal sweep hit type codes" ;
         dcterms:description "These codes were created for the full and lite versions of the Basal Area module's DBH protocols. The categorical values model the collection app's JSON schema." ;
-        skos:member <https://linked.data.gov.au/def/test/dawe-cv/57b9fb25-e075-4e18-8c7f-167e09318c94>,
-            <https://linked.data.gov.au/def/test/dawe-cv/3e0a5d97-c623-477e-98fe-8fe120907530> ;
+        skos:member <https://linked.data.gov.au/def/nrm/57b9fb25-e075-4e18-8c7f-167e09318c94>,
+            <https://linked.data.gov.au/def/nrm/3e0a5d97-c623-477e-98fe-8fe120907530> ;
     .
 
-    <https://linked.data.gov.au/def/test/dawe-cv/57b9fb25-e075-4e18-8c7f-167e09318c94>
+    <https://linked.data.gov.au/def/nrm/57b9fb25-e075-4e18-8c7f-167e09318c94>
         a skos:Concept ;
         skos:prefLabel "in" ;
         skos:definition "Trees where the trunk or stem at breast height (1.3 m above ground level) is wider than the aperture of the BAF used on a TERN Basal Wedge. " ;
     .
 
-    <https://linked.data.gov.au/def/test/dawe-cv/3e0a5d97-c623-477e-98fe-8fe120907530>
+    <https://linked.data.gov.au/def/nrm/3e0a5d97-c623-477e-98fe-8fe120907530>
         a skos:Concept ;
         skos:prefLabel "borderline" ;
         skos:definition "Trees where the trunk or stem at breast height (1.3 m above ground level) is the exact width of the aperture of the BAF used on a TERN Basal Wedge. " ;
     .
 
-    <https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521> skos:member <https://linked.data.gov.au/def/test/dawe-cv/0ba17555-8c8f-435a-b16f-62773561207b> .
+    <https://linked.data.gov.au/def/nrm/05f83f99-1998-4d11-8837-bb4a68788521> skos:member <https://linked.data.gov.au/def/nrm/0ba17555-8c8f-435a-b16f-62773561207b> .
 
-    <https://linked.data.gov.au/def/test/dawe-cv/43178892-92a6-434f-9895-340700e299e6>
+    <https://linked.data.gov.au/def/nrm/43178892-92a6-434f-9895-340700e299e6>
         a skos:Concept ;
         skos:prefLabel "basal area sweep hit type" ;
         skos:definition "The type of hit of a plant during a basal area sweep." ;
         dcterms:source "Ecological Field Monitoring protocols - Basal area module, draft v0.1, 30/11/2021" ;
         tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/ae71c3f6-d430-400f-a1d4-97a333b4ee02> ;
-        tern:hasMethod <https://linked.data.gov.au/def/test/dawe-cv/a7d605e0-7d90-473e-aac0-21cdf380576f> ;
+        tern:hasMethod <https://linked.data.gov.au/def/nrm/a7d605e0-7d90-473e-aac0-21cdf380576f> ;
         tern:valueType tern:IRI ;
-        tern:hasCategoricalCollection <https://linked.data.gov.au/def/test/dawe-cv/0ba17555-8c8f-435a-b16f-62773561207b> ;
+        tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/0ba17555-8c8f-435a-b16f-62773561207b> ;
     .
 
-    <https://linked.data.gov.au/def/test/dawe-cv/ab7c4569-312c-4450-b413-9b11c4d2577b> skos:member <https://linked.data.gov.au/def/test/dawe-cv/43178892-92a6-434f-9895-340700e299e6> .
+    <https://linked.data.gov.au/def/nrm/ab7c4569-312c-4450-b413-9b11c4d2577b> skos:member <https://linked.data.gov.au/def/nrm/43178892-92a6-434f-9895-340700e299e6> .
     """
 
     graph = create_graph()
@@ -407,7 +407,7 @@ def create_categorical_collection():
 
     top_level_collection_graph = create_graph()
     top_level_collection_uri = URIRef(
-        "https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521"
+        "https://linked.data.gov.au/def/nrm/05f83f99-1998-4d11-8837-bb4a68788521"
     )
     top_level_data = """
         @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -415,7 +415,7 @@ def create_categorical_collection():
         @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
         @prefix schema: <https://schema.org/> .
         @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-        <https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521> a skos:Collection ;
+        <https://linked.data.gov.au/def/nrm/05f83f99-1998-4d11-8837-bb4a68788521> a skos:Collection ;
             dcterms:description "A collection of collections of categorical values." ;
             skos:prefLabel "Collections of categorical values" .
     """
@@ -454,7 +454,7 @@ if __name__ == "__main__":
 
     graph = create_graph()
     create_collections_by_module(
-        "https://linked.data.gov.au/def/test/dawe-cv/e8e10807-baea-4c9b-8d1c-d77ced9df1e9",
+        "https://linked.data.gov.au/def/nrm/e8e10807-baea-4c9b-8d1c-d77ced9df1e9",
         vocab_files_dir / "observable_properties_by_module",
         graph,
         "skos:Collection",
@@ -462,7 +462,7 @@ if __name__ == "__main__":
 
     graph = create_graph()
     create_collections_by_module(
-        "https://linked.data.gov.au/def/test/dawe-cv/dba9fde2-34ba-4a1d-92e0-63846105fc87",
+        "https://linked.data.gov.au/def/nrm/dba9fde2-34ba-4a1d-92e0-63846105fc87",
         vocab_files_dir / "attributes_by_module",
         graph,
         "skos:Collection",
@@ -470,7 +470,7 @@ if __name__ == "__main__":
 
     graph = create_graph()
     create_collections_by_module(
-        "https://linked.data.gov.au/def/test/dawe-cv/f46fcbc6-0660-4e12-bcd4-c5642459b630",
+        "https://linked.data.gov.au/def/nrm/f46fcbc6-0660-4e12-bcd4-c5642459b630",
         vocab_files_dir / "methods_by_module",
         graph,
         "skos:Collection, skos:Concept",
@@ -478,19 +478,19 @@ if __name__ == "__main__":
 
     graph = create_graph()
     to_be_added = [
-        "https://linked.data.gov.au/def/test/dawe-cv/fadc6db3-9474-45f5-a052-5b5002580c0a"
+        "https://linked.data.gov.au/def/nrm/fadc6db3-9474-45f5-a052-5b5002580c0a"
     ]
     for item in to_be_added:
         fetch_remote_cbd(item, graph)
     create_concepts(
-        "https://linked.data.gov.au/def/test/dawe-cv/e8e10807-baea-4c9b-8d1c-d77ced9df1e9",
+        "https://linked.data.gov.au/def/nrm/e8e10807-baea-4c9b-8d1c-d77ced9df1e9",
         vocab_files_dir / "observable_property_concepts",
         graph,
     )
 
     graph = create_graph()
     create_concepts(
-        "https://linked.data.gov.au/def/test/dawe-cv/dba9fde2-34ba-4a1d-92e0-63846105fc87",
+        "https://linked.data.gov.au/def/nrm/dba9fde2-34ba-4a1d-92e0-63846105fc87",
         vocab_files_dir / "attribute_concepts",
         graph,
     )
