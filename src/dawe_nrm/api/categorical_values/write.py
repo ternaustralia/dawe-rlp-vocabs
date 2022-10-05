@@ -17,7 +17,7 @@ def write_all(path: Path):
 
     top_level_collection_member_graph = create_graph()
     top_level_collection_uri = URIRef(
-        "https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521"
+        "https://linked.data.gov.au/def/nrm/05f83f99-1998-4d11-8837-bb4a68788521"
     )
 
     async def generate(lut_endpoint: LUTSchema, client: httpx.Client):
