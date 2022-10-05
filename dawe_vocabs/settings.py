@@ -13,14 +13,14 @@ show_table_result = True
 download_excel_files = True
 
 # Base URI used for all generated vocabularies.
-base_uri = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
+base_uri = Namespace("https://linked.data.gov.au/def/nrm/")
 
 # SHACL shapes file.
 shapes_file = "shapes.shapes.ttl"
 
 # Parent categorical values collection
 parent_collection_uri = (
-    "https://linked.data.gov.au/def/test/dawe-cv/05f83f99-1998-4d11-8837-bb4a68788521"
+    "https://linked.data.gov.au/def/nrm/05f83f99-1998-4d11-8837-bb4a68788521"
 )
 
 # Look up tables to be generated.

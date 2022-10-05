@@ -6,7 +6,7 @@ from rdflib.namespace import RDFS, SDO
 from dawe_nrm.settings import VOCAB_FILES_DIR_GITHUB
 
 REG = Namespace("http://purl.org/linked-data/registry/")
-NRM = Namespace("https://linked.data.gov.au/def/test/dawe-cv/")
+NRM = Namespace("https://linked.data.gov.au/def/nrm/")
 
 
 def create_graph():
@@ -45,7 +45,7 @@ def serialize(path: Path, graph: Graph):
             None,
             REG.register,
             URIRef(
-                "https://linked.data.gov.au/def/test/dawe-cv/616c7c18-3309-472d-a38d-8106a1b6ff9b"
+                "https://linked.data.gov.au/def/nrm/616c7c18-3309-472d-a38d-8106a1b6ff9b"
             ),
         )
     )
