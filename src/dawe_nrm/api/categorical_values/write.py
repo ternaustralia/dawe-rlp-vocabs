@@ -46,7 +46,7 @@ def write_all(path: Path):
             raise Exception(err) from err
 
     async def fetch_and_write(endpoints: List[LUTSchema]):
-        async with httpx.AsyncClient(timeout=60) as client:
+        async with httpx.AsyncClient(timeout=120) as client:
             tasks = [generate(endpoint, client) for endpoint in endpoints]
             for task in track(
                 asyncio.as_completed(tasks),
