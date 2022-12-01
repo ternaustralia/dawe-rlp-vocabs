@@ -46,7 +46,7 @@ async def get(
             label = row["attributes"]["label"]
             symbol = row["attributes"]["symbol"]
             if row["attributes"].get("tree_description"):
-                # See LUTSchema for <http://vocabs.paratoo.tern.org.au:1337/api/lut-targeted-survey-flora-growth-stages>
+                # See LUTSchema for <https://core.vocabs.paratoo.tern.org.au/api/lut-targeted-survey-flora-growth-stages>
                 description = (
                     "Tree description: "
                     + row["attributes"]["tree_description"]
