@@ -1,8 +1,7 @@
 from pathlib import Path
 
-from rdflib import Graph, Namespace
 from ontotools.functions.normalize_file import normalize_file
-
+from rdflib import Graph, Namespace
 
 if __name__ == "__main__":
     path = "vocab_files/observable_property_concepts"
