@@ -32,7 +32,6 @@ if __name__ == "__main__":
     expand_graph(graph, new_data_graph)
 
     print(f"Final size: {len(graph) + len(new_data_graph)}")
-    graph.serialize("dump.ttl", format="turtle")
     date_today = date.today()
 
     new_data_graph.serialize(filename, format="turtle")
