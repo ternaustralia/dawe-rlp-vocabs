@@ -1,11 +1,10 @@
-from pathlib import Path
-from datetime import date
 from argparse import ArgumentParser
+from datetime import date
+from pathlib import Path
 
 from rdflib import Graph, URIRef
 
 from dawe_nrm.expand_graph import expand_graph
-
 
 if __name__ == "__main__":
     parser = ArgumentParser(
