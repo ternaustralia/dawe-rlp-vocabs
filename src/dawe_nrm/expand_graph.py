@@ -9,19 +9,23 @@ def add_observable_property_relationships(graph: Graph, new_data_graph: Graph):
         PREFIX urnp: <urn:property:>
         PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 
-        construct {
+        CONSTRUCT {
             ?observable_property tern:hasFeatureType ?featureType ;
                         tern:hasMethod ?method ;
-                        tern:valueType ?valueType .
+                        tern:valueType ?valueType ;
+                        tern:hasCategoricalValuesCollection ?categoricalValuesCollection .
         }
-        where {
+        WHERE {
             ?_concept_metadata a urnc:ObservablePropertyMeta ;
                             urnp:observableProperty ?observable_property ;
                             urnp:featureType ?featureType ;
                             urnp:protocolModule ?method ;
                             urnp:valueType ?valueType .
+            OPTIONAL {
+                ?concept_metadata urnp:categoricalValuesCollection ?categoricalValuesCollection .
+            }
         }
-        order by ?label
+        ORDER BY ?label
     """
     )
     for triple in result:
