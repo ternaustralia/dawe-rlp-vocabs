@@ -1555,4 +1555,11 @@ endpoints: List[LUTSchema] = [
         collection_uuid="772f6669-87ec-4348-a964-2e1bea2cbc23",
         uuid_namespace="intervention water bodies",
     ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-wave-water-erosion-degrees",
+        label="Soils wave water erosion degrees codes",
+        description="A collection of soils wave water erosion degrees and its codes.",
+        collection_uuid="58b549f7-45ce-452f-91cc-097b88eaf984",
+        uuid_namespace="soils wave water erosion degrees",
+    ),
 ]
