@@ -1562,4 +1562,11 @@ endpoints: List[LUTSchema] = [
         collection_uuid="58b549f7-45ce-452f-91cc-097b88eaf984",
         uuid_namespace="soils wave water erosion degrees",
     ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-segregation-strengths",
+        label="Soils segregation strengths codes",
+        description="A collection of soils segregation strengths and its codes.",
+        collection_uuid="ff36816d-ee76-4c55-a41f-8618ccd3860a",
+        uuid_namespace="soils segregation strengths",
+    ),
 ]
