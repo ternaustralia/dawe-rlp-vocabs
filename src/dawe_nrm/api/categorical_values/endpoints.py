@@ -1569,4 +1569,11 @@ endpoints: List[LUTSchema] = [
         collection_uuid="ff36816d-ee76-4c55-a41f-8618ccd3860a",
         uuid_namespace="soils segregation strengths",
     ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types",
+        label="Bird observation location types codes",
+        description="A collection of bird observation location types and its codes.",
+        collection_uuid="e3a7281d-a010-430f-9a09-74cab86ac7de",
+        uuid_namespace="bird observation location types",
+    ),
 ]
