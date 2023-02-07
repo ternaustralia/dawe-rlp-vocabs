@@ -2,16 +2,15 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/8997be1e-cf91-4ca6-a641-eb57aa10d9e6>
     a skos:Concept ;
     dcterms:source <https://a-z-animals.com/reference/animal-classification/> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """The phylum group is divided into smaller groups, known as animal classes. The Chordata phylum splits in to seven animal classes:
+    skos:definition """The phylum group is divided into smaller groups, known as animal classes. The Chordata phylum splits into seven animal classes:
 Agnatha (jaw-less fish)
-Chrondrichtyes (cartilaginous fish)
+Chondrichthyes (cartilaginous fish)
 Osteichthyes (bony fish)
 Amphibia (amphibians)
 Reptilia (reptiles)
@@ -19,8 +18,5 @@ Aves (birds)
 Mammalia (mammals)""" ;
     skos:prefLabel "vertebrate class" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/vertebrate-class.ttl"^^xsd:anyURI ;
-    tern:hasFeatureType <http://linked.data.gov.au/def/tern-cv/ecb855ed-50e1-4299-8491-861759ef40b7> ;
-    tern:hasMethod <https://linked.data.gov.au/def/nrm/7942c1d3-8cfc-4d74-931d-850cacfa5a63> ;
-    tern:valueType tern:Text ;
 .
 
