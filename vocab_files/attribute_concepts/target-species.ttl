@@ -7,11 +7,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/93fa405c-9e63-4857-a55d-e93d866545a6>
     a skos:Concept ;
-    dcterms:source "Ecological Field Monitoring protocols - Camera traps module , draft v0.1, 30/11/2021" ;
+    dcterms:source "Ecological Field Monitoring protocols - Camera traps module, Intervention module, Targeted survey module,  , draft v0.1, 30/11/2021" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "Taxon name determined during the process of field observation." ;
     skos:prefLabel "target species" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/target-species.ttl"^^xsd:anyURI ;
+    tern:hasFeatureType
+        <http://linked.data.gov.au/def/tern-cv/2361dea8-598c-4b6f-a641-2b98ff199e9e> ,
+        <http://linked.data.gov.au/def/tern-cv/b311c0d3-4a1a-4932-a39c-f5cdc1afa611> ;
     tern:valueType tern:Text ;
 .
 
