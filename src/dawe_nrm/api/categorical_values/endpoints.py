@@ -1555,4 +1555,25 @@ endpoints: List[LUTSchema] = [
         collection_uuid="772f6669-87ec-4348-a964-2e1bea2cbc23",
         uuid_namespace="intervention water bodies",
     ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-wave-water-erosion-degrees",
+        label="Soils wave water erosion degrees codes",
+        description="A collection of soils wave water erosion degrees and its codes.",
+        collection_uuid="58b549f7-45ce-452f-91cc-097b88eaf984",
+        uuid_namespace="soils wave water erosion degrees",
+    ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-segregation-strengths",
+        label="Soils segregation strengths codes",
+        description="A collection of soils segregation strengths and its codes.",
+        collection_uuid="ff36816d-ee76-4c55-a41f-8618ccd3860a",
+        uuid_namespace="soils segregation strengths",
+    ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types",
+        label="Bird observation location types codes",
+        description="A collection of bird observation location types and its codes.",
+        collection_uuid="e3a7281d-a010-430f-9a09-74cab86ac7de",
+        uuid_namespace="bird observation location types",
+    ),
 ]
