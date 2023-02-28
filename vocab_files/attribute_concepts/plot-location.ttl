@@ -1,0 +1,19 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/0c03841f-0151-420c-a19e-8f974543ef8e>
+    a skos:Concept ;
+    dcterms:source """Laws M, McCallum K, Bignall J, O’Neill S, Sparrow B. (unpublished draft) ‘Vertebrate fauna module’ in ….. (eds) Ecological Field
+Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision
+making. Draft v 0.1 Report to DAWE. TERN, Adelaide""" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "The specific geographic coordinates or physical location where a plot is established for studying a particular ecological phenomenon." ;
+    skos:prefLabel "plot location" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-location.ttl"^^xsd:anyURI ;
+    tern:valueType tern:Text ;
+.
+
