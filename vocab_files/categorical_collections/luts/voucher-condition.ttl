@@ -12,7 +12,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
         <https://linked.data.gov.au/def/nrm/01a2e203-48ca-5ed0-b166-83a48d8a6d9d> ,
-        <https://linked.data.gov.au/def/nrm/512b17f5-3d9c-55be-8374-5e2337b32609> ;
+        <https://linked.data.gov.au/def/nrm/1d682c5c-2eb0-515a-8a91-5d48e7f97a9c> ,
+        <https://linked.data.gov.au/def/nrm/512b17f5-3d9c-55be-8374-5e2337b32609> ,
+        <https://linked.data.gov.au/def/nrm/7a2cd52e-6733-55b5-9efe-a533710e4da4> ,
+        <https://linked.data.gov.au/def/nrm/7bb6a893-2e9f-56b7-9a2c-d075bd3c876d> ,
+        <https://linked.data.gov.au/def/nrm/9b574eb7-b962-515b-ab54-c91b6dad99dc> ,
+        <https://linked.data.gov.au/def/nrm/d9027887-65db-548c-a201-3d9b9a90e0e3> ;
     skos:prefLabel "Voucher condition codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/voucher-condition.ttl"^^xsd:anyURI ;
 .
@@ -23,8 +28,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-voucher-conditions> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "D" ;
-    skos:prefLabel "Decomposed" ;
+    skos:notation "FL" ;
+    skos:prefLabel "Fresh (estimate 24 hours - <48 hours)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/voucher-condition.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/1d682c5c-2eb0-515a-8a91-5d48e7f97a9c>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-voucher-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "LD" ;
+    skos:prefLabel "Long dead (> 4 weeks)" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/voucher-condition.ttl"^^xsd:anyURI ;
 .
 
@@ -34,8 +50,52 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-voucher-conditions> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "F" ;
-    skos:prefLabel "Fresh" ;
+    skos:notation "FS" ;
+    skos:prefLabel "Fresh (estimate <24 hours)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/voucher-condition.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/7a2cd52e-6733-55b5-9efe-a533710e4da4>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-voucher-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "PDS" ;
+    skos:prefLabel "Partially degenerated (estimate 2 - 7 days)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/voucher-condition.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/7bb6a893-2e9f-56b7-9a2c-d075bd3c876d>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-voucher-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "U" ;
+    skos:prefLabel "Unknown" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/voucher-condition.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/9b574eb7-b962-515b-ab54-c91b6dad99dc>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-voucher-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "PDL" ;
+    skos:prefLabel "Partially degenerated (estimate 1-2 weeks)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/voucher-condition.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d9027887-65db-548c-a201-3d9b9a90e0e3>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-voucher-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "D" ;
+    skos:prefLabel "Degenerated (estimate 2 - 4 weeks)" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/voucher-condition.ttl"^^xsd:anyURI ;
 .
 
