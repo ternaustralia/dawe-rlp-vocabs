@@ -631,8 +631,8 @@ lut_configs: List[LUTSchema] = [
         uuid_namespace="recruitment study area types",
     ),
     LUTSchema(
-        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-transect-numbers",
-        label="Recruitment transect numbers codes",
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-transects",
+        label="Recruitment transects codes",
         description="A collection of recruitment transect numbers and its codes.",
         collection_uuid="baa1ee46-d49b-47cf-8dbb-a70aad01f06c",
         uuid_namespace="recruitment transect numbers",
