@@ -206,8 +206,5 @@ In case a release or prerelease was published by accident, follow the steps to g
 
 ## Contact
 
-Edmond Chuc  
-e.chuc@uq.edu.au
-
-Junrong Yu  
-junrong.yu@uq.edu.au
+TERN Support
+esupport@tern.org.au
