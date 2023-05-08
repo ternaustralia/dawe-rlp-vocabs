@@ -17,7 +17,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         dest="paths",
-        nargs='+',
+        nargs="+",
         help="Paths to the directory of RDF Turtle files to be published.",
     )
     parser.add_argument(
@@ -77,7 +77,6 @@ if __name__ == "__main__":
         for path in paths:
             vocab_files_dir = Path(path)
             files.extend(list(vocab_files_dir.glob("**/*.ttl")))
-
 
         graph = Graph()
         for file in files:
