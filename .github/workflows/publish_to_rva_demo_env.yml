@@ -8,10 +8,10 @@ jobs:
   publish:
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
     with:
-      rva_vocab_id: 990
+      rva_vocab_id: 998
       rva_username: dcceew-rva-api
       rva_env: test
       github_env: test
-      deployment_url: https://demo.vocabs.ardc.edu.au/viewById/990
+      deployment_url: https://demo.vocabs.ardc.edu.au/viewById/998
     secrets:
       rva_password: ${{ secrets.RVA_PASSWORD }}
