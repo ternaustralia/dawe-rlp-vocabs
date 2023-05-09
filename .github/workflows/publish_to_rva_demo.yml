@@ -18,6 +18,12 @@ on:
       deployment_url:
         required: true
         type: string
+      paths:
+        required: true
+        type: string
+        description: |
+          The paths to the vocabulary files.
+          Each path should be specified on a separate line.
     secrets:
       rva_password:
         required: true
