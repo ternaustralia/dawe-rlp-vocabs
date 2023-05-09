@@ -5,7 +5,7 @@ on:
     types: [prereleased]
 
 jobs:
-  publish:
+  publish_vocabularies:
     name: Publish Vocabularies to RVA demo
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
     with:
@@ -18,7 +18,7 @@ jobs:
         vocab_files/
     secrets:
       rva_password: ${{ secrets.RVA_PASSWORD }}
-  publish:
+  publish_attributes:
     name: Publish Attributes to RVA demo
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
     with:
@@ -32,7 +32,7 @@ jobs:
         vocab_files/attributes_by_module/
     secrets:
       rva_password: ${{ secrets.RVA_PASSWORD }}
-  publish:
+  publish_observable_properties:
     name: Publish Observable Properties to RVA demo
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
     with:
@@ -47,7 +47,7 @@ jobs:
         vocab_files/custom_vocabs/
     secrets:
       rva_password: ${{ secrets.RVA_PASSWORD }}
-  publish:
+  publish_categorical_collections:
     name: Publish Collections of Categorical Values to RVA demo
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
     with:
@@ -60,7 +60,7 @@ jobs:
         vocab_files/categorical_collections/
     secrets:
       rva_password: ${{ secrets.RVA_PASSWORD }}
-  publish:
+  publish_protocols:
     name: Publish RLP Survey Protocols to RVA demo
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
     with:
@@ -73,7 +73,7 @@ jobs:
         vocab_files/methods_by_module/
     secrets:
       rva_password: ${{ secrets.RVA_PASSWORD }}
-  publish:
+  publish_feature_types:
     name: Publish Feature Types to RVA demo
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
     with:
