@@ -1,4 +1,4 @@
-name: Publish to Research Vocabularies Australia
+name: Publish to Research Vocabularies Australia demo
 
 on:
   workflow_call:
@@ -57,5 +57,5 @@ jobs:
       # - name: Expand the graph data and write to vocab_files/
       #   run: python expand.py vocab_files/expanded-triples-dump.ttl
 
-      - name: Publish to Research Vocabularies Australia
-        run: python rva_demo.py vocab_files/categorical_collections/ ${{ inputs.rva_username }} ${{ secrets.rva_password }} ${{ inputs.rva_vocab_id }} ${{ steps.latest-tag.outputs.tag }} --environment ${{ inputs.rva_env }}
+      - name: Publish to Research Vocabularies Australia demo
+        run: python rva_demo.py ${{ inputs.paths }} ${{ inputs.rva_username }} ${{ secrets.rva_password }} ${{ inputs.rva_vocab_id }} ${{ steps.latest-tag.outputs.tag }} --environment ${{ inputs.rva_env }}
