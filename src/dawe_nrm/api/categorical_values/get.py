@@ -31,17 +31,28 @@ async def get(
         )
 
     concepts = []
+
+    URNCLASS = Namespace("urn:class:")
+    URNPROPERTY = Namespace("urn:property:")
     graph = create_graph()
+    graph.bind("urnc", URNCLASS)
+    graph.bind("urnp", URNPROPERTY)
+
+    # Create the collection
+    collection_uri = base_uri[config.collection_uuid]
+    graph.add((collection_uri, DCTERMS.source, URIRef(config.endpoint_url)))
+    graph.add((collection_uri, RDF.type, SKOS.Collection))
+    graph.add((collection_uri, SKOS.prefLabel, Literal(config.label)))
+    graph.add(
+        (
+            collection_uri,
+            DCTERMS.description,
+            Literal(config.description),
+        )
+    )
 
     for row in rows:
-        if row.get("attributes") and row["attributes"].get("uuid"):
-            local_name = row["attributes"]["uuid"]
-        else:
-            # Use this temporarily until the "uuid" field is available in the API.
-            local_name = get_local_uuid_name(f"{config.uuid_namespace}-{row['id']}")
-        concept_uri = base_uri[local_name]
-        concepts.append(concept_uri)
-
+        # Get categorical values information from API
         if row.get("attributes"):
             label = row["attributes"]["label"]
             symbol = row["attributes"]["symbol"]
@@ -62,6 +73,12 @@ async def get(
             description = row["description"]
             symbol = row["symbol"]
 
+        # Generate uuid based on labels to avoid duplicates
+        local_name = get_local_uuid_name(f"{label}")
+        concept_uri = base_uri[local_name]
+        concepts.append(concept_uri)
+
+        # Add concept in collection
         graph.add((concept_uri, RDF.type, SKOS.Concept))
         graph.add((concept_uri, SKOS.prefLabel, Literal(label)))
         graph.add((concept_uri, SKOS.definition, Literal(description)))
@@ -75,18 +92,55 @@ async def get(
             )
         )
 
-    # Create the collection
-    collection_uri = base_uri[config.collection_uuid]
-    graph.add((collection_uri, DCTERMS.source, URIRef(config.endpoint_url)))
-    graph.add((collection_uri, RDF.type, SKOS.Collection))
-    graph.add((collection_uri, SKOS.prefLabel, Literal(config.label)))
-    graph.add(
-        (
-            collection_uri,
-            DCTERMS.description,
-            Literal(config.description),
+        # Generate the collection specific URI for concept
+        if row.get("attributes") and row["attributes"].get("uuid"):
+            concept_name_by_collection = row["attributes"]["uuid"]
+        else:
+            # Use this temporarily until the "uuid" field is available in the API.
+            concept_name_by_collection = get_local_uuid_name(
+                f"{config.uuid_namespace}-{row['id']}"
+            )
+        concept_uri_by_collection = base_uri[concept_name_by_collection]
+
+        # Create collection specific information for each concept
+        graph.add(
+            (concept_uri_by_collection, RDF.type, URNCLASS.CategoricalConceptMeta)
         )
-    )
+        graph.add(
+            (concept_uri_by_collection, URNPROPERTY.categoricalConcept, concept_uri)
+        )
+        graph.add(
+            (
+                concept_uri_by_collection,
+                URNPROPERTY.categoricalCollection,
+                collection_uri,
+            )
+        )
+        graph.add(
+            (
+                concept_uri_by_collection,
+                URNPROPERTY.conceptDefinition,
+                Literal(description),
+            )
+        )
+        graph.add(
+            (concept_uri_by_collection, URNPROPERTY.conceptNotation, Literal(symbol))
+        )
+        graph.add(
+            (
+                concept_uri_by_collection,
+                URNPROPERTY.conceptIdentifier,
+                Literal(row["id"]),
+            )
+        )
+        graph.add(
+            (
+                concept_uri_by_collection,
+                URNPROPERTY.conceptSource,
+                URIRef(config.endpoint_url),
+            )
+        )
+
     for concept in concepts:
         graph.add((collection_uri, SKOS.member, concept))
 

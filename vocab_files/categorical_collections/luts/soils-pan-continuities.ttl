@@ -3,22 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/c80e269f-a328-4214-b690-849259e67e75>
-    a skos:Collection ;
-    dcterms:description "A collection of soils pan continuities and its codes." ;
+<https://linked.data.gov.au/def/nrm/2948ce8d-d606-50d0-b161-3933e5f9f240>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-pan-continuities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c80e269f-a328-4214-b690-849259e67e75> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/58e0d269-8f29-5221-ba6a-1bad252d303e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "B" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-pan-continuities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/2d13cf28-c514-5237-8de5-a9563b40fef5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-pan-continuities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c80e269f-a328-4214-b690-849259e67e75> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d7f71bef-4a91-598b-b141-f44115ad402e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "C" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-pan-continuities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f00e2aad-f197-5a04-bbdb-c2b169850349>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-pan-continuities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c80e269f-a328-4214-b690-849259e67e75> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2364339f-cd61-515c-b9e7-16fe98f76853> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "D" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-pan-continuities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/2364339f-cd61-515c-b9e7-16fe98f76853>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-pan-continuities> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/2948ce8d-d606-50d0-b161-3933e5f9f240> ,
-        <https://linked.data.gov.au/def/nrm/2d13cf28-c514-5237-8de5-a9563b40fef5> ,
-        <https://linked.data.gov.au/def/nrm/f00e2aad-f197-5a04-bbdb-c2b169850349> ;
-    skos:prefLabel "Soils pan continuities codes" ;
+    skos:definition "" ;
+    skos:notation "D" ;
+    skos:prefLabel "Discontinuous" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-pan-continuities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/2948ce8d-d606-50d0-b161-3933e5f9f240>
+<https://linked.data.gov.au/def/nrm/58e0d269-8f29-5221-ba6a-1bad252d303e>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-pan-continuities> ;
@@ -29,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-pan-continuities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/2d13cf28-c514-5237-8de5-a9563b40fef5>
+<https://linked.data.gov.au/def/nrm/d7f71bef-4a91-598b-b141-f44115ad402e>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-pan-continuities> ;
@@ -40,14 +73,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-pan-continuities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f00e2aad-f197-5a04-bbdb-c2b169850349>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
+<https://linked.data.gov.au/def/nrm/c80e269f-a328-4214-b690-849259e67e75>
+    a skos:Collection ;
+    dcterms:description "A collection of soils pan continuities and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-pan-continuities> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "D" ;
-    skos:prefLabel "Discontinuous" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/2364339f-cd61-515c-b9e7-16fe98f76853> ,
+        <https://linked.data.gov.au/def/nrm/58e0d269-8f29-5221-ba6a-1bad252d303e> ,
+        <https://linked.data.gov.au/def/nrm/d7f71bef-4a91-598b-b141-f44115ad402e> ;
+    skos:prefLabel "Soils pan continuities codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-pan-continuities.ttl"^^xsd:anyURI ;
 .
 

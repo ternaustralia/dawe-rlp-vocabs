@@ -3,22 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/c2408628-477b-4867-bc12-532126801973>
-    a skos:Collection ;
-    dcterms:description "A collection of soils field slaking scores and its codes." ;
+<https://linked.data.gov.au/def/nrm/130ef1cb-f725-5a23-9adf-1262023d97b1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-field-slaking-scores.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c2408628-477b-4867-bc12-532126801973> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6d66f362-a9da-5d7d-bde7-5563e34188d0> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-field-slaking-scores> ;
+.
+
+<https://linked.data.gov.au/def/nrm/29121a4f-32f9-5a2f-a8ab-10071319be56>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-field-slaking-scores.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c2408628-477b-4867-bc12-532126801973> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bf714323-aaf2-5ba9-9219-852a06d29e67> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "0" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-field-slaking-scores> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c68510f9-4ef0-5ce8-ae45-d40ffd19a25a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-field-slaking-scores.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c2408628-477b-4867-bc12-532126801973> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/54efb939-c6e3-5466-95a4-ef11f3f5a228> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "1" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-field-slaking-scores> ;
+.
+
+<https://linked.data.gov.au/def/nrm/54efb939-c6e3-5466-95a4-ef11f3f5a228>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-field-slaking-scores> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/130ef1cb-f725-5a23-9adf-1262023d97b1> ,
-        <https://linked.data.gov.au/def/nrm/29121a4f-32f9-5a2f-a8ab-10071319be56> ,
-        <https://linked.data.gov.au/def/nrm/c68510f9-4ef0-5ce8-ae45-d40ffd19a25a> ;
-    skos:prefLabel "Soils field slaking scores codes" ;
+    skos:definition "" ;
+    skos:notation "1" ;
+    skos:prefLabel "Partially slaked within 10 minutes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-field-slaking-scores.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/130ef1cb-f725-5a23-9adf-1262023d97b1>
+<https://linked.data.gov.au/def/nrm/6d66f362-a9da-5d7d-bde7-5563e34188d0>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-field-slaking-scores> ;
@@ -29,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-field-slaking-scores.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/29121a4f-32f9-5a2f-a8ab-10071319be56>
+<https://linked.data.gov.au/def/nrm/bf714323-aaf2-5ba9-9219-852a06d29e67>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-field-slaking-scores> ;
@@ -40,14 +73,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-field-slaking-scores.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/c68510f9-4ef0-5ce8-ae45-d40ffd19a25a>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
+<https://linked.data.gov.au/def/nrm/c2408628-477b-4867-bc12-532126801973>
+    a skos:Collection ;
+    dcterms:description "A collection of soils field slaking scores and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-field-slaking-scores> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "1" ;
-    skos:prefLabel "Partially slaked within 10 minutes" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/54efb939-c6e3-5466-95a4-ef11f3f5a228> ,
+        <https://linked.data.gov.au/def/nrm/6d66f362-a9da-5d7d-bde7-5563e34188d0> ,
+        <https://linked.data.gov.au/def/nrm/bf714323-aaf2-5ba9-9219-852a06d29e67> ;
+    skos:prefLabel "Soils field slaking scores codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-field-slaking-scores.ttl"^^xsd:anyURI ;
 .
 

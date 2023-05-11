@@ -3,22 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/b7368a37-a4ac-4c84-8a78-1fb9755ad849>
-    a skos:Collection ;
-    dcterms:description "A collection of plant statuses and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/1a57c444-66a7-5746-bebc-2be757ee54c8> ,
-        <https://linked.data.gov.au/def/nrm/ade35b6f-6e7c-5322-9c70-ab86a94dcfa6> ,
-        <https://linked.data.gov.au/def/nrm/f03c971f-411a-5263-b410-ddc015bd9e8d> ;
-    skos:prefLabel "Plant statuses codes" ;
+<https://linked.data.gov.au/def/nrm/1a57c444-66a7-5746-bebc-2be757ee54c8>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plant-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7368a37-a4ac-4c84-8a78-1fb9755ad849> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/00e4dd62-fabe-5fb4-83b1-e2cf93e6a792> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Alive" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses> ;
 .
 
-<https://linked.data.gov.au/def/nrm/1a57c444-66a7-5746-bebc-2be757ee54c8>
+<https://linked.data.gov.au/def/nrm/ade35b6f-6e7c-5322-9c70-ab86a94dcfa6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plant-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7368a37-a4ac-4c84-8a78-1fb9755ad849> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2fd1ed97-3e7b-59a0-8d93-9be76f276071> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Dead" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f03c971f-411a-5263-b410-ddc015bd9e8d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plant-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7368a37-a4ac-4c84-8a78-1fb9755ad849> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e237bdc2-8d42-52ba-9885-ee9ab013106d> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "Resprouting" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses> ;
+.
+
+<https://linked.data.gov.au/def/nrm/00e4dd62-fabe-5fb4-83b1-e2cf93e6a792>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses> ;
@@ -29,7 +51,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plant-statuses.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ade35b6f-6e7c-5322-9c70-ab86a94dcfa6>
+<https://linked.data.gov.au/def/nrm/2fd1ed97-3e7b-59a0-8d93-9be76f276071>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses> ;
@@ -40,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plant-statuses.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f03c971f-411a-5263-b410-ddc015bd9e8d>
+<https://linked.data.gov.au/def/nrm/e237bdc2-8d42-52ba-9885-ee9ab013106d>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses> ;
@@ -48,6 +70,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Resprouting" ;
     skos:prefLabel "Resprouting" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plant-statuses.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b7368a37-a4ac-4c84-8a78-1fb9755ad849>
+    a skos:Collection ;
+    dcterms:description "A collection of plant statuses and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/00e4dd62-fabe-5fb4-83b1-e2cf93e6a792> ,
+        <https://linked.data.gov.au/def/nrm/2fd1ed97-3e7b-59a0-8d93-9be76f276071> ,
+        <https://linked.data.gov.au/def/nrm/e237bdc2-8d42-52ba-9885-ee9ab013106d> ;
+    skos:prefLabel "Plant statuses codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plant-statuses.ttl"^^xsd:anyURI ;
 .
 

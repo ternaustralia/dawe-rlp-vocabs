@@ -3,25 +3,77 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/bcc7bb4d-a15a-4681-94e0-cb7a1117420a>
-    a skos:Collection ;
-    dcterms:description "A collection of soils runoffs and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/099527c9-d8af-5ffd-9cfd-4542d6d80e9b> ,
-        <https://linked.data.gov.au/def/nrm/1807dc64-8ffc-5790-8ea4-3bba795910e7> ,
-        <https://linked.data.gov.au/def/nrm/652968b5-2955-5691-8621-f1f5087a5be5> ,
-        <https://linked.data.gov.au/def/nrm/93cae55a-98d4-5e4a-8323-0fc78ef994f6> ,
-        <https://linked.data.gov.au/def/nrm/ced975b6-ab59-5e22-8f87-58796a3573cf> ,
-        <https://linked.data.gov.au/def/nrm/f9422a38-59ca-5bf8-a3e0-e75cab3d48c4> ;
-    skos:prefLabel "Soils runoffs codes" ;
+<https://linked.data.gov.au/def/nrm/099527c9-d8af-5ffd-9cfd-4542d6d80e9b>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/bcc7bb4d-a15a-4681-94e0-cb7a1117420a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/30e48ea4-ed6f-5f18-9e5e-8abe43bb1d17> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "0" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
 .
 
-<https://linked.data.gov.au/def/nrm/099527c9-d8af-5ffd-9cfd-4542d6d80e9b>
+<https://linked.data.gov.au/def/nrm/1807dc64-8ffc-5790-8ea4-3bba795910e7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/bcc7bb4d-a15a-4681-94e0-cb7a1117420a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f01a24b0-ebec-5176-b3eb-6ccb0b8de7da> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/652968b5-2955-5691-8621-f1f5087a5be5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/bcc7bb4d-a15a-4681-94e0-cb7a1117420a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/da6a57b4-ca7a-58d5-9962-6d4c3f4b8ed6> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "3" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/93cae55a-98d4-5e4a-8323-0fc78ef994f6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/bcc7bb4d-a15a-4681-94e0-cb7a1117420a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c4d5972e-6fce-5ad2-afc5-0d6199beb3c9> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "4" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ced975b6-ab59-5e22-8f87-58796a3573cf>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/bcc7bb4d-a15a-4681-94e0-cb7a1117420a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d351118d-0a66-5e71-b4aa-2c8276b067d7> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "1" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f9422a38-59ca-5bf8-a3e0-e75cab3d48c4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/bcc7bb4d-a15a-4681-94e0-cb7a1117420a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ec946d6a-ba9d-5fb9-8bf2-888d44fdcc20> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "5" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/30e48ea4-ed6f-5f18-9e5e-8abe43bb1d17>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
@@ -32,29 +84,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/1807dc64-8ffc-5790-8ea4-3bba795910e7>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "2" ;
-    skos:prefLabel "Slow" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/652968b5-2955-5691-8621-f1f5087a5be5>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "3" ;
-    skos:prefLabel "Moderately rapid" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/93cae55a-98d4-5e4a-8323-0fc78ef994f6>
+<https://linked.data.gov.au/def/nrm/c4d5972e-6fce-5ad2-afc5-0d6199beb3c9>
     a skos:Concept ;
     dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
@@ -65,7 +95,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ced975b6-ab59-5e22-8f87-58796a3573cf>
+<https://linked.data.gov.au/def/nrm/d351118d-0a66-5e71-b4aa-2c8276b067d7>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
@@ -76,7 +106,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f9422a38-59ca-5bf8-a3e0-e75cab3d48c4>
+<https://linked.data.gov.au/def/nrm/da6a57b4-ca7a-58d5-9962-6d4c3f4b8ed6>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "3" ;
+    skos:prefLabel "Moderately rapid" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ec946d6a-ba9d-5fb9-8bf2-888d44fdcc20>
     a skos:Concept ;
     dcterms:identifier 6 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
@@ -84,6 +125,33 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "5" ;
     skos:prefLabel "Very rapid" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f01a24b0-ebec-5176-b3eb-6ccb0b8de7da>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "2" ;
+    skos:prefLabel "Slow" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bcc7bb4d-a15a-4681-94e0-cb7a1117420a>
+    a skos:Collection ;
+    dcterms:description "A collection of soils runoffs and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-runoffs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/30e48ea4-ed6f-5f18-9e5e-8abe43bb1d17> ,
+        <https://linked.data.gov.au/def/nrm/c4d5972e-6fce-5ad2-afc5-0d6199beb3c9> ,
+        <https://linked.data.gov.au/def/nrm/d351118d-0a66-5e71-b4aa-2c8276b067d7> ,
+        <https://linked.data.gov.au/def/nrm/da6a57b4-ca7a-58d5-9962-6d4c3f4b8ed6> ,
+        <https://linked.data.gov.au/def/nrm/ec946d6a-ba9d-5fb9-8bf2-888d44fdcc20> ,
+        <https://linked.data.gov.au/def/nrm/f01a24b0-ebec-5176-b3eb-6ccb0b8de7da> ;
+    skos:prefLabel "Soils runoffs codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-runoffs.ttl"^^xsd:anyURI ;
 .
 

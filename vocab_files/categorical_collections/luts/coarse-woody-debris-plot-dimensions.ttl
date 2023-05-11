@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/e3753c32-6e65-5926-8bcb-c8ae29eb9d75>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/coarse-woody-debris-plot-dimensions.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/05c7a145-a675-4753-88d1-d86fa19dac3b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/51f386af-3315-5222-a3c9-566ec80a4bcc> ;
+    urnp:conceptDefinition "50m by 50m" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "50m" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-plot-dimensions> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fa1434a1-10c9-5a19-9ec7-90aaf3facf8e>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/coarse-woody-debris-plot-dimensions.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/05c7a145-a675-4753-88d1-d86fa19dac3b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ab1d40b5-791a-5ef6-866c-0786f7550a47> ;
+    urnp:conceptDefinition "100 m by 100m (1 hectare)" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "100m" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-plot-dimensions> ;
+.
 
 <https://linked.data.gov.au/def/nrm/05c7a145-a675-4753-88d1-d86fa19dac3b>
     a skos:Collection ;
@@ -11,13 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-plot-dimensions> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/e3753c32-6e65-5926-8bcb-c8ae29eb9d75> ,
-        <https://linked.data.gov.au/def/nrm/fa1434a1-10c9-5a19-9ec7-90aaf3facf8e> ;
+        <https://linked.data.gov.au/def/nrm/51f386af-3315-5222-a3c9-566ec80a4bcc> ,
+        <https://linked.data.gov.au/def/nrm/ab1d40b5-791a-5ef6-866c-0786f7550a47> ;
     skos:prefLabel "Coarse Woody Debris plot dimensions codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/coarse-woody-debris-plot-dimensions.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/e3753c32-6e65-5926-8bcb-c8ae29eb9d75>
+<https://linked.data.gov.au/def/nrm/51f386af-3315-5222-a3c9-566ec80a4bcc>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-plot-dimensions> ;
@@ -28,7 +52,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/coarse-woody-debris-plot-dimensions.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/fa1434a1-10c9-5a19-9ec7-90aaf3facf8e>
+<https://linked.data.gov.au/def/nrm/ab1d40b5-791a-5ef6-866c-0786f7550a47>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-plot-dimensions> ;

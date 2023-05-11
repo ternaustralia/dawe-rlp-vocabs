@@ -3,140 +3,253 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641>
-    a skos:Collection ;
-    dcterms:description "A collection of intervention site preparation action types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/091f4e3e-b97c-598c-af56-b04674e49754> ,
-        <https://linked.data.gov.au/def/nrm/10358d8b-0d17-5120-834e-879bb9bdc594> ,
-        <https://linked.data.gov.au/def/nrm/12a15fab-01f6-5cee-8d9e-297addaccc16> ,
-        <https://linked.data.gov.au/def/nrm/26972c4b-5475-5038-adfe-418e517925f8> ,
-        <https://linked.data.gov.au/def/nrm/47a7030f-66a6-5840-8496-0ba400e3e242> ,
-        <https://linked.data.gov.au/def/nrm/54c935c4-8567-5ea7-bda7-18c2bd9e25da> ,
-        <https://linked.data.gov.au/def/nrm/57e7f14a-14fb-5b44-958e-26ff48e9db10> ,
-        <https://linked.data.gov.au/def/nrm/5d0c504b-ee0b-5b4a-85e0-98bc75c34df0> ,
-        <https://linked.data.gov.au/def/nrm/60cf1118-5f09-5b87-aff1-9bee69100f24> ,
-        <https://linked.data.gov.au/def/nrm/6920eeb3-dbd3-5713-b6a8-c93ef848394e> ,
-        <https://linked.data.gov.au/def/nrm/6c500721-f1b0-5415-b41c-ded0254ee1a5> ,
-        <https://linked.data.gov.au/def/nrm/71bb3fdc-7b36-5594-aa01-82a16b5d9ed1> ,
-        <https://linked.data.gov.au/def/nrm/73876da2-8377-569c-a35f-6e1b10781f10> ,
-        <https://linked.data.gov.au/def/nrm/7ac619b8-4c72-5429-9308-9a5530280acd> ,
-        <https://linked.data.gov.au/def/nrm/879c39a2-b121-5fbe-bb93-64bdebb3955b> ,
-        <https://linked.data.gov.au/def/nrm/96391865-69b6-5af5-afa6-ec6721df7d33> ,
-        <https://linked.data.gov.au/def/nrm/a2147ee8-f5dd-5754-9ee4-60157361bccd> ,
-        <https://linked.data.gov.au/def/nrm/a68ca1a0-3a8a-5f19-a217-6ad00735f2df> ,
-        <https://linked.data.gov.au/def/nrm/a8115174-897d-5067-8202-83360902ad5f> ,
-        <https://linked.data.gov.au/def/nrm/aaf563dc-28e4-596c-aed5-0782be74f6f9> ,
-        <https://linked.data.gov.au/def/nrm/abf7f1cd-5e5e-52cf-a814-e5bd03808954> ,
-        <https://linked.data.gov.au/def/nrm/f36b2c2a-c877-51ea-a056-281ed265b449> ;
-    skos:prefLabel "Intervention site preparation action types codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/091f4e3e-b97c-598c-af56-b04674e49754>
-    a skos:Concept ;
-    dcterms:identifier 9 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "GC" ;
-    skos:prefLabel "Grubbing and Chipping" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4fe22dfa-6869-5cee-8182-7dc4abc17e62> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "GC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/10358d8b-0d17-5120-834e-879bb9bdc594>
-    a skos:Concept ;
-    dcterms:identifier 19 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "SI" ;
-    skos:prefLabel "Stem Injection" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/786f0780-95ee-5e85-b31c-5df4b81258a2> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 19 ;
+    urnp:conceptNotation "SI" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/12a15fab-01f6-5cee-8d9e-297addaccc16>
-    a skos:Concept ;
-    dcterms:identifier 11 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "MNC" ;
-    skos:prefLabel "Moisture and Nutrient Control" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6f31f719-d116-57bc-9c05-3efd4017a69f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 11 ;
+    urnp:conceptNotation "MNC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/26972c4b-5475-5038-adfe-418e517925f8>
-    a skos:Concept ;
-    dcterms:identifier 22 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "O" ;
-    skos:prefLabel "Other" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 22 ;
+    urnp:conceptNotation "O" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/47a7030f-66a6-5840-8496-0ba400e3e242>
-    a skos:Concept ;
-    dcterms:identifier 7 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "FI" ;
-    skos:prefLabel "Fire" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/399025a1-712b-5e4b-a7c6-7056c3cea915> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "FI" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/54c935c4-8567-5ea7-bda7-18c2bd9e25da>
-    a skos:Concept ;
-    dcterms:identifier 10 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "HP" ;
-    skos:prefLabel "Hand Pulling" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7e102980-366a-5938-8479-247ab2240b05> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "HP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/57e7f14a-14fb-5b44-958e-26ff48e9db10>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "CS" ;
-    skos:prefLabel "Cut Stump" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4191bc66-002f-5c7f-a7bc-46ee26d3ae0a> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "CS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/5d0c504b-ee0b-5b4a-85e0-98bc75c34df0>
-    a skos:Concept ;
-    dcterms:identifier 20 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "STS" ;
-    skos:prefLabel "Stem Scrapper" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6904db0c-3ea1-5e48-8661-0e2790444523> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 20 ;
+    urnp:conceptNotation "STS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/60cf1118-5f09-5b87-aff1-9bee69100f24>
-    a skos:Concept ;
-    dcterms:identifier 16 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "S" ;
-    skos:prefLabel "Slashing" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/afce6a61-09ec-5aa1-b445-7b9ab5aacf8e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 16 ;
+    urnp:conceptNotation "S" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/6920eeb3-dbd3-5713-b6a8-c93ef848394e>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/01e02a52-886b-5aed-bda6-3bb894c5cfe9> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "F" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/6c500721-f1b0-5415-b41c-ded0254ee1a5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c4eb909d-4414-57a6-8fb6-27c589fea7a9> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 18 ;
+    urnp:conceptNotation "SG" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/71bb3fdc-7b36-5594-aa01-82a16b5d9ed1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/30775984-367e-57b0-baf7-ee653236af1a> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 17 ;
+    urnp:conceptNotation "SS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/73876da2-8377-569c-a35f-6e1b10781f10>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ffd97a33-d86f-5b7f-a60f-14bc02ef00cc> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 15 ;
+    urnp:conceptNotation "P" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/7ac619b8-4c72-5429-9308-9a5530280acd>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/36cb8d90-c777-54ce-9ad2-3adea2019d95> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "BA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/879c39a2-b121-5fbe-bb93-64bdebb3955b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8e3ee4a0-402a-59c0-bb16-dd5afe236281> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "BBS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/96391865-69b6-5af5-afa6-ec6721df7d33>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2347cb08-4906-5bd5-80f2-6f55ef5850a7> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 12 ;
+    urnp:conceptNotation "M" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a2147ee8-f5dd-5754-9ee4-60157361bccd>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f581e6df-d808-586a-8f01-df2a172fbfa1> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "FS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a68ca1a0-3a8a-5f19-a217-6ad00735f2df>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6aac97ac-d69c-570f-9912-e4e966670489> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 14 ;
+    urnp:conceptNotation "OP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a8115174-897d-5067-8202-83360902ad5f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/546434d9-6c85-5b4e-89af-f383b3f3cbce> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 21 ;
+    urnp:conceptNotation "WA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/aaf563dc-28e4-596c-aed5-0782be74f6f9>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4937adaa-59f0-5b15-ada6-bc56dc951249> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "D" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/abf7f1cd-5e5e-52cf-a814-e5bd03808954>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/374de199-bda5-5f70-a4fa-acc81f96d63c> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "CAS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f36b2c2a-c877-51ea-a056-281ed265b449>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/09f62da8-090b-5e67-bd52-15883926866e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 13 ;
+    urnp:conceptNotation "OE" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/01e02a52-886b-5aed-bda6-3bb894c5cfe9>
     a skos:Concept ;
     dcterms:identifier 6 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
@@ -147,62 +260,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/6c500721-f1b0-5415-b41c-ded0254ee1a5>
+<https://linked.data.gov.au/def/nrm/09f62da8-090b-5e67-bd52-15883926866e>
     a skos:Concept ;
-    dcterms:identifier 18 ;
+    dcterms:identifier 13 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "SG" ;
-    skos:prefLabel "Splatter Gun" ;
+    skos:notation "OE" ;
+    skos:prefLabel "Other Earthworks" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/71bb3fdc-7b36-5594-aa01-82a16b5d9ed1>
-    a skos:Concept ;
-    dcterms:identifier 17 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "SS" ;
-    skos:prefLabel "Spot Spraying" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/73876da2-8377-569c-a35f-6e1b10781f10>
-    a skos:Concept ;
-    dcterms:identifier 15 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "P" ;
-    skos:prefLabel "Pushing" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/7ac619b8-4c72-5429-9308-9a5530280acd>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "BA" ;
-    skos:prefLabel "Biological Agents" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/879c39a2-b121-5fbe-bb93-64bdebb3955b>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "BBS" ;
-    skos:prefLabel "Basal Bark Spraying" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/96391865-69b6-5af5-afa6-ec6721df7d33>
+<https://linked.data.gov.au/def/nrm/2347cb08-4906-5bd5-80f2-6f55ef5850a7>
     a skos:Concept ;
     dcterms:identifier 12 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
@@ -213,51 +282,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a2147ee8-f5dd-5754-9ee4-60157361bccd>
+<https://linked.data.gov.au/def/nrm/30775984-367e-57b0-baf7-ee653236af1a>
     a skos:Concept ;
-    dcterms:identifier 8 ;
+    dcterms:identifier 17 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "FS" ;
-    skos:prefLabel "Foliar Spraying" ;
+    skos:notation "SS" ;
+    skos:prefLabel "Spot Spraying" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a68ca1a0-3a8a-5f19-a217-6ad00735f2df>
+<https://linked.data.gov.au/def/nrm/36cb8d90-c777-54ce-9ad2-3adea2019d95>
     a skos:Concept ;
-    dcterms:identifier 14 ;
+    dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "OP" ;
-    skos:prefLabel "Overplanting" ;
+    skos:notation "BA" ;
+    skos:prefLabel "Biological Agents" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a8115174-897d-5067-8202-83360902ad5f>
-    a skos:Concept ;
-    dcterms:identifier 21 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "WA" ;
-    skos:prefLabel "Wick Applicators" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/aaf563dc-28e4-596c-aed5-0782be74f6f9>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "D" ;
-    skos:prefLabel "Dozing" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/abf7f1cd-5e5e-52cf-a814-e5bd03808954>
+<https://linked.data.gov.au/def/nrm/374de199-bda5-5f70-a4fa-acc81f96d63c>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
@@ -268,14 +315,211 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f36b2c2a-c877-51ea-a056-281ed265b449>
+<https://linked.data.gov.au/def/nrm/399025a1-712b-5e4b-a7c6-7056c3cea915>
     a skos:Concept ;
-    dcterms:identifier 13 ;
+    dcterms:identifier 7 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "OE" ;
-    skos:prefLabel "Other Earthworks" ;
+    skos:notation "FI" ;
+    skos:prefLabel "Fire" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4191bc66-002f-5c7f-a7bc-46ee26d3ae0a>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "CS" ;
+    skos:prefLabel "Cut Stump" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4937adaa-59f0-5b15-ada6-bc56dc951249>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "D" ;
+    skos:prefLabel "Dozing" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4fe22dfa-6869-5cee-8182-7dc4abc17e62>
+    a skos:Concept ;
+    dcterms:identifier 9 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "GC" ;
+    skos:prefLabel "Grubbing and Chipping" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/546434d9-6c85-5b4e-89af-f383b3f3cbce>
+    a skos:Concept ;
+    dcterms:identifier 21 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "WA" ;
+    skos:prefLabel "Wick Applicators" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6904db0c-3ea1-5e48-8661-0e2790444523>
+    a skos:Concept ;
+    dcterms:identifier 20 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "STS" ;
+    skos:prefLabel "Stem Scrapper" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6aac97ac-d69c-570f-9912-e4e966670489>
+    a skos:Concept ;
+    dcterms:identifier 14 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "OP" ;
+    skos:prefLabel "Overplanting" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6f31f719-d116-57bc-9c05-3efd4017a69f>
+    a skos:Concept ;
+    dcterms:identifier 11 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "MNC" ;
+    skos:prefLabel "Moisture and Nutrient Control" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/786f0780-95ee-5e85-b31c-5df4b81258a2>
+    a skos:Concept ;
+    dcterms:identifier 19 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "SI" ;
+    skos:prefLabel "Stem Injection" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/7e102980-366a-5938-8479-247ab2240b05>
+    a skos:Concept ;
+    dcterms:identifier 10 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "HP" ;
+    skos:prefLabel "Hand Pulling" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8e3ee4a0-402a-59c0-bb16-dd5afe236281>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "BBS" ;
+    skos:prefLabel "Basal Bark Spraying" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb>
+    a skos:Concept ;
+    dcterms:identifier 22 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "O" ;
+    skos:prefLabel "Other" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/afce6a61-09ec-5aa1-b445-7b9ab5aacf8e>
+    a skos:Concept ;
+    dcterms:identifier 16 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "S" ;
+    skos:prefLabel "Slashing" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c4eb909d-4414-57a6-8fb6-27c589fea7a9>
+    a skos:Concept ;
+    dcterms:identifier 18 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "SG" ;
+    skos:prefLabel "Splatter Gun" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f581e6df-d808-586a-8f01-df2a172fbfa1>
+    a skos:Concept ;
+    dcterms:identifier 8 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "FS" ;
+    skos:prefLabel "Foliar Spraying" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ffd97a33-d86f-5b7f-a60f-14bc02ef00cc>
+    a skos:Concept ;
+    dcterms:identifier 15 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "P" ;
+    skos:prefLabel "Pushing" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/0b8508f8-a273-4d8c-8687-eabb35f30641>
+    a skos:Collection ;
+    dcterms:description "A collection of intervention site preparation action types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-site-preparation-action-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/01e02a52-886b-5aed-bda6-3bb894c5cfe9> ,
+        <https://linked.data.gov.au/def/nrm/09f62da8-090b-5e67-bd52-15883926866e> ,
+        <https://linked.data.gov.au/def/nrm/2347cb08-4906-5bd5-80f2-6f55ef5850a7> ,
+        <https://linked.data.gov.au/def/nrm/30775984-367e-57b0-baf7-ee653236af1a> ,
+        <https://linked.data.gov.au/def/nrm/36cb8d90-c777-54ce-9ad2-3adea2019d95> ,
+        <https://linked.data.gov.au/def/nrm/374de199-bda5-5f70-a4fa-acc81f96d63c> ,
+        <https://linked.data.gov.au/def/nrm/399025a1-712b-5e4b-a7c6-7056c3cea915> ,
+        <https://linked.data.gov.au/def/nrm/4191bc66-002f-5c7f-a7bc-46ee26d3ae0a> ,
+        <https://linked.data.gov.au/def/nrm/4937adaa-59f0-5b15-ada6-bc56dc951249> ,
+        <https://linked.data.gov.au/def/nrm/4fe22dfa-6869-5cee-8182-7dc4abc17e62> ,
+        <https://linked.data.gov.au/def/nrm/546434d9-6c85-5b4e-89af-f383b3f3cbce> ,
+        <https://linked.data.gov.au/def/nrm/6904db0c-3ea1-5e48-8661-0e2790444523> ,
+        <https://linked.data.gov.au/def/nrm/6aac97ac-d69c-570f-9912-e4e966670489> ,
+        <https://linked.data.gov.au/def/nrm/6f31f719-d116-57bc-9c05-3efd4017a69f> ,
+        <https://linked.data.gov.au/def/nrm/786f0780-95ee-5e85-b31c-5df4b81258a2> ,
+        <https://linked.data.gov.au/def/nrm/7e102980-366a-5938-8479-247ab2240b05> ,
+        <https://linked.data.gov.au/def/nrm/8e3ee4a0-402a-59c0-bb16-dd5afe236281> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ,
+        <https://linked.data.gov.au/def/nrm/afce6a61-09ec-5aa1-b445-7b9ab5aacf8e> ,
+        <https://linked.data.gov.au/def/nrm/c4eb909d-4414-57a6-8fb6-27c589fea7a9> ,
+        <https://linked.data.gov.au/def/nrm/f581e6df-d808-586a-8f01-df2a172fbfa1> ,
+        <https://linked.data.gov.au/def/nrm/ffd97a33-d86f-5b7f-a60f-14bc02ef00cc> ;
+    skos:prefLabel "Intervention site preparation action types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-site-preparation-action-types.ttl"^^xsd:anyURI ;
 .
 

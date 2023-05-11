@@ -3,33 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/38674fef-988c-4fa4-b8e6-0b06e2bd5f4f>
-    a skos:Collection ;
-    dcterms:description "A collection of leaf litter sample preservations and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/185dffb9-5e3a-5d53-b6ad-e8113a8ca6e3> ,
-        <https://linked.data.gov.au/def/nrm/1aeeb3c1-baf8-52c8-9de1-46bd30a08799> ,
-        <https://linked.data.gov.au/def/nrm/c5206e98-cb50-5e05-8174-335d82a9ac75> ;
-    skos:prefLabel "Leaf litter sample preservations codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/leaf-litter-sample-preservations.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/185dffb9-5e3a-5d53-b6ad-e8113a8ca6e3>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Undiluted propylene glycol" ;
-    skos:prefLabel "Undiluted propylene glycol" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/leaf-litter-sample-preservations.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/38674fef-988c-4fa4-b8e6-0b06e2bd5f4f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3b89ecaf-3ceb-510c-83c6-11242a89c8af> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Undiluted propylene glycol" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations> ;
 .
 
 <https://linked.data.gov.au/def/nrm/1aeeb3c1-baf8-52c8-9de1-46bd30a08799>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/leaf-litter-sample-preservations.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/38674fef-988c-4fa4-b8e6-0b06e2bd5f4f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2d9653ab-9e30-5334-9904-562957a28743> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "95% Undenatured ethanol" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c5206e98-cb50-5e05-8174-335d82a9ac75>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/leaf-litter-sample-preservations.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/38674fef-988c-4fa4-b8e6-0b06e2bd5f4f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "Other" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations> ;
+.
+
+<https://linked.data.gov.au/def/nrm/2d9653ab-9e30-5334-9904-562957a28743>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations> ;
@@ -40,7 +51,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/leaf-litter-sample-preservations.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/c5206e98-cb50-5e05-8174-335d82a9ac75>
+<https://linked.data.gov.au/def/nrm/3b89ecaf-3ceb-510c-83c6-11242a89c8af>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Undiluted propylene glycol" ;
+    skos:prefLabel "Undiluted propylene glycol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/leaf-litter-sample-preservations.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations> ;
@@ -48,6 +70,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Other" ;
     skos:prefLabel "Other" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/leaf-litter-sample-preservations.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/38674fef-988c-4fa4-b8e6-0b06e2bd5f4f>
+    a skos:Collection ;
+    dcterms:description "A collection of leaf litter sample preservations and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/2d9653ab-9e30-5334-9904-562957a28743> ,
+        <https://linked.data.gov.au/def/nrm/3b89ecaf-3ceb-510c-83c6-11242a89c8af> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    skos:prefLabel "Leaf litter sample preservations codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/leaf-litter-sample-preservations.ttl"^^xsd:anyURI ;
 .
 

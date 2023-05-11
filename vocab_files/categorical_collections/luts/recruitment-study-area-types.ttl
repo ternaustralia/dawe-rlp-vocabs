@@ -3,33 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/f22918eb-77d5-47af-b5c9-4a7a561288e7>
-    a skos:Collection ;
-    dcterms:description "A collection of recruitment study area types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-study-area-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/3fadc047-bf4f-5eea-94f1-9fd237610a2a> ,
-        <https://linked.data.gov.au/def/nrm/501885ea-655a-5b86-b148-e4c51625526c> ,
-        <https://linked.data.gov.au/def/nrm/f78ff531-709b-57bc-9893-4c5d4292bc75> ;
-    skos:prefLabel "Recruitment study area types codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-study-area-types.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/3fadc047-bf4f-5eea-94f1-9fd237610a2a>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-study-area-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Belt transect" ;
-    skos:prefLabel "Belt transect" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-study-area-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f22918eb-77d5-47af-b5c9-4a7a561288e7> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c5bd87d6-0ac3-51a3-9021-5404fe46f124> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Belt transect" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-study-area-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/501885ea-655a-5b86-b148-e4c51625526c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-study-area-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f22918eb-77d5-47af-b5c9-4a7a561288e7> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/50f41ddc-3307-56d0-862d-f97420132a71> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "Plot" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-study-area-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f78ff531-709b-57bc-9893-4c5d4292bc75>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-study-area-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f22918eb-77d5-47af-b5c9-4a7a561288e7> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7b806f62-8bdd-595d-93f6-77980edcbee5> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Population extent" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-study-area-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/50f41ddc-3307-56d0-862d-f97420132a71>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-study-area-types> ;
@@ -40,7 +51,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-study-area-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f78ff531-709b-57bc-9893-4c5d4292bc75>
+<https://linked.data.gov.au/def/nrm/7b806f62-8bdd-595d-93f6-77980edcbee5>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-study-area-types> ;
@@ -48,6 +59,30 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Population extent" ;
     skos:prefLabel "Population extent" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-study-area-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c5bd87d6-0ac3-51a3-9021-5404fe46f124>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-study-area-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Belt transect" ;
+    skos:prefLabel "Belt transect" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-study-area-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f22918eb-77d5-47af-b5c9-4a7a561288e7>
+    a skos:Collection ;
+    dcterms:description "A collection of recruitment study area types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-study-area-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/50f41ddc-3307-56d0-862d-f97420132a71> ,
+        <https://linked.data.gov.au/def/nrm/7b806f62-8bdd-595d-93f6-77980edcbee5> ,
+        <https://linked.data.gov.au/def/nrm/c5bd87d6-0ac3-51a3-9021-5404fe46f124> ;
+    skos:prefLabel "Recruitment study area types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-study-area-types.ttl"^^xsd:anyURI ;
 .
 

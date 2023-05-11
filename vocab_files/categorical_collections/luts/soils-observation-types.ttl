@@ -3,27 +3,99 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568>
-    a skos:Collection ;
-    dcterms:description "A collection of soils observation types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/164d2673-16cf-5e82-bd62-a8723d82a8a0> ,
-        <https://linked.data.gov.au/def/nrm/241374b8-3519-5fb0-8032-4c6c5b5b5886> ,
-        <https://linked.data.gov.au/def/nrm/6ba3bdb1-5e6e-5767-84dc-cfc6f0aafa75> ,
-        <https://linked.data.gov.au/def/nrm/87e0e0a3-b7f5-573e-ace6-0dc0d0e4f6a2> ,
-        <https://linked.data.gov.au/def/nrm/8bc62a60-b2e0-5b13-9597-73fd598a4b36> ,
-        <https://linked.data.gov.au/def/nrm/94bf1a3d-592c-5e37-831c-12e0bc2db38c> ,
-        <https://linked.data.gov.au/def/nrm/b48d9719-e565-539b-8244-19864f2888a7> ,
-        <https://linked.data.gov.au/def/nrm/ce571595-e244-500c-b071-21f7f2ff7a68> ;
-    skos:prefLabel "Soils observation types codes" ;
+<https://linked.data.gov.au/def/nrm/164d2673-16cf-5e82-bd62-a8723d82a8a0>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/062073d1-be81-5898-a849-22a74f984a9b> ;
+    urnp:conceptDefinition "Use of a soil core sampling tube to obtain a relatively undisturbed soil profile" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "C" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
 .
 
-<https://linked.data.gov.au/def/nrm/164d2673-16cf-5e82-bd62-a8723d82a8a0>
+<https://linked.data.gov.au/def/nrm/241374b8-3519-5fb0-8032-4c6c5b5b5886>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b5827388-51ed-549e-9af1-e36ae44fbd24> ;
+    urnp:conceptDefinition "Soils samples obtained from an existing exposure at the site (can be unreliable)" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "E" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/6ba3bdb1-5e6e-5767-84dc-cfc6f0aafa75>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f> ;
+    urnp:conceptDefinition "Not Collected (why?)" ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "NC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/87e0e0a3-b7f5-573e-ace6-0dc0d0e4f6a2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f73cee78-1dd5-5335-a1de-a77183b40144> ;
+    urnp:conceptDefinition "Soils samples obtained via the digging of a pit to expose the soil profile" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "P" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/8bc62a60-b2e0-5b13-9597-73fd598a4b36>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0c2a091f-2b2d-585a-b415-ba505f3ad736> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "T" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/94bf1a3d-592c-5e37-831c-12e0bc2db38c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3e15274e-2ff4-5e93-b098-55f4df6c3be0> ;
+    urnp:conceptDefinition "Use of a hand auger (drill-bit like device) to extract soil samples" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "A" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b48d9719-e565-539b-8244-19864f2888a7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/57f86532-7538-5187-89c3-2dc5383e2b42> ;
+    urnp:conceptDefinition "Use of a Pit as far as possible, and then an Auger to get to the required depth" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "PA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ce571595-e244-500c-b071-21f7f2ff7a68>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab> ;
+    urnp:conceptDefinition "Not Applicable (typical for revisits that have no soil activity)" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "NA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/062073d1-be81-5898-a849-22a74f984a9b>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
@@ -34,40 +106,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/241374b8-3519-5fb0-8032-4c6c5b5b5886>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Soils samples obtained from an existing exposure at the site (can be unreliable)" ;
-    skos:notation "E" ;
-    skos:prefLabel "Exposure" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/6ba3bdb1-5e6e-5767-84dc-cfc6f0aafa75>
-    a skos:Concept ;
-    dcterms:identifier 8 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Not Collected (why?)" ;
-    skos:notation "NC" ;
-    skos:prefLabel "Not Collected" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/87e0e0a3-b7f5-573e-ace6-0dc0d0e4f6a2>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Soils samples obtained via the digging of a pit to expose the soil profile" ;
-    skos:notation "P" ;
-    skos:prefLabel "Soil pit" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/8bc62a60-b2e0-5b13-9597-73fd598a4b36>
+<https://linked.data.gov.au/def/nrm/0c2a091f-2b2d-585a-b415-ba505f3ad736>
     a skos:Concept ;
     dcterms:identifier 6 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
@@ -78,7 +117,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/94bf1a3d-592c-5e37-831c-12e0bc2db38c>
+<https://linked.data.gov.au/def/nrm/3e15274e-2ff4-5e93-b098-55f4df6c3be0>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
@@ -89,7 +128,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/b48d9719-e565-539b-8244-19864f2888a7>
+<https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Not Applicable (typical for revisits that have no soil activity)" ;
+    skos:notation "NA" ;
+    skos:prefLabel "Not Applicable" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/57f86532-7538-5187-89c3-2dc5383e2b42>
     a skos:Concept ;
     dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
@@ -100,14 +150,54 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ce571595-e244-500c-b071-21f7f2ff7a68>
+<https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f>
     a skos:Concept ;
-    dcterms:identifier 7 ;
+    dcterms:identifier 8 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Not Applicable (typical for revisits that have no soil activity)" ;
-    skos:notation "NA" ;
-    skos:prefLabel "Not Applicable" ;
+    skos:definition "Not Collected (why?)" ;
+    skos:notation "NC" ;
+    skos:prefLabel "Not Collected" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b5827388-51ed-549e-9af1-e36ae44fbd24>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Soils samples obtained from an existing exposure at the site (can be unreliable)" ;
+    skos:notation "E" ;
+    skos:prefLabel "Exposure" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f73cee78-1dd5-5335-a1de-a77183b40144>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Soils samples obtained via the digging of a pit to expose the soil profile" ;
+    skos:notation "P" ;
+    skos:prefLabel "Soil pit" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/53e41f87-1104-4454-b296-a4068c3f7568>
+    a skos:Collection ;
+    dcterms:description "A collection of soils observation types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-observation-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/062073d1-be81-5898-a849-22a74f984a9b> ,
+        <https://linked.data.gov.au/def/nrm/0c2a091f-2b2d-585a-b415-ba505f3ad736> ,
+        <https://linked.data.gov.au/def/nrm/3e15274e-2ff4-5e93-b098-55f4df6c3be0> ,
+        <https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab> ,
+        <https://linked.data.gov.au/def/nrm/57f86532-7538-5187-89c3-2dc5383e2b42> ,
+        <https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f> ,
+        <https://linked.data.gov.au/def/nrm/b5827388-51ed-549e-9af1-e36ae44fbd24> ,
+        <https://linked.data.gov.au/def/nrm/f73cee78-1dd5-5335-a1de-a77183b40144> ;
+    skos:prefLabel "Soils observation types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-observation-types.ttl"^^xsd:anyURI ;
 .
 

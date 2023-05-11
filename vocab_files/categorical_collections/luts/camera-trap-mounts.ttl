@@ -3,23 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/0c364c83-f031-477b-88ae-9c438c84e175>
-    a skos:Collection ;
-    dcterms:description "A collection of camera trap mounts and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/46dc31c7-4888-5697-95ea-356ae5b00ad8> ,
-        <https://linked.data.gov.au/def/nrm/4b87b222-acdc-51df-9295-846b2083db41> ,
-        <https://linked.data.gov.au/def/nrm/98957482-f023-5ff7-94db-32d82371ffa8> ,
-        <https://linked.data.gov.au/def/nrm/bf41b5f9-4b99-5a63-b9d8-635aec0d2385> ;
-    skos:prefLabel "Camera trap mounts codes" ;
+<https://linked.data.gov.au/def/nrm/46dc31c7-4888-5697-95ea-356ae5b00ad8>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0c364c83-f031-477b-88ae-9c438c84e175> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/308c769b-270b-5df4-a55b-650a33877dff> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Tripod" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
 .
 
-<https://linked.data.gov.au/def/nrm/46dc31c7-4888-5697-95ea-356ae5b00ad8>
+<https://linked.data.gov.au/def/nrm/4b87b222-acdc-51df-9295-846b2083db41>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0c364c83-f031-477b-88ae-9c438c84e175> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "Other" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
+.
+
+<https://linked.data.gov.au/def/nrm/98957482-f023-5ff7-94db-32d82371ffa8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0c364c83-f031-477b-88ae-9c438c84e175> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6246f291-6fef-5563-b78c-4237472dd81c> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "Tree trunk or stem" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
+.
+
+<https://linked.data.gov.au/def/nrm/bf41b5f9-4b99-5a63-b9d8-635aec0d2385>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0c364c83-f031-477b-88ae-9c438c84e175> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/62dcac55-f4c8-5214-aaba-82dc969aea00> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Star dropper" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
+.
+
+<https://linked.data.gov.au/def/nrm/308c769b-270b-5df4-a55b-650a33877dff>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
@@ -30,18 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/4b87b222-acdc-51df-9295-846b2083db41>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Other" ;
-    skos:prefLabel "Other" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/98957482-f023-5ff7-94db-32d82371ffa8>
+<https://linked.data.gov.au/def/nrm/6246f291-6fef-5563-b78c-4237472dd81c>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
@@ -52,7 +73,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/bf41b5f9-4b99-5a63-b9d8-635aec0d2385>
+<https://linked.data.gov.au/def/nrm/62dcac55-f4c8-5214-aaba-82dc969aea00>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
@@ -60,6 +81,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Star dropper" ;
     skos:prefLabel "Star dropper" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Other" ;
+    skos:prefLabel "Other" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/0c364c83-f031-477b-88ae-9c438c84e175>
+    a skos:Collection ;
+    dcterms:description "A collection of camera trap mounts and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-trap-mounts> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/308c769b-270b-5df4-a55b-650a33877dff> ,
+        <https://linked.data.gov.au/def/nrm/6246f291-6fef-5563-b78c-4237472dd81c> ,
+        <https://linked.data.gov.au/def/nrm/62dcac55-f4c8-5214-aaba-82dc969aea00> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    skos:prefLabel "Camera trap mounts codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-mounts.ttl"^^xsd:anyURI ;
 .
 

@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/5a25663a-201a-587a-a527-84f9543fadaf>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-liquid-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5a11c221-05fe-4798-88f7-8e7488668484> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bf03706d-0f86-5b8a-9467-e6d3e75f65ba> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "UPG" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-liquid-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b6f75945-9b9c-50e6-a0b9-cc74aca1bb19>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-liquid-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5a11c221-05fe-4798-88f7-8e7488668484> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a2eb0c35-6de4-519c-8b80-3eb86e53d9ff> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "WDS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-liquid-types> ;
+.
 
 <https://linked.data.gov.au/def/nrm/5a11c221-05fe-4798-88f7-8e7488668484>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-liquid-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/5a25663a-201a-587a-a527-84f9543fadaf> ,
-        <https://linked.data.gov.au/def/nrm/b6f75945-9b9c-50e6-a0b9-cc74aca1bb19> ;
+        <https://linked.data.gov.au/def/nrm/a2eb0c35-6de4-519c-8b80-3eb86e53d9ff> ,
+        <https://linked.data.gov.au/def/nrm/bf03706d-0f86-5b8a-9467-e6d3e75f65ba> ;
     skos:prefLabel "Invertebrate liquid types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-liquid-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/5a25663a-201a-587a-a527-84f9543fadaf>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-liquid-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "UPG" ;
-    skos:prefLabel "Undiluted Propylene Glycol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-liquid-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/b6f75945-9b9c-50e6-a0b9-cc74aca1bb19>
+<https://linked.data.gov.au/def/nrm/a2eb0c35-6de4-519c-8b80-3eb86e53d9ff>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-liquid-types> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "WDS" ;
     skos:prefLabel "Water-Dishwashing Solution" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-liquid-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bf03706d-0f86-5b8a-9467-e6d3e75f65ba>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-liquid-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "UPG" ;
+    skos:prefLabel "Undiluted Propylene Glycol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-liquid-types.ttl"^^xsd:anyURI ;
 .
 

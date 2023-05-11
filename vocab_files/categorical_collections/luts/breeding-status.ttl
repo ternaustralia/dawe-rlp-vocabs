@@ -3,51 +3,121 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4>
-    a skos:Collection ;
-    dcterms:description "A collection of breeding status types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/1cb9886b-fd8e-53ae-bab8-a219472a6850> ,
-        <https://linked.data.gov.au/def/nrm/2d579c4a-1861-528f-981b-5ea0aaca0682> ,
-        <https://linked.data.gov.au/def/nrm/305fde78-5b14-546b-84ca-fdf09f2492c0> ,
-        <https://linked.data.gov.au/def/nrm/5a67ce4a-ee06-5c3b-b571-6218ed4886c5> ,
-        <https://linked.data.gov.au/def/nrm/68377872-498e-5927-a6dc-545ac25f7726> ,
-        <https://linked.data.gov.au/def/nrm/8b752831-2d3e-58bd-a89f-93e5f3b46677> ,
-        <https://linked.data.gov.au/def/nrm/ad9d60c2-8e9f-57ae-8fa0-935daadf73e6> ,
-        <https://linked.data.gov.au/def/nrm/d63b9703-5926-53fe-aadf-4a5cc8753798> ,
-        <https://linked.data.gov.au/def/nrm/e80df9f5-bba6-56bf-9779-345821be4d57> ,
-        <https://linked.data.gov.au/def/nrm/ef798f2e-cb75-542f-85e4-1ca1aa99c6dd> ;
-    skos:prefLabel "Breeding status codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/1cb9886b-fd8e-53ae-bab8-a219472a6850>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "NE" ;
-    skos:prefLabel "Nesting" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/29173358-a88d-5c89-b92b-28d82846fbe2> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "NE" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/2d579c4a-1861-528f-981b-5ea0aaca0682>
-    a skos:Concept ;
-    dcterms:identifier 8 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "NL" ;
-    skos:prefLabel "Dependent young (in nest)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e1747781-ed7d-59da-83f8-08a94c0f5242> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "NL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/305fde78-5b14-546b-84ca-fdf09f2492c0>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1b0dc27f-55d3-5ad6-a134-2afbf5b42af4> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "GR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/5a67ce4a-ee06-5c3b-b571-6218ed4886c5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/81fdf73f-b666-58ac-9519-5b5aeccf481b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "DE" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/68377872-498e-5927-a6dc-545ac25f7726>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "NA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/8b752831-2d3e-58bd-a89f-93e5f3b46677>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c05aeb0d-4186-527f-bed1-0273e2b104eb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "LA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ad9d60c2-8e9f-57ae-8fa0-935daadf73e6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e8b5be54-1aae-5b8d-8f38-7bb0c26e5c5b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "BR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/d63b9703-5926-53fe-aadf-4a5cc8753798>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f7829329-c918-5bdd-b2ec-088e29ad1a7b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "NB" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e80df9f5-bba6-56bf-9779-345821be4d57>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "UK" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ef798f2e-cb75-542f-85e4-1ca1aa99c6dd>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5c263122-0e2d-58bc-94b6-78fae732aa67> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "PR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/1b0dc27f-55d3-5ad6-a134-2afbf5b42af4>
     a skos:Concept ;
     dcterms:identifier 9 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
@@ -58,18 +128,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/5a67ce4a-ee06-5c3b-b571-6218ed4886c5>
+<https://linked.data.gov.au/def/nrm/29173358-a88d-5c89-b92b-28d82846fbe2>
     a skos:Concept ;
-    dcterms:identifier 7 ;
+    dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "DE" ;
-    skos:prefLabel "Dependent young" ;
+    skos:notation "NE" ;
+    skos:prefLabel "Nesting" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/68377872-498e-5927-a6dc-545ac25f7726>
+<https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab>
     a skos:Concept ;
     dcterms:identifier 10 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
@@ -80,7 +150,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/8b752831-2d3e-58bd-a89f-93e5f3b46677>
+<https://linked.data.gov.au/def/nrm/5c263122-0e2d-58bc-94b6-78fae732aa67>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "PR" ;
+    skos:prefLabel "Pregnant" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/81fdf73f-b666-58ac-9519-5b5aeccf481b>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "DE" ;
+    skos:prefLabel "Dependent young" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c05aeb0d-4186-527f-bed1-0273e2b104eb>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
@@ -91,7 +183,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ad9d60c2-8e9f-57ae-8fa0-935daadf73e6>
+<https://linked.data.gov.au/def/nrm/e1747781-ed7d-59da-83f8-08a94c0f5242>
+    a skos:Concept ;
+    dcterms:identifier 8 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "NL" ;
+    skos:prefLabel "Dependent young (in nest)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e8b5be54-1aae-5b8d-8f38-7bb0c26e5c5b>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
@@ -102,18 +205,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/d63b9703-5926-53fe-aadf-4a5cc8753798>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "NB" ;
-    skos:prefLabel "Not breeding" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e80df9f5-bba6-56bf-9779-345821be4d57>
+<https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
@@ -124,14 +216,34 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ef798f2e-cb75-542f-85e4-1ca1aa99c6dd>
+<https://linked.data.gov.au/def/nrm/f7829329-c918-5bdd-b2ec-088e29ad1a7b>
     a skos:Concept ;
-    dcterms:identifier 6 ;
+    dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "PR" ;
-    skos:prefLabel "Pregnant" ;
+    skos:notation "NB" ;
+    skos:prefLabel "Not breeding" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4>
+    a skos:Collection ;
+    dcterms:description "A collection of breeding status types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/1b0dc27f-55d3-5ad6-a134-2afbf5b42af4> ,
+        <https://linked.data.gov.au/def/nrm/29173358-a88d-5c89-b92b-28d82846fbe2> ,
+        <https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab> ,
+        <https://linked.data.gov.au/def/nrm/5c263122-0e2d-58bc-94b6-78fae732aa67> ,
+        <https://linked.data.gov.au/def/nrm/81fdf73f-b666-58ac-9519-5b5aeccf481b> ,
+        <https://linked.data.gov.au/def/nrm/c05aeb0d-4186-527f-bed1-0273e2b104eb> ,
+        <https://linked.data.gov.au/def/nrm/e1747781-ed7d-59da-83f8-08a94c0f5242> ,
+        <https://linked.data.gov.au/def/nrm/e8b5be54-1aae-5b8d-8f38-7bb0c26e5c5b> ,
+        <https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f> ,
+        <https://linked.data.gov.au/def/nrm/f7829329-c918-5bdd-b2ec-088e29ad1a7b> ;
+    skos:prefLabel "Breeding status codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/breeding-status.ttl"^^xsd:anyURI ;
 .
 

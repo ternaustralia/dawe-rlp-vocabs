@@ -3,46 +3,66 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/9e377f67-190e-4d58-9ec9-adebedaf14e2>
-    a skos:Collection ;
-    dcterms:description "A collection of soils reliefs and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/09b41be3-4bed-510d-86ab-3841af45a5f2> ,
-        <https://linked.data.gov.au/def/nrm/633bf896-4d38-5780-aa98-11a69c452ff9> ,
-        <https://linked.data.gov.au/def/nrm/7d54073a-1121-5bf4-adbc-f7e0cf8cdbdf> ,
-        <https://linked.data.gov.au/def/nrm/b1d79e4d-228d-5ab8-a68f-2e8df377b6a6> ,
-        <https://linked.data.gov.au/def/nrm/d9c0eb4d-858e-54f6-8b6c-f67939e3fb40> ;
-    skos:prefLabel "Soils reliefs codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/09b41be3-4bed-510d-86ab-3841af45a5f2>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "R" ;
-    skos:prefLabel "Very low (9-30m)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/9e377f67-190e-4d58-9ec9-adebedaf14e2> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6d965989-08e3-5605-852d-c1bbc392064b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "R" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/633bf896-4d38-5780-aa98-11a69c452ff9>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "M" ;
-    skos:prefLabel "Very high (>300m)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/9e377f67-190e-4d58-9ec9-adebedaf14e2> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2c8c3848-f4be-5c6e-b28a-cfb368467ef0> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "M" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/7d54073a-1121-5bf4-adbc-f7e0cf8cdbdf>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/9e377f67-190e-4d58-9ec9-adebedaf14e2> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/145e80b2-8d8f-5db1-8d9a-7bf934e1ec77> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "L" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b1d79e4d-228d-5ab8-a68f-2e8df377b6a6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/9e377f67-190e-4d58-9ec9-adebedaf14e2> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a3e48c2a-68ee-5bb0-8e1b-2dc80ee81eb1> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "H" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/d9c0eb4d-858e-54f6-8b6c-f67939e3fb40>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/9e377f67-190e-4d58-9ec9-adebedaf14e2> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5b38b1ec-de00-51cc-a081-63f438ddf67f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "P" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/145e80b2-8d8f-5db1-8d9a-7bf934e1ec77>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
@@ -53,7 +73,40 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/b1d79e4d-228d-5ab8-a68f-2e8df377b6a6>
+<https://linked.data.gov.au/def/nrm/2c8c3848-f4be-5c6e-b28a-cfb368467ef0>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "M" ;
+    skos:prefLabel "Very high (>300m)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/5b38b1ec-de00-51cc-a081-63f438ddf67f>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "P" ;
+    skos:prefLabel "Extremely low ( <9m)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6d965989-08e3-5605-852d-c1bbc392064b>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "R" ;
+    skos:prefLabel "Very low (9-30m)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a3e48c2a-68ee-5bb0-8e1b-2dc80ee81eb1>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
@@ -64,14 +117,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/d9c0eb4d-858e-54f6-8b6c-f67939e3fb40>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
+<https://linked.data.gov.au/def/nrm/9e377f67-190e-4d58-9ec9-adebedaf14e2>
+    a skos:Collection ;
+    dcterms:description "A collection of soils reliefs and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "P" ;
-    skos:prefLabel "Extremely low ( <9m)" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/145e80b2-8d8f-5db1-8d9a-7bf934e1ec77> ,
+        <https://linked.data.gov.au/def/nrm/2c8c3848-f4be-5c6e-b28a-cfb368467ef0> ,
+        <https://linked.data.gov.au/def/nrm/5b38b1ec-de00-51cc-a081-63f438ddf67f> ,
+        <https://linked.data.gov.au/def/nrm/6d965989-08e3-5605-852d-c1bbc392064b> ,
+        <https://linked.data.gov.au/def/nrm/a3e48c2a-68ee-5bb0-8e1b-2dc80ee81eb1> ;
+    skos:prefLabel "Soils reliefs codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-reliefs.ttl"^^xsd:anyURI ;
 .
 

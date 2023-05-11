@@ -3,22 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/e9ea1cd7-4e33-4086-b0ce-cd2f00c2b8ad>
-    a skos:Collection ;
-    dcterms:description "A collection of soils cutan distinctnesses and its codes." ;
+<https://linked.data.gov.au/def/nrm/0463a57d-2d81-55e2-861b-1abab8d83ada>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-cutan-distinctnesses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e9ea1cd7-4e33-4086-b0ce-cd2f00c2b8ad> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/35846113-cb9b-5db5-87d0-f89c4d7ee4de> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "F" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-distinctnesses> ;
+.
+
+<https://linked.data.gov.au/def/nrm/faa0be1f-de1a-5e6c-ac85-c8a08a7da118>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-cutan-distinctnesses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e9ea1cd7-4e33-4086-b0ce-cd2f00c2b8ad> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/613c80b7-739e-5940-9be3-162d3cc44826> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "D" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-distinctnesses> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fbce29cf-189e-566c-974b-07b2d79ab7c1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-cutan-distinctnesses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e9ea1cd7-4e33-4086-b0ce-cd2f00c2b8ad> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/23a6e276-db96-5e9b-b77e-59605d34c040> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "P" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-distinctnesses> ;
+.
+
+<https://linked.data.gov.au/def/nrm/23a6e276-db96-5e9b-b77e-59605d34c040>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-distinctnesses> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/0463a57d-2d81-55e2-861b-1abab8d83ada> ,
-        <https://linked.data.gov.au/def/nrm/faa0be1f-de1a-5e6c-ac85-c8a08a7da118> ,
-        <https://linked.data.gov.au/def/nrm/fbce29cf-189e-566c-974b-07b2d79ab7c1> ;
-    skos:prefLabel "Soils cutan distinctnesses codes" ;
+    skos:definition "" ;
+    skos:notation "P" ;
+    skos:prefLabel "Prominent" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-cutan-distinctnesses.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/0463a57d-2d81-55e2-861b-1abab8d83ada>
+<https://linked.data.gov.au/def/nrm/35846113-cb9b-5db5-87d0-f89c4d7ee4de>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-distinctnesses> ;
@@ -29,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-cutan-distinctnesses.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/faa0be1f-de1a-5e6c-ac85-c8a08a7da118>
+<https://linked.data.gov.au/def/nrm/613c80b7-739e-5940-9be3-162d3cc44826>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-distinctnesses> ;
@@ -40,14 +73,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-cutan-distinctnesses.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/fbce29cf-189e-566c-974b-07b2d79ab7c1>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
+<https://linked.data.gov.au/def/nrm/e9ea1cd7-4e33-4086-b0ce-cd2f00c2b8ad>
+    a skos:Collection ;
+    dcterms:description "A collection of soils cutan distinctnesses and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-distinctnesses> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "P" ;
-    skos:prefLabel "Prominent" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/23a6e276-db96-5e9b-b77e-59605d34c040> ,
+        <https://linked.data.gov.au/def/nrm/35846113-cb9b-5db5-87d0-f89c4d7ee4de> ,
+        <https://linked.data.gov.au/def/nrm/613c80b7-739e-5940-9be3-162d3cc44826> ;
+    skos:prefLabel "Soils cutan distinctnesses codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-cutan-distinctnesses.ttl"^^xsd:anyURI ;
 .
 

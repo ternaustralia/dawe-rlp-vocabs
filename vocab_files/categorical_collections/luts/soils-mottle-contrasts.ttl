@@ -3,22 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/a0f8cc94-abbd-482b-8947-6017bc5f55e5>
-    a skos:Collection ;
-    dcterms:description "A collection of soils mottle contrasts and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-contrasts> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/7fd401b2-db8b-5eae-b653-9397792e26fd> ,
-        <https://linked.data.gov.au/def/nrm/b4737be3-485d-57ce-9df7-4dfb2efb5610> ,
-        <https://linked.data.gov.au/def/nrm/dc44751f-8607-59ac-9913-51f1e29da346> ;
-    skos:prefLabel "Soils mottle contrasts codes" ;
+<https://linked.data.gov.au/def/nrm/7fd401b2-db8b-5eae-b653-9397792e26fd>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-contrasts.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a0f8cc94-abbd-482b-8947-6017bc5f55e5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/23a6e276-db96-5e9b-b77e-59605d34c040> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "P" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-contrasts> ;
 .
 
-<https://linked.data.gov.au/def/nrm/7fd401b2-db8b-5eae-b653-9397792e26fd>
+<https://linked.data.gov.au/def/nrm/b4737be3-485d-57ce-9df7-4dfb2efb5610>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-contrasts.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a0f8cc94-abbd-482b-8947-6017bc5f55e5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/613c80b7-739e-5940-9be3-162d3cc44826> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "D" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-contrasts> ;
+.
+
+<https://linked.data.gov.au/def/nrm/dc44751f-8607-59ac-9913-51f1e29da346>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-contrasts.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a0f8cc94-abbd-482b-8947-6017bc5f55e5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/35846113-cb9b-5db5-87d0-f89c4d7ee4de> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "F" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-contrasts> ;
+.
+
+<https://linked.data.gov.au/def/nrm/23a6e276-db96-5e9b-b77e-59605d34c040>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-contrasts> ;
@@ -29,7 +51,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-contrasts.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/b4737be3-485d-57ce-9df7-4dfb2efb5610>
+<https://linked.data.gov.au/def/nrm/35846113-cb9b-5db5-87d0-f89c4d7ee4de>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-contrasts> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "F" ;
+    skos:prefLabel "Faint" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-contrasts.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/613c80b7-739e-5940-9be3-162d3cc44826>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-contrasts> ;
@@ -40,14 +73,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-contrasts.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/dc44751f-8607-59ac-9913-51f1e29da346>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
+<https://linked.data.gov.au/def/nrm/a0f8cc94-abbd-482b-8947-6017bc5f55e5>
+    a skos:Collection ;
+    dcterms:description "A collection of soils mottle contrasts and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-contrasts> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "F" ;
-    skos:prefLabel "Faint" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/23a6e276-db96-5e9b-b77e-59605d34c040> ,
+        <https://linked.data.gov.au/def/nrm/35846113-cb9b-5db5-87d0-f89c4d7ee4de> ,
+        <https://linked.data.gov.au/def/nrm/613c80b7-739e-5940-9be3-162d3cc44826> ;
+    skos:prefLabel "Soils mottle contrasts codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-contrasts.ttl"^^xsd:anyURI ;
 .
 

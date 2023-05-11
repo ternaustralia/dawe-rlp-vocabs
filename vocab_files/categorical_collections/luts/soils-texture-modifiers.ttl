@@ -3,45 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/65d26894-1b2e-4c80-92ee-fa420142ed67>
-    a skos:Collection ;
-    dcterms:description "A collection of soils texture modifiers and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/1218dbaf-c438-5005-845e-39c2af813c9b> ,
-        <https://linked.data.gov.au/def/nrm/40abc525-9b15-59db-ad29-982ea582456d> ,
-        <https://linked.data.gov.au/def/nrm/71cc28b6-21ef-5fc7-ba20-0d56e0882c31> ,
-        <https://linked.data.gov.au/def/nrm/857967f1-5efe-5eb7-a3b4-38d700482ebc> ;
-    skos:prefLabel "Soils texture modifiers codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/1218dbaf-c438-5005-845e-39c2af813c9b>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Z" ;
-    skos:prefLabel "Silty" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/65d26894-1b2e-4c80-92ee-fa420142ed67> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bbfc48dc-0699-5d9f-b439-b044b47f8052> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "Z" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
 .
 
 <https://linked.data.gov.au/def/nrm/40abc525-9b15-59db-ad29-982ea582456d>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "F" ;
-    skos:prefLabel "Fine sandy" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/65d26894-1b2e-4c80-92ee-fa420142ed67> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/aeec2d65-6679-55e9-8b34-a39dfc5f530b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "F" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
 .
 
 <https://linked.data.gov.au/def/nrm/71cc28b6-21ef-5fc7-ba20-0d56e0882c31>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/65d26894-1b2e-4c80-92ee-fa420142ed67> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4b9e285a-989f-5a6c-83de-c4d678c13030> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "S" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
+.
+
+<https://linked.data.gov.au/def/nrm/857967f1-5efe-5eb7-a3b4-38d700482ebc>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/65d26894-1b2e-4c80-92ee-fa420142ed67> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d8296db9-adef-58ae-829d-d6c1329db400> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "K" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
+.
+
+<https://linked.data.gov.au/def/nrm/4b9e285a-989f-5a6c-83de-c4d678c13030>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
@@ -52,7 +62,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/857967f1-5efe-5eb7-a3b4-38d700482ebc>
+<https://linked.data.gov.au/def/nrm/aeec2d65-6679-55e9-8b34-a39dfc5f530b>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "F" ;
+    skos:prefLabel "Fine sandy" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bbfc48dc-0699-5d9f-b439-b044b47f8052>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Z" ;
+    skos:prefLabel "Silty" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d8296db9-adef-58ae-829d-d6c1329db400>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
@@ -60,6 +92,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "K" ;
     skos:prefLabel "Coarse sandy" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/65d26894-1b2e-4c80-92ee-fa420142ed67>
+    a skos:Collection ;
+    dcterms:description "A collection of soils texture modifiers and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-texture-modifiers> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/4b9e285a-989f-5a6c-83de-c4d678c13030> ,
+        <https://linked.data.gov.au/def/nrm/aeec2d65-6679-55e9-8b34-a39dfc5f530b> ,
+        <https://linked.data.gov.au/def/nrm/bbfc48dc-0699-5d9f-b439-b044b47f8052> ,
+        <https://linked.data.gov.au/def/nrm/d8296db9-adef-58ae-829d-d6c1329db400> ;
+    skos:prefLabel "Soils texture modifiers codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-texture-modifiers.ttl"^^xsd:anyURI ;
 .
 

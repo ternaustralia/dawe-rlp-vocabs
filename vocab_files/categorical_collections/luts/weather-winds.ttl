@@ -3,73 +3,121 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8>
-    a skos:Collection ;
-    dcterms:description "A collection of weather winds and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/1e01961c-4b0c-58a5-89b9-65b23541404a> ,
-        <https://linked.data.gov.au/def/nrm/41ad7c9d-8b44-5696-b73a-3abf149a050b> ,
-        <https://linked.data.gov.au/def/nrm/43aa9e50-6a04-5677-8d97-bf30e29731c2> ,
-        <https://linked.data.gov.au/def/nrm/47554f5c-9114-5988-9676-21ee2d5a5e8b> ,
-        <https://linked.data.gov.au/def/nrm/5ff05d90-8b78-577e-93f6-a9a4b1fe2d20> ,
-        <https://linked.data.gov.au/def/nrm/7ee764b9-dd65-561f-873d-1b79e00b0f7d> ,
-        <https://linked.data.gov.au/def/nrm/80e04629-7799-5981-892f-d6a0d03d6f24> ,
-        <https://linked.data.gov.au/def/nrm/a047f393-bdd5-5a7f-a354-a15906e715f7> ,
-        <https://linked.data.gov.au/def/nrm/cca97d97-4ab0-5d00-ab29-a40669faa222> ,
-        <https://linked.data.gov.au/def/nrm/fe70efe9-c5ef-5638-b770-bdbc7fcfcb33> ;
-    skos:prefLabel "Weather winds codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/1e01961c-4b0c-58a5-89b9-65b23541404a>
-    a skos:Concept ;
-    dcterms:identifier 8 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Slight structural damage occurs; larger branches break off" ;
-    skos:notation "SG" ;
-    skos:prefLabel "Strong gale" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/786f0acf-ea07-5c51-a173-f456f541e28d> ;
+    urnp:conceptDefinition "Slight structural damage occurs; larger branches break off" ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "SG" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
 .
 
 <https://linked.data.gov.au/def/nrm/41ad7c9d-8b44-5696-b73a-3abf149a050b>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Wind felt on face; leaves rustle" ;
-    skos:notation "LW" ;
-    skos:prefLabel "Light winds" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3d574a9d-51a5-5a62-83ca-0569e0495677> ;
+    urnp:conceptDefinition "Wind felt on face; leaves rustle" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "LW" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
 .
 
 <https://linked.data.gov.au/def/nrm/43aa9e50-6a04-5677-8d97-bf30e29731c2>
-    a skos:Concept ;
-    dcterms:identifier 9 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Seldom experienced inland; trees uprooted" ;
-    skos:notation "S" ;
-    skos:prefLabel "Storm" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/391aa4cd-0bce-5afb-9be3-64fecd29c81d> ;
+    urnp:conceptDefinition "Seldom experienced inland; trees uprooted" ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "S" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
 .
 
 <https://linked.data.gov.au/def/nrm/47554f5c-9114-5988-9676-21ee2d5a5e8b>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Raises dust and loose paper; small branches are moved" ;
-    skos:notation "MW" ;
-    skos:prefLabel "Moderate winds" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/aca653e3-8962-5714-ab63-36e08d734842> ;
+    urnp:conceptDefinition "Raises dust and loose paper; small branches are moved" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "MW" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
 .
 
 <https://linked.data.gov.au/def/nrm/5ff05d90-8b78-577e-93f6-a9a4b1fe2d20>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/35d47144-41cd-538f-8e26-48a2c4def95e> ;
+    urnp:conceptDefinition "Small trees begin to sway" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "FW" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+.
+
+<https://linked.data.gov.au/def/nrm/7ee764b9-dd65-561f-873d-1b79e00b0f7d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7a7e2364-cd5c-54a4-8bbe-5dd261ecb386> ;
+    urnp:conceptDefinition "Large branches in motion; umbrellas used with difficulty" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "SW" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+.
+
+<https://linked.data.gov.au/def/nrm/80e04629-7799-5981-892f-d6a0d03d6f24>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a667a542-43da-5704-8e2c-24fa3a4ae915> ;
+    urnp:conceptDefinition "Twigs break off trees" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "G" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a047f393-bdd5-5a7f-a354-a15906e715f7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d69a47c8-a36e-5eea-a4a4-5551b11d58db> ;
+    urnp:conceptDefinition "Whole trees in motion; inconvenience felt when walking against wind" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "NG" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+.
+
+<https://linked.data.gov.au/def/nrm/cca97d97-4ab0-5d00-ab29-a40669faa222>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9f7daec3-4fcf-5cf2-b67d-c7d93c87f4fa> ;
+    urnp:conceptDefinition "Very rarely experienced - widespread damage" ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "VS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fe70efe9-c5ef-5638-b770-bdbc7fcfcb33>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/82169328-a11d-5d65-ac0c-2f6f4b2c85b7> ;
+    urnp:conceptDefinition "Smoke rises vertically" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "C" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+.
+
+<https://linked.data.gov.au/def/nrm/35d47144-41cd-538f-8e26-48a2c4def95e>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
@@ -80,7 +128,40 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/7ee764b9-dd65-561f-873d-1b79e00b0f7d>
+<https://linked.data.gov.au/def/nrm/391aa4cd-0bce-5afb-9be3-64fecd29c81d>
+    a skos:Concept ;
+    dcterms:identifier 9 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Seldom experienced inland; trees uprooted" ;
+    skos:notation "S" ;
+    skos:prefLabel "Storm" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3d574a9d-51a5-5a62-83ca-0569e0495677>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Wind felt on face; leaves rustle" ;
+    skos:notation "LW" ;
+    skos:prefLabel "Light winds" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/786f0acf-ea07-5c51-a173-f456f541e28d>
+    a skos:Concept ;
+    dcterms:identifier 8 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Slight structural damage occurs; larger branches break off" ;
+    skos:notation "SG" ;
+    skos:prefLabel "Strong gale" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/7a7e2364-cd5c-54a4-8bbe-5dd261ecb386>
     a skos:Concept ;
     dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
@@ -91,29 +172,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/80e04629-7799-5981-892f-d6a0d03d6f24>
+<https://linked.data.gov.au/def/nrm/82169328-a11d-5d65-ac0c-2f6f4b2c85b7>
     a skos:Concept ;
-    dcterms:identifier 7 ;
+    dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Twigs break off trees" ;
-    skos:notation "G" ;
-    skos:prefLabel "Gale" ;
+    skos:definition "Smoke rises vertically" ;
+    skos:notation "C" ;
+    skos:prefLabel "Calm" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a047f393-bdd5-5a7f-a354-a15906e715f7>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Whole trees in motion; inconvenience felt when walking against wind" ;
-    skos:notation "NG" ;
-    skos:prefLabel "Near gale" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/cca97d97-4ab0-5d00-ab29-a40669faa222>
+<https://linked.data.gov.au/def/nrm/9f7daec3-4fcf-5cf2-b67d-c7d93c87f4fa>
     a skos:Concept ;
     dcterms:identifier 10 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
@@ -124,14 +194,56 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/fe70efe9-c5ef-5638-b770-bdbc7fcfcb33>
+<https://linked.data.gov.au/def/nrm/a667a542-43da-5704-8e2c-24fa3a4ae915>
     a skos:Concept ;
-    dcterms:identifier 1 ;
+    dcterms:identifier 7 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Smoke rises vertically" ;
-    skos:notation "C" ;
-    skos:prefLabel "Calm" ;
+    skos:definition "Twigs break off trees" ;
+    skos:notation "G" ;
+    skos:prefLabel "Gale" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/aca653e3-8962-5714-ab63-36e08d734842>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Raises dust and loose paper; small branches are moved" ;
+    skos:notation "MW" ;
+    skos:prefLabel "Moderate winds" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d69a47c8-a36e-5eea-a4a4-5551b11d58db>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Whole trees in motion; inconvenience felt when walking against wind" ;
+    skos:notation "NG" ;
+    skos:prefLabel "Near gale" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/0fb03c4e-ad42-445a-a2c5-688d7d7effd8>
+    a skos:Collection ;
+    dcterms:description "A collection of weather winds and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-winds> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/35d47144-41cd-538f-8e26-48a2c4def95e> ,
+        <https://linked.data.gov.au/def/nrm/391aa4cd-0bce-5afb-9be3-64fecd29c81d> ,
+        <https://linked.data.gov.au/def/nrm/3d574a9d-51a5-5a62-83ca-0569e0495677> ,
+        <https://linked.data.gov.au/def/nrm/786f0acf-ea07-5c51-a173-f456f541e28d> ,
+        <https://linked.data.gov.au/def/nrm/7a7e2364-cd5c-54a4-8bbe-5dd261ecb386> ,
+        <https://linked.data.gov.au/def/nrm/82169328-a11d-5d65-ac0c-2f6f4b2c85b7> ,
+        <https://linked.data.gov.au/def/nrm/9f7daec3-4fcf-5cf2-b67d-c7d93c87f4fa> ,
+        <https://linked.data.gov.au/def/nrm/a667a542-43da-5704-8e2c-24fa3a4ae915> ,
+        <https://linked.data.gov.au/def/nrm/aca653e3-8962-5714-ab63-36e08d734842> ,
+        <https://linked.data.gov.au/def/nrm/d69a47c8-a36e-5eea-a4a4-5551b11d58db> ;
+    skos:prefLabel "Weather winds codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-winds.ttl"^^xsd:anyURI ;
 .
 

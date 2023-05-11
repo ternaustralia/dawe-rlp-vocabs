@@ -3,34 +3,66 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/6b6ec6a4-33d2-4515-b988-617d190cfbdb>
-    a skos:Collection ;
-    dcterms:description "A collection of observation tier 1 types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/0dfb164a-2da9-5ee7-ba31-926994922288> ,
-        <https://linked.data.gov.au/def/nrm/25ce7137-31b7-5395-a237-a1ff153ff049> ,
-        <https://linked.data.gov.au/def/nrm/787ded06-04e5-5c67-99a2-687fa5943db3> ,
-        <https://linked.data.gov.au/def/nrm/7a7cb515-5188-59a3-af3e-c93ed296c64e> ;
-    skos:prefLabel "Observation method tier 1 codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/0dfb164a-2da9-5ee7-ba31-926994922288>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "N" ;
-    skos:prefLabel "None" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6b6ec6a4-33d2-4515-b988-617d190cfbdb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4603c442-e9e3-5bfd-8ab5-b46129f0e6b8> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "N" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
 .
 
 <https://linked.data.gov.au/def/nrm/25ce7137-31b7-5395-a237-a1ff153ff049>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6b6ec6a4-33d2-4515-b988-617d190cfbdb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2a831dcb-1d8f-55b4-8799-f0f75d8e5b6d> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "SI" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/787ded06-04e5-5c67-99a2-687fa5943db3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6b6ec6a4-33d2-4515-b988-617d190cfbdb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/beaabf41-ed1a-5315-89ae-8dd437b4df34> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "OB" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/7a7cb515-5188-59a3-af3e-c93ed296c64e>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6b6ec6a4-33d2-4515-b988-617d190cfbdb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/11cd363c-c75b-5436-9f26-19b457d15afc> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "CA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/11cd363c-c75b-5436-9f26-19b457d15afc>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "CA" ;
+    skos:prefLabel "Captured" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/2a831dcb-1d8f-55b4-8799-f0f75d8e5b6d>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
@@ -41,7 +73,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/787ded06-04e5-5c67-99a2-687fa5943db3>
+<https://linked.data.gov.au/def/nrm/4603c442-e9e3-5bfd-8ab5-b46129f0e6b8>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "N" ;
+    skos:prefLabel "None" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/beaabf41-ed1a-5315-89ae-8dd437b4df34>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
@@ -52,14 +95,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/7a7cb515-5188-59a3-af3e-c93ed296c64e>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
+<https://linked.data.gov.au/def/nrm/6b6ec6a4-33d2-4515-b988-617d190cfbdb>
+    a skos:Collection ;
+    dcterms:description "A collection of observation tier 1 types and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "CA" ;
-    skos:prefLabel "Captured" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/11cd363c-c75b-5436-9f26-19b457d15afc> ,
+        <https://linked.data.gov.au/def/nrm/2a831dcb-1d8f-55b4-8799-f0f75d8e5b6d> ,
+        <https://linked.data.gov.au/def/nrm/4603c442-e9e3-5bfd-8ab5-b46129f0e6b8> ,
+        <https://linked.data.gov.au/def/nrm/beaabf41-ed1a-5315-89ae-8dd437b4df34> ;
+    skos:prefLabel "Observation method tier 1 codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/observation-method-tier-1.ttl"^^xsd:anyURI ;
 .
 

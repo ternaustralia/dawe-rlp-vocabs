@@ -3,22 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/75de6044-7575-472a-9a72-2c9006a8c9b1>
-    a skos:Collection ;
-    dcterms:description "A collection of soils structure compound pedalities and its codes." ;
+<https://linked.data.gov.au/def/nrm/1a87385a-954f-590d-8549-05d73808ce00>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-structure-compound-pedalities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/75de6044-7575-472a-9a72-2c9006a8c9b1> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6e125f45-8f15-5f71-a897-8cb5cfbd3d62> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "3" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-structure-compound-pedalities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/7cf51bf8-6207-5214-b9a2-51c06e0ab1a5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-structure-compound-pedalities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/75de6044-7575-472a-9a72-2c9006a8c9b1> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ef6e5a6b-335d-5964-9843-1e77e41e43d2> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "1" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-structure-compound-pedalities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a541a8fa-ca74-54f1-8881-cb52151a3cba>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-structure-compound-pedalities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/75de6044-7575-472a-9a72-2c9006a8c9b1> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1c2b7b28-5985-56e2-b18f-56f8f3bdfae0> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-structure-compound-pedalities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/1c2b7b28-5985-56e2-b18f-56f8f3bdfae0>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-structure-compound-pedalities> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/1a87385a-954f-590d-8549-05d73808ce00> ,
-        <https://linked.data.gov.au/def/nrm/7cf51bf8-6207-5214-b9a2-51c06e0ab1a5> ,
-        <https://linked.data.gov.au/def/nrm/a541a8fa-ca74-54f1-8881-cb52151a3cba> ;
-    skos:prefLabel "Soils structure compound pedalities codes" ;
+    skos:definition "" ;
+    skos:notation "2" ;
+    skos:prefLabel "Next size peds, parting to" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-structure-compound-pedalities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/1a87385a-954f-590d-8549-05d73808ce00>
+<https://linked.data.gov.au/def/nrm/6e125f45-8f15-5f71-a897-8cb5cfbd3d62>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-structure-compound-pedalities> ;
@@ -29,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-structure-compound-pedalities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/7cf51bf8-6207-5214-b9a2-51c06e0ab1a5>
+<https://linked.data.gov.au/def/nrm/ef6e5a6b-335d-5964-9843-1e77e41e43d2>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-structure-compound-pedalities> ;
@@ -40,14 +73,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-structure-compound-pedalities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a541a8fa-ca74-54f1-8881-cb52151a3cba>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
+<https://linked.data.gov.au/def/nrm/75de6044-7575-472a-9a72-2c9006a8c9b1>
+    a skos:Collection ;
+    dcterms:description "A collection of soils structure compound pedalities and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-structure-compound-pedalities> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "2" ;
-    skos:prefLabel "Next size peds, parting to" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/1c2b7b28-5985-56e2-b18f-56f8f3bdfae0> ,
+        <https://linked.data.gov.au/def/nrm/6e125f45-8f15-5f71-a897-8cb5cfbd3d62> ,
+        <https://linked.data.gov.au/def/nrm/ef6e5a6b-335d-5964-9843-1e77e41e43d2> ;
+    skos:prefLabel "Soils structure compound pedalities codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-structure-compound-pedalities.ttl"^^xsd:anyURI ;
 .
 

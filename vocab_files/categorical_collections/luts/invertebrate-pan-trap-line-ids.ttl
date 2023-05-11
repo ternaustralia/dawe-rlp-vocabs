@@ -3,21 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/c66abea7-93a0-48b3-9680-874198fccd30>
-    a skos:Collection ;
-    dcterms:description "A collection of invertebrate pan trap line ids and its codes." ;
+<https://linked.data.gov.au/def/nrm/6ae8c0cb-e5ac-5b17-b945-41f8d593140b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trap-line-ids.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c66abea7-93a0-48b3-9680-874198fccd30> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/11db13bc-0f7b-5b6b-b653-04955574b1ff> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "PTB" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trap-line-ids> ;
+.
+
+<https://linked.data.gov.au/def/nrm/bc671e81-5c0a-51f4-849a-2b99770ca175>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trap-line-ids.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c66abea7-93a0-48b3-9680-874198fccd30> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/088102c7-545a-5844-a650-e11da1b6508e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "PTA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trap-line-ids> ;
+.
+
+<https://linked.data.gov.au/def/nrm/088102c7-545a-5844-a650-e11da1b6508e>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trap-line-ids> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/6ae8c0cb-e5ac-5b17-b945-41f8d593140b> ,
-        <https://linked.data.gov.au/def/nrm/bc671e81-5c0a-51f4-849a-2b99770ca175> ;
-    skos:prefLabel "Invertebrate pan trap line ids codes" ;
+    skos:definition "" ;
+    skos:notation "PTA" ;
+    skos:prefLabel "PT1-1 to PT1-24" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trap-line-ids.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/6ae8c0cb-e5ac-5b17-b945-41f8d593140b>
+<https://linked.data.gov.au/def/nrm/11db13bc-0f7b-5b6b-b653-04955574b1ff>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trap-line-ids> ;
@@ -28,14 +51,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trap-line-ids.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/bc671e81-5c0a-51f4-849a-2b99770ca175>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
+<https://linked.data.gov.au/def/nrm/c66abea7-93a0-48b3-9680-874198fccd30>
+    a skos:Collection ;
+    dcterms:description "A collection of invertebrate pan trap line ids and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trap-line-ids> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "PTA" ;
-    skos:prefLabel "PT1-1 to PT1-24" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/088102c7-545a-5844-a650-e11da1b6508e> ,
+        <https://linked.data.gov.au/def/nrm/11db13bc-0f7b-5b6b-b653-04955574b1ff> ;
+    skos:prefLabel "Invertebrate pan trap line ids codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trap-line-ids.ttl"^^xsd:anyURI ;
 .
 

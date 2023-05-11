@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/318227b7-6ab5-507a-86d9-3ff8030dfb5d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/463ec6ac-c3cf-4a9f-8a5d-f9ce38c3c405> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8b794be8-3b58-558b-a483-121f73cc56b4> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "PTV" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/51f44f33-379b-59f5-8de8-590799f846cc>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/463ec6ac-c3cf-4a9f-8a5d-f9ce38c3c405> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4c22fc72-d90a-56de-b456-a2dcfa411266> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "PV" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types> ;
+.
 
 <https://linked.data.gov.au/def/nrm/463ec6ac-c3cf-4a9f-8a5d-f9ce38c3c405>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/318227b7-6ab5-507a-86d9-3ff8030dfb5d> ,
-        <https://linked.data.gov.au/def/nrm/51f44f33-379b-59f5-8de8-590799f846cc> ;
+        <https://linked.data.gov.au/def/nrm/4c22fc72-d90a-56de-b456-a2dcfa411266> ,
+        <https://linked.data.gov.au/def/nrm/8b794be8-3b58-558b-a483-121f73cc56b4> ;
     skos:prefLabel "Flora voucher types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/318227b7-6ab5-507a-86d9-3ff8030dfb5d>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "PTV" ;
-    skos:prefLabel "Plant Tissue Voucher" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/51f44f33-379b-59f5-8de8-590799f846cc>
+<https://linked.data.gov.au/def/nrm/4c22fc72-d90a-56de-b456-a2dcfa411266>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "PV" ;
     skos:prefLabel "Plant Voucher" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8b794be8-3b58-558b-a483-121f73cc56b4>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "PTV" ;
+    skos:prefLabel "Plant Tissue Voucher" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
 .
 

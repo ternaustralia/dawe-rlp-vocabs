@@ -3,33 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/3c2c9b30-d44f-4d50-8276-4f40b5870584>
-    a skos:Collection ;
-    dcterms:description "A collection of camera picture intervals and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-picture-intervals> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/bfca7782-8e7b-57d8-ae27-2045bcc94bc1> ,
-        <https://linked.data.gov.au/def/nrm/f812174a-f0aa-5f5b-9279-253704f72bc1> ,
-        <https://linked.data.gov.au/def/nrm/fa1cc557-7e0b-5e18-86f0-18d19fef6f6c> ;
-    skos:prefLabel "Camera picture intervals codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-picture-intervals.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/bfca7782-8e7b-57d8-ae27-2045bcc94bc1>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-picture-intervals> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Rapid Fire" ;
-    skos:prefLabel "Rapid Fire" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-picture-intervals.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3c2c9b30-d44f-4d50-8276-4f40b5870584> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/688a2940-b687-5e1c-8621-bc1293c1695b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Rapid Fire" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-picture-intervals> ;
 .
 
 <https://linked.data.gov.au/def/nrm/f812174a-f0aa-5f5b-9279-253704f72bc1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-picture-intervals.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3c2c9b30-d44f-4d50-8276-4f40b5870584> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6609e06e-184f-59ce-8990-36667ad4a13e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Delay" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-picture-intervals> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fa1cc557-7e0b-5e18-86f0-18d19fef6f6c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-picture-intervals.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3c2c9b30-d44f-4d50-8276-4f40b5870584> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9e2ef017-5e60-53b8-8ae6-51d2d79e1bbe> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "Time lapse frequency" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-picture-intervals> ;
+.
+
+<https://linked.data.gov.au/def/nrm/6609e06e-184f-59ce-8990-36667ad4a13e>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-picture-intervals> ;
@@ -40,7 +51,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-picture-intervals.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/fa1cc557-7e0b-5e18-86f0-18d19fef6f6c>
+<https://linked.data.gov.au/def/nrm/688a2940-b687-5e1c-8621-bc1293c1695b>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-picture-intervals> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Rapid Fire" ;
+    skos:prefLabel "Rapid Fire" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-picture-intervals.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/9e2ef017-5e60-53b8-8ae6-51d2d79e1bbe>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-picture-intervals> ;
@@ -48,6 +70,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Time lapse frequency" ;
     skos:prefLabel "Time lapse frequency" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-picture-intervals.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3c2c9b30-d44f-4d50-8276-4f40b5870584>
+    a skos:Collection ;
+    dcterms:description "A collection of camera picture intervals and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-picture-intervals> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/6609e06e-184f-59ce-8990-36667ad4a13e> ,
+        <https://linked.data.gov.au/def/nrm/688a2940-b687-5e1c-8621-bc1293c1695b> ,
+        <https://linked.data.gov.au/def/nrm/9e2ef017-5e60-53b8-8ae6-51d2d79e1bbe> ;
+    skos:prefLabel "Camera picture intervals codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-picture-intervals.ttl"^^xsd:anyURI ;
 .
 

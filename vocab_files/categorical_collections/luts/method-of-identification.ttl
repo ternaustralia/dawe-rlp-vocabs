@@ -3,85 +3,132 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25>
-    a skos:Collection ;
-    dcterms:description "A collection of method of identification types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/2de6b11f-d885-5fed-9ad2-5cf7fcd48e18> ,
-        <https://linked.data.gov.au/def/nrm/41458006-fba8-5821-a656-26aff32051e5> ,
-        <https://linked.data.gov.au/def/nrm/6e0ab02d-b11b-500e-a2e5-953a50cdeafb> ,
-        <https://linked.data.gov.au/def/nrm/6fa99046-b2ce-5b3b-9f93-507d0c3d015b> ,
-        <https://linked.data.gov.au/def/nrm/7c3c2947-cfb7-5712-9c98-1b3b53c3afeb> ,
-        <https://linked.data.gov.au/def/nrm/970a3f22-fc85-50bd-b4a3-cc13fed5d9ab> ,
-        <https://linked.data.gov.au/def/nrm/9966d03b-d369-50f5-8fa8-d6add98657b2> ,
-        <https://linked.data.gov.au/def/nrm/a6918cf8-7649-520c-bbe8-feaeee2a56b9> ,
-        <https://linked.data.gov.au/def/nrm/af380ac2-bccf-501d-8ba1-c31e85c23bb7> ,
-        <https://linked.data.gov.au/def/nrm/d71f01dd-64d7-5c5b-885c-aec631b4f34a> ,
-        <https://linked.data.gov.au/def/nrm/e336f16f-99ae-51ec-9118-95db042fbae3> ;
-    skos:prefLabel "Method of identification codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/2de6b11f-d885-5fed-9ad2-5cf7fcd48e18>
-    a skos:Concept ;
-    dcterms:identifier 10 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "VFO" ;
-    skos:prefLabel "Visually identified in the field (sighting)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/64e1189b-d0cc-5d9e-a5d7-424a58a9a83a> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "VFO" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
 .
 
 <https://linked.data.gov.au/def/nrm/41458006-fba8-5821-a656-26aff32051e5>
-    a skos:Concept ;
-    dcterms:identifier 9 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "VES" ;
-    skos:prefLabel "Visually identified based on collected evidence (voucher specimen)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ab4717cc-8cc8-5fa7-8d5e-e3dc0be746ac> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "VES" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
 .
 
 <https://linked.data.gov.au/def/nrm/6e0ab02d-b11b-500e-a2e5-953a50cdeafb>
-    a skos:Concept ;
-    dcterms:identifier 8 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "VEV" ;
-    skos:prefLabel "Visually identified based on collected evidence (video)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ad4ac640-234b-56b7-874d-a9b2a3a755de> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "VEV" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
 .
 
 <https://linked.data.gov.au/def/nrm/6fa99046-b2ce-5b3b-9f93-507d0c3d015b>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "PFC" ;
-    skos:prefLabel "Aurally identified in the field (call)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/88e7fd67-581e-5fe6-a4b3-c5eb1e8a352e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "PFC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
 .
 
 <https://linked.data.gov.au/def/nrm/7c3c2947-cfb7-5712-9c98-1b3b53c3afeb>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "DNA" ;
-    skos:prefLabel "DNA" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6c2cfedc-c95a-5c6f-affb-77a3cc1db64b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "DNA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
 .
 
 <https://linked.data.gov.au/def/nrm/970a3f22-fc85-50bd-b4a3-cc13fed5d9ab>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/474b3420-6d04-587e-b93b-7319ffa90151> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "ASV" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9966d03b-d369-50f5-8fa8-d6add98657b2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6efb9a27-961a-54ce-a466-167cfefb2379> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "AEC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a6918cf8-7649-520c-bbe8-feaeee2a56b9>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bb923282-5171-5d20-8931-0e670d27e032> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "ASO" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/af380ac2-bccf-501d-8ba1-c31e85c23bb7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d1da1e21-c234-5885-8ca3-5dd8969e7989> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "VEP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/d71f01dd-64d7-5c5b-885c-aec631b4f34a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4d5d3f71-d98f-5619-9f4d-45330bcb51f3> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "eDN" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e336f16f-99ae-51ec-9118-95db042fbae3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a7c4555f-8308-5ea3-b8f5-56f51c149ea4> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 11 ;
+    urnp:conceptNotation "VFS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/474b3420-6d04-587e-b93b-7319ffa90151>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
@@ -92,40 +139,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/9966d03b-d369-50f5-8fa8-d6add98657b2>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "AEC" ;
-    skos:prefLabel "Aurally identified based on collected evidence (call recording)" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/a6918cf8-7649-520c-bbe8-feaeee2a56b9>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "ASO" ;
-    skos:prefLabel "Automation software" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/af380ac2-bccf-501d-8ba1-c31e85c23bb7>
-    a skos:Concept ;
-    dcterms:identifier 7 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "VEP" ;
-    skos:prefLabel "Visually identified based on collected evidence (photo)" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/d71f01dd-64d7-5c5b-885c-aec631b4f34a>
+<https://linked.data.gov.au/def/nrm/4d5d3f71-d98f-5619-9f4d-45330bcb51f3>
     a skos:Concept ;
     dcterms:identifier 6 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
@@ -136,7 +150,51 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/e336f16f-99ae-51ec-9118-95db042fbae3>
+<https://linked.data.gov.au/def/nrm/64e1189b-d0cc-5d9e-a5d7-424a58a9a83a>
+    a skos:Concept ;
+    dcterms:identifier 10 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "VFO" ;
+    skos:prefLabel "Visually identified in the field (sighting)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6c2cfedc-c95a-5c6f-affb-77a3cc1db64b>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "DNA" ;
+    skos:prefLabel "DNA" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6efb9a27-961a-54ce-a466-167cfefb2379>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "AEC" ;
+    skos:prefLabel "Aurally identified based on collected evidence (call recording)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/88e7fd67-581e-5fe6-a4b3-c5eb1e8a352e>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "PFC" ;
+    skos:prefLabel "Aurally identified in the field (call)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a7c4555f-8308-5ea3-b8f5-56f51c149ea4>
     a skos:Concept ;
     dcterms:identifier 11 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
@@ -144,6 +202,71 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "VFS" ;
     skos:prefLabel "Visually identified in the field (sign)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ab4717cc-8cc8-5fa7-8d5e-e3dc0be746ac>
+    a skos:Concept ;
+    dcterms:identifier 9 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "VES" ;
+    skos:prefLabel "Visually identified based on collected evidence (voucher specimen)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ad4ac640-234b-56b7-874d-a9b2a3a755de>
+    a skos:Concept ;
+    dcterms:identifier 8 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "VEV" ;
+    skos:prefLabel "Visually identified based on collected evidence (video)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bb923282-5171-5d20-8931-0e670d27e032>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "ASO" ;
+    skos:prefLabel "Automation software" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d1da1e21-c234-5885-8ca3-5dd8969e7989>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "VEP" ;
+    skos:prefLabel "Visually identified based on collected evidence (photo)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/43c7a4be-72f3-4007-9777-7e7aa2d8da25>
+    a skos:Collection ;
+    dcterms:description "A collection of method of identification types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-identification-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/474b3420-6d04-587e-b93b-7319ffa90151> ,
+        <https://linked.data.gov.au/def/nrm/4d5d3f71-d98f-5619-9f4d-45330bcb51f3> ,
+        <https://linked.data.gov.au/def/nrm/64e1189b-d0cc-5d9e-a5d7-424a58a9a83a> ,
+        <https://linked.data.gov.au/def/nrm/6c2cfedc-c95a-5c6f-affb-77a3cc1db64b> ,
+        <https://linked.data.gov.au/def/nrm/6efb9a27-961a-54ce-a466-167cfefb2379> ,
+        <https://linked.data.gov.au/def/nrm/88e7fd67-581e-5fe6-a4b3-c5eb1e8a352e> ,
+        <https://linked.data.gov.au/def/nrm/a7c4555f-8308-5ea3-b8f5-56f51c149ea4> ,
+        <https://linked.data.gov.au/def/nrm/ab4717cc-8cc8-5fa7-8d5e-e3dc0be746ac> ,
+        <https://linked.data.gov.au/def/nrm/ad4ac640-234b-56b7-874d-a9b2a3a755de> ,
+        <https://linked.data.gov.au/def/nrm/bb923282-5171-5d20-8931-0e670d27e032> ,
+        <https://linked.data.gov.au/def/nrm/d1da1e21-c234-5885-8ca3-5dd8969e7989> ;
+    skos:prefLabel "Method of identification codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/method-of-identification.ttl"^^xsd:anyURI ;
 .
 
