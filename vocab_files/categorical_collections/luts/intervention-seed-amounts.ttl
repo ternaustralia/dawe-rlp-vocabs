@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/01fbc7d6-4d92-539b-995b-845bd82c29aa>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-seed-amounts.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/08fe3752-df4b-4568-8977-33298a843e5d> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e475d3e2-71ef-5a34-9ad7-921ed86853af> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "I" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-seed-amounts> ;
+.
+
+<https://linked.data.gov.au/def/nrm/1ac31d98-fa1e-57ea-8738-7976ca4a3579>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-seed-amounts.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/08fe3752-df4b-4568-8977-33298a843e5d> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/967c6d15-c0d8-57d0-8ac2-af7b6a33abd8> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "K" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-seed-amounts> ;
+.
 
 <https://linked.data.gov.au/def/nrm/08fe3752-df4b-4568-8977-33298a843e5d>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-seed-amounts> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/01fbc7d6-4d92-539b-995b-845bd82c29aa> ,
-        <https://linked.data.gov.au/def/nrm/1ac31d98-fa1e-57ea-8738-7976ca4a3579> ;
+        <https://linked.data.gov.au/def/nrm/967c6d15-c0d8-57d0-8ac2-af7b6a33abd8> ,
+        <https://linked.data.gov.au/def/nrm/e475d3e2-71ef-5a34-9ad7-921ed86853af> ;
     skos:prefLabel "Intervention seed amounts codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-seed-amounts.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/01fbc7d6-4d92-539b-995b-845bd82c29aa>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-seed-amounts> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "I" ;
-    skos:prefLabel "Individuals" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-seed-amounts.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/1ac31d98-fa1e-57ea-8738-7976ca4a3579>
+<https://linked.data.gov.au/def/nrm/967c6d15-c0d8-57d0-8ac2-af7b6a33abd8>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-seed-amounts> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "K" ;
     skos:prefLabel "Kilograms of Seed" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-seed-amounts.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e475d3e2-71ef-5a34-9ad7-921ed86853af>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-seed-amounts> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "I" ;
+    skos:prefLabel "Individuals" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-seed-amounts.ttl"^^xsd:anyURI ;
 .
 

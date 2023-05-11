@@ -3,33 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03>
-    a skos:Collection ;
-    dcterms:description "A collection of stratum types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/523c2f7a-1679-5576-bda0-a1985bac99b1> ,
-        <https://linked.data.gov.au/def/nrm/643aa742-f454-5165-9159-49a04932a1e1> ,
-        <https://linked.data.gov.au/def/nrm/f5402d79-e194-5813-af81-04828bd28bc8> ;
-    skos:prefLabel "Stratum type codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/523c2f7a-1679-5576-bda0-a1985bac99b1>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "U" ;
-    skos:prefLabel "Upper" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ea960328-db99-51fd-843c-61c6c5b6117b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "U" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/643aa742-f454-5165-9159-49a04932a1e1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3a8903c4-2ca0-5afe-84e3-cf75f764a952> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "G" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f5402d79-e194-5813-af81-04828bd28bc8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ad35a619-9ce5-584c-8b21-14c27d518175> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "M" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/3a8903c4-2ca0-5afe-84e3-cf75f764a952>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
@@ -40,7 +51,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f5402d79-e194-5813-af81-04828bd28bc8>
+<https://linked.data.gov.au/def/nrm/ad35a619-9ce5-584c-8b21-14c27d518175>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
@@ -48,6 +59,30 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "M" ;
     skos:prefLabel "Middle" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ea960328-db99-51fd-843c-61c6c5b6117b>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "U" ;
+    skos:prefLabel "Upper" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03>
+    a skos:Collection ;
+    dcterms:description "A collection of stratum types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/3a8903c4-2ca0-5afe-84e3-cf75f764a952> ,
+        <https://linked.data.gov.au/def/nrm/ad35a619-9ce5-584c-8b21-14c27d518175> ,
+        <https://linked.data.gov.au/def/nrm/ea960328-db99-51fd-843c-61c6c5b6117b> ;
+    skos:prefLabel "Stratum type codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
 .
 

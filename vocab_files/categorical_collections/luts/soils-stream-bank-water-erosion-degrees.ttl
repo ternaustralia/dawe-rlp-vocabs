@@ -3,33 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/f62945ca-2eeb-4055-a9cc-187185948d65>
-    a skos:Collection ;
-    dcterms:description "A collection of soils stream bank water erosion degrees and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-stream-bank-water-erosion-degrees> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/1d55b317-1819-5bb7-ac2c-9e3cc510e9c7> ,
-        <https://linked.data.gov.au/def/nrm/1dbf5472-1386-51b2-b8d9-2ba88b5e8e0f> ,
-        <https://linked.data.gov.au/def/nrm/bb8d706b-1610-5d7f-ab04-25439a44aeb3> ;
-    skos:prefLabel "Soils stream bank water erosion degrees codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-stream-bank-water-erosion-degrees.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/1d55b317-1819-5bb7-ac2c-9e3cc510e9c7>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-stream-bank-water-erosion-degrees> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "0" ;
-    skos:prefLabel "No stream bank erosion" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-stream-bank-water-erosion-degrees.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f62945ca-2eeb-4055-a9cc-187185948d65> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/45b4a990-a65f-5d24-90c6-fee77b720e2b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "0" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-stream-bank-water-erosion-degrees> ;
 .
 
 <https://linked.data.gov.au/def/nrm/1dbf5472-1386-51b2-b8d9-2ba88b5e8e0f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-stream-bank-water-erosion-degrees.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f62945ca-2eeb-4055-a9cc-187185948d65> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1c8dd05b-b95c-5356-ae2a-9904e3410edd> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "1" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-stream-bank-water-erosion-degrees> ;
+.
+
+<https://linked.data.gov.au/def/nrm/bb8d706b-1610-5d7f-ab04-25439a44aeb3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-stream-bank-water-erosion-degrees.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f62945ca-2eeb-4055-a9cc-187185948d65> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c0d13b13-f66d-5a37-8c9c-f782e8b4d287> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "X" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-stream-bank-water-erosion-degrees> ;
+.
+
+<https://linked.data.gov.au/def/nrm/1c8dd05b-b95c-5356-ae2a-9904e3410edd>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-stream-bank-water-erosion-degrees> ;
@@ -40,7 +51,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-stream-bank-water-erosion-degrees.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/bb8d706b-1610-5d7f-ab04-25439a44aeb3>
+<https://linked.data.gov.au/def/nrm/45b4a990-a65f-5d24-90c6-fee77b720e2b>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-stream-bank-water-erosion-degrees> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "0" ;
+    skos:prefLabel "No stream bank erosion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-stream-bank-water-erosion-degrees.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c0d13b13-f66d-5a37-8c9c-f782e8b4d287>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-stream-bank-water-erosion-degrees> ;
@@ -48,6 +70,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "X" ;
     skos:prefLabel "Not apparent" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-stream-bank-water-erosion-degrees.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f62945ca-2eeb-4055-a9cc-187185948d65>
+    a skos:Collection ;
+    dcterms:description "A collection of soils stream bank water erosion degrees and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-stream-bank-water-erosion-degrees> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/1c8dd05b-b95c-5356-ae2a-9904e3410edd> ,
+        <https://linked.data.gov.au/def/nrm/45b4a990-a65f-5d24-90c6-fee77b720e2b> ,
+        <https://linked.data.gov.au/def/nrm/c0d13b13-f66d-5a37-8c9c-f782e8b4d287> ;
+    skos:prefLabel "Soils stream bank water erosion degrees codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-stream-bank-water-erosion-degrees.ttl"^^xsd:anyURI ;
 .
 

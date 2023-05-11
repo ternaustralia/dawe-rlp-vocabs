@@ -3,32 +3,33 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/2ebfee89-92db-44b3-bb89-06dd92798ae6>
-    a skos:Collection ;
-    dcterms:description "A collection of climatic condition types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/1050727c-1d88-5639-8b69-60c8c69994b9> ,
-        <https://linked.data.gov.au/def/nrm/d795a4d4-63c6-5228-8e8e-e5f9ca922c3f> ;
-    skos:prefLabel "Climatic condition codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/climatic-condition.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/1050727c-1d88-5639-8b69-60c8c69994b9>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "No Evidence of recent rain" ;
-    skos:notation "Dry" ;
-    skos:prefLabel "Dry" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/climatic-condition.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2ebfee89-92db-44b3-bb89-06dd92798ae6> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/84b551fd-c4f0-5d63-a160-9c6668d4b1de> ;
+    urnp:conceptDefinition "No Evidence of recent rain" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Dry" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions> ;
 .
 
 <https://linked.data.gov.au/def/nrm/d795a4d4-63c6-5228-8e8e-e5f9ca922c3f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/climatic-condition.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2ebfee89-92db-44b3-bb89-06dd92798ae6> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2363669e-8499-55cf-86d7-73524e602225> ;
+    urnp:conceptDefinition "Recent Rain" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Wet" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions> ;
+.
+
+<https://linked.data.gov.au/def/nrm/2363669e-8499-55cf-86d7-73524e602225>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions> ;
@@ -36,6 +37,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Recent Rain" ;
     skos:notation "Wet" ;
     skos:prefLabel "Wet" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/climatic-condition.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/2ebfee89-92db-44b3-bb89-06dd92798ae6>
+    a skos:Collection ;
+    dcterms:description "A collection of climatic condition types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/2363669e-8499-55cf-86d7-73524e602225> ,
+        <https://linked.data.gov.au/def/nrm/84b551fd-c4f0-5d63-a160-9c6668d4b1de> ;
+    skos:prefLabel "Climatic condition codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/climatic-condition.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/84b551fd-c4f0-5d63-a160-9c6668d4b1de>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "No Evidence of recent rain" ;
+    skos:notation "Dry" ;
+    skos:prefLabel "Dry" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/climatic-condition.ttl"^^xsd:anyURI ;
 .
 

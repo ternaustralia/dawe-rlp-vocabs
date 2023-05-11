@@ -3,21 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/c5d3877d-1a83-4a87-9bdd-05f77c516df6>
-    a skos:Collection ;
-    dcterms:description "A collection of animal testes condition types and its codes." ;
+<https://linked.data.gov.au/def/nrm/0c418544-fdf1-53a8-8c5d-853fb54b10bf>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/animal-testes-condition.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c5d3877d-1a83-4a87-9bdd-05f77c516df6> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/47e71470-3a77-5c15-9d54-b9a6fff840e9> ;
+    urnp:conceptDefinition "Scrotal sack obvious, may appear empty or full" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "1" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-testes-conditions> ;
+.
+
+<https://linked.data.gov.au/def/nrm/38c6702d-d77f-55ee-913d-7a79a07bd097>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/animal-testes-condition.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c5d3877d-1a83-4a87-9bdd-05f77c516df6> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/18dcac46-65f6-5b8c-acb7-93ce7abc8b03> ;
+    urnp:conceptDefinition "Scrotum not obvious" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-testes-conditions> ;
+.
+
+<https://linked.data.gov.au/def/nrm/18dcac46-65f6-5b8c-acb7-93ce7abc8b03>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-testes-conditions> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/0c418544-fdf1-53a8-8c5d-853fb54b10bf> ,
-        <https://linked.data.gov.au/def/nrm/38c6702d-d77f-55ee-913d-7a79a07bd097> ;
-    skos:prefLabel "Animal testes condition codes" ;
+    skos:definition "Scrotum not obvious" ;
+    skos:notation "2" ;
+    skos:prefLabel "Abdominal" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/animal-testes-condition.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/0c418544-fdf1-53a8-8c5d-853fb54b10bf>
+<https://linked.data.gov.au/def/nrm/47e71470-3a77-5c15-9d54-b9a6fff840e9>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-testes-conditions> ;
@@ -28,14 +51,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/animal-testes-condition.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/38c6702d-d77f-55ee-913d-7a79a07bd097>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
+<https://linked.data.gov.au/def/nrm/c5d3877d-1a83-4a87-9bdd-05f77c516df6>
+    a skos:Collection ;
+    dcterms:description "A collection of animal testes condition types and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-testes-conditions> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Scrotum not obvious" ;
-    skos:notation "2" ;
-    skos:prefLabel "Abdominal" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/18dcac46-65f6-5b8c-acb7-93ce7abc8b03> ,
+        <https://linked.data.gov.au/def/nrm/47e71470-3a77-5c15-9d54-b9a6fff840e9> ;
+    skos:prefLabel "Animal testes condition codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/animal-testes-condition.ttl"^^xsd:anyURI ;
 .
 

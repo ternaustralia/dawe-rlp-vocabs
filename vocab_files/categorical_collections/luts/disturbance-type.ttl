@@ -3,119 +3,154 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4>
-    a skos:Collection ;
-    dcterms:description "A collection of disturbance types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/059b347f-58c9-59a9-bd75-9305d7e1211d> ,
-        <https://linked.data.gov.au/def/nrm/10ed104b-5dc4-566b-9263-b43a30809592> ,
-        <https://linked.data.gov.au/def/nrm/12d730d5-f0a2-5578-90d9-5afe26a4c97b> ,
-        <https://linked.data.gov.au/def/nrm/2ce5904f-31f0-502f-b5f8-2909083778f3> ,
-        <https://linked.data.gov.au/def/nrm/34a9751a-b39c-5db8-9a11-ed9f0fe62660> ,
-        <https://linked.data.gov.au/def/nrm/452654ef-f149-53f8-acf8-c65f24628a44> ,
-        <https://linked.data.gov.au/def/nrm/4d738475-cade-5f91-a058-896088c2c482> ,
-        <https://linked.data.gov.au/def/nrm/8323540c-8961-562a-ab5e-65902559345d> ,
-        <https://linked.data.gov.au/def/nrm/a2ea6a86-f592-546c-ae00-66e84e8d8451> ,
-        <https://linked.data.gov.au/def/nrm/a6dd8c6f-f075-57fe-adae-22bc90630b44> ,
-        <https://linked.data.gov.au/def/nrm/c9c1b80d-b59e-58e2-b1b3-e821e4b8cc37> ,
-        <https://linked.data.gov.au/def/nrm/ce421b31-7cbe-55e2-9380-d8985c1817e3> ;
-    skos:prefLabel "Disturbance type codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/059b347f-58c9-59a9-bd75-9305d7e1211d>
-    a skos:Concept ;
-    dcterms:identifier 11 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "NC" ;
-    skos:prefLabel "Not Collected" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 11 ;
+    urnp:conceptNotation "NC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/10ed104b-5dc4-566b-9263-b43a30809592>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "No effective disturbance except MEDIUM  grazing by hoofed animals" ;
-    skos:notation "1M" ;
-    skos:prefLabel "None except MEDIUM  grazing by hoofed animals" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/580203d7-51c5-566a-83ff-47bc1209a18b> ;
+    urnp:conceptDefinition "No effective disturbance except MEDIUM  grazing by hoofed animals" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "1M" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/12d730d5-f0a2-5578-90d9-5afe26a4c97b>
-    a skos:Concept ;
-    dcterms:identifier 10 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Highly disturbed; e.g. Mining; urban" ;
-    skos:notation "8" ;
-    skos:prefLabel "Highly disturbed" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f125acdb-8cf9-53f6-b02f-38afd3cb2155> ;
+    urnp:conceptDefinition "Highly disturbed; e.g. Mining; urban" ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "8" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/2ce5904f-31f0-502f-b5f8-2909083778f3>
-    a skos:Concept ;
-    dcterms:identifier 12 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "3" ;
-    skos:prefLabel "Extensive clearing" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/fcfc3e39-0508-5533-8a19-27f6f510e0aa> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 12 ;
+    urnp:conceptNotation "3" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/34a9751a-b39c-5db8-9a11-ed9f0fe62660>
-    a skos:Concept ;
-    dcterms:identifier 8 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "6" ;
-    skos:prefLabel "Cultivated; rain fed" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f86e5ee3-6e77-5c6c-a842-5ff43f659f6d> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "6" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/452654ef-f149-53f8-acf8-c65f24628a44>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "No effective disturbance except HEAVY grazing by hoofed animals" ;
-    skos:notation "1H" ;
-    skos:prefLabel "None except HEAVY grazing by hoofed animals" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f505c960-4d90-52f6-aee5-18102b784746> ;
+    urnp:conceptDefinition "No effective disturbance except HEAVY grazing by hoofed animals" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "1H" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/4d738475-cade-5f91-a058-896088c2c482>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Complete clearing; pasture; but never cultivated" ;
-    skos:notation "4" ;
-    skos:prefLabel "Complete clearing; pasture; never cultivated" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/afbe4699-68c2-5213-926e-a3baa6833383> ;
+    urnp:conceptDefinition "Complete clearing; pasture; but never cultivated" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "4" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/8323540c-8961-562a-ab5e-65902559345d>
-    a skos:Concept ;
-    dcterms:identifier 9 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Cultivation; irrigated; past or present" ;
-    skos:notation "7" ;
-    skos:prefLabel "Cultivation; has been irrigated" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/72f73ab2-7c87-52c9-a32e-5243ad10990f> ;
+    urnp:conceptDefinition "Cultivation; irrigated; past or present" ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "7" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/a2ea6a86-f592-546c-ae00-66e84e8d8451>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4603c442-e9e3-5bfd-8ab5-b46129f0e6b8> ;
+    urnp:conceptDefinition "No effective disturbance" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "0" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a6dd8c6f-f075-57fe-adae-22bc90630b44>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/da08e0d3-2d54-5651-8499-8b2364e7c44d> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c9c1b80d-b59e-58e2-b1b3-e821e4b8cc37>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8457585c-9358-5bc0-b975-0a449b304006> ;
+    urnp:conceptDefinition "No effective disturbance except LIGHT grazing by hoofed animals" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "1L" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ce421b31-7cbe-55e2-9380-d8985c1817e3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/15f2b28b-e417-5073-b8d7-f1ef6e4ab1ad> ;
+    urnp:conceptDefinition "Complete clearing; pasture; cultivated at some stage" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "5" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+.
+
+<https://linked.data.gov.au/def/nrm/15f2b28b-e417-5073-b8d7-f1ef6e4ab1ad>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Complete clearing; pasture; cultivated at some stage" ;
+    skos:notation "5" ;
+    skos:prefLabel "Complete clearing; pasture; has been cultivated" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4603c442-e9e3-5bfd-8ab5-b46129f0e6b8>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
@@ -126,18 +161,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a6dd8c6f-f075-57fe-adae-22bc90630b44>
+<https://linked.data.gov.au/def/nrm/580203d7-51c5-566a-83ff-47bc1209a18b>
     a skos:Concept ;
-    dcterms:identifier 5 ;
+    dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "2" ;
-    skos:prefLabel "Limited clearing" ;
+    skos:definition "No effective disturbance except MEDIUM  grazing by hoofed animals" ;
+    skos:notation "1M" ;
+    skos:prefLabel "None except MEDIUM  grazing by hoofed animals" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/c9c1b80d-b59e-58e2-b1b3-e821e4b8cc37>
+<https://linked.data.gov.au/def/nrm/72f73ab2-7c87-52c9-a32e-5243ad10990f>
+    a skos:Concept ;
+    dcterms:identifier 9 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Cultivation; irrigated; past or present" ;
+    skos:notation "7" ;
+    skos:prefLabel "Cultivation; has been irrigated" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8457585c-9358-5bc0-b975-0a449b304006>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
@@ -148,14 +194,102 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ce421b31-7cbe-55e2-9380-d8985c1817e3>
+<https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f>
     a skos:Concept ;
-    dcterms:identifier 7 ;
+    dcterms:identifier 11 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Complete clearing; pasture; cultivated at some stage" ;
-    skos:notation "5" ;
-    skos:prefLabel "Complete clearing; pasture; has been cultivated" ;
+    skos:definition "" ;
+    skos:notation "NC" ;
+    skos:prefLabel "Not Collected" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/afbe4699-68c2-5213-926e-a3baa6833383>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Complete clearing; pasture; but never cultivated" ;
+    skos:notation "4" ;
+    skos:prefLabel "Complete clearing; pasture; never cultivated" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/da08e0d3-2d54-5651-8499-8b2364e7c44d>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "2" ;
+    skos:prefLabel "Limited clearing" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f125acdb-8cf9-53f6-b02f-38afd3cb2155>
+    a skos:Concept ;
+    dcterms:identifier 10 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Highly disturbed; e.g. Mining; urban" ;
+    skos:notation "8" ;
+    skos:prefLabel "Highly disturbed" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f505c960-4d90-52f6-aee5-18102b784746>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "No effective disturbance except HEAVY grazing by hoofed animals" ;
+    skos:notation "1H" ;
+    skos:prefLabel "None except HEAVY grazing by hoofed animals" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f86e5ee3-6e77-5c6c-a842-5ff43f659f6d>
+    a skos:Concept ;
+    dcterms:identifier 8 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "6" ;
+    skos:prefLabel "Cultivated; rain fed" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/fcfc3e39-0508-5533-8a19-27f6f510e0aa>
+    a skos:Concept ;
+    dcterms:identifier 12 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "3" ;
+    skos:prefLabel "Extensive clearing" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4>
+    a skos:Collection ;
+    dcterms:description "A collection of disturbance types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/15f2b28b-e417-5073-b8d7-f1ef6e4ab1ad> ,
+        <https://linked.data.gov.au/def/nrm/4603c442-e9e3-5bfd-8ab5-b46129f0e6b8> ,
+        <https://linked.data.gov.au/def/nrm/580203d7-51c5-566a-83ff-47bc1209a18b> ,
+        <https://linked.data.gov.au/def/nrm/72f73ab2-7c87-52c9-a32e-5243ad10990f> ,
+        <https://linked.data.gov.au/def/nrm/8457585c-9358-5bc0-b975-0a449b304006> ,
+        <https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f> ,
+        <https://linked.data.gov.au/def/nrm/afbe4699-68c2-5213-926e-a3baa6833383> ,
+        <https://linked.data.gov.au/def/nrm/da08e0d3-2d54-5651-8499-8b2364e7c44d> ,
+        <https://linked.data.gov.au/def/nrm/f125acdb-8cf9-53f6-b02f-38afd3cb2155> ,
+        <https://linked.data.gov.au/def/nrm/f505c960-4d90-52f6-aee5-18102b784746> ,
+        <https://linked.data.gov.au/def/nrm/f86e5ee3-6e77-5c6c-a842-5ff43f659f6d> ,
+        <https://linked.data.gov.au/def/nrm/fcfc3e39-0508-5533-8a19-27f6f510e0aa> ;
+    skos:prefLabel "Disturbance type codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/disturbance-type.ttl"^^xsd:anyURI ;
 .
 

@@ -3,36 +3,77 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/3790f4af-6123-4c61-8440-3d164bda7238>
-    a skos:Collection ;
-    dcterms:description "A collection of camera sensor sensitivities and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/07f39601-3df2-5203-807e-2253b342443b> ,
-        <https://linked.data.gov.au/def/nrm/5fcec6fc-8a80-5e71-a433-7f3550811424> ,
-        <https://linked.data.gov.au/def/nrm/a7e143c4-e768-5bac-b850-573c3940d325> ,
-        <https://linked.data.gov.au/def/nrm/ac021cd9-5e49-508e-a47e-a7545970caad> ,
-        <https://linked.data.gov.au/def/nrm/b9641616-8bbc-57ef-9133-f8f3413b94e9> ,
-        <https://linked.data.gov.au/def/nrm/cfce9f40-5090-5828-800e-3def3b850c12> ;
-    skos:prefLabel "Camera sensor sensitivities codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/07f39601-3df2-5203-807e-2253b342443b>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Normal" ;
-    skos:prefLabel "Normal" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3790f4af-6123-4c61-8440-3d164bda7238> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/aca9088e-d7aa-53fd-9787-6360eb0246c2> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "Normal" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
 .
 
 <https://linked.data.gov.au/def/nrm/5fcec6fc-8a80-5e71-a433-7f3550811424>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3790f4af-6123-4c61-8440-3d164bda7238> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/199599fb-3d1d-5ad9-b80e-3050090f0a6c> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "Med/High" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a7e143c4-e768-5bac-b850-573c3940d325>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3790f4af-6123-4c61-8440-3d164bda7238> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3eb7fb66-1b5b-5b46-9c5e-7c0272e8042e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "Med" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ac021cd9-5e49-508e-a47e-a7545970caad>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3790f4af-6123-4c61-8440-3d164bda7238> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/64c0b1f8-faf9-5b88-a8f9-7e23c599290d> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "High" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b9641616-8bbc-57ef-9133-f8f3413b94e9>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3790f4af-6123-4c61-8440-3d164bda7238> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3a885b01-6075-59c0-a119-be4b50d0dc26> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Low/Med" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/cfce9f40-5090-5828-800e-3def3b850c12>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3790f4af-6123-4c61-8440-3d164bda7238> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2acae838-85f3-5a46-a4f6-fae56c973a35> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Low" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/199599fb-3d1d-5ad9-b80e-3050090f0a6c>
     a skos:Concept ;
     dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
@@ -43,29 +84,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a7e143c4-e768-5bac-b850-573c3940d325>
+<https://linked.data.gov.au/def/nrm/2acae838-85f3-5a46-a4f6-fae56c973a35>
     a skos:Concept ;
-    dcterms:identifier 3 ;
+    dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "Med" ;
-    skos:prefLabel "Med" ;
+    skos:notation "Low" ;
+    skos:prefLabel "Low" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ac021cd9-5e49-508e-a47e-a7545970caad>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "High" ;
-    skos:prefLabel "High" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/b9641616-8bbc-57ef-9133-f8f3413b94e9>
+<https://linked.data.gov.au/def/nrm/3a885b01-6075-59c0-a119-be4b50d0dc26>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
@@ -76,14 +106,52 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/cfce9f40-5090-5828-800e-3def3b850c12>
+<https://linked.data.gov.au/def/nrm/3eb7fb66-1b5b-5b46-9c5e-7c0272e8042e>
     a skos:Concept ;
-    dcterms:identifier 1 ;
+    dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "Low" ;
-    skos:prefLabel "Low" ;
+    skos:notation "Med" ;
+    skos:prefLabel "Med" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/64c0b1f8-faf9-5b88-a8f9-7e23c599290d>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "High" ;
+    skos:prefLabel "High" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/aca9088e-d7aa-53fd-9787-6360eb0246c2>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Normal" ;
+    skos:prefLabel "Normal" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3790f4af-6123-4c61-8440-3d164bda7238>
+    a skos:Collection ;
+    dcterms:description "A collection of camera sensor sensitivities and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-sensor-sensitivities> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/199599fb-3d1d-5ad9-b80e-3050090f0a6c> ,
+        <https://linked.data.gov.au/def/nrm/2acae838-85f3-5a46-a4f6-fae56c973a35> ,
+        <https://linked.data.gov.au/def/nrm/3a885b01-6075-59c0-a119-be4b50d0dc26> ,
+        <https://linked.data.gov.au/def/nrm/3eb7fb66-1b5b-5b46-9c5e-7c0272e8042e> ,
+        <https://linked.data.gov.au/def/nrm/64c0b1f8-faf9-5b88-a8f9-7e23c599290d> ,
+        <https://linked.data.gov.au/def/nrm/aca9088e-d7aa-53fd-9787-6360eb0246c2> ;
+    skos:prefLabel "Camera sensor sensitivities codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-sensor-sensitivities.ttl"^^xsd:anyURI ;
 .
 

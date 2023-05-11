@@ -3,45 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/ba07ad76-df50-4b40-b915-65eaaf811104>
-    a skos:Collection ;
-    dcterms:description "A collection of camera night modes and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/725a9e87-61ca-55ec-9471-5ce8f0cd9756> ,
-        <https://linked.data.gov.au/def/nrm/94f6f1b9-e04a-5533-9dbc-fb249afbc962> ,
-        <https://linked.data.gov.au/def/nrm/b4ed1e9a-e535-56e4-90c9-81a7ded30217> ,
-        <https://linked.data.gov.au/def/nrm/f98938d3-1954-5483-84fd-6ebee9a16ab3> ;
-    skos:prefLabel "Camera night modes codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/725a9e87-61ca-55ec-9471-5ce8f0cd9756>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Balanced" ;
-    skos:prefLabel "Balanced" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ba07ad76-df50-4b40-b915-65eaaf811104> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/74ec55ac-3a74-55bd-b2d1-4451839619a6> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Balanced" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/94f6f1b9-e04a-5533-9dbc-fb249afbc962>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Fast shutter" ;
-    skos:prefLabel "Fast shutter" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ba07ad76-df50-4b40-b915-65eaaf811104> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6a9ce6bb-0d26-59fd-a43d-efad96e4df8f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "Fast shutter" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/b4ed1e9a-e535-56e4-90c9-81a7ded30217>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ba07ad76-df50-4b40-b915-65eaaf811104> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5c540fdc-7991-5049-b7ec-e20d71fc4b38> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "High quality" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f98938d3-1954-5483-84fd-6ebee9a16ab3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ba07ad76-df50-4b40-b915-65eaaf811104> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a5dff300-e8ba-5236-a6c7-c262b01768ae> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "Max range" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/5c540fdc-7991-5049-b7ec-e20d71fc4b38>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
@@ -52,7 +62,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f98938d3-1954-5483-84fd-6ebee9a16ab3>
+<https://linked.data.gov.au/def/nrm/6a9ce6bb-0d26-59fd-a43d-efad96e4df8f>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Fast shutter" ;
+    skos:prefLabel "Fast shutter" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/74ec55ac-3a74-55bd-b2d1-4451839619a6>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Balanced" ;
+    skos:prefLabel "Balanced" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a5dff300-e8ba-5236-a6c7-c262b01768ae>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
@@ -60,6 +92,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Max range" ;
     skos:prefLabel "Max range" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ba07ad76-df50-4b40-b915-65eaaf811104>
+    a skos:Collection ;
+    dcterms:description "A collection of camera night modes and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-night-modes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/5c540fdc-7991-5049-b7ec-e20d71fc4b38> ,
+        <https://linked.data.gov.au/def/nrm/6a9ce6bb-0d26-59fd-a43d-efad96e4df8f> ,
+        <https://linked.data.gov.au/def/nrm/74ec55ac-3a74-55bd-b2d1-4451839619a6> ,
+        <https://linked.data.gov.au/def/nrm/a5dff300-e8ba-5236-a6c7-c262b01768ae> ;
+    skos:prefLabel "Camera night modes codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-night-modes.ttl"^^xsd:anyURI ;
 .
 

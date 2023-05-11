@@ -3,22 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f>
-    a skos:Collection ;
-    dcterms:description "A collection of fire plot burned statuses and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/81a8fa69-2f20-5a28-880d-8401759f9194> ,
-        <https://linked.data.gov.au/def/nrm/8c0ce07e-88e0-5ecf-a3b3-0f6a503e4ee1> ,
-        <https://linked.data.gov.au/def/nrm/ffde9f2e-93a7-5bbb-9a8a-0aca07034f28> ;
-    skos:prefLabel "Fire plot burned statuses codes" ;
+<https://linked.data.gov.au/def/nrm/81a8fa69-2f20-5a28-880d-8401759f9194>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/327070d8-267b-5a56-8179-139ed806f059> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "R" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
 .
 
-<https://linked.data.gov.au/def/nrm/81a8fa69-2f20-5a28-880d-8401759f9194>
+<https://linked.data.gov.au/def/nrm/8c0ce07e-88e0-5ecf-a3b3-0f6a503e4ee1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7d7c2dd4-4a7e-549f-a12a-7846d65aafcf> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "P" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ffde9f2e-93a7-5bbb-9a8a-0aca07034f28>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9a1771c6-6a8e-586d-825d-043d9310fd45> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "U" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
+.
+
+<https://linked.data.gov.au/def/nrm/327070d8-267b-5a56-8179-139ed806f059>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
@@ -29,7 +51,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/8c0ce07e-88e0-5ecf-a3b3-0f6a503e4ee1>
+<https://linked.data.gov.au/def/nrm/7d7c2dd4-4a7e-549f-a12a-7846d65aafcf>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
@@ -40,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ffde9f2e-93a7-5bbb-9a8a-0aca07034f28>
+<https://linked.data.gov.au/def/nrm/9a1771c6-6a8e-586d-825d-043d9310fd45>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
@@ -48,6 +70,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "U" ;
     skos:prefLabel "Unburnt" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f>
+    a skos:Collection ;
+    dcterms:description "A collection of fire plot burned statuses and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/327070d8-267b-5a56-8179-139ed806f059> ,
+        <https://linked.data.gov.au/def/nrm/7d7c2dd4-4a7e-549f-a12a-7846d65aafcf> ,
+        <https://linked.data.gov.au/def/nrm/9a1771c6-6a8e-586d-825d-043d9310fd45> ;
+    skos:prefLabel "Fire plot burned statuses codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
 .
 

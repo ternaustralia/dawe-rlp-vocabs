@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/e00fa8eb-1f72-58c5-9f2d-6e5301319d5a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/exact-or-estimates.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/12750b20-0e91-4878-9029-b4d9d7788429> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8c1c83f2-66b1-5651-ba3c-adbbf3806433> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Exact" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-exact-or-estimates> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e28bba0b-1f12-5514-8e07-cdcb50a69f5f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/exact-or-estimates.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/12750b20-0e91-4878-9029-b4d9d7788429> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/68c919a7-5759-5169-92dd-a99b6b7be407> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Estimate" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-exact-or-estimates> ;
+.
 
 <https://linked.data.gov.au/def/nrm/12750b20-0e91-4878-9029-b4d9d7788429>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-exact-or-estimates> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/e00fa8eb-1f72-58c5-9f2d-6e5301319d5a> ,
-        <https://linked.data.gov.au/def/nrm/e28bba0b-1f12-5514-8e07-cdcb50a69f5f> ;
+        <https://linked.data.gov.au/def/nrm/68c919a7-5759-5169-92dd-a99b6b7be407> ,
+        <https://linked.data.gov.au/def/nrm/8c1c83f2-66b1-5651-ba3c-adbbf3806433> ;
     skos:prefLabel "Exact or estimates codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/exact-or-estimates.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/e00fa8eb-1f72-58c5-9f2d-6e5301319d5a>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-exact-or-estimates> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Exact" ;
-    skos:prefLabel "Exact" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/exact-or-estimates.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e28bba0b-1f12-5514-8e07-cdcb50a69f5f>
+<https://linked.data.gov.au/def/nrm/68c919a7-5759-5169-92dd-a99b6b7be407>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-exact-or-estimates> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Estimate" ;
     skos:prefLabel "Estimate" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/exact-or-estimates.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8c1c83f2-66b1-5651-ba3c-adbbf3806433>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-exact-or-estimates> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Exact" ;
+    skos:prefLabel "Exact" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/exact-or-estimates.ttl"^^xsd:anyURI ;
 .
 

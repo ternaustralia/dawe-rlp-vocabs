@@ -3,58 +3,77 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/100f6f80-d438-465a-8f57-5a76a038b961>
-    a skos:Collection ;
-    dcterms:description "A collection of soils mottle abundances and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/0033bb3d-fd5a-51eb-ba4b-8c249430aa6d> ,
-        <https://linked.data.gov.au/def/nrm/24cd1b0f-22ad-51f1-8890-59fa1e3fe298> ,
-        <https://linked.data.gov.au/def/nrm/68c50cb9-98c5-597c-9446-00976801eb5e> ,
-        <https://linked.data.gov.au/def/nrm/a86d4652-cdf5-5063-99df-c418e833302d> ,
-        <https://linked.data.gov.au/def/nrm/c6cb7c59-aa12-5eb9-8c08-11bb10cbdf47> ,
-        <https://linked.data.gov.au/def/nrm/d62fdfd2-0287-5a4b-8010-f272ef8d5ad7> ;
-    skos:prefLabel "Soils mottle abundances codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/0033bb3d-fd5a-51eb-ba4b-8c249430aa6d>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "NC" ;
-    skos:prefLabel "Not Collected" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/100f6f80-d438-465a-8f57-5a76a038b961> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "NC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/24cd1b0f-22ad-51f1-8890-59fa1e3fe298>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "1" ;
-    skos:prefLabel "Very few (<2%)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/100f6f80-d438-465a-8f57-5a76a038b961> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/664e4973-f4cf-5055-850b-ee9137252f79> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "1" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/68c50cb9-98c5-597c-9446-00976801eb5e>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "4" ;
-    skos:prefLabel "Many (20-50%)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/100f6f80-d438-465a-8f57-5a76a038b961> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1088f6bd-9912-5568-bf2b-4d7b7b0d76d4> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "4" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
 .
 
 <https://linked.data.gov.au/def/nrm/a86d4652-cdf5-5063-99df-c418e833302d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/100f6f80-d438-465a-8f57-5a76a038b961> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/064805f3-9e17-5849-943d-d9a8f8cd7c65> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "0" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c6cb7c59-aa12-5eb9-8c08-11bb10cbdf47>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/100f6f80-d438-465a-8f57-5a76a038b961> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6a9a98d0-09a2-5c42-89a0-9d6443ea5ad0> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "3" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
+.
+
+<https://linked.data.gov.au/def/nrm/d62fdfd2-0287-5a4b-8010-f272ef8d5ad7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/100f6f80-d438-465a-8f57-5a76a038b961> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/60561cbb-835d-5420-9200-c40019110227> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
+.
+
+<https://linked.data.gov.au/def/nrm/064805f3-9e17-5849-943d-d9a8f8cd7c65>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
@@ -65,7 +84,40 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/c6cb7c59-aa12-5eb9-8c08-11bb10cbdf47>
+<https://linked.data.gov.au/def/nrm/1088f6bd-9912-5568-bf2b-4d7b7b0d76d4>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "4" ;
+    skos:prefLabel "Many (20-50%)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/60561cbb-835d-5420-9200-c40019110227>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "2" ;
+    skos:prefLabel "Few (2-10%)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/664e4973-f4cf-5055-850b-ee9137252f79>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "1" ;
+    skos:prefLabel "Very few (<2%)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6a9a98d0-09a2-5c42-89a0-9d6443ea5ad0>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
@@ -76,14 +128,30 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/d62fdfd2-0287-5a4b-8010-f272ef8d5ad7>
+<https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f>
     a skos:Concept ;
-    dcterms:identifier 3 ;
+    dcterms:identifier 6 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "2" ;
-    skos:prefLabel "Few (2-10%)" ;
+    skos:notation "NC" ;
+    skos:prefLabel "Not Collected" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/100f6f80-d438-465a-8f57-5a76a038b961>
+    a skos:Collection ;
+    dcterms:description "A collection of soils mottle abundances and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-mottle-abundances> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/064805f3-9e17-5849-943d-d9a8f8cd7c65> ,
+        <https://linked.data.gov.au/def/nrm/1088f6bd-9912-5568-bf2b-4d7b7b0d76d4> ,
+        <https://linked.data.gov.au/def/nrm/60561cbb-835d-5420-9200-c40019110227> ,
+        <https://linked.data.gov.au/def/nrm/664e4973-f4cf-5055-850b-ee9137252f79> ,
+        <https://linked.data.gov.au/def/nrm/6a9a98d0-09a2-5c42-89a0-9d6443ea5ad0> ,
+        <https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f> ;
+    skos:prefLabel "Soils mottle abundances codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-mottle-abundances.ttl"^^xsd:anyURI ;
 .
 

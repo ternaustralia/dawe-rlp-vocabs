@@ -3,346 +3,946 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131>
-    a skos:Collection ;
-    dcterms:description "A collection of tecs and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/092efe20-9aaa-5c76-af9e-defd84207318> ,
-        <https://linked.data.gov.au/def/nrm/0aec1ff7-5764-5301-b3cc-119f1101e3d1> ,
-        <https://linked.data.gov.au/def/nrm/108d76f5-97a9-521d-8d4a-adfec80ca92b> ,
-        <https://linked.data.gov.au/def/nrm/11e2e17b-b8d9-599d-84f9-895ac368d5f7> ,
-        <https://linked.data.gov.au/def/nrm/134d205e-e439-55ef-8e69-d4a4afe93e0c> ,
-        <https://linked.data.gov.au/def/nrm/14cf58fa-868e-59a7-beca-407c3cc8bc6f> ,
-        <https://linked.data.gov.au/def/nrm/15dbbb48-feef-5b65-89a5-fe0c1c7945eb> ,
-        <https://linked.data.gov.au/def/nrm/19a81435-9872-5e7d-a640-a3fe496c2de5> ,
-        <https://linked.data.gov.au/def/nrm/1d2d05a7-e042-50d7-8ac9-ded30b114c00> ,
-        <https://linked.data.gov.au/def/nrm/1d4973bb-ee26-5a5e-b799-4abe1c46d18f> ,
-        <https://linked.data.gov.au/def/nrm/1d89e09b-23ee-5baf-af2c-f626ca86a457> ,
-        <https://linked.data.gov.au/def/nrm/1f678893-bd45-58c3-848c-52f34bea4489> ,
-        <https://linked.data.gov.au/def/nrm/2174fda8-32c9-5944-8a08-85fc05265293> ,
-        <https://linked.data.gov.au/def/nrm/2418c48f-4a03-5963-a938-2e4a17de8c0d> ,
-        <https://linked.data.gov.au/def/nrm/24fee608-c722-5123-b682-2c83a21a6c6e> ,
-        <https://linked.data.gov.au/def/nrm/25286c7e-8d64-5d06-bb05-a58c2eb3418e> ,
-        <https://linked.data.gov.au/def/nrm/26f5b24b-7235-54f3-91e8-52d20e65bac3> ,
-        <https://linked.data.gov.au/def/nrm/27db503b-f6a9-5147-8793-de7147301a63> ,
-        <https://linked.data.gov.au/def/nrm/28220183-356b-5970-9685-e98a1bb00cab> ,
-        <https://linked.data.gov.au/def/nrm/2bafd329-905c-5b69-8483-ea8a639d77f7> ,
-        <https://linked.data.gov.au/def/nrm/384f2c72-15a2-507d-bbad-fec7e352e182> ,
-        <https://linked.data.gov.au/def/nrm/39ec2694-fb81-5156-99b6-b93a30fbeaeb> ,
-        <https://linked.data.gov.au/def/nrm/3ccd4191-eee8-5be1-8ed4-9932d08e99d8> ,
-        <https://linked.data.gov.au/def/nrm/435e82b8-d2b6-5e0c-9c29-59636fbffd7c> ,
-        <https://linked.data.gov.au/def/nrm/46570f2a-5135-56b2-a2a1-a980149ce1b7> ,
-        <https://linked.data.gov.au/def/nrm/46c2aaa0-20d6-51a4-8870-e529b5654651> ,
-        <https://linked.data.gov.au/def/nrm/4b176c0c-1426-5476-82eb-0c40ad6fd77f> ,
-        <https://linked.data.gov.au/def/nrm/4b8b63c8-1600-538b-8dc7-d7d8306cd0e8> ,
-        <https://linked.data.gov.au/def/nrm/4c323e69-2a65-50e5-8e33-c86adfbf59f1> ,
-        <https://linked.data.gov.au/def/nrm/4dfcd0f0-1d53-5e85-8ff4-272cd2f2ca87> ,
-        <https://linked.data.gov.au/def/nrm/4e324235-401f-523f-b866-2c8a59e77ee9> ,
-        <https://linked.data.gov.au/def/nrm/5245d3d3-5998-53a0-b97d-63f898e61259> ,
-        <https://linked.data.gov.au/def/nrm/5477b2e6-402f-5af8-9f8e-ac88410ca4db> ,
-        <https://linked.data.gov.au/def/nrm/5998fc64-c83c-539d-a4d9-cac595b937ca> ,
-        <https://linked.data.gov.au/def/nrm/6226e231-a9ed-510f-b253-ef5cc5ba2abc> ,
-        <https://linked.data.gov.au/def/nrm/6289bfc7-34f3-5a76-bce5-f7c276d454da> ,
-        <https://linked.data.gov.au/def/nrm/63b6432c-1e7c-5c5e-b355-7793f93b9282> ,
-        <https://linked.data.gov.au/def/nrm/64fb407e-a254-5e96-b05d-4a91abed410b> ,
-        <https://linked.data.gov.au/def/nrm/65f40c76-dae6-5f38-8ad9-8fe690bd9972> ,
-        <https://linked.data.gov.au/def/nrm/6b7ab5f2-d777-5c9f-8b3d-6d8d3a2a5f71> ,
-        <https://linked.data.gov.au/def/nrm/6c87b7cc-a03b-5612-9c61-833499963e7f> ,
-        <https://linked.data.gov.au/def/nrm/74703e05-316a-5f90-a38b-58cfb58b3bc5> ,
-        <https://linked.data.gov.au/def/nrm/752affd5-b0f9-5fef-ac1f-493ebfeadb69> ,
-        <https://linked.data.gov.au/def/nrm/78ba53e6-db10-511b-a84d-d2a413db74e2> ,
-        <https://linked.data.gov.au/def/nrm/80e25f9f-2889-5ba4-aa94-98b746f77b3a> ,
-        <https://linked.data.gov.au/def/nrm/832c1a87-5d80-5a3f-9f3f-dc00ad6cecdd> ,
-        <https://linked.data.gov.au/def/nrm/85a05a2f-351e-54e1-a8d8-4a99509e7e1f> ,
-        <https://linked.data.gov.au/def/nrm/8773eefd-e770-5827-b945-19a455197fac> ,
-        <https://linked.data.gov.au/def/nrm/98f3ccae-73b6-5a7c-9829-00cc7bb0d42d> ,
-        <https://linked.data.gov.au/def/nrm/9ba0fb3e-d072-5c25-86d2-12ee327f70f1> ,
-        <https://linked.data.gov.au/def/nrm/9e059c78-1587-5a5a-865a-13f049163de4> ,
-        <https://linked.data.gov.au/def/nrm/9e53b5cf-32cc-5eaa-8a56-aabee5dcc9d3> ,
-        <https://linked.data.gov.au/def/nrm/a06523d7-1900-5ae1-b0b2-84e465b965fd> ,
-        <https://linked.data.gov.au/def/nrm/a075fd48-d3dc-58aa-aeeb-af669e22132e> ,
-        <https://linked.data.gov.au/def/nrm/a3a3322c-956e-5e32-9f15-a8dbc2712b21> ,
-        <https://linked.data.gov.au/def/nrm/a507d0f2-2627-5da9-b8de-5de524a55a30> ,
-        <https://linked.data.gov.au/def/nrm/ac211ac7-6a49-556e-bf29-1bc65e1bd7c3> ,
-        <https://linked.data.gov.au/def/nrm/ac93a0e6-dcc7-50a5-aec0-315973c8f2d3> ,
-        <https://linked.data.gov.au/def/nrm/ad3b397c-2c85-5522-ac5b-c9bf1b032281> ,
-        <https://linked.data.gov.au/def/nrm/ae694d5b-d8ea-57f8-a8e4-a328620e0262> ,
-        <https://linked.data.gov.au/def/nrm/b510a6e5-23c2-5c89-b80e-9048f7bac2d2> ,
-        <https://linked.data.gov.au/def/nrm/bad80742-92ae-524e-aedb-4ed0757daa5a> ,
-        <https://linked.data.gov.au/def/nrm/bb834e96-ec7e-5fd7-9d66-7be02448ec1b> ,
-        <https://linked.data.gov.au/def/nrm/bccca797-b63f-501d-bf45-45faf0a2b8ee> ,
-        <https://linked.data.gov.au/def/nrm/bde42a89-4bba-53c5-8805-e9b3a545be2b> ,
-        <https://linked.data.gov.au/def/nrm/be2ae11c-923b-59bb-a623-011b0ca63c47> ,
-        <https://linked.data.gov.au/def/nrm/be4fe63d-4aed-5ed0-ac8e-19ec1c60de9a> ,
-        <https://linked.data.gov.au/def/nrm/beb17a20-1dfc-58bd-ab6e-ed3f72c20833> ,
-        <https://linked.data.gov.au/def/nrm/bf0c7dee-5a5b-5077-bccc-2043e095c3d1> ,
-        <https://linked.data.gov.au/def/nrm/c25b53f7-9296-532b-a62c-67da1d4a60b1> ,
-        <https://linked.data.gov.au/def/nrm/c9cee434-db26-549e-b6cc-55d5ac126f30> ,
-        <https://linked.data.gov.au/def/nrm/cea17b3c-bfa4-58a5-b72e-cd6090f834d4> ,
-        <https://linked.data.gov.au/def/nrm/cfcf101a-2d87-5ece-a837-1b580ae6d912> ,
-        <https://linked.data.gov.au/def/nrm/d238f67d-f523-561b-ade2-39adb6edc8b2> ,
-        <https://linked.data.gov.au/def/nrm/d262e167-ceb9-5ab5-b5cf-16d52f8b3b43> ,
-        <https://linked.data.gov.au/def/nrm/dfcf7c6b-c105-55b8-b145-01fa9749fbb7> ,
-        <https://linked.data.gov.au/def/nrm/e3d04a42-f0e5-580e-a3f9-594e0a17d200> ,
-        <https://linked.data.gov.au/def/nrm/e4a96624-7951-5398-8ee1-7de12db9ff4a> ,
-        <https://linked.data.gov.au/def/nrm/e901235f-f026-59bf-8d79-a20f901f50c7> ,
-        <https://linked.data.gov.au/def/nrm/f064954e-0dcc-5b22-bb96-ae673f9ea49b> ,
-        <https://linked.data.gov.au/def/nrm/f24c9d41-2f7f-5d91-979d-e88100421139> ,
-        <https://linked.data.gov.au/def/nrm/f641cdc9-36eb-5767-8387-e21c84fdf04b> ,
-        <https://linked.data.gov.au/def/nrm/f6b63b2b-375d-5ef5-805c-564ba89e6506> ,
-        <https://linked.data.gov.au/def/nrm/f8768a2d-92d7-5108-958d-da13cd21fcc5> ,
-        <https://linked.data.gov.au/def/nrm/fd5c292a-35db-5690-8633-76e267611c83> ;
-    skos:prefLabel "Threatened ecological communities codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/092efe20-9aaa-5c76-af9e-defd84207318>
-    a skos:Concept ;
-    dcterms:identifier 45 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Tasmanian Forests and Woodlands dominated by black gum or Brookers gum (Eucalyptus ovata / E. brookeriana)" ;
-    skos:notation "77" ;
-    skos:prefLabel "Tasmanian Forests and Woodlands dominated by black gum or Brookers gum (Eucalyptus ovata / E. brookeriana)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c9c37377-a478-5e6e-8220-7f1f28b15eb6> ;
+    urnp:conceptDefinition "Tasmanian Forests and Woodlands dominated by black gum or Brookers gum (Eucalyptus ovata / E. brookeriana)" ;
+    urnp:conceptIdentifier 45 ;
+    urnp:conceptNotation "77" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/0aec1ff7-5764-5301-b3cc-119f1101e3d1>
-    a skos:Concept ;
-    dcterms:identifier 43 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Lowland Native Grasslands of Tasmania" ;
-    skos:notation "74" ;
-    skos:prefLabel "Lowland Native Grasslands of Tasmania" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/34e0c27c-79cc-5f31-955f-9e9ebb9d409a> ;
+    urnp:conceptDefinition "Lowland Native Grasslands of Tasmania" ;
+    urnp:conceptIdentifier 43 ;
+    urnp:conceptNotation "74" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/108d76f5-97a9-521d-8d4a-adfec80ca92b>
-    a skos:Concept ;
-    dcterms:identifier 69 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Posidonia australis seagrass meadows of the Manning-Hawkesbury ecoregion" ;
-    skos:notation "127" ;
-    skos:prefLabel "Posidonia australis seagrass meadows of the Manning-Hawkesbury ecoregion" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/65ee36d5-08ba-5b9c-bab8-fd642d120ac1> ;
+    urnp:conceptDefinition "Posidonia australis seagrass meadows of the Manning-Hawkesbury ecoregion" ;
+    urnp:conceptIdentifier 69 ;
+    urnp:conceptNotation "127" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/11e2e17b-b8d9-599d-84f9-895ac368d5f7>
-    a skos:Concept ;
-    dcterms:identifier 13 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Corymbia calophylla - Kingia australis woodlands on heavy soils of the Swan Coastal Plain" ;
-    skos:notation "17" ;
-    skos:prefLabel "Corymbia calophylla - Kingia australis woodlands on heavy soils of the Swan Coastal Plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c03b76a5-c38d-5bce-9ca9-4522f02e8a4e> ;
+    urnp:conceptDefinition "Corymbia calophylla - Kingia australis woodlands on heavy soils of the Swan Coastal Plain" ;
+    urnp:conceptIdentifier 13 ;
+    urnp:conceptNotation "17" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/134d205e-e439-55ef-8e69-d4a4afe93e0c>
-    a skos:Concept ;
-    dcterms:identifier 82 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Shale Sandstone Transition Forest of the Sydney Basin Bioregion" ;
-    skos:notation "146" ;
-    skos:prefLabel "Shale Sandstone Transition Forest of the Sydney Basin Bioregion" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/889e6a93-8795-511f-9f69-603cd10d85f4> ;
+    urnp:conceptDefinition "Shale Sandstone Transition Forest of the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 82 ;
+    urnp:conceptNotation "146" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/14cf58fa-868e-59a7-beca-407c3cc8bc6f>
-    a skos:Concept ;
-    dcterms:identifier 78 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Coastal Swamp Oak (Casuarina glauca) Forest of New South Wales and South East Queensland ecological community" ;
-    skos:notation "142" ;
-    skos:prefLabel "Coastal Swamp Oak (Casuarina glauca) Forest of New South Wales and South East Queensland ecological community" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2c14c2a7-2dcd-5210-ba46-3c62ab418999> ;
+    urnp:conceptDefinition "Coastal Swamp Oak (Casuarina glauca) Forest of New South Wales and South East Queensland ecological community" ;
+    urnp:conceptIdentifier 78 ;
+    urnp:conceptNotation "142" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/15dbbb48-feef-5b65-89a5-fe0c1c7945eb>
-    a skos:Concept ;
-    dcterms:identifier 28 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Peppermint Box (Eucalyptus odorata) Grassy Woodland of South Australia" ;
-    skos:notation "36" ;
-    skos:prefLabel "Peppermint Box (Eucalyptus odorata) Grassy Woodland of South Australia" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/70ca2de3-9963-53fa-894e-bae53bc887ab> ;
+    urnp:conceptDefinition "Peppermint Box (Eucalyptus odorata) Grassy Woodland of South Australia" ;
+    urnp:conceptIdentifier 28 ;
+    urnp:conceptNotation "36" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/19a81435-9872-5e7d-a640-a3fe496c2de5>
-    a skos:Concept ;
-    dcterms:identifier 40 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Southern Highlands Shale Forest and Woodland in the Sydney Basin Bioregion" ;
-    skos:notation "62" ;
-    skos:prefLabel "Southern Highlands Shale Forest and Woodland in the Sydney Basin Bioregion" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7aea6d96-f592-52f5-8420-9e4aef59d2d0> ;
+    urnp:conceptDefinition "Southern Highlands Shale Forest and Woodland in the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 40 ;
+    urnp:conceptNotation "62" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/1d2d05a7-e042-50d7-8ac9-ded30b114c00>
-    a skos:Concept ;
-    dcterms:identifier 10 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Eastern Stirling Range Montane Heath and Thicket" ;
-    skos:notation "13" ;
-    skos:prefLabel "Eastern Stirling Range Montane Heath and Thicket" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a573b112-5511-56f6-80b1-3160594574c2> ;
+    urnp:conceptDefinition "Eastern Stirling Range Montane Heath and Thicket" ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "13" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/1d4973bb-ee26-5a5e-b799-4abe1c46d18f>
-    a skos:Concept ;
-    dcterms:identifier 30 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Turpentine-Ironbark Forest of the Sydney Basin Bioregion" ;
-    skos:notation "38" ;
-    skos:prefLabel "Turpentine-Ironbark Forest of the Sydney Basin Bioregion" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/17b729e4-b89c-5de2-b391-a679d29c956b> ;
+    urnp:conceptDefinition "Turpentine-Ironbark Forest of the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 30 ;
+    urnp:conceptNotation "38" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/1d89e09b-23ee-5baf-af2c-f626ca86a457>
-    a skos:Concept ;
-    dcterms:identifier 14 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Corymbia calophylla - Xanthorrhoea preissii woodlands and shrublands of the Swan Coastal Plain" ;
-    skos:notation "18" ;
-    skos:prefLabel "Corymbia calophylla - Xanthorrhoea preissii woodlands and shrublands of the Swan Coastal Plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f04c4c6f-563c-5c2d-94b4-21a5490a7878> ;
+    urnp:conceptDefinition "Corymbia calophylla - Xanthorrhoea preissii woodlands and shrublands of the Swan Coastal Plain" ;
+    urnp:conceptIdentifier 14 ;
+    urnp:conceptNotation "18" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/1f678893-bd45-58c3-848c-52f34bea4489>
-    a skos:Concept ;
-    dcterms:identifier 50 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Thrombolite (microbialite) Community of a Coastal Brackish Lake (Lake Clifton)" ;
-    skos:notation "96" ;
-    skos:prefLabel "Thrombolite (microbialite) Community of a Coastal Brackish Lake (Lake Clifton)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/af1ba264-b26f-5f76-af9f-a3dbac0b6eae> ;
+    urnp:conceptDefinition "Thrombolite (microbialite) Community of a Coastal Brackish Lake (Lake Clifton)" ;
+    urnp:conceptIdentifier 50 ;
+    urnp:conceptNotation "96" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/2174fda8-32c9-5944-8a08-85fc05265293>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Aquatic Root Mat Community 2 in Caves of the Leeuwin Naturaliste Ridge" ;
-    skos:notation "9" ;
-    skos:prefLabel "Aquatic Root Mat Community 2 in Caves of the Leeuwin Naturaliste Ridge" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3f7a8b15-605e-524c-a4b4-3fdfac29e8a2> ;
+    urnp:conceptDefinition "Aquatic Root Mat Community 2 in Caves of the Leeuwin Naturaliste Ridge" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "9" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/2418c48f-4a03-5963-a938-2e4a17de8c0d>
-    a skos:Concept ;
-    dcterms:identifier 84 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Natural Temperate Grassland of the South Eastern Highlands" ;
-    skos:notation "152" ;
-    skos:prefLabel "Natural Temperate Grassland of the South Eastern Highlands" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bce3a94d-7f46-5710-93f7-091c55952cbf> ;
+    urnp:conceptDefinition "Natural Temperate Grassland of the South Eastern Highlands" ;
+    urnp:conceptIdentifier 84 ;
+    urnp:conceptNotation "152" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/24fee608-c722-5123-b682-2c83a21a6c6e>
-    a skos:Concept ;
-    dcterms:identifier 7 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Aquatic Root Mat Community 3 in Caves of the Leeuwin Naturaliste Ridge" ;
-    skos:notation "10" ;
-    skos:prefLabel "Aquatic Root Mat Community 3 in Caves of the Leeuwin Naturaliste Ridge" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/cbfff8f8-0808-5990-9801-3e410f61273c> ;
+    urnp:conceptDefinition "Aquatic Root Mat Community 3 in Caves of the Leeuwin Naturaliste Ridge" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "10" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/25286c7e-8d64-5d06-bb05-a58c2eb3418e>
-    a skos:Concept ;
-    dcterms:identifier 59 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Arnhem Plateau Sandstone Shrubland Complex" ;
-    skos:notation "111" ;
-    skos:prefLabel "Arnhem Plateau Sandstone Shrubland Complex" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/de487644-ebd3-51ce-949b-b5d94d22761b> ;
+    urnp:conceptDefinition "Arnhem Plateau Sandstone Shrubland Complex" ;
+    urnp:conceptIdentifier 59 ;
+    urnp:conceptNotation "111" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/26f5b24b-7235-54f3-91e8-52d20e65bac3>
-    a skos:Concept ;
-    dcterms:identifier 83 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Illawarra-Shoalhaven Subtropical Rainforest of the Sydney Basin Bioregion" ;
-    skos:notation "148" ;
-    skos:prefLabel "Illawarra-Shoalhaven Subtropical Rainforest of the Sydney Basin Bioregion" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/fab6754b-be3f-597c-8c6e-cd2d3611d401> ;
+    urnp:conceptDefinition "Illawarra-Shoalhaven Subtropical Rainforest of the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 83 ;
+    urnp:conceptNotation "148" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/27db503b-f6a9-5147-8793-de7147301a63>
-    a skos:Concept ;
-    dcterms:identifier 32 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Eucalyptus ovata - Callitris oblonga Forest" ;
-    skos:notation "40" ;
-    skos:prefLabel "Eucalyptus ovata - Callitris oblonga Forest" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2ecb7998-01f4-5452-afac-5600e38214d0> ;
+    urnp:conceptDefinition "Eucalyptus ovata - Callitris oblonga Forest" ;
+    urnp:conceptIdentifier 32 ;
+    urnp:conceptNotation "40" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/28220183-356b-5970-9685-e98a1bb00cab>
-    a skos:Concept ;
-    dcterms:identifier 27 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Swamp Tea-tree (Melaleuca irbyana) Forest of South-east Queensland" ;
-    skos:notation "33" ;
-    skos:prefLabel "Swamp Tea-tree (Melaleuca irbyana) Forest of South-east Queensland" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/26879f53-bc84-52cb-8b7d-c9ab0efb8bc4> ;
+    urnp:conceptDefinition "Swamp Tea-tree (Melaleuca irbyana) Forest of South-east Queensland" ;
+    urnp:conceptIdentifier 27 ;
+    urnp:conceptNotation "33" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/2bafd329-905c-5b69-8483-ea8a639d77f7>
-    a skos:Concept ;
-    dcterms:identifier 9 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Aquatic Root Mat Community in Caves of the Swan Coastal Plain" ;
-    skos:notation "12" ;
-    skos:prefLabel "Aquatic Root Mat Community in Caves of the Swan Coastal Plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c42f3797-211b-5690-b3b1-92756d663481> ;
+    urnp:conceptDefinition "Aquatic Root Mat Community in Caves of the Swan Coastal Plain" ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "12" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/384f2c72-15a2-507d-bbad-fec7e352e182>
-    a skos:Concept ;
-    dcterms:identifier 11 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Perched Wetlands of the Wheatbelt region with extensive stands of living sheoak and paperbark across the lake floor (Toolibin Lake)" ;
-    skos:notation "15" ;
-    skos:prefLabel "Perched Wetlands of the Wheatbelt region with extensive stands of living sheoak and paperbark across the lake floor (Toolibin Lake)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d99a868e-1b77-599c-bad3-7ab0c526c479> ;
+    urnp:conceptDefinition "Perched Wetlands of the Wheatbelt region with extensive stands of living sheoak and paperbark across the lake floor (Toolibin Lake)" ;
+    urnp:conceptIdentifier 11 ;
+    urnp:conceptNotation "15" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/39ec2694-fb81-5156-99b6-b93a30fbeaeb>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Eastern Suburbs Banksia Scrub of the Sydney Region" ;
-    skos:notation "2" ;
-    skos:prefLabel "Eastern Suburbs Banksia Scrub of the Sydney Region" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f309efd3-601f-5f35-b9d8-a2df4a7b6dc7> ;
+    urnp:conceptDefinition "Eastern Suburbs Banksia Scrub of the Sydney Region" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
 .
 
 <https://linked.data.gov.au/def/nrm/3ccd4191-eee8-5be1-8ed4-9932d08e99d8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/033983fe-94ef-568f-b10b-1cb1e677131c> ;
+    urnp:conceptDefinition "Aquatic Root Mat Community 1 in Caves of the Leeuwin Naturaliste Ridge" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "6" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/435e82b8-d2b6-5e0c-9c29-59636fbffd7c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f53c62e4-73fb-5692-8a01-1c7cdeaff1cb> ;
+    urnp:conceptDefinition "Natural Grasslands of the Murray Valley Plains" ;
+    urnp:conceptIdentifier 61 ;
+    urnp:conceptNotation "117" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/46570f2a-5135-56b2-a2a1-a980149ce1b7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3e5d5a47-9015-596b-8832-422cc136cd35> ;
+    urnp:conceptDefinition "Natural grasslands on basalt and fine-textured alluvial plains of northern New South Wales and southern Queensland" ;
+    urnp:conceptIdentifier 49 ;
+    urnp:conceptNotation "88" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/46c2aaa0-20d6-51a4-8870-e529b5654651>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e8a4022a-4571-545e-b042-dc161977c8c2> ;
+    urnp:conceptDefinition "Littoral Rainforest and Coastal Vine Thickets of Eastern Australia" ;
+    urnp:conceptIdentifier 44 ;
+    urnp:conceptNotation "76" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/4b176c0c-1426-5476-82eb-0c40ad6fd77f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1f14eb99-a4f8-5aad-a234-780481af31fc> ;
+    urnp:conceptDefinition "Elderslie Banksia Scrub Forest in the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 81 ;
+    urnp:conceptNotation "145" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/4b8b63c8-1600-538b-8dc7-d7d8306cd0e8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/aaae81b2-f8bd-528a-9eb8-d343fbf05fb1> ;
+    urnp:conceptDefinition "Lowland Rainforest of Subtropical Australia" ;
+    urnp:conceptIdentifier 54 ;
+    urnp:conceptNotation "101" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/4c323e69-2a65-50e5-8e33-c86adfbf59f1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f73703d6-8839-535f-ac60-c412c435f786> ;
+    urnp:conceptDefinition "Lowland Grassy Woodland in the South East Corner Bioregion" ;
+    urnp:conceptIdentifier 46 ;
+    urnp:conceptNotation "82" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/4dfcd0f0-1d53-5e85-8ff4-272cd2f2ca87>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ebdd6523-9508-5e5d-9193-bb7f1bf1b759> ;
+    urnp:conceptDefinition "Scott River Ironstone Association" ;
+    urnp:conceptIdentifier 66 ;
+    urnp:conceptNotation "123" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/4e324235-401f-523f-b866-2c8a59e77ee9>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/47eb83c5-011a-51ab-8cb2-9c12ebaf5e42> ;
+    urnp:conceptDefinition "Warkworth Sands Woodland of the Hunter Valley" ;
+    urnp:conceptIdentifier 79 ;
+    urnp:conceptNotation "143" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/5245d3d3-5998-53a0-b97d-63f898e61259>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/63576416-c9ec-5dd7-8562-61f27bd9a3d3> ;
+    urnp:conceptDefinition "Grassy Eucalypt Woodland of the Victorian Volcanic Plain" ;
+    urnp:conceptIdentifier 36 ;
+    urnp:conceptNotation "46" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/5477b2e6-402f-5af8-9f8e-ac88410ca4db>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3411d815-6497-5a6b-88e2-95c8b02fc349> ;
+    urnp:conceptDefinition "Monsoon vine thickets on the coastal sand dunes of Dampier Peninsula" ;
+    urnp:conceptIdentifier 56 ;
+    urnp:conceptNotation "105" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/5998fc64-c83c-539d-a4d9-cac595b937ca>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7cd29644-7280-518f-857e-3897a419381c> ;
+    urnp:conceptDefinition "Grey Box (Eucalyptus microcarpa) Grassy Woodlands and Derived Native Grasslands of South-eastern Australia" ;
+    urnp:conceptIdentifier 48 ;
+    urnp:conceptNotation "86" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/6226e231-a9ed-510f-b253-ef5cc5ba2abc>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/36b53903-9e9c-5186-bf58-9fc6ea759970> ;
+    urnp:conceptDefinition "Kangaroo Island Narrow-leaved Mallee (Eucalyptus cneorifolia) Woodland" ;
+    urnp:conceptIdentifier 55 ;
+    urnp:conceptNotation "102" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/6289bfc7-34f3-5a76-bce5-f7c276d454da>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f4281c50-f4a1-56db-940c-320cb6dde3fc> ;
+    urnp:conceptDefinition "Gippsland Red Gum (Eucalyptus tereticornis subsp. mediana) Grassy Woodland and Associated Native Grassland" ;
+    urnp:conceptIdentifier 42 ;
+    urnp:conceptNotation "73" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/63b6432c-1e7c-5c5e-b355-7793f93b9282>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f1f45045-482d-5745-854d-af09aca742e7> ;
+    urnp:conceptDefinition "Shrublands and Woodlands on Perth to Gingin ironstone (Perth to Gingin ironstone association) of the Swan Coastal Plain" ;
+    urnp:conceptIdentifier 18 ;
+    urnp:conceptNotation "22" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/64fb407e-a254-5e96-b05d-4a91abed410b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8f0b81ee-29eb-5f8d-b236-0f7603b19c1d> ;
+    urnp:conceptDefinition "Castlereagh Scribbly Gum and Agnes Banks Woodlands of the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 63 ;
+    urnp:conceptNotation "119" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/65f40c76-dae6-5f38-8ad9-8fe690bd9972>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/32372c00-d0ad-5840-b4c0-171e1bae3700> ;
+    urnp:conceptDefinition "Temperate Highland Peat Swamps on Sandstone" ;
+    urnp:conceptIdentifier 26 ;
+    urnp:conceptNotation "32" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/6b7ab5f2-d777-5c9f-8b3d-6d8d3a2a5f71>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/46aa2dcd-9cbe-5a20-bdb0-2ff14104fd06> ;
+    urnp:conceptDefinition "New England Peppermint (Eucalyptus nova-anglica) Grassy Woodlands" ;
+    urnp:conceptIdentifier 47 ;
+    urnp:conceptNotation "83" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/6c87b7cc-a03b-5612-9c61-833499963e7f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b3c93b43-cc58-526f-bea9-2cc8cbd87adb> ;
+    urnp:conceptDefinition "Eucalypt Woodlands of the Western Australian Wheatbelt" ;
+    urnp:conceptIdentifier 70 ;
+    urnp:conceptNotation "128" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/74703e05-316a-5f90-a38b-58cfb58b3bc5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bb153d7d-a844-5439-a682-cac51679485d> ;
+    urnp:conceptDefinition "Central Hunter Valley eucalypt forest and woodland" ;
+    urnp:conceptIdentifier 72 ;
+    urnp:conceptNotation "130" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/752affd5-b0f9-5fef-ac1f-493ebfeadb69>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c8aa7262-b1be-520b-b91c-48355ef4aeeb> ;
+    urnp:conceptDefinition "Subtropical and Temperate Coastal Saltmarsh" ;
+    urnp:conceptIdentifier 62 ;
+    urnp:conceptNotation "118" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/78ba53e6-db10-511b-a84d-d2a413db74e2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/382f171b-67e8-5eb5-a970-0cae9fe0787e> ;
+    urnp:conceptDefinition "Illawarra and south coast lowland forest and woodland ecological community" ;
+    urnp:conceptIdentifier 80 ;
+    urnp:conceptNotation "144" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/80e25f9f-2889-5ba4-aa94-98b746f77b3a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e162016f-a612-5577-a461-7e50982ab8c2> ;
+    urnp:conceptDefinition "Semi-evergreen vine thickets of the Brigalow Belt (North and South) and Nandewar Bioregions" ;
+    urnp:conceptIdentifier 20 ;
+    urnp:conceptNotation "24" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/832c1a87-5d80-5a3f-9f3f-dc00ad6cecdd>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/38d053a5-cddd-5937-a2c3-a63bec6e4dff> ;
+    urnp:conceptDefinition "Tuart (Eucalyptus gomphocephala) Woodlands and Forests of the Swan Coastal Plain ecological community" ;
+    urnp:conceptIdentifier 85 ;
+    urnp:conceptNotation "153" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/85a05a2f-351e-54e1-a8d8-4a99509e7e1f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d70f4ed5-9be5-591d-ab7e-ccb66966c3c1> ;
+    urnp:conceptDefinition "Banksia Woodlands of the Swan Coastal Plain ecological community" ;
+    urnp:conceptIdentifier 73 ;
+    urnp:conceptNotation "131" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/8773eefd-e770-5827-b945-19a455197fac>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a142a43c-00fd-59aa-b7bf-caeae143a79c> ;
+    urnp:conceptDefinition "Clay Pans of the Swan Coastal Plain" ;
+    urnp:conceptIdentifier 64 ;
+    urnp:conceptNotation "121" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/98f3ccae-73b6-5a7c-9829-00cc7bb0d42d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/939ec922-b6d1-5628-aa8b-66336b4ce47c> ;
+    urnp:conceptDefinition "Buloke Woodlands of the Riverina and Murray-Darling Depression Bioregions" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "3" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9ba0fb3e-d072-5c25-86d2-12ee327f70f1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a5628ade-8ea9-5912-8d8c-f767ad4cab20> ;
+    urnp:conceptDefinition "Silurian Limestone Pomaderris Shrubland of the South East Corner and Australian Alps Bioregions" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "7" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9e059c78-1587-5a5a-865a-13f049163de4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8446a046-87f0-56f9-a475-a933458ea510> ;
+    urnp:conceptDefinition "Natural Temperate Grassland of the Victorian Volcanic Plain" ;
+    urnp:conceptIdentifier 33 ;
+    urnp:conceptNotation "42" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9e53b5cf-32cc-5eaa-8a56-aabee5dcc9d3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1eb0ad28-da37-5677-b669-f1ad79b6b137> ;
+    urnp:conceptDefinition "Western Sydney Dry Rainforest and Moist Woodland on Shale" ;
+    urnp:conceptIdentifier 57 ;
+    urnp:conceptNotation "106" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a06523d7-1900-5ae1-b0b2-84e465b965fd>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0e54fb7c-87e2-5e05-ad74-cbff166c7b31> ;
+    urnp:conceptDefinition "Weeping Myall Woodlands" ;
+    urnp:conceptIdentifier 52 ;
+    urnp:conceptNotation "98" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a075fd48-d3dc-58aa-aeeb-af669e22132e>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8d63b528-de0a-57d3-a25c-1a639ab05f94> ;
+    urnp:conceptDefinition "Shrublands and Woodlands on Muchea Limestone of the Swan Coastal Plain" ;
+    urnp:conceptIdentifier 17 ;
+    urnp:conceptNotation "21" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a3a3322c-956e-5e32-9f15-a8dbc2712b21>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5742751f-0894-52db-942c-a3cc53cb6a57> ;
+    urnp:conceptDefinition "Assemblages of plants and invertebrate animals of tumulus (organic mound) springs of the Swan Coastal Plain" ;
+    urnp:conceptIdentifier 12 ;
+    urnp:conceptNotation "16" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a507d0f2-2627-5da9-b8de-5de524a55a30>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e1015693-fe56-59f2-8106-a6a614ab976d> ;
+    urnp:conceptDefinition "Alpine Sphagnum Bogs and Associated Fens" ;
+    urnp:conceptIdentifier 23 ;
+    urnp:conceptNotation "29" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ac211ac7-6a49-556e-bf29-1bc65e1bd7c3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a466b863-1b99-55ae-8c15-4090c4885629> ;
+    urnp:conceptDefinition "Poplar Box Grassy Woodland on Alluvial Plains" ;
+    urnp:conceptIdentifier 77 ;
+    urnp:conceptNotation "141" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ac93a0e6-dcc7-50a5-aec0-315973c8f2d3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/615d6fea-2ab6-5fa5-a731-09ee9fce4208> ;
+    urnp:conceptDefinition "Brigalow (Acacia harpophylla dominant and co-dominant)" ;
+    urnp:conceptIdentifier 22 ;
+    urnp:conceptNotation "28" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ad3b397c-2c85-5522-ac5b-c9bf1b032281>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/fa4448ed-3642-54d9-8c75-a252eb782a22> ;
+    urnp:conceptDefinition "Proteaceae Dominated Kwongkan Shrublands of the Southeast Coastal Floristic Province of Western Australia" ;
+    urnp:conceptIdentifier 68 ;
+    urnp:conceptNotation "126" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ae694d5b-d8ea-57f8-a8e4-a328620e0262>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1026a6b2-5851-54b7-acc1-fbf2a20547cd> ;
+    urnp:conceptDefinition "The community of native species dependent on natural discharge of groundwater from the Great Artesian Basin" ;
+    urnp:conceptIdentifier 21 ;
+    urnp:conceptNotation "26" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b510a6e5-23c2-5c89-b80e-9048f7bac2d2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/51e57754-4869-5c6d-a040-7e310dbb7f50> ;
+    urnp:conceptDefinition "Upland Wetlands of the New England Tablelands (New England Tableland Bioregion) and the Monaro Plateau (South Eastern Highlands Bioregion)" ;
+    urnp:conceptIdentifier 31 ;
+    urnp:conceptNotation "39" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/bad80742-92ae-524e-aedb-4ed0757daa5a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f03ae36b-ad4e-5816-a5eb-47f7b7b2438a> ;
+    urnp:conceptDefinition "Hunter Valley Weeping Myall (Acacia pendula) Woodland" ;
+    urnp:conceptIdentifier 35 ;
+    urnp:conceptNotation "44" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/bb834e96-ec7e-5fd7-9d66-7be02448ec1b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5db4efc6-1e05-59dc-a848-e0b6ed7608f7> ;
+    urnp:conceptDefinition "White Box-Yellow Box-Blakely's Red Gum Grassy Woodland and Derived Native Grassland" ;
+    urnp:conceptIdentifier 34 ;
+    urnp:conceptNotation "43" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/bccca797-b63f-501d-bf45-45faf0a2b8ee>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ce4bb4fb-bb78-55c9-9a96-f44139104635> ;
+    urnp:conceptDefinition "Blue Gum High Forest of the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 37 ;
+    urnp:conceptNotation "47" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/bde42a89-4bba-53c5-8805-e9b3a545be2b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/20b245f4-7b0c-5fd6-9a39-9e1166d7a281> ;
+    urnp:conceptDefinition "Mabi Forest (Complex Notophyll Vine Forest 5b)" ;
+    urnp:conceptIdentifier 24 ;
+    urnp:conceptNotation "30" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/be2ae11c-923b-59bb-a623-011b0ca63c47>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c9df16e6-6d74-5a2c-b1c8-891ab2e2b09a> ;
+    urnp:conceptDefinition "Giant Kelp Marine Forests of South East Australia" ;
+    urnp:conceptIdentifier 58 ;
+    urnp:conceptNotation "107" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/be4fe63d-4aed-5ed0-ac8e-19ec1c60de9a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a842f300-a3ca-5ba6-b433-03fa1dfbe3b3> ;
+    urnp:conceptDefinition "Natural Damp Grassland of the Victorian Coastal Plains" ;
+    urnp:conceptIdentifier 75 ;
+    urnp:conceptNotation "133" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/beb17a20-1dfc-58bd-ab6e-ed3f72c20833>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/994c913d-d564-59df-ae45-e0105ef91b4a> ;
+    urnp:conceptDefinition "Eyre Peninsula Blue Gum (Eucalyptus petiolaris) Woodland" ;
+    urnp:conceptIdentifier 67 ;
+    urnp:conceptNotation "124" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/bf0c7dee-5a5b-5077-bccc-2043e095c3d1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a36f6467-dfab-54c7-829c-781a4479ae97> ;
+    urnp:conceptDefinition "Aquatic Root Mat Community 4 in Caves of the Leeuwin Naturaliste Ridge" ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "11" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c25b53f7-9296-532b-a62c-67da1d4a60b1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/35af83a2-c6c0-5250-a15b-4334b9c6af93> ;
+    urnp:conceptDefinition "Natural Grasslands of the Queensland Central Highlands and northern Fitzroy Basin" ;
+    urnp:conceptIdentifier 53 ;
+    urnp:conceptNotation "99" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c9cee434-db26-549e-b6cc-55d5ac126f30>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3302b0a2-913d-5f06-a190-162a6c5ca6a4> ;
+    urnp:conceptDefinition "Thrombolite (microbial) community of coastal freshwater lakes of the Swan Coastal Plain (Lake Richmond)" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "8" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/cea17b3c-bfa4-58a5-b72e-cd6090f834d4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e6778081-24fe-547d-9db1-c1063245c95a> ;
+    urnp:conceptDefinition "Sedgelands in Holocene dune swales of the southern Swan Coastal Plain" ;
+    urnp:conceptIdentifier 15 ;
+    urnp:conceptNotation "19" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/cfcf101a-2d87-5ece-a837-1b580ae6d912>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b8b33c76-93a8-5ad2-9106-74e7ced01862> ;
+    urnp:conceptDefinition "Cumberland Plain Shale Woodlands and Shale-Gravel Transition Forest" ;
+    urnp:conceptIdentifier 60 ;
+    urnp:conceptNotation "112" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/d238f67d-f523-561b-ade2-39adb6edc8b2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1f7d4a47-73f6-5363-b612-3787d63f643d> ;
+    urnp:conceptDefinition "Coastal Upland Swamps in the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 76 ;
+    urnp:conceptNotation "140" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/d262e167-ceb9-5ab5-b5cf-16d52f8b3b43>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/41a94f69-89d7-5a07-9896-4b044f3ab41e> ;
+    urnp:conceptDefinition "Shrublands on southern Swan Coastal Plain ironstones" ;
+    urnp:conceptIdentifier 19 ;
+    urnp:conceptNotation "23" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/dfcf7c6b-c105-55b8-b145-01fa9749fbb7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d48ed60e-6272-5751-b26d-2975ec7ce744> ;
+    urnp:conceptDefinition "Assemblages of species associated with open-coast salt-wedge estuaries of western and central Victoria ecological community" ;
+    urnp:conceptIdentifier 74 ;
+    urnp:conceptNotation "132" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e3d04a42-f0e5-580e-a3f9-594e0a17d200>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b6451a19-1b2a-53ba-baaa-7257eab78d4b> ;
+    urnp:conceptDefinition "Swamps of the Fleurieu Peninsula" ;
+    urnp:conceptIdentifier 25 ;
+    urnp:conceptNotation "31" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e4a96624-7951-5398-8ee1-7de12db9ff4a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/225f9cf2-ccf1-5325-9f96-fe704d673ff5> ;
+    urnp:conceptDefinition "Broad leaf tea-tree (Melaleuca viridiflora) woodlands in high rainfall coastal north Queensland" ;
+    urnp:conceptIdentifier 65 ;
+    urnp:conceptNotation "122" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e901235f-f026-59bf-8d79-a20f901f50c7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f40a5644-6e65-5b17-a1e2-287122620e55> ;
+    urnp:conceptDefinition "Iron-grass Natural Temperate Grassland of South Australia" ;
+    urnp:conceptIdentifier 29 ;
+    urnp:conceptNotation "37" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f064954e-0dcc-5b22-bb96-ae673f9ea49b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5e06b364-9440-5cc3-93b9-0c2b822cfa49> ;
+    urnp:conceptDefinition "Seasonal Herbaceous Wetlands (Freshwater) of the Temperate Lowland Plains" ;
+    urnp:conceptIdentifier 51 ;
+    urnp:conceptNotation "97" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f24c9d41-2f7f-5d91-979d-e88100421139>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ffc6160b-d262-5496-a41d-88a4105042a0> ;
+    urnp:conceptDefinition "Upland Basalt Eucalypt Forests of the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 38 ;
+    urnp:conceptNotation "60" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f641cdc9-36eb-5767-8387-e21c84fdf04b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/449c1157-ca8f-5ce4-bc81-0a982bd12705> ;
+    urnp:conceptDefinition "Shrublands and Woodlands of the eastern Swan Coastal Plain" ;
+    urnp:conceptIdentifier 16 ;
+    urnp:conceptNotation "20" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f6b63b2b-375d-5ef5-805c-564ba89e6506>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e3189b04-58d9-542c-b582-2aa715035381> ;
+    urnp:conceptDefinition "Coolibah - Black Box Woodlands of the Darling Riverine Plains and the Brigalow Belt South Bioregions" ;
+    urnp:conceptIdentifier 41 ;
+    urnp:conceptNotation "66" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f8768a2d-92d7-5108-958d-da13cd21fcc5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e50877f3-9945-588b-9cf8-5b55b6753801> ;
+    urnp:conceptDefinition "Cooks River/Castlereagh Ironbark Forest of the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 71 ;
+    urnp:conceptNotation "129" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fd5c292a-35db-5690-8633-76e267611c83>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4e8da8cf-553e-503a-8ab9-2a2d63982540> ;
+    urnp:conceptDefinition "Robertson Rainforest in the Sydney Basin Bioregion" ;
+    urnp:conceptIdentifier 39 ;
+    urnp:conceptNotation "61" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+.
+
+<https://linked.data.gov.au/def/nrm/033983fe-94ef-568f-b10b-1cb1e677131c>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
@@ -353,326 +953,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/435e82b8-d2b6-5e0c-9c29-59636fbffd7c>
-    a skos:Concept ;
-    dcterms:identifier 61 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Natural Grasslands of the Murray Valley Plains" ;
-    skos:notation "117" ;
-    skos:prefLabel "Natural Grasslands of the Murray Valley Plains" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/46570f2a-5135-56b2-a2a1-a980149ce1b7>
-    a skos:Concept ;
-    dcterms:identifier 49 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Natural grasslands on basalt and fine-textured alluvial plains of northern New South Wales and southern Queensland" ;
-    skos:notation "88" ;
-    skos:prefLabel "Natural grasslands on basalt and fine-textured alluvial plains of northern New South Wales and southern Queensland" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/46c2aaa0-20d6-51a4-8870-e529b5654651>
-    a skos:Concept ;
-    dcterms:identifier 44 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Littoral Rainforest and Coastal Vine Thickets of Eastern Australia" ;
-    skos:notation "76" ;
-    skos:prefLabel "Littoral Rainforest and Coastal Vine Thickets of Eastern Australia" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/4b176c0c-1426-5476-82eb-0c40ad6fd77f>
-    a skos:Concept ;
-    dcterms:identifier 81 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Elderslie Banksia Scrub Forest in the Sydney Basin Bioregion" ;
-    skos:notation "145" ;
-    skos:prefLabel "Elderslie Banksia Scrub Forest in the Sydney Basin Bioregion" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/4b8b63c8-1600-538b-8dc7-d7d8306cd0e8>
-    a skos:Concept ;
-    dcterms:identifier 54 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Lowland Rainforest of Subtropical Australia" ;
-    skos:notation "101" ;
-    skos:prefLabel "Lowland Rainforest of Subtropical Australia" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/4c323e69-2a65-50e5-8e33-c86adfbf59f1>
-    a skos:Concept ;
-    dcterms:identifier 46 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Lowland Grassy Woodland in the South East Corner Bioregion" ;
-    skos:notation "82" ;
-    skos:prefLabel "Lowland Grassy Woodland in the South East Corner Bioregion" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/4dfcd0f0-1d53-5e85-8ff4-272cd2f2ca87>
-    a skos:Concept ;
-    dcterms:identifier 66 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Scott River Ironstone Association" ;
-    skos:notation "123" ;
-    skos:prefLabel "Scott River Ironstone Association" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/4e324235-401f-523f-b866-2c8a59e77ee9>
-    a skos:Concept ;
-    dcterms:identifier 79 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Warkworth Sands Woodland of the Hunter Valley" ;
-    skos:notation "143" ;
-    skos:prefLabel "Warkworth Sands Woodland of the Hunter Valley" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/5245d3d3-5998-53a0-b97d-63f898e61259>
-    a skos:Concept ;
-    dcterms:identifier 36 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Grassy Eucalypt Woodland of the Victorian Volcanic Plain" ;
-    skos:notation "46" ;
-    skos:prefLabel "Grassy Eucalypt Woodland of the Victorian Volcanic Plain" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/5477b2e6-402f-5af8-9f8e-ac88410ca4db>
-    a skos:Concept ;
-    dcterms:identifier 56 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Monsoon vine thickets on the coastal sand dunes of Dampier Peninsula" ;
-    skos:notation "105" ;
-    skos:prefLabel "Monsoon vine thickets on the coastal sand dunes of Dampier Peninsula" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/5998fc64-c83c-539d-a4d9-cac595b937ca>
-    a skos:Concept ;
-    dcterms:identifier 48 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Grey Box (Eucalyptus microcarpa) Grassy Woodlands and Derived Native Grasslands of South-eastern Australia" ;
-    skos:notation "86" ;
-    skos:prefLabel "Grey Box (Eucalyptus microcarpa) Grassy Woodlands and Derived Native Grasslands of South-eastern Australia" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/6226e231-a9ed-510f-b253-ef5cc5ba2abc>
-    a skos:Concept ;
-    dcterms:identifier 55 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Kangaroo Island Narrow-leaved Mallee (Eucalyptus cneorifolia) Woodland" ;
-    skos:notation "102" ;
-    skos:prefLabel "Kangaroo Island Narrow-leaved Mallee (Eucalyptus cneorifolia) Woodland" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/6289bfc7-34f3-5a76-bce5-f7c276d454da>
-    a skos:Concept ;
-    dcterms:identifier 42 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Gippsland Red Gum (Eucalyptus tereticornis subsp. mediana) Grassy Woodland and Associated Native Grassland" ;
-    skos:notation "73" ;
-    skos:prefLabel "Gippsland Red Gum (Eucalyptus tereticornis subsp. mediana) Grassy Woodland and Associated Native Grassland" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/63b6432c-1e7c-5c5e-b355-7793f93b9282>
-    a skos:Concept ;
-    dcterms:identifier 18 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Shrublands and Woodlands on Perth to Gingin ironstone (Perth to Gingin ironstone association) of the Swan Coastal Plain" ;
-    skos:notation "22" ;
-    skos:prefLabel "Shrublands and Woodlands on Perth to Gingin ironstone (Perth to Gingin ironstone association) of the Swan Coastal Plain" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/64fb407e-a254-5e96-b05d-4a91abed410b>
-    a skos:Concept ;
-    dcterms:identifier 63 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Castlereagh Scribbly Gum and Agnes Banks Woodlands of the Sydney Basin Bioregion" ;
-    skos:notation "119" ;
-    skos:prefLabel "Castlereagh Scribbly Gum and Agnes Banks Woodlands of the Sydney Basin Bioregion" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/65f40c76-dae6-5f38-8ad9-8fe690bd9972>
-    a skos:Concept ;
-    dcterms:identifier 26 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Temperate Highland Peat Swamps on Sandstone" ;
-    skos:notation "32" ;
-    skos:prefLabel "Temperate Highland Peat Swamps on Sandstone" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/6b7ab5f2-d777-5c9f-8b3d-6d8d3a2a5f71>
-    a skos:Concept ;
-    dcterms:identifier 47 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "New England Peppermint (Eucalyptus nova-anglica) Grassy Woodlands" ;
-    skos:notation "83" ;
-    skos:prefLabel "New England Peppermint (Eucalyptus nova-anglica) Grassy Woodlands" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/6c87b7cc-a03b-5612-9c61-833499963e7f>
-    a skos:Concept ;
-    dcterms:identifier 70 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Eucalypt Woodlands of the Western Australian Wheatbelt" ;
-    skos:notation "128" ;
-    skos:prefLabel "Eucalypt Woodlands of the Western Australian Wheatbelt" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/74703e05-316a-5f90-a38b-58cfb58b3bc5>
-    a skos:Concept ;
-    dcterms:identifier 72 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Central Hunter Valley eucalypt forest and woodland" ;
-    skos:notation "130" ;
-    skos:prefLabel "Central Hunter Valley eucalypt forest and woodland" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/752affd5-b0f9-5fef-ac1f-493ebfeadb69>
-    a skos:Concept ;
-    dcterms:identifier 62 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Subtropical and Temperate Coastal Saltmarsh" ;
-    skos:notation "118" ;
-    skos:prefLabel "Subtropical and Temperate Coastal Saltmarsh" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/78ba53e6-db10-511b-a84d-d2a413db74e2>
-    a skos:Concept ;
-    dcterms:identifier 80 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Illawarra and south coast lowland forest and woodland ecological community" ;
-    skos:notation "144" ;
-    skos:prefLabel "Illawarra and south coast lowland forest and woodland ecological community" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/80e25f9f-2889-5ba4-aa94-98b746f77b3a>
-    a skos:Concept ;
-    dcterms:identifier 20 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Semi-evergreen vine thickets of the Brigalow Belt (North and South) and Nandewar Bioregions" ;
-    skos:notation "24" ;
-    skos:prefLabel "Semi-evergreen vine thickets of the Brigalow Belt (North and South) and Nandewar Bioregions" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/832c1a87-5d80-5a3f-9f3f-dc00ad6cecdd>
-    a skos:Concept ;
-    dcterms:identifier 85 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Tuart (Eucalyptus gomphocephala) Woodlands and Forests of the Swan Coastal Plain ecological community" ;
-    skos:notation "153" ;
-    skos:prefLabel "Tuart (Eucalyptus gomphocephala) Woodlands and Forests of the Swan Coastal Plain ecological community" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/85a05a2f-351e-54e1-a8d8-4a99509e7e1f>
-    a skos:Concept ;
-    dcterms:identifier 73 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Banksia Woodlands of the Swan Coastal Plain ecological community" ;
-    skos:notation "131" ;
-    skos:prefLabel "Banksia Woodlands of the Swan Coastal Plain ecological community" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/8773eefd-e770-5827-b945-19a455197fac>
-    a skos:Concept ;
-    dcterms:identifier 64 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Clay Pans of the Swan Coastal Plain" ;
-    skos:notation "121" ;
-    skos:prefLabel "Clay Pans of the Swan Coastal Plain" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/98f3ccae-73b6-5a7c-9829-00cc7bb0d42d>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Buloke Woodlands of the Riverina and Murray-Darling Depression Bioregions" ;
-    skos:notation "3" ;
-    skos:prefLabel "Buloke Woodlands of the Riverina and Murray-Darling Depression Bioregions" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/9ba0fb3e-d072-5c25-86d2-12ee327f70f1>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Silurian Limestone Pomaderris Shrubland of the South East Corner and Australian Alps Bioregions" ;
-    skos:notation "7" ;
-    skos:prefLabel "Silurian Limestone Pomaderris Shrubland of the South East Corner and Australian Alps Bioregions" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/9e059c78-1587-5a5a-865a-13f049163de4>
-    a skos:Concept ;
-    dcterms:identifier 33 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Natural Temperate Grassland of the Victorian Volcanic Plain" ;
-    skos:notation "42" ;
-    skos:prefLabel "Natural Temperate Grassland of the Victorian Volcanic Plain" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/9e53b5cf-32cc-5eaa-8a56-aabee5dcc9d3>
-    a skos:Concept ;
-    dcterms:identifier 57 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Western Sydney Dry Rainforest and Moist Woodland on Shale" ;
-    skos:notation "106" ;
-    skos:prefLabel "Western Sydney Dry Rainforest and Moist Woodland on Shale" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/a06523d7-1900-5ae1-b0b2-84e465b965fd>
+<https://linked.data.gov.au/def/nrm/0e54fb7c-87e2-5e05-ad74-cbff166c7b31>
     a skos:Concept ;
     dcterms:identifier 52 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
@@ -683,73 +964,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a075fd48-d3dc-58aa-aeeb-af669e22132e>
-    a skos:Concept ;
-    dcterms:identifier 17 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Shrublands and Woodlands on Muchea Limestone of the Swan Coastal Plain" ;
-    skos:notation "21" ;
-    skos:prefLabel "Shrublands and Woodlands on Muchea Limestone of the Swan Coastal Plain" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/a3a3322c-956e-5e32-9f15-a8dbc2712b21>
-    a skos:Concept ;
-    dcterms:identifier 12 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Assemblages of plants and invertebrate animals of tumulus (organic mound) springs of the Swan Coastal Plain" ;
-    skos:notation "16" ;
-    skos:prefLabel "Assemblages of plants and invertebrate animals of tumulus (organic mound) springs of the Swan Coastal Plain" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/a507d0f2-2627-5da9-b8de-5de524a55a30>
-    a skos:Concept ;
-    dcterms:identifier 23 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Alpine Sphagnum Bogs and Associated Fens" ;
-    skos:notation "29" ;
-    skos:prefLabel "Alpine Sphagnum Bogs and Associated Fens" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/ac211ac7-6a49-556e-bf29-1bc65e1bd7c3>
-    a skos:Concept ;
-    dcterms:identifier 77 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Poplar Box Grassy Woodland on Alluvial Plains" ;
-    skos:notation "141" ;
-    skos:prefLabel "Poplar Box Grassy Woodland on Alluvial Plains" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/ac93a0e6-dcc7-50a5-aec0-315973c8f2d3>
-    a skos:Concept ;
-    dcterms:identifier 22 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Brigalow (Acacia harpophylla dominant and co-dominant)" ;
-    skos:notation "28" ;
-    skos:prefLabel "Brigalow (Acacia harpophylla dominant and co-dominant)" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/ad3b397c-2c85-5522-ac5b-c9bf1b032281>
-    a skos:Concept ;
-    dcterms:identifier 68 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Proteaceae Dominated Kwongkan Shrublands of the Southeast Coastal Floristic Province of Western Australia" ;
-    skos:notation "126" ;
-    skos:prefLabel "Proteaceae Dominated Kwongkan Shrublands of the Southeast Coastal Floristic Province of Western Australia" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/ae694d5b-d8ea-57f8-a8e4-a328620e0262>
+<https://linked.data.gov.au/def/nrm/1026a6b2-5851-54b7-acc1-fbf2a20547cd>
     a skos:Concept ;
     dcterms:identifier 21 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
@@ -760,150 +975,40 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/b510a6e5-23c2-5c89-b80e-9048f7bac2d2>
+<https://linked.data.gov.au/def/nrm/17b729e4-b89c-5de2-b391-a679d29c956b>
     a skos:Concept ;
-    dcterms:identifier 31 ;
+    dcterms:identifier 30 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Upland Wetlands of the New England Tablelands (New England Tableland Bioregion) and the Monaro Plateau (South Eastern Highlands Bioregion)" ;
-    skos:notation "39" ;
-    skos:prefLabel "Upland Wetlands of the New England Tablelands (New England Tableland Bioregion) and the Monaro Plateau (South Eastern Highlands Bioregion)" ;
+    skos:definition "Turpentine-Ironbark Forest of the Sydney Basin Bioregion" ;
+    skos:notation "38" ;
+    skos:prefLabel "Turpentine-Ironbark Forest of the Sydney Basin Bioregion" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/bad80742-92ae-524e-aedb-4ed0757daa5a>
+<https://linked.data.gov.au/def/nrm/1eb0ad28-da37-5677-b669-f1ad79b6b137>
     a skos:Concept ;
-    dcterms:identifier 35 ;
+    dcterms:identifier 57 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Hunter Valley Weeping Myall (Acacia pendula) Woodland" ;
-    skos:notation "44" ;
-    skos:prefLabel "Hunter Valley Weeping Myall (Acacia pendula) Woodland" ;
+    skos:definition "Western Sydney Dry Rainforest and Moist Woodland on Shale" ;
+    skos:notation "106" ;
+    skos:prefLabel "Western Sydney Dry Rainforest and Moist Woodland on Shale" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/bb834e96-ec7e-5fd7-9d66-7be02448ec1b>
+<https://linked.data.gov.au/def/nrm/1f14eb99-a4f8-5aad-a234-780481af31fc>
     a skos:Concept ;
-    dcterms:identifier 34 ;
+    dcterms:identifier 81 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "White Box-Yellow Box-Blakely's Red Gum Grassy Woodland and Derived Native Grassland" ;
-    skos:notation "43" ;
-    skos:prefLabel "White Box-Yellow Box-Blakely's Red Gum Grassy Woodland and Derived Native Grassland" ;
+    skos:definition "Elderslie Banksia Scrub Forest in the Sydney Basin Bioregion" ;
+    skos:notation "145" ;
+    skos:prefLabel "Elderslie Banksia Scrub Forest in the Sydney Basin Bioregion" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/bccca797-b63f-501d-bf45-45faf0a2b8ee>
-    a skos:Concept ;
-    dcterms:identifier 37 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Blue Gum High Forest of the Sydney Basin Bioregion" ;
-    skos:notation "47" ;
-    skos:prefLabel "Blue Gum High Forest of the Sydney Basin Bioregion" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/bde42a89-4bba-53c5-8805-e9b3a545be2b>
-    a skos:Concept ;
-    dcterms:identifier 24 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Mabi Forest (Complex Notophyll Vine Forest 5b)" ;
-    skos:notation "30" ;
-    skos:prefLabel "Mabi Forest (Complex Notophyll Vine Forest 5b)" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/be2ae11c-923b-59bb-a623-011b0ca63c47>
-    a skos:Concept ;
-    dcterms:identifier 58 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Giant Kelp Marine Forests of South East Australia" ;
-    skos:notation "107" ;
-    skos:prefLabel "Giant Kelp Marine Forests of South East Australia" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/be4fe63d-4aed-5ed0-ac8e-19ec1c60de9a>
-    a skos:Concept ;
-    dcterms:identifier 75 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Natural Damp Grassland of the Victorian Coastal Plains" ;
-    skos:notation "133" ;
-    skos:prefLabel "Natural Damp Grassland of the Victorian Coastal Plains" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/beb17a20-1dfc-58bd-ab6e-ed3f72c20833>
-    a skos:Concept ;
-    dcterms:identifier 67 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Eyre Peninsula Blue Gum (Eucalyptus petiolaris) Woodland" ;
-    skos:notation "124" ;
-    skos:prefLabel "Eyre Peninsula Blue Gum (Eucalyptus petiolaris) Woodland" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/bf0c7dee-5a5b-5077-bccc-2043e095c3d1>
-    a skos:Concept ;
-    dcterms:identifier 8 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Aquatic Root Mat Community 4 in Caves of the Leeuwin Naturaliste Ridge" ;
-    skos:notation "11" ;
-    skos:prefLabel "Aquatic Root Mat Community 4 in Caves of the Leeuwin Naturaliste Ridge" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/c25b53f7-9296-532b-a62c-67da1d4a60b1>
-    a skos:Concept ;
-    dcterms:identifier 53 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Natural Grasslands of the Queensland Central Highlands and northern Fitzroy Basin" ;
-    skos:notation "99" ;
-    skos:prefLabel "Natural Grasslands of the Queensland Central Highlands and northern Fitzroy Basin" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/c9cee434-db26-549e-b6cc-55d5ac126f30>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Thrombolite (microbial) community of coastal freshwater lakes of the Swan Coastal Plain (Lake Richmond)" ;
-    skos:notation "8" ;
-    skos:prefLabel "Thrombolite (microbial) community of coastal freshwater lakes of the Swan Coastal Plain (Lake Richmond)" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/cea17b3c-bfa4-58a5-b72e-cd6090f834d4>
-    a skos:Concept ;
-    dcterms:identifier 15 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Sedgelands in Holocene dune swales of the southern Swan Coastal Plain" ;
-    skos:notation "19" ;
-    skos:prefLabel "Sedgelands in Holocene dune swales of the southern Swan Coastal Plain" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/cfcf101a-2d87-5ece-a837-1b580ae6d912>
-    a skos:Concept ;
-    dcterms:identifier 60 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Cumberland Plain Shale Woodlands and Shale-Gravel Transition Forest" ;
-    skos:notation "112" ;
-    skos:prefLabel "Cumberland Plain Shale Woodlands and Shale-Gravel Transition Forest" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/d238f67d-f523-561b-ade2-39adb6edc8b2>
+<https://linked.data.gov.au/def/nrm/1f7d4a47-73f6-5363-b612-3787d63f643d>
     a skos:Concept ;
     dcterms:identifier 76 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
@@ -914,40 +1019,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/d262e167-ceb9-5ab5-b5cf-16d52f8b3b43>
+<https://linked.data.gov.au/def/nrm/20b245f4-7b0c-5fd6-9a39-9e1166d7a281>
     a skos:Concept ;
-    dcterms:identifier 19 ;
+    dcterms:identifier 24 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Shrublands on southern Swan Coastal Plain ironstones" ;
-    skos:notation "23" ;
-    skos:prefLabel "Shrublands on southern Swan Coastal Plain ironstones" ;
+    skos:definition "Mabi Forest (Complex Notophyll Vine Forest 5b)" ;
+    skos:notation "30" ;
+    skos:prefLabel "Mabi Forest (Complex Notophyll Vine Forest 5b)" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/dfcf7c6b-c105-55b8-b145-01fa9749fbb7>
-    a skos:Concept ;
-    dcterms:identifier 74 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Assemblages of species associated with open-coast salt-wedge estuaries of western and central Victoria ecological community" ;
-    skos:notation "132" ;
-    skos:prefLabel "Assemblages of species associated with open-coast salt-wedge estuaries of western and central Victoria ecological community" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e3d04a42-f0e5-580e-a3f9-594e0a17d200>
-    a skos:Concept ;
-    dcterms:identifier 25 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Swamps of the Fleurieu Peninsula" ;
-    skos:notation "31" ;
-    skos:prefLabel "Swamps of the Fleurieu Peninsula" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e4a96624-7951-5398-8ee1-7de12db9ff4a>
+<https://linked.data.gov.au/def/nrm/225f9cf2-ccf1-5325-9f96-fe704d673ff5>
     a skos:Concept ;
     dcterms:identifier 65 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
@@ -958,40 +1041,161 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/e901235f-f026-59bf-8d79-a20f901f50c7>
+<https://linked.data.gov.au/def/nrm/26879f53-bc84-52cb-8b7d-c9ab0efb8bc4>
     a skos:Concept ;
-    dcterms:identifier 29 ;
+    dcterms:identifier 27 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Iron-grass Natural Temperate Grassland of South Australia" ;
-    skos:notation "37" ;
-    skos:prefLabel "Iron-grass Natural Temperate Grassland of South Australia" ;
+    skos:definition "Swamp Tea-tree (Melaleuca irbyana) Forest of South-east Queensland" ;
+    skos:notation "33" ;
+    skos:prefLabel "Swamp Tea-tree (Melaleuca irbyana) Forest of South-east Queensland" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f064954e-0dcc-5b22-bb96-ae673f9ea49b>
+<https://linked.data.gov.au/def/nrm/2c14c2a7-2dcd-5210-ba46-3c62ab418999>
     a skos:Concept ;
-    dcterms:identifier 51 ;
+    dcterms:identifier 78 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Seasonal Herbaceous Wetlands (Freshwater) of the Temperate Lowland Plains" ;
-    skos:notation "97" ;
-    skos:prefLabel "Seasonal Herbaceous Wetlands (Freshwater) of the Temperate Lowland Plains" ;
+    skos:definition "Coastal Swamp Oak (Casuarina glauca) Forest of New South Wales and South East Queensland ecological community" ;
+    skos:notation "142" ;
+    skos:prefLabel "Coastal Swamp Oak (Casuarina glauca) Forest of New South Wales and South East Queensland ecological community" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f24c9d41-2f7f-5d91-979d-e88100421139>
+<https://linked.data.gov.au/def/nrm/2ecb7998-01f4-5452-afac-5600e38214d0>
     a skos:Concept ;
-    dcterms:identifier 38 ;
+    dcterms:identifier 32 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Upland Basalt Eucalypt Forests of the Sydney Basin Bioregion" ;
-    skos:notation "60" ;
-    skos:prefLabel "Upland Basalt Eucalypt Forests of the Sydney Basin Bioregion" ;
+    skos:definition "Eucalyptus ovata - Callitris oblonga Forest" ;
+    skos:notation "40" ;
+    skos:prefLabel "Eucalyptus ovata - Callitris oblonga Forest" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f641cdc9-36eb-5767-8387-e21c84fdf04b>
+<https://linked.data.gov.au/def/nrm/32372c00-d0ad-5840-b4c0-171e1bae3700>
+    a skos:Concept ;
+    dcterms:identifier 26 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Temperate Highland Peat Swamps on Sandstone" ;
+    skos:notation "32" ;
+    skos:prefLabel "Temperate Highland Peat Swamps on Sandstone" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3302b0a2-913d-5f06-a190-162a6c5ca6a4>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Thrombolite (microbial) community of coastal freshwater lakes of the Swan Coastal Plain (Lake Richmond)" ;
+    skos:notation "8" ;
+    skos:prefLabel "Thrombolite (microbial) community of coastal freshwater lakes of the Swan Coastal Plain (Lake Richmond)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3411d815-6497-5a6b-88e2-95c8b02fc349>
+    a skos:Concept ;
+    dcterms:identifier 56 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Monsoon vine thickets on the coastal sand dunes of Dampier Peninsula" ;
+    skos:notation "105" ;
+    skos:prefLabel "Monsoon vine thickets on the coastal sand dunes of Dampier Peninsula" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/34e0c27c-79cc-5f31-955f-9e9ebb9d409a>
+    a skos:Concept ;
+    dcterms:identifier 43 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Lowland Native Grasslands of Tasmania" ;
+    skos:notation "74" ;
+    skos:prefLabel "Lowland Native Grasslands of Tasmania" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/35af83a2-c6c0-5250-a15b-4334b9c6af93>
+    a skos:Concept ;
+    dcterms:identifier 53 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Natural Grasslands of the Queensland Central Highlands and northern Fitzroy Basin" ;
+    skos:notation "99" ;
+    skos:prefLabel "Natural Grasslands of the Queensland Central Highlands and northern Fitzroy Basin" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/36b53903-9e9c-5186-bf58-9fc6ea759970>
+    a skos:Concept ;
+    dcterms:identifier 55 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Kangaroo Island Narrow-leaved Mallee (Eucalyptus cneorifolia) Woodland" ;
+    skos:notation "102" ;
+    skos:prefLabel "Kangaroo Island Narrow-leaved Mallee (Eucalyptus cneorifolia) Woodland" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/382f171b-67e8-5eb5-a970-0cae9fe0787e>
+    a skos:Concept ;
+    dcterms:identifier 80 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Illawarra and south coast lowland forest and woodland ecological community" ;
+    skos:notation "144" ;
+    skos:prefLabel "Illawarra and south coast lowland forest and woodland ecological community" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/38d053a5-cddd-5937-a2c3-a63bec6e4dff>
+    a skos:Concept ;
+    dcterms:identifier 85 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Tuart (Eucalyptus gomphocephala) Woodlands and Forests of the Swan Coastal Plain ecological community" ;
+    skos:notation "153" ;
+    skos:prefLabel "Tuart (Eucalyptus gomphocephala) Woodlands and Forests of the Swan Coastal Plain ecological community" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3e5d5a47-9015-596b-8832-422cc136cd35>
+    a skos:Concept ;
+    dcterms:identifier 49 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Natural grasslands on basalt and fine-textured alluvial plains of northern New South Wales and southern Queensland" ;
+    skos:notation "88" ;
+    skos:prefLabel "Natural grasslands on basalt and fine-textured alluvial plains of northern New South Wales and southern Queensland" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3f7a8b15-605e-524c-a4b4-3fdfac29e8a2>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Aquatic Root Mat Community 2 in Caves of the Leeuwin Naturaliste Ridge" ;
+    skos:notation "9" ;
+    skos:prefLabel "Aquatic Root Mat Community 2 in Caves of the Leeuwin Naturaliste Ridge" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/41a94f69-89d7-5a07-9896-4b044f3ab41e>
+    a skos:Concept ;
+    dcterms:identifier 19 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Shrublands on southern Swan Coastal Plain ironstones" ;
+    skos:notation "23" ;
+    skos:prefLabel "Shrublands on southern Swan Coastal Plain ironstones" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/449c1157-ca8f-5ce4-bc81-0a982bd12705>
     a skos:Concept ;
     dcterms:identifier 16 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
@@ -1002,7 +1206,502 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f6b63b2b-375d-5ef5-805c-564ba89e6506>
+<https://linked.data.gov.au/def/nrm/46aa2dcd-9cbe-5a20-bdb0-2ff14104fd06>
+    a skos:Concept ;
+    dcterms:identifier 47 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "New England Peppermint (Eucalyptus nova-anglica) Grassy Woodlands" ;
+    skos:notation "83" ;
+    skos:prefLabel "New England Peppermint (Eucalyptus nova-anglica) Grassy Woodlands" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/47eb83c5-011a-51ab-8cb2-9c12ebaf5e42>
+    a skos:Concept ;
+    dcterms:identifier 79 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Warkworth Sands Woodland of the Hunter Valley" ;
+    skos:notation "143" ;
+    skos:prefLabel "Warkworth Sands Woodland of the Hunter Valley" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4e8da8cf-553e-503a-8ab9-2a2d63982540>
+    a skos:Concept ;
+    dcterms:identifier 39 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Robertson Rainforest in the Sydney Basin Bioregion" ;
+    skos:notation "61" ;
+    skos:prefLabel "Robertson Rainforest in the Sydney Basin Bioregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/51e57754-4869-5c6d-a040-7e310dbb7f50>
+    a skos:Concept ;
+    dcterms:identifier 31 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Upland Wetlands of the New England Tablelands (New England Tableland Bioregion) and the Monaro Plateau (South Eastern Highlands Bioregion)" ;
+    skos:notation "39" ;
+    skos:prefLabel "Upland Wetlands of the New England Tablelands (New England Tableland Bioregion) and the Monaro Plateau (South Eastern Highlands Bioregion)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/5742751f-0894-52db-942c-a3cc53cb6a57>
+    a skos:Concept ;
+    dcterms:identifier 12 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Assemblages of plants and invertebrate animals of tumulus (organic mound) springs of the Swan Coastal Plain" ;
+    skos:notation "16" ;
+    skos:prefLabel "Assemblages of plants and invertebrate animals of tumulus (organic mound) springs of the Swan Coastal Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/5db4efc6-1e05-59dc-a848-e0b6ed7608f7>
+    a skos:Concept ;
+    dcterms:identifier 34 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "White Box-Yellow Box-Blakely's Red Gum Grassy Woodland and Derived Native Grassland" ;
+    skos:notation "43" ;
+    skos:prefLabel "White Box-Yellow Box-Blakely's Red Gum Grassy Woodland and Derived Native Grassland" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/5e06b364-9440-5cc3-93b9-0c2b822cfa49>
+    a skos:Concept ;
+    dcterms:identifier 51 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Seasonal Herbaceous Wetlands (Freshwater) of the Temperate Lowland Plains" ;
+    skos:notation "97" ;
+    skos:prefLabel "Seasonal Herbaceous Wetlands (Freshwater) of the Temperate Lowland Plains" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/615d6fea-2ab6-5fa5-a731-09ee9fce4208>
+    a skos:Concept ;
+    dcterms:identifier 22 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Brigalow (Acacia harpophylla dominant and co-dominant)" ;
+    skos:notation "28" ;
+    skos:prefLabel "Brigalow (Acacia harpophylla dominant and co-dominant)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/63576416-c9ec-5dd7-8562-61f27bd9a3d3>
+    a skos:Concept ;
+    dcterms:identifier 36 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Grassy Eucalypt Woodland of the Victorian Volcanic Plain" ;
+    skos:notation "46" ;
+    skos:prefLabel "Grassy Eucalypt Woodland of the Victorian Volcanic Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/65ee36d5-08ba-5b9c-bab8-fd642d120ac1>
+    a skos:Concept ;
+    dcterms:identifier 69 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Posidonia australis seagrass meadows of the Manning-Hawkesbury ecoregion" ;
+    skos:notation "127" ;
+    skos:prefLabel "Posidonia australis seagrass meadows of the Manning-Hawkesbury ecoregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/70ca2de3-9963-53fa-894e-bae53bc887ab>
+    a skos:Concept ;
+    dcterms:identifier 28 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Peppermint Box (Eucalyptus odorata) Grassy Woodland of South Australia" ;
+    skos:notation "36" ;
+    skos:prefLabel "Peppermint Box (Eucalyptus odorata) Grassy Woodland of South Australia" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/7aea6d96-f592-52f5-8420-9e4aef59d2d0>
+    a skos:Concept ;
+    dcterms:identifier 40 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Southern Highlands Shale Forest and Woodland in the Sydney Basin Bioregion" ;
+    skos:notation "62" ;
+    skos:prefLabel "Southern Highlands Shale Forest and Woodland in the Sydney Basin Bioregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/7cd29644-7280-518f-857e-3897a419381c>
+    a skos:Concept ;
+    dcterms:identifier 48 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Grey Box (Eucalyptus microcarpa) Grassy Woodlands and Derived Native Grasslands of South-eastern Australia" ;
+    skos:notation "86" ;
+    skos:prefLabel "Grey Box (Eucalyptus microcarpa) Grassy Woodlands and Derived Native Grasslands of South-eastern Australia" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8446a046-87f0-56f9-a475-a933458ea510>
+    a skos:Concept ;
+    dcterms:identifier 33 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Natural Temperate Grassland of the Victorian Volcanic Plain" ;
+    skos:notation "42" ;
+    skos:prefLabel "Natural Temperate Grassland of the Victorian Volcanic Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/889e6a93-8795-511f-9f69-603cd10d85f4>
+    a skos:Concept ;
+    dcterms:identifier 82 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Shale Sandstone Transition Forest of the Sydney Basin Bioregion" ;
+    skos:notation "146" ;
+    skos:prefLabel "Shale Sandstone Transition Forest of the Sydney Basin Bioregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8d63b528-de0a-57d3-a25c-1a639ab05f94>
+    a skos:Concept ;
+    dcterms:identifier 17 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Shrublands and Woodlands on Muchea Limestone of the Swan Coastal Plain" ;
+    skos:notation "21" ;
+    skos:prefLabel "Shrublands and Woodlands on Muchea Limestone of the Swan Coastal Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8f0b81ee-29eb-5f8d-b236-0f7603b19c1d>
+    a skos:Concept ;
+    dcterms:identifier 63 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Castlereagh Scribbly Gum and Agnes Banks Woodlands of the Sydney Basin Bioregion" ;
+    skos:notation "119" ;
+    skos:prefLabel "Castlereagh Scribbly Gum and Agnes Banks Woodlands of the Sydney Basin Bioregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/939ec922-b6d1-5628-aa8b-66336b4ce47c>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Buloke Woodlands of the Riverina and Murray-Darling Depression Bioregions" ;
+    skos:notation "3" ;
+    skos:prefLabel "Buloke Woodlands of the Riverina and Murray-Darling Depression Bioregions" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/994c913d-d564-59df-ae45-e0105ef91b4a>
+    a skos:Concept ;
+    dcterms:identifier 67 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Eyre Peninsula Blue Gum (Eucalyptus petiolaris) Woodland" ;
+    skos:notation "124" ;
+    skos:prefLabel "Eyre Peninsula Blue Gum (Eucalyptus petiolaris) Woodland" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a142a43c-00fd-59aa-b7bf-caeae143a79c>
+    a skos:Concept ;
+    dcterms:identifier 64 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Clay Pans of the Swan Coastal Plain" ;
+    skos:notation "121" ;
+    skos:prefLabel "Clay Pans of the Swan Coastal Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a36f6467-dfab-54c7-829c-781a4479ae97>
+    a skos:Concept ;
+    dcterms:identifier 8 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Aquatic Root Mat Community 4 in Caves of the Leeuwin Naturaliste Ridge" ;
+    skos:notation "11" ;
+    skos:prefLabel "Aquatic Root Mat Community 4 in Caves of the Leeuwin Naturaliste Ridge" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a466b863-1b99-55ae-8c15-4090c4885629>
+    a skos:Concept ;
+    dcterms:identifier 77 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Poplar Box Grassy Woodland on Alluvial Plains" ;
+    skos:notation "141" ;
+    skos:prefLabel "Poplar Box Grassy Woodland on Alluvial Plains" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a5628ade-8ea9-5912-8d8c-f767ad4cab20>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Silurian Limestone Pomaderris Shrubland of the South East Corner and Australian Alps Bioregions" ;
+    skos:notation "7" ;
+    skos:prefLabel "Silurian Limestone Pomaderris Shrubland of the South East Corner and Australian Alps Bioregions" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a573b112-5511-56f6-80b1-3160594574c2>
+    a skos:Concept ;
+    dcterms:identifier 10 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Eastern Stirling Range Montane Heath and Thicket" ;
+    skos:notation "13" ;
+    skos:prefLabel "Eastern Stirling Range Montane Heath and Thicket" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a842f300-a3ca-5ba6-b433-03fa1dfbe3b3>
+    a skos:Concept ;
+    dcterms:identifier 75 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Natural Damp Grassland of the Victorian Coastal Plains" ;
+    skos:notation "133" ;
+    skos:prefLabel "Natural Damp Grassland of the Victorian Coastal Plains" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/aaae81b2-f8bd-528a-9eb8-d343fbf05fb1>
+    a skos:Concept ;
+    dcterms:identifier 54 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Lowland Rainforest of Subtropical Australia" ;
+    skos:notation "101" ;
+    skos:prefLabel "Lowland Rainforest of Subtropical Australia" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/af1ba264-b26f-5f76-af9f-a3dbac0b6eae>
+    a skos:Concept ;
+    dcterms:identifier 50 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Thrombolite (microbialite) Community of a Coastal Brackish Lake (Lake Clifton)" ;
+    skos:notation "96" ;
+    skos:prefLabel "Thrombolite (microbialite) Community of a Coastal Brackish Lake (Lake Clifton)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b3c93b43-cc58-526f-bea9-2cc8cbd87adb>
+    a skos:Concept ;
+    dcterms:identifier 70 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Eucalypt Woodlands of the Western Australian Wheatbelt" ;
+    skos:notation "128" ;
+    skos:prefLabel "Eucalypt Woodlands of the Western Australian Wheatbelt" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b6451a19-1b2a-53ba-baaa-7257eab78d4b>
+    a skos:Concept ;
+    dcterms:identifier 25 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Swamps of the Fleurieu Peninsula" ;
+    skos:notation "31" ;
+    skos:prefLabel "Swamps of the Fleurieu Peninsula" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b8b33c76-93a8-5ad2-9106-74e7ced01862>
+    a skos:Concept ;
+    dcterms:identifier 60 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Cumberland Plain Shale Woodlands and Shale-Gravel Transition Forest" ;
+    skos:notation "112" ;
+    skos:prefLabel "Cumberland Plain Shale Woodlands and Shale-Gravel Transition Forest" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bb153d7d-a844-5439-a682-cac51679485d>
+    a skos:Concept ;
+    dcterms:identifier 72 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Central Hunter Valley eucalypt forest and woodland" ;
+    skos:notation "130" ;
+    skos:prefLabel "Central Hunter Valley eucalypt forest and woodland" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bce3a94d-7f46-5710-93f7-091c55952cbf>
+    a skos:Concept ;
+    dcterms:identifier 84 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Natural Temperate Grassland of the South Eastern Highlands" ;
+    skos:notation "152" ;
+    skos:prefLabel "Natural Temperate Grassland of the South Eastern Highlands" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c03b76a5-c38d-5bce-9ca9-4522f02e8a4e>
+    a skos:Concept ;
+    dcterms:identifier 13 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Corymbia calophylla - Kingia australis woodlands on heavy soils of the Swan Coastal Plain" ;
+    skos:notation "17" ;
+    skos:prefLabel "Corymbia calophylla - Kingia australis woodlands on heavy soils of the Swan Coastal Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c42f3797-211b-5690-b3b1-92756d663481>
+    a skos:Concept ;
+    dcterms:identifier 9 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Aquatic Root Mat Community in Caves of the Swan Coastal Plain" ;
+    skos:notation "12" ;
+    skos:prefLabel "Aquatic Root Mat Community in Caves of the Swan Coastal Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c8aa7262-b1be-520b-b91c-48355ef4aeeb>
+    a skos:Concept ;
+    dcterms:identifier 62 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Subtropical and Temperate Coastal Saltmarsh" ;
+    skos:notation "118" ;
+    skos:prefLabel "Subtropical and Temperate Coastal Saltmarsh" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c9c37377-a478-5e6e-8220-7f1f28b15eb6>
+    a skos:Concept ;
+    dcterms:identifier 45 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Tasmanian Forests and Woodlands dominated by black gum or Brookers gum (Eucalyptus ovata / E. brookeriana)" ;
+    skos:notation "77" ;
+    skos:prefLabel "Tasmanian Forests and Woodlands dominated by black gum or Brookers gum (Eucalyptus ovata / E. brookeriana)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c9df16e6-6d74-5a2c-b1c8-891ab2e2b09a>
+    a skos:Concept ;
+    dcterms:identifier 58 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Giant Kelp Marine Forests of South East Australia" ;
+    skos:notation "107" ;
+    skos:prefLabel "Giant Kelp Marine Forests of South East Australia" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/cbfff8f8-0808-5990-9801-3e410f61273c>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Aquatic Root Mat Community 3 in Caves of the Leeuwin Naturaliste Ridge" ;
+    skos:notation "10" ;
+    skos:prefLabel "Aquatic Root Mat Community 3 in Caves of the Leeuwin Naturaliste Ridge" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ce4bb4fb-bb78-55c9-9a96-f44139104635>
+    a skos:Concept ;
+    dcterms:identifier 37 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Blue Gum High Forest of the Sydney Basin Bioregion" ;
+    skos:notation "47" ;
+    skos:prefLabel "Blue Gum High Forest of the Sydney Basin Bioregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d48ed60e-6272-5751-b26d-2975ec7ce744>
+    a skos:Concept ;
+    dcterms:identifier 74 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Assemblages of species associated with open-coast salt-wedge estuaries of western and central Victoria ecological community" ;
+    skos:notation "132" ;
+    skos:prefLabel "Assemblages of species associated with open-coast salt-wedge estuaries of western and central Victoria ecological community" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d70f4ed5-9be5-591d-ab7e-ccb66966c3c1>
+    a skos:Concept ;
+    dcterms:identifier 73 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Banksia Woodlands of the Swan Coastal Plain ecological community" ;
+    skos:notation "131" ;
+    skos:prefLabel "Banksia Woodlands of the Swan Coastal Plain ecological community" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d99a868e-1b77-599c-bad3-7ab0c526c479>
+    a skos:Concept ;
+    dcterms:identifier 11 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Perched Wetlands of the Wheatbelt region with extensive stands of living sheoak and paperbark across the lake floor (Toolibin Lake)" ;
+    skos:notation "15" ;
+    skos:prefLabel "Perched Wetlands of the Wheatbelt region with extensive stands of living sheoak and paperbark across the lake floor (Toolibin Lake)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/de487644-ebd3-51ce-949b-b5d94d22761b>
+    a skos:Concept ;
+    dcterms:identifier 59 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Arnhem Plateau Sandstone Shrubland Complex" ;
+    skos:notation "111" ;
+    skos:prefLabel "Arnhem Plateau Sandstone Shrubland Complex" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e1015693-fe56-59f2-8106-a6a614ab976d>
+    a skos:Concept ;
+    dcterms:identifier 23 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Alpine Sphagnum Bogs and Associated Fens" ;
+    skos:notation "29" ;
+    skos:prefLabel "Alpine Sphagnum Bogs and Associated Fens" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e162016f-a612-5577-a461-7e50982ab8c2>
+    a skos:Concept ;
+    dcterms:identifier 20 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Semi-evergreen vine thickets of the Brigalow Belt (North and South) and Nandewar Bioregions" ;
+    skos:notation "24" ;
+    skos:prefLabel "Semi-evergreen vine thickets of the Brigalow Belt (North and South) and Nandewar Bioregions" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e3189b04-58d9-542c-b582-2aa715035381>
     a skos:Concept ;
     dcterms:identifier 41 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
@@ -1013,7 +1712,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f8768a2d-92d7-5108-958d-da13cd21fcc5>
+<https://linked.data.gov.au/def/nrm/e50877f3-9945-588b-9cf8-5b55b6753801>
     a skos:Concept ;
     dcterms:identifier 71 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
@@ -1024,14 +1723,252 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/fd5c292a-35db-5690-8633-76e267611c83>
+<https://linked.data.gov.au/def/nrm/e6778081-24fe-547d-9db1-c1063245c95a>
     a skos:Concept ;
-    dcterms:identifier 39 ;
+    dcterms:identifier 15 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Robertson Rainforest in the Sydney Basin Bioregion" ;
-    skos:notation "61" ;
-    skos:prefLabel "Robertson Rainforest in the Sydney Basin Bioregion" ;
+    skos:definition "Sedgelands in Holocene dune swales of the southern Swan Coastal Plain" ;
+    skos:notation "19" ;
+    skos:prefLabel "Sedgelands in Holocene dune swales of the southern Swan Coastal Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e8a4022a-4571-545e-b042-dc161977c8c2>
+    a skos:Concept ;
+    dcterms:identifier 44 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Littoral Rainforest and Coastal Vine Thickets of Eastern Australia" ;
+    skos:notation "76" ;
+    skos:prefLabel "Littoral Rainforest and Coastal Vine Thickets of Eastern Australia" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ebdd6523-9508-5e5d-9193-bb7f1bf1b759>
+    a skos:Concept ;
+    dcterms:identifier 66 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Scott River Ironstone Association" ;
+    skos:notation "123" ;
+    skos:prefLabel "Scott River Ironstone Association" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f03ae36b-ad4e-5816-a5eb-47f7b7b2438a>
+    a skos:Concept ;
+    dcterms:identifier 35 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Hunter Valley Weeping Myall (Acacia pendula) Woodland" ;
+    skos:notation "44" ;
+    skos:prefLabel "Hunter Valley Weeping Myall (Acacia pendula) Woodland" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f04c4c6f-563c-5c2d-94b4-21a5490a7878>
+    a skos:Concept ;
+    dcterms:identifier 14 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Corymbia calophylla - Xanthorrhoea preissii woodlands and shrublands of the Swan Coastal Plain" ;
+    skos:notation "18" ;
+    skos:prefLabel "Corymbia calophylla - Xanthorrhoea preissii woodlands and shrublands of the Swan Coastal Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f1f45045-482d-5745-854d-af09aca742e7>
+    a skos:Concept ;
+    dcterms:identifier 18 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Shrublands and Woodlands on Perth to Gingin ironstone (Perth to Gingin ironstone association) of the Swan Coastal Plain" ;
+    skos:notation "22" ;
+    skos:prefLabel "Shrublands and Woodlands on Perth to Gingin ironstone (Perth to Gingin ironstone association) of the Swan Coastal Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f309efd3-601f-5f35-b9d8-a2df4a7b6dc7>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Eastern Suburbs Banksia Scrub of the Sydney Region" ;
+    skos:notation "2" ;
+    skos:prefLabel "Eastern Suburbs Banksia Scrub of the Sydney Region" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f40a5644-6e65-5b17-a1e2-287122620e55>
+    a skos:Concept ;
+    dcterms:identifier 29 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Iron-grass Natural Temperate Grassland of South Australia" ;
+    skos:notation "37" ;
+    skos:prefLabel "Iron-grass Natural Temperate Grassland of South Australia" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f4281c50-f4a1-56db-940c-320cb6dde3fc>
+    a skos:Concept ;
+    dcterms:identifier 42 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Gippsland Red Gum (Eucalyptus tereticornis subsp. mediana) Grassy Woodland and Associated Native Grassland" ;
+    skos:notation "73" ;
+    skos:prefLabel "Gippsland Red Gum (Eucalyptus tereticornis subsp. mediana) Grassy Woodland and Associated Native Grassland" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f53c62e4-73fb-5692-8a01-1c7cdeaff1cb>
+    a skos:Concept ;
+    dcterms:identifier 61 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Natural Grasslands of the Murray Valley Plains" ;
+    skos:notation "117" ;
+    skos:prefLabel "Natural Grasslands of the Murray Valley Plains" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f73703d6-8839-535f-ac60-c412c435f786>
+    a skos:Concept ;
+    dcterms:identifier 46 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Lowland Grassy Woodland in the South East Corner Bioregion" ;
+    skos:notation "82" ;
+    skos:prefLabel "Lowland Grassy Woodland in the South East Corner Bioregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/fa4448ed-3642-54d9-8c75-a252eb782a22>
+    a skos:Concept ;
+    dcterms:identifier 68 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Proteaceae Dominated Kwongkan Shrublands of the Southeast Coastal Floristic Province of Western Australia" ;
+    skos:notation "126" ;
+    skos:prefLabel "Proteaceae Dominated Kwongkan Shrublands of the Southeast Coastal Floristic Province of Western Australia" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/fab6754b-be3f-597c-8c6e-cd2d3611d401>
+    a skos:Concept ;
+    dcterms:identifier 83 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Illawarra-Shoalhaven Subtropical Rainforest of the Sydney Basin Bioregion" ;
+    skos:notation "148" ;
+    skos:prefLabel "Illawarra-Shoalhaven Subtropical Rainforest of the Sydney Basin Bioregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ffc6160b-d262-5496-a41d-88a4105042a0>
+    a skos:Concept ;
+    dcterms:identifier 38 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Upland Basalt Eucalypt Forests of the Sydney Basin Bioregion" ;
+    skos:notation "60" ;
+    skos:prefLabel "Upland Basalt Eucalypt Forests of the Sydney Basin Bioregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/0e718c57-74b4-441c-bf2d-3bfeff78b131>
+    a skos:Collection ;
+    dcterms:description "A collection of tecs and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-tecs> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/033983fe-94ef-568f-b10b-1cb1e677131c> ,
+        <https://linked.data.gov.au/def/nrm/0e54fb7c-87e2-5e05-ad74-cbff166c7b31> ,
+        <https://linked.data.gov.au/def/nrm/1026a6b2-5851-54b7-acc1-fbf2a20547cd> ,
+        <https://linked.data.gov.au/def/nrm/17b729e4-b89c-5de2-b391-a679d29c956b> ,
+        <https://linked.data.gov.au/def/nrm/1eb0ad28-da37-5677-b669-f1ad79b6b137> ,
+        <https://linked.data.gov.au/def/nrm/1f14eb99-a4f8-5aad-a234-780481af31fc> ,
+        <https://linked.data.gov.au/def/nrm/1f7d4a47-73f6-5363-b612-3787d63f643d> ,
+        <https://linked.data.gov.au/def/nrm/20b245f4-7b0c-5fd6-9a39-9e1166d7a281> ,
+        <https://linked.data.gov.au/def/nrm/225f9cf2-ccf1-5325-9f96-fe704d673ff5> ,
+        <https://linked.data.gov.au/def/nrm/26879f53-bc84-52cb-8b7d-c9ab0efb8bc4> ,
+        <https://linked.data.gov.au/def/nrm/2c14c2a7-2dcd-5210-ba46-3c62ab418999> ,
+        <https://linked.data.gov.au/def/nrm/2ecb7998-01f4-5452-afac-5600e38214d0> ,
+        <https://linked.data.gov.au/def/nrm/32372c00-d0ad-5840-b4c0-171e1bae3700> ,
+        <https://linked.data.gov.au/def/nrm/3302b0a2-913d-5f06-a190-162a6c5ca6a4> ,
+        <https://linked.data.gov.au/def/nrm/3411d815-6497-5a6b-88e2-95c8b02fc349> ,
+        <https://linked.data.gov.au/def/nrm/34e0c27c-79cc-5f31-955f-9e9ebb9d409a> ,
+        <https://linked.data.gov.au/def/nrm/35af83a2-c6c0-5250-a15b-4334b9c6af93> ,
+        <https://linked.data.gov.au/def/nrm/36b53903-9e9c-5186-bf58-9fc6ea759970> ,
+        <https://linked.data.gov.au/def/nrm/382f171b-67e8-5eb5-a970-0cae9fe0787e> ,
+        <https://linked.data.gov.au/def/nrm/38d053a5-cddd-5937-a2c3-a63bec6e4dff> ,
+        <https://linked.data.gov.au/def/nrm/3e5d5a47-9015-596b-8832-422cc136cd35> ,
+        <https://linked.data.gov.au/def/nrm/3f7a8b15-605e-524c-a4b4-3fdfac29e8a2> ,
+        <https://linked.data.gov.au/def/nrm/41a94f69-89d7-5a07-9896-4b044f3ab41e> ,
+        <https://linked.data.gov.au/def/nrm/449c1157-ca8f-5ce4-bc81-0a982bd12705> ,
+        <https://linked.data.gov.au/def/nrm/46aa2dcd-9cbe-5a20-bdb0-2ff14104fd06> ,
+        <https://linked.data.gov.au/def/nrm/47eb83c5-011a-51ab-8cb2-9c12ebaf5e42> ,
+        <https://linked.data.gov.au/def/nrm/4e8da8cf-553e-503a-8ab9-2a2d63982540> ,
+        <https://linked.data.gov.au/def/nrm/51e57754-4869-5c6d-a040-7e310dbb7f50> ,
+        <https://linked.data.gov.au/def/nrm/5742751f-0894-52db-942c-a3cc53cb6a57> ,
+        <https://linked.data.gov.au/def/nrm/5db4efc6-1e05-59dc-a848-e0b6ed7608f7> ,
+        <https://linked.data.gov.au/def/nrm/5e06b364-9440-5cc3-93b9-0c2b822cfa49> ,
+        <https://linked.data.gov.au/def/nrm/615d6fea-2ab6-5fa5-a731-09ee9fce4208> ,
+        <https://linked.data.gov.au/def/nrm/63576416-c9ec-5dd7-8562-61f27bd9a3d3> ,
+        <https://linked.data.gov.au/def/nrm/65ee36d5-08ba-5b9c-bab8-fd642d120ac1> ,
+        <https://linked.data.gov.au/def/nrm/70ca2de3-9963-53fa-894e-bae53bc887ab> ,
+        <https://linked.data.gov.au/def/nrm/7aea6d96-f592-52f5-8420-9e4aef59d2d0> ,
+        <https://linked.data.gov.au/def/nrm/7cd29644-7280-518f-857e-3897a419381c> ,
+        <https://linked.data.gov.au/def/nrm/8446a046-87f0-56f9-a475-a933458ea510> ,
+        <https://linked.data.gov.au/def/nrm/889e6a93-8795-511f-9f69-603cd10d85f4> ,
+        <https://linked.data.gov.au/def/nrm/8d63b528-de0a-57d3-a25c-1a639ab05f94> ,
+        <https://linked.data.gov.au/def/nrm/8f0b81ee-29eb-5f8d-b236-0f7603b19c1d> ,
+        <https://linked.data.gov.au/def/nrm/939ec922-b6d1-5628-aa8b-66336b4ce47c> ,
+        <https://linked.data.gov.au/def/nrm/994c913d-d564-59df-ae45-e0105ef91b4a> ,
+        <https://linked.data.gov.au/def/nrm/a142a43c-00fd-59aa-b7bf-caeae143a79c> ,
+        <https://linked.data.gov.au/def/nrm/a36f6467-dfab-54c7-829c-781a4479ae97> ,
+        <https://linked.data.gov.au/def/nrm/a466b863-1b99-55ae-8c15-4090c4885629> ,
+        <https://linked.data.gov.au/def/nrm/a5628ade-8ea9-5912-8d8c-f767ad4cab20> ,
+        <https://linked.data.gov.au/def/nrm/a573b112-5511-56f6-80b1-3160594574c2> ,
+        <https://linked.data.gov.au/def/nrm/a842f300-a3ca-5ba6-b433-03fa1dfbe3b3> ,
+        <https://linked.data.gov.au/def/nrm/aaae81b2-f8bd-528a-9eb8-d343fbf05fb1> ,
+        <https://linked.data.gov.au/def/nrm/af1ba264-b26f-5f76-af9f-a3dbac0b6eae> ,
+        <https://linked.data.gov.au/def/nrm/b3c93b43-cc58-526f-bea9-2cc8cbd87adb> ,
+        <https://linked.data.gov.au/def/nrm/b6451a19-1b2a-53ba-baaa-7257eab78d4b> ,
+        <https://linked.data.gov.au/def/nrm/b8b33c76-93a8-5ad2-9106-74e7ced01862> ,
+        <https://linked.data.gov.au/def/nrm/bb153d7d-a844-5439-a682-cac51679485d> ,
+        <https://linked.data.gov.au/def/nrm/bce3a94d-7f46-5710-93f7-091c55952cbf> ,
+        <https://linked.data.gov.au/def/nrm/c03b76a5-c38d-5bce-9ca9-4522f02e8a4e> ,
+        <https://linked.data.gov.au/def/nrm/c42f3797-211b-5690-b3b1-92756d663481> ,
+        <https://linked.data.gov.au/def/nrm/c8aa7262-b1be-520b-b91c-48355ef4aeeb> ,
+        <https://linked.data.gov.au/def/nrm/c9c37377-a478-5e6e-8220-7f1f28b15eb6> ,
+        <https://linked.data.gov.au/def/nrm/c9df16e6-6d74-5a2c-b1c8-891ab2e2b09a> ,
+        <https://linked.data.gov.au/def/nrm/cbfff8f8-0808-5990-9801-3e410f61273c> ,
+        <https://linked.data.gov.au/def/nrm/ce4bb4fb-bb78-55c9-9a96-f44139104635> ,
+        <https://linked.data.gov.au/def/nrm/d48ed60e-6272-5751-b26d-2975ec7ce744> ,
+        <https://linked.data.gov.au/def/nrm/d70f4ed5-9be5-591d-ab7e-ccb66966c3c1> ,
+        <https://linked.data.gov.au/def/nrm/d99a868e-1b77-599c-bad3-7ab0c526c479> ,
+        <https://linked.data.gov.au/def/nrm/de487644-ebd3-51ce-949b-b5d94d22761b> ,
+        <https://linked.data.gov.au/def/nrm/e1015693-fe56-59f2-8106-a6a614ab976d> ,
+        <https://linked.data.gov.au/def/nrm/e162016f-a612-5577-a461-7e50982ab8c2> ,
+        <https://linked.data.gov.au/def/nrm/e3189b04-58d9-542c-b582-2aa715035381> ,
+        <https://linked.data.gov.au/def/nrm/e50877f3-9945-588b-9cf8-5b55b6753801> ,
+        <https://linked.data.gov.au/def/nrm/e6778081-24fe-547d-9db1-c1063245c95a> ,
+        <https://linked.data.gov.au/def/nrm/e8a4022a-4571-545e-b042-dc161977c8c2> ,
+        <https://linked.data.gov.au/def/nrm/ebdd6523-9508-5e5d-9193-bb7f1bf1b759> ,
+        <https://linked.data.gov.au/def/nrm/f03ae36b-ad4e-5816-a5eb-47f7b7b2438a> ,
+        <https://linked.data.gov.au/def/nrm/f04c4c6f-563c-5c2d-94b4-21a5490a7878> ,
+        <https://linked.data.gov.au/def/nrm/f1f45045-482d-5745-854d-af09aca742e7> ,
+        <https://linked.data.gov.au/def/nrm/f309efd3-601f-5f35-b9d8-a2df4a7b6dc7> ,
+        <https://linked.data.gov.au/def/nrm/f40a5644-6e65-5b17-a1e2-287122620e55> ,
+        <https://linked.data.gov.au/def/nrm/f4281c50-f4a1-56db-940c-320cb6dde3fc> ,
+        <https://linked.data.gov.au/def/nrm/f53c62e4-73fb-5692-8a01-1c7cdeaff1cb> ,
+        <https://linked.data.gov.au/def/nrm/f73703d6-8839-535f-ac60-c412c435f786> ,
+        <https://linked.data.gov.au/def/nrm/fa4448ed-3642-54d9-8c75-a252eb782a22> ,
+        <https://linked.data.gov.au/def/nrm/fab6754b-be3f-597c-8c6e-cd2d3611d401> ,
+        <https://linked.data.gov.au/def/nrm/ffc6160b-d262-5496-a41d-88a4105042a0> ;
+    skos:prefLabel "Threatened ecological communities codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/threatened-ecological-communities.ttl"^^xsd:anyURI ;
 .
 

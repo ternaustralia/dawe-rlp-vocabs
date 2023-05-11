@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/07b0b4a0-8f7d-5e57-8186-a2cea2995323>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-malaise-trapping-voucher-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0934092d-dbc4-455d-9eb2-1a621ade3c7c> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/84b551fd-c4f0-5d63-a160-9c6668d4b1de> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "D" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-malaise-trapping-voucher-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/32639aa6-c07b-5de0-95d9-4ea7d3792c06>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-malaise-trapping-voucher-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0934092d-dbc4-455d-9eb2-1a621ade3c7c> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/42bb06dc-fd54-510a-957b-5ea7f4608d48> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "LP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-malaise-trapping-voucher-types> ;
+.
 
 <https://linked.data.gov.au/def/nrm/0934092d-dbc4-455d-9eb2-1a621ade3c7c>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-malaise-trapping-voucher-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/07b0b4a0-8f7d-5e57-8186-a2cea2995323> ,
-        <https://linked.data.gov.au/def/nrm/32639aa6-c07b-5de0-95d9-4ea7d3792c06> ;
+        <https://linked.data.gov.au/def/nrm/42bb06dc-fd54-510a-957b-5ea7f4608d48> ,
+        <https://linked.data.gov.au/def/nrm/84b551fd-c4f0-5d63-a160-9c6668d4b1de> ;
     skos:prefLabel "Invertebrate malaise trapping voucher types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-malaise-trapping-voucher-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/07b0b4a0-8f7d-5e57-8186-a2cea2995323>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-malaise-trapping-voucher-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "D" ;
-    skos:prefLabel "Dry" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-malaise-trapping-voucher-types.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/32639aa6-c07b-5de0-95d9-4ea7d3792c06>
+<https://linked.data.gov.au/def/nrm/42bb06dc-fd54-510a-957b-5ea7f4608d48>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-malaise-trapping-voucher-types> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "LP" ;
     skos:prefLabel "Liquid Preservation" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-malaise-trapping-voucher-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/84b551fd-c4f0-5d63-a160-9c6668d4b1de>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-malaise-trapping-voucher-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "D" ;
+    skos:prefLabel "Dry" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-malaise-trapping-voucher-types.ttl"^^xsd:anyURI ;
 .
 

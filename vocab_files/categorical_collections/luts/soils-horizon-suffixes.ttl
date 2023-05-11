@@ -3,72 +3,231 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798>
-    a skos:Collection ;
-    dcterms:description "A collection of soils horizon suffixes and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/2d113077-d092-5317-a4b4-bd7385411c7f> ,
-        <https://linked.data.gov.au/def/nrm/33b116b5-77fd-5e82-a22a-b500e47a0251> ,
-        <https://linked.data.gov.au/def/nrm/34d19de1-9209-59f2-908a-50d35b021ef8> ,
-        <https://linked.data.gov.au/def/nrm/35da0dbf-ada0-5a03-99da-00082dae37f4> ,
-        <https://linked.data.gov.au/def/nrm/39a38d90-d08e-515c-aedd-1fd44e291f60> ,
-        <https://linked.data.gov.au/def/nrm/3aadcf39-9397-5319-8b89-15b20ca0248d> ,
-        <https://linked.data.gov.au/def/nrm/3c1db619-d599-5784-a3b1-4239bfe1c90a> ,
-        <https://linked.data.gov.au/def/nrm/42d61f24-35d3-5122-af45-46a71dacaf62> ,
-        <https://linked.data.gov.au/def/nrm/5f2658d4-d489-5eb7-bd41-445c1059e164> ,
-        <https://linked.data.gov.au/def/nrm/654a1590-e380-5e52-92a0-50fec78d9954> ,
-        <https://linked.data.gov.au/def/nrm/72bad82d-2483-5a1d-8319-d21a310fbea8> ,
-        <https://linked.data.gov.au/def/nrm/8091fc1d-20a9-596b-bc62-51b8f6c59b49> ,
-        <https://linked.data.gov.au/def/nrm/9457eb01-739b-5d9e-af3f-4fa0ff3f292e> ,
-        <https://linked.data.gov.au/def/nrm/abe7bc35-3992-5c46-a804-dfbd36c95a61> ,
-        <https://linked.data.gov.au/def/nrm/b1ba3c92-b8f4-5d89-8b2f-c339427a9016> ,
-        <https://linked.data.gov.au/def/nrm/b337f4ff-0365-58cf-af73-a942e2832056> ,
-        <https://linked.data.gov.au/def/nrm/d4953627-581e-564b-a8d5-1277ca62e9fa> ,
-        <https://linked.data.gov.au/def/nrm/ddbd79fb-5e25-569d-bfe8-3096fdbd662a> ,
-        <https://linked.data.gov.au/def/nrm/dfc57f96-0f6a-5ae6-b257-930b1a137660> ,
-        <https://linked.data.gov.au/def/nrm/f164a23c-1cd5-542f-bb0c-90d7bb679bda> ;
-    skos:prefLabel "Soils horizon suffixes codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/2d113077-d092-5317-a4b4-bd7385411c7f>
-    a skos:Concept ;
-    dcterms:identifier 14 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons with an accumulation of sesquioxide– organic matter complexes in which iron is dominant relative to aluminium. Often used in combination with ‘h’." ;
-    skos:notation "s" ;
-    skos:prefLabel "s" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3c88babd-0bf8-55a8-9a73-98a084ec3a25> ;
+    urnp:conceptDefinition "Horizons with an accumulation of sesquioxide– organic matter complexes in which iron is dominant relative to aluminium. Often used in combination with ‘h’." ;
+    urnp:conceptIdentifier 14 ;
+    urnp:conceptNotation "s" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/33b116b5-77fd-5e82-a22a-b500e47a0251>
-    a skos:Concept ;
-    dcterms:identifier 10 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons with strong cementation or induration." ;
-    skos:notation "m" ;
-    skos:prefLabel "m" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/237d3b07-c124-529b-bc6e-20adb808384f> ;
+    urnp:conceptDefinition "Horizons with strong cementation or induration." ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "m" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/34d19de1-9209-59f2-908a-50d35b021ef8>
-    a skos:Concept ;
-    dcterms:identifier 18 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons with accumulation of calcium sulfate (gypsum)." ;
-    skos:notation "y" ;
-    skos:prefLabel "y" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d090ad11-8267-5b5c-90d5-45ab4bda05ea> ;
+    urnp:conceptDefinition "Horizons with accumulation of calcium sulfate (gypsum)." ;
+    urnp:conceptIdentifier 18 ;
+    urnp:conceptNotation "y" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/35da0dbf-ada0-5a03-99da-00082dae37f4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/066be1b6-7a61-5587-a9fa-dcd33eb70965> ;
+    urnp:conceptDefinition "Sporadically bleached horizons." ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "j" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/39a38d90-d08e-515c-aedd-1fd44e291f60>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d4552641-8789-5aae-94ac-7a31ecc43bc3> ;
+    urnp:conceptDefinition "Horizons that contain accumulation of amorphous, organic matter–aluminium complexes in which iron contents are very low." ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "h" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/3aadcf39-9397-5319-8b89-15b20ca0248d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3c480084-0bec-5ee3-a530-e96a1170273a> ;
+    urnp:conceptDefinition "Buried soil horizons. Used in mineral soils only." ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "b" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/3c1db619-d599-5784-a3b1-4239bfe1c90a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1f933b50-9515-58d3-814b-15c44959a2ec> ;
+    urnp:conceptDefinition "Horizons with accumulation of secondary silica. If silica cementation is continuous or nearly continuous, ‘qm’ is used." ;
+    urnp:conceptIdentifier 12 ;
+    urnp:conceptNotation "q" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/42d61f24-35d3-5122-af45-46a71dacaf62>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1644027b-8ec8-5eb1-a247-7e42e16df426> ;
+    urnp:conceptDefinition "Query. Used where doubt is associated with the nomenclature of the horizon, with the query following the horizon notation (e.g. ‘D?’)" ;
+    urnp:conceptIdentifier 20 ;
+    urnp:conceptNotation "?" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/5f2658d4-d489-5eb7-bd41-445c1059e164>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7e989929-8095-5962-80b9-4fd06c60746b> ;
+    urnp:conceptDefinition "Horizons with layers of weathered rock (including saprolite) that, although consolidated, can be dug with hand tools." ;
+    urnp:conceptIdentifier 13 ;
+    urnp:conceptNotation "r" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/654a1590-e380-5e52-92a0-50fec78d9954>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/da6d6fe2-138f-5f35-99a3-01d9b2aa6e5c> ;
+    urnp:conceptDefinition "Horizons with accumulation of carbonates, commonly calcium carbonate." ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "k" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/72bad82d-2483-5a1d-8319-d21a310fbea8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/85a59c60-3274-5766-bd1c-d3b906090b3d> ;
+    urnp:conceptDefinition "Indicates strong gleying." ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "g" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/8091fc1d-20a9-596b-bc62-51b8f6c59b49>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ff5c8641-fc7d-57a1-8d99-e15308e88ca1> ;
+    urnp:conceptDefinition "Densipans. Very fine, sandy, earthy pan." ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "d" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9457eb01-739b-5d9e-af3f-4fa0ff3f292e>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4cd605e7-afa2-5360-b5b9-c5e9fb5c76f4> ;
+    urnp:conceptDefinition "Fragipans or earthy pans." ;
+    urnp:conceptIdentifier 17 ;
+    urnp:conceptNotation "x" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/abe7bc35-3992-5c46-a804-dfbd36c95a61>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f8abf324-8aef-5737-b89d-2032c4ef1f91> ;
+    urnp:conceptDefinition "Conspicuously bleached horizons." ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "e" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b1ba3c92-b8f4-5d89-8b2f-c339427a9016>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6971e554-41f6-52eb-b5a6-7b370e856d5c> ;
+    urnp:conceptDefinition "Horizons with accumulation of silicate clay (from German ton, clay)." ;
+    urnp:conceptIdentifier 15 ;
+    urnp:conceptNotation "t" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b337f4ff-0365-58cf-af73-a942e2832056>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8bb3a3e4-53cd-5333-92ab-5309c63d3b78> ;
+    urnp:conceptDefinition "Horizons where ploughing, tillage practices or other disturbance by humans has occurred (e.g. deep ripping)." ;
+    urnp:conceptIdentifier 11 ;
+    urnp:conceptNotation "p" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/d4953627-581e-564b-a8d5-1277ca62e9fa>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/76df6ceb-fcd9-54af-97a7-f4694392e20c> ;
+    urnp:conceptDefinition "Faunal accumulation, such as worm casts, dominates certain A1 horizons." ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "f" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ddbd79fb-5e25-569d-bfe8-3096fdbd662a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1d022452-4f92-5b2d-910e-d02b360d4bfa> ;
+    urnp:conceptDefinition "Development of colour and/or structure, or both, observed in the B horizon, with little or no accumulation of sesquioxide– organic matter complexes." ;
+    urnp:conceptIdentifier 16 ;
+    urnp:conceptNotation "w" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/dfc57f96-0f6a-5ae6-b257-930b1a137660>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/71039e6c-de90-565a-8cd7-89b263271615> ;
+    urnp:conceptDefinition "Horizons with accumulation of concretions or nodules of iron and/or aluminium and/or manganese." ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "c" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f164a23c-1cd5-542f-bb0c-90d7bb679bda>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2fd34c30-3c79-5f15-afcf-27b787e6a03a> ;
+    urnp:conceptDefinition "Horizons with accumulation of salts more soluble than calcium sulfate and calcium carbonate." ;
+    urnp:conceptIdentifier 19 ;
+    urnp:conceptNotation "z" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/066be1b6-7a61-5587-a9fa-dcd33eb70965>
     a skos:Concept ;
     dcterms:identifier 8 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
@@ -79,40 +238,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/39a38d90-d08e-515c-aedd-1fd44e291f60>
-    a skos:Concept ;
-    dcterms:identifier 7 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons that contain accumulation of amorphous, organic matter–aluminium complexes in which iron contents are very low." ;
-    skos:notation "h" ;
-    skos:prefLabel "h" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/3aadcf39-9397-5319-8b89-15b20ca0248d>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Buried soil horizons. Used in mineral soils only." ;
-    skos:notation "b" ;
-    skos:prefLabel "b" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/3c1db619-d599-5784-a3b1-4239bfe1c90a>
-    a skos:Concept ;
-    dcterms:identifier 12 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons with accumulation of secondary silica. If silica cementation is continuous or nearly continuous, ‘qm’ is used." ;
-    skos:notation "q" ;
-    skos:prefLabel "q" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/42d61f24-35d3-5122-af45-46a71dacaf62>
+<https://linked.data.gov.au/def/nrm/1644027b-8ec8-5eb1-a247-7e42e16df426>
     a skos:Concept ;
     dcterms:identifier 20 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
@@ -123,106 +249,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/5f2658d4-d489-5eb7-bd41-445c1059e164>
-    a skos:Concept ;
-    dcterms:identifier 13 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons with layers of weathered rock (including saprolite) that, although consolidated, can be dug with hand tools." ;
-    skos:notation "r" ;
-    skos:prefLabel "r" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/654a1590-e380-5e52-92a0-50fec78d9954>
-    a skos:Concept ;
-    dcterms:identifier 9 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons with accumulation of carbonates, commonly calcium carbonate." ;
-    skos:notation "k" ;
-    skos:prefLabel "k" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/72bad82d-2483-5a1d-8319-d21a310fbea8>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Indicates strong gleying." ;
-    skos:notation "g" ;
-    skos:prefLabel "g" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/8091fc1d-20a9-596b-bc62-51b8f6c59b49>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Densipans. Very fine, sandy, earthy pan." ;
-    skos:notation "d" ;
-    skos:prefLabel "d" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/9457eb01-739b-5d9e-af3f-4fa0ff3f292e>
-    a skos:Concept ;
-    dcterms:identifier 17 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Fragipans or earthy pans." ;
-    skos:notation "x" ;
-    skos:prefLabel "x" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/abe7bc35-3992-5c46-a804-dfbd36c95a61>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Conspicuously bleached horizons." ;
-    skos:notation "e" ;
-    skos:prefLabel "e" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/b1ba3c92-b8f4-5d89-8b2f-c339427a9016>
-    a skos:Concept ;
-    dcterms:identifier 15 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons with accumulation of silicate clay (from German ton, clay)." ;
-    skos:notation "t" ;
-    skos:prefLabel "t" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/b337f4ff-0365-58cf-af73-a942e2832056>
-    a skos:Concept ;
-    dcterms:identifier 11 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons where ploughing, tillage practices or other disturbance by humans has occurred (e.g. deep ripping)." ;
-    skos:notation "p" ;
-    skos:prefLabel "p" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/d4953627-581e-564b-a8d5-1277ca62e9fa>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Faunal accumulation, such as worm casts, dominates certain A1 horizons." ;
-    skos:notation "f" ;
-    skos:prefLabel "f" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/ddbd79fb-5e25-569d-bfe8-3096fdbd662a>
+<https://linked.data.gov.au/def/nrm/1d022452-4f92-5b2d-910e-d02b360d4bfa>
     a skos:Concept ;
     dcterms:identifier 16 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
@@ -233,7 +260,84 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/dfc57f96-0f6a-5ae6-b257-930b1a137660>
+<https://linked.data.gov.au/def/nrm/1f933b50-9515-58d3-814b-15c44959a2ec>
+    a skos:Concept ;
+    dcterms:identifier 12 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons with accumulation of secondary silica. If silica cementation is continuous or nearly continuous, ‘qm’ is used." ;
+    skos:notation "q" ;
+    skos:prefLabel "q" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/237d3b07-c124-529b-bc6e-20adb808384f>
+    a skos:Concept ;
+    dcterms:identifier 10 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons with strong cementation or induration." ;
+    skos:notation "m" ;
+    skos:prefLabel "m" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/2fd34c30-3c79-5f15-afcf-27b787e6a03a>
+    a skos:Concept ;
+    dcterms:identifier 19 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons with accumulation of salts more soluble than calcium sulfate and calcium carbonate." ;
+    skos:notation "z" ;
+    skos:prefLabel "z" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3c480084-0bec-5ee3-a530-e96a1170273a>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Buried soil horizons. Used in mineral soils only." ;
+    skos:notation "b" ;
+    skos:prefLabel "b" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3c88babd-0bf8-55a8-9a73-98a084ec3a25>
+    a skos:Concept ;
+    dcterms:identifier 14 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons with an accumulation of sesquioxide– organic matter complexes in which iron is dominant relative to aluminium. Often used in combination with ‘h’." ;
+    skos:notation "s" ;
+    skos:prefLabel "s" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4cd605e7-afa2-5360-b5b9-c5e9fb5c76f4>
+    a skos:Concept ;
+    dcterms:identifier 17 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Fragipans or earthy pans." ;
+    skos:notation "x" ;
+    skos:prefLabel "x" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6971e554-41f6-52eb-b5a6-7b370e856d5c>
+    a skos:Concept ;
+    dcterms:identifier 15 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons with accumulation of silicate clay (from German ton, clay)." ;
+    skos:notation "t" ;
+    skos:prefLabel "t" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/71039e6c-de90-565a-8cd7-89b263271615>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
@@ -244,14 +348,132 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f164a23c-1cd5-542f-bb0c-90d7bb679bda>
+<https://linked.data.gov.au/def/nrm/76df6ceb-fcd9-54af-97a7-f4694392e20c>
     a skos:Concept ;
-    dcterms:identifier 19 ;
+    dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Horizons with accumulation of salts more soluble than calcium sulfate and calcium carbonate." ;
-    skos:notation "z" ;
-    skos:prefLabel "z" ;
+    skos:definition "Faunal accumulation, such as worm casts, dominates certain A1 horizons." ;
+    skos:notation "f" ;
+    skos:prefLabel "f" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/7e989929-8095-5962-80b9-4fd06c60746b>
+    a skos:Concept ;
+    dcterms:identifier 13 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons with layers of weathered rock (including saprolite) that, although consolidated, can be dug with hand tools." ;
+    skos:notation "r" ;
+    skos:prefLabel "r" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/85a59c60-3274-5766-bd1c-d3b906090b3d>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Indicates strong gleying." ;
+    skos:notation "g" ;
+    skos:prefLabel "g" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8bb3a3e4-53cd-5333-92ab-5309c63d3b78>
+    a skos:Concept ;
+    dcterms:identifier 11 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons where ploughing, tillage practices or other disturbance by humans has occurred (e.g. deep ripping)." ;
+    skos:notation "p" ;
+    skos:prefLabel "p" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d090ad11-8267-5b5c-90d5-45ab4bda05ea>
+    a skos:Concept ;
+    dcterms:identifier 18 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons with accumulation of calcium sulfate (gypsum)." ;
+    skos:notation "y" ;
+    skos:prefLabel "y" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d4552641-8789-5aae-94ac-7a31ecc43bc3>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons that contain accumulation of amorphous, organic matter–aluminium complexes in which iron contents are very low." ;
+    skos:notation "h" ;
+    skos:prefLabel "h" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/da6d6fe2-138f-5f35-99a3-01d9b2aa6e5c>
+    a skos:Concept ;
+    dcterms:identifier 9 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Horizons with accumulation of carbonates, commonly calcium carbonate." ;
+    skos:notation "k" ;
+    skos:prefLabel "k" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f8abf324-8aef-5737-b89d-2032c4ef1f91>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Conspicuously bleached horizons." ;
+    skos:notation "e" ;
+    skos:prefLabel "e" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ff5c8641-fc7d-57a1-8d99-e15308e88ca1>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Densipans. Very fine, sandy, earthy pan." ;
+    skos:notation "d" ;
+    skos:prefLabel "d" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/31d3921f-1fcb-4ec2-99a6-749c7b9e4798>
+    a skos:Collection ;
+    dcterms:description "A collection of soils horizon suffixes and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-suffixes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/066be1b6-7a61-5587-a9fa-dcd33eb70965> ,
+        <https://linked.data.gov.au/def/nrm/1644027b-8ec8-5eb1-a247-7e42e16df426> ,
+        <https://linked.data.gov.au/def/nrm/1d022452-4f92-5b2d-910e-d02b360d4bfa> ,
+        <https://linked.data.gov.au/def/nrm/1f933b50-9515-58d3-814b-15c44959a2ec> ,
+        <https://linked.data.gov.au/def/nrm/237d3b07-c124-529b-bc6e-20adb808384f> ,
+        <https://linked.data.gov.au/def/nrm/2fd34c30-3c79-5f15-afcf-27b787e6a03a> ,
+        <https://linked.data.gov.au/def/nrm/3c480084-0bec-5ee3-a530-e96a1170273a> ,
+        <https://linked.data.gov.au/def/nrm/3c88babd-0bf8-55a8-9a73-98a084ec3a25> ,
+        <https://linked.data.gov.au/def/nrm/4cd605e7-afa2-5360-b5b9-c5e9fb5c76f4> ,
+        <https://linked.data.gov.au/def/nrm/6971e554-41f6-52eb-b5a6-7b370e856d5c> ,
+        <https://linked.data.gov.au/def/nrm/71039e6c-de90-565a-8cd7-89b263271615> ,
+        <https://linked.data.gov.au/def/nrm/76df6ceb-fcd9-54af-97a7-f4694392e20c> ,
+        <https://linked.data.gov.au/def/nrm/7e989929-8095-5962-80b9-4fd06c60746b> ,
+        <https://linked.data.gov.au/def/nrm/85a59c60-3274-5766-bd1c-d3b906090b3d> ,
+        <https://linked.data.gov.au/def/nrm/8bb3a3e4-53cd-5333-92ab-5309c63d3b78> ,
+        <https://linked.data.gov.au/def/nrm/d090ad11-8267-5b5c-90d5-45ab4bda05ea> ,
+        <https://linked.data.gov.au/def/nrm/d4552641-8789-5aae-94ac-7a31ecc43bc3> ,
+        <https://linked.data.gov.au/def/nrm/da6d6fe2-138f-5f35-99a3-01d9b2aa6e5c> ,
+        <https://linked.data.gov.au/def/nrm/f8abf324-8aef-5737-b89d-2032c4ef1f91> ,
+        <https://linked.data.gov.au/def/nrm/ff5c8641-fc7d-57a1-8d99-e15308e88ca1> ;
+    skos:prefLabel "Soils horizon suffixes codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-suffixes.ttl"^^xsd:anyURI ;
 .
 

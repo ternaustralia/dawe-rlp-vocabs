@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/6b36e2ce-a162-54d0-a62d-e7ec2f686ae2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-installed-or-maintaineds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5eab9792-08cc-4a1a-b82e-4b76b9331968> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/adf897d8-71f1-5322-8886-8cf0ba23a7b1> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Installed" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-installed-or-maintaineds> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c9f91618-f86a-52d7-80f0-f09b1a8b1a11>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-installed-or-maintaineds.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5eab9792-08cc-4a1a-b82e-4b76b9331968> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6e1e835a-098b-5c5f-99a4-ffb113cd01c2> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Maintained" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-installed-or-maintaineds> ;
+.
 
 <https://linked.data.gov.au/def/nrm/5eab9792-08cc-4a1a-b82e-4b76b9331968>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-installed-or-maintaineds> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/6b36e2ce-a162-54d0-a62d-e7ec2f686ae2> ,
-        <https://linked.data.gov.au/def/nrm/c9f91618-f86a-52d7-80f0-f09b1a8b1a11> ;
+        <https://linked.data.gov.au/def/nrm/6e1e835a-098b-5c5f-99a4-ffb113cd01c2> ,
+        <https://linked.data.gov.au/def/nrm/adf897d8-71f1-5322-8886-8cf0ba23a7b1> ;
     skos:prefLabel "Intervention installed or maintaineds codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-installed-or-maintaineds.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/6b36e2ce-a162-54d0-a62d-e7ec2f686ae2>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-installed-or-maintaineds> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Installed" ;
-    skos:prefLabel "Installed" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-installed-or-maintaineds.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/c9f91618-f86a-52d7-80f0-f09b1a8b1a11>
+<https://linked.data.gov.au/def/nrm/6e1e835a-098b-5c5f-99a4-ffb113cd01c2>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-installed-or-maintaineds> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Maintained" ;
     skos:prefLabel "Maintained" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-installed-or-maintaineds.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/adf897d8-71f1-5322-8886-8cf0ba23a7b1>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-installed-or-maintaineds> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Installed" ;
+    skos:prefLabel "Installed" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-installed-or-maintaineds.ttl"^^xsd:anyURI ;
 .
 

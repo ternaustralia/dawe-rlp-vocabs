@@ -16,8 +16,9 @@ if __name__ == "__main__":
         description="Publish controlled vocabularies to Research Vocabularies Australia (RVA)."
     )
     parser.add_argument(
-        dest="path",
-        help="Path to the directory of RDF Turtle files to be published.",
+        dest="paths",
+        nargs="+",
+        help="Paths to the directory of RDF Turtle files to be published.",
     )
     parser.add_argument(
         dest="username",
@@ -52,7 +53,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    path = args.path
+    paths = args.paths
     username = args.username
     password = args.password
     vocabulary_id = args.vocabulary_id
@@ -72,8 +73,10 @@ if __name__ == "__main__":
                 f"Failed to get the owner of vocabulary_id '{vocabulary_id}' from RVA."
             ) from err
 
-        vocab_files_dir = Path(path)
-        files = list(vocab_files_dir.glob("**/*.ttl"))
+        files = []
+        for path in paths:
+            vocab_files_dir = Path(path)
+            files.extend(list(vocab_files_dir.glob("**/*.ttl")))
 
         graph = Graph()
         for file in files:

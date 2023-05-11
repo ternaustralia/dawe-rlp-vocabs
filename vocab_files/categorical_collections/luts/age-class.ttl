@@ -3,62 +3,121 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630>
-    a skos:Collection ;
-    dcterms:description "A collection of age class types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/2befa1d5-33f2-5bc1-bc4c-0609b8dad9b9> ,
-        <https://linked.data.gov.au/def/nrm/5a1e3cb0-103a-50c4-b341-52e03f71d552> ,
-        <https://linked.data.gov.au/def/nrm/7ad7acdf-8eec-56b2-9d5a-8ef339cafc9a> ,
-        <https://linked.data.gov.au/def/nrm/9b9eebce-160c-5969-867b-c230923d2336> ,
-        <https://linked.data.gov.au/def/nrm/a76e2c75-d253-53d1-9d22-199d9f5afd85> ,
-        <https://linked.data.gov.au/def/nrm/a98103af-2590-5c96-a512-472d216a1c1d> ,
-        <https://linked.data.gov.au/def/nrm/c9647382-e449-50fe-8901-0f0971ddc6a6> ,
-        <https://linked.data.gov.au/def/nrm/e69f63f9-91af-5d1f-ab13-ba0a5d222444> ,
-        <https://linked.data.gov.au/def/nrm/ede012d4-8ef1-5e67-bfc6-99198c86014f> ,
-        <https://linked.data.gov.au/def/nrm/f6db84d8-2575-571b-88e2-49bda687dfa3> ;
-    skos:prefLabel "Age class codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/2befa1d5-33f2-5bc1-bc4c-0609b8dad9b9>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "AD" ;
-    skos:prefLabel "Adult" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/436e8a65-505a-505b-811e-c6be4e4ae651> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "AD" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/5a1e3cb0-103a-50c4-b341-52e03f71d552>
-    a skos:Concept ;
-    dcterms:identifier 8 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "LA" ;
-    skos:prefLabel "Larvae" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/35157e34-237b-5f09-8c55-0bebcf835191> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "LA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/7ad7acdf-8eec-56b2-9d5a-8ef339cafc9a>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "JU" ;
-    skos:prefLabel "Juvenile" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6de1f874-fdcb-520a-9ff8-481a7968e76c> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "JU" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/9b9eebce-160c-5969-867b-c230923d2336>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0ce0cabf-e499-5360-82f4-67866d9f60da> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "IM" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a76e2c75-d253-53d1-9d22-199d9f5afd85>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/42ecaeb5-306a-59f5-abb3-a27181d12cb6> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "EG" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a98103af-2590-5c96-a512-472d216a1c1d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6a07f0fb-6872-5143-b4ee-d2ddb1713cd6> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "ME" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c9647382-e449-50fe-8901-0f0971ddc6a6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a3821c90-12cd-503a-9c67-edd109919aab> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "NY" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e69f63f9-91af-5d1f-ab13-ba0a5d222444>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "UN" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ede012d4-8ef1-5e67-bfc6-99198c86014f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "NA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f6db84d8-2575-571b-88e2-49bda687dfa3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f7ea86d0-7c49-5324-8180-f4cc0fecca9c> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "TA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/0ce0cabf-e499-5360-82f4-67866d9f60da>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
@@ -69,7 +128,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a76e2c75-d253-53d1-9d22-199d9f5afd85>
+<https://linked.data.gov.au/def/nrm/35157e34-237b-5f09-8c55-0bebcf835191>
+    a skos:Concept ;
+    dcterms:identifier 8 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "LA" ;
+    skos:prefLabel "Larvae" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/42ecaeb5-306a-59f5-abb3-a27181d12cb6>
     a skos:Concept ;
     dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
@@ -80,40 +150,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/a98103af-2590-5c96-a512-472d216a1c1d>
+<https://linked.data.gov.au/def/nrm/436e8a65-505a-505b-811e-c6be4e4ae651>
     a skos:Concept ;
-    dcterms:identifier 6 ;
+    dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "ME" ;
-    skos:prefLabel "Metamorph" ;
+    skos:notation "AD" ;
+    skos:prefLabel "Adult" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/c9647382-e449-50fe-8901-0f0971ddc6a6>
-    a skos:Concept ;
-    dcterms:identifier 7 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "NY" ;
-    skos:prefLabel "Nymph" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e69f63f9-91af-5d1f-ab13-ba0a5d222444>
-    a skos:Concept ;
-    dcterms:identifier 9 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "UN" ;
-    skos:prefLabel "Unknown" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/ede012d4-8ef1-5e67-bfc6-99198c86014f>
+<https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab>
     a skos:Concept ;
     dcterms:identifier 10 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
@@ -124,7 +172,51 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f6db84d8-2575-571b-88e2-49bda687dfa3>
+<https://linked.data.gov.au/def/nrm/6a07f0fb-6872-5143-b4ee-d2ddb1713cd6>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "ME" ;
+    skos:prefLabel "Metamorph" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6de1f874-fdcb-520a-9ff8-481a7968e76c>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "JU" ;
+    skos:prefLabel "Juvenile" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a3821c90-12cd-503a-9c67-edd109919aab>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "NY" ;
+    skos:prefLabel "Nymph" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f>
+    a skos:Concept ;
+    dcterms:identifier 9 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "UN" ;
+    skos:prefLabel "Unknown" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f7ea86d0-7c49-5324-8180-f4cc0fecca9c>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
@@ -132,6 +224,26 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "TA" ;
     skos:prefLabel "Tadpole" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630>
+    a skos:Collection ;
+    dcterms:description "A collection of age class types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0ce0cabf-e499-5360-82f4-67866d9f60da> ,
+        <https://linked.data.gov.au/def/nrm/35157e34-237b-5f09-8c55-0bebcf835191> ,
+        <https://linked.data.gov.au/def/nrm/42ecaeb5-306a-59f5-abb3-a27181d12cb6> ,
+        <https://linked.data.gov.au/def/nrm/436e8a65-505a-505b-811e-c6be4e4ae651> ,
+        <https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab> ,
+        <https://linked.data.gov.au/def/nrm/6a07f0fb-6872-5143-b4ee-d2ddb1713cd6> ,
+        <https://linked.data.gov.au/def/nrm/6de1f874-fdcb-520a-9ff8-481a7968e76c> ,
+        <https://linked.data.gov.au/def/nrm/a3821c90-12cd-503a-9c67-edd109919aab> ,
+        <https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f> ,
+        <https://linked.data.gov.au/def/nrm/f7ea86d0-7c49-5324-8180-f4cc0fecca9c> ;
+    skos:prefLabel "Age class codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/age-class.ttl"^^xsd:anyURI ;
 .
 

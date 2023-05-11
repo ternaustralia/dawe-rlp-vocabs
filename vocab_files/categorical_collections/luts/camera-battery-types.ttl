@@ -3,22 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/43b3b0bd-8de4-4cba-88b5-c7c094fa5de5>
-    a skos:Collection ;
-    dcterms:description "A collection of camera battery types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/5ed6ccdf-8eb4-5528-abfc-9294bc1cf11c> ,
-        <https://linked.data.gov.au/def/nrm/c5385732-2f61-52a7-8bd4-712b13553e16> ,
-        <https://linked.data.gov.au/def/nrm/f9025eca-33e4-5b54-bdaa-00ca2dedb9b0> ;
-    skos:prefLabel "Camera battery types codes" ;
+<https://linked.data.gov.au/def/nrm/5ed6ccdf-8eb4-5528-abfc-9294bc1cf11c>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-battery-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43b3b0bd-8de4-4cba-88b5-c7c094fa5de5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1e3aa8be-8dae-5f22-b5e4-c26cc6669599> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "Alkaline" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types> ;
 .
 
-<https://linked.data.gov.au/def/nrm/5ed6ccdf-8eb4-5528-abfc-9294bc1cf11c>
+<https://linked.data.gov.au/def/nrm/c5385732-2f61-52a7-8bd4-712b13553e16>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-battery-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43b3b0bd-8de4-4cba-88b5-c7c094fa5de5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9471a608-59b8-5d9f-a284-019883fde0c9> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "NiMH" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f9025eca-33e4-5b54-bdaa-00ca2dedb9b0>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-battery-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/43b3b0bd-8de4-4cba-88b5-c7c094fa5de5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ce35d656-3f0e-574f-8a7f-4ae2c83e6387> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Lithium" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/1e3aa8be-8dae-5f22-b5e4-c26cc6669599>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types> ;
@@ -29,7 +51,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-battery-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/c5385732-2f61-52a7-8bd4-712b13553e16>
+<https://linked.data.gov.au/def/nrm/9471a608-59b8-5d9f-a284-019883fde0c9>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types> ;
@@ -40,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-battery-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f9025eca-33e4-5b54-bdaa-00ca2dedb9b0>
+<https://linked.data.gov.au/def/nrm/ce35d656-3f0e-574f-8a7f-4ae2c83e6387>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types> ;
@@ -48,6 +70,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Lithium" ;
     skos:prefLabel "Lithium" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-battery-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/43b3b0bd-8de4-4cba-88b5-c7c094fa5de5>
+    a skos:Collection ;
+    dcterms:description "A collection of camera battery types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/1e3aa8be-8dae-5f22-b5e4-c26cc6669599> ,
+        <https://linked.data.gov.au/def/nrm/9471a608-59b8-5d9f-a284-019883fde0c9> ,
+        <https://linked.data.gov.au/def/nrm/ce35d656-3f0e-574f-8a7f-4ae2c83e6387> ;
+    skos:prefLabel "Camera battery types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-battery-types.ttl"^^xsd:anyURI ;
 .
 

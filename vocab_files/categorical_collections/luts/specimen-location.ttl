@@ -3,48 +3,99 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/1df5afd1-475a-435a-94c5-143b707aab10>
-    a skos:Collection ;
-    dcterms:description "A collection of specimen location types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/2aa50f13-775a-5948-9e5a-b7d30cfc0ca4> ,
-        <https://linked.data.gov.au/def/nrm/3509351b-3977-5152-bcae-1623b227936c> ,
-        <https://linked.data.gov.au/def/nrm/5b0654c2-6e85-5e0f-b1c4-392b188329ff> ,
-        <https://linked.data.gov.au/def/nrm/7e4d456f-1d45-52ce-b4fa-eccd7845c2ba> ,
-        <https://linked.data.gov.au/def/nrm/ac122479-461a-5cb5-829a-739bb13063d7> ,
-        <https://linked.data.gov.au/def/nrm/c7ed3806-160a-58ab-a084-34512a46906d> ,
-        <https://linked.data.gov.au/def/nrm/ebdfab92-2c5d-5864-b4d9-6816b6a9c15c> ;
-    skos:prefLabel "Specimen location codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/2aa50f13-775a-5948-9e5a-b7d30cfc0ca4>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "S" ;
-    skos:prefLabel "State government department" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/1df5afd1-475a-435a-94c5-143b707aab10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ee125e07-06f3-583a-9b65-ccb0183a1044> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "S" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
 .
 
 <https://linked.data.gov.au/def/nrm/3509351b-3977-5152-bcae-1623b227936c>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "H" ;
-    skos:prefLabel "Herbarium" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/1df5afd1-475a-435a-94c5-143b707aab10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/beb6ed8e-c38a-5c14-9489-6752a7831d2b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "H" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
 .
 
 <https://linked.data.gov.au/def/nrm/5b0654c2-6e85-5e0f-b1c4-392b188329ff>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/1df5afd1-475a-435a-94c5-143b707aab10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4f34fa5f-8125-5e5f-a580-b00a416ada58> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "C" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+.
+
+<https://linked.data.gov.au/def/nrm/7e4d456f-1d45-52ce-b4fa-eccd7845c2ba>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/1df5afd1-475a-435a-94c5-143b707aab10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d50ff4aa-2c36-5b34-a8b6-c9d63a932581> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "T" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ac122479-461a-5cb5-829a-739bb13063d7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/1df5afd1-475a-435a-94c5-143b707aab10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "O" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c7ed3806-160a-58ab-a084-34512a46906d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/1df5afd1-475a-435a-94c5-143b707aab10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9d77c8c9-174d-54db-a731-7f3e12015a3a> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "R" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ebdfab92-2c5d-5864-b4d9-6816b6a9c15c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/1df5afd1-475a-435a-94c5-143b707aab10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2c58efb7-c6ef-5f1e-856e-2e56c494f884> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "M" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+.
+
+<https://linked.data.gov.au/def/nrm/2c58efb7-c6ef-5f1e-856e-2e56c494f884>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "M" ;
+    skos:prefLabel "Museum" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4f34fa5f-8125-5e5f-a580-b00a416ada58>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
@@ -55,29 +106,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/7e4d456f-1d45-52ce-b4fa-eccd7845c2ba>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "T" ;
-    skos:prefLabel "TERN" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/ac122479-461a-5cb5-829a-739bb13063d7>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "O" ;
-    skos:prefLabel "Other" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/c7ed3806-160a-58ab-a084-34512a46906d>
+<https://linked.data.gov.au/def/nrm/9d77c8c9-174d-54db-a731-7f3e12015a3a>
     a skos:Concept ;
     dcterms:identifier 7 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
@@ -88,14 +117,64 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ebdfab92-2c5d-5864-b4d9-6816b6a9c15c>
+<https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb>
     a skos:Concept ;
-    dcterms:identifier 1 ;
+    dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "M" ;
-    skos:prefLabel "Museum" ;
+    skos:notation "O" ;
+    skos:prefLabel "Other" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/beb6ed8e-c38a-5c14-9489-6752a7831d2b>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "H" ;
+    skos:prefLabel "Herbarium" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d50ff4aa-2c36-5b34-a8b6-c9d63a932581>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "T" ;
+    skos:prefLabel "TERN" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ee125e07-06f3-583a-9b65-ccb0183a1044>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "S" ;
+    skos:prefLabel "State government department" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/1df5afd1-475a-435a-94c5-143b707aab10>
+    a skos:Collection ;
+    dcterms:description "A collection of specimen location types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-specimen-locations> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/2c58efb7-c6ef-5f1e-856e-2e56c494f884> ,
+        <https://linked.data.gov.au/def/nrm/4f34fa5f-8125-5e5f-a580-b00a416ada58> ,
+        <https://linked.data.gov.au/def/nrm/9d77c8c9-174d-54db-a731-7f3e12015a3a> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ,
+        <https://linked.data.gov.au/def/nrm/beb6ed8e-c38a-5c14-9489-6752a7831d2b> ,
+        <https://linked.data.gov.au/def/nrm/d50ff4aa-2c36-5b34-a8b6-c9d63a932581> ,
+        <https://linked.data.gov.au/def/nrm/ee125e07-06f3-583a-9b65-ccb0183a1044> ;
+    skos:prefLabel "Specimen location codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/specimen-location.ttl"^^xsd:anyURI ;
 .
 

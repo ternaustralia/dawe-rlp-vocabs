@@ -3,23 +3,66 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/a01656de-9627-4067-ad09-269242badbcb>
-    a skos:Collection ;
-    dcterms:description "A collection of fauna maturities and its codes." ;
+<https://linked.data.gov.au/def/nrm/008ada05-a2d9-5472-93ec-fda0b3ca3bb2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a01656de-9627-4067-ad09-269242badbcb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6de1f874-fdcb-520a-9ff8-481a7968e76c> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "J" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/3763a376-0029-5d38-9bff-deed10230699>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a01656de-9627-4067-ad09-269242badbcb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "U" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9691b7d8-38b4-59f4-b261-de114b1323f9>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a01656de-9627-4067-ad09-269242badbcb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7227f19c-c1c2-534d-9053-5ebd2eb960cc> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "I" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/cdb88f1c-fcc4-5ad5-9d27-bc9bb6a2e272>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a01656de-9627-4067-ad09-269242badbcb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/436e8a65-505a-505b-811e-c6be4e4ae651> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "A" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
+.
+
+<https://linked.data.gov.au/def/nrm/436e8a65-505a-505b-811e-c6be4e4ae651>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/008ada05-a2d9-5472-93ec-fda0b3ca3bb2> ,
-        <https://linked.data.gov.au/def/nrm/3763a376-0029-5d38-9bff-deed10230699> ,
-        <https://linked.data.gov.au/def/nrm/9691b7d8-38b4-59f4-b261-de114b1323f9> ,
-        <https://linked.data.gov.au/def/nrm/cdb88f1c-fcc4-5ad5-9d27-bc9bb6a2e272> ;
-    skos:prefLabel "Fauna maturities codes" ;
+    skos:definition "" ;
+    skos:notation "A" ;
+    skos:prefLabel "Adult" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/008ada05-a2d9-5472-93ec-fda0b3ca3bb2>
+<https://linked.data.gov.au/def/nrm/6de1f874-fdcb-520a-9ff8-481a7968e76c>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
@@ -30,18 +73,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/3763a376-0029-5d38-9bff-deed10230699>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "U" ;
-    skos:prefLabel "Unknown" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/9691b7d8-38b4-59f4-b261-de114b1323f9>
+<https://linked.data.gov.au/def/nrm/7227f19c-c1c2-534d-9053-5ebd2eb960cc>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
@@ -52,14 +84,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/cdb88f1c-fcc4-5ad5-9d27-bc9bb6a2e272>
+<https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f>
     a skos:Concept ;
-    dcterms:identifier 2 ;
+    dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "A" ;
-    skos:prefLabel "Adult" ;
+    skos:notation "U" ;
+    skos:prefLabel "Unknown" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a01656de-9627-4067-ad09-269242badbcb>
+    a skos:Collection ;
+    dcterms:description "A collection of fauna maturities and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-maturities> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/436e8a65-505a-505b-811e-c6be4e4ae651> ,
+        <https://linked.data.gov.au/def/nrm/6de1f874-fdcb-520a-9ff8-481a7968e76c> ,
+        <https://linked.data.gov.au/def/nrm/7227f19c-c1c2-534d-9053-5ebd2eb960cc> ,
+        <https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f> ;
+    skos:prefLabel "Fauna maturities codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-maturities.ttl"^^xsd:anyURI ;
 .
 

@@ -3,34 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/8d89b68a-22a5-48f9-af90-a8837dd21fb0>
-    a skos:Collection ;
-    dcterms:description "A collection of intervention water treament management types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/0f2d54ba-c872-59b8-b81f-57e6aeb76430> ,
-        <https://linked.data.gov.au/def/nrm/cb1e4396-981f-5524-9595-9b309d569049> ,
-        <https://linked.data.gov.au/def/nrm/d755a07d-c211-51e3-a07b-e408b16478f1> ,
-        <https://linked.data.gov.au/def/nrm/da05fa81-f905-530f-98e6-010d3b49b082> ;
-    skos:prefLabel "Intervention water treament management types codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/0f2d54ba-c872-59b8-b81f-57e6aeb76430>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "R" ;
-    skos:prefLabel "Resnagging" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/8d89b68a-22a5-48f9-af90-a8837dd21fb0> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b9dd0a7a-1bca-5ea0-8611-b595d40fcc4b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "R" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
 .
 
 <https://linked.data.gov.au/def/nrm/cb1e4396-981f-5524-9595-9b309d569049>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/8d89b68a-22a5-48f9-af90-a8837dd21fb0> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9b3ae30e-1c17-51de-a78a-b5d2f561e394> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "SIM" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/d755a07d-c211-51e3-a07b-e408b16478f1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/8d89b68a-22a5-48f9-af90-a8837dd21fb0> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "O" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/da05fa81-f905-530f-98e6-010d3b49b082>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/8d89b68a-22a5-48f9-af90-a8837dd21fb0> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bf782c04-18b7-5fcf-a263-80778af8b55a> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "RB" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9b3ae30e-1c17-51de-a78a-b5d2f561e394>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
@@ -41,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/d755a07d-c211-51e3-a07b-e408b16478f1>
+<https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
@@ -52,7 +73,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/da05fa81-f905-530f-98e6-010d3b49b082>
+<https://linked.data.gov.au/def/nrm/b9dd0a7a-1bca-5ea0-8611-b595d40fcc4b>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "R" ;
+    skos:prefLabel "Resnagging" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bf782c04-18b7-5fcf-a263-80778af8b55a>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
@@ -60,6 +92,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "RB" ;
     skos:prefLabel "Removing Barriers (e.g. Fish Barriers)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8d89b68a-22a5-48f9-af90-a8837dd21fb0>
+    a skos:Collection ;
+    dcterms:description "A collection of intervention water treament management types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-water-treament-management-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/9b3ae30e-1c17-51de-a78a-b5d2f561e394> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ,
+        <https://linked.data.gov.au/def/nrm/b9dd0a7a-1bca-5ea0-8611-b595d40fcc4b> ,
+        <https://linked.data.gov.au/def/nrm/bf782c04-18b7-5fcf-a263-80778af8b55a> ;
+    skos:prefLabel "Intervention water treament management types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-water-treament-management-types.ttl"^^xsd:anyURI ;
 .
 

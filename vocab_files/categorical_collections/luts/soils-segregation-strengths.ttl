@@ -3,21 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/ff36816d-ee76-4c55-a41f-8618ccd3860a>
-    a skos:Collection ;
-    dcterms:description "A collection of soils segregation strengths and its codes." ;
+<https://linked.data.gov.au/def/nrm/82158132-92f7-5701-a473-d34eef7bb132>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-segregation-strengths.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ff36816d-ee76-4c55-a41f-8618ccd3860a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a535d3b2-4c69-59a5-89b5-7f7282ec7d1e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "1" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-segregation-strengths> ;
+.
+
+<https://linked.data.gov.au/def/nrm/dbf3ba30-fe49-5e47-8ddc-836a4fd01a79>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-segregation-strengths.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ff36816d-ee76-4c55-a41f-8618ccd3860a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/701688f0-5200-5705-a3c3-7785bd3b5b34> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-segregation-strengths> ;
+.
+
+<https://linked.data.gov.au/def/nrm/701688f0-5200-5705-a3c3-7785bd3b5b34>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-segregation-strengths> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/82158132-92f7-5701-a473-d34eef7bb132> ,
-        <https://linked.data.gov.au/def/nrm/dbf3ba30-fe49-5e47-8ddc-836a4fd01a79> ;
-    skos:prefLabel "Soils segregation strengths codes" ;
+    skos:definition "" ;
+    skos:notation "2" ;
+    skos:prefLabel "Strong" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-segregation-strengths.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/82158132-92f7-5701-a473-d34eef7bb132>
+<https://linked.data.gov.au/def/nrm/a535d3b2-4c69-59a5-89b5-7f7282ec7d1e>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-segregation-strengths> ;
@@ -28,14 +51,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-segregation-strengths.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/dbf3ba30-fe49-5e47-8ddc-836a4fd01a79>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
+<https://linked.data.gov.au/def/nrm/ff36816d-ee76-4c55-a41f-8618ccd3860a>
+    a skos:Collection ;
+    dcterms:description "A collection of soils segregation strengths and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-segregation-strengths> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "2" ;
-    skos:prefLabel "Strong" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/701688f0-5200-5705-a3c3-7785bd3b5b34> ,
+        <https://linked.data.gov.au/def/nrm/a535d3b2-4c69-59a5-89b5-7f7282ec7d1e> ;
+    skos:prefLabel "Soils segregation strengths codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-segregation-strengths.ttl"^^xsd:anyURI ;
 .
 

@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/8c2817bb-bf22-5a00-a8c0-f841c355e17b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vaginal-condition.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/09de3b86-616e-49af-a34c-903cf7dec443> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d735d8a7-beb7-56b8-aab7-f0fa6daa11b5> ;
+    urnp:conceptDefinition "Not sexually active" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-vagina-conditions> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9c2af890-3263-5e40-a429-892bc4283b0c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vaginal-condition.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/09de3b86-616e-49af-a34c-903cf7dec443> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/92642f34-ec87-5947-b682-2c7e38affa29> ;
+    urnp:conceptDefinition "Sexually active" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "1" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-vagina-conditions> ;
+.
 
 <https://linked.data.gov.au/def/nrm/09de3b86-616e-49af-a34c-903cf7dec443>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-vagina-conditions> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/8c2817bb-bf22-5a00-a8c0-f841c355e17b> ,
-        <https://linked.data.gov.au/def/nrm/9c2af890-3263-5e40-a429-892bc4283b0c> ;
+        <https://linked.data.gov.au/def/nrm/92642f34-ec87-5947-b682-2c7e38affa29> ,
+        <https://linked.data.gov.au/def/nrm/d735d8a7-beb7-56b8-aab7-f0fa6daa11b5> ;
     skos:prefLabel "Vaginal condition codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vaginal-condition.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/8c2817bb-bf22-5a00-a8c0-f841c355e17b>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-vagina-conditions> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Not sexually active" ;
-    skos:notation "2" ;
-    skos:prefLabel "Imperforate" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vaginal-condition.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/9c2af890-3263-5e40-a429-892bc4283b0c>
+<https://linked.data.gov.au/def/nrm/92642f34-ec87-5947-b682-2c7e38affa29>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-vagina-conditions> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Sexually active" ;
     skos:notation "1" ;
     skos:prefLabel "Perforate" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vaginal-condition.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d735d8a7-beb7-56b8-aab7-f0fa6daa11b5>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-vagina-conditions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Not sexually active" ;
+    skos:notation "2" ;
+    skos:prefLabel "Imperforate" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vaginal-condition.ttl"^^xsd:anyURI ;
 .
 
