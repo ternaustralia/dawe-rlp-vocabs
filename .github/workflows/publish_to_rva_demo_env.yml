@@ -5,21 +5,9 @@ on:
     types: [prereleased]
 
 jobs:
-  publish_vocabularies:
-    name: Publish Vocabularies to RVA demo
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
-    with:
-      rva_vocab_id: 927
-      rva_username: dcceew-rva-api
-      rva_env: test
-      github_env: test
-      deployment_url: https://demo.vocabs.ardc.edu.au/viewById/927
-      paths: vocab_files/
-    secrets:
-      rva_password: ${{ secrets.RVA_PASSWORD }}
   publish_attributes:
     name: Publish Attributes to RVA demo
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
     with:
       rva_vocab_id: 994
       rva_username: dcceew-rva-api
@@ -31,7 +19,7 @@ jobs:
       rva_password: ${{ secrets.RVA_PASSWORD }}
   publish_observable_properties:
     name: Publish Observable Properties to RVA demo
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
     with:
       rva_vocab_id: 996
       rva_username: dcceew-rva-api
@@ -43,7 +31,7 @@ jobs:
       rva_password: ${{ secrets.RVA_PASSWORD }}
   publish_categorical_collections:
     name: Publish Collections of Categorical Values to RVA demo
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
     with:
       rva_vocab_id: 998
       rva_username: dcceew-rva-api
@@ -55,7 +43,7 @@ jobs:
       rva_password: ${{ secrets.RVA_PASSWORD }}
   publish_protocols:
     name: Publish RLP Survey Protocols to RVA demo
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
     with:
       rva_vocab_id: 997
       rva_username: dcceew-rva-api
@@ -67,7 +55,7 @@ jobs:
       rva_password: ${{ secrets.RVA_PASSWORD }}
   publish_feature_types:
     name: Publish Feature Types to RVA demo
-    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva_demo.yml@main
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
     with:
       rva_vocab_id: 995
       rva_username: dcceew-rva-api
