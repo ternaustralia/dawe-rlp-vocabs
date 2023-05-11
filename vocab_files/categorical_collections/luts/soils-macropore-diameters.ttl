@@ -3,23 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/3c3ccc22-949a-4892-9c51-7b458a823fcd>
-    a skos:Collection ;
-    dcterms:description "A collection of soils macropore diameters and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/0e3fa1b5-06e1-557e-9bbd-6615f50fe52b> ,
-        <https://linked.data.gov.au/def/nrm/b505db47-2042-5e6e-896d-41dc5ee6284c> ,
-        <https://linked.data.gov.au/def/nrm/db0291b4-5b7f-584b-a560-c43ea2cf44d7> ,
-        <https://linked.data.gov.au/def/nrm/e85348c8-a227-554d-b8a3-57b00cd7d77d> ;
-    skos:prefLabel "Soils macropore diameters codes" ;
+<https://linked.data.gov.au/def/nrm/0e3fa1b5-06e1-557e-9bbd-6615f50fe52b>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-macropore-diameters.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3c3ccc22-949a-4892-9c51-7b458a823fcd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2154a6b2-0d48-5fc7-90f8-78221c7c178c> ;
+    urnp:conceptDefinition ">5mm" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "4" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
 .
 
-<https://linked.data.gov.au/def/nrm/0e3fa1b5-06e1-557e-9bbd-6615f50fe52b>
+<https://linked.data.gov.au/def/nrm/b505db47-2042-5e6e-896d-41dc5ee6284c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-macropore-diameters.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3c3ccc22-949a-4892-9c51-7b458a823fcd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/45025c1b-8dea-56ed-8e58-c2668393dd52> ;
+    urnp:conceptDefinition "1-2mm" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "2" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
+.
+
+<https://linked.data.gov.au/def/nrm/db0291b4-5b7f-584b-a560-c43ea2cf44d7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-macropore-diameters.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3c3ccc22-949a-4892-9c51-7b458a823fcd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/468b0438-acbc-5b68-901c-18d7b22f7b98> ;
+    urnp:conceptDefinition "2-5mm" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "3" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e85348c8-a227-554d-b8a3-57b00cd7d77d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-macropore-diameters.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3c3ccc22-949a-4892-9c51-7b458a823fcd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/facffade-5380-54a6-ad22-3dd7e1292838> ;
+    urnp:conceptDefinition "0.075-1mm" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "1" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
+.
+
+<https://linked.data.gov.au/def/nrm/2154a6b2-0d48-5fc7-90f8-78221c7c178c>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
@@ -30,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-macropore-diameters.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/b505db47-2042-5e6e-896d-41dc5ee6284c>
+<https://linked.data.gov.au/def/nrm/45025c1b-8dea-56ed-8e58-c2668393dd52>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
@@ -41,7 +73,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-macropore-diameters.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/db0291b4-5b7f-584b-a560-c43ea2cf44d7>
+<https://linked.data.gov.au/def/nrm/468b0438-acbc-5b68-901c-18d7b22f7b98>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
@@ -52,7 +84,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-macropore-diameters.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/e85348c8-a227-554d-b8a3-57b00cd7d77d>
+<https://linked.data.gov.au/def/nrm/facffade-5380-54a6-ad22-3dd7e1292838>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
@@ -60,6 +92,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "0.075-1mm" ;
     skos:notation "1" ;
     skos:prefLabel "Very fine" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-macropore-diameters.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3c3ccc22-949a-4892-9c51-7b458a823fcd>
+    a skos:Collection ;
+    dcterms:description "A collection of soils macropore diameters and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-macropore-diameters> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/2154a6b2-0d48-5fc7-90f8-78221c7c178c> ,
+        <https://linked.data.gov.au/def/nrm/45025c1b-8dea-56ed-8e58-c2668393dd52> ,
+        <https://linked.data.gov.au/def/nrm/468b0438-acbc-5b68-901c-18d7b22f7b98> ,
+        <https://linked.data.gov.au/def/nrm/facffade-5380-54a6-ad22-3dd7e1292838> ;
+    skos:prefLabel "Soils macropore diameters codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-macropore-diameters.ttl"^^xsd:anyURI ;
 .
 

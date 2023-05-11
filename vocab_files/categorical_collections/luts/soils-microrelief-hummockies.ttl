@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/4abcc303-545e-5276-bc31-8773dc655a28>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-microrelief-hummockies.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/594ae399-a2bf-4177-9cd7-c74cec57b287> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c1676b68-74ec-5dba-8485-50474e766953> ;
+    urnp:conceptDefinition "Small hummocks rising above planar surface. They vary from rounded; both planar and vertically; to flat-topped; relatively steep sided and elongate. They are usually closely and regularly spaced; ranging from 0.06 m to 0.6 m in both vertical and horizontal dimensions. They are common in northern Australia on soils with impeded internal drainage and in areas of short seasonal ponding. Many observers consider them to be formed by biological activity." ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "D" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-microrelief-hummockies> ;
+.
+
+<https://linked.data.gov.au/def/nrm/5f3b4f24-5f07-5f0e-b20b-29e751b0933f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-microrelief-hummockies.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/594ae399-a2bf-4177-9cd7-c74cec57b287> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/fc14047c-999b-571d-98db-92776e5ef759> ;
+    urnp:conceptDefinition "Steep-sided hummocks rising above a flat surface. Hummocks are frequently occupied by trees or shrubs while the lower surface may be vegetation free or occupied by sedges or reeds. They are subject to prolonged seasonal flooding." ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "W" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-microrelief-hummockies> ;
+.
 
 <https://linked.data.gov.au/def/nrm/594ae399-a2bf-4177-9cd7-c74cec57b287>
     a skos:Collection ;
@@ -11,13 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-microrelief-hummockies> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/4abcc303-545e-5276-bc31-8773dc655a28> ,
-        <https://linked.data.gov.au/def/nrm/5f3b4f24-5f07-5f0e-b20b-29e751b0933f> ;
+        <https://linked.data.gov.au/def/nrm/c1676b68-74ec-5dba-8485-50474e766953> ,
+        <https://linked.data.gov.au/def/nrm/fc14047c-999b-571d-98db-92776e5ef759> ;
     skos:prefLabel "Soils microrelief hummockies codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-microrelief-hummockies.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/4abcc303-545e-5276-bc31-8773dc655a28>
+<https://linked.data.gov.au/def/nrm/c1676b68-74ec-5dba-8485-50474e766953>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-microrelief-hummockies> ;
@@ -28,7 +52,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-microrelief-hummockies.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/5f3b4f24-5f07-5f0e-b20b-29e751b0933f>
+<https://linked.data.gov.au/def/nrm/fc14047c-999b-571d-98db-92776e5ef759>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-microrelief-hummockies> ;

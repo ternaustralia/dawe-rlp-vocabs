@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/6216939c-b3b4-5041-9cf0-48f3ac4249d7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-initial-or-followups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/1e5bc3df-4765-4478-a9d3-23679c2d7241> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/cb40e855-6cb1-58f6-8ddb-532b98d9ff6b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Follow-up" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-initial-or-followups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/7d026ad5-126f-550c-8696-3b63024ef0d3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-initial-or-followups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/1e5bc3df-4765-4478-a9d3-23679c2d7241> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/99a2dc81-5f94-5a46-9709-9837d7abfca6> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Initial" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-initial-or-followups> ;
+.
 
 <https://linked.data.gov.au/def/nrm/1e5bc3df-4765-4478-a9d3-23679c2d7241>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-initial-or-followups> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/6216939c-b3b4-5041-9cf0-48f3ac4249d7> ,
-        <https://linked.data.gov.au/def/nrm/7d026ad5-126f-550c-8696-3b63024ef0d3> ;
+        <https://linked.data.gov.au/def/nrm/99a2dc81-5f94-5a46-9709-9837d7abfca6> ,
+        <https://linked.data.gov.au/def/nrm/cb40e855-6cb1-58f6-8ddb-532b98d9ff6b> ;
     skos:prefLabel "Intervention initial or followups codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-initial-or-followups.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/6216939c-b3b4-5041-9cf0-48f3ac4249d7>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-initial-or-followups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Follow-up" ;
-    skos:prefLabel "Follow-up" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-initial-or-followups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/7d026ad5-126f-550c-8696-3b63024ef0d3>
+<https://linked.data.gov.au/def/nrm/99a2dc81-5f94-5a46-9709-9837d7abfca6>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-initial-or-followups> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Initial" ;
     skos:prefLabel "Initial" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-initial-or-followups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/cb40e855-6cb1-58f6-8ddb-532b98d9ff6b>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-initial-or-followups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Follow-up" ;
+    skos:prefLabel "Follow-up" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-initial-or-followups.ttl"^^xsd:anyURI ;
 .
 

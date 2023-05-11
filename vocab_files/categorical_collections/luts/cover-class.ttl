@@ -3,58 +3,77 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/6aaa330c-3d60-419b-a29b-a2dbc6d67928>
-    a skos:Collection ;
-    dcterms:description "A collection of cover class types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/05d80e80-003c-5791-bf43-4b52086f990b> ,
-        <https://linked.data.gov.au/def/nrm/13131d7c-55d8-53e8-938c-f40015309534> ,
-        <https://linked.data.gov.au/def/nrm/53c5ff5e-afe6-5743-a137-7676db6399a5> ,
-        <https://linked.data.gov.au/def/nrm/63776cbe-7ad3-5f77-8ea4-afcade081564> ,
-        <https://linked.data.gov.au/def/nrm/6670d74f-b965-5f32-b304-6ab331e91e30> ,
-        <https://linked.data.gov.au/def/nrm/c395365c-6ec7-563b-9d2d-863056f99125> ;
-    skos:prefLabel "Cover class codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/05d80e80-003c-5791-bf43-4b52086f990b>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "TBD" ;
-    skos:notation "bc" ;
-    skos:prefLabel "bc" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6aaa330c-3d60-419b-a29b-a2dbc6d67928> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4ea8adb8-00df-51fe-b0d6-245fde6c9efb> ;
+    urnp:conceptDefinition "TBD" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "bc" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/13131d7c-55d8-53e8-938c-f40015309534>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "TBD" ;
-    skos:notation "bi" ;
-    skos:prefLabel "bi" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6aaa330c-3d60-419b-a29b-a2dbc6d67928> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/aeef25a8-db17-562a-9e05-ea4514e6293e> ;
+    urnp:conceptDefinition "TBD" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "bi" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/53c5ff5e-afe6-5743-a137-7676db6399a5>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "TBD" ;
-    skos:notation "d" ;
-    skos:prefLabel "d" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6aaa330c-3d60-419b-a29b-a2dbc6d67928> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ff5c8641-fc7d-57a1-8d99-e15308e88ca1> ;
+    urnp:conceptDefinition "TBD" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "d" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
 .
 
 <https://linked.data.gov.au/def/nrm/63776cbe-7ad3-5f77-8ea4-afcade081564>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6aaa330c-3d60-419b-a29b-a2dbc6d67928> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0ddc99fa-4dfc-5301-83d4-74f98c3afddc> ;
+    urnp:conceptDefinition "TBD" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "i" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/6670d74f-b965-5f32-b304-6ab331e91e30>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6aaa330c-3d60-419b-a29b-a2dbc6d67928> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7e989929-8095-5962-80b9-4fd06c60746b> ;
+    urnp:conceptDefinition "TBD" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "r" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c395365c-6ec7-563b-9d2d-863056f99125>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6aaa330c-3d60-419b-a29b-a2dbc6d67928> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/71039e6c-de90-565a-8cd7-89b263271615> ;
+    urnp:conceptDefinition "TBD" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "c" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/0ddc99fa-4dfc-5301-83d4-74f98c3afddc>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
@@ -65,7 +84,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/6670d74f-b965-5f32-b304-6ab331e91e30>
+<https://linked.data.gov.au/def/nrm/4ea8adb8-00df-51fe-b0d6-245fde6c9efb>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "TBD" ;
+    skos:notation "bc" ;
+    skos:prefLabel "bc" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/71039e6c-de90-565a-8cd7-89b263271615>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "TBD" ;
+    skos:notation "c" ;
+    skos:prefLabel "c" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/7e989929-8095-5962-80b9-4fd06c60746b>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
@@ -76,14 +117,41 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/c395365c-6ec7-563b-9d2d-863056f99125>
+<https://linked.data.gov.au/def/nrm/aeef25a8-db17-562a-9e05-ea4514e6293e>
     a skos:Concept ;
-    dcterms:identifier 2 ;
+    dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "TBD" ;
-    skos:notation "c" ;
-    skos:prefLabel "c" ;
+    skos:notation "bi" ;
+    skos:prefLabel "bi" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ff5c8641-fc7d-57a1-8d99-e15308e88ca1>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "TBD" ;
+    skos:notation "d" ;
+    skos:prefLabel "d" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6aaa330c-3d60-419b-a29b-a2dbc6d67928>
+    a skos:Collection ;
+    dcterms:description "A collection of cover class types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-cover-codes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0ddc99fa-4dfc-5301-83d4-74f98c3afddc> ,
+        <https://linked.data.gov.au/def/nrm/4ea8adb8-00df-51fe-b0d6-245fde6c9efb> ,
+        <https://linked.data.gov.au/def/nrm/71039e6c-de90-565a-8cd7-89b263271615> ,
+        <https://linked.data.gov.au/def/nrm/7e989929-8095-5962-80b9-4fd06c60746b> ,
+        <https://linked.data.gov.au/def/nrm/aeef25a8-db17-562a-9e05-ea4514e6293e> ,
+        <https://linked.data.gov.au/def/nrm/ff5c8641-fc7d-57a1-8d99-e15308e88ca1> ;
+    skos:prefLabel "Cover class codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cover-class.ttl"^^xsd:anyURI ;
 .
 

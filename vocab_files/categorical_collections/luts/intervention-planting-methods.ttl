@@ -3,23 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/dc02c4b7-cd30-4516-9730-b0682b54c5cf>
-    a skos:Collection ;
-    dcterms:description "A collection of intervention planting methods and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/304fef9b-8ff9-5cd7-8895-4266fdde5a70> ,
-        <https://linked.data.gov.au/def/nrm/98ec0b08-d06f-518d-95cc-4569ececa176> ,
-        <https://linked.data.gov.au/def/nrm/9f725546-5401-5e6d-ac15-e559b79eee9c> ,
-        <https://linked.data.gov.au/def/nrm/b5609b97-bac9-54bc-96a2-640dd5d27cb6> ;
-    skos:prefLabel "Intervention planting methods codes" ;
+<https://linked.data.gov.au/def/nrm/304fef9b-8ff9-5cd7-8895-4266fdde5a70>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/dc02c4b7-cd30-4516-9730-b0682b54c5cf> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/78c51b0e-1596-586d-baca-74c40eaa35b7> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "B" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
 .
 
-<https://linked.data.gov.au/def/nrm/304fef9b-8ff9-5cd7-8895-4266fdde5a70>
+<https://linked.data.gov.au/def/nrm/98ec0b08-d06f-518d-95cc-4569ececa176>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/dc02c4b7-cd30-4516-9730-b0682b54c5cf> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b5e4451f-a718-5e37-8c06-ed6c760f1d38> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "TP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9f725546-5401-5e6d-ac15-e559b79eee9c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/dc02c4b7-cd30-4516-9730-b0682b54c5cf> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8168f57d-78b3-5e55-a596-fbc2377a1d0b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "DS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b5609b97-bac9-54bc-96a2-640dd5d27cb6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/dc02c4b7-cd30-4516-9730-b0682b54c5cf> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "O" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
+.
+
+<https://linked.data.gov.au/def/nrm/78c51b0e-1596-586d-baca-74c40eaa35b7>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
@@ -30,18 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/98ec0b08-d06f-518d-95cc-4569ececa176>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "TP" ;
-    skos:prefLabel "Tubestock Planting" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/9f725546-5401-5e6d-ac15-e559b79eee9c>
+<https://linked.data.gov.au/def/nrm/8168f57d-78b3-5e55-a596-fbc2377a1d0b>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
@@ -52,7 +73,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/b5609b97-bac9-54bc-96a2-640dd5d27cb6>
+<https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
@@ -60,6 +81,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "O" ;
     skos:prefLabel "Other" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b5e4451f-a718-5e37-8c06-ed6c760f1d38>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "TP" ;
+    skos:prefLabel "Tubestock Planting" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/dc02c4b7-cd30-4516-9730-b0682b54c5cf>
+    a skos:Collection ;
+    dcterms:description "A collection of intervention planting methods and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-planting-methods> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/78c51b0e-1596-586d-baca-74c40eaa35b7> ,
+        <https://linked.data.gov.au/def/nrm/8168f57d-78b3-5e55-a596-fbc2377a1d0b> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ,
+        <https://linked.data.gov.au/def/nrm/b5e4451f-a718-5e37-8c06-ed6c760f1d38> ;
+    skos:prefLabel "Intervention planting methods codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-planting-methods.ttl"^^xsd:anyURI ;
 .
 

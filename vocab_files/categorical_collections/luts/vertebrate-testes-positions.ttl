@@ -3,21 +3,33 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/6a46703e-dbc3-440e-b06f-217c400a18b5>
-    a skos:Collection ;
-    dcterms:description "A collection of vertebrate testes positions and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-testes-positions> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/525b4983-85c3-5d24-8509-e62651c663db> ,
-        <https://linked.data.gov.au/def/nrm/62dbc642-e7f3-5025-b980-b9ffc2e7d7de> ;
-    skos:prefLabel "Vertebrate testes positions codes" ;
+<https://linked.data.gov.au/def/nrm/525b4983-85c3-5d24-8509-e62651c663db>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-testes-positions.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6a46703e-dbc3-440e-b06f-217c400a18b5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/18dcac46-65f6-5b8c-acb7-93ce7abc8b03> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Abdominal" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-testes-positions> ;
 .
 
-<https://linked.data.gov.au/def/nrm/525b4983-85c3-5d24-8509-e62651c663db>
+<https://linked.data.gov.au/def/nrm/62dbc642-e7f3-5025-b980-b9ffc2e7d7de>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-testes-positions.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6a46703e-dbc3-440e-b06f-217c400a18b5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/47e71470-3a77-5c15-9d54-b9a6fff840e9> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Scrotal" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-testes-positions> ;
+.
+
+<https://linked.data.gov.au/def/nrm/18dcac46-65f6-5b8c-acb7-93ce7abc8b03>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-testes-positions> ;
@@ -28,7 +40,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-testes-positions.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/62dbc642-e7f3-5025-b980-b9ffc2e7d7de>
+<https://linked.data.gov.au/def/nrm/47e71470-3a77-5c15-9d54-b9a6fff840e9>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-testes-positions> ;
@@ -36,6 +48,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Scrotal" ;
     skos:prefLabel "Scrotal" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-testes-positions.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6a46703e-dbc3-440e-b06f-217c400a18b5>
+    a skos:Collection ;
+    dcterms:description "A collection of vertebrate testes positions and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-testes-positions> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/18dcac46-65f6-5b8c-acb7-93ce7abc8b03> ,
+        <https://linked.data.gov.au/def/nrm/47e71470-3a77-5c15-9d54-b9a6fff840e9> ;
+    skos:prefLabel "Vertebrate testes positions codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-testes-positions.ttl"^^xsd:anyURI ;
 .
 

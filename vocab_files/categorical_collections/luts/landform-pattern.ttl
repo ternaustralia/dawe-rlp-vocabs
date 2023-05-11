@@ -3,412 +3,462 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003>
-    a skos:Collection ;
-    dcterms:description "A collection of landform pattern types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/0161440f-529b-50fe-9505-f3acd77381df> ,
-        <https://linked.data.gov.au/def/nrm/07c2d209-3e8a-5f6d-9cbe-4fecd413eb74> ,
-        <https://linked.data.gov.au/def/nrm/0b40ed11-cd25-5ef6-9689-5601ae79adc7> ,
-        <https://linked.data.gov.au/def/nrm/20c08c5a-5b7a-5c88-a0e0-e35d1b78b7f4> ,
-        <https://linked.data.gov.au/def/nrm/268eea7b-ef16-58a6-9e36-6b3ff89d4401> ,
-        <https://linked.data.gov.au/def/nrm/350dd93e-3928-56cb-9658-447db5ebd471> ,
-        <https://linked.data.gov.au/def/nrm/3b15a4c7-a521-5074-ad41-fc9acfbe3a04> ,
-        <https://linked.data.gov.au/def/nrm/3f0b5877-7cbc-50b3-af25-195e0fda5a72> ,
-        <https://linked.data.gov.au/def/nrm/4ef71efc-5c73-5de3-983f-4141ec9b0477> ,
-        <https://linked.data.gov.au/def/nrm/595615f2-ad1c-5ec4-aae9-3b1f53ff97e3> ,
-        <https://linked.data.gov.au/def/nrm/5af6a493-c23f-5a00-91db-b19523420f28> ,
-        <https://linked.data.gov.au/def/nrm/5fb6b03e-538c-551b-9eb6-9263cbe97a4c> ,
-        <https://linked.data.gov.au/def/nrm/65719dcc-5a53-5686-ba8e-62e262d5c10f> ,
-        <https://linked.data.gov.au/def/nrm/6d1f6efd-2588-58f8-a042-67506e6c8e73> ,
-        <https://linked.data.gov.au/def/nrm/7f7f7e57-10fc-5507-802a-a6f5b80fc962> ,
-        <https://linked.data.gov.au/def/nrm/841c270e-c9c0-5e73-97ce-92c82bc46a3d> ,
-        <https://linked.data.gov.au/def/nrm/86b8ee28-c92f-5589-85a5-ef033b70a253> ,
-        <https://linked.data.gov.au/def/nrm/8acf14c0-1123-5f29-9c96-bb7da2ba58cd> ,
-        <https://linked.data.gov.au/def/nrm/9bef8f8a-fbd6-52d4-998a-61a3e4d30046> ,
-        <https://linked.data.gov.au/def/nrm/a22be0bb-8c9c-5b40-a36d-e7fa9d3e35ee> ,
-        <https://linked.data.gov.au/def/nrm/a41c3820-cc6c-5a62-9608-c330d0e97bf6> ,
-        <https://linked.data.gov.au/def/nrm/a86d3139-727a-555e-8388-8fb0bb592daf> ,
-        <https://linked.data.gov.au/def/nrm/af5054d1-7fe9-5eea-971f-07a5f7a78d88> ,
-        <https://linked.data.gov.au/def/nrm/b0ad9c92-3395-52f9-b00d-01be284b9d9b> ,
-        <https://linked.data.gov.au/def/nrm/b1c4a7af-22a3-5ddf-9318-3c8af8e4a09d> ,
-        <https://linked.data.gov.au/def/nrm/b2344c3c-9f99-50f7-ac42-c52717f1779f> ,
-        <https://linked.data.gov.au/def/nrm/bf9bad3a-cfd3-5404-8f0c-d0e18da9f77f> ,
-        <https://linked.data.gov.au/def/nrm/c3d19034-eaab-545e-8f01-925174bd2732> ,
-        <https://linked.data.gov.au/def/nrm/cc1e0c2b-26b2-56c6-aa9b-01423994da56> ,
-        <https://linked.data.gov.au/def/nrm/cff4f652-d893-5674-9f29-91ed3c6cd3fb> ,
-        <https://linked.data.gov.au/def/nrm/d8164c38-cef1-580e-8d74-04a310450707> ,
-        <https://linked.data.gov.au/def/nrm/da273e02-8033-50c4-a174-3906d7553067> ,
-        <https://linked.data.gov.au/def/nrm/db62c020-8dec-5716-9357-14d94d710cb2> ,
-        <https://linked.data.gov.au/def/nrm/db6445c8-c6b3-5511-8d48-80f6bed39eea> ,
-        <https://linked.data.gov.au/def/nrm/dff9909c-3262-5159-a498-ea42777643c4> ,
-        <https://linked.data.gov.au/def/nrm/ec0f124f-d45f-57fa-b5b5-2cc9689aee55> ,
-        <https://linked.data.gov.au/def/nrm/ec96df0c-cfc5-5c8d-bac6-ec16acbcb23f> ,
-        <https://linked.data.gov.au/def/nrm/f1503e82-108d-5eff-be37-bd2646a1f637> ,
-        <https://linked.data.gov.au/def/nrm/f19b8f62-9cc0-5c39-af77-3d198e05844c> ,
-        <https://linked.data.gov.au/def/nrm/f51ae8b8-76bc-541d-a7f3-f29f509f5fb5> ,
-        <https://linked.data.gov.au/def/nrm/f7306b1b-e95a-5508-b50f-7949eadca037> ;
-    skos:prefLabel "Landform pattern codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/0161440f-529b-50fe-9505-f3acd77381df>
-    a skos:Concept ;
-    dcterms:identifier 41 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "NC" ;
-    skos:prefLabel "Not Collected" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 41 ;
+    urnp:conceptNotation "NC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/07c2d209-3e8a-5f6d-9cbe-4fecd413eb74>
-    a skos:Concept ;
-    dcterms:identifier 7 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Landform pattern of low relief (30-90 m) and gentle to very steep slopes; typically with fixed; erosional stream channels; closely to very widely spaced; which form a non-directional or convergent; integrated tributary pattern. There is continuously active sheet flow; creep; and channelled stream flow." ;
-    skos:notation "LOW" ;
-    skos:prefLabel "Low hills" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5af57dba-5cdd-53f6-952d-f91c490735f7> ;
+    urnp:conceptDefinition "Landform pattern of low relief (30-90 m) and gentle to very steep slopes; typically with fixed; erosional stream channels; closely to very widely spaced; which form a non-directional or convergent; integrated tributary pattern. There is continuously active sheet flow; creep; and channelled stream flow." ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "LOW" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/0b40ed11-cd25-5ef6-9689-5601ae79adc7>
-    a skos:Concept ;
-    dcterms:identifier 13 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Dunefield characterised by sand dunes with a long; scoop-shaped form; convex in the downwind direction so that its trailing arms point upwind; the ground plan; when developed; approximates the form of a parabola. Where many parabolic dunes have been active; the trailing arms give the impression of a longitudinal dunefield." ;
-    skos:notation "PAR" ;
-    skos:prefLabel "Parabolic dunefield" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/cffe8060-0916-5217-9b90-dfd262fbc12e> ;
+    urnp:conceptDefinition "Dunefield characterised by sand dunes with a long; scoop-shaped form; convex in the downwind direction so that its trailing arms point upwind; the ground plan; when developed; approximates the form of a parabola. Where many parabolic dunes have been active; the trailing arms give the impression of a longitudinal dunefield." ;
+    urnp:conceptIdentifier 13 ;
+    urnp:conceptNotation "PAR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/20c08c5a-5b7a-5c88-a0e0-e35d1b78b7f4>
-    a skos:Concept ;
-    dcterms:identifier 33 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Landform pattern of very low relief (9-30 m) and very gentle to steep slopes. The fixed; erosional stream channels are closely to very widely spaced and form a non directional to convergent; integrated or interrupted tributary pattern. The pattern is eroded by continuously active to barely active creep and sheet flow." ;
-    skos:notation "RIS" ;
-    skos:prefLabel "Rises" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f0e21988-4659-5de2-aa77-9d4112ead940> ;
+    urnp:conceptDefinition "Landform pattern of very low relief (9-30 m) and very gentle to steep slopes. The fixed; erosional stream channels are closely to very widely spaced and form a non directional to convergent; integrated or interrupted tributary pattern. The pattern is eroded by continuously active to barely active creep and sheet flow." ;
+    urnp:conceptIdentifier 33 ;
+    urnp:conceptNotation "RIS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/268eea7b-ef16-58a6-9e36-6b3ff89d4401>
-    a skos:Concept ;
-    dcterms:identifier 25 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level to rolling landform pattern of very low or extremely low relief without stream channels; built up or locally excavated; eroded or aggraded by wind. Included types of landform pattern are: longitudinal dunefield; parabolic dunefield." ;
-    skos:notation "DUN" ;
-    skos:prefLabel "Dunefield" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/101075ba-daf8-5cfa-bc3e-faa8e4f7ea55> ;
+    urnp:conceptDefinition "Level to rolling landform pattern of very low or extremely low relief without stream channels; built up or locally excavated; eroded or aggraded by wind. Included types of landform pattern are: longitudinal dunefield; parabolic dunefield." ;
+    urnp:conceptIdentifier 25 ;
+    urnp:conceptNotation "DUN" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/350dd93e-3928-56cb-9658-447db5ebd471>
-    a skos:Concept ;
-    dcterms:identifier 37 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Former flood plain on which erosion and aggradation by channelled and overbank stream flow is barely active or inactive because deepening or enlargement of the stream channel has lowered the level of flooding. A pattern that has both a former flood plain and a significant active flood plain; or that has former flood plains at more than one level; becomes terraced land." ;
-    skos:notation "TER" ;
-    skos:prefLabel "Terrace (alluvial)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/36cac678-b741-5649-8ab7-b2a0d11168b3> ;
+    urnp:conceptDefinition "Former flood plain on which erosion and aggradation by channelled and overbank stream flow is barely active or inactive because deepening or enlargement of the stream channel has lowered the level of flooding. A pattern that has both a former flood plain and a significant active flood plain; or that has former flood plains at more than one level; becomes terraced land." ;
+    urnp:conceptIdentifier 37 ;
+    urnp:conceptNotation "TER" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/3b15a4c7-a521-5074-ad41-fc9acfbe3a04>
-    a skos:Concept ;
-    dcterms:identifier 24 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Flood plain projecting into a sea or lake; with slowly migrating; deep alluvial channels; usually moderately spaced; typically forming a divergent; integrated distributary network. This landform is aggraded by frequently active overbank and channelled stream flow that is modified by tides." ;
-    skos:notation "DEL" ;
-    skos:prefLabel "Delta" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d554d4b1-a716-5d61-a96e-57a95df29050> ;
+    urnp:conceptDefinition "Flood plain projecting into a sea or lake; with slowly migrating; deep alluvial channels; usually moderately spaced; typically forming a divergent; integrated distributary network. This landform is aggraded by frequently active overbank and channelled stream flow that is modified by tides." ;
+    urnp:conceptIdentifier 24 ;
+    urnp:conceptNotation "DEL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/3f0b5877-7cbc-50b3-af25-195e0fda5a72>
-    a skos:Concept ;
-    dcterms:identifier 9 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Plain eroded or aggraded by waves; tides; or submarine currents; and aggraded by deposition of material from suspension and solution in sea water; elevated above sea level by earth movements or eustasy; and little modified by subaerial agents such as stream flow or wind" ;
-    skos:notation "MAR" ;
-    skos:prefLabel "Marine plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/55ea97b3-31c5-5004-95e2-646277c4f9fb> ;
+    urnp:conceptDefinition "Plain eroded or aggraded by waves; tides; or submarine currents; and aggraded by deposition of material from suspension and solution in sea water; elevated above sea level by earth movements or eustasy; and little modified by subaerial agents such as stream flow or wind" ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "MAR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/4ef71efc-5c73-5de3-983f-4141ec9b0477>
-    a skos:Concept ;
-    dcterms:identifier 26 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Steep to precipitous landform pattern forming a linearly extensive; straight or sinuous; inclined surface; which separates terrains at different altitudes; a plateau is commonly above the escarpment. Relief within the landform pattern may be high (hilly) or low (planar). The upper margin is often marked by an included cliff or scarp." ;
-    skos:notation "ESC" ;
-    skos:prefLabel "Escarpment" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8250c6af-a20a-58b1-8796-a9ee90cb15f9> ;
+    urnp:conceptDefinition "Steep to precipitous landform pattern forming a linearly extensive; straight or sinuous; inclined surface; which separates terrains at different altitudes; a plateau is commonly above the escarpment. Relief within the landform pattern may be high (hilly) or low (planar). The upper margin is often marked by an included cliff or scarp." ;
+    urnp:conceptIdentifier 26 ;
+    urnp:conceptNotation "ESC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/595615f2-ad1c-5ec4-aae9-3b1f53ff97e3>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Alluvial plain characterised by frequently active erosion and aggradation by channelled or overbank stream flow. Unless otherwise specified; 'frequently active' is to mean that flow has an Average Recurrence Interval of 50 years or less. Included types of landform pattern are: bar plain; meander plain; covered plain; anastomotic plain. Related relict landform patterns are: stagnant alluvial plain; terrace; terraced land (partly relict)." ;
-    skos:notation "FLO" ;
-    skos:prefLabel "Floodplain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/09f2d5d6-21b7-5e0d-b3c4-aad508a27e00> ;
+    urnp:conceptDefinition "Alluvial plain characterised by frequently active erosion and aggradation by channelled or overbank stream flow. Unless otherwise specified; 'frequently active' is to mean that flow has an Average Recurrence Interval of 50 years or less. Included types of landform pattern are: bar plain; meander plain; covered plain; anastomotic plain. Related relict landform patterns are: stagnant alluvial plain; terrace; terraced land (partly relict)." ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "FLO" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/5af6a493-c23f-5a00-91db-b19523420f28>
-    a skos:Concept ;
-    dcterms:identifier 28 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level to very gently inclined landform pattern with extremely low relief and no stream channels; eroded by barely active sheet flow and wind. Largely relict from more effective erosion by stream flow in incipient stream channels as on a pediment." ;
-    skos:notation "PEP" ;
-    skos:prefLabel "Pediplain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ddb933d6-468f-552b-a752-c5a2fe383537> ;
+    urnp:conceptDefinition "Level to very gently inclined landform pattern with extremely low relief and no stream channels; eroded by barely active sheet flow and wind. Largely relict from more effective erosion by stream flow in incipient stream channels as on a pediment." ;
+    urnp:conceptIdentifier 28 ;
+    urnp:conceptNotation "PEP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/5fb6b03e-538c-551b-9eb6-9263cbe97a4c>
-    a skos:Concept ;
-    dcterms:identifier 16 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Flood plain with slowly migrating; deep alluvial channels; usually moderately spaced; forming a divergent to unidirectional; integrated reticulated network. There is frequently active aggradation by overbank and channelled stream flow" ;
-    skos:notation "ANA" ;
-    skos:prefLabel "Anastomotic plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/fde010ad-fa2a-54cf-b5a0-0695c4e26cf9> ;
+    urnp:conceptDefinition "Flood plain with slowly migrating; deep alluvial channels; usually moderately spaced; forming a divergent to unidirectional; integrated reticulated network. There is frequently active aggradation by overbank and channelled stream flow" ;
+    urnp:conceptIdentifier 16 ;
+    urnp:conceptNotation "ANA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/65719dcc-5a53-5686-ba8e-62e262d5c10f>
-    a skos:Concept ;
-    dcterms:identifier 23 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Flood plain with a slowly migrating; deep alluvial channels; usually widely spaced and forming a unidirectional; integrated non-tributary network. There is frequently active aggradation by overbank stream flow." ;
-    skos:notation "COV" ;
-    skos:prefLabel "Covered plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b4956cb2-d66f-5e4e-9e34-ff8ed1e9df24> ;
+    urnp:conceptDefinition "Flood plain with a slowly migrating; deep alluvial channels; usually widely spaced and forming a unidirectional; integrated non-tributary network. There is frequently active aggradation by overbank stream flow." ;
+    urnp:conceptIdentifier 23 ;
+    urnp:conceptNotation "COV" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/6d1f6efd-2588-58f8-a042-67506e6c8e73>
-    a skos:Concept ;
-    dcterms:identifier 30 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level to undulating or; rarely; rolling landform pattern of extremely low relief (less than 9 m)." ;
-    skos:notation "PLA" ;
-    skos:prefLabel "Plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d7154911-ea70-5613-9b4d-8fb80b36cda0> ;
+    urnp:conceptDefinition "Level to undulating or; rarely; rolling landform pattern of extremely low relief (less than 9 m)." ;
+    urnp:conceptIdentifier 30 ;
+    urnp:conceptNotation "PLA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/7f7f7e57-10fc-5507-802a-a6f5b80fc962>
-    a skos:Concept ;
-    dcterms:identifier 38 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Landform pattern including one or more terraces and often a flood plain. Relief is low or very low (9-90 m). Terrace plains or terrace flats occur at stated heights above the top of the stream bank." ;
-    skos:notation "TEL" ;
-    skos:prefLabel "Terraced land (alluvial)" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1208831d-e64f-5543-a28c-99693b0d7643> ;
+    urnp:conceptDefinition "Landform pattern including one or more terraces and often a flood plain. Relief is low or very low (9-90 m). Terrace plains or terrace flats occur at stated heights above the top of the stream bank." ;
+    urnp:conceptIdentifier 38 ;
+    urnp:conceptNotation "TEL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/841c270e-c9c0-5e73-97ce-92c82bc46a3d>
-    a skos:Concept ;
-    dcterms:identifier 29 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level to gently undulating landform pattern with extremely low relief and sparse; slowly migrating Alluvial stream channels which form a non-directional; integrated tributary pattern. It is eroded by barely active sheet flow; creep; and channelled and overbank stream flow." ;
-    skos:notation "PNP" ;
-    skos:prefLabel "Peneplain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/49c66272-9b1e-5d4c-b9c2-d12b242edbce> ;
+    urnp:conceptDefinition "Level to gently undulating landform pattern with extremely low relief and sparse; slowly migrating Alluvial stream channels which form a non-directional; integrated tributary pattern. It is eroded by barely active sheet flow; creep; and channelled and overbank stream flow." ;
+    urnp:conceptIdentifier 29 ;
+    urnp:conceptNotation "PNP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/86b8ee28-c92f-5589-85a5-ef033b70a253>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Landform pattern of unspecified relief and slope typically with fixed; deep; erosional stream channels forming a non-directional; disintegrated tributary pattern and many closed depressions without stream channels. It is eroded by continuously active solution and rarely active collapse; the products being removed through underground channels." ;
-    skos:notation "KAR" ;
-    skos:prefLabel "Karst" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6ee19567-5635-5226-9415-188b629498f0> ;
+    urnp:conceptDefinition "Landform pattern of unspecified relief and slope typically with fixed; deep; erosional stream channels forming a non-directional; disintegrated tributary pattern and many closed depressions without stream channels. It is eroded by continuously active solution and rarely active collapse; the products being removed through underground channels." ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "KAR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/8acf14c0-1123-5f29-9c96-bb7da2ba58cd>
-    a skos:Concept ;
-    dcterms:identifier 31 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level to rolling landform pattern of plains; rises or low hills standing above a cliff scarp or escarpment that extends around a large part of its perimeter. A bounding scarp or cliff landform element may be included or excluded; a bounding escarpment would be an adjacent landform pattern." ;
-    skos:notation "PLT" ;
-    skos:prefLabel "Plateau" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d0cc9e41-ca4c-50a4-bfe5-c2fa623a8dd5> ;
+    urnp:conceptDefinition "Level to rolling landform pattern of plains; rises or low hills standing above a cliff scarp or escarpment that extends around a large part of its perimeter. A bounding scarp or cliff landform element may be included or excluded; a bounding escarpment would be an adjacent landform pattern." ;
+    urnp:conceptIdentifier 31 ;
+    urnp:conceptNotation "PLT" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/9bef8f8a-fbd6-52d4-998a-61a3e4d30046>
-    a skos:Concept ;
-    dcterms:identifier 40 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Typically very high and very steep landform pattern without stream channels; or with erosional stream channels forming a centrifugal; interrupted tributary pattern. The landform is built up by volcanism; and is modified by erosional agents." ;
-    skos:notation "VOL" ;
-    skos:prefLabel "Volcano" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/49e8888f-04c3-5689-8a49-421b0169ae53> ;
+    urnp:conceptDefinition "Typically very high and very steep landform pattern without stream channels; or with erosional stream channels forming a centrifugal; interrupted tributary pattern. The landform is built up by volcanism; and is modified by erosional agents." ;
+    urnp:conceptIdentifier 40 ;
+    urnp:conceptNotation "VOL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/a22be0bb-8c9c-5b40-a36d-e7fa9d3e35ee>
-    a skos:Concept ;
-    dcterms:identifier 15 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level landform pattern with extremely low relief. The shallow to deep alluvial stream channels are sparse to widely spaced; forming a unidirectional; integrated network. There may be frequently active erosion and aggradation by channelled and overbank stream flow; or the landforms may be relict from these processes. Included types of landform pattern are: Flood plain; Bar plain; Meander plain; Covered plain; Anastomotic plain; Delta; Stagnant alluvial plain; Terrace; Terraced land." ;
-    skos:notation "ALP" ;
-    skos:prefLabel "Aluvial plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/542a19df-03fc-5d29-96d3-ce8a6f346f59> ;
+    urnp:conceptDefinition "Level landform pattern with extremely low relief. The shallow to deep alluvial stream channels are sparse to widely spaced; forming a unidirectional; integrated network. There may be frequently active erosion and aggradation by channelled and overbank stream flow; or the landforms may be relict from these processes. Included types of landform pattern are: Flood plain; Bar plain; Meander plain; Covered plain; Anastomotic plain; Delta; Stagnant alluvial plain; Terrace; Terraced land." ;
+    urnp:conceptIdentifier 15 ;
+    urnp:conceptNotation "ALP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/a41c3820-cc6c-5a62-9608-c330d0e97bf6>
-    a skos:Concept ;
-    dcterms:identifier 12 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Landform pattern of very high relief (greater than 300 m) with moderate to precipitous slopes and fixed; erosional stream channels that are closely to very widely spaced and form a non-directional or diverging; integrated tributary network. There is continuously active erosion by collapse; landslide; sheet flow; creep; and channelled stream flow." ;
-    skos:notation "MOU" ;
-    skos:prefLabel "Mountains" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/cd36dfa8-1280-57d6-863d-aa944ca964ed> ;
+    urnp:conceptDefinition "Landform pattern of very high relief (greater than 300 m) with moderate to precipitous slopes and fixed; erosional stream channels that are closely to very widely spaced and form a non-directional or diverging; integrated tributary network. There is continuously active erosion by collapse; landslide; sheet flow; creep; and channelled stream flow." ;
+    urnp:conceptIdentifier 12 ;
+    urnp:conceptNotation "MOU" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/a86d3139-727a-555e-8388-8fb0bb592daf>
-    a skos:Concept ;
-    dcterms:identifier 22 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Continuously active or relict landform pattern built up to the sea level of the present day or of a former time by corals and other organisms. It is mainly level; with moderately inclined to precipitous slopes below the sea level. Stream channels are generally absent; but there may occasionally be fixed; deep; erosional tidal stream channels forming a disintegrated non-tributary pattern." ;
-    skos:notation "COR" ;
-    skos:prefLabel "Coral reef" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3e6d793d-77c7-520d-af77-d22c32ed6e8a> ;
+    urnp:conceptDefinition "Continuously active or relict landform pattern built up to the sea level of the present day or of a former time by corals and other organisms. It is mainly level; with moderately inclined to precipitous slopes below the sea level. Stream channels are generally absent; but there may occasionally be fixed; deep; erosional tidal stream channels forming a disintegrated non-tributary pattern." ;
+    urnp:conceptIdentifier 22 ;
+    urnp:conceptNotation "COR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/af5054d1-7fe9-5eea-971f-07a5f7a78d88>
-    a skos:Concept ;
-    dcterms:identifier 35 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level (less than 1% slope) to very gently inclined landform pattern of extremely low relief with numerous rapidly migrating; very shallow incipient stream channels forming a divergent to unidirectional integrated or interrupted reticulated pattern. The pattern is aggraded by frequently active sheet flow and channelled stream flow; with subordinate wind erosion." ;
-    skos:notation "SHF" ;
-    skos:prefLabel "Sheet-flood fan" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/abcf11d3-2aa2-5ec8-9123-99b22c9e8cc9> ;
+    urnp:conceptDefinition "Level (less than 1% slope) to very gently inclined landform pattern of extremely low relief with numerous rapidly migrating; very shallow incipient stream channels forming a divergent to unidirectional integrated or interrupted reticulated pattern. The pattern is aggraded by frequently active sheet flow and channelled stream flow; with subordinate wind erosion." ;
+    urnp:conceptIdentifier 35 ;
+    urnp:conceptNotation "SHF" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/b0ad9c92-3395-52f9-b00d-01be284b9d9b>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level landform pattern with extremely low relief formerly occupied by a lake but now partly or completely dry. It is relict after aggradation by waves and by deposition of material from suspension and solution in standing water. The pattern is usually bounded by wave-formed features such as cliffs; rock platforms; beaches; berms and lunettes. These may be included or excluded." ;
-    skos:notation "LAC" ;
-    skos:prefLabel "Laclustrine plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/eddf2302-bbca-5830-bb6e-707e225c90c6> ;
+    urnp:conceptDefinition "Level landform pattern with extremely low relief formerly occupied by a lake but now partly or completely dry. It is relict after aggradation by waves and by deposition of material from suspension and solution in standing water. The pattern is usually bounded by wave-formed features such as cliffs; rock platforms; beaches; berms and lunettes. These may be included or excluded." ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "LAC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/b1c4a7af-22a3-5ddf-9318-3c8af8e4a09d>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Dunefield characterised by long; narrow sand dunes and wide; flat swales. The dunes are oriented parallel with the direction of the prevailing wind; and in cross-section one slope is typically steeper than the other." ;
-    skos:notation "LON" ;
-    skos:prefLabel "Longitudinal dunefield" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/18c8b51a-e0a6-54e5-98c9-09defdef9763> ;
+    urnp:conceptDefinition "Dunefield characterised by long; narrow sand dunes and wide; flat swales. The dunes are oriented parallel with the direction of the prevailing wind; and in cross-section one slope is typically steeper than the other." ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "LON" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/b2344c3c-9f99-50f7-ac42-c52717f1779f>
-    a skos:Concept ;
-    dcterms:identifier 18 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Flood plain with numerous rapidly migrating; shallow alluvial channels forming a unidirectional; integrated reticulated network. There is frequently active aggradation and erosion by channelled stream flow." ;
-    skos:notation "BAR" ;
-    skos:prefLabel "Bar Plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/87804991-be35-577e-a860-e705d43b15de> ;
+    urnp:conceptDefinition "Flood plain with numerous rapidly migrating; shallow alluvial channels forming a unidirectional; integrated reticulated network. There is frequently active aggradation and erosion by channelled stream flow." ;
+    urnp:conceptIdentifier 18 ;
+    urnp:conceptNotation "BAR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/bf9bad3a-cfd3-5404-8f0c-d0e18da9f77f>
-    a skos:Concept ;
-    dcterms:identifier 34 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level to gently undulating landform pattern of extremely low relief and without channels; formed possibly by sheet flow or stream flow; but now relict and modified by wind action." ;
-    skos:notation "SAN" ;
-    skos:prefLabel "Sandplain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e32ddb5c-4d3b-5204-a3d8-9987e8ca493c> ;
+    urnp:conceptDefinition "Level to gently undulating landform pattern of extremely low relief and without channels; formed possibly by sheet flow or stream flow; but now relict and modified by wind action." ;
+    urnp:conceptIdentifier 34 ;
+    urnp:conceptNotation "SAN" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/c3d19034-eaab-545e-8f01-925174bd2732>
-    a skos:Concept ;
-    dcterms:identifier 19 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level to gently undulating landform pattern of extremely low relief on which stream channels are absent or very rare; it consists of relict; parallel beach ridges." ;
-    skos:notation "BEA" ;
-    skos:prefLabel "Beach ridge plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5aeedd22-e88a-536e-bb85-7037686528b3> ;
+    urnp:conceptDefinition "Level to gently undulating landform pattern of extremely low relief on which stream channels are absent or very rare; it consists of relict; parallel beach ridges." ;
+    urnp:conceptIdentifier 19 ;
+    urnp:conceptNotation "BEA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/cc1e0c2b-26b2-56c6-aa9b-01423994da56>
-    a skos:Concept ;
-    dcterms:identifier 36 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Alluvial plain on which erosion and aggradation by channelled and overbank stream flow is barely active or inactive because of reduced water supply;" ;
-    skos:notation "STA" ;
-    skos:prefLabel "Stagnant alluvial plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4ac6938b-e588-528d-bb91-a344217fb6de> ;
+    urnp:conceptDefinition "Alluvial plain on which erosion and aggradation by channelled and overbank stream flow is barely active or inactive because of reduced water supply;" ;
+    urnp:conceptIdentifier 36 ;
+    urnp:conceptNotation "STA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/cff4f652-d893-5674-9f29-91ed3c6cd3fb>
-    a skos:Concept ;
-    dcterms:identifier 27 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Gently inclined to level (less than 1%) landform pattern of extremely low relief; typically with numerous rapidly migrating; very shallow incipient stream channels; which form a centrifugal to diverging; integrated reticulated pattern. It is underlain by bedrock; eroded; and locally aggraded; by frequently active channelled stream flow or sheet flow; with subordinate wind erosion. Pediments characteristically lie downslope from adjacent hills with markedly steeper slopes." ;
-    skos:notation "PED" ;
-    skos:prefLabel "Pediment" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/392c68e8-e681-556d-a1ae-4a7aecf5144d> ;
+    urnp:conceptDefinition "Gently inclined to level (less than 1%) landform pattern of extremely low relief; typically with numerous rapidly migrating; very shallow incipient stream channels; which form a centrifugal to diverging; integrated reticulated pattern. It is underlain by bedrock; eroded; and locally aggraded; by frequently active channelled stream flow or sheet flow; with subordinate wind erosion. Pediments characteristically lie downslope from adjacent hills with markedly steeper slopes." ;
+    urnp:conceptIdentifier 27 ;
+    urnp:conceptNotation "PED" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/d8164c38-cef1-580e-8d74-04a310450707>
-    a skos:Concept ;
-    dcterms:identifier 10 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Flood plain with widely spaced; rapidly migrating; moderately deep alluvial stream channels which form a unidirectional; integrated non-tributary network. There is frequently active aggradation and erosion by channelled stream flow with subordinate aggradation by overbank stream flow." ;
-    skos:notation "MEA" ;
-    skos:prefLabel "Meander plain" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/22eacf7a-4c3a-5777-9cc7-7d40b0b3b7ee> ;
+    urnp:conceptDefinition "Flood plain with widely spaced; rapidly migrating; moderately deep alluvial stream channels which form a unidirectional; integrated non-tributary network. There is frequently active aggradation and erosion by channelled stream flow with subordinate aggradation by overbank stream flow." ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "MEA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/da273e02-8033-50c4-a174-3906d7553067>
-    a skos:Concept ;
-    dcterms:identifier 14 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level (less than 1% slope) to very gently inclined; complex landform pattern of extremely low relief. The rapidly migrating alluvial stream channels are shallow to moderately deep; locally numerous; but elsewhere widely spaced. The channels form a centrifugal to divergent; integrated; reticulated to distributary pattern. The landform pattern includes areas that are bar plains; being aggraded or eroded by frequently active channelled stream flow; and other areas comprising terraces or stagnant alluvial plains with slopes that are greater than usual; formed by channelled stream flow but now relict. Incision in the upslope area may give rise to an erosional stream bed between scarps." ;
-    skos:notation "ALF" ;
-    skos:prefLabel "Aluvial fan" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3bc88623-b54c-5ffd-876b-bf354ca9506e> ;
+    urnp:conceptDefinition "Level (less than 1% slope) to very gently inclined; complex landform pattern of extremely low relief. The rapidly migrating alluvial stream channels are shallow to moderately deep; locally numerous; but elsewhere widely spaced. The channels form a centrifugal to divergent; integrated; reticulated to distributary pattern. The landform pattern includes areas that are bar plains; being aggraded or eroded by frequently active channelled stream flow; and other areas comprising terraces or stagnant alluvial plains with slopes that are greater than usual; formed by channelled stream flow but now relict. Incision in the upslope area may give rise to an erosional stream bed between scarps." ;
+    urnp:conceptIdentifier 14 ;
+    urnp:conceptNotation "ALF" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
 .
 
 <https://linked.data.gov.au/def/nrm/db62c020-8dec-5716-9357-14d94d710cb2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0471c715-0546-5039-9c59-badf968288bd> ;
+    urnp:conceptDefinition "Level landform pattern with extremely low relief and slowly migrating; deep alluvial stream channels; which form non-directional; integrated tributary patterns; it is aggraded by frequently active tides." ;
+    urnp:conceptIdentifier 39 ;
+    urnp:conceptNotation "TID" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+.
+
+<https://linked.data.gov.au/def/nrm/db6445c8-c6b3-5511-8d48-80f6bed39eea>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ccb1f667-0c07-54e4-95ea-c4fc9038ee9b> ;
+    urnp:conceptDefinition "Landform pattern of low to extremely low relief (less than 90 m) and steep to precipitous slopes; typically with numerous fixed; erosional stream channels which form a non-directional; integrated tributary network. There is continuously active erosion by collapse; landslide; sheet flow; creep and channelled stream flow." ;
+    urnp:conceptIdentifier 17 ;
+    urnp:conceptNotation "BAD" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+.
+
+<https://linked.data.gov.au/def/nrm/dff9909c-3262-5159-a498-ea42777643c4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4762dc21-27f1-5ed9-b5cb-82d2b6e4398f> ;
+    urnp:conceptDefinition "Level landform pattern with extremely low relief; typically without stream channels; aggraded by rarely active sheet flow and modified by wind; waves; and soil phenomena" ;
+    urnp:conceptIdentifier 32 ;
+    urnp:conceptNotation "PLY" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ec0f124f-d45f-57fa-b5b5-2cc9689aee55>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2757b086-873a-51b9-82a6-8b0687712165> ;
+    urnp:conceptDefinition "Level to undulating landform pattern of very low to extremely low relief typically with widely spaced; fixed; erosional stream channels that form a non-directional; integrated or interrupted tributary pattern. The landform pattern is aggraded by volcanism (lava flow) that is generally relict; it is subject to erosion by continuously active sheet flow; creep; and channelled stream flow." ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "LAV" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ec96df0c-cfc5-5c8d-bac6-ec16acbcb23f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/73e51c76-d4f4-5e93-a310-e5100958ae61> ;
+    urnp:conceptDefinition "Level to gently undulating landform pattern of extremely low relief on which stream channels are very rare. The pattern consists of relict; parallel; linear ridges built up by waves; separated by; and built over; flats (mud flats) aggraded by tides or overbank stream flow." ;
+    urnp:conceptIdentifier 21 ;
+    urnp:conceptNotation "CHE" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f1503e82-108d-5eff-be37-bd2646a1f637>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/73d97557-6934-5036-8262-96be453e7adf> ;
+    urnp:conceptDefinition "Rare landform pattern typically of very high relief and steep to precipitous slope. It is without stream channels or has fixed; erosional channels forming a centripetal; integrated tributary pattern. The landform has subsided or was excavated as a result of volcanism." ;
+    urnp:conceptIdentifier 20 ;
+    urnp:conceptNotation "CAL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f19b8f62-9cc0-5c39-af77-3d198e05844c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2b145527-2fda-5970-bddf-3f65219f537c> ;
+    urnp:conceptDefinition "Landform pattern of high relief (90-300 m) with gently inclined to precipitous slopes. Fixed; shallow; erosional stream channels; closely to very widely spaced; form a non-directional or convergent; integrated tributary network. There is continuously active erosion by wash and creep and; in some cases; rarely active erosion by landslides." ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "HIL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f51ae8b8-76bc-541d-a7f3-f29f509f5fb5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/93bc15c8-a00c-53cb-b865-1c9e6cdb0d1b> ;
+    urnp:conceptDefinition "Rare landform pattern comprising a circular closed depression (see crater landform element) with a raised margin; it is typically of low to high relief and has a large range of slope values; without stream channels; or with a peripheral integrated pattern of centrifugal tributary streams. The pattern is excavated; heaved up and built up by a meteor impact and is now relict." ;
+    urnp:conceptIdentifier 11 ;
+    urnp:conceptNotation "MET" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f7306b1b-e95a-5508-b50f-7949eadca037>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e269a514-c9cc-5e54-a09f-95a715724cc2> ;
+    urnp:conceptDefinition "Landform pattern typically of very low or extremely low relief and with slopes either level or very steep. Sparse; fixed; deep; artificial stream channels form a non-directional; interrupted tributary pattern. The landform pattern is eroded and aggraded; and locally built up or excavated; by rarely active human agency." ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "MAD" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+.
+
+<https://linked.data.gov.au/def/nrm/0471c715-0546-5039-9c59-badf968288bd>
     a skos:Concept ;
     dcterms:identifier 39 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
@@ -419,29 +469,62 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/db6445c8-c6b3-5511-8d48-80f6bed39eea>
+<https://linked.data.gov.au/def/nrm/09f2d5d6-21b7-5e0d-b3c4-aad508a27e00>
     a skos:Concept ;
-    dcterms:identifier 17 ;
+    dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Landform pattern of low to extremely low relief (less than 90 m) and steep to precipitous slopes; typically with numerous fixed; erosional stream channels which form a non-directional; integrated tributary network. There is continuously active erosion by collapse; landslide; sheet flow; creep and channelled stream flow." ;
-    skos:notation "BAD" ;
-    skos:prefLabel "Badlands" ;
+    skos:definition "Alluvial plain characterised by frequently active erosion and aggradation by channelled or overbank stream flow. Unless otherwise specified; 'frequently active' is to mean that flow has an Average Recurrence Interval of 50 years or less. Included types of landform pattern are: bar plain; meander plain; covered plain; anastomotic plain. Related relict landform patterns are: stagnant alluvial plain; terrace; terraced land (partly relict)." ;
+    skos:notation "FLO" ;
+    skos:prefLabel "Floodplain" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/dff9909c-3262-5159-a498-ea42777643c4>
+<https://linked.data.gov.au/def/nrm/101075ba-daf8-5cfa-bc3e-faa8e4f7ea55>
     a skos:Concept ;
-    dcterms:identifier 32 ;
+    dcterms:identifier 25 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level landform pattern with extremely low relief; typically without stream channels; aggraded by rarely active sheet flow and modified by wind; waves; and soil phenomena" ;
-    skos:notation "PLY" ;
-    skos:prefLabel "Playa plain" ;
+    skos:definition "Level to rolling landform pattern of very low or extremely low relief without stream channels; built up or locally excavated; eroded or aggraded by wind. Included types of landform pattern are: longitudinal dunefield; parabolic dunefield." ;
+    skos:notation "DUN" ;
+    skos:prefLabel "Dunefield" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ec0f124f-d45f-57fa-b5b5-2cc9689aee55>
+<https://linked.data.gov.au/def/nrm/1208831d-e64f-5543-a28c-99693b0d7643>
+    a skos:Concept ;
+    dcterms:identifier 38 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Landform pattern including one or more terraces and often a flood plain. Relief is low or very low (9-90 m). Terrace plains or terrace flats occur at stated heights above the top of the stream bank." ;
+    skos:notation "TEL" ;
+    skos:prefLabel "Terraced land (alluvial)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/18c8b51a-e0a6-54e5-98c9-09defdef9763>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Dunefield characterised by long; narrow sand dunes and wide; flat swales. The dunes are oriented parallel with the direction of the prevailing wind; and in cross-section one slope is typically steeper than the other." ;
+    skos:notation "LON" ;
+    skos:prefLabel "Longitudinal dunefield" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/22eacf7a-4c3a-5777-9cc7-7d40b0b3b7ee>
+    a skos:Concept ;
+    dcterms:identifier 10 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Flood plain with widely spaced; rapidly migrating; moderately deep alluvial stream channels which form a unidirectional; integrated non-tributary network. There is frequently active aggradation and erosion by channelled stream flow with subordinate aggradation by overbank stream flow." ;
+    skos:notation "MEA" ;
+    skos:prefLabel "Meander plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/2757b086-873a-51b9-82a6-8b0687712165>
     a skos:Concept ;
     dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
@@ -452,29 +535,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/ec96df0c-cfc5-5c8d-bac6-ec16acbcb23f>
-    a skos:Concept ;
-    dcterms:identifier 21 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Level to gently undulating landform pattern of extremely low relief on which stream channels are very rare. The pattern consists of relict; parallel; linear ridges built up by waves; separated by; and built over; flats (mud flats) aggraded by tides or overbank stream flow." ;
-    skos:notation "CHE" ;
-    skos:prefLabel "Chenier plain" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/f1503e82-108d-5eff-be37-bd2646a1f637>
-    a skos:Concept ;
-    dcterms:identifier 20 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Rare landform pattern typically of very high relief and steep to precipitous slope. It is without stream channels or has fixed; erosional channels forming a centripetal; integrated tributary pattern. The landform has subsided or was excavated as a result of volcanism." ;
-    skos:notation "CAL" ;
-    skos:prefLabel "Caldera" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/f19b8f62-9cc0-5c39-af77-3d198e05844c>
+<https://linked.data.gov.au/def/nrm/2b145527-2fda-5970-bddf-3f65219f537c>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
@@ -485,7 +546,194 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f51ae8b8-76bc-541d-a7f3-f29f509f5fb5>
+<https://linked.data.gov.au/def/nrm/36cac678-b741-5649-8ab7-b2a0d11168b3>
+    a skos:Concept ;
+    dcterms:identifier 37 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Former flood plain on which erosion and aggradation by channelled and overbank stream flow is barely active or inactive because deepening or enlargement of the stream channel has lowered the level of flooding. A pattern that has both a former flood plain and a significant active flood plain; or that has former flood plains at more than one level; becomes terraced land." ;
+    skos:notation "TER" ;
+    skos:prefLabel "Terrace (alluvial)" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/392c68e8-e681-556d-a1ae-4a7aecf5144d>
+    a skos:Concept ;
+    dcterms:identifier 27 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Gently inclined to level (less than 1%) landform pattern of extremely low relief; typically with numerous rapidly migrating; very shallow incipient stream channels; which form a centrifugal to diverging; integrated reticulated pattern. It is underlain by bedrock; eroded; and locally aggraded; by frequently active channelled stream flow or sheet flow; with subordinate wind erosion. Pediments characteristically lie downslope from adjacent hills with markedly steeper slopes." ;
+    skos:notation "PED" ;
+    skos:prefLabel "Pediment" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3bc88623-b54c-5ffd-876b-bf354ca9506e>
+    a skos:Concept ;
+    dcterms:identifier 14 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level (less than 1% slope) to very gently inclined; complex landform pattern of extremely low relief. The rapidly migrating alluvial stream channels are shallow to moderately deep; locally numerous; but elsewhere widely spaced. The channels form a centrifugal to divergent; integrated; reticulated to distributary pattern. The landform pattern includes areas that are bar plains; being aggraded or eroded by frequently active channelled stream flow; and other areas comprising terraces or stagnant alluvial plains with slopes that are greater than usual; formed by channelled stream flow but now relict. Incision in the upslope area may give rise to an erosional stream bed between scarps." ;
+    skos:notation "ALF" ;
+    skos:prefLabel "Aluvial fan" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3e6d793d-77c7-520d-af77-d22c32ed6e8a>
+    a skos:Concept ;
+    dcterms:identifier 22 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Continuously active or relict landform pattern built up to the sea level of the present day or of a former time by corals and other organisms. It is mainly level; with moderately inclined to precipitous slopes below the sea level. Stream channels are generally absent; but there may occasionally be fixed; deep; erosional tidal stream channels forming a disintegrated non-tributary pattern." ;
+    skos:notation "COR" ;
+    skos:prefLabel "Coral reef" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4762dc21-27f1-5ed9-b5cb-82d2b6e4398f>
+    a skos:Concept ;
+    dcterms:identifier 32 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level landform pattern with extremely low relief; typically without stream channels; aggraded by rarely active sheet flow and modified by wind; waves; and soil phenomena" ;
+    skos:notation "PLY" ;
+    skos:prefLabel "Playa plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/49c66272-9b1e-5d4c-b9c2-d12b242edbce>
+    a skos:Concept ;
+    dcterms:identifier 29 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level to gently undulating landform pattern with extremely low relief and sparse; slowly migrating Alluvial stream channels which form a non-directional; integrated tributary pattern. It is eroded by barely active sheet flow; creep; and channelled and overbank stream flow." ;
+    skos:notation "PNP" ;
+    skos:prefLabel "Peneplain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/49e8888f-04c3-5689-8a49-421b0169ae53>
+    a skos:Concept ;
+    dcterms:identifier 40 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Typically very high and very steep landform pattern without stream channels; or with erosional stream channels forming a centrifugal; interrupted tributary pattern. The landform is built up by volcanism; and is modified by erosional agents." ;
+    skos:notation "VOL" ;
+    skos:prefLabel "Volcano" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4ac6938b-e588-528d-bb91-a344217fb6de>
+    a skos:Concept ;
+    dcterms:identifier 36 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Alluvial plain on which erosion and aggradation by channelled and overbank stream flow is barely active or inactive because of reduced water supply;" ;
+    skos:notation "STA" ;
+    skos:prefLabel "Stagnant alluvial plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/542a19df-03fc-5d29-96d3-ce8a6f346f59>
+    a skos:Concept ;
+    dcterms:identifier 15 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level landform pattern with extremely low relief. The shallow to deep alluvial stream channels are sparse to widely spaced; forming a unidirectional; integrated network. There may be frequently active erosion and aggradation by channelled and overbank stream flow; or the landforms may be relict from these processes. Included types of landform pattern are: Flood plain; Bar plain; Meander plain; Covered plain; Anastomotic plain; Delta; Stagnant alluvial plain; Terrace; Terraced land." ;
+    skos:notation "ALP" ;
+    skos:prefLabel "Aluvial plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/55ea97b3-31c5-5004-95e2-646277c4f9fb>
+    a skos:Concept ;
+    dcterms:identifier 9 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Plain eroded or aggraded by waves; tides; or submarine currents; and aggraded by deposition of material from suspension and solution in sea water; elevated above sea level by earth movements or eustasy; and little modified by subaerial agents such as stream flow or wind" ;
+    skos:notation "MAR" ;
+    skos:prefLabel "Marine plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/5aeedd22-e88a-536e-bb85-7037686528b3>
+    a skos:Concept ;
+    dcterms:identifier 19 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level to gently undulating landform pattern of extremely low relief on which stream channels are absent or very rare; it consists of relict; parallel beach ridges." ;
+    skos:notation "BEA" ;
+    skos:prefLabel "Beach ridge plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/5af57dba-5cdd-53f6-952d-f91c490735f7>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Landform pattern of low relief (30-90 m) and gentle to very steep slopes; typically with fixed; erosional stream channels; closely to very widely spaced; which form a non-directional or convergent; integrated tributary pattern. There is continuously active sheet flow; creep; and channelled stream flow." ;
+    skos:notation "LOW" ;
+    skos:prefLabel "Low hills" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6ee19567-5635-5226-9415-188b629498f0>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Landform pattern of unspecified relief and slope typically with fixed; deep; erosional stream channels forming a non-directional; disintegrated tributary pattern and many closed depressions without stream channels. It is eroded by continuously active solution and rarely active collapse; the products being removed through underground channels." ;
+    skos:notation "KAR" ;
+    skos:prefLabel "Karst" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/73d97557-6934-5036-8262-96be453e7adf>
+    a skos:Concept ;
+    dcterms:identifier 20 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Rare landform pattern typically of very high relief and steep to precipitous slope. It is without stream channels or has fixed; erosional channels forming a centripetal; integrated tributary pattern. The landform has subsided or was excavated as a result of volcanism." ;
+    skos:notation "CAL" ;
+    skos:prefLabel "Caldera" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/73e51c76-d4f4-5e93-a310-e5100958ae61>
+    a skos:Concept ;
+    dcterms:identifier 21 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level to gently undulating landform pattern of extremely low relief on which stream channels are very rare. The pattern consists of relict; parallel; linear ridges built up by waves; separated by; and built over; flats (mud flats) aggraded by tides or overbank stream flow." ;
+    skos:notation "CHE" ;
+    skos:prefLabel "Chenier plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8250c6af-a20a-58b1-8796-a9ee90cb15f9>
+    a skos:Concept ;
+    dcterms:identifier 26 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Steep to precipitous landform pattern forming a linearly extensive; straight or sinuous; inclined surface; which separates terrains at different altitudes; a plateau is commonly above the escarpment. Relief within the landform pattern may be high (hilly) or low (planar). The upper margin is often marked by an included cliff or scarp." ;
+    skos:notation "ESC" ;
+    skos:prefLabel "Escarpment" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/87804991-be35-577e-a860-e705d43b15de>
+    a skos:Concept ;
+    dcterms:identifier 18 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Flood plain with numerous rapidly migrating; shallow alluvial channels forming a unidirectional; integrated reticulated network. There is frequently active aggradation and erosion by channelled stream flow." ;
+    skos:notation "BAR" ;
+    skos:prefLabel "Bar Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/93bc15c8-a00c-53cb-b865-1c9e6cdb0d1b>
     a skos:Concept ;
     dcterms:identifier 11 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
@@ -496,7 +744,117 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/f7306b1b-e95a-5508-b50f-7949eadca037>
+<https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f>
+    a skos:Concept ;
+    dcterms:identifier 41 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "NC" ;
+    skos:prefLabel "Not Collected" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/abcf11d3-2aa2-5ec8-9123-99b22c9e8cc9>
+    a skos:Concept ;
+    dcterms:identifier 35 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level (less than 1% slope) to very gently inclined landform pattern of extremely low relief with numerous rapidly migrating; very shallow incipient stream channels forming a divergent to unidirectional integrated or interrupted reticulated pattern. The pattern is aggraded by frequently active sheet flow and channelled stream flow; with subordinate wind erosion." ;
+    skos:notation "SHF" ;
+    skos:prefLabel "Sheet-flood fan" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b4956cb2-d66f-5e4e-9e34-ff8ed1e9df24>
+    a skos:Concept ;
+    dcterms:identifier 23 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Flood plain with a slowly migrating; deep alluvial channels; usually widely spaced and forming a unidirectional; integrated non-tributary network. There is frequently active aggradation by overbank stream flow." ;
+    skos:notation "COV" ;
+    skos:prefLabel "Covered plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ccb1f667-0c07-54e4-95ea-c4fc9038ee9b>
+    a skos:Concept ;
+    dcterms:identifier 17 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Landform pattern of low to extremely low relief (less than 90 m) and steep to precipitous slopes; typically with numerous fixed; erosional stream channels which form a non-directional; integrated tributary network. There is continuously active erosion by collapse; landslide; sheet flow; creep and channelled stream flow." ;
+    skos:notation "BAD" ;
+    skos:prefLabel "Badlands" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/cd36dfa8-1280-57d6-863d-aa944ca964ed>
+    a skos:Concept ;
+    dcterms:identifier 12 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Landform pattern of very high relief (greater than 300 m) with moderate to precipitous slopes and fixed; erosional stream channels that are closely to very widely spaced and form a non-directional or diverging; integrated tributary network. There is continuously active erosion by collapse; landslide; sheet flow; creep; and channelled stream flow." ;
+    skos:notation "MOU" ;
+    skos:prefLabel "Mountains" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/cffe8060-0916-5217-9b90-dfd262fbc12e>
+    a skos:Concept ;
+    dcterms:identifier 13 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Dunefield characterised by sand dunes with a long; scoop-shaped form; convex in the downwind direction so that its trailing arms point upwind; the ground plan; when developed; approximates the form of a parabola. Where many parabolic dunes have been active; the trailing arms give the impression of a longitudinal dunefield." ;
+    skos:notation "PAR" ;
+    skos:prefLabel "Parabolic dunefield" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d0cc9e41-ca4c-50a4-bfe5-c2fa623a8dd5>
+    a skos:Concept ;
+    dcterms:identifier 31 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level to rolling landform pattern of plains; rises or low hills standing above a cliff scarp or escarpment that extends around a large part of its perimeter. A bounding scarp or cliff landform element may be included or excluded; a bounding escarpment would be an adjacent landform pattern." ;
+    skos:notation "PLT" ;
+    skos:prefLabel "Plateau" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d554d4b1-a716-5d61-a96e-57a95df29050>
+    a skos:Concept ;
+    dcterms:identifier 24 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Flood plain projecting into a sea or lake; with slowly migrating; deep alluvial channels; usually moderately spaced; typically forming a divergent; integrated distributary network. This landform is aggraded by frequently active overbank and channelled stream flow that is modified by tides." ;
+    skos:notation "DEL" ;
+    skos:prefLabel "Delta" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d7154911-ea70-5613-9b4d-8fb80b36cda0>
+    a skos:Concept ;
+    dcterms:identifier 30 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level to undulating or; rarely; rolling landform pattern of extremely low relief (less than 9 m)." ;
+    skos:notation "PLA" ;
+    skos:prefLabel "Plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ddb933d6-468f-552b-a752-c5a2fe383537>
+    a skos:Concept ;
+    dcterms:identifier 28 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level to very gently inclined landform pattern with extremely low relief and no stream channels; eroded by barely active sheet flow and wind. Largely relict from more effective erosion by stream flow in incipient stream channels as on a pediment." ;
+    skos:notation "PEP" ;
+    skos:prefLabel "Pediplain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e269a514-c9cc-5e54-a09f-95a715724cc2>
     a skos:Concept ;
     dcterms:identifier 8 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
@@ -504,6 +862,101 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Landform pattern typically of very low or extremely low relief and with slopes either level or very steep. Sparse; fixed; deep; artificial stream channels form a non-directional; interrupted tributary pattern. The landform pattern is eroded and aggraded; and locally built up or excavated; by rarely active human agency." ;
     skos:notation "MAD" ;
     skos:prefLabel "Made land" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e32ddb5c-4d3b-5204-a3d8-9987e8ca493c>
+    a skos:Concept ;
+    dcterms:identifier 34 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level to gently undulating landform pattern of extremely low relief and without channels; formed possibly by sheet flow or stream flow; but now relict and modified by wind action." ;
+    skos:notation "SAN" ;
+    skos:prefLabel "Sandplain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/eddf2302-bbca-5830-bb6e-707e225c90c6>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Level landform pattern with extremely low relief formerly occupied by a lake but now partly or completely dry. It is relict after aggradation by waves and by deposition of material from suspension and solution in standing water. The pattern is usually bounded by wave-formed features such as cliffs; rock platforms; beaches; berms and lunettes. These may be included or excluded." ;
+    skos:notation "LAC" ;
+    skos:prefLabel "Laclustrine plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f0e21988-4659-5de2-aa77-9d4112ead940>
+    a skos:Concept ;
+    dcterms:identifier 33 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Landform pattern of very low relief (9-30 m) and very gentle to steep slopes. The fixed; erosional stream channels are closely to very widely spaced and form a non directional to convergent; integrated or interrupted tributary pattern. The pattern is eroded by continuously active to barely active creep and sheet flow." ;
+    skos:notation "RIS" ;
+    skos:prefLabel "Rises" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/fde010ad-fa2a-54cf-b5a0-0695c4e26cf9>
+    a skos:Concept ;
+    dcterms:identifier 16 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Flood plain with slowly migrating; deep alluvial channels; usually moderately spaced; forming a divergent to unidirectional; integrated reticulated network. There is frequently active aggradation by overbank and channelled stream flow" ;
+    skos:notation "ANA" ;
+    skos:prefLabel "Anastomotic plain" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003>
+    a skos:Collection ;
+    dcterms:description "A collection of landform pattern types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0471c715-0546-5039-9c59-badf968288bd> ,
+        <https://linked.data.gov.au/def/nrm/09f2d5d6-21b7-5e0d-b3c4-aad508a27e00> ,
+        <https://linked.data.gov.au/def/nrm/101075ba-daf8-5cfa-bc3e-faa8e4f7ea55> ,
+        <https://linked.data.gov.au/def/nrm/1208831d-e64f-5543-a28c-99693b0d7643> ,
+        <https://linked.data.gov.au/def/nrm/18c8b51a-e0a6-54e5-98c9-09defdef9763> ,
+        <https://linked.data.gov.au/def/nrm/22eacf7a-4c3a-5777-9cc7-7d40b0b3b7ee> ,
+        <https://linked.data.gov.au/def/nrm/2757b086-873a-51b9-82a6-8b0687712165> ,
+        <https://linked.data.gov.au/def/nrm/2b145527-2fda-5970-bddf-3f65219f537c> ,
+        <https://linked.data.gov.au/def/nrm/36cac678-b741-5649-8ab7-b2a0d11168b3> ,
+        <https://linked.data.gov.au/def/nrm/392c68e8-e681-556d-a1ae-4a7aecf5144d> ,
+        <https://linked.data.gov.au/def/nrm/3bc88623-b54c-5ffd-876b-bf354ca9506e> ,
+        <https://linked.data.gov.au/def/nrm/3e6d793d-77c7-520d-af77-d22c32ed6e8a> ,
+        <https://linked.data.gov.au/def/nrm/4762dc21-27f1-5ed9-b5cb-82d2b6e4398f> ,
+        <https://linked.data.gov.au/def/nrm/49c66272-9b1e-5d4c-b9c2-d12b242edbce> ,
+        <https://linked.data.gov.au/def/nrm/49e8888f-04c3-5689-8a49-421b0169ae53> ,
+        <https://linked.data.gov.au/def/nrm/4ac6938b-e588-528d-bb91-a344217fb6de> ,
+        <https://linked.data.gov.au/def/nrm/542a19df-03fc-5d29-96d3-ce8a6f346f59> ,
+        <https://linked.data.gov.au/def/nrm/55ea97b3-31c5-5004-95e2-646277c4f9fb> ,
+        <https://linked.data.gov.au/def/nrm/5aeedd22-e88a-536e-bb85-7037686528b3> ,
+        <https://linked.data.gov.au/def/nrm/5af57dba-5cdd-53f6-952d-f91c490735f7> ,
+        <https://linked.data.gov.au/def/nrm/6ee19567-5635-5226-9415-188b629498f0> ,
+        <https://linked.data.gov.au/def/nrm/73d97557-6934-5036-8262-96be453e7adf> ,
+        <https://linked.data.gov.au/def/nrm/73e51c76-d4f4-5e93-a310-e5100958ae61> ,
+        <https://linked.data.gov.au/def/nrm/8250c6af-a20a-58b1-8796-a9ee90cb15f9> ,
+        <https://linked.data.gov.au/def/nrm/87804991-be35-577e-a860-e705d43b15de> ,
+        <https://linked.data.gov.au/def/nrm/93bc15c8-a00c-53cb-b865-1c9e6cdb0d1b> ,
+        <https://linked.data.gov.au/def/nrm/94ee6b46-e2f1-5101-8666-3cbcd8697f0f> ,
+        <https://linked.data.gov.au/def/nrm/abcf11d3-2aa2-5ec8-9123-99b22c9e8cc9> ,
+        <https://linked.data.gov.au/def/nrm/b4956cb2-d66f-5e4e-9e34-ff8ed1e9df24> ,
+        <https://linked.data.gov.au/def/nrm/ccb1f667-0c07-54e4-95ea-c4fc9038ee9b> ,
+        <https://linked.data.gov.au/def/nrm/cd36dfa8-1280-57d6-863d-aa944ca964ed> ,
+        <https://linked.data.gov.au/def/nrm/cffe8060-0916-5217-9b90-dfd262fbc12e> ,
+        <https://linked.data.gov.au/def/nrm/d0cc9e41-ca4c-50a4-bfe5-c2fa623a8dd5> ,
+        <https://linked.data.gov.au/def/nrm/d554d4b1-a716-5d61-a96e-57a95df29050> ,
+        <https://linked.data.gov.au/def/nrm/d7154911-ea70-5613-9b4d-8fb80b36cda0> ,
+        <https://linked.data.gov.au/def/nrm/ddb933d6-468f-552b-a752-c5a2fe383537> ,
+        <https://linked.data.gov.au/def/nrm/e269a514-c9cc-5e54-a09f-95a715724cc2> ,
+        <https://linked.data.gov.au/def/nrm/e32ddb5c-4d3b-5204-a3d8-9987e8ca493c> ,
+        <https://linked.data.gov.au/def/nrm/eddf2302-bbca-5830-bb6e-707e225c90c6> ,
+        <https://linked.data.gov.au/def/nrm/f0e21988-4659-5de2-aa77-9d4112ead940> ,
+        <https://linked.data.gov.au/def/nrm/fde010ad-fa2a-54cf-b5a0-0695c4e26cf9> ;
+    skos:prefLabel "Landform pattern codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/landform-pattern.ttl"^^xsd:anyURI ;
 .
 

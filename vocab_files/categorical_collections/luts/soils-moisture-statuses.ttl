@@ -3,21 +3,33 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/a1e434a8-3fbb-4323-a0ae-0e31308eba8b>
-    a skos:Collection ;
-    dcterms:description "A collection of soils moisture statuses and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-moisture-statuses> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/29be81d5-2df2-59c5-9e18-e4a2937b9ef0> ,
-        <https://linked.data.gov.au/def/nrm/b93625b1-0e66-594b-9d02-f87ee44651d1> ;
-    skos:prefLabel "Soils moisture statuses codes" ;
+<https://linked.data.gov.au/def/nrm/29be81d5-2df2-59c5-9e18-e4a2937b9ef0>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-moisture-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a1e434a8-3fbb-4323-a0ae-0e31308eba8b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/194731f1-ed4d-5734-8e1d-0157b719108e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "M" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-moisture-statuses> ;
 .
 
-<https://linked.data.gov.au/def/nrm/29be81d5-2df2-59c5-9e18-e4a2937b9ef0>
+<https://linked.data.gov.au/def/nrm/b93625b1-0e66-594b-9d02-f87ee44651d1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-moisture-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a1e434a8-3fbb-4323-a0ae-0e31308eba8b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/84b551fd-c4f0-5d63-a160-9c6668d4b1de> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "D" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-moisture-statuses> ;
+.
+
+<https://linked.data.gov.au/def/nrm/194731f1-ed4d-5734-8e1d-0157b719108e>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-moisture-statuses> ;
@@ -28,7 +40,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-moisture-statuses.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/b93625b1-0e66-594b-9d02-f87ee44651d1>
+<https://linked.data.gov.au/def/nrm/84b551fd-c4f0-5d63-a160-9c6668d4b1de>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-moisture-statuses> ;
@@ -36,6 +48,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "D" ;
     skos:prefLabel "Dry" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-moisture-statuses.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a1e434a8-3fbb-4323-a0ae-0e31308eba8b>
+    a skos:Collection ;
+    dcterms:description "A collection of soils moisture statuses and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-moisture-statuses> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/194731f1-ed4d-5734-8e1d-0157b719108e> ,
+        <https://linked.data.gov.au/def/nrm/84b551fd-c4f0-5d63-a160-9c6668d4b1de> ;
+    skos:prefLabel "Soils moisture statuses codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-moisture-statuses.ttl"^^xsd:anyURI ;
 .
 

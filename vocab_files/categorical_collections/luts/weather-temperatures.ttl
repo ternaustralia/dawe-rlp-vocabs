@@ -3,58 +3,77 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/cd1530af-09a6-4666-98d5-580c0e65cf10>
-    a skos:Collection ;
-    dcterms:description "A collection of weather temperatures and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/0077545f-6f5f-5927-a199-c32aa4f7b5cb> ,
-        <https://linked.data.gov.au/def/nrm/95bcec13-9438-5704-b606-958c62c9d73f> ,
-        <https://linked.data.gov.au/def/nrm/a31e41d7-1d8c-5bce-ab8f-3866320449e9> ,
-        <https://linked.data.gov.au/def/nrm/af6e8962-7c84-52a3-954c-f1b20fe92a3b> ,
-        <https://linked.data.gov.au/def/nrm/b354bd41-fdb7-58d4-b65b-7becb20d2b34> ,
-        <https://linked.data.gov.au/def/nrm/fc1500f4-d1c9-5aa1-a232-43039c8b75e0> ;
-    skos:prefLabel "Weather temperatures codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/0077545f-6f5f-5927-a199-c32aa4f7b5cb>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "H" ;
-    skos:prefLabel "Hot" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cd1530af-09a6-4666-98d5-580c0e65cf10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bfee24b3-f82c-5ae0-b6b4-642b697f0bc8> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "H" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
 .
 
 <https://linked.data.gov.au/def/nrm/95bcec13-9438-5704-b606-958c62c9d73f>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "VC" ;
-    skos:prefLabel "Very Cold" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cd1530af-09a6-4666-98d5-580c0e65cf10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/89bc05f0-9464-59e5-b773-da2d0841a1c2> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "VC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
 .
 
 <https://linked.data.gov.au/def/nrm/a31e41d7-1d8c-5bce-ab8f-3866320449e9>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "CO" ;
-    skos:prefLabel "Cool" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cd1530af-09a6-4666-98d5-580c0e65cf10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f68a80cb-9d49-59d1-ab67-fed8d32c415f> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "CO" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
 .
 
 <https://linked.data.gov.au/def/nrm/af6e8962-7c84-52a3-954c-f1b20fe92a3b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cd1530af-09a6-4666-98d5-580c0e65cf10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2bf4c4cb-c18e-5faa-8935-580b12f6f604> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "VH" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b354bd41-fdb7-58d4-b65b-7becb20d2b34>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cd1530af-09a6-4666-98d5-580c0e65cf10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2c3fa319-70e2-579a-8f25-0218d91e2199> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "W" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fc1500f4-d1c9-5aa1-a232-43039c8b75e0>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cd1530af-09a6-4666-98d5-580c0e65cf10> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4c9c6ea8-5b81-5d11-b9e1-69b77588abc3> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "CD" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
+.
+
+<https://linked.data.gov.au/def/nrm/2bf4c4cb-c18e-5faa-8935-580b12f6f604>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
@@ -65,7 +84,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/b354bd41-fdb7-58d4-b65b-7becb20d2b34>
+<https://linked.data.gov.au/def/nrm/2c3fa319-70e2-579a-8f25-0218d91e2199>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
@@ -76,7 +95,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/fc1500f4-d1c9-5aa1-a232-43039c8b75e0>
+<https://linked.data.gov.au/def/nrm/4c9c6ea8-5b81-5d11-b9e1-69b77588abc3>
     a skos:Concept ;
     dcterms:identifier 5 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
@@ -84,6 +103,55 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "CD" ;
     skos:prefLabel "Cold" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/89bc05f0-9464-59e5-b773-da2d0841a1c2>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "VC" ;
+    skos:prefLabel "Very Cold" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bfee24b3-f82c-5ae0-b6b4-642b697f0bc8>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "H" ;
+    skos:prefLabel "Hot" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f68a80cb-9d49-59d1-ab67-fed8d32c415f>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "CO" ;
+    skos:prefLabel "Cool" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/cd1530af-09a6-4666-98d5-580c0e65cf10>
+    a skos:Collection ;
+    dcterms:description "A collection of weather temperatures and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-weather-temperatures> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/2bf4c4cb-c18e-5faa-8935-580b12f6f604> ,
+        <https://linked.data.gov.au/def/nrm/2c3fa319-70e2-579a-8f25-0218d91e2199> ,
+        <https://linked.data.gov.au/def/nrm/4c9c6ea8-5b81-5d11-b9e1-69b77588abc3> ,
+        <https://linked.data.gov.au/def/nrm/89bc05f0-9464-59e5-b773-da2d0841a1c2> ,
+        <https://linked.data.gov.au/def/nrm/bfee24b3-f82c-5ae0-b6b4-642b697f0bc8> ,
+        <https://linked.data.gov.au/def/nrm/f68a80cb-9d49-59d1-ab67-fed8d32c415f> ;
+    skos:prefLabel "Weather temperatures codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-temperatures.ttl"^^xsd:anyURI ;
 .
 

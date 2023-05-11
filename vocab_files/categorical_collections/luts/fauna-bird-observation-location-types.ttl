@@ -3,22 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/2f0470aa-2c05-4e87-a5ac-1d50205b9927>
-    a skos:Collection ;
-    dcterms:description "A collection of fauna bird observation location types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/72dc5d0b-3fd1-5a82-a755-c2b6df2f7055> ,
-        <https://linked.data.gov.au/def/nrm/83bb0c7c-4780-58e6-b760-89ab6496a4e0> ,
-        <https://linked.data.gov.au/def/nrm/c28d28e7-3b03-5ea6-a0d5-129be10ffb82> ;
-    skos:prefLabel "Fauna bird observation location types codes" ;
+<https://linked.data.gov.au/def/nrm/72dc5d0b-3fd1-5a82-a755-c2b6df2f7055>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-bird-observation-location-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2f0470aa-2c05-4e87-a5ac-1d50205b9927> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8cf3f3eb-a056-52df-9367-92196de1f2f1> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "ODH" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
 .
 
-<https://linked.data.gov.au/def/nrm/72dc5d0b-3fd1-5a82-a755-c2b6df2f7055>
+<https://linked.data.gov.au/def/nrm/83bb0c7c-4780-58e6-b760-89ab6496a4e0>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-bird-observation-location-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2f0470aa-2c05-4e87-a5ac-1d50205b9927> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/af32eb38-5a65-5736-9e62-e47c85bdecef> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "OSH" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c28d28e7-3b03-5ea6-a0d5-129be10ffb82>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-bird-observation-location-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2f0470aa-2c05-4e87-a5ac-1d50205b9927> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/92ddecfe-f8f4-5de1-a00e-755de48f732d> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "WS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/8cf3f3eb-a056-52df-9367-92196de1f2f1>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
@@ -29,7 +51,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-bird-observation-location-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/83bb0c7c-4780-58e6-b760-89ab6496a4e0>
+<https://linked.data.gov.au/def/nrm/92ddecfe-f8f4-5de1-a00e-755de48f732d>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "WS" ;
+    skos:prefLabel "Within Survey Area" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-bird-observation-location-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/af32eb38-5a65-5736-9e62-e47c85bdecef>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
@@ -40,14 +73,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-bird-observation-location-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/c28d28e7-3b03-5ea6-a0d5-129be10ffb82>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
+<https://linked.data.gov.au/def/nrm/2f0470aa-2c05-4e87-a5ac-1d50205b9927>
+    a skos:Collection ;
+    dcterms:description "A collection of fauna bird observation location types and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "WS" ;
-    skos:prefLabel "Within Survey Area" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/8cf3f3eb-a056-52df-9367-92196de1f2f1> ,
+        <https://linked.data.gov.au/def/nrm/92ddecfe-f8f4-5de1-a00e-755de48f732d> ,
+        <https://linked.data.gov.au/def/nrm/af32eb38-5a65-5736-9e62-e47c85bdecef> ;
+    skos:prefLabel "Fauna bird observation location types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fauna-bird-observation-location-types.ttl"^^xsd:anyURI ;
 .
 

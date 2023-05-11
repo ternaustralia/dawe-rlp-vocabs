@@ -3,21 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/5d96e377-fb3a-4735-875d-4bad4df46c79>
-    a skos:Collection ;
-    dcterms:description "A collection of protocol variants and its codes." ;
+<https://linked.data.gov.au/def/nrm/36047800-f1e8-5ff3-8ed8-6253d830e033>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/protocol-variants.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5d96e377-fb3a-4735-875d-4bad4df46c79> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/48b96e06-16ab-52ff-87cc-af05f84192ed> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "lite" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-protocol-variants> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fbcd0b4a-f40c-5e1f-ad13-efdafc984782>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/protocol-variants.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5d96e377-fb3a-4735-875d-4bad4df46c79> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/294c4b77-d58b-527f-96c2-e31130dd0309> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "full" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-protocol-variants> ;
+.
+
+<https://linked.data.gov.au/def/nrm/294c4b77-d58b-527f-96c2-e31130dd0309>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-protocol-variants> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/36047800-f1e8-5ff3-8ed8-6253d830e033> ,
-        <https://linked.data.gov.au/def/nrm/fbcd0b4a-f40c-5e1f-ad13-efdafc984782> ;
-    skos:prefLabel "Protocol variants codes" ;
+    skos:definition "" ;
+    skos:notation "full" ;
+    skos:prefLabel "Full" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/protocol-variants.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/36047800-f1e8-5ff3-8ed8-6253d830e033>
+<https://linked.data.gov.au/def/nrm/48b96e06-16ab-52ff-87cc-af05f84192ed>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-protocol-variants> ;
@@ -28,14 +51,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/protocol-variants.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/fbcd0b4a-f40c-5e1f-ad13-efdafc984782>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
+<https://linked.data.gov.au/def/nrm/5d96e377-fb3a-4735-875d-4bad4df46c79>
+    a skos:Collection ;
+    dcterms:description "A collection of protocol variants and its codes." ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-protocol-variants> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "full" ;
-    skos:prefLabel "Full" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/294c4b77-d58b-527f-96c2-e31130dd0309> ,
+        <https://linked.data.gov.au/def/nrm/48b96e06-16ab-52ff-87cc-af05f84192ed> ;
+    skos:prefLabel "Protocol variants codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/protocol-variants.ttl"^^xsd:anyURI ;
 .
 

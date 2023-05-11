@@ -3,22 +3,44 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/3532bfc2-8fa1-48c4-a785-e6181735f232>
-    a skos:Collection ;
-    dcterms:description "A collection of invertebrate pan trapping colours and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trapping-colours> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/06495910-6429-5403-adb6-b5fbecf9ca90> ,
-        <https://linked.data.gov.au/def/nrm/071f35bb-1c83-5f23-bd5c-35286a58ca46> ,
-        <https://linked.data.gov.au/def/nrm/484ce715-6dbc-500a-919c-6835758a99d8> ;
-    skos:prefLabel "Invertebrate pan trapping colours codes" ;
+<https://linked.data.gov.au/def/nrm/06495910-6429-5403-adb6-b5fbecf9ca90>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trapping-colours.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3532bfc2-8fa1-48c4-a785-e6181735f232> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4a97644d-9c42-5e78-a586-eea5bf16fdad> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "W" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trapping-colours> ;
 .
 
-<https://linked.data.gov.au/def/nrm/06495910-6429-5403-adb6-b5fbecf9ca90>
+<https://linked.data.gov.au/def/nrm/071f35bb-1c83-5f23-bd5c-35286a58ca46>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trapping-colours.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3532bfc2-8fa1-48c4-a785-e6181735f232> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b7254391-9c60-5f83-bd86-253731e98fd6> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "Y" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trapping-colours> ;
+.
+
+<https://linked.data.gov.au/def/nrm/484ce715-6dbc-500a-919c-6835758a99d8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trapping-colours.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3532bfc2-8fa1-48c4-a785-e6181735f232> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/dc9540f6-9933-51bf-9d19-347656e32236> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "B" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trapping-colours> ;
+.
+
+<https://linked.data.gov.au/def/nrm/4a97644d-9c42-5e78-a586-eea5bf16fdad>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trapping-colours> ;
@@ -29,7 +51,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trapping-colours.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/071f35bb-1c83-5f23-bd5c-35286a58ca46>
+<https://linked.data.gov.au/def/nrm/b7254391-9c60-5f83-bd86-253731e98fd6>
     a skos:Concept ;
     dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trapping-colours> ;
@@ -40,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trapping-colours.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/484ce715-6dbc-500a-919c-6835758a99d8>
+<https://linked.data.gov.au/def/nrm/dc9540f6-9933-51bf-9d19-347656e32236>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trapping-colours> ;
@@ -48,6 +70,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "B" ;
     skos:prefLabel "Blue" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trapping-colours.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3532bfc2-8fa1-48c4-a785-e6181735f232>
+    a skos:Collection ;
+    dcterms:description "A collection of invertebrate pan trapping colours and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-pan-trapping-colours> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/4a97644d-9c42-5e78-a586-eea5bf16fdad> ,
+        <https://linked.data.gov.au/def/nrm/b7254391-9c60-5f83-bd86-253731e98fd6> ,
+        <https://linked.data.gov.au/def/nrm/dc9540f6-9933-51bf-9d19-347656e32236> ;
+    skos:prefLabel "Invertebrate pan trapping colours codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-pan-trapping-colours.ttl"^^xsd:anyURI ;
 .
 

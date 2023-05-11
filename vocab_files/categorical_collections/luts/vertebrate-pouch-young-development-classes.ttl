@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/7cf0bda6-8e32-570f-86ae-70e5625b3bea>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-pouch-young-development-classes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6a69b9e5-4a1e-4ef5-b79e-d8cea6e3d97b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e5c7ad9f-3c57-51d3-87f9-7713f9217474> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Haired" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-pouch-young-development-classes> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c934ed3e-fdb0-5480-9bce-27aef15051be>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-pouch-young-development-classes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6a69b9e5-4a1e-4ef5-b79e-d8cea6e3d97b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b2e86636-87d5-5998-afc0-016836a66461> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Unhaired" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-pouch-young-development-classes> ;
+.
 
 <https://linked.data.gov.au/def/nrm/6a69b9e5-4a1e-4ef5-b79e-d8cea6e3d97b>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-pouch-young-development-classes> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/7cf0bda6-8e32-570f-86ae-70e5625b3bea> ,
-        <https://linked.data.gov.au/def/nrm/c934ed3e-fdb0-5480-9bce-27aef15051be> ;
+        <https://linked.data.gov.au/def/nrm/b2e86636-87d5-5998-afc0-016836a66461> ,
+        <https://linked.data.gov.au/def/nrm/e5c7ad9f-3c57-51d3-87f9-7713f9217474> ;
     skos:prefLabel "Vertebrate pouch young development classes codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-pouch-young-development-classes.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/7cf0bda6-8e32-570f-86ae-70e5625b3bea>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-pouch-young-development-classes> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Haired" ;
-    skos:prefLabel "Haired" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-pouch-young-development-classes.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/c934ed3e-fdb0-5480-9bce-27aef15051be>
+<https://linked.data.gov.au/def/nrm/b2e86636-87d5-5998-afc0-016836a66461>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-pouch-young-development-classes> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Unhaired" ;
     skos:prefLabel "Unhaired" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-pouch-young-development-classes.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e5c7ad9f-3c57-51d3-87f9-7713f9217474>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-pouch-young-development-classes> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Haired" ;
+    skos:prefLabel "Haired" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-pouch-young-development-classes.ttl"^^xsd:anyURI ;
 .
 

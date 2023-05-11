@@ -3,7 +3,31 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/cc38d5d7-93c3-5f14-8ff2-fde502a0ca80>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-typicals.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3fa6ec81-4451-477a-910f-0107ae8032bb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e5a194fc-6e1a-5050-b93d-1b08b0d0f6fb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "Typical" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-typicals> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e50d3842-47c0-5564-b79d-0b9e4adfffb1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-typicals.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3fa6ec81-4451-477a-910f-0107ae8032bb> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6ccf841f-61ab-5d0e-8891-1b346e16ba1e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Atypical" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-typicals> ;
+.
 
 <https://linked.data.gov.au/def/nrm/3fa6ec81-4451-477a-910f-0107ae8032bb>
     a skos:Collection ;
@@ -11,24 +35,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-typicals> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/cc38d5d7-93c3-5f14-8ff2-fde502a0ca80> ,
-        <https://linked.data.gov.au/def/nrm/e50d3842-47c0-5564-b79d-0b9e4adfffb1> ;
+        <https://linked.data.gov.au/def/nrm/6ccf841f-61ab-5d0e-8891-1b346e16ba1e> ,
+        <https://linked.data.gov.au/def/nrm/e5a194fc-6e1a-5050-b93d-1b08b0d0f6fb> ;
     skos:prefLabel "Soils horizon typicals codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-typicals.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/cc38d5d7-93c3-5f14-8ff2-fde502a0ca80>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-typicals> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "Typical" ;
-    skos:prefLabel "Typical" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-typicals.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e50d3842-47c0-5564-b79d-0b9e4adfffb1>
+<https://linked.data.gov.au/def/nrm/6ccf841f-61ab-5d0e-8891-1b346e16ba1e>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-typicals> ;
@@ -36,6 +49,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "Atypical" ;
     skos:prefLabel "Atypical" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-typicals.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e5a194fc-6e1a-5050-b93d-1b08b0d0f6fb>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-typicals> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "Typical" ;
+    skos:prefLabel "Typical" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soils-horizon-typicals.ttl"^^xsd:anyURI ;
 .
 

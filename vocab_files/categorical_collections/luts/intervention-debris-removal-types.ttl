@@ -3,23 +3,55 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/70690fe1-e803-4af0-ab6f-fb8f54456933>
-    a skos:Collection ;
-    dcterms:description "A collection of intervention debris removal types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/042c0a02-2272-58a2-b617-d65b537fde73> ,
-        <https://linked.data.gov.au/def/nrm/765eae4f-6e6a-53ec-a65a-ec3f402e9eed> ,
-        <https://linked.data.gov.au/def/nrm/82c8087c-295f-547b-9829-7a4db163197b> ,
-        <https://linked.data.gov.au/def/nrm/94113702-7a65-54ed-ab4a-f3007c67ecf4> ;
-    skos:prefLabel "Intervention debris removal types codes" ;
+<https://linked.data.gov.au/def/nrm/042c0a02-2272-58a2-b617-d65b537fde73>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-debris-removal-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/70690fe1-e803-4af0-ab6f-fb8f54456933> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0b482077-636a-540c-9676-ebf55e639b94> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "BIW" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
 .
 
-<https://linked.data.gov.au/def/nrm/042c0a02-2272-58a2-b617-d65b537fde73>
+<https://linked.data.gov.au/def/nrm/765eae4f-6e6a-53ec-a65a-ec3f402e9eed>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-debris-removal-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/70690fe1-e803-4af0-ab6f-fb8f54456933> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e13ca35a-a74e-5ccd-a3fd-ff984d06a665> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "DW" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/82c8087c-295f-547b-9829-7a4db163197b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-debris-removal-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/70690fe1-e803-4af0-ab6f-fb8f54456933> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "O" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/94113702-7a65-54ed-ab4a-f3007c67ecf4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-debris-removal-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/70690fe1-e803-4af0-ab6f-fb8f54456933> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7a1bc7e1-c6d0-5817-85f6-5566f24986fd> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "GW" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/0b482077-636a-540c-9676-ebf55e639b94>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
@@ -30,18 +62,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-debris-removal-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/765eae4f-6e6a-53ec-a65a-ec3f402e9eed>
+<https://linked.data.gov.au/def/nrm/7a1bc7e1-c6d0-5817-85f6-5566f24986fd>
     a skos:Concept ;
-    dcterms:identifier 2 ;
+    dcterms:identifier 3 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "DW" ;
-    skos:prefLabel "Domestic Waste" ;
+    skos:notation "GW" ;
+    skos:prefLabel "Green Waste" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-debris-removal-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/82c8087c-295f-547b-9829-7a4db163197b>
+<https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb>
     a skos:Concept ;
     dcterms:identifier 4 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
@@ -52,14 +84,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-debris-removal-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/94113702-7a65-54ed-ab4a-f3007c67ecf4>
+<https://linked.data.gov.au/def/nrm/e13ca35a-a74e-5ccd-a3fd-ff984d06a665>
     a skos:Concept ;
-    dcterms:identifier 3 ;
+    dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "" ;
-    skos:notation "GW" ;
-    skos:prefLabel "Green Waste" ;
+    skos:notation "DW" ;
+    skos:prefLabel "Domestic Waste" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-debris-removal-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/70690fe1-e803-4af0-ab6f-fb8f54456933>
+    a skos:Collection ;
+    dcterms:description "A collection of intervention debris removal types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-intervention-debris-removal-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0b482077-636a-540c-9676-ebf55e639b94> ,
+        <https://linked.data.gov.au/def/nrm/7a1bc7e1-c6d0-5817-85f6-5566f24986fd> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ,
+        <https://linked.data.gov.au/def/nrm/e13ca35a-a74e-5ccd-a3fd-ff984d06a665> ;
+    skos:prefLabel "Intervention debris removal types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/intervention-debris-removal-types.ttl"^^xsd:anyURI ;
 .
 

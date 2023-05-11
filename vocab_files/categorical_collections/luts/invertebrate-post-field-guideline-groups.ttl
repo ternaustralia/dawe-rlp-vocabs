@@ -3,165 +3,528 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475>
-    a skos:Collection ;
-    dcterms:description "A collection of invertebrate post field guideline groups and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/05165e20-e55d-5f01-8424-06e7687e5c42> ,
-        <https://linked.data.gov.au/def/nrm/0c4a59e2-e64e-5e46-97e6-fcf0e5aa55da> ,
-        <https://linked.data.gov.au/def/nrm/0c50f748-3723-50bd-a159-96e5f1137407> ,
-        <https://linked.data.gov.au/def/nrm/0edcd8e4-7862-5370-b54c-864c459f9b01> ,
-        <https://linked.data.gov.au/def/nrm/0fdee0ab-3cd5-5734-88f3-0634c3216aed> ,
-        <https://linked.data.gov.au/def/nrm/175829c1-edb5-57d8-a4b1-b43bccb665de> ,
-        <https://linked.data.gov.au/def/nrm/18e27bde-3795-59bb-9345-030f1984718b> ,
-        <https://linked.data.gov.au/def/nrm/193ffc66-9f59-5e83-9f48-e63c25deccd6> ,
-        <https://linked.data.gov.au/def/nrm/2a916630-34ad-52e3-a44b-2baaa1f1c7ad> ,
-        <https://linked.data.gov.au/def/nrm/2d8c8012-d991-5097-8063-2e22783ad477> ,
-        <https://linked.data.gov.au/def/nrm/2effe4fd-f37f-599d-a697-54f561c09dac> ,
-        <https://linked.data.gov.au/def/nrm/32ddd782-a237-5727-82ba-ea4e1c1df3d3> ,
-        <https://linked.data.gov.au/def/nrm/3460cb32-754b-5fc0-97f8-168e7362639d> ,
-        <https://linked.data.gov.au/def/nrm/3c3b8033-b09d-5041-b587-62ad40848907> ,
-        <https://linked.data.gov.au/def/nrm/4422d44d-12e7-5a61-a530-cc25e7682050> ,
-        <https://linked.data.gov.au/def/nrm/44c2d788-d15f-55fd-9d17-58e74acbf23b> ,
-        <https://linked.data.gov.au/def/nrm/4b53f973-68d9-58f1-b2a8-812a154e0113> ,
-        <https://linked.data.gov.au/def/nrm/54f0214e-aee8-578b-8783-fe46898e09db> ,
-        <https://linked.data.gov.au/def/nrm/57b91f00-0f71-5714-a75c-aef7b9259152> ,
-        <https://linked.data.gov.au/def/nrm/5b19cf32-6248-5406-bfa7-d40945b68d15> ,
-        <https://linked.data.gov.au/def/nrm/61a22354-16ff-5fe7-9b88-72375e4fda8d> ,
-        <https://linked.data.gov.au/def/nrm/63dad5cb-35d3-5345-aba0-218f3bb5ed75> ,
-        <https://linked.data.gov.au/def/nrm/6ae69767-fc09-5790-98d6-f2eca983530f> ,
-        <https://linked.data.gov.au/def/nrm/70defbae-a5ed-547f-8156-82b7ebd5ae86> ,
-        <https://linked.data.gov.au/def/nrm/7b3abd21-8857-59b3-84f1-87fd680de815> ,
-        <https://linked.data.gov.au/def/nrm/8401d0c0-8c2f-5817-bf47-17b159103a36> ,
-        <https://linked.data.gov.au/def/nrm/875577c5-d664-5108-bb92-3d55d8b7b4c5> ,
-        <https://linked.data.gov.au/def/nrm/89285d90-a3c0-5ae5-885c-8d73c6538a92> ,
-        <https://linked.data.gov.au/def/nrm/8c885a30-1a03-5242-8b8e-e4cda2223d3a> ,
-        <https://linked.data.gov.au/def/nrm/9d3f0841-2518-59e8-a62a-a9c58903546a> ,
-        <https://linked.data.gov.au/def/nrm/a27fd1b8-1262-51b4-8853-7efbf780fe14> ,
-        <https://linked.data.gov.au/def/nrm/a6912462-7a31-5f60-b1d2-60ca87cf1e14> ,
-        <https://linked.data.gov.au/def/nrm/a7601e71-0b4e-5966-9b2a-2169f0cc157b> ,
-        <https://linked.data.gov.au/def/nrm/a7666bea-87ab-5750-90b5-a3173296d855> ,
-        <https://linked.data.gov.au/def/nrm/b08e39d2-2f95-53d9-a122-fdf357437f2f> ,
-        <https://linked.data.gov.au/def/nrm/c9c79155-f557-54aa-b03a-089503899a1e> ,
-        <https://linked.data.gov.au/def/nrm/c9fa131a-08f9-5b5f-b623-31fcf093db75> ,
-        <https://linked.data.gov.au/def/nrm/cc39329e-fb34-5a39-bfed-0fafcb3fa3b8> ,
-        <https://linked.data.gov.au/def/nrm/e0e71ed5-ea1e-514d-99ac-2a4b83347bb8> ,
-        <https://linked.data.gov.au/def/nrm/e30679c2-f437-5ce0-b2d1-166843e29acb> ,
-        <https://linked.data.gov.au/def/nrm/e3686f9b-6e3a-562d-b0df-ba4b4226c195> ,
-        <https://linked.data.gov.au/def/nrm/e550b5f2-61af-523c-bcc9-4de46e8bc00a> ,
-        <https://linked.data.gov.au/def/nrm/ed86a6cf-396b-59e9-a2da-416bc2076e5d> ,
-        <https://linked.data.gov.au/def/nrm/f757c44c-1f5f-5d74-aaa8-deec48b56523> ,
-        <https://linked.data.gov.au/def/nrm/fa1030ec-8fc2-5f8a-b956-8e032ec5295b> ,
-        <https://linked.data.gov.au/def/nrm/fbd1f8dc-944b-5ead-a662-e0f6b2516840> ,
-        <https://linked.data.gov.au/def/nrm/fd22e63e-2116-56ff-9f24-062e3a2dd73f> ;
-    skos:prefLabel "Invertebrate post field guideline groups codes" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/05165e20-e55d-5f01-8424-06e7687e5c42>
-    a skos:Concept ;
-    dcterms:identifier 23 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IS" ;
-    skos:prefLabel "IS" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d063a084-a879-5483-a686-00c7fdc653f0> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 23 ;
+    urnp:conceptNotation "IS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
 .
 
 <https://linked.data.gov.au/def/nrm/0c4a59e2-e64e-5e46-97e6-fcf0e5aa55da>
-    a skos:Concept ;
-    dcterms:identifier 5 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IDI" ;
-    skos:prefLabel "IDI" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6cf68bd7-705e-58b5-9e61-4d9e85ac5b24> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 5 ;
+    urnp:conceptNotation "IDI" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
 .
 
 <https://linked.data.gov.au/def/nrm/0c50f748-3723-50bd-a159-96e5f1137407>
-    a skos:Concept ;
-    dcterms:identifier 15 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IMG" ;
-    skos:prefLabel "IMG" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6d770520-7369-5295-867c-637f06a9148b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 15 ;
+    urnp:conceptNotation "IMG" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
 .
 
 <https://linked.data.gov.au/def/nrm/0edcd8e4-7862-5370-b54c-864c459f9b01>
-    a skos:Concept ;
-    dcterms:identifier 42 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "MPR" ;
-    skos:prefLabel "MPR" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e9d11181-ae63-58da-9427-3fde143dbfae> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 42 ;
+    urnp:conceptNotation "MPR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
 .
 
 <https://linked.data.gov.au/def/nrm/0fdee0ab-3cd5-5734-88f3-0634c3216aed>
-    a skos:Concept ;
-    dcterms:identifier 18 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IOR" ;
-    skos:prefLabel "IOR" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ae6ef06a-40ad-550a-8943-9f35d68d446a> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 18 ;
+    urnp:conceptNotation "IOR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
 .
 
 <https://linked.data.gov.au/def/nrm/175829c1-edb5-57d8-a4b1-b43bccb665de>
-    a skos:Concept ;
-    dcterms:identifier 19 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IP" ;
-    skos:prefLabel "IP" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b170d6ea-38a2-58cf-8153-57dab4a8ef45> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 19 ;
+    urnp:conceptNotation "IP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
 .
 
 <https://linked.data.gov.au/def/nrm/18e27bde-3795-59bb-9345-030f1984718b>
-    a skos:Concept ;
-    dcterms:identifier 39 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "AU" ;
-    skos:prefLabel "AU" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/091e4aa2-07a1-5b30-9eda-847caa21a2d9> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 39 ;
+    urnp:conceptNotation "AU" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
 .
 
 <https://linked.data.gov.au/def/nrm/193ffc66-9f59-5e83-9f48-e63c25deccd6>
-    a skos:Concept ;
-    dcterms:identifier 44 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "HCO" ;
-    skos:prefLabel "HCO" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2d6b51b1-efc4-542a-a9c6-576793b2df75> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 44 ;
+    urnp:conceptNotation "HCO" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
 .
 
 <https://linked.data.gov.au/def/nrm/2a916630-34ad-52e3-a44b-2baaa1f1c7ad>
-    a skos:Concept ;
-    dcterms:identifier 22 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IPS" ;
-    skos:prefLabel "IPS" ;
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/cb5e6f3a-5e77-511d-ad7c-fcdf2ce44f03> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 22 ;
+    urnp:conceptNotation "IPS" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
 .
 
 <https://linked.data.gov.au/def/nrm/2d8c8012-d991-5097-8063-2e22783ad477>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/04dce23e-4b15-5050-b207-f567bc6e81ce> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 41 ;
+    urnp:conceptNotation "MDP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/2effe4fd-f37f-599d-a697-54f561c09dac>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/be321111-cbca-593f-9016-0faf7c1b4a50> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 14 ;
+    urnp:conceptNotation "IME" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/32ddd782-a237-5727-82ba-ea4e1c1df3d3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/43c7efc1-f232-5751-a93b-c87df57cbd05> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 40 ;
+    urnp:conceptNotation "MCH" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/3460cb32-754b-5fc0-97f8-168e7362639d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9e3577d6-2435-5421-8ca1-d86dd2d748b7> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 29 ;
+    urnp:conceptNotation "AAC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/3c3b8033-b09d-5041-b587-62ad40848907>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/32fa8c45-0e94-508d-93cf-146ea6e71c88> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 10 ;
+    urnp:conceptNotation "IHY" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/4422d44d-12e7-5a61-a530-cc25e7682050>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c4b80d14-4a3c-5920-a43a-c0d6f3291c16> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 46 ;
+    urnp:conceptNotation "HPR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/44c2d788-d15f-55fd-9d17-58e74acbf23b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/67050434-c6fb-57db-82bf-3bdbf28661a1> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "IB" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/4b53f973-68d9-58f1-b2a8-812a154e0113>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/45e8de5e-0f45-5b54-a29e-3aec1c6cb3a6> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 32 ;
+    urnp:conceptNotation "AOP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/54f0214e-aee8-578b-8783-fe46898e09db>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5f85974f-9360-5d2a-b6cd-39bbde23d5d8> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 35 ;
+    urnp:conceptNotation "AR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/57b91f00-0f71-5714-a75c-aef7b9259152>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/dea5cbe8-5d83-5862-ab7d-3255ab1e8790> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 9 ;
+    urnp:conceptNotation "IH" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/5b19cf32-6248-5406-bfa7-d40945b68d15>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3ae7a373-569b-5beb-880c-a89e3bd4c549> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 43 ;
+    urnp:conceptNotation "MSY" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/61a22354-16ff-5fe7-9b88-72375e4fda8d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6eaf63a1-92a1-53a5-8bb9-650c7710789e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 17 ;
+    urnp:conceptNotation "IO" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/63dad5cb-35d3-5345-aba0-218f3bb5ed75>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d8d6a156-72df-5b71-8bc9-84da559458d2> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 31 ;
+    urnp:conceptNotation "AAR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/6ae69767-fc09-5790-98d6-f2eca983530f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f395ee0c-3b6b-5ec9-b2ca-3e95e25dadb8> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 16 ;
+    urnp:conceptNotation "IN" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/70defbae-a5ed-547f-8156-82b7ebd5ae86>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/cbe30797-ec30-53f2-8015-7acad1f4c9c7> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "IC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/7b3abd21-8857-59b3-84f1-87fd680de815>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/aef13722-3f79-5c9e-92a3-148cc52a0972> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 30 ;
+    urnp:conceptNotation "AAM" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/8401d0c0-8c2f-5817-bf47-17b159103a36>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1dc8fa7e-4179-5ea4-9df2-6d92c7f81e2b> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 4 ;
+    urnp:conceptNotation "ID" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/875577c5-d664-5108-bb92-3d55d8b7b4c5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bf294e46-aac4-5f33-8d7d-a90294d99617> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 13 ;
+    urnp:conceptNotation "IM" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/89285d90-a3c0-5ae5-885c-8d73c6538a92>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/160c6b48-603e-5955-bd84-37ca6ef16d98> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 37 ;
+    urnp:conceptNotation "ASZ" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/8c885a30-1a03-5242-8b8e-e4cda2223d3a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/cfe41ee9-b42b-5be5-afa5-7a1741039039> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 27 ;
+    urnp:conceptNotation "IZ" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/9d3f0841-2518-59e8-a62a-a9c58903546a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1f1acb20-d71d-5623-8804-84f3f67310ac> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 11 ;
+    urnp:conceptNotation "II" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a27fd1b8-1262-51b4-8853-7efbf780fe14>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c9a89482-bf63-5064-9957-9face88234d4> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 12 ;
+    urnp:conceptNotation "IL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a6912462-7a31-5f60-b1d2-60ca87cf1e14>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8561a260-9ac1-5a1d-b4ce-c1c67d51be93> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 36 ;
+    urnp:conceptNotation "ASC" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a7601e71-0b4e-5966-9b2a-2169f0cc157b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7654177e-70fa-508c-8e71-ec9aa797e379> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 21 ;
+    urnp:conceptNotation "IPL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/a7666bea-87ab-5750-90b5-a3173296d855>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bb6566ae-44f4-500d-a269-7690bf3e985a> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 47 ;
+    urnp:conceptNotation "MM" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b08e39d2-2f95-53d9-a122-fdf357437f2f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bf2f67ca-5957-5a5b-8a34-cc606c199bb4> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 26 ;
+    urnp:conceptNotation "ITR" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c9c79155-f557-54aa-b03a-089503899a1e>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1ef689be-dfc2-553e-a71c-b10ecf10bc12> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 24 ;
+    urnp:conceptNotation "IST" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c9fa131a-08f9-5b5f-b623-31fcf093db75>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ad9f9949-7baa-5a9f-9bfd-4d1ec8774b36> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 38 ;
+    urnp:conceptNotation "ASO" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/cc39329e-fb34-5a39-bfed-0fafcb3fa3b8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ebf5d1ed-c843-590f-b34f-c53ee46dcbbe> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 28 ;
+    urnp:conceptNotation "IZY" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e0e71ed5-ea1e-514d-99ac-2a4b83347bb8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4c2f15de-c05c-50f3-8800-19df70280c56> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 25 ;
+    urnp:conceptNotation "IT" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e30679c2-f437-5ce0-b2d1-166843e29acb>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d6a7b9da-6986-5fb3-8956-ad54d842477e> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 34 ;
+    urnp:conceptNotation "APD" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e3686f9b-6e3a-562d-b0df-ba4b4226c195>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/738edb77-bb1d-5d4d-9dc7-bfde1e1ae3ba> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 33 ;
+    urnp:conceptNotation "APA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/e550b5f2-61af-523c-bcc9-4de46e8bc00a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2be2aadc-8e03-5ef4-91aa-2437072f7802> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 7 ;
+    urnp:conceptNotation "IEP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/ed86a6cf-396b-59e9-a2da-416bc2076e5d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/66d2d106-6a49-5fe2-afbe-46da1c934a47> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 45 ;
+    urnp:conceptNotation "HDL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/f757c44c-1f5f-5d74-aaa8-deec48b56523>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b945fa97-563e-52c9-9854-0473392aa9ab> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "IA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fa1030ec-8fc2-5f8a-b956-8e032ec5295b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1c1e08bf-6fce-52dc-b275-52b7c19b3704> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 6 ;
+    urnp:conceptNotation "IE" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fbd1f8dc-944b-5ead-a662-e0f6b2516840>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/04fcf696-92f2-529a-a445-be588a4f3916> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 8 ;
+    urnp:conceptNotation "IG" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/fd22e63e-2116-56ff-9f24-062e3a2dd73f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/99aed329-9904-5b04-b164-65c45c0b3475> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 20 ;
+    urnp:conceptNotation "IPH" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+.
+
+<https://linked.data.gov.au/def/nrm/04dce23e-4b15-5050-b207-f567bc6e81ce>
     a skos:Concept ;
     dcterms:identifier 41 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
@@ -172,392 +535,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/2effe4fd-f37f-599d-a697-54f561c09dac>
-    a skos:Concept ;
-    dcterms:identifier 14 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IME" ;
-    skos:prefLabel "IME" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/32ddd782-a237-5727-82ba-ea4e1c1df3d3>
-    a skos:Concept ;
-    dcterms:identifier 40 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "MCH" ;
-    skos:prefLabel "MCH" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/3460cb32-754b-5fc0-97f8-168e7362639d>
-    a skos:Concept ;
-    dcterms:identifier 29 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "AAC" ;
-    skos:prefLabel "AAC" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/3c3b8033-b09d-5041-b587-62ad40848907>
-    a skos:Concept ;
-    dcterms:identifier 10 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IHY" ;
-    skos:prefLabel "IHY" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/4422d44d-12e7-5a61-a530-cc25e7682050>
-    a skos:Concept ;
-    dcterms:identifier 46 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "HPR" ;
-    skos:prefLabel "HPR" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/44c2d788-d15f-55fd-9d17-58e74acbf23b>
-    a skos:Concept ;
-    dcterms:identifier 2 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IB" ;
-    skos:prefLabel "IB" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/4b53f973-68d9-58f1-b2a8-812a154e0113>
-    a skos:Concept ;
-    dcterms:identifier 32 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "AOP" ;
-    skos:prefLabel "AOP" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/54f0214e-aee8-578b-8783-fe46898e09db>
-    a skos:Concept ;
-    dcterms:identifier 35 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "AR" ;
-    skos:prefLabel "AR" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/57b91f00-0f71-5714-a75c-aef7b9259152>
-    a skos:Concept ;
-    dcterms:identifier 9 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IH" ;
-    skos:prefLabel "IH" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/5b19cf32-6248-5406-bfa7-d40945b68d15>
-    a skos:Concept ;
-    dcterms:identifier 43 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "MSY" ;
-    skos:prefLabel "MSY" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/61a22354-16ff-5fe7-9b88-72375e4fda8d>
-    a skos:Concept ;
-    dcterms:identifier 17 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IO" ;
-    skos:prefLabel "IO" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/63dad5cb-35d3-5345-aba0-218f3bb5ed75>
-    a skos:Concept ;
-    dcterms:identifier 31 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "AAR" ;
-    skos:prefLabel "AAR" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/6ae69767-fc09-5790-98d6-f2eca983530f>
-    a skos:Concept ;
-    dcterms:identifier 16 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IN" ;
-    skos:prefLabel "IN" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/70defbae-a5ed-547f-8156-82b7ebd5ae86>
-    a skos:Concept ;
-    dcterms:identifier 3 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IC" ;
-    skos:prefLabel "C" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/7b3abd21-8857-59b3-84f1-87fd680de815>
-    a skos:Concept ;
-    dcterms:identifier 30 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "AAM" ;
-    skos:prefLabel "AAM" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/8401d0c0-8c2f-5817-bf47-17b159103a36>
-    a skos:Concept ;
-    dcterms:identifier 4 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "ID" ;
-    skos:prefLabel "ID" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/875577c5-d664-5108-bb92-3d55d8b7b4c5>
-    a skos:Concept ;
-    dcterms:identifier 13 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IM" ;
-    skos:prefLabel "IM" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/89285d90-a3c0-5ae5-885c-8d73c6538a92>
-    a skos:Concept ;
-    dcterms:identifier 37 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "ASZ" ;
-    skos:prefLabel "ASZ" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/8c885a30-1a03-5242-8b8e-e4cda2223d3a>
-    a skos:Concept ;
-    dcterms:identifier 27 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IZ" ;
-    skos:prefLabel "IZ" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/9d3f0841-2518-59e8-a62a-a9c58903546a>
-    a skos:Concept ;
-    dcterms:identifier 11 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "II" ;
-    skos:prefLabel "II" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/a27fd1b8-1262-51b4-8853-7efbf780fe14>
-    a skos:Concept ;
-    dcterms:identifier 12 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IL" ;
-    skos:prefLabel "IL" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/a6912462-7a31-5f60-b1d2-60ca87cf1e14>
-    a skos:Concept ;
-    dcterms:identifier 36 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "ASC" ;
-    skos:prefLabel "ASC" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/a7601e71-0b4e-5966-9b2a-2169f0cc157b>
-    a skos:Concept ;
-    dcterms:identifier 21 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IPL" ;
-    skos:prefLabel "IPL" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/a7666bea-87ab-5750-90b5-a3173296d855>
-    a skos:Concept ;
-    dcterms:identifier 47 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "MM" ;
-    skos:prefLabel "MM" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/b08e39d2-2f95-53d9-a122-fdf357437f2f>
-    a skos:Concept ;
-    dcterms:identifier 26 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "ITR" ;
-    skos:prefLabel "ITR" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/c9c79155-f557-54aa-b03a-089503899a1e>
-    a skos:Concept ;
-    dcterms:identifier 24 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IST" ;
-    skos:prefLabel "IST" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/c9fa131a-08f9-5b5f-b623-31fcf093db75>
-    a skos:Concept ;
-    dcterms:identifier 38 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "ASO" ;
-    skos:prefLabel "ASO" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/cc39329e-fb34-5a39-bfed-0fafcb3fa3b8>
-    a skos:Concept ;
-    dcterms:identifier 28 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IZY" ;
-    skos:prefLabel "IZY" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e0e71ed5-ea1e-514d-99ac-2a4b83347bb8>
-    a skos:Concept ;
-    dcterms:identifier 25 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IT" ;
-    skos:prefLabel "IT" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e30679c2-f437-5ce0-b2d1-166843e29acb>
-    a skos:Concept ;
-    dcterms:identifier 34 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "APD" ;
-    skos:prefLabel "APD" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e3686f9b-6e3a-562d-b0df-ba4b4226c195>
-    a skos:Concept ;
-    dcterms:identifier 33 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "APA" ;
-    skos:prefLabel "APA" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/e550b5f2-61af-523c-bcc9-4de46e8bc00a>
-    a skos:Concept ;
-    dcterms:identifier 7 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IEP" ;
-    skos:prefLabel "IEP" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/ed86a6cf-396b-59e9-a2da-416bc2076e5d>
-    a skos:Concept ;
-    dcterms:identifier 45 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "HDL" ;
-    skos:prefLabel "HDL" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/f757c44c-1f5f-5d74-aaa8-deec48b56523>
-    a skos:Concept ;
-    dcterms:identifier 1 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IA" ;
-    skos:prefLabel "IA" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/fa1030ec-8fc2-5f8a-b956-8e032ec5295b>
-    a skos:Concept ;
-    dcterms:identifier 6 ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "" ;
-    skos:notation "IE" ;
-    skos:prefLabel "IE" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/fbd1f8dc-944b-5ead-a662-e0f6b2516840>
+<https://linked.data.gov.au/def/nrm/04fcf696-92f2-529a-a445-be588a4f3916>
     a skos:Concept ;
     dcterms:identifier 8 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
@@ -568,7 +546,249 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/fd22e63e-2116-56ff-9f24-062e3a2dd73f>
+<https://linked.data.gov.au/def/nrm/091e4aa2-07a1-5b30-9eda-847caa21a2d9>
+    a skos:Concept ;
+    dcterms:identifier 39 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "AU" ;
+    skos:prefLabel "AU" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/160c6b48-603e-5955-bd84-37ca6ef16d98>
+    a skos:Concept ;
+    dcterms:identifier 37 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "ASZ" ;
+    skos:prefLabel "ASZ" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/1c1e08bf-6fce-52dc-b275-52b7c19b3704>
+    a skos:Concept ;
+    dcterms:identifier 6 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IE" ;
+    skos:prefLabel "IE" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/1dc8fa7e-4179-5ea4-9df2-6d92c7f81e2b>
+    a skos:Concept ;
+    dcterms:identifier 4 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "ID" ;
+    skos:prefLabel "ID" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/1ef689be-dfc2-553e-a71c-b10ecf10bc12>
+    a skos:Concept ;
+    dcterms:identifier 24 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IST" ;
+    skos:prefLabel "IST" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/1f1acb20-d71d-5623-8804-84f3f67310ac>
+    a skos:Concept ;
+    dcterms:identifier 11 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "II" ;
+    skos:prefLabel "II" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/2be2aadc-8e03-5ef4-91aa-2437072f7802>
+    a skos:Concept ;
+    dcterms:identifier 7 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IEP" ;
+    skos:prefLabel "IEP" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/2d6b51b1-efc4-542a-a9c6-576793b2df75>
+    a skos:Concept ;
+    dcterms:identifier 44 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "HCO" ;
+    skos:prefLabel "HCO" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/32fa8c45-0e94-508d-93cf-146ea6e71c88>
+    a skos:Concept ;
+    dcterms:identifier 10 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IHY" ;
+    skos:prefLabel "IHY" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3ae7a373-569b-5beb-880c-a89e3bd4c549>
+    a skos:Concept ;
+    dcterms:identifier 43 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "MSY" ;
+    skos:prefLabel "MSY" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/43c7efc1-f232-5751-a93b-c87df57cbd05>
+    a skos:Concept ;
+    dcterms:identifier 40 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "MCH" ;
+    skos:prefLabel "MCH" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/45e8de5e-0f45-5b54-a29e-3aec1c6cb3a6>
+    a skos:Concept ;
+    dcterms:identifier 32 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "AOP" ;
+    skos:prefLabel "AOP" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/4c2f15de-c05c-50f3-8800-19df70280c56>
+    a skos:Concept ;
+    dcterms:identifier 25 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IT" ;
+    skos:prefLabel "IT" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/5f85974f-9360-5d2a-b6cd-39bbde23d5d8>
+    a skos:Concept ;
+    dcterms:identifier 35 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "AR" ;
+    skos:prefLabel "AR" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/66d2d106-6a49-5fe2-afbe-46da1c934a47>
+    a skos:Concept ;
+    dcterms:identifier 45 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "HDL" ;
+    skos:prefLabel "HDL" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/67050434-c6fb-57db-82bf-3bdbf28661a1>
+    a skos:Concept ;
+    dcterms:identifier 2 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IB" ;
+    skos:prefLabel "IB" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6cf68bd7-705e-58b5-9e61-4d9e85ac5b24>
+    a skos:Concept ;
+    dcterms:identifier 5 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IDI" ;
+    skos:prefLabel "IDI" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6d770520-7369-5295-867c-637f06a9148b>
+    a skos:Concept ;
+    dcterms:identifier 15 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IMG" ;
+    skos:prefLabel "IMG" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6eaf63a1-92a1-53a5-8bb9-650c7710789e>
+    a skos:Concept ;
+    dcterms:identifier 17 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IO" ;
+    skos:prefLabel "IO" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/738edb77-bb1d-5d4d-9dc7-bfde1e1ae3ba>
+    a skos:Concept ;
+    dcterms:identifier 33 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "APA" ;
+    skos:prefLabel "APA" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/7654177e-70fa-508c-8e71-ec9aa797e379>
+    a skos:Concept ;
+    dcterms:identifier 21 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IPL" ;
+    skos:prefLabel "IPL" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/8561a260-9ac1-5a1d-b4ce-c1c67d51be93>
+    a skos:Concept ;
+    dcterms:identifier 36 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "ASC" ;
+    skos:prefLabel "ASC" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/99aed329-9904-5b04-b164-65c45c0b3475>
     a skos:Concept ;
     dcterms:identifier 20 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
@@ -576,6 +796,305 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "" ;
     skos:notation "IPH" ;
     skos:prefLabel "IPH" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/9e3577d6-2435-5421-8ca1-d86dd2d748b7>
+    a skos:Concept ;
+    dcterms:identifier 29 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "AAC" ;
+    skos:prefLabel "AAC" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ad9f9949-7baa-5a9f-9bfd-4d1ec8774b36>
+    a skos:Concept ;
+    dcterms:identifier 38 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "ASO" ;
+    skos:prefLabel "ASO" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ae6ef06a-40ad-550a-8943-9f35d68d446a>
+    a skos:Concept ;
+    dcterms:identifier 18 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IOR" ;
+    skos:prefLabel "IOR" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/aef13722-3f79-5c9e-92a3-148cc52a0972>
+    a skos:Concept ;
+    dcterms:identifier 30 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "AAM" ;
+    skos:prefLabel "AAM" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b170d6ea-38a2-58cf-8153-57dab4a8ef45>
+    a skos:Concept ;
+    dcterms:identifier 19 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IP" ;
+    skos:prefLabel "IP" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/b945fa97-563e-52c9-9854-0473392aa9ab>
+    a skos:Concept ;
+    dcterms:identifier 1 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IA" ;
+    skos:prefLabel "IA" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bb6566ae-44f4-500d-a269-7690bf3e985a>
+    a skos:Concept ;
+    dcterms:identifier 47 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "MM" ;
+    skos:prefLabel "MM" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/be321111-cbca-593f-9016-0faf7c1b4a50>
+    a skos:Concept ;
+    dcterms:identifier 14 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IME" ;
+    skos:prefLabel "IME" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bf294e46-aac4-5f33-8d7d-a90294d99617>
+    a skos:Concept ;
+    dcterms:identifier 13 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IM" ;
+    skos:prefLabel "IM" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/bf2f67ca-5957-5a5b-8a34-cc606c199bb4>
+    a skos:Concept ;
+    dcterms:identifier 26 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "ITR" ;
+    skos:prefLabel "ITR" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c4b80d14-4a3c-5920-a43a-c0d6f3291c16>
+    a skos:Concept ;
+    dcterms:identifier 46 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "HPR" ;
+    skos:prefLabel "HPR" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c9a89482-bf63-5064-9957-9face88234d4>
+    a skos:Concept ;
+    dcterms:identifier 12 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IL" ;
+    skos:prefLabel "IL" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/cb5e6f3a-5e77-511d-ad7c-fcdf2ce44f03>
+    a skos:Concept ;
+    dcterms:identifier 22 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IPS" ;
+    skos:prefLabel "IPS" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/cbe30797-ec30-53f2-8015-7acad1f4c9c7>
+    a skos:Concept ;
+    dcterms:identifier 3 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IC" ;
+    skos:prefLabel "C" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/cfe41ee9-b42b-5be5-afa5-7a1741039039>
+    a skos:Concept ;
+    dcterms:identifier 27 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IZ" ;
+    skos:prefLabel "IZ" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d063a084-a879-5483-a686-00c7fdc653f0>
+    a skos:Concept ;
+    dcterms:identifier 23 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IS" ;
+    skos:prefLabel "IS" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d6a7b9da-6986-5fb3-8956-ad54d842477e>
+    a skos:Concept ;
+    dcterms:identifier 34 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "APD" ;
+    skos:prefLabel "APD" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d8d6a156-72df-5b71-8bc9-84da559458d2>
+    a skos:Concept ;
+    dcterms:identifier 31 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "AAR" ;
+    skos:prefLabel "AAR" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/dea5cbe8-5d83-5862-ab7d-3255ab1e8790>
+    a skos:Concept ;
+    dcterms:identifier 9 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IH" ;
+    skos:prefLabel "IH" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e9d11181-ae63-58da-9427-3fde143dbfae>
+    a skos:Concept ;
+    dcterms:identifier 42 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "MPR" ;
+    skos:prefLabel "MPR" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ebf5d1ed-c843-590f-b34f-c53ee46dcbbe>
+    a skos:Concept ;
+    dcterms:identifier 28 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IZY" ;
+    skos:prefLabel "IZY" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f395ee0c-3b6b-5ec9-b2ca-3e95e25dadb8>
+    a skos:Concept ;
+    dcterms:identifier 16 ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "" ;
+    skos:notation "IN" ;
+    skos:prefLabel "IN" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/5174e669-328b-4df8-879e-95b13738f475>
+    a skos:Collection ;
+    dcterms:description "A collection of invertebrate post field guideline groups and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-invertebrate-post-field-guideline-groups> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/04dce23e-4b15-5050-b207-f567bc6e81ce> ,
+        <https://linked.data.gov.au/def/nrm/04fcf696-92f2-529a-a445-be588a4f3916> ,
+        <https://linked.data.gov.au/def/nrm/091e4aa2-07a1-5b30-9eda-847caa21a2d9> ,
+        <https://linked.data.gov.au/def/nrm/160c6b48-603e-5955-bd84-37ca6ef16d98> ,
+        <https://linked.data.gov.au/def/nrm/1c1e08bf-6fce-52dc-b275-52b7c19b3704> ,
+        <https://linked.data.gov.au/def/nrm/1dc8fa7e-4179-5ea4-9df2-6d92c7f81e2b> ,
+        <https://linked.data.gov.au/def/nrm/1ef689be-dfc2-553e-a71c-b10ecf10bc12> ,
+        <https://linked.data.gov.au/def/nrm/1f1acb20-d71d-5623-8804-84f3f67310ac> ,
+        <https://linked.data.gov.au/def/nrm/2be2aadc-8e03-5ef4-91aa-2437072f7802> ,
+        <https://linked.data.gov.au/def/nrm/2d6b51b1-efc4-542a-a9c6-576793b2df75> ,
+        <https://linked.data.gov.au/def/nrm/32fa8c45-0e94-508d-93cf-146ea6e71c88> ,
+        <https://linked.data.gov.au/def/nrm/3ae7a373-569b-5beb-880c-a89e3bd4c549> ,
+        <https://linked.data.gov.au/def/nrm/43c7efc1-f232-5751-a93b-c87df57cbd05> ,
+        <https://linked.data.gov.au/def/nrm/45e8de5e-0f45-5b54-a29e-3aec1c6cb3a6> ,
+        <https://linked.data.gov.au/def/nrm/4c2f15de-c05c-50f3-8800-19df70280c56> ,
+        <https://linked.data.gov.au/def/nrm/5f85974f-9360-5d2a-b6cd-39bbde23d5d8> ,
+        <https://linked.data.gov.au/def/nrm/66d2d106-6a49-5fe2-afbe-46da1c934a47> ,
+        <https://linked.data.gov.au/def/nrm/67050434-c6fb-57db-82bf-3bdbf28661a1> ,
+        <https://linked.data.gov.au/def/nrm/6cf68bd7-705e-58b5-9e61-4d9e85ac5b24> ,
+        <https://linked.data.gov.au/def/nrm/6d770520-7369-5295-867c-637f06a9148b> ,
+        <https://linked.data.gov.au/def/nrm/6eaf63a1-92a1-53a5-8bb9-650c7710789e> ,
+        <https://linked.data.gov.au/def/nrm/738edb77-bb1d-5d4d-9dc7-bfde1e1ae3ba> ,
+        <https://linked.data.gov.au/def/nrm/7654177e-70fa-508c-8e71-ec9aa797e379> ,
+        <https://linked.data.gov.au/def/nrm/8561a260-9ac1-5a1d-b4ce-c1c67d51be93> ,
+        <https://linked.data.gov.au/def/nrm/99aed329-9904-5b04-b164-65c45c0b3475> ,
+        <https://linked.data.gov.au/def/nrm/9e3577d6-2435-5421-8ca1-d86dd2d748b7> ,
+        <https://linked.data.gov.au/def/nrm/ad9f9949-7baa-5a9f-9bfd-4d1ec8774b36> ,
+        <https://linked.data.gov.au/def/nrm/ae6ef06a-40ad-550a-8943-9f35d68d446a> ,
+        <https://linked.data.gov.au/def/nrm/aef13722-3f79-5c9e-92a3-148cc52a0972> ,
+        <https://linked.data.gov.au/def/nrm/b170d6ea-38a2-58cf-8153-57dab4a8ef45> ,
+        <https://linked.data.gov.au/def/nrm/b945fa97-563e-52c9-9854-0473392aa9ab> ,
+        <https://linked.data.gov.au/def/nrm/bb6566ae-44f4-500d-a269-7690bf3e985a> ,
+        <https://linked.data.gov.au/def/nrm/be321111-cbca-593f-9016-0faf7c1b4a50> ,
+        <https://linked.data.gov.au/def/nrm/bf294e46-aac4-5f33-8d7d-a90294d99617> ,
+        <https://linked.data.gov.au/def/nrm/bf2f67ca-5957-5a5b-8a34-cc606c199bb4> ,
+        <https://linked.data.gov.au/def/nrm/c4b80d14-4a3c-5920-a43a-c0d6f3291c16> ,
+        <https://linked.data.gov.au/def/nrm/c9a89482-bf63-5064-9957-9face88234d4> ,
+        <https://linked.data.gov.au/def/nrm/cb5e6f3a-5e77-511d-ad7c-fcdf2ce44f03> ,
+        <https://linked.data.gov.au/def/nrm/cbe30797-ec30-53f2-8015-7acad1f4c9c7> ,
+        <https://linked.data.gov.au/def/nrm/cfe41ee9-b42b-5be5-afa5-7a1741039039> ,
+        <https://linked.data.gov.au/def/nrm/d063a084-a879-5483-a686-00c7fdc653f0> ,
+        <https://linked.data.gov.au/def/nrm/d6a7b9da-6986-5fb3-8956-ad54d842477e> ,
+        <https://linked.data.gov.au/def/nrm/d8d6a156-72df-5b71-8bc9-84da559458d2> ,
+        <https://linked.data.gov.au/def/nrm/dea5cbe8-5d83-5862-ab7d-3255ab1e8790> ,
+        <https://linked.data.gov.au/def/nrm/e9d11181-ae63-58da-9427-3fde143dbfae> ,
+        <https://linked.data.gov.au/def/nrm/ebf5d1ed-c843-590f-b34f-c53ee46dcbbe> ,
+        <https://linked.data.gov.au/def/nrm/f395ee0c-3b6b-5ec9-b2ca-3e95e25dadb8> ;
+    skos:prefLabel "Invertebrate post field guideline groups codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/invertebrate-post-field-guideline-groups.ttl"^^xsd:anyURI ;
 .
 

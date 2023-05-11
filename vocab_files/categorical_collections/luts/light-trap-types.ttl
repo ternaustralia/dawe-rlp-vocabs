@@ -3,21 +3,33 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/33e5036f-3560-4b0b-87dd-c570cec0359a>
-    a skos:Collection ;
-    dcterms:description "A collection of light trap types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-light-trap-types> ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:member
-        <https://linked.data.gov.au/def/nrm/69225c39-3e78-555c-a301-015d505fe0e0> ,
-        <https://linked.data.gov.au/def/nrm/c03c2302-cb65-500f-b91a-d3612ef2d300> ;
-    skos:prefLabel "Light trap types codes" ;
+<https://linked.data.gov.au/def/nrm/69225c39-3e78-555c-a301-015d505fe0e0>
+    a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/light-trap-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/33e5036f-3560-4b0b-87dd-c570cec0359a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/06d87062-84b1-5590-99df-c39a7654d49c> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "LepiLed" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-light-trap-types> ;
 .
 
-<https://linked.data.gov.au/def/nrm/69225c39-3e78-555c-a301-015d505fe0e0>
+<https://linked.data.gov.au/def/nrm/c03c2302-cb65-500f-b91a-d3612ef2d300>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/light-trap-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/33e5036f-3560-4b0b-87dd-c570cec0359a> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "" ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "Other" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-light-trap-types> ;
+.
+
+<https://linked.data.gov.au/def/nrm/06d87062-84b1-5590-99df-c39a7654d49c>
     a skos:Concept ;
     dcterms:identifier 1 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-light-trap-types> ;
@@ -28,7 +40,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/light-trap-types.ttl"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/c03c2302-cb65-500f-b91a-d3612ef2d300>
+<https://linked.data.gov.au/def/nrm/33e5036f-3560-4b0b-87dd-c570cec0359a>
+    a skos:Collection ;
+    dcterms:description "A collection of light trap types and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-light-trap-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/06d87062-84b1-5590-99df-c39a7654d49c> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    skos:prefLabel "Light trap types codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/light-trap-types.ttl"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb>
     a skos:Concept ;
     dcterms:identifier 2 ;
     dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-light-trap-types> ;
