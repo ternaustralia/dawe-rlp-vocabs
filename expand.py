@@ -18,12 +18,17 @@ if __name__ == "__main__":
     args = parser.parse_args()
     filename = args.filename
 
-    path = "vocab_files"
-    vocab_files_dir = Path(path)
-    files = list(vocab_files_dir.glob("**/*.ttl"))
+    paths = [
+        "vocab_files/observable_properties_by_module",
+        "vocab_files/observable_property_concepts",
+    ]
+
     graph = Graph()
-    for file in files:
-        graph.parse(file, format="turtle")
+    for path in paths:
+        vocab_files_dir = Path(path)
+        files = list(vocab_files_dir.glob("**/*.ttl"))
+        for file in files:
+            graph.parse(file, format="turtle")
 
     print(f"Initial size: {len(graph)}")
 
