@@ -57,8 +57,8 @@ jobs:
         with:
           fallback: "0.0.0"
 
-      # - name: Expand the graph data and write to vocab_files/
-      #   run: python expand.py vocab_files/expanded-triples-dump.ttl
+      - name: Expand the graph data and write to vocab_files/observable_property_concepts/
+        run: python expand.py vocab_files/observable_property_concepts/expanded-triples-dump.ttl
 
       - name: Publish to Research Vocabularies Australia
         run: python rva.py ${{ inputs.paths }} ${{ inputs.rva_username }} ${{ secrets.rva_password }} ${{ inputs.rva_vocab_id }} ${{ steps.latest-tag.outputs.tag }} --environment ${{ inputs.rva_env }}
