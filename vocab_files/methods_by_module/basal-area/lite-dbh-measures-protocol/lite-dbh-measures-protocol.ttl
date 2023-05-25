@@ -10,6 +10,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <p>
+    DBH measures for all trees (trees, tall shrubs and/or mallee greater than 2 m in height with a DBH ≥10 cm) within two 20 x 100 m belt transects in the plot.
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5">Basal Area</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5">Basal Area</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+    """ ;
     skos:note """
     <h3 id="additional-guidelines">Additional guidelines</h3>
   <p><strong>Take measurements</strong></p>
@@ -265,5 +274,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     </ol>
     </p>
 """^^rdf:HTML ;
+    tern:isMemberOf <https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5> ;
 .
 
