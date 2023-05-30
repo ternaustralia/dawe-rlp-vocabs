@@ -1,6 +1,6 @@
 """create_local_files.py
 
-This script generates a local copy of the DAWE NRM vocabularies in the remote
+This script generates a local copy of the DCCEEW NRM vocabularies in the remote
 GraphDB repository. It writes each collection and concepts into directories
 and files.
 
@@ -293,9 +293,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         owl:Ontology ,
         skos:ConceptScheme ;
-    dcterms:provenance "The controlled vocabularies are the digital RDF representation of concepts extracted from the DAWE NRM field collection protocols." ;
-    skos:definition "The DAWE NRM controlled vocabularies support the data representation of field survey data collected using the NRM collection protocols." ;
-    skos:prefLabel "DAWE NRM Controlled Vocabularies" ;
+    dcterms:provenance "The controlled vocabularies are the digital RDF representation of concepts extracted from the DCCEEW NRM field collection protocols." ;
+    skos:definition "The DCCEEW NRM controlled vocabularies support the data representation of field survey data collected using the NRM collection protocols." ;
+    skos:prefLabel "DCCEEW NRM Controlled Vocabularies" ;
     sdo:codeRepository "https://github.com/ternaustralia/dawe-rlp-vocabs"^^xsd:anyURI ;
     sdo:contributor <https://w3id.org/tern/resources/3da2112b-74c0-4d9c-bc39-d8dad6e80808> ;
     sdo:creator
