@@ -39,8 +39,8 @@ jobs:
       - name: Run ontotools normalize Turtle files check
         run: ontotools dir normalize . --check
 
-      - name: Check for changes in upstream LUTs
-        run: python luts.py --path remote_data_dir --validate
+      # - name: Check for changes in upstream LUTs
+      #   run: python luts.py --path remote_data_dir --validate
 
       - name: Run tests
         run: python -m pytest --cov=dawe_nrm tests/

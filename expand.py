@@ -11,17 +11,31 @@ if __name__ == "__main__":
         description="Load the vocabs data and expand the graph and write the new statements into a separate file."
     )
     parser.add_argument(
+        dest="expand_type",
+        help="The expand type, either for observable properties (OP) or categorical concepts (LUT).",
+    )
+    parser.add_argument(
         dest="filename",
         help="Filename of new data in the expanded graph.",
     )
 
     args = parser.parse_args()
+    expand_type = args.expand_type
     filename = args.filename
 
-    paths = [
-        "vocab_files/observable_properties_by_module",
-        "vocab_files/observable_property_concepts",
-    ]
+    if expand_type == "OP":
+        paths = [
+            "vocab_files/observable_properties_by_module",
+            "vocab_files/observable_property_concepts",
+        ]
+    elif expand_type == "LUT":
+        paths = [
+            "vocab_files/categorical_collections",
+        ]
+    else:
+        raise ValueError(
+            "The expand type is incorrect, either 'OP' (observable properties) or 'LUT' (categorical concepts)."
+        )
 
     graph = Graph()
     for path in paths:

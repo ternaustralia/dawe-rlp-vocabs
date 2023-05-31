@@ -1,0 +1,41 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/0b912e93-8252-40b4-abaa-84db4206b0f7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/basal-sweep-hit-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0ba17555-8c8f-435a-b16f-62773561207b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/57b9fb25-e075-4e18-8c7f-167e09318c94> ;
+    urnp:conceptDefinition "Trees where the trunk or stem at breast height (1.3 m above ground level) is wider than the aperture of the BAF used on a TERN Basal Wedge." ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "IN" ;
+    urnp:conceptSource "Ecological Field Monitoring protocols - Basal Area draft v0.1, 30/11/2021" ;
+.
+
+<https://linked.data.gov.au/def/nrm/9fc80b33-6470-45ce-ad15-43e0fe04a54c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/basal-sweep-hit-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/0ba17555-8c8f-435a-b16f-62773561207b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3e0a5d97-c623-477e-98fe-8fe120907530> ;
+    urnp:conceptDefinition "Trees where the trunk or stem at breast height (1.3 m above ground level) is the exact width of the aperture of the BAF used on a TERN Basal Wedge." ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "B" ;
+    urnp:conceptSource "Ecological Field Monitoring protocols - Basal Area draft v0.1, 30/11/2021" ;
+.
+
+<https://linked.data.gov.au/def/nrm/0ba17555-8c8f-435a-b16f-62773561207b>
+    a skos:Collection ;
+    dcterms:description "These codes were created for the full and lite versions of the Basal Area module's DBH protocols. The categorical values model the collection app's JSON schema." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/3e0a5d97-c623-477e-98fe-8fe120907530> ,
+        <https://linked.data.gov.au/def/nrm/57b9fb25-e075-4e18-8c7f-167e09318c94> ;
+    skos:prefLabel "Basal sweep hit type codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/basal-sweep-hit-types.ttl"^^xsd:anyURI ;
+.
+

@@ -1,3 +1,5 @@
+# Please DO NOT run this function to fetch LUTs, categorical concepts information is not dependent on external APIs now.
+
 import httpx
 from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, Namespace, URIRef
 
@@ -81,16 +83,16 @@ async def get(
         # Add concept in collection
         graph.add((concept_uri, RDF.type, SKOS.Concept))
         graph.add((concept_uri, SKOS.prefLabel, Literal(label)))
-        graph.add((concept_uri, SKOS.definition, Literal(description)))
-        graph.add((concept_uri, SKOS.notation, Literal(symbol)))
-        graph.add((concept_uri, DCTERMS.identifier, Literal(row["id"])))
-        graph.add(
-            (
-                concept_uri,
-                DCTERMS.source,
-                URIRef(config.endpoint_url),
-            )
-        )
+        # graph.add((concept_uri, SKOS.definition, Literal(description)))
+        # graph.add((concept_uri, SKOS.notation, Literal(symbol)))
+        # graph.add((concept_uri, DCTERMS.identifier, Literal(row["id"])))
+        # graph.add(
+        #     (
+        #         concept_uri,
+        #         DCTERMS.source,
+        #         URIRef(config.endpoint_url),
+        #     )
+        # )
 
         # Generate the collection specific URI for concept
         if row.get("attributes") and row["attributes"].get("uuid"):

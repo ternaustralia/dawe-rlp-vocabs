@@ -1,0 +1,54 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/3da9b540-8bf5-5932-9518-92234897c4d5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/dbh-instruments-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b18974ea-7395-4c14-9d9f-3c1fa6b2c8a9> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9ab8c8fe-0484-5280-a979-c13c32a1c675> ;
+    urnp:conceptDefinition "The type of instrument used to measure DBH. " ;
+    urnp:conceptIdentifier 2 ;
+    urnp:conceptNotation "TAP" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-basal-dbh-instruments> ;
+.
+
+<https://linked.data.gov.au/def/nrm/8139ce00-2bcd-5cf4-a172-0790352b45b2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/dbh-instruments-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b18974ea-7395-4c14-9d9f-3c1fa6b2c8a9> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6a7442bd-230f-5be2-aeb4-8afc7ba02725> ;
+    urnp:conceptDefinition "The type of instrument used to measure DBH. " ;
+    urnp:conceptIdentifier 3 ;
+    urnp:conceptNotation "CAL" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-basal-dbh-instruments> ;
+.
+
+<https://linked.data.gov.au/def/nrm/c3186078-a60b-507b-aad9-a38c3db176d4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/dbh-instruments-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b18974ea-7395-4c14-9d9f-3c1fa6b2c8a9> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/237b799a-a1f3-5a1e-b88a-69429d05523a> ;
+    urnp:conceptDefinition "The type of instrument used to measure DBH. " ;
+    urnp:conceptIdentifier 1 ;
+    urnp:conceptNotation "DIA" ;
+    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-basal-dbh-instruments> ;
+.
+
+<https://linked.data.gov.au/def/nrm/b18974ea-7395-4c14-9d9f-3c1fa6b2c8a9>
+    a skos:Collection ;
+    dcterms:description "A collection of DBH instruments type and its codes." ;
+    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-basal-dbh-instruments> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/237b799a-a1f3-5a1e-b88a-69429d05523a> ,
+        <https://linked.data.gov.au/def/nrm/6a7442bd-230f-5be2-aeb4-8afc7ba02725> ,
+        <https://linked.data.gov.au/def/nrm/9ab8c8fe-0484-5280-a979-c13c32a1c675> ;
+    skos:prefLabel "DBH instruments types codes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/dbh-instruments-types.ttl"^^xsd:anyURI ;
+.
+
