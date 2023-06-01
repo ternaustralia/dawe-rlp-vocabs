@@ -10,6 +10,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <p>
+    Record survey effort and any observations of target ecological communities within the project area.
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9">Targeted survey</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9">Targeted survey</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+    """^^rdf:HTML ;
     skos:note """
     <h3 id="additional-guidelines">Additional guidelines</h3>
 <h4 id="preparation-2">A. Preparation</h4>
@@ -367,5 +376,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 </p>
 <p>Figure 18. Ecological community – observations</p>
     """^^rdf:HTML ;
+    tern:isMemberOf <https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9> ;
 .
 
