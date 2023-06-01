@@ -10,6 +10,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <p>
+    Leaf samples from a single plant collected for a subset of species being new (i.e. no plant tissue sample from the project area, including previous monitoring periods), dominant perennial, unknown, important (e.g. data deficient, range extension, uncharacteristic growth form), contentious (i.e. disputed or uncertain taxonomy), target (i.e. for population genetics studies) and threatened species (unless collection is not permitted or will jeopardise the population).
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95">Plant tissue vouchering</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95">Plant tissue vouchering</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+    """^^rdf:HTML ;
     skos:note """
     <h3 class="list-paragraph" id="additional-guidelines">
   Additional guidelines
@@ -415,5 +424,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
 </ol>
     """^^rdf:HTML ;
+    tern:isMemberOf <https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95> ;
 .
 

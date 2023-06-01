@@ -10,6 +10,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <p>
+    Establish the fauna plot, photopoint monitoring location (conduct photographs module), and establish a weather station.
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51">Vertebrate fauna</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51">Vertebrate fauna</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+    """^^rdf:HTML ;
     skos:prefLabel "Fauna plot layout and photographs protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vertebrate-fauna/fauna-plot-layout-and-photographs-protocol/fauna-plot-layout-and-photographs-protocol.ttl"^^xsd:anyURI ;
     tern:equipment """
@@ -247,5 +256,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
 </ol>
     """^^rdf:HTML ;
+    tern:isMemberOf <https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51> ;
 .
 

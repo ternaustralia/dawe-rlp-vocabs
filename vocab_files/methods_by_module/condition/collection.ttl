@@ -168,7 +168,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
   <li>
     <p>
-      <em>Interventions</em> – Condition assessments should be undertaken before
+      <em
+        ><a
+          href="https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6"
+          >Interventions</a
+        ></em
+      > – Condition assessments should be undertaken before
       and after any interventions occur. The condition protocol is focused
       predominantly in assessing changes in condition following on-ground
       interventions. It is recommended that condition assessments are undertaken
@@ -1524,5 +1529,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <p>Figure 1. Survey designs used for the condition survey</p>
     """^^rdf:HTML ;
+    tern:undertakenAfter
+        <https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ,
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
+        <https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6> ,
+        <https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ,
+        <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
+    tern:undertakenBefore <https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6> ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2> ,
+        <https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970> ,
+        <https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b> ;
 .
 

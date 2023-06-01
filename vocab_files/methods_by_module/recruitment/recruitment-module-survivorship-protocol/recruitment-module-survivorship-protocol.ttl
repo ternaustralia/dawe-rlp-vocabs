@@ -10,6 +10,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <p>
+    Allows users to tag individual plants with a unique ID, record location, health and life-stage, and record size measurements for individual plants.
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+    """^^rdf:HTML ;
     skos:note """
     <h3 id="additional-guidelines">Additional guidelines</h3>
 <h4 id="field-collection">A. Field collection</h4>
@@ -553,5 +562,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   <tbody></tbody>
 </table>
     """^^rdf:HTML ;
+    tern:isMemberOf <https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970> ;
 .
 
