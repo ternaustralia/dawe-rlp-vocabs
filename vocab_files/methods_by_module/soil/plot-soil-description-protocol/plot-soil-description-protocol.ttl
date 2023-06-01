@@ -32,6 +32,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 </p>
     """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <p>
+    Records location, erosion, microrelief, drainage, disturbance and soil surface condition when dry.
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95">Soil</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95">Soil</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+    """^^rdf:HTML ;
     skos:prefLabel "Plot soil description protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/soil/plot-soil-description-protocol/plot-soil-description-protocol.ttl"^^xsd:anyURI ;
     tern:appendix """
@@ -1682,5 +1691,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   </li>
 </ol>
     """^^rdf:HTML ;
+    tern:isMemberOf <https://linked.data.gov.au/def/nrm/6fd9d31f-9a77-4fc1-9eee-23ea8af32b95> ;
 .
 
