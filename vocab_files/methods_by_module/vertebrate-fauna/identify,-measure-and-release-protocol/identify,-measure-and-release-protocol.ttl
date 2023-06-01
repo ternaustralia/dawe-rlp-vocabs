@@ -10,6 +10,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <p>
+    Identify, record morphology measurements, photograph and mark all individuals captured and released.
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51">Vertebrate fauna</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51">Vertebrate fauna</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+    """^^rdf:HTML ;
     skos:note """
     <h3 id="additional-guidelines">Additional guidelines</h3>
 <h4 id="general">A. General</h4>
@@ -1167,5 +1176,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 </p>
 <p>Figure 23. Example app screen showing the capture record details.</p>
     """^^rdf:HTML ;
+    tern:isMemberOf <https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51> ;
 .
 
