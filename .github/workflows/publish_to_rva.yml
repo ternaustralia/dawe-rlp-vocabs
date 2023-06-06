@@ -63,5 +63,11 @@ jobs:
       - name: Expand the graph data and write to vocab_files/categorical_collections/luts/
         run: python expand.py LUT vocab_files/categorical_collections/luts/expanded-triples-dump-lut.ttl
 
+      - name: Expand the graph data and write to vocab_files/attribute_concepts/
+        run: python expand.py A vocab_files/attribute_concepts/expanded-triples-dump-attributes.ttl
+
+      - name: Expand the graph data and write to vocab_files/methods_by_module/
+        run: python expand.py M vocab_files/methods_by_module/expanded-triples-dump-methods.ttl
+
       - name: Publish to Research Vocabularies Australia
         run: python rva.py ${{ inputs.paths }} ${{ inputs.rva_username }} ${{ secrets.rva_password }} ${{ inputs.rva_vocab_id }} ${{ steps.latest-tag.outputs.tag }} --environment ${{ inputs.rva_env }}

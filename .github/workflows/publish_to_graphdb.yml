@@ -32,5 +32,11 @@ jobs:
       - name: Expand the graph data and write to vocab_files/ - LUTs
         run: python expand.py LUT vocab_files/expanded-triples-dump-lut.ttl
 
+      - name: Expand the graph data and write to vocab_files/ - Attributes
+        run: python expand.py A vocab_files/expanded-triples-dump-attributes.ttl
+
+      - name: Expand the graph data and write to vocab_files/ - Methods
+        run: python expand.py M vocab_files/expanded-triples-dump-methods.ttl
+
       - name: Load data to GraphDB
         run: python load.py --url https://graphdb.tern.org.au --username ${{ secrets.GRAPHDB_USERNAME }} --password ${{ secrets.GRAPHDB_PASSWORD }}
