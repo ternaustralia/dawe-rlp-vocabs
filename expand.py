@@ -32,9 +32,13 @@ if __name__ == "__main__":
         paths = [
             "vocab_files/categorical_collections",
         ]
+    elif expand_type == "A":
+        paths = ["vocab_files/attribute_concepts", "vocab_files/attributes_by_module"]
+    elif expand_type == "M":
+        paths = ["vocab_files/methods_by_module"]
     else:
         raise ValueError(
-            "The expand type is incorrect, either 'OP' (observable properties) or 'LUT' (categorical concepts)."
+            "The expand type is incorrect, options are 'OP' (observable properties), 'LUT' (categorical concepts), 'A' (Attributes), 'M' (Methods)."
         )
 
     graph = Graph()
