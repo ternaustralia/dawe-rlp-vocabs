@@ -123,12 +123,16 @@ def publish_new_vocabulary_version(
         "access-point": [
             {
                 "ap-file": {"upload-id": int(upload_id)},
+                "source": "user",
+                "discriminator": "file",
+            },
+            {
                 "ap-web-page": {
                     "url": "https://linkeddata.tern.org.au/viewers/dawe-vocabs"
                 },
                 "source": "user",
-                "discriminator": "file",
-            }
+                "discriminator": "webPage",
+            },
         ],
         "status": "current",
         "title": title,
