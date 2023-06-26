@@ -119,13 +119,20 @@ def publish_new_vocabulary_version(
 
     # Insert a new version with the status as current.
     new_version = {
-        "browse-flag": [],
+        "browse-flag": ["includeCollections", "mayResolveResources"],
         "access-point": [
             {
                 "ap-file": {"upload-id": int(upload_id)},
                 "source": "user",
                 "discriminator": "file",
-            }
+            },
+            {
+                "ap-web-page": {
+                    "url": "https://linkeddata.tern.org.au/viewers/dawe-vocabs"
+                },
+                "source": "user",
+                "discriminator": "webPage",
+            },
         ],
         "status": "current",
         "title": title,
