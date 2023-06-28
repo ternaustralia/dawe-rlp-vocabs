@@ -1,17 +1,67 @@
 name: Publish to prod environment of Research Vocabularies Australia
 
-# on:
-#   release:
-#     types: [released]
+on:
+  release:
+    types: [released]
 
 jobs:
-  publish:
+  publish_attributes_prod:
+    name: Publish Attributes to RVA prod
     uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
     with:
-      rva_vocab_id: 639
+      rva_vocab_id: 651
       rva_username: dcceew-rva-api
       rva_env: prod
       github_env: production
-      deployment_url: https://vocabs.ardc.edu.au/viewById/639
+      deployment_url: https://vocabs.ardc.edu.au/viewById/651
+      paths: vocab_files/attribute_concepts/ vocab_files/attributes_by_module/
+    secrets:
+      rva_password: ${{ secrets.RVA_PASSWORD }}
+  publish_observable_properties_prod:
+    name: Publish Observable Properties to RVA prod
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
+    with:
+      rva_vocab_id: 653
+      rva_username: dcceew-rva-api
+      rva_env: prod
+      github_env: production
+      deployment_url: https://vocabs.ardc.edu.au/viewById/653
+      paths: vocab_files/observable_property_concepts/ vocab_files/observable_properties_by_module/
+    secrets:
+      rva_password: ${{ secrets.RVA_PASSWORD }}
+  publish_categorical_collections_prod:
+    name: Publish Collections of Categorical Values to RVA prod
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
+    with:
+      rva_vocab_id: 655
+      rva_username: dcceew-rva-api
+      rva_env: prod
+      github_env: production
+      deployment_url: https://vocabs.ardc.edu.au/viewById/655
+      paths: vocab_files/categorical_collections/
+    secrets:
+      rva_password: ${{ secrets.RVA_PASSWORD }}
+  publish_protocols_prod:
+    name: Publish RLP Survey Protocols to RVA prod
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
+    with:
+      rva_vocab_id: 654
+      rva_username: dcceew-rva-api
+      rva_env: prod
+      github_env: production
+      deployment_url: https://vocabs.ardc.edu.au/viewById/654
+      paths: vocab_files/methods_by_module/
+    secrets:
+      rva_password: ${{ secrets.RVA_PASSWORD }}
+  publish_feature_types_prod:
+    name: Publish Feature Types to RVA prod
+    uses: ternaustralia/dawe-rlp-vocabs/.github/workflows/publish_to_rva.yml@main
+    with:
+      rva_vocab_id: 652
+      rva_username: dcceew-rva-api
+      rva_env: prod
+      github_env: production
+      deployment_url: https://vocabs.ardc.edu.au/viewById/652
+      paths: vocab_files/feature_types/
     secrets:
       rva_password: ${{ secrets.RVA_PASSWORD }}
