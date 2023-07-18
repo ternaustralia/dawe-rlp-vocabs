@@ -6,48 +6,42 @@ PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/27047e5c-2456-5e2b-9e50-46cd9a4bd5dc>
+<https://linked.data.gov.au/def/nrm/6bcf6711-4ea5-5a32-bb28-18ba7023a41d>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/bird-observation-location-types.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e3a7281d-a010-430f-9a09-74cab86ac7de> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8cf3f3eb-a056-52df-9367-92196de1f2f1> ;
-    urnp:conceptDefinition "The survey location/habitat where the birds were recorded. " ;
-    urnp:conceptIdentifier 3 ;
-    urnp:conceptNotation "ODH" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
+    urnp:conceptDefinition "The survey location outside a study area representing a habitat, different from the one where the birds were recorded during a fauna survey." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/4115c288-234f-5124-83d1-c3eb204d0aee>
+<https://linked.data.gov.au/def/nrm/70cb9f6f-366a-5c1a-ab5d-2a23ae2e10d3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/bird-observation-location-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e3a7281d-a010-430f-9a09-74cab86ac7de> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9748f268-c841-5d5b-9f5f-5973b2fc55f9> ;
+    urnp:conceptDefinition "The survey location outside a study area representing a habitat, similar to where the birds were recorded during a fauna survey." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/98831e31-404d-54d9-a32f-2249435528dc>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/bird-observation-location-types.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e3a7281d-a010-430f-9a09-74cab86ac7de> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/92ddecfe-f8f4-5de1-a00e-755de48f732d> ;
-    urnp:conceptDefinition "The survey location/habitat where the birds were recorded. " ;
-    urnp:conceptIdentifier 1 ;
-    urnp:conceptNotation "WS" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
-.
-
-<https://linked.data.gov.au/def/nrm/f6fa312b-a938-585c-a0ba-bdf0bb407d10>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/bird-observation-location-types.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e3a7281d-a010-430f-9a09-74cab86ac7de> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/af32eb38-5a65-5736-9e62-e47c85bdecef> ;
-    urnp:conceptDefinition "The survey location/habitat where the birds were recorded. " ;
-    urnp:conceptIdentifier 2 ;
-    urnp:conceptNotation "OSH" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
+    urnp:conceptDefinition "The survey location representative of the habitat where the birds were recorded during a fauna survey." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/e3a7281d-a010-430f-9a09-74cab86ac7de>
     a skos:Collection ;
-    dcterms:description "A collection of bird observation location types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types> ;
+    dcterms:description "A collection of Bird observation location types codes." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-observation-location-types"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
         <https://linked.data.gov.au/def/nrm/8cf3f3eb-a056-52df-9367-92196de1f2f1> ,
         <https://linked.data.gov.au/def/nrm/92ddecfe-f8f4-5de1-a00e-755de48f732d> ,
-        <https://linked.data.gov.au/def/nrm/af32eb38-5a65-5736-9e62-e47c85bdecef> ;
+        <https://linked.data.gov.au/def/nrm/9748f268-c841-5d5b-9f5f-5973b2fc55f9> ;
     skos:prefLabel "Bird observation location types codes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/bird-observation-location-types.ttl"^^xsd:anyURI ;
 .
