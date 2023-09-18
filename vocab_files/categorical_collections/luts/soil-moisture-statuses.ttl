@@ -1,0 +1,42 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/365a102d-341e-586a-bb8a-2681cc5d0fb0>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-moisture-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a1e434a8-3fbb-4323-a0ae-0e31308eba8b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ab13ed8a-5a93-5ed4-bd6f-d78fa87f669a> ;
+    urnp:conceptDefinition "Refers to the status of soil water content. Moist is the wetter half of the available moisture range." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-moisture-statuses"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/72c4e354-479c-5eab-b471-876b16192f7c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-moisture-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/a1e434a8-3fbb-4323-a0ae-0e31308eba8b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ed095396-913b-553b-8a80-648ed586489b> ;
+    urnp:conceptDefinition "Refers to the soil moisture/water content status. Dry is below wilting point. Material becomes darker or has lower colour value when moistened." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-moisture-statuses"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/a1e434a8-3fbb-4323-a0ae-0e31308eba8b>
+    a skos:Collection ;
+    dcterms:description "Refers to the soil moisture status, i.e., whether the soil is dry or wet when sampling." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-moisture-statuses"^^xsd:anyURI ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/ab13ed8a-5a93-5ed4-bd6f-d78fa87f669a> ,
+        <https://linked.data.gov.au/def/nrm/ed095396-913b-553b-8a80-648ed586489b> ;
+    skos:prefLabel "Soil moisture statuses" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-moisture-statuses.ttl"^^xsd:anyURI ;
+.
+

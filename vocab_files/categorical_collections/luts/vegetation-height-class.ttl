@@ -6,24 +6,6 @@ PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/06902cf5-acdd-58a3-883e-7f17c39e57b0>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vegetation-height-class.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b1b05cd1-3b85-4639-a6af-799a34d88d43> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/261b5530-2949-5ba8-a87b-db0506284d26> ;
-    urnp:conceptDefinition "Refers to the categorical value representing the vegetation height class, i.e., >0.5m." ;
-    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-veg-height-classes"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/12b9e6ad-c057-59e7-b1a5-bd5c4e751db3>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vegetation-height-class.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b1b05cd1-3b85-4639-a6af-799a34d88d43> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/aea9117f-4bdc-5684-8735-6bd5b89ac8b5> ;
-    urnp:conceptDefinition "Refers to the categorical value representing the vegetation height class, 0.5-1m." ;
-    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-veg-height-classes"^^xsd:anyURI ;
-.
-
 <https://linked.data.gov.au/def/nrm/7bf576ec-215f-5650-aef1-0b0d9185a8ae>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vegetation-height-class.ttl"^^xsd:anyURI ;
@@ -57,15 +39,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b1b05cd1-3b85-4639-a6af-799a34d88d43> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7b721c82-56f3-5247-80b4-fe49a93906e2> ;
     urnp:conceptDefinition "Refers to the categorical value representing the vegetation height class, <2m." ;
-    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-veg-height-classes"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/def/nrm/c8e13181-26cc-5cfe-9d5a-c0f08c95b0ca>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vegetation-height-class.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b1b05cd1-3b85-4639-a6af-799a34d88d43> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6d2bf280-0709-57f4-aff3-9ef329a48d40> ;
-    urnp:conceptDefinition "Refers to the categorical value representing the vegetation height class, i.e., <0.5m." ;
     urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-veg-height-classes"^^xsd:anyURI ;
 .
 
@@ -107,22 +80,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/b1b05cd1-3b85-4639-a6af-799a34d88d43>
     a skos:Collection ;
-    dcterms:description "A collection of vegetation height class codes." ;
+    dcterms:description "A collection of various vegetation height class as recognised by the Australian National Vegetation Attribute Manual. These range from Levels 1 - 8, with 1 referring to a height class of all low bryophytes, lichens, etc. <0.5m and 8 referring to all tall trees, vines and single stemmed palms >30m." ;
     dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-veg-height-classes"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/261b5530-2949-5ba8-a87b-db0506284d26> ,
         <https://linked.data.gov.au/def/nrm/3409b382-836e-5f25-af87-7cafcee28138> ,
         <https://linked.data.gov.au/def/nrm/3dd0f746-1108-5773-9248-2b47ccb81f9c> ,
         <https://linked.data.gov.au/def/nrm/4a393fa9-b24f-5e7e-b015-f21db59155a3> ,
-        <https://linked.data.gov.au/def/nrm/6d2bf280-0709-57f4-aff3-9ef329a48d40> ,
         <https://linked.data.gov.au/def/nrm/7b721c82-56f3-5247-80b4-fe49a93906e2> ,
         <https://linked.data.gov.au/def/nrm/970e4a29-38ad-577a-953c-6a7102b94cad> ,
         <https://linked.data.gov.au/def/nrm/ad1a7241-be25-54c6-b48a-bebf8d05a733> ,
-        <https://linked.data.gov.au/def/nrm/aea9117f-4bdc-5684-8735-6bd5b89ac8b5> ,
         <https://linked.data.gov.au/def/nrm/c22b6598-d0f8-5e45-9d3b-8355aee77c27> ,
         <https://linked.data.gov.au/def/nrm/ff690b43-4a71-5018-9808-61bcd48f7a7c> ;
-    skos:prefLabel "Vegetation height class codes" ;
+    skos:prefLabel "Vegetation height classes" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vegetation-height-class.ttl"^^xsd:anyURI ;
 .
 

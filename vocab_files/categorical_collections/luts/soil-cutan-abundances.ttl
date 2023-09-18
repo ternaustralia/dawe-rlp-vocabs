@@ -1,0 +1,58 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/48b39108-739a-5f71-b452-00aaedafcd1b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-cutan-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/984fbd63-e521-4fef-80f9-bcb9307a76a9> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9051cdda-0b44-586d-955e-a9e7c36cd5d3> ;
+    urnp:conceptDefinition "Refers to the soil cutan abundance score of '2' on a scale of '0 and 3', i.e., 10-50% ped faces or pore walls with cutans." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-abundances"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/535851d0-a393-5be4-8e08-15b962ebcf95>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-cutan-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/984fbd63-e521-4fef-80f9-bcb9307a76a9> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0fc43f3f-248f-55c0-b218-03cb1c5cce4e> ;
+    urnp:conceptDefinition "Refers to the 'no' soil cutans observed." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-abundances"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d5de248c-dc06-515f-a8e1-b0924e6fbef4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-cutan-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/984fbd63-e521-4fef-80f9-bcb9307a76a9> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d314cefd-311f-5b50-8165-b5b839d35d69> ;
+    urnp:conceptDefinition "Refers to the soil cutan abundance score of '1' on a scale of '0 and 3', i.e., <10% ped faces or pore walls with cutans." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-abundances"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/fdb79c47-6667-5bbc-8aaa-553014ffd34b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-cutan-abundances.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/984fbd63-e521-4fef-80f9-bcb9307a76a9> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/fd2075b7-536f-58e6-a9dc-c51f1bd0b2ed> ;
+    urnp:conceptDefinition "Refers to the soil cutan abundance score of '3' on a scale of '0 and 3', i.e., >50% ped faces or pore walls with cutans." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-abundances"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/984fbd63-e521-4fef-80f9-bcb9307a76a9>
+    a skos:Collection ;
+    dcterms:description "A collection of soil cutan abundance types. Soils cutan abundance are given a score of 0, 1, 2 and 3, with 0 for soils that have 'no cutans' and 3 for soils with many cutans, i.e, soils have >50% ped faces or pore walls with cutans." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-cutan-abundances"^^xsd:anyURI ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0fc43f3f-248f-55c0-b218-03cb1c5cce4e> ,
+        <https://linked.data.gov.au/def/nrm/9051cdda-0b44-586d-955e-a9e7c36cd5d3> ,
+        <https://linked.data.gov.au/def/nrm/d314cefd-311f-5b50-8165-b5b839d35d69> ,
+        <https://linked.data.gov.au/def/nrm/fd2075b7-536f-58e6-a9dc-c51f1bd0b2ed> ;
+    skos:prefLabel "Soil cutan abundance types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-cutan-abundances.ttl"^^xsd:anyURI ;
+.
+
