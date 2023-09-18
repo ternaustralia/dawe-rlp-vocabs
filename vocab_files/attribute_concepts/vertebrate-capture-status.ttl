@@ -7,13 +7,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/ec1b061e-a737-4596-b675-c074ed320ac6>
     a skos:Concept ;
-    dcterms:source """O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (unpublished draft) ‘Vertebrate Fauna module’ in ….. (eds)
-Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved
-decision making. Draft v 0.1 Report to DCCEEW. TERN, Adelaide.""" ;
+    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "The status of the vertebrate capture, i.e., whether it is a recapture or a new capture." ;
+    skos:definition "The status of capture of a vertebrate fauna in the study area, indicating whether the fauna has already been identified or tagged, or if it is a new capture from the present study/survey." ;
     skos:prefLabel "vertebrate capture status" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/vertebrate-capture-status.ttl"^^xsd:anyURI ;
-    tern:valueType tern:Boolean ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/cac0f11d-91b6-411d-a167-ecd612980eac> ;
+    tern:valueType tern:IRI ;
 .
 
