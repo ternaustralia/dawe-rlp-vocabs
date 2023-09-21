@@ -7,8 +7,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/79da0735-fee0-4690-8d02-25b7a0ad90f5>
     a skos:Concept ;
-    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    dcterms:source
+        "Bignall J, McCallum K, O’Neill S, Laws M, Potter T, Morgan R, Cox B, Sparrow B (2023) Invertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ,
+        "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel
+        "ID made by field" ,
+        "assisted by field" ,
+        "processed by field" ,
+        "trap checked by" ,
+        "trap set status- set by" ;
     skos:definition "The personnel responsible for conducting the field study/survey." ;
     skos:prefLabel "field observer" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/field-observer.ttl"^^xsd:anyURI ;
