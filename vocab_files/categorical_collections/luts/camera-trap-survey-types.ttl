@@ -1,0 +1,48 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/61eb4f30-cfe1-5165-8b9a-8dd4fff07b26>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-survey-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/51463b8f-9b20-58a2-a46f-d9413da25d24> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d8f2a2c6-4a24-5c20-8f0b-c0dbb94114d3> ;
+    urnp:conceptDefinition "Multiple camera traps deployed in an ordered arrangement along a transect." ;
+    urnp:conceptSource "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/8a9bd766-cece-51c6-9889-f53ef9ff3f03>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-survey-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/51463b8f-9b20-58a2-a46f-d9413da25d24> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a7592193-be7b-5fb7-8d49-8bbb87f2e6f5> ;
+    urnp:conceptDefinition "A particular spatial location (latitude and longitude) where a camera trap is deployed during sampling." ;
+    urnp:conceptSource "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/cd84a67e-fb4f-5d47-9066-0ed239d07e48>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-survey-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/51463b8f-9b20-58a2-a46f-d9413da25d24> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/372910ac-bb75-5907-954a-202e98b9caa3> ;
+    urnp:conceptDefinition "Multiple camera traps deployed in an ordered series in the form of grid." ;
+    urnp:conceptSource "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/51463b8f-9b20-58a2-a46f-d9413da25d24>
+    a skos:Collection ;
+    dcterms:description "A collection of the camera trap survey types/methods used during camera trap deployment." ;
+    dcterms:source "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/372910ac-bb75-5907-954a-202e98b9caa3> ,
+        <https://linked.data.gov.au/def/nrm/a7592193-be7b-5fb7-8d49-8bbb87f2e6f5> ,
+        <https://linked.data.gov.au/def/nrm/d8f2a2c6-4a24-5c20-8f0b-c0dbb94114d3> ;
+    skos:prefLabel "Camera trap survey types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-trap-survey-types.ttl"^^xsd:anyURI ;
+.
+

@@ -1,0 +1,58 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/7cadae44-a169-5219-9409-eb6b22dadf06>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-status-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b4cb0b89-00de-4057-81dc-a19ad6ef2f43> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e2486e65-9b9d-5938-b46d-0629671839b7> ;
+    urnp:conceptDefinition "False trigger can occur for box traps and cage traps that are triggered but no animal have been captured." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/988605e9-b758-5ff7-bfd5-1d7c1fcf836f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-status-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b4cb0b89-00de-4057-81dc-a19ad6ef2f43> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/77345775-22e9-508a-b8ff-33aaa2606f42> ;
+    urnp:conceptDefinition "Capture refers to an animal being captured successfully in a trap (e.g., pitfall trap, cage trap, etc.)." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/9e1562c9-0f29-550e-b250-10d45a862146>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-status-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b4cb0b89-00de-4057-81dc-a19ad6ef2f43> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/33931db0-edb4-552f-8802-831c678a8178> ;
+    urnp:conceptDefinition "Refers to the fauna traps not being functional." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/ee610b71-e777-5be8-b982-78b4bc76c103>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-status-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b4cb0b89-00de-4057-81dc-a19ad6ef2f43> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/82c19918-521d-5d4c-a310-5c5a6b02f7d1> ;
+    urnp:conceptDefinition "Empty refers to no animal captured in a trap or no success in animal capture." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/b4cb0b89-00de-4057-81dc-a19ad6ef2f43>
+    a skos:Collection ;
+    dcterms:description "Refers to the collection of values indicating the vertebrate capture status in the trap, ie., 'captured', empty/false trigger', and 'not functioning'." ;
+    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/33931db0-edb4-552f-8802-831c678a8178> ,
+        <https://linked.data.gov.au/def/nrm/77345775-22e9-508a-b8ff-33aaa2606f42> ,
+        <https://linked.data.gov.au/def/nrm/82c19918-521d-5d4c-a310-5c5a6b02f7d1> ,
+        <https://linked.data.gov.au/def/nrm/e2486e65-9b9d-5938-b46d-0629671839b7> ;
+    skos:prefLabel "Trap check status types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-status-types.ttl"^^xsd:anyURI ;
+.
+

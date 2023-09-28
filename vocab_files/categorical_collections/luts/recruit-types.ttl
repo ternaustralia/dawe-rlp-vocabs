@@ -1,0 +1,48 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/f8688fb0-bcf5-5354-b3eb-b162c463ca2f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruit-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/889a0ec6-fecc-55cc-a33c-492aecba4d4f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ac7715b2-9c1b-5eb9-adf3-d19747f5104a> ;
+    urnp:conceptDefinition "Young woody plant with a DBH between 1-5 cm and a height <1.5 m." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Recruitment Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/f998cefc-5d78-54d8-a7f9-19d1fcff18b4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruit-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/889a0ec6-fecc-55cc-a33c-492aecba4d4f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1a6aad77-cec5-51d3-a994-7175e67588db> ;
+    urnp:conceptDefinition "Very young plant, herbaceous to slightly woody, with a DBH of <1 cm. The leaves are adolescent and often the cotyledons (first leaves) are still present." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Recruitment Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/fd77600b-f707-5fcd-bf00-db6cbb5eefe1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruit-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/889a0ec6-fecc-55cc-a33c-492aecba4d4f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/851c4977-bdad-5e16-9301-98f09e47ce14> ;
+    urnp:conceptDefinition "For trees: individuals with a DBH between 5-10 cm. For shrubs: has not reached maximum height, apical dominance. Not reproductive." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Recruitment Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/889a0ec6-fecc-55cc-a33c-492aecba4d4f>
+    a skos:Collection ;
+    dcterms:description "A collection of the types of recruits under survey. Examples are for a seedling, sapling and juvenile." ;
+    dcterms:source "McCallum K, Potter T, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Recruitment Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/1a6aad77-cec5-51d3-a994-7175e67588db> ,
+        <https://linked.data.gov.au/def/nrm/851c4977-bdad-5e16-9301-98f09e47ce14> ,
+        <https://linked.data.gov.au/def/nrm/ac7715b2-9c1b-5eb9-adf3-d19747f5104a> ;
+    skos:prefLabel "Recruit types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruit-types.ttl"^^xsd:anyURI ;
+.
+

@@ -1,0 +1,58 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/4f50eafc-eafb-5e20-933c-03ad45f8448a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-condition-moon-phases.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/30688460-6aaa-53aa-94e7-be1164f5343b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d14a1582-9c5c-5178-9197-d073b54e3cf8> ;
+    urnp:conceptDefinition "The Third Quarter Moon is when the opposite half of the Moon is illuminated compared to the First Quarter." ;
+    urnp:conceptSource "https://www.timeanddate.com/astronomy/moon/full-moon.html"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6339b19d-5988-511f-bd9e-4456e7d6c48a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-condition-moon-phases.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/30688460-6aaa-53aa-94e7-be1164f5343b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/22f7da51-979b-5ac0-b48b-742da89195f5> ;
+    urnp:conceptDefinition "The Full Moon is when the Sun and the Moon are aligned on opposite sides of Earth, and 100% of the Moon's face is illuminated by the Sun." ;
+    urnp:conceptSource "https://www.timeanddate.com/astronomy/moon/full-moon.html"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/96e7a80a-6f37-541f-8481-c27786270e40>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-condition-moon-phases.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/30688460-6aaa-53aa-94e7-be1164f5343b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/495197df-e9b3-591c-a2cf-667804632b27> ;
+    urnp:conceptDefinition "The moon is 90 degrees away from the sun in the sky and is half-illuminated from our point of view. We call it \"first quarter\" because the moon has traveled about a quarter of the way around Earth since the new moon." ;
+    urnp:conceptSource "https://www.space.com/18880-moon-phases.html"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f758fc3a-ed58-5edc-b26a-4bd1cee6e0f8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-condition-moon-phases.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/30688460-6aaa-53aa-94e7-be1164f5343b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/27ecd211-cfac-5133-a034-3461a554b266> ;
+    urnp:conceptDefinition "A phase of the lunar cycle when the new moon appears after the 29 days. New moon occurs about once a month, because the moon takes about a month to orbit Earth." ;
+    urnp:conceptSource "https://earthsky.org/moon-phases/new-moon/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/30688460-6aaa-53aa-94e7-be1164f5343b>
+    a skos:Collection ;
+    dcterms:description "A collection of the moon phases observed from a study site when conducting an ecological survey." ;
+    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/22f7da51-979b-5ac0-b48b-742da89195f5> ,
+        <https://linked.data.gov.au/def/nrm/27ecd211-cfac-5133-a034-3461a554b266> ,
+        <https://linked.data.gov.au/def/nrm/495197df-e9b3-591c-a2cf-667804632b27> ,
+        <https://linked.data.gov.au/def/nrm/d14a1582-9c5c-5178-9197-d073b54e3cf8> ;
+    skos:prefLabel "Weather condition - moon phases" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/weather-condition-moon-phases.ttl"^^xsd:anyURI ;
+.
+

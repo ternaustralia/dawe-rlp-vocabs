@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/1ebe867d-d6e1-5e86-b82a-7ed499545f2a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/day-night-recording-modes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/04978779-a61c-5e56-a827-1598ee87bc18> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8f6c2405-5306-5c1c-adaf-9f59c8f095d7> ;
+    urnp:conceptDefinition "An image capture setting in a camera trap that best works for day time or diurnal captures." ;
+    urnp:conceptSource "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/3514726c-9d50-58f3-94d6-1064b1a90063>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/day-night-recording-modes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/04978779-a61c-5e56-a827-1598ee87bc18> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0bec0cfe-c45a-5aa1-9627-ae7ede7cdb6a> ;
+    urnp:conceptDefinition "An image capture setting in a camera trap that best works for night time or nocturnal captures." ;
+    urnp:conceptSource "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/04978779-a61c-5e56-a827-1598ee87bc18>
+    a skos:Collection ;
+    dcterms:description "Refers to the 'day' or 'night' image capture settings in a camera trap." ;
+    dcterms:source "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0bec0cfe-c45a-5aa1-9627-ae7ede7cdb6a> ,
+        <https://linked.data.gov.au/def/nrm/8f6c2405-5306-5c1c-adaf-9f59c8f095d7> ;
+    skos:prefLabel "Day/night recording modes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/day-night-recording-modes.ttl"^^xsd:anyURI ;
+.
+

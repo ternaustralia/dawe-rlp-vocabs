@@ -1,0 +1,58 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/25fff913-882e-5488-bc93-e4b7c83160e6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-interval-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/7ca8c87e-d066-5625-86cd-e1c38707699c> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c54e4681-b22e-5f8f-9831-6c6b995529ab> ;
+    urnp:conceptDefinition "This is the middle of the day, also called 'noon' (12:00 hours)." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/4ebc257b-3563-5f06-94e6-160d812fc28c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-interval-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/7ca8c87e-d066-5625-86cd-e1c38707699c> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "Represents any 'other' categorical collection NOT listed." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/8a9ad553-ee99-5154-8d92-8cb74aec5d25>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-interval-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/7ca8c87e-d066-5625-86cd-e1c38707699c> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a493139c-46b8-529c-bc5b-d18475082eb0> ;
+    urnp:conceptDefinition "This is the time from midday (noon) to evening. From 12:00 hours to approximately 18:00 hours." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/e300d73f-3acb-5975-ab9c-0accf2a92e68>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-interval-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/7ca8c87e-d066-5625-86cd-e1c38707699c> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f2f99a78-3e29-59c8-85b9-fadba967422e> ;
+    urnp:conceptDefinition "This is the time from midnight to midday." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/7ca8c87e-d066-5625-86cd-e1c38707699c>
+    a skos:Collection ;
+    dcterms:description "A collection of time period/intervals, i.e., morning, afternoon, midday, etc. when the traps were checked for presence or any vertebrate fauna." ;
+    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/a493139c-46b8-529c-bc5b-d18475082eb0> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ,
+        <https://linked.data.gov.au/def/nrm/c54e4681-b22e-5f8f-9831-6c6b995529ab> ,
+        <https://linked.data.gov.au/def/nrm/f2f99a78-3e29-59c8-85b9-fadba967422e> ;
+    skos:prefLabel "Trap check interval types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/trap-check-interval-types.ttl"^^xsd:anyURI ;
+.
+
