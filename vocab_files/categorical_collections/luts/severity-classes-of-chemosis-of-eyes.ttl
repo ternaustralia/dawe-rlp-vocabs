@@ -1,0 +1,58 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/5fd1824e-3253-5af9-a8bf-6d2bc9ff416d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/severity-classes-of-chemosis-of-eyes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e98fc5ff-8590-562d-800b-27d3d98838b2> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/39b79b74-7fdf-53ff-ad56-dd26d887e3d0> ;
+    urnp:conceptDefinition "Refers to the clinical condition of the eye, where moderate chemosis is observed." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/7e157c9e-4495-544d-a818-01362ad14c9a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/severity-classes-of-chemosis-of-eyes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e98fc5ff-8590-562d-800b-27d3d98838b2> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/01f4245b-3f69-5956-9b50-13ca5b3042dd> ;
+    urnp:conceptDefinition "Refers to the clinical condition of the eye, where severe chemosis is observed." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/980c3206-5c74-5fdc-a490-b70bf364d08b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/severity-classes-of-chemosis-of-eyes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e98fc5ff-8590-562d-800b-27d3d98838b2> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5ce69ef2-964b-5e1e-a955-5f99a2671780> ;
+    urnp:conceptDefinition "Refers to the clinical condition of the eye, where mild chemosis is observed." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/9e8f4dc3-6141-57fb-b1fd-71fa4430bae9>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/severity-classes-of-chemosis-of-eyes.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e98fc5ff-8590-562d-800b-27d3d98838b2> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/841c7836-1065-5e32-9501-2bdd1312ec9e> ;
+    urnp:conceptDefinition "Refers to the normal clinical condition of the eye, with NO chemosis observed." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/e98fc5ff-8590-562d-800b-27d3d98838b2>
+    a skos:Collection ;
+    dcterms:description "A collection of severity class of chemosis of eyes of an animal, ranging from Normal, Mild, Moderate and Severe condition." ;
+    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/01f4245b-3f69-5956-9b50-13ca5b3042dd> ,
+        <https://linked.data.gov.au/def/nrm/39b79b74-7fdf-53ff-ad56-dd26d887e3d0> ,
+        <https://linked.data.gov.au/def/nrm/5ce69ef2-964b-5e1e-a955-5f99a2671780> ,
+        <https://linked.data.gov.au/def/nrm/841c7836-1065-5e32-9501-2bdd1312ec9e> ;
+    skos:prefLabel "Severity classes of chemosis of eyes" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/severity-classes-of-chemosis-of-eyes.ttl"^^xsd:anyURI ;
+.
+

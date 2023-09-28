@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/11eebac0-5315-5b60-89db-0f9a1ce71f2c>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/pitfall-line-name-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/abea1d15-0c90-5a24-be7d-1c9126b16f02> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/79add246-7f58-58cd-95ff-566a30f07183> ;
+    urnp:conceptDefinition "Unique identification of the line name consisting of the pitfall traps P7, P8, P9, P10, P11 and P12." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/c80f8f01-a8ce-5b79-a23f-4ce60a98e29b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/pitfall-line-name-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/abea1d15-0c90-5a24-be7d-1c9126b16f02> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/58b9435f-a3d2-5b7c-8ebe-639dc8cabf05> ;
+    urnp:conceptDefinition "Unique identification of the line name consisting of the pitfall traps P1, P2, P3, P4, P5 and P6." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/abea1d15-0c90-5a24-be7d-1c9126b16f02>
+    a skos:Collection ;
+    dcterms:description "Pitfall lines usually consists of two lines of 12 pitfall traps under observation, i.e., 'Pitfall Line A' (P1 to P6), or 'Pitfall Line B' (P7 to P12)." ;
+    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/58b9435f-a3d2-5b7c-8ebe-639dc8cabf05> ,
+        <https://linked.data.gov.au/def/nrm/79add246-7f58-58cd-95ff-566a30f07183> ;
+    skos:prefLabel "Pitfall line name types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/pitfall-line-name-types.ttl"^^xsd:anyURI ;
+.
+

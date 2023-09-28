@@ -1,0 +1,48 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/70ab34f6-7b43-55b1-9d3a-8834bc42ebeb>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-capture-status-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cac0f11d-91b6-411d-a167-ecd612980eac> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7d1a4282-f82a-5ccc-a152-49cb9806485d> ;
+    urnp:conceptDefinition "Recapture refers to those fauna individuals that have been previously tagged or marked with an identification tag or a texta mark during a fauna survey." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/87ee0168-c0ed-5be5-b97b-14cbae8837b6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-capture-status-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cac0f11d-91b6-411d-a167-ecd612980eac> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/93c0fffe-9969-5b68-ac25-1208f549a35e> ;
+    urnp:conceptDefinition "New capture refers to the fauna individual that were not captured or identified from the study area previously, and is treated as a new individual representing the population of the vertebrate class." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/9d3a6add-24c1-5bb6-9de5-6fe451405c27>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-capture-status-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cac0f11d-91b6-411d-a167-ecd612980eac> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f> ;
+    urnp:conceptDefinition "Unknown capture status." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/cac0f11d-91b6-411d-a167-ecd612980eac>
+    a skos:Collection ;
+    dcterms:description "Whether the vertebrate fauna capture is a recapture from an old survey or a new capture during the present survey." ;
+    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/7d1a4282-f82a-5ccc-a152-49cb9806485d> ,
+        <https://linked.data.gov.au/def/nrm/93c0fffe-9969-5b68-ac25-1208f549a35e> ,
+        <https://linked.data.gov.au/def/nrm/f6b0f6d8-16d8-5dd7-b1b7-66b0c020b96f> ;
+    skos:prefLabel "Vertebrate capture status types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-capture-status-types.ttl"^^xsd:anyURI ;
+.
+

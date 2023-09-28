@@ -1,0 +1,48 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/2a9abadd-e655-5ffd-9070-257bcd1c56c6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-survey-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/91a39bbd-6e26-55f1-a36a-8a4b36d62228> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c54c8cc4-2724-54f0-87c6-59b6a9838010> ;
+    urnp:conceptDefinition "A recruitment survey type involving population-wide survey of recruits in a plot." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Recruitment Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/45412727-fbd8-53a9-8177-1414de3eea69>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-survey-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/91a39bbd-6e26-55f1-a36a-8a4b36d62228> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5a4abf9f-f78a-5f93-9f31-69b708aad319> ;
+    urnp:conceptDefinition "A survey type that uses plot-based observations using a standard 100 x 100 m plot or 40 x 40m subplot." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Recruitment Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/8ab55a36-8a61-5a1d-916f-73f872a7d6d9>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-survey-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/91a39bbd-6e26-55f1-a36a-8a4b36d62228> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9dc82159-d8f3-5cb2-af3e-e6c895351231> ;
+    urnp:conceptDefinition "Belt transects are two, 100 m transects that runs north-south and east-west of a standard 1 hectare study plot; and all observations are performed along the transect." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Recruitment Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/91a39bbd-6e26-55f1-a36a-8a4b36d62228>
+    a skos:Collection ;
+    dcterms:description "A collection of the types of recruitment survey methods used during survivorship protocol. Examples include a belt transect, population extent, or plot survey." ;
+    dcterms:source "McCallum K, Potter T, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Recruitment Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/5a4abf9f-f78a-5f93-9f31-69b708aad319> ,
+        <https://linked.data.gov.au/def/nrm/9dc82159-d8f3-5cb2-af3e-e6c895351231> ,
+        <https://linked.data.gov.au/def/nrm/c54c8cc4-2724-54f0-87c6-59b6a9838010> ;
+    skos:prefLabel "Recruitment survey types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/recruitment-survey-types.ttl"^^xsd:anyURI ;
+.
+

@@ -1,0 +1,48 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/2664dccf-7243-59c3-8159-48716c482713>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/crown-damage-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/41afd1b6-bd4d-5419-b571-931b09b61ce8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/764b44e5-0a06-50fb-ae1d-07b598c0e04d> ;
+    urnp:conceptDefinition "Defoliation refers to the state of a crown where entire leaves or parts of leaves are missing." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox, B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Condition Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/3a333ac0-ac8d-5f56-b6c7-6ee4b93890ae>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/crown-damage-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/41afd1b6-bd4d-5419-b571-931b09b61ce8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0a6c2afb-dfeb-56b4-a8ef-b0cd12518e0e> ;
+    urnp:conceptDefinition "Discoloration refers to the state of a crown characterised by non-green leaf tissue including yellowing or reddish-purple discoloration, chlorotic spots or margins." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox, B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Condition Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/93b7f741-40dd-5fe2-b409-d4a32ab83cb7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/crown-damage-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/41afd1b6-bd4d-5419-b571-931b09b61ce8> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f72b9b89-1d18-56b2-80fd-33dc0bdf9ea9> ;
+    urnp:conceptDefinition "Necrosis refers to the state of a crown indicated by the presence of a dead leaf tissue." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox, B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Condition Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/41afd1b6-bd4d-5419-b571-931b09b61ce8>
+    a skos:Collection ;
+    dcterms:description "A collection of the types of tree crown damage. Examples include, defoliation, necrosis and discoloration." ;
+    dcterms:source "McCallum K, Potter T, Cox, B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Condition Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0a6c2afb-dfeb-56b4-a8ef-b0cd12518e0e> ,
+        <https://linked.data.gov.au/def/nrm/764b44e5-0a06-50fb-ae1d-07b598c0e04d> ,
+        <https://linked.data.gov.au/def/nrm/f72b9b89-1d18-56b2-80fd-33dc0bdf9ea9> ;
+    skos:prefLabel "Crown damage types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/crown-damage-types.ttl"^^xsd:anyURI ;
+.
+

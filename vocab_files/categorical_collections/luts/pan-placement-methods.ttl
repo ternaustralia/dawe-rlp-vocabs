@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/509933e1-d94d-52d4-8ac6-53211789f9ca>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/pan-placement-methods.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/835bfb20-4f22-40ad-ac3b-da11cbab4e24> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/358603a7-8350-5c36-bf0d-ba6ae47e7c6e> ;
+    urnp:conceptDefinition "Refers to the placement of pan traps on ground, during an invertebrate fauna survey." ;
+    urnp:conceptSource "Bignall J, McCallum K, O’Neill S, Laws M, Potter T, Morgan R, Cox B, Sparrow B (2023) Invertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/f7915ec3-4c21-504e-a368-242685251ef4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/pan-placement-methods.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/835bfb20-4f22-40ad-ac3b-da11cbab4e24> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0b1368b2-8ace-5c36-908d-ea38e43966e0> ;
+    urnp:conceptDefinition "Refers to the placement of pan traps on stand, during an invertebrate fauna survey." ;
+    urnp:conceptSource "Bignall J, McCallum K, O’Neill S, Laws M, Potter T, Morgan R, Cox B, Sparrow B (2023) Invertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/835bfb20-4f22-40ad-ac3b-da11cbab4e24>
+    a skos:Collection ;
+    dcterms:description "Refers to whether the invertebrates are placed on ground, or on a stand." ;
+    dcterms:source "Bignall J, McCallum K, O’Neill S, Laws M, Potter T, Morgan R, Cox B, Sparrow B (2023) Invertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0b1368b2-8ace-5c36-908d-ea38e43966e0> ,
+        <https://linked.data.gov.au/def/nrm/358603a7-8350-5c36-bf0d-ba6ae47e7c6e> ;
+    skos:prefLabel "Pan placement methods" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/pan-placement-methods.ttl"^^xsd:anyURI ;
+.
+
