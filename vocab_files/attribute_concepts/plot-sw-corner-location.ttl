@@ -7,11 +7,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/65ffa9ec-e16e-42d9-9fb1-e7d869f2f01f>
     a skos:Concept ;
-    dcterms:source """Laws M, McCallum K, Bignall J, O’Neill S, Sparrow B. (unpublished draft) ‘Soils module’ in ….. (eds) Ecological Field
-Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision
-making. Draft v 0.1 Report to DCCEEW. TERN, Adelaide""" ;
+    dcterms:source "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "A SW corner of plot location where soil plot description protocol is being assessed. " ;
+    skos:altLabel "fauna plot reference point" ;
+    skos:definition
+        "A SW corner of plot location where soil plot description protocol is being assessed." ,
+        "Refers to a reference point or starting point (usually the plot corner locations, i.e., NW, SW, NE, SE) where the plot layout will commence." ;
     skos:prefLabel "plot sw corner location" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-sw-corner-location.ttl"^^xsd:anyURI ;
     tern:valueType tern:Text ;
