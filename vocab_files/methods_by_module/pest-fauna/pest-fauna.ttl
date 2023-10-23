@@ -1,0 +1,35 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/f656db5c-9be5-40e8-adc4-921663295b98>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description "Copy the Module Overview HTML Content here if this is not sub protocol"^^rdf:HTML ;
+    dcterms:source "Copy the References HTML content here if this is not sub protocol"^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Copy the Key definitions and terminology HTML Content here if this is not sub protocol"^^rdf:HTML ;
+    skos:note "Copy the Additional Guidelines HTML content here"^^rdf:HTML ;
+    skos:prefLabel "Protocol Name" ;
+    schema:url "The GitHub file link"^^xsd:anyURI ;
+    tern:appendix "Copy the Appendices HTML content here"^^rdf:HTML ;
+    tern:equipment "Copy the Equipment HTML content here"^^rdf:HTML ;
+    tern:instructions "Copy the Instructions HTML content here"^^rdf:HTML ;
+    tern:purpose "Copy the Rationale HTML Content here if this is not sub protocol"^^rdf:HTML ;
+    tern:scope "Create and Copy the Contents and Introduction and Background HTML content here"^^rdf:HTML ;
+    tern:undertakenAfter
+        <https://linked.data.gov.au/def/nrm/copy-first-after-uuid-here> ,
+        <https://linked.data.gov.au/def/nrm/copy-second-after-uuid-here> ;
+    tern:undertakenBefore
+        <https://linked.data.gov.au/def/nrm/copy-first-before-uuid-here> ,
+        <https://linked.data.gov.au/def/nrm/copy-second-before-uuid-here> ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/copy-first-concurrently-uuid-here> ,
+        <https://linked.data.gov.au/def/nrm/copy-second-concurrently-uuid-here> ;
+.
+
