@@ -1,0 +1,628 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/35239cb4-d7eb-4794-9148-7aed051d731c>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """<h1 id="module-overview">Module overview</h1>
+<h2 id="available-protocols">Available protocols</h2>
+<p>
+  The Pest Fauna Control Activities Module covers the procedures and guidelines
+  for recording the outcomes of ground shooting, aerial shooting, baiting,
+  trapping, and mustering. It can also be used for other control methods if an
+  estimate of abundance or density can be obtained. The key measure recorded is
+  the number of target animals removed (killed, trapped, or mustered) or bait
+  taken to inform monitoring of pest fauna abundance.
+</p>
+<p>
+  Data fields include the control method, target species, survey effort, number
+  of animals removed, the activity's date and time, location, weather
+  conditions, personnel involved, and details of their role and experience. Data
+  is entered directly into the Monitor app on a GPS/GNSS-enabled device, and a
+  location track log is recorded during the survey. Point data can be collected
+  to record information, such as the location of target individuals.
+</p>
+<h2 id="relationships-to-other-modules">Relationships to other modules</h2>
+<p>
+  The Pest Fauna Control Activities Module should supplement the pest fauna
+  management information collected in the Interventions Module. Ideally, the
+  Pest Fauna Control Activities Module should complement the information
+  obtained from monitoring-focused approaches as available in the Fauna Aerial
+  Surveys Module, Camera Trapping Module, Ground Counts Module, and Sign-based
+  Fauna Surveys Module. It can also be used with plot-based methods to assess
+  ecological changes over time compared to baseline pre-control data.
+</p>
+<p>
+  The Pest Fauna Control Activities Module is linked to the following modules:
+</p>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<p>
+  Mandatory modules for when implementing the Pest Fauna Control Activities
+  Module:
+</p>
+<ul>
+  <li>
+    <p>
+      Interventions Module – should be completed if the project includes planned
+      pest fauna interventions within the project area. Intervention refers to
+      the control action (i.e. the area where feral cats were targeted using
+      trapping techniques), whilst the Pest Fauna Control Activities Module
+      collects information about the number of animals removed (i.e. the number
+      of cats caught and euthanised). In some situations, intervention and
+      outcome data can be collected simultaneously (i.e. trap effort, location
+      and types of traps used, and the trapping results).
+    </p>
+  </li>
+</ul>
+<h3 id="optional-complementary-related-modules">
+  Optional complementary related modules
+</h3>
+<p>
+  Optional modules recommended to complement the Pest Fauna Control Activities
+  Module:
+</p>
+<ul>
+  <li>
+    <p>
+      Opportune Module – enables the recording of opportunistic direct sightings
+      of fauna species and indirect signs of fauna (i.e. tracks, scats etc.)
+      captured in a standardised way. Opportune sightings anywhere within the
+      project area whilst undertaking any survey, or non-survey activity, can be
+      recorded. Data collected via the Opportune Module can assist in
+      identifying if fauna species present in the project area are being missed
+      through the other modules being implemented.
+    </p>
+  </li>
+  <li>
+    <p>
+      Fauna Ground Counts Module – can be used to obtain pre- and
+      post-intervention activities monitoring data, including the distribution
+      and relative abundance of pest fauna across the survey area. The Ground
+      Counts Survey Module is a survey module for recording observations and is
+      not to be used whilst undertaking intervention or control activities (i.e.
+      spotlighting surveys at night can be undertaken as part of the Ground
+      Counts Survey Module, but no shooting can occur). Use this Pest Fauna
+      Control Activities Module for shooting results.
+    </p>
+  </li>
+  <li>
+    <p>
+      Fauna Aerial Surveys Module – can be used to obtain pre- and
+      post-intervention activities monitoring data, including the distribution
+      and relative abundance of pest fauna across the survey area. The Aerial
+      Count Surveys Module is a survey module for recording observations. It is
+      not to be used whilst undertaking intervention or control activities (i.e.
+      counting the number of individuals observed from the air is undertaken as
+      part of the Fauna Aerial Surveys Module, but no shooting can occur). Use
+      this Pest Fauna Control Activities Module for aerial shooting results.
+    </p>
+  </li>
+  <li>
+    <p>
+      Sign-based Fauna Surveys Module – can establish track plots associated
+      with control-based interventions, i.e. a sand pad around a cage trap or
+      bait station. Use the Sign-based Fauna Surveys Module to record the sand
+      plot details and the Pest Fauna Control Activities Module to record the
+      results.
+    </p>
+  </li>
+  <li>
+    <p>
+      Camera Trapping Module – camera traps can be used to inform the
+      distribution of pest fauna species within the project area and aid in
+      identifying individuals where possible.
+    </p>
+  </li>
+  <li>
+    <p>
+      Vegetation Mapping Module – can be used to define and map the vegetation
+      associations at the location of a control activity. Data from vegetation
+      mapping points may inform the location of management interventions.
+    </p>
+  </li>
+</ul>"""^^rdf:HTML ;
+    dcterms:source """<h1 id="references">References</h1>
+<p>Brothers, NP, Skira, IJ, Copson, GR (1985) Biology of the feral cat,
+<em>Felis catus</em> (L.), on Macquarie Island. <em>Wildlife
+Research</em> <strong>12</strong>, 425-436.</p>
+<p>Capon, S, Castley, G, Palmer, G, Linke, S, Piccolo, R, Henderson, E
+(2020) A Long-Term Monitoring Framework for the Regional Land
+Partnerships Stage2: Final Report. Griffith University, Brisbane.</p>
+<p>Commonwealth of Australia, 2009. NRM MERI Framework.</p>
+<p>Curtis, A, Robertson, A, Race, D (1998) Lessons from recent
+evaluations of natural resource management programs in Australia.
+<em>Australian Journal of Environmental Management</em>
+<strong>5</strong>, 109-119.</p>
+<p>DAWE, 2020. Regional Land Partnerships program outcome reporting
+guide. Canberra.</p>
+<p>Forsyth, D, Robley, A, Reddiex, B (2005) Review of methods used to
+estimate the abundance of feral cats.</p>
+<p>Garrard, GE, Kusmanoff, AM, Faulkner, R, Samarasekara, CL, Gordon, A,
+Johnstone, A, Peterson, IR, Torabi, N, Wang, Y, Bekessy, SA (2020)
+Understanding Australia’s national feral cat control effort.
+<em>Wildlife Research</em> <strong>47</strong>, 698-708.</p>
+<p>Kanowski, J, Catterall, C, Freebody, K, Harrison, D (2010) Monitoring
+revegetation projects in rainforest landscapes. Toolkit version 3.</p>
+<p>Lindenmayer, D, Woinarski, J, Legge, S, Southwell, D, Lavery, T,
+Robinson, N, Scheele, B, Wintle, B (2020) A checklist of attributes for
+effective monitoring of threatened species and threatened ecosystems.
+<em>Journal of Environmental Management</em> <strong>262</strong>,
+110312.</p>
+<p>Marlow, N, Thomson, P, Algar, D, Rose, K, Kok, N, Sinagra, J (2000)
+Demographic characteristics and social organisation of a population of
+red foxes in a rangeland area in Western Australia. <em>Wildlife
+Research</em> <strong>27</strong>, 457–464.</p>
+<p>Martin, TG, van Klinken, RD (2006) Value for money? Investment in
+weed management in Australian rangelands. <em>The Rangeland Journal</em>
+<strong>28</strong>, 63-75.</p>
+<p>McIlroy, J, Saunders, G, Hinds, LA (2001) The reproductive
+performance of female red foxes, <em>Vulpes vulpes</em>, in
+central-western New South Wales during and after a drought. <em>Canadian
+Journal of Zoology</em> <strong>79</strong>, 545-553.</p>
+<p>Mitchell, B, Balogh, S, 2007a. Monitoring Techniques for Vertebrate
+Pests: Feral Pigs. Orange, NSW.</p>
+<p>Mitchell, B, Balogh, S (2007b) Monitoring Techniques for Vertebrate
+Pests: Feral Pigs. NSW Department of Primary Industries, Sydney,
+NSW.</p>
+<p>Mitchell, B, Balogh, S (2007c) 'Monitoring Techniques for Vertebrate
+Pests: Foxes.' (NSW Department of Primary Industries:</p>
+<p>Mitchell, J (2010) 'Experimental research to quantify the
+environmental impact of feral pigs within tropical freshwater
+ecosystems.' (Department of Employment, Economic Development and
+Innovation:</p>
+<p>Morrison, TH, McDonald, GT, Lane, MB (2004) Integrating natural
+resource management for better environmental outcomes. <em>Australian
+Geographer</em> <strong>35</strong>, 243-258.</p>
+<p>Ramsey, DSL, Barclay, C, Campbell, CD, Dewar, E, MacDonald, AJ,
+Modave, E, Quasim, S, Sarre, SD (2018) Detecting rare carnivores using
+scats: Implications for monitoring a fox incursion into Tasmania.
+<em>Ecology and Evolution</em> <strong>8</strong>, 732-743.</p>
+<p>Recio, MR, Seddon, PJ, Moore, AB (2015) Niche and movement models
+identify corridors of introduced feral cats infringing ecologically
+sensitive areas in New Zealand. <em>Biological Conservation</em>
+<strong>192</strong>, 48-56.</p>
+<p>Reddiex, B, Forsyth, DM, 2004. Review of existing red fox, feral cat,
+feral rabbit, feral pig and feral goat in Australia. II. Information
+gaps. Melbourne: Arthur Rylah Institute for Environmental Research,
+Department of …,</p>
+<p>Reddiex, B, Forsyth, DM, McDonald-Madden, E, Einoder, LD, Griffioen,
+PA, Chick, RR, Robley, AJ (2006) Control of pest mammals for
+biodiversity protection in Australia. I. Patterns of control and
+monitoring. <em>Wildlife Research</em> <strong>33</strong>, 691-709.</p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """<h2 id="key-definitions-and-terminology">Key definitions and
+terminology</h2>
+<p><span id="_Toc138934178" class="anchor"></span>Table 1. Key
+definitions and terms used in the Pest Fauna Control Activities
+Module.</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 88%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aerial shooting</td>
+<td>Trained and accredited marksman using a rifle or shotgun from a
+helicopter to humanely euthanise targeted pest animals</td>
+</tr>
+<tr class="even">
+<td>Baiting</td>
+<td>Delivering a toxin to a targeted pest animal using bait or the
+Felixer™ device, including supplying the HOGGONE® pig bait via the
+HOGGONE® Bait Box or PIGOUT® pig baits via the HOGHOPPER™</td>
+</tr>
+<tr class="odd">
+<td>Ground shooting</td>
+<td>Trained operators using a rifle or shotgun either on foot or from a
+vehicle to humanely euthanise targeted pest animals</td>
+</tr>
+<tr class="even">
+<td>Intervention</td>
+<td>Under the MERI (monitoring, evaluation, reporting and improvement)
+framework, a project is defined as an intervention consisting of planned
+activities designed to achieve objectives within a given budget and
+timeframe (Commonwealth of Australia 2009). Interventions can take
+various forms and include pest animal control (Martin and van Klinken
+2006; Reddiex <em>et al.</em> 2006).</td>
+</tr>
+<tr class="odd">
+<td>Monitor</td>
+<td>Field data collection app for Ecological Monitoring System
+Australia. Collects data using the Australian Biodiversity Information
+Standard for delivery to the Australian Biodiversity Data Repository
+managed by the Department of Climate Change, Energy, the Environment and
+Water.</td>
+</tr>
+<tr class="even">
+<td>Mustering</td>
+<td>Trained operators using a helicopter, light plane, motorbikes,
+horses and/or dogs to round up targeted pest animals into holding yards,
+typically for transport to sale yards or an abattoir</td>
+</tr>
+<tr class="odd">
+<td>Trapping</td>
+<td>Trained operators using a humane trap to catch a targeted pest
+animal</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    skos:note """<h3 id="additional-guidelines">Additional guidelines </h3>
+<ul>
+<li><p>The available options for the dropdown fields in the app appear
+in Appendix 1.</p></li>
+<li><p>Each control activity should be linked to an intervention and
+recorded using the Interventions Module. Selecting an intervention ID
+links an intervention set up recorded in the Interventions Module to the
+control activities outcomes recorded into Pest Fauna Control Activities
+Module.</p></li>
+<li><p>Specific locations such as bait stations and traps should be
+recorded as point data in the Interventions Module during the set-up of
+the control activity. Selecting the linked <em>intervention ID</em>
+allows these locations to be easily navigated to.</p></li>
+<li><p>All control activities must be conducted in accordance with
+animal ethics and wildlife research permits to ensure the welfare of
+animals, this includes the welfare of animals caught in cages,
+particularly during poor weather conditions.</p></li>
+</ul>"""^^rdf:HTML;
+    skos:prefLabel "Pest Fauna" ;
+    schema:url "The GitHub file link"^^xsd:anyURI ;
+    tern:appendix """<h1 id="appendices-1">Appendices</h1>
+<p><span id="_Toc138934178" class="anchor"></span>Appendix 1. Data
+collection fields</p>
+<p>Complete lists are provided in the Monitor app, as well as the TERN
+website</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Control activity type </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aerial shoot</td>
+</tr>
+<tr class="even">
+<td>Ground shoot</td>
+</tr>
+<tr class="odd">
+<td>Bait and trap</td>
+</tr>
+<tr class="even">
+<td>Bait only</td>
+</tr>
+<tr class="odd">
+<td>Fumigation</td>
+</tr>
+<tr class="even">
+<td>Mustering</td>
+</tr>
+<tr class="odd">
+<td>Trap and cull</td>
+</tr>
+<tr class="even">
+<td>Trap and remove</td>
+</tr>
+<tr class="odd">
+<td>Other</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Target species  </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cat (<em>Felis catus</em>)</td>
+</tr>
+<tr class="even">
+<td>Fox (<em>Vulpes vulpes</em>)</td>
+</tr>
+<tr class="odd">
+<td>Wild dog (<em>Canis lupus</em>)</td>
+</tr>
+<tr class="even">
+<td>Rabbit (<em>Oryctolagus cuniculus</em>)</td>
+</tr>
+<tr class="odd">
+<td>Deer (drop-down)</td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Fallow deer (<em>Dama dama</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rusa deer (<em>Rusa timorensis</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Red deer (<em>Cervus elaphus</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Chital deer (<em>Axis axis</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Hog deer (<em>Axis porcinus</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Goat (<em>Capra hircus</em>)</td>
+</tr>
+<tr class="odd">
+<td>Pig (<em>Sus scrofa</em>)</td>
+</tr>
+<tr class="even">
+<td>Horse (<em>Equus caballus</em>)</td>
+</tr>
+<tr class="odd">
+<td>Camel (<em>Camelus dromedaries</em>)</td>
+</tr>
+<tr class="even">
+<td>Other </td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Age class</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adult</td>
+</tr>
+<tr class="even">
+<td>Immature (sub-adult)</td>
+</tr>
+<tr class="odd">
+<td>Juvenile</td>
+</tr>
+<tr class="even">
+<td>Unknown</td>
+</tr>
+<tr class="odd">
+<td>Not recorded</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sex</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Male</td>
+</tr>
+<tr class="even">
+<td>Female</td>
+</tr>
+<tr class="odd">
+<td>Mixed sexes</td>
+</tr>
+<tr class="even">
+<td>Unknown</td>
+</tr>
+<tr class="odd">
+<td>Not recorded</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Animal fate </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Destroyed</td>
+</tr>
+<tr class="even">
+<td>Relocated</td>
+</tr>
+<tr class="odd">
+<td>Other</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML;
+    tern:equipment """<h3 id="equipment">Equipment</h3>
+<ul><ol type="1">
+<li><p>Mobile device (tablet/phone) with the Monitor app saved to the
+home screen</p></li>
+<li><p>GNSS, such as a Trimble® R1 or a DA2 receiver a hand-held GPS, or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy</p></li></ol>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """<h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+<li><p>Ensure that the Interventions Module has been completed before
+recording any control activities data. If undertaking shooting or
+mustering, where the control and outcome occur at the same time, this
+information can be recorded during the same survey period. Use the links
+to toggle between the two modules to ensure all necessary data has been
+collected in the field.</p></li>
+<li><p>Ensure the GNSS/GPS device is on, connected to the app and has
+high accuracy (this may take 10-15 minutes).</p></li>
+<li><p>Navigate to the Pest Fauna Control Activities Module in the app
+and select the <em>intervention ID</em> that that corresponds to the
+control activity recorded in the Interventions Module for your
+project.</p></li>
+<li><p>The <em>control activity type</em> and <em>target species</em>
+will prefill from the information already recorded in the Interventions
+Module. Confirm that the prefilled information is correct, if it is not
+then return to the Interventions Module to edit or create a new
+intervention (see Appendix 1 for a list of target species and control
+activity types).</p></li>
+<li><p>In the <em>comments</em> field record any extra information
+relevant to the activity.</p></li>
+<li><p>Select the <em>next</em> button to proceed to the survey
+page.</p></li>
+<li><p>Select <em>start</em> to begin the survey. The location, date and
+time will be automatically recorded, the track log will start, and a pin
+will be dropped at the start location.</p></li>
+</ol>
+<ul>
+<li><p>If navigating to a previously recorded data point (e.g. a
+previously laid trap) the location of the point will appear as a
+coloured dot on the map, select this point, the point ID will appear,
+select <em>add</em> to link the observation to this record.</p></li>
+<li><p>If not linking an observation to a previous record then select
+<em>add</em> to record a point location for a control activity. The
+date/time and coordinates will be automatically recorded, and a pin will
+be dropped on the track. Enter a new <em>point ID</em> if relevant
+(optional, e.g. bait station or trap number).</p></li>
+</ul>
+<ol start="8" type="1">
+<li><p>Select the <em>target species</em> observed (if deer are selected
+you will be prompted to further define the species).</p></li>
+<li><p>Enter the <em>number</em> <em>of target pest animals
+observed</em></p></li>
+</ol>
+<ul>
+<li><p>Record the <em>age class</em> and <em>sex</em> of the target pest
+animals observed (this is recorded as a number e.g. male – 1, female -
+3).</p></li>
+<li><p>Enter the <em>number controlled</em> at that location.</p></li>
+<li><p>Record the <em>animal fate</em> (destroyed, relocated,
+other)</p></li>
+</ul>
+<ol start="10" type="1">
+<li><p>To take a photograph (optional) select the camera icon and then
+add a short description. The location and date will be automatically
+recorded.</p></li>
+<li><p>Record any relevant comments (optional) then select
+<em>save</em>.</p></li>
+<li><p>To record additional observations, navigate to your next survey
+point, select <em>add</em> and repeat steps 8-11 until all records for
+the control activity have been completed.</p></li>
+<li><p>Select <em>end</em> to complete the survey. The coordinates, date
+and time to record the survey effort will be automatically recorded, and
+the track log will end.</p></li>
+<li><p>Click on <em>complete</em> to save your results.</p></li>
+</ol>"""^^rdf:HTML;
+    tern:purpose """<h2 id="rationale">Rationale </h2>
+<p>Pest fauna control is one of the most common interventions undertaken
+in Australia (Capon <em>et al.</em> 2020). It formed a critical
+component of projects under the Regional Land Partnership (RLP) program.
+Despite this, there is significant uncertainty around the efficacy of
+pest fauna control activities (Reddiex and Forsyth 2004; Forsyth <em>et
+al.</em> 2005; Garrard <em>et al.</em> 2020), with information about
+on-ground works often poorly documented (Curtis <em>et al.</em> 1998;
+Kanowski <em>et al.</em> 2010; Lindenmayer <em>et al.</em> 2020), and
+often remaining with program staff (Martin and van Klinken 2006).
+Recording the outcomes of pest fauna control, including shooting,
+baiting, trapping and mustering, can provide information about pest
+presence and supplement non-lethal monitoring techniques in providing
+relative abundance (Brothers <em>et al.</em> 1985; Recio <em>et al.</em>
+2015).</p>
+<p>The number of animals removed is commonly used as a population
+monitoring method in management programs (Marlow <em>et al.</em> 2000;
+McIlroy <em>et al.</em> 2001), and in many instances, represents the
+only monitoring undertaken (see MERIT projects; <a
+href="https://fieldcapture.ala.org.au/">fieldcapture.ala.org.au</a>).
+Recording the outcomes of control offers a cost-effective monitoring
+option as it generally requires no or little additional effort (Ramsey
+<em>et al.</em> 2018) and can easily be integrated into control programs
+(Mitchell and Balogh 2007c). However, using control outcomes as the sole
+monitoring technique can lead to biased estimates (Mitchell and Balogh
+2007a), so the method should be combined with other monitoring focussed
+approaches.</p>
+<p>The Pest Fauna Control Activities Module has been developed to
+capture data consistently and meet minimum data standards, which can
+improve decision-making, assist with reporting and allow data to be
+collated and analysed at the project and regional levels. Due to the
+range of control techniques available, the module has been designed to
+be flexible to allow data from various control methods to be collected
+while ensuring a standardised approach to data collection. The Pest
+Fauna Control Activities Module has been designed to complement the
+information collected in the Interventions Module, which is focused on
+recording the type and extent of control undertaken.</p>
+"""^^rdf:HTML;
+    tern:scope """<h1 id="introduction-and-background">Introduction and background</h1>
+<p>The Pest Fauna Control Activities Module enables the standardised
+collection of the results of pest fauna removal activities. The module
+records the results of activities such as shooting, baiting, trapping
+and mustering. It provides data to indicate pest fauna abundance and the
+number and location of pest animals removed or baits taken. This module
+does not provide methods or guidelines for controlling pest fauna. The
+module should be used in conjunction with the Interventions Module,
+which captures the control activity details.</p>
+<p>Pest fauna control activities require specialist skills, equipment,
+training and licenses. These requirements must be factored into
+determining the suitability of control activities for an NRM project.
+The appropriateness of the control activities must be determined
+according to project requirements, the project area, and the target
+species. This module must be conducted in accordance with legislative
+requirements and with the appropriate approvals, licenses and permits
+from state/territory jurisdictions (e.g. scientific research, ethics,
+aerial research, firearms, poisons). Releasing pest animals is often
+prohibited, and the destruction of pest animals must be conducted
+humanely, as governed by state/territory legislation and model codes of
+practice.</p>
+<p>A monitoring program should be established before any control
+activities are undertaken, as this allows changes over time, and the
+effectiveness of the control, to be assessed against baseline measures
+(Mitchell and Balogh 2007c; Mitchell 2010). It is recommended that pest
+fauna are monitored by using at least one EMSA module, either Aerial
+Fauna Surveys, Fauna Ground Count Surveys, or Sign-based Fauna Surveys.
+In addition, ecological changes in response to the control should be
+monitored using the plot-based ecological monitoring modules, including
+Vertebrate Fauna for the response of birds and small and medium mammals
+and reptiles, or the Herbivory and Physical Damage, Cover, Recruitment,
+or Condition Modules for the response of vegetation.</p>"""^^rdf:HTML;
+    tern:undertakenAfter
+        <https://linked.data.gov.au/def/nrm/copy-first-after-uuid-here> ,
+        <https://linked.data.gov.au/def/nrm/copy-second-after-uuid-here> ;
+    tern:undertakenBefore
+        <https://linked.data.gov.au/def/nrm/copy-first-before-uuid-here> ,
+        <https://linked.data.gov.au/def/nrm/copy-second-before-uuid-here> ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/copy-first-concurrently-uuid-here> ,
+        <https://linked.data.gov.au/def/nrm/copy-second-concurrently-uuid-here> ;
+.
+
