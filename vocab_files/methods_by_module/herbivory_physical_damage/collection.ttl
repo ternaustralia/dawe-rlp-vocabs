@@ -1,0 +1,317 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/def/nrm/dd2da1e0-edbe-4f20-a1ae-b860876c1837>
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
+    dcterms:description """<h1 id="module-overview">Module Overview</h1>
+<h2 id="available-protocols">Available protocols </h2>
+<p>The Herbivory and Physical Damage Module outlines the procedures and
+guidelines of three protocols for recording herbivory and physical
+damage present in a project area:</p>
+<ol type="1">
+<li><p>Within-plot belt transect protocol</p></li>
+<li><p>Off-plot belt transect protocol</p></li>
+<li><p>Active plot search protocol.</p></li>
+</ol>
+<p>The module is appropriate for monitoring all fauna species, including
+pest species. Depending on the project aims and location, herbivory and
+physical damage surveys can consist of a single protocol or a
+combination of a belt transect protocol and the Active plot search
+protocol. Where possible, protocols of the Herbivory and Physical Damage
+module should be undertaken within or near an established 1 ha Core
+Monitoring Plot or Fauna Plot so that the data can be analysed in
+combination with vegetation and landform data collected.</p>
+<p>The Within-plot belt transect protocol involves a 100 m belt
+transect, divided into 100 consecutive 1 m x 1 m quadrats. An estimate
+of damage (percent of quadrat with physical damage, such as wallowing or
+digging), percent cover (vegetation, substrate) and a herbivory score is
+given to each quadrat.</p>
+<p>The Off-plot belt transect protocol is a variation to the Within-plot
+belt transect protocol, allowing a more flexible approach over larger
+areas, where the user specifies the length and width of the belt
+transect (e.g. 50 x 4 m, 100 x 2 m), as well as the number of quadrats
+(minimum of 10) and their length and width. These transects can be used
+to record the signs present within each quadrat, and to undertake warren
+or den counts. This approach can utilise straight-line transects or can
+occur along tracks, alongside watercourses or other features. Longer
+transects are useful to understand broader scale trends across the
+project area.</p>
+<p>The active plot search protocol involves either traversing a 100 x
+100 m Core Monitoring Plot or Fauna Plot, or a 40 x 40 m subset area and
+recording the presence or absence of herbivory and physical damage, and
+completing a count of all herbivory and physical damage present. The
+active plot search protocol is best used where herbivory and physical
+damage is isolated and not homogenous across the project area. The
+active plot search protocol may be undertaken in unison with the
+Condition Module.</p>
+<h2 id="relationships-to-other-modules">Relationships to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<p>Mandatory if the Within-plot belt transect or Active plot search
+protocols are used:</p>
+<ul>
+<li><p>Plot Selection and Layout Module – within-plot 100 m belt
+transects and active plot searches are undertaken within Core Monitoring
+Plots or Fauna Plots. Therefore, ensure that the Plot Selection and
+Layout Module has been completed before commencing.</p></li>
+</ul>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<ul>
+<li><p>Sign-based Fauna Survey Module – both modules can be implemented
+in unison, whereby signs of fauna and the extent of physical damage or
+herbivory is recorded within plots (belt transects, entire plot or
+subset area) or off-plot belt transects. Signs of fauna species may
+provide an indication of the presence and abundance of species
+responsible for herbivory or physical damage.</p></li>
+<li><p>Vertebrate Fauna Module –monitoring data may provide an
+indication of the presence and abundance of fauna species responsible
+for herbivory or physical damage.</p></li>
+<li><p>Camera Trapping Module – camera traps may be used to identify
+fauna species responsible for herbivory or physical damage.</p></li>
+<li><p>Interventions Module and Pest Fauna Control Activities Module –
+the presence of herbivory and physical damage can inform the localities
+and details of management activities.</p></li>
+<li><p>Targeted Surveys Module – herbivory and physical damage can also
+be recorded during a targeted survey. Targeted surveys should only be
+used when no other EMSA module can be applied to the project's specific
+needs.</p></li>
+<li><p>Floristics Module and Cover Module –information on the
+composition and cover of palatable species can help determine the number
+of within-plot belt transects that will be surveyed, or the suitable
+active plot search area.</p></li>
+<li><p>Photopoints Module – the panoramic photos taken from the centre
+of the plot provide a visual representation of the plot, including any
+herbivory and physical damage.</p></li>
+<li><p>Condition Module – measures of herbivory and physical damage can
+be incorporated into assessments and monitoring of biodiversity
+condition.</p></li>
+<li><p>Opportune Module – opportune observations of herbivory and
+physical damage may identify the need to implement the Herbivory and
+Physical Damage Module protocols.</p></li>
+</ul>"""^^rdf:HTML ;
+    dcterms:source "Copy the References HTML content here"^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Copy the Key definitions and terminology HTML Content here"^^rdf:HTML ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/nrm/sub-protocol-1-uuid>
+            <https://linked.data.gov.au/def/nrm/sub-protocol-2-uuid>
+            <https://linked.data.gov.au/def/nrm/sub-protocol-3-uuid>
+        ) ;
+    skos:prefLabel "Herbivory and Physical Damage" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/herbivory_physical_damage/herbivory_physical_damage.ttl"^^xsd:anyURI ;
+    tern:purpose """<h2 id="rationale">Rationale</h2>
+<p>Herbivory and physical damage surveys offer an indirect, non-invasive
+measure of presence and impact. These surveys are generally easy to
+undertake and require little specialised equipment or training. They are
+particularly useful for cryptic, nocturnal, elusive species or species
+that occur in low abundance. In some instances, the herbivory and
+physical damage caused by some species, are more conspicuous than the
+animals themselves (Mitchell and Balogh 2007b; Claridge 2016; Indigo
+<em>et al.</em> 2021; Southwell <em>et al.</em> 2022). Palatable plants
+are consumed by pest fauna, including rabbits, feral deer, goats and
+pigs (Davis and Coulson 2016; Burrows 2018; Finlayson et al. 2021). The
+nature of the damage to vegetation can help to reveal the species
+responsible. For example, up to 60 cm high grazing lines and chisel-like
+cuts on shrubs is indicative of rabbit (or rarely hare) damage (Williams
+et al. 1995; Bird et al. 2012; ACT Government 2015). Herbivory and
+physical damage surveys can be useful when direct observations of fauna
+are not required or are difficult to obtain and to supplement direct
+survey methods to get a more comprehensive understanding of distribution
+and impacts (Hone 1988; Mitchell and Balogh 2007b; Moriarty and Brown
+2012; NPCA 2020).</p>
+<p>The Herbivory and Physical Damage Module consists of two protocols
+that can be used alone or in combination, depending on the aims and
+requirements of the project, target fauna and the environment type. The
+Belt transect protocol is the most comprehensive method. It has been
+designed to align with the vegetation or fauna plot so that fauna data
+can be analysed with other ecological information, such as floristics,
+vegetation cover and fauna diversity. The module has a tiered approach,
+allowing the information collected to be tailored to the project's
+needs. The number of quadrats with herbivory and physical damage can be
+monitored over time to understand fauna activity and impacts. The Belt
+transect protocol is based on established methods and has been adapted
+to align with the 1 ha plot, to facilitate more in-depth data analysis.
+A variation to the method is also available and allows a more flexible
+approach over larger areas, where the user specifies quadrat width,
+length, and number (minimum of 10 quadrats). Longer transects are useful
+to understand broader scale trends across the project area (based on the
+presence of herbivory and physical damage).</p>
+<p>The 2 ha Arid Zone Monitoring (AZM) (Indigo <em>et al.</em> 2021)
+approach, which forms the basis of the active plot search method, is
+well established and regularly used to monitor the presence of arid zone
+fauna. The data are statistically robust and relatively inexpensive to
+measure but are only applicable to monitoring the presence and
+distribution of fauna rather than abundance (Southgate and Moseby 2008;
+Indigo et al. 2021). The tools and resources developed for the AZM,
+including a standard data collection template, workflow and metadata,
+have been integrated into this module. The module offers a rapid
+approach (approximately 30 minutes per 2 ha area), suitable for use in
+the arid zone and can document a range of fauna species. The method
+requires minimal training and no specialised equipment (Southgate and
+Moseby 2008; Indigo et al. 2021). A variation to this approach is also
+available for use in non-arid systems. It aligns to the 1 ha fauna plot
+or the vegetation plot, streamlining data collection where other modules
+are implemented simultaneously.</p>"""^^rdf:HTML ;
+    tern:scope """<h3>Contents</h3>
+  <ol>
+    <li><a href="#introduction-and-background">Introduction and Background</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology"
+        >Key definitions and terminology</a
+      >
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#module-overview">Module Overview</a></li>
+  </ol>
+    <h1 id="introduction-and-background">Introduction and Background</h1>
+<p>Fauna can cause visible impacts to the soil and vegetation in the
+landscape, impacts which can be used to identify their presence and
+quantify their relative abundance (Cowled and Lapidge 2004; Mitchell and
+Balogh 2007b; Engeman <em>et al.</em> 2013). Disturbance can consist of
+physical damage to soil, vegetation or water bodies. Physical damage is
+usually a consequence of digging, creation of trail pathways, rooting,
+pugging, wallowing, rubbing, trampling and browsing (Mitchell and Balogh
+2007b, 2007a, 2007c; Engeman <em>et al.</em> 2013; Bradford and Westcott
+2015; Higashide <em>et al.</em> 2021; Hradsky <em>et al.</em> 2021).</p>
+<p>The most appropriate protocol, or combination of protocols, within
+the Herbivory and Physical Damage Module can be selected on a
+project-by-project basis, depending on the target species. Surveying for
+herbivory and physical damage can be undertaken within core monitoring
+and fauna plots, to provide a more comprehensive picture of ecological
+impacts and intervention outcomes.</p>
+<p>The Herbivory and Physical Damage Module includes three
+protocols:</p>
+<ul>
+<li><p>Within-plot belt transect</p></li>
+<li><p>Off-plot belt transect</p></li>
+<li><p>Active plot search.</p></li>
+</ul>
+<p>In each protocol, the following data is recorded:</p>
+<ul>
+<li><p>Presence/absence of each damage type, and attributable
+species</p></li>
+<li><p>Count of each instance of damage, and attributable species
+(optional)</p></li>
+<li><p>Age of the damage (optional).</p></li>
+</ul>
+<p>Physical damage recorded can include:</p>
+<ul>
+<li><p>Burrow, warren and den</p></li>
+<li><p>Pad</p></li>
+<li><p>Trail and pathway through vegetation</p></li>
+<li><p>Rooting and pugging</p></li>
+<li><p>Digging</p></li>
+<li><p>Rub or rutting on tree</p></li>
+<li><p>Roll pit and wallow</p></li>
+<li><p>Tusk mark</p></li>
+<li><p>Fouled water source</p></li>
+<li><p>Browse line</p></li>
+<li><p>Leaf chewing</p></li>
+<li><p>Other herbivory.</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Belt transect</td>
+<td>Method of sampling a survey area whereby a transect is placed and a
+set area on either side of the transect is inspected, also called a
+strip transect.</td>
+</tr>
+<tr class="even">
+<td>Browse line</td>
+<td>The boundary between higher plant growth and lower stripped and
+eaten-back growth indicates the height reached by herbivorous
+animals</td>
+</tr>
+<tr class="odd">
+<td>Burrow, warren and den</td>
+<td>A tunnel or hole in the ground that is dug by an animal</td>
+</tr>
+<tr class="even">
+<td>EPBC Act</td>
+<td><em>Environment Protection and Biodiversity Conservation Act
+1999</em></td>
+</tr>
+<tr class="odd">
+<td>Fixed interval plot</td>
+<td>Survey design where plots are located at a predefined distance from
+one another</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Plot</td>
+<td>The specific survey area where information is collected (generally
+100 m x 100 m; 1 ha). Final plot location is determined in the field,
+with preference given to homogeneous areas representative of the broader
+project area, with a constant mix of vegetation, relief and soil. Core
+Plot is where the majority of the EMSA protocols are conducted. A Fauna
+Plot can be established next to the Core Plot. The intent of the Fauna
+Plot is to lessen the disturbance of the Core Plot (i.e., digging of
+pitfall traps etc).</td>
+</tr>
+<tr class="even">
+<td>Rooting and pugging</td>
+<td>Disturbance of the ground by snouts and feet of pest fauna</td>
+</tr>
+<tr class="odd">
+<td>Rub or rutting</td>
+<td>Damage caused by animals rubbing against vegetation</td>
+</tr>
+<tr class="even">
+<td>Tusk mark</td>
+<td>Damage caused to vegetation by the tusk of aminals, particularly
+feral pigs</td>
+</tr>
+<tr class="odd">
+<td>Transect</td>
+<td>A line placed across an area that is traversed by the surveyor to
+record observations or take measurements</td>
+</tr>
+<tr class="even">
+<td>Trimble® R1</td>
+<td>A rugged, compact, lightweight Global Navigation Satellite System
+(GNSS) receiver (configured with the GNSS Status app) that provides
+professional-grade positioning information to any connected mobile
+device using Bluetooth® connectivity.</td>
+</tr>
+<tr class="odd">
+<td>Wallow and roll pit</td>
+<td>Shallow depression in moist or wet soil, used by animals, including
+pigs for digging, rooting and covering themselves in mud</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    tern:undertakenAfter <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9> ,
+        <https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51> ,
+        <https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109> ,
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
+        <https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9> ,
+        <https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6> ,
+        <https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6> ,
+        <https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5> ;
+.
+
