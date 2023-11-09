@@ -1,12 +1,12 @@
 services:
   frontend:
-    image: ghcr.io/ternaustralia/linkeddata-site:0.9.1-local.11.f2487d3
+    image: ghcr.io/ternaustralia/linkeddata-site:0.12.7-local.2.8b6d713
     container_name: linkeddata-site
     ports:
       - 8000:8000
 
   backend:
-    image: ghcr.io/ternaustralia/linkeddata-api:0.3.1
+    image: ghcr.io/ternaustralia/linkeddata-api:0.7.2
     container_name: linkeddata-api
     ports:
       - 5000:5000
