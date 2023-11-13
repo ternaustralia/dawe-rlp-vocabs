@@ -1,0 +1,884 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/e0cb4c61-eaa4-4c57-b627-2061cc9311bd>
+    a
+        skos:Concept ,
+        tern:Method ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """<h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 class="unnumbered" id="general-field-collection">General field
+collection</h4>
+<h5 class="unnumbered" id="repeat-surveys">Repeat surveys</h5>
+<ul>
+<li><p>There is no rule for when to repeat surveys. However, surveys
+should be conducted as often as the project requires, i.e. weekly,
+monthly, bi-monthly, and quarterly. For consistency, aim to replicate
+the conditions, i.e. similar weather, similar time, moon phase,
+observers, and reference materials. Repeat visits should be undertaken
+at the same time(s) as the baseline assessments.</p></li>
+</ul>
+<h4 class="unnumbered" id="field-survey">Field survey </h4>
+<ul>
+<li><p>Where the species attributable species cannot be determined,
+provide as much information as possible (e.g., carnivore, herbivore,
+hoofed, deer, etc.) and provide a photograph of the damage.</p></li>
+</ul>
+<h5 class="unnumbered" id="physical-damage-estimates">Physical damage
+estimates</h5>
+<ul>
+<li><p>Physical damage estimates will generally be restricted to
+wallowing and digging based activities that impact the soil and ground
+layer vegetation.</p></li>
+</ul>
+<h5 class="unnumbered" id="herbivory-measures">Herbivory measures</h5>
+<ul>
+<li><p>Herbivory is scored using a categorical class for each plant
+observed within a quadrat. This information can be used to assess
+herbivory and physical damage to vegetation at the plot level.</p></li>
+</ul>"""^^rdf:HTML ;
+    skos:prefLabel "Within-plot Belt Transect Protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/herbivory_physical_damage/within-plot-belt-transect/within-plot-belt-transect.ttl"^^xsd:anyURI ;
+    tern:appendix """<h1 id="appendices"> Appendices</h1>
+<h3 id="appendix-1">Appendix 1. Data collection fields from the Herbivory and Physical
+Damage Module</h3>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Transect route type </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Vehicle road</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Vehicle dirt track</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Walking track (incl animal path)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Off-track (no defined path)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other: text describe</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong> Survey intent</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Once-off measure</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Repeated measure</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Linked to pre-control activity</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Linked to post-control activity</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Free text description</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Target species  </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Cat (Felis catus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Fox (Vulpes vulpes)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Wild dog (Canis lupus) (drop-down)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Dog (Canis lupus familiaris)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Dingo (Canis lupus dingo)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Dingo-Dog hybrid</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rabbit (Oryctolagus cuniculus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Deer (drop-down)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Fallow deer (Dama dama)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Rusa deer (Rusa timorensis)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Red deer (Cervus elaphus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Chital deer (Axis axis)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Hog deer (Axis porcinus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Goat (Capra hircus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Pig (Sus scrofa)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Horse (Equus caballus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Camel (Camelus dromedaries)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other </p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Text (predictive text)</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Survey type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Belt transect</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Active search plot</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Track count</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Observer role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Spotter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Spotter - inside of vehicle cab</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Spotter - outside of vehicle cab</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Driver</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Data-entry</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Data-entry only</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weather conditions </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Temperature</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Actual BOM/weather station <sup>o</sup>C</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rainfall</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Showers</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rain</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Drizzle</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Frost</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Mist</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Thunderstorm</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p> Rainfall duration</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Intermittent</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Occasional</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Frequent</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Continuous</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Periods of rain</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Brief</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cloud cover</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Sunny</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Mostly sunny</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Partly cloudy</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cloudy</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Overcast</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p> Wind</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Calm</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Light winds</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Moderate winds</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Fresh winds</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Strong winds</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Near gale</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Gale</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p> Moon phase</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>New moon</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>First quarter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Full moon</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Third quarter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Weather comments</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Free text description</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Herbivory and physical damage record</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>No herbivory or physical damage</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Herbivory</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Leaf chewing</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Browsing</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Bark gnawing</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Severed stems</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other: describe</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Plant species</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Height of damage (m)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Percent of foliage affected</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Attributable species</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Add photo</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Additional comments</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Physical damage</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Dig</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Burrow</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Warren</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Trail/pathway</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Wallow</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Rooting</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Pugging</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Rub/rut</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Roll pit</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Tusk mark</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Fouled water source</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Other: describe</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Attributable species</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Add photo</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Additional comments</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+"""^^rdf:HTML ;
+    tern:equipment """<h3>Contents</h3>
+  <ol>
+    <li><a href="#equipment">Equipment</a></li>
+    <li><a href="#instructions-and-procedures">Instructions</a></li>
+    <li><a href="#additional-guidelines">Additional guidelines</a></li> 
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+  <h3 id="equipment">Equipment</h3>
+<ul>
+<li><p>Mobile device with the Monitor app installed</p></li>
+<li><p>GNSS, such as a Trimble R1 or DA2 receiver, a hand-held GPS or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy</p></li>
+<li><p>100 m tape measure</p></li>
+<li><p>1 m pole or 5-10 m tape measure set to 1 m (See <a href="#appendix-1">Appendix 1</a>)
+.</p></li>"""^^rdf:HTML ;
+    tern:instructions """<h2 id="field-collection">Field collection</h2>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<li><p>The plot must be established using the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout
+Module</a> prior to conducting the Within-plot belt transect
+protocol.</p></li>
+<li><p>The <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description</a> module must be completed prior to, or during
+the reconnaissance visit.</p></li>
+</ul>
+<h3 id="time-requirements">Time requirements</h3>
+<p>Survey activity time estimates will vary depending on the number and
+variety of herbivory and physical damage encountered, as well as the
+number of measures recorded. As a general guide:</p>
+<ul>
+<li><p>Allow 1–2 hours hour for survey planning.</p></li>
+<li><p>Allow 20–60 minutes to complete the reconnaissance visit and
+transect set-up.</p></li>
+<li><p>Allow 15 minutes for the survey set-up before commencing each
+survey to enter the information.</p></li>
+<li><p>Allow 20–60 minutes per 100 m of transect.</p></li>
+</ul>
+<h3 id="personnel-requirements">Personnel requirements</h3>
+<p>Personnel number and skills:</p>
+<ul>
+<li><p>Belt transects are best conducted with two personnel, one making
+the observations and one recording the data directly into the Monitor
+app. The second person may also assist with taking
+measurements.</p></li>
+<li><p>Personnel should be familiar with and experienced in identifying
+the growth form of various plant species. If personnel are not
+confident, time should be dedicated to practising, using field reference
+guides, and seeking advice prior to conducting this protocol.</p></li>
+<li><p>Personnel should be familiar with and experienced in identifying
+local plant species and how to distinguish different species from one
+another. If personnel are not confident, time should be dedicated to
+practising, using field reference guides, and seeking advice prior to
+conducting this protocol.</p></li>
+<li><p>Personnel should be familiar with and experienced in identifying
+various types of herbivory and physical damage that fauna species can
+cause. If surveyors are not confident, time should be dedicated to
+practising, using field reference guides, and seeking advice before
+conducting this protocol.</p></li>
+<li><p>Belt transects do not involve interference with wildlife.
+Therefore, scientific permits and wildlife ethics approvals are unlikely
+to be required but always check with your local authority. Access
+permissions will likely be required.</p></li>
+</ul> <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<h4 class="unnumbered" id="pre-survey-planning">Pre-survey planning</h4>
+<ol type="1">
+<li><p>Familiarise yourself with the ecology and fauna present within
+the project area.</p></li>
+</ol>
+<ul>
+<li><p>Assess the presence of focal shrub species (e.g. highly
+palatable) within the project area.</p></li>
+<li><p>If there are target species for the project, assess the target
+species’ behaviour (e.g. elusive, utilises roads/tracks) and
+ecology.</p></li>
+<li><p>If there are target species for the project, determine the
+species’ habitat use preferences (e.g. dense vegetation, rugged terrain)
+to aid with site selection.</p></li>
+<li><p>Assess access (e.g. vehicle tracks), terrain and vegetation of
+the project area.</p></li>
+</ul>
+<ol start="2" type="1">
+<li><p>Decide on the most appropriate survey design (e.g. belt
+transects, active search plots, or a combination), and select survey
+sites.</p></li>
+<li><p>Ensure suitably experienced field staff and all necessary
+equipment is available and operational.</p></li>
+<li><p>Assess weather forecasts to ensure conditions are suitable. If
+surveys are to be repeated over multiple days, ideally, the weather
+should be similar for each survey.</p></li>
+</ol>
+<h4 class="unnumbered"
+id="reconnaissance-and-survey-set-up">Reconnaissance and survey
+set-up</h4>
+<ol type="1">
+<li><p>Arrive at the plot and traverse the plot to assess vegetation
+cover, density, substrate, and signs of herbivory or physical damage.
+Determine the number of transects that will be surveyed given the survey
+design and time permitted.</p></li>
+</ol>
+<ol start="2" type="1">
+<li><p>If using an external GNSS/GPS, ensure it is turned on and
+connected to the mobile/tablet.</p></li>
+<li><p>Open the Monitor app and select <em>Herbivory and Physical Damage
+Module &gt; Within-plot belt transects protocol</em>.</p></li>
+<li><p>Select the applicable <em>plot code</em>.</p></li>
+<li><p>Select the <em>number of transects</em> <em>to be completed</em>,
+1, 2 or 4 (the app will pre-determine which transects to complete based
+on the number selected).</p></li>
+<li><p>Indicate if <em>survey intent</em> is a once-off measure,
+repeated measure, or linked to a pre-control activity or post-control
+activity (optional).</p></li>
+<li><p>Indicate the <em>target species</em> (cat, fox, wild dog, rabbit,
+deer species, goat, pig, horse, camel, other). Multiple species can be
+selected. If other is selected, enter the species name. If there are no
+target species for this project, select <em>not
+applicable.</em></p></li>
+<li><p>Enter the <em>number of observers,</em> and for each observer,
+enter the <em>observer name</em> and <em>observer role</em> (observer,
+data entry, data entry only).</p></li>
+<li><p>Navigate to the S2 transect start point as indicated on the app,
+install a peg into the end of a tape measure, and run out the 100 m tape
+measure in a straight line directly towards the N2 point.</p></li>
+</ol>
+<h4 class="unnumbered" id="conduct-the-survey">Conduct the survey</h4>
+<ol type="1">
+<li><p>Once all observers are ready and the tape measure is in place,
+return to the transect start position select <em>commence survey</em>.
+The time and date will automatically be recorded.</p></li>
+</ol>
+<ol start="2" type="1">
+<li><p>Select <em>take transect 1 start photo</em>. Hold the device in
+front of you and take a landscape-orientated photo looking along the
+transect.</p></li>
+<li><p>Stand on the left side of the 100 m tape at 0 m.</p></li>
+<li><p>Hold the 5-10 m measuring tape (locked a 1 m) or measuring pole
+horizontally and at a right angle to the 100 m tape.</p></li>
+<li><p>Once in position, walk parallel to the tape line so one end of
+the pole roughly follows the tape. This will indicate the size of the
+quadrat.</p></li>
+</ol>
+<p>Figure 1. Surveyor holding a builders tape at 1 m to indicate the edge
+of the quadrat being assessed for signs of pest fauna</p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/surveyor_fig1.jpg"
+style="width:4.49028in;height:3.36806in" /></p>
+<ol start="6" type="1">
+<li><p>At each 1 m interval along the transect, starting at 1 m, record
+for the preceding 1 m x 1 m quadrat, select <em>enter quadrat
+data:</em></p></li>
+</ol>
+<ul>
+<li><p>select <em>no herbivory or physical damage</em> if no herbivory
+or physical damage is observed</p></li>
+<li><p>where herbivory is encountered:</p></li>
+</ul>
+<ul>
+<li><p>select the <em>type of damage</em> (leaf chewing, browsing, bark
+gnawing, severed stems, other)</p></li>
+<li><p>record the <em>species</em> of the affected plant</p></li>
+<li><p>record the <em>growth form</em></p></li>
+<li><p>for shrubs and trees record:</p>
+<ul>
+<li><p><em>lowest</em> <em>damage height</em> and <em>highest damage
+point</em> (cm) at which the damage occurs</p></li>
+<li><p><em>extent of the damage</em> (percent of the foliage that is
+affected)</p></li>
+<li><p>any additional <em>physical damage</em> <em>type</em> (e.g.
+rubbing or rutting on the stem)</p></li>
+</ul></li>
+<li><p>for seedlings and saplings record:</p>
+<ul>
+<li><p>if grazing is light, heavy or severe</p></li>
+</ul></li>
+<li><p>for sedges, rushes and grasses record:</p>
+<ul>
+<li><p>if grazing is light, heavy or severe</p></li>
+</ul></li>
+<li><p>select the <em>attributable fauna species</em> (select unknown if
+not certain)</p></li>
+<li><p>add a photo (representative photos should be taken for each
+species/damage type for the plot – i.e. not all herbivory observed need
+to be photographed, ideally a scale card should be used in all photos
+(up to 3 photos per herbivory record)</p></li>
+<li><p>add any additional comments in the <em>observation comments</em>
+field</p></li>
+</ul>
+<ul>
+<li><p>where physical damage is encountered:</p></li>
+</ul>
+<ul>
+<li><p>select the <em>type of damage</em> (dig, burrow, warren, pad,
+trail/pathway, wallow, rooting, pugging, rub/rut, roll pit, tusk mark,
+fouled water source, other)</p></li>
+<li><p>select the <em>attributable</em> <em>fauna species</em> (select
+unknown if not certain)</p></li>
+<li><p>record the percentage of the quadrat effected</p></li>
+<li><p><em>add photo</em> (representative photos should be taken for
+each species/damage type for the plot – i.e. not all damage observed
+need to be photographed, ideally a scale card should be used in all
+photos (optional, up to 3 photos per damage record)</p></li>
+<li><p>add any additional comments in the <em>observation comments</em>
+field</p></li>
+</ul>
+<ol start="7" type="1">
+<li><p>Repeat this process for every 1 m quadrat along the tape (100
+quadrats total).</p></li>
+<li><p>Once you reach the end of the belt transect at S2, select <em>end
+transect.</em></p></li>
+<li><p>If conducting additional transects, follow the screen prompts to
+locate and layout the tape measures for:</p></li>
+</ol>
+<ul>
+<li><p>transect 2 (S4 to N4) (optional)</p></li>
+<li><p>transect 3 (E4 to W4) (optional)</p></li>
+<li><p>transect 4 (W2 to E2) (optional).</p></li>
+</ul>
+<ol start="10" type="1">
+<li><p>At the start of each transect, the app will prompt you to take a
+start of transect photo.</p></li>
+<li><p>Complete all 100 quadrats along the transect, and once you reach
+the end of the belt transect, select end transect.</p></li>
+<li><p>Once all intended (1, 2, 3, or 4) belt transects are completed,
+select <em>complete belt transect survey</em>.</p></li>
+</ol>"""^^rdf:HTML ;
+.
+
