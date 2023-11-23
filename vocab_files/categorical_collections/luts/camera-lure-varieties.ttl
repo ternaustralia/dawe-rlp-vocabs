@@ -6,49 +6,43 @@ PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/02105caa-6c01-546b-8d15-06710ff04a53>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-lure-varieties.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/313428d7-9dd7-4bb5-9ba1-1de6339589ff> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3579e880-3b7a-50dc-b00e-fa4b45730ce4> ;
-    urnp:conceptDefinition "Represents the edible lure variety used while setting-up a Camera trap." ;
-    urnp:conceptIdentifier 1 ;
-    urnp:conceptNotation "Standard small mammal bait mix" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-lure-varieties> ;
-.
-
-<https://linked.data.gov.au/def/nrm/3294abce-e6b4-5424-89f1-30190adb1c77>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-lure-varieties.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/313428d7-9dd7-4bb5-9ba1-1de6339589ff> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
-    urnp:conceptDefinition "Represents any 'other' lure varieties used while setting-up a Camera trap." ;
-    urnp:conceptIdentifier 3 ;
-    urnp:conceptNotation "Other" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-lure-varieties> ;
-.
-
-<https://linked.data.gov.au/def/nrm/585bb013-c4a9-50a9-b1e6-3fa6913446d2>
+<https://linked.data.gov.au/def/nrm/1ad90585-b534-5b75-ad6b-d71a91ba9d7a>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-lure-varieties.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/313428d7-9dd7-4bb5-9ba1-1de6339589ff> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9241f408-ec6a-5e84-a619-0495c2b7a16b> ;
     urnp:conceptDefinition "Represents the edible lure variety used while setting-up a Camera trap." ;
-    urnp:conceptIdentifier 2 ;
-    urnp:conceptNotation "Meat" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-lure-varieties> ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-camera-lure-varieties"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/3b1ec4b1-27e4-5055-ab39-b00a93b3e6ef>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-lure-varieties.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/313428d7-9dd7-4bb5-9ba1-1de6339589ff> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "Represents any 'other' categorical collection NOT listed." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-camera-lure-varieties"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d1d5f8ee-1fe5-52fa-b052-d5180544e32d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-lure-varieties.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/313428d7-9dd7-4bb5-9ba1-1de6339589ff> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3579e880-3b7a-50dc-b00e-fa4b45730ce4> ;
+    urnp:conceptDefinition "Represents the edible lure variety used while setting-up a Camera trap." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-camera-lure-varieties"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/313428d7-9dd7-4bb5-9ba1-1de6339589ff>
     a skos:Collection ;
-    dcterms:description "A collection of camera lure varieties and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-camera-lure-varieties> ;
+    dcterms:description "Refers to the variety of lures used during a camera-trap set-up, such as for example, a standard small mammal bait mix, meats or any other types depending on the target fauna of interest." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-camera-lure-varieties"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
         <https://linked.data.gov.au/def/nrm/3579e880-3b7a-50dc-b00e-fa4b45730ce4> ,
         <https://linked.data.gov.au/def/nrm/9241f408-ec6a-5e84-a619-0495c2b7a16b> ,
         <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
-    skos:prefLabel "Camera lure varieties codes" ;
+    skos:prefLabel "Camera lure varieties" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-lure-varieties.ttl"^^xsd:anyURI ;
 .
 

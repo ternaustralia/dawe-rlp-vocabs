@@ -1,0 +1,66 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/7722adfd-d832-51d8-814b-1057d8436fd2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-fabric-details.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2d1d8394-6641-4d74-988a-8ec66425ffdd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7c053494-f3d7-5932-8762-2dde39e77f4b> ;
+    urnp:conceptDefinition "Refers to the soil fabric condition. Peds are evident, and characteristically more than 50% of them are dense and smooth-faced, although the degree of lustre may vary." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-fabric-details"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/8c242abe-c1ef-5082-82f6-07aa7e550706>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-fabric-details.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2d1d8394-6641-4d74-988a-8ec66425ffdd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/028a07c9-83c3-5bcd-9c4d-84454ccea785> ;
+    urnp:conceptDefinition "Refers to the soil fabric condition. Peds are evident, and characteristically more than 50% of the peds are roughfaced (i.e. they have relatively porous surfaces). (Rough-faced peds generally have less clearly defined faces than smooth-faced peds." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-fabric-details"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/ba7caf90-3de4-5ab3-a424-18ddb07336b7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-fabric-details.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2d1d8394-6641-4d74-988a-8ec66425ffdd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/dcf638f0-1c69-5b90-9457-62c51dda7645> ;
+    urnp:conceptDefinition "Refers to the soil fabric condition. The soil material is coherent, with few, if any, peds. The closely packed sand grains provide the characteristic appearance of the soil mass." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-fabric-details"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/eb2b2b73-8bf7-579e-89ba-5ccda017e553>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-fabric-details.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2d1d8394-6641-4d74-988a-8ec66425ffdd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/851948b6-aba7-5735-b578-1f62f7689e44> ;
+    urnp:conceptDefinition "Refers to the soil fabric condition. The soil material is coherent and characterised by the presence of pores (voids) and few, if any, peds. Ultimate soil particles (sand grains, for example) are coated with oxides and/or clays and are arranged (clumped) around the pores." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-fabric-details"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/2d1d8394-6641-4d74-988a-8ec66425ffdd>
+    a skos:Collection ;
+    dcterms:description "A collection of types of soil fabric details. Fabric details collection include, 'Earthy', 'Rough-ped', 'Sandy (grains prominent)' and 'Smooth-ped'." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-fabric-details"^^xsd:anyURI ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/028a07c9-83c3-5bcd-9c4d-84454ccea785> ,
+        <https://linked.data.gov.au/def/nrm/7c053494-f3d7-5932-8762-2dde39e77f4b> ,
+        <https://linked.data.gov.au/def/nrm/851948b6-aba7-5735-b578-1f62f7689e44> ,
+        <https://linked.data.gov.au/def/nrm/dcf638f0-1c69-5b90-9457-62c51dda7645> ;
+    skos:prefLabel "Soil fabric details" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-fabric-details.ttl"^^xsd:anyURI ;
+.
+

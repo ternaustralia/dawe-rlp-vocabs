@@ -6,37 +6,33 @@ PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/d59721c5-d98f-5832-9140-6672aaf48a41>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/interventions-location-types.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/200819a8-5172-4b8a-8261-784c13525d42> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0ae2b0cf-f6ff-5479-9978-431d7bfc8860> ;
-    urnp:conceptDefinition "In-situ'- refers to any location within the intervention activity/survey area." ;
-    urnp:conceptIdentifier 2 ;
-    urnp:conceptNotation "In-situ" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-interventions-location-types> ;
-.
-
-<https://linked.data.gov.au/def/nrm/f7e0fba9-577e-5b84-a3fd-e0fd6fe7d5dd>
+<https://linked.data.gov.au/def/nrm/6b7ce779-5f53-56b8-904b-cb7d031af644>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/interventions-location-types.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/200819a8-5172-4b8a-8261-784c13525d42> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3f0af66e-3c66-59e8-b863-8f76c14b5a87> ;
     urnp:conceptDefinition "Ex-situ'- refers to any location outside the intervention activity/survey area." ;
-    urnp:conceptIdentifier 1 ;
-    urnp:conceptNotation "Ex-situ" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-interventions-location-types> ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-interventions-location-types"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ea47a5bf-293b-590b-9adc-4ea85ea1752d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/interventions-location-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/200819a8-5172-4b8a-8261-784c13525d42> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0ae2b0cf-f6ff-5479-9978-431d7bfc8860> ;
+    urnp:conceptDefinition "In-situ'- refers to any location within the intervention activity/survey area." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-interventions-location-types"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/200819a8-5172-4b8a-8261-784c13525d42>
     a skos:Collection ;
-    dcterms:description "A collection of interventions location types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-interventions-location-types> ;
+    dcterms:description "Refers to whether the intervention activity were conducted in-situ (within habitat) or ex-situ (outside of the original habitat)." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-interventions-location-types"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
         <https://linked.data.gov.au/def/nrm/0ae2b0cf-f6ff-5479-9978-431d7bfc8860> ,
         <https://linked.data.gov.au/def/nrm/3f0af66e-3c66-59e8-b863-8f76c14b5a87> ;
-    skos:prefLabel "Interventions location types codes" ;
+    skos:prefLabel "Interventions location types" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/interventions-location-types.ttl"^^xsd:anyURI ;
 .
 

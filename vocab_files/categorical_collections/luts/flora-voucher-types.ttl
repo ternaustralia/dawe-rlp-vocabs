@@ -6,37 +6,33 @@ PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/318227b7-6ab5-507a-86d9-3ff8030dfb5d>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/463ec6ac-c3cf-4a9f-8a5d-f9ce38c3c405> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8b794be8-3b58-558b-a483-121f73cc56b4> ;
-    urnp:conceptDefinition "The type of voucher specimen collected. The plant tissue samples ideally consist of approximately 10 cm2 of young, undamaged leaves (or the best/freshest growth that is on offer). " ;
-    urnp:conceptIdentifier 2 ;
-    urnp:conceptNotation "PTV" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types> ;
-.
-
-<https://linked.data.gov.au/def/nrm/51f44f33-379b-59f5-8de8-590799f846cc>
+<https://linked.data.gov.au/def/nrm/9daf07f6-d8e3-52a5-a4f2-56af28f5bf5a>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/463ec6ac-c3cf-4a9f-8a5d-f9ce38c3c405> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4c22fc72-d90a-56de-b456-a2dcfa411266> ;
-    urnp:conceptDefinition "The type of voucher specimen collected. " ;
-    urnp:conceptIdentifier 1 ;
-    urnp:conceptNotation "PV" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types> ;
+    urnp:conceptDefinition "The type of voucher specimen collected. Plant voucher generally comprise of part/s or whole plant material representative of the taxon." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e5d092a7-0990-5d6c-bdea-917fe393a4a1>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/463ec6ac-c3cf-4a9f-8a5d-f9ce38c3c405> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/aa52280b-a63f-5a6d-b3bd-6045a379df00> ;
+    urnp:conceptDefinition "The type of voucher specimen collected. Plant tissue samples ideally consist of approximately 10 cm2 of young, undamaged leaves (or the best/freshest growth that is on offer)." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/463ec6ac-c3cf-4a9f-8a5d-f9ce38c3c405>
     a skos:Collection ;
-    dcterms:description "A collection of flora voucher types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types> ;
+    dcterms:description "Refers to the type of flora specimen being vouchered, i.e., whether it is a plant tissue specimen or a whole plant voucher." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-flora-voucher-types"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
         <https://linked.data.gov.au/def/nrm/4c22fc72-d90a-56de-b456-a2dcfa411266> ,
-        <https://linked.data.gov.au/def/nrm/8b794be8-3b58-558b-a483-121f73cc56b4> ;
-    skos:prefLabel "Flora voucher types codes" ;
+        <https://linked.data.gov.au/def/nrm/aa52280b-a63f-5a6d-b3bd-6045a379df00> ;
+    skos:prefLabel "Flora voucher types" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/flora-voucher-types.ttl"^^xsd:anyURI ;
 .
 

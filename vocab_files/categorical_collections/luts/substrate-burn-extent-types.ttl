@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/576f4802-1336-5412-abbc-c61e8281bbf9>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/substrate-burn-extent-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/78dda800-193d-5b0e-a18b-f54ad942aa51> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b56bb218-ad1c-59b3-af3f-2f38be6d6591> ;
+    urnp:conceptDefinition "Vegetation killed by proximal heating without direct flame contact (i.e. brown foliage that did not actually catch fire)." ;
+    urnp:conceptSource "Laws M, Morgan R, McCallum K, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Fire Severity Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/bafa3d3c-4480-5314-8fe0-2a37f09f1c6e>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/substrate-burn-extent-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/78dda800-193d-5b0e-a18b-f54ad942aa51> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f18d00e8-1a71-5ea6-ad41-dea308135423> ;
+    urnp:conceptDefinition "Black carbon residue on vegetation and soil where incomplete combustion has occurred." ;
+    urnp:conceptSource "Laws M, Morgan R, McCallum K, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Fire Severity Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/78dda800-193d-5b0e-a18b-f54ad942aa51>
+    a skos:Collection ;
+    dcterms:description "The fire burn extent of the substrate (such as bare ground or vegetation). It can either be charred, when incomplete burn has occurred, or scorched, when complete burn has occurred and kills the vegetation." ;
+    dcterms:source "Laws M, Morgan R, McCallum K, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Fire Severity Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/b56bb218-ad1c-59b3-af3f-2f38be6d6591> ,
+        <https://linked.data.gov.au/def/nrm/f18d00e8-1a71-5ea6-ad41-dea308135423> ;
+    skos:prefLabel "Substrate burn extent types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/substrate-burn-extent-types.ttl"^^xsd:anyURI ;
+.
+

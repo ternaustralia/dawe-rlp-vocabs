@@ -6,37 +6,35 @@ PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/9ddc3a8d-eaa8-520f-9267-6298e03b3335>
+<https://linked.data.gov.au/def/nrm/2575462f-ed2d-553e-97de-aca8f11f8bbd>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/temperature-units.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/9c18266d-fe78-4ea7-ae42-a47d6c21dde6> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/715878f8-7ab9-5090-973e-2a9050a4ad8f> ;
-    urnp:conceptDefinition "A unit of temperature." ;
-    urnp:conceptIdentifier 1 ;
-    urnp:conceptNotation "C" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-temperature-units> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1f00c682-7ef5-5576-9727-3bcaebe52355> ;
+    urnp:conceptDefinition "A unit of temperature. The degree Celsius is a unit of thermodynamic temperature with the same magnitude as the unit kelvin but where absolute zero (0 Kelvin) is defined as -273.15 degrees Celsius." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-temperature-units"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/bfec7753-08ae-5be1-a8dd-e0b7ed2b51dc>
+<https://linked.data.gov.au/def/nrm/87762036-f3a9-5b68-bbbc-7141e1a5086c>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/temperature-units.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/9c18266d-fe78-4ea7-ae42-a47d6c21dde6> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/c894c705-8ab4-530d-8e5b-f1ba62d606df> ;
-    urnp:conceptDefinition "A unit of temperature." ;
-    urnp:conceptIdentifier 2 ;
-    urnp:conceptNotation "F" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-temperature-units> ;
+    urnp:conceptDefinition "A unit of temperature of the temperature scale designed so that the freezing point of water is 32 degrees and the boiling point is 212 degrees, placing the boiling and melting points of water 180 degrees apart. One degree Fahrenheit is 5/9ths of a kelvin (or of a degree Celsius), and minus 40 degrees Fahrenheit is equal to minus 40 degrees Celsius." ;
+    urnp:conceptSource
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C44277"^^xsd:anyURI ,
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-temperature-units"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/9c18266d-fe78-4ea7-ae42-a47d6c21dde6>
     a skos:Collection ;
-    dcterms:description "A collection of temperature units and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-temperature-units> ;
+    dcterms:description "Refers to the unit of measurement of temperature, in degrees Celsius or Fahrenheit." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-temperature-units"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/715878f8-7ab9-5090-973e-2a9050a4ad8f> ,
+        <https://linked.data.gov.au/def/nrm/1f00c682-7ef5-5576-9727-3bcaebe52355> ,
         <https://linked.data.gov.au/def/nrm/c894c705-8ab4-530d-8e5b-f1ba62d606df> ;
-    skos:prefLabel "Temperature units codes" ;
+    skos:prefLabel "Temperature units" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/temperature-units.ttl"^^xsd:anyURI ;
 .
 

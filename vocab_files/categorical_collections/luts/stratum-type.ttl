@@ -6,49 +6,45 @@ PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/523c2f7a-1679-5576-bda0-a1985bac99b1>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ea960328-db99-51fd-843c-61c6c5b6117b> ;
-    urnp:conceptDefinition "Refers to the categorical value of the 'statum type'." ;
-    urnp:conceptIdentifier 1 ;
-    urnp:conceptNotation "U" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
-.
-
-<https://linked.data.gov.au/def/nrm/643aa742-f454-5165-9159-49a04932a1e1>
+<https://linked.data.gov.au/def/nrm/20040dff-e665-58ce-9748-0597faf530c9>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3a8903c4-2ca0-5afe-84e3-cf75f764a952> ;
-    urnp:conceptDefinition "Refers to the categorical value of the 'statum type'." ;
-    urnp:conceptIdentifier 3 ;
-    urnp:conceptNotation "G" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
+    urnp:conceptDefinition "Refers to the type of vegetation stratum. Ground layer is the lowermost part of the vegetation stratum, which are further divided into layers, 1, 2 and 3." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types"^^xsd:anyURI ,
+        "Australian Vegetation Attribute Manual Version 7.0 Chapter 2.0 NVIS concepts and standard procedures" ;
 .
 
-<https://linked.data.gov.au/def/nrm/f5402d79-e194-5813-af81-04828bd28bc8>
+<https://linked.data.gov.au/def/nrm/28a4649d-3776-51d5-9b17-772e0cd0a14a>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ad35a619-9ce5-584c-8b21-14c27d518175> ;
-    urnp:conceptDefinition "Refers to the categorical value of the 'statum type'." ;
-    urnp:conceptIdentifier 2 ;
-    urnp:conceptNotation "M" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
+    urnp:conceptDefinition "Refers to the type of vegetation stratum. Middle layer is below the canopy or upper layer of the vegetation strata, which are further divided into layers, 1, 2 and 3." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ee25dfd7-2d83-5d96-bd98-c71810d485ef>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ea960328-db99-51fd-843c-61c6c5b6117b> ;
+    urnp:conceptDefinition "Refers to the type of vegetation stratum. Upper layer is the topmost layer of the strata, which are further divided into layers, 1, 2 and 3." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03>
     a skos:Collection ;
-    dcterms:description "A collection of stratum types and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types> ;
+    dcterms:description "A collection of Vegetation Stratum layers as recognised by the Australian National Vegetation Information System (NVIS). These include: the 'Upper', 'Middle' and 'Ground' strata." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-stratum-types"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
         <https://linked.data.gov.au/def/nrm/3a8903c4-2ca0-5afe-84e3-cf75f764a952> ,
         <https://linked.data.gov.au/def/nrm/ad35a619-9ce5-584c-8b21-14c27d518175> ,
         <https://linked.data.gov.au/def/nrm/ea960328-db99-51fd-843c-61c6c5b6117b> ;
-    skos:prefLabel "Stratum type codes" ;
+    skos:prefLabel "Stratum types" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/stratum-type.ttl"^^xsd:anyURI ;
 .
 

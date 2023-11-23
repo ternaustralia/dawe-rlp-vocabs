@@ -1,0 +1,3112 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+dcterms:Agent
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        dcterms:Agent ,
+        rdfs:Resource ;
+.
+
+rdf:Alt
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdf:Alt ,
+        rdfs:Container ,
+        rdfs:Resource ;
+.
+
+rdf:Bag
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdf:Bag ,
+        rdfs:Container ,
+        rdfs:Resource ;
+.
+
+rdf:List
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdf:List ,
+        rdfs:Resource ;
+.
+
+rdf:Property
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdf:Property ,
+        rdfs:Resource ;
+.
+
+rdf:Seq
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdf:Seq ,
+        rdfs:Container ,
+        rdfs:Resource ;
+.
+
+rdf:Statement
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdf:Statement ,
+        rdfs:Resource ;
+.
+
+rdf:XMLLiteral
+    a
+        rdfs:Class ,
+        rdfs:Datatype ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdf:XMLLiteral ,
+        rdfs:Literal ,
+        rdfs:Resource ;
+.
+
+rdfs:Class
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdfs:Class ,
+        rdfs:Resource ;
+.
+
+rdfs:Container
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdfs:Container ,
+        rdfs:Resource ;
+.
+
+rdfs:ContainerMembershipProperty
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdf:Property ,
+        rdfs:ContainerMembershipProperty ,
+        rdfs:Resource ;
+.
+
+rdfs:Datatype
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdfs:Class ,
+        rdfs:Datatype ,
+        rdfs:Resource ;
+.
+
+rdfs:Literal
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdfs:Literal ,
+        rdfs:Resource ;
+.
+
+rdfs:Resource
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf rdfs:Resource ;
+.
+
+skos:Concept
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdfs:Resource ,
+        skos:Concept ;
+.
+
+skos:ConceptScheme
+    a
+        rdfs:Class ,
+        rdfs:Resource ;
+    rdfs:subClassOf
+        rdfs:Resource ,
+        skos:ConceptScheme ;
+.
+
+<http://editor.vocabs.ands.org.au/user/Australian-Collaborative-Land-Use-and-Management-Program-partners>
+    a
+        dcterms:Agent ,
+        rdfs:Resource ;
+    foaf:name "Australian Collaborative Land Use and Management Program partners" ;
+.
+
+()
+    a
+        rdf:List ,
+        rdfs:Resource ;
+.
+
+dcterms:contributor
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:contributor ;
+.
+
+dcterms:created
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:created ;
+.
+
+dcterms:creator
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:creator ;
+.
+
+dcterms:description
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:description ;
+.
+
+dcterms:issued
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:issued ;
+.
+
+dcterms:modified
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:modified ;
+.
+
+dcterms:publisher
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:publisher ;
+.
+
+dcterms:source
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:source ;
+.
+
+dcterms:subject
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:subject ;
+.
+
+dcterms:title
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf dcterms:title ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-intensive-animal-production>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production> ;
+    skos:definition "Land with dairy sheds, feedlots, poultry sheds, piggeries and so on that have been abandoned and not replaced with another land use."@en ;
+    skos:notation "5.2.8" ;
+    skos:prefLabel "Abandoned intensive animal production"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-intensive-horticulture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-horticulture> ;
+    skos:definition "Land previously used for intensive horticulture which has not been converted to another land use. Intensive horticulture infrastructure is still in place (e.g. abandoned glasshouses)."@en ;
+    skos:notation "5.1.5" ;
+    skos:prefLabel "Abandoned intensive horticulture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-irrigated-land>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-land-in-transition> ;
+    skos:definition "Land where a previous pattern of irrigated agriculture may be observed but which is not currently under production."@en ;
+    skos:notation "4.6.2" ;
+    skos:prefLabel "Abandoned irrigated land"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-irrigated-perennial-horticulture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-land-in-transition> ;
+    skos:definition "Land previously used for irrigated perennial horticulture which has not been cleared (e.g. an orchard where trees remain but the site has been invaded by woody shrubs, with trees unpruned or dying). Evidence of irrigation or irrigation infrastructure."@en ;
+    skos:notation "4.6.5" ;
+    skos:prefLabel "Abandoned irrigated perennial horticulture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-land>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Land-in-transition> ;
+    skos:definition "Land where a previous pattern of agriculture may be observed but which is not currently under production."@en ;
+    skos:notation "3.6.2" ;
+    skos:prefLabel "Abandoned land"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-manufacturing-and-industrial>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial> ;
+    skos:definition "Area with factories, silos, tanneries and so on that have been abandoned and not replaced with another land use."@en ;
+    skos:notation "5.3.8" ;
+    skos:prefLabel "Abandoned manufacturing and industrial"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-perennial-horticulture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Land-in-transition> ;
+    skos:definition "Land previously used for perennial horticulture which has not been cleared (e.g. an orchard where trees remain but the site has been invaded by woody shrubs, with trees unpruned or dying)."@en ;
+    skos:notation "3.6.5" ;
+    skos:prefLabel "Abandoned perennial horticulture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abattoirs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial> ;
+    skos:definition "Area with special improvements for the slaughter of stock and preparation of meat for wholesale market."@en ;
+    skos:notation "5.3.5" ;
+    skos:prefLabel "Abattoirs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Airports-or-aerodromes>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Transport-and-communication> ;
+    skos:definition "Locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers."@en ;
+    skos:notation "5.7.1" ;
+    skos:prefLabel "Airports or aerodromes"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Alkaloid-poppies>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping> ;
+    skos:definition "Where it is known that poppies are grown for alkaloid (pharmaceutical) purposes, map under this class rather than class 3.3.4 'Oilseeds'."@en ;
+    skos:notation "3.3.7" ;
+    skos:prefLabel "Alkaloid poppies"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Aquaculture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production> ;
+    skos:definition "Land used for cultivating fish and crustaceans (e.g. lobsters, yabbies) or molluscs (oysters, mussels). This also includes crocodiles."@en ;
+    skos:notation "5.2.5" ;
+    skos:prefLabel "Aquaculture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Beverage-and-spice-crops>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping> ;
+    skos:definition "Beverage crops grown to make liquids for human consumption such as tea, coffee and cocoa. Spice crops are seeds, fruit, root, bark, berry, bud or other vegetable substance primarily used for flavouring, colouring or preserving food such as ginger and pepper. Herbs or vegetables are not included in this class and should be mapped as 3.4.7 ‘Perennial vegetables and herbs’, 3.5.3 ‘Seasonal vegetables and herbs’, 4.4.7 ‘Irrigated perennial vegetables and herbs’ or 4.5.3 ‘Irrigated seasonal vegetables and herbs’ depending on whether they are annual or perennial plants and whether irrigation infrastructure is present."@en ;
+    skos:notation "3.3.2" ;
+    skos:prefLabel "Beverage and spice crops"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Biodiversity>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Managed-resource-protection> ;
+    skos:definition "Area managed for biodiversity."@en ;
+    skos:notation "1.2.1" ;
+    skos:prefLabel "Biodiversity"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Bulk-grain-storage>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial> ;
+    skos:definition "Area with silos, special purpose grain storage sheds and so on."@en ;
+    skos:notation "5.3.4" ;
+    skos:prefLabel "Bulk grain storage"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cereals>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping> ;
+    skos:definition "Broadacre grasses such as wheat, oats, and barley (and some non-leguminous, non-oilseed pseudo-cereal crops such as buckwheat and quinoa) grown primarily for grain for human consumption. This class also includes cereal crops which are cut for straw."@en ;
+    skos:notation "3.3.1" ;
+    skos:prefLabel "Cereals"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Citrus>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ;
+    skos:definition "Where citrus can be detected, map under this class rather than 3.4.1 ‘Tree fruits’."@en ;
+    skos:notation "3.4.8" ;
+    skos:prefLabel "Citrus"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Commercial-services>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Services> ;
+    skos:definition "Land with shops, markets, financial services and so on."@en ;
+    skos:notation "5.5.1" ;
+    skos:prefLabel "Commercial services"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cotton>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping> ;
+    skos:definition "Dryland or unirrigated cotton for lint or seed. Where there is evidence of irrigation infrastructure map as 4.3.6 'Irrigated cotton' even if water has not been applied in the current growing season."@en ;
+    skos:notation "3.3.6" ;
+    skos:prefLabel "Cotton"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Dairy-sheds-and-yards>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production> ;
+    skos:definition "Land including the milking shed, holding yards, and so on of a dairy operation. Dairy pastures should not be mapped under this class, but mapped as 3.2 ‘Grazing modified pastures’ or 4.2 ‘Grazing irrigated modified pastures’ or their relevant tertiary classes. Record the livestock type (such as cattle dairy) in the commodity field."@en ;
+    skos:notation "5.2.1" ;
+    skos:prefLabel "Dairy sheds and yards"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Defence-facilitiesurban>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Services> ;
+    skos:definition "Defence infrastructure, buildings, bases, research and development establishments, and so on. Only defence areas in an urban setting should be mapped to this class unless they are solely infrastructure. Defence lands of significant area retaining natural cover should be mapped under 1.3.1 ‘Defence land—natural areas’."@en ;
+    skos:notation "5.5.4" ;
+    skos:prefLabel "Defence facilities—urban"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Defence-landnatural-areas>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-minimal-use> ;
+    skos:definition "Natural areas allocated to field training, weapons testing and other field defence uses, predominantly in rural areas."@en ;
+    skos:notation "1.3.1" ;
+    skos:prefLabel "Defence land—natural areas"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Degraded-irrigated-land>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-land-in-transition> ;
+    skos:definition "Land that is severely degraded (e.g. from soil erosion, salinity or weed/shrub invasion) with evidence of irrigation or irrigation infrastructure. Not under active rehabilitation."@en ;
+    skos:notation "4.6.1" ;
+    skos:prefLabel "Degraded irrigated land"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Degraded-land>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Land-in-transition> ;
+    skos:definition "Land that is severely degraded (e.g. from soil erosion, salinity or weed/shrub invasion) and is not under active rehabilitation."@en ;
+    skos:notation "3.6.1" ;
+    skos:prefLabel "Degraded land"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Drainage-channel-or-aqueduct>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Channel-or-aqueduct> ;
+    skos:definition "Open water channel removing water from irrigation or infrastructure."@en ;
+    skos:notation "6.4.2" ;
+    skos:prefLabel "Drainage channel or aqueduct"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Effluent-pond>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Waste-treatment-and-disposal> ;
+    skos:definition "Treatment ponds for lightly contaminated water such as from sewage, dairies, piggeries or meat production. This class also includes wells associated with oil and gas fields."@en ;
+    skos:notation "5.9.1" ;
+    skos:prefLabel "Effluent pond"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Electricity-substations-and-transmission>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Utilities> ;
+    skos:definition "Facilities associated with electricity supply."@en ;
+    skos:notation "5.6.5" ;
+    skos:prefLabel "Electricity substations and transmission"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Environmental-forest-plantation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Plantation-forests> ;
+    skos:definition "Area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade and shelter). This also includes trees planted for carbon credits."@en ;
+    skos:notation "3.1.4" ;
+    skos:prefLabel "Environmental forest plantation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-watersconservation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-waters> ;
+    skos:definition "Water feature relates to uses in class 1 ‘Conservation and natural environments’."@en ;
+    skos:notation "6.6.1" ;
+    skos:prefLabel "Estuary or coastal waters—conservation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-watersintensive-use>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-waters> ;
+    skos:definition "Water feature relates to uses in class 5 ‘Intensive uses’. This includes estuaries with banks altered for use as residential canals."@en ;
+    skos:notation "6.6.3" ;
+    skos:prefLabel "Estuary or coastal waters—intensive use"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-watersproduction>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-waters> ;
+    skos:definition "Water feature relates to uses in class 2 ‘Production from relatively natural environments’."@en ;
+    skos:notation "6.6.2" ;
+    skos:prefLabel "Estuary or coastal waters—production"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Evaporation-basin>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Reservoir-or-dam> ;
+    skos:definition "Basin used for evaporation of water from irrigation drainage or salt extraction."@en ;
+    skos:notation "6.2.3" ;
+    skos:prefLabel "Evaporation basin"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Extractive-industry-not-in-use>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Mining> ;
+    skos:definition "Land formally used for extractive industry but no longer in use and no new use observed. This includes mining sites undergoing rehabilitation. Sites that have been rehabilitated to or near their natural state should be assigned the code 1.3.4 ‘Rehabilitation’, and sites which have been rehabilitated to a state suitable for agricultural production should be assigned to 3.6.3 ‘Land under rehabilitation’ or 4.6.3 ‘Irrigated land under rehabilitation’."@en ;
+    skos:notation "5.8.4" ;
+    skos:prefLabel "Extractive industry not in use"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Farm-buildings-or-infrastructure>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Residential-and-farm-infrastructure> ;
+    skos:definition "Area with houses, buildings, sheds and other infrastructure associated with farm enterprises. Actual supply channels or aqueducts should be mapped under 6.4 ‘Channel or aqueduct’. If the building or infrastructure is smaller than the minimum mapping unit, it can be incorporated into the surrounding land use."@en ;
+    skos:notation "5.4.5" ;
+    skos:prefLabel "Farm buildings or infrastructure"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Feedlots>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production> ;
+    skos:definition "Land containing specialist infrastructure used for intensive feeding of stock such as cattle or sheep. The commodity field should be used to record the livestock type."@en ;
+    skos:notation "5.2.2" ;
+    skos:prefLabel "Feedlots"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Food-processing-factory>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial> ;
+    skos:definition "Area where the principle use is food processing. The building most likely to be purpose built and may have extensive plant and equipment included (e.g. cannery, milk production plant)."@en ;
+    skos:notation "5.3.2" ;
+    skos:prefLabel "Food processing factory"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Fuel-powered-electricity-generation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Utilities> ;
+    skos:definition "Includes brown coal, black coal, oil and nuclear."@en ;
+    skos:notation "5.6.1" ;
+    skos:prefLabel "Fuel powered electricity generation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Gas-treatment,-storage-and-transmission>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Utilities> ;
+    skos:definition "Facilities associated with gas production and supply. Coal seam gas wells may be assigned to this class, however as they are generally smaller than the minimum mapping unit, they are usually incorporated into the surrounding land use."@en ;
+    skos:notation "5.6.6" ;
+    skos:prefLabel "Gas treatment, storage and transmission"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/General-purpose-factory>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial> ;
+    skos:definition "Area used for manufacturing, assembly or repairs. Includes some specialised or purpose-built improvements."@en ;
+    skos:notation "5.3.1" ;
+    skos:prefLabel "General purpose factory"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Glasshouses>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-horticulture> ;
+    skos:definition "Land where special purpose structures have been built for the indoor propagation and growing of plants and plant crops. If the land use is known to be production nurseries, use 5.1.1 'Production nurseries' and the management description ‘fully-protected.’"@en ;
+    skos:notation "5.1.3" ;
+    skos:prefLabel "Glasshouses"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Glasshouseshydroponic>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-horticulture> ;
+    skos:definition "Land where special purpose hydroponic structures have been built for the indoor propagation and growing of plants and plant crops."@en ;
+    skos:notation "5.1.4" ;
+    skos:prefLabel "Glasshouses—hydroponic"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grapes>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ;
+    skos:definition "Where grapes can be detected, map under this class rather than 3.4.4 ‘Vine fruits’."@en ;
+    skos:notation "3.4.9" ;
+    skos:prefLabel "Grapes"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-native-vegetation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-relatively-natural-environments> ;
+    skos:definition """Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification. Some change in species composition may have occurred. For ALUM purposes, this class is used when there is greater than 50 per cent dominant native species.
+Australian Collaborative Land Use and Management Program (ACLUMP) partners have agreed to this definition, but note that most jurisdictions have datasets specifically designed to distinguish native from non-native vegetation. These datasets should be used to report on native versus non-native vegetation, as the land use classification maps the actual land use as a priority over land cover. If the type of livestock is known, record this in the commodity field"""@en ;
+    skos:notation "2.1" ;
+    skos:prefLabel "Grazing native vegetation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Ground-water>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Managed-resource-protection> ;
+    skos:definition "Area managed for ground water."@en ;
+    skos:notation "1.2.3" ;
+    skos:prefLabel "Ground water"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Habitat-or-species-management-area>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "IUCN 2008, Guidelines for applying protected area management categories, International Union for Conservation of Nature, Switzerland, available at http://www.iucn.org/sites/dev/files/import/downloads/iucn_assignment_1.pdf."@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Nature-conservation> ;
+    skos:definition "Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land. (IUCN 2008 Category IV)"@en ;
+    skos:notation "1.1.5" ;
+    skos:prefLabel "Habitat or species management area"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Hardwood-plantation-forestry>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Plantation-forests> ;
+    skos:definition "Area managed for hardwood sawlogs or pulpwood."@en ;
+    skos:notation "3.1.1" ;
+    skos:prefLabel "Hardwood plantation forestry"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Hay-and-silage>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping> ;
+    skos:definition "Grass or other forage crops grown to be cut for stored animal fodder. Cereal crops should be mapped as 3.3.1 ‘Cereals’ if the primary intended purpose was grain production, even if these are cut for hay and silage."@en ;
+    skos:notation "3.3.3" ;
+    skos:prefLabel "Hay and silage"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Horse-studs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production> ;
+    skos:definition "Land with special-purpose buildings and fencing associated with a well-developed commercial horse stud farm or horse training facility. This class should be for intensive horse farming. Agistments should be classed under the relevant grazing class, and pony clubs should go under 5.5.3 ‘Recreation and culture’."@en ;
+    skos:notation "5.2.6" ;
+    skos:prefLabel "Horse studs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Hydro-electricity-generation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Utilities> ;
+    skos:definition "Water or wave power generation."@en ;
+    skos:notation "5.6.2" ;
+    skos:prefLabel "Hydro electricity generation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Incinerators>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Waste-treatment-and-disposal> ;
+    skos:definition "Area used for waste treatment combustion."@en ;
+    skos:notation "5.9.4" ;
+    skos:prefLabel "Incinerators"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-alkaloid-poppies>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ;
+    skos:definition "Where it is known that poppies are grown for alkaloid (pharmaceutical) purposes, map under this class rather than class 4.3.4 ‘Irrigated oilseeds’."@en ;
+    skos:notation "4.3.7" ;
+    skos:prefLabel "Irrigated alkaloid poppies"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-beverage-and-spice-crops>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ;
+    skos:definition "Irrigated beverage crops grown to make liquids for human consumption such as tea, coffee and cocoa. Irrigated spice crops are seeds, fruit, root, bark, berry, bud or other vegetable substance primarily used for flavouring, colouring or preserving food such as ginger and pepper. Herbs or vegetables are not included in this class and should be mapped as 4.4.7 ‘Irrigated perennial vegetables and herbs’ or 4.5.3 ‘Irrigated seasonal vegetables and herbs’."@en ;
+    skos:notation "4.3.2" ;
+    skos:prefLabel "Irrigated beverage and spice crops"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cereals>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ;
+    skos:definition "Broadacre irrigated grasses such as wheat, oats and barley (and some non-leguminous, non-oilseed pseudo-cereal crops such as buckwheat and quinoa) grown primarily for grain for human consumption. This class also includes irrigated cereal crops which are cut for straw."@en ;
+    skos:notation "4.3.1" ;
+    skos:prefLabel "Irrigated cereals"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-citrus>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ;
+    skos:definition "Where irrigated citrus can be detected, map under this class rather than 4.4.1 ‘Irrigated tree fruits’."@en ;
+    skos:notation "4.4.8" ;
+    skos:prefLabel "Irrigated citrus"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cotton>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ;
+    skos:definition "Irrigated cotton for lint or seed."@en ;
+    skos:notation "4.3.6" ;
+    skos:prefLabel "Irrigated cotton"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-environmental-forest-plantation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-plantation-forests> ;
+    skos:definition "Environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade and shelter). This can also include trees planted for carbon credits."@en ;
+    skos:notation "4.1.4" ;
+    skos:prefLabel "Irrigated environmental forest plantation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-grapes>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ;
+    skos:definition "Where irrigated grapes can be detected, map under this class rather than 4.4.4 ‘Irrigated vine fruits’."@en ;
+    skos:notation "4.4.9" ;
+    skos:prefLabel "Irrigated grapes"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-hardwood-plantation-forestry>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-plantation-forests> ;
+    skos:definition "Area managed for hardwood sawlogs or pulpwood."@en ;
+    skos:notation "4.1.1" ;
+    skos:prefLabel "Irrigated hardwood plantation forestry"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-hay-and-silage>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ;
+    skos:definition "Irrigated grass or other forage crops grown to be cut for stored animal fodder. Irrigated cereal crops should be mapped as 4.3.1 ‘Irrigated cereals’ if the primary intended purpose was grain production, even if these are cut for hay and silage."@en ;
+    skos:notation "4.3.3" ;
+    skos:prefLabel "Irrigated hay and silage"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-land-under-rehabilitation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-land-in-transition> ;
+    skos:definition "Land in the process of rehabilitation for irrigated agriculture and not for purposes under class 1 ‘Conservation and natural environments’ or class 5 ‘Intensive uses’. Where there is no evidence of irrigation or irrigation infrastructure land should be classed as 3.6.3 ‘Land under rehabilitation’. Land that has been rehabilitated to a near-natural state should be classed as 1.3.4 ‘Rehabilitation’. Mining land undergoing rehabilitation should be assigned to 5.8.4 ‘Extractive industry not in use’."@en ;
+    skos:notation "4.6.3" ;
+    skos:prefLabel "Irrigated land under rehabilitation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-legume-or-grass-mixtures>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-irrigated-modified-pastures> ;
+    skos:definition "These pastures have been sown with both grasses and leguminous pasture species."@en ;
+    skos:notation "4.2.3" ;
+    skos:prefLabel "Irrigated legume or grass mixtures"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-oilseeds>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ;
+    skos:definition "Irrigated commodities mainly grown for extraction of oil from the seeds. The oil content of the seeds or grain is greater than other crops, generally above 20 per cent. Australian oilseeds include canola, sunflower, soybean, and peanuts. While cottonseed is an oilseed this should be mapped to 4.3.6 ‘Irrigated cotton’."@en ;
+    skos:notation "4.3.4" ;
+    skos:prefLabel "Irrigated oilseeds"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-olives>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ;
+    skos:definition "Irrigated olive trees harvested for fruit or oil."@en ;
+    skos:notation "4.4.2" ;
+    skos:prefLabel "Irrigated olives"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-other-forest-plantation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-plantation-forests> ;
+    skos:definition "Area managed for non-sawlog or non-pulpwood production, including oil, wildflowers, firewood and fence posts."@en ;
+    skos:notation "4.1.3" ;
+    skos:prefLabel "Irrigated other forest plantation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-pasture-legumes>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-irrigated-modified-pastures> ;
+    skos:definition "Non-grass pasture plants which may have rounded leaves, pea like flowers and seeds, and may be nitrogen fixing. Examples include lucerne, clover and medics."@en ;
+    skos:notation "4.2.2" ;
+    skos:prefLabel "Irrigated pasture legumes"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-flowers-and-bulbs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ;
+    skos:definition "This class represents irrigated cut flowers, flower products and bulbs. Potted plants including flowering plants which are grown to be sold as whole plants are mapped under 5.1.1 ‘Production nurseries’."@en ;
+    skos:notation "4.4.6" ;
+    skos:prefLabel "Irrigated perennial flowers and bulbs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-vegetables-and-herbs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ;
+    skos:definition "Irrigated vegetables and herbs for human consumption such as asparagus, rhubarb and fennel which live for at least two years."@en ;
+    skos:notation "4.4.7" ;
+    skos:prefLabel "Irrigated perennial vegetables and herbs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-pulses>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ;
+    skos:definition "Irrigated grain legumes which are grown for sale as dried produce. This includes field beans, field peas, chickpeas, lentils and lupins. While peanuts and soybeans are leguminous plants they are traditionally seen as oilseeds and should be classified as 4.3.4 ‘Irrigated oilseeds’."@en ;
+    skos:notation "4.3.8" ;
+    skos:prefLabel "Irrigated pulses"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-rice>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ;
+    skos:definition "Where rice can be detected map under this class rather than 4.3.1 ‘Irrigated cereals’."@en ;
+    skos:notation "4.3.9" ;
+    skos:prefLabel "Irrigated rice"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-flowers-and-bulbs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-horticulture> ;
+    skos:definition "This class represents irrigated cut flowers, flower products and bulbs. Potted plants including flowering plants which are grown to be sold as whole plants are now mapped under 5.1.1 ‘Production nurseries’. Irrigated seasonal flowers grown in glasshouses are mapped as 5.1.3 ‘Glasshouses’ with commodity description of flowers or the type of flowers being grown, if known. Irrigated alkaloid poppies are mapped to 4.3.7 'Irrigated alkaloid poppies'."@en ;
+    skos:notation "4.5.2" ;
+    skos:prefLabel "Irrigated seasonal flowers and bulbs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-fruits>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-horticulture> ;
+    skos:definition "Includes melons and other fruit harvested from plants (including vines or shrubs) and which live for less than two years."@en ;
+    skos:notation "4.5.1" ;
+    skos:prefLabel "Irrigated seasonal fruits"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-vegetables-and-herbs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-horticulture> ;
+    skos:definition "Irrigated vegetables and herbs for human consumption. This class includes beans and peas grown for sale fresh and frozen, however field peas and field beans grown to be dried are mapped as 4.3.8 'Irrigated pulses'. Plants grown to be sold as seedlings are mapped to 5.1.1 ‘Production nurseries’. Irrigated seasonal vegetables and herbs grown in glasshouses are mapped as 5.1.3 ‘Glasshouses’ with commodity description of vegetables, herbs or the commodity, if known."@en ;
+    skos:notation "4.5.3" ;
+    skos:prefLabel "Irrigated seasonal vegetables and herbs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-shrub-berries-and-fruits>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ;
+    skos:definition "Berries and fruits not grown on trees where the plant lives at least two years. This includes plantation fruit such as pineapples and berries such as blackberries and red currants."@en ;
+    skos:notation "4.4.5" ;
+    skos:prefLabel "Irrigated shrub berries and fruits"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-softwood-plantation-forestry>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-plantation-forests> ;
+    skos:definition "Area managed for softwood sawlogs or pulpwood."@en ;
+    skos:notation "4.1.2" ;
+    skos:prefLabel "Irrigated softwood plantation forestry"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-sown-grasses>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-irrigated-modified-pastures> ;
+    skos:definition "Grass pasture species including ryegrass, buffel and Bambatsi grasses. This class includes irrigated saline pastures."@en ;
+    skos:notation "4.2.4" ;
+    skos:prefLabel "Irrigated sown grasses"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-sugar>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ;
+    skos:definition "Irrigated sugar cane. Other commodities which can be used for sugar production are mapped to vegetables or fruits as appropriate."@en ;
+    skos:notation "4.3.5" ;
+    skos:prefLabel "Irrigated sugar"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-tree-fruits>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ;
+    skos:definition "Includes pome fruit such as apples, stone fruit such as apricots, tropical fruit such as mangoes and bananas, and other irrigated orchards except olives (4.4.2) and citrus (4.4.8) which have their own classes. This class does not include other plantation fruit not grown on trees such as pineapples (4.4.5 'Irrigated shrub berries and fruit') or vines such as kiwifruit and passionfruit (4.4.4 'Irrigated vine fruits')."@en ;
+    skos:notation "4.4.1" ;
+    skos:prefLabel "Irrigated tree fruits"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-tree-nuts>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ;
+    skos:definition "Includes irrigated trees or shrubs grown to produce nuts such as almonds, hazelnuts and macadamias. This class does not include peanuts which are mapped as 4.3.4 ‘Irrigated oilseeds’."@en ;
+    skos:notation "4.4.3" ;
+    skos:prefLabel "Irrigated tree nuts"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-turf-farming>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-horticulture> ;
+    skos:definition "Irrigated turf grass species to be harvested as turf mats for use in home and community landscapes."@en ;
+    skos:notation "4.5.4" ;
+    skos:prefLabel "Irrigated turf farming"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-vine-fruits>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ;
+    skos:definition "Iirrigated fruiting vines which live for more than two years such as kiwifruit and passionfruit. This class excludes grapes (4.4.9) which have their own class. Annual or seasonal vines such as melons are mapped as 4.5.1 ‘Irrigated seasonal fruit’."@en ;
+    skos:notation "4.4.4" ;
+    skos:prefLabel "Irrigated vine fruits"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-woody-fodder-plants>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-irrigated-modified-pastures> ;
+    skos:definition "Irrigated woody plants used primarily to provide forage for livestock grazing. Examples include irrigated tagasaste and leucaena."@en ;
+    skos:notation "4.2.1" ;
+    skos:prefLabel "Irrigated woody fodder plants"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lakeconservation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lake> ;
+    skos:definition "Water feature relates to uses included in class 1 ‘Conservation and natural environments’."@en ;
+    skos:notation "6.1.1" ;
+    skos:prefLabel "Lake—conservation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lakeintensive-use>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lake> ;
+    skos:definition "Water feature relates to uses included in class 5 ‘Intensive uses’. This includes human-made lakes in residential areas."@en ;
+    skos:notation "6.1.3" ;
+    skos:prefLabel "Lake—intensive use"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lakeproduction>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lake> ;
+    skos:definition "Water feature relates to uses included in class 2 ‘Production from relatively natural environments’."@en ;
+    skos:notation "6.1.2" ;
+    skos:prefLabel "Lake—production"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lakesaline>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lake> ;
+    skos:definition "Water feature containing saline water which is not mapped as 6.6 ‘Estuary or coastal waters’."@en ;
+    skos:notation "6.1.4" ;
+    skos:prefLabel "Lake—saline"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Land-under-rehabilitation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Land-in-transition> ;
+    skos:definition "Land in the process of rehabilitation for agricultural production and not for purposes under class 1 ‘Conservation and natural environments’ or class 5 ‘Intensive uses’. Land that has been rehabilitated to a near natural state should be classed as 1.3.4 ‘Rehabilitation’, while mining land undergoing rehabilitation should be assigned to 5.8.4 ‘Extractive industry not in use’."@en ;
+    skos:notation "3.6.3" ;
+    skos:prefLabel "Land under rehabilitation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Landfill>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Waste-treatment-and-disposal> ;
+    skos:definition "Disposal of solid inert wastes."@en ;
+    skos:notation "5.9.2" ;
+    skos:prefLabel "Landfill"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Landscape>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Managed-resource-protection> ;
+    skos:definition "Area managed for landscape integrity."@en ;
+    skos:notation "1.2.4" ;
+    skos:prefLabel "Landscape"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Major-industrial-complex>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial> ;
+    skos:definition "Area with large scale industrial use (e.g. car plant, paper mill)."@en ;
+    skos:notation "5.3.3" ;
+    skos:prefLabel "Major industrial complex"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetlandconservation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetland> ;
+    skos:definition "Water feature relates to uses in class 1 ‘Conservation and natural environments’."@en ;
+    skos:notation "6.5.1" ;
+    skos:prefLabel "Marsh or wetland—conservation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetlandintensive-use>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetland> ;
+    skos:definition "Water feature relates to uses in class 5 ‘Intensive uses’."@en ;
+    skos:notation "6.5.3" ;
+    skos:prefLabel "Marsh or wetland—intensive use"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetlandproduction>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetland> ;
+    skos:definition "Water feature relates to uses in class 2 ‘Production from relatively natural environments’."@en ;
+    skos:notation "6.5.2" ;
+    skos:prefLabel "Marsh or wetland—production"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetlandsaline>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetland> ;
+    skos:definition "Wetland or marsh containing saline water which is not mapped as 6.6 ‘Estuary or coastal waters’."@en ;
+    skos:notation "6.5.4" ;
+    skos:prefLabel "Marsh or wetland—saline"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Mines>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Mining> ;
+    skos:definition "Land from which minerals, precious stones and coal is being extracted. Includes open cut and deep-shaft mines."@en ;
+    skos:notation "5.8.1" ;
+    skos:prefLabel "Mines"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/National-park>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "IUCN 2008, Guidelines for applying protected area management categories, International Union for Conservation of Nature, Switzerland, available at http://www.iucn.org/sites/dev/files/import/downloads/iucn_assignment_1.pdf."@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Nature-conservation> ;
+    skos:definition "Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to: a) protect the ecological integrity of one or more ecosystems for the current and future generations; b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible. (IUCN 2008 Category II)"@en ;
+    skos:notation "1.1.3" ;
+    skos:prefLabel "National park"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Native-or-exotic-pasture-mosaic>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-modified-pastures> ;
+    skos:definition "Pastures in which there is a substantial native species component, despite extensive active modification or replacement of native vegetation. This class may apply where native and exotic pasture is patterned at a relatively fine spatial scale. If there is greater than 50 per cent native pastures then the area should be coded to class 2.1, ‘Grazing native vegetation’. If there are no native species present, the area should be classified as one of the other 3.2 ‘Grazing modified pastures’ tertiary classes."@en ;
+    skos:notation "3.2.1" ;
+    skos:prefLabel "Native or exotic pasture mosaic"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Natural-feature-protection>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "IUCN 2008, Guidelines for applying protected area management categories, International Union for Conservation of Nature, Switzerland, available at http://www.iucn.org/sites/dev/files/import/downloads/iucn_assignment_1.pdf."@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Nature-conservation> ;
+    skos:definition "Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance. (IUCN 2008 Category III)"@en ;
+    skos:notation "1.1.4" ;
+    skos:prefLabel "Natural feature protection"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Navigation-and-communication>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Transport-and-communication> ;
+    skos:definition "Includes radar stations, beacons and so on."@en ;
+    skos:notation "5.7.5" ;
+    skos:prefLabel "Navigation and communication"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/No-defined-use>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Land-in-transition> ;
+    skos:definition "Land cleared of intact native vegetation where the proposed land use is not known."@en ;
+    skos:notation "3.6.4" ;
+    skos:prefLabel "No defined use"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/No-defined-use---irrigation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-land-in-transition> ;
+    skos:definition "Land cleared of intact native vegetation where the proposed land use is not known. Evidence of irrigation or irrigation infrastructure."@en ;
+    skos:notation "4.6.4" ;
+    skos:prefLabel "No defined use - irrigation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Oil-refinery>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial> ;
+    skos:definition "Land and buildings used in the refinement and storage of petroleum products."@en ;
+    skos:notation "5.3.6" ;
+    skos:prefLabel "Oil refinery"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Oilseeds>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping> ;
+    skos:definition "Commodities mainly grown for extraction of oil from the seeds. The oil content of the seeds or grain is greater than other crops, generally above 20 per cent. Australian oilseeds include canola, sunflower, soybean and peanuts. While cottonseed is an oilseed this should be mapped to 3.3.6 ‘Cotton’ or 4.3.6 ‘Irrigated cotton’."@en ;
+    skos:notation "3.3.4" ;
+    skos:prefLabel "Oilseeds"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Olives>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ;
+    skos:definition "Olive trees harvested for fruit or oil."@en ;
+    skos:notation "3.4.2" ;
+    skos:prefLabel "Olives"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-conserved-area>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Nature-conservation> ;
+    skos:definition "Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover (if the recreation area is primarily cleared or non-native cover assign to 5.5.3 ‘Recreation and culture’)."@en ;
+    skos:notation "1.1.7" ;
+    skos:prefLabel "Other conserved area"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-forest-plantation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Plantation-forests> ;
+    skos:definition "Area managed for non pulpwood production, including oil, wildflowers, firewood and fence posts."@en ;
+    skos:notation "3.1.3" ;
+    skos:prefLabel "Other forest plantation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-forest-production>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-native-forests> ;
+    skos:definition "Area managed for non-sawlog or non-pulpwood production, including oil, wildflowers, firewood and fence posts."@en ;
+    skos:notation "2.2.2" ;
+    skos:prefLabel "Other forest production"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Pasture-legume-or-grass-mixtures>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-modified-pastures> ;
+    skos:definition "These pastures have been sown with both grasses and leguminous pasture species."@en ;
+    skos:notation "3.2.4" ;
+    skos:prefLabel "Pasture legume or grass mixtures"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Pasture-legumes>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-modified-pastures> ;
+    skos:definition "Non-grass pasture plants which may have rounded leaves, pea-like flowers and seeds, and may be nitrogen fixing. Examples include lucerne, clover and medics."@en ;
+    skos:notation "3.2.3" ;
+    skos:prefLabel "Pasture legumes"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-flowers-and-bulbs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ;
+    skos:definition "This class represents cut flowers, flower products, and flower bulbs. Potted plants including flowering plants which are grown to be sold as whole plants are mapped under 5.1.1 ‘Production nurseries’."@en ;
+    skos:notation "3.4.6" ;
+    skos:prefLabel "Perennial flowers and bulbs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-vegetables-and-herbs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ;
+    skos:definition "Vegetables and herbs for human consumption such as asparagus, rhubarb and fennel which live for at least two years."@en ;
+    skos:notation "3.4.7" ;
+    skos:prefLabel "Perennial vegetables and herbs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Piggeries>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production> ;
+    skos:definition "Land containing specialist infrastructure for use as a piggery."@en ;
+    skos:notation "5.2.4" ;
+    skos:prefLabel "Piggeries"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Ports-and-water-transport>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Transport-and-communication> ;
+    skos:definition "Harbour location where ships dock to transfer people or cargo to or from land."@en ;
+    skos:notation "5.7.4" ;
+    skos:prefLabel "Ports and water transport"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Poultry-farms>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production> ;
+    skos:definition "Land with specialist infrastructure used for egg or broiler production, or where poultry run as free range with special purpose fencing in place. This includes chickens, ducks, ostrich, and so on."@en ;
+    skos:notation "5.2.3" ;
+    skos:prefLabel "Poultry farms"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-nurseries>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-horticulture> ;
+    skos:definition "Whole plant or bulb production for sale. Nursery stock are usually grown in containers. This class includes seedlings, plugs and bulbs, potted flowering plants, trees and shrubs, foliage plants, palms, grasses, fruit trees, herbs and aquatic plants. Where the land use is known to be production nurseries, use this class even where there are shade houses or glasshouses present. The management description is used to indicate either open growing, semi protected (covered by shade cloth, hail nets or bird nets) or fully protected (protected by an impermeable barrier such as glass, polycarbonate or plastic)."@en ;
+    skos:notation "5.1.1" ;
+    skos:prefLabel "Production nurseries"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Protected-landscape>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "IUCN 2008, Guidelines for applying protected area management categories, International Union for Conservation of Nature, Switzerland, available at http://www.iucn.org/sites/dev/files/import/downloads/iucn_assignment_1.pdf."@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Nature-conservation> ;
+    skos:definition "Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time had produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity. (IUCN 2008 Category V)"@en ;
+    skos:notation "1.1.6" ;
+    skos:prefLabel "Protected landscape"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Public-services>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Services> ;
+    skos:definition "Education, community services, cemeteries and crematoria and so on."@en ;
+    skos:notation "5.5.2" ;
+    skos:prefLabel "Public services"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Pulses>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping> ;
+    skos:definition "Grain legumes which are grown for sale as dried produce. This includes field beans, field peas, chickpeas, lentils and lupins. While peanuts and soybeans are leguminous plants they are traditionally seen as oilseeds and should be classified as 3.3.4 ‘Oilseeds’ or 4.4.4 ‘Irrigated oilseeds’ if irrigated."@en ;
+    skos:notation "3.3.8" ;
+    skos:prefLabel "Pulses"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Quarries>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Mining> ;
+    skos:definition "Land from which stone, gravel, clay, slate, sand, soil and rock is being extracted."@en ;
+    skos:notation "5.8.2" ;
+    skos:prefLabel "Quarries"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Railways>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Transport-and-communication> ;
+    skos:definition "Permanent rail transport tracks and associated infrastructure."@en ;
+    skos:notation "5.7.3" ;
+    skos:prefLabel "Railways"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Recreation-and-culture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Services> ;
+    skos:definition "Parks, sportsgrounds, camping grounds, swimming pools, museums, places of worship, zoos (including butterfly farms) with a primary purpose of recreation and culture, caravan parks, tourist parks, and so on. Recreation areas which have primarily native cover should be assigned to 1.1.7  ‘Other conserved area’."@en ;
+    skos:notation "5.5.3" ;
+    skos:prefLabel "Recreation and culture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Rehabilitation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-minimal-use> ;
+    skos:definition "Land under rehabilitation that has been restored to a near natural state. Land that is degraded or undergoing rehabilitation but still substantially modified should be mapped under 3.6.21 ‘Degraded land’, 3.6.3 ‘Land under rehabilitation’, 4.6.21 ‘Degraded irrigated land’, 4.6.3 ‘Irrigated land under rehabilitation’ or 5.8.4 ‘Extractive industry not in use’."@en ;
+    skos:notation "1.3.4" ;
+    skos:prefLabel "Rehabilitation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Remote-communities>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "ABS 2003, Census geography paper 03/01—ASGC remoteness classification—purpose and use, Australian Bureau of Statistics, Canberra, available at http://www.abs.gov.au/websitedbs/D3110122.nsf/4a255eef008309e44a255eef000%2061e57/f9c96fb635cce780ca256d420005dc02"@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Residential-and-farm-infrastructure> ;
+    skos:definition "Area with a small, isolated community, generally less than 20 residences or buildings (without the facilities associated with even small towns) that lies within an area defined by the Australian Standard Geographical Classification – Remoteness Areas (ASGC-RA) system as ‘remote’ or ‘very remote’ (ABS 2001). In the Northern Territory these are typically (but not always) Indigenous communities or families in homeland areas. Residences may be permanent or semi-permanent."@en ;
+    skos:notation "5.4.4" ;
+    skos:prefLabel "Remote communities"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Research-facilities>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Services> ;
+    skos:definition "Government and non-government research and development areas. This may include zoos with a primary purpose of research."@en ;
+    skos:notation "5.5.5" ;
+    skos:prefLabel "Research facilities"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Reservoir>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Reservoir-or-dam> ;
+    skos:definition "Water stored for use outside a farm."@en ;
+    skos:notation "6.2.1" ;
+    skos:prefLabel "Reservoir"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Residual-native-cover>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-minimal-use> ;
+    skos:definition "Land under native cover, mainly unused (no prime use) or used for non-production or environmental purposes (e.g. to conserve native vegetation and wildlife, or for natural resources protection). The ‘residual native cover’ class is only appropriate where there is no applicable prime use or where land use is indeterminate. For example livestock may occasionally graze, but where grazing is the intended prime use of the land, it should be classed under 2.1.0 ‘Grazing native vegetation’ or 3.2.1 ‘Native or exotic pasture mosaic’. Corridors and roadside areas may fit under this class, along with unusable land such as cliffs, rock faces, boulders and tors, provided there are relatively low levels of disturbance. Where there has been significant disturbance to the land (e.g. clearing) the area should be assigned to a non-conservation land use."@en ;
+    skos:notation "1.3.3" ;
+    skos:prefLabel "Residual native cover"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Riverconservation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/River> ;
+    skos:definition "Water feature relates to uses in class 1 ‘Conservation and natural environments’."@en ;
+    skos:notation "6.3.1" ;
+    skos:prefLabel "River—conservation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Riverintensive-use>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/River> ;
+    skos:definition "Water feature relates to uses in class 5 ‘Intensive uses’. This includes human-made alterations to rivers for residential canals."@en ;
+    skos:notation "6.3.3" ;
+    skos:prefLabel "River—intensive use"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Riverproduction>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/River> ;
+    skos:definition "Water feature relates to uses in class 2 ‘Production from relatively natural environments’."@en ;
+    skos:notation "6.3.2" ;
+    skos:prefLabel "River—production"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Roads>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Transport-and-communication> ;
+    skos:definition "Surface prepared for vehicle travel, includes all roads, streets, highways and so on which are larger than the minimum mapping unit. Roadside areas should either be merged with the nearby land use (i.e. road or surrounding land use) or if the area has low levels of disturbance it may be mapped as class 1.3.3 ‘Residual native cover’."@en ;
+    skos:notation "5.7.2" ;
+    skos:prefLabel "Roads"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Rural-residential-with-agriculture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Residential-and-farm-infrastructure> ;
+    skos:definition "Rural allotments with houses built (or being built) and agricultural activity at the sub-commercial and/or hobby scale (excluding backyard/domestic garden areas or livestock as pets). Rural residential generally refers to areas with blocks larger than 0.2ha that are located in a rural setting (away from the main urban setting), with agriculture unlikely to be the main form of income. If agricultural activities are larger than 2ha, they should be mapped separately under the relevant crop or pasture class. When no agricultural activity is present allocate to class 5.4.3 ‘Rural residential without agriculture’."@en ;
+    skos:notation "5.4.2" ;
+    skos:prefLabel "Rural residential with agriculture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Rural-residential-without-agriculture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Residential-and-farm-infrastructure> ;
+    skos:definition "Rural allotments with no agricultural activity present (may still have backyard or domestic garden areas or livestock as pets). This class refers to residential blocks larger than 0.2ha that are located in a rural setting (away from the main urban setting), with no agricultural activities occurring on the property. A large proportion of the block may be covered by native vegetation."@en ;
+    skos:notation "5.4.3" ;
+    skos:prefLabel "Rural residential without agriculture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Saleyards-or-stockyards>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production> ;
+    skos:definition "Land designated for selling and yarding stock. This class should be used for holding yards that are not part of the farm enterprise."@en ;
+    skos:notation "5.2.7" ;
+    skos:prefLabel "Saleyards or stockyards"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Sawmill>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial> ;
+    skos:definition "Area with special improvements for the milling and curing of timber."@en ;
+    skos:notation "5.3.7" ;
+    skos:prefLabel "Sawmill"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-flowers-and-bulbs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-horticulture> ;
+    skos:definition "This class represents cut flowers, flower products, and bulbs. Potted plants including flowering plants which are grown to be sold as whole plants should be mapped under 5.1.1 ‘Production nurseries’. Alkaloid poppies are mapped to 3.3.7 ‘Alkaloid poppies’."@en ;
+    skos:notation "3.5.2" ;
+    skos:prefLabel "Seasonal flowers and bulbs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-fruits>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-horticulture> ;
+    skos:definition "Includes melons and other fruit harvested from plants (including vines or shrubs) which live for less than two years."@en ;
+    skos:notation "3.5.1" ;
+    skos:prefLabel "Seasonal fruits"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-vegetables-and-herbs>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-horticulture> ;
+    skos:definition "Vegetables and herbs for human consumption. This class includes beans and peas grown for sale fresh and frozen. Field peas and field beans grown to be dried are mapped as 3.3.8 ‘Pulses’. Plants grown to be sold as seedlings are mapped to 5.1.1 ‘Production nurseries’."@en ;
+    skos:notation "3.5.3" ;
+    skos:prefLabel "Seasonal vegetables and herbs"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Sewage-or-sewerage>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Waste-treatment-and-disposal> ;
+    skos:definition "Pipes or other infrastructure conveying and treating waste water and sewage refuse. The individual effluent processes (e.g. pastures, lagoons) can be mapped separately if they meet the appropriate mapping scale. Otherwise they can be grouped together under this class."@en ;
+    skos:notation "5.9.5" ;
+    skos:prefLabel "Sewage or sewerage"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Shadehouses>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-horticulture> ;
+    skos:definition "Land where special purpose shade structure have been built for intensive plant production (including mushrooms). If the land use is known to be production nurseries, use 5.1.1 'Production nurseries'  and the management description ‘semi-protected’. If hail or bird nets are temporarily erected for orchards or similar, this does not constitute a land use change, so continue to map to the appropriate perennial, seasonal, or irrigated horticulture class."@en ;
+    skos:notation "5.1.2" ;
+    skos:prefLabel "Shadehouses"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Shrub-berries-and-fruits>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ;
+    skos:definition "Berries and fruits not grown on trees where the plant lives at least two years. This includes plantation fruit, such as pineapples, and berries, such as blackberries and red currants."@en ;
+    skos:notation "3.4.5" ;
+    skos:prefLabel "Shrub berries and fruits"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Softwood-plantation-forestry>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Plantation-forests> ;
+    skos:definition "Area managed for softwood sawlog or pulpwood."@en ;
+    skos:notation "3.1.2" ;
+    skos:prefLabel "Softwood plantation forestry"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Solar-electricity-generation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Utilities> ;
+    skos:definition "Solar panels or other power generation from the sun."@en ;
+    skos:notation "5.6.4" ;
+    skos:prefLabel "Solar electricity generation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Solid-garbage>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Waste-treatment-and-disposal> ;
+    skos:definition "Disposal of wastes, including waste from processing plants."@en ;
+    skos:notation "5.9.3" ;
+    skos:prefLabel "Solid garbage"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Sown-grasses>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-modified-pastures> ;
+    skos:definition "Grass pasture species including ryegrass, buffel grass and Bambatsi. This class includes saline pastures."@en ;
+    skos:notation "3.2.5" ;
+    skos:prefLabel "Sown grasses"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Stock-route>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-minimal-use> ;
+    skos:definition "Stock reserves under intermittent use or unused."@en ;
+    skos:notation "1.3.2" ;
+    skos:prefLabel "Stock route"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Stormwater>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Channel-or-aqueduct> ;
+    skos:definition "Open water channel removing water from excess rainfall."@en ;
+    skos:notation "6.4.3" ;
+    skos:prefLabel "Stormwater"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Strict-nature-reserve>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "IUCN 2008, Guidelines for applying protected area management categories, International Union for Conservation of Nature, Switzerland, available at http://www.iucn.org/sites/dev/files/import/downloads/iucn_assignment_1.pdf."@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Nature-conservation> ;
+    skos:definition "Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring. (IUCN 2008 Category Ia)"@en ;
+    skos:notation "1.1.1" ;
+    skos:prefLabel "Strict nature reserve"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Sugar>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping> ;
+    skos:definition "Sugar cane. Other commodities which can be used for sugar production are mapped to vegetables or fruits as appropriate."@en ;
+    skos:notation "3.3.5" ;
+    skos:prefLabel "Sugar"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Supply-channel-or-aqueduct>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Channel-or-aqueduct> ;
+    skos:definition "Open water channel delivering water for irrigation or infrastructure."@en ;
+    skos:notation "6.4.1" ;
+    skos:prefLabel "Supply channel or aqueduct"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Surface-water-supply>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Managed-resource-protection> ;
+    skos:definition "Area managed as a catchment for water supply."@en ;
+    skos:notation "1.2.2" ;
+    skos:prefLabel "Surface water supply"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Tailings>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Mining> ;
+    skos:definition "Tailings dumps and dams for storage or treatment of waste mining and quarrying output."@en ;
+    skos:notation "5.8.3" ;
+    skos:prefLabel "Tailings"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Traditional-Indigenous-uses>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Managed-resource-protection> ;
+    skos:definition "Area managed primarily for traditional Indigenous uses. This class should only be applied where traditional Indigenous uses are the current prime use."@en ;
+    skos:notation "1.2.5" ;
+    skos:prefLabel "Traditional Indigenous uses"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Tree-fruits>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ;
+    skos:definition "Includes pome fruit such as apples, stone fruit such as apricots, tropical fruit such as mangoes and bananas, and other orchards except olives (3.4.2) and citrus (3.4.8) which have their own classes. Where irrigation infrastructure is in place, map as 4.4.1 ‘Irrigated tree fruits’. This class does not include plantation fruit which is not grown on trees such as pineapples (3.4.5 ‘Shrub berries and fruits’ or 4.4.5 ‘Irrigated shrub berries or fruits’) or vines such as kiwifruit and passionfruit (3.4.4 ‘Vine fruits’ or 4.4.4 ‘Irrigated vine fruits’)."@en ;
+    skos:notation "3.4.1" ;
+    skos:prefLabel "Tree fruits"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Tree-nuts>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ;
+    skos:definition "Includes trees or shrubs grown to produce nuts such as almonds, hazelnuts, macadamias. This class does not include peanuts which are mapped as 3.3.4 ‘Oilseeds’."@en ;
+    skos:notation "3.4.3" ;
+    skos:prefLabel "Tree nuts"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Urban-residential>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Residential-and-farm-infrastructure> ;
+    skos:definition "Land with houses, flats, hotels and so on within urban areas. This class may be used for land which is zoned for urban residential development where houses or apartments have not yet been constructed but infrastructure, such as roads and street lights, is in place and it is clear that the intended land use is urban residential."@en ;
+    skos:notation "5.4.1" ;
+    skos:prefLabel "Urban residential"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Vine-fruits>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ;
+    skos:definition "Fruiting vines which live for more than two years such as kiwifruit and passionfruit. This class excludes grapes (3.4.9) which have their own class. Annual or seasonal vines such as melons are mapped as 3.5.1 ‘Seasonal fruits’ or 4.5.1 ‘Irrigated seasonal fruits’."@en ;
+    skos:notation "3.4.4" ;
+    skos:prefLabel "Vine fruits"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water-extraction-and-transmission>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Utilities> ;
+    skos:definition "Extraction, purification, treatment or supply of fresh water for public, domestic and commercial use. Excludes supply for agricultural uses, this should be mapped under 6.4 ‘Channel or aqueduct’."@en ;
+    skos:notation "5.6.7" ;
+    skos:prefLabel "Water extraction and transmission"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water-storageintensive-use-or-farm-dams>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Reservoir-or-dam> ;
+    skos:definition "Water stored for on-site, immediate use on farm. Feature may relate to uses included in class 5 ‘Intensive uses’. This class can also include graded scrapes and plastic sheeting."@en ;
+    skos:notation "6.2.2" ;
+    skos:prefLabel "Water storage—intensive use or farm dams"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Wilderness-area>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "IUCN 2008, Guidelines for applying protected area management categories, International Union for Conservation of Nature, Switzerland, available at http://www.iucn.org/sites/dev/files/import/downloads/iucn_assignment_1.pdf."@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Nature-conservation> ;
+    skos:definition "Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition. (IUCN 2008 Category Ib)"@en ;
+    skos:notation "1.1.2" ;
+    skos:prefLabel "Wilderness area"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Wind-electricity-generation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Utilities> ;
+    skos:definition "Power generation from wind, including wind farms."@en ;
+    skos:notation "5.6.3" ;
+    skos:prefLabel "Wind electricity generation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Wood-production-forestry>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-native-forests> ;
+    skos:definition "Area managed for sawlogs and pulpwood."@en ;
+    skos:notation "2.2.1" ;
+    skos:prefLabel "Wood production forestry"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Woody-fodder-plants>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-modified-pastures> ;
+    skos:definition "Woody plants used primarily for the purpose of providing forage for livestock grazing. Examples include tagasaste, leucaena and saltbush."@en ;
+    skos:notation "3.2.2" ;
+    skos:prefLabel "Woody fodder plants"@en ;
+.
+
+rdf:first
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdf:List ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:first ;
+.
+
+rdf:object
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:object ;
+.
+
+rdf:predicate
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:predicate ;
+.
+
+rdf:rest
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdf:List ;
+    rdfs:range rdf:List ;
+    rdfs:subPropertyOf rdf:rest ;
+.
+
+rdf:subject
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:subject ;
+.
+
+rdf:type
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Class ;
+    rdfs:subPropertyOf rdf:type ;
+.
+
+rdf:value
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:value ;
+.
+
+rdfs:comment
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf rdfs:comment ;
+.
+
+rdfs:domain
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdf:Property ;
+    rdfs:range rdfs:Class ;
+    rdfs:subPropertyOf rdfs:domain ;
+.
+
+rdfs:isDefinedBy
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf
+        rdfs:isDefinedBy ,
+        rdfs:seeAlso ;
+.
+
+rdfs:label
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf rdfs:label ;
+.
+
+rdfs:member
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdfs:member ;
+.
+
+rdfs:range
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdf:Property ;
+    rdfs:range rdfs:Class ;
+    rdfs:subPropertyOf rdfs:range ;
+.
+
+rdfs:subClassOf
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Class ;
+    rdfs:range rdfs:Class ;
+    rdfs:subPropertyOf rdfs:subClassOf ;
+.
+
+rdfs:subPropertyOf
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdf:Property ;
+    rdfs:range rdf:Property ;
+    rdfs:subPropertyOf rdfs:subPropertyOf ;
+.
+
+owl:versionInfo
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf owl:versionInfo ;
+.
+
+skos:broader
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf skos:broader ;
+.
+
+skos:definition
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf skos:definition ;
+.
+
+skos:hasTopConcept
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf skos:hasTopConcept ;
+.
+
+skos:narrower
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf skos:narrower ;
+.
+
+skos:notation
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf skos:notation ;
+.
+
+skos:prefLabel
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf skos:prefLabel ;
+.
+
+skos:topConceptOf
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf skos:topConceptOf ;
+.
+
+foaf:name
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:subPropertyOf foaf:name ;
+.
+
+<http://editor.vocabs.ands.org.au/user/Australian-Government-Department-of-Agriculture-and-Water-Resources--Australian-Bureau-of-Agricultural-and-Resource-Economics-and-Sciences>
+    a
+        dcterms:Agent ,
+        rdfs:Resource ;
+    foaf:name "Australian Government Department of Agriculture and Water Resources – Australian Bureau of Agricultural and Resource Economics and Sciences" ;
+.
+
+rdfs:seeAlso
+    a
+        rdf:Property ,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-relatively-natural-environments>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:definition """This class includes land that is subject to relatively low levels of intervention. The land may not be used more intensively because of its limited capability. The structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly. Where the native vegetation structure is, for example, open woodland or grassland, the land may be grazed.
+Where native grasses have been deliberately and extensively replaced with improved species, the use should be treated under class 3, ‘Production from dryland agriculture and plantations’."""@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-native-vegetation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-native-forests> ;
+    skos:notation "2" ;
+    skos:prefLabel "Production from relatively natural environments"@en ;
+    skos:topConceptOf <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Australian-Land-Use-and-Management-Classification> ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-native-forests>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-relatively-natural-environments> ;
+    skos:definition "Commercial production from native forests and related activities on public and private land. Environmental and indirect production uses associated with retained native forest (e.g. prevention of land degradation, windbreaks, shade and shelter) are included in class 1, ‘Conservation and natural environments’."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-forest-production> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Wood-production-forestry> ;
+    skos:notation "2.2" ;
+    skos:prefLabel "Production native forests"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Channel-or-aqueduct>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "Geoscience Australia 2007, Geoscience Australia topographic data and map specifications for TOPO250K & TOPO100K national topographic databases & NTMS Series 1:250 000 & 1:100 000 scale topographic map products, version 5, Geoscience Australia, Canberra, available at http://www.ga.gov.au/mapspecs/topographic/v5/index.html"@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water> ;
+    skos:definition "An artificial open channel which provides the supply, distribution or removal of water for irrigation purposes, or for a significant infrastructure function (such as salt interception, land reclamation, or drainage between water features for environmental management purposes) (Geoscience Australia 2007)."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Drainage-channel-or-aqueduct> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Stormwater> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Supply-channel-or-aqueduct> ;
+    skos:notation "6.4" ;
+    skos:prefLabel "Channel or aqueduct"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Conservation-and-natural-environments>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:definition "This class includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses, but nature conservation is the prime use. Some land may be unused as a result of a deliberate decision of government or landowner, or due to circumstance."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Managed-resource-protection> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Nature-conservation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-minimal-use> ;
+    skos:notation "1" ;
+    skos:prefLabel "Conservation and natural environments"@en ;
+    skos:topConceptOf <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Australian-Land-Use-and-Management-Classification> ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-waters>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:contributor <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:modified "2018-09-21T02:41:39+00:00"^^xsd:dateTime ;
+    dcterms:source "DERM 2011, Queensland Wetland Definition and Delineation Guideline, Department of Environment and Resource Management, Queensland Government, Brisbane, available at http://wetlandinfo.ehp.qld.gov.au/resources/static/pdf/resources/reports/buffer-guide/qld-wetland-definition-and-delineation-guideline-part-a.pdf and http://wetlandinfo.ehp.qld.gov.au/resources/static/pdf/resources/reports/buffer-guide/qld-wetland-definition-and-delineation-guideline-part-b.pdf"@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water> ;
+    skos:definition """Estuarine systems include wetlands with oceanic water that is at least occasionally diluted with fresh water runoff from the land.
+Coastal waters are below the mean high water (springs high water tidal line in Queensland) tidal line which defines the boundary (coastline) of the land, including areas of marine water the depth of which at low tide does not exceed 6 metres (DERM 2011)."""@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-watersconservation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-watersintensive-use> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-watersproduction> ;
+    skos:notation "6.6" ;
+    skos:prefLabel "Estuary or coastal waters"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Reservoir-or-dam>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "Geoscience Australia 2007, Geoscience Australia topographic data and map specifications for TOPO250K & TOPO100K national topographic databases & NTMS Series 1:250 000 & 1:100 000 scale topographic map products, version 5, Geoscience Australia, Canberra, available at http://www.ga.gov.au/mapspecs/topographic/v5/index.html"@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water> ;
+    skos:definition "A body of water collected and stored behind a constructed barrier for some specific use (Geoscience Australia 2007)."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Evaporation-basin> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Reservoir> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water-storageintensive-use-or-farm-dams> ;
+    skos:notation "6.2" ;
+    skos:prefLabel "Reservoir or dam"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/River>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "Geoscience Australia 2007, Geoscience Australia topographic data and map specifications for TOPO250K & TOPO100K national topographic databases & NTMS Series 1:250 000 & 1:100 000 scale topographic map products, version 5, Geoscience Australia, Canberra, available at http://www.ga.gov.au/mapspecs/topographic/v5/index.html"@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water> ;
+    skos:definition "A natural channel along which water may flow from time to time (Geoscience Australia 2007)."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Riverconservation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Riverintensive-use> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Riverproduction> ;
+    skos:notation "6.3" ;
+    skos:prefLabel "River"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-horticulture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-dryland-agriculture-and-plantations> ;
+    skos:definition "Crop plants living for less than two years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed and moisture control. If the crop type is known record this in the commodity field. If irrigation infrastructure is present map as 4.5 ‘Irrigated seasonal horticulture’."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-flowers-and-bulbs> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-fruits> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-vegetables-and-herbs> ;
+    skos:notation "3.5" ;
+    skos:prefLabel "Seasonal horticulture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-irrigated-modified-pastures>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-irrigated-agriculture-and-plantations> ;
+    skos:definition """Irrigated pasture production, both annual and perennial, based on a significant degree of modification or replacement of the native vegetation. For ALUM purposes, this class is used when there is greater than 50 per cent dominant exotic species and irrigation infrastructure is in place, even if irrigation water has not been applied to the pasture in the current season. When there is no irrigation infrastructure present use class 3.2 ‘Grazing modified pastures’ and 2.1 ‘Grazing native vegetation’ when there is greater than 50 per cent dominant native species. If livestock or pasture type is known, record this in the commodity field.
+This class may include land in a rotation system that at other times may be under cropping. Land in a rotation system should be classified according to the prime use (if known), or the land use at the time of mapping. Effort should be made to distinguish a land use change from a rotation. Record management practices such as crop pasture rotation or pasture cropping in the management field. If the rotation sequence is known, record this in the comments field."""@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-legume-or-grass-mixtures> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-pasture-legumes> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-sown-grasses> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-woody-fodder-plants> ;
+    skos:notation "4.2" ;
+    skos:prefLabel "Grazing irrigated modified pastures"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-plantation-forests>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-irrigated-agriculture-and-plantations> ;
+    skos:definition "Land on which irrigated plantations of trees or shrubs have been established for production or environmental and resource protection purposes. This includes farm forestry."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-environmental-forest-plantation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-hardwood-plantation-forestry> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-other-forest-plantation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-softwood-plantation-forestry> ;
+    skos:notation "4.1" ;
+    skos:prefLabel "Irrigated plantation forests"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-horticulture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-irrigated-agriculture-and-plantations> ;
+    skos:definition "Irrigated crop plants living for less than two years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed and moisture control. If crop type is known, record this in the commodity field."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-flowers-and-bulbs> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-fruits> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-vegetables-and-herbs> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-turf-farming> ;
+    skos:notation "4.5" ;
+    skos:prefLabel "Irrigated seasonal horticulture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lake>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "Geoscience Australia 2007, Geoscience Australia topographic data and map specifications for TOPO250K & TOPO100K national topographic databases & NTMS Series 1:250 000 & 1:100 000 scale topographic map products, version 5, Geoscience Australia, Canberra, available at http://www.ga.gov.au/mapspecs/topographic/v5/index.html"@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water> ;
+    skos:definition "A natural or human-made body of mainly static water surrounded by land (Geoscience Australia 2007)."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lakeconservation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lakeintensive-use> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lakeproduction> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lakesaline> ;
+    skos:notation "6.1" ;
+    skos:prefLabel "Lake"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetland>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "DERM 2011, Queensland Wetland Definition and Delineation Guideline, Department of Environment and Resource Management, Queensland Government, Brisbane, available at http://wetlandinfo.ehp.qld.gov.au/resources/static/pdf/resources/reports/buffer-guide/qld-wetland-definition-and-delineation-guideline-part-a.pdf and http://wetlandinfo.ehp.qld.gov.au/resources/static/pdf/resources/reports/buffer-guide/qld-wetland-definition-and-delineation-guideline-part-b.pdf"@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water> ;
+    skos:definition "Wetlands are areas of permanent or periodic/intermittent inundation, whether natural or artificial, with water that is static or flowing, fresh, brackish or salt (DERM 2011), excluding estuary and coastal water."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetlandconservation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetlandintensive-use> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetlandproduction> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetlandsaline> ;
+    skos:notation "6.5" ;
+    skos:prefLabel "Marsh or wetland"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Mining>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ;
+    skos:definition "Mining and extractive industries. Salt extraction is captured in 6.2.3 ‘Evaporation basin’. Record the type of mining, if known in the commodity field."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Extractive-industry-not-in-use> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Mines> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Quarries> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Tailings> ;
+    skos:notation "5.8" ;
+    skos:prefLabel "Mining"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-minimal-use>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Conservation-and-natural-environments> ;
+    skos:definition "Areas of land that are largely unused (in the context of the prime use) but may have ancillary uses. This may be a deliberate decision by the land manager or the result of other circumstances. The land may be available for use but remain unused for various reasons."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Defence-landnatural-areas> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Rehabilitation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Residual-native-cover> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Stock-route> ;
+    skos:notation "1.3" ;
+    skos:prefLabel "Other minimal use"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Plantation-forests>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-dryland-agriculture-and-plantations> ;
+    skos:definition "Land on which plantations of trees or shrubs (native or exotic species) have been established for production, or environmental and resource protection purposes. This includes farm forestry. Where planted trees are grown in conjunction with pasture, fodder or crop production, class allocation should be made on the basis of prime use."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Environmental-forest-plantation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Hardwood-plantation-forestry> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-forest-plantation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Softwood-plantation-forestry> ;
+    skos:notation "3.1" ;
+    skos:prefLabel "Plantation forests"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Australian-Land-Use-and-Management-Classification>
+    a
+        rdfs:Resource ,
+        skos:ConceptScheme ;
+    rdfs:label "Australian Land Use and Management Classification"@en ;
+    dcterms:created "2017-12-06T01:17:18+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/Australian-Government-Department-of-Agriculture-and-Water-Resources--Australian-Bureau-of-Agricultural-and-Resource-Economics-and-Sciences> ;
+    dcterms:description "This is a land use nomenclature and classification scheme for Australia, ordering land use in a systematic, logical and consistent way. It has a three-tiered hierarchical structure. Primary, secondary and tertiary classes are broadly structured by the potential degree of modification and the impact on a putative 'natural state' (essentially, a native land cover). "@en ;
+    dcterms:issued "2016-10-01" ;
+    dcterms:publisher <http://editor.vocabs.ands.org.au/user/Australian-Government-Department-of-Agriculture-and-Water-Resources--Australian-Bureau-of-Agricultural-and-Resource-Economics-and-Sciences> ;
+    dcterms:subject "ALUM"@en ;
+    dcterms:title "Australian Land Use and Management Classification"@en ;
+    owl:versionInfo "Version 8" ;
+    skos:hasTopConcept
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Conservation-and-natural-environments> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-dryland-agriculture-and-plantations> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-irrigated-agriculture-and-plantations> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-relatively-natural-environments> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water> ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-modified-pastures>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-dryland-agriculture-and-plantations> ;
+    skos:definition """Pasture and forage production, both annual and perennial, based on significant active modification or replacement of the initial vegetation. For ALUM purposes, this class is used when there is greater than 50 per cent dominant exotic species while 2.1, ‘Grazing native vegetation’, is applied when there is greater than 50 per cent dominant native species. 
+Most jurisdictions have datasets specifically designed to distinguish native from non-native vegetation. These datasets should be used to report on native versus non-native vegetation, as the ALUM Classification maps the actual land use as a priority over land cover.
+Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping. Land in a rotation system should be classified according to the prime use (if known) or the land use at the time of mapping, with rotation information recorded in the management field. If the rotation sequence is known record this in the comments field. Effort should be made to distinguish a land use change from a rotation."""@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Native-or-exotic-pasture-mosaic> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Pasture-legume-or-grass-mixtures> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Pasture-legumes> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Sown-grasses> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Woody-fodder-plants> ;
+    skos:notation "3.2" ;
+    skos:prefLabel "Grazing modified pastures"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-horticulture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ;
+    skos:definition "Intensive forms of plant production often with special purpose improvements used for horticultural production. If crop type is known, record this in the commodity field."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-intensive-horticulture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Glasshouses> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Glasshouseshydroponic> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-nurseries> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Shadehouses> ;
+    skos:notation "5.1" ;
+    skos:prefLabel "Intensive horticulture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-land-in-transition>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-irrigated-agriculture-and-plantations> ;
+    skos:definition "Areas where irrigated production may be carried out but land use is unknown and cannot reasonably be inferred from the surrounding land use. Evidence or knowledge of irrigated use or of existing irrigation infrastructure should be present. This class should be used sparingly. Land must have been used for irrigated agriculture or plantations as it falls under class 4 'Production from irrigated agriculture and plantations'."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-irrigated-land> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-irrigated-perennial-horticulture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Degraded-irrigated-land> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-land-under-rehabilitation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/No-defined-use---irrigation> ;
+    skos:notation "4.6" ;
+    skos:prefLabel "Irrigated land in transition"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Land-in-transition>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-dryland-agriculture-and-plantations> ;
+    skos:definition "Areas where the land use is unknown and cannot reasonably be inferred from the surrounding land use. This class should be used sparingly. Fallow or ploughed land should be allocated to a relevant pasture, cropping or horticulture class as this is the primary use. Land must previously have been used for agriculture or plantations as it falls under class 3 ‘Production from dryland agriculture and plantations’. If evidence of irrigation is present, it should be classed as 4.6 ‘Irrigated land in transition’. For abandoned intensive agriculture, classes 5.1.5 ‘Abandoned intensive horticulture’ or 5.2.8 ‘Abandoned intensive animal production’, may be most appropriate."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-land> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-perennial-horticulture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Degraded-land> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Land-under-rehabilitation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/No-defined-use> ;
+    skos:notation "3.6" ;
+    skos:prefLabel "Land in transition"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Managed-resource-protection>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "IUCN 2008, Guidelines for applying protected area management categories, International Union for Conservation of Nature, Switzerland, available at http://www.iucn.org/sites/dev/files/import/downloads/iucn_assignment_1.pdf."@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Conservation-and-natural-environments> ;
+    skos:definition "Tertiary classes 1.2.1–1.2.4 are based on the CAPAD classification (IUCN 2008 Category VI). These areas are managed primarily for the sustainable use of natural resources. This includes areas with largely unmodified natural systems that are managed primarily to ensure the long-term protection and maintenance of biological diversity, water supply, aquifers or landscapes, while providing a sustainable flow of natural products and services."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Biodiversity> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Ground-water> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Landscape> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Surface-water-supply> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Traditional-Indigenous-uses> ;
+    skos:notation "1.2" ;
+    skos:prefLabel "Managed resource protection"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Residential-and-farm-infrastructure>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ;
+    skos:definition "Land with houses and or other residential infrastructure with or without associated agricultural activity. This class includes urban and remote communities, farm buildings and other farm infrastructure larger than the minimum mapping scale, and land in transition to residential from other land uses. This class also includes holiday shacks."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Farm-buildings-or-infrastructure> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Remote-communities> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Rural-residential-with-agriculture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Rural-residential-without-agriculture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Urban-residential> ;
+    skos:notation "5.4" ;
+    skos:prefLabel "Residential and farm infrastructure"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Services>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ;
+    skos:definition "Land allocated to providing commercial or public services, resulting in substantial interference to the natural environment. Where services are provided on land that retains natural cover, apply an appropriate classification under class 1 ‘Conservation and natural environments’ (e.g. 1.1.7 ‘Other conserved area’ or 1.3 ‘Other minimal use’)."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Commercial-services> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Defence-facilitiesurban> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Public-services> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Recreation-and-culture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Research-facilities> ;
+    skos:notation "5.5" ;
+    skos:prefLabel "Services"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Transport-and-communication>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ;
+    skos:definition "Land allocated to infrastructure used for transportation of goods or people, or navigation and communication equipment."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Airports-or-aerodromes> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Navigation-and-communication> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Ports-and-water-transport> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Railways> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Roads> ;
+    skos:notation "5.7" ;
+    skos:prefLabel "Transport and communication"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Waste-treatment-and-disposal>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ;
+    skos:definition "Waste material and disposal facilities associated with industrial, urban and agricultural activities."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Effluent-pond> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Incinerators> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Landfill> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Sewage-or-sewerage> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Solid-garbage> ;
+    skos:notation "5.9" ;
+    skos:prefLabel "Waste treatment and disposal"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-dryland-agriculture-and-plantations>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:definition """This class includes land that is used principally for primary production, based on dryland farming systems. Native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers or the dominance of volunteer species. The range of activities in this category includes plantation forests, pasture production for stock, cropping and fodder production, and a wide range of horticultural production. If there is evidence of irrigation infrastructure, land should be mapped under class 4, ‘Production from irrigated agriculture and plantations’, even if irrigation water has not been applied in the current growing season.
+Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticulture class (rather than using land in transition). Record the fallow or ploughed status in the management field."""@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-modified-pastures> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Land-in-transition> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Plantation-forests> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Seasonal-horticulture> ;
+    skos:notation "3" ;
+    skos:prefLabel "Production from dryland agriculture and plantations"@en ;
+    skos:topConceptOf <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Australian-Land-Use-and-Management-Classification> ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-irrigated-agriculture-and-plantations>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "Baxter, JT and Russell, LD 1994, Land use mapping requirements for natural resource management in the Murray-Darling Basin, Project M305: Task 6, Victorian Department of Conservation and Natural Resources, Melbourne."@en ;
+    skos:definition """This class includes agricultural land uses where water is applied to promote additional growth over normally dry periods, depending on the season, water availability and commodity prices.
+This includes land uses that receive only one or two irrigations per year, through to those uses that rely on irrigation for much of the growing season. Baxter and Russell (1994) created this primary class because of the degree of intervention involved in irrigation, and its potential impacts on hydrology and geohydrology.
+Irrigation in Australia is in a state of flux and so there is a need to rely more heavily on ancillary data than in the past. These ancillary data sources may include proximity to water sources, information from water entitlements (irrigation licences), field survey and local knowledge. Due to seasonal or market conditions, land that is developed for irrigation might not always be actively irrigated. Land should be mapped according to prime use (if known), or use at the time of mapping, however it is suggested that areas be assigned to the irrigation classes if permanent infrastructure for irrigation is present. Effort should be made to distinguish between actual land use change and a rotation. For example, in Queensland, an area that is usually 4.3 ‘Irrigated cropping’ but is not used for that particular purpose in the year mapped, is still mapped as 4.3 ‘Irrigated cropping’ in an updated dataset and is not mapped as 4.2 ‘Grazing irrigated modified pastures’ until there is evidence of pasture or vegetation regrowth and/or cropping machinery would not easily pass over the land.
+If there is no evidence of irrigation (infrastructure or active irrigation) then the area should be mapped to the appropriate dryland class. Particular crops, such as rice, may always be assumed to be irrigated.
+Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticulture class (rather than using land in transition). Record the fallow or ploughed status in the management field."""@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grazing-irrigated-modified-pastures> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-land-in-transition> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-plantation-forests> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-seasonal-horticulture> ;
+    skos:notation "4" ;
+    skos:prefLabel "Production from irrigated agriculture and plantations"@en ;
+    skos:topConceptOf <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Australian-Land-Use-and-Management-Classification> ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:definition """Water features are regarded as essential to the ALUM Classification because of their importance for natural resources management, agricultural production and as points of reference in the landscape. At the secondary level, the classification identifies water features, both natural and artificial. Tertiary classes relate water features to intensity of use and conservation status.
+Because water is a land cover rather than a land use, water classes may not be mutually exclusive with other land use classes at particular levels in the classification. Generally, water classes should take precedence so that, for example, a lake in a conservation reserve will be classed as 6.1 ‘Lake’ or 6.1.1 ‘Lake—conservation’, rather than as 1.1 ‘Nature conservation’. Water features where a conservation tertiary class applies may be attributed using the comments field. 
+When mapping seasonal water features it is best to refer to ancillary datasets and, if still unsure map to the land use at the time. Notes about seasonal inundations can be included in the comments field."""@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Channel-or-aqueduct> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Estuary-or-coastal-waters> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Lake> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Marsh-or-wetland> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Reservoir-or-dam> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/River> ;
+    skos:notation "6" ;
+    skos:prefLabel "Water"@en ;
+    skos:topConceptOf <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Australian-Land-Use-and-Management-Classification> ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Nature-conservation>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    dcterms:source "Cresswell, ID and Thomas, GM 1997, Terrestrial and marine protected areas in Australia, Environment Australia, Biodiversity Group, Canberra. IUCN 2008, Guidelines for applying protected area management categories, International Union for Conservation of Nature, Switzerland, available at http://www.iucn.org/sites/dev/files/import/downloads/iucn_assignment_1.pdf."@en ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Conservation-and-natural-environments> ;
+    skos:definition "Tertiary classes 1.1.1–1.1.6 are based on the Collaborative Australian Protected Areas Database (CAPAD) classification (Cresswell and Thomas 1997). These classes can also be translated from the International Union for Conservation of Nature Guidelines for applying protected area management categories (IUCN 2008)."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Habitat-or-species-management-area> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/National-park> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Natural-feature-protection> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Other-conserved-area> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Protected-landscape> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Strict-nature-reserve> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Wilderness-area> ;
+    skos:notation "1.1" ;
+    skos:prefLabel "Nature conservation"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Utilities>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ;
+    skos:definition "Land allocated to providing electricity, gas or water."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Electricity-substations-and-transmission> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Fuel-powered-electricity-generation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Gas-treatment,-storage-and-transmission> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Hydro-electricity-generation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Solar-electricity-generation> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Water-extraction-and-transmission> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Wind-electricity-generation> ;
+    skos:notation "5.6" ;
+    skos:prefLabel "Utilities"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cropping>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-dryland-agriculture-and-plantations> ;
+    skos:definition """Land that is under cropping. Land under cropping at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under pasture. Land in a rotation system should be classified according to the prime use (if known) or the land use at the time of mapping, with rotation information recorded in the management field. If the rotation sequence is known record this in the comments field.
+Effort is made to distinguish between actual land use change and a rotation. For example, in Queensland, an area that is usually cropped but is not used for that particular purpose in the year mapped, is still mapped as cropping in an updated dataset and is not mapped as grazing until there is evidence of pasture or vegetation regrowth and/or cropping machinery would not easily pass over the land.
+Cropping can vary markedly over relatively short distances in response to changes in the nature of the land and the preferences of the land manager. It may also change over time in response to market conditions. Production of fodder, such as lucerne hay, is considered cropping as there is no harvesting by stock. Strip cropping—where multiple commodities are cropped simultaneously—can be assigned to the secondary class 3.3 'Cropping' with multiple commodities recorded using the commodity field, and cropping strip in the management field. If irrigation infrastructure is present the relevant class should be applied under 4.3, ‘Irrigated cropping’ regardless of whether the crop was irrigated in the growing season.
+If the type of crop type is known, record this in the commodity field."""@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Alkaloid-poppies> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Beverage-and-spice-crops> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cereals> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Cotton> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Hay-and-silage> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Oilseeds> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Pulses> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Sugar> ;
+    skos:notation "3.3" ;
+    skos:prefLabel "Cropping"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ;
+    skos:definition "Intensive forms of animal production (excludes associated grazing or pastures), livestock production facilities or animal-holding yards. This secondary class includes emus, alpacas, deer and beekeeping. If the animal type is known, record this in the commodity field. The management field can be used to record practices such as free range or milking system."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-intensive-animal-production> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Aquaculture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Dairy-sheds-and-yards> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Feedlots> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Horse-studs> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Piggeries> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Poultry-farms> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Saleyards-or-stockyards> ;
+    skos:notation "5.2" ;
+    skos:prefLabel "Intensive animal production"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses> ;
+    skos:definition "Factories, workshops, foundries, construction sites and so on. In the urban setting, manufacturing and industrial areas should be mapped to this secondary code. In the rural or agricultural setting, theg tertiary classes  5.3.1–5.3.8 may be used if desired."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abandoned-manufacturing-and-industrial> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Abattoirs> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Bulk-grain-storage> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Food-processing-factory> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/General-purpose-factory> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Major-industrial-complex> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Oil-refinery> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Sawmill> ;
+    skos:notation "5.3" ;
+    skos:prefLabel "Manufacturing and industrial"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:definition """This class includes land uses that involve high levels of interference with natural processes, generally in association with closer settlement.
+The level of intervention may be high enough to completely remodel the natural landscape—the vegetation, surface and groundwater systems, and the land surface. If crop and or animal type is known, record this in the commodity field."""@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-animal-production> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-horticulture> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Manufacturing-and-industrial> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Mining> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Residential-and-farm-infrastructure> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Services> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Transport-and-communication> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Utilities> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Waste-treatment-and-disposal> ;
+    skos:notation "5" ;
+    skos:prefLabel "Intensive uses"@en ;
+    skos:topConceptOf <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Australian-Land-Use-and-Management-Classification> ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cropping>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-irrigated-agriculture-and-plantations> ;
+    skos:definition "Land under irrigated cropping. If crop type is known, record this in the commodity field. This class may include land in a rotation system that at other times may be under pasture. Land in a rotation system should be classified according to the prime use (if known), or the land use at the time of mapping (see ‘Decision rules’). Cropping rotation regimes can be recorded using the management field. If the rotation sequence is known record this in the comments field. Where there is no irrigation infrastructure present the appropriate dryland class should be used."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-alkaloid-poppies> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-beverage-and-spice-crops> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cereals> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-cotton> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-hay-and-silage> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-oilseeds> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-pulses> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-rice> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-sugar> ;
+    skos:notation "4.3" ;
+    skos:prefLabel "Irrigated cropping"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-horticulture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-irrigated-agriculture-and-plantations> ;
+    skos:definition "Irrigated crop plants living for more than two years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed and moisture control. If crop type is known, record this in the commodity field. Management practices such as netting to protect these crops from hail or birds can be recorded in the management field."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-citrus> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-grapes> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-olives> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-flowers-and-bulbs> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-perennial-vegetables-and-herbs> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-shrub-berries-and-fruits> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-tree-fruits> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-tree-nuts> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Irrigated-vine-fruits> ;
+    skos:notation "4.4" ;
+    skos:prefLabel "Irrigated perennial horticulture"@en ;
+.
+
+<http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-horticulture>
+    a
+        rdfs:Resource ,
+        skos:Concept ;
+    dcterms:created "2017-12-06T01:22:13+00:00"^^xsd:dateTime ;
+    dcterms:creator <http://editor.vocabs.ands.org.au/user/NEII_Programme> ;
+    skos:broader <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Production-from-dryland-agriculture-and-plantations> ;
+    skos:definition "Crop plants living for more than two years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed and moisture control. If the crop type is known record this in the commodity field. Management practices such as netting to protect these crops from hail or birds can be recorded in the management field. If irrigation infrastructure is present the class 4.4, ‘Irrigated perennial horticulture’ should be used."@en ;
+    skos:narrower
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Citrus> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Grapes> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Olives> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-flowers-and-bulbs> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Perennial-vegetables-and-herbs> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Shrub-berries-and-fruits> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Tree-fruits> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Tree-nuts> ,
+        <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Vine-fruits> ;
+    skos:notation "3.4" ;
+    skos:prefLabel "Perennial horticulture"@en ;
+.
+
+<http://editor.vocabs.ands.org.au/user/NEII_Programme>
+    a
+        dcterms:Agent ,
+        rdfs:Resource ;
+    foaf:name "NEII_Programme" ;
+.
+

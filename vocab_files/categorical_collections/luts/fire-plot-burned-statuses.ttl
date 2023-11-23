@@ -6,49 +6,43 @@ PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/81a8fa69-2f20-5a28-880d-8401759f9194>
+<https://linked.data.gov.au/def/nrm/578882d3-f5c0-51ea-8316-31c7e577a73b>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f31c4598-bddd-5d42-99f1-4d530f77d4e7> ;
-    urnp:conceptDefinition "The plot burned history." ;
-    urnp:conceptIdentifier 2 ;
-    urnp:conceptNotation "R" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
+    urnp:conceptDefinition "Refers to the fire history of the plot, i.e., any evidence of recent burn in the survey/study area." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/nrm/8c0ce07e-88e0-5ecf-a3b3-0f6a503e4ee1>
-    a urnc:CategoricalConceptMeta ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
-    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f> ;
-    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7d7c2dd4-4a7e-549f-a12a-7846d65aafcf> ;
-    urnp:conceptDefinition "The plot burned history." ;
-    urnp:conceptIdentifier 3 ;
-    urnp:conceptNotation "P" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
-.
-
-<https://linked.data.gov.au/def/nrm/ffde9f2e-93a7-5bbb-9a8a-0aca07034f28>
+<https://linked.data.gov.au/def/nrm/f2a902dd-315c-5ac1-b236-c0f9b268860f>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9a1771c6-6a8e-586d-825d-043d9310fd45> ;
-    urnp:conceptDefinition "The plot burned history." ;
-    urnp:conceptIdentifier 1 ;
-    urnp:conceptNotation "U" ;
-    urnp:conceptSource <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
+    urnp:conceptDefinition "Refers to the fire history of the plot, i.e., no evidence of burn in the survey/study area." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/fa1eb208-497b-53b9-98fa-c174ee5c01fb>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b537013e-17bb-5c0c-aa7b-279bcd0e52df> ;
+    urnp:conceptDefinition "Refers to the fire history of the plot, i.e., any evidence of past burn in the survey/study area. " ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/5662a7dd-c1da-4659-8290-a1e6e42c879f>
     a skos:Collection ;
-    dcterms:description "A collection of fire plot burned statuses and its codes." ;
-    dcterms:source <https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses> ;
+    dcterms:description "Refers to the plot fire event history, i.e., whether the site has been burnt recently or in the past, or unburnt." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-fire-plot-burned-statuses"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
-        <https://linked.data.gov.au/def/nrm/7d7c2dd4-4a7e-549f-a12a-7846d65aafcf> ,
         <https://linked.data.gov.au/def/nrm/9a1771c6-6a8e-586d-825d-043d9310fd45> ,
+        <https://linked.data.gov.au/def/nrm/b537013e-17bb-5c0c-aa7b-279bcd0e52df> ,
         <https://linked.data.gov.au/def/nrm/f31c4598-bddd-5d42-99f1-4d530f77d4e7> ;
-    skos:prefLabel "Fire plot burned statuses codes" ;
+    skos:prefLabel "Fire plot burned statuses" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-plot-burned-statuses.ttl"^^xsd:anyURI ;
 .
 

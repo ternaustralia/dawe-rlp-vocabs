@@ -1,0 +1,66 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/0f05cd57-e2e7-54fc-9899-37e9263ceb05>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-consistency-water-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e1573937-3a4e-4df6-beba-29e25e7c5596> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3f4ab1ff-77fb-5a11-bcdf-0e84da5be695> ;
+    urnp:conceptDefinition "Refers to the consistency of soil based on water content. Moderately moist is the drier half of the available moisture range." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-water-statuses"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/0f417f34-4809-5139-a3fe-e850be37fc92>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-consistency-water-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e1573937-3a4e-4df6-beba-29e25e7c5596> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/96de2471-8ccd-5867-b245-1a1898781829> ;
+    urnp:conceptDefinition "Refers to the consistency of soil based on water content. Moist is the wetter half of the available moisture range." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-water-statuses"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/3d0f812b-38a3-541e-a88c-9e796bcb6fb0>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-consistency-water-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e1573937-3a4e-4df6-beba-29e25e7c5596> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/414b9411-83ee-59ea-a586-c2c4184482a7> ;
+    urnp:conceptDefinition "Refers to the consistency of soil based on water content. Wet is at, or exceeding, field capacity. Will wet and/or stick to fingers when moulded." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-water-statuses"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/5946b455-666b-52e1-a3e5-f490ac634b0f>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-consistency-water-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/e1573937-3a4e-4df6-beba-29e25e7c5596> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8c00ad92-4284-504e-9d32-8cfd17c46763> ;
+    urnp:conceptDefinition "Refers to the consistency of soil based on water content. Dry is below wilting point. Material becomes darker or has lower colour value when moistened." ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-water-statuses"^^xsd:anyURI ,
+        "McDonald, R. C. (1990). Australian soil and land survey field handbook. Melbourne : Inkata Press" ;
+.
+
+<https://linked.data.gov.au/def/nrm/e1573937-3a4e-4df6-beba-29e25e7c5596>
+    a skos:Collection ;
+    dcterms:description "A collection of soil consistency, i.e., strength of cohesion and adhesion in soil, and is dependent on the soil water status- such as dry, moderately moist, moist and wet." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-water-statuses"^^xsd:anyURI ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/3f4ab1ff-77fb-5a11-bcdf-0e84da5be695> ,
+        <https://linked.data.gov.au/def/nrm/414b9411-83ee-59ea-a586-c2c4184482a7> ,
+        <https://linked.data.gov.au/def/nrm/8c00ad92-4284-504e-9d32-8cfd17c46763> ,
+        <https://linked.data.gov.au/def/nrm/96de2471-8ccd-5867-b245-1a1898781829> ;
+    skos:prefLabel "Soil consistency- water statuses" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/soil-consistency-water-statuses.ttl"^^xsd:anyURI ;
+.
+

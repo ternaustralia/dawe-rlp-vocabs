@@ -1,0 +1,1390 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/69e33304-f95e-41d3-b8bc-6307d3d774bf>
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
+    dcterms:description """<h3>Contents</h3>
+  <ol>
+     <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#introduction-and-background">Introduction and Background</a></li>
+    <li><a href="#key-definitions-and-terminology">Key definitions and terminology</a></li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#equipment">Equipment</a></li>
+    <li><a href="#instructions-and-procedures">Instructions and Procedures</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol><h1 id="module-overview">Module overview</h1>
+<h2 id="available-protocols">Available protocols</h2>
+<p>The Fauna Aerial Surveys Module outlines the protocol for recording
+fauna observations during an aerial survey in a standardised manner. The
+protocol includes the procedures and guidelines for collecting field
+data directly into the Monitor app. The app records key details
+including, the survey personnel, the survey location and aims, when and
+how the survey was conducted, the time spent searching, the equipment
+used, climate conditions, track log of the transects flown, the species,
+number and distance observed.</p>
+<p>The module does not specify how the aerial survey should be
+conducted, to allow flexibility in terms of the actual field survey
+designs implemented (i.e. transect length, transect width, aircraft and
+equipment used).</p>
+<h2 id="relationships-to-other-modules">Relationships to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<p>The Fauna Aerial Surveys Module is not dependent on any other
+modules.</p>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6">Interventions Module</a> – it is recommended that the Fauna Aerial
+Surveys Module be carried out before and after an intervention to
+monitor the outcomes of the intervention.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportune Module</a> – enables the recording of opportunistic direct
+and indirect (i.e. tracks, scats, etc.) sightings of fauna species
+captured in a standardised way. Data collected via the Opportune Module
+can assist in gaining further insight into fauna species distribution
+and abundance within the project area.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/cd04526e-7455-45c1-8a44-55575a4a7b2d">Fauna Ground Counts Module</a> – can be used to obtain pre- and
+post-intervention monitoring data, including the distribution and
+relative abundance of the target species across the survey area. The
+Fauna Ground Counts Module data can complement distribution and
+abundance data collected using the Fauna Aerial Surveys Module.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/35239cb4-d7eb-4794-9148-7aed051d731c">Pest Fauna Control Activities Module</a> – records the results of any
+intervention that involves control activities (e.g. shooting, baiting),
+which the Fauna Aerial Surveys Module can be carried out before and
+after.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508">Vegetation Mapping Module</a> – can be used to define and map the
+vegetation associations of the project area. Data from vegetation
+mapping points may inform the location of fauna aerial surveys and
+management interventions.</p></li>
+</ul>"""^^rdf:HTML ;
+    dcterms:source """<h1 id="references">References</h1>
+<p>Algar, D, Morris, K, Asher, J, Cowen, S (2020) Dirk Hartog Island
+‘Return to 1616’ Project – The first six years (2014 to 2019).
+<em>Ecological Management &amp; Restoration</em> <strong>21</strong>,
+173-183.</p>
+<p>Amos, M, Baxter, G, Finch, N, Lisle, A, Murray, P (2014a) I just want
+to count them! Considerations when choosing a deer population monitoring
+method. <em>Wildlife Biology</em> <strong>20</strong>, 362-370.</p>
+<p>Amos, M, Baxter, G, Finch, N, Murray, P (2014b) At home in a new
+range: wild red deer in south-eastern Queensland. <em>Wildlife
+Research</em> <strong>41</strong>, 258-265.</p>
+<p>Beaver, JT, Baldwin, RW, Messinger, M, Newbolt, CH, Ditchkoff, SS,
+Silman, MR (2020) Evaluating the use of drones equipped with thermal
+sensors as an effective method for estimating wildlife. <em>Wildlife
+Society Bulletin</em> <strong>44</strong>, 434-443.</p>
+<p>Buckland, ST, Anderson, DR, Burnham, KP, Laake, JL (1993) 'Distance
+Sampling: Estimating Abundance of Biological Populations.' (Chapman and
+Hall: London)</p>
+<p>Bureau of Land Management, 2005. BLM wild horse and burro strategic
+research plan: Appendix Overview of Wild Horse and Burro Research &amp;
+Pilot Projects Since 2005.</p>
+<p>Burrows, ND, Algar, D, Robinson, AD, Sinagra, J, Ward, B, Liddelow, G
+(2003) Controlling introduced predators in the Gibson Desert of Western
+Australia. <em>Journal of Arid Environments</em> <strong>55</strong>,
+691-713.</p>
+<p>Cairns, S (2019) Feral Horses in the Australian Alps: the Analysis of
+Aerial Surveys Conducted in April-May, 2014 and April-May 2019. A report
+to the Australian Alps Liaison Committee September, 2019. G.E. &amp;
+S.C. Cairns Consulting Pty. Ltd., University of New England, Armidale,
+NSW 2351.</p>
+<p>Deacy, WW, Leacock, WB, Ward, EJ, Armstrong, JB (2019) Aerial surveys
+cause large but ephemeral decreases in bear presence at salmon streams
+in Kodiak, Alaska. <em>PloS ONE</em> <strong>14</strong>, e0222085.</p>
+<p>Department of the Environment (2023) '<em>Zanda latirostris</em> in
+Species Profile and Threats Database, Department of the Environment,.'
+Available at <a href="https://www.environment.gov.au/sprat">https://www.environment.gov.au/sprat</a>.
+[Accessed Mon, 9 Jan 2023].</p>
+<p>Didkowsky, M (2010) Aerial Ungulate Survey Protocol Manual. Alberta
+Sustainable Resource Development: Fish and Wildlife Division, Alberta,
+USA.</p>
+<p>DPIE (2020) Surveying threatened plants and their habitats. NSW
+survey guide for the Biodiversity Assessment Method. Department of
+Planning, Industry and Environment, Parramatta, New South Wales.</p>
+<p>DSEWPC (2011) Survey guidelines for Australia's threatened mammals.
+Guidelines for detecting mammals listed as threatened under the
+<em>Environment Protection and Biodiversity Conservation Act 1999</em>.
+Department of Sustainability‚ Environment‚ Water‚ Population and
+Communities, Canberra.</p>
+<p>Dyer, AB, Simmonds, JS (2021) Incomplete surveys for environmental
+impact assessments jeopardise threatened species recovery. <em>Pacific
+Conservation Biology</em></p>
+<p>Edwards, GP, Saalfeld, K, Clifford, B (2004) Population trend of
+feral camels in the Northern Territory, Australia. <em>Wildlife
+Research</em> <strong>31</strong>, 509-517.</p>
+<p>Finch, N, Pople, A, McLeod, SR, Wallace, G (2021) Advances in aerial
+survey methods for macropods in New South Wales and Queensland.
+<em>Ecological Management &amp; Restoration</em> <strong>22</strong>,
+99-105.</p>
+<p>Gentle, M, Finch, N, Speed, J, Pople, A (2018) A comparison of
+unmanned aerial vehicles (drones) and manned helicopters for monitoring
+macropod populations. <em>Wildlife Research</em> <strong>45</strong>,
+586-594.</p>
+<p>Gentle, M, Pople, A (2013) Effectiveness of commercial harvesting in
+controlling feral-pig populations. <em>Wildlife Research</em>
+<strong>40</strong>, 459-469.</p>
+<p>Hodgson, JC, Mott, R, Baylis, SM, Pham, TT, Wotherspoon, S,
+Kilpatrick, AD, Raja Segaran, R, Reid, I, Terauds, A, Koh, LP (2018)
+Drones count wildlife more accurately and precisely than humans.
+<em>Methods in Ecology and Evolution</em> <strong>9</strong>,
+1160-1167.</p>
+<p>Holbery, S, Leane, M, Willis, R (2015) The use of aerial survey to
+support rabbit control and native vegetation regeneration on the Hay
+Plains of NSW. <em>Australasian Plant Conservation: Journal of the
+Australian Network for Plant Conservation</em> <strong>24</strong>,
+8-9.</p>
+<p>Jackson, W, Argent, RM, Bax, NJ, Clark, GF, Coleman, S, Cresswell,
+ID, Emmerson, KM, Evans, K, Hibberd, MF, Johnston, EL (2017) Australia
+state of the environment 2016: overview, independent report to the
+Australian Government Minister for the Environment and Energy.
+Department of the Environment and Energy, Canberra.</p>
+<p>Koichi, K, Holliday, D, Harris, Ce, 2020. Glovebox Guide for Managing
+Feral Pigs v2.0. PestSmart Toolkit publication. The Centre for Invasive
+Species Solutions, Canberra ACT.</p>
+<p>Lamprey, R, Ochanda, D, Brett, R, Tumwesigye, C, Douglas-Hamilton, I
+(2020) Cameras replace human observers in multi-species aerial counts in
+Murchison Falls, Uganda. <em>Remote Sensing in Ecology and
+Conservation</em> <strong>6</strong>, 529-545.</p>
+<p>Lethbridge, M, Jennings, S (2009) FINAL REPORT. 2009 Deer Survey of
+the South-east of South Australia. Terrestrial Ecosystem Services Pty
+Ltd and Department for Environment and Heritage SA, Adelaide.</p>
+<p>Lethbridge, M, Saalfeld, KW, Edwards, GP (2016) Measured reductions
+in the density of camels under the Australian Feral Camel Management
+Project. <em>The Rangeland Journal</em> <strong>38</strong>,
+173-179.</p>
+<p>Lethbridge, M, Stead, M, Wells, C (2019) Estimating kangaroo density
+by aerial survey: A comparison of thermal cameras with human observers.
+<em>Wildlife Research</em> <strong>46</strong>, 639-648.</p>
+<p>Lethbridge, M, Stead, M, Wells, C, Shute, E (2020) Baseline aerial
+survey of fallow deer and forester kangaroo populations, Tasmania.</p>
+<p>Linklater, WL, Cameron, EZ, Stafford, KJ, Minot, EO (2001) Estimating
+Kaimanawa feral horse population size and growth. <em>Science &amp;
+Research Internal Report</em> <strong>185</strong>, 1-40.</p>
+<p>Lundie-Jenkins, G, Pople, AR, Hoolihan, D (2003) 'Using kangaroo
+surveys to monitor biodiversity, Unpublished commissioned paper by an
+Expert Technical Workshop: Biodiversity Monitoring in the Rangelands–a
+way forward.' (Citeseer:</p>
+<p>Martin, JT, Zickefoose, J (1976) The effectiveness of aerial survey
+for determining the distribution of rabbit warrens in a semiarid
+environment. <em>Wildlife Research</em> <strong>3</strong>, 79-84.</p>
+<p>Melville, GJ, Tracey, JP, Fleming, PJS, Lukins, BS (2008) Aerial
+surveys of multiple species: critical assumptions and sources of bias in
+distance and mark–recapture estimators. <em>Wildlife Research</em>
+<strong>35</strong>, 310-348.</p>
+<p>Mitchell, B, Balogh, S (2007a) Monitoring Techniques for Vertebrate
+Pests: Feral Goats. NSW Department of Primary Industries, Sydney,
+NSW.</p>
+<p>Mitchell, B, Balogh, S (2007b) Monitoring Techniques for Vertebrate
+Pests: Feral Pigs. NSW Department of Primary Industries, Sydney,
+NSW.</p>
+<p>Moloney, P, Scroggie, M, Ramsey, D (2018) Revisiting the Victorian
+kangaroo aerial survey design. Client Report. Unpublished. Arthur Rylah
+Institute for Environmental Research, Department of Environment, Land,
+Water and Planning, Heidelberg, Victoria.</p>
+<p>Moriarty, A, Brown, A (2012) 'Ecological Deer Management Manual.'
+(Game Council NSW:</p>
+<p>Pople, AR, Clancy, TF, Thompson, JA, Boyd-Law, S (1998) Aerial survey
+methodology and the cost of control for feral goats in western
+Queensland. <em>Wildlife Research</em> <strong>25</strong>, 393-407.</p>
+<p>Pople, AR, McLeod, SR (2010) Demography of feral camels in central
+Australia and its relevance to population control. <em>The Rangeland
+Journal</em> <strong>32</strong>, 11-19.</p>
+<p>Ross, B, Perry, JJ, Waltham, N, Macdonald, S, Mitchell, J (2017)
+Managing Feral Pigs for Biodiversity Conservation in Cape York: A
+Ranger's Handbook. Balkanu Cape York Corporation, Cairns.</p>
+<p>Samuel, G (2020) Independent Review of the EPBC Act: Final Report.
+No. 1760033022.</p>
+<p>Saunders, D, Pople, AR, McLeod, S (2022) Studying wildlife from the
+air. In 'Wildlife Research in Australia: Practical and Applied Methods.'
+(Eds B Smith, H Waudby, C Alberthsen, J Hampton.) pp. 96. (CSIRO
+Publishing: Melbourne)</p>
+<p>Smith, BP, Waudby, HP, Dickman, CR, Soennichsen, K, Mills, C, Howe,
+A, Woolley, L-A, Griffiths, SR, Cox, TE, Clayton, J (2022) Chapter 4:
+Observing wildlife and its signs. In 'Wildlife Research in Australia.
+Practical and Applied Methods.' (Eds B Smith, H Waudby, C Alberthsen, J
+Hampton.) (CSIRO Publishing: Melbourne)</p>
+<p>Sudholz, A, Denman, S, Pople, A, Brennan, M, Amos, M, Hamilton, G
+(2021) A comparison of manual and automated detection of rusa deer
+(<em>Rusa timorensis</em>) from RPAS-derived thermal imagery.
+<em>Wildlife Research</em></p>
+<p>Tracey, JP (2004) Assessing estimators of feral goat (<em>Capra
+hircus</em>) abundance. University of Canberra.</p>
+<p>Tracey, JP, Fleming, PJ, Melville, GJ (2008) Accuracy of some aerial
+survey estimators: contrasts with known numbers. <em>Wildlife
+Research</em> <strong>35</strong>, 377-384.</p>
+<p>Tracey, JP, Fleming, PJS, Melville, GJ (2005) Does variable
+probability of detection compromise the use of indices in aerial surveys
+of medium-sized mammals? <em>Wildlife Research</em> <strong>32</strong>,
+245-252.</p>
+<p>Urbanek, RE, Nielsen, CK, Preuss, TS, Glowacki, GA (2012) Comparison
+of aerial surveys and pellet‐based distance sampling methods for
+estimating deer density. <em>Wildlife Society Bulletin</em>
+<strong>36</strong>, 100-106.</p>
+<p>Walter, MJ, Hone, J (2003) A comparison of 3 aerial survey techniques
+to estimate wild horse abundance in the australian alps. <em>Wildlife
+Society Bulletin</em> <strong>31</strong>, 1138-1149.</p>
+<p>Ward, BG, Ward, CG, Liddelow, GL, 2005. Camel Populations in Central
+Western Australia Determined from Aerial Surveys.</p>
+<p>Wilson, GR, Hill, GJE, Barnes, A (1987) An aerial survey of feral
+pigs and emus in southeastern Queensland. <em>Wildlife Research</em>
+<strong>14</strong>, 515-520.</p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """<h2 id="key-definitions-and-terminology">Key definitions and
+terminology</h2>
+<table>
+<colgroup>
+<col style="width: 21%"/>
+<col style="width: 78%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BACI study design</td>
+<td>Before-After-Control-Impact (BACI) designed studies utilise a before
+and after count of the population, and in between these counts undertake
+an intervention such as an aerial shoot, and then assess the
+impact.</td>
+</tr>
+<tr class="even">
+<td>Crepuscular</td>
+<td>Animals active in the first and last light of the day. These animals
+may also be active during the night.</td>
+</tr>
+<tr class="odd">
+<td>Distance sampling boom</td>
+<td>A pole with calibrated distance markings indicated that extends out
+perpendicular from the helicopter or Cessna skid. Observed animals are
+recorded being in one of the distance classes marked on the calibrated
+pole.</td>
+</tr>
+<tr class="even">
+<td>Double count</td>
+<td>Whereby two observers count the same transect to provide a double
+count, which can be used to estimate the average visibility bias and an
+average correction factor for observational bias.</td>
+</tr>
+<tr class="odd">
+<td>Fixed-wing aircraft</td>
+<td>Type of aircraft that is capable of flight through using its wings
+to generate lift.</td>
+</tr>
+<tr class="even">
+<td>GNSS</td>
+<td>Global Navigation Satellite System – the standard generic term for
+satellite navigation systems that provide autonomous geo-spatial
+positioning with global coverage. Common GNSS are GPS, GLONASS, Galileo,
+Beidou and other regional systems. The advantage to having access to
+multiple satellites is accuracy, redundancy and availability at all
+times. Though satellite systems do not often fail, if one fails GNSS
+receivers can pick up signals from other systems. Also, if line of sight
+is obstructed, having access to multiple satellites is also a
+benefit.</td>
+</tr>
+<tr class="odd">
+<td>Ground speed</td>
+<td>Average flight speed (kilometres per hour).</td>
+</tr>
+<tr class="even">
+<td>Height</td>
+<td>Average flight height above ground level (metres).</td>
+</tr>
+<tr class="odd">
+<td>Helicopter</td>
+<td>A type of aircraft that is capable of flight through using
+horizontal revolving overhead rotors to generate lift.</td>
+</tr>
+<tr class="even">
+<td>Line transect</td>
+<td>Where the distance from the aerial transect line to the animals is
+measured based on categorical distance classes, allowing data analysis
+using distance sampling.</td>
+</tr>
+<tr class="odd">
+<td>Observational/perception bias</td>
+<td>Each observer has their own unique physical abilities for visual
+perception, including their scanning techniques, the way they identify
+and differentiate individual animals, and the speed at which they
+document their observations. These factors impact their likelihood of
+either overlooking or spotting a target animal.</td>
+</tr>
+<tr class="even">
+<td>Precision in count data</td>
+<td>Assessing how close an observer's count is to the likely true number
+of animals to be counted. Determined by comparing the counts of two
+observers on the same side of the aircraft and then also correcting the
+third observer.</td>
+</tr>
+<tr class="odd">
+<td>Strip transect/fixed width transects (distance sampling)</td>
+<td>Where all animals within a fixed distance of the aircraft or within
+a designated area are counted. In aerial surveys this usually involves a
+Civil Aviation Safety Authority (CASA) approved calibrated pole, wires
+or cords being affixed to the wing strut, or a calibrated boom attached
+to the helicopter.</td>
+</tr>
+<tr class="even">
+<td>Unmanned aerial vehicles (UAV / drone)</td>
+<td>A battery-powered fixed wing (plane) or rotating rotor blade(s)
+(helicopter) aircraft used for filming and counting animals. A common
+UAV has 4-6 rotating wings and is limited to fly only within line of
+sight of the operator. UAV cameras can be digital or thermal.</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    skos:note """<h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 class="unnumbered" id="general-information">General information
+</h4>
+<ul>
+<li><p>To enable repeatability of surveys and comparison of results, the
+altitude and speed of the aircraft should be as constant as
+possible.</p></li>
+<li><p>Graduated sighting poles can be calibrated for the desired ground
+distance classes when flying at the desired height above ground level
+(Buckland <em>et al.</em> 1993). Calibration is undertaken using ground
+markers positioned at the desired spacing of distance classes, with the
+aircraft flying past these markers at the desired height above ground
+level.</p></li>
+<li><p>If undertaking a repeat survey, repeat the transects, timing, and
+flight details of the previous survey so results can be
+compared.</p></li>
+<li><p>Ideally, flight lines should be flown either north-south or
+east-west, as this allows the pilot to follow lines of latitude or
+longitude and greatly reduces the complexity of navigation (Didkowsky
+2010).</p></li>
+<li><p>Determining transect spacing:</p></li>
+</ul>
+<ul>
+<li><p>In areas of high visibility an estimate of absolute abundance may
+be desired. In such cases, it is important for the transect lines to
+abut, ensuring that animals observed near the edge of one line remain
+visible from the next line (Didkowsky 2010).</p></li>
+<li><p>Alternatively, an estimate of relative abundance may be desired
+where each transect should be spaced according to the animal being
+surveyed and the sightability conditions in the survey area, with survey
+lines often spaced further apart in open habitats (Didkowsky 2010).
+Spacing should also reflect the target species. For example, deer
+transects may need to be spaced 1 km apart (Amos <em>et al.</em> 2014b),
+though 400 m spacing is used for mule and white-tailed deer in Alberta,
+Canada (Didkowsky 2010), while camel transects can be over 10 km apart
+(Edwards <em>et al.</em> 2004; <a href="#appendix-2">Appendix
+2</a>).</p></li>
+</ul>
+<ul>
+<li><p>Experienced observers:</p></li>
+</ul>
+<ul>
+<li><p>Each observer will have their own mobile device with the Monitor
+app to record fauna observations.</p></li>
+<li><p>Pilots should not be involved in the field survey (Didkowsky
+2010; Lethbridge et al. 2019); noting exceptions are made for open
+habitats, as per Deacy et al. (2019).</p></li>
+<li><p>Inexperienced observers should be limited to one per aircraft,
+and they should sit on the same side of the aircraft as the most highly
+experienced observer, who can provide training (Didkowsky
+2010).</p></li>
+</ul>
+<h4 class="unnumbered" id="weather-conditions">Weather conditions</h4>
+<ul>
+<li><p>Weather conditions can change throughout the survey, it is
+recommended that weather information is reviewed and updated (if
+required) against the fauna aerial survey details at the completion of
+the survey.</p></li>
+<li><p>In the absence of a weather station or temperature gauge on site,
+use the Bureau of Meteorology website (or other weather apps) to
+estimate the temperature at the time of the survey for the closest
+weather station.</p></li>
+</ul>
+<h4 class="unnumbered" id="aerial-survey">Aerial survey </h4>
+<ul>
+<li><p>Observers should minimise communication about animal presence to
+maintain the independence of surveyor observations/counts.</p></li>
+<li><p>Surveys should be well planned to minimise the fatigue of the
+observers, which may affect their ability to observe wildlife and/or
+record accurate data (Didkowsky 2010). Similarly, workloads must be
+managed to avoid undue pressure to complete a survey within a specific
+timeframe. Excessive schedules lead to fatigue and impact data quality
+(Didkowsky 2010).</p></li>
+<li><p>Where doors have been removed from the helicopter for the survey,
+ensure all items of recording equipment (e.g. mobile device, GNSS
+device) are securely attached to the observer or the aircraft.</p></li>
+<li><p>Animals will flee at the aircraft's approach, and it is important
+that the distance sample zone should be the one in which the animal was
+first sighted.</p></li>
+<li><p>For double counts by two observers on the same side of the
+aircraft, when analysing the data, the distance for double-counted
+animals/herds/groups should be taken as that recorded by the front
+observer.</p></li>
+</ul>"""^^rdf:HTML ;
+    skos:prefLabel "Fauna Aerial Surveys" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/fauna_aerial_surveys/fauna-aerial_surveys.ttl"^^xsd:anyURI ;
+    tern:appendix """<h1 id="appendices">Appendices</h1>
+<h3 id="appendix-1">Appendix 1. Data
+collection fields relevant to the Fauna Aerial Surveys Module</h3>
+<p>Complete lists are provided in the Monitor app, as well as the TERN
+website.</p>
+<h4 class="unnumbered" id="aircraft-details">Aircraft details</h4>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Aircraft Type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Plane</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Helicopter</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Aircraft make and model  </strong></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Cessna 182</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cessna 206</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Cessna 210</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Bell Jet Ranger</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Hughes 500</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Robinson R22</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Robinson R44</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other </p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Text (predictive text)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Helicopter doors  </strong></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>In situ</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Removed</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h4 class="unnumbered" id="observer-details">Observer details</h4>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Observer experience (hours)  </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>&lt; 5</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>5 – 10</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>10 - 20</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>20 - 50</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>50 - 200</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>200 - 500</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>500 – 1,000</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>&gt; 1,000</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Observer position  </strong></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Front left</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Front right</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Rear left</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rear right</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Rear centre</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h4 class="unnumbered" id="target-species-list">Target Species list</h4>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Target Species  </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Cat (<em>Felis catus</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Fox (<em>Vulpes vulpes</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Wild dog (<em>Canis lupus</em>) (drop-down)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Dog (<em>Canis lupus fam</em>iliaris)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Dingo (<em>Canis lupus dingo</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Dingo-Dog hybrid</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rabbit (<em>Oryctolagus cuniculus</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Deer (drop-down)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Fallow deer (<em>Dama dama</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Rusa deer (<em>Rusa timorensis</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Red deer (<em>Cervus elaphus</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Chital deer (<em>Axis axis</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Hog deer (<em>Axis porcinus</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Goat (<em>Capra hircus</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Pig (<em>Sus scrofa</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Horse (<em>Equus caballus</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Camel (<em>Camelus dromedaries</em>)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other </p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Text (predictive text)</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h4 class="unnumbered" id="weather-conditions-1">Weather conditions</h4>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weather conditions </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Temperature</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Actual BOM/weather station <sup>o</sup>C</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rainfall</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Showers</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rain</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Drizzle</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Frost</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Mist</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Thunderstorm</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p> Rainfall duration</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Intermittent</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Occasional</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Frequent</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Continuous</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Periods of rain</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Brief</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cloud cover</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Sunny</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Mostly sunny</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Partly cloudy</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cloudy</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Overcast</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p> Wind</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Calm</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Light winds</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Moderate winds</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Fresh winds</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Strong winds</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Near gale</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Gale</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p> Moon phase</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>New moon</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>First quarter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Full moon</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Third quarter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Weather comments</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Free text description</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h3 id="appendix-2">Appendix 2. Recommended
+survey designs providing examples for target pest fauna</h3>
+<table>
+<colgroup>
+<col style="width: 5%"/>
+<col style="width: 13%"/>
+<col style="width: 23%"/>
+<col style="width: 11%"/>
+<col style="width: 45%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pest fauna</th>
+<th>Recommended approach</th>
+<th>Survey design</th>
+<th>Active period</th>
+<th>Other comments / considerations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Feral cat</td>
+<td>N/A</td>
+<td><ul>
+<li><p>N/A</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly nocturnal.</p></li>
+<li><p>Greatest periods of activity are during dusk and dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Feral cats may be observed during aerial surveys for other pest
+species where their presence should be noted.</p></li>
+<li><p>Aerial surveys are not suitable as a standalone method for
+monitoring feral cats.</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Fox</td>
+<td>Fixed-wind aircraft</td>
+<td><ul>
+<li><p>Dens counted within a defined area.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly nocturnal.</p></li>
+<li><p>Most active from dusk until dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>An aerial survey is not currently a suitable standalone method
+for monitoring foxes.</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Wild dog</td>
+<td>Fixed-wing aircraft</td>
+<td><ul>
+<li><p>Strip transects where a double count method is used.</p></li>
+<li><p>Fixed-wing aircraft should be flown at 76 m and speed of 185
+km/hr.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly nocturnal.</p></li>
+<li><p>Greatest periods of activity are during dusk and dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Wild dogs have been observed during aerial surveys with a
+different species focus.</p></li>
+<li><p>UAVs with or without thermal technology may also be
+used.</p></li>
+<li><p>An aerial survey is not currently a suitable standalone method
+for monitoring wild dogs.</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Rabbit</td>
+<td>Helicopter</td>
+<td><ul>
+<li><p>Warrens either 500 m (Holbery <em>et al.</em> 2015) or 800 m from
+the transect recorded (Martin and Zickefoose 1976).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly nocturnal.</p></li>
+<li><p>Active from dusk until dawn.</p></li>
+<li><p>The greatest periods of activity are during dusk and
+dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Video cameras can be attached to helicopters (Holbery <em>et
+al.</em> 2015).</p></li>
+<li><p>An aerial survey is not a suitable standalone method for
+monitoring rabbits.</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Feral deer</td>
+<td>Helicopter</td>
+<td><ul>
+<li><p>The survey area should be stratified and transects randomly or
+systematically selected based on the study aims (Moriarty and Brown
+2012).</p></li>
+<li><p>Transects should be flown at a constant speed (85 km/hr) and
+altitude (30-45 m) (Moriarty and Brown 2012).</p></li>
+<li><p>For line transects, all animals should be recorded. For strip
+transects, all individuals within an 100 m width should be counted
+(Mitchell and Balogh 2007a).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Activity depends on deer species:</p></li>
+<li><p>Sambar peak activity near sunset.</p></li>
+<li><p>Red deer peak at dawn and dusk.</p></li>
+<li><p>Fallow peak at dusk and dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>For larger areas fixed wing aircraft are recommended because of
+their lower running costs (Moriarty and Brown 2012).</p></li>
+<li><p>UAVs with or without thermal technology may also be used (Sudholz
+<em>et al.</em> 2021).</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Feral goat</td>
+<td>Fixed-wing aircraft or helicopter</td>
+<td><ul>
+<li><p>The double-count method should be used.</p></li>
+<li><p>The survey area should be divided into sampling units with random
+or systematic used to select transect locations (Mitchell and Balogh
+2007a).</p></li>
+<li><p>Surveys should be completed in the first or last three hours of
+daylight (Mitchell and Balogh 2007a).</p></li>
+<li><p>Transects should be flown at a constant speed and altitude
+(Mitchell and Balogh 2007a).</p></li>
+<li><p>Mitchell and Balogh (2007a) recommend a height of 76 m (250 ft)
+and flight speed of 185 km h<sup>–1</sup> (100 knots) for fixed-wing
+aircraft surveys and a height of 30 m (100 ft) in open country, 45 m
+(150 ft) in the country with tall trees, and a flight speed of 85 km
+h<sup>–1</sup> (45 knots) for helicopter surveys.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly diurnal.</p></li>
+<li><p>Peak activity in the early morning and late afternoon.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Helicopters are more useful where the location necessitates slow
+and low travel (Lundie-Jenkins <em>et al.</em> 2003), such as in rugged
+terrain (Tracey 2004).</p></li>
+<li><p>Transects should be no more than 12 minutes in duration with 30
+seconds to one minute breaks between transects to manage
+fatigue.</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Feral pig</td>
+<td>Helicopter</td>
+<td><ul>
+<li><p>The survey should be conducted in the last three hours of
+daylight (Mitchell and Balogh 2007b).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Peak activity in the early morning and late afternoon (Koichi
+<em>et al.</em> 2020).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Surveys should be undertaken when there is little to no cloud and
+temperatures that do not exceed 25°C.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+"""^^rdf:HTML ;
+    tern:equipment """<h3 id="equipment">Equipment</h3>
+<ul>
+<li><p>Mobile device (tablet/phone) with the Monitor app
+pre-loaded.</p></li>
+<li><p>GNSS, such as a Trimble R1 or DA2 receiver, a hand-held GPS or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy.</p></li>
+<li><p>Appropriate cables to link mobile survey devices to the aircraft
+GNSS system, if not using individual GNSS enabled devices.</p></li>
+<li><p>Hard copy topographic maps of the survey area with planned
+transects marked for reference.</p></li>
+<li><p>Appropriate aircraft meeting legislative requirements for aerial
+surveys.</p></li>
+<li><p>Calibrated pole, boom, wires, or cord affixed to aircraft
+(dependent on survey method used).</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """<h1 id="fauna-aerial-survey-protocol">Fauna aerial survey protocol</h1>
+<h2 id="field-collection">Field collection</h2>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<li><p>The protocol requires the appropriate approvals and permits from
+state/territory jurisdictions responsible for administering scientific
+research on wildlife and conducting aerial research.</p></li>
+<li><p>Conducting aerial surveys requires the appropriate permits and
+approvals from the Civil Aviation Safety Authority (CASA).</p></li>
+</ul>
+<h3 id="time-requirements">Time requirements</h3>
+<ul>
+<li><p>The time required to undertake a fauna aerial survey is highly
+variable and dependent upon the lengths of the transects, area of survey
+and the ground speed of the aircraft.</p></li>
+<li><p>Allow 1-2 hours for survey planning.</p></li>
+<li><p>Allow 0.5–1 hour to complete fauna aerial survey details (desktop
+component) and preparing equipment before commencing the aerial
+survey.</p></li>
+</ul>
+<h3 id="personnel-requirements">Personnel requirements</h3>
+<p>Number of personnel and skills:</p>
+<ul>
+<li><p>The recommended approach is to have three observers to correct
+observational bias and determine precision in the count data. However,
+surveys can operate with only two observers.</p></li>
+<li><p>Pilot with appropriate experience and flying
+permissions.</p></li>
+<li><p>The surveyors making the observations should be familiar with and
+experienced in identifying the characteristic identifiable features of
+the target species.</p></li>
+</ul>
+<h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<h4 class="unnumbered" id="pre-survey-planning">Pre-survey planning</h4>
+<ul>
+<li><p>Assess the survey area to determine the number of transects,
+transect length and location required to survey the target area
+effectively.</p></li>
+<li><p>Determine transect alignment and transect spacing.</p></li>
+<li><p>Select altitude and speed to suit the terrain, vegetation type
+and other factors influencing sightability (Didkowsky 2010).</p></li>
+<li><p>Select survey start time to reflect the behaviour of the species
+being surveyed (Smith <em>et al.</em> 2022).</p></li>
+<li><p>Source an aircraft and experienced pilot (minimum hour
+requirements have been specified by some government agencies; Didkowsky
+2010). Supply the pilot with planned transects.</p></li>
+<li><p>Source experienced (where possible) observers.</p></li>
+<li><p>Assess weather forecast to ensure conditions are suitable. If
+surveys are to be repeated over multiple days, ideally, the weather
+should be similar for each survey.</p></li>
+</ul>
+<h4 class="unnumbered" id="fauna-aerial-survey-details-desktop-component">Fauna aerial survey
+details (desktop component)</h4>
+<ol type="1">
+<li><p>In the Monitor app, navigate to the <em>Fauna Aerial Surveys
+Module</em> &gt; <em>Fauna aerial surveys protocol.</em></p></li>
+<li><p>Select if the survey is new or a repeat survey. The app will
+automatically generate a survey ID for a new survey. If it is a repeat
+survey, add in the survey ID from the original survey.</p></li>
+<li><p>Enter a <em>survey name</em> (e.g. ‘Spring 2023
+survey’).</p></li>
+<li><p>Record a general description of the survey location, including
+nearest town or landmark in the <em>location description.</em></p></li>
+<li><p>Record a brief description of the <em>survey aim</em> and a brief
+description of the area the survey is targeting (e.g. area being
+targeted, description of major vegetation habitat) in <em>summary of the
+survey area</em>.</p></li>
+<li><p>Select the <em>aircraft type</em> that will be used for the
+survey and the <em>aircraft model</em> from the drop-down lists. If the
+aircraft is not listed, select <em>other</em> and manually enter the
+aircraft details.</p></li>
+<li><p>If using a helicopter, record the <em>status of helicopter
+doors,</em> select if doors are being kept on or removed for the
+survey.</p></li>
+<li><p>Record the observers that will be participating in the survey
+under <em>observer details</em>, including the <em>observer name</em>
+(first name, last name) and the observer’s <em>aerial survey</em>
+<em>experience hours</em> from the dropdown list.</p></li>
+<li><p>Select the <em>add observer detail</em> button to complete the
+data entry for the observer. Select the + button to add a new observer
+and their corresponding details. Repeat step 8 and 9 until all observers
+have been recorded. The observer list will populate a dropdown list that
+will be accessible during the field survey.</p></li>
+<li><p>Record the <em>pilot name</em>, <em>aircraft owner/business
+name</em> and <em>aircraft identification</em>.</p></li>
+<li><p>Record the <em>average</em> <em>flying height (m)</em> and
+<em>average ground speed (km/h)</em> planned for the survey.</p></li>
+<li><p>Record the planned <em>transect length (km)</em>, <em>transect
+width (m)</em> and <em>transect spacing (m)</em> for the
+survey.</p></li>
+<li><p>Select from the dropdown list the <em>transect alignment</em>, if
+the alignment required is not listed, select <em>other</em> and manually
+enter the alignment.</p></li>
+<li><p>Select the <em>survey type</em>:</p></li>
+</ol>
+<ul>
+<li><p><em>Strip transect</em> - enter the <em>fixed width
+(m)</em></p></li>
+<li><p><em>Line transect</em> - define <em>distance sampling categories
+(m)</em> for selecting when implementing the aerial survey e.g.</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 41%"/>
+<col style="width: 58%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Distance (m)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0-20</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>21-40</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>41-60</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>61-80</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>81-100</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>&gt;100</td>
+</tr>
+</tbody>
+</table>
+<ol start="15" type="1">
+<li><p>Select the <em>target species</em> from the dropdown list.
+Multiple species can be selected. If the species is not available,
+select <em>other</em> and manually enter the species name. This will
+create the quick access species list for the aerial survey.</p></li>
+<li><p>Record <em>weather conditions</em> for the time of the aerial
+survey, including <em>temperature</em>, <em>rainfall</em>, <em>duration
+of rainfall</em>, <em>cloud cover</em>, <em>wind speed</em>, and
+<em>moon phase</em>. Note the weather conditions can be adjusted at the
+completion of the aerial survey.</p></li>
+<li><p>To save and review, select <em>complete fauna aerial survey
+details</em>. Select <em>edit this collection</em> to make any changes
+required.</p></li>
+<li><p>Select <em>prepare to work offline</em> to update the mobile
+devices that will be used as part of the aerial survey (see the
+Preparing the Monitor App for Offline Use information sheet).</p></li>
+</ol>
+<h4 class="unnumbered" id="fauna-aerial-survey">Fauna aerial survey
+</h4>
+<ol type="1">
+<li><p>Ensure each mobile device is connected correctly to the
+aircraft's GNSS. If using an external GNSS, ensure it is turned on and
+connected to the mobile/tablet.</p></li>
+<li><p>In the Monitor app, navigate to the <em>Fauna Aerial Surveys
+Module</em> &gt; <em>Fauna aerial surveys protocol &gt; begin
+survey.</em></p></li>
+<li><p>Select <em>observer name</em> and record <em>seat position</em>
+in the aircraft (seating position is from the inside looking
+forward).</p></li>
+<li><p>When the aircraft commences the flight transect, select <em>start
+transect</em>. The time and coordinates at the starting position will be
+automatically recorded. A <em>transect ID</em> will be automatically
+generated (if a survey consists of multiple transects, each will be
+given a sequential ID).</p></li>
+<li><p>When a target species is observed:</p>
+<ul>
+<li><p>Select the <em>target species icon.</em></p></li>
+<li><p>Record <em>count</em> for number of species observed.</p></li>
+<li><p>If conducting a line transect (distance sampling) record the
+<em>distance</em> category the observations was made at.</p></li>
+<li><p>Record any other <em>comments</em> about the observation in the
+free text box (optional).</p></li>
+<li><p>Select <em>save observation.</em></p></li>
+<li><p>Repeat the above step for all observations on the
+transect.</p></li>
+</ul>
+</li>
+<li><p>Once the transect has been completed, select <em>end
+transect</em> to automatically record the time and location and complete
+the track log.</p></li>
+<li><p>Selection of <em>end transect</em> will bring up a
+<em>post-transect comments</em> field. Add any additional notes about
+the transect here before finalising the transect.</p></li>
+<li><p>Select <em>save and complete transect</em> to finalise the
+transect.</p></li>
+<li><p>Select <em>add transect</em> to start recording another transect
+within the same survey area (repeat steps 4–8).</p></li>
+<li><p>When all transects have been completed, select end survey, this
+will bring up a survey comments field. Add any additional notes about
+the survey (e.g. changes in weather conditions during the survey) before
+finalising the survey.</p></li>
+</ol>"""^^rdf:HTML ;
+    tern:purpose """<h2 id="rationale">Rationale</h2>
+<p>Fauna aerial surveys are used to obtain abundance, distribution and
+time series information about populations of medium to large animals
+that are visible from the air (Saunders <em>et al.</em> 2022).
+Consequently, they can be used to monitor management effectiveness by
+determining the extent of population reduction through control
+activities (Lethbridge <em>et al.</em> 2016; Saunders <em>et al.</em>
+2022). Aerial surveys can rapidly cover large and inaccessible areas and
+can be used across a range of systems (Saunders <em>et al.</em> 2022).
+Aerial counts are usually the most cost-effective and often the only
+feasible method for monitoring abundance on a broad scale, especially
+for species inhabiting remote areas at low densities (Lethbridge <em>et
+al.</em> 2016; Saunders <em>et al.</em> 2022).</p>
+<p>Developing national standardised methods for aerial surveys is
+complex due to the variety of terrain and vegetation types present
+(Tracey 2004; Tracey <em>et al.</em> 2005). Survey designs are also
+dictated by the target species (i.e. distribution, range, activity).
+Consequently, a flexible approach has been developed for the Fauna
+Aerial Surveys Module, which is focused on standardising the recording
+of survey data, rather than specifying how to conduct the survey.
+Setting minimum data standards will ensure that aerial surveys are
+undertaken transparently and that survey design and effort can be
+verified, along with any observation data (Dyer and Simmonds 2021).</p>
+<p>Variables associated with aerial surveys can influence results,
+including observers and experience, flight height and speed, weather,
+time of the day and vegetation cover (Saunders <em>et al.</em> 2022).
+Consequently, documenting the methods used for aerial surveys with
+sufficient levels of detail is crucial to determine the data quality and
+appropriate analysis. Automated recording of survey details (flight date
+and time, height, speed, and track logs) through the app ensures flight
+paths are documented and facilitates flexibility in designs while
+ensuring that enough information is collected to allow surveys to be
+repeated. In addition, data collection through the Monitor app removes
+transcription errors and facilitates data management, access and
+sharing.</p>"""^^rdf:HTML ;
+    tern:scope """<h1 id="introduction-and-background">Introduction and Background</h1>
+<p>The Fauna Aerial Surveys Module outlines the procedures and
+guidelines for recording the details of an aerial survey and any fauna
+observed. Aerial surveys involve the detection and counting of animals
+from an aircraft and are commonly used to monitor the abundance, density
+and distribution of medium to large vertebrate fauna across broad areas.
+Conventional aerial surveys are undertaken using aircraft during
+daylight hours, with onboard observers recording direct visual counts of
+animals, or groups of animals, seen within a designated area (Linklater
+<em>et al.</em> 2001; Bureau of Land Management 2005; Mitchell and
+Balogh 2007b).</p>
+<p>Fauna aerial survey design varies between studies and the species
+targeted, including the transect length, width and spacing, flight
+height and ground speed, and the time and extent of search effort (e.g.
+Melville <em>et al.</em> 2008; Tracey <em>et al.</em> 2008; Gentle and
+Pople 2013; Amos <em>et al.</em> 2014a; Algar <em>et al.</em> 2020;
+Lethbridge <em>et al.</em> 2020; Saunders <em>et al.</em> 2022).
+Consequently, the Fauna Aerial Surveys Module focuses on standardising
+the recording of survey information and fauna observations rather than
+providing prescriptive guidelines for how surveys should be undertaken.
+Survey design should be tailored to the habitat and ecology of the
+target fauna species, and recommendations are provided within the module
+to assist with survey planning (<a href="#appendix-2">Appendix
+2</a>).</p>
+<p>This module requires specialist equipment and training, and
+suitability should be assessed according to the project requirements,
+study area and target species. In addition, the module must be conducted
+with the appropriate approvals and permits from state/territory
+jurisdictions responsible for administering scientific research on
+wildlife and conducting aerial research.</p>
+<p>The Fauna Aerial Surveys Module approach is based on the <em>Ranger's
+Handbook: Monitoring Feral Animal Populations</em> and the associated
+aerial survey app <em>Distance Sampler</em> (Ross <em>et al.</em> 2017).
+Other programs and project-based methods that have been considered
+include:</p>
+<ul>
+<li><p>NSW DPI guidelines for feral pigs and goats (Mitchell and Balogh
+2007b, 2007a).</p></li>
+<li><p>Aerial survey methodology and the cost of control for feral goats
+in western Queensland (Pople <em>et al.</em> 1998).</p></li>
+<li><p>Revisiting the Victorian kangaroo aerial survey design (Moloney
+<em>et al.</em> 2018).</p></li>
+<li><p>Estimating kangaroo density by aerial survey. A comparison of
+thermal cameras with human observers (Lethbridge <em>et al.</em>
+2019).</p></li>
+<li><p>Baseline aerial survey of fallow deer and forester kangaroo
+populations, Tasmania (Lethbridge <em>et al.</em> 2020).</p></li>
+<li><p>Advances in aerial survey methods for macropods in New South
+Wales and Queensland (Finch <em>et al.</em> 2021).</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508> ,
+        <https://linked.data.gov.au/def/nrm/35239cb4-d7eb-4794-9148-7aed051d731c> ,
+        <https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6> ,
+        <https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6> ;
+.
+
