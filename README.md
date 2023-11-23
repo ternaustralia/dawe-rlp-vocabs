@@ -2,15 +2,15 @@
 [![Publish to demo environment of Research Vocabularies Australia](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_rva_demo_env.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_rva_demo_env.yml)
 [![Publish on release to GraphDB](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_graphdb.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/publish_to_graphdb.yml)
 
-# NRM Controlled Vocabularies
+# Ecological Monitoring System - Australia (EMSA) Controlled Vocabularies
 
-> ⚠️ Until version 1.0.0, the controlled vocabularies and its content may change.
+> ⚠️ Until version 1.0.0, the controlled vocabulary and its content may change.
 
-This repository contains the source data for the controlled vocabularies used by the Natural Resource Management (NRM) field survey collection protocols.
+This repository contains the source data for the controlled vocabularies for the Ecological Monitoring System - Australia field survey collection protocols.
 
-The controlled vocabularies are published to ARDC's Research Vocabularies Australia as [Natural Resource Management Survey Vocabularies](https://vocabs.ardc.edu.au/viewById/639). The NRM controlled vocabularies can also be viewed on TERN's Linked Data website at https://linkeddata.tern.org.au/viewers/dawe-vocabs.
+The controlled vocabularies are published in ARDC's Research Vocabularies Australia. The EMSA-controlled vocabularies can also be viewed on TERN's Linked Data website at https://linkeddata.tern.org.au/viewers/dawe-vocabs.
 
-The NRM controlled vocabularies use persistent identifiers issued by the [Australian Government Linked Data Working Group](https://www.linked.data.gov.au/) (AGLDWG). The base URI issued for this project is:
+The EMSA-controlled vocabularies use persistent identifiers issued by the [Australian Government Linked Data Working Group](https://www.linked.data.gov.au/) (AGLDWG). The base URI issued for this project is:
 
 ```
 https://linked.data.gov.au/def/nrm/
@@ -18,23 +18,23 @@ https://linked.data.gov.au/def/nrm/
 
 Submission: [AGLDWG PID Catalogue](https://catalogue.linked.data.gov.au/index.php/resource/239).
 
-The NRM controlled vocabularies are located in the [vocab_files/](vocab_files/) directory.
+The EMSA-controlled vocabularies are located in the [vocab_files/](vocab_files/) directory.
 
 ---
 
 ## Issues
 
-If you find any inaccuracies, bugs or issues with the NRM controlled vocabularies, please see if there is an [existing issue](https://github.com/ternaustralia/dawe-rlp-vocabs/issues) for it. If the issue has not been reported yet, please consider creating a new issue for it at [New issue](https://github.com/ternaustralia/dawe-rlp-vocabs/issues/new).
+If you find any inaccuracies, bugs or issues with the EMSA-controlled vocabularies, please see if there is an [existing issue](https://github.com/ternaustralia/dawe-rlp-vocabs/issues) for it. If the issue has not been reported yet, please consider creating a new issue for it at [New issue](https://github.com/ternaustralia/dawe-rlp-vocabs/issues/new).
 
 ## Pull requests
 
-A new pull request (PR) automatically runs all the tests and validations on the controlled vocabularies. If possible, fix any failing checks and wait for feedback and/or approval from maintainers. A PR always requires at least 1 maintainer who has approved it before it is merged into the `main` branch.
+A new pull request (PR) automatically runs all the tests and validations on the controlled vocabularies. If possible, fix any failing checks and wait for the maintainers' feedback and/or approval. A PR always requires at least 1 maintainer who has approved it before it is merged into the `main` branch.
 
 See the next two sections on how to make changes and submitting changes as PRs for review.
 
 ## Editing in the browser
 
-The source files of the controlled vocabularies are located in [vocab_files/](vocab_files/) and the editing process can be performed entirely in the browser. If you are looking to edit the files on your local host system, please see [Editing locally](#editing-locally).
+The source files of the controlled vocabularies are located in [vocab_files/](vocab_files/), and the editing process can be performed entirely in the browser. If you are looking to edit the files on your local host system, please see [Editing locally](#editing-locally).
 
 ### Editing on GitHub
 
@@ -94,7 +94,7 @@ To run locally, you will need the following installed:
 
 ## Editing locally
 
-This section is only relevant to those who are looking to make changes to the Python codebase, update tests or making other non-vocab related changes. If you are simply looking to make edits to the controlled vocabularies, the easiest method is to follow the instructions in [Editing the controlled vocabularies in the browser](#editing-the-controlled-vocabularies-in-the-browser).
+This section is only relevant to those who are looking to make changes to the Python codebase, update tests, or make other non-vocab-related changes. If you are simply looking to make edits to the controlled vocabularies, the easiest method is to follow the instructions in [Editing the controlled vocabularies in the browser](#editing-the-controlled-vocabularies-in-the-browser).
 
 Open the repository in Visual Studio Code in a devcontainer. This can be done by running `command + shift + p` and selecting `Remote-Containers: Rebuild Container`. Note that Docker Desktop needs to be installed.
 
@@ -102,7 +102,7 @@ Open the repository in Visual Studio Code in a devcontainer. This can be done by
 
 [![Tests](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/test.yml/badge.svg)](https://github.com/ternaustralia/dawe-rlp-vocabs/actions/workflows/test.yml)
 
-Run tests and generate a HTML coverage report.
+Run tests and generate an HTML coverage report.
 
 ```
 make test
