@@ -1,0 +1,1605 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/cd04526e-7455-45c1-8a44-55575a4a7b2d>
+    a
+        skos:OrderedCollection ,
+        tern:MethodCollection ;
+    dcterms:description """<h3>Contents</h3>
+<ol>
+<li><a href="#module-overview">Module overview</a></li>
+  <li><a href="#introduction-and-background">Introduction</a></li>
+  <li>
+    <a href="#key-definitions-and-terminology">Key definitions and terminology</a>
+  </li>
+  <li><a href="#rationale">Rationale</a></li>
+  <li><a href="#references">References</a></li>
+  <li><a href="#appendices-1">Appendices</a></li>
+</ol><h1 id="module-overview">Module overview</h1>
+<h2 id="available-protocols">Available protocols </h2>
+<p>The Fauna Ground Counts Module covers the procedures and guidelines
+for recording direct counts of fauna, including the survey methods,
+effort, and observations made. The module is designed specifically for
+monitoring pest fauna species, and therefore the literature referenced,
+and examples provided are based on pest fauna species. However, the
+module is appropriate for monitoring all fauna species.</p>
+<p>The module enables users to employ standard methods whilst allowing
+the flexibility to tailor survey configurations to the project area and
+target species. The methods presented here have been adapted from the
+<em>Monitoring Techniques for Vertebrates Pests</em> guides by the NSW
+Department of Primary Industries and the Bureau of Rural Sciences
+(Mitchell and Balogh 2007a, b, c, d, e, f), as well as other monitoring
+guides (Mayle et al. 1999, Moriarty and Brown 2012, Hradsky et al. 2021,
+Smith et al. 2022). Methods are also influenced by State and
+Commonwealth fauna survey guidelines such as the Department of
+Environment and Conservation (2004) and DSEWPaC (2011), and the
+scientific literature (e.g. Fleming and Tracey 2003, Amos et al. 2014,
+Lester 2016, Focardi et al. 2020).</p>
+<p>The Fauna Ground Counts Module includes two protocols:</p>
+<ul>
+<li><p><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/97c64ff0-455c-4e74-ba81-2aeb4adf042f">Transects protocol</a> – to record survey details and any
+observations of fauna along a survey transect. The transect need not be
+a straight line but can occur along existing walking or vehicle tracks
+and can be surveyed on foot or from a vehicle. The surveys can be
+conducted either during the day or at night. The recommended approach
+for the transects protocol is distance sampling, recording the distance
+to the observed animal from the transect. Strip transects, are an
+alternative approach, but require transects to be established in a set
+configuration and therefore are suited best for walking only, not
+driving vehicles.</p></li>
+<li><p><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/44c5567d-3437-4e89-b0b7-caefc07bb16c">Vantage point protocol</a> <strong>–</strong> to record survey
+details and any observations of fauna from a vantage point, either
+during the day or at night. Distance sampling is again the recommended
+approach, however fixed area surveys are an alternative method.</p></li>
+</ul>
+<h2 id="relationships-to-other-modules">Relationships to other
+modules</h2>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<p>The Fauna Ground Counts Module can be combined with other fauna
+monitoring modules to estimate abundance, and assess impacts of fauna
+species. This module can also be combined with plot-based methods to
+assess the relationship of the fauna species presence, abundance, and
+impact on vegetation and habitat. For example, herbivore browse species
+can be examined using the Floristics, Cover, and Recruitment Modules.
+Habitat and refuge preferences can be examined using the Cover, Coarse
+Woody Debris and Condition Modules. Availability of prey items can also
+be identified using the Vertebrate Fauna, Invertebrate Fauna, Camera
+Trapping, Opportune and Sign-based Survey Modules.</p>
+<p>The transects and vantage point protocols include pre-survey planning
+components in the instructions and procedures. Key information to be
+considered during the survey design stage is included in Table 1.</p>
+<p>The Fauna Ground Counts Module is directly linked to the following
+optional modules:</p>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportune Module</a> – the Opportune Module has similar data
+collection fields to the Fauna Ground Counts Module. Opportune records
+may identify the need for surveys following the Fauna Ground Counts
+Module to gain further insight into fauna species distribution and
+abundance within a project area.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6">Interventions Module</a> – ideally, the Fauna Ground Counts Module is
+recommended before and after an intervention. Direct counts using a
+spotlight may be impacted if the intervention includes spotlighting and
+shooting, as the target species may subsequently become wary and flee or
+hide, impacting the post-intervention count (inflating the actual impact
+of the intervention).</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/35239cb4-d7eb-4794-9148-7aed051d731c">Pest Fauna Control Activities Module</a> – It is recommended the
+result of any intervention activity that involves control activities
+(i.e. shooting) is recorded using the Control Activities
+Module.</p></li>
+</ul>"""^^rdf:HTML ;
+    dcterms:source """<h1 id="references">References</h1>
+<p>Acevedo, P., J. Vicente, U. Höfle, J. Cassinello, F. RUIZ-FONS, and
+C. Gortázar. 2007. Estimation of European wild boar relative abundance
+and aggregation: a novel method in epidemiological risk assessment.
+Epidemiology &amp; Infection 135:519-527.</p>
+<p>ACT Government. 2015. Best Practice Management Guide for Rabbits in
+the ACT.<em>in</em> D. o. E. a. Planning, editor., Canberra, ACT.</p>
+<p>Amos, M. 2015. Population estimation methods, home range and habitat
+use for wild red deer (Cervus elaphus) at Cressbrook Dam, south-eastern
+Queensland.</p>
+<p>Amos, M., G. Baxter, N. Finch, A. Lisle, and P. Murray. 2014. I just
+want to count them! Considerations when choosing a deer population
+monitoring method. Wildlife Biology <strong>20</strong>:362-370.</p>
+<p>Buckland, S. T., D. R. Anderson, K. P. Burnham, and J. L. Laake.
+1993. Distance Sampling: Estimating Abundance of Biological Populations.
+Chapman and Hall, London.</p>
+<p>Buckland, S. T., E. A. Rexstad, T. A. Marques, and C. S. Oedekoven.
+2015. Distance sampling: methods and applications. Springer.</p>
+<p>Burnham, K. P., D. R. Anderson, and J. L. Laake. 1980. Estimation of
+density from line transect sampling of biological populations. Wildlife
+monographs:3-202.</p>
+<p>Cassey, P., and B. H. McArdle. 1999. An assessment of distance
+sampling techniques for estimating animal abundance. Environmetrics: The
+official journal of the International Environmetrics Society
+<strong>10</strong>:261-278.</p>
+<p>Castle, G., D. Smith, L. R. Allen, and B. L. Allen. 2021. Terrestrial
+mesopredators did not increase after top-predator removal in a
+large-scale experimental test of mesopredator release theory. Scientific
+Reports <strong>11</strong>:18205-18205.</p>
+<p>Collier, B. A., K. W. Calhoun, R. A. McCleery, K. G. Roques, and A.
+Monadjem. 2011. Detection probabilities of ungulates in the eastern
+Swaziland lowveld : research article. South African Journal of Wildlife
+Research - 24-month delayed open access <strong>41</strong>:61-67.</p>
+<p>Cortázar-Chinarro, M., P. Halvarsson, and E. Virgós. 2018. Sign
+surveys for red fox (<em>Vulpes vulpes</em>) censuses: evaluating
+different sources of variation in scat detectability. Mammal Research
+<strong>64</strong>:183-190.</p>
+<p>Coulson, G., M. A. Snape, and J. K. Cripps. 2021. How many macropods?
+A manager’s guide to small‐scale population surveys of kangaroos and
+wallabies. Ecological Management &amp; Restoration
+<strong>22</strong>:75-89.</p>
+<p>Department of Environment and Conservation. 2004. Threatened
+Biodiversity Survey and Assessment: Guidelines for developments and
+activities (working draft). New South Wales Department of Environment
+and Conservation, Hurstville, NSW.</p>
+<p>Department of Planning, I. E. 2020. Surveying threatened plants and
+their habitats. NSW survey guide for the Biodiversity Assessment
+Method., Environment, Energy and Science. Department of Planning,
+Industy and Environment, NSW, Parramatta NSW.</p>
+<p>Department of Sustainability‚ Environment‚ Water‚ Population and
+Communities. 2011. Survey guidelines for Australia's threatened mammals.
+Guidelines for detecting mammals listed as threatened under the
+<em>Environment Protection and Biodiversity Conservation Act
+1999</em>.</p>
+<p>DSEWPC. 2011. Survey guidelines for Australia’s threatened mammals:
+Guidelines for detecting mammals listed as threatened under the
+Environment Protection and Biodiversity Conservation Act 1999.
+Australian Government; Department of Sustainability, Environment, Water,
+Population and Communities.</p>
+<p>Dyer, A. B., and J. S. Simmonds. 2021. Incomplete surveys for
+environmental impact assessments jeopardise threatened species recovery.
+Pacific Conservation Biology.</p>
+<p>Edwards, G., N. De Preu, B. Shakeshaft, and I. Crealy. 2000. An
+evaluation of two methods of assessing feral cat and dingo abundance in
+central Australia. Wildlife Research <strong>27</strong>:143–149.</p>
+<p>Edwards, G., W. Dobbie, and D. M. Berman. 2002. Population trends in
+European rabbits and other wildlife of central Australia in the wake of
+rabbit haemorrhagic disease. Wildlife Research
+<strong>29</strong>:557-565.</p>
+<p>Egli, L., M. Soofi, A. Ghoddousi, A. K. Hamidi, L. Egil, H.
+Abolghasemi, T. Ghadirian, S. Kashani, M. Waltert, and J. Sanderson.
+2015. National Ungulates Monitoring Techniques Assessment Project
+(NUMP).</p>
+<p>Emerson, L. D., G.-A. Ballard, and K. Vernes. 2019. Conventional
+distance sampling versus strip transects and abundance indices for
+estimating abundance of greater gliders (Petauroides volans) and eastern
+ringtail possums (Pseudocheirus peregrinus). Wildlife Research
+<strong>46</strong>:518-532.</p>
+<p>Engeman, R., G. Massei, M. Sage, and M. Gentle. 2013. Monitoring wild
+pig populations: a review of methods. Environmental Science and
+Pollution Research <strong>20</strong>:8077-8091.</p>
+<p>Feit, B., A. Feit, and M. Letnic. 2019. Apex Predators Decouple
+Population Dynamics Between Mesopredators and Their Prey. Ecosystems
+<strong>22</strong>:1606-1617.</p>
+<p>Fleming, P., and J. Tracey. 2003. Methods for determining feral goat
+abundance in rugged terrain. NSW Agriculture.</p>
+<p>Focardi, S., A. M. De Marinis, M. Rizzotto, and A. Pucci. 2001.
+Comparative evaluation of thermal infrared imaging and spotlighting to
+survey wildlife. Wildlife Society Bulletin:133-139.</p>
+<p>Focardi, S., V. La Morgia, P. Montanaro, F. Riga, A. Calabrese, F.
+Ronchi, P. Aragno, M. Scacco, R. Calmanti, and B. Franzetti. 2020.
+Reliable estimates of wild boar populations by nocturnal distance
+sampling. Wildlife Biology <strong>2020</strong>.</p>
+<p>Franzetti, B., F. Ronchi, F. Marini, M. Scacco, R. Calmanti, A.
+Calabrese, A. Paola, M. Paolo, and S. Focardi. 2012. Nocturnal line
+transect sampling of wild boar (Sus scrofa) in a Mediterranean forest:
+long-term comparison with capture–mark–resight population estimates.
+European Journal of Wildlife Research <strong>58</strong>:385-402.</p>
+<p>Hocking, G., and M. Driessen. 1992. Tasmanian spolighting survey
+manual. Hobart, Tasmania.</p>
+<p>Horcajada-Sánchez, F., and I. Barja. 2015. Evaluating the
+effectiveness of two distance-sampling techniques for monitoring roe
+deer (Capreolus capreolus) densities. Pages 167-176 <em>in</em> Annales
+Zoologici Fennici. BioOne.</p>
+<p>Hradsky, B., H. McGregor, M. Rees, M. Le Pla, J. Keem, B. Wintle, and
+S. Legge. 2021. A guide to surveying red foxes and feral cats in
+Australia.<em>in</em> B. NESP Threatened Species Recovery Hub Project
+1.1.5 report, editor.</p>
+<p>Jackson, W., R. Argent, N. Bax, G. Clark, S. Coleman, I. Cresswell,
+K. Emmerson, K. Evans, M. Hibberd, and E. Johnston. 2017. Australia
+state of the environment 2016: overview, independent report to the
+Australian Government Minister for the Environment and Energy.
+Australian Government Department of the Environment and Energy,
+Canberra.</p>
+<p>Koichi, K., D. Holliday, and C. e. Harris. 2020. Glovebox Guide for
+Managing Feral Pigs v2.0. PestSmart Toolkit publication., The Centre for
+Invasive Species Solutions, Canberra ACT.</p>
+<p>Lester, J. 2016. Monitoring Feral Deer in the Illawarra Escarpment
+State Conservation Area.</p>
+<p>Marini, F., B. Franzetti, A. Calabrese, S. Cappellini, and S.
+Focardi. 2009. Response to human presence during nocturnal line transect
+surveys in fallow deer (Dama dama) and wild boar (Sus scrofa). European
+Journal of Wildlife Research <strong>55</strong>:107-115.</p>
+<p>Mayle, B., A. Peace, and R. Gill. 1999. How many deer? A field guide
+to estimating deer population size., Forestry Commission, Edingburgh,
+UK.</p>
+<p>McGregor, H., K. Moseby, C. N. Johnson, and S. Legge. 2022.
+Effectiveness of thermal cameras compared to spotlights for counts of
+arid zone mammals across a range of ambient temperatures. Australian
+Mammalogy <strong>44</strong>:59-66.</p>
+<p>Mitchell, B., and S. Balogh. 2007a. Monitoring Technique for
+Vertebrate Pests: Rabbits. NSW Department of Primary Industries, Orange,
+NSW.</p>
+<p>Mitchell, B., and S. Balogh. 2007b. Monitoring techniques for
+vertebrate pests: Feral cats. NSW Department of Primary Industries,
+Orange.</p>
+<p>Mitchell, B., and S. Balogh. 2007c. Monitoring Techniques for
+Vertebrate Pests: Feral Goats. NSW Department of Primary Industries,
+Sydney, NSW.</p>
+<p>Mitchell, B., and S. Balogh. 2007d. Monitoring Techniques for
+Vertebrate Pests: Feral Pigs. NSW Department of Primary Industries,
+Sydney, NSW.</p>
+<p>Mitchell, B., and S. Balogh. 2007e. Monitoring Techniques for
+Vertebrate Pests: Foxes. NSW Department of Primary Industries.</p>
+<p>Mitchell, B., and S. Balogh. 2007f. Monitoring Techniques for
+Vertebrate Pests: Wild Dogs.<em>in</em> N. D. o. P. Industries, editor.,
+Orange, NSW.</p>
+<p>Moriarty, A., and A. Brown. 2012. Ecological Deer Management Manual.
+Game Council NSW.</p>
+<p>Murphy, H., and S. van Leeuwen. 2021. Australia state of the
+environment 2021: biodiversity.</p>
+<p>Mutze, G., B. Cooke, M. Lethbridge, and S. Jennings. 2014. A rapid
+survey method for estimating population density of European rabbits
+living in native vegetation. The Rangeland Journal
+<strong>36</strong>:239-247.</p>
+<p>NSW DPI. 2018. Ecology and Management of Vertebrate Pests in
+NSW.<em>in</em> D. o. P. Industries, editor. State of New South Wales,
+Orange, NSW.</p>
+<p>O’Neill, S., B. Sparrow, N. Thurgate, and A. Lowe. 2017. Ausplots
+Rangelands Vertebrate Fauna Survey Protocols Manual.</p>
+<p>Pellerin, M., A. Bessière, D. Maillard, G. Capron, J. M. Gaillard, J.
+Michallet, and C. Bonenfant. 2017. Saving time and money by using
+diurnal vehicle counts to monitor roe deer abundance. Wildlife Biology
+<strong>2017</strong>:1-10.</p>
+<p>Putman, R., P. Watson, and J. Langbein. 2011. Assessing deer
+densities and impacts at the appropriate level for management: a review
+of methodologies for use beyond the site scale. Mammal Review.</p>
+<p>Read, J., and S. Eldridge. 2010. An optimised rapid detection
+technique for simultaneously monitoring activity of rabbits, cats, foxes
+and dingoes in the rangelands. The Rangeland Journal
+<strong>32</strong>:389-394.</p>
+<p>Ruette, S., P. Stahl, and M. Albaret. 2003. Applying
+Distance-Sampling Methods to Spotlight Counts of Red Foxes. The Journal
+of applied ecology <strong>40</strong>:32-43.</p>
+<p>Samuel, G. 2020. Independent Review of the EPBC Act: Final Report.
+1760033022.</p>
+<p>Smith, B. P., H. P. Waudby, C. R. Dickman, K. Soennichsen, C. Mills,
+A. Howe, L.-A. Woolley, S. R. Griffiths, T. E. Cox, and J. Clayton.
+2022. Chapter 4: Observing wildlife and its signs.<em>in</em> B. Smith,
+H. Waudby, C. Alberthsen, and J. Hampton, editors. Wildlife Research in
+Australia. Practical and Applied Methods. CSIRO Publishing,
+Melbourne.</p>
+<p>Southwell, C. 1994. Evaluation of walked line transect counts for
+estimating macropod density. The Journal of Wildlife
+Management:348-356.</p>
+<p>Swanson, G., D. Campbell, and H. Armstrong. 2008. Estimating deer
+abundance in woodlands: the combination plot technique. Forestry
+Commission.</p>
+<p>Thomas, L., S. T. Buckland, E. A. Rexstad, J. L. Laake, S.
+Strindberg, S. L. Hedley, J. R. B. Bishop, T. A. Marques, and K. P.
+Burnham. 2010. Distance software: design and analysis of distance
+sampling surveys for estimating population size. Journal of Applied
+Ecology <strong>47</strong>:5-14.</p>
+<p>Tokmakoff, A., B. Sparrow, D. Turner, and A. Lowe. 2016. AusPlots
+Rangelands field data collection and publication: Infrastructure for
+ecological monitoring. Future Generation Computer Systems
+<strong>56</strong>:537–549.</p>
+<p>Tracey, J. P. 2004. Assessing estimators of feral goat (<em>Capra
+hircus</em>) abundance. University of Canberra.</p>
+<p>West, B. C., A. L. Cooper, and J. B. Armstrong. 2009. Managing wild
+pigs: a technical guide.</p>
+<p>Zaccaroni, M., F. Dell'Agnello, G. Ponti, F. Riga, C. Vescovini, and
+L. Fattorini. 2018. Vantage point counts and monitoring roe deer. The
+Journal of Wildlife Management <strong>82</strong>:354-361.</p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """<h2 id="key-definitions-and-terminology">Key definitions and terminology</h2>
+<p><span class="anchor" id="_Toc140677984"></span>Table 1.Key terms and
+definitions used in the Fauna Ground Counts Module.</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Transect</td>
+<td>A line placed across an area to be traversed. Usually, the number of
+animals observed along the transect are recorded.</td>
+</tr>
+<tr class="even">
+<td>Distance sampling</td>
+<td>Density or abundance estimates involve the distance and direction to
+the observed animal or group of animals being recorded. It is most often
+undertaken in the form of line transect distance sampling but can also
+be point based.</td>
+</tr>
+<tr class="odd">
+<td>Fixed-width strip-transect count</td>
+<td>The observer walks or drives along a set transect (centre line),
+recording the number of animals of the target species seen at a
+specified distance on each side.</td>
+</tr>
+<tr class="even">
+<td>Vantage point count</td>
+<td>The observer records the number of animals of the target species
+observed from a fixed point, typically a high point in the landscape
+with a clear view of the surrounding area. Can involve distance sampling
+or fixed area survey.</td>
+</tr>
+<tr class="odd">
+<td>Fixed-area survey</td>
+<td>The observer records the number of animals observed within a set
+radius of a fixed point, or within a defined area, generally from a
+vantage point.</td>
+</tr>
+<tr class="even">
+<td>Spotlight, torches and head-torches</td>
+<td>Lights used for nocturnal surveys. Spotlights can be car-mounted on
+the front bull-bar, top or side of the vehicle for users to swivel, or
+portable and able to be carried for walked surveys. Surveys using
+spotlights should ensure spare globes, batteries, charging cables are
+available.</td>
+</tr>
+<tr class="odd">
+<td>Thermal device</td>
+<td>A device that uses thermal imaging to detect an animal by
+distinguishing body heat from the surrounding environment. Unlike
+traditional night vision, thermal imaging does not rely on the
+amplification of ambient light and therefore can be used in total
+darkness. Thermal devices used for monitoring surveys can be goggles,
+cameras, binoculars, monocular, rifle scopes and vehicle systems.</td>
+</tr>
+<tr class="even">
+<td>Trimble® R1</td>
+<td>A compact, lightweight Global Navigation Satellite System (GNSS)
+receiver (configured with the GNSS Status App) that provides
+professional-grade positioning information to any connected mobile
+device using Bluetooth® connectivity.</td>
+</tr>
+<tr class="odd">
+<td>Rangefinder</td>
+<td>An instrument used to estimate the distance to an object/point.</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/nrm/97c64ff0-455c-4e74-ba81-2aeb4adf042f>
+            <https://linked.data.gov.au/def/nrm/44c5567d-3437-4e89-b0b7-caefc07bb16c>
+        ) ;
+    skos:prefLabel "Fauna Ground Counts" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/fauna_ground_surveys/collection.ttl"^^xsd:anyURI ;
+    tern:appendix """<h1 id="appendices-1">Appendices</h1>
+<h3><p><span class="anchor" id="_Toc140739737-appendix-1"></span>Appendix 1. Data
+collection fields from the Fauna Ground Counts Module</p></h3>
+<p>Complete lists are provided in the Monitor app, as well as the TERN
+website</p>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Transect route type </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Vehicle road</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Vehicle dirt track</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Walking track (incl animal path)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Off-track (no defined path)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other: text describe</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong> Survey intent</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Once-off measure</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Repeated measure</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Linked to pre-control activity</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Linked to post-control activity</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Free text description</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong> Movement type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Walked</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Driven</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Equipment used</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Binoculars</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Spotting scope</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rangefinder</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Spotlight</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Torch/headtorch</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Thermal device</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Camera - still</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Camera - video</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Vehicle</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>+ For each, free text description</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 97%"/>
+<col style="width: 2%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Sightability distance (m)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>&lt;20 m</p></li>
+</ul></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>20-40 m</p></li>
+</ul></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>40-60 m</p></li>
+</ul></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>60-80 m</p></li>
+</ul></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>80+ m</p></li>
+</ul></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Actual number they enter</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Target species  </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Cat (Felis catus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Fox (Vulpes vulpes)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Wild dog (Canis lupus) (drop-down)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Dog (Canis lupus familiaris)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Dingo (Canis lupus dingo)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Dingo-Dog hybrid</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rabbit (Oryctolagus cuniculus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Deer (drop-down)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Fallow deer (Dama dama)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Rusa deer (Rusa timorensis)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Red deer (Cervus elaphus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Chital deer (Axis axis)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Hog deer (Axis porcinus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Goat (Capra hircus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Pig (Sus scrofa)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Horse (Equus caballus)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Camel (Camelus dromedaries)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other </p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Text (predictive text)</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-1" id="section-1"></h3>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sex</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Male</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Female</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Mixed sexes</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Not recorded</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cat coat colour</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Ginger</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Black</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Tabby</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Tortoiseshell</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Observer role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Spotter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Spotter - inside of vehicle cab</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Spotter - outside of vehicle cab</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Driver</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Data-entry</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Data-entry only</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weather conditions </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Temperature</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Actual BOM/weather station <sup>o</sup>C</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rainfall</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Showers</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rain</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Drizzle</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Frost</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Mist</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Thunderstorm</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p> Rainfall duration</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Intermittent</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Occasional</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Frequent</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Continuous</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Periods of rain</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Brief</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cloud cover</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Sunny</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Mostly sunny</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Partly cloudy</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cloudy</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Overcast</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p> Wind</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Calm</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Light winds</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Moderate winds</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Fresh winds</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Strong winds</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Near gale</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Gale</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p> Moon phase</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>New moon</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>First quarter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Full moon</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Third quarter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Weather comments</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Free text description</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 79%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th rowspan="2">NVIS Major Vegetation Group</th>
+<th rowspan="2">NVIS Major Vegetation Sub-group</th>
+</tr>
+<tr class="odd">
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="4">Rainforest and Vine Thickets (MVG 1)</td>
+<td>Cool temperate rainforest</td>
+</tr>
+<tr class="even">
+<td>Tropical or sub-tropical rainforests</td>
+</tr>
+<tr class="odd">
+<td>Dry rainforest</td>
+</tr>
+<tr class="even">
+<td>Vine thickets</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Eucalypt Tall Open Forests (MVG 2)</td>
+<td>Eucalyptus tall open forests with a dense broad-leaved and/or
+tree-fern understorey (wet-sclerophyll)</td>
+</tr>
+<tr class="even">
+<td>Eucalyptus tall open forests with a fine-leaved shrubby understorey
+OR Eucalyptus tall open forests and open forests with ferns, herbs,
+sedges, rushes or wet tussock grasses</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Eucalypt Open Forests (MVG 3)</td>
+<td>Eucalyptus open forests with a shrubby understorey</td>
+</tr>
+<tr class="even">
+<td>Eucalyptus open forests with a grassy understorey</td>
+</tr>
+<tr class="odd">
+<td>Eucalypt Low Open Forests (MVG 4)</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Eucalypt Woodlands (MVG 5)</td>
+<td>Eucalyptus woodlands with a shrubby understorey OR Eucalyptus
+woodlands with a chenopod or samphire understorey</td>
+</tr>
+<tr class="odd">
+<td>Eucalyptus woodlands with a grassy understorey OR Eucalyptus
+woodlands with ferns, herbs, sedges, rushes or wet tussock grassland OR
+Eucalyptus woodlands with a hummock grass understorey</td>
+</tr>
+<tr class="even">
+<td rowspan="3">Acacia Forests and Woodlands (MVG 6)</td>
+<td>Brigalow (<em>Acacia harpophylla</em>) forests and woodlands</td>
+</tr>
+<tr class="odd">
+<td>Other Acacia forests and woodlands</td>
+</tr>
+<tr class="even">
+<td>Mulga (<em>Acacia aneura</em>) woodlands and shrublands +/- tussock
+grass +/- forbs OR Mulga (<em>Acacia aneura</em>) woodlands and
+shrublands with hummock grass</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Callitris Forests and Woodlands (MVG 7)</td>
+<td>Callitris forests and woodlands (Eastern occurrence)</td>
+</tr>
+<tr class="even">
+<td>Callitris forests and woodlands (mallee, arid and semi-arid
+occurrence)</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Casuarina Forests and Woodlands (MVG 8)</td>
+<td>Casuarina and Allocasuarina forests and woodlands</td>
+</tr>
+<tr class="even">
+<td>River Oak forests and woodlands</td>
+</tr>
+<tr class="odd">
+<td>Melaleuca Forests and Woodlands (MVG 9)</td>
+<td>Melaleuca open forests and woodlands</td>
+</tr>
+<tr class="even">
+<td>Other Forests and Woodlands (MVG 10)</td>
+<td>Other forests and woodlands OR Banksia woodlands OR Leptospermum
+forests and woodlands OR Tropical mixed species forests and
+woodlands</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Eucalypt Open Woodlands (MVG 11)</td>
+<td>Eucalyptus open woodlands with a grassy understorey OR Eucalyptus
+open woodlands with shrubby understorey</td>
+</tr>
+<tr class="even">
+<td>Eucalyptus low open woodlands with tussock grass OR Eucalyptus low
+open woodlands with a shrubby understorey OR Eucalyptus low open
+woodlands with a chenopod or samphire understorey</td>
+</tr>
+<tr class="odd">
+<td>Tropical Eucalypt Woodlands / Grasslands (MVG 12)</td>
+<td>Tropical Eucalyptus forests and woodlands with a tall annual grassy
+understorey</td>
+</tr>
+<tr class="even">
+<td>Acacia Open Woodlands (MVG 13)</td>
+<td>Mulga (<em>Acacia aneura</em>) open woodlands and sparse shrublands
++/- tussock grass OR Mulga (<em>Acacia aneura</em>) open woodlands and
+sparse shrublands with hummock grass</td>
+</tr>
+<tr class="odd">
+<td>Mallee Woodlands and Shrublands (MVG 14)</td>
+<td>Mallee with hummock grass OR Mallee with a tussock grass understorey
+OR Mallee with a dense shrubby understorey OR Mallee with an open
+shrubby understorey</td>
+</tr>
+<tr class="even">
+<td>Low Closed Forest and Tall Closed Shrublands (MVG 15)</td>
+<td>Low closed forests or tall closed shrublands (including Acacia,
+Melaleuca and Banksia)</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Acacia shrublands (MVG 16)</td>
+<td>Acacia (+/- low) open woodlands and sparse shrublands with a shrubby
+understorey OR Acacia (+/- low) open woodlands and sparse shrublands
+with hummock grass OR Acacia (+/- low) open woodlands and sparse
+shrublands with tussock grass OR Acacia (+/- low) open woodlands and
+sparse shrublands with chenopods.</td>
+</tr>
+<tr class="even">
+<td>Other Acacia tall open shrublands and shrublands</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Other Shrublands (MVG 17)</td>
+<td>Melaleuca shrublands and open shrublands OR Casuarina/Allocasuarina
+shrublands (<em>C. equisetifolia, A. littoralis,
+A.</em> <em>verticillata</em>) OR other shrublands</td>
+</tr>
+<tr class="even">
+<td>Lignum shrublands and wetlands</td>
+</tr>
+<tr class="odd">
+<td>Heathlands (MVG 18)</td>
+<td>Heathlands</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Tussock Grasslands (MVG 19)</td>
+<td>Temperate tussock grassland</td>
+</tr>
+<tr class="odd">
+<td>Mitchell grass (<em>Astrebla</em>) tussock grasslands and Blue grass
+(<em>Dichanthium</em>) and tall bunch grass (<em>Chrysopogon</em>)
+tussock grasslands OR Other tussock grasslands</td>
+</tr>
+<tr class="even">
+<td>Hummock Grasslands (MVG 20)</td>
+<td>Hummock grasslands</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Other Grasslands, Herblands, Sedgelands and Rushlands
+(MVG 21)</td>
+<td>Sedgelands, rushes or reeds OR Wet tussock grasslands with herbs,
+sedges or rushes, herblands or ferns OR Other grasslands</td>
+</tr>
+<tr class="even">
+<td>Saline or brackish sedgelands or grasslands</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Chenopod Shrublands, Samphire Shrublands and Forblands
+(MVG 22)</td>
+<td>Saltbush and/or Bluebush shrublands</td>
+</tr>
+<tr class="even">
+<td>Mixed chenopod, samphire +/- forbs</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Mangroves (MVG 23)</td>
+<td>Mangroves (Northern)</td>
+</tr>
+<tr class="even">
+<td>Mangroves (Southern)</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Other Open Woodlands (MVG 31)</td>
+<td>Callitris open woodlands OR Melaleuca open woodlands OR Other open
+woodlands</td>
+</tr>
+<tr class="even">
+<td>Casuarina and Allocasuarina open woodlands with a shrubby
+understorey OR Casuarina and Allocasuarina open woodlands with a
+chenopod shrub understorey OR Casuarina and Allocasuarina open woodlands
+with a tussock grass understorey OR Casuarina and Allocasuarina open
+woodlands with a hummock grass understorey</td>
+</tr>
+<tr class="odd">
+<td>Mallee Open Woodlands and Sparse Mallee Shrublands (MVG 32)</td>
+<td>Open mallee woodlands and sparse mallee shrublands with a dense
+shrubby understorey OR Open mallee woodlands and sparse mallee
+shrublands with a sparse shrubby understorey OR Open mallee woodlands
+and sparse mallee shrublands with a tussock grass understorey OR Open
+mallee woodlands and sparse mallee shrublands with a hummock grass
+understorey</td>
+</tr>
+</tbody>
+</table>
+<h3><p><span class="anchor" id="_Toc140739738_appendix-2"></span>Appendix 2.
+Recommended survey designs providing examples for target pest fauna</p></h3>
+<table>
+<colgroup>
+<col style="width: 6%"/>
+<col style="width: 14%"/>
+<col style="width: 17%"/>
+<col style="width: 13%"/>
+<col style="width: 33%"/>
+<col style="width: 14%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pest fauna</th>
+<th>Recommended approach</th>
+<th>Transect length and width</th>
+<th>Active period</th>
+<th>Other comments and considerations</th>
+<th>Key resources</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Feral cat</td>
+<td>Spotlighting</td>
+<td><ul>
+<li><p>Sample size of at least 60 sightings to generate estimates of
+detection probability (Mitchell and Balogh 2007b).</p></li>
+<li><p>Transects should be a minimum of 1 km but ideally between 10 and
+30 km. However, longer transects (up to 150 km) may be required in some
+systems (Mitchell and Balogh 2007b).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly nocturnal.</p></li>
+<li><p>Greatest periods of activity during dusk and dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Surveys should be conducted at least quarterly to account for
+seasonal differences (Mitchell and Balogh 2007b).</p></li>
+<li><p>Surveys need to be repeated on 3 or 4 consecutive nights
+(Mitchell and Balogh 2007b).</p></li>
+<li><p>Start time of at least half an hour after sunset is recommended
+(Mitchell and Balogh 2007b).</p></li>
+<li><p>Cats can be identified by eyeshine that has a green-blue tinge
+(Hradsky et al. 2021).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Monitoring Techniques for Vertebrate Pests: Feral Cats</p></li>
+<li><p>A guide to surveying red foxes and feral cats in
+Australia</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Fox</td>
+<td>Spotlighting</td>
+<td><ul>
+<li><p>Sample of at least 60 sightings required to generate estimates of
+detection probability (Mitchell and Balogh 2007e).</p></li>
+<li><p>Transects should be a minimum of 1 km but ideally between 10 and
+30 km (Mitchell and Balogh 2007e).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly nocturnal.</p></li>
+<li><p>Most active from dusk until dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Foxes can be identified by yellow eyeshine (Hradsky et al.
+2021).</p></li>
+<li><p>Surveys should start approximately half an hour after sunset
+(Mitchell and Balogh 2007e).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Monitoring Techniques for Vertebrate Pests: Foxes</p></li>
+<li><p>A guide to surveying red foxes and feral cats in
+Australia</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Wild dog</td>
+<td>Spotlighting using thermal</td>
+<td><ul>
+<li><p>Transects should be a minimum of 10 km in length (Feit et al.
+2019, Castle et al. 2021).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly nocturnal.</p></li>
+<li><p>Greatest periods of activity during dusk and dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Surveys should begin at dusk or within an hour of dark.</p></li>
+<li><p>Vehicles should traverse transects at 15 km/hr (Read and Eldridge
+2010, Feit et al. 2019).</p></li>
+</ul></td>
+<td><ul>
+<li><p>No resource currently available.</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Rabbit</td>
+<td>Spotlighting or direct counts (afternoon)</td>
+<td><ul>
+<li><p>Transect length of 2-5 km (or the distance that can be covered in
+1-1.5 hrs) (ACT Government 2015, NSW DPI 2018).</p></li>
+<li><p>Fixed transect widths of 50-100 m have been suggested (ACT
+Government 2015).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly nocturnal.</p></li>
+<li><p>Active from dusk until dawn.</p></li>
+<li><p>Greatest periods of activity during dusk and dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Surveys should be conducted once every three months to account
+for seasonal differences (Mitchell and Balogh 2007a).</p></li>
+<li><p>Counts should be undertaken over at least 3 consecutive nights
+(ACT Government 2015).</p></li>
+<li><p>Surveys should be conducted at least 60 minutes after sunset (ACT
+Government 2015).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Monitoring Techniques for Vertebrate Pests: Rabbits</p></li>
+<li><p>Best Practice Management Guide for Rabbits in the ACT</p></li>
+<li><p>Pest Rabbits – monitoring and control good practice guidelines
+(New Zealand)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Feral deer</td>
+<td>Spotlighting</td>
+<td><ul>
+<li><p>Transect length between 10 and 30 km is recommended (Moriarty and
+Brown 2012).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Activity depends on deer species:</p></li>
+<li><p>Sambar peak near sunset.</p></li>
+<li><p>Red deer peak at dawn and dusk.</p></li>
+<li><p>Fallow peak at dusk and dawn.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Should be conducted once every three months to account for
+seasonal differences in the abundance of deer (Moriarty and Brown 2012).
+Each survey needs to occur on 3 or 4 consecutive nights. Spotlight
+survey should be conducted at least half an hour after sunset (Moriarty
+and Brown 2012).</p></li>
+<li><p>Each consecutive count needs to start at the same time and use
+the same route, distance, direction, vehicle speed, spotlight and
+observers (Moriarty and Brown 2012).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Ecological Deer Management Manual</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Feral goat</td>
+<td>Direct observation – transect or vantage point</td>
+<td><ul>
+<li><p>Sample size should be greater than 60 sightings to generate
+estimates of detection probability (Mitchell and Balogh 2007c).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Predominantly diurnal.</p></li>
+<li><p>Peak activity in early morning and late afternoon.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Surveys should start approximately one hour after sunrise or four
+hours before sunset (Mitchell and Balogh 2007c).</p></li>
+<li><p>Surveys should be repeated on three consecutive days, at the same
+time, transect distance, route, direction and observers (Mitchell and
+Balogh 2007c).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Monitoring Techniques for Vertebrate Pests: Feral Goats</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Feral pig</td>
+<td><p>Thermal</p>
+<p>Spotlighting</p>
+<p>Direct observation – transect</p></td>
+<td><ul>
+<li><p>Transects should be a minimum of 1 km but between 10 and 30 km is
+ideal (Mitchell and Balogh 2007d).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Peak activity in early morning and late afternoon (Koichi et al.
+2020).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Feral pigs are most active at dusk and during the night (Mitchell
+and Balogh 2007d).</p></li>
+<li><p>Feral pigs lack a distinctive eye shine, which makes spotlighting
+more difficult.</p></li>
+<li><p>Counts need to be repeated on 3 or 4 consecutive nights (Mitchell
+and Balogh 2007d).</p></li>
+<li><p>Generally a start time of at least half an hour after sunset will
+be appropriate (Mitchell and Balogh 2007d).</p></li>
+</ul></td>
+<td><ul>
+<li><p>Monitoring Techniques for Vertebrate Pests: Feral Pigs</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    tern:purpose """<h2 id="rationale">Rationale</h2>
+<p>Invasive species are the primary threat to species listed under the
+<em>Environment Protection and Biodiversity Conservation Act 1999</em>
+(EPBC Act). Despite this, monitoring of control programs is generally
+limited, making it difficult to assess program effectiveness (Murphy and
+van Leeuwen 2021). Population trends of pest fauna must be monitored if
+management actions such as culling are to be used effectively (Coulson
+et al. 2021), and these estimates need to be repeatable. Pest fauna can
+be monitored through direct observations or by observing signs left in
+the environment (Mitchell and Balogh 2007c). Direct observations of
+animals from a transect or vantage point are often used to assess the
+presence, abundance, density and behaviour of target species without the
+need for capturing or handling animals (Smith et al. 2022). Direct
+counts can be more informative than sign-based surveys because they
+allow information about population structure and behaviour to be
+recorded and can also provide more accurate data (Mayle et al. 1999,
+Cortázar-Chinarro et al. 2018). In addition, direct counts are simple to
+carry out, require little specialised equipment or training, and can be
+repeated easily (Hradsky et al. 2021).</p>
+<p>The survey methods used for direct counts, along with the timing and
+extent of search effort, vary widely between studies and the species
+targeted. As such, a flexible approach has been developed for this
+module, so surveys can be tailored to the habitat types present and the
+ecology of the fauna species under study. It is essential that detailed
+information on the methods and search effort is recorded to allow
+surveys to be repeated and the strength of data to be assessed. Hence,
+this module is focused on recording what was done, how it was done and
+what was observed in a standardised manner while allowing flexibility in
+the survey design (i.e. transect length, transect width). Minimum data
+standards have been set to help ensure that surveys are undertaken in a
+transparent manner and that survey design and effort can be verified,
+along with any observation data (Dyer and Simmonds 2021). Entry of data
+directly into the Monitor app using controlled data fields removes
+transcription errors and facilitates data management, access and
+sharing.</p>
+<p>Transects are the most common approach for direct counts (Mitchell
+and Balogh 2007c, ACT Government 2015, Buckland et al. 2015).
+Fixed-width strip transect counts are a simple approach that only
+requires basic equipment and suit situations unsuitable for distance
+sampling (Coulson et al. 2021). However, data analysis options are
+limited, with outputs generally restricted to basic indices, such as the
+number of individuals per kilometre (Mitchell and Balogh 2007c). In
+addition, optimal strip width can be difficult to determine to ensure
+that all animals can be detected while also ensuring a sufficient
+sampling area (Egli et al. 2015). Strip transects often underestimate
+abundance, as animals further away from the transect are more likely to
+be missed, and this cannot be factored into the analysis (Burnham et al.
+1980, Emerson et al. 2019, Coulson et al. 2021).</p>
+<p>Distance sampling can help overcome some of the limitations of strip
+transects, as the method incorporates the decline in detectability with
+increasing distance from the transect, so all sightings can be used
+(Buckland et al. 2015, Coulson et al. 2021). Distance sampling methods
+extend the strip transect approach without assuming that all objects are
+detected, or that the transect width is constant (Buckland et al. 1993,
+Cassey and McArdle 1999, Ruette et al. 2003). The most widely used form
+of distance sampling is line transect sampling, and this relies on the
+distribution of distances and the proportion of animals detected to
+allow estimates of density and abundance to be generated (Thomas et al.
+2010). Abundance estimates generated from distance sampling are
+considered more reliable than those calculated using strip transects
+(Emerson et al. 2019) and hence distance sampling is the recommended
+approach where possible.</p>
+<p>Transect surveys can be undertaken on foot or from a vehicle,
+depending on the project requirements, habitat, size of the project area
+and species being studied (Mitchell and Balogh 2007c, d). Walked
+transects can be beneficial in sites with limited vehicle tracks and
+vegetated or mountainous terrain (Southwell 1994, Mayle et al. 1999).
+Walked transects can also allow roads to be avoided and can facilitate
+surveys along straight or parallel transects (Mitchell and Balogh
+2007a). However, vehicle surveys are generally more cost-effective and
+allow larger areas to be surveyed (Pellerin et al. 2017), encompassing
+many habitats under similar conditions in a short time (ACT Government
+2015). Vehicle surveys may also require fewer observers (or observer
+hours) than walked transects (Horcajada-Sánchez and Barja 2015).
+Conducting transect sampling along roads or paths can significantly
+affect density estimates, as the behaviour of some species may be
+influenced by these features (Lester 2016). Using roads or trails can
+also limit the random sampling of survey sites, and there is an
+increased chance of double counting because roads are rarely straight
+(Mitchell and Balogh 2007c). The route taken by walked or driven
+transects will be recorded directly through the Monitor app, so detailed
+information about the distance travelled, the direction of travel, speed
+and location will be captured, allowing surveys to be repeated.</p>
+<p>Transect-based approaches are not appropriate in all habitats.
+Vantage point counts offer a straight-forward and cost-effective option
+for monitoring in hilly terrain (Fleming and Tracey 2003), but are
+restricted to areas where appropriate viewpoints are available and are
+generally not possible in lowland areas (Putman et al. 2011). As for
+transects, using a distance sampling approach at vantage points provides
+more reliable estimates of abundance than fixed-area sampling, and
+transects generally provide more precise estimates than point-based
+approaches (Hradsky et al. 2021).</p>
+<p>The effectiveness of daylight sampling may be limited for some
+species (Lester 2016). The protocols are flexible, so surveys can be
+conducted to target the peak activity period for the fauna species of
+interest (Hradsky et al. 2021). The Monitor app will automatically
+record the time of any observations, so all data will be time-stamped to
+assist with verification and analysis. The timing of the survey will
+also influence the type of equipment needed, with surveys undertaken
+during daylight hours only requiring basic equipment such as binoculars
+and a range finder (Mitchell and Balogh 2007c). Night surveys will need
+spotlights and/or thermal imaging equipment (Mayle et al. 1999). All
+equipment details (e.g. model, make) need to be recorded using the app
+to enable replication in future surveys.</p>
+<p>Spotlighting is most practical in open, flat environments and
+requires little specialised equipment (Coulson et al. 2021, Hradsky et
+al. 2021). Spotlighting is generally most effective for species with a
+distinctive eyeshine (animals that possess a tapetum lucidum behind
+their retinas which act as a retroreflector) or that can be detected and
+identified based on size and behaviour (Hradsky et al. 2021). Still,
+this method may underestimate numbers (Amos 2015). Thermal surveys are
+generally better than spotlighting cryptic species such as feral pigs,
+which lack eyeshine and prefer habitats with dense vegetation cover
+(Acevedo et al. 2007, Focardi et al. 2020). Thermal imaging facilitates
+identification under most weather conditions, through some foliage, at
+greater distances, and reduces flushing and disturbance of animals
+compared to spotlighting (West et al. 2009, Engeman et al. 2013). Using
+thermal imaging also increases the probability of observing animals
+before being detected and generally causes less direct disturbance than
+spotlighting (Marini et al. 2009, Franzetti et al. 2012). Traditionally,
+thermal equipment can be expensive (Amos 2015). However, costs are
+reducing. Relying on thermal detection can be limited in locations where
+high overnight temperatures occur because the thermal differential
+between the animal and its background is reduced, impacting
+detectability (McGregor et al. 2022).</p>"""^^rdf:HTML ;
+    tern:scope """<h1 id="introduction-and-background">Introduction and background</h1>
+<p>Ground counts are used to measure the abundance or density of target
+species (Edwards et al. 2000, McGregor et al. 2022), and involve
+counting actual animals rather than counting their signs (e.g. scats,
+tracks). The Fauna Ground Counts Module provides the procedures and
+guidelines for undertaking direct counts of medium to large fauna
+species. The module is based on existing, well-established methods and
+includes a protocol for transect surveys and a protocol for vantage
+point surveys.</p>
+<p>Transects are the most common approach for direct counts and involve
+counting all animals observed within a fixed width of the transect, or a
+distance sampling approach that involves recording the distance and
+direction of the animal from the transect (Mitchell and Balogh 2007c,
+ACT Government 2015, Buckland et al. 2015). Vantage point surveys occur
+for a fixed time, from a fixed location with a clear view of the
+surrounding area and can be used where rugged terrain makes it
+impractical to use transects (Tracey 2004, Mitchell and Balogh 2007c,
+Zaccaroni et al. 2018). Vantage point counts can be undertaken as fixed
+area surveys, or can adopt a distance sampling approach, with the
+distance and direction from the vantage point to the animal recorded
+(Mitchell and Balogh 2007c). Survey protocol is chosen according to the
+target species and terrain of the study area. Both transect and vantage
+point protocols can be completed during the day, at dawn/dusk or at
+night (using a spotlight or thermal device). Transects can be undertaken
+on foot or from a vehicle. Multiple fauna species can be recorded
+simultaneously during a survey. Recommendations are provided to assist
+with survey planning. Surveys can be tailored to the habitat types
+present and the ecology of the fauna species, and recommendations are
+provided within the module to assist with survey planning (<a href="#_Toc140739738_appendix-2">Appendix 2</a>).</p>
+<p>The Fauna Ground Counts Module is focussed on standardising how
+survey information and fauna observations are recorded rather than
+providing prescriptive guidelines for how surveys should be undertaken.
+It is recommended that both transect surveys and vantage point surveys
+are repeated over two or three consecutive days/nights, commencing and
+finishing at the same time, with the same observers and equipment.
+However, it is acknowledged that consecutive repeats may not occur.
+Similarly, resources and logistics will need to be considered when
+determining survey frequency. </p>"""^^rdf:HTML ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/35239cb4-d7eb-4794-9148-7aed051d731c> ,
+        <https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6> ,
+        <https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6> ;
+.
+
