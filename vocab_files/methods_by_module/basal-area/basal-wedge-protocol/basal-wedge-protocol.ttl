@@ -10,263 +10,483 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:Concept ,
         tern:Method ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """
-    <p>
-    TERN Basal Wedge measures of ‘in’ trees at nine point sampling locations across the plot.
-    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5">Basal Area</a> module. 
-    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
-    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5">Basal Area</a>" module.
-    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
-    </p>
-    """^^rdf:HTML ;
-    skos:note """
-    <h3 id="additional-guidelines">Additional Guidelines</h3>
-    <ul>
-        <li>
-          Examples of how to score trees using the TERN Basal Wedge are illustrated in <a href='#figure-8'>Figure 8</a>.
-        </li>
-        <li>
-          A tree is &lsquo;in&rsquo; when its trunk or stem, at breast height (1.3 m,
-          or the nearest point above if there is a deformity at 1.3 m), is wider than
-          the chosen BAF (<a href='#figure-8'>Figure 8</a>).
-        </li>
-        <li>
-          Do not record the data if less than seven &lsquo;in&rsquo; trees for a given
-          BAF are achieved for each species. Data becomes meaningless with less than
-          seven &lsquo;in&rsquo; trees. Repeat the sweep using a smaller BAF, or if
-          there are less than seven &lsquo;in&rsquo; trees with the smallest BAF
-          (0.1), no data is recorded.
-        </li>
-        <li>
-          Where the trunk or stem is exactly the same width as the BAF (i.e.
-          &lsquo;borderline&rsquo; tree), add a half count to your tally (<a href='#figure-8'>Figure 8</a>).
-        </li>
-        <li>
-          Select the widest suitable BAF to sample seven &lsquo;in&rsquo; trees for
-          the species. This increases efficiency as it reduces the numbers of
-          &lsquo;in&rsquo; trees likely. For example, use the &lsquo;1&rsquo; BAF to
-          record eight &lsquo;in&rsquo; trees rather than the &lsquo;0.5&rsquo; BAF to
-          record 15 &lsquo;in&rsquo; trees.
-        </li>
-        <li>
-          It is more efficient to use the same BAF for every species at each sampling
-          location, however this is not always practicable. For example, the
-          &lsquo;0.5&rsquo; BAF may be suitable to be used for species x at all
-          sampling locations; while the &lsquo;0.1&rsquo; BAF may be required for
-          species y at all sampling locations, etc.
-        </li>
-        <li>
-          For each species, only use one BAF at each sampling location. Do not make
-          separate counts of &lsquo;in&rsquo; trees using different BAFs for the same
-          species.
-        </li>
-        <table>
-            <tbody>
-              <tr>
-                <td id='figure-8'>
-                  <img
-                    src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-3-wedges.png"
-                    alt="Examples of how to score trees using the TERN Basal Wedge"
-                    widteh="644"
-                    height="260"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        <p>Figure 8. Examples of how to score trees using the TERN Basal Wedge</p>
-    </ul>
-    <p><strong>Solutions to problem trees</strong></p>
-    <ul>
-        <li>
-          For hidden trees (trees that are partially or fully hidden behind other
-          trees or undergrowth), move sideways until the tree is fully in view, but be
-          sure to maintain the same distance to the tree. Move back to the sampling
-          point before assessing the next tree.
-        </li>
-        <li>Buttressed trees should be measured above the buttress.</li>
-        <li>
-          For multi-stemmed trees, measure each stem individually and add all
-          &lsquo;in&rsquo; stems to your tally.
-        </li>
-        <li>
-          For trees on a slope, the 1.3 m POM should be measured on the uphill side of
-          the tree.
-        </li>
-        <li>
-          For leaning trees, hold the basal wedge at a tilt so that the view is at
-          right angles to the trunk or stem.
-        </li>
-        <li>
-          Deformed trees should be measured at the nearest point above 1.3 m that is
-          not deformed.
-        </li>
-        <li>
-          Dead trees are flagged as &lsquo;Dead&rsquo; and all other attributes are
-          measured as normal.
-        </li>
-    </ul>"""^^rdf:HTML ;
-    skos:prefLabel "Basal wedge protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/basal-area/basal-wedge-protocol/basal-wedge-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """
-    <h3>Contents</h3>
+    skos:definition """<h3>Contents</h3>
 <ol>
+  <li><a href="#basal-wedge-protocol"><Basal Wedge protocol</a></li>
   <li><a href="#equipment">Equipment</a></li>
   <li>
     <a href="#instructions-and-procedures">Instructions and procedures</a>
   </li>
   <li><a href="#additional-guidelines">Additional guidelines</a></li>
 </ol>
-    <h3 id="equipment">Equipment</h3>
-    <ul>
-  <li>
-    Mobile device (tablet/phone capable of taking high resolution photos) with
-    the App (progressive web app) saved to the home screen
-  </li>
-  <li>
-    TERN Basal Wedge (see <a href='#figure-2'>Figure 2</a>) with attached string knotted at precisely 50 cm
-    from the wedge (see <a href='#figure-5'>Figure 5</a>).
-  </li>
+<h1 id="basal-wedge-protocol">Basal Wedge protocol</h1>
+<h2 id="field-collection-1">Field collection</h2>
+<h3 id="pre-requisites-1">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<li><p>The plot must be established using the Plot Layout and Selection
+Module prior to conducting the DBH protocol.</p></li>
+<li><p>The Plot Description Module must be completed prior to, or during
+the reconnaissance survey using the active search protocol.</p></li>
+</ul>
+<h3 id="time-requirements-1">Time requirements</h3>
+<p>Survey activity time will vary depending on the options chosen and
+the density of vegetation to traverse. A tree survey is highly dependent
+on the number of trees to be measured. As a general guide:</p>
+<ul>
+<li><p>Allow 1-2 hours for survey planning</p></li>
+<li><p>Allow 20 - 40 minutes for plot set-up and laying tape measures
+(assuming the plot has been previously set-up using the Plot Selection
+and Layout Module).</p></li>
+<li><p>Allow thirty minutes to complete the basal wedge survey per
+plot.</p></li>
+</ul>
+<h3 id="personnel-requirements-1">Personnel requirements</h3>
+<p>Number of personnel and skills:</p>
+<ul>
+<li><p>Basal wedge sweeps may be conducted by a single observer and the
+observations can be recorded directly into the Monitor app.</p></li>
+<li><p>The surveyor making observations should be familiar with and
+experienced in identifying traits specific to tree species and how to
+distinguish different species from one another.</p></li>
+<li><p>Basal wedge sweeps do not involve interference with wildlife.
+Therefore, scientific permits and wildlife ethics approvals are unlikely
+to be required but remember to always check with the local authority.
+Access permissions are required.</p></li>
+</ul>"""^^rdf:HTML ;
+    skos:note """
+    <h3 id="additional-guidelines-1">Additional guidelines</h3>
+<h4 class="unnumbered" id="rules-to-determine-in-trees">Rules to
+determine ‘in’ trees</h4>
+<ul>
+<li><p>Examples of how to score trees using the TERN Basal Wedge are
+illustrated in Figure 6.</p></li>
+<li><p>A tree is ‘in’ when its trunk or stem, at breast height (1.3 m,
+or the nearest point above if there is a deformity at 1.3 m), is wider
+than the chosen BAF (Figure 6).</p></li>
+<li><p>Species that cannot be easily distinguished from one another may
+be combined for the basal wedge count. This is only applicable if they
+are of the same genus and growth form (e.g. in mallee) as the basal area
+equation will be the same.</p></li>
+<li><p>Do not record the data if less than seven ‘in’ trees for a given
+BAF are achieved for each species. Data become meaningless with less
+than seven ‘in’ trees. Repeat the sweep using a smaller BAF, or if there
+are less than seven ‘in’ trees with the smallest BAF (0.1), no data is
+recorded.</p></li>
+<li><p>Where the trunk or stem is exactly the width of the BAF (i.e.
+‘borderline’ tree), add a half count to your tally (Figure 6.).</p></li>
+<li><p>Select the widest suitable BAF to sample seven ‘in’ trees for the
+species. This increases efficiency as it reduces the number of ‘in’
+trees likely. For example, use the ‘1’ BAF to record eight ‘in’ trees
+rather than the ‘0.5’ BAF to record 15 ‘in’ trees.</p></li>
+<li><p>It is more efficient to use the same BAF for every species at
+each sampling location. However, this is not always practicable. For
+example, the ‘0.5’ BAF may be suitable to be used for <em>species x</em>
+at all sampling locations; while the ‘0.1’ BAF may be required for
+<em>species y</em> at all sampling locations, etc.</p></li>
+<li><p>For each species, only use one BAF at each sampling location. Do
+not make separate counts of ‘in’ trees using different BAFs for the same
+species.</p></li>
+</ul>
+<h4 class="unnumbered" id="solutions-to-problem-trees-1">Solutions to
+problem trees</h4>
+<ul>
+<li><p>For hidden trees (trees that are partially or fully hidden behind
+other trees or undergrowth), move sideways until the tree is fully in
+view, but be sure to maintain the same distance to the tree. Move back
+to the sampling point before assessing the next tree.</p></li>
+<li><p>Buttressed trees should be measured above the buttress.</p></li>
+<li><p>For multi-stemmed trees, measure each stem individually and add
+all ‘in’ stems to your tally.</p></li>
+<li><p>For trees on a slope, the 1.3 m POM should be measured on the
+uphill side of the tree.</p></li>
+<li><p>For leaning trees, hold the basal wedge at a tilt so that the
+view is at right angles to the trunk or stem.</p></li>
+<li><p>Deformed trees should be measured at the nearest point above 1.3
+m that is not deformed.</p></li>
+<li><p>Dead trees are flagged as <em>dead</em> and all other attributes
+are measured as normal.</p></li>
+<li><p>The soft texture of tree fern trunks is not conducive to DBH
+measurements, and therefore, tree ferns are not measured for
+diameter.</p></li>
+</ul>
+<h2 id="post-field-survey-tasks-1">Post-field survey tasks</h2>
+<h3 id="sample-curation-1">Sample curation</h3>
+<p>The Basal wedge protocol does not collect samples. There are no
+curation requirements.</p>
+<h2 id="data-submission">Data submission</h2>
+<p>Data from the Basal Area Module is collected in the field using the
+Monitor app. Data entry is completed in the app, photos are taken using
+the app (or later linked if taken on other devices), and voucher
+barcodes are scanned in the app to link voucher numbers to the unique
+data. All data is checked for correctness and completeness in the app
+before it is submitted.</p>
+<p>Once all data is finalised, and marked as completed, the data is
+submitted from the Monitor app to the staging server by an explicit user
+action. If the device is offline at the time, the data will be pushed as
+soon as it is reconnected to a network (i.e. either back in mobile phone
+range or a wi-fi network). Once data reaches the staging server it is
+prepared in an export interface for delivery to the Biodiversity Data
+Repository. DCCEEW is then responsible for managing the data. In the
+future, it is anticipated that data curation tools will be made
+available to project personnel.</p>"""^^rdf:HTML ;
+    skos:prefLabel "Basal wedge protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/basal-area/basal-wedge-protocol/basal-wedge-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """<h1 id="appendices-wedge">Appendices</h1>
+<p><span class="anchor" id="_Ref138703508"></span><h3>Appendix 1. Basal wedge
+– point sampling explanation</h3></p>
+<p>In point sampling, basal area is estimated based on the concept of
+circles (trunks or stems) within circles (variable circular plots; see
+Figure. a.). The area of one circle varies proportionally to a change in
+the area of the other circle (i.e. the area sampled is greater for
+larger than smaller trees) and trees are sampled with a probability
+proportional to their basal area. Therefore, large trees, which
+contribute more to the basal area of a stand, are sampled in greater
+proportions than small trees (Hovind and Rieck 1970).</p>
+<p>An observer rotates 360° at a sampling point and counts all the
+trunks or stems that form an angle greater than the chosen BAF. In
+effect, every tree counted is sampled in a variable circular plot with a
+radius that is a function of the tree’s DBH (Figure. a). Because a
+tree’s DBH determines its basal area, and the plot radius determines the
+sampling area for that tree, the contribution of each counted tree to
+total stand basal area can be determined. For such a sample of trees,
+there is a constant relationship between tree DBH and effective sampling
+area, and therefore each tree counted represents the same contribution
+to the basal area of the stand. To estimate the total stand basal area,
+the only calculation required is to multiply the count of ‘in’ trees by
+the BAF used, which is determined from the aperture width used with an
+angle gauge and the fixed distance that the angle gauge is held from the
+eye (Fastie 2010). Measurements of variable circular plot radii and DBHs
+are not required as these values are proportional to the aperture width
+used with an angle gauge and the fixed distance that the angle gauge is
+held from the eye (Figure. b.).</p>
+<table>
+    <tbody>
+      <tr>
+        <td id='figure-3'>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-360-point-sampling-sweep.png"
+            alt="360° point sampling sweep showing an ‘in’ (counted), ‘out’ (not counted) and ‘borderline’ tree (half counted)."
+            widteh="412"
+            height="492"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table> 
+<p>Figure a. 360° point sampling sweep showing an ‘in’ (counted), ‘out’
+(not counted) and ‘borderline’ tree (half counted). The dashed circles
+represent the variable circular plot for each tree that is proportional
+to its diameter at breast height (not to scale).</p>
+<p>
+ <tbody>
+      <tr>
+        <td id='figure-4'><img src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/Figure.b.png"   alt="360° point sampling sweep showing an ‘in’ (counted), ‘out’ (not counted) and ‘borderline’ tree (half counted)."
+            widteh="370"
+            height="360"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table> </p>
+<p>Figure. b. Principle of point sampling. The diameter at breast height
+(DBH) and variable circular plot radius (R) of a ‘borderline’ tree are
+proportional to the aperture (a) width of an angle gauge and the fixed
+distance (d) that the angle gauge is held from the eye.</p>
+<p>The Basal wedge protocol measures basal area at nine sampling points
+(<a href="#figure-1">Figure 1</a>.) using a TERN Basal Wedge (<a href="#figure-2">Figure 2</a>). The TERN Basal Wedge
+is an angle gauge designed by TERN Ecosystem Surveillance for monitoring
+basal areas across Australia. The hexagonal basal wedge has six fixed
+angle gauges that represent six different BAFs. The wedge is held at the
+fixed distance of 50 cm from the observer’s eye using a taut string, as
+this produces a sighting ratio of 1:50. At this ratio, a 1 cm aperture
+corresponds to a BAF of 1 or a basal area of 1 m<sup>2</sup>/ha. To
+determine the aperture for the specific BAFs of the basal wedge, the
+following equation was used:</p>
+<p>𝐴=<span style="white-space: nowrap; font-size:larger">
+    &radic;<span style="text-decoration:overline;">(𝐵𝐴𝐹 &times;𝐷^2&nbsp;&divide;0.25)&nbsp;</span>
+    </span></p>
+<p>Where A is the aperture in centimetres and D is the fixed distance
+that the wedge is held from the eye in metres (i.e. 0.5 m; Muir <em>et
+al.</em> 2011)</p>
+<p><h4>TERN Basal Wedge basal area factors and corresponding wedge apertures
+and angles formed.</h4></p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>BAF (Basal area [m<sup>2</sup>/ha])</th>
+<th>Aperture (cm)</th>
+<th>Angle formed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.1</td>
+<td>0.32</td>
+<td>0.37°</td>
+</tr>
+<tr class="even">
+<td>0.25</td>
+<td>0.50</td>
+<td>0.57°</td>
+</tr>
+<tr class="odd">
+<td>0.5</td>
+<td>0.71</td>
+<td>0.81°</td>
+</tr>
+<tr class="even">
+<td>0.75</td>
+<td>0.87</td>
+<td>1.00°</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>1.00</td>
+<td>2.29°</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>1.41</td>
+<td>3.23°</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="_Ref138703522"></span><h3>Appendix 2. Data
+collection fields from the Basal Area Module</h3></p>
+<p>Complete lists are provided in the Monitor app, as well as the <a href="https://linked.data.gov.au/def/nrm/f46fcbc6-0660-4e12-bcd4-c5642459b630">TERN
+Linked Data Services</a> page.</p>
+<p><h4>DBH instrument</h4></p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 66%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>DBH instrument</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DIA</td>
+<td>Diameter tape measure</td>
+</tr>
+<tr class="even">
+<td>TAP</td>
+<td>Tape measure</td>
+</tr>
+<tr class="odd">
+<td>CAL</td>
+<td>Tree calliper</td>
+</tr>
+</tbody>
+</table>
+<p><h4>Basal sweep sampling point</h4></p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 66%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Basal sweep sampling point</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NW</td>
+<td>Northwest</td>
+</tr>
+<tr class="even">
+<td>N</td>
+<td>North</td>
+</tr>
+<tr class="odd">
+<td>NE</td>
+<td>Northeast</td>
+</tr>
+<tr class="even">
+<td>E</td>
+<td>East</td>
+</tr>
+<tr class="odd">
+<td>SE</td>
+<td>Southeast</td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td>South</td>
+</tr>
+<tr class="odd">
+<td>SW</td>
+<td>Southwest</td>
+</tr>
+<tr class="even">
+<td>W</td>
+<td>West</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Centre</td>
+</tr>
+</tbody>
+</table>
+<p><h4>Basal area factor</h4></p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 66%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Basal Area Factor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+<tr class="even">
+<td>0.25</td>
+<td>0.25</td>
+</tr>
+<tr class="odd">
+<td>0.5</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>0.75</td>
+<td>0.75</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment-1">Equipment</h3>
+<ul>
+<li><p>Mobile device (tablet/phone) with the Monitor app
+pre-loaded.</p></li>
+<li><p>TERN Basal Wedge (Figure 2.) with attached string knotted at
+precisely 50 cm from the wedge.</p></li>
 </ul>"""^^rdf:HTML ;
     tern:instructions """
-    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
-    <p>
-    <ol>
-      <li>
-        Ensure the <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot selection and layout module</a> has been completed to mark out
-        the plot grid (including the Centrepoint and north, south, east and west
-        point sampling locations) with very high accuracy using the Trimble&reg; R1.
-      </li>
-      <li>
-        Open the App and navigate to the &lsquo;Basal Area&rsquo; module and then
-        the &lsquo;Basal Wedge Protocol&rsquo;.
-      </li>
-      <li>
-        Stand at one of the 9 basal wedge sampling locations and
-        select the location from the drop-down list. It does not matter
-        which order the sampling locations are surveyed in.
-      </li>
-      <li>
-        Select the &lsquo;Record basal wedge sampling point&rsquo; button to
-        record the location with very high accuracy using the Trimble&reg; R1.
-        Because the method involves a plotless sweep, location accuracy at the NW,
-        N, NE, E, SE, S, SW and W points around the perimeter of the plot, as well
-        as the center of the plot is not critical.
-      </li>
-      <li>
-        Hold the end knot of the 50 cm length of string attached to the wedge on
-        your cheek below one eye &ndash; close the other eye. Hold the wedge so that
-        the string is taught (see <a href='#figure-7'>Figure 7</a>).
-      </li>
-      <li>
-        Determine if the use of the basal wedge is warranted at the plot (i.e., are
-        there sufficient trunks or stems of trees, tall shrubs or mallee that are
-        large enough to count seven or more &lsquo;in&rsquo; trees for any species).
-      </li>
-      <li>
-        For each species, establish which BAF (0.1, 0.25, 0.5, 0.75, 1 and 2) to
-        use. This is determined by selecting a BAF and undertaking a brief sweep
-        around the point sampling location to determine if the selected BAF will
-        sample seven or more &lsquo;in&rsquo; trees (see <a href="#additional-guidelines">Additional guidelines</a> below
-        for rules on counting &lsquo;in&rsquo; and &lsquo;borderline&rsquo; trees)
-        for the sampling location. Ideally aim to achieve the minimum seven
-        &lsquo;in&rsquo; trees with the largest aperture width.
-      </li>
-      <li>
-        Once you have selected the appropriate BAF for a species, rotate through a
-        complete 360&deg; sweep and, looking through the eye above the string, count
-        the number of stems or trunks of each species, at breast height, that are
-        wider than the aperture of the chosen BAF as &lsquo;in&rsquo;, and the exact
-        width of the aperture as &lsquo;borderline&rsquo; (i.e., half count).
-      </li>
-      <li>
-        Record the species, the tally of &lsquo;in&rsquo; and
-        &lsquo;borderline&rsquo; trees and the BAF used for the sampling location and select the &lsquo;Save
-        species&rsquo; button.
-      </li>
-      <li>
-        Repeat 'steps 7&ndash;9' for the remaining species at the sampling location.
-      </li>
-      <li>
-        Select the &lsquo;Finish sampling location&rsquo; button to return to the
-        sampling location selection screen.
-      </li>
-      <li>
-        Repeat 'steps 3&ndash;11' at each remaining sampling location. When all the
-        sampling locations have been assessed, the App will display a data summary
-        (e.g., mean basal area, total stem counts) on the sampling location
-        selection screen.
-      </li>
-      <li>
-        When basal area has been recorded for each species at each sampling
-        location, select the &lsquo;Finish module&rsquo; button to return to the
-        module selection screen.
-      </li>
-    </ol>
-    </p>
-
-    <table>
-        <tbody>
-          <tr>
-            <td id='figure-1'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-belt-transects.png"
-                alt="100 x 100 m plot layout showing the two 20 x 100 m belt transects"
-                widteh="720"
-                height="638"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    <p>Figure 1. 100 x 100 m plot layout showing the two 20 x 100 m belt transects.</p>
-    <p>  </p>
-    <p>  </p>
-    <table>
-        <tbody>
-          <tr>
-            <td id='figure-2'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-basal-wedge.png"
-                alt="TERN Basal Wedge showing the six wedge apertures or basal area factors"
-                widteh="273"
-                height="236"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    <p>Figure 2. TERN Basal Wedge showing the six wedge apertures or basal area factors.</p>
-    <table>
-        <tbody>
-          <tr>
-            <td id='figure-5'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/Rule-set-tree-out-of-plot.png"
-                alt="Rule set to determine if a tree is in or out of the plot (Wood et al. 2015)."
-                width="500"
-                height="200"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p>Figure 5. Rule set to determine if a tree is in or out of the plot (Wood et al. 2015).</p>
-      <table>
-        <tbody>
-          <tr>
-            <td id='figure-7'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/scoring-trees-with-basal-wedge.png"
-                alt="Examples of how to score trees using the TERN Basal Wedge."
-                width="450"
-                height="300"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p>Figure 7. Surveyor correctly holding the end of the TERN Basal Wedge string on the cheek bone below the eye and holding the wedge at full length with the string taunt.</p>
+    <h3 id="instructions-and-procedures-1">Instructions and procedures</h3>
+<ol type="1">
+<li><p>Ensure the Plot Selection and Layout Module has been completed to
+mark out the plot grid (including the centre point and north, south,
+east and west point sampling locations) and define the current plot and
+visit in the Monitor app.</p></li>
+<li><p>Open the app and navigate to the Basal Area Module and select
+<em>basal area</em> - <em>basal wedge</em>.</p></li>
+<li><p>Confirm the survey start date and time, and select
+<em>next</em>.</p></li>
+<li><p>Stand at one of the nine basal wedge sampling locations (see
+<a href="#figure-1DBH">Figure 1</a>.) and select the location from the drop-down list (<a href="#appendices-wedge">Appendix 2</a>).
+It does not matter in which order the sampling locations are
+surveyed.</p></li>
+<table>
+    <tbody>
+      <tr>
+        <td id='figure-1DBH'>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/Figure1.jpg"
+            alt="Figure 1. A 100 x 100 m core plot layout showing the 40 x 40 m central sub-plot and nine basal wedge sampling locations."
+            widteh="720"
+            height="638"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<p>Figure 1. A 100 x 100 m core plot layout showing the 40 x 40 m central sub-plot and nine basal wedge sampling locations.</p>
+<li><p>Hold the end knot of the 50 cm length of string attached to the
+wedge on your cheek below one eye – close the other eye. Hold the wedge
+so that the string is taut (see <a href="">Figure 5</a>).</p></li>
+<li><p>Determine if the use of the basal wedge is warranted at the plot
+(i.e. are there sufficient trunks or stems of trees, tall shrubs or
+mallee that are large enough to count seven or more ‘in’ trees for any
+species) If there are not sufficient trees to sample then the Enhanced
+or Standard DBH protocols are recommended to complete basal area
+measurements.</p></li>
+<li><p>For each species, establish which Basal Area Factor (BAF) (0.1,
+0.25, 0.5, 0.75, 1 and 2) to use. This is determined by selecting a BAF
+and undertaking a brief sweep around the point sampling location to
+determine if the selected BAF will sample seven or more ‘in’ trees (see
+<a href="#rules-to-determine-in-trees">Additional guidelines</a> below
+for rules on counting ‘in’ and ‘borderline’ trees) for the sampling
+location. Ideally, aim to achieve the minimum seven ‘in’ trees with the
+largest aperture width.</p></li>
+<li><p>Once you have selected the appropriate BAF for a species, rotate
+through a complete 360° sweep and, looking through the eye above the
+string, count the number of stems or trunks of each species at breast
+height, that are wider than the aperture of the chosen BAF as ‘in’, and
+the exact width of the aperture as ‘borderline’ (i.e. half
+count).</p></li>
+<li><p>Record the species, and the BAF used (from the drop-down list
+(see <a href="#appendices-wedge">Appendix 1</a>) the tally of ‘in’ and ‘borderline’ trees for the
+sampling location and select the <em>save species</em> button.</p></li>
+<li><p>Repeat steps 8–10 for the remaining species at the sampling
+location using the blue <em>+</em> button.</p></li>
+<li><p>Select the <em>finish sampling location</em> button to return to
+the sampling location selection screen.</p></li>
+<li><p>Repeat steps 4–11 at each remaining sampling location.</p></li>
+<li><p>
+<table>
+    <tbody>
+      <tr>
+        <td id='figure-1DBH'>
+          <img
+            src="src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/Surveyor_holding_wedge.png""
+            alt="Figure 5"
+            widteh="720"
+            height="638"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<p>Figure 5. Surveyor correctly
+holding the end of the TERN Basal Wedge string on the cheekbone below
+the eye and holding the wedge at full length with the string taut.</p>
+<li>When basal area has been
+recorded for each species at each sampling location, select the
+<em>finish module</em> button. The app will display a data summary (e.g.
+mean basal area, total stem counts) on the sampling point selection
+screen.</p></li>
+</ol>
+<p><span class="anchor" id="_Ref75431468"></span><img <table>
+    <tbody>
+      <tr>
+        <td id='figure-1DBH'>
+          <img
+            src="src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/Basal_Wedge_scoring.png""
+            alt="Figure 6"
+            widteh="720"
+            height="638"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<p><span class="anchor" id="_Ref137544464"></span>Figure 6. Examples of
+how to score trees using the TERN Basal Wedge.</p>
 """^^rdf:HTML ;
 .
 
