@@ -6,729 +6,148 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5>
+<https://linked.data.gov.au/def/nrm/a2afccd5-766e-44bc-98c1-f27aae26727f>
     a
-        skos:OrderedCollection ,
-        tern:MethodCollection ;
-    dcterms:description """ <h2>Contents</h2>
-  <ol>
-    <li><a href="#introduction">Introduction and Background</a></li>
-    <li>
-      <a href="#key-definitions-and-terminology"
-        >Key definitions and terminology</a
-      >
-    </li>
-    <li><a href="#rationale">Rationale</a></li>
-    <li><a href="#module-overview">Module Overview</a></li>
-    <li><a href="#references">References</a></li>
-    <li><a href="#appendices">Appendices</a></li>
-  </ol>
-    <h2 id="module-overview">Module overview</h2>
-<h3 id="available-protocols">Available protocols</h3>
-<p>This module includes three complementary camera trapping protocols,
-each of which collects all associated metadata in a standardised manner
-in the Monitor app:</p>
-<ol type="1">
-<li><p><a href="https://linked.data.gov.au/def/nrm/1a6953e4-a830-41f8-9cfd-11ead4dd6bc2">Camera Trap Deployment</a> – camera traps deployed at points of
-interest or in an array or Fauna Plot.</p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/a2afccd5-766e-44bc-98c1-f27aae26727f">Camera Trap Re-equipping</a> – camera trap batteries and SD cards
-replaced to extend deployment.</p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/cb497bbc-75dc-450d-b020-5bc3c54d5586">Camera Trap Retrieval</a> – camera traps retrieved at the end of the
-deployment period.</p></li>
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h1>Contents</h1>
+<ol>
+  <li><a href="#camera-trap-re-equipping-protocol">Camera Trap Re-equipping</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices-1">Appendices</a></li>
 </ol>
-<p>The deployment protocol can be used to simply deploy camera traps at
-one or more features of interest, such as a waterpoint or trail, as well
-as in an array (i.e. grid or transect), or in Fauna Plots in conjunction
-with a general vertebrate fauna survey (e.g. Gillespie et al. 2015).
-Camera traps may also be deployed using a combination of these
-approaches to improve the probability of detecting a species or maximise
-the species inventory when undertaking fauna monitoring within a project
-area.</p>
-<p>Camera traps are often deployed at bait stations to attract fauna
-into the detection zone, which increases the likelihood of detection
-(Gillespie <em>et al.</em> 2015). As such, the deployment protocol
-provides an option for passive (without lure or bait) and active (with
-lure or bait) survey designs, including monitoring a bait station,
-carcass or palatable plant. This allows the protocol to be tailored to
-monitor vertebrate pest species, including feral cats, wild dogs, foxes,
-feral pigs, deer, rabbits, goats and camels.</p>
-<p>The deployment protocol includes the procedures and guidelines for
-broadly locating camera trap points in the field, micrositing the exact
-camera trap point locations to optimise fauna detections, site
-preparation, installing bait stations, and recording all associated
-metadata (e.g. survey type, camera trap make, model and settings, camera
-trap location and orientation, focal point, target species if
-applicable, bait station details, deployment period) in a standardised
-manner directly into the Monitor app.</p>
-<p>The module covers pre-field survey tasks, including camera trap, SD
-card and battery preparation (see <a href="#appendices-1">Appendix 1</a>), as well as study design
-and planning considerations to maximise species detection and
-identification (see <a href="#appendix-2">Appendix 2</a>).</p>
-<p>Complete lists of data collection fields are provided in the Monitor
-app, as well as the TERN Linked Data <a href="https://linkeddata.tern.org.au/viewer/tern/">website</a>. Data
-standards are based on the Camera Trap Metadata Standard developed by
-Forrester et al. (2016), an open data standard for storing and sharing
-camera trap data between projects, and which offers a foundation for
-collecting the more detailed data needed for downstream analyses. The
-standard captures information about study design, the type of camera
-trap used, and the location and species names for all detections, among
-others, in a standardised manner. The standard is compatible with the
-Federal Geographic Data Committee, the Darwin Core, the Ecological
-Metadata Language, and the Audubon Core metadata standards to allow data
-to be easily cross referenced with existing data repositories, such as
-DataONE (Forrester et al. 2016).</p>
-<h2 id="relationship-to-other-modules">Relationship to other
-modules</h2>
-<h3 id="mandatory-related-modules">Mandatory related modules</h3>
-<p>Mandatory if deploying camera traps in a fauna plot in conjunction
-with a general vertebrate fauna survey:</p>
+    <h1 id="camera-trap-re-equipping-protocol">Camera Trap Re-equipping
+protocol</h1>
+<h2 id="field-collection-1">Field collection</h2>
+<p>
+    Remote cameras deliberately deployed at features of interest (e.g. suitable habitat, trail intersections, waterpoints, tree hollows, inflorescences) in the project area to maximise fauna detection, supplement species inventory, or record behaviour, with the option to capture video, orientate camera traps horizontally (i.e. downward-facing detection zone and field of view) to survey small mammals and reptiles, and use bait stations or lures.
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5">Camera Trapping</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5">Camera Trapping</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+<h3 id="pre-requisites-1">Pre-requisites</h3>
+<p>The following tasks need to be undertaken before commencing a
+re-equipping field survey:</p>
 <ul>
-<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – the Fauna Plot must be
-established first, and the boundaries must be defined to ensure the
-camera traps are deployed within the plot boundaries.</p></li>
+<li><p>Camera trap identification, firmware update and settings
+configuration (<a href="#appendix-1">Appendix 1</a>)</p></li>
+<li><p>SD card identification and formatting (<a href="#appendix-1">Appendix 1</a>)</p></li>
+<li><p>Batteries preparation (<a href="#appendix-1">Appendix 1</a>)</p></li>
+<li><p>Desiccant installation (humid/wet conditions; <a href="#appendix-1">Appendix
+1</a>).</p></li>
 </ul>
-<h3 id="optional-complementary-related-modules">Optional complementary
-related modules</h3>
+<h3 id="time-requirements-1">Time requirements</h3>
+<p>Survey time requirements will vary depending on the number and
+experience of personnel, the number of camera traps being re-equipped,
+whether any damaged or missing camera traps need to be replaced, whether
+additional equipment is being used and needs to be replaced, the level
+of follow-up site preparation required at each camera trap point, the
+size of the project area, and the level of difficulty in traversing the
+project area.</p>
+<p>As a general guide:</p>
 <ul>
-<li><p><a href="https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51">Vertebrate Fauna Module</a> – camera traps can be used in combination
-with a range of other vertebrate fauna survey methods (e.g. pitfall
-trapping).</p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508">Vegetation Mapping Module</a> – fauna habitats in the project area
-and Fauna Plot selection can be informed by the results of the
-Vegetation Mapping Module.</p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9">Targeted Surveys Module</a> – camera traps can be deployed as part of
-targeted surveys and can be used in combination with a range of other
-targeted measures.</p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6">Interventions Module</a> – camera traps can be used to detect
-distribution and population trends associated with interventions to
-conserve threatened species, as well as monitor vertebrate pest
-population control.</p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportune Module</a> – opportune records can assist with camera trap
-placement based on any observations (direct or signs) of target
-species.</p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/8e7c86ce-e283-4cea-aca7-44ed7a22629c">Sign-based Fauna Surveys Module</a> – camera trapping can be used in
-association with sign-based surveys to help verify sign-based data and
-assist with abundance estimates.</p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/cd04526e-7455-45c1-8a44-55575a4a7b2d">Fauna Ground Surveys Module</a> – camera trapping can be used in
-association with direct ground surveys to extend the survey period (i.e.
-24 hrs per day) and assist with abundance estimates and individual
-identification.</p></li>
+<li><p>Allow one week prior to the field survey to prepare replacement
+camera traps, SD cards and batteries.</p></li>
+<li><p>Allow 5–20 minutes at each camera trap point, depending if
+replacing a bait station or carcass.</p></li>
+<li><p>Allow travel time between camera trap points.</p></li>
+<li><p>Consider the deployment period.</p></li>
+</ul>
+<h3 id="personnel-requirements-1">Personnel requirements</h3>
+<p>Personnel number and skills:</p>
+<ul>
+<li><p>Camera trap re-equipping and recording the data directly into the
+app can be conducted by a single surveyor. However, it is best conducted
+with two personnel, one re-equipping the camera traps, and the other
+recording the data directly into the app.</p></li>
+<li><p>The surveyor re-equipping the camera traps should be familiar
+with and experienced in the operation and settings of the camera traps.
+If surveyors are not confident, time should be dedicated to practising,
+using instruction manuals, and seeking advice before conducting this
+protocol.</p></li>
+<li><p>For large project areas and camera trap arrays, camera trap
+re-equipping is best conducted with two or more teams in separate
+vehicles.</p></li>
+<li><p>The use of camera traps involves interference with wildlife.
+Therefore, scientific permits and wildlife ethics approvals are likely
+to be required, so always check with your local authority. Access
+permissions are required.</p></li>
+</ul>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+<h3 id="additional-guidelines-1">Additional guidelines</h3>
+<ul>
+<li><p>It is important to confirm whether or not the camera trap was
+operational for the whole survey period. If there is no capture sequence
+upon re-equipping of the camera trap it makes it impossible to know
+whether it was operational for the full deployment period. For example,
+if the last image occurs in week 3 of 4, this could reflect either no
+animals at the camera trap point post week 3 or a camera malfunction
+sometime after this capture.</p></li>
+<li><p>If the SD card was full, it is recommended that the SD card is
+replaced with one with greater storage capacity, or checking the SD card
+storage at a shorter period to maintain camera trap
+functionality.</p></li>
+<li><p>If the batteries were flat, it is recommended that they be
+checked at a shorter period to maintain camera trap
+functionality.</p></li>
+<li><p>Consider if the site preparation might have caused false triggers
+and undertake more clearance if necessary.</p></li>
+<li><p>If the camera trap was stolen or vandalised, consider the risk of
+this happening again and if anti-theft devices and measures will be
+enough to prevent this.</p></li>
+</ul>
+<h2 id="post-field-survey-tasks-1">Post-field survey tasks</h2>
+<p>Not applicable for camera trap re-equipping. See Section 5.2 for
+post-field survey tasks required after camera trap retrieval.</p>
+<h1 id="camera-trap-retrieval-protocol">Camera trap retrieval
+protocol</h1>
+<h2 id="field-collection-2">Field collection</h2>
+<h3 id="pre-requisites-2">Pre-requisites</h3>
+<p>There are no tasks that need to be undertaken before commencing a
+retrieval field survey.</p>
+<h3 id="time-requirements-2">Time requirements</h3>
+<p>Survey time requirements will vary depending on the number and
+experience of personnel, the number of camera traps being retrieved, the
+size of the project area, and the level of difficulty in traversing the
+project area.</p>
+<p>As a general guide:</p>
+<ul>
+<li><p>Allow 5–10 minutes at each camera trap point, depending if
+removing a bait station or carcass.</p></li>
+<li><p>Allow travel time between camera trap points.</p></li>
+</ul>
+<h3 id="personnel-requirements-2">Personnel requirements</h3>
+<p>Personnel number and skills:</p>
+<ul>
+<li><p>Camera trap retrieval and recording the data directly into the
+app can be conducted by a single surveyor. However, it is best conducted
+with two personnel, one retrieving the camera traps, and the other
+recording the data directly into the app.</p></li>
+<li><p>The surveyor retrieving the camera traps should be familiar with
+and experienced in the operation and settings of the camera traps. If
+surveyors are not confident, time should be dedicated to practising,
+using instruction manuals, and seeking advice before conducting this
+protocol.</p></li>
+<li><p>For large project areas and camera trap arrays, camera trap
+retrieval is best conducted with two or more teams in separate
+vehicles.</p></li>
+<li><p>The use of camera traps involves interference with wildlife.
+Therefore, scientific permits and wildlife ethics approvals are likely
+to be required, so always check with your local authority. Access
+permissions are required.</p></li>
 </ul>
 """^^rdf:HTML ;
-    dcterms:source """
-    <h1 id="references">References</h1>
-<p>Andrewartha, TA, Evans, MJ, Batson, WG, Manning, AD, Price, C,
-Gordon, IJ, Barton, PS (2021) Outfoxing the fox: Effect of prey odor on
-fox behavior in a pastoral landscape. <em>Conservation Science and
-Practice</em> <strong>3</strong>, e516.</p>
-<p>Arcese, P, Schuster, R, Campbell, L, Barber, A, Martin, TG (2014)
-Deer density and plant palatability predict shrub cover, richness,
-diversity and aboriginal food value in a North American archipelago.
-<em>Diversity and Distributions</em> <strong>20</strong>, 1368–1378.</p>
-<p>Barata, IM, Griffiths, RA, Ferreira, GB (2018) Activity pattern and
-behavior of an endemic bromeliad frog observed through camera trapping.
-<em>Herpetological Review</em> <strong>49</strong>, 432–438.</p>
-<p>Behrendorff, L, Leung, LK-P, Allen, BL (2018) Utilisation of stranded
-marine fauna washed ashore on K’gari (Fraser Island), Australia, by
-dingoes. <em>Australian Journal of Zoology</em> <strong>66</strong>,
-128–138.</p>
-<p>Bengsen, A, Butler, J, Masters, P (2011) Estimating and indexing
-feral cat population abundances using camera traps. <em>Wildlife
-Research</em> <strong>38</strong>, 732–739.</p>
-<p>Bengsen, AJ, Forsyth, DM, Ramsey, DS, Amos, M, Brennan, M, Pople, AR,
-Comte, S, Crittle, T (2022) Estimating deer density and abundance using
-spatial mark–resight models with camera trap data. <em>Journal of
-Mammalogy</em> <strong>103</strong>, 711–722.</p>
-<p>Bird, P, Mutze, G, Peacock, D, Jennings, S (2012) Damage caused by
-low-density exotic herbivore populations: the impact of introduced
-European rabbits on marsupial herbivores and <em>Allocasuarina</em> and
-<em>Bursaria</em> seedling survival in Australian coastal shrubland.
-<em>Biological Invasions</em> <strong>14</strong>, 743–755.</p>
-<p>Bohning, G, Wilkie, A (1999) Palatability scoring of forage plants in
-central Australia. Department of Primary Industries, Alice Springs.
-Available at <a href="http://www.nt.gov.au/d/Content/File/p/Technote/TN106">http://www.nt.gov.au/d/Content/File/p/Technote/TN106</a>.</p>
-<p>Borchers, D, Distiller, G, Foster, R, Harmsen, B, Milazzo, L (2014)
-Continuous‐time spatially explicit capture–recapture models, with an
-application to a jaguar camera‐trap survey. <em>Methods in Ecology and
-Evolution</em> <strong>5</strong>, 656–665.</p>
-<p>Broadley, K, Burton, AC, Avgar, T, Boutin, S (2019) Density‐dependent
-space use affects interpretation of camera trap detection rates.
-<em>Ecology and Evolution</em> <strong>9</strong>, 14031–14041.</p>
-<p>Burton, AC, Neilson, E, Moreira, D, Ladle, A, Steenweg, R, Fisher,
-JT, Bayne, E, Boutin, S (2015) Wildlife camera trapping: a review and
-recommendations for linking surveys to ecological processes. <em>Journal
-of Applied Ecology</em> <strong>52</strong>, 675–685.</p>
-<p>Bush Heritage Australia (2021) Method: M05.100 Survey – Motion Sensor
-Cameras. Bush Heritage Australia, Melbourne.</p>
-<p>Carter, A, Luck, GW, McDonald, SP (2012) Ecology of the red fox
-(<em>Vulpes vulpes</em>) in an agricultural landscape. 2. Home range and
-movements. <em>Australian Mammalogy</em> <strong>34</strong>,
-175–187.</p>
-<p>Cloyed, CS, Cappelli, LR, Tilson, DA, Crawford, JA, Dell, AI (2018)
-Using camera traps to assess mammal and bird assemblages in a midwestern
-forest. <em>Journal of Fish and Wildlife Management</em>
-<strong>9</strong>, 496–506.</p>
-<p>Collett, RA, Fisher, DO (2017) Time‐lapse camera trapping as an
-alternative to pitfall trapping for estimating activity of leaf litter
-arthropods. <em>Ecology and Evolution</em> <strong>7</strong>,
-7527–7533.</p>
-<p>Colyn, RB, Radloff, FGT, O’Riain, MJ (2018) Camera trapping mammals
-in the scrubland’s of the Cape Floristic Kingdom—the importance of
-effort, spacing and trap placement. <em>Biodiversity and
-Conservation</em> <strong>27</strong>, 503–520.</p>
-<p>Cooke, B, Jones, R, Gong, W (2010) An economic decision model of wild
-rabbit <em>Oryctolagus cuniculus</em> control to conserve Australian
-native vegetation. <em>Wildlife Research</em> <strong>37</strong>,
-558–565.</p>
-<p>Cooke, BD (1988) The effects of rabbit grazing on regeneration of
-sheoaks, <em>Allocasuarina verticilliata</em> and saltwater ti-trees,
-<em>Melaleuca halmaturorum</em>, in the Coorong National Park, South
-Australia. <em>Australian Journal of Ecology</em> <strong>13</strong>,
-11–20.</p>
-<p>Cooke, BD (2012) Rabbits: manageable environmental pests or
-participants in new Australian ecosystems? <em>Wildlife Research</em>
-<strong>39</strong>, 279–289.</p>
-<p>Cooke, BD, McPhee, SR (2007) Rabbits and Native Plant Biodiversity. A
-report compilied for Australian Wool Innovation and Meat and Livestock
-Australia as part of the Invasive Animals Co-operative Research Centre
-Project 7.T.6 – Biodiversity Impact of Rabbits. Invasive Animals
-Co-operative Research Centre, Canberra.</p>
-<p>Cotsell, N, Vernes, K (2016) Camera traps in the canopy: surveying
-wildlife at tree hollow entrances. <em>Pacific Conservation Biology</em>
-<strong>22</strong>, 48–60.</p>
-<p>Davies, C, Wright, W, Hogan, FE, Davies, H (2020) Detectability and
-activity patterns of sambar deer (<em>Rusa unicolor</em>) in Baw Baw
-National Park, Victoria. <em>Australian Mammalogy</em>
-<strong>42</strong>, 312–320.</p>
-<p>Davis, AJ, Keiter, DA, Kierepka, EM, Slootmaker, C, Piaggio, AJ,
-Beasley, JC, Pepin, KM (2020) A comparison of cost and quality of three
-methods for estimating density for wild pig (<em>Sus scrofa</em>).
-<em>Scientific Reports</em> <strong>10</strong>, 1–14.</p>
-<p>Davis, NE, Di Stefano, J, Whelan, J, Wright, J, Taylor, L, Coulson,
-G, Sitters, H (2022) Power of faecal pellet count and camera trapping
-indices to monitor mammalian herbivore activity. <em>Wildlife
-Research</em> <strong>49</strong>, 686–697.</p>
-<p>Denny, EA, Dickman, CR (2010) Review of cat ecology and management
-strategies in Australia. Invasive Animals Cooperative Research Centre,
-Canberra.</p>
-<p>Di Bitetti, MS, Paviolo, AJ, de Angelo, CD (2014) Camera trap
-photographic rates on roads vs. off roads: location does matter.
-<em>Mastozoología Neotropical</em> <strong>21</strong>, 37–46.</p>
-<p>Diete, RL, Meek, PD, Dixon, KM, Dickman, CR, Leung, LK-P (2015) Best
-bait for your buck: bait preference for camera trapping north Australian
-mammals. <em>Australian Journal of Zoology</em> <strong>63</strong>,
-376–382.</p>
-<p>DSEWPAC (2011) <em>Environment Protection and Biodiversity
-Conservation Act 1999</em> Draft Referfal Guidelines for the Endangered
-Southern Brown Bandicoot (Eastern), <em>Isoodon obesulus obesulus</em>.
-Department of Sustainability, Environment, Water, Population and
-Communities, Canberra.</p>
-<p>Dundas, SJ, Ruthrof, KX, Hardy, GESJ, Fleming, PA (2019) Pits or
-pictures: a comparative study of camera traps and pitfall trapping to
-survey small mammals and reptiles. <em>Wildlife Research</em>
-<strong>46</strong>, 104–113.</p>
-<p>Engbrecht, NJ, Lannoo, MJ (2012) Crawfish frog behavioral differences
-in postburned and vegetated grasslands. <em>Fire Ecology</em>
-<strong>8</strong>, 63–76.</p>
-<p>Fancourt, BA, Sweaney, M, Fletcher, DB (2018) More haste, less speed:
-pilot study suggests camera trap detection zone could be more important
-than trigger speed to maximise species detections. <em>Australian
-Mammalogy</em> <strong>40</strong>, 118–121.</p>
-<p>Florencia Miguel, M, Tabeni, S, Cona, MI, Campos, CM (2018) Secondary
-seed dispersal by mammals between protected and grazed semiarid
-woodland. <em>Forest Ecology and Management</em> <strong>422</strong>,
-41–48.</p>
-<p>Forrester, T, O'Brien, T, Fegraus, E, Jansen, PA, Palmer, J, Kays, R,
-Ahumada, J, Stern, B, McShea, W (2016) An open standard for camera trap
-data. <em>Biodiversity Data Journal</em> <strong>4</strong>, e10197.</p>
-<p>Forsyth, DM, Richardson, SJ, Menchenton, K (2005) Foliar fibre
-predicts diet selection by invasive Red Deer <em>Cervus elaphus
-scoticus</em> in a temperate New Zealand forest. <em>Functional
-Ecology</em> <strong>19</strong>, 495–504.</p>
-<p>Forsyth, DM, Woodford, L, Moloney, PD, Hampton, JO, Woolnough, AP,
-Tucker, M (2014) How does a carnivore guild utilise a substantial but
-unpredictable anthropogenic food source? Scavenging on hunter-shot
-ungulate carcasses by wild dogs/dingoes, red foxes and feral cats in
-south-eastern Australia revealed by camera traps. <em>PloS ONE</em>
-<strong>9</strong>, e97937.</p>
-<p>Foster, RJ, Harmsen, BJ (2012) A critique of density estimation from
-camera‐trap data. <em>The Journal of Wildlife Management</em>
-<strong>76</strong>, 224–236.</p>
-<p>Frey, S, Fisher, JT, Burton, AC, Volpe, JP (2017) Investigating
-animal activity patterns and temporal niche partitioning using
-camera‐trap data: Challenges and opportunities. <em>Remote Sensing in
-Ecology and Conservation</em> <strong>3</strong>, 123–132.</p>
-<p>Geyle, HM, Stevens, M, Duffy, R, Greenwood, L, Nimmo, DG, Sandow, D,
-Thomas, B, White, J, Ritchie, EG (2020) Evaluation of camera placement
-for detection of free‐ranging carnivores; implications for assessing
-population changes. <em>Ecological Solutions and Evidence</em>
-<strong>1</strong>, e12018.</p>
-<p>Gilbert, NA, Clare, JDJ, Stenglein, JL, Zuckerberg, B (2021)
-Abundance estimation of unmarked animals based on camera‐trap data.
-<em>Conservation Biology</em> <strong>35</strong>, 88–100.</p>
-<p>Gillespie, G, Brennan, K, Gentles, T, Hill, B, Low Choy, J, Mahney,
-T, Stevens, A, Stokeld, D (2015) A guide for the use of remote cameras
-for wildlife survey in northern Australia. Charles Darwin University,
-Darwin.</p>
-<p>Gray, EL, Dennis, TE, Baker, AM (2017) Can remote infrared cameras be
-used to differentiate small, sympatric mammal species? A case study of
-the black-tailed dusky antechinus, <em>Antechinus arktos</em> and
-co-occurring small mammals in southeast Queensland, Australia. <em>PloS
-ONE</em> <strong>12</strong>, e0181592.</p>
-<p>Hansen, CM, Paterson, AM, Ross, JG, Ogilvie, SC (2018) Estimating
-feral cat (<em>Felis catus</em>) density in a rural to urban gradient
-using camera trapping. <em>New Zealand Journal of Zoology</em>
-<strong>45</strong>, 213–226.</p>
-<p>Harmsen, BJ, Foster, RJ, Silver, S, Ostro, L, Doncaster, CP (2010)
-Differential use of trails by forest mammals and the implications for
-camera‐trap studies: a case study from Belize. <em>Biotropica</em>
-<strong>42</strong>, 126–133.</p>
-<p>Hoffman, AS, Heemeyer, JL, Williams, PJ, Robb, JR, Karns, DR, Kinney,
-VC, Engbrecht, NJ, Lannoo, MJ (2010) Strong site fidelity and a variety
-of imaging techniques reveal around-the-clock and extended activity
-patterns in Crawfish Frogs (<em>Lithobates areolatus</em>).
-<em>BioScience</em> <strong>60</strong>, 829–834.</p>
-<p>Hohnen, R, P. Murphy, B, A. Gates, J, Legge, S, R. Dickman, C, CZ
-Woinarski, J (2019) Detecting and protecting the threatened Kangaroo
-Island dunnart (<em>Sminthopsis fuliginosus aitkeni</em>).
-<em>Conservation Science and Practice</em> <strong>1</strong>, e4.</p>
-<p>Kays, R, Tilak, S, Kranstauber, B, Jansen, PA, Carbone, C, Rowcliffe,
-M, Fountain, T, Eggert, J, He, Z (2011) Camera traps as sensor networks
-for monitoring animal communities. <em>International Journal of Research
-and Reviews in Wireless Sensor Networks</em> <strong>1</strong>,
-19–29.</p>
-<p>Kim, TK, Kim, S, Won, M, Lim, J-H, Yoon, S, Jang, K, Lee, K-H, Park,
-YD, Kim, HS (2021) Utilizing machine learning for detecting flowering in
-mid-range digital repeat photography. <em>Ecological Modelling</em>
-<strong>440</strong>, 109419.</p>
-<p>Krauss, SL, Roberts, DG, Phillips, RD, Edwards, C (2018)
-Effectiveness of camera traps for quantifying daytime and nighttime
-visitation by vertebrate pollinators. <em>Ecology and Evolution</em>
-<strong>8</strong>, 9304–9314.</p>
-<p>Lloyd, KM, Pollock, ML, Mason, NWH, Lee, WG (2010) Leaf
-trait–palatability relationships differ between ungulate species:
-evidence from cafeteria experiments using naïve tussock grasses. <em>New
-Zealand Journal of Ecology</em> <strong>34</strong>, 219–226.</p>
-<p>Mann, GKH, O’Riain, MJ, Parker, DM (2015) The road less travelled:
-assessing variation in mammal detection probabilities with camera traps
-in a semi-arid biodiversity hotspot. <em>Biodiversity and
-Conservation</em> <strong>24</strong>, 531–545.</p>
-<p>Mattioli, L, Canu, A, Passilongo, D, Scandura, M, Apollonio, M (2018)
-Estimation of pack density in grey wolf (<em>Canis lupus</em>) by
-applying spatially explicit capture-recapture models to camera trap data
-supported by genetic monitoring. <em>Frontiers in Zoology</em>
-<strong>15</strong>, 1–15.</p>
-<p>McDonald, J, Brandle, R (2009) Management of feral goats: evaluation
-of ecological indicators for a monitoring and evaluation framework,
-summary. Department for Environment and Heritage, Adelaide.</p>
-<p>McHugh, D, Goldingay, RL, Letnic, M (2022) Occupancy and
-co-occurrence patterns of endemic mammals and introduced predators
-across a broad geographical gradient in eastern Australia.
-<em>Biodiversity and Conservation</em> <strong>31</strong>,
-989–1021.</p>
-<p>Meek, P (2018) Guide for camera trapping wild dogs, foxes and feral
-cats. NSW Department of Primary Industries, Orange, NSW.</p>
-<p>Meek, P, Ballard, G, Claridge, A, Kays, R, Moseby, K, O’brien, T,
-O’connell, A, Sanderson, J, Swann, D, Tobler, M (2014a) Recommended
-guiding principles for reporting on camera trapping research.
-<em>Biodiversity and Conservation</em> <strong>23</strong>,
-2321–2343.</p>
-<p>Meek, P, Ballard, G, Fleming, P (2012a) 'An Introduction to Camera
-Trapping for Wildlife Surveys in Australia.' (PestSmart Toolkit
-publication, Invasive Animals Cooperative Research Centre: Canberra,
-Australia)</p>
-<p>Meek, P, Fleming, P, Ballard, G, Banks, P, Claridge, A, Sanderson, J,
-Swann, D (2014b) 'Camera Trapping: Wildlife Management and Research.'
-(CSIRO Publishing: Melbourne)</p>
-<p>Meek, PD, Ballard, G-A, Vernes, K, Fleming, PJS (2015) The history of
-wildlife camera trapping as a survey tool in Australia. <em>Australian
-Mammalogy</em> <strong>37</strong>, 1–12.</p>
-<p>Meek, PD, Ballard, G, Fleming, P (2012b) An introduction to camera
-trapping for wildlife surveys in Australia. PestSmart Toolkit
-publication, Invasive Animals Cooperative Research Centre, Canberra,
-Australia.</p>
-<p>Meek, PD, Vernes, K (2015) Can camera trapping be used to accurately
-survey and monitor the Hastings River mouse (<em>Pseudomys oralis</em>)?
-<em>Australian Mammalogy</em> <strong>38</strong>, 44–51.</p>
-<p>Molloy, SW (2018) A Practical Guide to Using Camera Traps for
-Wildlife Monitoring in Natural Resource Management Projects. Edith Cowan
-University, Western Australia.</p>
-<p>Moore, HA, Champney, JL, Dunlop, JA, Valentine, LE, Nimmo, DG (2020a)
-Spot on: using camera traps to individually monitor one of the world’s
-largest lizards. <em>Wildlife Research</em> <strong>47</strong>,
-326–337.</p>
-<p>Moore, HA, Valentine, LE, Dunlop, JA, Nimmo, DG (2020b) The effect of
-camera orientation on the detectability of wildlife: a case study from
-north‐western Australia. <em>Remote Sensing in Ecology and
-Conservation</em> <strong>6</strong>, 546–556.</p>
-<p>Moseby, KE, Read, JL (2014) Using camera traps to compare poison bait
-uptake by invasive predators and non-target species. In 'Camera
-Trapping: Wildlife Management and Research.' pp. 131–139. (CSIRO
-Publising: Melbourne)</p>
-<p>Mutze, G (2016) Barking up the wrong tree? Are livestock or rabbits
-the greater threat to rangeland biodiversity in southern Australia?
-<em>The Rangeland Journal</em> <strong>38</strong>, 523–531.</p>
-<p>Mutze, G, Cooke, B, Jennings, S (2016a) Density-dependent grazing
-impacts of introduced European rabbits and sympatric kangaroos on
-Australian native pastures. <em>Biological Invasions</em>
-<strong>18</strong>, 2365–2376.</p>
-<p>Mutze, G, Cooke, B, Jennings, S (2016b) Estimating density-dependent
-impacts of European rabbits on Australian tree and shrub populations.
-<em>Australian Journal of Botany</em> <strong>64</strong>, 142–152.</p>
-<p>Niedballa, J, Sollmann, R, Courtiol, A, Wilting, A (2016) camtrapR:
-an R package for efficient camera trap data management. <em>Methods in
-Ecology and Evolution</em> <strong>7</strong>, 1457–1462.</p>
-<p>Norouzzadeh, MS, Nguyen, A, Kosmala, M, Swanson, A, Palmer, MS,
-Packer, C, Clune, J (2018) Automatically identifying, counting, and
-describing wild animals in camera-trap images with deep learning.
-<em>Proceedings of the National Academy of Sciences</em>
-<strong>115</strong>, E5716–E5725.</p>
-<p>Pagnucco, KS, Paszkowski, CA, Scrimgeour, GJ (2011) Using cameras to
-monitor tunnel use by long-toed salamanders (<em>Ambystoma
-macrodactylum</em>): an informative, cost-efficient technique.
-<em>Herpetological Conservation and Biology</em> <strong>6</strong>,
-277–286.</p>
-<p>Paull, DJ, Claridge, AW, Barry, SC (2011) There’s no accounting for
-taste: bait attractants and infrared digital cameras for detecting small
-to medium ground-dwelling mammals. <em>Wildlife Research</em>
-<strong>38</strong>, 188–195.</p>
-<p>Potter, TI, Greenville, AC, Dickman, CR (2021) Night of the hunter:
-using cameras to quantify nocturnal activity in desert spiders.
-<em>PeerJ</em> <strong>9</strong>, e10684.</p>
-<p>Ramsey, DSL, Caley, PA, Robley, A (2015) Estimating population
-density from presence–absence data using a spatially explicit model.
-<em>The Journal of Wildlife Management</em> <strong>79</strong>,
-491–499.</p>
-<p>Raufirad, V, Azadi, H, Ebrahimi, A, Bagheri, S (2016) Determining
-Rangeland Species Palatability: Application of Principal Component
-Analysis. <em>Rangelands</em> <strong>38</strong>, 105–112.</p>
-<p>Rautio, P, Bergvall, U, Tuomi, J, Kesti, K, Leimar, O (2012) Food
-Selection by Herbivores and Neighbourhood Effects in the Evolution of
-Plant Defences. <em>Annales Zoologici Fennici</em> <strong>49</strong>,
-45–57.</p>
-<p>Reconyx (2018) HyperFire 2 User Manual. Reconyx, Holmen,
-Wisconsin.</p>
-<p>Rees, JD, Crowther, MS, Kingsford, RT, Letnic, M (2020) Direct and
-indirect effects of carrion subsidies in an arid rangeland: Carrion has
-positive effects on facultative scavengers and negative effects on a
-small songbird. <em>Journal of Arid Environments</em>
-<strong>179</strong>, 104174.</p>
-<p>Reid, AM, Murphy, BP, Vigilante, T, Wunambal Gaambera Aboriginal
-Corporation, Bowman, DMJS (2020) Distribution and abundance of large
-herbivores in a northern Australian tropical savanna: A multi‐scale
-approach. <em>Austral Ecology</em> <strong>45</strong>, 529–547.</p>
-<p>Rovero, F, Zimmermann, F, Berzi, D, Meek, P (2013) "Which camera trap
-type and how many do I need?" A review of camera features and study
-designs for a range of wildlife research applications. <em>Hystrix, the
-Italian Journal of Mammalogy</em> <strong>24</strong>, 148–156.</p>
-<p>Rowcliffe, JM, Field, J, Turvey, ST, Carbone, C (2008) Estimating
-animal density using camera traps without the need for individual
-recognition. <em>Journal of Applied Ecology</em> <strong>45</strong>,
-1228–1236.</p>
-<p>Royle, JA, Karanth, KU, Gopalaswamy, AM, Kumar, NS (2009) Bayesian
-inference in camera trapping studies for a class of spatial
-capture–recapture models. <em>Ecology</em> <strong>90</strong>,
-3233–3244.</p>
-<p>Ruykys, L, Carter, A (2019) Removal and eradication of introduced
-species in a fenced reserve: Quantifying effort, costs and results.
-<em>Ecological Management &amp; Restoration</em> <strong>20</strong>,
-239–249.</p>
-<p>Seidlitz, A, Bryant, KA, Armstrong, NJ, Calver, M, Wayne, AF (2021)
-Optimising camera trap height and model increases detection and
-individual identification rates for a small mammal, the numbat
-(<em>Myrmecobius fasciatus</em>). <em>Australian Mammalogy</em>
-<strong>43</strong>, 226–234.</p>
-<p>Silveira, L, Jacomo, AT, Diniz-Filho, JAF (2003) Camera trap, line
-transect census and track surveys: a comparative evaluation.
-<em>Biological Conservation</em> <strong>114</strong>, 351–355.</p>
-<p>Silvester, R, Shine, R, Oldroyd, B, Greenlees, M (2017) The
-ecological impact of commercial beehives on invasive cane toads
-(<em>Rhinella marina</em>) in eastern Australia. <em>Biological
-Invasions</em> <strong>19</strong>, 1097–1106.</p>
-<p>Sollmann, R (2018) A gentle introduction to camera‐trap data
-analysis. <em>African Journal of Ecology</em> <strong>56</strong>,
-740–749.</p>
-<p>Spencer, E, Newsome, T (2021) Dingoes dining with death.
-<em>Australian Zoologist</em> <strong>41</strong>, 433–451.</p>
-<p>Spencer, EE, Dickman, CR, Greenville, A, Crowther, MS, Kutt, A,
-Newsome, TM (2021) Carcasses attract invasive species and increase
-artificial nest predation in a desert environment. <em>Global Ecology
-and Conservation</em> <strong>27</strong>, e01588.</p>
-<p>Srbek-Araujo, AC, Chiarello, AG (2013) Influence of camera-trap
-sampling design on mammal species capture rates and community structures
-in southeastern Brazil. <em>Biota Neotropica</em> <strong>13</strong>,
-51–62.</p>
-<p>Stokeld, D, Frank, AS, Hill, B, Choy, JL, Mahney, T, Stevens, A,
-Young, S, Rangers, D, Rangers, W, Gillespie, GR (2015) Multiple cameras
-required to reliably detect feral cats in northern Australian tropical
-savanna: an evaluation of sampling design when using camera traps.
-<em>Wildlife Research</em> <strong>42</strong>, 642–649.</p>
-<p>TEAM Network (2011) Terrestrial Vertebrate Protocol Implementation
-Manual, v. 3.1. Tropical Ecology, Assessment and Monitoring Network,
-Center for Applied Biodiversity Science, Conservation International,
-Arlington, VA, USA.</p>
-<p>Tobler, MW, Carrillo‐Percastegui, SE, Leite Pitman, R, Mares, R,
-Powell, G (2008) An evaluation of camera traps for inventorying
-large‐and medium‐sized terrestrial rainforest mammals. <em>Animal
-Conservation</em> <strong>11</strong>, 169–178.</p>
-<p>Tobler, MW, Zúñiga Hartley, A, Carrillo‐Percastegui, SE, Powell, GVN
-(2015) Spatiotemporal hierarchical modelling of species richness and
-occupancy using camera trap data. <em>Journal of Applied Ecology</em>
-<strong>52</strong>, 413–421.</p>
-<p>Trolle, M, Kéry, M (2005) Camera-trap study of ocelot and other
-secretive mammals in the northern Pantanal. <em>Mammalia</em>
-<strong>69</strong>, 405–412.</p>
-<p>Welbourne, DJ, Claridge, AW, Paull, DJ, Ford, F (2019) Improving
-terrestrial squamate surveys with camera-trap programming and hardware
-modifications. <em>Animals</em> <strong>9</strong>, 388.</p>
-<p>Welbourne, DJ, MacGregor, C, Paull, D, Lindenmayer, DB (2015) The
-effectiveness and cost of camera traps for surveying small reptiles and
-critical weight range mammals: a comparison with labour-intensive
-complementary methods. <em>Wildlife Research</em> <strong>42</strong>,
-414–425.</p>
-<p>Williams, BL, Holtfreter, RW, Ditchkoff, SS, Grand, JB (2011)
-Efficiency of time‐lapse intervals and simple baits for camera surveys
-of wild pigs. <em>The Journal of Wildlife Management</em>
-<strong>75</strong>, 655–659.</p>
-    """^^rdf:HTML ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """
-    <h2 id="key-definitions-and-terminology">Key definitions and
-terminology</h2>
-<table>
-<colgroup>
-<col style="width: 18%"/>
-<col style="width: 81%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AI</td>
-<td>Artificial Intelligence</td>
-</tr>
-<tr class="even">
-<td>AIR sensor</td>
-<td>Active Infrared sensor</td>
-</tr>
-<tr class="odd">
-<td>Bait station</td>
-<td>Consists of a mounted lure used in association with a camera trap to
-increase the probability of detecting a target species or a suite of
-species. Food lures are usually protected from consumption or removal in
-a secure container that allows airflow.</td>
-</tr>
-<tr class="even">
-<td>Burst/Rapid fire</td>
-<td>Settings that allow images to be captured continuously following a
-trigger event.</td>
-</tr>
-<tr class="odd">
-<td>Camera trap</td>
-<td>A motion sensing camera that captures images/video of wildlife
-automatically (also referred to as remote camera, motion sensor camera,
-trail camera and wildlife camera).</td>
-</tr>
-<tr class="even">
-<td>Camera trap array</td>
-<td>Multiple camera traps deployed in an ordered series or arrangement
-(e.g. grid, transect).</td>
-</tr>
-<tr class="odd">
-<td>Camera trap point</td>
-<td>A particular spatial location (latitude and longitude) where a
-camera trap is deployed during sampling.</td>
-</tr>
-<tr class="even">
-<td>Delay</td>
-<td>Program function of some camera traps to set a period of time where
-the camera trap is inactive before or between images/video.</td>
-</tr>
-<tr class="odd">
-<td>Deployment</td>
-<td>The unique placement of camera traps in space and time.</td>
-</tr>
-<tr class="even">
-<td>Depth of field</td>
-<td>Aperture setting and its effect on the focus of objects in the front
-and rear of the image. Not often adjustable in camera traps.</td>
-</tr>
-<tr class="odd">
-<td>Detection angle</td>
-<td>The angle formed by the direction of camera trap and the predicted
-path of the target taxa/species.</td>
-</tr>
-<tr class="even">
-<td>Detection zone</td>
-<td>Area/s in which a camera trap is able to detect fauna temperature
-signal in motion.</td>
-</tr>
-<tr class="odd">
-<td>Event</td>
-<td>Period of time from first trigger to the last image in a sequence,
-where the sequence is encompassed by the extent of independent behaviour
-of target/s.</td>
-</tr>
-<tr class="even">
-<td>False negative</td>
-<td>Failure to detect fauna when fauna is in fact present (Type II
-error).</td>
-</tr>
-<tr class="odd">
-<td>False positive</td>
-<td>Incorrectly detecting fauna when none is present (Type I
-error).</td>
-</tr>
-<tr class="even">
-<td>Field of view</td>
-<td>Area captured in an image or video, usually between 35° and
-45°.</td>
-</tr>
-<tr class="odd">
-<td>Focal length</td>
-<td>The distance, in millimetres, between the lens and the camera trap’s
-image sensor when the subject is in focus. Often set to capture images
-of target fauna that are a metre to several metres in front of the
-camera trap.</td>
-</tr>
-<tr class="even">
-<td>Focal point</td>
-<td>Centre of the image/video (if composed correctly) aimed at the
-feature of interest (e.g. trail, water point, bait station,
-carcass).</td>
-</tr>
-<tr class="odd">
-<td>GPS/GNSS enabled device</td>
-<td>A device that is capable of logging the accurate coordinates of a
-location using the Global Positioning System (GPS) or the Global
-Navigation Satellite System (GNSS)</td>
-</tr>
-<tr class="even">
-<td>Horizontal orientation</td>
-<td>Camera trap orientated horizontally with a downward-facing detection
-zone and field of view.</td>
-</tr>
-<tr class="odd">
-<td>Independence interval</td>
-<td>Specified time interval between images/video or sequences to
-determine independence for individuals of the same species.</td>
-</tr>
-<tr class="even">
-<td>Low glow IR flash</td>
-<td>Infrared flash that produces a faint red glow to capture
-images/video at night.</td>
-</tr>
-<tr class="odd">
-<td>Lure</td>
-<td>Generic term referring to an attractant used to encourage a target
-species or a suite of species to investigate a specific point. May be
-olfactory, auditory, visual or some combination of these in nature.</td>
-</tr>
-<tr class="even">
-<td>Monitor</td>
-<td>Field data collection app for Ecological Monitoring System
-Australia. Collects data using the Biodiversity Information Standard for
-delivery to the Australian Biodiversity Data Repository managed by the
-Department of Climate Change, Energy, the Environment and Water.</td>
-</tr>
-<tr class="odd">
-<td>NiMH</td>
-<td>Nickel-Metal Hydride – rechargeable batteries.</td>
-</tr>
-<tr class="even">
-<td>No glow IR flash</td>
-<td>Infrared flash that does not produce a red glow but is able to
-capture images/video at night.</td>
-</tr>
-<tr class="odd">
-<td>PIR sensor</td>
-<td>Passive infrared sensor</td>
-</tr>
-<tr class="even">
-<td>Quiet period</td>
-<td>Specified time between triggers when activity in the sensor will not
-trigger the camera trap.</td>
-</tr>
-<tr class="odd">
-<td>Red glow IR flash</td>
-<td>Infrared flash that produces a visible red glow to capture
-images/video at night.</td>
-</tr>
-<tr class="even">
-<td>Re-equipping</td>
-<td>The checking and replacing camera trap batteries and SD cards, and
-bait stations if being used, to prolong the deployment camera traps in
-the same location using the same settings and mode of deployment.</td>
-</tr>
-<tr class="odd">
-<td>Retrieval</td>
-<td>The collection of deployed camera traps.</td>
-</tr>
-<tr class="even">
-<td>SD card</td>
-<td>Secure Digital card – external memory card for storing images and
-video captured by camera traps.</td>
-</tr>
-<tr class="odd">
-<td>Sensor sensitivity</td>
-<td>Program function of camera traps that reflects the sensitivity of
-response to motion by the PIR sensors.</td>
-</tr>
-<tr class="even">
-<td>Sequence</td>
-<td>Series of still images taken in rapid succession (i.e. burst, rapid
-fire) but separated by a time interval less than the set independence
-interval and forming an animated record of a triggering event.</td>
-</tr>
-<tr class="odd">
-<td>Temperature in motion</td>
-<td>Movement of an object with a different temperature relative to the
-ambient temperature and temperature of background surface and
-objects.</td>
-</tr>
-<tr class="even">
-<td>Time lapse</td>
-<td>Program function of some camera traps to capture images at
-predetermined time intervals regardless of whether the camera is
-triggered.</td>
-</tr>
-<tr class="odd">
-<td>Trigger speed</td>
-<td>Time difference (response time) between detecting fauna temperature
-signal in motion and capturing an image/video.</td>
-</tr>
-<tr class="even">
-<td>Vertical orientation</td>
-<td>Camera trap orientated vertically with an outward-facing detection
-zone and field of view.</td>
-</tr>
-<tr class="odd">
-<td>Walk test (or similar)</td>
-<td>Program function of some camera traps to identify where a camera
-will respond to temperature signal in motion. Can be used to ‘focus’ the
-camera trap’s detection zone.</td>
-</tr>
-<tr class="even">
-<td>White flash</td>
-<td>Xenon or LED white flash that illuminates the subject at night to
-capture full colour images.</td>
-</tr>
-</tbody>
-</table>
-    """^^rdf:HTML ;
-    skos:memberList (
-            <https://linked.data.gov.au/def/nrm/1a6953e4-a830-41f8-9cfd-11ead4dd6bc2>
-            <https://linked.data.gov.au/def/nrm/a2afccd5-766e-44bc-98c1-f27aae26727f>
-            <https://linked.data.gov.au/def/nrm/cb497bbc-75dc-450d-b020-5bc3c54d5586>
-        ) ;
-    skos:prefLabel "Camera Trapping Module" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/camera-traps/collection.ttl"^^xsd:anyURI ;
+    skos:prefLabel "Camera Trap Re-equipping  protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/camera-traps/camera-trap-re-equipping-protocol/camera-trap-requipping-protocol.ttl"^^xsd:anyURI ;
     tern:appendix """
-    <h1 id="appendices">Appendices</h1>
+<h1 id="appendices-1">Appendices</h1>
 <p><span class="anchor" id="_Ref140579994"></span><h2>Appendix 1. Pre-field
 survey tasks</h2></p>
 <p><h3>Camera trap identification</h3></p>
@@ -980,7 +399,7 @@ species (Gillespie <em>et al.</em> 2015).</p>
                 src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/decision_key.png"
                 alt="New_description"
                 width="500"
-                height="390"
+                height="450"
               />
             </td>
           </tr>
@@ -1879,7 +1298,7 @@ capture-mark-recapture methods, random encounter models).</p>
               <img
                 src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/decision_factors.png"
                 alt="New_description"
-                width="500"
+                width="450"
                 height="400"
               />
             </td>
@@ -2288,7 +1707,7 @@ guidelines</a>.</p>
               <img
                 src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/PIR_sensor.jpg"
                 alt="New_description"
-                width="480"
+                width="450"
                 height="400"
               />
             </td>
@@ -2478,8 +1897,8 @@ deployment guidelines</a>.</p>
               <img
                 src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/Lure_decision_key.png"
                 alt="New_description"
-                width="480"
-                height="450"
+                width="450"
+                height="400"
               />
             </td>
           </tr>
@@ -2813,8 +2232,8 @@ vegetation/habitat mapping)</p></li>
               <img
                 src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/deployment_grid.png"
                 alt="New_description"
-                widteh="370"
-                height="350"
+                width="450"
+                height="400"
               />
             </td>
           </tr>
@@ -3272,204 +2691,66 @@ meets and the timeframe for approvals to be granted. It is also wise to
 allow time to address any queries from the committee or conditions that
 must be met prior to an approval being granted.</p>
 <blockquote>
-    """^^rdf:HTML ;
-    tern:purpose """
-    <h2 id="rationale">Rationale</h2>
-<p>The use of camera traps is popular among scientists and natural
-resource managers to acquire ecological data and evidence of both native
-and pest fauna species. Camera traps can be used to assess fauna
-distribution, abundance, behaviour, and community structure (Rovero
-<em>et al.</em> 2013; Meek <em>et al.</em> 2014b). Such widespread
-applications generate a profusion of data, and if metadata collection
-can be standardised, camera trapping has the potential to be a
-cornerstone of global biodiversity monitoring initiatives (Burton <em>et
-al.</em> 2015).</p>
-<p>Camera traps do not require expert skills to install. They are less
-invasive, safer for both fauna and field personnel, and potentially more
-ethical than trapping and animal handling methods. They can be more
-widely used (and capture a wider range of fauna species) than other
-survey methods such as pitfall or box traps, which are tailored to
-animals of a specific size range (Welbourne <em>et al.</em> 2015).
-Despite high initial costs, camera traps are less costly than
-labour-intensive trapping methods in the long-term because they can be
-left in the field for extended periods of time (i.e. weeks–months;
-Dundas <em>et al.</em> 2019). Survey periods can be easily extended
-without having a large effect on overall cost, other than increasing
-image processing time and battery use (Welbourne <em>et al.</em> 2015).
-Camera traps are particularly useful in sampling programs in remote
-areas, which are typically associated with high costs and other
-logistical constraints (Gillespie <em>et al.</em> 2015), including
-difficulty in accessing broadly spaced and hazardous locations to
-install and regularly check live traps (Molloy 2018; Dundas <em>et
-al.</em> 2019). Camera traps can also capture information about several
-species simultaneously (Welbourne <em>et al.</em> 2015), and facilitate
-the identification of individuals for some pest species such as feral
-cats (Denny and Dickman 2010; Hansen <em>et al.</em> 2018) and feral
-pigs (Broadley <em>et al.</em> 2019).</p>
-<p>Although camera trapping shifts the labour requirements from field
-based to office based (Dundas <em>et al.</em> 2019), several computer
-processes and programs have been developed to manage camera trapping
-datasets and automate image processing, in particular the removal of
-images captured by false triggers where no animals are present
-(Niedballa <em>et al.</em> 2016; Norouzzadeh <em>et al.</em> 2018).
-Image processing can also be undertaken by junior staff and citizen
-scientists (e.g. DigiVol’s Wildlife Spotter program; <a href="https://volunteer.ala.org.au/wildlife-spotter">https://volunteer.ala.org.au/wildlife-spotter</a>),
-with expert staff able to focus on confirming identifications rather
-than wading through thousands of images.</p>
-<p>The methodological information reported in camera trap publications
-and reports can vary widely, making replication of studies and
-comparison of results difficult (Meek <em>et al.</em> 2014a). For this
-reason, the Camera Trapping Module includes clear instructions and
-guidelines for deploying camera traps across Australia. Attributes of
-camera trapping that are covered include: (i) the make and model of the
-camera trap used; (ii) the camera trap settings used; and (iii) the mode
-of deployment (e.g. camera trap height, angle, direction). The metadata
-associated with these attributes is collected in a standardised manner
-among projects using the Monitor app, which ensures the data is correct,
-transparent, complete and suitable for use in ecological or natural
-resource management reports and peer-reviewed papers.</p>
-<p>Standardised data collection and reporting of methods and results
-enables greater ease of study replication, more robust comparisons among
-studies, facilitates national and international reviews, and leads to
-improved fauna research and management outcomes (Meek <em>et al.</em>
-2014a). A standardised approach to camera trap metadata collection is
-vital given the variability in performance among camera trap makes and
-models, the extensive range of camera trap settings now available, and
-differences in how camera traps are deployed in the field. Furthermore,
-the increasing availability of cyber infrastructure for storing and
-sharing digital data (e.g. from citizen science programs, through open
-access and data sharing frameworks) also requires the key aspects of
-camera trap deployment to be clear and consistent (Meek <em>et al.</em>
-2014a).</p>
-<p>Despite the advantages of camera traps, other fauna survey methods
-still have advantages, so using a combination of methods incorporating
-camera traps may be the most appropriate approach to surveying fauna
-(Gillespie <em>et al.</em> 2015). Survey effectiveness and cost can be
-improved by surveying taxonomic groups simultaneously with multiple
-techniques that complement one another (Welbourne <em>et al.</em> 2015).
-In recognition of this, camera trapping can be undertaken in a Fauna
-Plot in conjunction with a general vertebrate fauna survey, or at points
-of interest across a project area to supplement species inventories and
-gain a more thorough understanding of habitat use (Gillespie <em>et
-al.</em> 2015).</p>
-<p>Technological advances in camera traps are regular and can provide
-novel insights. For this reason, the Camera Trapping Module allows for
-the incorporation of technological advances, with data vocabularies able
-to be updated to record new camera trap makes, models and specifications
-as these advances occur.</p>
-    """^^rdf:HTML ;
-    tern:scope """
-    <h1 id="introduction">Introduction and Background</h1>
-<p>
-  The <em>Camera Trapping</em> module covers the deployment (and recovery or
-  redeployment) of camera traps to monitor fauna species across the project
-  area. The module includes a standardised protocol for deploying camera traps
-  in fauna plots and can be used in conjunction with a vertebrate fauna survey
-  or stand-alone, as well as protocols for deploying camera traps in an array
-  (e.g., grid, transect) or at features of interest, such as a waterpoint.
-  Although the latter two protocols are not standardised in terms of camera trap
-  type, layout and setup, the metadata associated with camera trap deployment is
-  collected in a standardised manner, which enables minimum data requirements to
-  be met, methods to be replicated and more robust comparisons of results among
-  studies to be undertaken (Meek <em>et al.</em> 2014a). Camera trap study
-  design and planning considerations are covered to determine if camera trapping
-  is appropriate for your project, and ensure that the appropriate camera trap
-  and camera trapping protocols are used based on your research or management
-  questions (Gillespie <em>et al.</em> 2015).
-</p>
-<p>
-  The vast majority of camera traps deployed in Australia for vertebrate fauna
-  research and management use passive infrared (PIR) sensors (Meek
-  <em>et al.</em> 2012). PIR sensors work by sensing fauna in the camera trap’s
-  detection zone that move and are a different temperature relative to the
-  ambient temperature and temperature of background surface and objects (i.e.,
-  temperature in motion). This automatically triggers the camera trap to capture
-  an image, a burst of images, or video depending on the camera trap settings.
-  Images or video, which are continually collected over the course of a
-  deployment in response to individuals entering the detection zone, are time-
-  and date-stamped and stored on an external Secure Digital (SD) memory card.
-  Camera traps are often deployed focused on bait stations to attract fauna into
-  the detection zone, thereby maximising the likelihood of detection (Gillespie
-  <em>et al.</em> 2015).
-</p>
-<p>
-  Camera traps are an efficient and non-invasive survey tool, which are highly
-  accessible to a wide range of practitioners and can be used in a variety of
-  research and management applications for native and pest vertebrate fauna.
-  They are an efficient way of collecting data over long periods of time with
-  minimal time and labour input and minimal stress to the fauna species being
-  surveyed. Furthermore, camera traps provide a cost effective means of
-  detecting rare and/or elusive species, and capturing and documenting the
-  behaviour of animals that are otherwise difficult to observe using
-  conventional survey methods (Gillespie <em>et al.</em> 2015).
-</p>
-<p>
-  Camera traps can be used for the following applications (Gillespie
-  <em>et al.</em> 2015):
-</p>
+"""^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment-2">Equipment</h3>
 <ul>
-  <li>
-    <p>
-      Simple surveillance – to document a species that may be visiting one or a
-      few sites of specific interest (e.g., waterpoint).
-    </p>
-  </li>
-  <li>
-    <p>
-      General biodiversity surveys – may be used in conjunction with other
-      standardised sampling methods to systematically document spatial patterns
-      of vertebrate fauna biodiversity.
-    </p>
-  </li>
-  <li>
-    <p>
-      <a
-        href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9"
-        >Targeted fauna surveys</a
-      >
-      – may be used alone or in combination with other sampling methods to
-      determine the spatial distribution of species known to be amenable to
-      camera trapping.
-    </p>
-  </li>
-  <li>
-    <p>
-      Behavioural studies – targeted surveys to assess behaviour, such as
-      pollinator visitation (Krauss <em>et al.</em> 2018) and activity patterns
-      of micro-endemic species (Barata <em>et al.</em> 2018).
-    </p>
-  </li>
-  <li>
-    <p>
-      Population density estimates – where an array of cameras is used to
-      identify the spatial distribution of uniquely marked individuals of a
-      species.
-    </p>
-  </li>
-  <li>
-    <p>
-      Monitoring – to document changes in occurrence and distribution of
-      individual species or a suite of species over time.
-    </p>
-  </li>
-  <li>
-    <p>
-      Management evaluation – to document changes in species occurrence of
-      species composition through time and space in response to species
-      environmental management interventions, such as vertebrate pest
-      management.
-    </p>
-  </li>
-</ul>
-    """^^rdf:HTML ;
-    tern:undertakenAfter <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
-    tern:undertakenConcurrently
-        <https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51> ,
-        <https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508> ,
-        <https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9> ,
-        <https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6> ,
-        <https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6> ,
-        <https://linked.data.gov.au/def/nrm/8e7c86ce-e283-4cea-aca7-44ed7a22629c> ,
-        <https://linked.data.gov.au/def/nrm/cd04526e-7455-45c1-8a44-55575a4a7b2d> ;
+<li><p>Mobile device (tablet/phone) with the <em>Monitor</em> app
+pre-loaded</p></li>
+<li><p>Anti-theft device keys</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures-2">Instructions and procedures</h3>
+<ol type="1">
+<li><p>Select the Camera Trapping Module in the Monitor app.</p></li>
+</ol>
+<ol start="77" type="1">
+<li><p>Select Camera Trap Retrieval.</p></li>
+<li><p>Select the relevant deployment <em>survey label</em> (e.g. June
+30 array deployment).</p></li>
+<li><p>Traverse your project area and locate a camera trap point.
+Approach it with the required equipment from the front to trigger a
+capture sequence, which is used to indicate the end of the sampling
+period.</p></li>
+<li><p>If the camera trap is missing, search the vicinity as it may have
+been dislodged and shifted by fauna. If you cannot find the camera trap,
+you will record it as ‘Missing’ in step 8.</p></li>
+<li><p>Select the relevant <em>camera trap point ID</em> from the
+drop-down list. The App will automatically record a <em>retrieval
+ID</em> (sequential number from 1, assigned to the project, current
+survey and <em>deployment ID</em>) and bring up the required data
+fields.</p></li>
+<li><p>Open the camera trap and turn it off to disarm it.</p></li>
+<li><p>Turn the camera trap on and navigate to the <em>check status</em>
+function. The number of images captured, amount of space on the SD card
+and amount of battery power remaining will be displayed. If the display
+is blank, the batteries may be flat. Replace the batteries and switch
+the camera trap on to determine if the camera trap was not operational
+due to flat batteries or being damaged. Record the <em>operational
+status</em> from the drop-down. Record the <em>number of images</em>
+(optional).</p></li>
+<li><p>Switch off and close the camera trap.</p></li>
+<li><p>Record the <em>deployment end date</em>. The qpp will
+automatically calculate the <em>deployment period</em> (number of camera
+trap nights).</p></li>
+<li><p>Record any additional <em>retrieval notes</em>
+(optional).</p></li>
+<li><p>Select the <em>save camera trap retrieval</em> button.</p></li>
+<li><p>Remove the camera trap and bait container (if bait station used)
+from the mounting posts, and remove the mounting posts. Remove any
+materials used to secure the carcass (if used). Remove any flagging tape
+used to mark the location of the camera trap.</p></li>
+<li><p>Ensure all equipment is packed appropriately for transport.
+Camera traps, in particular the PIR sensor, may become damaged if they
+are left loose in a vehicle or backpack.</p></li>
+<li><p>Repeat steps 4–14 for each camera trap point for the selected
+<em>survey type</em>.</p></li>
+<li><p>Once all camera traps for the selected <em>survey type</em> have
+been retrieved, select the <em>finish protocol</em> button. Check the
+data summary before submitting the collection.</p></li>
+<li><p>Repeat Steps 3–16 for a different <em>survey type</em> if
+required.</p></li>
+</ol>
+"""^^rdf:HTML ;
 .
 
