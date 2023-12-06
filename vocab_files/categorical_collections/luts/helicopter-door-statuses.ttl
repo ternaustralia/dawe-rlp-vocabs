@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/311d1d63-536e-5b2c-944d-c057f8969c59>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/helicopter-door-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b6e08223-d1b4-5393-8646-981f15470b11> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3ef6dd43-f79d-5b4c-8980-d325d4612885> ;
+    urnp:conceptDefinition "Refers to the status of the helicopter door, i.e., the doors are intact/kept-on during a fauna survey." ;
+    urnp:conceptSource "Peacock D, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Aerial Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/d5a55eda-db88-5c3b-820e-007d59f3d4d0>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/helicopter-door-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/b6e08223-d1b4-5393-8646-981f15470b11> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0b7fe004-dd5c-57d0-a51e-3f49002db918> ;
+    urnp:conceptDefinition "Refers to the status of the helicopter door, i.e., the doors are removed during a fauna survey." ;
+    urnp:conceptSource "Peacock D, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Aerial Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/b6e08223-d1b4-5393-8646-981f15470b11>
+    a skos:Collection ;
+    dcterms:description "Whether the helicopter doors are 'in-situ' or 'removed' for a fauna survey." ;
+    dcterms:source "Peacock D, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Aerial Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0b7fe004-dd5c-57d0-a51e-3f49002db918> ,
+        <https://linked.data.gov.au/def/nrm/3ef6dd43-f79d-5b4c-8980-d325d4612885> ;
+    skos:prefLabel "Helicopter door statuses" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/helicopter-door-statuses.ttl"^^xsd:anyURI ;
+.
+
