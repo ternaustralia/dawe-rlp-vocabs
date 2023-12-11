@@ -1,0 +1,702 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/bfcca277-85a8-476a-aeb1-315775bcd5f6>
+    a
+        skos:Concept ,
+        tern:Method ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 class="unnumbered" id="general">General </h4>
+<ul>
+<li><p>Partitioning the sub-plot into more manageable units using
+existing Cover point-intercept transect tapes, additional tapes and/or
+coloured survey pins is highly recommended, particularly in dense
+systems.</p></li>
+<li><p>Plot boundaries should be marked out according to the existing
+method described in the Plot Selection and Layout Module.</p></li>
+<li><p>Assessment across the plot is used to document signs of pest
+fauna, record fire scar height, and document age class structure, growth
+and life-stages, and health of the perennial species present.</p></li>
+<li><p>Assessment of fire extent and severity is undertaken in the Fire
+Module (which is carried out within the Cover Module). If a condition
+survey is to be undertaken, ensure that the fire option has been
+activated in the Cover Module.</p></li>
+</ul>
+<h4 class="unnumbered" id="tree-survey-1">Tree survey </h4>
+<ul>
+<li><p>A tree is considered in the plot if than 50% of the base of the
+trunk is within the plot (Figure 3).</p></li>
+<li><p>Tree height can be estimated using a forestry rangefinder for
+rapid and accurate height measurements. The person entering the data
+into the Monitor app can carry the rangefinder on a lanyard over their
+shoulder and record tree height when required.</p></li>
+<li><p>Where a rangefinder is not available, tree height can be
+estimated using the following methods:</p></li>
+</ul>
+<ul>
+<li><p>Clinometer and tape (Department of Environment and Climate Change
+2007)</p></li>
+<li><p>Mobile phone applications</li>
+</ul><img alt="New Image Description" height="250" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Tree_occurrence_rules.png" width="700"/></p><p>Figure 3. Rule set to be determined if a tree is in or out of the plot.</p>
+<h4 class="unnumbered" id="tree-health">Tree health</h4>
+<h5 class="unnumbered" id="canopy-cover">Canopy cover</h5>
+<ul>
+<li><p>Canopy cover is assessed as the percentage of foliage missing
+from the canopy relative to a reference tree.</p></li>
+<li><p>Reference trees can be an archetype of a species with optimal
+foliage (absolute reference tree), or a nearby tree with maximum foliage
+considering site conditions, altitude, latitude, etc., (local reference)
+(Dobbertin 2005; Eichhorn and Roskams 2013).</p></li>
+<li><p>Local reference trees are generally best, and a suitable tree is
+one that is presumed to be completely healthy (i.e. stress-free), of the
+same species, similar age and with maximum foliage (Dobbertin 2005;
+Thimonier <em>et al.</em> 2010; Eichhorn <em>et al.</em> 2020).</p></li>
+<li><p>Canopy cover is scored in 5% increments, and a healthy tree would
+have a canopy cover score of 100% (i.e. 0% defoliation or dieback),
+whereas a tree with 25% dieback would have a canopy score of
+75%.</p></li>
+<li><p>To estimate percentage canopy, visualise a circle around the
+outer boundary of the crown. Estimate the proportion of dead crown and
+the remainder is the proportion of healthy crown cover (Michaels
+2006).</p></li>
+<li><p>Epicormic shoots below the crown, absent or fallen branches, and
+lower limbs that do not form part of the canopy are not included in
+assessable canopy (Michaels 2006; Eichhorn <em>et al.</em>
+2020).</p></li>
+</ul>
+<h5 class="unnumbered" id="crown-damage-index">Crown Damage Index</h5>
+<ul>
+<li><p>The incidence and severity of each type of foliage damage
+(necrosis, discolouration and defoliation) is also assessed for each
+tree (Stone <em>et al.</em> 2003). Incidence (<em>I</em>) is the
+percentage of leaves in the canopy affected, and severity (<em>S</em>)
+is the percentage of each individual leaf affected. Info buttons will be
+provided in the app for easy reference.</p></li>
+<li><p>Incidence and severity scores for each type of damage are then
+multiplied together and divided by 100 i.e., (<em>I</em> x
+<em>S)</em>/100.</p></li>
+<li><p>The results for each are then added to produce an overall Crown
+Damage Index (CDI).</p></li>
+<li><p>Alternatively, the crown can be divided and the incidence and
+severity across all types of damage can be estimated for each portion
+and then summed to produce an overall CDI.</p></li>
+<li><p>The Crown Damage Index (CDI) is created by visually assessing the
+incidence (extent of damage over the entire canopy), and severity
+(percentage of each leaf affected), of missing, damaged and discoloured
+foliage (Stone <em>et al.</em> 2003).</p></li>
+<li><p>There are three types of damage:</p>
+<ul>
+<li><p>Defoliation – where entire leaves or parts of leaves are missing
+(Figure A5.1)</p></li>
+<li><p>Necrosis – presence of dead leaf tissue (Figure A5.2)</p></li>
+<li><p>Discolouration – non-green leaf tissue including yellowing or
+reddish-purple discolouration, chlorotic spots or margins (Figure A5.2).
+Natural variation of leaf colour needs to be considered when assessing
+discolouration, for example <em>Eucalyptus</em> leaves can change colour
+as they develop.</p></li>
+</ul></li>
+</ul>
+<h5 class="unnumbered" id="general-guidelines-for-canopy-health">General
+guidelines for canopy health</h5>
+<ul>
+<li><p>Although assessments of canopy cover and foliage damage are
+subjective, observer bias can be reduced by having the same observer
+team for each survey, creating a photo library of local reference trees
+with typical canopy morphology, and intercalibrating between observers
+and across surveys (Eichhorn and Roskams 2013).</p></li>
+<li><p>It is important to observe each tree from several positions,
+ideally standing at a distance equal to the height of the tree. An
+elevated position ensures a better view.</p></li>
+<li><p>Where possible take a closer look at branches, leaves and stems
+for signs as to what may be causing the stress symptoms (e.g. galls and
+lerps, boreholes etc., are indicative of insect infestation. Appendix 6
+provides examples of the types of damage produced by insect and
+disease). Binoculars are helpful for looking higher into the canopy. Use
+the comments field to add notes regarding potential causes of
+damage.</p></li>
+</ul>
+<h5 class="unnumbered" id="mistletoe">Mistletoe </h5>
+<ul>
+<li><p>Walk around the tree to ensure that all mistletoes are identified
+and counted correctly.</p></li>
+<li><p>Only record living mistletoe.</p></li>
+<li><p>Mistletoe abundance generally increases with tree height,
+diameter and basal area.</p></li>
+<li><p>Trees close to a patch edge or another infested individual are
+more likely to host mistletoe (Ward 2005).</p></li>
+</ul>
+<h5 class="unnumbered" id="hollows">Hollows</h5>
+<ul>
+<li><p>Walk around the tree to ensure that all hollows are identified
+and counted correctly.</p></li>
+</ul>
+<h4 class="unnumbered" id="leaf-litter">Leaf litter </h4>
+<ul>
+<li><p>Leaf litter is all the plant organic matter above the top layer
+of the compacted soil, mostly consisting of decaying and dry leaves
+(Moses <em>et al.</em> 2021), but can also include needles, grass, twigs
+and bark (Wundke <em>et al.</em> 2015).</p></li>
+<li><p>Leaf litter does not include coarse woody debris or woody
+debris.</p></li>
+<li><p>Push the ruler through the litter until it reaches the soil
+surface. The soil surface should be firm.</p></li>
+<li><p>Measures of litter depth can have low accuracy (Marimon-Junior
+and Hay 2008), so ensure that the light pressure applied until there is
+even contact with the litter surface is consistent across sampling
+locations.</p></li>
+<li><p>If leaf litter measurement device is not available, an equivalent
+can be created with a standard 30 cm ruler and a piece of cardboard.
+Ensure that the tool used is consistent throughout the survey.</p></li>
+<li><p>The same individual should conduct all leaf litter measurements
+to reduce error.</p></li>
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Condition Attributes protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/condition/condition-attributes-protocol/condition-attributes-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h1 id="appendices-1">Appendices</h1>
+<p><span class="anchor" id="_Toc140825975"></span><h4>Appendix 1. Assessing
+crown damage and calculating the Crown Damage Index (CDI).</h4></p>
+<p>The Crown Damage Index (CDI) is created by visually assessing the
+incidence (extent of damage over the entire canopy), and severity
+(percentage of each leaf affected), of missing, damaged and discoloured
+foliage (Stone <em>et al.</em> 2003).</p>
+<p>There are three types of damage:</p>
+<ol type="1">
+<li><p>Defoliation – where entire leaves or parts of leaves are missing
+(Figure A5.1)</p></li>
+</ol>
+<ol start="2" type="1">
+<li><p>Necrosis – presence of dead leaf tissue (<a href="#figure-A2">Figure A2</a>)</p></li>
+<li><p>Discolouration – non-green leaf tissue including yellowing or
+reddish-purple discolouration, chlorotic spots or margins (<a href="#figure-A2">Figure A2</a>).
+Natural variation of leaf colour needs to be considered when assessing
+discolouration, for example eucalyptus leaves can change colour as they
+develop.</p></li>
+</ol>
+<h5 class="unnumbered" id="calculating-cdi">Calculating CDI</h5>
+<p>CDI is calculated by multiplying, for each type of damage or each
+portion of the crown, the incidence (<em>I</em>) by the severity
+(<em>S</em>), and then dividing the product by 100. If there are several
+types of damage present, or sections of crown affected, these values are
+then summed to produce and overall value.</p>
+<p>For example, if calculating CDI based on each type of damage present,
+imagine a tree where:</p>
+<p>50% of leaves are affected by defoliation (<em>S</em> = 50%) with on
+average about 30% of individual leaves missing (<em>I</em> = 30%)</p>
+<p>+ 20% necrotic damage per leaf (<em>S</em> = 20%) to the lower 15% of
+the canopy (<em>I</em> = 15%)</p>
+<p>+ 10% of leaves (<em>I</em> = 10%) are discoloured with around 15% of
+each leaf affected (<em>S</em> = 15%)</p>
+<p>= (50 x 30)/100 + (20 x 15)/100 + (15 x 10)/100 = 15 + 3 + 1.5</p>
+<p>CDI = 19.5</p>
+<p><h4>Table A1. Example for calculating the crown damage index based on
+types of damage present</h4></p>
+<table>
+<colgroup>
+<col style="width: 22%"/>
+<col style="width: 23%"/>
+<col style="width: 19%"/>
+<col style="width: 34%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Damage type</strong></th>
+<th><strong>Damage Incidence (%)</strong></th>
+<th><strong>Damage Severity (%)</strong></th>
+<th><strong>Product</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Defoliation</td>
+<td>30</td>
+<td>50</td>
+<td>(30 x 50)/100 = 15</td>
+</tr>
+<tr class="even">
+<td>Necrosis</td>
+<td>15</td>
+<td>20</td>
+<td>(15 x 20)/100 = 3</td>
+</tr>
+<tr class="odd">
+<td>Discolouration</td>
+<td>10</td>
+<td>15</td>
+<td>(10 x 15)/100 = 1.5</td>
+</tr>
+<tr class="even">
+<td><strong>Crown Damage Index</strong></td>
+<td></td>
+<td></td>
+<td>15 + +3 + 1.5 = <strong>19.5</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Alternatively, if estimating CDI by dividing the canopy into smaller
+sections and looking at total damage in each portion, the calculations
+might look like this:</p>
+<p><h4>Table A2. Example for calculating the crown damage index based on
+portions of the crown</h4></p>
+<table>
+<colgroup>
+<col style="width: 22%"/>
+<col style="width: 20%"/>
+<col style="width: 22%"/>
+<col style="width: 34%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Crown portion</strong></th>
+<th><strong>Damage Incidence (%)</strong></th>
+<th><strong>Damage Severity (%)</strong></th>
+<th><strong>Product</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Top 25%</td>
+<td>25</td>
+<td>50</td>
+<td>(25 x 50)/100 = 12.5</td>
+</tr>
+<tr class="even">
+<td>Middle 25%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Lower 50%</td>
+<td>30</td>
+<td>20</td>
+<td>(30 x 20)/100 = 6</td>
+</tr>
+<tr class="even">
+<td><strong>Crown Damage Index</strong></td>
+<td></td>
+<td></td>
+<td>12.5 + 6 = <strong>18.5</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Either approach can be used, or a combination of the two approaches
+(i.e. each type of damage for sections of the crown). The default in the
+App is a single row for an overall assessment of damage across the
+crown.</p>
+<p><span class="anchor" id="_Toc140825976"></span><h4>Appendix 2. Evidence
+of insect damage to foliage.</h4></p>
+<p><img alt="Insect_damage" height="900" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Appendix_1.png" width="500"/></p>
+<p><em>Source: South Australian Bushland Condition Monitoring Manual
+(Milne et al. 2008)</em></p>
+<p> id="figure-A1" Figure A1. Evidence of diseased foliage and insect damage 1. </p>
+<p><img alt="Galls" height="900" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Appendix_2.png" width="500"/></p>
+<p><em>Source: South Australian Bushland Condition Monitoring Manual
+(Milne et al. 2008).</em></p>
+<p> id="figure-A2" Figure A2. Evidence of diseased foliage and insect damage 2. </p>"""^^rdf:HTML ;
+    tern:equipment """
+    <h3>Contents</h3>
+<ol>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+    <h3 id="equipment">Equipment </h3>
+<p>General:</p>
+<ul>
+<li><p>mobile device with the Monitor app installed</p></li>
+<li><p>GNSS, such as a Trimble® R1 or DA2 receiver, a hand-held GPS, or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy</p></li>
+<li><p>100 m tape measure</p></li>
+<li><p>diameter tape or equivalent</p></li>
+<li><p>rangefinder or equivalent</p></li>
+</ul>
+<p>Optional:</p>
+<ul>
+<li><p>tent pegs</p></li>
+<li><p>clothes pegs</p></li>
+<li><p>flagging tape</p></li>
+<li><p>chalk</p></li>
+<li><p>5 - 10 m retractable tape measure</p></li>
+<li><p>30 cm ruler with leaf litter attachment</p></li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """ 
+    <h3 id="instructions-and-procedures">Instructions and procedures </h3>
+<ol type="1">
+<li><p>Ensure the Plot Selection and Layout Module has been completed to
+mark out the plot boundary, the sub-plot boundary and to define the
+current plot and visit in the Monitor app.</p></li>
+<li><p>Select <em>Condition Module &gt; Condition attributes
+protocol.</em></p></li>
+<li><p>Select <em>plot size</em> using the drop-down (100 x 100 m or 40
+x 40 m).</p></li>
+<li><p>Select the <em>equipment</em> that will be used to measure
+diameter and height (diameter tape, 5-10 m tape measure, rangefinder,
+clinometer).</p></li>
+<li><p>Select the <em>optional sub-protocols</em> that will be completed
+using the check-boxes (leaf litter, tree stumps, partially downed trees,
+disturbance).</p></li>
+<li><p>Select the <em>optional</em> <em>attributes</em> of interest that
+will be recorded during the Tree health component using the check-boxes
+(CDI, mistletoe, trunk condition, insect damage, human induced damage,
+additional stressors, abnormal growth).</p>
+<li><p>Time and date will be automatically recorded. This can be edited if
+necessary.</p></li> <img alt="Plot_layout" height="700" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Picture 1.jpg" width="550"/></li>
+<p><span class="anchor" id="_Toc140825967"></span>Figure 1. Plot layouts
+for the 100 x 100 m core plot 40 x 40 m sub-plot.</p>
+<h4 class="unnumbered" id="tree-survey">Tree survey </h4>
+<ol type="1">
+<li><p>Systematically traverse the plot or sub-plot searching for
+perennial species with a DBH ≥10 cm and height &gt;2 m (hereby referred
+to as ‘tree’). For mallee and mulga systems, record all individuals with
+a DBH ≥5 cm.</p></li>
+<li><p>Follow the <em>Basal Area Module - DBH protocol</em> to record
+DBH measurements simultaneously.</p></li>
+<li><p>For each tree encountered, select <em>add tree</em> and
+record:</p></li>
+</ol>
+<ul>
+<li><p>if the tree is <em>mallee</em> or <em>mulga.</em></p></li>
+<li><p>if the tree is <em>dead</em>. When dead is selected, completion
+of the growth stage and reproductive life stage fields is not
+required.</p></li>
+<li><p>if the tree is dead and partially downed, select the
+<em>partially downed tree</em> check-box.</p></li>
+<li><p>the <em>species name</em> or assigned <em>field name.</em> If the
+species identification is unknown (only species recorded as part of the
+Floristics Module will be available for selection) select <em>add new
+species</em> and fill in the relevant information. If the individual
+cannot be recorded to species, the genus name can be used (i.e.
+<em>Eucalyptus</em> sp.).</p></li>
+<li><p>the <em>growth stage</em> of the tree (mature, recruiting,
+resprouting or senescent), refer to Table 2 and Figure 2 for more
+information. If resprouting, indicate if <em>basal</em> or
+<em>epicormic</em> (both can be selected).</p></li>
+<li><p>the <em>reproductive life-stage</em>, refer to Table 3 for more
+information.</p></li>
+<li><p>if <em>flowering</em>, record the <em>intensity</em> (percentage
+of the canopy in flower).</p></li>
+<li><p>the <em>height</em> (m) of the tree using a rangefinder or
+equivalent.</p>
+<p><span class="anchor" id="_Ref138237604"></span><h4>Table 2. Description
+of growth stage classes.</h4></p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 14%"/>
+<col style="width: 85%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Growth stage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="2">Recruiting</td>
+<td><em>Trees:</em> From the juvenile and sapling stages to
+well-developed individuals with a crown of small branches, but below
+maximum height for a stand, crown exhibits apical dominance – approx.
+0-30 years</td>
+</tr>
+<tr class="even">
+<td><em>Shrubs:</em> Juvenile stage, shrub has not reached maximum
+height, apical dominance</td>
+</tr>
+<tr class="odd">
+<td>Resprouting</td>
+<td><em>Trees and Shrubs:</em> Woody perennial which is resprouting
+after significant loss of foliage. Resprouting can occur from the trunk
+or branches (epicormic) or from the base (basal).</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Mature</td>
+<td><em>Trees:</em> Tree has reached maximum height and crown has
+reached full lateral development although branch thickening can occur.
+Apical dominance lost – approx. 30-80 years</td>
+</tr>
+<tr class="odd">
+<td><em>Shrubs</em>: Shrub has reached maximum height, crown has reached
+full lateral development</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Senescent</td>
+<td><em>Trees:</em> Crown form contracting and becoming ‘stag headed’
+decrease in crown diameter and crown leaf area. Distorted branches and
+burls common – approx. &gt;80 years</td>
+</tr>
+<tr class="odd">
+<td><em>Shrubs:</em> Crown form contracting and decrease in crown
+diameter and crown leaf area. Dead branches more common – approx. &gt;80
+years</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Dead</td>
+<td><em>Trees:</em> Dead individuals in all stages – from presence of
+tertiary branches and bark to no remaining crown structure and absence
+of bark</td>
+</tr>
+<tr class="odd">
+<td><em>Shrubs:</em> Dead individuals in all stages</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" height="300" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Growth_stage.png" width="800"/></p>
+<p><span class="anchor" id="_Ref136291441"></span>Figure 2. Growth stage
+visual representation examples.</p>
+<p><span class="anchor" id="_Ref138238567"></span><h4>Table 3. Life-stage
+classes.</h4></p>
+<p>Adapted from (Heard and Channon 1997). Seedling, sapling and juvenile
+cannot be selected within this module. To record the presence of
+seedlings, saplings and juveniles, complete the Recruitment Module.</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Life Stage</strong></th>
+<th><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Budding</td>
+<td>Plants have buds formed in varying stages of development for
+flowering</td>
+</tr>
+<tr class="even">
+<td>Flowering</td>
+<td>Plants are in flower</td>
+</tr>
+<tr class="odd">
+<td>Immature fruit</td>
+<td>Immature fruits not shedding seed</td>
+</tr>
+<tr class="even">
+<td>Mature fruit</td>
+<td>Fruits ripe and/or shedding seed</td>
+</tr>
+<tr class="odd">
+<td>Recently shed</td>
+<td>Plants are in a non-reproductive phase which show signs of having
+shed seed or fruits within the last 12 months</td>
+</tr>
+<tr class="even">
+<td>Vegetative</td>
+<td>Plants in a non-reproductive phase (i.e. no flowers, buds or unshed
+seed), that do not classify as seedlings or saplings</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" type="1">
+<li><p>If there are obvious signs of browsing, complete the Herbivory
+and Physical Damage Module simultaneously.</p></li>
+<li><p>For each tree encountered, select <em>record health</em> and
+record:</p></li>
+</ol>
+<ul>
+<li><p>the percentage of canopy cover present versus dieback. Use the
+<em>South Australian Bushland Assessment Manual</em> (Native Vegetation
+Council 2020) to assist with the determination.</p></li>
+</ul>
+<ul>
+<li><p>the incidence and severity of discoloured, necrotic and missing
+foliage. Enter the type of damage into the description column, followed
+by incidence and severity values (see Appendix 1). The product will be
+automatically calculated. Use the add row button to add additional
+damage or crown portion measures (Appendix 1).</p></li>
+<li><p>the number of alive and dead mistletoes present. If no number is
+recorded, the app will automatically populate the field with 0.</p></li>
+<li><p>the number of hollows present. If no number is recorded, the app
+will automatically populate the field with 0.</p>
+<ul>
+<li><p>Optionally record the size of the hollow (m).</p></li>
+<li><p>Optionally record the direction of the hollow opening.</p></li>
+<li><p>Optionally record the position of the hollow on the
+tree.</p></li>
+</ul></li>
+<li><p>the presence of deep cracks or crevices present using the
+check-box.</p></li>
+<li><p>the tree bark is loose using the check-box.</p></li>
+<li><p>the presence of insect bores using the check-box.</p></li>
+<li><p>the incidence and severity of insect damage on the foliage.</p>
+<ul>
+<li><p>Select the <em>type</em> <em>of damage</em> (gall, lerp, scale,
+blistering, skeletonisation, followed by incidence and severity values).
+Use the <em>South Australian Bushland Condition Monitoring Manual</em>
+(Milne et al. 2008) or similar to assist with determination (examples
+available in Appendix 2).</p></li>
+</ul></li>
+<li><p>any <em>human induced damage</em> (lopping, logging, ringbarking,
+poisoning) present.</p></li>
+<li><p>obvious signs of any other biotic or abiotic stressors.</p></li>
+<li><p>the presence of abnormal growth using the check-box.</p></li>
+</ul>
+<ol start="7" type="1">
+<li><p>If there is leaf litter present at the base of the tree:</p></li>
+</ol>
+<ul>
+<li><p>create a small clearing in the litter and remove any coarse
+material then place the flat end of the leaf litter measurement tool on
+the soil surface. Slide the disc component down until it contacts the
+leaf litter surface. Apply light pressure to the disc and use the screw
+to tighten it into position. Read and record the litter depth (mm) where
+the top of the disc intersects the ruler. Instructions for building the
+tool can be found in the supplementary document Leaf litter tool
+instructions.</p></li>
+<li><p>if there is no leaf litter present, select no litter using the
+check-box.</p></li>
+<li><p>replace any litter or woody debris moved during the
+process.</p></li>
+</ul>
+<ol start="8" type="1">
+<li><p>Add <em>photo</em> of the tree.</p></li>
+<li><p>Use the comments tab for any additional remarks.</p></li>
+<li><p>Select <em>save</em> when all attributes have been recorded for
+the tree.</p></li>
+<li><p>Mark the tree with coloured chalk or equivalent to avoid
+unintentional remeasuring.</p></li>
+<li><p>Repeat steps 2-11 for each eligible tree encountered in the
+survey area.</p></li>
+<li><p>Select <em>complete</em> to when all trees within the survey area
+have been recorded.</p></li>
+</ol>
+<p><span class="anchor" id="_Ref136291431"></span><h4>Table 4. Factors
+affecting vegetation health to be recorded in the field.</h4></p>
+<table>
+<colgroup>
+<col style="width: 15%"/>
+<col style="width: 15%"/>
+<col style="width: 69%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Health factor</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="2">Canopy health</td>
+<td>Canopy cover</td>
+<td>The percentage of foliage present within the canopy relative to a
+local reference tree.</td>
+</tr>
+<tr class="even">
+<td>Crown damage index (CDI)</td>
+<td>An index based on the incidence and severity of discoloured,
+necrotic or missing foliage [Stone 2003].</td>
+</tr>
+<tr class="odd">
+<td colspan="2">Mistletoe</td>
+<td>Aerial plant parasite which can be identified by its different
+foliage from host plant. Number of mistletoes present to be
+recorded.</td>
+</tr>
+<tr class="even">
+<td colspan="2">Hollow</td>
+<td>Cavity that has formed within the trunk or branch of a tree. Number,
+direction and position recorded.</td>
+</tr>
+<tr class="odd">
+<td colspan="2">Human induced damage</td>
+<td>Any physical harm caused by a human activity. Presence or absence
+recorded.</td>
+</tr>
+<tr class="even">
+<td colspan="2">Insect damage</td>
+<td>The incidence and severity of galls, skeletonization, lerps,
+blistering and scale on foliage.</td>
+</tr>
+<tr class="odd">
+<td colspan="2">Trunk condition</td>
+<td>The presence of hollows, cracks, crevices, loose bark and insect
+bores on the tree trunk.</td>
+</tr>
+</tbody>
+</table>
+<h4 class="unnumbered" id="tree-stumps">Tree stumps </h4>
+<ol type="1">
+<li><p>Systematically traverse the plot or sub-plot searching for tree
+stumps.</p></li>
+</ol>
+<ol start="14" type="1">
+<li><p>For each stump encountered select <em>add stump.</em></p></li>
+<li><p>Location of the stump is automatically recorded when a stump is
+added. Location can be edited and re-recorded if required.</p></li>
+<li><p>Measure and record the height of the stump in cm.</p></li>
+<li><p>Measure and record the diameter of the top end of the stump in
+cm.</p></li>
+<li><p>Record the <em>decay class</em> of the stump from the drop-down
+list (Table 5).</p></li>
+<li><p>Record the any <em>regeneration</em> on the stump (present or
+absent).</p></li>
+<li><p>Add <em>photo</em> of the stump.</p></li>
+<li><p>Repeat steps 2-6 for each stump within the plot.</p></li>
+<li><p>Select <em>complete</em> to when all stumps within the survey
+area have been recorded.</p></li>
+</ol>
+<p><span class="anchor" id="_Ref78542054"></span>Table 5. Coarse woody
+debris decay classes which can be applied to stumps</p>
+<p>Adapted from (Meggs 1996; Baker and Chao 2011).</p>
+<table>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 87%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decay class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Class 1</td>
+<td>Recently fallen. Structurally intact or almost so; bark or small
+branches still attached; few signs of wood decay; wood mostly retains
+original colour.</td>
+</tr>
+<tr class="even">
+<td>Class 2</td>
+<td>Structurally less intact but still hard when kicked; small branches
+absent; little or no bark present; early signs of wood decay, bark loss
+or discolouration.</td>
+</tr>
+<tr class="odd">
+<td>Class 3</td>
+<td>Clearly decaying but still supports own weight; may be slightly soft
+when kicked; may be hollow in places; no bark; moss and fungi may be
+prominent.</td>
+</tr>
+<tr class="even">
+<td>Class 4</td>
+<td>Cannot support its own weight; soft to kick (but may still be hard
+in places; in which case may be extensively hollow); moss, fungi and
+invading roots likely.</td>
+</tr>
+<tr class="odd">
+<td>Class 5</td>
+<td>No longer retains original shape; wood very soft or largely
+disintegrated; sometimes only outline visible beneath moss, invading
+roots.</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+.
+
