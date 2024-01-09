@@ -1,16 +1,15 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 
 <https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f>
     a
         skos:Concept ,
         tern:Method ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     dcterms:description """
     <p>
     DBH measures for all trees (trees, tall shrubs and/or mallee greater than 2 m in height with a DBH ≥10 cm) within the plot.
@@ -65,6 +64,7 @@ wildlife. Therefore, scientific permits and wildlife ethics approvals
 are unlikely to be required but remember to always check with the local
 authority. Access permissions are required.</p></li>
 </ul>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:note """
     <h3 id="additional-guidelines">Additional guidelines</h3>
 <h4 class="unnumbered" id="taking-measurements">Taking measurements</h4>
