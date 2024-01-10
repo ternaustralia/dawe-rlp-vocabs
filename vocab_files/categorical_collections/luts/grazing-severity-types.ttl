@@ -1,0 +1,48 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/1c61fa4d-2217-5c71-b8f0-f9c9ceea2aa3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/grazing-severity-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cb9ba2d1-3a37-5f68-b6d8-7deefb307835> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/33273222-b7c2-5505-93c1-480e186e6651> ;
+    urnp:conceptDefinition "Refers to a 'light' type of grazing observed on a seedling, sapling or herbs such as grasses, sedges and rushes by herbivores." ;
+    urnp:conceptSource "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/7e80964e-5800-5f52-b3c6-923804b8018a>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/grazing-severity-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cb9ba2d1-3a37-5f68-b6d8-7deefb307835> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/f7e87de4-82b2-5ea8-a27b-8e9ea24363b1> ;
+    urnp:conceptDefinition "Refers to a 'severe' type of grazing observed on a seedling, sapling or herbs such as grasses, sedges and rushes by herbivores." ;
+    urnp:conceptSource "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/fdbec951-5e63-5eca-856e-58aebfdf2c59>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/grazing-severity-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/cb9ba2d1-3a37-5f68-b6d8-7deefb307835> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d098da75-c115-553d-ba2e-4fac96d09036> ;
+    urnp:conceptDefinition "Refers to a 'heavy' type of grazing observed on a seedling, sapling or herbs such as grasses, sedges and rushes by herbivores." ;
+    urnp:conceptSource "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/cb9ba2d1-3a37-5f68-b6d8-7deefb307835>
+    a skos:Collection ;
+    dcterms:description "A collection of the types of grazing severity by herbivores, i.e., whether the grazing was a 'light', 'heavy' or of a 'severe' type." ;
+    dcterms:source "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/33273222-b7c2-5505-93c1-480e186e6651> ,
+        <https://linked.data.gov.au/def/nrm/d098da75-c115-553d-ba2e-4fac96d09036> ,
+        <https://linked.data.gov.au/def/nrm/f7e87de4-82b2-5ea8-a27b-8e9ea24363b1> ;
+    skos:prefLabel "Grazing severity types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/grazing-severity-types.ttl"^^xsd:anyURI ;
+.
+
