@@ -11,106 +11,47 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:OrderedCollection ,
         tern:MethodCollection ;
     dcterms:description """
+    <h3>Contents</h3>
+  <ol>   <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#introduction">Introduction and Background</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology">Key definitions and terminology</a>
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#additional-guidelines-collection">Additional guidelines</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices-1"> Appendices</a></li>
+  </ol>
     <h3 id="module-overview">Module Overview</h3>
 <p>
-  This module covers the procedures and guidelines of three
-  protocols for recording basal area within plots where there is a dominant
-  growth form of trees, shrubs and/or mallee greater than 2 m in height:&nbsp;
+  This module covers the procedures and guidelines of three protocols for recording basal area within plots where there is a dominant growth form of trees, shrubs and/or mallee greater than 2 m in height:&nbsp;
 </p>
 <p>
-  1. <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f">Full DBH measures protocol</a> &ndash; DBH measures for all trees (trees, tall
-  shrubs and/or mallee greater than 2 m in height with a DBH &ge;10 cm) within
-  the plot.
+  1. <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f">Enhanced DBH protocol</a> &ndash; Diameter at breast height (DBH) measures for all trees (trees, tall shrubs and/or mallee greater than 2 m in height with a DBH ≥10 cm or 5 cm for mallee and mulga) within the plot (100 x 100 m).
 </p>
 <p>
-  2. <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/cd83fb3e-d8d3-4502-a618-a0f3f8712b27">Lite DBH measures protocol</a> &ndash; DBH measures for all trees (trees, tall
-  shrubs and/or mallee greater than 2 m in height with a DBH &ge;10 cm) within
-  two 20 x 100 m belt transects in the plot.&nbsp;
+  2. <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f">Standard DBH protocol </a> &ndash; DBH measures for all trees (trees, tall shrubs and/or mallee greater than 2 m in height with a DBH ≥10 cm or 5 cm for mallee and mulga) within a 40 x 40 m central subplot. If the Condition Module is being undertaken, basal measures will be collected as part of the tree survey, and do not need to be repeated here.
 </p>
 <p>
-  3. <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/a7d605e0-7d90-473e-aac0-21cdf380576f">Basal wedge protocol</a> &ndash; TERN Basal Wedge measures of &lsquo;in&rsquo;
-  trees at nine point sampling locations across the plot.&nbsp;
+  3. <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/a7d605e0-7d90-473e-aac0-21cdf380576f">Basal Wedge protocol</a> &ndash; TERN Basal Wedge measures of ‘in’ trees at nine-point sampling locations across the plot.
+</p>
+<p>
+  The Enhanced and Standard DBH protocols include the procedures and guidelines for the collection of DBH measures for all trees within the plot and subplot, respectively, including moving through the plots systematically, determining the Point of Measure (POM) using a measuring pole, measuring the DBH using a diameter tape or tree caliper, and recording the data into the app. The guidelines provide further information on addressing problem trees and dense plots.
+The Basal wedge protocol includes the procedures and guidelines for the collection of TERN Basal Wedge measures, including the location of the nine sampling points (NW, N, NE, E, SE, S, SW and W points around the perimeter of the plot, as well as the centre of the plot; see <a href="#figure-1">Figure 1.</a>., determining if the use of the basal wedge is warranted, using the basal wedge, establishing which basal area factor (BAF) is appropriate for each species (0.1, 0.25, 0.5, 0.75, 1 and 2; see <a href="#figure-2">Figure 2</a>.) conducting a 360° basal sweep, and recording the data into the app. The guidelines provide further information on the rules to determine ‘in’, ‘out’ and ‘borderline’ trees and dealing with problem trees.
 </p>
 <p><br /></p>
 <p>
-  The full and lite DBH measures protocols include the procedures and guidelines
-  for the collection of DBH measures for all trees within the plot and belt
-  transects, respectively, including moving through the plot/belt transects
-  systematically, determining the POM using a measuring pole, measuring the DBH
-  using a diameter tape or tree caliper, and recording the data into the
-  App.&nbsp;
-</p>
-<p><br /></p>
-<p>
-    The guidelines provide further information on dealing with problem trees and dense plots. The basal wedge protocol includes the procedures and guidelines for the collection of TERN Basal Wedge measures, including the location of the nine sampling points (NW, N, NE, E, SE, S, SW and W points around the perimeter of the plot, as well as the center of the plot; see <a href='#figure-1'>Figure 1</a>), determining if the use of the basal wedge is warranted, using the basal wedge, establishing which BAF is appropriate for each species (0.1, 0.25, 0.5, 0.75, 1 and 2; see <a href='#figure-2'>Figure 2</a>), conducting a 360° basal sweep, and recording the data into the App. The guidelines provide further information on the rules to determine ‘in’, ‘out’ and ‘borderline’ trees, and dealing with problem trees. The Basal Area module is linked to the following modules: </p>
-
-<p>&bull; <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics</a> – Basal area data per species are recorded using naming consistent with the flora species identifications/assigned field names recorded in the Floristics module. Therefore, the Basal Area module must be undertaken after the Floristics module. </p>
-<p>&bull; <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover</a> – The transects laid out in the Cover module can be used simultaneously to delineate the two 20 x 100 m belt transects surveyed in the lite DBH measures protocol, as well as delineate the plot/belt transects into subplots, which can simplify sampling dense plots. Therefore, the Basal Area module should be undertaken at any time during plot monitoring while the transects for the Cover module are laid out. </p>
-<p>&bull; <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9">Photopoints</a> – The three sets of overlapping panorama photographs collected in the Photopoints module can be processed using suitable algorithms to create a three-dimensional plot reconstruction, which can be used to measure trunk or stem diameters and calculate basal area. When software is readily available to run these algorithms, the Photo-points module will offer an additional method to measure basal area and biomass.</p>
-
-<table>
-    <tbody>
-      <tr>
-        <td id='figure-1'>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-belt-transects.png"
-            alt="100 x 100 m plot layout showing the two 20 x 100 m belt transects"
-            widteh="720"
-            height="638"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-<p>Figure 1. 100 x 100 m plot layout showing the two 20 x 100 m belt transects.</p>
-<p>  </p>
-<p>  </p>
-<table>
-    <tbody>
-      <tr>
-        <td id='figure-2'>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-basal-wedge.png"
-            alt="TERN Basal Wedge showing the six wedge apertures or basal area factors"
-            widteh="273"
-            height="236"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-<p>Figure 2. TERN Basal Wedge showing the six wedge apertures or basal area factors.</p>
-<table>
-    <tbody>
-      <tr>
-        <td id='figure-3'>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-360-point-sampling-sweep.png"
-            alt="360° point sampling sweep showing an ‘in’ (counted), ‘out’ (not counted) and ‘borderline’ tree (half counted)."
-            widteh="412"
-            height="492"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-<p>Figure 3. 360° point sampling sweep showing an ‘in’ (counted), ‘out’ (not counted) and ‘borderline’ tree (half counted). The dashed circles represent the variable circular plot for each tree that is proportional to its diameter at breast height (not to scale).</p>
-<table>
-    <tbody>
-      <tr>
-        <td id='figure-4'>
-          <img
-            src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-principle-point-sampling.png"
-            alt="Principle of point sampling."
-            widteh="380"
-            height="140"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-<p>Figure 4. Principle of point sampling. The diameter at breast height (DBH) and variable circular plot radius (R) of a ‘borderline’ tree are proportional the aperture (a) width of an angle gauge and the fixed distance (d) that the angle gauge is held from the eye.</p>
-"""^^rdf:HTML ;
+    <h3> Relationship to other modules</h3>
+<h4>Mandatory related modules</h4>
+Mandatory module to be completed prior to conducting the Basal Area Module:<ul style="list-style-type: disc;">
+<li><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – will determine the boundaries of the survey plot, the location of the 40 x 40 m subplot for the Standard DBH protocol and basal wedge sample locations for the Basal wedge protocol. </li>
+<li><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – basal area data per species are recorded using naming consistent with the flora species identifications/assigned field names recorded in the Floristics Module. Therefore, the Basal Area Module must be undertaken after the Floristics Module.</li></ul>
+<h4>Optional complementary related modules</h3>
+Optional complimentary modules to gather additional information relating to the basal area: <ul style="list-style-type: disc;"> 
+<li><a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> – basal area data can also be collected as part of the tree survey in the Condition Module. The Condition Module includes the Standard DBH protocol.</li>
+<li><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> – the transects laid out in the Cover Module can be used to delineate the 40 x 40 m subplot, as well as divide the plot and subplot into smaller units, which can simplify sampling. It is recommended that the Basal Area Module be completed at any time while the transects for the Cover Module are laid out. </li>
+<li><a href="https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9">Photopoints Module</a> – the three sets of overlapping panorama photographs collected in the Photopoints Module can be processed using suitable algorithms to create a three-dimensional plot reconstruction. When software is readily available to run these algorithms, the Photopoints Module will offer an additional method to extract data from the panoramas, including basal area and biomass.</li>
+</p>"""^^rdf:HTML ;
     dcterms:source """
     <h3 id="references">References</h3>
     <ul>
@@ -281,293 +222,628 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <p>Table 1. Key definitions and terms used in the Basal Area module.&nbsp;</p>
 <div align="left">
     <table>
-        <tbody>
-            <tr>
-                <td>
-                    <p>Term&nbsp;</p>
-                </td>
-                <td>
-                    <p>Definition&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Basal area&nbsp;</p>
-                </td>
-                <td>
-                    <p>The sum of the cross-sectional area of the trees (trees, tall shrubs and/or mallee greater than 2 m in height), including bark, at breast height (1.3 m above ground level) per hectare (m<sup>2</sup>/ha). Convertible to standing biomass using allometric equations.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Tree&nbsp;</p>
-                </td>
-                <td>
-                    <p>Tree, tall shrub or mallee greater than 2 m in height with a DBH &ge;10 cm (global forest ecology standard; Wood&nbsp;et al.&nbsp;2015). For multi-stem trees and mallees, the sum of DBH of each stem needs to be &ge;10 cm.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>DBH&nbsp;</p>
-                </td>
-                <td>
-                    <p>Diameter at Breast Height &ndash; the diameter of a tree trunk or stem in metres as measured 1.3 m above ground level.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>POM&nbsp;</p>
-                </td>
-                <td>
-                    <p>Point of Measurement &ndash; typically 1.3 m above ground level but may vary for problem trees. Recorded for every tree where the DBH is measured.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Biomass&nbsp;</p>
-                </td>
-                <td>
-                    <p>The total mass (at any given time) of living organisms of one or more species per unit of species (species biomass) or of all the species in a biotic community (community biomass).&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Allometric equations&nbsp;</p>
-                </td>
-                <td>
-                    <p>Allometry studies how the morphological, physiological and ecological characteristics of organisms scale in relation to their size. In forestry, allometric equations are used to estimate tree biomass as a function of readily measurable characteristics, typically DBH and tree height. &nbsp;The equations follow a variety of mathematical specifications (e.g. log-linear, non-linear) and are derived based on measured values of tree weight related to its DBH and height from sample trees.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Plot sampling&nbsp;</p>
-                </td>
-                <td>
-                    <p>The measurement of the basal area of all trees in a set area. Basal area is calculated from DBH measures and the formula for the area of a circle.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Point sampling&nbsp;</p>
-                </td>
-                <td>
-                    <p>The estimation of basal area from a count of &lsquo;in&rsquo; trees throughout a 360&deg; sweep made at a sampling point. Basal area is calculated by multiplying the count of &lsquo;in&rsquo; trees by the Basal Area Factor used on a TERN Basal Wedge.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>BAF&nbsp;</p>
-                </td>
-                <td>
-                    <p>Basal Area Factor &ndash; the mathematical relationship between the angle formed by the TERN Basal Wedge and the distance it is held from the eye.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>TERN Basal Wedge&nbsp;</p>
-                </td>
-                <td>
-                    <p>Angle gauge instrument used to provide a rapid and simple determination of basal area across Australia. Comprises six &lsquo;Basal Area Factors&rsquo; (0.1, 0.25, 0.5, 0.75, 1 and 2; see <a href='#figure-2'>Figure 2</a>).&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>&lsquo;In&rsquo; trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees where the trunk or stem at breast height (1.3 m above ground level) is wider than the aperture of the BAF used on a TERN Basal Wedge.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>&lsquo;Out&rsquo; trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees where the trunk or stem at breast height (1.3 m above ground level) is narrower than the aperture of the BAF used on a TERN Basal Wedge.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>&lsquo;Borderline&rsquo; trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees where the trunk or stem at breast height (1.3 m above ground level) is the exact width of the aperture of the BAF used on a TERN Basal Wedge.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Problem trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Buttressed, multi-stemmed, leaning, deformed, dead and hidden trees, trees on a slope and tree ferns. Solutions to measuring DBH for problem trees provided in the&nbsp;Additional guidelines.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Buttresses trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees with buttressed roots &ndash; roots that grow laterally out from the trunk that help to support the tree (e.g. Moreton Bay Fig).&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Multi-stemmed trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees with two or more main stems arising between near ground level and below breast height (1.3 m above ground level), but growing from one root system.&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Deformed trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees with a deformity that prevents the POM being taken at breast height (1.3 m above ground level).&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Hidden trees&nbsp;</p>
-                </td>
-                <td>
-                    <p>Trees obscured by a tree or trees in the foreground when undertaking a 360&deg; sweep during point sampling.&nbsp;</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<colgroup>
+<col style="width: 16%"/>
+<col style="width: 83%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Allometric equations</td>
+<td>Allometry studies the morphological, physiological and ecological
+characteristics of organisms’ scale in relation to their size. In
+forestry, allometric equations are used to estimate tree biomass as a
+function of readily measurable characteristics, typically DBH and tree
+height. The equations follow a variety of mathematical specifications
+(e.g. log-linear, non-linear) and are derived based on measured values
+of tree weight related to its DBH and height from sample trees.</td>
+</tr>
+<tr class="even">
+<td>BAF</td>
+<td>Basal Area Factor – the mathematical relationship between the angle
+formed by the aperture of the sights on the TERN Basal Wedge and the
+distance it is held from the observer’s eye.</td>
+</tr>
+<tr class="odd">
+<td>Basal area</td>
+<td>The average amount of area occupied by tree stems within a defined
+locale. It is quantified by measuring the cross-sectional area of all
+trees (&gt;2m tall), over the bark, at breast height (1.3 m above ground
+level) and values are expressed per hectare (m<sup>2</sup>/ha).
+Convertible to standing biomass using allometric equations.</td>
+</tr>
+<tr class="even">
+<td>Biomass</td>
+<td>The total quantity of matter (at any given time) of living
+organisms. Biomass can be expressed as all the species in a biotic
+community (community biomass) or by one or more species per unit of
+species (species biomass).</td>
+</tr>
+<tr class="odd">
+<td>‘Borderline’ trees</td>
+<td>Trees where the trunk or stem at breast height (1.3 m above ground
+level) is the exact width of the aperture of the BAF used on a TERN
+Basal Wedge.</td>
+</tr>
+<tr class="even">
+<td>Buttressed trees</td>
+<td>Trees with buttressed roots – roots that grow laterally out from the
+trunk that help to support the tree (e.g. Moreton Bay Fig).</td>
+</tr>
+<tr class="odd">
+<td>Circumference at breast height</td>
+<td>The distance of the perimeter of a standing tree trunk or stem in
+centimetres when measured at 1.3 m above the ground.</td>
+</tr>
+<tr class="even">
+<td>DBH</td>
+<td>Diameter at breast height - the straight-line distance in
+centimetres across the centre of a standing tree trunk or stem measured
+at 1.3 m above the ground.</td>
+</tr>
+<tr class="odd">
+<td>Deformed trees</td>
+<td>Trees with a distortion that prevents DBH from being measured at the
+standard 1.3 m breast height.</td>
+</tr>
+<tr class="even">
+<td>Ellipse trees</td>
+<td>Trees with an elliptical rather than circular shaped trunk or
+stem.</td>
+</tr>
+<tr class="odd">
+<td>GPS/GNSS enabled device</td>
+<td>A device that is capable of logging the accurate coordinates of a
+location using the Global Positioning System (GPS) or the Global
+Navigation Satellite System (GNSS).</td>
+</tr>
+<tr class="even">
+<td>Hidden trees</td>
+<td>Trees obscured by a tree or trees in the foreground when undertaking
+a 360° sweep during point sampling.</td>
+</tr>
+<tr class="odd">
+<td>‘In’ trees</td>
+<td>Trees where the trunk or stem at breast height (1.3 m above ground
+level) is wider than the aperture of the BAF used on a TERN Basal
+Wedge.</td>
+</tr>
+<tr class="even">
+<td>Monitor</td>
+<td>Field data collection app for Ecological Monitoring System
+Australia. Collects data using the Australian Biodiversity Information
+Standard for delivery to the Australian Biodiversity Data Repository
+managed by the Department of Climate Change, Energy, the Environment and
+Water.</td>
+</tr>
+<tr class="odd">
+<td>Multi-stemmed trees</td>
+<td>Trees with two or more main stems that arise between near ground
+level and below breast height (1.3 m above ground level) but grow from
+one root system.</td>
+</tr>
+<tr class="even">
+<td>‘Out’ trees</td>
+<td>Trees where the trunk or stem at breast height (1.3 m above ground
+level) is narrower than the aperture of the BAF used on a TERN Basal
+Wedge.</td>
+</tr>
+<tr class="odd">
+<td>Plot sampling</td>
+<td>The measurement of the basal area of all trees in a set area. Basal
+area is calculated from DBH measures and the formula for the area of a
+circle.</td>
+</tr>
+<tr class="even">
+<td>Point sampling</td>
+<td>The estimation of basal area from a count of ‘in’ trees throughout a
+360° sweep made at a sampling point. Basal area is calculated by
+multiplying the count of ‘in’ trees by the Basal Area Factor used on a
+TERN Basal Wedge.</td>
+</tr>
+<tr class="odd">
+<td>POM</td>
+<td>Point of measurement - the point at which the DBH of a tree is
+measured. As a standard, the POM is 1.3 m above ground level but may
+vary for problem trees. For repeatability, POM should be recorded every
+time DBH is measured.</td>
+</tr>
+<tr class="even">
+<td>Problem trees</td>
+<td>Buttressed, multi-stemmed, leaning, deformed, dead and hidden trees,
+trees on a slope and tree ferns. Solutions to measuring DBH for problem
+trees are provided in the <a href="#additional-guidelines-collection">Additional
+guidelines</a>.</td>
+</tr>
+<tr class="odd">
+<td>TERN Basal Wedge</td>
+<td>Angle gauge instrument used to provide a rapid and simple
+determination of basal area across Australia. Comprises six ‘Basal Area
+Factors’ (0.1, 0.25, 0.5, 0.75, 1 and 2; see <a href="#figure-2">Figure 2</a>.</td>
+</tr>
+<tr class="even">
+<td>Tree</td>
+<td>Woody plants greater than 2 m in height usually with a single stem,
+or branches well above the base. Includes trees, tall shrubs, or palms
+with DBH ≥10 cm (global forest ecology standard; Wood <em>et al.</em>
+2015), and mallee and mulga with a DBH ≥5 cm (TERN 2015).</td>
+</tr>
+</tbody>
+</table>
 </div>"""^^rdf:HTML ;
     skos:memberList (
             <https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f>
-            <https://linked.data.gov.au/def/nrm/cd83fb3e-d8d3-4502-a618-a0f3f8712b27>
             <https://linked.data.gov.au/def/nrm/a7d605e0-7d90-473e-aac0-21cdf380576f>
         ) ;
+    skos:note """
+    <h3 id="additional-guidelines-collection">Additional guidelines</h3>
+<h4 class="unnumbered" id="taking-measurements">Taking measurements</h4>
+<ul>
+<li><p>It may be beneficial to undertake this module while the transects
+for the point-intercept measures in the Cover Module (5 N/S and 5 E/W;
+see <a href="#figure-1">Figure 1.</a>) are laid out. The transects can help to partition the
+plot into more manageable units that can be surveyed systematically.
+Alternatively, use coloured survey pins to divide the plot. This will be
+particularly helpful in dense plots.</p></li>
+<li><p>When recording a new tree using the <em>add tree</em> button,
+ensure that the app operator is standing as near to the tree as possible
+as the tree as the location is recorded with this action.</p></li>
+<li><p>Chalk that is light coloured such as pink and purple show up best
+when marking trees.</p></li>
+<li><p>Clearly mark the measuring pole at 1.3 m to easily locate the
+POM.</p></li>
+<li><p>If a measuring pole is not available, use the normal side of the
+diameter tape (i.e. the side of the tape with 1 cm increments) or a
+regular measuring tape to locate the POM. Mark the tape at 1.3 m to
+easily locate the POM.</p></li>
+<li><p>Loose litter and debris at the base of the tree should be brushed
+aside before determining the POM.</p></li>
+<li><p>The rule set to determine if a tree is in or out of the plot is
+illustrated in <a href="#figure-4">Figure 4</a>. A tree is in the plot if more than 50% of the
+base of the trunk is within the plot.</p></li>
+<li><p>A rigid tape measure is accurate for measuring the circumference
+of smaller trees (~50 cm DBH) and where there is loose bark.</p></li>
+<li><p>For mallee or mulga trees that branch into multiple stems below
+1.3 m it is recommended to take diameter measurements at 30 cm from the
+ground or if branching lower than this at 10 cm and record the POM as
+such.</p></li>
+</ul>
+<h4 class="unnumbered" id="solutions-to-problem-trees">Solutions to
+problem trees</h4>
+<p>The solutions to measuring DBH for problem trees are illustrated in
+<a href="#figure-3">Figure 3</a>.</p>
+<ul>
+<li><p>Trees on a slope (<a href="#figure-3">Figure 3</a>.a), 1.3 m should be measured on the
+uphill side of the tree.</p></li>
+<li><p>Leaning trees (<a href="#figure-3">Figure 3</a>.c) should be measured on the inside of
+the lean, starting at the ground next to the base of the tree.</p></li>
+<li><p>Multi-stemmed trees (<a href="#figure-3">Figure 3</a>.d and e) are treated as single
+trees with multiple stems (Stem A, B, C, etc.). A single DBH is recorded
+if the tree branches above 1.3 m (d), otherwise, each individual stem is
+measured (e).</p></li>
+<li><p>Mallee or Mulga (<a href="#figure-3">Figure 3</a>.f) that branch very close to the ground
+should be measured at 30 cm or if branching lower than this, 10 cm and
+POM recorded accordingly.</p></li>
+<li><p>Deformed trees (<a href="#figure-3">Figure 3</a>.g and h) should be measured either above
+or below 1.3 m and the POM recorded.</p></li>
+<li><p>Buttressed trees (<a href="#figure-3">Figure 3</a>.i) are a significant source of error
+in repeat tree measurements and require careful attention in the field.
+Buttressed trees are measured at 1.3 m, at the highest point you can
+reach (e.g. approximately 2.2 m) and 50 cm above the top of the
+buttress. Every effort must be made for both the 1.3 m and the highest
+point you can reach during initial surveys.</p></li>
+<li><p>Dead trees in a baseline survey are flagged as <em>dead,</em> and
+all other attributes are measured as normal.</p></li>
+<li>The soft texture of tree fern
+trunks is not conducive to DBH measurements and therefore, tree ferns
+are not measured for diameter.</li>
+</ul>
+<p id="figure-3"><table>
+    <tbody>
+      <tr>
+        <td id='figure-2'>
+          <img
+             src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/problem_trees1.png"
+            alt="New Image Description"
+            widteh="380"
+            height="360"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+<p><span class="anchor" id="_Ref137544314"></span>Figure 3. Solutions to measuring DBH for problem trees. Adapted from: Wood et al. (2015): a)
+trees on a slope, b) straightforward tree, c) leaning tree, d) and e)
+multi-stemmed trees, f) mallee/mulga, g) and h) deformed trees and i)
+buttressed trees.</p>
+<p id="figure-4">
+<table>
+    <tbody>
+      <tr>
+        <td id='figure-2'>
+          <img
+             src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/solution_problem_trees.png"
+            alt="TERN Basal Wedge showing the six wedge apertures or basal area factors"
+            widteh="380"
+            height="360"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table></p>
+<p><span class="anchor" id="_Ref137544315"></span>Figure 4. Rule set to
+determine if a tree is in or out of the plot (adapted from Wood <em>et
+al.</em> (2015).</p>"""^^rdf:HTML ;
     skos:prefLabel "Basal Area Module" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/basal-area/collection.ttl"^^xsd:anyURI ;
-    tern:purpose """
-    <h3 id="rationale">Rationale</h3>
-    <p>All biological processes of plants and animals are dependent on the energy of primary production (i.e. the energy fixed and incorporated into biomass by plants), making it a fundamental component of an ecosystem. Measurements of biomass are important in ecosystem surveillance monitoring to help understand structural, functional and compositional ecosystem dynamics. For example, vegetation composition characterized by biomass is a prime indicator of species dominance within a vegetation association (Bonham 2013), and change in biomass over time is an important indicator of forest and woodland recovery during succession (Gilman&nbsp;et al.&nbsp;2016).&nbsp;</p>
-<p>Direct, accurate measurements of biomass can be obtained by felling, dissecting and weighing trees (West 2015). However, this method is destructive and unsuitable for ecological monitoring, which requires repeated measurements and in which the premise is to avoid damage to the environment. Therefore, biomass is often estimated from its allometric relationship with basal area (Eamus&nbsp;et al.&nbsp;2000). Measurements of basal area can be easily obtained on ground and are good indicators for biomass as they integrate the effect of both the number and size of trees (Burrows&nbsp;et al.&nbsp;2000). A correlation between basal area and biomass is to be expected as both are related to trunk or stem diameter (Sarmiento&nbsp;et al.&nbsp;2005). &nbsp;</p>
-<p>The full and lite DBH measures protocols measure DBH using a diameter tape or tree caliper to calculate basal area. Measurement of DBH has been adopted as a standard convention to measure trunk or stem diameter (West 2015). Only trees with a DBH &ge;10 cm are measured as this is a global forest ecology standard for defining a tree (Department of Environment&sbquo; Climate Change and Water 2010; Wood&nbsp;et al.&nbsp;2015). The point of measurement (POM) above ground level is recorded, as the trunk or stem diameter may not be able to be measured at 1.3 m (i.e. for problem trees), and to ensure that the same position is measured on each occasion during repeat monitoring (West 2015).&nbsp;</p>
-<p>The basal wedge protocol uses point sampling to measure basal area in m<sup>2</sup>/ha. This method has several advantages including its low cost, simplicity and rapidness (White&nbsp;et al.&nbsp;2012). Individual tree measurements are not required, which speeds the process considerably (Balderas Torres and Lovett 2013). However, since individual tree data are not collected, downstream analysis is limited to basal area data.&nbsp;</p>
-<p>In point sampling, basal area is estimated based on the concept of circles (trunks or stems) within circles (variable circular plots; see <a href='#figure-3'>Figure 3</a>). The area of one circle varies proportionally to a change in the area of the other circle (i.e. the area sampled is greater for larger than smaller trees) and trees are sampled with a probability proportional to their basal area. Therefore, large trees, which contribute more to the basal area of a stand, are sampled in greater proportions than small trees (Hovind and Rieck 1970).&nbsp;</p>
-<p>An observer rotates 360&deg; at a sampling point and counts all the trunks or stems that form an angle greater than the chosen BAF. In effect, every tree counted is being sampled in a variable circular plot with a radius that is a function of the tree&rsquo;s DBH (<a href='#figure-3'>Figure 3</a>). Because a tree&rsquo;s DBH determines its basal area, and the plot radius determines the sampling area for that tree, the contribution of each counted tree to total stand basal area can be determined. For such a sample of trees there is a constant relationship between tree DBH and effective sampling area, and therefore each tree counted represents exactly the same contribution to the basal area of the stand. In order to estimate the total stand basal area, the only calculation required is to multiply the count of &lsquo;in&rsquo; trees by the BAF used, which is determined from the aperture width used with an angle gauge and the fixed distance that the angle gauge is held from the eye (Fastie 2010). Measurements of variable circular plot radii and DBHs are not required as these values are proportional to the aperture width used with an angle gauge and the fixed distance that the angle gauge is held from the eye (<a href='#figure-4'>Figure 4</a>).&nbsp;</p>
-<p>The basal wedge protocol measures basal area at nine sampling points (<a href='#figure-1'>Figure 1</a>) with a TERN Basal Wedge (<a href='#figure-2'>Figure 2</a>), an angle gauge designed by TERN Ecosystem Surveillance for monitoring basal area across Australia. The hexagonal basal wedge has six fixed angle gauges that represent six different BAFs (<a href='#table-2'>Table 2</a>). The wedge is held at a fixed distance of 50 cm from the observer&rsquo;s eye using a taught string as this produces a sighting ratio of 1:50. At this ratio, a 1 cm aperture corresponds to a BAF of 1, or a basal area of 1 m<sup>2</sup>/ha. To determine the aperture for the specific BAFs of the basal wedge, the following equation was used:&nbsp;</p>
+    tern:appendix """<h1 id="appendices-1">Appendices</h1>
+<p><span class="anchor" id="_Ref138703508"></span><h3>Appendix 1. Basal wedge
+– point sampling explanation</h3></p>
+<p>In point sampling, basal area is estimated based on the concept of
+circles (trunks or stems) within circles (variable circular plots; see
+Figure. a.). The area of one circle varies proportionally to a change in
+the area of the other circle (i.e. the area sampled is greater for
+larger than smaller trees) and trees are sampled with a probability
+proportional to their basal area. Therefore, large trees, which
+contribute more to the basal area of a stand, are sampled in greater
+proportions than small trees (Hovind and Rieck 1970).</p>
+<p>An observer rotates 360° at a sampling point and counts all the
+trunks or stems that form an angle greater than the chosen BAF. In
+effect, every tree counted is sampled in a variable circular plot with a
+radius that is a function of the tree’s DBH (Figure. a). Because a
+tree’s DBH determines its basal area, and the plot radius determines the
+sampling area for that tree, the contribution of each counted tree to
+total stand basal area can be determined. For such a sample of trees,
+there is a constant relationship between tree DBH and effective sampling
+area, and therefore each tree counted represents the same contribution
+to the basal area of the stand. To estimate the total stand basal area,
+the only calculation required is to multiply the count of ‘in’ trees by
+the BAF used, which is determined from the aperture width used with an
+angle gauge and the fixed distance that the angle gauge is held from the
+eye (Fastie 2010). Measurements of variable circular plot radii and DBHs
+are not required as these values are proportional to the aperture width
+used with an angle gauge and the fixed distance that the angle gauge is
+held from the eye (Figure. b.).</p>
+<table>
+    <tbody>
+      <tr>
+        <td id='figure-3'>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-360-point-sampling-sweep.png"
+            alt="360° point sampling sweep showing an ‘in’ (counted), ‘out’ (not counted) and ‘borderline’ tree (half counted)."
+            widteh="412"
+            height="492"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table> 
+<p>Figure a. 360° point sampling sweep showing an ‘in’ (counted), ‘out’
+(not counted) and ‘borderline’ tree (half counted). The dashed circles
+represent the variable circular plot for each tree that is proportional
+to its diameter at breast height (not to scale).</p>
+<p>
+ <tbody>
+      <tr>
+        <td id='figure-4'><img src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/Figure.b.png"   alt="360° point sampling sweep showing an ‘in’ (counted), ‘out’ (not counted) and ‘borderline’ tree (half counted)."
+            widteh="370"
+            height="360"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table> </p>
+<p>Figure. b. Principle of point sampling. The diameter at breast height
+(DBH) and variable circular plot radius (R) of a ‘borderline’ tree are
+proportional to the aperture (a) width of an angle gauge and the fixed
+distance (d) that the angle gauge is held from the eye.</p>
+<p>The Basal wedge protocol measures basal area at nine sampling points
+(<a href="#figure-1">Figure 1</a>.) using a TERN Basal Wedge (<a href="#figure-2">Figure 2</a>). The TERN Basal Wedge
+is an angle gauge designed by TERN Ecosystem Surveillance for monitoring
+basal areas across Australia. The hexagonal basal wedge has six fixed
+angle gauges that represent six different BAFs. The wedge is held at the
+fixed distance of 50 cm from the observer’s eye using a taut string, as
+this produces a sighting ratio of 1:50. At this ratio, a 1 cm aperture
+corresponds to a BAF of 1 or a basal area of 1 m<sup>2</sup>/ha. To
+determine the aperture for the specific BAFs of the basal wedge, the
+following equation was used:</p>
 <p>𝐴=<span style="white-space: nowrap; font-size:larger">
     &radic;<span style="text-decoration:overline;">(𝐵𝐴𝐹 &times;𝐷^2&nbsp;&divide;0.25)&nbsp;</span>
     </span></p>
-<p>Where A is the aperture in centimeters and D is the fixed distance that the wedge is held from the eye in metres (i.e. 0.5 m; Muir&nbsp;et al.&nbsp;2011).&nbsp;</p>
-<p>&nbsp;</p>
-<p id='table-2'>Table 2. TERN Basal Wedge basal area factors and corresponding wedge apertures and angles formed.&nbsp;</p>
-<div align="left">
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <p>BAF (Basal area [m<sup>2</sup>/ha])&nbsp;</p>
-                </td>
-                <td>
-                    <p>Aperture (cm)&nbsp;</p>
-                </td>
-                <td>
-                    <p>Angle formed&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>0.1&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.32&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.37&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>0.25&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.50&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.57&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>0.5&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.71&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.81&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>0.75&nbsp;</p>
-                </td>
-                <td>
-                    <p>0.87&nbsp;</p>
-                </td>
-                <td>
-                    <p>1.00&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>1&nbsp;</p>
-                </td>
-                <td>
-                    <p>1.00&nbsp;</p>
-                </td>
-                <td>
-                    <p>2.29&deg;&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>2&nbsp;</p>
-                </td>
-                <td>
-                    <p>1.41&nbsp;</p>
-                </td>
-                <td>
-                    <p>3.23&deg;&nbsp;</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>"""^^rdf:HTML ;
+<p>Where A is the aperture in centimetres and D is the fixed distance
+that the wedge is held from the eye in metres (i.e. 0.5 m; Muir <em>et
+al.</em> 2011)</p>
+<p><h4>TERN Basal Wedge basal area factors and corresponding wedge apertures
+and angles formed.</h4></p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>BAF (Basal area [m<sup>2</sup>/ha])</th>
+<th>Aperture (cm)</th>
+<th>Angle formed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.1</td>
+<td>0.32</td>
+<td>0.37°</td>
+</tr>
+<tr class="even">
+<td>0.25</td>
+<td>0.50</td>
+<td>0.57°</td>
+</tr>
+<tr class="odd">
+<td>0.5</td>
+<td>0.71</td>
+<td>0.81°</td>
+</tr>
+<tr class="even">
+<td>0.75</td>
+<td>0.87</td>
+<td>1.00°</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>1.00</td>
+<td>2.29°</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>1.41</td>
+<td>3.23°</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="_Ref138703522"></span><h3>Appendix 2. Data
+collection fields from the Basal Area Module</h3></p>
+<p>Complete lists are provided in the Monitor app, as well as the <a href="https://linked.data.gov.au/def/nrm/f46fcbc6-0660-4e12-bcd4-c5642459b630">TERN
+Linked Data Services</a> page.</p>
+<p><h4>DBH instrument</h4></p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 66%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>DBH instrument</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DIA</td>
+<td>Diameter tape measure</td>
+</tr>
+<tr class="even">
+<td>TAP</td>
+<td>Tape measure</td>
+</tr>
+<tr class="odd">
+<td>CAL</td>
+<td>Tree calliper</td>
+</tr>
+</tbody>
+</table>
+<p><h4>Basal sweep sampling point</h4></p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 66%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Basal sweep sampling point</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NW</td>
+<td>Northwest</td>
+</tr>
+<tr class="even">
+<td>N</td>
+<td>North</td>
+</tr>
+<tr class="odd">
+<td>NE</td>
+<td>Northeast</td>
+</tr>
+<tr class="even">
+<td>E</td>
+<td>East</td>
+</tr>
+<tr class="odd">
+<td>SE</td>
+<td>Southeast</td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td>South</td>
+</tr>
+<tr class="odd">
+<td>SW</td>
+<td>Southwest</td>
+</tr>
+<tr class="even">
+<td>W</td>
+<td>West</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Centre</td>
+</tr>
+</tbody>
+</table>
+<p><h4>Basal area factor</h4></p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 66%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Basal Area Factor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+<tr class="even">
+<td>0.25</td>
+<td>0.25</td>
+</tr>
+<tr class="odd">
+<td>0.5</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>0.75</td>
+<td>0.75</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    tern:equipment """<h3 id="equipment">Equipment</h3>
+<p>General:</p>
+<ul>
+<li><p>mobile device (tablet/phone) with the Monitor app
+pre-loaded</p></li>
+<li><p>GNSS, such as a Trimble® R1 or a DA2 receiver a hand-held GPS, or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy</p></li>
+<li><p>diameter tape, measuring tape or tree calipers</p></li>
+<li><p>measuring pole with 1.3 m clearly marked or 5 - 10 m tape
+measure</p></li>
+<li><p>chalk</p></li>
+<li><p>step ladder (for measuring buttressed trees)</p></li>
+</ul>
+<p>Additional equipment required for the Enhanced protocol:</p>
+<ul>
+<li><p>4 x 100 m tape measures or pegs/flagging tape to mark the plot
+boundary (when completing the Standard protocol)</p></li>
+<li><p>10 x 100 m tape measures (or ca. 40 coloured survey pins) to
+divide the plot into smaller units for ease of sampling (when completing
+the Enhanced protocol)</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:purpose """<h3 id="rationale">Rationale</h3>
+    <p>All biological processes of plants and animals are dependent on the
+energy of primary production (i.e. the energy fixed and incorporated
+into biomass by plants), making it a fundamental component of an
+ecosystem. Measurements of biomass are important in ecosystem
+surveillance monitoring to help understand structural, functional and
+compositional ecosystem dynamics. For example, vegetation composition
+characterised by biomass is a prime indicator of species dominance
+within a vegetation association (Bonham 2013), and change in biomass
+over time is an important indicator of forest and woodland recovery
+during succession (Gilman <em>et al.</em> 2016).</p>
+<p>Direct and accurate measurements of biomass can be obtained by
+felling, dissecting and weighing trees (West 2015). However, this method
+is destructive and unsuitable for ecological monitoring, which requires
+repeated measurements and in which the premise is to avoid environmental
+damage. Biomass is often therefore estimated from its allometric
+relationship with basal area, as both are related to stem diameter
+(Eamus <em>et al.</em> 2000; Sarmiento <em>et al.</em> 2005).
+Measurements of basal area can be easily obtained on ground and are good
+indicators for biomass as they integrate the effect of both the number
+and size of trees (Burrows <em>et al.</em> 2000).</p>
+<p>Diameter at breast height (DBH) measured using a diameter tape or
+tree caliper is the standard for recording trunk or stem diameter (West
+2015) and has thus been adopted for the Enhanced and Standard DBH
+protocols. Trees with a DBH ≥10 cm are measured as this is a global
+forest ecology standard for defining a tree (DECCW 2010; Wood <em>et
+al.</em> 2015). However, In sites dominated by mallee and mulga, all
+stems with a DBH ≥5 cm are measured (TERN 2015). The POM above ground
+level is recorded for every measurement as it may not be possible to
+measure DBH at 1.3 m in every circumstance (i.e. for problem trees). For
+mallee that often branch into multiple stems below 1.3 m and mulga that
+often branch close to the ground and then taper rapidly, it is
+recommended that diameter measurements are taken at 30 cm from the
+ground or if branching lower than 10 cm from the ground and the POM
+recorded as such (Williams <em>et al.</em> 2005; Paul <em>et al.</em>
+2016). This ensures that the same position is measured on each occasion
+during repeat monitoring (West 2015).</p>
+<p>The Basal wedge protocol uses point sampling to measure basal area in
+m<sup>2</sup>/ha. This method has several advantages including its low
+cost, simplicity and rapidness, as individual tree measurements are not
+required (White <em>et al.</em> 2012; Balderas Torres and Lovett 2013).
+Since individual tree data are not collected, downstream analysis is
+limited to basal area data only. An explanation of point sampling is
+provided for reference in <a href="#appendices-1">Appendix 1.</a></p>"""^^rdf:HTML ;
     tern:scope """
-      <h3>Contents</h3>
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li>
-      <a href="#key-definitions-and-terminology"
-        >Key definitions and terminology</a
-      >
-    </li>
-    <li><a href="#rationale">Rationale</a></li>
-    <li><a href="#module-overview">Module Overview</a></li>
-    <li><a href="#references">References</a></li>
-  </ol>
-    <h3 id="introduction">Introduction</h3>
-    <p>Basal area is the sum of the cross-sectional area of trees (trees, tall shrubs and/or mallee greater than 2 meter in height), including bark, at breast height (1.3 m above ground level) per hectare (m<sup>2</sup>/ha). Basal area measurements provide information useful for monitoring tree growth and calculating standing biomass and carbon sequestration of trees based on allometric equations (Eamus&nbsp;et al.&nbsp;2000). The&nbsp;Basal Area&nbsp;module is only required in plots where there is a dominant growth form of trees, shrubs and/or mallee greater than 2 m in height.&nbsp;</p>
-<p>Basal area can be measured using &lsquo;plot sampling&rsquo; (i.e. the measurement of the basal area of all trees in a set area) or &lsquo;point sampling&rsquo; (i.e. the estimation of basal area from a count of &lsquo;in&rsquo; trees throughout a 360&deg; sweep at a sampling point). For plot sampling, the basal area of a tree is calculated from its diameter at breast height (DBH), being the diameter of the trunk in metres as measured 1.3 m above the ground. DBH is converted to basal area based on the formula for the area of a circle:&nbsp;</p>
+    <h3 id="introduction">Introduction and Background</h3>
+    <p>Basal area is the average amount of area occupied by tree stems within a defined locale. It is quantified by measuring the cross-sectional area of all trees, over the bark, at breast height (1.3 m above ground level) and values are expressed per hectare (m2/ha). Basal area provides information on stand density and is useful for monitoring tree growth, and for calculating biomass and carbon sequestration of trees using allometric equations (Eamus et al. 2000). The Basal Area Module is only required in plots where there is a dominant growth form of trees, shrubs and/or mallee greater than 2 m in height, but can also be undertaken as part of condition assessments.</p>
+<p>Basal area can be measured using ‘plot sampling’ (i.e. the measurement of the basal area of all trees in a set area) or ‘point sampling’ (i.e. the estimation of basal area from a count of ‘in’ trees throughout a 360° sweep at a sampling point). For plot sampling, the basal area of a tree is calculated from its diameter at breast height (DBH), being the diameter of the trunk in metres as measured 1.3 m above the ground. DBH is converted to basal area based on the formula for the area of a circle:
+&nbsp;</p>
 <p>𝐵𝑎𝑠𝑎𝑙 𝑎𝑟𝑒𝑎 = 𝜋 &times;(𝐷𝐵𝐻 &divide; 2)<sup>2</sup></p>
-<p>The basal area per hectare is calculated by adding the basal areas (as calculated above) of all the trees in an area and dividing by the area of land in which the trees were measured. Basal area is generally measured for a plot and then scaled to m<sup>2</sup>/ha to compare forest/woodland productivity and growth rate among multiple sites.&nbsp;</p>
-<p>For point sampling, basal area is quickly estimated in m<sup>2</sup>/ha by multiplying the count of &lsquo;in&rsquo; trees throughout a 360&deg; sweep at a sampling point, by the Basal Area Factor (BAF) used with an angle gauge or wedge prism. If using an angle gauge, a tree is &lsquo;in&rsquo; if its trunk or stem at breast height is wider than the aperture of the selected BAF. If using a wedge prism, &lsquo;in&rsquo; trees are those where the section of the trunk or stem offset by looking through the prism at breast height overlaps the trunk or stem as viewed above/below the prism. Trees where the trunk or stem is the exact width of the aperture, or where the offset section of the trunk or stem is perfectly aligned with the trunk or stem viewed above/below the prism, are &lsquo;borderline&rsquo; trees, for which a half count is tallied.&nbsp;</p>
-<p>The&nbsp;Basal Area&nbsp;module includes three protocols: (1) full DBH measures protocol that measures the DBH of all trees with a DBH &ge;10 cm within the plot (<a href='#figure-1'>Figure 1</a>); (2) lite DBH measures protocol that measures the DBH of all trees with a DBH &ge;10 cm within two 20 x 100 m belt transects within the plot (<a href='#figure-1'>Figure 1</a>); and (3) basal wedge protocol where a 360&deg; sweep is made at nine sampling points across the plot (<a href='#figure-1'>Figure 1</a>) using a TERN Basal Wedge (<a href='#figure-2'>Figure 2</a>).&nbsp;</p>
-<p>The full DBH measures protocol, although time consuming, particularly in dense stands, is best practice and recommended for projects where accurate and repeatable measures of basal area are critical (e.g. forestry and forest ecology projects). The lite DBH measures protocol offers a pragmatic approach to obtain accurate and repeatable measures of basal area based on DBH measures within a sub-sample of the plot. The lite DBH measures protocol is recommended for time limited projects where DBH measures are required and if other modules that use the same belt transects are being undertaken (e.g.&nbsp;Recruitment&nbsp;and&nbsp;Coarse Woody Debris&nbsp;modules).&nbsp;</p>
-<p>The basal wedge protocol provides a simple and rapid method to estimate basal area across the plot. This approach extends the area sampled beyond the actual plot to provide a reliable estimate of basal area in a m<sup>2</sup>/ha basis for each species and total basal area of the vegetation association being sampled. The basal wedge protocol is recommended for projects that require rapid but reliable measures of basal area. The protocol is suitable for studies and analysis across broad scales and the TERN Basal Wedge comprises six BAFs, ranging from 0.1 to 2 (<a href='#figure-2'>Figure 2</a>), that are suitable for use across Australia.</p>
-    """^^rdf:HTML ;
-    tern:undertakenAfter
+<p>Basal area per hectare is calculated by adding the basal areas (as calculated above) of all the trees in a defined locale and dividing by the area of land in which the trees were measured. Basal area is generally measured for a plot and then scaled to m2/ha to compare forest/woodland productivity and growth rate among multiple sites.&nbsp;</p>
+<p>Basal area can be rapidly estimated at a sampling point using a hand-held angle gauge. A mathematical correlation exists between the distance from the observer’s eye and the aperture of the device. This is referred to as the basal area factor (BAF). Basal area can be estimated in m2/ha by multiplying the count of ‘in’ trees across a 360° sweep with the selected BAF. When using an angle gauge, a tree is ‘in’ if its trunk or stem at breast height is wider than the aperture of the selected BAF. Trees where the trunk or stem is the exact width of the aperture, are ‘borderline’ trees, for which a half count is tallied.&nbsp;</p>
+<p>The Basal Area Module includes three protocols: (1)<a href="https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f">Enhanced DBH protocol</a> that measures the DBH of all trees with a DBH ≥10 cm (or DBH ≥5 cm for mulga and mallee systems) within the core plot (100 x 100 m) <a href="#figure-1">Figure 1.</a>); (2) <a href="https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f">Standard DBH protocol</a> that measures the DBH of all trees with a DBH ≥10 cm (or DBH ≥5 cm for mulga and mallee systems) in a 40 x 40 m sub-plot situated in the centre of the core plot (<a href='#figure-1'>Figure 1</a>); and (3) <a href="https://linked.data.gov.au/def/nrm/a7d605e0-7d90-473e-aac0-21cdf380576f">Basal Wedge protocol</a> where a 360° sweep is made at nine sampling points across the core plot (<a href="#figure-1">Figure 1</a>.) using a TERN basal wedge (<a href='#figure-2'>Figure 2</a>).&nbsp;</p>
+<p>The <a href="https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f">Enhanced DBH protocol</a>, although time-consuming, particularly in dense stands, is best practice and recommended for projects where accurate and repeatable measures of basal area are critical (e.g. forestry and forest ecology projects). The <a href="https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f">Standard DBH protocol</a> offers a pragmatic approach to obtain accurate and repeatable measures of basal area based on DBH measures within a sub-sample of the plot. The Standard DBH protocol is recommended for time-limited projects where DBH measures are required and can be undertaken concurrently as part of other modules (e.g. <a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment Module</a> and <a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a>).&nbsp;</p>
+<p>The <a href="https://linked.data.gov.au/def/nrm/a7d605e0-7d90-473e-aac0-21cdf380576f">Basal Wedge protocol</a> provides a simple and rapid method to estimate basal area across the plot. This approach extends the area sampled beyond the actual plot to provide a reliable estimate of basal area in a m<sup>2</sup>/ha basis for each species and total basal area of the vegetation association being sampled. The basal wedge protocol is recommended for projects that require rapid but reliable measures of basal area. The protocol is suitable for studies and analysis across broad scales and the TERN Basal Wedge comprises six BAFs, ranging from 0.1 to 2 (<a href='#figure-2'>Figure 2</a>), that are suitable for use across Australia.</p>
+    <table>
+    <tbody>
+      <tr>
+        <td id='figure-1'>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/Figure1.jpg"
+            alt="Figure 1. A 100 x 100 m core plot layout showing the 40 x 40 m central sub-plot and nine basal wedge sampling locations."
+            widteh="720"
+            height="638"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<p>Figure 1. A 100 x 100 m core plot layout showing the 40 x 40 m central sub-plot and nine basal wedge sampling locations.</p>
+<p>  </p>
+<p>  </p>
+<table>
+    <tbody>
+      <tr>
+        <td id='figure-2'>
+          <img
+            src="https://w3id.org/tern/static/dawe-rlp/latest/basal-area/basal-area-basal-wedge.png"
+            alt="TERN Basal Wedge showing the six wedge apertures or basal area factors"
+            widteh="273"
+            height="236"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<p>Figure 2. TERN Basal Wedge showing the six wedge apertures or basal area factors.</p>
+"""^^rdf:HTML ;
+    tern:undertakenBefore
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
+        <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
+    tern:undertakenConcurrently
         <https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9> ,
-        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ;
-    tern:undertakenConcurrently <https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ;
+        <https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109> ,
+        <https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ;
 .
 
