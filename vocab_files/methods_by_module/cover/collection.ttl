@@ -11,865 +11,559 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:OrderedCollection ,
         tern:MethodCollection ;
     dcterms:description """
-<h3 id="module-overview">Module overview</h3>
-<p>
-  This module covers the procedures and guidelines of two protocols for
-  recording cover within the plot:
-</p>
-<ol type="1">
+      <h1>Contents</h1>
+    <ol>
+    <li><a href="#module-overview">Module Overview</a></li>
+  <li><a href="#introduction">Introduction and Background</a></li>
   <li>
-    
-      <p>
-        <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/576f634e-2706-4f18-b561-0636d4c007d0">Full protocol</a> – cover recorded from 1010 point-intercepts across the
-        plot for all intercepts from the ground to the canopy, including
-        substrate, species, growth form and height.
-      </p>
-    
+    <a href="#key-definitions-and-terminology">Key definitions and terminology</a
+    >
   </li>
-  <li>
-    
-      <p>
-        <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/aa1525f9-c3f2-4f7d-98cc-6a7d3aec9d8a">Lite protocol</a> – cover recorded from 404 point-intercepts across the plot
-        for all intercepts from the ground to the canopy, including substrate,
-        species, growth form and height.
-      </p>
-    
-  </li>
+  <li><a href="#rationale">Rationale</a></li>
+  <li><a href="#references">References</a></li>
+  <li><a href="#appendices-1">Appendix</a></li>
 </ol>
-<p>
-  The full protocol includes the procedures and guidelines for setting up ten
-  100 m transects (5 x N/S and 5 x E/W), recording the transect being assessed
-  and in which direction, recording point-intercept data, including substrate,
-  species, growth form, height and canopy data, at 1 m intervals along the ten
-  transects located across the plot (for a total of 1010 points), and entering
-  the data directly into the App. The guidelines provide further information on
-  using a laser pointer to determine hits and the GRS Densitometer™ to view
-  canopy intercepts, the rules for determining a ‘hit’, and when to apply ‘In
-  Canopy Sky’.
-</p>
-<p>
-  The lite protocol includes procedures and guidelines similar to the full
-  protocol, except the guidelines provide instructions for setting up four 100 m
-  transects (2 x N/S and 2 x E/W) and recording data at 1 m intervals along the
-  four transects located across the plot (for a total of 404 points).
-</p>
-<p>The <em>Cover</em> module is linked to the following modules:</p>
+<h1 id="module-overview">Module overview</h1>
+<h2 id="available-protocols">Available Protocols</h2>
+<p>This module includes two protocols for recording cover within the
+plot:</p>
 <ul>
-  <li>
-    
-      <p>
-        <em
-          ><a
-            href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821"
-            >Site selection and plot layout</a
-          ></em
-        >
-        – The point-intercept transect grid is aligned to the plot defined
-        boundaries.
-      </p>
-    
-  </li>
-  <li>
-    
-      <p>
-        <em
-          ><a
-            href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
-            >Floristics</a
-          ></em
-        >
-        – Species cover data are recorded using naming consistent with the flora
-        species identifications/ assigned field names recorded in the
-        <em>Floristics</em> module.
-      </p>
-    
-  </li>
-  <li>
-    
-      <p>
-        <em
-          ><a
-            href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109"
-            >Condition</a
-          ></em
-        >
-        – Vegetation and substrate cover are attributes used to measure
-        condition; can be undertaken concurrently using the same transects.
-      </p>
-    
-  </li>
-  <li>
-    
-      <p>
-        <em
-          ><a
-            href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2"
-            >Coarse woody debris</a
-          ></em
-        >
-        – can be undertaken concurrently using the same transects.
-      </p>
-    
-  </li>
-  <li>
-    
-      <p>
-        <em
-          ><a
-            href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970"
-            >Recruitment</a
-          ></em
-        >
-        – can be undertaken concurrently using the same transects.
-      </p>
-    
-  </li>
-  <li>
-    
-      <p>
-        <em
-          ><a
-            href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b"
-            >Fire</a
-          ></em
-        >
-        – can be undertaken concurrently using the same transects.
-      </p>
-    
-  </li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/576f634e-2706-4f18-b561-0636d4c007d0">Enhanced protocol</a> – cover recorded from 1010 point-intercepts
+across the plot for all intercepts from the ground to the canopy,
+including substrate, species, growth form and height.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/aa1525f9-c3f2-4f7d-98cc-6a7d3aec9d8a">Standard protocol</a> – fractional cover recorded from 404
+point-intercepts across the plot for all intercepts from the ground to
+the canopy, including substrate, photosynthetic and non-photosynetic
+vegetation, and height.</p></li>
 </ul>
-<p>
-  Rainforests, tall eucalypt forests and vine thickets provide some challenges
-  to the use of the point-intercept method (Sparrow et al. 2020). This is
-  because the identification and distinction of tall trees can be difficult, and
-  the vegetation in vine thickets can be too dense to lay out and survey
-  transects. Use of TERN’s forest specific protocols may be more appropriate in
-  these systems (Wood et al. 2015).
-</p>
-"""^^rdf:HTML ;
+<p>The <a href="https://linked.data.gov.au/def/nrm/576f634e-2706-4f18-b561-0636d4c007d0">Enhanced protocol</a> includes instructions and procedures for
+setting up ten 100 m transects (5 x N/S and 5 x E/W), recording
+point-intercept data, including substrate, species, growth form, height
+and canopy data, at 1 m intervals along the ten transects (for a total
+of 1010 points), and entering the data directly into the Monitor
+app.</p>
+<p>The <a href="https://linked.data.gov.au/def/nrm/aa1525f9-c3f2-4f7d-98cc-6a7d3aec9d8a">Standard protocol</a> includes instructions and procedures for
+setting up four 100 m transects (2 x N/S and 2 x E/W) and recording
+substrate, photosynthetic and non-photosynthetic vegetation, height and
+canopy data at 1 m intervals along the four transects (for a total of
+404 points).</p>
+<p>The guidelines provide further information on using the GRS
+Densitometer™ to view canopy intercepts, the rules for determining a
+‘hit’, when to apply <em>in canopy sky</em> and measuring tree
+heights.</p>
+<p>Rainforests, tall eucalypt forests and vine thickets provide some
+challenges to the use of the point-intercept method (Sparrow et al.
+2020). This is because the identification and distinction of tall trees
+can be difficult, and the vegetation in vine thickets can be too dense
+to lay out and survey transects. Future development of EMSA protocols
+will aim to investigate alternative plot sizes which will be more
+suitable in these ecosystems.</p>
+<h2 id="relationship-to-other-modules">Relationship to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<h4 class="unnumbered" id="complete-prior-to-the-cover-module">Complete
+prior to the Cover Module</h4>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – the point-intercept transect
+grid is aligned to the plot defined boundaries.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a>– Species cover data are recorded using naming
+consistent with the flora species identifications/assigned field names,
+which must be recorded in the <a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> prior to undertaking the
+Cover Module.</p></li>
+</ul>
+<h4 class="unnumbered" id="complete-concurrently-with-the-cover-module">Complete concurrently
+with the Cover Module</h4>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity Module</a> – if the Fire Severity Module is to be
+completed as part of your project, it must be undertaken concurrently
+with the Cover Module as the fire severity attributes are collected at
+each point-intercept along the standard point-intercept
+transects.</p></li>
+</ul>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> – plant species height and cover data
+recorded in the Cover Module can inform structural formation selection
+in the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> and be used to classify the vegetation
+association of the plot using the Native Vegetation Information System
+(NVIS) to compliment the vegetation information obtained in the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a>.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2">Coarse Woody Debris Module</a> – can be undertaken concurrently using
+the same transects.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment Module</a> – can be undertaken concurrently using the
+same transects.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e">Invertebrate Fauna Module</a> – the rapid ground baiting protocol can
+be undertaken concurrently, with the traps placed along the same
+transects.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9">Photopoints Module</a> – the three sets of overlapping panorama
+photographs collected in the Photopoints Module can be processed using
+suitable algorithms to create a three-dimensional plot reconstruction.
+When software is readily available to run these algorithms, the
+Photopoints Module will offer an additional method to extract data from
+the panoramas.</p></li>
+</ul>"""^^rdf:HTML ;
     dcterms:source """
-<h3 id="references">References</h3>
-<ul>
-  <li>
-    <p>
-      Allred, BW, Bestelmeyer, BT, Boyd, CS, Brown, C, Davies, KW, Duniway, MC,
-      Ellsworth, LM, Erickson, TA, Fuhlendorf, SD, Griffiths, TV, Jansen, V,
-      Jones, MO, Karl, J, Knight, A, Maestas, JD, Maynard, JJ, McCord, SE,
-      Naugle, DE, Starns, HD, Twidwell, D, Uden, DR (2020) Improving Landsat
-      predictions of rangeland fractional cover with multitask learning and
-      uncertainty. <em>Methods in Ecology and Evolution</em>
-    </p>
-  </li>
-  <li>
-    <p>
-      Andrew, MH, Lange, RT (1986a) Development of a new piosphere in arid
-      chenopod shrubland grazed by sheep. 1. Changes to the soil surface.
-      <em>Australian Journal of Ecology</em> <strong>11</strong>, 395–409.
-    </p>
-  </li>
-  <li>
-    <p>
-      Andrew, MH, Lange, RT (1986b) Development of a new piosphere in arid
-      chenopod shrubland grazed by sheep. 2. Changes to the vegetation.
-      <em>Australian Journal of Ecology</em> <strong>11</strong>, 411–424.
-    </p>
-  </li>
-  <li>
-    <p>
-      Baker‐Gabb, D, Antos, M, Brown, G (2016) Recent decline of the critically
-      endangered Plains‐wanderer (<em>Pedionomus torquatus</em>), and the
-      application of a simple method for assessing its cause: major changes in
-      grassland structure. <em>Ecological Management &amp; Restoration</em>
-      <strong>17</strong>, 235–242.
-    </p>
-  </li>
-  <li>
-    <p>
-      Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E, Tokmakoff,
-      A, Lowe, AJ (2018) Floristic and structural assessment of Australian
-      rangeland vegetation with standardized plot-based surveys.
-      <em>PloS ONE</em> <strong>13</strong>, e0202073.
-    </p>
-  </li>
-  <li>
-    <p>
-      Bastin, J-F, Berrahmouni, N, Grainger, A, Maniatis, D, Mollicone, D,
-      Moore, R, Patriarca, C, Picard, N, Sparrow, B, Abraham, EM, Aloui, K,
-      Atesoglu, A, Attore, F, Bassüllü, Ç, Bey, A, Garzuglia, M, García-Montero,
-      LG, Groot, N, Guerin, G, Laestadius, L, Lowe, AJ, Mamane, B, Marchi, G,
-      Patterson, P, Rezende, M, Ricci, S, Salcedo, I, Sanchez-Paus Diaz, A,
-      Stolle, F, Surappaeva, V, Castro, R (2017) The extent of forest in dryland
-      biomes. <em>Science</em> <strong>356</strong>, 635–638.
-    </p>
-  </li>
-  <li>
-    <p>
-      Belnap, J, Gillette, DA (1998) Vulnerability of desert biological soil
-      crusts to wind erosion: the influences of crust development, soil texture,
-      and disturbance. <em>Journal of Arid Environments</em>
-      <strong>39</strong>, 133–142.
-    </p>
-  </li>
-  <li>
-    <p>
-      Bian, J, Li, A, Zhang, Z, Zhao, W, Lei, G, Xia, H, Tan, J (2016) Grassland
-      fractional vegetation cover monitoring using the composited HJ-1A/B time
-      series images and unmanned aerial vehicles: A case study in Zoige wetland,
-      China. In '2016 IEEE International Geoscience and Remote Sensing Symposium
-      (IGARSS). Beijing, China'. pp. 7192–7195.
-    </p>
-  </li>
-  <li>
-    <p>
-      Bonham, CD (2013) 'Measurements for terrestrial vegetation.' (John Wiley
-      &amp; Sons: West Sussex, UK)
-    </p>
-  </li>
-  <li>
-    <p>
-      Brady, WW, Mitchell, JE, Bonham, CD, Cook, JW (1995) Assessing the power
-      of the point-line transect to monitor changes in plant basal cover.
-      <em>Journal of Range Management</em> <strong>48</strong>, 187–190.
-    </p>
-  </li>
-  <li>
-    <p>
-      Braun-Blanquet, J (1932) 'Plant sociology: the study of plant
-      communities.' (McGraw-Hill: New York)
-    </p>
-  </li>
-  <li>
-    <p>
-      Caddy-Retalic, S, Wardle, G, Leitch, E, McInerney, F, Lowe, A (2020)
-      Vegetation change along a Mediterranean to arid zone bioclimatic gradient
-      reveals scale-dependent ecotone patterning.
-      <em>Australian Journal of Botany</em> <strong>68</strong>, 574–586.
-    </p>
-  </li>
-  <li>
-    <p>
-      Chen, J, Yi, S, Qin, Y, Wang, X (2016) Improving estimates of fractional
-      vegetation cover based on UAV in alpine grassland on the Qinghai–Tibetan
-      Plateau. <em>International Journal of Remote Sensing</em>
-      <strong>37</strong>, 1922–1936.
-    </p>
-  </li>
-  <li>
-    <p>
-      Chen, S, McDermid, GJ, Castilla, G, Linke, J (2017) Measuring vegetation
-      height in linear disturbances in the boreal forest with UAV
-      photogrammetry. <em>Remote Sensing</em> <strong>9</strong>, 1257.
-    </p>
-  </li>
-  <li>
-    <p>
-      Choi, SK, Lee, SK, Jung, SH, Choi, JW, Choi, DY, Chun, SJ (2016)
-      Estimation of fractional vegetation cover in sand dunes using
-      multi-spectral images from fixed-wing UAV.
-      <em
-        >Journal of the Korean Society of Surveying, Geodesy, Photogrammetry and
-        Cartography</em
-      >
-      <strong>34</strong>, 431–441.
-    </p>
-  </li>
-  <li>
-    <p>
-      Claridge, AW, Barry, SC (2000) Factors influencing the distribution of
-      medium‐sized ground‐dwelling mammals in southeastern mainland Australia.
-      <em>Austral Ecology</em> <strong>25</strong>, 676–688.
-    </p>
-  </li>
-  <li>
-    <p>
-      Clarke, V (2009) Standard Operating Procedure: Establishing Vegetation
-      Transects. Department of Environment and Conservation, Nature Conservation
-      Service Biodiversity, Kensington, WA.
-    </p>
-  </li>
-  <li>
-    <p>
-      Department of Agriculture‚ Water and the Environment (2021) 'Outback
-      Australia – the rangelands.' Available at
-      <a href="https://www.environment.gov.au/land/rangelands"
-        ><u>https://www.environment.gov.au/land/rangelands</u></a
-      >
-      [Accessed 02/03/2021].
-    </p>
-  </li>
-  <li>
-    <p>
-      Department of Environment and Climate Change (2007) Private Native
-      Forestry Code of Practice Guideline No. 4. Department of Environment and
-      Climate Change, Sydney.
-    </p>
-  </li>
-  <li>
-    <p>
-      Evans, RA, Love, RM (1957) The step-point method of sampling-a practical
-      tool in range research. <em>Journal of Range Management</em>
-      <strong>10</strong>, 208–212.
-    </p>
-  </li>
-  <li>
-    <p>
-      Facelli, JM, Carson, WP (1991) Heterogeneity of plant litter accumulation
-      in successional communities.
-      <em>Bulletin of the Torrey Botanical Club</em> <strong>118</strong>,
-      62–66.
-    </p>
-  </li>
-  <li>
-    <p>
-      Friedel, M, Shaw, K (1987) Evaluation of methods for monitoring sparse
-      patterned vegetation in arid rangelands. II: Trees and shrubs.
-      <em>Journal of Environmental Management</em> <strong>25</strong>, 309–318.
-    </p>
-  </li>
-  <li>
-    <p>
-      Gehrig, SL, Frahn, K, Nicol, J (2016) Monitoring the response of littoral
-      and floodplain vegetation and soil moisture flux to weir pool raising –
-      2015. South Australian Research and Development Institute (Aquatic
-      Sciences), Adelaide.
-    </p>
-  </li>
-  <li>
-    <p>
-      Godínez-Alvarez, H, Herrick, J, Mattocks, M, Toledo, D, Van Zee, J (2009)
-      Comparison of three vegetation monitoring methods: their relative utility
-      for ecological assessment and monitoring. <em>Ecological Indicators</em>
-      <strong>9</strong>, 1001–1008.
-    </p>
-  </li>
-  <li>
-    <p>
-      Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z,
-      Lowe, AJ (2017) Opportunities for integrated ecological analysis across
-      inland Australia with standardised data from Ausplots Rangelands.
-      <em>PloS ONE</em> <strong>12</strong>, e0170137.
-    </p>
-  </li>
-  <li>
-    <p>
-      Holm, A, Curry, P, Wallace, J (1984) Observer differences in transect
-      counts, cover estimates and plant size measurements on range monitoring
-      sites in an arid shrubland. <em>The Rangeland Journal</em>
-      <strong>6</strong>, 98–102.
-    </p>
-  </li>
-  <li>
-    <p>
-      Li, X, Niu, J, Xie, B (2014) The effect of leaf litter cover on surface
-      runoff and soil erosion in Northern China. <em>PloS ONE</em>
-      <strong>9</strong>, e107789.
-    </p>
-  </li>
-  <li>
-    <p>
-      Lodge, G, Gleeson, A (1976) The effect of sample size and plot
-      stratification on the precision of the wheel-point method of estimating
-      botanical composition in clustered plant communities.
-      <em>The Rangeland Journal</em> <strong>1</strong>, 346–350.
-    </p>
-  </li>
-  <li>
-    <p>
-      Melville, B, Fisher, A, Lucieer, A (2019) Ultra-high spatial resolution
-      fractional vegetation cover from unmanned aerial multispectral imagery.
-      <em
-        >International Journal of Applied Earth Observation and
-        Geoinformation</em
-      >
-      <strong>78</strong>, 14–24.
-    </p>
-  </li>
-  <li>
-    <p>
-      Muir, J, Schmidt, M, Tindall, D, Trevithick, R, Scarth, P, Stewart, J
-      (2011) Field measurement of fractional ground cover: a technical handbook
-      supporting ground cover monitoring for Australia. Australian Bureau of
-      Agricultural and Resource Economics and Sciences, Canberra.
-    </p>
-  </li>
-  <li>
-    <p>
-      Munroe, S, McInerney, F, Andrae, J, Welti, N, Guerin, G, Leitch, E, Hall,
-      T, Szarvas, S, Atkins, R, Caddy-Retalic, S (2021) The photosynthetic
-      pathways of plant species surveyed in Australia’s national terrestrial
-      monitoring network. <em>Scientific Data</em> <strong>8</strong>, 97.
-    </p>
-  </li>
-  <li>
-    <p>
-      Nunes, A, Tapia, S, Pinho, P, Correia, O, Branquinho, C (2014) Advantages
-      of the point-intercept method for assessing functional diversity in
-      semi-arid areas. <em>iForest-Biogeosciences and Forestry</em>
-      <strong>8</strong>, 471–479.
-    </p>
-  </li>
-  <li>
-    <p>
-      NVIS Technical Working Group (2017) Australian Vegetation Attribute
-      Manual: National Vegetation Information System, Version 7.0. Department of
-      the Environment and Energy, Canberra.
-    </p>
-  </li>
-  <li>
-    <p>
-      Pereira, HM, Ferrier, S, Walters, M, Geller, GN, Jongman, R, Scholes, RJ,
-      Bruford, MW, Brummitt, N, Butchart, S, Cardoso, A (2013) Essential
-      biodiversity variables. <em>Science</em> <strong>339</strong>, 277–278.
-    </p>
-  </li>
-  <li>
-    <p>
-      Shen, W, Lin, Y, Jenerette, GD, Wu, J (2011) Blowing litter across a
-      landscape: effects on ecosystem nutrient flux and implications for
-      landscape management. <em>Landscape Ecology</em> <strong>26</strong>,
-      629–644.
-    </p>
-  </li>
-  <li>
-    <p>
-      Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
-      Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
-      vegetation and soil survey method for surveillance monitoring of rangeland
-      environments. <em>Frontiers in Ecology and Evolution</em>
-      <strong>8</strong>, 157.
-    </p>
-  </li>
-  <li>
-    <p>
-      Stohlgren, TJ, Bull, KA, Otsuki, Y (1998) Comparison of rangeland
-      vegetation sampling techniques in the Central Grasslands.
-      <em>Journal of Range Management</em> <strong>51</strong>, 164–172.
-    </p>
-  </li>
-  <li>
-    <p>
-      Tidmarsh, C, Havenga, C (1955) The wheelpoint method of survey and
-      measurement of semi-open grassland and karoo vegetatin in South Africa.
-      Botanical Survey of Southern Africa Memoir 29. Government Printer,
-      Pretoria, South Africa.
-    </p>
-  </li>
-  <li>
-    <p>
-      Tokmakoff, A, Sparrow, B, Turner, D, Lowe, A (2016) AusPlots Rangelands
-      field data collection and publication: Infrastructure for ecological
-      monitoring. <em>Future Generation Computer Systems</em>
-      <strong>56</strong>, 537–549.
-    </p>
-  </li>
-  <li>
-    <p>
-      Turner, J (2012) National Recovery Plan for the Iron-grass Natural
-      Temperate Grassland of South Australia ecological community 2012.
-      Department of Environment and Natural Resources, Adelaide, South
-      Australia.
-    </p>
-  </li>
-  <li>
-    <p>
-      van der Sande, MT, Bruelheide, H, Dawson, W, Dengler, J, Essl, F, Field,
-      R, Haider, S, Van Kleunen, M, Kreft, H, Pagel, J, Pergl, J, Purschke, O,
-      Pyšek, P, Weigelt, P, Winter, M, Attorre, F, Aubin, I, Bergmeier, E,
-      Chytrý, M, Dainese, M, De Sanctis, M, Fagundez, J, Golub, V, Guerin, GR,
-      Gutiérrez, AG, Jandt, U, Jansen, F, Jiménez‐Alfaro, B, Kattge, J,
-      Kearsley, E, Klotz, S, Kramer, K, Moretti, M, Niinemets, Ü, Peet, RK,
-      Penuelas, J, Petřík, P, Reich, PB, Sandel, B, Schmidt, M, Sibikova, M,
-      Violle, C, Whitfeld, TJS, Wohlgemuth, T, Knight, TM (2020) Similar factors
-      underlie tree abundance in forests in native and alien ranges.
-      <em>Global Ecology and Biogeography</em> <strong>29</strong>, 281–294.
-    </p>
-  </li>
-  <li>
-    <p>
-      Vetter, S (2005) Rangelands at equilibrium and non-equilibrium: recent
-      developments in the debate. <em>Journal of Arid Environments</em>
-      <strong>62</strong>, 321–341.
-    </p>
-  </li>
-  <li>
-    <p>
-      Vittoz, P, Guisan, A (2007) How reliable is the monitoring of permanent
-      vegetation plots? A test with multiple observers.
-      <em>Journal of Vegetation Science</em> <strong>18</strong>, 413–422.
-    </p>
-  </li>
-  <li>
-    <p>
-      Walker, B (1970) An evaluation of eight methods of botanical analysis on
-      grasslands in Rhodesia. <em>Journal of Applied Ecology</em>
-      <strong>7</strong>, 403–416.
-    </p>
-  </li>
-  <li>
-    <p>
-      Watson, I, Novelly, P (2004) Making the biodiversity monitoring system
-      sustainable: design issues for large‐scale monitoring systems.
-      <em>Austral Ecology</em> <strong>29</strong>, 16–30.
-    </p>
-  </li>
-  <li>
-    <p>
-      White, A, Sparrow, B, Leitch, E, Foulkes, J, Flitton, R, Lowe, AJ,
-      Caddy-Retalic, S (2012) 'AusPlots Rangelands Survey Protocols Manual.'
-      (The University of Adelaide Press: Adelaide)
-    </p>
-  </li>
-  <li>
-    <p>
-      Wood, S, Stephens, H, Foulkes, J, Ebsworth, E, Bowman, D (2015) AusPlots
-      Forests Survey Protocols Manual. Version 1.6. University of Tasmania,
-      Hobart.
-    </p>
-  </li>
-  <li>
-    <p>
-      Zhou, Q, Robson, M, Horn, G (1998) Comparison between the results from
-      different ground vegetation cover estimation methods in a rangeland
-      environment. In 'Proceedings of the Land AVHRR Workshop: 9th Australasian
-      Photogrammetry and Remote Sensing Conference. Sydney'. pp. 20–24.
-    </p>
-  </li>
-</ul>
-"""^^rdf:HTML ;
+<h1 id="references">References</h1>
+<p>Allred, BW, Bestelmeyer, BT, Boyd, CS, Brown, C, Davies, KW, Duniway,
+MC, Ellsworth, LM, Erickson, TA, Fuhlendorf, SD, Griffiths, TV, Jansen,
+V, Jones, MO, Karl, J, Knight, A, Maestas, JD, Maynard, JJ, McCord, SE,
+Naugle, DE, Starns, HD, Twidwell, D, Uden, DR (2020) Improving Landsat
+predictions of rangeland fractional cover with multitask learning and
+uncertainty. <em>Methods in Ecology and Evolution</em></p>
+<p>Andrew, MH, Lange, RT (1986a) Development of a new piosphere in arid
+chenopod shruhland grazed by sheep. 1. Changes to the soil surface.
+<em>Australian Journal of Ecology</em> <strong>11</strong>, 395–409.</p>
+<p>Andrew, MH, Lange, RT (1986b) Development of a new piosphere in arid
+chenopod shruhland grazed by sheep. 2. Changes to the vegetation.
+<em>Australian Journal of Ecology</em> <strong>11</strong>, 411–424.</p>
+<p>Baker‐Gabb, D, Antos, M, Brown, G (2016) Recent decline of the
+critically endangered Plains‐wanderer (<em>Pedionomus torquatus</em>),
+and the application of a simple method for assessing its cause: major
+changes in grassland structure. <em>Ecological Management &amp;
+Restoration</em> <strong>17</strong>, 235–242.</p>
+<p>Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E,
+Tokmakoff, A, Lowe, AJ (2018) Floristic and structural assessment of
+Australian rangeland vegetation with standardized plot-based surveys.
+<em>PloS ONE</em> <strong>13</strong>, e0202073.</p>
+<p>Bastin, J-F, Berrahmouni, N, Grainger, A, Maniatis, D, Mollicone, D,
+Moore, R, Patriarca, C, Picard, N, Sparrow, B, Abraham, EM, Aloui, K,
+Atesoglu, A, Attore, F, Bassüllü, Ç, Bey, A, Garzuglia, M,
+García-Montero, LG, Groot, N, Guerin, G, Laestadius, L, Lowe, AJ,
+Mamane, B, Marchi, G, Patterson, P, Rezende, M, Ricci, S, Salcedo, I,
+Sanchez-Paus Diaz, A, Stolle, F, Surappaeva, V, Castro, R (2017) The
+extent of forest in dryland biomes. <em>Science</em>
+<strong>356</strong>, 635–638.</p>
+<p>Belnap, J, Gillette, DA (1998) Vulnerability of desert biological
+soil crusts to wind erosion: the influences of crust development, soil
+texture, and disturbance. <em>Journal of Arid Environments</em>
+<strong>39</strong>, 133–142.</p>
+<p>Bian, J, Li, A, Zhang, Z, Zhao, W, Lei, G, Xia, H, Tan, J (2016)
+Grassland fractional vegetation cover monitoring using the composited
+HJ-1A/B time series images and unmanned aerial vehicles: A case study in
+Zoige wetland, China. In '2016 IEEE International Geoscience and Remote
+Sensing Symposium (IGARSS). Beijing, China'. pp. 7192–7195.</p>
+<p>Bonham, CD (2013) 'Measurements for terrestrial vegetation.' (John
+Wiley &amp; Sons: West Sussex, UK)</p>
+<p>Braun-Blanquet, J (1932) 'Plant sociology: the study of plant
+communities.' (McGraw-Hill: New York)</p>
+<p>Brocklehurst, P, Lewis, D, Napier, D, Lynch, D (2007) Northern
+Territory Guidelines and Field Methodology for Vegetation Survey and
+Mapping. Technical Report No. 02/2007D. Department of Natural Resources,
+Environment and the Arts, Palmerston, Northern Territory.</p>
+<p>Caddy-Retalic, S, Wardle, G, Leitch, E, McInerney, F, Lowe, A (2020)
+Vegetation change along a Mediterranean to arid zone bioclimatic
+gradient reveals scale-dependent ecotone patterning. <em>Australian
+Journal of Botany</em> <strong>68</strong>, 574–586.</p>
+<p>Chen, J, Yi, S, Qin, Y, Wang, X (2016) Improving estimates of
+fractional vegetation cover based on UAV in alpine grassland on the
+Qinghai–Tibetan Plateau. <em>International Journal of Remote
+Sensing</em> <strong>37</strong>, 1922–1936.</p>
+<p>Chen, S, McDermid, GJ, Castilla, G, Linke, J (2017) Measuring
+vegetation height in linear disturbances in the boreal forest with UAV
+photogrammetry. <em>Remote Sensing</em> <strong>9</strong>, 1257.</p>
+<p>Choi, SK, Lee, SK, Jung, SH, Choi, JW, Choi, DY, Chun, SJ (2016)
+Estimation of fractional vegetation cover in sand dunes using
+multi-spectral images from fixed-wing UAV. <em>Journal of the Korean
+Society of Surveying, Geodesy, Photogrammetry and Cartography</em>
+<strong>34</strong>, 431–441.</p>
+<p>Claridge, AW, Barry, SC (2000) Factors influencing the distribution
+of medium‐sized ground‐dwelling mammals in southeastern mainland
+Australia. <em>Austral Ecology</em> <strong>25</strong>, 676–688.</p>
+<p>Clarke, V (2009) Standard Operating Procedure: Establishing
+Vegetation Transects. Department of Environment and Conservation, Nature
+Conservation Service Biodiversity, Kensington, WA.</p>
+<p>Cleary, G, Ortac, G, Proft, K, Law, M, Turnbull, J (2015) Survey
+Techniques for Citizen Scientists. National Parks Association of NSW
+Inc, Newtown, NSW.</p>
+<p>Department of Agriculture‚ Water and the Environment (2021) 'Outback
+Australia – the rangelands.' Available at <a href="https://www.environment.gov.au/land/rangelands">https://www.environment.gov.au/land/rangelands</a>
+[Accessed 02/03/2021].</p>
+<p>Evans, RA, Love, RM (1957) The step-point method of sampling-a
+practical tool in range research. <em>Journal of Range Management</em>
+<strong>10</strong>, 208–212.</p>
+<p>Facelli, JM, Carson, WP (1991) Heterogeneity of plant litter
+accumulation in successional communities. <em>Bulletin of the Torrey
+Botanical Club</em> <strong>118</strong>, 62–66.</p>
+<p>Freeman, K, Stack, G, Thomas, S, Woolfrey, N, 2015. Technical Guide -
+Terrestrial Flora and Vegetation Surveys for Environmental Impact
+Assessment. Perth, Western Australia.</p>
+<p>Friedel, M, Shaw, K (1987) Evaluation of methods for monitoring
+sparse patterned vegetation in arid rangelands. II: Trees and shrubs.
+<em>Journal of Environmental Management</em> <strong>25</strong>,
+309–318.</p>
+<p>Gehrig, SL, Frahn, K, Nicol, J (2016) Monitoring the response of
+littoral and floodplain vegetation and soil moisture flux to weir pool
+raising – 2015. South Australian Research and Development Institute
+(Aquatic Sciences), Adelaide.</p>
+<p>Gellie, NJ, Hunter, JT, Benson, JS, Kirkpatrick, JB, Cheal, DC,
+McCreery, K, Brocklehurst, P (2018) Overview of plot-based vegetation
+classification approaches within Australia. <em>Phytocoenologia</em>
+<strong>48</strong>, 251–272.</p>
+<p>Godínez-Alvarez, H, Herrick, J, Mattocks, M, Toledo, D, Van Zee, J
+(2009) Comparison of three vegetation monitoring methods: their relative
+utility for ecological assessment and monitoring. <em>Ecological
+indicators</em> <strong>9</strong>, 1001–1008.</p>
+<p>Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z,
+Lowe, AJ (2017) Opportunities for integrated ecological analysis across
+inland Australia with standardised data from Ausplots Rangelands.
+<em>PloS ONE</em> <strong>12</strong>, e0170137.</p>
+<p>Hnatiuk, R, Thackway, R, Walker, J (2009) Vegetation. In 'Australian
+Soil and Land Survey Field Handbook.' (Ed. The National Committee on
+Soil and Terrain.) pp. 73­–125. (CSIRO Publishing: Melbourne)</p>
+<p>Holm, A, Curry, P, Wallace, J (1984) Observer differences in transect
+counts, cover estimates and plant size measurements on range monitoring
+sites in an arid shrubland. <em>The Rangeland Journal</em>
+<strong>6</strong>, 98–102.</p>
+<p>Li, X, Niu, J, Xie, B (2014) The effect of leaf litter cover on
+surface runoff and soil erosion in Northern China. <em>PloS ONE</em>
+<strong>9</strong>, e107789.</p>
+<p>Lodge, G, Gleeson, A (1976) The effect of sample size and plot
+stratification on the precision of the wheel-point method of estimating
+botanical composition in clustered plant communities. <em>The Rangeland
+Journal</em> <strong>1</strong>, 346–350.</p>
+<p>Melville, B, Fisher, A, Lucieer, A (2019) Ultra-high spatial
+resolution fractional vegetation cover from unmanned aerial
+multispectral imagery. <em>International Journal of Applied Earth
+Observation and Geoinformation</em> <strong>78</strong>, 14–24.</p>
+<p>Muir, J, Schmidt, M, Tindall, D, Trevithick, R, Scarth, P, Stewart, J
+(2011) Field measurement of fractional ground cover: a technical
+handbook supporting ground cover monitoring for Australia. Australian
+Bureau of Agricultural and Resource Economics and Sciences,
+Canberra.</p>
+<p>Munroe, S, McInerney, F, Andrae, J, Welti, N, Guerin, G, Leitch, E,
+Hall, T, Szarvas, S, Atkins, R, Caddy-Retalic, S (2021) The
+photosynthetic pathways of plant species surveyed in Australia’s
+national terrestrial monitoring network. <em>Scientific Data</em>
+<strong>8</strong>, 97.</p>
+<p>Nunes, A, Tapia, S, Pinho, P, Correia, O, Branquinho, C (2014)
+Advantages of the point-intercept method for assessing functional
+diversity in semi-arid areas. <em>iForest-Biogeosciences and
+Forestry</em> <strong>8</strong>, 471–479.</p>
+<p>NVIS Technical Working Group (2017) Australian Vegetation Attribute
+Manual: National Vegetation Information System, Version 7.0. Department
+of the Environment and Energy, Canberra.</p>
+<p>Pereira, HM, Ferrier, S, Walters, M, Geller, GN, Jongman, R, Scholes,
+RJ, Bruford, MW, Brummitt, N, Butchart, S, Cardoso, A (2013) Essential
+biodiversity variables. <em>Science</em> <strong>339</strong>,
+277–278.</p>
+<p>Shen, W, Lin, Y, Jenerette, GD, Wu, J (2011) Blowing litter across a
+landscape: effects on ecosystem nutrient flux and implications for
+landscape management. <em>Landscape ecology</em> <strong>26</strong>,
+629–644.</p>
+<p>Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
+Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
+vegetation and soil survey method for surveillance monitoring of
+rangeland environments. <em>Frontiers in Ecology and Evolution</em>
+<strong>8</strong>, 157.</p>
+<p>Stohlgren, TJ, Bull, KA, Otsuki, Y (1998) Comparison of rangeland
+vegetation sampling techniques in the Central Grasslands. <em>Journal of
+Range Management</em> <strong>51</strong>, 164–172.</p>
+<p>Tidmarsh, C, Havenga, C (1955) The wheelpoint method of survey and
+measurement of semi-open grassland and karoo vegetatin in South Africa.
+Botanical Survey of Southern Africa Memoir 29. Government Printer,
+Pretoria, South Africa.</p>
+<p>Turner, J (2012) National Recovery Plan for the Iron-grass Natural
+Temperate Grassland of South Australia ecological community 2012.
+Department of Environment and Natural Resources, Adelaide, South
+Australia.</p>
+<p>van der Sande, MT, Bruelheide, H, Dawson, W, Dengler, J, Essl, F,
+Field, R, Haider, S, Van Kleunen, M, Kreft, H, Pagel, J, Pergl, J,
+Purschke, O, Pyšek, P, Weigelt, P, Winter, M, Attorre, F, Aubin, I,
+Bergmeier, E, Chytrý, M, Dainese, M, De Sanctis, M, Fagundez, J, Golub,
+V, Guerin, GR, Gutiérrez, AG, Jandt, U, Jansen, F, Jiménez‐Alfaro, B,
+Kattge, J, Kearsley, E, Klotz, S, Kramer, K, Moretti, M, Niinemets, Ü,
+Peet, RK, Penuelas, J, Petřík, P, Reich, PB, Sandel, B, Schmidt, M,
+Sibikova, M, Violle, C, Whitfeld, TJS, Wohlgemuth, T, Knight, TM (2020)
+Similar factors underlie tree abundance in forests in native and alien
+ranges. <em>Global Ecology and Biogeography</em> <strong>29</strong>,
+281–294.</p>
+<p>Vittoz, P, Guisan, A (2007) How reliable is the monitoring of
+permanent vegetation plots? A test with multiple observers. <em>Journal
+of Vegetation Science</em> <strong>18</strong>, 413–422.</p>
+<p>Walker, B (1970) An evaluation of eight methods of botanical analysis
+on grasslands in Rhodesia. <em>Journal of Applied Ecology</em>
+<strong>7</strong>, 403–416.</p>
+<p>White, A, Sparrow, B, Leitch, E, Foulkes, J, Flitton, R, Lowe, AJ,
+Caddy-Retalic, S (2012) 'AusPlots Rangelands Survey Protocols Manual.'
+(The University of Adelaide Press: Adelaide)</p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """<h3 id="key-definitions-and-terminology">Key definitions and terminology</h3>
-<p>Table 1. Key definitions and terms used in the <em>Cover</em> module.</p>
+    skos:definition """<h2 id="key-definitions-and-terminology">Key definitions and
+terminology</h2>
+<p><span class="anchor" id="_Toc72501615"></span>Table 1. Key
+definitions and terms used in the Cover module.</p>
 <table>
-  <colgroup>
-    <col style="width: 16%" />
-    <col style="width: 83%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Term</th>
-      <th>Definition</th>
-    </tr>
-    <tr class="odd">
-      <th>Vegetation cover</th>
-      <th>
-        The percentage of the vertical projection of vegetation, characterised
-        by species, growth form and height of lower, mid and upper vegetation
-        strata, present in a specific area (in this case the number of
-        point-intercept hits as a percentage of the total number of
-        point-intercepts).
-      </th>
-    </tr>
-    <tr class="header">
-      <th>Substrate cover</th>
-      <th>
-        The percentage of the vertical projection of substrate, characterised by
-        substrate type, present in a specific area (in this case the number of
-        point-intercept hits as a percentage of the total number of
-        point-intercepts).
-      </th>
-    </tr>
-    <tr class="odd">
-      <th>Point-intercept</th>
-      <th>
-        Method designed to sample species, growth-form, strata or substrate
-        cover by placing a point-intercept device (e.g. pin or pole) along a
-        transect at regular intervals and determining the points that ‘hit’ (or
-        intercept) vegetation or substrate. Percent cover is calculated as the
-        number of hits divided the total number of point-intercepts, multiplied
-        by 100 (percent; Clarke 2009; Bonham 2013).
-      </th>
-    </tr>
-    <tr class="header">
-      <th>Trimble® R1</th>
-      <th>
-        A rugged, compact, lightweight Global Navigation Satellite System (GNSS)
-        receiver (configured with the GNSS Status app) that provides
-        professional-grade positioning information to any connected mobile
-        device using Bluetooth® connectivity.
-      </th>
-    </tr>
-    <tr class="odd">
-      <th>GRS Densitometer™</th>
-      <th>
-        Instrument developed by Geographic Resource Solutions for measuring
-        canopy cover during point-intercept sampling. A vertical sighting tube
-        with crosshairs and a 45° mirror provide a quick and simple view of the
-        immediate canopy coverage. Internal, offset levelling vials ensure
-        accurate readings of the canopy directly above each point intercept
-        (<a href="#figure-2">Figure 2</a>).
-      </th>
-    </tr>
-    <tr class="header">
-      <th>In Canopy Sky (ICS)</th>
-      <th>
-        Recorded when within the boundary of overstorey canopy (defined as being
-        bounded by the outside edge of foliage), but foliage or branches are not
-        intercepted by the densitometer crosshairs (i.e. you see sky; see <a href="#figure-4">Figure
-        4</a>). Allows point-intercept data to be expressed as foliage projective
-        cover and opaque canopy cover.
-      </th>
-    </tr>
-    <tr class="odd">
-      <th>Foliage projective cover</th>
-      <th>
-        The percentage of ground area occupied by the vertical projection of
-        foliage only (excludes canopy gaps, i.e. In Canopy Sky).
-      </th>
-    </tr>
-    <tr class="header">
-      <th>Opaque canopy cover</th>
-      <th>
-        The percentage of ground area occupied by the vertical projection of the
-        entire canopy as defined by a boundary around the outermost foliage
-        (includes canopy gaps, i.e. In Canopy Sky).
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-<p id="figure-1">
-  <img
-    src="https://w3id.org/tern/static/dawe-rlp/latest/cover/point-intercept-transect-full.png"
-    alt="Point intercept transect for Full protocol"
-    widteh="928"
-    height="901"
-  />
-</p>
-<p>
-  Figure 1. Plot layout showing the ten point intercept transects for the full
-  protocol.
-</p>
-<p id="figure-2">
-  <img
-    src="https://w3id.org/tern/static/dawe-rlp/latest/cover/grs-densitometer.png"
-    alt="GRS densitometer"
-    widteh="262"
-    height="391"
-  />
-</p>
-<p>Figure 2. GRS Densitometer™.</p>
-<p id="figure-3">
-  <img
-    src="https://w3id.org/tern/static/dawe-rlp/latest/cover/point-intercept-transect-lite.png"
-    alt="Point intercept transect for Lite protocol"
-    widteh="880"
-    height="858"
-  />
-</p>
-<p>
-  Figure 3. Plot layout showing the four point intercept transects for the lite
-  protocol.
-</p>
-<p id="figure-4">
-  <img
-    src="https://w3id.org/tern/static/dawe-rlp/latest/cover/point-intercept-to-record.png"
-    alt="Point intercept to record"
-    widteh="660"
-    height="1148"
-  />
-</p>
-<p>Figure 4. When to apply In Canopy Sky (image not to scale).</p>"""^^rdf:HTML ;
+<colgroup>
+<col style="width: 16%"/>
+<col style="width: 83%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Foliage projective cover</td>
+<td>The percentage of ground area occupied by the vertical projection of
+foliage only (excludes canopy gaps, i.e. In Canopy Sky; Hnatiuk <em>et
+al.</em> 2009).</td>
+</tr>
+<tr class="even">
+<td>Fractional cover</td>
+<td>The percentage of the vertical projection of vegetation and
+substrate, characterised by photosynthetic vegetation and
+non-photosynthetic vegetation, the height of lower, mid and upper
+vegetation strata, and bare ground, present in a specific area (in this
+case the number of point-intercept hits as a percentage of the total
+number of point-intercepts).</td>
+</tr>
+<tr class="odd">
+<td>GRS Densitometer™</td>
+<td>Instrument developed by Geographic Resource Solutions for measuring
+canopy cover during point-intercept sampling. A vertical sighting tube
+with crosshairs and a 45° mirror provide a quick and simple view of the
+immediate canopy coverage. Internal, offset levelling vials ensure
+accurate readings of the canopy directly above each point intercept
+(<a href="#figure-2">Figure 2</a>).</td>
+</tr>
+<tr class="even">
+<td>In Canopy Sky (ICS)</td>
+<td>Recorded when the vertical line of sight through the densitometer
+does not intercept any part of a tree's canopy (foliage and branches)
+but is enclosed within the boundary of the tree's canopy (see 5
+Additional guidelines; Appendix 2). Allows point-intercept data to be
+expressed as foliage projective cover and opaque canopy cover.</td>
+</tr>
+<tr class="odd">
+<td>Monitor</td>
+<td>Field data collection app for Ecological Monitoring System
+Australia. Collects data using the Biodiversity Information Standard for
+delivery to the Australian Biodiversity Data Repository managed by the
+Department of Climate Change, Energy, the Environment and Water.</td>
+</tr>
+<tr class="even">
+<td>NVIS</td>
+<td>National Vegetation Information System – a comprehensive data system
+that provides information on the extent and distribution of vegetation
+types across Australia and defines how vegetation associations should be
+classified. The NVIS is hierarchical and different levels in the
+classification provide a description of the vegetation from class to
+sub-association that can be directly related to spatially defined
+areas.</td>
+</tr>
+<tr class="odd">
+<td>Opaque canopy cover</td>
+<td>The percentage of ground area occupied by the vertical projection of
+the entire canopy as defined by a boundary around the outermost foliage
+(includes canopy gaps, i.e. In Canopy Sky; Hnatiuk <em>et al.</em>
+2009).</td>
+</tr>
+<tr class="even">
+<td>Point-intercept</td>
+<td>Method designed to sample species, growth-form, strata or substrate
+cover by placing a point-intercept device (e.g. pole) along a transect
+at regular intervals and determining the points that ‘hit’ (or
+intercept) vegetation or substrate. Percent cover is calculated as the
+number of hits divided the total number of point-intercepts, multiplied
+by 100 (percent; Clarke 2009; Bonham 2013).</td>
+</tr>
+<tr class="odd">
+<td>Substrate cover</td>
+<td>The percentage of the vertical projection of substrate,
+characterised by substrate type, present in a specific area (in this
+case the number of point-intercept hits as a percentage of the total
+number of point-intercepts; White <em>et al.</em> 2012).</td>
+</tr>
+<tr class="even">
+<td>Trimble® R1</td>
+<td>A compact, lightweight Global Navigation Satellite System (GNSS)
+receiver (configured with the GNSS Status app) that provides
+professional-grade positioning information (sub-metre) to any connected
+mobile device using Bluetooth® connectivity.</td>
+</tr>
+<tr class="odd">
+<td>Vegetation cover</td>
+<td>The percentage of the vertical projection of vegetation,
+characterised by species, growth form and height of lower, mid and upper
+vegetation strata, present in a specific area (in this case the number
+of point-intercept hits as a percentage of the total number of
+point-intercepts; White <em>et al.</em> 2012).</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
     skos:memberList (
             <https://linked.data.gov.au/def/nrm/576f634e-2706-4f18-b561-0636d4c007d0>
             <https://linked.data.gov.au/def/nrm/aa1525f9-c3f2-4f7d-98cc-6a7d3aec9d8a>
         ) ;
     skos:prefLabel "Cover" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/cover/collection.ttl"^^xsd:anyURI ;
+    tern:Appendix """<h1 id="appendices-1">Appendices</h1>
+<p><span class="anchor" id="_Ref73094300"></span><h4>Appendix 1. Diagrams
+for using a clinometer.</h4></p>
+<p>Level ground (a), ground sloping down (b) and ground sloping up
+(c)</p>
+<p><img alt="Appendix-1" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Appendix_1.jpg" width="800"/></p>
+<p><img alt="Appendix-2" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Appendix_2.jpg" width="800"/></p>
+<p><img alt="Appendix-3" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Appendix_3.jpg" width="800"/></p>
+<p><span class="anchor" id="Appendix_2"></span><h4>Appendix 2. Possible
+scenarios when using the densitometer.</h4></p>
+<p>Canopy intercept (a), in canopy sky (b) and nothing recorded (c).</p>
+<p><img alt="Canopy_intercept" height="450" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Canopy_interception1.jpg" width="350"/></p>
+<p><img alt="in-Canopy-SKy" height="450" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/In-Canopy_SKY.jpg" width="350"/></p>
+<p><img alt="Canopy_no_record" height="450" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Canopy_empty.jpg" width="350"/></p>
+<blockquote>
+</blockquote> """^^rdf:HTML ;
     tern:purpose """
-<h3 id="rationale">Rationale</h3>
-<p>
-  Vegetation cover is an essential variable for any ecological assessment or
-  surveillance monitoring program (Pereira <em>et al.</em> 2013). It is required
-  for the study, analysis, reporting and management of ecosystem condition,
-  structure, and change. Substrate cover can also be an important measure for a
-  range of studies, including assessments of soil stabilisation, biological soil
-  crusts, erosion, litter heterogeneity, nutrient input and cycling, and
-  compressional disturbances (Andrew and Lange 1986a; Facelli and Carson 1991;
-  Belnap and Gillette 1998; Shen <em>et al.</em> 2011; Li <em>et al.</em> 2014).
-  Consequently, adequate sampling effort and quantitative, accurate and
-  repeatable measures of vegetation and substrate cover are paramount for field
-  assessments, which are achievable following the point-intercept method
-  outlined in this module.
-</p>
-<p>
-  Methods for evaluating vegetation cover in rangelands have been extensively
-  trialed and reviewed for both monitoring (Lodge and Gleeson 1976; Friedel and
-  Shaw 1987; Watson and Novelly 2004) and remote sensing validation (Zhou
-  <em>et al.</em> 1998). While no single method is optimal for all vegetation
-  communities, the point-intercept method is the most repeatable and precise
-  method to assess vegetation cover for all strata (Vittoz and Guisan 2007;
-  Godínez-Alvarez <em>et al.</em> 2009; Bonham 2013). The method is
-  straightforward, repeatable and allows for detailed spatial and temporal
-  comparisons of cover between plot samples with minimal uncertainty from
-  measurement method or observer variation (Guerin <em>et al.</em> 2017).
-</p>
-<p>
-  The point-intercept method is preferred over estimating cover visually using
-  cover classes (e.g. Braun-Blanquet 1932), which can be biased, imprecise and
-  poor at detecting change (Vittoz and Guisan 2007; Godínez-Alvarez
-  <em>et al.</em> 2009). At each point-intercept the only decision is whether
-  the laser beam intersects the substrate, species or lifeform, or a canopy hit
-  is recorded using the densitometer, which minimises observer error and
-  variability (Vittoz and Guisan 2007; Clarke 2009). The use of cover classes in
-  visual estimates is problematic since classes are often too broad (e.g.
-  25-50%) to identify and analyse subtle changes in cover, limiting their
-  ability to identify more subtle environmental change. However, this can be
-  achieved using the point intercept method (e.g. Brady <em>et al.</em> 1995).
-  The transect point-intercept method is also used in favour over other
-  point-intercept methods that are less straightforward, accurate and applicable
-  to all systems, and more prone to bias. The wheel-point point-intercept method
-  (Tidmarsh and Havenga 1955) is impracticable in systems with an overstorey or
-  dense understorey (Walker 1970), and the step-pointing point-intercept method
-  is prone to low precision between observers due to different paces and poorly
-  defined transects (Evans and Love 1957).
-</p>
-<p>
-  Several authors recommend a minimum of 1,000 point-intercepts to quantify
-  vegetation cover per species in rangeland environments (Lodge and Gleeson
-  1976; Holm <em>et al.</em> 1984; Friedel and Shaw 1987; Vittoz and Guisan
-  2007). Rangeland environments represent 81% of the terrestrial ecosystems in
-  Australia and include a diverse range of habitats and ecological communities
-  such as tropical savannas, woodlands, shrublands and grasslands (Department of
-  Agriculture‚ Water and the Environment 2021). These factors are the basis for
-  the <em>Cover</em> module’s full protocol sampling 1,010 point-intercepts to
-  estimate vegetation cover per species across the plot. The full protocol is
-  also based on the point-intercept protocol initiated in Australia’s rangeland
-  environments by the TERN Ecosystem Surveillance monitoring program (White
-  <em>et al.</em> 2012), which has since been implemented successfully in a wide
-  variety of structurally diverse vegetation communities across the country
-  (Sparrow <em>et al.</em> 2020). Visualisations of raw point-intercept data
-  from 442 plots collected as part of this program demonstrate that the number
-  and arrangement of point-intercepts employed is adequate for maximising
-  species detection and for stable estimation of cover, in that estimates of
-  species richness and cover become relatively stable by 1010 hits (Guerin
-  <em>et al.</em> 2017).
-</p>
-<p>
-  The <em>Cover</em> module’s lite protocol samples 404 point-intercepts.
-  Species data is collected at each point-intercept to maintain data standards.
-  However, vegetation cover per species is not reliable from 404 points.
-  Cumulative cover estimates for individual species within each plot are
-  relatively unstable with fewer intercepts (i.e. cover estimates change quickly
-  with the addition of samples), while estimates stabilise with the full set of
-  1010 point-intercepts (i.e. additional samples do not change the estimates;
-  Guerin <em>et al.</em> 2017). For this reason, the lite protocol is not
-  suitable for studies that require reliable measures of cover per species, but
-  it may be suitable in studies where interpreting cover per growth form or
-  fractional cover. Data from 404 point-intercepts is appropriate to detect
-  overall change but can’t reliably identify what is causing that change, unlike
-  the full protocol which samples 1010 point-intercepts.
-</p>
-<p>
-  Data is collected using a grid configuration, which is less sensitive to the
-  effects that local heterogeneity (e.g. due to slope) and micro-patterning of
-  the vegetation may have on estimates of cover (Sparrow
-  <em>et al.</em> 2020), which are difficult to avoid in rangeland environments
-  (Vetter 2005). Transect ends are at least initially located and recorded with
-  a Trimble® R1 (configured with the GNSS Status app) to ensure that transects
-  can be relocated with a high level of accuracy, which ensures detection on
-  true environmental change rather than change due to the positioning of the
-  transects. A graduated staff is used to measure the height of vegetation at
-  each point-intercept, which reduces observer bias and provides a
-  three-dimensional insight of the structure of the vegetation within the plot,
-  further improving upon traditional vegetation survey methods. A
-  downward-pointing laser mounted on the staff to mark each intercept removes
-  observer bias. The use of a densitometer, ensures canopy cover data is
-  precise, objective and repeatable between observers. The inclusion of ICS
-  allows for vegetation cover measures including opaque canopy cover and
-  projected foliage cover to be determined from the point-intercept data. Such
-  compatibility maximises the value of the point-intercept data, allowing it to
-  be used and easily combined with other studies for both ecological and remote
-  sensing validation purposes.
-</p>
-<p>
-  The point-intercept method is designed to sample the composition and structure
-  of dominant vegetation to enable the determination of various measures of
-  cover (e.g. species, total vegetation). The method is not designed for species
-  detection (Stohlgren <em>et al.</em> 1998; Vittoz and Guisan 2007; Nunes
-  <em>et al.</em> 2014). However, the combination of the <em>Cover</em> module
-  and the <em>Floristics</em> module ensure adequate sampling effort for plant
-  species composition and cover (Sparrow <em>et al.</em> 2020).
-</p>
+<h2 id="rationale">Rationale</h2>
+<p>Vegetation cover is an essential variable for any ecological
+assessment or monitoring program (Pereira <em>et al.</em> 2013). It is
+required for the study, analysis, reporting and management of ecosystem
+condition, structure, and change. Substrate cover can be an important
+measure for assessments of soil stabilisation, biological soil crusts,
+erosion, litter heterogeneity, nutrient input and cycling, and
+compressional disturbances (Andrew and Lange 1986a; Facelli and Carson
+1991; Belnap and Gillette 1998; Shen <em>et al.</em> 2011; Li <em>et
+al.</em> 2014).</p>
+<p>The point-intercept method is the most repeatable and precise method
+to assess vegetation cover for all strata (Vittoz and Guisan 2007;
+Godínez-Alvarez <em>et al.</em> 2009; Bonham 2013). The method is
+straightforward and allows for detailed spatial and temporal comparisons
+of cover between plot samples with minimal uncertainty from measurement
+method or observer variation (Guerin <em>et al.</em> 2017).</p>
+<p>The point-intercept method is preferred over visually estimating
+cover using cover classes (e.g. Braun-Blanquet 1932), which can be
+biased, imprecise and poor at detecting change (Vittoz and Guisan 2007;
+Godínez-Alvarez <em>et al.</em> 2009). Observer error and variability is
+minimised in the point-intercept method as surveyors objectively
+determine which plants and substrates are intercepted at each point
+(Vittoz and Guisan 2007; Clarke 2009). The use of cover classes in
+visual estimates is problematic since classes are often too broad (e.g.
+25-50%) to identify and analyse subtle changes in cover, limiting their
+ability to identify more subtle environmental change. The transect
+point-intercept method is favoured over other point-intercept methods
+(e.g. wheel-point, step-pointing) as it is more straightforward, more
+accurate, applicable in more systems and less prone to bias (Tidmarsh
+and Havenga 1955; Evans and Love 1957; Walker 1970).</p>
+<p>Several authors recommend a minimum of 1,000 point-intercepts to
+quantify vegetation cover per species in rangeland environments (Lodge
+and Gleeson 1976; Holm <em>et al.</em> 1984; Friedel and Shaw 1987;
+Vittoz and Guisan 2007). Rangeland environments represent 81% of the
+terrestrial ecosystems in Australia and include a diverse range of
+habitats and ecological communities such as tropical savannas,
+woodlands, shrublands and grasslands (Department of Agriculture‚ Water
+and the Environment 2021). These factors are the basis for the Cover
+Module’s Enhanced protocol sampling 1,010 point-intercepts to estimate
+vegetation cover per species across the plot. The Enhanced protocol is
+also based on the point-intercept protocol initiated in Australia’s
+rangeland environments by the TERN Ecosystem Surveillance monitoring
+program (White <em>et al.</em> 2012), which has since been implemented
+successfully in a wide variety of structurally diverse vegetation
+communities across the country (Sparrow <em>et al.</em> 2020).
+Point-intercept data from program demonstrates that the number and
+arrangement of point-intercepts employed is adequate for maximising
+species detection and for stable estimation of cover becauseestimates of
+species richness and cover become relatively stable by 1010 points
+(Guerin <em>et al.</em> 2017).</p>
+<p>The Cover Module’s Standard protocol samples 404 point-intercepts.
+However, vegetation cover per species is not reliable from 404 points
+(i.e. cover estimates change quickly with the addition of
+point-intercepts, while estimates stabilise with the full set of 1010
+point-intercepts (Guerin <em>et al.</em> 2017)). For this reason, the
+Standard protocol is not suitable for studies that require reliable
+measures of cover per species, but is suitable for studies interested in
+quantifying fractional cover. Data from 404 point-intercepts is
+appropriate to detect overall change but can’t reliably identify what is
+causing that change, unlike the Enhanced protocol.</p>
+<p>Data is collected using a grid configuration (<a href="#figure-1">Figure 1</a>), which is
+less sensitive to the effects that local heterogeneity (e.g. due to
+slope) and vegetation micro-patterning may have on estimates of cover
+(Sparrow <em>et al.</em> 2020). Transect ends are at least initially
+located and recorded, ideally with a GNSS device which ensures detection
+of true environmental change rather than change due to the positioning
+of the transects. The use of a densitometer (<a href="#figure-2">Figure 2</a>) ensures canopy
+cover data is precise, objective and repeatable. The inclusion of ICS
+allows for vegetation cover measures including opaque canopy cover and
+projected foliage cover to be determined from the point-intercept data.
+Such compatibility maximises the value of the point-intercept data,
+allowing it to be integrated with other studies for both ecological and
+remote sensing validation purposes.</p>
+<p>The point-intercept method is designed to sample the composition and
+structure of dominant vegetation to enable the determination of various
+measures of cover (e.g. species, total vegetation). The method is not
+designed for species detection (Stohlgren <em>et al.</em> 1998; Vittoz
+and Guisan 2007; Nunes <em>et al.</em> 2014). However, the combination
+of the Cover Module and the Floristics Module ensures adequate sampling
+effort for plant species composition and cover (Sparrow <em>et al.</em>
+2020).</p>
+<p>Assigning a vegetation classification consistent with Level 5
+(association) of the NVIS provides a simple, consistent description of
+the vegetation and its structural complexity (White <em>et al.</em>
+2012). The use of standardised methods to classify vegetation across a
+range of different projects ensures consistent, cross jurisdictional
+vegetation classification, improves vegetation classification in
+data-poor areas, and allows comparison of data across regions, and under
+different disturbance, management and climatic regimes (Guerin <em>et
+al.</em> 2017; Baruch <em>et al.</em> 2018). The classification of
+vegetation associations based on associations between floristic and
+structural data is vital to inform biodiversity planning and management,
+including natural resources management, environmental impact
+assessments, and conservation and restoration projects. Furthermore,
+vegetation classification is integral to Australian biodiversity laws
+and regulations (Brocklehurst <em>et al.</em> 2007; Cleary <em>et
+al.</em> 2015; Freeman <em>et al.</em> 2015; Gellie <em>et al.</em>
+2018).</p>
+<p id="figure-1"><img alt="Plot_layout" height="700" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Picture 1.jpg" width="600"/></p>
+<p> Figure 1. Plot showing the ten point-intercept transects for the Enhanced Protocol and the four point-intercept transects for the Standard protocol.</p>
+<p id="figure-2"><img alt="Densiometer" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Densiomneter.jpg" width="400"/></p>
+<p> Figure 2. GRS Densiometer </p>
 """^^rdf:HTML ;
     tern:scope """
-    <h3>Contents</h3>
-    <ol>
-  <li><a href="#introduction">Introduction</a></li>
-  <li>
-    <a href="#key-definitions-and-terminology"
-      >Key definitions and terminology</a
-    >
-  </li>
-  <li><a href="#rationale">Rationale</a></li>
-  <li><a href="#module-overview">Module Overview</a></li>
-  <li><a href="#references">References</a></li>
-</ol>
-    <h3 id="introduction">Introduction</h3>
-<p>
-  The <em>Cover</em> module involves the collection of quantitative, accurate
-  and repeatable measures of vegetation and substrate cover within the plot,
-  using the point-intercept method. Cover is defined as the percentage of
-  vertical projection of the vegetation or substrate present within the plot
-  (Bonham 2013). Vegetation cover is characterised by species, growth form and
-  the height of lower, mid and upper vegetation strata, while substrate cover is
-  characterised by substrate type (e.g. bare ground, litter, rocks or biological
-  soil crusts; Sparrow <em>et al.</em> 2020).
-</p>
-<p>
-  Cover is interpreted from the number of ‘hits’ for each species, growth form
-  and height, plus substrate type, at 1 m intervals along 10 x 100 m transects
-  in a grid configuration (<a href="#figure-1">Figure 1</a>), for a total of 1010 point-intercepts. The
-  transect layout includes five transects 20 m apart orientated north (N) to
-  south (S) and five transects 20 m apart orientated east (E) to west (W; <a href="#figure-1">Figure
-  1</a>). Transect ends are at least initially located and recorded with a Trimble®
-  R1 (see
-  <em><a
-      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821"
-      >Plot selection and layout</a
-    ></em> module) to ensure positional accuracy and
-  that transects can be relocated.
-</p>
-<p>
-  A graduated staff is used to measure the height of vegetation at each
-  point-intercept, enabling coarse height profiles to be created (Muir
-  <em>et al.</em> 2011). A downward-pointing laser is mounted on the staff to
-  mark each intercept. Canopy hits are determined at each point-intercept using
-  a GRS Densitometer™ for sites with an overstorey (<a href="#figure-2">Figure 2</a>). Use of a
-  densitometer also allows for measures of ‘In Canopy Sky’ (ICS) as an overstory
-  cover class, attributed to a species. This concept is taken from field
-  techniques implemented for remote sensing field validation (Muir
-  <em>et al.</em> 2011). ICS is recorded where the crosshairs of the
-  densitometer mark a point within the bounds of a canopy but do not actually
-  intercept any vegetation (<a href="#figure-4">Figure 4</a>). The inclusion of this class allows for
-  vegetation cover measures including foliage projective cover and opaque canopy
-  cover to be determined from the point-intercept data.
-</p>
-<p>
-  The <em>Cover</em> module includes a lite protocol in which cover is
-  interpreted from the number of ‘hits’ for each species, growth form and
-  height, plus substrate type, at 1 m intervals along 4 x 100 m transects in a
-  grid configuration (<a href="#figure-3">Figure 3</a>), for a total of 404 point-intercepts. The
-  transect layout includes two transects 40 m apart orientated north to south
-  (N2/S2 and N4/S4) and two transects 40 m apart orientated east to west (E2/W2
-  and E4/W4; <a href="#figure-3">Figure 3</a>). As with the full protocol, transect ends are at least
-  initially located and recorded with a Trimble® R1 (see
-  <em
-    ><a
-      href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821"
-      >Plot selection and layout</a
-    ></em
-  >
-  module) to ensure positional accuracy and that transects can be relocated.
-</p>
-<p>
-  The full protocol which collects cover data from 1010 point-intercepts is best
-  practice and recommended, particularly for studies that require reliable
-  measures of cover per species. The lite protocol is intended for use where
-  survey time is limited and may be suitable in studies where interpreting cover
-  per growth form or fractional cover (the fraction of living vegetation [i.e.
-  photosynthetic], dead vegetation [i.e. non-photosynthetic], and bare ground)
-  is sufficient.
-</p>
+    <h1 id="introduction">Introduction and background</h1>
+<p>The Cover Module records quantitative, accurate and repeatable
+measures of vegetation and substrate cover within the plot, using the
+point-intercept method. Cover is defined as the percentage of vertical
+projection of the vegetation or substrate present within the plot
+(Bonham 2013). Vegetation cover is characterised by species, growth form
+and the height of lower, mid and upper vegetation strata, while
+substrate cover is characterised by substrate type (e.g. bare ground,
+cryptogram, litter, rocks; Sparrow <em>et al.</em> 2020).</p>
+<p>Cover is interpreted from the number of ‘hits’ for each species and
+growth form, plus substrate type, at 1 m intervals along 10 x 100 m
+transects in a grid configuration (<a href="#figure-1">Figure 1</a>), for a total
+of 1010 point-intercepts. The transect layout includes five transects 20
+m apart orientated north (N) to south (S) and five transects 20 m apart
+orientated east (E) to west (W; <a href="#figure-1">Figure 1</a>). Transect ends are at least
+initially located and recorded with a GNSS device (see Plot Selection
+and Layout Module) to ensure positional accuracy and that transects can
+be located on future visits.</p>
+<p>A graduated staff is used to measure the height of each hit of
+vegetation at each point-intercept, enabling coarse height profiles to
+be created (Muir <em>et al.</em> 2011). A downward-facing laser pointer
+is mounted on the staff to mark each intercept. At sites with an
+overstorey, canopy hits are determined at each point-intercept using a
+GRS Densitometer™ (<a href="#figure-2">Figure 2</a>).</p>
+<p>The Cover Module includes a Standard protocol in which the fractional
+cover of photosynthetic vegetation, non-photosynthetic vegetation and
+bare ground is collected along four 100 m transects in a grid
+configuration (<a href="#figure-1">Figure 1</a>), for a total of 404 point-intercepts. The
+transect layout includes two transects 40 m apart orientated north to
+south (N2/S2 and N4/S4) and two transects 40 m apart orientated east to
+west (E2/W2 and E4/W4; <a href="#figure-1">Figure 1</a>).</p>
+<p>The Enhanced protocol collects species and growth form cover data
+from 1010 point-intercepts, and is best practice and recommended,
+particularly for studies that require reliable measures of cover per
+species or growth form. The Standard protocol is intended for use where
+survey time is limited and is suitable in studies where interpreting
+fractional cover is sufficient.</p>
+<p>Species, growth form, height and cover data collected in the Enhanced
+protocol can be used to assign a vegetation classification consistent
+with Level 5 (association) of the NVIS, which provides a simple,
+consistent description of the vegetation and its structural complexity
+(White <em>et al.</em> 2012). At Level 5, the dominant species, growth
+form, height and cover (to a maximum of three species) are recorded for
+each of the three main strata (Upper, Mid and Ground; NVIS Technical
+Working Group 2017).</p>
     """^^rdf:HTML ;
     tern:undertakenAfter
         <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
