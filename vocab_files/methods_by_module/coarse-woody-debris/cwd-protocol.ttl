@@ -1,0 +1,649 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+ <h3>Contents</h3>
+  <ol><li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology">Key definitions and terminology</a>
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#equipment">Equipment</a></li>
+    <li>
+        <a href="#instructions-and-procedures">Instructions and procedures</a>
+    </li>
+    <li><a href="#additional-guidelines">Additional guidelines</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>    
+    <h1 id="module-overview">Module overview</h1>
+<h2 id="available-protocols">Available protocols </h2>
+<p>The Coarse Woody Debris Module (CWD) covers the procedures and
+guidelines to record CWD length, diameter and decay class at a core
+monitoring plot. The module allows either a 10 cm or 5 cm diameter
+threshold and 30 cm or 50 cm length threshold depending on the system,
+and provides instructions for how to analyse CWD length and volume.</p>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/7d50794a-8784-4ab9-99ff-a324bb6e0831">Coarse Woody Debris Standard protocol</a> – outlines the CWD survey method within the
+40 x 40 m sub-plot.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/7d50794a-8784-4ab9-99ff-a324bb6e0831">Coarse Woody Debris Enhanced protocol</a> – outlines the CWD survey method within the 100
+x 100 m core monitoring plot.</p></li>
+</ul>
+<h2 id="relationships-to-other-modules">Relationships to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<ul><li>Complete before the <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity Module</h4></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – The Plot Selection and Layout
+Module determines the boundaries of both the sub-plot and the core
+monitoring plot for the CWD Module.</p></li>
+</ul>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> – Plot Description provides useful
+information about the plot that can be analysed with CWD Module
+data.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> – CWD hits are recorded as part of the
+point-intercept survey and the percentage cover of CWD can be calculated
+using these results.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> – CWD abundance contributes to a range of
+ecosystem processes that impact the condition of an ecosystem.
+Subsequently, CWD is considered a condition attribute and should be
+completed as a component of the condition assessment.</p></li>
+</ul>"""^^rdf:HTML ;
+    dcterms:source """
+    <h1 id="references">References</h1>
+<p>Aponte, C, Tolhurst, KG, Bennett, LT (2014) Repeated prescribed fires
+decrease stocks and change attributes of coarse woody debris in a
+temperate eucalypt forest. <em>Ecological applications</em>
+<strong>24</strong>, 976-989.</p>
+<p>Baker, TR, Chao, KJ, 2011. Manual for coarse woody debris measurement
+in RAINFOR plots. Version 2.</p>
+<p>Bassett, M, Chia, EK, Leonard, SW, Nimmo, DG, Holland, GJ, Ritchie,
+EG, Clarke, MF, Bennett, AF (2015) The effects of topographic variation
+and the fire regime on coarse woody debris: insights from a large
+wildfire. <em>Forest Ecology and Management</em> <strong>340</strong>,
+126-134.</p>
+<p>Bate, LJ, Torgersen, TR, Wisdom, MJ, Garton, EO (2004) Performance of
+sampling methods to estimate log characteristics for wildlife.
+<em>Forest Ecology and Management</em> <strong>199</strong>, 83-102.</p>
+<p>Bate, LJ, Torgersen, TR, Wisdom, MJ, Garton, EO (2009) Biased
+estimation of forest log characteristics using intersect diameters.
+<em>Forest Ecology and Management</em> <strong>258</strong>,
+635-640.</p>
+<p>Casson, N, Downes, S, Harris, A (2009) Native Vegetation Condition
+Assessment and Monitoring Manual for Western Australia. The Native
+Vegetation Integrity Project. Department of Environment and
+Conservation, Perth.</p>
+<p>Didion, M, Abegg, M (2022) Tree stumps — an important but undervalued
+dead wood pool. <em>Annals of Forest Science</em> <strong>79</strong>,
+34.</p>
+<p>DOC (2019) Field protocols for DOC Tier 1 Inventory &amp; Monitoring
+and LUCAS plots, Version 14. Department of Conservation, Wellington.
+Available at <a href="https://nvs.landcareresearch.co.nz/Resources/FieldManual">https://nvs.landcareresearch.co.nz/Resources/FieldManual</a>.</p>
+<p>Eyre, TJ, Kelly, AL, Neldner, VJ, Wilson, BA, Ferguson, DJ, Laidlaw,
+MJ, Franks, AJ (2015) BioCondition: A Condition Assessment Framework for
+Terrestrial Biodiversity in Queensland. Assessment Manual. Version 2.2.
+Queensland Herbarium, Department of ScienceInformation Technology,
+Innovation and Arts, Brisbane.</p>
+<p>Goldin, SR (2020) Quantifying the Impact of Coarse Woody Debris on
+Soil and Vegetation in a Cleared Temperate Woodland.</p>
+<p>Grove, S, Meggs, J (2003) Coarse woody debris, biodiversity and
+management: a review with particular reference to Tasmanian wet eucalypt
+forests. <em>Australian Forestry</em> <strong>66</strong>, 258-272.</p>
+<p>Grove, SJ (2001) Extent and composition of dead wood in Australian
+lowland tropical rainforest with different management histories.
+<em>Forest Ecology and Management</em> <strong>154</strong>, 35-53.</p>
+<p>Jia-bing, W, De-xin, G, Shi-jie, H, Mi, Z, Chang-Jie, J (2005)
+Ecological functions of coarse woody debris in forest ecosystem.
+<em>Journal of Forestry Research</em> <strong>16</strong>, 247-252.</p>
+<p>Kanowski, J, Catterall, CP, Wardell-Johnson, GW, Proctor, H, Reis, T
+(2003) Development of forest structure on cleared rainforest land in
+eastern Australia under different styles of reforestation. <em>Forest
+Ecology and Management</em> <strong>183</strong>, 265-280.</p>
+<p>Mac Nally, R, Parkinson, A, Horrocks, G, Conole, L, Tzaros, C (2001)
+Relationships between terrestrial vertebrate diversity, abundance and
+availability of coarse woody debris on south-eastern Australian
+floodplains. <em>Biological Conservation</em> <strong>99</strong>,
+191-205.</p>
+<p>Manning, AD, Cunningham, RB, Lindenmayer, DB (2013) Bringing forward
+the benefits of coarse woody debris in ecosystem recovery under
+different levels of grazing and vegetation density. <em>Biological
+Conservation</em> <strong>157</strong>, 204-214.</p>
+<p>Marshall, PL, Davis, G, LeMay, VM (2000) 'Using line intersect
+sampling for coarse woody debris.' (Vancouver Forest Region:</p>
+<p>Meggs, JM (1996) 'Pilot study of the effects of modern logging
+practices on the decaying-log habitat in wet eucalypt forests in
+south-east Tasmania.' (Forestry Tasmania:</p>
+<p>Michaels, K (2006) A Manual for Assessing Vegetation Condition in
+Tasmania Version 1.0. Resource Management and Conservation, Department
+of Primary Industries, Water and Environment, Hobart.</p>
+<p>Miehs, A, York, A, Tolhurst, K, Di Stefano, J, Bell, T (2010)
+Sampling downed coarse woody debris in fire-prone eucalypt woodlands.
+<em>Forest Ecology and Management</em> <strong>259</strong>,
+440-445.</p>
+<p>Puletti, N, Canullo, R, Mattioli, W, Gawryś, R, Corona, P, Czerepko,
+J (2019) A dataset of forest volume deadwood estimates for Europe.
+<em>Annals of Forest Science</em> <strong>76</strong>, 68.</p>
+<p>Sparrow, B, Christensen, R, Thurgate, N, O'Neill, S, Lowe, AJ (2016)
+AusPlots Woodlands Protocol Manual Version 1. University of Adelaide,
+Adelaide.</p>
+<p>Threlfall, C, Law, B, Colman, N (2021) The effects of harvest
+frequency on coarse woody debris and its use by fauna. <em>Wildlife
+Research</em></p>
+<p>Waddell, KL (2002) Sampling coarse woody debris for multiple
+attributes in extensive resource inventories. <em>Ecological
+Indicators</em> <strong>1</strong>, 139-153.</p>
+<p>Whitford, K, Robinson, R, McCaw, L, Feeniks, D (2011) Coarse woody
+debris, small wood and twigs, and litter. <em>REPORT OF PROGRESS
+2009-10</em> 27.</p>
+<p>Whitford, KR, McCaw, WL (2019) Coarse woody debris is affected by the
+frequency and intensity of historical harvesting and fire in an open
+eucalypt forest. <em>Australian Forestry</em> <strong>82</strong>,
+56-69.</p>
+<p>Woldendorp, G, Keenan, R, Ryan, MF (2002a) 'Coarse woody debris in
+Australian forest ecosystems: a report for the National Greenhouse
+Strategy, Module 6.6 (Criteria and Indicators of Sustainable Forest
+Management), April 2002.' (Bureau of Rural Sciences:</p>
+<p>Woldendorp, G, Keenan, RJ (2005) Coarse woody debris in Australian
+forest ecosystems: a review. <em>Austral Ecology</em>
+<strong>30</strong>, 834-843.</p>
+<p>Woldendorp, G, Keenan, RJ, Barry, S, Spencer, RD (2004) Analysis of
+sampling methods for coarse woody debris. <em>Forest Ecology and
+Management</em> <strong>198</strong>, 133-148.</p>
+<p>Woldendorp, G, Spencer, RD, Keenan, RJ, Barry, S (2002b) An analysis
+of sampling methods for coarse woody debris in Australian forest
+ecosystems. <em>Bureau of Rural Sciences Australia: Canberra</em></p>
+<p>Woodall, CW, Rondeux, J, Verkerk, PJ, Ståhl, G (2009) Estimating Dead
+Wood During National Forest Inventories: A Review of Inventory
+Methodologies and Suggestions for Harmonization. <em>Environmental
+management</em> <strong>44</strong>, 624-631.</p>
+<p>Wundke, D, Sparrow, B, Thurgate, N, Christensen, R, O'Neill, S, Lowe,
+A (2015) AusPlots Condition Protocols Manual. Version 0.1. Terrestrial
+Ecosystem Research Network (TERN), The University of Adelaide,
+Adelaide.</p>
+    """^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h2 id="key-definitions-and-terminology">Key definitions and
+terminology</h2>
+<p><span class="anchor" id="table-1"></span>Table 1. Key
+definitions and terms used in the Coarse Woody Debris Module.</p>
+<table>
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 86%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coarse woody debris (CWD)</td>
+<td>Defined here as whole fallen trees, branches and pieces of
+fragmented wood ≥ 50 cm (or ≥30 cm in some systems) in length with a
+diameter ≥ 10 cm (or ≥ 5 cm in some woodland or mallee systems). CWD
+does not include live material, standing dead trees, stumps, dead
+foliage, separated bark, nonwoody pieces, roots or the part of the trunk
+below the root collar (Waddell 2002).</td>
+</tr>
+<tr class="even">
+<td>Decay class</td>
+<td>The level of decomposition of the CWD, ranging from recently fallen
+to largely disintegrated.</td>
+</tr>
+<tr class="odd">
+<td>Diameter at breast height (DBH)</td>
+<td>The straight-line distance in centimetres across the centre of a
+standing tree trunk or stem measured at 1.3 m above the ground.</td>
+</tr>
+<tr class="even">
+<td>Diameter narrowest point</td>
+<td>The measurement in centimetres (cm) of the diameter at the narrowest
+point of the CWD that meets the size threshold (≥ 10 cm)</td>
+</tr>
+<tr class="odd">
+<td>Diameter widest point</td>
+<td>The measurement in centimetres (cm) of the diameter at the widest
+point of the CWD that meets the size threshold (≥ 10 cm)</td>
+</tr>
+<tr class="even">
+<td>Trunk</td>
+<td>The main stem of a tree (also referred to as the bole)</td>
+</tr>
+<tr class="odd">
+<td>Leaf litter</td>
+<td>Fine and coarse organics material &lt;10 cm in diameter (e.g. fallen
+leaves and twigs) (Eyre <em>et al.</em> 2015).</td>
+</tr>
+<tr class="even">
+<td>Length</td>
+<td>The measurement in metres (m) of the extent of a piece of CWD that
+meets the size threshold (≥ 10 cm)</td>
+</tr>
+<tr class="odd">
+<td>Litter</td>
+<td>Debris including leaves, twigs, fruits, buds, flowers, bark and
+smaller pieces of fragmented wood, generally less than 1 cm diameter
+(Woldendorp and Keenan 2005).</td>
+</tr>
+<tr class="even">
+<td>Monitor</td>
+<td>Field data collection app for Ecological Monitoring System
+Australia. Collects data using the Biodiversity Information Standard for
+delivery to the Australian Biodiversity Data Repository managed by the
+Department of Climate Change, Energy, the Environment and Water.</td>
+</tr>
+<tr class="odd">
+<td>Partially downed tree</td>
+<td>Standing dead tree that is no longer self-supported (not fully
+rooted in the ground) (Puletti <em>et al.</em> 2019). A partially downed
+tree may be suspended in the air with support.</td>
+</tr>
+<tr class="even">
+<td>Residue pile</td>
+<td>Accumulation of coarse woody debris and woody debris assembled in a
+pile (Woodall <em>et al.</em> 2009)</td>
+</tr>
+<tr class="odd">
+<td>Standing dead spar</td>
+<td>Standing dead tree that has shattered below 1.3 m (DOC 2019).</td>
+</tr>
+<tr class="even">
+<td>Standing dead tree</td>
+<td>Dead tree with a height &gt;1.3 m that is not lying on the ground
+(Puletti <em>et al.</em> 2019; Didion and Abegg 2022)</td>
+</tr>
+<tr class="odd">
+<td>Tree stump</td>
+<td>Standing upright portion of dead trees above ground surface &lt;1.3
+m that remains after cutting or natural processes have occurred (Puletti
+<em>et al.</em> 2019; Didion and Abegg 2022)</td>
+</tr>
+<tr class="even">
+<td>Volume</td>
+<td>The amount of space a piece of CWD occupies in metres squared
+(m<sup>2</sup>) calculated using Smalian's Formula and the length and
+diameter values collected in the field.</td>
+</tr>
+<tr class="odd">
+<td>Woody debris (WD)</td>
+<td>Woody material less than 10 cm (or 5 cm in some systems) and greater
+than 1 cm in diameter (Woldendorp <em>et al.</em> 2002a; Woldendorp and
+Keenan 2005; Eyre <em>et al.</em> 2015).</td>
+</tr>
+</tbody>
+</table>
+    """^^rdf:HTML ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 class="unnumbered" id="field-collection-1">Field collection </h4>
+<ul>
+<li><p>If the average diameter at breast height (DBH) of trees in the
+study system is between 5-15 cm (can use measurements from the
+Recruitment or Basal Area Modules) then use 5 cm cut-off for CWD.
+Generally, this will only occur in some mallee and mulga communities or
+as a consequence of intervention in an area (e.g. clear-felling or
+regeneration planting project).</p></li>
+<li><p>It is recommended that the CWD measurements are done
+concurrently, or immediately after the Cover Module point-intercept
+survey to take advantage of the transect lines already laid. These
+transects can be used to divide the plot into smaller areas and assist
+with the systematic survey of the area.</p></li>
+<li><p>Do not measure any part of the CWD that falls outside of the plot
+(<a href="#appendix-1">Appendix 1</a>.).</p></li>
+<li><p>Measure CWD diameter over bark.</p></li>
+<li><p>Length is only measured for the portion of the CWD that meets the
+size threshold.</p></li>
+<li><p>Four 100 m tape measures are recommended for defining the plot
+boundary. Additional tapes can be used to divide the plot into smaller
+units to assist with the systematic survey.</p></li>
+<li><p>Tape measures with metrics on both sides are
+recommended.</p></li>
+<li><p>Observer should stand at the centre point of CWD when recording
+location with the app.</p></li>
+<li><p>When measuring a piece of CWD where the roots are attached, do
+not record the largest diameter at the roots (<a href="#appendix-1">Appendix
+1</a>.).</p></li>
+<li><p>CWD is only measured when it is in contact with the ground. CWD
+is not measured when suspended in the air with the support of other
+trees because pieces suspended off the ground are considered partially
+downed trees (<a href="#appendix-2">Appendix 2</a>).</p></li>
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Coarse Woody Debris Module" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/coarse-woody-debris/cwd-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """<h1 id="appendices">Appendices</h1>
+<h2><span class="anchor" id="appendix-1"></span>Appendix 1. Measuring
+CWD</h2>
+<p><img alt="Measuring_CWD" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/Appendix-1_measuringCWD.jpg" width="900"/></p>
+<p>Coarse woody debris that is branching is measured in sections
+indicated as by the blue lines. Branches that taper are only measured
+where their diameter is equal or greater than 10 cm (or 5 cm), these cut
+offs are indicated by red lines in the diagram above.</p>
+<p><img alt="Distinguishing_partially_downed" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/Appendix-2.png" width="400"/></p>
+<h2 id="appendix-2">Appendix 2. Distinguishing
+partially downed trees</h2>
+<p>Circled in blue above is a piece of CWD that is partially off the
+ground. Here you would record the piece of CWD as two sections, the two
+ends that are in contact with the ground, and you would not record the
+middle of the piece which is off the ground. The partially downed tree
+circled in red would not be recorded. It is suspended in the air
+completely by another tree.</p>
+<h2><span class="anchor" id="appendix-3"></span>Appendix 3. Recording
+decay class</h2>
+<table>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 87%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decay class</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Class 1:</p>
+<p>Recently fallen. Structurally intact or almost so; bark or small
+branches still attached; few signs of wood decay; wood mostly retains
+original colour.</p></td>
+<td><img alt="Class_1_1" height="300" src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/Class1_1.jpg" width="300"/><img alt="Class_1_2" height="300" src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/Class1_2.jpg" width="300"/></td>
+</tr>
+<tr class="even">
+<td><p>Class 2:</p>
+<p>Structurally less intact but still hard when kicked; small branches
+absent; little or no bark present; early signs of wood decay, bark loss
+or discolouration.</p></td>
+<td><img alt="Class_1_2" height="300" src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/Class2_1.png" width="600"/></td>
+</tr>
+<tr class="odd">
+<td><p>Class 3:</p>
+<p>Clearly decaying but still supports own weight; may be slightly soft
+when kicked; may be hollow in places; no bark; moss and fungi may be
+prominent.</p></td>
+<td><img alt="Class3_1" height="300" src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/Class3_1.png" width="600"/></td>
+</tr>
+<tr class="even">
+<td><p>Class 4:</p>
+<p>Cannot support its own weight; soft to kick (but may still be hard in
+places; in which case may be extensively hollow); moss, fungi and
+invading roots likely.</p></td>
+<td><img alt="Class_4" height="300" src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/Class4.png" width="600"/></td>
+</tr>
+<tr class="odd">
+<td><p>Class 5:</p>
+<p>No longer retains original shape; wood very soft or largely
+disintegrated; sometimes only outline visible beneath moss, invading
+roots.</p></td>
+<td><img alt="Class_5" height="300" src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/Class5.png" width="600"/></td>
+</tr>
+</tbody>
+</table>
+    """^^rdf:HTML ;
+    tern:equipment """
+  <h3 id="equipment">Equipment</h3>
+<ul>
+<li><p>Mobile device (tablet/phone) with the Monitor app
+pre-loaded</p></li>
+<li><p>GNSS, such as a Trimble R1 or DA2 receiver, a hand-held GPS or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy</p></li>
+<li><p>100 m tape measure</p></li>
+<li><p>Diameter tape (or suitable equipment for measuring CWD
+diameter)</p></li>
+<li><p>5-10 m tape measure (or suitable equipment for measuring CWD
+length)</p></li>
+<li><p>Chalk (or other suitable medium to mark CWD)</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """<h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+<li><p>Ensure the Plot Selection and Layout Module has been completed to
+mark out the plot and sub-plot boundary and to define the current plot
+and visit in the app.</p></li>
+<li><p>The survey area is determined by the protocol being
+undertaken:</p>
+<ol type="a">
+<li><p>If completing the Standard protocol use the transects laid out
+for the <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover</a> or <a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition</a> Modules to delineate the 40 x 40 m sub-plot
+survey area between the N/S2 and N/S4, and E/W2 and E/W4 point-intercept
+transects; see Figure 1 for plot layout. This 40 x 40 m subplot will be
+the survey area.</p></li>
+<img alt="Plot_layout" height="700" src="https://w3id.org/tern/static/dawe-rlp/latest/coarse-woody-debris/Figure1.jpg" width="550">
+<p>Figure 1. Plot layouts for the 100 x 100 m core plot 40 x 40 m
+sub-plot</p>
+<li><p>If completing the Enhanced
+protocol, the 100 x 100 m plot will be the survey area; see Figure 1 for
+plot layout. If the Coarse Woody Debris Module is undertaken after the
+Cover Module the point intercept grid can be used to delineate the plot
+boundary and divide the plot up to assist with the systematic survey.
+Alternatively, use coloured survey pins.</p></li>
+</ol></li>
+</ol>
+<ol start="3" type="1">
+<li><p>Open the app and navigate to the Coarse Woody Debris Module and
+select the protocol relevant to your project. Steps 4 - 19 are the same
+whether completing the Enhanced or Standard protocol.</p></li>
+<li><p>Ensure that the GNSS device is connected and has a high level of
+accuracy.</p></li>
+<li><p>Specify if a <em>10 cm</em> diameter (default) or <em>5 cm</em>
+diameter (woodland and mallee systems) threshold is being used.</p></li>
+<li><p>Specify if a <em>50 cm</em> (default) or <em>30 cm</em> length
+threshold is being used.</p></li>
+<li><p>Systematically search the plot, utilising the sub-divisions for
+any CWD ≥50 cm in length (or ≥30 cm for eligible systems) that occurs
+within the area. Measure all eligible CWD encountered. A CWD piece is
+eligible if it is ≥50 cm in length and ≥10 cm diameter (or ≥5 cm for
+eligible systems) at any point along its length. Partially downed trees
+(PDT), tree stumps and residue piles will not be recorded during the
+survey because they are not considered CWD. To record stumps, refer to
+the Condition Module.</p></li>
+<li><p>To measure CWD that is encountered, stand at its mid-point and
+select <em>add CWD</em>. The location of the CWD is automatically
+recorded and can be updated if required (<a href="#appendix-1">Appendix 1</a>.).</p></li>
+<li><p>Measure and record the diameter at the widest point in cm
+(D<sub>1</sub>).</p></li>
+<li><p>Measure and record the diameter at the narrowest point
+(D<sub>2</sub>), to a minimum diameter of 10 cm (or 5 cm where
+appropriate).</p></li>
+<li><p>Measure and record the length (in metres) for the portion of the
+CWD that is greater than 10 cm (or 5 cm) in diameter. Refer to
+<a href="#appendix-1">Appendix 1</a>.for more information about measuring CWD
+diameter and length.</p></li>
+<li><p>Where a piece of CWD is irregular in shape, it may be divided
+into multiple smaller roughly linear and cylindrical sections for ease
+of measurement (<a href="#appendix-1">Appendix 1</a>.). Select <em>Add section</em> to add
+sections where necessary.</p>
+<ol type="a">
+<li><p>Each eligible section will be considered a subsidiary of the
+first section recorded (i.e. the first section will be CWD 1a and each
+section that follows will be recorded as 1b; 1c; 1d; etc.). Record
+D<sub>1</sub>, D<sub>2</sub> and length for each eligible
+section.</p></li>
+</ol></li>
+<li><p>Where a piece of CWD is partially off the ground, only record the
+sections that are in contact with the ground and eligible (<a href="#appendix-2">Appendix 2</a>).
+Select <em>add section</em> to add sections where necessary.</p>
+<ol type="a">
+<li><p>Each eligible section will be considered a subsidiary of the
+first section recorded (i.e. the first section will be CWD 1a and each
+section that follows will be recorded as 1b; 1c; 1d; etc.). Record
+D<sub>1</sub>, D<sub>2</sub>, and length for each eligible
+section.</p></li>
+</ol></li>
+<li><p>Assign the decay class that best describes the CWD (ignoring
+sections that are ineligible). Refer to <a href="#table-2">Table 2</a> and <a href="#appendix-3">Appendix 3</a>. for
+examples of each class. If the level of decay varies along the piece of
+CWD, record the most dominant decay class (the decay class that best
+describes the entire piece of CWD).</p></li>
+<li><p>Record if the piece of CWD is hollow using the
+check-box.</p></li>
+<li><p>Optionally take a photograph of the piece of CWD.</p></li>
+<li><p>Use the comments tab for any additional remarks (e.g. proportion
+not in contact with ground).</p></li>
+<li><p>For areas with a high abundance of CWD or clustered CWD mark
+(survey pin, flagging tape, chalk) CWD that has been measured to avoid
+duplicate measures.</p></li>
+<li><p>Repeat steps 8-18 for each eligible piece of CWD within the
+plot.</p></li>
+</ol>
+<p><span class="anchor" id="table-2"></span>Table 2. Coarse woody
+debris decay classes - adapted from (Meggs 1996; Baker and Chao
+2011).</p>
+<table>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 87%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decay class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Class 1</td>
+<td>Recently fallen. Structurally intact or almost so; bark or small
+branches still attached; few signs of wood decay; wood mostly retains
+original colour.</td>
+</tr>
+<tr class="even">
+<td>Class 2</td>
+<td>Structurally less intact but still hard when kicked; small branches
+absent; little or no bark present; early signs of wood decay, bark loss
+or discolouration.</td>
+</tr>
+<tr class="odd">
+<td>Class 3</td>
+<td>Clearly decaying but still supports own weight; may be slightly soft
+when kicked; may be hollow in places; no bark; moss and fungi may be
+prominent.</td>
+</tr>
+<tr class="even">
+<td>Class 4</td>
+<td>Cannot support its own weight; soft to kick (but may still be hard
+in places; in which case may be extensively hollow); moss, fungi and
+invading roots likely.</td>
+</tr>
+<tr class="odd">
+<td>Class 5</td>
+<td>No longer retains original shape; wood very soft or largely
+disintegrated; sometimes only outline visible beneath moss, invading
+roots.</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    tern:purpose """
+    <h2 id="rationale">Rationale </h2>
+<p>Coarse woody debris contributes to a range of ecosystem processes,
+including nutrient cycling and storage, soil formation, stability, and
+retention, retaining moisture and enhancing water infiltration,
+improving thermal conditions, and providing sites for litter
+accumulation (Grove and Meggs 2003; Woldendorp <em>et al.</em> 2004;
+Manning <em>et al.</em> 2013; Goldin 2020). Coarse woody debris can also
+influence fuel loads and fire dynamics (Miehs et al. 2010), and is a
+preferred habitat feature for a range of fauna, including shelter,
+nesting and denning sites for a variety of mammals, reptiles and some
+birds (Mac Nally et al. 2001; Threlfall et al. 2021). Decaying CWD
+provides substrate and nutrients for invertebrates and fungi in addition
+to creating sites for seedling establishment (Woldendorp <em>et al.</em>
+2002b; Grove and Meggs 2003). Despite its importance in a range of
+systems, CWD is often difficult to study because of its patchy
+distribution, and this can be especially problematic in woodland
+ecosystems, where CWD is relatively scarce, unevenly distributed and
+smaller in size than other forest types (Miehs <em>et al.</em>
+2010).</p>
+<p>A range of different methods have been used to capture information on
+CWD, including various transect, strip plot and quadrat designs (e.g.
+Woldendorp <em>et al.</em> 2002a; Kanowski <em>et al.</em> 2003;
+Michaels 2006; Miehs <em>et al.</em> 2010; Whitford <em>et al.</em>
+2011; Aponte <em>et al.</em> 2014; Eyre <em>et al.</em> 2015; Threlfall
+<em>et al.</em> 2021). Plots are the predominant technique used
+(Marshall <em>et al.</em> 2000; Miehs <em>et al.</em> 2010), however, no
+consistent sampling method has been adopted to date, largely due to the
+structural differences between woody systems (Woldendorp <em>et al.</em>
+2004; Miehs <em>et al.</em> 2010). A plot based approach has been
+adopted for this module to align with existing condition methods used in
+Australia (Eyre <em>et al.</em> 2015), to allow a condition sub-plot to
+be comprehensively surveyed for a range of attributes, and because a
+sub-plot is generally more effective when CWD is in low abundances
+(Woldendorp <em>et al.</em> 2002b; Bate <em>et al.</em> 2004). In
+addition, sampling using a plot overcomes non-random orientation of CWD
+due to wind throw, flooding, topography and harvesting practices, which
+can influence the estimates of CWD abundance, depending on transect
+orientation and layout (Woldendorp <em>et al.</em> 2004).</p>
+<p>The length and diameter (at both ends) are measured for every piece
+of CWD encountered that meet the size thresholds. Thresholds used within
+this module align with thresholds used in the scientific literature. For
+CWD tapering to less than 10 cm diameter (or 5 cm in applicable
+systems), measurements are made only up to the point where the log
+tapers to less than the cut-off diameter (Baker and Chao 2011). Taking a
+measurement at either end (rather than a mid-point) can substantially
+reduce or eliminate bias and produce more accurate volume estimates
+(Bate <em>et al.</em> 2009). Allocating a decay class based on the
+structural integrity of the wood assists with biomass estimation and
+provides an indication of the ecosystem processes occurring (Woldendorp
+<em>et al.</em> 2002a; Woldendorp <em>et al.</em> 2004). The spatial
+distribution of CWD is rarely assessed during CWD surveys (Miehs <em>et
+al.</em> 2010). However, the distribution of CWD can influence abundance
+and volume estimates. Hence, as part of this module, location of CWD
+within the plot is recorded.</p>
+    """^^rdf:HTML ;
+    tern:scope """
+   <h1 id="introduction">Introduction and background </h1>
+<p>Coarse woody debris (CWD) is fallen dead wood that forms an important
+structural and habitat component of many ecosystems, and is linked to a
+range of biodiversity and ecosystem processes (Marshall <em>et al.</em>
+2000; Woldendorp and Keenan 2005). The Coarse Woody Debris Module
+provides procedures and guidelines for recording CWD abundance,
+dimension and level of decay, to estimate the length and volume of CWD
+present in wooded systems. For the purpose of this module, CWD is
+defined as any fallen trees or branches with a diameter greater than or
+equal to 10 cm (Baker and Chao 2011; Goldin 2020), but in some systems,
+such as woodlands and mallee woodlands where trunk diameters are
+smaller, a diameter of greater than or equal to 5 cm can be used (Miehs
+<em>et al.</em> 2010).</p>
+<p>Accurate estimation of CWD is critical for the effective management
+of forest and woodland systems (Bate <em>et al.</em> 2004). Sampling CWD
+can provide an estimate of the abundance, cover, volume, length and
+level of decay of fallen woody material in an ecosystem (Bate <em>et
+al.</em> 2009). Coarse woody debris can take decades to centuries to
+accumulate, especially larger pieces, and is influenced by tree species
+and age, stand structure, productivity, disturbance, physical
+environment and wood decay rate (Woldendorp <em>et al.</em> 2002a;
+Manning <em>et al.</em> 2013). CWD is typical of natural woodland or
+forest communities, but it has declined or been lost from many
+ecosystems around the world as a result of vegetation clearing, logging,
+fire regime and grazing, which reduce the structural diversity of stands
+(Manning <em>et al.</em> 2013). CWD abundance is assessed for a range of
+purposes, including stand structural assessments, as an indicator of
+habitat value for ground-dwelling fauna, carbon biomass estimates, fuel
+load estimates, condition assessments and as an indicator of management
+or disturbance intensity (Grove 2001; Eyre <em>et al.</em> 2015).</p>
+<p>Physical and biological processes begin to degrade fallen woody
+material through fragmentation and decomposition (Woldendorp <em>et
+al.</em> 2002a), so CWD is often assigned a decay class, ranging from
+recently fallen to largely disintegrated (Wundke <em>et al.</em> 2015;
+Sparrow <em>et al.</em> 2016). The level of decay can give an indication
+of return of nutrients to the soil, as it contributes to the process of
+soil development, and a range of decay classes can provide habitat for
+fungi, plants and invertebrates (Meggs 1996).</p>"""^^rdf:HTML ;
+    tern:undertakenAfter <https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ;
+    tern:undertakenConcurrently <https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109> ;
+.
+

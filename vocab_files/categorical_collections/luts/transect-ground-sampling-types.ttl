@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/97577249-50d4-5437-b3c2-c8fe58f293b5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/transect-ground-sampling-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/305963a5-0ade-535c-bccd-526c1b571fe0> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7496cb33-6b4a-5bb2-a7dc-906a40bd779f> ;
+    urnp:conceptDefinition "Refers to a fixed sampling transect distance (in meters) implemented during a fauna survey." ;
+    urnp:conceptSource "McCallum K, Bignall J, Cox B, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/edffdb04-d6b9-5970-826b-b26aac18c8f8>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/transect-ground-sampling-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/305963a5-0ade-535c-bccd-526c1b571fe0> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/b2e90197-fa91-5f39-8062-4ee72c9f7f18> ;
+    urnp:conceptDefinition "Refers to the a distance based line transect sampling (in meters) implemented during a fauna survey." ;
+    urnp:conceptSource "McCallum K, Bignall J, Cox B, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/305963a5-0ade-535c-bccd-526c1b571fe0>
+    a skos:Collection ;
+    dcterms:description "The types of fauna ground sampling trsnsects. This uses either a 'fixed width' or a 'distance sampling' transect." ;
+    dcterms:source "McCallum K, Bignall J, Cox B, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/7496cb33-6b4a-5bb2-a7dc-906a40bd779f> ,
+        <https://linked.data.gov.au/def/nrm/b2e90197-fa91-5f39-8062-4ee72c9f7f18> ;
+    skos:prefLabel "Transect- ground sampling types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/transect-ground-sampling-types.ttl"^^xsd:anyURI ;
+.
+

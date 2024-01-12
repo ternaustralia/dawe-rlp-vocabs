@@ -1,0 +1,1748 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h3>Contents</h3>
+  <ol><li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#introduction-and-background">Introduction and Background</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology"
+        >Key definitions and terminology</a>
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#equipment">Equipment</a></li>
+    <li>
+      <a href="#instructions-and-procedures">Instructions and procedures</a>
+    </li>
+    <li><a href="#additional-guidelines">Additional guidelines</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+    <h1 id="module-overview">Module overview</h1>
+<h2 id="available-protocols">Available Protocols</h2>
+<p>This module outlines the protocol for recording fire severity within
+the plot. The protocol involves recording the cover and height of fire
+severity attributes from the ground to the canopy at 404
+point-intercepts along four 100 m transects within the plot as well as
+trunk char height at four locations within the plot.</p>
+<p>The protocol includes the instructions and procedures for: setting up
+four 100 m transects (2 x N/S and 2 x E/W; see <a href="#figure-1">Figure 1</a>); recording
+point-intercept fire severity data at 1 m intervals along the four
+transects (for a total of 404 point-intercepts); recording trunk char
+height from the four locations where the four transects intersect; and
+entering the data directly into the Monitor app.</p>
+<p>The guidelines provide further information regarding: workflow
+efficiency; the rules for determining a 'hit’; using a densitometer to
+view canopy intercepts; when to apply <em>in canopy sky</em> (ICS); and
+taking trunk char height measurements.</p>
+<h2 id="relationship-to-other-modules">Relationship to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<h4 class="unnumbered" id="complete-before-the-fire-severity-module">Complete before the Fire
+Severity Module</h4>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – The point-intercept transect
+grid is aligned to the plot defined boundaries.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – This module provides the flora
+species identifications/assigned field names and growth forms to be used
+in the collection of species data (if using the enhanced Cover
+protocol).</p></li>
+</ul>
+<h4 class="unnumbered" id="complete-concurrently-with-the-fire-severity-module">Complete
+concurrently with the Fire Severity Module</h4>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> – The Fire Severity Module must be undertaken
+concurrently using the same transects.</p></li>
+</ul>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment Module</a> – Fire mediated regeneration and epicormic
+growth can be measured. Both modules can be undertaken concurrently
+using the same plot layout.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> – Fire history (unburnt, recently burnt,
+past burn) is recorded in the Plot Description module.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508">Vegetation Mapping Module</a> – Fire history (unburnt, recently
+burnt, past burn) is recorded at each vegetation mapping point in the
+Vegetation Mapping Module.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2">Coarse Woody Debris Module</a> – Both modules can be undertaken
+concurrently using the same plot layout.</p></li>
+</ul>"""^^rdf:HTML ;
+    dcterms:source """
+    <h1 id="references">References</h1>
+<p>Andersen, AN, Cook, GD, Corbett, LK, Douglas, MM, Eager, RW,
+Russell-Smith, J, Setterfield, SA, Williams, RJ, Woinarski, JC (2005)
+Fire frequency and biodiversity conservation in Australian tropical
+savannas: implications from the Kapalga fire experiment. <em>Austral
+Ecology</em> <strong>30</strong>, 155–167.</p>
+<p>Badía-Villas, D, González-Pérez, JA, Aznar, JM, Arjona-Gracia, B,
+Martí-Dalmau, C (2014) Changes in water repellency, aggregation and
+organic matter of a mollic horizon burned in laboratory: Soil depth
+affected by fire. <em>Geoderma</em> <strong>213</strong>, 400–407.</p>
+<p>Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E,
+Tokmakoff, A, Lowe, AJ (2018) Floristic and structural assessment of
+Australian rangeland vegetation with standardized plot-based surveys.
+<em>PloS ONE</em> <strong>13</strong>, e0202073.</p>
+<p>Bond, WJ, Keeley, JE (2005) Fire as a global 'herbivore': the ecology
+and evolution of flammable ecosystems. <em>Trends in Ecology &amp;
+Evolution</em> <strong>20</strong>, 387–394.</p>
+<p>Bonham, CD (2013) 'Measurements for terrestrial vegetation.' (John
+Wiley &amp; Sons: West Sussex, UK)</p>
+<p>Bowman, D, Williamson, G, Yebra, M, Lizundia-Loiola, J, Pettinari,
+ML, Shah, S, Bradstock, R, Chuvieco, E (2020) Wildfires: Australia needs
+national monitoring agency. <em>Nature</em> <strong>584</strong>,
+188–191.</p>
+<p>Bowman, DM, Balch, JK, Artaxo, P, Bond, WJ, Carlson, JM, Cochrane,
+MA,D'Antonioo, CM, DeFries, RS, Doyle, JC, Harrison, SP (2009) Fire in
+the Earth system. <em>Science</em> <strong>324</strong>, 481–484.</p>
+<p>Bowman, DM, Williamson, GJ, Gibson, RK, Bradstock, RA, Keenan, RJ
+(2021) The severity and extent of the Australia 2019–20 Eucalyptus
+forest fires are not the legacy of forest management. <em>Nature Ecology
+&amp; Evolution</em> <strong>5</strong>, 1003–1010.</p>
+<p>Brady, WW, Mitchell, JE, Bonham, CD, Cook, JW (1995) Assessing the
+power of the point-line transect to monitor changes in plant basal
+cover. <em>Journal of Range Management</em> <strong>48</strong>,
+187–190.</p>
+<p>Braun-Blanquet, J (1932) 'Plant sociology: the study of plant
+communities.' (McGraw-Hill: New York)</p>
+<p>Cawson, J, Sheridan, G, Smith, H, Lane, P (2013) Effects of fire
+severity and burn patchiness on hillslope-scale surface runoff, erosion
+and hydrologic connectivity in a prescribed burn. <em>Forest Ecology and
+Management</em> <strong>310</strong>, 219–233.</p>
+<p>Chafer, CJ (2008) A comparison of fire severity measures: an
+Australian example and implications for predicting major areas of soil
+erosion. <em>Catena</em> <strong>74</strong>, 235–245.</p>
+<p>Chafer, CJ, Noonan, M, Macnaught, E (2004) The post-fire measurement
+of fire severity and intensity in the Christmas 2001 Sydney wildfires.
+<em>International Journal of Wildland Fire</em> <strong>13</strong>,
+227–240.</p>
+<p>Clarke, V (2009) Standard Operating Procedure: Establishing
+Vegetation Transects. Department of Environment and Conservation, Nature
+Conservation Service Biodiversity, Kensington, WA.</p>
+<p>Cocke, AE, Fulé, PZ, Crouse, JE (2005) Comparison of burn severity
+assessments using Differenced Normalized Burn Ratio and ground data.
+<em>International Journal of Wildland Fire</em> <strong>14</strong>,
+189–198.</p>
+<p>Collins, L, Griffioen, P, Newell, G, Mellor, A (2018) The utility of
+Random Forests for wildfire severity mapping. <em>Remote Sensing of
+Environment</em> <strong>216</strong>, 374–384.</p>
+<p>Collins, L, McCarthy, G, Mellor, A, Newell, G, Smith, L (2020)
+Training data requirements for fire severity mapping using Landsat
+imagery and random forest. <em>Remote Sensing of Environment</em>
+<strong>245</strong>, 111839.</p>
+<p>Department of Environment and Climate Change (2007) Private Native
+Forestry Code of Practice Guideline No. 4: Techniques for Measuring
+Stand Height. Department of Environment and Climate Change, Sydney.</p>
+<p>Doerr, S, Shakesby, R, Blake, W, Chafer, C, Humphreys, G, Wallbrink,
+P (2006) Effects of differing wildfire severities on soil wettability
+and implications for hydrological response. <em>Journal of
+Hydrology</em> <strong>319</strong>, 295–311.</p>
+<p>Doerr, SH, Blake, WH, Shakesby, RA, Stagnitti, F, Vuurens, SH,
+Humphreys, GS, Wallbrink, P (2004) Heating effects on water repellency
+in Australian eucalypt forest soils and their value in estimating
+wildfire soil temperatures. <em>International Journal of Wildland
+Fire</em> <strong>13</strong>, 157–163.</p>
+<p>Edwards, AC, Maier, SW, Hutley, LB, Williams, RJ, Russell-Smith, J
+(2013) Spectral analysis of fire severity in north Australian tropical
+savannas. <em>Remote Sensing of Environment</em> <strong>136</strong>,
+56–65.</p>
+<p>Etchells, H, O'Donnell, AJ, McCaw, WL, Grierson, PF (2020) Fire
+severity impacts on tree mortality and post-fire recruitment in tall
+eucalypt forests of southwest Australia. <em>Forest Ecology and
+Management</em> <strong>459</strong>, 117850.</p>
+<p>Fraser, BF, Lawson, V, Morrison, S, Christophersen, P, McGreggor, S,
+Rawlinson, M (2003) Fire management experiment for the declining
+Partridge Pigeon, Kakadu National Park. <em>Ecological Management &amp;
+Restoration</em> <strong>4</strong>, 94–102.</p>
+<p>Gibson, R, Danaher, T, Hehir, W, Collins, L (2020) A remote sensing
+approach to mapping fire severity in south-eastern Australia using
+sentinel 2 and random forest. <em>Remote Sensing of Environment</em>
+<strong>240</strong>, 111702.</p>
+<p>Godfree, RC, Knerr, N, Encinas-Viso, F, Albrecht, D, Bush, D,
+Cargill, DC, Clements, M, Gueidan, C, Guja, LK, Harwood, T (2021)
+Implications of the 2019–2020 megafires for the biogeography and
+conservation of Australian vegetation. <em>Nature communications</em>
+<strong>12</strong>, 1–13.</p>
+<p>Godínez-Alvarez, H, Herrick, J, Mattocks, M, Toledo, D, Van Zee, J
+(2009) Comparison of three vegetation monitoring methods: their relative
+utility for ecological assessment and monitoring. <em>Ecological
+Indicators</em> <strong>9</strong>, 1001–1008.</p>
+<p>Gordon, CE, Price, OF, Tasker, EM, Denham, AJ (2017) Acacia shrubs
+respond positively to high severity wildfire: Implications for
+conservation and fuel hazard management. <em>Science of The Total
+Environment</em> <strong>575</strong>, 858–868.</p>
+<p>Gosper, CR, Yates, CJ, Prober, SM, Parsons, BC (2012) Contrasting
+changes in vegetation structure and diversity with time since fire in
+two Australian Mediterranean‐climate plant communities. <em>Austral
+Ecology</em> <strong>37</strong>, 164-174.</p>
+<p>Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z,
+Lowe, AJ (2017) Opportunities for integrated ecological analysis across
+inland Australia with standardised data from Ausplots Rangelands.
+<em>PloS ONE</em> <strong>12</strong>, e0170137.</p>
+<p>Hammill, KA, Bradstock, RA (2006) Remote sensing of fire severity in
+the Blue Mountains: influence of vegetation type and inferring fire
+intensity. <em>International Journal of Wildland Fire</em>
+<strong>15</strong>, 213–226.</p>
+<p>Hillman, S, Hally, B, Wallace, L, Turner, D, Lucieer, A, Reinke, K,
+Jones, S (2021) High-Resolution Estimates of Fire Severity—An Evaluation
+of UAS Image and LiDAR Mapping Approaches on a Sedgeland Forest Boundary
+in Tasmania, Australia. <em>Fire</em> <strong>4</strong>, 14.</p>
+<p>Jain, TB, Gould, WA, Graham, RT, Pilliod, DS, Lentile, LB, González,
+G (2008) A soil burn severity index for understanding soil-fire
+relations in tropical forests. <em>Ambio</em> <strong>37</strong>,
+563–568.</p>
+<p>Johnson, C (1995) Interactions between fire, mycophagous mammals, and
+dispersal of ectromycorrhizal fungi in <em>Eucalyptus</em> forests.
+<em>Oecologia</em> <strong>104</strong>, 467–475.</p>
+<p>Keeley, JE (2009) Fire intensity, fire severity and burn severity: a
+brief review and suggested usage. <em>International Journal of Wildland
+Fire</em> <strong>18</strong>, 116–126.</p>
+<p>Key, CH (2006) Ecological and sampling constraints on defining
+landscape fire severity. <em>Fire Ecology</em> <strong>2</strong>,
+34–59.</p>
+<p>Key, CH, Benson, NC (2006) Landscape Assessment (LA). Sampling and
+Analysis Methods. In 'FIREMON: Fire Effects and Monitoring and Inventory
+System. General Technical Report RMRS-GTR-164-CD.' (Eds DC Lutes, RE
+Keane, JF Caratti, CH Key, NC Benson, S Sutherland, LJ Gangi.) pp.
+LA-1–55. (US Department of Agriculture, Forest Service, Rocky Mountain
+Research Station: Fort Collins, Colorado, USA)</p>
+<p>Marcos, E, Fernández-García, V, Fernández-Manso, A, Quintano, C,
+Valbuena, L, Tárrega, R, Luis-Calabuig, E, Calvo, L (2018) Evaluation of
+composite burn index and land surface temperature for assessing soil
+burn severity in mediterranean fire-prone pine ecosystems.
+<em>Forests</em> <strong>9</strong>, 494.</p>
+<p>McKenna, P, Erskine, PD, Lechner, AM, Phinn, S (2017) Measuring fire
+severity using UAV imagery in semi-arid central Queensland, Australia.
+<em>International Journal of Remote Sensing</em> <strong>38</strong>,
+4244–4264.</p>
+<p>Morgan, P, Keane, RE, Dillon, GK, Jain, TB, Hudak, AT, Karau, EC,
+Sikkink, PG, Holden, ZA, Strand, EK (2014) Challenges of assessing fire
+and burn severity using field measures, remote sensing and modelling.
+<em>International Journal of Wildland Fire</em> <strong>23</strong>,
+1045-1060.</p>
+<p>Ndalila, MN, Williamson, GJ, Bowman, DM (2018) Geographic patterns of
+fire severity following an extreme eucalyptus forest fire in southern
+Australia: 2013 Forcett-Dunalley fire. <em>Fire</em> <strong>1</strong>,
+40.</p>
+<p>Noske, RA (1992) The status and ecology of the White-throated
+Grasswren <em>Amytornis woodwardi</em>. <em>Emu</em>
+<strong>92</strong>, 39–51.</p>
+<p>NVIS Technical Working Group (2017) Australian Vegetation Attribute
+Manual: National Vegetation Information System, Version 7.0. Department
+of the Environment and Energy, Canberra.</p>
+<p>Oliveira, SL, Campagnolo, ML, Price, OF, Edwards, AC, Russell-Smith,
+J, Pereira, JM (2015) Ecological implications of fine-scale fire
+patchiness and severity in tropical savannas of northern Australia.
+<em>Fire Ecology</em> <strong>11</strong>, 10–31.</p>
+<p>Russell-Smith, J, Edwards, AC (2006) Seasonality and fire severity in
+savanna landscapes of monsoonal northern Australia. <em>International
+Journal of Wildland Fire</em> <strong>15</strong>, 541–550.</p>
+<p>Ryan, KC, Noste, NV (1985) Evaluating prescribed fires. In
+'Proceedings of the symposium and workshop on wilderness fire. Missoula,
+MT', 15–18 November 1983. (Eds JE Lotan, BM Kilgore, WC Fischer, R
+Mutch) Volume General Technical Report INT-182 pp. 230–238. (USDA Forest
+Service, Intermountain Forest and Range Experiment Station: Ogden,
+UT)</p>
+<p>Shakesby, R, Wallbrink, P, Doerr, S, English, P, Chafer, C,
+Humphreys, G, Blake, W, Tomkins, K (2007) Distinctiveness of wildfire
+effects on soil erosion in south-east Australian eucalypt forests
+assessed in a global context. <em>Forest Ecology and Management</em>
+<strong>238</strong>, 347–364.</p>
+<p>Smith, AM, Wooster, MJ, Drake, NA, Dipotso, FM, Falkowski, MJ, Hudak,
+AT (2005) Testing the potential of multi-spectral remote sensing for
+retrospectively estimating fire severity in African Savannahs.
+<em>Remote Sensing of Environment</em> <strong>97</strong>, 92–115.</p>
+<p>Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
+Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
+vegetation and soil survey method for surveillance monitoring of
+rangeland environments. <em>Frontiers in Ecology and Evolution</em>
+<strong>8</strong>, 157.</p>
+<p>Tokmakoff, A, Sparrow, B, Turner, D, Lowe, A (2016) AusPlots
+Rangelands field data collection and publication: Infrastructure for
+ecological monitoring. <em>Future Generation Computer Systems</em>
+<strong>56</strong>, 537–549.</p>
+<p>Trainor, C, Fisher, A, Woinarski, J, Churchill, S (2000) Multiscale
+patterns of habitat use by the Carpentarian rock-rat (<em>Zyzomys
+palatalis</em>) and the common rock-rat (<em>Z. argurus</em>).
+<em>Wildlife Research</em> <strong>27</strong>, 319–332.</p>
+<p>Tran, BN, Tanase, MA, Bennett, LT, Aponte, C (2018) Evaluation of
+spectral indices for assessing fire severity in Australian temperate
+forests. <em>Remote Sensing</em> <strong>10</strong>, 1680.</p>
+<p>Vittoz, P, Guisan, A (2007) How reliable is the monitoring of
+permanent vegetation plots? A test with multiple observers. <em>Journal
+of Vegetation Science</em> <strong>18</strong>, 413–422.</p>
+<p>Walz, Y, Maier, SW, Dech, SW, Conrad, C, Colditz, RR (2007)
+Classification of burn severity using Moderate Resolution Imaging
+Spectroradiometer (MODIS): A case study in the jarrah‐marri forest of
+southwest Western Australia. <em>Journal of Geophysical Research:
+Biogeosciences</em> <strong>112</strong>, G02002.</p>
+<p>Whight, S, Bradstock, R (1999) Indices of fire characteristics in
+sandstone heath near Sydney, Australia. <em>International Journal of
+Wildland Fire</em> <strong>9</strong>, 145–153.</p>
+<p>Williams, RJ, Gill, AM, Moore, PHR (2003) Fire Behavior. In 'Fire in
+Tropical Savannas: The Kapalga Experiment.' (Eds AN Andersen, GD Cook,
+RJ Williams.) pp. 33–46. (Springer New York: New York, NY)</p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h2 id="key-definitions-and-terminology">Key definitions and
+terminology</h2>
+<p><span class="anchor" id="table-1"></span>Table 1. Key
+definitions and terms used in the Fire Severity Module.</p>
+<table>
+<colgroup>
+<col style="width: 16%"/>
+<col style="width: 83%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Apical resprouting</td>
+<td>Foliage resprouting from the apical bud following fire. The bud is
+protected by tightly clustered new leaf material and leaf bases of
+mature leaves.</td>
+</tr>
+<tr class="even">
+<td>Basal resprouting</td>
+<td>Foliage resprouting at or below ground level from lignotubers,
+rhizomes, stem bases and stolons.</td>
+</tr>
+<tr class="odd">
+<td>Black ash</td>
+<td>Dark ash where an unburnt fuel component remains.</td>
+</tr>
+<tr class="even">
+<td>Char</td>
+<td>Black carbon residue on vegetation and soil where incomplete
+combustion has occurred.</td>
+</tr>
+<tr class="odd">
+<td>Coarse woody debris (CWD)</td>
+<td>Includes whole fallen trees and branches and pieces of fragmented
+wood. CWD is defined here as any piece with a diameter ≥10 cm (or ≥5 cm
+in some systems). CWD does not include live material, standing dead
+trees, stumps, dead foliage, separated bark, non-woody pieces, roots or
+the part of the bole below the root collar.</td>
+</tr>
+<tr class="even">
+<td>Cover</td>
+<td>The percentage of the vertical projection of substrate type or
+vegetation, characterised by species, growth form and height of lower,
+mid and upper vegetation strata, present in a specific area (in this
+case the number of point-intercept hits as a percentage of the total
+number of point-intercepts).</td>
+</tr>
+<tr class="odd">
+<td>Epicormic resprouting</td>
+<td>Foliage resprouting from dormant buds under tree bark on the primary
+stem and branches following a fire. The buds, which are normally
+suppressed by hormones released from the canopy, are protected by the
+bark during a fire.</td>
+</tr>
+<tr class="even">
+<td>Fire intensity</td>
+<td>The amount of energy released during the combustion process.</td>
+</tr>
+<tr class="odd">
+<td>Fire patchiness</td>
+<td>The heterogeneity of burnt and unburnt patches</td>
+</tr>
+<tr class="even">
+<td>Fire severity</td>
+<td>The degree of consumption and scorching of live vegetation and dead
+fuel, and the degree to which soil properties and processes are altered
+due to combustion.</td>
+</tr>
+<tr class="odd">
+<td>GRS Densitometer™</td>
+<td>Instrument developed by Geographic Resource Solutions for measuring
+canopy cover during point-intercept sampling. A vertical sighting tube
+with crosshairs and a 45° mirror provide a quick and simple view of the
+immediate canopy coverage. Internal, offset levelling vials ensure
+accurate readings of the canopy directly above each point-intercept (see
+the Cover module for further details).</td>
+</tr>
+<tr class="even">
+<td>In canopy sky (ICS)</td>
+<td>Recorded when the vertical line of sight through the densitometer
+does not intercept any part of a tree's canopy (foliage and branches)
+but is within the boundary of the tree's canopy (see the Cover Module
+for further details). Allows point-intercept data to be expressed as
+foliage projective cover and opaque canopy cover.</td>
+</tr>
+<tr class="odd">
+<td>Monitor</td>
+<td>Field data collection app for Ecological Monitoring System
+Australia. Collects data using the Biodiversity Information Standard for
+delivery to the Australian Biodiversity Data Repository managed by the
+Department of Climate Change, Energy, the Environment and Water.</td>
+</tr>
+<tr class="even">
+<td>Point-intercept</td>
+<td>Method designed to sample species, growth-form, strata or substrate
+cover by placing a staff along a transect at regular intervals and
+determining the points that ‘hit’ (or intercept) vegetation or
+substrate. Percent cover is calculated as the number of hits divided by
+the total number of point-intercepts, multiplied by 100 (percent).</td>
+</tr>
+<tr class="odd">
+<td>Scorched vegetation</td>
+<td>Vegetation killed by proximal heating without direct flame contact
+(i.e. brown foliage that did not actually catch fire).</td>
+</tr>
+<tr class="even">
+<td>Trimble® R1</td>
+<td>A rugged, compact, lightweight Global Navigation Satellite System
+(GNSS) receiver (configured with the GNSS Status app) that provides
+professional-grade positioning information (sub-metre) to any connected
+mobile device using Bluetooth® connectivity.</td>
+</tr>
+<tr class="odd">
+<td>White ash</td>
+<td>Mineral ash where fuel has undergone complete combustion.</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 class="unnumbered" id="efficiency">Efficiency</h4>
+<ul>
+<li><p>Laying out a set of tape measures along multiple transects,
+rather than one transect at a time, is more efficient. This is
+particularly the case if the survey team comprises more generalist
+surveyors and/or volunteers who can lay out the tapes while the
+vegetation specialist commences the point-intercept transects.</p></li>
+<li><p>Tape measures should ideally be labelled metrically on both sides
+for ease of reading.</p></li>
+</ul>
+<h4 class="unnumbered" id="rules-for-determining-a-hit">Rules for
+determining a ‘hit’</h4>
+<ul>
+<li><p>Where a part of a plant of the same species and growth form is
+being intercepted at different heights, the uppermost intercept is
+recorded as a hit and all lower intercepts are ignored. This includes
+plants that are intercepted with the laser pointer, touching the staff
+between the laser pointer and the densitometer, and/or intercepting the
+vertical line of sight through the densitometer.</p></li>
+<li><p>If part of a tree or shrub intersects the vertical line of sight
+through the densitometer, this is recorded at a hit.</p></li>
+</ul>
+<h5 class="unnumbered" id="enhanced-protocol">Enhanced protocol</h5>
+<ul>
+<li><p>If you intercept a dead, charred or scorched plant and can
+determine what the species is, this is recorded as hit for that species
+but flagged as <em>dead</em>, <em>charred</em> or
+<em>scorched</em>.</p></li>
+<li><p>If you intercept a dead, charred or scorched plant but you cannot
+determine what the species is, this is recorded as the growth form
+(pre-recorded field names; e.g. <em>shrub</em>, <em>tree</em>) and
+flagged as <em>dead</em>, <em>charred</em> or
+<em>scorched</em>.</p></li>
+</ul>
+<h5 class="unnumbered" id="standard-protocol">Standard protocol</h5>
+<ul>
+<li><p>If you intercept a dead, charred or scorched plant, this is a hit
+and recorded as <em>non-photosynthetic vegetation</em>.</p></li>
+</ul>
+<h4 class="unnumbered" id="using-the-grs-densitometer">Using the GRS
+Densitometer™</h4>
+<ul>
+<li><p>Ensure the graduated staff is adjusted so that the densitometer
+is at eye-level.</p></li>
+<li><p>Level both of the densitometer bubble-levels and then look
+through the instrument so that the sighting marks (cross hairs and
+circle) are aligned.</p></li>
+<li><p>If working in bright sunlight, a piece of coloured cellophane can
+be placed over the top of the densitometer and secured with a rubber
+band to reduce glare.</p></li>
+</ul>
+<h4 class="unnumbered" id="in-canopy-sky">In canopy sky</h4>
+<ul>
+<li><p>The Cover Module illustrates when to apply <em>in canopy sky</em>
+(ICS).</p></li>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is fully enclosed within a canopy, ICS is
+recorded.</p></li>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is not within a canopy, nothing is
+recorded.</p></li>
+<li><p>The canopy perimeter (from an aerial or vertical perspective) is
+the extent of the outer layer of leaves of an individual tree or
+shrub.</p></li>
+</ul>
+<h5 class="unnumbered" id="enhanced-protocol-1">Enhanced protocol</h5>
+<ul>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is within the canopy of a dead, charred or
+scorched tree and you can determine what the species is, ICS is recorded
+for that species but flagged as <em>dead</em>, <em>charred</em> or
+<em>scorched.</em></p></li>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is within the canopy of a dead, charred or
+scorched tree, but you cannot determine what the species is, ICS is
+recorded for a <em>shrub</em> or <em>tree</em> (pre-recorded field
+names) and flagged as <em>dead</em>, <em>charred</em> or
+<em>scorched</em>.</p></li>
+</ul>
+<h5 class="unnumbered" id="standard-protocol-1">Standard protocol</h5>
+<ul>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is within the canopy of a live tree, this is
+a hit and recorded as <em>photosynthetic vegetation</em> and flagged as
+<em>in canopy sky</em>.</p></li>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is within the canopy of a dead tree, this is
+not a hit and nothing is recorded for the canopy.</p></li>
+</ul>
+<h4 class="unnumbered" id="estimating-vegetation-tree-char-and-scorch-height">Estimating
+vegetation, tree, char and scorch height</h4>
+<ul>
+<li><p>Heights significantly above the height of the staff should be
+estimated using a forestry rangefinder for rapid and accurate height
+measurements.</p></li>
+<li><p>When using a rangefinder, the distance and the angle to the top
+of the tree are measured at the same time, and then the distance angle
+to the base of the tree are measured at the same time. The internal
+calculator will then calculate the height. Ensure you are far enough
+from the tree, at least the distance of the height of the tree, and can
+see the top and base of the tree.</p></li>
+<li><p>Where a rangefinder is not available, tree height can be
+estimated using the following methods:</p></li>
+<li><p>Clinometer and tape</p></li>
+<li><p>Mobile phone applications</p></li>
+<li><p>When using a clinometer, find a place to stand where you can see
+the top of the tree. Your distance from the tree should at least be
+equal to the height of the tree. Measure the distance between yourself
+and the tree and measure the height from your eye to the ground. Look
+through the clinometer with one eye and at the tree with the other eye.
+Line up the crosshair in the clinometer with the top of the tree. Read
+the value on the percent scale. This gives you the tree's height as a
+percentage of the distance from the tree (e.g. a reading of 50% means
+the height of the tree is half the distance you are from the
+tree).</p></li>
+</ul>
+<ul>
+<li><p>Calculate the height of the tree using the equation:</p>
+<p><em>Tree height = clinometer reading / 100 x distance to tree + eye
+height</em></p></li>
+<li><p>On sloping ground, two readings will need to be taken (treetop
+(reading 1) and tree base (reading 2)). When the surveyor is above the
+level of the tree base, the two percent values are added. Calculate the
+height of the tree using the equation:</p>
+<p><em>Tree height = (clinometer reading 1 + clinometer reading 2) / 100
+x distance to tree</em></p></li>
+<li><p>When the surveyor is below the level of the tree base, the tree
+base percent is subtracted from the treetop percent. Calculate the
+height of the tree using the following equation:</p>
+<p><em>Tree height = (clinometer reading 1 - clinometer reading 2) / 100
+x distance to tree</em></p></li>
+<li><p>See <a href="#appendix-4">Appendix 4</a> for diagrams for using a clinometer in
+each situation.</p></li>
+</ul>
+<ul>
+<li><p>There are several mobile phone applications that provide an
+estimate of tree height. Like the clinometer guidelines above, a
+measurement of the distance to the tree is required to estimate the
+height.</p></li>
+</ul>
+<h1 id="post-field-survey-tasks">Post-field survey tasks</h1>
+<h2 id="time-since-fire">Time since fire</h2>
+<ul>
+<li><p>If not known during the field survey, record an estimate of the
+fire ignition date to the best of your knowledge. Later you may be able
+to consult available datasets (e.g. interactive online natural resources
+GIS datasets or other sources) and find a more accurate ignition date.
+If so, then go back into the Monitor app and edit the fire ignition date
+in the Fire Severity Module before submitting the data.</p></li>
+</ul>
+<h2 id="data-into-context">Data into context</h2>
+<ul>
+<li><p>See <a href="#appendices">Appendix</a> to place your continuous fire severity data into
+context with the discrete categorical classes commonly used to describe
+fire severity in Australia. These classes range from unburnt or low to
+high or extreme, with the classes and parameters used to distinguish
+these categories varying considerably between studies.</p></li>
+</ul>"""^^rdf:HTML ;
+    skos:prefLabel "Fire Severity Module" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/fire_severity/fire_severity.ttl"^^xsd:anyURI ;
+    tern:appendix """
+   <h1 id="appendices">Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Summary of
+categorical fire severity classes and the parameters used to distinguish
+these categories in Australia based on field measures and remote
+sensing.</h4></p>
+<table>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 15%"/>
+<col style="width: 27%"/>
+<col style="width: 16%"/>
+<col style="width: 19%"/>
+<col style="width: 8%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reference</th>
+<th>Fire severity class</th>
+<th>Parameters</th>
+<th>Field</th>
+<th>Remote<sup>1</sup></th>
+<th>Region</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="5">(Bowman <em>et al.</em> 2021)</td>
+<td>Unburnt</td>
+<td></td>
+<td rowspan="5">N/A</td>
+<td rowspan="5">Differenced indices including RdNBR and multiple other
+indices</td>
+<td rowspan="5">East coast</td>
+</tr>
+<tr class="even">
+<td>Low</td>
+<td>Burnt understorey, unburnt canopy</td>
+</tr>
+<tr class="odd">
+<td>Moderate</td>
+<td>Partial canopy scorch</td>
+</tr>
+<tr class="even">
+<td>High</td>
+<td>Full canopy scorch</td>
+</tr>
+<tr class="odd">
+<td>Extreme</td>
+<td>Full canopy consumption</td>
+</tr>
+<tr class="even">
+<td rowspan="6">(Chafer 2008)</td>
+<td>Unburnt</td>
+<td></td>
+<td rowspan="6">Assessed based on standard set of classification
+illustrations, scorch height (m), soil scorch depth (mm)</td>
+<td rowspan="6">Differenced NDVI and NBR indices derived from
+Landsat</td>
+<td rowspan="6">Southeast</td>
+</tr>
+<tr class="odd">
+<td>Low</td>
+<td>Grasses/herbs burnt</td>
+</tr>
+<tr class="even">
+<td>Moderate</td>
+<td>Shrubs consumed</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td>Lower canopy scorched</td>
+</tr>
+<tr class="even">
+<td>Very High</td>
+<td>Stems &lt;10 mm thick consumed</td>
+</tr>
+<tr class="odd">
+<td>Extreme</td>
+<td>Stems &gt;10 mm thick consumed</td>
+</tr>
+<tr class="even">
+<td rowspan="5">(Chafer <em>et al.</em> 2004)</td>
+<td>Low</td>
+<td>Ground fuel and low shrubs burnt</td>
+<td rowspan="5">Assessed based on standard set of classification
+illustrations</td>
+<td rowspan="5">Differenced NDVI index derived from SPOT2</td>
+<td rowspan="5">Southeast</td>
+</tr>
+<tr class="odd">
+<td>Moderate</td>
+<td>Ground fuel and shrubs to 4 m burnt</td>
+</tr>
+<tr class="even">
+<td>High</td>
+<td>Ground fuel and shrubs incinerated, canopy scorched</td>
+</tr>
+<tr class="odd">
+<td>Very High</td>
+<td>Ground fuel and shrubs incinerated, canopy completely burnt</td>
+</tr>
+<tr class="even">
+<td>Extreme</td>
+<td>All green vegetation burnt, stems &lt;10 mm thick incinerated</td>
+</tr>
+<tr class="odd">
+<td rowspan="5">(Collins <em>et al.</em> 2018)</td>
+<td>Unburnt (UB)</td>
+<td>&gt;90% of canopy and understorey foliage unburnt</td>
+<td rowspan="5">N/A</td>
+<td rowspan="5">Indices derived from Landsat (NBR, NDVI, NDWI, VARI,
+BAI)</td>
+<td rowspan="5">Southeast</td>
+</tr>
+<tr class="even">
+<td>Crown Unburnt (CU)</td>
+<td>&gt;90% of canopy foliage unburnt, understorey burnt</td>
+</tr>
+<tr class="odd">
+<td>Partial Crown Scorch (PCS)</td>
+<td>Canopy a combination of unburnt and scorched foliage (10–90%)</td>
+</tr>
+<tr class="even">
+<td>Crown Scorch (CS)</td>
+<td>&gt;90% of canopy foliage scorched</td>
+</tr>
+<tr class="odd">
+<td>Crown Consumption (CC)</td>
+<td>&gt;10% or canopy foliage consumed</td>
+</tr>
+<tr class="even">
+<td rowspan="5">(Collins <em>et al.</em> 2020)</td>
+<td>Unburnt (UB)</td>
+<td>Canopy and understorey foliage largely (&gt;90%) unburnt</td>
+<td rowspan="5">N/A</td>
+<td rowspan="5">Indices derived from Landsat (NBR, NDVI, NDWI, VARI,
+MSAVI, BAI, MIRBI, CSI)</td>
+<td rowspan="5">Southeast</td>
+</tr>
+<tr class="odd">
+<td>Low Canopy Scorch (LCS)</td>
+<td>Canopy foliage largely unaffected (&lt;20% scorched), understorey
+burnt</td>
+</tr>
+<tr class="even">
+<td>Medium Canopy Scorch (MCS)</td>
+<td>Canopy a mosaic of unburnt and scorched foliage (20–80%)</td>
+</tr>
+<tr class="odd">
+<td>High Canopy Scorch (HCS)</td>
+<td>&gt;80% of canopy foliage scorched</td>
+</tr>
+<tr class="even">
+<td>Canopy Burnt (CB)</td>
+<td>&gt;20% of canopy foliage consumed</td>
+</tr>
+<tr class="odd">
+<td rowspan="3">(Edwards <em>et al.</em> 2013)</td>
+<td>Low</td>
+<td>Leaf scorch ≤2 m and/or patchily burnt (at least 20% unburnt)</td>
+<td rowspan="3">Assessed based on standard set of classification
+illustrations</td>
+<td rowspan="3">Spectral ranges and derived indices (NDVI, NBR) with
+respect to MODIS</td>
+<td rowspan="3">Northern</td>
+</tr>
+<tr class="even">
+<td>Moderate</td>
+<td>Leaf scorch &gt;2 m, scorched to mid canopy only</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td>Leaf scorch &gt;2 m, canopy scorched</td>
+</tr>
+<tr class="even">
+<td rowspan="5">(Etchells <em>et al.</em> 2020)</td>
+<td>Unburnt</td>
+<td>All trees in plot unburnt</td>
+<td rowspan="5">Crown scorch assessment</td>
+<td rowspan="5">Differenced NBR index derived from Landsat</td>
+<td rowspan="5">Southwest</td>
+</tr>
+<tr class="odd">
+<td>Low</td>
+<td>&gt;50% of trees in plot with crown recovering from shoots on fine
+terminal branches</td>
+</tr>
+<tr class="even">
+<td>Moderate</td>
+<td>&gt;50% of trees in plot crown recovering from epicormic shoots on
+intermediate branches without extensive resprouting from the stem</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td>&gt;50% of trees in plot with crown dead with epicormic shoots on
+the stem only</td>
+</tr>
+<tr class="even">
+<td>Extreme High</td>
+<td>&gt;50% of trees in plot with complete crown consumption, no
+epicormic resprouting, trees completely dead</td>
+</tr>
+<tr class="odd">
+<td rowspan="5">(Gibson <em>et al.</em> 2020)</td>
+<td>Unburnt</td>
+<td>Unburnt surface with green canopy (0% canopy and understory
+burnt)</td>
+<td rowspan="5">N/A</td>
+<td rowspan="5">Differenced indices derived from Sentinel 2 (NBR, RdNBR,
+RdFCT, FCB, NDVI, BSI)</td>
+<td rowspan="5">Southeast</td>
+</tr>
+<tr class="even">
+<td>Low</td>
+<td>Burnt surface with unburnt canopy (&gt;10% burnt understory, &gt;90%
+green canopy)</td>
+</tr>
+<tr class="odd">
+<td>Moderate</td>
+<td>Partial canopy scorch (20–90% canopy scorch)</td>
+</tr>
+<tr class="even">
+<td>High</td>
+<td>Full canopy scorch ± partial canopy consumption (&gt;90% canopy
+scorched, &lt;50% canopy biomass consumed)</td>
+</tr>
+<tr class="odd">
+<td>Extreme</td>
+<td>Full canopy consumption (&gt;50% canopy biomass consumed)</td>
+</tr>
+<tr class="even">
+<td rowspan="14">(Hammill and Bradstock 2006)</td>
+<td colspan="2">Single-layered vegetation (heath, sedge-swamp)</td>
+<td rowspan="14">Assessed based on standard set of classification
+criteria</td>
+<td rowspan="14">Difference NDVI index derived from SPOT2 and
+Landsat</td>
+<td rowspan="14">Southeast</td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td>Unburnt</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Patchy burn, upper branches on shrubs unburnt</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>100% burnt, scorched leaves remaining</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>100% burnt, leaves consumed, shrubs charred on top</td>
+</tr>
+<tr class="odd">
+<td colspan="2">Multi-layered vegetation (eucalypt dominated woodland,
+forest and tall forest)</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>Understorey unburnt, crown unburnt</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Understorey ≤80% burnt, upper branches unburnt, crown unburnt</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Understorey 80–100% burnt, crown 0–70% burnt</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Understorey 100% burnt, scorched leaves retained or consumed; crown
+70–100% burnt, eucalypt litter ≥40%</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Understorey 100% burnt, leaves consumed, crown 100% burnt, eucalypt
+litter &gt;10% and &lt;40%</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Understorey 100% burnt, leaves and fine branches consumed, shrubs
+charred at top, crown 100% burnt, eucalypt litter ≤10%</td>
+</tr>
+<tr class="even">
+<td rowspan="8">(Hillman <em>et al.</em> 2021)</td>
+<td colspan="2">Sedgeland vegetation (&lt;3 m)</td>
+<td rowspan="8">N/A</td>
+<td rowspan="8">UAV Lidar and imagery</td>
+<td rowspan="8">Tasmania</td>
+</tr>
+<tr class="odd">
+<td>Unburnt</td>
+<td>Unburnt grass, or unchanged conditions</td>
+</tr>
+<tr class="even">
+<td>Not-severe</td>
+<td>Patchy burn on grass and litter incomplete</td>
+</tr>
+<tr class="odd">
+<td>Severe</td>
+<td>Grass combusted (&gt;80%) exposing bare soil, white or black
+ash</td>
+</tr>
+<tr class="even">
+<td colspan="2">Forest vegetation (&gt;3 m)</td>
+</tr>
+<tr class="odd">
+<td>Unburnt</td>
+<td>Unburnt</td>
+</tr>
+<tr class="even">
+<td>Not-severe</td>
+<td>&lt;50% crown scorch</td>
+</tr>
+<tr class="odd">
+<td>Severe</td>
+<td>&gt;50% crown scorch</td>
+</tr>
+<tr class="even">
+<td rowspan="3">(McKenna <em>et al.</em> 2017)</td>
+<td>Unburnt</td>
+<td>Unburnt grass, or unchanged ground conditions, canopy unchanged</td>
+<td rowspan="3">N/A</td>
+<td rowspan="3">UAV imagery</td>
+<td rowspan="3">Central Queensland</td>
+</tr>
+<tr class="odd">
+<td>Not Severe</td>
+<td>Patchy burn on grass and litter, incomplete combustion (&lt;80%),
+canopy partially scorched (&lt;50%), or evidence of ground below canopy
+burnt</td>
+</tr>
+<tr class="even">
+<td>Severe</td>
+<td>Grass combusted (&gt;80%) exposing bare soil, white ash or black
+ash, canopy scorched (&gt;50%)</td>
+</tr>
+<tr class="odd">
+<td rowspan="5">(Ndalila <em>et al.</em> 2018)</td>
+<td>Unburnt Vegetation</td>
+<td>No evidence of fire</td>
+<td rowspan="5">N/A</td>
+<td rowspan="5">Differenced NDVI and NBR indices derived from
+Landsat</td>
+<td rowspan="5">Tasmania</td>
+</tr>
+<tr class="even">
+<td>Intermittent Crown Scorch</td>
+<td>Understory fire with litter, herbs, and shrubs burnt and &lt;50% of
+upper canopy scorched</td>
+</tr>
+<tr class="odd">
+<td>Full Crown Scorch</td>
+<td>75–100% of upper tree canopy burnt</td>
+</tr>
+<tr class="even">
+<td>Intermittent Crown Fire</td>
+<td>Some leaves and twigs consumed while trunk is still visible</td>
+</tr>
+<tr class="odd">
+<td>Crown Fire</td>
+<td>Entire tree canopy completely consumed, charred plant remains or ash
+on the ground and blackened trunks</td>
+</tr>
+<tr class="even">
+<td rowspan="3">(Russell-Smith and Edwards 2006)</td>
+<td>Low</td>
+<td>Leaf scorch ≤2 m and/or patchily burnt (at least 20% unburnt)</td>
+<td rowspan="3">Assessed based on standard set of classification
+illustrations</td>
+<td rowspan="3">N/A</td>
+<td rowspan="3">Northern</td>
+</tr>
+<tr class="odd">
+<td>Moderate</td>
+<td>Leaf scorch &gt;2 m, scorched to mid canopy only</td>
+</tr>
+<tr class="even">
+<td>High</td>
+<td>Leaf scorch &gt;2 m, canopy scorched</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">(Tran <em>et al.</em> 2018)</td>
+<td>Unburnt</td>
+<td>&lt;1% of eucalypt and non-eucalypt crowns scorched</td>
+<td rowspan="4">N/A</td>
+<td rowspan="4">Differenced indices derived from Landsat (NDVI, NBR,
+NDWI, NDVIT, NBRT, VI6T, BAI, MSAVI, MIRBI, CSI)</td>
+<td rowspan="4">Southeast</td>
+</tr>
+<tr class="even">
+<td>Low Severity</td>
+<td>Light scorch of 1–35% of eucalypt and non-eucalypt crowns</td>
+</tr>
+<tr class="odd">
+<td>Moderate Severity</td>
+<td>30–65% of eucalypt and non-eucalypt crowns scorched</td>
+</tr>
+<tr class="even">
+<td>High Severity</td>
+<td>70–100% of eucalypt and non-eucalypt crowns burnt</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">(Walz <em>et al.</em> 2007)</td>
+<td>Unburnt</td>
+<td>No litter consumption, canopy layer not affected</td>
+<td rowspan="4"></td>
+<td rowspan="4"></td>
+<td rowspan="4">Southwest</td>
+</tr>
+<tr class="even">
+<td>Low Burn Severity</td>
+<td>Litter on forest floor consumed, understorey affected, estimated
+flame height ~50 cm, scorch height ~3 m</td>
+</tr>
+<tr class="odd">
+<td>Moderate Burn Severity</td>
+<td>Litter, herbs and low shrubs consumed, upper understorey affected,
+estimated flame height 1.5–2 m, scorch height up to 12 m</td>
+</tr>
+<tr class="even">
+<td>High Burn Severity</td>
+<td>Bare soil exposed, top canopy affected, estimated flame height 2–3
+m, scorch height up to 30 m</td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>1. Remote sensing abbreviations</u></strong></p>
+<p><strong>BAI:</strong> Burn Area Index. <strong>BSI:</strong> Bare
+Soil Index. <strong>CSI:</strong> Char Soil Index. <strong>FCB:</strong>
+Bare Fractional Cover. <strong>MIRBI</strong>: Mid InfraRed Burn Index.
+<strong>MODIS:</strong> Moderate Resolution Imaging
+Spectroradiometer.<br/>
+<strong>MSAVI:</strong> Modified Soil Adjusted Vegetation Index.
+<strong>NBR:</strong> Normalised Burn Ratio. <strong>NBRT:</strong>
+Normalised Burn Ratio Thermal. <strong>NDVI:</strong> Normalised
+Difference Vegetation Index.<br/>
+<strong>NDVIT:</strong> Normalised Difference Vegetation Index Thermal.
+<strong>NDWI:</strong> Normalised Difference Water Index.
+<strong>RdNBR:</strong> Relativised Differenced Normalised Burn
+Ratio.<br/>
+<strong>RdFCT:</strong> Relativised Differenced Total Fraction Cover.
+<strong>SPOT2:</strong> Satellite pour l'Observation de la Terre.
+<strong>UAV:</strong> Unmanned Aerial Vehicle. <strong>VARI:</strong>
+Visible Atmospherically Resistant Index.<br/>
+<strong>VI6T:</strong> Vegetation Index 6 Thermal.</p>
+<p><span class="anchor" id="appendix-2"></span><h4>Appendix 2. Substrate
+types and their definitions</h4></p>
+<p>(see bold text for substrates that can be flagged as charred or
+scorched).</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Substrate type</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bare</td>
+<td>Bare soil. <strong>Can be flagged as charred.</strong></td>
+</tr>
+<tr class="even">
+<td>Crypto</td>
+<td>Cryptogam – any moss, lichen, algae, etc. present on the soil
+surface with a different colour to the base soil. <strong>Can be flagged
+as charred or scorched.</strong></td>
+</tr>
+<tr class="odd">
+<td>Litter</td>
+<td>Dead vegetation not attached or identifiable; if litter is attached
+and identifiable as a species, it should be recorded as this species but
+flagged as being dead. <strong>Can be flagged as charred or
+scorched.</strong></td>
+</tr>
+<tr class="even">
+<td>CWD</td>
+<td>Coarse Woody Debris – detached wood with &gt;10 cm diameter at the
+intercept point. <strong>Can be flagged as charred.</strong></td>
+</tr>
+<tr class="odd">
+<td>Gravel</td>
+<td>Particles 2 mm – 2 cm. <strong>Can be flagged as
+charred.</strong></td>
+</tr>
+<tr class="even">
+<td>Rock</td>
+<td>Particles &lt;20 cm. <strong>Can be flagged as
+charred.</strong></td>
+</tr>
+<tr class="odd">
+<td>Outcrop</td>
+<td>Exposed consolidated rock (bedrock). <strong>Can be flagged as
+charred.</strong></td>
+</tr>
+<tr class="even">
+<td>Lichen on rock</td>
+<td>Lichen growing on rock. <strong>Can be flagged as charred or
+scorched.</strong></td>
+</tr>
+<tr class="odd">
+<td>Lichen on outcrop</td>
+<td>Lichen growing on bedrock. <strong>Can be flagged as charred or
+scorched.</strong></td>
+</tr>
+<tr class="even">
+<td>Water</td>
+<td>Body of water (sheet water, Gilgai).</td>
+</tr>
+<tr class="odd">
+<td>Black ash</td>
+<td>Powdery black residue remaining after the incomplete combustion of
+wood during a bushfire.</td>
+</tr>
+<tr class="even">
+<td>White ash</td>
+<td>Powdery white residue remaining after the complete combustion of
+wood during a bushfire.</td>
+</tr>
+<tr class="odd">
+<td>Unknown</td>
+<td>Unknown.</td>
+</tr>
+<tr class="even">
+<td>Other</td>
+<td>Substrate not listed.</td>
+</tr>
+<tr class="odd">
+<td>Not collected</td>
+<td>Point-intercept data not collected (e.g. cannot survey too dense
+area within plot).</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-3"></span><h4>Appendix 3. Growth
+forms and their definitions (NVIS Technical Working Group 2017).</h4></p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Growth form</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tree</td>
+<td>Woody plants, more than 2 m tall with a single stem or branches well
+above the base.</td>
+</tr>
+<tr class="even">
+<td>Tree mallee</td>
+<td>Woody perennial plant usually of the genus <em>Eucalyptus</em>.
+Multi-stemmed with fewer than five trunks of which at least three exceed
+100 mm diameter at breast height (1.3 m). Usually 8 m or more.</td>
+</tr>
+<tr class="odd">
+<td>Shrub</td>
+<td>Woody plants multi-stemmed at the base (or within 200 mm from ground
+level) or if single stemmed, less than 2 m.</td>
+</tr>
+<tr class="even">
+<td>Mallee shrub</td>
+<td>Commonly less than 8 m tall, usually with five or more trunks, of
+which at least three of the largest do not exceed<br/>
+100 mm diameter at breast height (1.3 m).</td>
+</tr>
+<tr class="odd">
+<td>Heath shrub</td>
+<td>Shrub usually less than 2 m, with sclerophyllous leaves having high
+fibre:protein ratios and with an area of nanophyll or smaller (less than
+225 mm<sup>2</sup>). Often a member of one the following families:
+<em>Ericaceae, Myrtaceae, Fabaceae</em> and <em>Proteaceae</em>.
+Commonly occur on nutrient-poor substrates.</td>
+</tr>
+<tr class="even">
+<td>Chenopod shrub</td>
+<td>Single or multi-stemmed, semi-succulent shrub of the family
+<em>Chenopodiaceae</em> exhibiting drought and salt tolerance.</td>
+</tr>
+<tr class="odd">
+<td>Samphire shrub</td>
+<td>Genera (of Tribe Salicornioideae, viz.: <em>Halosarcia</em>,
+<em>Pachycornia</em>, <em>Sarcocornia</em>, <em>Sclerostegia</em>,
+<em>Tecticornia</em> and <em>Tegicornia</em>) with articulate branches,
+fleshy stems and reduced flowers within the <em>Chenopodiaceae</em>
+family, succulent chenopods (Wilson 1980). Also the genus
+<em>Suaeda</em>.</td>
+</tr>
+<tr class="even">
+<td>Tussock grass</td>
+<td>Grass forming discrete but open tussocks usually with distinct
+individual shoots, or if not, then forming a hummock. These are the
+common agricultural grasses.</td>
+</tr>
+<tr class="odd">
+<td>Hummock grass</td>
+<td>Coarse xeromorphic grass with a mound-like form often dead in the
+middle; genus is <em>Triodia</em>.</td>
+</tr>
+<tr class="even">
+<td>Other grass</td>
+<td>Member of the family <em>Poaceae</em>, but having neither a
+distinctive tussock nor hummock appearance. Examples include
+stoloniferous species such as <em>Cynodon dactylon</em>.</td>
+</tr>
+<tr class="odd">
+<td>Sedge</td>
+<td>Herbaceous, usually perennial erect plant generally with a tufted
+habit and of the families <em>Cyperaceae</em> (true sedges) or
+<em>Restionaceae</em> (node sedges).</td>
+</tr>
+<tr class="even">
+<td>Rush</td>
+<td>Herbaceous, usually perennial erect monocot that is neither a grass
+nor a sedge. For the purposes of NVIS, rushes include the monocotyledon
+families <em>Juncaceae, Typhaceae, Liliaceae, Iridaceae, Xyridaceae</em>
+and the genus <em>Lomandra</em>. (i.e. "graminoid" or grass-like
+genera).</td>
+</tr>
+<tr class="odd">
+<td>Forb</td>
+<td>Herbaceous or slightly woody, annual or sometimes perennial plant.
+(Usually a dicotyledon).</td>
+</tr>
+<tr class="even">
+<td>Tree-fern</td>
+<td>Characterised by large and usually branched leaves (fronds),
+arborescent and terrestrial; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="odd">
+<td>Fern</td>
+<td>Ferns and fern allies, except tree-fern, above. Characterised by
+large and usually branched leaves (fronds), herbaceous and terrestrial
+to aquatic; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="even">
+<td>Bryophyte</td>
+<td>Mosses and Liverworts. Mosses are small plants usually with a
+slender leafbearing stem with no true vascular tissue. Liverworts are
+often moss-like in appearance or consisting of a flat, ribbon-like green
+thallus.</td>
+</tr>
+<tr class="odd">
+<td>Lichen</td>
+<td>Composite plant consisting of a fungus living symbiotically with
+algae; without true roots, stems or leaves.</td>
+</tr>
+<tr class="even">
+<td>Epiphyte</td>
+<td>Epiphytes, mistletoes and parasites. Plant with roots attached to
+the aerial portions of other plants. Can often be another growth form,
+such as fern or forb.</td>
+</tr>
+<tr class="odd">
+<td>Vine</td>
+<td>Climbing, twining, winding or sprawling plants usually with a woody
+stem.</td>
+</tr>
+<tr class="even">
+<td>Palm</td>
+<td>Palms and other arborescent monocotyledons. Members of the
+<em>Arecaceae</em> family or the genus <em>Pandanus</em>.
+(<em>Pandanus</em> is often multi-stemmed).</td>
+</tr>
+<tr class="odd">
+<td>Grass-tree</td>
+<td>Australian grass trees. Members of the <em>Xanthorrhoeaceae</em>
+family.</td>
+</tr>
+<tr class="even">
+<td>Cycad</td>
+<td>Members of the families <em>Cycadaceae</em> and
+<em>Zamiaceae</em>.</td>
+</tr>
+<tr class="odd">
+<td>Seagrass</td>
+<td>Flowering angiosperms forming sparse to dense mats of material at
+the subtidal and down to 30 m below MSL. Occasionally exposed.</td>
+</tr>
+<tr class="even">
+<td>Aquatic</td>
+<td>Plant growing in an inland waterway or wetland with the majority of
+its biomass under water for most of the year. Fresh, saline or brackish
+water.</td>
+</tr>
+<tr class="odd">
+<td>Lower plant</td>
+<td>Algae, fungus.</td>
+</tr>
+<tr class="even">
+<td>Unknown</td>
+<td>Unknown.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-4"></span><h4>Appendix 4. Diagrams
+for using a clinometer.</h4></p>
+<p>Level ground (a), ground sloping down (b) and ground sloping up
+(c)</p>
+<p><img alt="Level ground" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/fire/Appendix_4a.jpg" width="800"/></p>
+<p><img alt="New Image Description" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/fire/Appendix_4b.jpg" width="800"/></p>
+<p><img alt="New Image Description" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/fire/Appendix_4c.jpg" width="800"/></p>
+<blockquote>
+</blockquote>"""^^rdf:HTML ;
+    tern:equipment """
+   <h3 id="equipment">Equipment</h3>
+<ul>
+<li><p>Mobile device (tablet/phone) with the Monitor app</p></li>
+<li><p>100 m tape measures</p></li>
+<li><p>Tent pegs to mark ends of transects and hold the surveyor tape
+measures in place</p></li>
+<li><p>Flagging tape (brightly coloured to make sighting transect ends
+easier)</p></li>
+<li><p>Graduated staff with 10 cm markings (continually adjustable
+painters pole that can be easily adjusted to different surveyors eye
+heights)</p></li>
+<li><p>GRS Densitometer™ with the ability to be mounted on top of staff
+(required for use on plots with overstorey tree canopy cover;
+instructions for building the mount can be found in the supplementary
+document <em>Densitometer mount instructions</em>)</p></li>
+<li><p>Laser pointer with spare batteries (mounted/taped to staff at 1.5
+m and pointing downwards)</p></li>
+<li><p>Forestry rangefinder (e.g. Nikon Forestry Pro II) or another tool
+for measuring tree height (e.g. clinometer, ‘Arboreal – Tree Height’
+mobile device app)</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """
+    <h1 id="fire-protocol">Fire Protocol</h1>
+<h2 id="field-collection">Field collection</h2>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – The point-intercept transect
+grid is aligned to the plot defined boundaries.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – Species data are recorded using naming
+consistent with the flora species identifications/assigned field names
+and growth forms recorded in the Floristics Module.</p></li>
+</ul>
+<h3 id="time-requirements">Time requirements</h3>
+<ul>
+<li><p>Allow an additional 30–60 minutes to the time required to
+complete the Cover Module to collect additional fire severity data at
+each of the 404 point-intercepts.</p></li>
+<li><p>Allow up to 20 minutes to collect the trunk char height
+data.</p></li>
+</ul>
+<h3 id="personnel-requirements">Personnel requirements</h3>
+<p>Number of personnel and skills:</p>
+<ul>
+<li><p>Point-intercept surveys are best conducted with two personnel,
+one making the point-intercept<br/>
+observations, and the other recording the data directly into the app and
+assisting with tree height<br/>
+measurements.</p></li>
+<li><p>The surveyor that conducted the Floristics module should be
+involved to ensure consistent nomenclature.</p></li>
+<li><p>The surveyor making the observations should be familiar with and
+experienced in identifying the characteristic features of burnt
+vegetation, as well as the characteristic identifiable features of flora
+species and how to distinguish one species from another. If surveyors
+are not confident, time should be dedicated to practising, using field
+reference guides, and seeking advice before conducting this
+protocol.</p></li>
+<li><p>Point-intercept surveys do not involve interference with
+vegetation or wildlife. Therefore, scientific permits and wildlife
+ethics approvals are unlikely to be required but always check with your
+local authority. Access permissions are required.</p></li>
+</ul>
+<h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<h4 class="unnumbered" id="fire-severity-point-intercept">Fire severity
+point-intercept</h4>
+<ol type="1">
+<li><p>Ensure the Plot Selection and Layout Module has been completed to
+mark out the plot boundary and define the current plot and visit in the
+Monitor App.</p></li>
+<li><p>Ensure the Floristics Module has been completed to ensure species
+data are recorded using naming consistent with the flora species
+identifications/assigned field names and growth forms recorded in the
+Floristics Module.</p></li>
+<li><p>Ensure you are familiar with the instructions and procedures and
+guidelines outlined in the Cover Module.</p></li>
+<li><p>Lay out the N2/S2, N4/S4, E2/W2 and E4/W4 transects (<a href="#figure-1">Figure 1</a>).
+For each transect, lay out a 100 m tape measure using a tent peg to
+secure the end in place. Ensure the tape is orientated to align with the
+plot grid, is as straight as possible, and is laid on the ground and not
+draped over shrubs wherever possible.</p></li>
+<li><p>Move to the 0 m mark of the first transect you wish to complete.
+It does not matter which order, or which direction each transect is
+completed, as your start position will be recorded in Step 10.</p></li>
+<li><p>In the Monitor app, select the Cover Module and then the relevant
+protocol (<em>Standard</em> or <em>Enhanced</em>), depending on which
+protocol you are required to undertake for your project.</p></li>
+<li><p>Check the box to record the plot as <em>burnt</em>. This will
+reveal the fire severity data fields in the Cover Module. If you are
+undertaking the Enhanced Cover protocol, the fire severity data fields
+will only be accessible when completing the N2/S2, N4/S4, E2/W2 and
+E4/W4 transects, and the following steps relate only to those
+transects.</p></li>
+<li><p>Record the fire ignition date so the time since fire can be
+calculated. This date may be based on on-ground knowledge and/or
+available datasets (e.g. interactive online natural resources GIS
+datasets).</p></li>
+<li><p>If the date is an estimate, check the <em>ignition date is
+estimate</em> box and select the <em>date accuracy</em> level (month or
+year). If, after completing the survey, you acquire a more accurate
+ignition date, you may go back into the Monitor app and edit the fire
+ignition date in the Fire Severity Module (see 4.1 Time since
+fire).</p></li>
+<li><p>Record your starting point from the drop-down list (i.e. N2, N4,
+S2, S4, E2, E4, W2 or W4). This records the transect you are on and the
+direction you are travelling in (e.g. ‘N2’ means you are starting at the
+northern end of transect 2 and moving from north to south, while ‘S4’
+means you are starting at the southern end and of transect 4 and moving
+from south to north).</p></li>
+<li><p>Place the bottom of the staff at the 0 m mark of the tape
+measure. Ensure the staff is vertical and the laser pointer is pointing
+downwards so the laser beam will intercept the ground near the base of
+the staff.</p></li>
+<li><p>For each point-intercept, begin by recording the nature of the
+substrate that is intercepted by the laser beam. Press the button on the
+laser pointer. If the laser beam is intercepted by vegetation, move the
+vegetation aside so that the laser beam reaches the substrate. Flag the
+substrate as <em>charred</em> or <em>scorched</em> where relevant (see<a href="#appendix-2">Appendix 2</a>).</p></li>
+<li><p>If undertaking the Enhanced Cover protocol, record the vascular
+plants that are intercepted with the laser pointer, touching the staff
+between the laser pointer and the densitometer, and/or intercepting the
+vertical line of sight through the densitometer. Where a part of a plant
+of the same species and growth form is being intercepted at different
+heights, the uppermost intercept is recorded as a hit and all lower
+intercepts are ignored. This rule holds true for multiple intercepts of
+the same species and growth form (see <a href="#appendices">Appendix</a>). Record the plant's
+species name and growth form along with the uppermost height of the
+point-intercept. Intercept height should be recorded in meters rounded
+to the nearest centimetre from the markings on the staff.</p></li>
+<li><p>If undertaking the Standard Cover protocol<em>,</em> record the
+fractional cover (<em>photosynthetic vegetation, non-photosynthetic
+vegetation, branch</em>) of the vascular plants that are intercepted
+with the laser pointer, touching the staff between the laser pointer and
+the densitometer, and/or intercepting the vertical line of sight through
+the densitometer, along with the height of each intercept.</p></li>
+<li><p>If the intercepted plant is dead, flag as <em>dead</em>.</p></li>
+<li><p>Flag if the part of the plant
+being intercepted is <em>charred</em> or <em>scorched</em> (<a href="#table-1">Table 1</a>;
+<a href="#figure-2">Figure 2</a>).</p></li><img alt="Char" height="400" id="figure-2" src="https://w3id.org/tern/static/dawe-rlp/latest/fire/Picture 2_Char.png" width="800"/>
+<li><p>If no part of the foliage or branches are sighted in the cross
+hairs of the densitometer but the vertical line of sight is still within
+the canopy boundary of <u>live</u> plants only, flag as <em>in canopy
+sky</em>.</p></li>
+<li><p>Flag if the part of the plant
+    being intercepted is resprouting. Record if the resprouting type is
+    <em>basal</em>, <em>epicormic</em> or <em>apical</em> (<a href="#table-1">Table 1</a>; <a href="#figure-3">Figure 3</a>).</p></li>
+<img alt="Resprouting" height="400" id="figure-3" src="https://w3id.org/tern/static/dawe-rlp/latest/fire/Picture3_Resprouting.png" width="800"/>
+<li><p>If undertaking the Enhanced Cover protocol and the plant is
+<em>dead</em>, <em>charred</em> or <em>scorched</em> and you cannot
+determine what the species is, record the growth form (pre-recorded
+field names; e.g. <em>shrub</em>, <em>tree</em>) and flag it as
+<em>dead</em>, <em>charred</em> or <em>scorched</em>.</p></li>
+<li><p>Repeat steps 13 to 18 for all other plant species that are
+intercepted.</p></li>
+<li><p>Repeat steps 12 to 19 at every 1 m interval along the transect.
+This will give a total of 101 point-intercepts for the
+transect.</p></li>
+<li><p>Repeat steps 10 to 20 for each of the remaining fire severity
+point-intercept transects until all 4 have been completed. This will
+give 404 point-intercepts for the plot.</p></li>
+<li><p>At the completion of the point-intercept data collection, select
+<em>finish point-intercept</em>.</p></li>
+<li><p>Leave the four transects laid out so the trunk char height
+measurements can be taken at the four locations where the transects
+intersect. Otherwise, mark these locations with tent pegs and flagging
+tape before packing up the transects.</p></li>
+</ol>
+<h4 class="unnumbered" id="trunk-char-height">Trunk char height</h4>
+<ol type="1">
+<li><p>The <em>trunk char height</em> component appears below the
+<em>fire severity point-intercept</em> component in the app.</p></li>
+<li><p>Move to the first trunk char height sampling location you wish to
+complete (NW, NE, SE, and SW; see <a href="#figure-1">Figure 1</a>) It does not matter which
+order the sampling locations are surveyed in.</p></li>
+<li><p>Record the location from the drop-down list (NW, NE, SE or SW;
+see <a href="#figure-1">Figure 1</a>)</p></li>
+<li><p>Select whether charred trunks are visible at this location. If
+there are no charred trunks visible, select <em>no</em> and move to the
+next location. If there are charred trunks visible, rotate through a
+complete 360° sweep and record the maximum trunk char height observed in
+metres.</p></li>
+<li><p>Repeat steps 3 and 4 at each sampling location.</p></li>
+<li><p>When all four sampling locations have been surveyed, select
+<em>finish module</em>.</p></li>
+</ol>"""^^rdf:HTML ;
+    tern:purpose """
+    <h2 id="rationale">Rationale</h2>
+<p>Fire is a prevalent ecological process in Australia that shapes
+landscape patterns and ecosystem processes through its influence on
+vegetation distribution and structure (Bond and Keeley 2005; Bowman
+<em>et al.</em> 2009), and to which flora and fauna are adapted (Johnson
+1995; Gosper <em>et al.</em> 2012; Gordon <em>et al.</em> 2017).
+However, fire frequency, duration, extent and intensity, and the length
+of the fire season, are predicted to increase in Australia in response
+to climatic drivers and natural and anthropogenic disturbances (Bowman
+<em>et al.</em> 2020; Etchells <em>et al.</em> 2020; Godfree <em>et
+al.</em> 2021). The predicted shift in Australia's fire regime will
+likely have critical consequences for biodiversity, landscape patterns
+and ecosystem processes due to increased fire severity and associated
+changes in post-fire recovery. Understanding fire severity is,
+therefore, pivotal to ensure that adaptive management strategies
+suitable for the prevailing fire regime can be developed.</p>
+<p>Fire severity is commonly described in discrete categorical classes
+that range from unburnt or low to high or extreme (see <a href="#appendix-1">Appendix 1</a>), with
+the classes and parameters used to distinguish these categories varying
+considerably between studies (Chafer <em>et al.</em> 2004; Hammill and
+Bradstock 2006; Russell-Smith and Edwards 2006; Chafer 2008).
+Furthermore, Australia's states and territories all map and assess fire
+severity differently, which has led to inconsistent and incomplete
+datasets. The lack of standardised data inhibits the ability to
+accurately quantify the scale and ecological impact of fires across the
+country (Bowman <em>et al.</em> 2020).</p>
+<p>Field-based fire severity classification is predominantly based on a
+visual estimate of the degree of impact from a fire, including estimates
+of the cover of burnt material in each stratum and comparisons to
+reference photographs of each class (Chafer <em>et al.</em> 2004;
+Hammill and Bradstock 2006; Russell-Smith and Edwards 2006; Chafer 2008)
+However, this approach can lead to classification discrepancies due to
+differences in observer interpretation (Chafer <em>et al.</em> 2004).
+Similarly, estimating vegetation cover visually using cover classes
+(e.g. Braun-Blanquet 1932) can be biased, imprecise and poor at
+detecting change since classes are often too broad (Vittoz and Guisan
+2007; Godínez-Alvarez <em>et al.</em> 2009).</p>
+<p>Rather than visually classifying a plot into a fire severity
+category, the Fire Severity Module collects quantitative field
+measurements of fire severity attributes using the point-intercept
+method, which is an objective, repeatable and precise method to assess
+cover for all strata (Vittoz and Guisan 2007; Godínez-Alvarez <em>et
+al.</em> 2009; Bonham 2013). The method is straightforward and allows
+for detailed spatial and temporal comparisons of changes in cover
+between plot samples with minimal uncertainty arising from the
+measurement method or observer variation (Guerin <em>et al.</em> 2017),
+(Brady <em>et al.</em> 1995) The quantitative field measurements can
+also be used to develop continuous fire severity indices (Edwards <em>et
+al.</em> 2013).</p>
+<p>Data is collected from a total of 404 point-intercepts along four 100
+m transects in a grid layout (2 N/S and 2 E/W). This provides a reliable
+measure of the cover and patchiness of burnt and unburnt substrate and
+vegetation in each stratum and is appropriate for detecting overall
+change at the plot level. Measuring patchiness provides insight into the
+implications on population dynamics of fire-interval-sensitive plant
+species, with small amounts of patchiness being shown to substantially
+enhance their survival (Oliveira <em>et al.</em> 2015). Furthermore,
+measures of patchiness can provide insight into the potential impacts of
+fire on fauna (Noske 1992; Trainor <em>et al.</em> 2000; Fraser <em>et
+al.</em> 2003; Andersen <em>et al.</em> 2005). See the Cover Module for
+a detailed rationale of the point-intercept method.</p>
+<p>The attributes used to quantify fire severity in the plot were
+selected based on those commonly used to classify fire severity (Whight
+and Bradstock 1999; Hammill and Bradstock 2006; Russell-Smith and
+Edwards 2006; Chafer 2008; Oliveira <em>et al.</em> 2015) and used in
+fire severity indices (Whight and Bradstock 1999; Key and Benson 2006;
+Jain <em>et al.</em> 2008), as well as their capacity to be easily
+collected using the point-intercept method (Edwards <em>et al.</em>
+2013; Oliveira <em>et al.</em> 2015). The latter allows the Fire
+Severity Module to be undertaken simultaneously with the Cover Module,
+with the fire severity data collected and the respective cover data at
+each point-intercept.</p>
+<p>Maximum trunk char height is measured from four sampling locations
+within the plot, where the four point-intercept transects intersect.
+This is an important indicator of fire severity (Chafer 2008; Keeley
+2009; Edwards <em>et al.</em> 2013; Oliveira <em>et al.</em> 2015),
+which is unlikely to be sampled adequately using the point-intercept
+method due to the vertical orientation of tree trunks. Furthermore,
+trunk char height may be used as a surrogate for flame height and is
+thus a potential post-fire indicator of fire intensity (Williams <em>et
+al.</em> 2003).</p>
+<p>Time since fire is recorded based on on-ground knowledge and
+available datasets. The time since fire that a survey is undertaken
+influences the ecological character of fire severity through first-order
+effects, including delayed survivorship and mortality. Survivorship can
+diminish measures of fire severity as burnt vegetation remains viable
+and regenerates. For this reason, the cover of regenerating vegetation
+is also recorded. Conversely, delayed mortality can inflate fire
+severity measures when apparently healthy vegetation is in fact damaged
+by heat to the extent that it dies over time (Key 2006). For these
+reasons, temporal information accompanying the fire severity measures is
+recorded to ensure the correct interpretation and comparison of the
+data.</p>
+<p><img alt="Plot Layout" id="figure-1" height="750" src="https://w3id.org/tern/static/dawe-rlp/latest/fire/Picture 1.jpg" width="650"/></p>
+<p><span class="anchor"></span>Figure 1. Plot layout
+showing the four standard point-intercept transects and four trunk char
+height sampling locations.</p>"""^^rdf:HTML ;
+    tern:scope """
+      <h1 id="introduction-and-background">Introduction and Background</h1>
+<p>The Condition Module involves the collection of quantitative,
+accurate and repeatable measures of condition within the plot, using a
+combination of point and plot-based methods. The Condition Module
+includes methods for collecting data on plant age class structure, plant
+health and size, litter depth, coarse woody debris and recruitment.
+Elements of the Coarse Woody Debris Module and Recruitment Module form
+part of the Condition Module and data from other modules such as
+Floristics, Cover, Fire Severity and Signs-based Fauna Surveys are also
+important measures for the overall assessment of condition. The
+definition of condition adopted here is revised from the AusPlots Draft
+Condition Protocol (Wundke <em>et al.</em> 2015) and is as follows:</p>
+<ul>
+<li><p>Biodiversity condition is a measure of the status of the biota at
+an assessment site described by key attributes that reflect structure,
+function and composition.</p></li>
+</ul>
+<p>The Condition Module has been designed to improve consistency and
+repeatability in the way condition is measured across Australia and
+provide increased opportunities for analysis. The primary aim of the
+Condition Module is to collect baseline and revisit data, so any changes
+in condition metrics following management interventions can be
+evaluated.</p>
+<p>Existing frameworks and procedures to assess condition differ in
+their approach, and this is reflective of the range of legislative,
+management and policy objectives in place, as well as available
+resources (Eyre <em>et al.</em> 2015). Methods and protocols for
+assessing and monitoring condition have been developed in all states and
+territories (Williams 2010), and include BioCondition in Queensland
+(Eyre <em>et al.</em> 2015), the Biodiversity Assessment Method (BAM) in
+New South Wales (DPIE 2020), Habitat Hectare Assessment in Victoria (DSE
+2004), TasVeg in Tasmania (Michaels 2006), Bushland Condition Monitoring
+(BCM) in South Australia (Milne et al. 2008), Vegetation Condition
+Assessment in the Northern Territory (Brocklehurst and Price 2008) and
+Native Vegetation Condition Assessment in Western Australia (Casson et
+al. 2009). However, the degree these methods have been adopted and
+utilised varies between states and territories.</p>
+<p>The methods developed by the states and territories have generally
+been designed as practical, rapid assessments, appropriate for use by
+non-specialists. All have a measure of species composition, plant cover,
+life history, weeds and logs (coarse woody debris), and all assess
+regeneration or recruitment of canopy or woody species as a measure of
+ecosystem function. To measure condition, these methods generally
+involve comparison against a reference or benchmark (Williams 2010). The
+methods provided here build from the approach developed for the AusPlots
+Draft Condition Protocols Manual (Wundke <em>et al.</em> 2015) and align
+with existing state and territory methods, where possible.</p>
+<p>As more attributes are assessed, the overall picture of biodiversity
+condition becomes more comprehensive (Casson <em>et al.</em> 2009).
+However, one of the main challenges for developing condition protocols,
+is deciding on a set of attributes that are flexible enough to be
+applied across Australia, but are also robust, repeatable and cost
+effective (NERP National Condition Working Group 2015). The condition
+assessment framework presented here, draws on data from a range of
+attributes, sourced from a number of the modules, including a core set
+from the Condition Module, as well as data from the Recruitment Module,
+Coarse Woody Debris Module, Fire Severity Module, Signs-based Fauna
+Surveys Module, Floristics Module, and Cover Module. Where required,
+condition assessments can also include data from other modules,
+including Vertebrate Fauna Module, Invertebrate Fauna Module and Soils
+Module.</p>
+<p>The key attributes that should be considered as part of a condition
+assessments include:</p>
+<ul>
+<li><p>plant age class structure (Condition Module and Recruitment
+Module)</p></li>
+<li><p>life-stage and growth stage (Condition Module and Recruitment
+Module)</p></li>
+<li><p>plant health (Condition Module)</p></li>
+<li><p>browsing damage (Herbivory and Physical Damage Module)</p></li>
+<li><p>litter depth (Condition Module)</p></li>
+<li><p>seedling, sapling and juvenile counts (Recruitment
+Module)</p></li>
+<li><p>coarse woody debris size and abundance (Coarse Woody Debris
+Module)</p></li>
+<li><p>fire extent and severity (Fire Severity Module)</p></li>
+<li><p>native plant species diversity (Floristics Module)</p></li>
+<li><p>native plant cover (Cover Module)</p></li>
+<li><p>substrate cover (Cover Module)</p></li>
+<li><p>weed diversity (Floristics Module)</p></li>
+<li><p>weed cover (Cover Module)</p></li>
+<li><p>pest vertebrate fauna presence (Signs-based Fauna Survey
+Module)</p>
+<p>Additional measures include:</p></li>
+<li><p>disturbance (Plot Description Module)</p></li>
+<li><p>vertebrate fauna diversity (Vertebrate Fauna Module)</p></li>
+<li><p>invertebrate fauna diversity (Invertebrate Fauna Module)</p></li>
+<li><p>soil characterisation (Soils Module)</p></li>
+<li><p>bulk density (Soils Module)</p></li>
+<li><p>soil surface condition and erosion (Soils Module)</p></li>
+</ul>
+<h3 id="analysing-condition-data">Analysing condition data</h3>
+<p>Condition is generally assessed by measuring a range of features and
+then combining these into an index of condition, which is then compared
+against a benchmark to generate a condition score (Cook et al. 2010).
+Benchmarks are generally based on a pre-European (1750) state, prior to
+significant development and disturbance (Thackway et al. 2015), or a
+Best on Offer site (BOO, Eyre <em>et al.</em> 2017). Once a set of
+benchmarks have been established for a vegetation type, the condition of
+any example of that type can be quantified by comparing the site values
+with the benchmark values (Parkes <em>et al.</em> 2003; Eyre <em>et
+al.</em> 2015). Condition scores can be generated from a mix of field
+and remote measures (Eyre et al. 2015; Harwood et al. 2016; Lawley et
+al. 2016; McFarlane and Wallace 2019), and to generate condition scores,
+primary data is usually converted into an attribute condition score, and
+then weighted and aggregated into a single site multi-metric score
+(Oliver <em>et al.</em> 2014; Eyre <em>et al.</em> 2015). This approach
+can be straightforward and easy to understand, and allows a range of
+information to be presented as a simple numeric or visual summary (Pert
+et al. 2012). However, multi-metric condition scores have two main
+shortcomings including:</p>
+<ul>
+<li><p>loss of useful information at the attribute level, and</p></li>
+<li><p>generation of similar condition scores for very different sites
+through attribute eclipsing - the absence of one attribute being
+compensated for by the presence of another (Oliver <em>et al.</em>
+2014).</p></li>
+</ul>
+<p>An alternative approach is to assess each condition attribute
+individually against a baseline or reference measure. This approach
+avoids masking individual attribute scores, which allows a more thorough
+understanding of the outcomes of management actions (ESCAVI 2007; Milne
+et al. 2008), and as such is the approach recommended here. In addition,
+benchmarks are incomplete and lack consistency across Australia and
+given these limitations, alternative analysis options are required (Eco
+Logical Australia 2013).</p>
+<p>The collection of condition data using this protocol is focused on
+recording continuous rather than categorial data, as this allows
+flexibility when analysing and interpreting data. Collecting data in
+this way allows changes in individual attributes to be monitored,
+aggregated and analysed to explore a range of issues related to
+vegetation condition (Williams 2010). Analysis can be undertaken in a
+range of ways or a combination of ways, using the data collected,
+including:</p>
+<ul>
+<li><p>Comparison of intervention (treatment) and control plots over
+time, against baseline plot measures.</p></li>
+<li><p>Generation of benchmarks from suitable nearby reference areas
+using the same plot methods, to allow comparison of condition attributes
+from intervention or development areas, against relatively unmodified or
+best on offer reference areas.</p></li>
+<li><p>Utilisation of state or territory benchmark data and associated
+scoring algorithms, where available, to generate condition scores for
+the plots studied.</p></li>
+<li><p>Generation of a new scoring algorithm using the plot data
+collected and benchmark plots, to generate a condition score for each
+plot studied (the condition attributes included can be tailored to
+project needs and weighted accordingly).</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:undertakenAfter
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
+        <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2> ,
+        <https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508> ,
+        <https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ,
+        <https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970> ,
+        <https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ;
+.
+
