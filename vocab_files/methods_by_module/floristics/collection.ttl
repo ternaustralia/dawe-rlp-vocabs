@@ -13,6 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:description """
     <h3>Contents</h3>
   <ol>
+    <li><a href="#module-overview">Module Overview</a></li>
     <li><a href="#introduction">Introduction</a></li>
     <li>
       <a href="#key-definitions-and-terminology"
@@ -20,7 +21,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       >
     </li>
     <li><a href="#rationale">Rationale</a></li>
-    <li><a href="#module-overview">Module Overview</a></li>
     <li><a href="#references">References</a></li>
     <li><a href="#appendices">Appendices</a></li>
   </ol>
@@ -34,7 +34,7 @@ species present in a plot for identification by the relevant herbarium
 (or approved taxonomist).</p></li>
 <li><p><a href="https://linked.data.gov.au/def/nrm/bc2ba93e-43f9-425f-83cd-bbf5c422bdf8">Standard protocol</a> – plant specimen vouchers collected for a
 subset of the species (new, unknown, important, contentious and
-threatened species; see Table 1) present in a plot for identification by
+threatened species; see <a href="#key-definitions-and-terminology">Table 1</a>) present in a plot for identification by
 the relevant herbarium (or approved taxonomist). Field botanist
 identification and plant photo vouchers collected for the remaining
 species.</p></li>
@@ -113,7 +113,29 @@ recorded.</p></li>
 <li><p><a href="https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportune Module</a> – field names assigned in both modules require
 consistent naming if the same unknown flora species is
 recorded.</p></li>
-</ul>"""^^rdf:HTML ;
+</ul>
+<table>
+<colgroup>
+<col style="width: 51%"/>
+<col style="width: 48%"/>
+</colgroup>
+<thead>
+<tr class="nav">
+<img id="figure-1" alt="Herbarium_A" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Herbarium_A.jpg" width="300"/>
+<img alt="Herbarium_B" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Herbarium_B.png" width="300"/>
+<img alt="Herbarium_C" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Herbarium_C.jpg" width="300"/>
+</tr>
+<td><p><span class="anchor"></span></p>
+<p>Figure 1. Plant specimen vouchers. Plant specimen vouchers mounted on A3 paper. (A) Plant material, including leaves, buds, flowers and fruit, taken
+from a large species. An envelop is used to store material that has come loose (top left). (B) Whole plant of a small species (centre). (C) Mulitiple individuals of a small species (right).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><img  id="figure-2" alt="Plant specimen voucher placed in a newspaper sheet in a field press." height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Figure_2.jpg" width="600"/></p>
+<p><span class="anchor"></span>Figure 2. Plant
+specimen voucher placed in a newspaper sheet in a field press.</p>
+"""^^rdf:HTML ;
     dcterms:source """
     <h1 id="references">References</h1>
 <p>Andrae, J, McInerney, F, Polissar, P, Sniderman, J, Howard, S, Hall,
@@ -370,7 +392,7 @@ identification (see <a href="#appendix-3">Appendix 3</a>).</td>
 <td>Consists of a wooden or metal frame (for rigidity), corrugated
 cardboard ventilators (to allow air to flow through the press), folded
 paper, typically a newspaper page (to absorb moisture and contain the
-plant material), and straps to tighten the press (see Figure 2). Used to
+plant material), and straps to tighten the press (see <a href="#figure-2">Figure 2</a>). Used to
 extract moisture from plant specimen vouchers in the shortest period,
 while preserving the morphological integrity of the plant, in order to
 be mounted on herbarium paper for long-term storage.</td>
@@ -380,7 +402,7 @@ be mounted on herbarium paper for long-term storage.</td>
 <td>Plant specimen voucher</td>
 <td>A pressed and dried specimen of an individual plant, containing
 aboveground structures (leaves, stems, bark, flowers, fruits, seeds) and
-belowground structures (roots, rhizomes) when possible (see Figure 1).
+belowground structures (roots, rhizomes) when possible (see <a href="#figure-1">Figure 1</a>).
 When lodged in herbaria, specimens are usually mounted onto acid-free
 paper, although depending on the type of specimen, they may be stored in
 a box, packet or jar under controlled environmental conditions (Culley
@@ -421,8 +443,8 @@ examination and further study.</td>
     skos:prefLabel "Floristics Module" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/floristics/collection.ttl"^^xsd:anyURI ;
     tern:appendix """
-    <h1 id="appendices-1">Appendices</h1>
-<p><span class="anchor" id="appendix_1"></span><h4>Appendix 1. Growth
+    <h1 id="appendices">Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Growth
 forms and their definitions.</h4></p>
 <p>(pages 37–38; NVIS Technical Working Group 2017)</p>
 <table>
@@ -585,7 +607,7 @@ water.</td>
 </tr>
 </tbody>
 </table>
-<p><span class="anchor" id="appendix_2"></span></p>
+<p><span class="anchor" id="appendix-2"></span></p>
 <p><h4>Appendix 2. Terms used to describe habit.</h4></p>
 <p>Uses terms and controlled vocabularies of HISPID 6.0 and Darwin Core
 (DwC).</p>
@@ -655,7 +677,7 @@ water.</td>
 </tr>
 </tbody>
 </table>
-<p><span class="anchor" id="appendix_3"></span></p>
+<p><span class="anchor" id="appendix-3"></span></p>
 <p><h4>Appendix 3. Phenological attributes of a specimen.</h4></p>
 <p>Uses terms and controlled vocabularies of HISPID 6.0 and Darwin Core
 (DwC).</p>
@@ -718,7 +740,7 @@ age.</td>
 </tr>
 </tbody>
 </table>
-<p><span class="anchor" id="figure_4"></span><h4>Appendix 4. Plant photo
+<p><span class="anchor" id="appendix-4"></span><h4>Appendix 4. Plant photo
 voucher examples.</h4></p>
 <table>
 <colgroup>
@@ -762,7 +784,7 @@ voucher examples.</h4></p>
 </tr>
 </tbody>
 </table>
-<p><span class="anchor" id="appendix_5"></span><h4>Appendix 5. Plant photo
+<p><span class="anchor" id="appendix-5"></span><h4>Appendix 5. Plant photo
 voucher instructions and guidelines.</h4></p>
 <table>
 <colgroup>
@@ -914,7 +936,7 @@ scale card, coin, pen).</td>
   (LaFrankie Jr and Chua 2015).
 </p>
     """^^rdf:HTML ;
-    tern:scope """<h1 id="introduction-and-background">Introduction and background</h1>
+    tern:scope """<h1 id="introduction">Introduction and background</h1>
 <p>Floristics is the study of the flora species present within a
 specific geographical area. In the Floristics Module, all native and
 introduced vascular flora species within a core monitoring plot are
@@ -932,7 +954,7 @@ vouchers of all species to support the species list recorded. Plant
 specimen vouchers ensure correct species identification, provide a
 taxonomic reference and ensure the repeatability of studies. Plant
 specimen vouchers are collected and preserved appropriately in the field
-using a plant press (see Table 1), and later identified by taxonomic
+using a plant press (see <a href="#key-definitions-and-terminology">Table 1</a>), and later identified by taxonomic
 experts (Heard and Channon 1997; Culley 2013; Sparrow <em>et al.</em>
 2020).</p>
 <p>A plant specimen voucher consists of a pressed and dried specimen of
