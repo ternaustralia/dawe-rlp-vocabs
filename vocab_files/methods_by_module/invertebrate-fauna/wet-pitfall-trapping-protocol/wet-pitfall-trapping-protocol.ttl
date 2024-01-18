@@ -6,67 +6,65 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/79296cab-a02f-420d-b260-17c0e8691499>
+<https://linked.data.gov.au/def/nrm/7e4bfab2-4056-4309-bd22-f070f6952bc0>
     a
         skos:Concept ,
         tern:Method ;
-    dcterms:description """ <h3>Contents</h3>
+    dcterms:description """
+     <h3>Contents</h3>
 <ol>
-  <li><a href="#protocol-overview-5">Protocol Overview</a></li>
-  <li><a href="#equipment-6">Equipment</a></li>
+  <li><a href="#field-collection-1">Field Collection</a></li>
+  <li><a href="#equipment-2">Equipment</a></li>
   <li>
-    <a href="#instructions">Instructions</a>
+    <a href="#instructions-and-procedures-1">Instructions and procedures</a>
   </li>
-  <li><a href="#additional-guidelines-5">Additional guidelines</a></li>
-  <li><a href="#references-6">References</a></li>
-  <li><a href="#appendices-6">Appendices</a></li>
+  <li><a href="#additional-guidelines-1">Additional guidelines</a></li>
+  <li><a href="#references-2">References</a></li>
+  <li><a href="#appendices-2">Appendices</a></li>
 </ol>
-    <h1 id="post-field-sample-curation-protocol">Post-field sample curation
-protocol</h1>
-<h2 id="protocol-overview-5">Protocol overview</h2>
-<p>The focus of the field sampling protocols is the collection of bulk
-invertebrate samples, for future DNA analysis. It is envisaged that
-advances in DNA analysis and the development of invertebrate barcode
-libraries will enable future rapid identification of mixed invertebrate
-samples.</p>
-<p>The Post-field sample curation protocol is relevant to all
-invertebrate sampling. Invertebrate samples are retained, and in most
-circumstances preserved in ≥95% undenatured ethanol or undiluted
-propylene glycol to enable DNA analysis and future research (Majer and
-Framenau 2017). For inventory and environmental impact assessment
-purposes, comprehensive sorting and taxonomic identification by
-invertebrate specialists is generally required. For long-term ecosystem
-monitoring (repeated sampling of plots), samples are typically sorted at
-a coarse level into orders or recognisable taxonomic units (RTUs), with
-an emphasis on indicator species (Chinn 2017b).</p>
-<h2 id="sample-processing">Sample processing</h2>
-<h3 id="pre-requisites-5">Pre-requisites</h3>
+    <h1 id="wet-pitfall-trapping-protocol">Wet Pitfall Trapping
+Protocol</h1>
+<h2 id="protocol-overview-1">Protocol overview</h2>
+<p>Wet pitfall trapping is the most common and efficient passive survey
+method for surface dwelling terrestrial (epigeic) arthropods, in
+particular ants (Hymenoptera: Formicidae), spiders (Araenae) and ground
+beetles (Coleoptera, especially Carabidae and Staphylinidae).</p>
+<p>Wet pitfall traps consist of a specimen container (4.5 cm diameter x
+5.5 cm depth) dug into the ground so the rim is flush with the soil
+surface, partially filled with a liquid preservative to rapidly kill the
+invertebrates that fall in. A trap grid is established anywhere within
+the plot, consisting of 20 traps (4 north-south rows of 5 traps), spaced
+10 m apart. The traps are opened for 2 days (minimum) to 7 days
+(recommended).</p>
+<h2 id="field-collection-1">Field collection</h2>
+<h3 id="pre-requisites-1">Pre-requisites</h3>
 <ul>
-<li><p>Post-field sample curation is relevant to any physical
-invertebrate fauna specimens that are collected during a
-project.</p></li>
+<li><p>The plot must be established first – refer to the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a>.</p></li>
+<li><p>The plot vegetation should be described using the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a>, at the start of the project and for each
+visit.</p></li>
+<li><p>Most invertebrate surveys do not require specific permits, but
+always check with your local authority. Requirements vary depending on
+the location and the presence of threatened and restricted species. Wet
+pitfall trapping may require wildlife ethics approval if there is a risk
+to vertebrate fauna. Access permissions are required.</p></li>
 </ul>
-<h3 id="time-requirements-5">Time requirements</h3>
+<h3 id="time-requirements-1">Time requirements</h3>
 <ul>
-<li><p>The time requirements will depend on the number of samples and
-whether sorting, identification and analysis are required. Time and cost
-estimates can be sought from relevant museums/ institutions.</p></li>
+<li><p>60 minutes (2 people) to set up traps and record the required
+information in the app.</p></li>
+<li><p>30 minutes (2 people) to collect the samples and remove the
+traps.</p></li>
+<li><p>30 minutes (2 people) to label samples (post-field).</p></li>
 </ul>
-<h3 id="personnel-requirements-5">Personnel requirements</h3>
+<h3 id="personnel-requirements-1">Personnel requirements</h3>
 <ul>
-<li><p>One person with general invertebrate skills to undertake
-preservation and coarse level sorting of specimens (e.g. into
-orders).</p></li>
-<li><p>A specialist with specific skills in invertebrate fauna taxonomy
-is required for higher level taxonomic sorting, identification, and
-analysis.</p></li>
-<li><p>A specialist/company with specific skills in laboratory DNA
-barcoding and sequencing is required to carry out and coordinate DNA
-analysis of samples.</p></li>
-</ul>
- """^^rdf:HTML ;
+<li><p>The protocol is best conducted with two personnel.</p></li>
+<li><p>General ecology skills are sufficient, as the protocol does not
+require the invertebrate species to be identified at the time of
+collection.</p></li>
+</ul>"""^^rdf:HTML ;
     dcterms:source """
-    <h1 id="references-6">References</h1>
+    <h1 id="references-2">References</h1>
 <p>Abrams, JF, Hörig, LA, Brozovic, R, Axtner, J, Crampton‐Platt, A,
 Mohamed, A, Wong, ST, Sollmann, R, Yu, DW, Wilting, A (2019) Shifting up
 a gear with iDNA: From mammal detection events to standardised surveys.
@@ -348,212 +346,164 @@ Sentinel soil invertebrate taxa as bioindicators for forest management
 practices. <em>Ecological indicators</em> <strong>24</strong>,
 236-239.</p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <p>
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e">Invertebrate fauna</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e">Invertebrate fauna</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+    """^^rdf:HTML ;
     skos:note """
-    <h2 id="additional-guidelines-5">Additional guidelines</h2>
-<h4 class="unnumbered" id="preserving-samples">Preserving samples</h4>
+<h3 id="additional-guidelines-1">Additional guidelines</h3>
+<p>General</p>
 <ul>
-<li><p>Recommendations and instructions for wet and dry preservation can
-be found in Upton et al. (2010). Preservation type (wet or dry) will
-depend on the taxa type and the intended use of the samples. In most
-cases, a wet preservation approach is adopted, for efficiency in the
-field and post field processing, and so the samples are suitable for
-future DNA extraction.</p></li>
-<li><p>Based on current information, the standard solution for long-term
-storage is high concentration (95% and above) ethanol or undiluted
-propylene glycol. Both ethanol and propylene glycol act as dehydrating
-agents, are largely non-toxic, readily available and suitable for field
-collection through to long-term storage (Whitman et al. 2019; Nakamura
-et al. 2020).</p></li>
-<li><p>Some studies show propylene glycol to have superior DNA
-preservability over ethanol however longer-term testing of DNA
-degradation effects is required (Nakamura <em>et al.</em> 2020; Weigand
-<em>et al.</em> 2021). Propylene glycol also acts as a cryoprotectant if
-the specimens will be frozen (Whitman et al. 2019).</p></li>
-<li><p>RNAlater® is an alternative to ethanol and propylene glycol that
-can also be explored. RNAlater® is an aqueous, non-toxic storage reagent
-that also has potential for broadscale preservative use. It is currently
-a more expensive option but has advantages over propylene glycol and
-ethanol for DNA-extraction and dissection.</p></li>
-<li><p>RO Water or distilled water should be used if diluting the
-preservative solutions.</p></li>
-<li><p>The suitability of which preservative to use for long-term
-storage should be assessed on a case-by-case basis, in consultation with
-the relevant museum or institution. Research is continually advancing
-into the preservation ability of the options and the techniques to
-extract DNA from samples (Montgomery et al. 2021).</p></li>
+<li><p>Trapping for a minimum of two days (48 hours) (minimum) to seven
+days (recommended) is consistent with the typical duration of wet
+pitfall trapping studies (Borgelt and New 2006). Two days is generally
+sufficient for a high proportion of ant genera and morphospecies to be
+collected (Agosti and Alonso 2000; Borgelt and New 2006). This is also
+the most practical option in terms of co-timing with vegetation surveys
+(Andersen <em>et al.</em> 2022). Seven days is the most common wet
+pitfall trapping duration, with studies showing little value in trapping
+past seven days, and greatest arthropod capture rates recorded within
+this time (Borgelt and New 2006; Hohbein and Conway 2018).</p></li>
+<li><p>Despite many previous studies using ethylene glycol as a field
+preservative, propylene glycol is recommended because it is non-toxic,
+of similar cost and of comparable capture and preservation rate (Hohbein
+and Conway 2018), as well as having a low evaporation rate and
+demonstrated suitability for DNA analysis (Nakamura et al.
+2020).</p></li>
+<li><p>Wildlife ethics approval may be required for this method, due to
+the risk of vertebrate fauna capture. An assessment should be undertaken
+to identify the potential risk to vertebrate fauna and suitability of
+the method in the area to be surveyed, with a particular focus on
+conservation significant species.</p></li>
+<li><p>Pitfall traps are especially effective in open habitats, where
+the great majority of ant species are trappable. Pitfall traps capture
+less of the fauna in tropical rainforests (which support a high
+diversity of specialist arboreal taxa) but have still proven effective
+for environmental assessment and monitoring in these habitats (Karan
+2014).</p></li>
+<li><p>Minimise disturbance and foot traffic within the core monitoring
+plot during trap installation, trap checks and removal. If undertaking
+the protocol within the fauna plot, ensure there is adequate distance
+between the invertebrate and vertebrate fauna traps. If undertaking the
+protocol within the core monitoring plot, avoid the placement of traps
+on the point-intercept vegetation transects.</p></li>
+<li><p>Establish traps as soon as possible once at the field site, to
+maximise the time they are deployed (typically on the first day of a
+fauna monitoring event, or the first day of a vegetation monitoring
+event).</p></li>
+<li><p>Light rain does not interfere with trapping, however, heavy rain
+may wash out traps through surface flow. If this happens it is best to
+repeat the sampling. Avoid wet pitfall trapping in arid and semi-arid
+areas immediately after rain to reduce the potential for catching
+frogs.</p></li>
+<li><p>Contaminating material (e.g. dirt, plant matter or other debris)
+should be removed as it can stain the samples if left for extended
+periods. It is especially important that the vials be stored in the dark
+as light will cause ant colours to fade and the cuticle or integument
+will deteriorate over time, greatly reducing the usefulness of the
+material for taxonomic studies and making identifications difficult or
+impossible (Karan 2014).</p></li>
+<li><p>The diameter and depth of traps makes them unsuitable for
+collecting large arthropods; such species may be detected by vertebrate
+pitfall traps or using a targeted approach. Users should decide if the
+trap size is sufficient to meet the monitoring aims.</p></li>
+<li><p>Wet pitfall trapping is best undertaken when overall invertebrate
+activity peaks, typically around spring when conditions are warm and at
+least some soil moisture is present. Some invertebrate groups (e.g.
+slaters and millipedes) may only be active in the cool, wet winter
+months and some have different annual cycles (e.g. trapdoor spiders),
+thus there is merit in trapping at different times of the year (Bamford
+<em>et al.</em> 2013).</p></li>
+<li><p>Studies have shown that some invertebrates, particularly ants,
+are attracted to freshly-disturbed soil around a newly-installed pitfall
+trap which can lead to their over-representation in samples – this is
+referred to as a ‘digging-in effect’ (Greenslade 1973). If this is a
+concern, PVC pipe can be installed and left at the trap locations
+between trapping events. Alternatively, traps can be left unopened (e.g.
+for 24 hours) in an effort to avoid such effects (Callan et al. 2011).
+In such cases, the trap set-up and trap open dates will be different.
+Delayed opening of traps is not a standard component of the protocol, as
+the idea is to maximise captures within the available field time, and
+the data can be analysed to exclude the first trap night results if
+necessary.</p></li>
 </ul>
-<h4 class="unnumbered" id="identifying-samples">Identifying samples</h4>
+<p>Trap set-up</p>
 <ul>
-<li><p>Preference is given to expert identification, via either DNA
-analysis or morphology. The procedures and requirements for lodging
-specimens with a museum, other institution or specialist vary. Make
-contact prior to discuss:</p></li>
+<li><p>Traps can be placed amongst or alongside natural cover, i.e.
+under or alongside shrubs, to aid protection from direct sunlight.
+Ensure that foliage will not brush across the cover/trap.</p></li>
+<li><p>Take care to identify and avoid potential ant nest locations and
+ant foraging trails as this may skew the results. This may mean moving
+the trap several metres from the ideal trap line alignment.</p></li>
+<li><p>If a trap cannot be placed at the designated location (e.g.
+obstacle, hard substrate), try an alternative nearby location. Failing
+this, the soil can be mounded up around the cup to enable the top to be
+flush with the top of the soil surface.</p></li>
+<li><p>Avoid trap placement near obvious vertebrate fauna habitat
+features (e.g. small lizard burrows).</p></li>
+<li><p>Ensure any discrepancies from the standard trap array are
+recorded (the location will be recorded via the app, and the comments
+field can be used to make any relevant notes).</p></li>
+<li><p>Flag the location of each trap so it can easily be found in the
+field, ensuring the flag is clearly visible, particularly from the angle
+of which it will be approached during trap checking. A good technique is
+to double flag the start and end of each line, providing a quick visual
+cue for the surveyor.</p></li>
+<li><p>It is recommended to set the traps in sequential order and
+permanently write numbers on flagging tape to assist with trap checks
+and removal, back-tracking if a number is skipped.</p></li>
 </ul>
+<p>Checking and removing traps</p>
 <ul>
-<li><p>fees</p></li>
-<li><p>preference for all samples or representative subset only</p></li>
-<li><p>requirements for preservation, preparation, sorting and
-labelling</p></li>
-<li><p>timeframe for identification and return of samples</p></li>
-<li><p>if specimens will be retained and where type specimens will be
-deposited</p></li>
-<li><p>return shipping.</p></li>
+<li><p>Traps should be checked/removed in sequence to minimise the risk
+of missing a trap. All traps must be accounted for when
+checked/removed.</p></li>
+<li><p>Checking the traps during the trapping period may be necessary,
+particularly following inclement weather (extreme heat, wind and rain).
+Conduct any maintenance of the traps when checking (e.g. ensuring the
+rim of the pitfalls is flush with the ground, there are no gaps, no
+branches laying across, the cover and funnel are in the correct
+position, that there is adequate preservative in trap).</p></li>
+<li><p>If samples are fouled or rain has filled the trap, the container
+should be removed and samples can be sieved and placed into a fresh
+container of undiluted propylene glycol. A replacement specimen
+container should be installed with undiluted propylene glycol. This
+should be recorded in the comments field for that trap.</p></li>
+<li><p>Unless explicitly permitted, all traps must be removed at the
+conclusion of each trapping session.</p></li>
+<li><p>Any vertebrate by-catch must be recorded (use the <a href="https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportune Module</a>) and reported to the relevant government agency as a condition of
+the scientific and wildlife ethics permit. Deceased vertebrate captures
+should be preserved and provided to the local museum (refer to the
+Vertebrate Fauna Module for guidelines). The continued use of wet
+pitfall traps should be reviewed in such instances.</p></li>
+<li><p>Any invertebrate fauna caught in vertebrate fauna traps (e.g.
+pitfalls, Elliotts) can also be collected (use the <a href="https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportune Module</a>).</p></li>
 </ul>
+<p>Sample preservation</p>
 <ul>
-<li><p>Samples can be pre-sorted, to decrease costs and the time
-required of specialists (see Section 9).</p></li>
-<li><p>Begin identifications using the invertebrate body form or
-shape.</p></li>
-<li><p>Identification may require viewing specimens under a microscope.
-Refer to Upton <em>et al.</em> (2010) for recommended microscope
-setups.</p></li>
-<li><p>Fully identified species should be listed by genus and species,
-e.g. <em>Ogyris abrota</em>; species identified to genus only should be
-listed as e.g. <em>Ogyris</em> sp.; morphospecies should be listed by
-letter: e.g. <em>Ogyris</em> sp. A, <em>Ogyris</em> sp. B.</p></li>
-<li><p>Samples should be identified only to the level of confidence in
-the identification (i.e. if the genus is unknown, identify to the level
-of family, or if family is unknown, identify to the level of
-order).</p></li>
-<li><p>Insect larvae are not always easy to identify to the level of
-order, in which case they should be assigned simply as
-"larvae".</p></li>
-<li><p>Identification at the level of morphospecies or RTU is often
-adequate for monitoring purposes (Oliver and Beattie 1996; Oraby
-2013).</p></li>
+<li><p>Refer to Section on <a href="https://linked.data.gov.au/def/nrm/79296cab-a02f-420d-b260-17c0e8691499">Post-Field Sample Curation</a> regarding long-term
+sample preservation.</p></li>
 </ul>
-<h4 class="unnumbered" id="sorting-samples">Sorting samples</h4>
+<p>Sample analysis</p>
 <ul>
-<li><p>All protocols involve the collection of bulk mixed samples,
-containing multiple taxa and individuals from each
-trap/location.</p></li>
-<li><p>Samples collected from each trap/location are stored separately
-to facilitate trap level analyses.</p></li>
-<li><p>Samples may be sorted and split into separate vials, before or
-after expert processing. The origin of the samples (trap/location) is
-retained by linked barcode references.</p></li>
-<li><p>Samples are typically sorted by non-specialists into RTUs (e.g.
-morphospecies) by making external morphological comparisons between
-specimens, however this still requires a certain level of technical
-skill.</p></li>
-<li><p>Samples can also be sorted by genus, family, order, size,
-functional group or life-stage. Samples may be selectively sorted, e.g.
-separating the taxa of interest for further analysis.</p></li>
-<li><p>Samples are placed in plastic trays or petri dishes for sorting,
-and soft-nose forceps are used to handle the specimens. Ensure there is
-enough preservative on the tray/dish so that the specimens do not dry
-out. </p></li>
-<li><p>Efficiency and accuracy are required when sorting large volumes
-of wet specimens. It may be easiest to start with the largest specimens,
-or the most abundant. Separate lookalike specimens into zones of the
-sorting tray or transfer into new trays (Chinn 2017a), ensuring that
-each tray has enough preservative to prevent the specimens from drying
-out.</p></li>
-<li><p>Counts (actual or estimate) can be recorded during the sorting
-process to provide an indication of the number of species, morphospecies
-or RTU collected and their abundance. It is helpful to use a counter
-when dealing with large volumes of specimens.</p></li>
-<li><p>To account for individual samples that were later reidentified,
-the final abundance for a species is the original sorting sample count
-minus the number of individuals given a new ID.</p></li>
-<li><p>Inspect samples obtained from leaf litter extraction under a
-microscope, as there may be meso and microfauna present that are not
-otherwise visible.</p></li>
+<li><p>Projects focused on ants and DNA barcoding can discuss the
+suitability and cost of sample processing, identification, curation, and
+analysis with the laboratory at CSIRO’s Tropical Ecosystems Research
+Centre in Darwin. This laboratory specialises in the use of ants as
+bio-indicators and manages the Australian Transect Network and TERN ant
+sampling program.</p></li>
 </ul>
-<h4 class="unnumbered" id="photographing-samples">Photographing
-samples</h4>
-<ul>
-<li><p>Include a scale card in photos.</p></li>
-<li><p>Photos can be taken during the sorting process.</p></li>
-<li><p>A microscope camera can be used to obtain high resolution
-photos.</p></li>
-<li><p>Upload any photos collected outside of the App to the appropriate
-record.</p></li>
-</ul>
-<h4 class="unnumbered" id="preparing-samples">Preparing samples</h4>
-<ul>
-<li><p>This module is predominantly focused on wet preservation of
-samples, to facilitate future DNA analysis.</p></li>
-<li><p>Specifics on how to prepare invertebrate specimens vary between
-museums and vary based on the intended use of the samples. If lodging
-specimens with a museum or other institution, discuss their
-requirements.</p></li>
-<li><p>Dry-mounting may be chosen for a representative subset of
-specimens across taxa groups, in order to build up a reference
-collection.</p></li>
-<li><p>Certain taxa such as moths and butterflies are best dry mounted
-to retain morphological features. If taxa are collected in preserving
-solution, they need to be washed and dried before mounting.</p></li>
-<li><p>Dry mounting generally involves pinning, or gluing, to ‘carboard
-points’ for small specimens. Instructions for dry mounting of specimens
-can be found in Upton et al. (2010).</p></li>
-</ul>
-<h4 class="unnumbered" id="labelling-samples">Labelling samples</h4>
-<ul>
-<li><p>Hand-written field labels can be replaced with thermal printed
-labels, with the same barcode.</p></li>
-<li><p>Ensure that labels are either thermally printed on alcohol-proof
-paper or written in lead pencil as pen ink and some printer inks will
-rub off if any ethanol leaks from the vials.</p></li>
-<li><p>Each sample vial is allocated a label with a unique barcode. The
-required label fields are as follows:</p></li>
-</ul>
-<ul>
-<li><p>project name/ID</p></li>
-<li><p>plot ID</p></li>
-<li><p>site/region/state/country</p></li>
-<li><p>coordinates (latitude, longitude)</p></li>
-<li><p>date1 (optional: -date2)</p></li>
-<li><p>collector.</p></li>
-</ul>
-<h4 class="unnumbered" id="transporting-samples">Transporting
-samples</h4>
-<ul>
-<li><p>Ensure samples are kept upright and cool and transported with
-summary paperwork.</p></li>
-<li><p>If samples are being shipped, drain off as much of the preserving
-solution from the vial as possible without samples drying out, screw the
-cap and close it firmly with parafilm tape, put it into a snap-lock bag
-with label, and send by courier mail.</p></li>
-<li><p>For air transport of specimens, follow the special provision A180
-requirements: <a href="https://www.casa.gov.au/standard-page/special-provision-a180">https://www.casa.gov.au/standard-page/special-provision-a180</a></p></li>
-<li><p>An export permit may be required.</p></li>
-<li><p>Samples need to be refilled with fresh ethanol 95% on arrival to
-the laboratory (Basset 2020).</p></li>
-</ul>
-<h4 class="unnumbered" id="storing-samples">Storing samples</h4>
-<ul>
-<li><p>Specimens will often be stored as bulk, mixed samples (reflecting
-how they were collected in the field) until identification is required,
-available or affordable.</p></li>
-<li><p>Inspect wet samples prior to storage - check the preserving
-solution and change or top-up, if necessary, with fresh 95% undenatured
-ethanol or undiluted propylene glycol. Ensure vials are properly
-labelled and sealed. Ensure that the vial contents are fully submerged
-before storage.</p></li>
-<li><p>Consult with the local jurisdictional museum how the wet
-specimens are best stored, either</p></li>
-</ul>
-<ul>
-<li><p>standard household freezer (i.e. -20°C).</p></li>
-<li><p>refrigerator, or</p></li>
-<li><p>cool, dark environment.</p></li>
-</ul>
-<ul>
-<li><p>This is critical to preserve the DNA in the samples. Improper
-storage (e.g. under constant light, heat or variable temperatures) will
-result in DNA degradation rendering samples unusable for DNA
-sequencing.</p></li>
-<li><p>Specimens should be offered to the local jurisdictional museum
-for archiving, giving them the first right of refusal. The Australian
-Museum, the CSIRO Australian National Insect Collection or other
-institutions may then be consulted to identify their interest in the
-potential specimens.</p></li>
-</ul>"""^^rdf:HTML ;
-    skos:prefLabel "Post-Field Guidelines Protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/post-field-guidelines-protocol/post-field-guidelines-protocol.ttl"^^xsd:anyURI ;
+<p><img alt="figure-2" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/Figure2.png" width="500"/></p>
+<p><span class="anchor" id="figure-2"></span>Figure 2. Photos of
+wet pitfall trap setup and collection.</p>"""^^rdf:HTML ;
+    skos:prefLabel "Wet Pitfall Trapping protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/wet-pitfall-trapping-protocol/wet-pitfall-trapping-protocol.ttl"^^xsd:anyURI ;
     tern:appendix """
-<h3 id="appendices-6">Appendices</h3>
+<h3 id="appendices">Appendices</h3>
 <h4>
   Appendix A. Suitability of the sampling protocols for the commonly monitored
   insect guilds.
@@ -1721,117 +1671,231 @@ potential specimens.</p></li>
 </table>
 """^^rdf:HTML ;
     tern:equipment """
-   <h3 id="equipment-6">Equipment</h3>
+    <h3 id="equipment-2">Equipment</h3>
+<ul>
+<li><p>Mobile device (tablet/phone) with the Monitor app
+pre-loaded</p></li>
+<li><p>GNSS, such as a Trimble R1 or DA2 receiver, a hand-held GPS or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy</p></li>
+</ul>
+<h4 class="unnumbered" id="trap-installation-and-set-up">Trap
+installation and set-up</h4>
 <ul>
 <li><p>Voucher barcode labels (see the Generating Voucher Barcode Labels
 for EMSA Specimens and Samples instruction sheet)</p></li>
-<li><p>Screw top vials and containers</p></li>
-<li><p>Preserving liquid (95% or above undenatured ethanol or undiluted
-propylene glycol)</p></li>
-<li><p>Parafilm tape</p></li>
-<li><p>High-sided white plastic sorting trays, for sorting
-specimens</p></li>
-<li><p>Petri dishes, for sorting specimens</p></li>
-<li><p>PC with web access, to enter data into the app</p></li>
-<li><p>Paper towel</p></li>
-<li><p>Tweezers</p></li>
-<li><p>Tea strainer</p></li>
-<li><p>Soft-nose forceps</p></li>
-<li><p>Small paintbrush</p></li>
-<li><p>Disposable gloves</p></li>
-<li><p>Face masks</p></li>
+<li><p>Hand trowel or soil corer</p></li>
+<li><p>Dosing bottle filled with undiluted propylene glycol</p></li>
+<li><p>20 x medical specimen containers (4.5 cm diameter x 5.5 cm depth)
+per plot</p></li>
+<li><p>500 ml of undiluted propylene glycol (~20 ml per trap) per
+plot</p></li>
+<li><p>Core of foam (4cm diameter) or similar</p></li>
+<li><p>2 x small paint brushes</p></li>
+<li><p>Spare medical specimen containers</p></li>
+<li><p>5 x 100 (or 50 m) tapes and compass (optional)</p></li>
 <li><p>Permanent marker</p></li>
-<li><p>Pencil and paper</p></li>
-<li><p>Counter (e.g. <a href="https://www.forestry-suppliers.com/product_pages/products.php?mi=11751&amp;itemnum=53121">multiple
-unit tally counter</a> or web-based counter)</p></li>
-<li><p>Scale card, for taking photos</p></li>
-<li><p>Low-powered (c 10x) magnification aid</p></li>
-<li><p>Thermal printer</p></li>
-<li><p>Dedicated storage area (dark, cool, stable and away from
-heat)</p></li>
-<li><p>Alcohol or alcohol wipes for cleaning equipment</p></li>
-<li><p>Dry mounting equipment (optional): pinning board, pins, glue,
-scissors, paper triangles, bee boxes, hair dryer, distilled water,
-liquid detergent, washer jar</p></li>
+<li><p>Flagging tape</p></li>
+<li><p>20 x marking pins per plot</p></li>
 </ul>
-"""^^rdf:HTML ;
+<h4 class="unnumbered" id="trap-removal-and-sample-collection">Trap
+removal and sample collection</h4>
+<ul>
+<li><p>Sample container lids</p></li>
+<li><p>Extra undiluted propylene glycol</p></li>
+<li><p>Permanent marker</p></li>
+<li><p>1 large snap-lock bag per plot</p></li>
+<li><p>Heavy duty plastic container (ideally segmented) with lid, to
+keep sample containers upright</p></li>
+<li><p>Cooler bag</p></li>
+<li><p>Gloves</p></li>
+<li><p>Sieve (e.g. nylon mesh filter, chux cloth, tea strainer)</p></li>
+<li><p>Voucher barcode labels (see the Generating Voucher Barcode Labels
+for EMSA Specimens and Samples instruction sheet)</p></li>
+<li><p>Parafilm (optional)</p></li>
+<li><p>Archival paper (optional)</p></li>
+<li><p>Lead pencil</p></li>
+<li><p>Scissors</p></li>
+</ul>"""^^rdf:HTML ;
     tern:instructions """
-    <h3 id="instructions">Instructions</h3>
+   <h3 id="instructions-and-procedures-1">Instructions and procedures</h3>
+<h4 class="unnumbered" id="plot-set-up-and-trap-install">Plot set up and
+trap install</h4>
 <ol type="1">
-<li><p>Open the Monitor app, select the sampling protocol (e.g.
-<em>malaise trap</em>), then select <em>barcode scan.</em> Scan barcode
-for the selected sample and the record details will open.</p></li>
+<li><p>Turn on the GNSS device, open the Monitor app, select the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a>, and select the <em>plot</em> and
+<em>visit</em>.</p></li>
+<li><p>Open the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> and complete the standard
+protocol if vegetation information has not already been recorded for the
+visit.</p></li>
+<li><p>Open the Invertebrate Fauna Module, and select the Wet pitfall
+trapping protocol. Select <em>trap set-up</em>. Select if undertaking
+the protocol on the <em>core monitoring plot</em> or <em>fauna
+plot</em>.</p></li>
 </ol>
-<ol start="2" type="1">
-<li><p>Select <em>edit record</em> and <em>sort specimens</em>.</p></li>
-<li><p>Using a tray and soft-nose forceps, pour contents of the sample
-container onto a sorting tray or petri dish and sort contents. Sorting
-will depend on the aims and instructions provided by the relevant
-museum/institution. Sorting may be undertaken by morphospecies, RTU,
-genus, family, order, size, functional group or life-stage. Record the
-way in which sorting has been undertaken in the comments (step
-11).</p></li>
-<li><p>Count the specimens once they are sorted. This will either be an
-exact or estimate count, depending on the number of specimens. A counter
-can be used to assist. It may be helpful to write the counts on paper
-during this process.</p></li>
-<li><p>Place the sorted specimens into new vials filled with 95%
-undenatured ethanol or undiluted propylene glycol.</p></li>
-<li><p>Select <em>assign new barcode</em> and then <em>scan
-barcode.</em> Scan the new barcode label and enter the following details
-for the sample:</p></li>
+<ol start="4" type="1">
+<li><p>Carry the mobile device, GNSS location device, and equipment to
+install traps, to the plot, avoiding walking through or minimising
+disurbance to the core monitoring plot.</p></li>
+<li><p>Select the <em>observers</em>, being the person/s responsible for
+trap set-up (auto-fill based on login, drop-down options based on
+project personnel, multiple selections OK, manual entry override if
+necessary).</p></li>
+<li><p>Record the <em>weather</em> (select a category for wind, rain,
+temperature, sun/cloud, from the drop-down lists). Quantitative weather
+data can be later uploaded if a weather station is in use.</p></li>
+<li><p>Navigate to where the wet pitfall trap grid will be positioned.
+The trap grid (4 rows of 5 traps, with 10 m spacing <a href="#figure-1">Figure 1</a>) can be placed anywhere in the plot as long as the grid
+is aligned N-S and E-W, and the coordinates of the south-west corner are
+recorded. </p></li>
+</li><p><span class="anchor" id="figure1"></span><img alt="Figure.1" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/Figure1.jpg" width="450"/></p>Figure 1. Wet pitfrall
+    trap spatial arrangement within plot.</p>
+<li>A common approach is to position the grid 10 m in from the SW
+    corder of the plot.</li></p>
+</ol>
+<ol start="9" type="1">
+<li><p>Whilst holding the GNSS location device, stand at the south-west
+corner of the wet pitfall trap grid (trap 1), and select <em>mark
+location</em>. A warning message will appear if the accuracy is less
+than +/- 5m, prompting the user to repeat this step</p></li>
+<li><p>Record the following information:</p></li>
 </ol>
 <ul>
-<li><p><em>preservative type</em> (drop-down list and manual
-entry)</p></li>
-<li><p><em>preservative concentration</em> (drop-down list and manual
-entry).</p></li>
+<li><p><em>planned number of trap nights</em> (will auto-determine end
+date)</p></li>
+<li><p><em>diameter of the trap</em> (cm)</p></li>
+<li><p><em>depth of the trap</em> (cm)</p></li>
+<li><p><em>trap preservative</em> (drop-down, option for manual entry,
+default is propylene glycol)</p></li>
+<li><p><em>preservative concentration</em> (default is undiluted, manual
+entry percentage)</p></li>
+<li><p><em>volume of preservative</em> used (ml) (default is 20
+ml)</p></li>
 </ul>
-<ol start="7" type="1">
-<li><p>Select <em>invertebrate group</em> (drop-down list). Select to
-the level of confidence (e.g. species, genus, family, order). If unsure,
-select unidentified or if type is not listed, select other, and provide
-details in comments.</p></li>
-<li><p>Select <em>life-stage</em> (drop-down list, multiple entry
-OK).</p></li>
-<li><p>Record <em>average length</em> (mm) for each life-stage
-(optional).</p></li>
-<li><p>Enter a <em>count</em> (number of individuals in the invertebrate
-group for each life-stage) and record if the count is exact or an
-estimate (drop-down).</p></li>
-<li><p>Enter a <em>comment</em> (optional).</p></li>
-<li><p>Select <em>add photos</em> and take a representative photo of
-each invertebrate type/life-stage, to assist with identification. A
-photo can also be taken looking down (into the sample container with the
-lid off), with the barcode visible in the photo next to the sample
-container. Include a brief text <em>description</em> (default
-descriptions available from drop-down list or enter free text). Multiple
-photos can be taken. Photos can also be taken from a microscope camera
-and uploaded. Select <em>save</em>.</p></li>
-<li><p>Select <em>add additional invertebrate group</em> if multiple
-invertebrate groups will be kept in the same sample container, then
-repeat Steps 7 to 12.</p></li>
-<li><p>For each new sample container, insert a unique thermal printed
-label with barcode and specimen details. Place a duplicate barcode
-sticker (same barcode) on the side of the sample container. The new
-barcodes will link back to the original record, even though the original
-barcode will now be defunct (i.e. the new barcode will retain which trap
-number, trap date etc the samples are from).</p></li>
-<li><p>Repeat the steps for each new sample container.</p></li>
-<li><p>Store the samples in a cool, dark location (refer to
-Guidelines).</p></li>
-<li><p>Arrange for delivery of the specimens to the relevant
-museum/institution/laboratory for analysis or morphological
-identification and/or archiving (see the Lodging EMSA Specimens and
-Samples information sheet).</p></li>
-<li><p>Enter the <em>name</em> of the receiving institution,
-<em>contact</em>, <em>email</em>, and the <em>date</em> the sample was
-sent (this will be the default entry for all samples from the same
-protocol, override as necessary).</p></li>
-<li><p>Enter any relevant notes (optional).</p></li>
-<li><p>Once taxonomic identification is known, open the Monitor app,
-Invertebrate Fauna Module, select the relevant protocol, scan the
-barcode of the relevant sample and <em>edit</em> the record.</p></li>
+<ol start="11" type="1">
+<li><p>Select <em>photo</em> and take a photo (landscape mode) looking
+across the trapping grid from the south-west corner.</p></li>
+<li><p>Placement of the traps can be guided using the app and GNSS
+location device, or done manually by using a measuring tape and compass
+(this can be co-timed with laying of the measuring tapes for vegetation
+monitoring). To use the app and GNSS location device for guided trap
+placement, select <em>navigate to trap location</em> and the mapping
+interface in the app will show your location in relation to the default
+pre-determined trap locations based on the input of the south-west
+corner of the trapping grid. Make adjustments to the spatial placement
+as necessary, e.g. to avoid trees, rocks, ant nests or key ant activity
+areas, areas of foot traffic, obvious vertebrate fauna travelways (see
+<a href="#additional-guidelines">Additional Guidelines</a>).</p></li>
+<li><p>Use a hand trowel to dig a small hole where the wet pitfall trap
+is to be located (~5 cm diameter by 6 cm deep). Try not to dig the hole
+much wider than the container.</p></li>
+<li><p>Write the trap number on the side of the container with permanent
+marker. Whilst the lid is still on the specimen container, check that
+the container fits in the hole and is level with the ground. Undo the
+lid of the container. Insert a small (4 cm diameter) core of foam or
+other similar material into the container, to prevent soil/debris
+entering during installation. Alternatively, use a paintbrush to remove
+any soil that falls into the container during installation. Pack the
+soil firmly around the container so the rim is flush with the surface of
+the ground, ensuring there are no gaps between the soil and the top of
+the container. Remove the core of foam if using, along with any debris
+that has fallen in the container. Make sure there is no debris (e.g.
+leaf litter, sticks) in the immediate vicinity that could fall in and
+foul the sample or provide a means of escape for invertebrates.</p></li>
+<li><p>Fill the container with approximately 20 ml (1 cm) of undiluted
+propylene glycol. Using a dosing bottle is best to prevent spillage and
+overfilling.</p></li>
+<li><p>Take the specimen container lid (keep all lids together in a
+plastic snaplock bag labelled with plot ID, in the cooler bag, until the
+traps are rechecked).</p></li>
+<li><p>For each trap location, under <em>trap set-up,</em> select
+<em>add trap</em>. Select the <em>trap ID</em> from the drop-down menu
+(the trap line/trap number, e.g. 1 or manually enter).</p></li>
+<li><p>Hold the GNSS location device directly over the trap location (to
+obtain best positional accuracy), and select <em>record trap
+location</em>. The GPS location will be automatically recorded and will
+be shown on the mapping interface. A warning message will appear if the
+accuracy is less than +/- 5m, prompting the user to repeat this
+step.</p></li>
+<li><p>Use flagging tape to flag the start and end of each trapping
+line. Write the trap line number on the flagging with permanent
+marker.</p></li>
+<li><p>Install a marking pin (e.g. coloured tape flag on a wire) near
+the trap to assist trap relocation during a trapping event. Write the
+trap number on the flag with permanent marker.</p></li>
+<li><p>Select <em>open trap.</em> The <em>date</em> and <em>time</em>
+the trap is opened is auto-generated (option to over-ride).</p></li>
+<li><p>Check box <em>auto fill</em> to repeat the selections for all
+traps.</p></li>
+<li><p>Selected <em>finish trap set-up</em> (the screen will return to
+the Wet pitfall trap main screen).</p></li>
+<li><p>Repeat steps 17 to 23 for all wet pitfall traps.</p></li>
+</ol>
+<h4 class="unnumbered" id="collecting-samplesremoving-the-traps">Collecting samples/removing
+the traps</h4>
+<ol start="25" type="1">
+<li><p>Trapping is undertaken for a minimum of two consecutive nights
+(48 hour period) and up to seven nights. After the planned trapping
+duration, return to the traps.</p></li>
+<li><p>Open the Monitor app, select <em>wet pitfall trap</em> and select
+<em>remove traps</em>. Select the Trap ID and press <em>save</em>. The
+duration of trapping will be automatically recorded based on the start
+date/time and trap removal date/time (manual override if necessary).
+Check box <em>remove all traps</em> to repeat the trap removal date/time
+for all traps in the grid.</p></li>
+<li><p>Remove the specimen container. Where possible, remove any plant
+material/debris that has fallen in. Tightly screw on the lid.</p></li>
+<li><p>Write the <em>project name, plot ID, trap ID, date</em> (start
+and end) and the <em>collector</em> on the sample container with
+permanent marker (or use a sticky label which can be pre-printed). Also
+write the <em>trap ID</em> on the lid. This is imperative to know which
+trap the sample is from. Keep the sample containers upright as
+preserving fluid may leak out and this can remove the writing. Place in
+a cooler bag.</p></li>
+<li><p>Enter relevant <em>comments</em> (optional free text).</p></li>
+<li><p>Remove all the trap components and fill in the hole. Remove
+flagging.</p></li>
+<li><p>Repeat steps 26 to 30 for all wet pitfall traps.</p></li>
+</ol>
+<h4 class="unnumbered" id="processing-samples">Processing samples </h4>
+<ol start="32" type="1">
+<li><p>Return to the field vehicle or an area where all the equipment is
+available.</p></li>
+<li><p>Set up the samples, labels and barcodes.</p></li>
+<li><p>Open the Monitor app. Select the <em>wet pitfall trapping</em>
+protocol and select <em>scan barcode</em>.</p></li>
+<li><p>Select a sampling container (working sequentially from trap 1 to
+20 is recommended). Take a small thermal printed barcode label and scan
+using the app. Select the <em>plot ID</em> and <em>wet pitall trap
+ID</em> for the sample from the drop-down list. Select <em>save
+record</em>. The barcode ID will now be linked to the record of that
+trap.</p></li>
+<li><p>Unscrew the lid of the sampling container.</p></li>
+<li><p>Optional - Select <em>add photo</em> and take a photo looking
+down into the sample container with the lid off, with the barcode placed
+alongside the container so it is visible in the photo (place a blank
+piece of white paper underneath the container for the best photo).
+Provide a brief <em>text description</em> for each photo (default
+descriptions available from drop-down list or enter free text
+description). Multiple photos can be taken.</p></li>
+<li><p>On the small thermal barcode label, manually write the following
+information with lead pencil (do not use pen or marking pen as the ink
+will dissolve: project name, plot ID, trap ID, date (start and end) and
+collector. Place into the preserving fluid into the sampling
+container.</p></li>
+<li><p>Top up the sample containers with undiluted propylene glycol if
+necessary. Return the lid and ensure it is screwed on tightly. Secure
+lid with parafilm (optional). For additional measure, a small sticker
+barcode (duplicate of the code in the sample) is placed on the side or
+base of the sample container – this enables the sample information to be
+readily retrieved without having to open the container and remove the
+label from the fluid for scanning. Note: only one barcode is allocated
+to a sample.</p></li>
+<li><p>Store the containers in a cool location out of direct light. Do
+not leave in hot vehicle or in sun as this degrades the sample for DNA
+analysis.</p></li>
+<li><p>Any excess/used propylene glycol should be stored appropriately
+and discarded in an environmentally safe way in line with permit and
+site requirements (ideally discarded off-site).</p></li>
 </ol>
 """^^rdf:HTML ;
 .
