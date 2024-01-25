@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/c00b09fd-e21e-5fa1-a993-305e154898ab>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/aircraft-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/9b3e8f6c-1d3a-5e79-85ca-d6ba81e6e741> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5eb490f0-e573-5ba7-a41e-44a4cb6137c2> ;
+    urnp:conceptDefinition "An aircraft which has fixed wings and is propelled by a thrust from a jet engine, propeller, or rocket engine." ;
+    urnp:conceptSource "http://purl.obolibrary.org/obo/ENVO_03501349"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/c312bb91-8998-5f00-bbd9-e192c72ac5a4>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/aircraft-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/9b3e8f6c-1d3a-5e79-85ca-d6ba81e6e741> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1c18a176-e19e-54e6-9c6e-5d7fd15b95c4> ;
+    urnp:conceptDefinition "Helicopter is an aircraft with one or more power-driven horizontal propellers or rotors that enable it to take off and land vertically, to move in any direction, or to remain stationary in the air." ;
+    urnp:conceptSource "https://www.britannica.com/technology/helicopter"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/9b3e8f6c-1d3a-5e79-85ca-d6ba81e6e741>
+    a skos:Collection ;
+    dcterms:description "Whether the aircraft used for aerial fauna survey is a 'helicopter' or a 'plane'." ;
+    dcterms:source "Peacock D, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Aerial Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/1c18a176-e19e-54e6-9c6e-5d7fd15b95c4> ,
+        <https://linked.data.gov.au/def/nrm/5eb490f0-e573-5ba7-a41e-44a4cb6137c2> ;
+    skos:prefLabel "Aircraft types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/aircraft-types.ttl"^^xsd:anyURI ;
+.
+
