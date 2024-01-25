@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/32c86ad8-ef05-57ae-a916-cba810802f13>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/scat-removal-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/46083709-d3bb-58bc-9d7d-738a71694f11> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/8562f0d8-d830-57ee-bdeb-da6b9890ed53> ;
+    urnp:conceptDefinition "A description of the scat removal status, referring to the scats being counted and left in-situ." ;
+    urnp:conceptSource "Cox B, McCallum K, O’Neill S, Bignall J, Peacock D, Sparrow B. (2023) Sign-based Fauna Survey Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/5eb82b36-466e-56af-b9f9-8ee0cd0cb0f3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/scat-removal-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/46083709-d3bb-58bc-9d7d-738a71694f11> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/66663bc9-c543-5e89-82f8-7dc3c7e3a159> ;
+    urnp:conceptDefinition "A description of the scat removal status, referring to the scats being completely removed from the survey area." ;
+    urnp:conceptSource "Cox B, McCallum K, O’Neill S, Bignall J, Peacock D, Sparrow B. (2023) Sign-based Fauna Survey Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/46083709-d3bb-58bc-9d7d-738a71694f11>
+    a skos:Collection ;
+    dcterms:description "Indicates whether the animal scats in a survey area 'will be counted and left in-situ' or 'scat will be removed'." ;
+    dcterms:source "Cox B, McCallum K, O’Neill S, Bignall J, Peacock D, Sparrow B. (2023) Sign-based Fauna Survey Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/66663bc9-c543-5e89-82f8-7dc3c7e3a159> ,
+        <https://linked.data.gov.au/def/nrm/8562f0d8-d830-57ee-bdeb-da6b9890ed53> ;
+    skos:prefLabel "Scat removal statuses" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/scat-removal-statuses.ttl"^^xsd:anyURI ;
+.
+
