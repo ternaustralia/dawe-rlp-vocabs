@@ -11,580 +11,431 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         skos:OrderedCollection ,
         tern:MethodCollection ;
     dcterms:description """
-    <h3 id="module-overview">Module overview</h3>
-<p>
-  This module covers the procedures and guidelines of two protocols for
-  recording flora species composition within the plot:
-</p>
+    <h3>Contents</h3>
+  <ol>
+    <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology"
+        >Key definitions and terminology</a
+      >
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+    <h1 id="module-overview">Module overview</h1>
+<h2 id="available-protocols">Available protocols</h2>
+<p>This module includes two protocols to record flora species
+composition within a core monitoring plot:</p>
 <ol type="1">
-  <li>
-    <p>
-      <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/35175f0d-bdd7-4e32-908f-17f7239e78fa">Full protocol</a> – voucher specimens collected for all species present in
-      each plot for identification by the relevant herbarium.
-    </p>
-  </li>
-  <li>
-    <p>
-      <a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/bc2ba93e-43f9-425f-83cd-bbf5c422bdf8">Lite protocol</a> – voucher specimens collected for a subset of the species
-      present in each plot vouchered for identification by the relevant
-      herbarium, the subset being new (i.e. not vouchered from the project area,
-      including previous monitoring periods), unknown, important (e.g. data
-      deficient, range extension, uncharacteristic growth form), contentious
-      (i.e. disputed or uncertain taxonomy) and threatened species (unless
-      collection is not permitted or will jeopardise the population). Field
-      botanist identification and photo vouchers collected for the remaining
-      species.
-    </p>
-  </li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/35175f0d-bdd7-4e32-908f-17f7239e78fa">Enhanced protocol</a> – plant specimen vouchers collected for all
+species present in a plot for identification by the relevant herbarium
+(or approved taxonomist).</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/bc2ba93e-43f9-425f-83cd-bbf5c422bdf8">Standard protocol</a> – plant specimen vouchers collected for a
+subset of the species (new, unknown, important, contentious and
+threatened species; see <a href="#key-definitions-and-terminology">Table 1</a>) present in a plot for identification by
+the relevant herbarium (or approved taxonomist). Field botanist
+identification and plant photo vouchers collected for the remaining
+species.</p></li>
 </ol>
-<p>
-  The full protocol includes the procedures and guidelines for collecting
-  vouchers of all flora species from the plot, attaching voucher labels,
-  entering vouchers into the App by scanning the barcode, allocating the species
-  growth form and field name, pressing the vouchers, and maintaining the pressed
-  vouchers both during and after the field survey. The guidelines provide
-  further information on pressing techniques, including specifics for dealing
-  with small species, succulent species and wet specimens, and taxonomic
-  preferences.
-</p>
-<p>
-  The lite protocol includes the procedures and guidelines for collecting
-  vouchers of the subset of the flora species from the plot, attaching voucher
-  labels, entering vouchers into the App by scanning the barcode or entering
-  species into the App if they have already been vouchered from the project
-  area, allocating the species growth form and taking photo vouchers (in-ground
-  habit and close-ups of key distinguishing features). The guidelines provide
-  further information on identifying species using keys, flora reference guides
-  and local herbarium collections, and photography techniques, including
-  specifics for photographing key distinguishing features to assist in
-  identification.
-</p>
-<p>
-  Plant species identifications/assigned field names (linked to barcodes) act as
-  the primary key for subsequent data collection for that species within a
-  visit, thereby ensuring consistent nomenclature. Voucher specimens are
-  intended to be identified by herbarium botanists and a subset of specimens
-  will be included in the respective local herbaria, subject to the standards
-  prescribed by each institution.
-</p>
-<p>
-  Tracking of voucher specimens is of vital importance. Consequently, TERN/DCCEEW
-  have created printed adhesive voucher labels that have a barcode on them that
-  can be scanned by mobile device software and linked directly into the App. The
-  voucher labels are available from TERN/DCCEEW. Note that a separate batch of
-  sequential barcodes are used for each flora voucher, as well as each plant
-  tissue sample, fauna voucher, soil sample and soil metagenomic sample
-  collected. Therefore, care is needed to ensure the correct label is being
-  used.
-</p>
-<p>The <em>Floristics</em> module is linked to the following modules:</p>
+<p>The enhanced protocol includes the procedures and guidelines for
+collecting vouchers of all flora species from a plot, attaching voucher
+barcode labels, scanning the voucher barcodes into the Monitor app,
+allocating the species growth form and field name, pressing the
+vouchers, and maintaining the pressed vouchers both during and after the
+field survey. The guidelines provide further information on taxonomic
+preferences and pressing techniques, including specifics for dealing
+with small species, succulent species and wet specimens.</p>
+<p>The enhanced protocol is best practice and recommended, particularly
+for baseline surveys and inexperienced surveyors, as vouchers are
+provided to the relevant herbarium (or approved taxonomist) for
+identification. The Enhanced protocol is highly recommended when a plot
+is monitored for the first time and, for more arid environments, when a
+plot is monitored after favourable environmental conditions.</p>
+<p>The standard protocol includes the procedures and guidelines for
+collecting vouchers of the subset of the flora species from a plot,
+attaching voucher barcode labels, scanning voucher barcodes into the
+Monitor app or entering species into the app if they have already been
+vouchered from the project area, allocating the species growth form and
+taking plant photo vouchers (in-ground habit and close-ups of key
+distinguishing features). The guidelines provide further information on
+identifying species using keys, flora reference guides and local
+herbarium collections, and photography techniques, including specifics
+for photographing key distinguishing features to assist in
+identification.</p>
+<p>The standard protocol may be suitable for use by experienced field
+botanists that are able to confidently identify flora species in their
+region, or during a plot revisit where plant specimen vouchers have been
+previously collected and identified. This is intended to reduce survey
+time for experienced field botanists or during plot revisits, while
+ensuring a reference to verify any disputed field identifications. If
+any of the field identifications are disputed, there is at least one
+plant specimen voucher and plant photo vouchers for verification by
+taxonomic experts from herbaria or other expert opinions that may be
+sought.</p>
+<h2 id="relationship-to-other-modules">Relationship to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
 <ul>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821"
-          >Plot selection and layout</a
-        ></em
-      >
-      – the plot must be established first, and the boundaries defined to ensure
-      the surveyor remains within the plot boundaries while searching for flora
-      species.
-    </p>
-  </li>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95"
-          >Plant tissue vouchering</a
-        ></em
-      >
-      – a plant tissue sample is required from each flora species vouchered, or
-      a subset. Additional material is collected with the herbarium voucher
-      specimens.
-    </p>
-  </li>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b"
-          >Cover</a
-        ></em
-      >
-      – all flora species identifications/assigned field names need to be
-      recorded in the App to ensure consistent naming if they are encountered at
-      the point-intercepts.
-    </p>
-  </li>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32"
-          >Plot description</a
-        ></em
-      >
-      – the dominant flora species within each structural layer need to recorded
-      with consistent naming. This is particularly important if any of the
-      dominant species are unknown and need to be assigned a field name.
-    </p>
-  </li>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109"
-          >Condition</a
-        ></em
-      >
-      – Floristic information can used to inform on survey conditions.
-    </p>
-  </li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – the plot must be established
+and marked out to ensure the surveyor remains within the plot boundaries
+while searching for flora species and collecting plant specimen
+vouchers.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> – a physical description of the plot is
+also required to place the floristic data in context with the
+surrounding landform, land surface and vegetation. Field names assigned
+in the Floristics Module are required for consistent naming in plant
+species life-stage and mass flowering event data.</p></li>
 </ul>
-    """^^rdf:HTML ;
+<h3 id="section-1"></h3>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95">Plant Tissue Vouchering Module</a> – field names assigned in the
+Floristics Module are required for consistent naming of plant tissue
+vouchers.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> – field names assigned in the Floristics Module are
+required for consistent naming of plant species recorded at the
+point-intercepts.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5">Basal Area Module</a> – field names assigned in the Floristics Module
+are required for consistent naming of the tree species
+measured.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment Module</a> – field names assigned in the Floristics
+Module are required for consistent naming of the plant species
+measured.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> – field names assigned in the Floristics Module
+are required for consistent naming of the plant species measured.
+Floristic information can inform survey conditions.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508">Vegetation Mapping Module</a> – field names assigned in both modules
+required consistent naming if the same unknown flora species is
+recorded.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportune Module</a> – field names assigned in both modules require
+consistent naming if the same unknown flora species is
+recorded.</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 51%"/>
+<col style="width: 48%"/>
+</colgroup>
+<thead>
+<tr class="nav">
+<img id="figure-1" alt="Herbarium_A" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Herbarium_A.jpg" width="300"/>
+<img alt="Herbarium_B" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Herbarium_B.png" width="300"/>
+<img alt="Herbarium_C" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Herbarium_C.jpg" width="300"/>
+</tr>
+<td><p><span class="anchor"></span></p>
+<p>Figure 1. Plant specimen vouchers. Plant specimen vouchers mounted on A3 paper. (A) Plant material, including leaves, buds, flowers and fruit, taken
+from a large species. An envelop is used to store material that has come loose (top left). (B) Whole plant of a small species (centre). (C) Mulitiple individuals of a small species (right).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><img  id="figure-2" alt="Plant specimen voucher placed in a newspaper sheet in a field press." height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Figure_2.jpg" width="600"/></p>
+<p><span class="anchor"></span>Figure 2. Plant
+specimen voucher placed in a newspaper sheet in a field press.</p>
+"""^^rdf:HTML ;
     dcterms:source """
-    <h3 id="references">References</h3>
-<ul>
-  <li>
-    <p>
-      Andrae, J, McInerney, F, Polissar, P, Sniderman, J, Howard, S, Hall, P,
-      Phelps, S (2018) Initial expansion of C4 vegetation in Australia during
-      the late Pliocene. <em>Geophysical Research Letters</em>
-      <strong>45</strong>, 4831–4840.
-    </p>
-  </li>
-  <li>
-    <p>
-      Andrew, MH, Lange, RT (1986) Development of a new piosphere in arid
-      chenopod shruhland grazed by sheep. 2. Changes to the vegetation.
-      <em>Australian Journal of Ecology</em> <strong>11</strong>, 411–424.
-    </p>
-  </li>
-  <li>
-    <p>
-      Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E, Tokmakoff,
-      A, Lowe, AJ (2018) Floristic and structural assessment of Australian
-      rangeland vegetation with standardized plot-based surveys.
-      <em>PloS One</em> <strong>13</strong>, e0202073.
-    </p>
-  </li>
-  <li>
-    <p>
-      Belsky, AJ (1992) Effects of grazing, competition, disturbance and fire on
-      species composition and diversity in grassland communities.
-      <em>Journal of Vegetation Science</em> <strong>3</strong>, 187–200.
-    </p>
-  </li>
-  <li>
-    <p>
-      Brocklehurst, P, Lewis, D, Napier, D, Lynch, D (2007) Northern Territory
-      Guidelines and Field Methodology for Vegetation Survey and Mapping.
-      Technical Report No. 02/2007D. Department of Natural Resources,
-      Environment and the Arts, Palmerston, Northern Territory.
-    </p>
-  </li>
-  <li>
-    <p>
-      Caddy-Retalic, S, Wardle, G, Leitch, E, McInerney, F, Lowe, A (2020)
-      Vegetation change along a Mediterranean to arid zone bioclimatic gradient
-      reveals scale-dependent ecotone patterning.
-      <em>Australian Journal of Botany</em> <strong>68</strong>, 574–586.
-    </p>
-  </li>
-  <li>
-    <p>
-      Calinger, KM, Queenborough, S, Curtis, PS (2013) Herbarium specimens
-      reveal the footprint of climate change on flowering trends across
-      north‐central North America. <em>Ecology Letters</em> <strong>16</strong>,
-      1037–1044.
-    </p>
-  </li>
-  <li>
-    <p>
-      Casson, N, Downes, S, Harris, A (2009) Native Vegetation Condition
-      Assessment and Monitoring Manual for Western Australia. The Native
-      Vegetation Integrity Project. Department of Environment and Conservation,
-      Perth.
-    </p>
-  </li>
-  <li>
-    <p>
-      Cozzolino, S, Cafasso, D, Pellegrino, G, Musacchio, A, Widmer, A (2007)
-      Genetic variation in time and space: the use of herbarium specimens to
-      reconstruct patterns of genetic variation in the endangered orchid
-      <em>Anacamptis palustris</em>. <em>Conservation Genetics</em>
-      <strong>8</strong>, 629–639.
-    </p>
-  </li>
-  <li>
-    <p>
-      Craven, LA, Lepschi, BJ, Broadhurst, L, Byrne, M (2004) Taxonomic revision
-      of the broombush complex in Western Australia (Myrtaceae,
-      <em>Melaleuca uncinata s.l.</em>). <em>Australian Systematic Botany</em>
-      <strong>17</strong>, 255–271.
-    </p>
-  </li>
-  <li>
-    <p>
-      Culley, TM (2013) Why vouchers matter in botanical research.
-      <em>Applications in Plant Sciences</em> <strong>1</strong>, 1300076.
-    </p>
-  </li>
-  <li>
-    <p>
-      Dormontt, EE, Gardner, MG, Breed, MF, Rodger, JG, Prentis, PJ, Lowe, AJ
-      (2014) Genetic bottlenecks in time and space: reconstructing invasions
-      from contemporary and historical collections. <em>PloS One</em>
-      <strong>9</strong>, e106874.
-    </p>
-  </li>
-  <li>
-    <p>
-      Dormontt, EE, Van Dijk, K-j, Bell, KL, Biffin, E, Breed, MF, Byrne, M,
-      Caddy-Retalic, S, Encinas-Viso, F, Nevill, PG, Shapcott, A (2018)
-      Advancing DNA barcoding and metabarcoding applications for plants requires
-      systematic analysis of herbarium collections—an Australian perspective.
-      <em>Frontiers in Ecology and Evolution</em> <strong>6</strong>, 134.
-    </p>
-  </li>
-  <li>
-    <p>
-      Ehrenfeld, JG (2003) Effects of exotic plant invasions on soil nutrient
-      cycling processes. <em>Ecosystems</em> <strong>6</strong>, 503–523.
-    </p>
-  </li>
-  <li>
-    <p>
-      Environmental Protection Authority (2016) Technical Guidance: Flora and
-      Vegetation Surveys for Environmental Impact Assessment. Environmental
-      Protection Authority, Perth.
-    </p>
-  </li>
-  <li>
-    <p>
-      Feeley, KJ (2012) Distributional migrations, expansions, and contractions
-      of tropical plant species as revealed in dated herbarium records.
-      <em>Global Change Biology</em> <strong>18</strong>, 1335–1341.
-    </p>
-  </li>
-  <li>
-    <p>
-      Funk, VA, Gostel, M, Devine, A, Kelloff, CL, Wurdack, K, Tuccinardi, C,
-      Radosavljevic, A, Peters, M, Coddington, J (2017) Guidelines for
-      collecting vouchers and tissues intended for genomic work (Smithsonian
-      Institution): Botany Best Practices. <em>Biodiversity Data Journal</em>
-      <strong>5</strong>, e11625.
-    </p>
-  </li>
-  <li>
-    <p>
-      Gibson, N, Keighery, G, Lyons, M, Webb, A (2004) Terrestrial flora and
-      vegetation of the Western Australian wheatbelt.
-      <em>Records of the Western Australian Museum</em> <strong>67</strong>,
-      139–189.
-    </p>
-  </li>
-  <li>
-    <p>
-      Gómez-Bellver, C, Ibáñez, N, López‐Pujol, J, Nualart, N, Susanna, A (2019)
-      How photographs can be a complement of herbarium vouchers: A proposal of
-      standardization. <em>Taxon</em> <strong>68</strong>, 1321–1326.
-    </p>
-  </li>
-  <li>
-    <p>
-      Guerin, G, Saleeba, T, Munroe, S, Blanco-Martin, B, Martín-Forés, I,
-      Tokmakoff, A (2021) ausplotsR: TERN AusPlots Analysis Package. R package
-      version 1.2.2.
-      <a href="https://cran.r-project.org/package=ausplotsR"
-        ><u>https://CRAN.R-project.org/package=ausplotsR</u></a
-      >.
-    </p>
-  </li>
-  <li>
-    <p>
-      Guerin, GR, Andersen, AN, Rossetto, M, van Leeuwen, S, Byrne, M, Sparrow,
-      B, Rodrigo, M, Lowe, AJ (2019) Consistent sorting but contrasting
-      transition zones in plant communities along bioclimatic gradients.
-      <em>Acta Oecologica</em> <strong>95</strong>, 74–85.
-    </p>
-  </li>
-  <li>
-    <p>
-      Guerin, GR, Biffin, E, Baruch, Z, Lowe, AJ (2016) Identifying centres of
-      plant biodiversity in South Australia. <em>PloS One</em>
-      <strong>11</strong>, e0144779.
-    </p>
-  </li>
-  <li>
-    <p>
-      Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z,
-      Lowe, AJ (2017) Opportunities for integrated ecological analysis across
-      inland Australia with standardised data from Ausplots Rangelands.
-      <em>PloS One</em> <strong>12</strong>, e0170137.
-    </p>
-  </li>
-  <li>
-    <p>
-      Guerin, GR, Wen, H, Lowe, AJ (2012) Leaf morphology shift linked to
-      climate change. <em>Biology Letters</em> <strong>8</strong>, 882–886.
-    </p>
-  </li>
-  <li>
-    <p>
-      Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey: Using the
-      Biological Survey of South Australia. Department of Environment and
-      Natural Resources, Adelaide.
-    </p>
-  </li>
-  <li>
-    <p>
-      Hnatiuk, R, Thackway, R, Walker, J (2009) Vegetation. In 'Australian Soil
-      and Land Survey Field Handbook.' (Ed. The National Committee on Soil and
-      Terrain.) pp. 73­–125. (CSIRO Publishing: Melbourne)
-    </p>
-  </li>
-  <li>
-    <p>
-      Hosking, J, Sainty, G, Jacobs, S (2000) Certainty and uncertainty in plant
-      identification. <em>New Mexico Botanist</em> <strong>15</strong>, 1–4.
-    </p>
-  </li>
-  <li>
-    <p>
-      Lacerda, AEB, Nimmo, ER (2010) Can we really manage tropical forests
-      without knowing the species within? Getting back to the basics of forest
-      management through taxonomy. <em>Forest Ecology and Management</em>
-      <strong>259</strong>, 995–1002.
-    </p>
-  </li>
-  <li>
-    <p>
-      LaFrankie Jr, JV, Chua, AI (2015) Application of digital field photographs
-      as documents for tropical plant inventory.
-      <em>Applications in Plant Sciences</em> <strong>3</strong>, 1400116.
-    </p>
-  </li>
-  <li>
-    <p>
-      Liu, LM, Du, XY, Guo, C, Li, DZ (2020) Resolving robust phylogenetic
-      relationships of core Brassicaceae using genome skimming data.
-      <em>Journal of Systematics and Evolution</em>
-    </p>
-  </li>
-  <li>
-    <p>
-      Lyons, M, Gibson, N, Keighery, G, Lyons, S (2004) Wetland flora and
-      vegetation of the Western Australian Wheatbelt.
-      <em>Records of the Western Australian Museum Supplement</em>
-      <strong>67</strong>, 39–89.
-    </p>
-  </li>
-  <li>
-    <p>
-      MacDougall, AS, Loo, JA, Clayden, SR, Goltz, J, Hinds, H (1998) Defining
-      conservation priorities for plant taxa in southeastern New Brunswick,
-      Canada using herbarium records. <em>Biological Conservation</em>
-      <strong>86</strong>, 325–338.
-    </p>
-  </li>
-  <li>
-    <p>
-      Maslin, BR, Reid, JE (2012) A taxonomic revision of Mulga (<em
-        >Acacia aneura</em
-      >
-      and its close relatives: Fabaceae) in Western Australia. <em>Nuytsia</em>
-      <strong>22</strong>, 129–267.
-    </p>
-  </li>
-  <li>
-    <p>
-      Monks, L, Barrett, S, Beecham, B, Byrne, M, Chant, A, Coates, D, Cochrane,
-      JA, Crawford, A, Dillon, R, Yates, C (2019) Recovery of threatened plant
-      species and their habitats in the biodiversity hotspot of the Southwest
-      Australian Floristic Region. <em>Plant Diversity</em> <strong>41</strong>,
-      59–74.
-    </p>
-  </li>
-  <li>
-    <p>
-      NERP National Condition Working Group (2015) Biodiversity Condition: A
-      National Definition and Key Measurable Attributes. Draft for internal
-      review. The National Environmental Research Program, TERN, Adelaide.
-    </p>
-  </li>
-  <li>
-    <p>
-      NVIS Technical Working Group (2017) Australian Vegetation Attribute
-      Manual: National Vegetation Information System, Version 7.0. Department of
-      the Environment and Energy, Canberra.
-    </p>
-  </li>
-  <li>
-    <p>
-      Pereira, HM, Ferrier, S, Walters, M, Geller, GN, Jongman, R, Scholes, RJ,
-      Bruford, MW, Brummitt, N, Butchart, S, Cardoso, A (2013) Essential
-      biodiversity variables. <em>Science</em> <strong>339</strong>, 277–278.
-    </p>
-  </li>
-  <li>
-    <p>
-      R Core Team (2020) R: A language and environment for statistical
-      computing. R Foundation for Statistical Computing, Vienna, Austria. URL
-      <a href="https://www.r-project.org/"><u>https://www.R-project.org/</u></a
-      >.
-    </p>
-  </li>
-  <li>
-    <p>
-      Scaccabarozzi, D, Dixon, KW, Tomlinson, S, Milne, L, Bohman, B, Phillips,
-      RD, Cozzolino, S (2020) Pronounced differences in visitation by potential
-      pollinators to co-occurring species of Fabaceae in the Southwest
-      Australian biodiversity hotspot.
-      <em>Botanical Journal of the Linnean Society</em> <strong>194</strong>,
-      308–325.
-    </p>
-  </li>
-  <li>
-    <p>
-      Scott, WA, Hallam, CJ (2003) Assessing species misidentification rates
-      through quality assurance of vegetation monitoring.
-      <em>Plant Ecology</em> <strong>165</strong>, 101–115.
-    </p>
-  </li>
-  <li>
-    <p>
-      Smith, DL, Johnson, L (2004) Vegetation‐mediated changes in microclimate
-      reduce soil respiration as woodlands expand into grasslands.
-      <em>Ecology</em> <strong>85</strong>, 3348–3361.
-    </p>
-  </li>
-  <li>
-    <p>
-      Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
-      Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
-      vegetation and soil survey method for surveillance monitoring of rangeland
-      environments.
-      <em>Frontiers in Ecology and Evolution</em> <strong>8</strong>, 157.
-    </p>
-  </li>
-  <li>
-    <p>
-      Tokmakoff, A, Sparrow, B, Turner, D, Lowe, A (2016) AusPlots Rangelands
-      field data collection and publication: Infrastructure for ecological
-      monitoring.
-      <em>Future Generation Computer Systems</em> <strong>56</strong>, 537–549.
-    </p>
-  </li>
-  <li>
-    <p>
-      van der Ent, A, Jaffré, T, L’Huillier, L, Gibson, N, Reeves, RD (2015) The
-      flora of ultramafic soils in the Australia–Pacific Region: state of
-      knowledge and research priorities. <em>Australian Journal of Botany</em>
-      <strong>63</strong>, 173–190.
-    </p>
-  </li>
-  <li>
-    <p>
-      Woodward, FI (1987) Stomatal numbers are sensitive to increases in CO<sub
-        >2</sub
-      >
-      from pre-industrial levels. <em>Nature</em> <strong>327</strong>, 617–618.
-    </p>
-  </li>
-</ul>
-    """^^rdf:HTML ;
+    <h1 id="references">References</h1>
+<p>Andrae, J, McInerney, F, Polissar, P, Sniderman, J, Howard, S, Hall,
+P, Phelps, S (2018) Initial expansion of C4 vegetation in Australia
+during the late Pliocene. <em>Geophysical Research Letters</em>
+<strong>45</strong>, 4831–4840.</p>
+<p>Andrew, MH, Lange, RT (1986) Development of a new piosphere in arid
+chenopod shruhland grazed by sheep. 2. Changes to the vegetation.
+<em>Australian Journal of Ecology</em> <strong>11</strong>, 411–424.</p>
+<p>Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E,
+Tokmakoff, A, Lowe, AJ (2018) Floristic and structural assessment of
+Australian rangeland vegetation with standardized plot-based surveys.
+<em>PloS ONE</em> <strong>13</strong>, e0202073.</p>
+<p>Belsky, AJ (1992) Effects of grazing, competition, disturbance and
+fire on species composition and diversity in grassland communities.
+<em>Journal of Vegetation Science</em> <strong>3</strong>, 187–200.</p>
+<p>Brocklehurst, P, Lewis, D, Napier, D, Lynch, D (2007) Northern
+Territory Guidelines and Field Methodology for Vegetation Survey and
+Mapping. Technical Report No. 02/2007D. Department of Natural Resources,
+Environment and the Arts, Palmerston, Northern Territory.</p>
+<p>Caddy-Retalic, S, Wardle, G, Leitch, E, McInerney, F, Lowe, A (2020)
+Vegetation change along a Mediterranean to arid zone bioclimatic
+gradient reveals scale-dependent ecotone patterning. <em>Australian
+Journal of Botany</em> <strong>68</strong>, 574–586.</p>
+<p>Calinger, KM, Queenborough, S, Curtis, PS (2013) Herbarium specimens
+reveal the footprint of climate change on flowering trends across
+north‐central North America. <em>Ecology Letters</em>
+<strong>16</strong>, 1037–1044.</p>
+<p>Casson, N, Downes, S, Harris, A (2009) Native Vegetation Condition
+Assessment and Monitoring Manual for Western Australia. The Native
+Vegetation Integrity Project. Department of Environment and
+Conservation, Perth.</p>
+<p>Cozzolino, S, Cafasso, D, Pellegrino, G, Musacchio, A, Widmer, A
+(2007) Genetic variation in time and space: the use of herbarium
+specimens to reconstruct patterns of genetic variation in the endangered
+orchid <em>Anacamptis palustris</em>. <em>Conservation Genetics</em>
+<strong>8</strong>, 629–639.</p>
+<p>Craven, LA, Lepschi, BJ, Broadhurst, L, Byrne, M (2004) Taxonomic
+revision of the broombush complex in Western Australia (Myrtaceae,
+<em>Melaleuca uncinata s.l.</em>). <em>Australian Systematic Botany</em>
+<strong>17</strong>, 255–271.</p>
+<p>Culley, TM (2013) Why vouchers matter in botanical research.
+<em>Applications in Plant Sciences</em> <strong>1</strong>, 1300076.</p>
+<p>Dormontt, EE, Gardner, MG, Breed, MF, Rodger, JG, Prentis, PJ, Lowe,
+AJ (2014) Genetic bottlenecks in time and space: reconstructing
+invasions from contemporary and historical collections. <em>PloS
+ONE</em> <strong>9</strong>, e106874.</p>
+<p>Dormontt, EE, Van Dijk, K-j, Bell, KL, Biffin, E, Breed, MF, Byrne,
+M, Caddy-Retalic, S, Encinas-Viso, F, Nevill, PG, Shapcott, A (2018)
+Advancing DNA barcoding and metabarcoding applications for plants
+requires systematic analysis of herbarium collections—an Australian
+perspective. <em>Frontiers in Ecology and Evolution</em>
+<strong>6</strong>, 134.</p>
+<p>Ehrenfeld, JG (2003) Effects of exotic plant invasions on soil
+nutrient cycling processes. <em>Ecosystems</em> <strong>6</strong>,
+503–523.</p>
+<p>Feeley, KJ (2012) Distributional migrations, expansions, and
+contractions of tropical plant species as revealed in dated herbarium
+records. <em>Global Change Biology</em> <strong>18</strong>,
+1335–1341.</p>
+<p>Funk, VA, Gostel, M, Devine, A, Kelloff, CL, Wurdack, K, Tuccinardi,
+C, Radosavljevic, A, Peters, M, Coddington, J (2017) Guidelines for
+collecting vouchers and tissues intended for genomic work (Smithsonian
+Institution): Botany Best Practices. <em>Biodiversity Data Journal</em>
+<strong>5</strong>, e11625.</p>
+<p>Gibson, N, Keighery, GJ, Lyons, MN, Webb, A (2004) Terrestrial flora
+and vegetation of the Western Australian wheatbelt. <em>Records of the
+Western Australian Museum</em> <strong>67</strong>, 139–189.</p>
+<p>Gómez-Bellver, C, Ibáñez, N, López‐Pujol, J, Nualart, N, Susanna, A
+(2019) How photographs can be a complement of herbarium vouchers: A
+proposal of standardization. <em>Taxon</em> <strong>68</strong>,
+1321–1326.</p>
+<p>Guerin, G, Saleeba, T, Munroe, S, Blanco-Martin, B, Martín-Forés, I,
+Tokmakoff, A (2021) ausplotsR: TERN AusPlots Analysis Package. R package
+version 1.2.2. <a href="https://CRAN.R-project.org/package=ausplotsR">https://CRAN.R-project.org/package=ausplotsR</a>.</p>
+<p>Guerin, GR, Andersen, AN, Rossetto, M, van Leeuwen, S, Byrne, M,
+Sparrow, B, Rodrigo, M, Lowe, AJ (2019) Consistent sorting but
+contrasting transition zones in plant communities along bioclimatic
+gradients. <em>Acta Oecologica</em> <strong>95</strong>, 74–85.</p>
+<p>Guerin, GR, Biffin, E, Baruch, Z, Lowe, AJ (2016) Identifying centres
+of plant biodiversity in South Australia. <em>PloS ONE</em>
+<strong>11</strong>, e0144779.</p>
+<p>Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z,
+Lowe, AJ (2017) Opportunities for integrated ecological analysis across
+inland Australia with standardised data from Ausplots Rangelands.
+<em>PloS ONE</em> <strong>12</strong>, e0170137.</p>
+<p>Guerin, GR, Wen, H, Lowe, AJ (2012) Leaf morphology shift linked to
+climate change. <em>Biology Letters</em> <strong>8</strong>,
+882–886.</p>
+<p>Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey:
+Using the Biological Survey of South Australia. Department of
+Environment and Natural Resources, Adelaide.</p>
+<p>Hnatiuk, RJ, Thackway, R, Walker, J (2009) Vegetation. In 'Australian
+Soil and Land Survey Field Handbook.' (Ed. The National Committee on
+Soil and Terrain.) pp. 73–125. (CSIRO Publishing: Melbourne)</p>
+<p>Hosking, J, Sainty, G, Jacobs, S (2000) Certainty and uncertainty in
+plant identification. <em>New Mexico Botanist</em> <strong>15</strong>,
+1–4.</p>
+<p>Lacerda, AEB, Nimmo, ER (2010) Can we really manage tropical forests
+without knowing the species within? Getting back to the basics of forest
+management through taxonomy. <em>Forest Ecology and Management</em>
+<strong>259</strong>, 995–1002.</p>
+<p>LaFrankie Jr, JV, Chua, AI (2015) Application of digital field
+photographs as documents for tropical plant inventory. <em>Applications
+in Plant Sciences</em> <strong>3</strong>, 1400116.</p>
+<p>Liu, LM, Du, XY, Guo, C, Li, DZ (2021) Resolving robust phylogenetic
+relationships of core Brassicaceae using genome skimming data.
+<em>Journal of Systematics and Evolution</em> <strong>59</strong>,
+442–453.</p>
+<p>Lyons, M, Gibson, N, Keighery, G, Lyons, S (2004) Wetland flora and
+vegetation of the Western Australian Wheatbelt. <em>Records of the
+Western Australian Museum Supplement</em> <strong>67</strong>,
+39–89.</p>
+<p>MacDougall, AS, Loo, JA, Clayden, SR, Goltz, JG, Hinds, HR (1998)
+Defining conservation priorities for plant taxa in southeastern New
+Brunswick, Canada using herbarium records. <em>Biological
+Conservation</em> <strong>86</strong>, 325–338.</p>
+<p>Maslin, BR, Reid, JE (2012) A taxonomic revision of Mulga (<em>Acacia
+aneura</em> and its close relatives: Fabaceae) in Western Australia.
+<em>Nuytsia</em> <strong>22</strong>, 129–267.</p>
+<p>McKenzie, NJ, Grundy, MJ, Webster, R, Ringrose-Voase, AJ (2008)
+'Guidelines for surveying soil and land resources.' (CSIRO Publishing:
+Melbourne)</p>
+<p>Monks, L, Barrett, S, Beecham, B, Byrne, M, Chant, A, Coates, D,
+Cochrane, JA, Crawford, A, Dillon, R, Yates, C (2019) Recovery of
+threatened plant species and their habitats in the biodiversity hotspot
+of the Southwest Australian Floristic Region. <em>Plant Diversity</em>
+<strong>41</strong>, 59–74.</p>
+<p>NERP National Condition Working Group (2015) Biodiversity Condition:
+A National Definition and Key Measurable Attributes. Draft for internal
+review. The National Environmental Research Program, TERN, Adelaide.</p>
+<p>NVIS Technical Working Group (2017) Australian Vegetation Attribute
+Manual: National Vegetation Information System, Version 7.0. Department
+of the Environment and Energy, Canberra.</p>
+<p>Pereira, HM, Ferrier, S, Walters, M, Geller, GN, Jongman, R, Scholes,
+RJ, Bruford, MW, Brummitt, N, Butchart, S, Cardoso, A (2013) Essential
+biodiversity variables. <em>Science</em> <strong>339</strong>,
+277–278.</p>
+<p>R Core Team (2020) R: A language and environment for statistical
+computing. R Foundation for Statistical Computing, Vienna, Austria. URL
+<a href="https://www.R-project.org/">https://www.R-project.org/</a>.</p>
+<p>Scaccabarozzi, D, Dixon, KW, Tomlinson, S, Milne, L, Bohman, B,
+Phillips, RD, Cozzolino, S (2020) Pronounced differences in visitation
+by potential pollinators to co-occurring species of Fabaceae in the
+Southwest Australian biodiversity hotspot. <em>Botanical Journal of the
+Linnean Society</em> <strong>194</strong>, 308–325.</p>
+<p>Scott, WA, Hallam, CJ (2003) Assessing species misidentification
+rates through quality assurance of vegetation monitoring. <em>Plant
+Ecology</em> <strong>165</strong>, 101–115.</p>
+<p>Smith, DL, Johnson, L (2004) Vegetation‐mediated changes in
+microclimate reduce soil respiration as woodlands expand into
+grasslands. <em>Ecology</em> <strong>85</strong>, 3348–3361.</p>
+<p>Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
+Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
+vegetation and soil survey method for surveillance monitoring of
+rangeland environments. <em>Frontiers in Ecology and Evolution</em>
+<strong>8</strong>, 157.</p>
+<p>TERN (2023a) TERN Australia Soil and Herbarium Collection, Plant
+Specimen Mounting Guidelines. TERN, Adelaide.</p>
+<p>TERN (2023b) TERN Australia Soil and Herbarium Collection, Vascular
+Plant Collection Guidelines. TERN, Adelaide.</p>
+<p>van der Ent, A, Jaffré, T, L’Huillier, L, Gibson, N, Reeves, RD
+(2015) The flora of ultramafic soils in the Australia–Pacific Region:
+state of knowledge and research priorities. <em>Australian Journal of
+Botany</em> <strong>63</strong>, 173–190.</p>
+<p>Woodward, FI (1987) Stomatal numbers are sensitive to increases in
+CO<sub>2</sub> from pre-industrial levels. <em>Nature</em>
+<strong>327</strong>, 617–618.</p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition """
-    <h3 id="key-definitions-and-terminology">Key definitions and terminology</h3>
-<p>
-  Table 1. Key definitions and terms used in the <em>Floristics</em> module.
-</p>
+    <h2 id="key-definitions-and-terminology">Key definitions and
+terminology</h2>
 <table>
-  <colgroup>
-    <col style="width: 14%" />
-    <col style="width: 85%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Term</th>
-      <th>Definition</th>
-    </tr>
-    <tr class="odd">
-      <th>Floristics</th>
-      <th>
-        The study of the flora species present within a specific geographical
-        area (in this case the plot).
-      </th>
-    </tr>
-    <tr class="header">
-      <th>Flora species composition</th>
-      <th>
-        The identity of the flora species present within a specific vegetation
-        community or geographical area (in this case the plot).
-      </th>
-    </tr>
-    <tr class="odd">
-      <th>Plant press</th>
-      <th>
-        Consists of a wooden or metal frame (for rigidity), corrugated cardboard
-        ventilators (to allow air to flow through the press), folded paper,
-        typically a newspaper page (to absorb moisture and contain the plant
-        material), and straps to tighten the press (<a href='#figure-1'>Figure 1</a>). Used to extract
-        moisture from flora voucher specimens in the shortest period of time,
-        while preserving the morphological integrity of the plant, in order to
-        be mounted on herbarium paper for long-term storage.
-      </th>
-    </tr>
-    <tr class="header">
-      <th>Voucher</th>
-      <th>
-        A preserved specimen of an expertly identified taxon deposited in a
-        permanent and accessible storage facility that may later be obtained for
-        examination and further study (<a href='#figure-2'>Figure 2</a>(A)).
-      </th>
-    </tr>
-    <tr class="odd">
-      <th>Photo voucher</th>
-      <th>
-        A photo of a flora species clearly indicating its habit, its main organs
-        (leaves, flowers, inflorescences and fruits) or any other characters
-        (e.g. spines) that are useful for unambiguous species identification
-        (<a href='#figure-2'>Figure 2</a>(B), (C); also see <a href='#appendix-b'>Appendix B</a>).
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-<p id='figure-1'>
-  <img
-    src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/plant-presses.png"
-    alt="Plant presses"
-    widteh="794"
-    height="870"
-  />
-</p>
-<p>Figure 1. Plant presses.</p>
-<p id='figure-2'>
-  <img
-    src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/flora-and-photo-vouchers.png"
-    alt="Flora and photo vouchers of Agave fourcroyde"
-    widteh="958"
-    height="508"
-  />
-</p>
-<p>Figure 2. Flora and photo vouchers of <em>Agave fourcroyde</em></p>
-<p>
-  <em
-    >(A) mounted herbarium specimen of the terminal part of a leaf; (B) mounted
-    photo vouchers of the vegetative individual (from which the leaf was taken);
-    and (C) mounted photos vouchers of a flowering individual from the same
-    population (Gómez-Bellver et al. 2019)</em
-  >
-</p>
-    """^^rdf:HTML ;
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 80%"/>
+<col style="width: 0%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th> Term</th>
+<th>Definition</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contentious species</td>
+<td colspan="2">Species with disputed or uncertain taxonomy.</td>
+</tr>
+<tr class="even">
+<td>Data deficient</td>
+<td colspan="2">There is inadequate information to make a direct, or
+indirect assessment of its risk of extinction based its distribution
+and/or population status.</td>
+</tr>
+<tr class="odd">
+<td>Day press</td>
+<td>A lightweight plant press with a carry strap used while searching
+the plot to quickly store and maintain the integrity of plant specimens
+prior to transfer to a field press.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Field press</td>
+<td>A plant press used for longer term storage and drying of plant
+specimen vouchers for the duration of a field survey (up to two weeks;
+see <a href="#figure-2">Figure 2</a>).</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Flora species composition</td>
+<td>The identity of the flora species present within a specific
+vegetation community or geographical area (in this case the core
+monitoring plot).</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Floristics</td>
+<td>The study of the flora species present within a specific
+geographical area (in this case the plot).</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Important species</td>
+<td colspan="2">Includes species that are data deficient, appear to
+represent a range extension, have atypical characteristics or appear to
+represent a new species, or are used to classify a threatened ecological
+community.</td>
+</tr>
+<tr class="even">
+<td>Monitor</td>
+<td colspan="2">Field data collection app for Ecological Monitoring
+System Australia. Collects data using the Biodiversity Information
+Standard for delivery to the Australian Biodiversity Data Repository
+managed by the Department of Climate Change, Energy, the Environment and
+Water.</td>
+</tr>
+<tr class="odd">
+<td>New species</td>
+<td colspan="2">Species not yet vouchered from the project area,
+including from previous plots or visits.</td>
+</tr>
+<tr class="even">
+<td>Plant photo voucher</td>
+<td>A photo of a flora species clearly indicating its habit, its main
+organs (leaves, flowers, inflorescences and fruits) or any other
+characters (e.g. spines) that are useful for unambiguous species
+identification (see <a href="#appendix-3">Appendix 3</a>).</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Plant press</td>
+<td>Consists of a wooden or metal frame (for rigidity), corrugated
+cardboard ventilators (to allow air to flow through the press), folded
+paper, typically a newspaper page (to absorb moisture and contain the
+plant material), and straps to tighten the press (see <a href="#figure-2">Figure 2</a>). Used to
+extract moisture from plant specimen vouchers in the shortest period,
+while preserving the morphological integrity of the plant, in order to
+be mounted on herbarium paper for long-term storage.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Plant specimen voucher</td>
+<td>A pressed and dried specimen of an individual plant, containing
+aboveground structures (leaves, stems, bark, flowers, fruits, seeds) and
+belowground structures (roots, rhizomes) when possible (see <a href="#figure-1">Figure 1</a>).
+When lodged in herbaria, specimens are usually mounted onto acid-free
+paper, although depending on the type of specimen, they may be stored in
+a box, packet or jar under controlled environmental conditions (Culley
+2013).</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Range extension</td>
+<td colspan="2">When a species is recorded beyond its known
+distribution, thus extending its distribution.</td>
+</tr>
+<tr class="even">
+<td>Threatened species</td>
+<td colspan="2">Species listed under the <em>Environment Protection and
+Biodiversity Conservation Act 1999</em> and/or State/Territory
+legislation.</td>
+</tr>
+<tr class="odd">
+<td>Unknown species</td>
+<td colspan="2">Species that cannot be identified by experienced field
+botanists that are able to confidently flora species in their region, or
+during plot revisits where plant specimen vouchers have been previously
+collected.</td>
+</tr>
+<tr class="even">
+<td>Voucher</td>
+<td>A preserved specimen of an expertly identified taxon deposited in a
+permanent and accessible storage facility that may later be obtained for
+examination and further study.</td>
+<td></td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
     skos:memberList (
             <https://linked.data.gov.au/def/nrm/35175f0d-bdd7-4e32-908f-17f7239e78fa>
             <https://linked.data.gov.au/def/nrm/bc2ba93e-43f9-425f-83cd-bbf5c422bdf8>
@@ -592,106 +443,420 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Floristics Module" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/floristics/collection.ttl"^^xsd:anyURI ;
     tern:appendix """
-    <h3 id="appendices">Appendices</h3>
-    <h4 id="appendix-b">Appendix B. Photo voucher examples.</h4>
+    <h1 id="appendices">Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Growth
+forms and their definitions.</h4></p>
+<p>(pages 37–38; NVIS Technical Working Group 2017)</p>
 <table>
-  <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/whole-plant-growth-form.png"
-          alt="Whole plant (i.e. growth form)"
-          widteh="696"
-          height="928"
-        />
-      </th>
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/flowers.png"
-          alt="Flowers/inflorescence"
-          widteh="696"
-          height="928"
-        />
-      </th>
-    </tr>
-    <tr class="odd">
-      <th>Whole plant (i.e. growth form)</th>
-      <th>Flowers/inflorescence</th>
-    </tr>
-    <tr class="header">
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/buds.png"
-          alt="Buds"
-          widteh="696"
-          height="928"
-        />
-      </th>
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/fruit.png"
-          alt="Fruit"
-          widteh="696"
-          height="928"
-        />
-      </th>
-    </tr>
-    <tr class="odd">
-      <th>Buds</th>
-      <th>Fruit</th>
-    </tr>
-    <tr class="header">
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/leaves.png"
-          alt="Leaves"
-          widteh="696"
-          height="928"
-        />
-      </th>
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/stem.png"
-          alt="Stem"
-          widteh="696"
-          height="928"
-        />
-      </th>
-    </tr>
-    <tr class="odd">
-      <th>Leaves</th>
-      <th>Stem</th>
-    </tr>
-    <tr class="header">
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/roots.png"
-          alt="Roots"
-          widteh="696"
-          height="928"
-        />
-      </th>
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/barks.png"
-          alt="Bark"
-          widteh="696"
-          height="928"
-        />
-      </th>
-    </tr>
-    <tr class="odd">
-      <th>Roots</th>
-      <th>Bark</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Growth form</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tree</td>
+<td>Woody plants, more than 2 m tall with a single stem or branches well
+above the base.</td>
+</tr>
+<tr class="even">
+<td>Tree mallee</td>
+<td>Woody perennial plant usually of the genus <em>Eucalyptus</em>.
+Multi-stemmed with fewer than five trunks of which at least three exceed
+100 mm diameter at breast height (1.3 m). Usually 8 m or more.</td>
+</tr>
+<tr class="odd">
+<td>Shrub</td>
+<td>Woody plants multi-stemmed at the base (or within 200 mm from ground
+level) or if single stemmed, less than 2 m.</td>
+</tr>
+<tr class="even">
+<td>Mallee shrub</td>
+<td>Commonly less than 8 m tall, usually with five or more trunks, of
+which at least three of the largest do not exceed 100 mm diameter at
+breast height (1.3 m).</td>
+</tr>
+<tr class="odd">
+<td>Heath shrub</td>
+<td>Shrub usually less than 2 m, with sclerophyllous leaves having high
+fibre:protein ratios and with an area of nanophyll or smaller (less than
+225 mm<sup>2</sup>). Often a member of one the following families:
+Ericaceae, Myrtaceae, Fabaceae and Proteaceae. Commonly occur on
+nutrient-poor substrates.</td>
+</tr>
+<tr class="even">
+<td>Chenopod shrub</td>
+<td>Single or multi-stemmed, semi-succulent shrub of the family
+Chenopodiaceae exhibiting drought and salt tolerance.</td>
+</tr>
+<tr class="odd">
+<td>Samphire shrub</td>
+<td>Genera (of Tribe Salicornioideae, including: <em>Halosarcia</em>,
+<em>Pachycornia</em>, <em>Sarcocornia</em>, <em>Sclerostegia</em>,
+<em>Tecticornia</em> and <em>Tegicornia</em>) with articulate branches,
+fleshy stems and reduced flowers within the Chenopodiaceae family,
+succulent chenopods. Also the genus <em>Suaeda</em>.</td>
+</tr>
+<tr class="even">
+<td>Tussock grass</td>
+<td>Grass forming discrete but open tussocks usually with distinct
+individual shoots, or if not, then forming a hummock. These are the
+common agricultural grasses.</td>
+</tr>
+<tr class="odd">
+<td>Hummock grass</td>
+<td>Coarse xeromorphic grass with a mound-like form often dead in the
+middle; genus is <em>Triodia</em>.</td>
+</tr>
+<tr class="even">
+<td>Other grass</td>
+<td>Member of the family Poaceae, but having neither a distinctive
+tussock nor hummock appearance. Examples include stoloniferous species
+such as <em>Cynodon dactylon</em>.</td>
+</tr>
+<tr class="odd">
+<td>Sedge</td>
+<td>Herbaceous, usually perennial erect plant generally with a tufted
+habit and of the families Cyperaceae (true sedges) or Restionaceae (node
+sedges).</td>
+</tr>
+<tr class="even">
+<td>Rush</td>
+<td>Herbaceous, usually perennial erect monocot that is neither a grass
+nor a sedge. For the purposes of NVIS, rushes include the monocotyledon
+families Juncaceae, Typhaceae, Liliaceae, Iridaceae, Xyridaceae and the
+genus <em>Lomandra</em>. (i.e. "graminoid" or grass-like genera).</td>
+</tr>
+<tr class="odd">
+<td>Forb</td>
+<td>Herbaceous or slightly woody, annual or sometimes perennial plant
+(usually a dicotyledon).</td>
+</tr>
+<tr class="even">
+<td>Tree-fern</td>
+<td>Characterised by large and usually branched leaves (fronds),
+arborescent and terrestrial; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="odd">
+<td>Fern</td>
+<td>Ferns and fern allies, except tree-fern, above. Characterised by
+large and usually branched leaves (fronds), herbaceous and terrestrial
+to aquatic; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="even">
+<td>Bryophyte</td>
+<td>Mosses and Liverworts. Mosses are small plants usually with a
+slender leafbearing stem with no true vascular tissue. Liverworts are
+often moss-like in appearance or consisting of a flat, ribbon-like green
+thallus.</td>
+</tr>
+<tr class="odd">
+<td>Lichen</td>
+<td>Composite plant consisting of a fungus living symbiotically with
+algae; without true roots, stems or leaves.</td>
+</tr>
+<tr class="even">
+<td>Epiphyte</td>
+<td>Epiphytes, mistletoes and parasites. Plant with roots attached to
+the aerial portions of other plants. Can often be another growth form,
+such as fern or forb.</td>
+</tr>
+<tr class="odd">
+<td>Vine</td>
+<td>Climbing, twining, winding or sprawling plants usually with a woody
+stem.</td>
+</tr>
+<tr class="even">
+<td>Palm</td>
+<td>Palms and other arborescent monocotyledons. Members of the Arecaceae
+family or the genus <em>Pandanus</em>. (<em>Pandanus</em> is often
+multi-stemmed).</td>
+</tr>
+<tr class="odd">
+<td>Grass-tree</td>
+<td>Australian grass trees. Members of the Xanthorrhoeaceae family.</td>
+</tr>
+<tr class="even">
+<td>Cycad</td>
+<td>Members of the families Cycadaceae and Zamiaceae.</td>
+</tr>
+<tr class="odd">
+<td>Seagrass</td>
+<td>Flowering angiosperms forming sparse to dense mats of material at
+the subtidal and down to 30 m below mean sea level. Occasionally
+exposed.</td>
+</tr>
+<tr class="even">
+<td>Aquatic</td>
+<td>Plant growing in an inland waterway or wetland with the majority of
+its biomass under water for most of the year. Fresh, saline or brackish
+water.</td>
+</tr>
+<tr class="odd">
+<td>Lower plant</td>
+<td>Algae, fungus.</td>
+</tr>
+<tr class="even">
+<td>Unknown</td>
+<td>Unknown.</td>
+</tr>
+</tbody>
 </table>
-    """^^rdf:HTML ;
+<p><span class="anchor" id="appendix-2"></span></p>
+<p><h4>Appendix 2. Terms used to describe habit.</h4></p>
+<p>Uses terms and controlled vocabularies of HISPID 6.0 and Darwin Core
+(DwC).</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ascending</td>
+<td>Weakly erect.</td>
+</tr>
+<tr class="even">
+<td>Climbing</td>
+<td>Plants that climb upwards with the help of external support.</td>
+</tr>
+<tr class="odd">
+<td>Creeping</td>
+<td>Spread and grow outward from the original plant.</td>
+</tr>
+<tr class="even">
+<td>Decumbent</td>
+<td>More or less horizontal with down-turned tips.</td>
+</tr>
+<tr class="odd">
+<td>Erect</td>
+<td>Upright, perpendicular.</td>
+</tr>
+<tr class="even">
+<td>Pendulous</td>
+<td>Hanging down loosely.</td>
+</tr>
+<tr class="odd">
+<td>Procumbent</td>
+<td>More or less horizontal with up-turned tips.</td>
+</tr>
+<tr class="even">
+<td>Prostrate</td>
+<td>Completely flat on the substrate including trailing plants.</td>
+</tr>
+<tr class="odd">
+<td>Rhizomatous</td>
+<td>Plants that send out roots and shoots from its nodes.</td>
+</tr>
+<tr class="even">
+<td>Straggling</td>
+<td>Leaning or lying over other plants.</td>
+</tr>
+<tr class="odd">
+<td>Succulent</td>
+<td>Fleshy, juicy, soft in texture and usually thickened.</td>
+</tr>
+<tr class="even">
+<td>Tufted</td>
+<td>Of many stems growing in clusters attached at the base.</td>
+</tr>
+<tr class="odd">
+<td>Twinning</td>
+<td>Climbing plants which wind themselves around supports.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-3"></span></p>
+<p><h4>Appendix 3. Phenological attributes of a specimen.</h4></p>
+<p>Uses terms and controlled vocabularies of HISPID 6.0 and Darwin Core
+(DwC).</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Flowers</td>
+<td>Flowers</td>
+</tr>
+<tr class="even">
+<td>Fruit</td>
+<td>Fruit</td>
+</tr>
+<tr class="odd">
+<td>Buds</td>
+<td>Buds</td>
+</tr>
+<tr class="even">
+<td>Sterile</td>
+<td>Sterile</td>
+</tr>
+<tr class="odd">
+<td>Fertile</td>
+<td>Fertile</td>
+</tr>
+<tr class="even">
+<td>Leaf</td>
+<td>Leaf</td>
+</tr>
+<tr class="odd">
+<td>Adult</td>
+<td>An adult is a plant, animal or person who has reached full growth or
+alternatively is capable of reproduction.</td>
+</tr>
+<tr class="even">
+<td>Juvenile</td>
+<td>A juvenile is an individual organism that has not yet reached its
+adult form, sexual maturity or size. Juveniles sometimes look very
+different from the adult form, particularly in terms of their colour. In
+many organisms the juvenile has a different name from the adult.</td>
+</tr>
+<tr class="odd">
+<td>Seedling</td>
+<td>A seedling</td>
+</tr>
+<tr class="even">
+<td>Senescent</td>
+<td>Gradual deterioration in the function of an organism or organ with
+age.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-4"></span><h4>Appendix 4. Plant photo
+voucher examples.</h4></p>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><img alt="Appendix_4a" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4a.jpg" width="300"/></th>
+<th><img alt="Appendix_4b" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4b.jpg" width="300"/></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plant</td>
+<td>Flowers</td>
+</tr>
+<tr class="even">
+    <th><img alt="Appendix_4c" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4c.jpg" width="300"/></th>
+    <th><img alt="Appendix_4d" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4d.jpg" width="300"/></th>
+</tr>
+<tr class="odd">
+<td>Buds</td>
+<td>Fruit</td>
+</tr>
+<tr class="even">
+    <th><img alt="Appendix_4e" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4e.jpg" width="300"/></th>
+    <th><img alt="Appendix_4f" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4f.jpg" width="300"/></th>
+</tr>
+<tr class="odd">
+<td>Leaves</td>
+<td>Stem</td>
+</tr>
+<tr class="even">
+    <th><img alt="Appendix_4g" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4g.jpg" width="300"/></th>
+    <th><img alt="Appendix_4h" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4h.jpg" width="300"/></th>
+</tr>
+<tr class="odd">
+<td>Roots</td>
+<td>Bark</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-5"></span><h4>Appendix 5. Plant photo
+voucher instructions and guidelines.</h4></p>
+<table>
+<colgroup>
+<col style="width: 18%"/>
+<col style="width: 81%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Plant feature</th>
+<th>Plant photo voucher instructions and guidelines</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Whole plant (i.e. growth form)</td>
+<td>Photograph the plant habit; that is, its overall shape and form.
+Where possible please use a scale (e.g. graduated range pole) to show
+the height of the plant.</td>
+</tr>
+<tr class="even">
+<td>Leaves</td>
+<td>Photograph the leaves showing shape and any patterns, features (e.g.
+hairs, spikes) and colour variations (e.g. different coloured top and
+bottom). If relevant photograph the whole compound leaf and leaflets.
+Where possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Flower/inflorescence</td>
+<td>If present photograph individual flowers from the front, side and
+back. If relevant photograph the whole inflorescence (complete flower
+head). Where possible please use a scale (e.g. scale card, coin,
+pen).</td>
+</tr>
+<tr class="even">
+<td>Buds</td>
+<td>If present photograph the buds showing size, shape and number. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Fruit</td>
+<td>If present photograph the fruit showing size, shape and number.
+Where possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Seeds</td>
+<td>If present photograph the seeds show size, shape and number. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Stem</td>
+<td>If useful for identification photograph the stem (e.g. spines,
+cross-section shape). Where possible please use a scale (e.g. scale
+card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Bark</td>
+<td>If useful for identification photograph the bark. Where possible
+please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Roots/rhizomes</td>
+<td>If useful for identification photograph the roots or rhizomes. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Other</td>
+<td>If useful for identification photograph any other plant features
+(e.g. branch structure, ligule). Where possible please use a scale (e.g.
+scale card, coin, pen).</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
     tern:purpose """
     <h3 id="rationale">Rationale</h3>
 <p>
@@ -771,107 +936,54 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   (LaFrankie Jr and Chua 2015).
 </p>
     """^^rdf:HTML ;
-    tern:scope """
-      <h3>Contents</h3>
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li>
-      <a href="#key-definitions-and-terminology"
-        >Key definitions and terminology</a
-      >
-    </li>
-    <li><a href="#rationale">Rationale</a></li>
-    <li><a href="#module-overview">Module Overview</a></li>
-    <li><a href="#references">References</a></li>
-    <li><a href="#appendices">Appendices</a></li>
-  </ol>
-    <h3 id="introduction">Introduction</h3>
-<p>
-  Floristics is the study of the flora species present within a specific
-  geographical area. In the <em>Floristics</em> module, all vascular flora
-  species (native and introduced) within the plot are identified (to the species
-  level wherever possible and the subspecies level if relevant). Flora species
-  composition is recorded in the form of a species list or inventory (Hnatiuk
-  <em>et al.</em> 2009), and this forms the basis of the fundamental collection
-  of growth form (e.g. forb, grass, shrub, tree) and cover of all flora species
-  within the plot (NERP National Condition Working Group 2015). Flora species
-  composition is also an essential component of vegetation classification and
-  mapping (see the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508">Vegetation mapping</a></em> module; Hnatiuk
-  <em>et al.</em> 2009).
-</p>
-<p>
-  The <em>Floristics</em> module involves the collection of voucher specimens of
-  all species to support the species list recorded. Flora vouchers ensure
-  correct species identification, provide a taxonomic reference and ensure the
-  repeatability of studies. Specimens of known and unknown species are collected
-  and preserved appropriately in the field using a plant press, and later
-  identified by taxonomic experts from the relevant herbarium (Heard and Channon
-  1997; Culley 2013; Sparrow <em>et al.</em> 2020).
-</p>
-<p>
-  A flora voucher consists of a pressed and dried specimen of an individual,
-  containing aboveground structures (leaves, stems, flowers, fruits, seeds) and
-  belowground structures (roots, rhizomes) when possible. The specimen is
-  usually mounted onto acid-free paper, although depending on the type of
-  specimen, it may be stored in a box, packet or jar under controlled
-  environmental conditions (Culley 2013).
-</p>
-<p>
-  The <em>Floristics</em> module includes two protocols: (1) a full protocol in
-  which voucher specimens are collected for all species present in each plot;
-  and (2) a lite protocol in which voucher specimens are collected for a subset
-  of the species present in each plot, with photo vouchers collected for the
-  remaining species. At least one voucher specimen is collected for each species
-  present in the project area. The full protocol is best practice and
-  recommended, particularly for baseline surveys and inexperienced surveyors, as
-  all vouchers are provided to the relevant herbarium for identification by
-  taxonomic experts. The full protocol is highly recommended for at least the
-  first time a project area is monitored, and for more arid environments, the
-  first time a project area is monitored after favorable environmental
-  conditions.
-</p>
-<p>
-  The lite protocol may be suitable for use by experienced field botanists that
-  are able to confidently identify the majority of flora species in their
-  region, or during repeat surveys in monitoring plots where voucher specimens
-  have been previously collected. This is intended to reduce survey time for
-  experienced field botanists or for repeat surveys in monitoring plots, while
-  ensuring there is a reference to verify any disputed field identifications.
-  When implementing the lite protocol, after a voucher specimen is collected at
-  the first instance of each species within the project area, the majority of
-  the following instances can be photo vouchered without a physical voucher. The
-  subset of species requiring a physical voucher from each plot includes new
-  (i.e. not vouchered from the project area, including previous monitoring
-  periods), unknown, important (e.g. data deficient, range extension,
-  uncharacteristic growth form), contentious (i.e. disputed or uncertain
-  taxonomy) and threatened species (unless collection is not permitted or will
-  jeopardise the population). As with the full protocol, physical vouchers are
-  still provided to the relevant herbarium for identification by taxonomic
-  experts, but the lite protocol alternatively allows identifications to be
-  completed by experienced field botanists (i.e. based on confirmed vouchers
-  from previous monitoring periods, or readily identifiable species when
-  identification is certain). If any of the field identifications are disputed,
-  there is at least one voucher specimen and photo vouchers for verification. If
-  negotiated, taxonomic experts from herbaria may offer identification from the
-  photos, or other expert opinions may be sought.
-</p>
-<p>
-  The <em>Floristics</em> module is best undertaken during the main period of
-  plant emergence and reproduction (i.e. spring), which may vary based on survey
-  scope and location, as well as season. Although it is possible to survey flora
-  outside of this period, it is likely that the total number of species will be
-  underestimated. Considerable effort is required to locate signs of seasonal
-  species, and even this is unlikely to compensate for the effect of sub-optimal
-  survey timing (Casson <em>et al.</em> 2009). For additional details on optimal
-  survey timing across Australia see the
-  <em>Introduction and planning</em> chapter.
-</p>
-    """^^rdf:HTML ;
-    tern:undertakenAfter <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
-    tern:undertakenBefore
-        <https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109> ,
+    tern:scope """<h1 id="introduction">Introduction and background</h1>
+<p>Floristics is the study of the flora species present within a
+specific geographical area. In the Floristics Module, all native and
+introduced vascular flora species within a core monitoring plot are
+identified (to the species level wherever possible and the subspecies
+level if relevant). Flora species composition is recorded in the form of
+a species list or inventory (Hnatiuk <em>et al.</em> 2009), and this
+forms the basis of the fundamental collection of growth form (e.g. forb,
+grass, shrub, tree) and cover of all flora species within the plot (NERP
+National Condition Working Group 2015). Flora species composition is
+also essential to vegetation classification and mapping (see the
+Vegetation mapping module; McKenzie <em>et al.</em> 2008; Hnatiuk <em>et
+al.</em> 2009).</p>
+<p>The Floristics Module involves the collection of plant specimen
+vouchers of all species to support the species list recorded. Plant
+specimen vouchers ensure correct species identification, provide a
+taxonomic reference and ensure the repeatability of studies. Plant
+specimen vouchers are collected and preserved appropriately in the field
+using a plant press (see <a href="#key-definitions-and-terminology">Table 1</a>), and later identified by taxonomic
+experts (Heard and Channon 1997; Culley 2013; Sparrow <em>et al.</em>
+2020).</p>
+<p>A plant specimen voucher consists of a pressed and dried specimen of
+an individual, containing aboveground structures (leaves, stems, bark,
+flowers, fruits, seeds) and below-ground structures (roots, rhizomes)
+when possible. When lodged in herbaria, specimens are usually mounted
+onto acid-free paper, although depending on the type of specimen, they
+may be stored in a box, packet or jar under controlled environmental
+conditions (Culley 2013). See the TERN Vascular Plant Collection
+Guidelines and Plant Specimen Mounting Guidelines for further details
+(TERN 2023b, 2023a).</p>
+<p>Assigned field names (linked to voucher barcode labels) are the
+primary key for subsequent data collection for that species within a
+visit, ensuring consistent nomenclature. Plant specimen vouchers are
+intended to be identified by herbarium botanists (or approved
+taxonomists). A subset of specimens may be included in the respective
+local herbaria at the discretion of individual herbaria and subject to
+the standards prescribed by each institution. Tracking of plant specimen
+vouchers is of vital importance. Therefore, adhesive voucher barcode
+labels that can be scanned by mobile device software directly into the
+app are used.</p>"""^^rdf:HTML ;
+    tern:undertakenAfter
         <https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ,
-        <https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ;
-    tern:undertakenConcurrently <https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95> ;
+        <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508> ,
+        <https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109> ,
+        <https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95> ,
+        <https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970> ,
+        <https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6> ;
 .
 

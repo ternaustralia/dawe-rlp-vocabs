@@ -1,0 +1,802 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/35175f0d-bdd7-4e32-908f-17f7239e78fa>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """<h3>Contents</h3>
+<ol>
+<li><a href="#enhanced-protocol">Enhanced Protocol</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#appendices">Appendices</a></li>
+</ol>
+<h1 id="enhanced-protocol">Enhanced Rrotocol</h1>
+<h2 id="field-collection">Field collection</h2>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<li><p>Generate area checklists from Atlas of Living Australia,
+Australasian Virtual Herbarium or herbaria electronic floras, including
+known, threatened, and sensitive species from the project area.</p></li>
+<li><p>Become familiar with the characters and habitat requirements of
+threatened and sensitive species potentially occurring in the project
+area.</p></li>
+<li><p>Become familiar with the TERN Vascular Plant Collection
+Guidelines.</p></li>
+</ul>
+<h3 id="time-requirements">Time requirements</h3>
+<p>Survey time requirements will vary depending on the number and
+experience of personnel, their familiarity with the flora of the region,
+and the species richness and cover within the plot.</p>
+<p>As a general guide:</p>
+<ul>
+<li><p>Allow between 0.5–1.5 hours to search for flora species and
+collect plant specimen vouchers from the plot.</p></li>
+<li><p>Allow between 0.5–1.5 hours to prepare plant specimen vouchers,
+attach voucher labels, enter and scan the species into the app, and
+transfer the specimens to a field press.</p></li>
+<li><p>Allow approximately 10 minutes per field press, every 2–3 days
+during the field survey, to inspect and change newspaper if
+necessary.</p></li>
+<li><p>Allow 1–2 hours after the field survey to deliver the plant
+specimen vouchers to the local State or Territory herbarium.</p></li>
+</ul>
+<h3 id="personnel-requirements">Personnel requirements</h3>
+<p>Number of personnel and skills:</p>
+<ul>
+<li><p>Searching the plot and collecting a plant specimen voucher for
+all flora species present is best conducted with two personnel. This
+enables more ground, including microhabitats, to be covered from
+multiple viewpoints.</p></li>
+<li><p>Processing plant specimen vouchers is best conducted with two
+personnel, one processing the specimens and one recording the data
+directly into the app.</p></li>
+<li><p>The surveyors making the observations should be familiar with and
+experienced in identifying the characteristic identifiable features of
+flora species and how to distinguish one species from another. If
+surveyors are not confident, time should be dedicated to practising,
+using field reference guides, and seeking advice before conducting this
+protocol.</p></li>
+<li><p>Floristics surveys involve the collection of plant specimen
+vouchers. Therefore, scientific permits are likely to be required.
+Additional permits may be required for collecting threatened flora
+species, so always check with your local authority.</p></li>
+</ul>
+"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 class="unnumbered" id="survey-timing">Survey timing</h4>
+<ul>
+<li><p>The Floristics Module is best undertaken during the main plant
+emergence and reproduction period, which may vary based on survey scope,
+location and season. Although it is possible to survey flora outside of
+this period, the total number of species will likely be underestimated.
+Considerable effort is required to locate signs of seasonal species, and
+even this is unlikely to compensate for the effect of sub-optimal survey
+timing (Casson et al. 2009).</p></li>
+</ul>
+<h4 class="unnumbered" id="searching-for-species">Searching for
+species</h4>
+<ul>
+<li><p>The surveyor/s should systematically meander around the plot to
+ensure the whole plot is searched. Partitioning the plot into quarters
+or belt transects is recommended.</p></li>
+<li><p>If the vegetation is sparse and/or has low diversity (either
+naturally or due to disturbance), a search time of 30–45 minutes may be
+suitable.</p></li>
+<li><p>If the vegetation is dense and/or has high diversity, a search
+time of at least 90 minutes is recommended.</p></li>
+<li><p>Search times should be increased for inexperienced
+surveyors.</p></li>
+<li><p>Make a point of searching all micro-habitats within the plot
+(e.g. rocky escarpments, low points with/near water, litter underneath
+shrubs and trees, further away from any disturbances).</p></li>
+<li><p>Other surveyors can help by informing on any uncommon or
+inconspicuous species observed while setting up/undertaking other
+modules.</p></li>
+</ul>
+<h4 class="unnumbered" id="collecting-plant-specimen-vouchers">Collecting plant specimen
+vouchers</h4>
+<ul>
+<li><p>A day press should be used during specimen collection to maintain
+their integrity. If one is not available, an individual paper bag per
+specimen can be used, each stored within a larger plastic bag during
+collection, and specimens should be promptly transferred to a field
+press.</p></li>
+<li><p>Once a handful of specimens are collected, transfer them to the
+day press. Specimens from two species can be stored in the same
+newspaper sheet. However, avoid putting similar species (e.g. grasses,
+same genera) in the same sheet to prevent mixing diagnostic characters
+(e.g. seeds, fruit).</p></li>
+<li><p>Permits are required to collect specimens and they must be
+collected in accordance with the conditions and guidelines for each
+jurisdiction.</p></li>
+<li><p>Additional scientific permits may be required to collect
+threatened species. Check with appropriate jurisdictions to ensure
+permits are obtained, and conditions are understood. A threatened
+species collection permit may require additional data to be collected,
+and voucher submission to the respective herbaria.</p></li>
+<li><p>Collection of specimens of rare, threatened or endangered species
+should only be made when such actions would not jeopardise the continued
+existence of the population.</p></li>
+<li><p>If collecting a specimen would jeopardise the continued existence
+of a rare, threatened or endangered flora population, the following can
+serve as a specimen (listed in decreasing order of preference):</p></li>
+</ul>
+<ul>
+<li><p>portion of fertile plant without the root.</p></li>
+<li><p>photos of plant in conjunction with a piece of fertile plant or
+plant parts (leaves and flowers or fruits).</p></li>
+<li><p>photos of fertile plant in conjunction with sterile plant
+specimen.</p></li>
+<li><p>sterile plant specimen only, or photos only.</p></li>
+</ul>
+<ul>
+<li><p>Discretion should be used in the case of re-visited populations
+of rare, threatened or endangered flora during monitoring programs as it
+may not be necessary to document each observation with an additional
+specimen.</p></li>
+<li><p>To aid identification, each specimen should ideally include, when
+available: vegetative material (i.e. leaves, phyllodes), flowers or
+buds, fruit and bark (for trees). For particular groups, ensure material
+that includes diagnostic characters is included to aid in identification
+based on morphology. Try to minimise the number of individual specimens
+needed to represent each species by maximising the number of plant
+components (e.g. flowers, fruit, leaves) on each specimen
+collected.</p></li>
+<li><p>If also undertaking the <a href="https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95">Plant Tissue Vouchering Module</a>, collect
+young, actively growing material if available. Although it is inevitable
+that during some surveys only sterile or vegetative material will be
+available, such material should still be collected. The quantity of leaf
+material collected needs to be sufficient to enable removal of samples
+for genetic profiling (equivalent to approximately 10 cm<sup>2</sup> or
+five eucalypt leaves). For small plants, this may require collection of
+at least two specimens – one for a plant specimen voucher and one for a
+plant tissue voucher.</p></li>
+<li><p>For small species, collect the whole plant, including the basal
+material and roots, particularly for Gramineae (Poaceae), Cyperaceae and
+Juncaceae (<a href="#figure-1">Figure 1B</a>).</p></li>
+<li><p>For small annuals and ephemerals, collect a number of individuals
+(<a href="#figure-1">Figure 1C</a>).</p></li>
+<li><p>For specimens that you anticipate herbaria will wish to lodge
+(e.g. species of interest to the herbaria determined from pre-survey
+consultation), a duplicate should be collected.</p></li>
+</ul>
+<h4 class="unnumbered" id="assigning-field-names">Assigning field
+names</h4>
+<ul>
+<li><p>When you assign a definitive species name, use current names
+published in the Australian Plant Census for consistent taxonomy across
+the jurisdictions .</p></li>
+<li><p>When assigning a field name, the field name must make sense to
+you as it will be used in subsequent modules for data collection. The
+name can be anything, but it is essential that the name is used on every
+occasion that you are detailing that species; you must be consistent
+with its use in the plot and over the project area. Your field names
+will not be made publicly available when the plot data is published,
+however herbarium staff will have access to your field names.</p></li>
+<li><p>Avoid using labels such as <em>Acacia</em> sp., use a descriptive
+word instead (e.g. <em>Acacia</em> spiky). This saves confusion later
+regarding whether it was a genuine species in a non-identifiable
+vegetative form or not.</p></li>
+<li><p>A photo should be taken for unknown species that have been
+assigned a field name to help identify them when surveying other plots
+or completing other modules (e.g. Cover Module).</p></li>
+</ul>
+<h4 class="unnumbered" id="pressing-plant-specimen-vouchers">Pressing
+plant specimen vouchers</h4>
+<ul>
+<li><p>Ensure not too much material is in the newspaper sheet and the
+specimen is laid out flat as the specimen will not press and dry
+properly.</p></li>
+<li><p>Note that a separate batch of sequential voucher barcode labels
+is used for plant specimen vouchers, plant tissue vouchers, fauna
+vouchers, and soil samples. Therefore, care is needed to ensure the
+correct label is being used.</p></li>
+<li><p>Sheets of foam the size of the press can be used when pressing
+bulky items to make pressing easier and retain the integrity of the
+specimens.</p></li>
+<li><p>For wet specimens, wrap them in newspaper to assist drying-out,
+or store in a vial with Kew mixture. Blotting paper can also be used to
+absorb moisture and assist in drying.</p></li>
+<li><p>For small wet specimens, wrap them in newspaper and place them in
+a small snap-lock bag or paper bag until ready for pressing, or store in
+a vial with Kew mixture.</p></li>
+<li><p>Specimens should be placed into a field press before leaving each
+plot to ensure that none are lost and that diagnostic characters will be
+better preserved.</p></li>
+<li><p>Change the newspaper regularly to prevent specimens from becoming
+mouldy. Frequent changes will be necessary if specimens were damp when
+collected.</p></li>
+<li><p>Keep succulent plants in a separate press to facilitate more
+frequent changing of papers and reduce the risk of damaging other
+specimens.</p></li>
+<li><p>Succulent plants are difficult to dry and can be frozen overnight
+(either in the field or on return to the office) to fracture the cell
+walls enabling the moisture to escape. Once frozen, the specimen can be
+transferred to newspaper and cardboard in the press for the plot which
+it was recorded from.</p></li>
+<li><p>A field herbarium dryer may be used (especially in the tropics)
+to avoid specimens going mouldy.</p></li>
+<li><p>A photo may be useful to assist in the accurate identification of
+a species, particularly for species where colour is important to
+identification but may not be preserved in the dried specimen.</p></li>
+</ul>
+<h2 id="post-field-survey-tasks">Post-field survey tasks</h2>
+<h3 id="sample-curation">Sample curation</h3>
+<ul>
+<li><p>Inspect the field press and change newspaper when
+necessary.</p></li>
+<li><p>Contact the local herbaria (or approved taxonomist) completing
+the identifications to determine the procedures for lodging plant
+specimen vouchers for identification (also see the Lodging EMSA
+Specimens and Samples information sheet).</p></li>
+<li><p>Check with the local herbaria (or approved taxonomist) completing
+the identifications and provide the required associated information.
+This is often a request form. Include the plot number, and location
+details on the form, along with the associated barcodes and field
+identification names, and information on the vegetation community that
+may be beneficial.</p></li>
+</ul>"""^^rdf:HTML ;
+    skos:prefLabel "Floristics - Enhanced Protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/floristics/enhanced-protocol/enhanced-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h1 id="appendices">Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Growth
+forms and their definitions.</h4></p>
+<p>(pages 37–38; NVIS Technical Working Group 2017)</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Growth form</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tree</td>
+<td>Woody plants, more than 2 m tall with a single stem or branches well
+above the base.</td>
+</tr>
+<tr class="even">
+<td>Tree mallee</td>
+<td>Woody perennial plant usually of the genus <em>Eucalyptus</em>.
+Multi-stemmed with fewer than five trunks of which at least three exceed
+100 mm diameter at breast height (1.3 m). Usually 8 m or more.</td>
+</tr>
+<tr class="odd">
+<td>Shrub</td>
+<td>Woody plants multi-stemmed at the base (or within 200 mm from ground
+level) or if single stemmed, less than 2 m.</td>
+</tr>
+<tr class="even">
+<td>Mallee shrub</td>
+<td>Commonly less than 8 m tall, usually with five or more trunks, of
+which at least three of the largest do not exceed 100 mm diameter at
+breast height (1.3 m).</td>
+</tr>
+<tr class="odd">
+<td>Heath shrub</td>
+<td>Shrub usually less than 2 m, with sclerophyllous leaves having high
+fibre:protein ratios and with an area of nanophyll or smaller (less than
+225 mm<sup>2</sup>). Often a member of one the following families:
+Ericaceae, Myrtaceae, Fabaceae and Proteaceae. Commonly occur on
+nutrient-poor substrates.</td>
+</tr>
+<tr class="even">
+<td>Chenopod shrub</td>
+<td>Single or multi-stemmed, semi-succulent shrub of the family
+Chenopodiaceae exhibiting drought and salt tolerance.</td>
+</tr>
+<tr class="odd">
+<td>Samphire shrub</td>
+<td>Genera (of Tribe Salicornioideae, including: <em>Halosarcia</em>,
+<em>Pachycornia</em>, <em>Sarcocornia</em>, <em>Sclerostegia</em>,
+<em>Tecticornia</em> and <em>Tegicornia</em>) with articulate branches,
+fleshy stems and reduced flowers within the Chenopodiaceae family,
+succulent chenopods. Also the genus <em>Suaeda</em>.</td>
+</tr>
+<tr class="even">
+<td>Tussock grass</td>
+<td>Grass forming discrete but open tussocks usually with distinct
+individual shoots, or if not, then forming a hummock. These are the
+common agricultural grasses.</td>
+</tr>
+<tr class="odd">
+<td>Hummock grass</td>
+<td>Coarse xeromorphic grass with a mound-like form often dead in the
+middle; genus is <em>Triodia</em>.</td>
+</tr>
+<tr class="even">
+<td>Other grass</td>
+<td>Member of the family Poaceae, but having neither a distinctive
+tussock nor hummock appearance. Examples include stoloniferous species
+such as <em>Cynodon dactylon</em>.</td>
+</tr>
+<tr class="odd">
+<td>Sedge</td>
+<td>Herbaceous, usually perennial erect plant generally with a tufted
+habit and of the families Cyperaceae (true sedges) or Restionaceae (node
+sedges).</td>
+</tr>
+<tr class="even">
+<td>Rush</td>
+<td>Herbaceous, usually perennial erect monocot that is neither a grass
+nor a sedge. For the purposes of NVIS, rushes include the monocotyledon
+families Juncaceae, Typhaceae, Liliaceae, Iridaceae, Xyridaceae and the
+genus <em>Lomandra</em>. (i.e. "graminoid" or grass-like genera).</td>
+</tr>
+<tr class="odd">
+<td>Forb</td>
+<td>Herbaceous or slightly woody, annual or sometimes perennial plant
+(usually a dicotyledon).</td>
+</tr>
+<tr class="even">
+<td>Tree-fern</td>
+<td>Characterised by large and usually branched leaves (fronds),
+arborescent and terrestrial; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="odd">
+<td>Fern</td>
+<td>Ferns and fern allies, except tree-fern, above. Characterised by
+large and usually branched leaves (fronds), herbaceous and terrestrial
+to aquatic; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="even">
+<td>Bryophyte</td>
+<td>Mosses and Liverworts. Mosses are small plants usually with a
+slender leafbearing stem with no true vascular tissue. Liverworts are
+often moss-like in appearance or consisting of a flat, ribbon-like green
+thallus.</td>
+</tr>
+<tr class="odd">
+<td>Lichen</td>
+<td>Composite plant consisting of a fungus living symbiotically with
+algae; without true roots, stems or leaves.</td>
+</tr>
+<tr class="even">
+<td>Epiphyte</td>
+<td>Epiphytes, mistletoes and parasites. Plant with roots attached to
+the aerial portions of other plants. Can often be another growth form,
+such as fern or forb.</td>
+</tr>
+<tr class="odd">
+<td>Vine</td>
+<td>Climbing, twining, winding or sprawling plants usually with a woody
+stem.</td>
+</tr>
+<tr class="even">
+<td>Palm</td>
+<td>Palms and other arborescent monocotyledons. Members of the Arecaceae
+family or the genus <em>Pandanus</em>. (<em>Pandanus</em> is often
+multi-stemmed).</td>
+</tr>
+<tr class="odd">
+<td>Grass-tree</td>
+<td>Australian grass trees. Members of the Xanthorrhoeaceae family.</td>
+</tr>
+<tr class="even">
+<td>Cycad</td>
+<td>Members of the families Cycadaceae and Zamiaceae.</td>
+</tr>
+<tr class="odd">
+<td>Seagrass</td>
+<td>Flowering angiosperms forming sparse to dense mats of material at
+the subtidal and down to 30 m below mean sea level. Occasionally
+exposed.</td>
+</tr>
+<tr class="even">
+<td>Aquatic</td>
+<td>Plant growing in an inland waterway or wetland with the majority of
+its biomass under water for most of the year. Fresh, saline or brackish
+water.</td>
+</tr>
+<tr class="odd">
+<td>Lower plant</td>
+<td>Algae, fungus.</td>
+</tr>
+<tr class="even">
+<td>Unknown</td>
+<td>Unknown.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-2"></span></p>
+<p><h4>Appendix 2. Terms used to describe habit.</h4></p>
+<p>Uses terms and controlled vocabularies of HISPID 6.0 and Darwin Core
+(DwC).</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ascending</td>
+<td>Weakly erect.</td>
+</tr>
+<tr class="even">
+<td>Climbing</td>
+<td>Plants that climb upwards with the help of external support.</td>
+</tr>
+<tr class="odd">
+<td>Creeping</td>
+<td>Spread and grow outward from the original plant.</td>
+</tr>
+<tr class="even">
+<td>Decumbent</td>
+<td>More or less horizontal with down-turned tips.</td>
+</tr>
+<tr class="odd">
+<td>Erect</td>
+<td>Upright, perpendicular.</td>
+</tr>
+<tr class="even">
+<td>Pendulous</td>
+<td>Hanging down loosely.</td>
+</tr>
+<tr class="odd">
+<td>Procumbent</td>
+<td>More or less horizontal with up-turned tips.</td>
+</tr>
+<tr class="even">
+<td>Prostrate</td>
+<td>Completely flat on the substrate including trailing plants.</td>
+</tr>
+<tr class="odd">
+<td>Rhizomatous</td>
+<td>Plants that send out roots and shoots from its nodes.</td>
+</tr>
+<tr class="even">
+<td>Straggling</td>
+<td>Leaning or lying over other plants.</td>
+</tr>
+<tr class="odd">
+<td>Succulent</td>
+<td>Fleshy, juicy, soft in texture and usually thickened.</td>
+</tr>
+<tr class="even">
+<td>Tufted</td>
+<td>Of many stems growing in clusters attached at the base.</td>
+</tr>
+<tr class="odd">
+<td>Twinning</td>
+<td>Climbing plants which wind themselves around supports.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-3"></span></p>
+<p><h4>Appendix 3. Phenological attributes of a specimen.</h4></p>
+<p>Uses terms and controlled vocabularies of HISPID 6.0 and Darwin Core
+(DwC).</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Flowers</td>
+<td>Flowers</td>
+</tr>
+<tr class="even">
+<td>Fruit</td>
+<td>Fruit</td>
+</tr>
+<tr class="odd">
+<td>Buds</td>
+<td>Buds</td>
+</tr>
+<tr class="even">
+<td>Sterile</td>
+<td>Sterile</td>
+</tr>
+<tr class="odd">
+<td>Fertile</td>
+<td>Fertile</td>
+</tr>
+<tr class="even">
+<td>Leaf</td>
+<td>Leaf</td>
+</tr>
+<tr class="odd">
+<td>Adult</td>
+<td>An adult is a plant, animal or person who has reached full growth or
+alternatively is capable of reproduction.</td>
+</tr>
+<tr class="even">
+<td>Juvenile</td>
+<td>A juvenile is an individual organism that has not yet reached its
+adult form, sexual maturity or size. Juveniles sometimes look very
+different from the adult form, particularly in terms of their colour. In
+many organisms the juvenile has a different name from the adult.</td>
+</tr>
+<tr class="odd">
+<td>Seedling</td>
+<td>A seedling</td>
+</tr>
+<tr class="even">
+<td>Senescent</td>
+<td>Gradual deterioration in the function of an organism or organ with
+age.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-4"></span><h4>Appendix 4. Plant photo
+voucher examples.</h4></p>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><img alt="Appendix_4a" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4a.jpg" width="300"/></th>
+<th><img alt="Appendix_4b" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4b.jpg" width="300"/></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plant</td>
+<td>Flowers</td>
+</tr>
+<tr class="even">
+    <th><img alt="Appendix_4c" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4c.jpg" width="300"/></th>
+    <th><img alt="Appendix_4d" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4d.jpg" width="300"/></th>
+</tr>
+<tr class="odd">
+<td>Buds</td>
+<td>Fruit</td>
+</tr>
+<tr class="even">
+    <th><img alt="Appendix_4e" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4e.jpg" width="300"/></th>
+    <th><img alt="Appendix_4f" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4f.jpg" width="300"/></th>
+</tr>
+<tr class="odd">
+<td>Leaves</td>
+<td>Stem</td>
+</tr>
+<tr class="even">
+    <th><img alt="Appendix_4g" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4g.jpg" width="300"/></th>
+    <th><img alt="Appendix_4h" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Appendix_4h.jpg" width="300"/></th>
+</tr>
+<tr class="odd">
+<td>Roots</td>
+<td>Bark</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-5"></span><h4>Appendix 5. Plant photo
+voucher instructions and guidelines.</h4></p>
+<table>
+<colgroup>
+<col style="width: 18%"/>
+<col style="width: 81%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Plant feature</th>
+<th>Plant photo voucher instructions and guidelines</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Whole plant (i.e. growth form)</td>
+<td>Photograph the plant habit; that is, its overall shape and form.
+Where possible please use a scale (e.g. graduated range pole) to show
+the height of the plant.</td>
+</tr>
+<tr class="even">
+<td>Leaves</td>
+<td>Photograph the leaves showing shape and any patterns, features (e.g.
+hairs, spikes) and colour variations (e.g. different coloured top and
+bottom). If relevant photograph the whole compound leaf and leaflets.
+Where possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Flower/inflorescence</td>
+<td>If present photograph individual flowers from the front, side and
+back. If relevant photograph the whole inflorescence (complete flower
+head). Where possible please use a scale (e.g. scale card, coin,
+pen).</td>
+</tr>
+<tr class="even">
+<td>Buds</td>
+<td>If present photograph the buds showing size, shape and number. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Fruit</td>
+<td>If present photograph the fruit showing size, shape and number.
+Where possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Seeds</td>
+<td>If present photograph the seeds show size, shape and number. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Stem</td>
+<td>If useful for identification photograph the stem (e.g. spines,
+cross-section shape). Where possible please use a scale (e.g. scale
+card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Bark</td>
+<td>If useful for identification photograph the bark. Where possible
+please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Roots/rhizomes</td>
+<td>If useful for identification photograph the roots or rhizomes. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Other</td>
+<td>If useful for identification photograph any other plant features
+(e.g. branch structure, ligule). Where possible please use a scale (e.g.
+scale card, coin, pen).</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    tern:equipment """
+   <h3 id="equipment">Equipment</h3>
+<ul>
+<li><p>Mobile device (tablet/phone) with the Monitor app
+pre-loaded</p></li>
+<li><p>Secateurs</p></li>
+<li><p>Long reach pruner/arborist throw line and weight (reaching out of
+reach diagnostic material)</p></li>
+<li><p>Hand trowel</p></li>
+<li><p>Gloves (handling prickly, sticky, or poisonous plants)</p></li>
+<li><p>Satchel (carrying equipment needed during collection)</p></li>
+<li><p>Plant presses (day presses and field presses)</p></li>
+<li><p>Newspaper (tabloid size) and cardboard (43.5 x 28.5 cm)</p></li>
+<li><p>Foam sheets (43.5 x 28.5 x 1 cm; pressing bulky
+specimens)</p></li>
+<li><p>Envelopes (storage of seeds and other small plant
+material)</p></li>
+<li><p>Kew mixture (70:1:29 ethanol:glycerol:water) and vials
+(preserving delicate specimens)</p></li>
+<li><p>Voucher barcode labels (see the Generating Voucher Barcode Labels
+for EMSA Specimens and Samples instruction sheet)</p></li>
+<li><p>Permanent marker</p></li>
+<li><p>Photo reference scales (bank card sized scale, incremental
+pole)</p></li>
+<li><p>Hand lens</p></li>
+<li><p>Backup camera, camera batteries and SD card</p></li>
+<li><p>TERN Vascular Plant Collection Guidelines</p></li>
+<li><p>Flora reference keys, guides, and apps</p></li>
+<li><p>Area checklists (previous visits, ALA/AVH, electronic
+floras)</p></li>
+<li><p>Herbarium collecting books/apps (specimen collection by expert
+botanists)</p></li>
+<li><p>Field herbarium dryer (working in the tropics).</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+<li><p>Ensure the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> has been completed to
+mark out the plot boundary and define the current plot and visit in the
+Monitor app.</p></li>
+<li><p>Search the entire plot for each flora species present. Search
+between 30 and 90 minutes or more depending on the diversity and density
+of the vegetation and surveyor experience.</p></li>
+<li><p>Collect specimens for each flora species present within the plot,
+storing them in a day press. Take enough material for an A3 size
+herbarium sheet (<a href="#figure-1">Figure 1A</a>). If the species is small, a whole plant
+specimen/s including basal material and roots should be collected
+(<a href="#figure-1">Figure 1B</a> and <a href="#figure-1">Figure 1C</a>). Collect extra material for plant tissue
+vouchers if required (see the <a href="https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95">Plant Tissue Vouchering Module</a>).</p></li>
+<li><p>Return to the field vehicle or a designated area with the
+equipment required to process the specimens. If you have collected an
+epiphyte, mistletoe or parasite, process the host species first so that
+you can link the epiphyte, mistletoe or parasite species to its host in
+the app.</p></li>
+<li><p>Label each specimen securely with a unique voucher barcode label.
+Place the label on stems or away from any plant parts that will need to
+be examined for identification purposes (see <a href="#figure-1">Figure 1</a>). Use paper
+envelopes for small specimens and attach the label to the envelope. Use
+vials with Kew mixture for delicate specimens and attach the label to
+the vial.</p></li>
+<li><p>Select the Floristics Module and then the Enhanced protocol in
+the Monitor app.</p></li>
+<li><p>For each specimen, assign a <em>field name</em>. Assign a
+definitive species name if you are confident of the identification. If
+not, assign a descriptive name (e.g. yellow daisy flower) that can be
+easily remembered and distinguished from descriptive names assigned to
+other species.</p></li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 51%"/>
+<col style="width: 48%"/>
+</colgroup>
+<thead>
+<tr class="nav">
+<img id="figure-1" alt="Herbarium_A" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Herbarium_A.jpg" width="300"/>
+<img alt="Herbarium_B" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Herbarium_B.png" width="300"/>
+<img alt="Herbarium_C" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Herbarium_C.jpg" width="300"/>
+</tr>
+<td><p><span class="anchor"></span></p>
+<p>Figure 1. Plant specimen vouchers. Plant specimen vouchers mounted on A3 paper. (A) Plant material, including leaves, buds, flowers and fruit, taken
+from a large species. An envelop is used to store material that has come loose (top left). (B) Whole plant of a small species (centre). (C) Mulitiple individuals of a small species (right).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<ol start="8" type="1">
+<li><p>For each specimen, scan the <em>voucher barcode</em> into the app
+by pressing the <em>record voucher barcode</em> button.</p></li>
+<li><p>Record <em>growth form 1</em> from the list of NVIS growth forms
+(<a href="#appendix-1">Appendix 1</a>). Record <em>growth form 2</em> if a second, sub-dominant
+growth form is observed. Once a growth form is selected, its description
+will appear in the app. Check this to ensure you have selected the
+correct growth form.</p></li>
+<li><p>If ephiphyte is selected as a growth form, record the
+<em>host</em> species.</p></li>
+<li><p>Record the <em>habit</em>, selecting all terms that apply to the
+species (<a href="#appendix-2">Appendix 2</a>).</p></li>
+<li><p>Record the <em>phenology</em>, selecting all attributes relevant
+the specimen (<a href="#appendix-3">Appendix 3</a>).</p></li>
+<li><p>If required, take a <em>photo</em> of the specimen or an
+individual from within the plot by pressing the <em>camera</em> button.
+This can be a useful reference for unfamiliar species for the remainder
+of the survey. Use a photo reference scale in each photo (see <a href="#appendix-4">Appendix
+4</a>). Record a <em>comment</em> of the photo if required. Take multiple
+photos if required.</p></li>
+<li><p>If collecting plant tissue vouchers, press the <em>plant tissue
+voucher</em> button to navigate to the <a href="https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95">Plant Tissue Vouchering Module</a>.
+Once the associated plant tissue voucher barcode label is scanned into
+the app, return to the and Enhanced protocol in the Floristics
+Module.</p></li>
+<li><p>Press the <em>save species record</em> button to save the current
+species record.</p></li>
+<li><p>Place the plant specimen voucher into a field press for long-term
+storage and drying (<a href="#figure-2">Figure 2</a>). Use one folded tabloid-sized newspaper
+sheet for each specimen and use corrugated cardboard dividers frequently
+(at least one cardboard between every fifth specimen or more frequently
+for bulky specimens).</p></li>
+<li><p>Press the <em>add another species</em> button to begin recording
+another species record and repeat steps 7–16.</p></li>
+<li><p>Once all species have been recorded and their voucher barcode
+scanned, press the <em>finish protocol</em> button to return to the
+module selection screen.</p></li>
+<li><p>Close the field press and tighten the straps. Label the plant
+press using a permanent marker on the top sheet of cardboard with the
+<em>plot number</em> and <em>date</em>.</p></li>
+<li><p>Inspect the field press every 2–3 days during the field survey
+and replace newspaper when necessary.</p>
+<p><img id="figure-2" alt="figure_2" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/floristic/Figure_2.jpg" width="600"/></p></li>
+</ol>
+<p><span class="anchor"></span>Figure 2. Plant
+specimen voucher placed in a newspaper sheet in a field press.</p>"""^^rdf:HTML ;
+.
+

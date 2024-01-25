@@ -1,0 +1,1637 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+    <h1>Contents</h1>
+  <ol>
+  <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#introduction-and-background">Introduction and Background</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology"
+        >Key definitions and terminology</a>
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#equipment">Equipment</a></li>
+    <li>
+        <a href="#instructions-and-procedures">Instructions and procedures</a>
+    </li>
+    <li><a href="#additional-guidelines">Additional guidelines</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+    <h1 id="module-overview">Module overview</h1>
+<h2 id="available-protocols">Available protocols</h2>
+<p>Each of the field measures in the Condition Module describe
+biodiversity condition. The module provides procedures and guidelines
+for recording a set of core attributes, in combination with measures
+from the <a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment</a>, <a href="https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2">Coarse Woody Debris</a>, <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity</a> and the <a href="https://linked.data.gov.au/def/nrm/dd2da1e0-edbe-4f20-a1ae-b860876c1837">Herbivory and
+Physical Damage</a> Modules, which collectively form the condition set of
+protocols. The results from other modules, including <a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics</a>, <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover</a>
+and <a href="https://linked.data.gov.au/def/nrm/8e7c86ce-e283-4cea-aca7-44ed7a22629c">Signs-based Fauna</a> Surveys also feed into condition assessments. This
+protocol includes step-by-step instructions for the core set of
+condition measures. Refer to the Recruitment, Coarse Woody Debris, Fire
+and Herbivory and Physical Damage Modules for survey guidelines for
+these measures (links to the relevant sections are provided below).</p>
+<h2 id="relationships-to-other-modules">Relationships to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<p>Complete prior to the Condition Module</p>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – needs to be undertaken before
+any condition surveys can take place.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> – a physical description of the plot is
+required to place condition data in context with the surrounding
+landform, land surface, vegetation and disturbance regime.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – needs to be completed before the Recruitment
+Module which is a requirement of the condition assessment. Information
+can only be entered against species (or field names) recorded during the
+Floristics Module. The results from the Floristics Module provide
+information on the diversity of native and weed plant species, which are
+important condition measures.</p></li>
+</ul>
+<p>Complete concurrently with the Condition Module</p>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment Module</a> - the Age structure protocol from the
+Recruitment Module must be undertaken as part of the condition
+assessment. Seedling, sapling and juvenile counts, combined with the
+tree survey enable a summary of all growth and life stages to be
+generated and facilitates an assessment of age class structure.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2">Coarse Woody Debris Module</a> - must be completed as part of the
+condition assessment to record coarse woody debris length, diameter and
+decay class. CWD abundance contributes to a range of ecosystem processes
+that impact the condition of an ecosystem and is therefore considered a
+condition attribute.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5">Basal Area Module</a> – the DBH protocol from the Basal Area Module
+must be completed concurrently with the Tree survey sub-protocol. DBH
+combined with height measurements contribute to the age and size class
+determinations as well as determine the biomass within a project
+area.</p></li>
+</ul>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<p>Optional complementary modules to gather additional information
+relating to condition:</p>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> – the Condition Module uses a subset of the
+point-intercept transects established during the Cover Module, referred
+to as the sub-plot. It is recommended that condition assessments are
+completed after the Cover Module to make use of the tapes that have
+already been set up. The results of the Cover Module feed into the
+overall condition assessments and analysis and provide information about
+native and weed cover.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity Module</a> - recommended that this be completed as part
+of the condition assessment if the plot has been recently burnt (shows
+signs of recovery from fire estimated to be from the last 5-10 years).
+Fire severity data can be used to inform on the condition of the project
+area.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/dd2da1e0-edbe-4f20-a1ae-b860876c1837">Herbivory and
+Physical Damage Module</a> – one of two protocols,
+either the Belt transect protocol or Sub-plot protocol, is recommended
+to record any herbivory or physical damage present in the project area.
+The impact of herbivory and physical damage by fauna impacts the
+condition of a system.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6">Interventions Module</a> – it is recommended that condition
+assessments are undertaken before and after any interventions occur. The
+Condition attributes protocol is focused predominantly on assessing
+changes in condition following on-ground interventions.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/8e7c86ce-e283-4cea-aca7-44ed7a22629c">Signs-based Fauna Surveys</a> – if there are obvious signs of fauna
+presence completion of at least one of the plot-based protocols within
+the module is recommended to collect indicators of pest fauna presence
+and/or impact. Choose from either the Within-plot belt transects
+protocol, or the Active plot search protocol (best suited for sandy
+environments).</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9">Photopoints Module</a> - panoramic photos taken from the centre of
+the plot in the Photopoints Module provide a visual representation of
+the plot and the features described in the Plot Description Module and
+could be used as reference for the condition of a plot over
+time.</p></li>
+</ul>
+    """^^rdf:HTML ;
+    dcterms:source """
+   <h1 id="references">References</h1>
+<p>Baker, TR, Chao, KJ, 2011. Manual for coarse woody debris measurement
+in RAINFOR plots. Version 2.</p>
+<p>Bleby, K, Harvey, J, Garkaklis, M, Martin, L (2008) Resource
+Condition Monitoring–Native Vegetation Integrity Project. Literature
+Review: Vegetation Condition Assessment, Monitoring and Evaluation.
+Version 4. Department of Environment and Conservation, Perth.</p>
+<p>Brocklehurst, P, Price, O (2008) Quality Assessment Manual for Native
+Vegetation of the in the Northern Territory: Forest and Woodlands. Draft
+1.1. Land and Vegetation Branch, Land and Water Division, Department of
+Natural Resources, Environment, The Arts and Sport, Palmerston, Northern
+Territory.</p>
+<p>Capon, S, Castley, G, Palmer, G, Linke, S, Piccolo, R, Henderson, E
+(2020) A long-term monitoring framework for the regional land
+partnerships stage 2: final report. Griffith University, Brisbane.</p>
+<p>Casson, N, Downes, S, Harris, A (2009) Native Vegetation Condition
+Assessment and Monitoring Manual for Western Australia. The Native
+Vegetation Integrity Project. Department of Environment and
+Conservation, Perth.</p>
+<p>Chafer, CJ (2008) A comparison of fire severity measures: an
+Australian example and implications for predicting major areas of soil
+erosion. <em>Catena</em> <strong>74</strong>, 235–245.</p>
+<p>Commonwealth of Australia, 2020. Environment Protection and
+Biodiversity Conservation Act 1999 - Condition-setting Policy.</p>
+<p>Cook, CN, Wardell‐Johnson, G, Keatley, M, Gowans, SA, Gibson, MS,
+Westbrooke, ME, Marshall, DJ (2010) Is what you see what you get? Visual
+vs. measured assessments of vegetation condition. <em>Journal of Applied
+Ecology</em> <strong>47</strong>, 650-661.</p>
+<p>Craig, A, Thomas, P, Watson, I, 2008. Western Australian rangeland
+monitoring system for grasslands: field manual.</p>
+<p>DEC (2012) 'Monitoring Wetlands', in A guide to managing and
+restoring wetlands in Western Australia. Department of Environment and
+Conservation, Western Australia.</p>
+<p>DENR, 2011. Pastoral Lease Assessment: Technical training manual.
+Adelaide, South Australia.</p>
+<p>Department of Environment and Climate Change (2007) Private Native
+Forestry Code of Practice Guideline No. 4. Department of Environment and
+Climate Change, Sydney.</p>
+<p>Department of the Environment (2014) Australia’s Fifth National
+Report to the Convention on Biological Diversity. Department of the
+Environment, Canberra.</p>
+<p>Didion, M, Abegg, M (2022) Tree stumps — an important but undervalued
+dead wood pool. <em>Annals of Forest Science</em> <strong>79</strong>,
+34.</p>
+<p>Dobbertin, M (2005) Tree growth as indicator of tree vitality and of
+tree reaction to environmental stress: a review. <em>European Journal of
+Forest Research</em> <strong>124</strong>, 319-333.</p>
+<p>DOC (2019) Field protocols for DOC Tier 1 Inventory &amp; Monitoring
+and LUCAS plots, Version 14. Department of Conservation, Wellington.
+Available at <a href="https://nvs.landcareresearch.co.nz/Resources/FieldManual">https://nvs.landcareresearch.co.nz/Resources/FieldManual</a>.</p>
+<p>DOE, 2013. Vegetation Assessment Guide. Commonwealth of
+Australia,</p>
+<p>DPIE (2020) Biodiversity Assessment Method. Department of Planning,
+Industry and Environment, Sydney, New South Wales.</p>
+<p>DSE (2004) Vegetation Quality Assessment Manual – Guidelines for
+Applying the Habitat Hectares Scoring Method. Version 1.3. Victorian
+Government Department of Sustainability and Environment, Melbourne.</p>
+<p>Eco Logical Australia (2013) Standard Field Guide for Assessing
+Vegetation Change: A guide to inform project monitoring for Caring for
+our Country - Version 1., Report prepared for the Department of
+Sustainability, Environment, Water, Population and Communities.</p>
+<p>Edwards, AC, Maier, SW, Hutley, LB, Williams, RJ, Russell-Smith, J
+(2013) Spectral analysis of fire severity in north Australian tropical
+savannas. <em>Remote Sensing of Environment</em> <strong>136</strong>,
+56–65.</p>
+<p>Eichhorn, J, Roskams, P (2013) Chapter 8 - Assessment of Tree
+Condition. In 'Developments in Environmental Science.' (Eds M Ferretti,
+R Fischer.) Vol. 12 pp. 139-167. (Elsevier:</p>
+<p>Eichhorn, J, Roskams, P, Potočić, N, Timmermann, V, Ferretti, M,
+Mues, V, Szepesi, A, Durrant, D, Seletković, I, Schröck, HW, Nevalainen,
+S, Bussotti, F, Garcia, P, Wulff, S, 2020. Part IV: Visual Assessment of
+Crown Condition and Damaging Agents. Manual on methods and criteria for
+harmonized sampling, assessment, monitoring and analysis of the effects
+of air pollution on forests. UNECE ICP Forests Programme Co-ordinating
+Centre, Thünen Institute of Forest Ecosystems, Eberswalde, Germany.</p>
+<p>Eldridge, DJ, Delgado‐Baquerizo, M (2017) Continental‐scale impacts
+of livestock grazing on ecosystem supporting and regulating services.
+<em>Land Degradation &amp; Development</em> <strong>28</strong>,
+1473-1481.</p>
+<p>ESCAVI, 2007. Native vegetation condition in Australia: a synthesis
+of outcomes from pilot projects on national monitoring and evaluation
+indicators. Biodiversity Conservation Branch, Department of the
+Environment and Water Resources, Canberra, Australia.</p>
+<p>Etchells, H, O'Donnell, AJ, McCaw, WL, Grierson, PF (2020) Fire
+severity impacts on tree mortality and post-fire recruitment in tall
+eucalypt forests of southwest Australia. <em>Forest Ecology and
+Management</em> <strong>459</strong>, 117850.</p>
+<p>Eyre, TJ, Fisher, A, Hunt, LP, Kutt, AS (2011) Measure it to better
+manage it: a biodiversity monitoring framework for the Australian
+rangelands. <em>The Rangeland Journal</em> <strong>33</strong>,
+239-253.</p>
+<p>Eyre, TJ, Kelly, AL, Neldner, VJ (2017) Method for the Establishment
+and Survey of Reference Sites for BioCondition. Version 3. Oueensland
+Herbarium, Department of Science. <em>Information Technology and
+Innovation, Brisbane</em></p>
+<p>Eyre, TJ, Kelly, AL, Neldner, VJ, Wilson, BA, Ferguson, DJ, Laidlaw,
+MJ, Franks, AJ (2015) BioCondition: A Condition Assessment Framework for
+Terrestrial Biodiversity in Queensland. Assessment Manual. Version 2.2.
+Queensland Herbarium, Department of ScienceInformation Technology,
+Innovation and Arts, Brisbane.</p>
+<p>Fisher, JL, Loneragan, WA, Dixon, K, Delaney, J, Veneklaas, EJ (2009)
+Altered vegetation structure and composition linked to fire frequency
+and plant invasion in a biodiverse woodland. <em>Biological
+Conservation</em> <strong>142</strong>, 2270-2281.</p>
+<p>Gibbons, P, Freudenberger, D (2006a) An overview of methods used to
+assess vegetation condition at the scale of the site. <em>Ecological
+Management &amp; Restoration</em> <strong>7</strong>, S10–S17.</p>
+<p>Gibbons, P, Freudenberger, D (2006b) An overview of methods used to
+assess vegetation condition at the scale of the site. <em>Ecological
+Management &amp; Restoration</em> <strong>7</strong>, S10-S17.</p>
+<p>Goldin, SR (2020) Quantifying the Impact of Coarse Woody Debris on
+Soil and Vegetation in a Cleared Temperate Woodland.</p>
+<p>Grove, S, Meggs, J (2003) Coarse woody debris, biodiversity and
+management: a review with particular reference to Tasmanian wet eucalypt
+forests. <em>Australian Forestry</em> <strong>66</strong>, 258-272.</p>
+<p>Hammill, KA, Bradstock, RA (2006) Remote sensing of fire severity in
+the Blue Mountains: influence of vegetation type and inferring fire
+intensity. <em>International Journal of Wildland Fire</em>
+<strong>15</strong>, 213–226.</p>
+<p>Harwood, TD, Donohue, RJ, Williams, KJ, Ferrier, S, McVicar, TR,
+Newell, G, White, M (2016) Habitat Condition Assessment System: a new
+way to assess the condition of natural habitats for terrestrial
+biodiversity across whole regions using remote sensing data. <em>Methods
+in Ecology and Evolution</em> <strong>7</strong>, 1050–1059.</p>
+<p>Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey:
+Using the Biological Survey of South Australia. Department of
+Environment and Natural Resources, Adelaide.</p>
+<p>Hines, F, Tolhurst, KG, Wilson, AAG, McCarthy, GJ (2010) Overall fuel
+hazard assessment guide 4th edition. The State of Victoria Department of
+Sustainability and Environment.</p>
+<p>Invasive Plants and Animals Committee (2016) Australian Pest Animal
+Strategy 2017 to 2027. <em>Australian Government Department of
+Agriculture and Water Resources, Canberra</em></p>
+<p>Keith, D, Gorrod, E (2006) The meanings of vegetation condition.
+<em>Ecological Management &amp; Restoration</em> <strong>7</strong>,
+S7-S9.</p>
+<p>Krull, CR, Galbraith, JA, Glen, AS, Nathan, HW (2015) Invasive
+vertebrates in Australia and New Zealand. <em>Austral Ark</em> 680.</p>
+<p>Lawley, V, Lewis, M, Clarke, K, Ostendorf, B (2016) Site-based and
+remote sensing methods for monitoring indicators of vegetation
+condition: An Australian review. <em>Ecological indicators</em>
+<strong>60</strong>, 1273-1283.</p>
+<p>Mac Nally, R, Parkinson, A, Horrocks, G, Conole, L, Tzaros, C (2001)
+Relationships between terrestrial vertebrate diversity, abundance and
+availability of coarse woody debris on south-eastern Australian
+floodplains. <em>Biological Conservation</em> <strong>99</strong>,
+191-205.</p>
+<p>Majer, JD, Recher, HF, Wellington, BA, Woinarski, JCZ, Yen, AL (1997)
+'Chapter 12: Invertebrates of eucalypt formations.'</p>
+<p>Manning, AD, Cunningham, RB, Lindenmayer, DB (2013) Bringing forward
+the benefits of coarse woody debris in ecosystem recovery under
+different levels of grazing and vegetation density. <em>Biological
+Conservation</em> <strong>157</strong>, 204-214.</p>
+<p>Marimon-Junior, BH, Hay, JD (2008) A new instrument for measurement
+and collection of quantitative samples of the litter layer in forests.
+<em>Forest Ecology and Management</em> <strong>255</strong>,
+2244-2250.</p>
+<p>McDonald, J, Brandle, R (2009) Management of feral goats: evaluation
+of ecological indicators for a monitoring and evaluation framework,
+summary. Department for Environment and Heritage, Adelaide.</p>
+<p>McElhinny, C, Gibbons, P, Brack, C, Bauhus, J (2006) Fauna-habitat
+relationships: a basis for identifying key stand structural attributes
+in temperate Australian eucalypt forests and woodlands. <em>Pacific
+Conservation Biology</em> <strong>12</strong>, 89.</p>
+<p>McFarlane, D, Wallace, J (2019) Measuring native vegetation extent
+and condition using remote sensing technologies - a review and
+identification of opportunities. The Western Australian Biodiversity
+Science Institute, Perth, Western Australia.</p>
+<p>Meggs, JM (1996) 'Pilot study of the effects of modern logging
+practices on the decaying-log habitat in wet eucalypt forests in
+south-east Tasmania.' (Forestry Tasmania:</p>
+<p>Michaels, K (2006) A Manual for Assessing Vegetation Condition in
+Tasmania Version 1.0. Resource Management and Conservation, Department
+of Primary Industries, Water and Environment, Hobart.</p>
+<p>Miehs, A, York, A, Tolhurst, K, Di Stefano, J, Bell, T (2010)
+Sampling downed coarse woody debris in fire-prone eucalypt woodlands.
+<em>Forest Ecology and Management</em> <strong>259</strong>,
+440-445.</p>
+<p>Milne, TI, Croft, SJ, Pedler, JA (2008) Bushland Condition Monitoring
+Manual: Eyre Peninsula Region. Volume 1: Field Guide to Bushland
+Monitoring EP. The Nature Conservation Society of South Australia
+Inc.</p>
+<p>Moses, J, Fayle, TM, Novotny, V, Klimes, P (2021) Elevation and leaf
+litter interact in determining the structure of ant communities on a
+tropical mountain. <em>Biotropica</em> <strong>53</strong>, 906-919.</p>
+<p>Native Vegetation Council (2020) Bushland Assessment Manual. July
+2020. Native Vegetation Council, Adelaide.</p>
+<p>NCST (2009) 'Australian Soil and Land Survey Field Handbook.' (CSIRO
+Publishing: Melbourne)</p>
+<p>Neldner, J (2006) Why is vegetation condition important to
+government? A case study from Queensland. <em>Ecological Management
+&amp; Restoration</em> <strong>7</strong>, S5-S7.</p>
+<p>NERP National Condition Working Group (2015) Biodiversity Condition:
+A National Definition and Key Measurable Attributes. Draft for internal
+review. The National Environmental Research Program, TERN, Adelaide.</p>
+<p>Oliveira, SLJ, Campagnolo, ML, Price, OF, Edwards, AC, Russell-Smith,
+J, Pereira, JMC (2015) Ecological implications of fine-scale fire
+patchiness and severity in tropical savannas of northern Australia.
+<em>Fire Ecology</em> <strong>11</strong>, 10–31.</p>
+<p>Oliver, I, Eldridge, DJ, Nadolny, C, Martin, WK (2014) What do site
+condition multi-metrics tell us about species biodiversity?
+<em>Ecological indicators</em> <strong>38</strong>, 262-271.</p>
+<p>Oliver, I, Jones, H, Schmoldt, DL (2007) Expert panel assessment of
+attributes for natural variability benchmarks for biodiversity.
+<em>Austral Ecology</em> <strong>32</strong>, 453-475.</p>
+<p>Oliver, I, Parkes, D (2003) A Prototype Toolkit for Scoring the
+Biodiversity Benefits of Landuse Change, Version 5.1. <em>Department of
+Infrastructure, Planning and Natural Resources</em></p>
+<p>Parkes, D, Lyon, P (2006) Towards a national approach to vegetation
+condition assessment that meets government investors’ needs: A policy
+perspective. <em>Ecological Management &amp; Restoration</em>
+<strong>7</strong>, S3-S5.</p>
+<p>Parkes, D, Newell, G, Cheal, D (2003) Assessing the quality of native
+vegetation: the ‘habitat hectares’ approach. <em>Ecological Management
+&amp; Restoration</em> <strong>4</strong>, S29–S38.</p>
+<p>Pert, PL, Butler, JR, Bruce, C, Metcalfe, D (2012) A composite threat
+indicator approach to monitor vegetation condition in the Wet Tropics,
+Queensland, Australia. <em>Ecological indicators</em>
+<strong>18</strong>, 191-199.</p>
+<p>Puletti, N, Canullo, R, Mattioli, W, Gawryś, R, Corona, P, Czerepko,
+J (2019) A dataset of forest volume deadwood estimates for Europe.
+<em>Annals of Forest Science</em> <strong>76</strong>, 68.</p>
+<p>Russell-Smith, J, Edwards, AC (2006) Seasonality and fire severity in
+savanna landscapes of monsoonal northern Australia. <em>International
+Journal of Wildland Fire</em> <strong>15</strong>, 541–550.</p>
+<p>Smith, AMS, Wooster, MJ, Drake, NA, Dipotso, FM, Falkowski, MJ,
+Hudak, AT (2005) Testing the potential of multi-spectral remote sensing
+for retrospectively estimating fire severity in African Savannahs.
+<em>Remote Sensing of Environment</em> <strong>97</strong>, 92–115.</p>
+<p>Stone, C, Matsuki, M, Carnegie, A (Ed. M Parsons (2003) 'Pest and
+disease assessment in young eucalypt plantations: field manual for using
+the Crown Damage Index.' (National Forest Inventory, Bureau of Rural
+Sciences: Canberra)</p>
+<p>TERN (2015) SuperSites Vegetation Monitoring Protocols. TERN
+Australian SuperSite Network.</p>
+<p>Thackway, R (2014) 'VAST-2: Tracking the Transformation of Vegetated
+Landscapes: Handbook for Recording Site-based Effects of Land Use and
+Land Management Practices on the Condition of Native Plant Communities.'
+(Australian Centre for Ecological Analysis and Synthesis,
+Terrestrial …:</p>
+<p>Thackway, R, Cosier, P, McIntosh, E, Saunders, D, Possingham, H,
+Sbrocchi, C, Thackway, R, Cosier, P, McIntosh, E, Saunders, D (2015)
+Draft Protocol for Constructing a Native Vegetation Condition Account.
+<em>Australian Regional Environmental Accounts Working Paper Series
+(1/5). Wentworth Group of Concerned Scientists, Sydney</em></p>
+<p>Thimonier, A, Graf Pannatier, E, Schmitt, M, Waldner, P, Walthert, L,
+Schleppi, P, Dobbertin, M, Kräuchi, N (2010) Does exceeding the critical
+loads for nitrogen alter nitrate leaching, the nutrient status of trees
+and their crown condition at Swiss Long-term Forest Ecosystem Research
+(LWF) sites? <em>European Journal of Forest Research</em>
+<strong>129</strong>, 443-461.</p>
+<p>Threlfall, C, Law, B, Colman, N (2021) The effects of harvest
+frequency on coarse woody debris and its use by fauna. <em>Wildlife
+Research</em></p>
+<p>Waddell, KL (2002) Sampling coarse woody debris for multiple
+attributes in extensive resource inventories. <em>Ecological
+Indicators</em> <strong>1</strong>, 139-153.</p>
+<p>Ward, MJ (2005) Patterns of box mistletoe <em>Amyema miquelii</em>
+infection and pink gum <em>Eucalyptus fasciculosa</em> condition in the
+Mount Lofty Ranges, South Australia. <em>Forest Ecology and
+Management</em> <strong>213</strong>, 1-14.</p>
+<p>Whight, S, Bradstock, R (1999) Indices of fire characteristics in
+sandstone heath near Sydney, Australia. <em>International Journal of
+Wildland Fire</em> <strong>9</strong>, 145–153.</p>
+<p>Williams, JE, 2010. Scientific Assessment of Vegetation Condition
+Protocols. Final Report. NRM Insights. A report to Caring for our
+Country, a program of the Australian Government.</p>
+<p>Woldendorp, G, Keenan, R, Ryan, MF (2002) 'Coarse woody debris in
+Australian forest ecosystems: a report for the National Greenhouse
+Strategy, Module 6.6 (Criteria and Indicators of Sustainable Forest
+Management), April 2002.' (Bureau of Rural Sciences:</p>
+<p>Woldendorp, G, Keenan, RJ (2005) Coarse woody debris in Australian
+forest ecosystems: a review. <em>Austral Ecology</em>
+<strong>30</strong>, 834-843.</p>
+<p>Woldendorp, G, Keenan, RJ, Barry, S, Spencer, RD (2004) Analysis of
+sampling methods for coarse woody debris. <em>Forest Ecology and
+Management</em> <strong>198</strong>, 133-148.</p>
+<p>Wood, S, Stephens, H, Foulkes, J, Ebsworth, E, Bowman, D (2015)
+AusPlots Forests Survey Protocols Manual. Version 1.6. University of
+Tasmania, Hobart.</p>
+<p>Wundke, D, Sparrow, B, Thurgate, N, Christensen, R, O'Neill, S, Lowe,
+A (2015) AusPlots Condition Protocols Manual. Version 0.1. Terrestrial
+Ecosystem Research Network (TERN), The University of Adelaide,
+Adelaide.</p>
+<p>Yibarbuk, D, Whitehead, P, Russell‐Smith, J, Jackson, D, Godjuwa, C,
+Fisher, A, Cooke, P, Choquenot, D, Bowman, D (2001) Fire ecology and
+Aboriginal land management in central Arnhem Land, northern Australia: a
+tradition of ecosystem management. <em>Journal of Biogeography</em>
+<strong>28</strong>, 325-343.</p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h2 id="key-definitions-and-terminology">Key definitions and
+terminology</h2>
+<p><span class="anchor" id="table-1"></span><h4>Table 1. Key
+definitions and terms used in the Condition Module.</h4></p>
+<table>
+<colgroup>
+<col style="width: 16%"/>
+<col style="width: 83%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Benchmark (reference state)</td>
+<td>A standard vegetation-condition reference point relevant to the
+vegetation type that is applied in vegetation condition assessments.
+Represents the average characteristics of a mature and apparently
+long-undisturbed state or best on offer (given that few ecosystems are
+free of impacts) of the same vegetation type (Michaels 2006; Eyre <em>et
+al.</em> 2017). Benchmark values are often based on the average value
+from a range of sites in the reference state in order to capture natural
+variability (Eyre <em>et al.</em> 2017).</td>
+</tr>
+<tr class="even">
+<td>Browsing</td>
+<td>Browsers are those herbivores which substantially feed on the
+foliage of non-grassy plants including trees, shrubs and palms (McDonald
+and Brandle 2009).</td>
+</tr>
+<tr class="odd">
+<td>Coarse woody debris (CWD)</td>
+<td>Defined here as whole fallen trees, branches and pieces of
+fragmented wood ≥ 50 cm (or ≥30 cm in some systems) in length with a
+diameter ≥ 10 cm (or ≥ 5 cm in some woodland or mallee systems). CWD
+does not include live material, standing dead trees, stumps, dead
+foliage, separated bark, nonwoody pieces, roots or the part of the trunk
+below the root collar (Waddell 2002).</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td>Biodiversity condition is a measure of the status of the biota at an
+assessment site described by key attributes that reflect structure,
+function and composition.</td>
+</tr>
+<tr class="odd">
+<td>Condition subplot</td>
+<td>The central 40 x 40 m area within a plot, defined by the 30 m and
+70 m transects of a 100 m x 100 m plot.</td>
+</tr>
+<tr class="even">
+<td>Diameter at breast height (DBH)</td>
+<td>The straight-line distance in centimetres across the centre of a
+standing tree trunk or stem measured at 1.3 m above the ground.</td>
+</tr>
+<tr class="odd">
+<td>EIA</td>
+<td>Environmental impact assessment</td>
+</tr>
+<tr class="even">
+<td>Growth form</td>
+<td>The form or shape of individual plants, e.g. tree, shrub, grass
+(NCST 2009).</td>
+</tr>
+<tr class="odd">
+<td>Growth stage</td>
+<td>Provides a measure of age class structure, including recruiting,
+resprouting, mature, senescent or dead.</td>
+</tr>
+<tr class="even">
+<td>GRS Densitometer™</td>
+<td>Instrument developed by Geographic Resource Solutions for measuring
+canopy cover during point-intercept sampling. A vertical sighting tube
+with crosshairs and a 45° mirror provide a quick and simple view of the
+immediate canopy coverage. Internal, offset levelling vials ensure
+accurate readings of the canopy directly above each
+point-intercept.</td>
+</tr>
+<tr class="odd">
+<td>Intervention</td>
+<td>Planned activities designed to achieve a set of clear objectives
+within a given timeframe and budget.</td>
+</tr>
+<tr class="even">
+<td>Large tree</td>
+<td>Native trees with a DBH equal to or greater than the threshold
+diameter specific for that vegetation type (see <a href="#appendices">Appendix</a>; Eco Logical
+Australia 2013). Large trees can be classified post-survey using DBH
+measurements obtained from the tree survey.</td>
+</tr>
+<tr class="odd">
+<td>Juvenile</td>
+<td><em>Trees:</em> individuals with a DBH between 5-10 cm.
+<em>Shrubs:</em> has not reached maximum height, apical dominance. Not
+reproductive.</td>
+</tr>
+<tr class="even">
+<td>Leaf litter</td>
+<td>Leaf matter or fine woody material such as twigs that are detached
+and lying on the ground.</td>
+</tr>
+<tr class="odd">
+<td>Life-stage</td>
+<td>Measure of reproductive stage, including seedling, sapling,
+vegetative, budding, flowering, immature fruit, mature fruit, or
+recently shed (Heard and Channon 1997).</td>
+</tr>
+<tr class="even">
+<td>NRM</td>
+<td>Natural Resource Management</td>
+</tr>
+<tr class="odd">
+<td>Monitor</td>
+<td>Field data collection app for Ecological Monitoring System
+Australia. Collects data using the Biodiversity Information Standard for
+delivery to the Australian Biodiversity Data Repository managed by the
+Department of Climate Change, Energy, the Environment and Water.</td>
+</tr>
+<tr class="even">
+<td>Partially downed tree</td>
+<td>Standing dead tree that is no longer self-supported (not fully
+rooted in the ground) (Puletti et al. 2019). A partially downed tree may
+be suspended in the air with support.</td>
+</tr>
+<tr class="odd">
+<td>Percent canopy</td>
+<td>A measure of vegetation health, based on an estimate of the percent
+of canopy present.</td>
+</tr>
+<tr class="even">
+<td>Plot</td>
+<td>The specific survey area where information is collected (generally
+100 m x 100 m; 1 ha). Final plot location is determined in the field,
+with preference given to homogeneous areas representative of the broader
+project area, with a constant mix of vegetation, relief and soil.</td>
+</tr>
+<tr class="odd">
+<td>Point-intercept</td>
+<td>Method designed to sample species, growth-form, substrate cover and
+health by placing a point-intercept staff along a transect at 1 m
+intervals and determining the points that ‘hit’ (or intercept)
+vegetation or substrate.</td>
+</tr>
+<tr class="even">
+<td>Recruitment</td>
+<td>Evidence of immature plants that have survived for at least one year
+since germination or first establishment (Michaels 2006).</td>
+</tr>
+<tr class="odd">
+<td>Sapling</td>
+<td>Young woody plant with a DBH between 1-5 cm and a height &lt;1.5
+m.</td>
+</tr>
+<tr class="even">
+<td>Seedling</td>
+<td>Very young plant, herbaceous to slightly woody, with a DBH &lt; 1
+cm. The leaves are adolescent and often the cotyledons (first leaves)
+are still present.</td>
+</tr>
+<tr class="odd">
+<td>Senescence</td>
+<td>The ageing process in a plant or plant part from full maturity to
+death (Eco Logical Australia 2013).</td>
+</tr>
+<tr class="even">
+<td>Shrub</td>
+<td>Woody plant, multi-stemmed at the base (or within 200 mm from the
+ground), or if single stemmed, less than 5 m tall. Not always readily
+distinguishable from small trees (NCST 2009).</td>
+</tr>
+<tr class="odd">
+<td>Standing dead spar</td>
+<td>Standing dead tree that has shattered below 1.3 m (DOC 2019).</td>
+</tr>
+<tr class="even">
+<td>Standing dead tree</td>
+<td>Dead tree with a height &gt;1.3 m that is not lying on the ground
+(Puletti <em>et al.</em> 2019; Didion and Abegg 2022)</td>
+</tr>
+<tr class="odd">
+<td>Substrate cover</td>
+<td>The percentage of the vertical projection of substrate,
+characterised by substrate type, present in a specific area (in this
+case the number of point-intercept hits as a percentage of the total
+number of point-intercepts).</td>
+</tr>
+<tr class="even">
+<td>Tree</td>
+<td>Woody plant greater than 2 m in height usually with a single stem,
+or branches well above the base. Includes trees, tall shrubs, or palms
+with DBH ≥10 cm (global forest ecology standard; Wood <em>et al.</em>
+2015), and mallee and mulga with a DBH ≥5 cm (TERN 2015).</td>
+</tr>
+<tr class="odd">
+<td>Tree stump</td>
+<td>Standing upright portion of dead trees above ground surface &lt;1.3
+m that remains after cutting or natural processes have occurred (Puletti
+<em>et al.</em> 2019; Didion and Abegg 2022)</td>
+</tr>
+<tr class="even">
+<td>Trimble® R1</td>
+<td>A rugged, compact, lightweight Global Navigation Satellite System
+(GNSS) receiver (configured with the GNSS Status app) that provides
+professional-grade positioning information to any connected mobile
+device using Bluetooth® connectivity.</td>
+</tr>
+<tr class="odd">
+<td>Vegetation cover</td>
+<td>The percentage of the vertical projection of vegetation,
+characterised by species, growth-form and height of lower, mid and upper
+vegetation strata, present in a specific area (in this case the number
+of point-intercept hits as a percentage of the total number of
+point-intercepts).</td>
+</tr>
+<tr class="even">
+<td>Woody debris (WD)</td>
+<td>Woody material less than 10 cm (or 5 cm in some systems) and greater
+than 1 cm in diameter (Woldendorp <em>et al.</em> 2002; Woldendorp and
+Keenan 2005; Eyre <em>et al.</em> 2015).</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    skos:note """
+    <h3 id="additional-guidelines">Additional guidelines</h3>
+<h4 class="unnumbered" id="general">General </h4>
+<ul>
+<li><p>Partitioning the sub-plot into more manageable units using
+existing Cover point-intercept transect tapes, additional tapes and/or
+coloured survey pins is highly recommended, particularly in dense
+systems.</p></li>
+<li><p>Plot boundaries should be marked out according to the existing
+method described in the Plot Selection and Layout Module.</p></li>
+<li><p>Assessment across the plot is used to document signs of pest
+fauna, record fire scar height, and document age class structure, growth
+and life-stages, and health of the perennial species present.</p></li>
+<li><p>Assessment of fire extent and severity is undertaken in the Fire
+Module (which is carried out within the Cover Module). If a condition
+survey is to be undertaken, ensure that the fire option has been
+activated in the Cover Module.</p></li>
+</ul>
+<h4 class="unnumbered" id="tree-survey-1">Tree survey </h4>
+<ul>
+<li><p>A tree is considered in the plot if than 50% of the base of the
+trunk is within the plot (<a href="#figure-3">Figure 3</a>).</p></li>
+<li><p>Tree height can be estimated using a forestry rangefinder for
+rapid and accurate height measurements. The person entering the data
+into the Monitor app can carry the rangefinder on a lanyard over their
+shoulder and record tree height when required.</p></li>
+<li><p>Where a rangefinder is not available, tree height can be
+estimated using the following methods:</p></li>
+</ul>
+<ul>
+<li><p>Clinometer and tape (Department of Environment and Climate Change
+2007)</p></li>
+<li><p>Mobile phone applications</li>
+</ul><img id="figure-3" alt="New Image Description" height="250" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Tree_occurrence_rules.png" width="700"/></p><p>Figure 3. Rule set to be determined if a tree is in or out of the plot.</p>
+<h4 class="unnumbered" id="tree-health">Tree health</h4>
+<h5 class="unnumbered" id="canopy-cover">Canopy cover</h5>
+<ul>
+<li><p>Canopy cover is assessed as the percentage of foliage missing
+from the canopy relative to a reference tree.</p></li>
+<li><p>Reference trees can be an archetype of a species with optimal
+foliage (absolute reference tree), or a nearby tree with maximum foliage
+considering site conditions, altitude, latitude, etc., (local reference)
+(Dobbertin 2005; Eichhorn and Roskams 2013).</p></li>
+<li><p>Local reference trees are generally best, and a suitable tree is
+one that is presumed to be completely healthy (i.e. stress-free), of the
+same species, similar age and with maximum foliage (Dobbertin 2005;
+Thimonier <em>et al.</em> 2010; Eichhorn <em>et al.</em> 2020).</p></li>
+<li><p>Canopy cover is scored in 5% increments, and a healthy tree would
+have a canopy cover score of 100% (i.e. 0% defoliation or dieback),
+whereas a tree with 25% dieback would have a canopy score of
+75%.</p></li>
+<li><p>To estimate percentage canopy, visualise a circle around the
+outer boundary of the crown. Estimate the proportion of dead crown and
+the remainder is the proportion of healthy crown cover (Michaels
+2006).</p></li>
+<li><p>Epicormic shoots below the crown, absent or fallen branches, and
+lower limbs that do not form part of the canopy are not included in
+assessable canopy (Michaels 2006; Eichhorn <em>et al.</em>
+2020).</p></li>
+</ul>
+<h5 class="unnumbered" id="crown-damage-index">Crown Damage Index</h5>
+<ul>
+<li><p>The incidence and severity of each type of foliage damage
+(necrosis, discolouration and defoliation) is also assessed for each
+tree (Stone <em>et al.</em> 2003). Incidence (<em>I</em>) is the
+percentage of leaves in the canopy affected, and severity (<em>S</em>)
+is the percentage of each individual leaf affected. Info buttons will be
+provided in the app for easy reference.</p></li>
+<li><p>Incidence and severity scores for each type of damage are then
+multiplied together and divided by 100 i.e., (<em>I</em> x
+<em>S)</em>/100.</p></li>
+<li><p>The results for each are then added to produce an overall Crown
+Damage Index (CDI).</p></li>
+<li><p>Alternatively, the crown can be divided and the incidence and
+severity across all types of damage can be estimated for each portion
+and then summed to produce an overall CDI.</p></li>
+<li><p>The Crown Damage Index (CDI) is created by visually assessing the
+incidence (extent of damage over the entire canopy), and severity
+(percentage of each leaf affected), of missing, damaged and discoloured
+foliage (Stone <em>et al.</em> 2003).</p></li>
+<li><p>There are three types of damage:</p>
+<ul>
+<li><p>Defoliation – where entire leaves or parts of leaves are missing
+(Figure A5.1)</p></li>
+<li><p>Necrosis – presence of dead leaf tissue (Figure A5.2)</p></li>
+<li><p>Discolouration – non-green leaf tissue including yellowing or
+reddish-purple discolouration, chlorotic spots or margins (Figure A5.2).
+Natural variation of leaf colour needs to be considered when assessing
+discolouration, for example <em>Eucalyptus</em> leaves can change colour
+as they develop.</p></li>
+</ul></li>
+</ul>
+<h5 class="unnumbered" id="general-guidelines-for-canopy-health">General
+guidelines for canopy health</h5>
+<ul>
+<li><p>Although assessments of canopy cover and foliage damage are
+subjective, observer bias can be reduced by having the same observer
+team for each survey, creating a photo library of local reference trees
+with typical canopy morphology, and intercalibrating between observers
+and across surveys (Eichhorn and Roskams 2013).</p></li>
+<li><p>It is important to observe each tree from several positions,
+ideally standing at a distance equal to the height of the tree. An
+elevated position ensures a better view.</p></li>
+<li><p>Where possible take a closer look at branches, leaves and stems
+for signs as to what may be causing the stress symptoms (e.g. galls and
+lerps, boreholes etc., are indicative of insect infestation. Appendix 6
+provides examples of the types of damage produced by insect and
+disease). Binoculars are helpful for looking higher into the canopy. Use
+the comments field to add notes regarding potential causes of
+damage.</p></li>
+</ul>
+<h5 class="unnumbered" id="mistletoe">Mistletoe </h5>
+<ul>
+<li><p>Walk around the tree to ensure that all mistletoes are identified
+and counted correctly.</p></li>
+<li><p>Only record living mistletoe.</p></li>
+<li><p>Mistletoe abundance generally increases with tree height,
+diameter and basal area.</p></li>
+<li><p>Trees close to a patch edge or another infested individual are
+more likely to host mistletoe (Ward 2005).</p></li>
+</ul>
+<h5 class="unnumbered" id="hollows">Hollows</h5>
+<ul>
+<li><p>Walk around the tree to ensure that all hollows are identified
+and counted correctly.</p></li>
+</ul>
+<h4 class="unnumbered" id="leaf-litter">Leaf litter </h4>
+<ul>
+<li><p>Leaf litter is all the plant organic matter above the top layer
+of the compacted soil, mostly consisting of decaying and dry leaves
+(Moses <em>et al.</em> 2021), but can also include needles, grass, twigs
+and bark (Wundke <em>et al.</em> 2015).</p></li>
+<li><p>Leaf litter does not include coarse woody debris or woody
+debris.</p></li>
+<li><p>Push the ruler through the litter until it reaches the soil
+surface. The soil surface should be firm.</p></li>
+<li><p>Measures of litter depth can have low accuracy (Marimon-Junior
+and Hay 2008), so ensure that the light pressure applied until there is
+even contact with the litter surface is consistent across sampling
+locations.</p></li>
+<li><p>If leaf litter measurement device is not available, an equivalent
+can be created with a standard 30 cm ruler and a piece of cardboard.
+Ensure that the tool used is consistent throughout the survey.</p></li>
+<li><p>The same individual should conduct all leaf litter measurements
+to reduce error.</p></li>
+</ul>
+    """^^rdf:HTML ;
+    skos:prefLabel "Condition Module" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/condition/condition-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """<h1 id="appendices">Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Assessing
+crown damage and calculating the Crown Damage Index (CDI).</h4></p>
+<p>The Crown Damage Index (CDI) is created by visually assessing the
+incidence (extent of damage over the entire canopy), and severity
+(percentage of each leaf affected), of missing, damaged and discoloured
+foliage (Stone <em>et al.</em> 2003).</p>
+<p>There are three types of damage:</p>
+<ol type="1">
+<li><p>Defoliation – where entire leaves or parts of leaves are missing
+(Figure A5.1)</p></li>
+</ol>
+<ol start="2" type="1">
+<li><p>Necrosis – presence of dead leaf tissue (<a href="#figure-a2">Figure A2</a>)</p></li>
+<li><p>Discolouration – non-green leaf tissue including yellowing or
+reddish-purple discolouration, chlorotic spots or margins (<a href="#figure-a2">Figure A2</a>).
+Natural variation of leaf colour needs to be considered when assessing
+discolouration, for example eucalyptus leaves can change colour as they
+develop.</p></li>
+</ol>
+<h5 class="unnumbered" id="calculating-cdi">Calculating CDI</h5>
+<p>CDI is calculated by multiplying, for each type of damage or each
+portion of the crown, the incidence (<em>I</em>) by the severity
+(<em>S</em>), and then dividing the product by 100. If there are several
+types of damage present, or sections of crown affected, these values are
+then summed to produce and overall value.</p>
+<p>For example, if calculating CDI based on each type of damage present,
+imagine a tree where:</p>
+<p>50% of leaves are affected by defoliation (<em>S</em> = 50%) with on
+average about 30% of individual leaves missing (<em>I</em> = 30%)</p>
+<p>+ 20% necrotic damage per leaf (<em>S</em> = 20%) to the lower 15% of
+the canopy (<em>I</em> = 15%)</p>
+<p>+ 10% of leaves (<em>I</em> = 10%) are discoloured with around 15% of
+each leaf affected (<em>S</em> = 15%)</p>
+<p>= (50 x 30)/100 + (20 x 15)/100 + (15 x 10)/100 = 15 + 3 + 1.5</p>
+<p>CDI = 19.5</p>
+<p id="table-a1"><h4>Table A1. Example for calculating the crown damage index based on
+types of damage present</h4></p>
+<table>
+<colgroup>
+<col style="width: 22%"/>
+<col style="width: 23%"/>
+<col style="width: 19%"/>
+<col style="width: 34%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Damage type</strong></th>
+<th><strong>Damage Incidence (%)</strong></th>
+<th><strong>Damage Severity (%)</strong></th>
+<th><strong>Product</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Defoliation</td>
+<td>30</td>
+<td>50</td>
+<td>(30 x 50)/100 = 15</td>
+</tr>
+<tr class="even">
+<td>Necrosis</td>
+<td>15</td>
+<td>20</td>
+<td>(15 x 20)/100 = 3</td>
+</tr>
+<tr class="odd">
+<td>Discolouration</td>
+<td>10</td>
+<td>15</td>
+<td>(10 x 15)/100 = 1.5</td>
+</tr>
+<tr class="even">
+<td><strong>Crown Damage Index</strong></td>
+<td></td>
+<td></td>
+<td>15 + +3 + 1.5 = <strong>19.5</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Alternatively, if estimating CDI by dividing the canopy into smaller
+sections and looking at total damage in each portion, the calculations
+might look like this:</p>
+<p id="table-a2"><h4>Table A2. Example for calculating the crown damage index based on
+portions of the crown</h4></p>
+<table>
+<colgroup>
+<col style="width: 22%"/>
+<col style="width: 20%"/>
+<col style="width: 22%"/>
+<col style="width: 34%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Crown portion</strong></th>
+<th><strong>Damage Incidence (%)</strong></th>
+<th><strong>Damage Severity (%)</strong></th>
+<th><strong>Product</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Top 25%</td>
+<td>25</td>
+<td>50</td>
+<td>(25 x 50)/100 = 12.5</td>
+</tr>
+<tr class="even">
+<td>Middle 25%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Lower 50%</td>
+<td>30</td>
+<td>20</td>
+<td>(30 x 20)/100 = 6</td>
+</tr>
+<tr class="even">
+<td><strong>Crown Damage Index</strong></td>
+<td></td>
+<td></td>
+<td>12.5 + 6 = <strong>18.5</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Either approach can be used, or a combination of the two approaches
+(i.e. each type of damage for sections of the crown). The default in the
+App is a single row for an overall assessment of damage across the
+crown.</p>
+<p><span class="anchor" id="appendix-2"></span><h4>Appendix 2. Evidence
+of insect damage to foliage.</h4></p>
+<p><img id="figure-a1" alt="Insect_damage" height="900" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Appendix_1.png" width="500"/></p>
+<p><em>Source: South Australian Bushland Condition Monitoring Manual
+(Milne et al. 2008)</em></p>
+<p>Figure A1. Evidence of diseased foliage and insect damage 1. </p>
+<p><img id="figure-a2" alt="Galls" height="900" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Appendix_2.png" width="500"/></p>
+<p><em>Source: South Australian Bushland Condition Monitoring Manual
+(Milne et al. 2008).</em></p>
+<p>Figure A2. Evidence of diseased foliage and insect damage 2. </p>"""^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment">Equipment </h3>
+<p>General:</p>
+<ul>
+<li><p>mobile device with the Monitor app installed</p></li>
+<li><p>GNSS, such as a Trimble® R1 or DA2 receiver, a hand-held GPS, or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy</p></li>
+<li><p>100 m tape measure</p></li>
+<li><p>diameter tape or equivalent</p></li>
+<li><p>rangefinder or equivalent</p></li>
+</ul>
+<p>Optional:</p>
+<ul>
+<li><p>tent pegs</p></li>
+<li><p>clothes pegs</p></li>
+<li><p>flagging tape</p></li>
+<li><p>chalk</p></li>
+<li><p>5 - 10 m retractable tape measure</p></li>
+<li><p>30 cm ruler with leaf litter attachment</p></li>
+</ul>
+    """^^rdf:HTML ;
+    tern:instructions """ 
+    <h3 id="instructions-and-procedures">Instructions and procedures </h3>
+<ol type="1">
+<li><p>Ensure the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> has been completed to
+mark out the plot boundary, the sub-plot boundary and to define the
+current plot and visit in the Monitor app.</p></li>
+<li><p>Select <em>Condition Module &gt; Condition attributes
+protocol.</em></p></li>
+<li><p>Select <em>plot size</em> using the drop-down (100 x 100 m or 40
+x 40 m).</p></li>
+<li><p>Select the <em>equipment</em> that will be used to measure
+diameter and height (diameter tape, 5-10 m tape measure, rangefinder,
+clinometer).</p></li>
+<li><p>Select the <em>optional sub-protocols</em> that will be completed
+using the check-boxes (leaf litter, tree stumps, partially downed trees,
+disturbance).</p></li>
+<li><p>Select the <em>optional</em> <em>attributes</em> of interest that
+will be recorded during the Tree health component using the check-boxes
+(CDI, mistletoe, trunk condition, insect damage, human induced damage,
+additional stressors, abnormal growth).</p>
+<li><p>Time and date will be automatically recorded. This can be edited if
+necessary.</p></li> <img alt="Plot_layout" height="700" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Picture 1.jpg" width="550"/></li>
+<p><span class="anchor" id="figure-1"></span>Figure 1. Plot layouts
+for the 100 x 100 m core plot 40 x 40 m sub-plot.</p>
+</ol>
+<h4 class="unnumbered" id="tree-survey">Tree survey </h4>
+<ol type="1">
+<li><p>Systematically traverse the plot or sub-plot searching for
+perennial species with a DBH ≥10 cm and height &gt;2 m (hereby referred
+to as ‘tree’). For mallee and mulga systems, record all individuals with
+a DBH ≥5 cm.</p></li>
+<li><p>Follow the <em><a href="https://linked.data.gov.au/def/nrm/5a00862b-a885-472e-8bee-561ec502653f">Basal Area Module - DBH protocol</a></em> to record
+DBH measurements simultaneously.</p></li>
+<li><p>For each tree encountered, select <em>add tree</em> and
+record:</p>
+<ul>
+<li><p>if the tree is <em>mallee</em> or <em>mulga.</em></p></li>
+<li><p>if the tree is <em>dead</em>. When dead is selected, completion
+of the growth stage and reproductive life stage fields is not
+required.</p></li>
+<li><p>if the tree is dead and partially downed, select the
+<em>partially downed tree</em> check-box.</p></li>
+<li><p>the <em>species name</em> or assigned <em>field name.</em> If the
+species identification is unknown (only species recorded as part of the
+Floristics Module will be available for selection) select <em>add new
+species</em> and fill in the relevant information. If the individual
+cannot be recorded to species, the genus name can be used (i.e.
+<em>Eucalyptus</em> sp.).</p></li>
+<li><p>the <em>growth stage</em> of the tree (mature, recruiting,
+resprouting or senescent), refer to <a href="#table-2">Table 2</a> and <a href="#figure-2">Figure 2</a> for more
+information. If resprouting, indicate if <em>basal</em> or
+<em>epicormic</em> (both can be selected).</p></li>
+<li><p>the <em>reproductive life-stage</em>, refer to <a href="#table-3">Table 3</a> for more
+information.</p></li>
+<li><p>if <em>flowering</em>, record the <em>intensity</em> (percentage
+of the canopy in flower).</p></li>
+<li><p>the <em>height</em> (m) of the tree using a rangefinder or
+equivalent.</p>
+<p><span class="anchor" id="table-2"></span><h4>Table 2. Description
+of growth stage classes.</h4></p></li>
+</ul></li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 14%"/>
+<col style="width: 85%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Growth stage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="2">Recruiting</td>
+<td><em>Trees:</em> From the juvenile and sapling stages to
+well-developed individuals with a crown of small branches, but below
+maximum height for a stand, crown exhibits apical dominance – approx.
+0-30 years</td>
+</tr>
+<tr class="even">
+<td><em>Shrubs:</em> Juvenile stage, shrub has not reached maximum
+height, apical dominance</td>
+</tr>
+<tr class="odd">
+<td>Resprouting</td>
+<td><em>Trees and Shrubs:</em> Woody perennial which is resprouting
+after significant loss of foliage. Resprouting can occur from the trunk
+or branches (epicormic) or from the base (basal).</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Mature</td>
+<td><em>Trees:</em> Tree has reached maximum height and crown has
+reached full lateral development although branch thickening can occur.
+Apical dominance lost – approx. 30-80 years</td>
+</tr>
+<tr class="odd">
+<td><em>Shrubs</em>: Shrub has reached maximum height, crown has reached
+full lateral development</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Senescent</td>
+<td><em>Trees:</em> Crown form contracting and becoming ‘stag headed’
+decrease in crown diameter and crown leaf area. Distorted branches and
+burls common – approx. &gt;80 years</td>
+</tr>
+<tr class="odd">
+<td><em>Shrubs:</em> Crown form contracting and decrease in crown
+diameter and crown leaf area. Dead branches more common – approx. &gt;80
+years</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Dead</td>
+<td><em>Trees:</em> Dead individuals in all stages – from presence of
+tertiary branches and bark to no remaining crown structure and absence
+of bark</td>
+</tr>
+<tr class="odd">
+<td><em>Shrubs:</em> Dead individuals in all stages</td>
+</tr>
+</tbody>
+</table>
+<p><img id="figure-2" alt="Growth stage visual representation examples" height="300" src="https://w3id.org/tern/static/dawe-rlp/latest/condition/Growth_stage.png" width="800"/></p>
+<p><span class="anchor"></span>Figure 2. Growth stage
+visual representation examples.</p>
+<p><span class="anchor" id="table-3"></span><h4>Table 3. Life-stage
+classes.</h4></p>
+<p>Adapted from (Heard and Channon 1997). Seedling, sapling and juvenile
+cannot be selected within this module. To record the presence of
+seedlings, saplings and juveniles, complete the <a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment Module</a>.</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Life Stage</strong></th>
+<th><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Budding</td>
+<td>Plants have buds formed in varying stages of development for
+flowering</td>
+</tr>
+<tr class="even">
+<td>Flowering</td>
+<td>Plants are in flower</td>
+</tr>
+<tr class="odd">
+<td>Immature fruit</td>
+<td>Immature fruits not shedding seed</td>
+</tr>
+<tr class="even">
+<td>Mature fruit</td>
+<td>Fruits ripe and/or shedding seed</td>
+</tr>
+<tr class="odd">
+<td>Recently shed</td>
+<td>Plants are in a non-reproductive phase which show signs of having
+shed seed or fruits within the last 12 months</td>
+</tr>
+<tr class="even">
+<td>Vegetative</td>
+<td>Plants in a non-reproductive phase (i.e. no flowers, buds or unshed
+seed), that do not classify as seedlings or saplings</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" type="1">
+<li><p>If there are obvious signs of browsing, complete the <a href="https://linked.data.gov.au/def/nrm/dd2da1e0-edbe-4f20-a1ae-b860876c1837">Herbivory
+and Physical Damage Module</a> simultaneously.</p></li>
+<li><p>For each tree encountered, select <em>record health</em> and
+record:</p></li>
+</ol>
+<ul>
+<li><p>the percentage of canopy cover present versus dieback. Use the
+<em>South Australian Bushland Assessment Manual</em> (Native Vegetation
+Council 2020) to assist with the determination.</p></li>
+</ul>
+<ul>
+<li><p>the incidence and severity of discoloured, necrotic and missing
+foliage. Enter the type of damage into the description column, followed
+by incidence and severity values (see <a href="#appendix-1">Appendix 1</a>). The product will be
+automatically calculated. Use the add row button to add additional
+damage or crown portion measures (<a href="#appendix-1">Appendix 1</a>).</p></li>
+<li><p>the number of alive and dead mistletoes present. If no number is
+recorded, the app will automatically populate the field with 0.</p></li>
+<li><p>the number of hollows present. If no number is recorded, the app
+will automatically populate the field with 0.</p>
+<ul>
+<li><p>Optionally record the size of the hollow (m).</p></li>
+<li><p>Optionally record the direction of the hollow opening.</p></li>
+<li><p>Optionally record the position of the hollow on the
+tree.</p></li>
+</ul></li>
+<li><p>the presence of deep cracks or crevices present using the
+check-box.</p></li>
+<li><p>the tree bark is loose using the check-box.</p></li>
+<li><p>the presence of insect bores using the check-box.</p></li>
+<li><p>the incidence and severity of insect damage on the foliage.</p>
+<ul>
+<li><p>Select the <em>type</em> <em>of damage</em> (gall, lerp, scale,
+blistering, skeletonisation, followed by incidence and severity values).
+Use the <em>South Australian Bushland Condition Monitoring Manual</em>
+(Milne et al. 2008) or similar to assist with determination (examples
+available in <a href="#appendix-2">Appendix 2</a>).</p></li>
+</ul></li>
+<li><p>any <em>human induced damage</em> (lopping, logging, ringbarking,
+poisoning) present.</p></li>
+<li><p>obvious signs of any other biotic or abiotic stressors.</p></li>
+<li><p>the presence of abnormal growth using the check-box.</p></li>
+</ul>
+<ol start="6" type="1">
+<li><p>If there is leaf litter present at the base of the tree:</p></li>
+</ol>
+<ul>
+<li><p>create a small clearing in the litter and remove any coarse
+material then place the flat end of the leaf litter measurement tool on
+the soil surface. Slide the disc component down until it contacts the
+leaf litter surface. Apply light pressure to the disc and use the screw
+to tighten it into position. Read and record the litter depth (mm) where
+the top of the disc intersects the ruler. Instructions for building the
+tool can be found in the supplementary document Leaf litter tool
+instructions.</p></li>
+<li><p>if there is no leaf litter present, select no litter using the
+check-box.</p></li>
+<li><p>replace any litter or woody debris moved during the
+process.</p></li>
+</ul>
+<ol start="7" type="1">
+<li><p>Add <em>photo</em> of the tree.</p></li>
+<li><p>Use the comments tab for any additional remarks.</p></li>
+<li><p>Select <em>save</em> when all attributes have been recorded for
+the tree.</p></li>
+<li><p>Mark the tree with coloured chalk or equivalent to avoid
+unintentional remeasuring.</p></li>
+<li><p>Repeat steps 2-11 for each eligible tree encountered in the
+survey area.</p></li>
+<li><p>Select <em>complete</em> to when all trees within the survey area
+have been recorded.</p></li>
+</ol>
+<p><span class="anchor" id="table-4"></span><h4>Table 4. Factors
+affecting vegetation health to be recorded in the field.</h4></p>
+<table>
+<colgroup>
+<col style="width: 15%"/>
+<col style="width: 15%"/>
+<col style="width: 69%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Health factor</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="2">Canopy health</td>
+<td>Canopy cover</td>
+<td>The percentage of foliage present within the canopy relative to a
+local reference tree.</td>
+</tr>
+<tr class="even">
+<td>Crown damage index (CDI)</td>
+<td>An index based on the incidence and severity of discoloured,
+necrotic or missing foliage [Stone 2003].</td>
+</tr>
+<tr class="odd">
+<td colspan="2">Mistletoe</td>
+<td>Aerial plant parasite which can be identified by its different
+foliage from host plant. Number of mistletoes present to be
+recorded.</td>
+</tr>
+<tr class="even">
+<td colspan="2">Hollow</td>
+<td>Cavity that has formed within the trunk or branch of a tree. Number,
+direction and position recorded.</td>
+</tr>
+<tr class="odd">
+<td colspan="2">Human induced damage</td>
+<td>Any physical harm caused by a human activity. Presence or absence
+recorded.</td>
+</tr>
+<tr class="even">
+<td colspan="2">Insect damage</td>
+<td>The incidence and severity of galls, skeletonization, lerps,
+blistering and scale on foliage.</td>
+</tr>
+<tr class="odd">
+<td colspan="2">Trunk condition</td>
+<td>The presence of hollows, cracks, crevices, loose bark and insect
+bores on the tree trunk.</td>
+</tr>
+</tbody>
+</table>
+<h4 class="unnumbered" id="tree-stumps">Tree stumps </h4>
+<ol type="1">
+<li><p>Systematically traverse the plot or sub-plot searching for tree
+stumps.</p></li>
+</ol>
+<ol start="2" type="1">
+<li><p>For each stump encountered select <em>add stump.</em></p></li>
+<li><p>Location of the stump is automatically recorded when a stump is
+added. Location can be edited and re-recorded if required.</p></li>
+<li><p>Measure and record the height of the stump in cm.</p></li>
+<li><p>Measure and record the diameter of the top end of the stump in
+cm.</p></li>
+<li><p>Record the <em>decay class</em> of the stump from the drop-down
+list (<a href="#table-5">Table 5</a>).</p></li>
+<li><p>Record the any <em>regeneration</em> on the stump (present or
+absent).</p></li>
+<li><p>Add <em>photo</em> of the stump.</p></li>
+<li><p>Repeat steps 2-6 for each stump within the plot.</p></li>
+<li><p>Select <em>complete</em> to when all stumps within the survey
+area have been recorded.</p></li>
+</ol>
+<p><span class="anchor" id="table-5"></span>Table 5. Coarse woody
+debris decay classes which can be applied to stumps</p>
+<p>Adapted from (Meggs 1996; Baker and Chao 2011).</p>
+<table>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 87%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decay class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Class 1</td>
+<td>Recently fallen. Structurally intact or almost so; bark or small
+branches still attached; few signs of wood decay; wood mostly retains
+original colour.</td>
+</tr>
+<tr class="even">
+<td>Class 2</td>
+<td>Structurally less intact but still hard when kicked; small branches
+absent; little or no bark present; early signs of wood decay, bark loss
+or discolouration.</td>
+</tr>
+<tr class="odd">
+<td>Class 3</td>
+<td>Clearly decaying but still supports own weight; may be slightly soft
+when kicked; may be hollow in places; no bark; moss and fungi may be
+prominent.</td>
+</tr>
+<tr class="even">
+<td>Class 4</td>
+<td>Cannot support its own weight; soft to kick (but may still be hard
+in places; in which case may be extensively hollow); moss, fungi and
+invading roots likely.</td>
+</tr>
+<tr class="odd">
+<td>Class 5</td>
+<td>No longer retains original shape; wood very soft or largely
+disintegrated; sometimes only outline visible beneath moss, invading
+roots.</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    tern:purpose """
+    <h2 id="rationale">Rationale</h2>
+<p>Adequate monitoring of condition remains a prerequisite for
+environmental decision-making and for tracking progress towards
+management goals (Lawley <em>et al.</em> 2016). However, condition data
+is patchy and despite a number of approaches being developed there is
+still no consistent way to assess condition across the country (NERP
+National Condition Working Group 2015). As a result, there is a need for
+cost-effective condition assessments that provide robust and rigorous
+data (Cook <em>et al.</em> 2010). An understanding of condition is
+needed to inform regional priorities, establish policies, design and
+evaluate natural resource management (NRM) programs and measure change
+(Thackway <em>et al.</em> 2015). At the project scale, monitoring
+condition allows the response of ecological attributes such as ground
+cover and native plant diversity to be determined in relation to
+management interventions or developments. At a broader scale, data from
+a range of projects can provide information on the overall performance
+of NRM programs, across interventions, vegetation types and regions (DOE
+2013; Eco Logical Australia 2013), and for development projects can help
+determine if environmental impacts, including impacts on matters of
+national environmental significance are being managed appropriately
+(Commonwealth of Australia 2020).</p>
+<p>Currently, condition tends to be measured by visual and/or systematic
+assessments (Neldner 2006; Casson <em>et al.</em> 2009; Cook <em>et
+al.</em> 2010; Eyre <em>et al.</em> 2015), but visual estimates can be
+highly variable compared to systematic assessments, especially at small
+scales. Observers often simplify their assessments by responding to only
+some of the condition parameters, and as a result, more systematic
+assessments are needed when management decisions require an
+understanding of changes in individual condition attributes (Cook <em>et
+al.</em> 2010). In addition, a greater range of analysis options are
+available when the data is collected as continuous rather than
+categorical data. This information allows changes in individual
+attributes to be monitored, aggregated and analysed to explore a range
+of issues related to condition (ESCAVI 2007; Williams 2010).</p>
+<p>The approach outlined in this module has been developed to align with
+existing condition assessment methods where possible but improves the
+way condition is measured across the country by focusing on the
+collection of quantitative data. A summary of each attribute, reason for
+collection and survey methods are detailed below.</p>
+<p><strong>Age and size class (Condition Module):</strong> The size (DBH
+and height), growth stage and life-stage are recorded for all trees,
+tall shrubs or mallee &gt;2 m tall and with a DBH ≥10 cm present within
+the central 40 x 40 m sub-plot. This enables age class structure to be
+determined and to assist with the interpretation of changes that occur
+over time, particularly following natural disturbance or interventions
+(DEC 2012). Trees can be categorised post-survey based on DBH measures
+into designated size classes relevant to the study system (see <a href="#appendices">Appendix</a>).
+A mix of stem sizes indicates multiple successful recruitment events
+have occurred and the presence of very large individuals indicates that
+the system retains old-growth characteristics such as tree-hollows and
+roosting sites which can be important for a range of fauna species
+(Oliver <em>et al.</em> 2007).</p>
+<p><strong>Life-stage (<a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment</a> and <a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition</a> Modules):</strong>
+Life-stage is recorded for all perennial species present within the 1 ha
+plot as part of the Recruitment Module. Life-stage is also recorded in
+the central 40 x 40 m sub-plot as part of the Condition tree survey
+protocol and in the seedling, sapling and juvenile counts in the
+Recruitment Module to provide an overview of the potential for
+recruitment. Eight life-stage classes have been defined (seedling,
+sapling, juvenile, vegetative, budding, flowering, immature fruit,
+mature fruit, recently shed) based on the work by Heard and Channon
+(1997).</p>
+<p><strong>Growth stage (<a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment</a> and <a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition</a> Modules):</strong>
+Growth stage (recruiting, resprouting, mature, senescent, dead) is
+recorded within the central 40 x 40 m sub-plot for every perennial
+individual present following the Tree survey protocol in the Condition
+Module. In addition, a growth stage summary is recorded across the plot
+for each species as part of the Recruitment Module. Multiple growth
+stages can be recorded for each species. Additionally, recruiting
+individuals (seedling, sapling, and juvenile) are counted as part of the
+Recruitment Module. Recording growth stage as a measure of condition is
+recommended by a number of sources (Gibbons and Freudenberger 2006b,
+2006a; Parkes and Lyon 2006; Bleby <em>et al.</em> 2008), as it helps to
+characterise the structural diversity of the system (Milne <em>et
+al.</em> 2008). Recording growth stage using two methods allows growth
+stage to be recorded for every perennial species present and also
+provides an estimate for the abundance of each stage.</p>
+<p><strong>Seedling, sapling and juvenile counts (<a href="https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970">Recruitment Module</a>):</strong> Seedling, sapling and juvenile counts are undertaken
+in the central 40 x 40 m sub-plot as part of the Recruitment Module.
+Counts are undertaken for an estimate of the number of recruits for the
+tree and shrub species present in the system, with counts undertaken on
+a per species or per genus basis, where possible (DOC 2019). Recruitment
+is an important condition measure because it provides insight into how
+well the system is functioning and an indication of the capacity of the
+system to regenerate (particularly in degraded systems), and therefore
+persist over the long-term (DENR 2011; DEC 2012).</p>
+<p><strong>Vegetation health (<a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a>):</strong> Vegetation
+health is recorded for every tree and tall shrub present within the 40 x
+40 m subplot (excluding seedlings, saplings and juveniles). Health
+measures include canopy cover, canopy health (based on an estimate of
+damage severity and incidence (Stone <em>et al.</em> 2003), the number
+of mistletoes, the presence of any hollows, insect damage and
+human-induced damage. Grazing damage is recorded as browse height and
+severity. Vegetation health is an important measure of condition, and
+several abiotic and biotic factors can contribute to a decline in health
+(Department of the Environment 2014). Tree health can serve as a signal
+for further investigation, e.g., if high levels of dieback are present
+at a site, research into potential causes may be required. High levels
+of grazing can result in decline of site condition as it leads to
+reduced plant productivity, regenerative capacity, habitat value and
+biodiversity, hydrological function and carbon sequestration (Eldridge
+and Delgado‐Baquerizo 2017).</p>
+<p><strong>Litter depth (<a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> and <a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> Modules):</strong> Litter
+depth is recorded as an additional measure during the Cover Module
+whenever litter is encountered along the four point intercept transects
+delineating the sub-plot. Litter depth is the distance between the
+mineral soil surface and the top of the litter surface (Hines <em>et
+al.</em> 2010). Litter can provide a habitat for some ground-dwelling
+fauna and predator invertebrates (McElhinny <em>et al.</em> 2006), a
+substrate for the regeneration of plant species (Oliver and Parkes
+2003), shelter and food for detritus-feeding invertebrates (Majer <em>et
+al.</em> 1997; Oliver and Parkes 2003), and also plays a role in soil
+surface stability and can reduce erosion (Casson <em>et al.</em> 2009).
+Litter depth information should be used in combination with litter cover
+information obtained from the <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a>.</p>
+<p><strong>Coarse Woody Debris (<a href="https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2">Coarse Woody Debris Module</a>):</strong>
+Coarse woody debris (CWD) is recorded for all logs with a diameter of 10
+cm or more within the 40 x 40 m subplot, with the length and diameters
+(widest and narrowest) recorded for any pieces present. CWD contributes
+to a range of ecosystem processes, including nutrient cycling and
+storage, soil formation, stability, and retention, retaining moisture
+and enhancing water infiltration, improving thermal conditions, and
+providing sites for litter accumulation (Grove and Meggs 2003;
+Woldendorp <em>et al.</em> 2004; Manning <em>et al.</em> 2013; Goldin
+2020). CWD can also influence fuel loads and fire dynamics (Miehs et al.
+2010), and is a preferred habitat feature for a range of fauna,
+including shelter, nesting and denning sites for a variety of mammals,
+reptiles and some birds (Mac Nally et al. 2001; Threlfall et al.
+2021).</p>
+<p><strong>Fire (<a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity Module</a>):</strong> Fire extent and
+severity are determined using transects, with burn distribution,
+vegetation char, and scorch height recorded. Fire severity is defined as
+the degree of consumption and scorching of live vegetation and dead
+fuel, and the degree to which soil properties and processes are altered,
+as a result of the combustion process (Smith <em>et al.</em> 2005;
+Hammill and Bradstock 2006). The cover measurements are indicative of
+fire extent and patchiness (Edwards <em>et al.</em> 2013), while the
+height measurements provide insight into the degree of scorching and
+charring of the living and dead vegetation in each strata, which are key
+indicators of fire severity (Whight and Bradstock 1999; Hammill and
+Bradstock 2006; Russell-Smith and Edwards 2006; Chafer 2008; Edwards
+<em>et al.</em> 2013; Oliveira <em>et al.</em> 2015). Fire has a major
+effect on terrestrial ecosystems and can influence plant diversity,
+composition and regeneration, and high frequency burning can result in
+the loss of fire sensitive vegetation (Yibarbuk <em>et al.</em> 2001;
+Fisher <em>et al.</em> 2009; Etchells <em>et al.</em> 2020).</p>
+<p><strong>Vertebrate pest fauna (<a href="https://linked.data.gov.au/def/nrm/8e7c86ce-e283-4cea-aca7-44ed7a22629c">Signs-based Fauna Module</a> and <a href="https://linked.data.gov.au/def/nrm/dd2da1e0-edbe-4f20-a1ae-b860876c1837">Herbivory
+and Physical Damage Module</a>):</strong> Pest fauna presence will be
+recorded at the plot level, with evidence of tracks, scats, warrens,
+diggings or other signs/traces recorded (DOE 2013). There will be a
+focus on recording evidence of feral cats, foxes, wild dogs, rabbits,
+pigs, goats, deer, horses and camels, but other invasive species can
+also be included. Pest animals can cause land degradation by promoting
+soil erosion and compaction, stream turbidity, the spread of weeds, and
+can threaten native plant species and animals through competition,
+habitat destruction, over-grazing and predation (Invasive Plants and
+Animals Committee 2016). Consequently, the presence of vertebrate pest
+fauna can be an indicator of a reduction in condition (Casson <em>et
+al.</em> 2009; Pert <em>et al.</em> 2012; Krull <em>et al.</em>
+2015).</p>"""^^rdf:HTML ;
+    tern:scope """
+    <h1 id="introduction-and-background">Introduction and Background</h1>
+<p>The Condition Module involves the collection of quantitative,
+accurate and repeatable measures of condition within the plot, using a
+combination of point and plot-based methods. The Condition Module
+includes methods for collecting data on plant age class structure, plant
+health and size, litter depth, coarse woody debris and recruitment.
+Elements of the Coarse Woody Debris Module and Recruitment Module form
+part of the Condition Module and data from other modules such as
+Floristics, Cover, Fire Severity and Signs-based Fauna Surveys are also
+important measures for the overall assessment of condition. The
+definition of condition adopted here is revised from the AusPlots Draft
+Condition Protocol (Wundke <em>et al.</em> 2015) and is as follows:</p>
+<ul>
+<li><p>Biodiversity condition is a measure of the status of the biota at
+an assessment site described by key attributes that reflect structure,
+function and composition.</p></li>
+</ul>
+<p>The Condition Module has been designed to improve consistency and
+repeatability in the way condition is measured across Australia and
+provide increased opportunities for analysis. The primary aim of the
+Condition Module is to collect baseline and revisit data, so any changes
+in condition metrics following management interventions can be
+evaluated.</p>
+<p>Existing frameworks and procedures to assess condition differ in
+their approach, and this is reflective of the range of legislative,
+management and policy objectives in place, as well as available
+resources (Eyre <em>et al.</em> 2015). Methods and protocols for
+assessing and monitoring condition have been developed in all states and
+territories (Williams 2010), and include BioCondition in Queensland
+(Eyre <em>et al.</em> 2015), the Biodiversity Assessment Method (BAM) in
+New South Wales (DPIE 2020), Habitat Hectare Assessment in Victoria (DSE
+2004), TasVeg in Tasmania (Michaels 2006), Bushland Condition Monitoring
+(BCM) in South Australia (Milne et al. 2008), Vegetation Condition
+Assessment in the Northern Territory (Brocklehurst and Price 2008) and
+Native Vegetation Condition Assessment in Western Australia (Casson et
+al. 2009). However, the degree these methods have been adopted and
+utilised varies between states and territories.</p>
+<p>The methods developed by the states and territories have generally
+been designed as practical, rapid assessments, appropriate for use by
+non-specialists. All have a measure of species composition, plant cover,
+life history, weeds and logs (coarse woody debris), and all assess
+regeneration or recruitment of canopy or woody species as a measure of
+ecosystem function. To measure condition, these methods generally
+involve comparison against a reference or benchmark (Williams 2010). The
+methods provided here build from the approach developed for the AusPlots
+Draft Condition Protocols Manual (Wundke <em>et al.</em> 2015) and align
+with existing state and territory methods, where possible.</p>
+<p>As more attributes are assessed, the overall picture of biodiversity
+condition becomes more comprehensive (Casson <em>et al.</em> 2009).
+However, one of the main challenges for developing condition protocols,
+is deciding on a set of attributes that are flexible enough to be
+applied across Australia, but are also robust, repeatable and cost
+effective (NERP National Condition Working Group 2015). The condition
+assessment framework presented here, draws on data from a range of
+attributes, sourced from a number of the modules, including a core set
+from the Condition Module, as well as data from the Recruitment Module,
+Coarse Woody Debris Module, Fire Severity Module, Signs-based Fauna
+Surveys Module, Floristics Module, and Cover Module. Where required,
+condition assessments can also include data from other modules,
+including Vertebrate Fauna Module, Invertebrate Fauna Module and Soils
+Module.</p>
+<p>The key attributes that should be considered as part of a condition
+assessments include:</p>
+<ul>
+<li><p>plant age class structure (Condition Module and Recruitment
+Module)</p></li>
+<li><p>life-stage and growth stage (Condition Module and Recruitment
+Module)</p></li>
+<li><p>plant health (Condition Module)</p></li>
+<li><p>browsing damage (Herbivory and Physical Damage Module)</p></li>
+<li><p>litter depth (Condition Module)</p></li>
+<li><p>seedling, sapling and juvenile counts (Recruitment
+Module)</p></li>
+<li><p>coarse woody debris size and abundance (Coarse Woody Debris
+Module)</p></li>
+<li><p>fire extent and severity (Fire Severity Module)</p></li>
+<li><p>native plant species diversity (Floristics Module)</p></li>
+<li><p>native plant cover (Cover Module)</p></li>
+<li><p>substrate cover (Cover Module)</p></li>
+<li><p>weed diversity (Floristics Module)</p></li>
+<li><p>weed cover (Cover Module)</p></li>
+<li><p>pest vertebrate fauna presence (Signs-based Fauna Survey
+Module)</p>
+<p>Additional measures include:</p></li>
+<li><p>disturbance (Plot Description Module)</p></li>
+<li><p>vertebrate fauna diversity (Vertebrate Fauna Module)</p></li>
+<li><p>invertebrate fauna diversity (Invertebrate Fauna Module)</p></li>
+<li><p>soil characterisation (Soils Module)</p></li>
+<li><p>bulk density (Soils Module)</p></li>
+<li><p>soil surface condition and erosion (Soils Module)</p></li>
+</ul>
+<h3 id="analysing-condition-data">Analysing condition data</h3>
+<p>Condition is generally assessed by measuring a range of features and
+then combining these into an index of condition, which is then compared
+against a benchmark to generate a condition score (Cook et al. 2010).
+Benchmarks are generally based on a pre-European (1750) state, prior to
+significant development and disturbance (Thackway et al. 2015), or a
+Best on Offer site (BOO, Eyre <em>et al.</em> 2017). Once a set of
+benchmarks have been established for a vegetation type, the condition of
+any example of that type can be quantified by comparing the site values
+with the benchmark values (Parkes <em>et al.</em> 2003; Eyre <em>et
+al.</em> 2015). Condition scores can be generated from a mix of field
+and remote measures (Eyre et al. 2015; Harwood et al. 2016; Lawley et
+al. 2016; McFarlane and Wallace 2019), and to generate condition scores,
+primary data is usually converted into an attribute condition score, and
+then weighted and aggregated into a single site multi-metric score
+(Oliver <em>et al.</em> 2014; Eyre <em>et al.</em> 2015). This approach
+can be straightforward and easy to understand, and allows a range of
+information to be presented as a simple numeric or visual summary (Pert
+et al. 2012). However, multi-metric condition scores have two main
+shortcomings including:</p>
+<ul>
+<li><p>loss of useful information at the attribute level, and</p></li>
+<li><p>generation of similar condition scores for very different sites
+through attribute eclipsing - the absence of one attribute being
+compensated for by the presence of another (Oliver <em>et al.</em>
+2014).</p></li>
+</ul>
+<p>An alternative approach is to assess each condition attribute
+individually against a baseline or reference measure. This approach
+avoids masking individual attribute scores, which allows a more thorough
+understanding of the outcomes of management actions (ESCAVI 2007; Milne
+et al. 2008), and as such is the approach recommended here. In addition,
+benchmarks are incomplete and lack consistency across Australia and
+given these limitations, alternative analysis options are required (Eco
+Logical Australia 2013).</p>
+<p>The collection of condition data using this protocol is focused on
+recording continuous rather than categorial data, as this allows
+flexibility when analysing and interpreting data. Collecting data in
+this way allows changes in individual attributes to be monitored,
+aggregated and analysed to explore a range of issues related to
+vegetation condition (Williams 2010). Analysis can be undertaken in a
+range of ways or a combination of ways, using the data collected,
+including:</p>
+<ul>
+<li><p>Comparison of intervention (treatment) and control plots over
+time, against baseline plot measures.</p></li>
+<li><p>Generation of benchmarks from suitable nearby reference areas
+using the same plot methods, to allow comparison of condition attributes
+from intervention or development areas, against relatively unmodified or
+best on offer reference areas.</p></li>
+<li><p>Utilisation of state or territory benchmark data and associated
+scoring algorithms, where available, to generate condition scores for
+the plots studied.</p></li>
+<li><p>Generation of a new scoring algorithm using the plot data
+collected and benchmark plots, to generate a condition score for each
+plot studied (the condition attributes included can be tailored to
+project needs and weighted accordingly).</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:undertakenAfter
+        <https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ,
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
+        <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2> ,
+        <https://linked.data.gov.au/def/nrm/4f0f0ca4-d8f7-472d-9203-f46a565ad970> ,
+        <https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b> ,
+        <https://linked.data.gov.au/def/nrm/dd2da1e0-edbe-4f20-a1ae-b860876c1837> ,
+        <https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5> ;
+.
+
