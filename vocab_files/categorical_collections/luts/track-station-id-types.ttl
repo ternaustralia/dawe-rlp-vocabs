@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/489034d2-54df-5370-be18-0c28a5856676>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/track-station-id-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/fbab417f-665a-5849-aede-480184479cc5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2cc8bd99-a5e0-5c8c-86ba-dc2666e9f47b> ;
+    urnp:conceptDefinition "The identifier of the track station indicating an new track station to be used for sign-based fauna surveys." ;
+    urnp:conceptSource "Cox B, McCallum K, O’Neill S, Bignall J, Peacock D, Sparrow B. (2023) Sign-based Fauna Survey Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/b80ed145-310b-5e09-9efa-898f4bd32fb7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/track-station-id-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/fbab417f-665a-5849-aede-480184479cc5> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d8eee5ed-0a06-5be8-8857-6d5c8763f9ac> ;
+    urnp:conceptDefinition "The identifier of the track station indicating an existing track station used from previous sign-based fauna surveys." ;
+    urnp:conceptSource "Cox B, McCallum K, O’Neill S, Bignall J, Peacock D, Sparrow B. (2023) Sign-based Fauna Survey Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/fbab417f-665a-5849-aede-480184479cc5>
+    a skos:Collection ;
+    dcterms:description "The track station identifer refers to whether the track station is an 'existing track station' uded for previous sign-based fauna surveys or a 'new track station' that will to be created." ;
+    dcterms:source "Cox B, McCallum K, O’Neill S, Bignall J, Peacock D, Sparrow B. (2023) Sign-based Fauna Survey Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/2cc8bd99-a5e0-5c8c-86ba-dc2666e9f47b> ,
+        <https://linked.data.gov.au/def/nrm/d8eee5ed-0a06-5be8-8857-6d5c8763f9ac> ;
+    skos:prefLabel "Track station ID types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/track-station-id-types.ttl"^^xsd:anyURI ;
+.
+

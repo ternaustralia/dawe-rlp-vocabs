@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/a97330ea-25e1-5cf9-ad63-11b9b2da9ade>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/transect-id-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2b983a96-1b7a-5973-908b-904603a9f7d3> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/31f2f9a8-a458-57c3-9ca8-165733dbb05c> ;
+    urnp:conceptDefinition "Refers to the transect identifier as a new transect." ;
+    urnp:conceptSource "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/afed5aca-f19d-530f-a15b-2d562ff3c7a6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/transect-id-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2b983a96-1b7a-5973-908b-904603a9f7d3> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/4aa364b6-3464-5d03-bb68-ba06ef61c364> ;
+    urnp:conceptDefinition "Refers to the transect identifier as an exisiting transect." ;
+    urnp:conceptSource "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/2b983a96-1b7a-5973-908b-904603a9f7d3>
+    a skos:Collection ;
+    dcterms:description "Refers to transect identifier code, i.e., whether the transect is a new transect or an existing transect." ;
+    dcterms:source "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/31f2f9a8-a458-57c3-9ca8-165733dbb05c> ,
+        <https://linked.data.gov.au/def/nrm/4aa364b6-3464-5d03-bb68-ba06ef61c364> ;
+    skos:prefLabel "Transect ID types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/transect-id-types.ttl"^^xsd:anyURI ;
+.
+
