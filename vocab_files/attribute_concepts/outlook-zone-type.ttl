@@ -1,0 +1,18 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/10cf2b91-7af0-575a-af4c-c2c0f8615e7f>
+    a skos:Concept ;
+    dcterms:source "McCallum K, Bignall J, Cox B, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Refers to the type of outlook zones (e.g., primary zone, secondary zone, etc.), and is applicable when the vantage point has additional field of view for fauna observations." ;
+    skos:prefLabel "outlook zone type" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/outlook-zone-type.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/77d93838-422e-5b7c-a2ab-b63998932f2a> ;
+    tern:valueType tern:IRI ;
+.
+

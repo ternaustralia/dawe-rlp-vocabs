@@ -1,0 +1,939 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """<h3>Contents</h3>
+  <ol>
+  <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology"
+        >Key definitions and terminology</a
+      >
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+  <h1 id="module-overview">Module overview</h1>
+<h2 id="available-protocols">Available protocols</h2>
+<p>The Plot Description Module includes two protocols to describe a core
+monitoring plot:</p>
+<ol type="1">
+<li><p><a href="https://linked.data.gov.au/def/nrm/88068941-4dc9-4b44-bcfe-5eeeb3ba1a21">Enhanced protocol</a> – used to describe the landform, land surface
+and vegetation of a plot when it is established (i.e. first
+visit).</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/615edd85-ea58-4d3c-b737-d31d8447ad49">Standard protocol</a> – used to describe the vegetation of an
+established plot that has previously been described using the enhanced
+protocol (i.e. revisit).</p></li>
+</ol>
+<p>The protocols use standardised methods and terminologies that align
+with national guidelines for surveying land and vegetation, including
+the Australian Soil and Land Survey Field Handbook (also known as the
+Yellow Book; NCST 2009), Guidelines for Surveying Soil and Land
+Resources (also known as the Blue Book; McKenzie <em>et al.</em> 2008),
+and the Native Vegetation Information System (NVIS) Australian
+Vegetation Attribute Manual (NVIS Technical Working Group 2017).</p>
+<h2 id="relationships-to-other-modules">Relationships to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<h4 class="unnumbered" id="complete-before-the-plot-description-module">Complete before the
+Plot Description Module</h4>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – the plot must be established
+and marked out to ensure the surveyor remains within the plot boundaries
+while describing the plot.</p></li>
+</ul>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – a physical description of the plot is
+required to place the floristic data in context with the surrounding
+landform, land surface and vegetation. Growth forms and field names
+assigned in the Floristics Module can help to determine the structural
+formation and are required for consistent naming in plant species
+life-stage and mass flowering event data, respectively.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> – plant species height and cover data recorded in
+the Cover Module can inform structural formation selection in the Plot
+Description Module and be used to classify the vegetation association of
+the plot using the NVIS to complement the vegetation information
+obtained in the Plot Description Module.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9">Photopoints Module</a> – panoramic photos taken from the centre of
+the plot in the Photopoints Module provide a visual representation of
+the plot and the features described in the Plot Description
+Module.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> – condition attribute data (tree health, leaf
+litter depth, etc.) recorded in the Condition Module complement the
+vegetation information obtained in the Plot Description Module and may
+contribute to a more detailed description of the plot.</p></li>
+</ul>"""^^rdf:HTML ;
+    dcterms:source """
+   <h1 id="references">References</h1>
+<p>ABARES (2016) The Australian Land Use and Management Classification
+Version 8. Australian Bureau of Agricultural and Resource Economics and
+Sciences, Canberra.</p>
+<p>Brocklehurst, P, Lewis, D, Napier, D, Lynch, D (2007) Northern
+Territory Guidelines and Field Methodology for Vegetation Survey and
+Mapping. Technical Report No. 02/2007D. Department of Natural Resources,
+Environment and the Arts, Palmerston, Northern Territory.</p>
+<p>Casson, N, Downes, S, Harris, A (2009) Native Vegetation Condition
+Assessment and Monitoring Manual for Western Australia. The Native
+Vegetation Integrity Project. Department of Environment and
+Conservation, Perth.</p>
+<p>CSIRO (2021) 'A national reference library of expert site condition
+assessments.' Available at <a href="https://research.csiro.au/biodiversity-knowledge/projects/expert-knowledge-biodiversity/">https://research.csiro.au/biodiversity-knowledge/projects/expert-knowledge-biodiversity/</a>
+[Accessed 15 February 2021].</p>
+<p>Eyre, T, Kelly, A, Neldner, V, Wilson, B, Ferguson, D, Laidlaw, M,
+Franks, A (2015) BioCondition: A Condition Assessment Framework for
+Terrestrial Biodiversity in Queensland. Assessment Manual. Version 2.2.
+Queensland Herbarium, Department of ScienceInformation Technology,
+Innovation and Arts, Brisbane.</p>
+<p>Freeman, K, Stack, G, Thomas, S, Woolfrey, N, 2015. Technical Guide -
+Terrestrial Flora and Vegetation Surveys for Environmental Impact
+Assessment. Perth, Western Australia.</p>
+<p>Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey:
+Using the Biological Survey of South Australia. Department of
+Environment and Natural Resources, Adelaide.</p>
+<p>McKenzie, NJ, Grundy, M, Webster, R, Ringrose-Voase, A (2008)
+'Guidelines for surveying soil and land resources.' (CSIRO Publishing:
+Melbourne)</p>
+<p>Michaels, K (2006) A Manual for Assessing Vegetation Condition in
+Tasmania Version 1.0. Resource Management and Conservation, Department
+of Primary Industries, Water and Environment, Hobart.</p>
+<p>NCST (2009) 'Australian Soil and Land Survey Field Handbook.' (CSIRO
+Publishing: Melbourne)</p>
+<p>NCST (in prep) 'Australian Soil and Land Survey Field Handbook.'
+(CSIRO Publishing: Melbourne)</p>
+<p>NVIS Technical Working Group (2017) Australian Vegetation Attribute
+Manual: National Vegetation Information System, Version 7.0. Department
+of the Environment and Energy, Canberra.</p>
+<p>Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
+Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
+vegetation and soil survey method for surveillance monitoring of
+rangeland environments. Frontiers in Ecology and Evolution 8, 157.</p>
+<p>White, A, Sparrow, B, Leitch, E, Foulkes, J, Flitton, R, Lowe, AJ,
+Caddy-Retalic, S (2012) 'AusPlots Rangelands Survey Protocols Manual.'
+(The University of Adelaide Press: Adelaide)</p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h2 id="key-definitions-and-terminology">Key definitions and
+terminology</h2>
+<table>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 79%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aspect</td>
+<td>Identifies the downslope direction (orientation) of the slope. The
+reading is taken looking down the slope. Due north is recorded as 360
+degrees. Aspect can only have a value of 1 to 360 degrees. A value of 0
+indicates that there is no slope.</td>
+</tr>
+<tr class="even">
+<td>Coarse fragment lithology</td>
+<td>Dominant lithology of any surface stones or rocks (e.g.
+calcrete/limestone, sandstone or quartz).</td>
+</tr>
+<tr class="odd">
+<td>Coarse fragment size</td>
+<td>Size of any surface stones or rocks in millimetres.</td>
+</tr>
+<tr class="even">
+<td>Homogeneity measure</td>
+<td>Record of the visual estimate (in metres) of the shortest distance
+from the survey point to a vegetation association different to the one
+being sampled. Provides an indication of how far the association being
+sampled extends beyond the plot.</td>
+</tr>
+<tr class="odd">
+<td>Landform element</td>
+<td>Landform elements have a dimension of approximately 40 m but can
+vary from a few metres to 100 m. A landform element is described by the
+following attributes – slope, morphological type, dimensions,
+geomorphological activity and geomorphological agent. Landform elements
+make up a mosaic within landform patterns. There are approximately 80
+different landform elements that occur in Australia including dunecrests
+and hillslopes (<a href="#appendix-1">Appendix 1</a> – Landform Element Summary).</td>
+</tr>
+<tr class="even">
+<td>Landform pattern</td>
+<td>Landform patterns have dimensions of approximately 600 m and are
+based on the following attributes – relief, slope (most common), stream
+channel occurrence, geomorphological attributes and component landform
+elements. Landform patterns generally have longer histories than
+landform elements. There are approximately 40 different landform
+patterns that occur in Australia including sand plains and hills
+(<a href="#appendix-1">Appendix 1</a> – Landform Pattern Summary).</td>
+</tr>
+<tr class="odd">
+<td>Modal slope</td>
+<td>The most common class of slope occurring in a landform pattern.</td>
+</tr>
+<tr class="even">
+<td>NVIS</td>
+<td>National Vegetation Information System – a comprehensive data system
+that provides information on the extent and distribution of vegetation
+types across Australia and defines how vegetation associations should be
+classified. The NVIS is hierarchical and different levels in the
+classification provide a description of the vegetation from class to
+sub-association that can be directly related to spatially defined
+areas.</td>
+</tr>
+<tr class="odd">
+<td>Outcrop lithology</td>
+<td>Dominant lithology of the outcrop (any area of exposed rock that is
+assumed to be continuous with the underlying bedrock).</td>
+</tr>
+<tr class="even">
+<td>Plot</td>
+<td>The specific survey area where information is collected (generally
+100 x 100 m; 1 ha). Final plot location is determined in the field, with
+preference given to homogeneous areas representative of the broader
+sampling unit, with consistent vegetation, slope, relief and soil.</td>
+</tr>
+<tr class="odd">
+<td>Relief</td>
+<td>The difference in elevation between the high and low points of a
+land surface.</td>
+</tr>
+<tr class="even">
+<td>Slope</td>
+<td>The rise or fall of the land surface, which is measured in degrees
+using a clinometer. Slope should be measured over a distance of at least
+20 m to reduce influence of any microrelief changes.</td>
+</tr>
+<tr class="odd">
+<td>Structural formation</td>
+<td>Vegetation classification that aligns with NVIS and is based on
+growth form, height, and cover (see <a href="#appendix-2">Appendix 2</a>).</td>
+</tr>
+</tbody>
+</table>
+"""^^rdf:HTML ;
+    skos:memberList (
+            <https://linked.data.gov.au/def/nrm/88068941-4dc9-4b44-bcfe-5eeeb3ba1a21>
+            <https://linked.data.gov.au/def/nrm/615edd85-ea58-4d3c-b737-d31d8447ad49>
+        ) ;
+    skos:prefLabel "Plot Description Module" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/plot-description/collection.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h1 id="appendices">Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span>Appendix 1. Landform
+and land surface resources</p>
+<h3 class="Appendix-heading-1" id="landform-pattern">Landform
+pattern</h3>
+<h4 class="Appendix-heading-4 unnumbered" id="slope-and-associated-landform-patterns">Slope and associated
+landform patterns</h4>
+<p>Slope classes and associated landform patterns. Adapted from
+information in the Yellow Book (NCST 2009).</p>
+<table>
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 55%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Slope class</th>
+<th>Code</th>
+<th>Degrees</th>
+<th>Percent</th>
+<th>Associated Landform Pattern Types</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Level</td>
+<td>LE</td>
+<td>0–0°35’</td>
+<td>0–1</td>
+<td>Plains, sheet-flood fan, pediplain, peneplain, alluvial plain, flood
+plain, meander plain, bar plain, covered plain, anastomotic plain,
+stagnant alluvial plain, terrace, tidal flat, made land, playa
+plain.</td>
+</tr>
+<tr class="even">
+<td>Very gently inclined</td>
+<td>VG</td>
+<td>0°36’–1°45’</td>
+<td>2–3</td>
+<td>Pediments, alluvial fan, sand plain.</td>
+</tr>
+<tr class="odd">
+<td>Gently inclined</td>
+<td>GE</td>
+<td>1°46’–5°45’</td>
+<td>4–10</td>
+<td>Rises, beach ridge plain, dunefield, lava plain, coral reef.</td>
+</tr>
+<tr class="even">
+<td>Moderately inclined</td>
+<td>MO</td>
+<td>5°46’–18°</td>
+<td>11–32</td>
+<td>Low hills, karst, meteor crater.</td>
+</tr>
+<tr class="odd">
+<td>Steep</td>
+<td>ST</td>
+<td>18–30°</td>
+<td>33–56</td>
+<td>Hills</td>
+</tr>
+<tr class="even">
+<td>Very steep</td>
+<td>VS</td>
+<td>30–45°</td>
+<td>57–100</td>
+<td>Mountains, escarpment, volcano, caldera.</td>
+</tr>
+<tr class="odd">
+<td>Precipitous</td>
+<td>PR</td>
+<td>45–72°</td>
+<td>101–300</td>
+<td>Rare in Australia.</td>
+</tr>
+<tr class="even">
+<td>Cliffed</td>
+<td>CL</td>
+<td>&gt;72°</td>
+<td>&gt;301</td>
+<td>Rare in Australia.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-1" id="land-use-history">Land-use
+history</h3>
+<p>Land-use history categories according to the ALUM version 8
+classification system (ABARES 2016).</p>
+<table>
+<colgroup>
+<col style="width: 32%"/>
+<col style="width: 67%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tertiary code</th>
+<th><strong>Tertiary name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1.0</td>
+<td>Nature conservation</td>
+</tr>
+<tr class="even">
+<td>1.1.1</td>
+<td>Strict nature reserves</td>
+</tr>
+<tr class="odd">
+<td>1.1.2</td>
+<td>Wilderness area</td>
+</tr>
+<tr class="even">
+<td>1.1.3</td>
+<td>National park</td>
+</tr>
+<tr class="odd">
+<td>1.1.4</td>
+<td>Natural feature protection</td>
+</tr>
+<tr class="even">
+<td>1.1.5</td>
+<td>Habitat/species management area</td>
+</tr>
+<tr class="odd">
+<td>1.1.6</td>
+<td>Protected landscape</td>
+</tr>
+<tr class="even">
+<td>1.1.7</td>
+<td>Other conserved area</td>
+</tr>
+<tr class="odd">
+<td>1.2.0</td>
+<td>Managed resource protection</td>
+</tr>
+<tr class="even">
+<td>1.2.1</td>
+<td>Biodiversity</td>
+</tr>
+<tr class="odd">
+<td>1.2.2</td>
+<td>Surface water supply</td>
+</tr>
+<tr class="even">
+<td>1.2.3</td>
+<td>Groundwater</td>
+</tr>
+<tr class="odd">
+<td>1.2.4</td>
+<td>Landscape</td>
+</tr>
+<tr class="even">
+<td>1.2.5</td>
+<td>Traditional Indigenous uses</td>
+</tr>
+<tr class="odd">
+<td>1.3.0</td>
+<td>Other minimal use</td>
+</tr>
+<tr class="even">
+<td>1.3.1</td>
+<td>Defence land - natural areas</td>
+</tr>
+<tr class="odd">
+<td>1.3.2</td>
+<td>Stock route</td>
+</tr>
+<tr class="even">
+<td>1.3.3</td>
+<td>Residual native cover</td>
+</tr>
+<tr class="odd">
+<td>1.3.4</td>
+<td>Rehabilitation</td>
+</tr>
+<tr class="even">
+<td>2.1.0</td>
+<td>Grazing native vegetation</td>
+</tr>
+<tr class="odd">
+<td>2.2.0</td>
+<td>Production native forests</td>
+</tr>
+<tr class="even">
+<td>3.1.0</td>
+<td>Plantation forests</td>
+</tr>
+<tr class="odd">
+<td>3.2.0</td>
+<td>Grazing modified pastures</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="_Ref137566305"></span></p>
+<p id="appendix-2">Appendix 2. Vegetation description resources</p>
+<h3 class="Appendix-heading-1" id="structural-formation">Structural
+formation</h3>
+<p>To determine the appropriate structural formation asses the height
+and cover of the tallest dominant stratum. Use the growth forms and
+height class table below, in association with the vegetation structural
+formation table.</p>
+<h4 class="Appendix-heading-4 unnumbered" id="using-nvis-classes">Using
+NVIS classes</h4>
+<img alt="Structural Formation" height="350" src="https://w3id.org/tern/static/dawe-rlp/latest/plot-description/Structural_Formation_Table.png" width="1000"/>
+<h4 class="Appendix-heading-4 unnumbered" id="a-screenshot-of-a-computer-description-automatically-generated-with-medium-confidencegrowth-forms-and-heights">Growth
+forms and heights</h4>
+<p>Height classes for specific growth forms defined for the NVIS.
+Sourced from page 34 of NVIS (NVIS Technical Working Group 2017).</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 13%"/>
+<col style="width: 12%"/>
+<col style="width: 16%"/>
+<col style="width: 20%"/>
+<col style="width: 11%"/>
+<col style="width: 16%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2">Height</th>
+<th colspan="5">Growth form</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Height class</td>
+<td>Height range (m)</td>
+<td>Tree, vine, palm</td>
+<td>Shrub, heath shrub, chenopod shrub, ferns, samphire shrub, cycad,
+tree-fern, grass-tree, palm</td>
+<td>Tree mallee, mallee shrub</td>
+<td>Tussock grass, hummock grass, other grass, sedge, rush, forbs,
+vine</td>
+<td>Bryophyte, lichen, seagrass, aquatic</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>&gt;30</td>
+<td>Tall</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>10-30</td>
+<td>Mid</td>
+<td></td>
+<td>Tall</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>&lt;10</td>
+<td>Low</td>
+<td></td>
+<td>Mid</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>&lt;3</td>
+<td></td>
+<td></td>
+<td>Low</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>&gt;2</td>
+<td></td>
+<td>Tall</td>
+<td></td>
+<td>Tall</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>1-2</td>
+<td></td>
+<td>Mid</td>
+<td></td>
+<td>Tall</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0.5-1</td>
+<td></td>
+<td>Low</td>
+<td></td>
+<td>Mid</td>
+<td>Tall</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>&lt;0.5</td>
+<td></td>
+<td>Low</td>
+<td></td>
+<td>Low</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+<h4 class="Appendix-heading-4 unnumbered" id="vegetation-structural-formation">Vegetation structural
+formation</h4>
+<p>NVIS growth form and structural formation classes (NVIS Technical
+Working Group 2017).</p>
+<table>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="8">NVIS growth form and structural formation classes (NVIS
+Technical Working Group 2017). Cover characteristics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td colspan="2">Foliage cover</td>
+<td>70–100</td>
+<td>30–70</td>
+<td>10–30</td>
+<td>&lt;10</td>
+<td>0</td>
+<td>0–5</td>
+</tr>
+<tr class="even">
+<td colspan="2">Crown cover</td>
+<td>&gt;80</td>
+<td>50–80</td>
+<td>20–50</td>
+<td>0.25–20</td>
+<td>&lt;0.25</td>
+<td>0–5</td>
+</tr>
+<tr class="odd">
+<td colspan="2">% Cover</td>
+<td>&gt;80</td>
+<td>50–80</td>
+<td>20–50</td>
+<td>0.25–20</td>
+<td>&lt;0.25</td>
+<td>0–5</td>
+</tr>
+<tr class="even">
+<td colspan="2">Cover code</td>
+<td>D</td>
+<td>C</td>
+<td>I</td>
+<td>R</td>
+<td>BI</td>
+<td>BC</td>
+</tr>
+<tr class="odd">
+<td>Growth form</td>
+<td>Height<br/>
+ranges (m)</td>
+<td colspan="6">Structural formation classes</td>
+</tr>
+<tr class="even">
+<td>Tree, palm</td>
+<td><p>&lt;10,</p>
+<p>10–30,</p>
+<p>&gt;30</p></td>
+<td>Closed forest</td>
+<td>Open forest</td>
+<td>Woodland</td>
+<td>Open woodland</td>
+<td>Isolated trees</td>
+<td>Isolated clumps of trees</td>
+</tr>
+<tr class="odd">
+<td>Tree mallee</td>
+<td><p>&lt;3,</p>
+<p>&lt;10,</p>
+<p>10–30</p></td>
+<td>Closed mallee forest</td>
+<td>Open mallee forest</td>
+<td>Mallee woodland</td>
+<td>Open mallee woodland</td>
+<td>Isolated mallee trees</td>
+<td>Isolated clumps of mallee trees</td>
+</tr>
+<tr class="even">
+<td>Shrub, cycad, grass-tree, tree-fern</td>
+<td><p>&lt;1,</p>
+<p>1–2,</p>
+<p>&gt;2</p></td>
+<td>Closed shrubland</td>
+<td>Shrubland</td>
+<td>Open shrubland</td>
+<td>Sparse shrubland</td>
+<td>Isolated shrubs</td>
+<td>Isolated clumps of trees</td>
+</tr>
+<tr class="odd">
+<td>Mallee shrub</td>
+<td><p>&lt;3,</p>
+<p>&lt;10,</p>
+<p>10–30</p></td>
+<td>Closed mallee shrubland</td>
+<td>Mallee shrubland</td>
+<td>Open mallee shrubland</td>
+<td>Sparse mallee shrubland</td>
+<td>Isolated mallee shrubs</td>
+<td>Isolated clumps of mallee shrubs</td>
+</tr>
+<tr class="even">
+<td>Health shrub</td>
+<td><p>&lt;1,</p>
+<p>1–2,</p>
+<p>&gt;2</p></td>
+<td>Closed heathland</td>
+<td>Heathland</td>
+<td>Open heathland</td>
+<td>Sparse heathland</td>
+<td>Isolated heath shrubs</td>
+<td>Isolated clumps of heath shrubs</td>
+</tr>
+<tr class="odd">
+<td>Chenopod shrub</td>
+<td><p>&lt;1,</p>
+<p>1–2,</p>
+<p>&gt;2</p></td>
+<td>Closed chenopod shrubland</td>
+<td>Chenopod shrubland</td>
+<td>Open chenopod shrubland</td>
+<td>Sparse chenopod shrubland</td>
+<td>Isolated chenopod shrubs</td>
+<td>Isolated clumps of chenopod shrubs</td>
+</tr>
+<tr class="even">
+<td>Samphire shrub</td>
+<td><p>&lt;0.1,</p>
+<p>&gt;0.5</p></td>
+<td>Closed samphire shrubland</td>
+<td>Samphire shrubland</td>
+<td>Open samphire shrubland</td>
+<td>Sparse samphire shrubland</td>
+<td>Isolated samphire shrubland</td>
+<td>Isolated clumps of samphire shrubs</td>
+</tr>
+<tr class="odd">
+<td>Hummock grass</td>
+<td><p>&lt;2,</p>
+<p>2</p></td>
+<td>Closed hummock grassland</td>
+<td>Hummock grassland</td>
+<td>Open hummock grassland</td>
+<td>Sparse hummock grassland</td>
+<td>Isolated hummock grasses</td>
+<td>Isolated clumps of hummock grasses</td>
+</tr>
+<tr class="even">
+<td>Tussock grass</td>
+<td><p>&lt;0.5,</p>
+<p>&gt;0.5</p></td>
+<td>Closed tussock grassland</td>
+<td>Tussock grassland</td>
+<td>Open tussock grassland</td>
+<td>Sparse tussock grassland</td>
+<td>Isolated tussock grasses</td>
+<td>Isolated clumps of tussock grasses</td>
+</tr>
+<tr class="odd">
+<td>Other grass</td>
+<td><p>&lt;0.5,</p>
+<p>&gt;0.5</p></td>
+<td>Closed grassland</td>
+<td>Grassland</td>
+<td>Open grassland</td>
+<td>Sparse grassland</td>
+<td>Isolated grasses</td>
+<td>Isolated clumps of grasses</td>
+</tr>
+<tr class="even">
+<td>Sedge</td>
+<td><p>&lt;0.5,</p>
+<p>&gt;0.5</p></td>
+<td>Closed sedgeland</td>
+<td>Sedgeland</td>
+<td>Open sedgeland</td>
+<td>Sparse sedgeland</td>
+<td>Isolated sedges</td>
+<td>Isolated clumps of sedges</td>
+</tr>
+<tr class="odd">
+<td>Rush</td>
+<td><p>&lt;0.5,</p>
+<p>&gt;0.5</p></td>
+<td>Closed rushland</td>
+<td>Rushland</td>
+<td>Open rushland</td>
+<td>Sparse rushland</td>
+<td>Isolated rushes</td>
+<td>Isolated clumps of rushes</td>
+</tr>
+<tr class="even">
+<td>Forb</td>
+<td><p>&lt;0.5,</p>
+<p>&gt;0.5</p></td>
+<td>Closed forbland</td>
+<td>Forbland</td>
+<td>Open forbland</td>
+<td>Sparse forbland</td>
+<td>Isolated forbs</td>
+<td>Isolated clumps of forbs</td>
+</tr>
+<tr class="odd">
+<td>Fern</td>
+<td><p>&lt;1,</p>
+<p>1–2,</p>
+<p>&gt;2</p></td>
+<td>Closed fernland</td>
+<td>Fernland</td>
+<td>Open fernland</td>
+<td>Sparse fernland</td>
+<td>Isolated ferns</td>
+<td>Isolated clumps of ferns</td>
+</tr>
+<tr class="even">
+<td>Bryophyte</td>
+<td>&lt;0.5</td>
+<td>Closed bryophyteland</td>
+<td>Bryophyteland</td>
+<td>Open bryophyteland</td>
+<td>Sparse Bryophyteland</td>
+<td>Isolated bryophytes</td>
+<td>Isolated clumps of bryophytes</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-1" id="site-disturbance">Site
+disturbance</h3>
+<p>Disturbance classes adapted from information in the Yellow Book (NCST
+2009) unpublished fourth edition (NCST in prep), with the addition of
+light, medium and high grazing disturbances (AusPlots Rangelands Manual
+(White et al. 2012).</p>
+<table>
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 89%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>No effective disturbance</td>
+</tr>
+<tr class="even">
+<td>1L</td>
+<td>No effective disturbance except light grazing by hoofed animals
+</td>
+</tr>
+<tr class="odd">
+<td>1M</td>
+<td>No effective disturbance except medium grazing by hoofed
+animals</td>
+</tr>
+<tr class="even">
+<td>1H</td>
+<td>No effective disturbance except high grazing by hoofed animals</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Limited clearing, for example limited logging</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Extensive clearing, for example poisoning, ringbarking</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Complete clearing, pasture, native or improved, but never
+cultivated</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Complete clearing, pasture, native or improved, cultivated at some
+stage</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Cultivation, rain fed</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Cultivation, irrigated, past or present</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>Highly disturbed, e.g. quarrying, road words, mining, landfill,
+urban</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>Regrowth after clearing</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>Significant natural disturbances, e.g. cyclonic impact</td>
+</tr>
+</tbody>
+</table>
+<blockquote>"""^^rdf:HTML ;
+    tern:purpose """
+    <h2 id="rationale">Rationale</h2>
+<p>The use of standardised terminology for the collection of plot
+information ensures plots are described in a consistent manner across
+projects and locations, and this facilitates the development of
+comprehensive datasets that can be used more widely (NCST 2009).
+Collecting consistent information regarding the physical environment of
+plots can improve understanding of interactions between the environment
+and vegetation, capture important information about the landform being
+surveyed and allow plot summary data to be compared between different
+sites and across projects (Heard and Channon 1997; Brocklehurst <em>et
+al.</em> 2007; NCST 2009).</p>
+<p>Landform information is generally collected using landform pattern
+and landform element components. The key determinants of landform
+pattern are relief, stream occurrence, lithology and soil, while slope,
+aspect and the position along the slope (toposequence) are key
+determinants of landform element (Heard and Channon 1997; McKenzie
+<em>et al.</em> 2008; NCST 2009). There are approximately 40 landform
+patterns defined for Australia and approximately 80 landform elements
+(NCST 2009). A variety of land surface attributes are also measured for
+each plot, including slope, aspect, outcrop lithology and coarse
+fragments lithology, size and abundance. Slope and aspect record the
+degree and orientation of the slope respectively (Heard and Channon
+1997). Outcrop lithology and coarse fragments lithology provide an
+indication of the dominant surface rock types (Heard and Channon 1997;
+Brocklehurst <em>et al.</em> 2007; McKenzie <em>et al.</em> 2008).</p>
+<p>Vegetation structural formation is a standardised terminology that
+integrates growth form, height and cover within each stratum (see
+<a href="#appendix-2">Appendix 2</a>), and is therefore used to provide a relatively user-friendly
+description of the dominant growth form, cover and height within the
+plot (NVIS Technical Working Group 2017). A homogeneity measure (an
+estimate of the shortest distance from the survey point to the boundary
+of the vegetation association) is collected to assist with vegetation
+classification and mapping (see the Vegetation Mapping Module; Sparrow
+<em>et al.</em> 2020).</p>
+<p>Supporting information, including growth stage, life stage,
+disturbance and fire history at the plot provides an indication of the
+reliability of the vegetation data in terms of species diversity and the
+abundance of seasonal vegetation (which depends on preceding rainfall
+and other weather conditions), and helps document other pressures on the
+vegetation such as grazing (Heard and Channon 1997; Brocklehurst et al.
+2007; McKenzie et al. 2008; Casson et al. 2009). Collecting this
+descriptive information provides context for the analysis of data
+collected using a variety of other methods at the plot level.</p>"""^^rdf:HTML ;
+    tern:scope """
+    <h1 id="introduction">Introduction and background</h1>
+<p>The Plot Description Module records basic physical information about
+a plot, including landform, slope and aspect, lithology, disturbance,
+fire history and vegetation type. The information collected aligns with
+national guidelines from the Australian Soil and Land Survey Field
+Handbook (also known as the Yellow Book; NCST 2009), Guidelines for
+Surveying Soil and Land Resources (also known as the Blue Book; McKenzie
+<em>et al.</em> 2008) and the NVIS Australian Vegetation Attribute
+Manual (NVIS Technical Working Group 2017), as well as a number of state
+and territory guidelines.</p>
+<p>A plot is considered an area of land representative of the landform,
+vegetation and land surfaces present within a sampling unit (NCST 2009).
+Plot locations are generally determined by a two-step process, which
+involves a desktop assessment to define areas of interest, followed by a
+field assessment to select final plot locations based on areas with a
+consistent vegetation community, slope, relief and soil (Michaels 2006;
+White <em>et al.</em> 2012; Eyre <em>et al.</em> 2015; Freeman <em>et
+al.</em> 2015). As a standard, plots are 100 x 100 m (1 ha) in size, but
+in some cases plot shape may need to be altered to align with landscape
+features such as a dunecrest or watercourse (White <em>et al.</em>
+2012). The Ecological Monitoring System Australia protocols currently do
+not support other plot shapes but are expected to in the future.</p>"""^^rdf:HTML ;
+    tern:undertakenBefore <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9> ,
+        <https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109> ,
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ;
+.
+

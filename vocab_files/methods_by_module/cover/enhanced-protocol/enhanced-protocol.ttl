@@ -1,0 +1,600 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/576f634e-2706-4f18-b561-0636d4c007d0>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+      <h1>Contents</h1>
+  <ol>
+    <li><a href="#equipment">Equipment</a></li>
+    <li><a href="#instructions-and-procedures">Instructions and procedures</a></li>
+    <li><a href="#additional-guidelines">Additional guidelines</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+  <p>
+    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover</a> module. 
+    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
+    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover</a>" module.
+    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
+    </p>
+    """^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+<h1 id="additional-guidelines">Additional guidelines</h1>
+<h4 class="unnumbered" id="efficiency">Efficiency</h4>
+<ul>
+<li><p>Laying out a set of tape measures along multiple transects,
+rather than one transect at a time, is more efficient. This is
+particularly the case if the survey team comprises more generalist
+surveyors and/or volunteers who can lay out the tapes while the
+vegetation specialist commences the point-intercept transects.</p></li>
+<li><p>Tape measures should ideally be labelled metrically on both sides
+for ease of reading.</p></li>
+</ul>
+<h4 class="unnumbered" id="rules-for-determining-what-is-a-hit">Rules
+for determining what is a ‘hit’</h4>
+<ul>
+<li><p>Where a part of a plant of the same species and growth form is
+being intercepted at different heights, the uppermost intercept is
+recorded as a hit and all lower intercepts are ignored. This includes
+plants that are intercepted with the laser pointer, touching the staff
+between the laser pointer and the densitometer, and/or intercepting the
+vertical line of sight through the densitometer.</p></li>
+<li><p>If part of a tree or shrub intersects the vertical line of sight
+through the densitometer, this is recorded as a hit.</p></li>
+</ul>
+<h5 class="unnumbered" id="enhanced-protocol-1">Enhanced protocol</h5>
+<ul>
+<li><p>If you intercept a dead plant and can determine what the species
+is, this is recorded as a hit for that species but flagged as
+<em>dead</em>.</p></li>
+<li><p>If you intercept a dead plant but you cannot determine what the
+species is, this is recorded as an <em>annual forb</em>, <em>annual
+grass</em> or <em>shrub/tree</em> (pre-recorded field names) and flagged
+as <em>dead</em>.</p></li>
+</ul>
+<h5 class="unnumbered" id="standard-protocol-1">Standard protocol</h5>
+<ul>
+<li><p>If you intercept a dead plant, this is a hit and recorded as
+<em>non-photosynthetic vegetation</em>.</p></li>
+</ul>
+<h4 class="unnumbered" id="using-the-grs-densitometer">Using the GRS
+Densitometer™</h4>
+<ul>
+<li><p>Ensure the graduated staff is adjusted so that the densitometer
+is at eye-level.</p></li>
+<li><p>Level both of the densitometer bubble-levels and then look
+through the instrument so that the sighting marks (cross hairs and
+circle) are aligned.</p></li>
+<li><p>If working in bright sunlight, a piece of coloured cellophane can
+be placed over the top of the densitometer and secured with a rubber
+band to reduce glare.</p></li>
+</ul>
+<h4 class="unnumbered" id="in-canopy-sky">In canopy sky</h4>
+<ul>
+<li><p><a href="#appendix-2">Appendix 2</a> illustrates when to apply <em>in canopy sky</em>
+(ICS).</p></li>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is fully enclosed within a canopy, ICS is
+recorded.</p></li>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is not within a canopy, nothing is
+recorded.</p></li>
+<li><p>The canopy perimeter (from an aerial or vertical perspective) is
+the extent of the outer layer of leaves of an individual tree or
+shrub.</p></li>
+</ul>
+<h5 class="unnumbered" id="enhanced-protocol-2">Enhanced protocol</h5>
+<ul>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is within the canopy of a dead tree and you
+can determine what the species is, ICS is recorded for that species but
+flagged as <em>dead</em>.</p></li>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is within the canopy of a dead tree, but you
+cannot determine what the species is, ICS is recorded for a
+<em>shrub/tree</em> (pre-recorded field name) and flagged as
+<em>dead</em>.</p></li>
+</ul>
+<h5 class="unnumbered" id="standard-protocol-2">Standard protocol</h5>
+<ul>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is within the canopy of a live tree, this is
+a hit and recorded as <em>photosynthetic vegetation</em> and flagged as
+<em>in canopy sky</em>.</p></li>
+<li><p>Where the vertical line of sight through the densitometer
+projects onto bare sky that is within the canopy of a dead tree, this is
+not a hit and nothing is recorded for the canopy.</p></li>
+</ul>
+<h4 class="unnumbered" id="estimating-tree-height">Estimating tree
+height</h4>
+<ul>
+<li><p>Tree height should ideally be estimated using a forestry
+rangefinder for rapid and accurate height measurements.</p></li>
+<li><p>When using a rangefinder, the distance and the angle to the top
+of the tree are measured at the same time, and then the distance angle
+to the base of the tree are measured at the same time. The internal
+calculator will then calculate the height. Ensure you are far enough
+from the tree, at least the distance of the height of the tree, and can
+see the top and base of the tree.</p></li>
+<li><p>Where a rangefinder is not available, tree height can be
+estimated using the following methods:</p></li>
+</ul>
+<ul>
+<li><p>Clinometer and tape</p></li>
+<li><p>Mobile phone applications</p></li>
+</ul>
+<ul>
+<li><p>When using a clinometer and tape, find a place to stand where you
+can see the top of the tree. Your distance from the tree should at least
+be equal to the height of the tree. Measure the distance between
+yourself and the tree and measure the height from your eye to the
+ground. Look through the clinometer with one eye and at the tree with
+the other eye. Line up the crosshair in the clinometer with the top of
+the tree. Read the value on the percent scale. This gives you the tree's
+height as a percentage of the distance from the tree (e.g. a reading of
+50% means the height of the tree is half the distance you are from the
+tree).</p></li>
+</ul>
+<ul>
+<li><p>Calculate the height of the tree using the equation:</p></li>
+<li><p><em>Tree height = clinometer reading / 100 x distance to tree +
+eye height</em></p></li>
+<li><p>On sloping ground, two readings will need to be taken: treetop
+(reading 1) and tree base (reading 2). When the surveyor is standing
+above the level of the tree base, the two percent values are added.
+Calculate the height of the tree using the equation:</p></li>
+<li><p><em>Tree height = (clinometer reading 1 + clinometer reading 2) /
+100 x distance to tree</em></p></li>
+<li><p>When the surveyor is standing below the level of the tree base,
+the tree base percent is subtracted from the treetop percent. Calculate
+the height of the tree using the following equation:</p></li>
+<li><p><em>Tree height = (clinometer reading 1 - clinometer reading 2) /
+100 x distance to tree</em></p></li>
+<li><p>See <a href="#appendix-1">Appendix 1</a> for diagrams of using a clinometer in each
+situation.</p></li>
+</ul>
+<ul>
+<li><p>There are several mobile phone applications that provide an
+estimate of tree height. Like the clinometer guidelines above, a
+measurement of the distance to the tree is required to estimate the
+height.</p></li>
+</ul>
+"""^^rdf:HTML ;
+    skos:prefLabel "Enhanced protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/cover/enhanced-protocol/enhanced-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+   <h1 id="appendices">Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Diagrams
+for using a clinometer.</h4></p>
+<p>Level ground (a), ground sloping down (b) and ground sloping up
+(c)</p>
+<p><img alt="Appendix-1" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Appendix_1.jpg" width="800"/></p>
+<p><img alt="Appendix-2" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Appendix_2.jpg" width="800"/></p>
+<p><img alt="Appendix-3" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Appendix_3.jpg" width="800"/></p>
+<p><span class="anchor" id="appendix-2"></span><h4>Appendix 2. Possible
+scenarios when using the densitometer.</h4></p>
+<p>Canopy intercept (a), in canopy sky (b) and nothing recorded (c).</p>
+<p><img alt="Canopy_intercept" height="450" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Canopy_interception1.jpg" width="350"/></p>
+<p><img alt="in-Canopy-SKy" height="450" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/In-Canopy_SKY.jpg" width="350"/></p>
+<p><img alt="Canopy_no_record" height="450" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Canopy_empty.jpg" width="350"/></p>
+<blockquote>
+</blockquote>"""^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
+<li><p>Mobile device (tablet/phone) with the app</p></li>
+<li><p>100 m tape measures</p></li>
+<li><p>Graduated staff with 10 cm markings (continually adjustable
+painters’ pole that can easily adjust to different eye heights; <a href="#figure-4">Figure
+4</a>)</p></li>
+<li><p>GRS Densitometer™ with the ability to be mounted on top of staff
+(required for use on plots with overstorey tree canopy cover;
+instructions for building the mount can be found in the t
+<em>Densitometer mount information sheet</em>)</p></li>
+<li><p>Laser pointer with spare batteries (mounted/taped to staff at 1.5
+m and pointing downwards)</p></li>
+<li><p>Forestry rangefinder (e.g. Nikon Forestry Pro II) or other tool
+for measuring tree height (e.g. clinometer, mobile device apps [e.g.
+Arboreal – Tree Height]; see 5 <a href="#additional-guidelines">Additional guidelines</a> below)</p></li>
+<li><p>Pegs to mark ends of transects and hold the tape measures in
+place</p></li>
+<li><p>Flagging tape (brightly coloured to make sighting transect ends
+easier).</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """
+    <h1 id="enhanced-protocol">Enhanced protocol</h1>
+<h2 id="field-collection">Field collection</h2>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – The point-intercept transect
+grid is aligned to the plot defined boundaries.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a>– Species cover data are recorded using naming
+consistent with the flora species identifications/assigned field names,
+which must be recorded in the <em><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics</a></em> module prior to
+undertaking the Cover Module.</p></li>
+</ul>
+<h3 id="time-requirements">Time requirements</h3>
+<ul>
+<li><p>Allow 3 – 6 hours depending on the density and complexity of
+vegetation.</p></li>
+<li><p>If undertaking the <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity Module</a> concurrently, allow an
+additional 30-60 minutes.</p></li>
+</ul>
+<h3 id="personnel-requirements">Personnel requirements</h3>
+<p>Number of personnel and skills:</p>
+<ul>
+<li><p>Point-intercept surveys are best conducted with two personnel,
+one making the point-intercept<br/>
+observations, and the other recording the data directly into the app and
+assisting with tree height<br/>
+measurements.</p></li>
+<li><p>The surveyor that conducted the Floristics Module should be
+involved to ensure consistent nomenclature.</p></li>
+<li><p>The surveyor making the observations should be familiar with and
+experienced in identifying the<br/>
+characteristic identifiable features of flora species and how to
+distinguish one species from another. If surveyors are not confident,
+time should be dedicated to practising, using field reference guides,
+and seeking advice before conducting this protocol.</p></li>
+<li><p>Point-intercept surveys do not involve interference with
+vegetation or wildlife. Therefore, scientific permits and wildlife
+ethics approvals are unlikely to be required but always check with your
+local authority. Access permissions are required.</p></li>
+</ul>
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+<li><p>Ensure the Plot Selection and Layout Module has been completed to
+mark out the plot boundary and define the current plot and visit in the
+Monitor App.</p></li>
+<li><p>Ensure the Floristics Module has been completed so that species
+cover data are recorded using naming consistent with the flora species
+identifications/assigned field names recorded in the Floristics
+Module.</p></li>
+<li><p>For each transect lay out a 100 m tape using pegs to secure it in
+place (<a href="#figure-3">Figure 3</a>), ensuring the tape is orientated to align with the plot
+grid, is as straight as possible, and laid on the ground and not draped
+over shrubs.</p>
+<p id="figure-3"><img alt="Surveyor_1" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/FIgure_3_Surveyor.jpg" width="800"/></p></li>
+</ol>
+<p><span class="anchor" id="_Ref73024058"></span>Figure 3. Surveyors
+laying out a transect with a 100 m tape.</p>
+<ol start="4" type="1">
+<li><p>Move to the 0 m mark of the first transect you wish to complete.
+It does not matter which order, or which direction each transect is
+completed, as your start position will be recorded in step 6.</p></li>
+<li><p>Select the Cover Module and then <em>Enhanced</em>
+<em>protocol</em> in the Monitor app.</p></li>
+<li><p>If undertaking the Fire Severity Module concurrently, tick the
+<em>plot is burnt</em> check box and enter the ignition date. This will
+reveal fire severity and resprouting fields for every intersect on the
+four Standard protocol transects only (see the Fire Severity Module).
+The <em>trunk char height</em> component will also appear below the
+<em>point intercept</em> component in the Monitor app. Trunk char height
+is recorded at the four locations where the four Standard protocol
+transects intersect (see the Fire Severity Module).</p></li>
+<li><p>Record your <em>starting point</em> (i.e. N1–5, S1–5, E1–5, or
+W1–5). This records the <em>transect</em> you are on and the
+<em>sampling direction</em> (e.g. ‘N1’ means you are starting at the
+northern end of transect 1 and moving from north to south, while ‘S2’
+means you are starting at the southern end of transect 2 and moving from
+south to north).</p></li>
+<li><p>Place the bottom of the staff at the 0 m mark of the tape
+measure. Ensure the staff is vertical and the laser pointer is pointing
+downwards so the laser beam will intercept the ground near the base of
+the staff (<a href="#figure-4">Figure 4</a>).</p></li>
+</ol>
+<p id="figure-4"><img alt="Surveyor_2" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Figure_4_Surveyor2.jpg" width="400"/><span class="anchor" id="_Ref73024279"></span>
+<p></p>Figure 4. Surveyor at the 0 m
+mark of a transect with the graduated, adjustable staff verticle and
+laser pointing downwards.</p>
+<ol start="9" type="1">
+<li><p>For each point-intercept, you will begin by recording the nature
+of the <em>substrate</em> which is intercepted by the laser beam. Press
+the button on the laser pointer. If the laser beam is intercepted by
+vegetation, move the vegetation aside so that the laser beam reaches the
+substrate.</p></li>
+<li><p>For each point-intercept, assess and record the
+<em>substrate</em> from the categories available (Table 2).</p></li>
+</ol>
+<p><span class="anchor" id="_Ref137650027"></span>Table 2. Substrate
+types and their definitions.</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Substrate type</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bare</td>
+<td>Bare soil.</td>
+</tr>
+<tr class="even">
+<td>Black ash</td>
+<td>Powdery black residue remaining after the incomplete combustion of
+wood during a bushfire.</td>
+</tr>
+<tr class="odd">
+<td>Crypto</td>
+<td>Cryptogam – any moss, lichen, algae, etc. present on the soil
+surface with a different colour to the base soil.</td>
+</tr>
+<tr class="even">
+<td>CWD</td>
+<td>Coarse Woody Debris – detached wood with &gt;10 cm diameter at the
+intercept point.</td>
+</tr>
+<tr class="odd">
+<td>Gravel</td>
+<td>Particles 2 mm – 2 cm.</td>
+</tr>
+<tr class="even">
+<td>Lichen on rock</td>
+<td>Lichen growing on rock.</td>
+</tr>
+<tr class="odd">
+<td>Lichen on outcrop</td>
+<td>Lichen growing on bedrock.</td>
+</tr>
+<tr class="even">
+<td>Litter</td>
+<td>Dead vegetation not attached or identifiable; if litter is attached
+and identifiable as a species, it should be recorded as this species but
+flagged as being dead.</td>
+</tr>
+<tr class="odd">
+<td>Not collected</td>
+<td>Point-intercept data not collected (e.g. cannot survey as point is
+inaccessible).</td>
+</tr>
+<tr class="even">
+<td>Other</td>
+<td>Substrate not listed.</td>
+</tr>
+<tr class="odd">
+<td>Outcrop</td>
+<td>Exposed consolidated rock (bedrock).</td>
+</tr>
+<tr class="even">
+<td>Rock</td>
+<td>Particles &gt;2 cm.</td>
+</tr>
+<tr class="odd">
+<td>Unknown</td>
+<td>Unknown.</td>
+</tr>
+<tr class="even">
+<td>Water</td>
+<td>Body of water (sheet water, Gilgai).</td>
+</tr>
+<tr class="odd">
+<td>White ash</td>
+<td>Powdery white residue remaining after the complete combustion of
+wood during a bushfire.</td>
+</tr>
+</tbody>
+</table>
+<ol start="11" type="1">
+<li><p>Where the laser beam intersects with a vascular plant, record the
+<em>species name</em> and <em>growth form</em> (see Table 3) along with
+the plant’s <em>uppermost</em> <em>height</em> at the point of
+intersection. The <em>growth form</em> selected during the Floristics
+Module will be automatically recorded with each species. If two
+<em>growth forms</em> were recorded for a single species, the app will
+prompt you to select the appropriate <em>growth form</em>. Height
+measurements should be recorded in meters rounded to the nearest
+centimetre from the markings on the staff. If the intercepted plant is
+dead, flag as <em>dead</em>. Continue recording all other plant species
+that are intersected by the beam to a height of 1.5 m.</p></li>
+</ol>
+<p><span class="anchor" id="_Ref137651118"></span>Table 3. Growth forms
+and their definitions (NVIS Technical Working Group 2017).</p>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 82%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Growth form</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aquatic</td>
+<td>Plant growing in an inland waterway or wetland with the majority of
+its biomass under water for most of the year. Fresh, saline or brackish
+water.</td>
+</tr>
+<tr class="even">
+<td>Bryophyte</td>
+<td>Mosses and Liverworts. Mosses are small plants usually with a
+slender leafbearing stem with no true vascular tissue. Liverworts are
+often moss-like in appearance or consisting of a flat, ribbon-like green
+thallus.</td>
+</tr>
+<tr class="odd">
+<td>Chenopod shrub</td>
+<td>Single or multi-stemmed, semi-succulent shrub of the family
+<em>Chenopodiaceae</em> exhibiting drought and salt tolerance.</td>
+</tr>
+<tr class="even">
+<td>Cycad</td>
+<td>Members of the families <em>Cycadaceae</em> and
+<em>Zamiaceae</em>.</td>
+</tr>
+<tr class="odd">
+<td>Epiphyte</td>
+<td>Epiphytes, mistletoes and parasites. Plant with roots attached to
+the aerial portions of other plants. Can often be another growth form,
+such as fern or forb.</td>
+</tr>
+<tr class="even">
+<td>Fern</td>
+<td>Ferns and fern allies, except tree-fern, above. Characterised by
+large and usually branched leaves (fronds), herbaceous and terrestrial
+to aquatic; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="odd">
+<td>Forb</td>
+<td>Herbaceous or slightly woody, annual or sometimes perennial plant.
+(Usually a dicotyledon).</td>
+</tr>
+<tr class="even">
+<td>Grass-tree</td>
+<td>Australian grass trees. Members of the <em>Xanthorrhoeaceae</em>
+family.</td>
+</tr>
+<tr class="odd">
+<td>Heath shrub</td>
+<td>Shrub usually less than 2 m, with sclerophyllous leaves having high
+fibre:protein ratios and with an area of nanophyll or smaller (less than
+225 mm<sup>2</sup>). Often a member of one the following families:
+<em>Ericaceae, Myrtaceae, Fabaceae</em> and <em>Proteaceae</em>.
+Commonly occur on nutrient-poor substrates.</td>
+</tr>
+<tr class="even">
+<td>Hummock grass</td>
+<td>Coarse xeromorphic grass with a mound-like form often dead in the
+middle; genus is <em>Triodia</em>.</td>
+</tr>
+<tr class="odd">
+<td>Lichen</td>
+<td>Composite plant consisting of a fungus living symbiotically with
+algae; without true roots, stems or leaves.</td>
+</tr>
+<tr class="even">
+<td>Lower plant</td>
+<td>Algae, fungus.</td>
+</tr>
+<tr class="odd">
+<td>Mallee shrub</td>
+<td>Commonly less than 8 m tall, usually with five or more trunks, of
+which at least three of the largest do not exceed 100 mm diameter at
+breast height (1.3 m).</td>
+</tr>
+<tr class="even">
+<td>Other grass</td>
+<td>Member of the family <em>Poaceae</em>, but having neither a
+distinctive tussock nor hummock appearance. Examples include
+stoloniferous species such as <em>Cynodon dactylon</em>.</td>
+</tr>
+<tr class="odd">
+<td>Palm</td>
+<td>Palms and other arborescent monocotyledons. Members of the
+<em>Arecaceae</em> family or the genus <em>Pandanus</em>.
+(<em>Pandanus</em> is often multi-stemmed).</td>
+</tr>
+<tr class="even">
+<td>Rush</td>
+<td>Herbaceous, usually perennial erect monocot that is neither a grass
+nor a sedge. For the purposes of NVIS, rushes include the monocotyledon
+families <em>Juncaceae, Typhaceae, Liliaceae, Iridaceae, Xyridaceae</em>
+and the genus <em>Lomandra</em>. (i.e. "graminoid" or grass-like
+genera).</td>
+</tr>
+<tr class="odd">
+<td>Samphire shrub</td>
+<td>Genera (of Tribe <em>Salicornioideae</em>, viz.:
+<em>Halosarcia</em>, <em>Pachycornia</em>, <em>Sarcocornia</em>,
+<em>Sclerostegia</em>, <em>Tecticornia</em> and <em>Tegicornia</em>)
+with articulate branches, fleshy stems and reduced flowers within the
+<em>Chenopodiaceae</em> family, succulent chenopods (Wilson 1980). Also
+the genus <em>Suaeda</em>.</td>
+</tr>
+<tr class="even">
+<td>Seagrass</td>
+<td>Flowering angiosperms forming sparse to dense mats of material at
+the subtidal and down to 30 m below MSL. Occasionally exposed.</td>
+</tr>
+<tr class="odd">
+<td>Sedge</td>
+<td>Herbaceous, usually perennial erect plant generally with a tufted
+habit and of the families <em>Cyperaceae</em> (true sedges) or
+<em>Restionaceae</em> (node sedges).</td>
+</tr>
+<tr class="even">
+<td>Shrub</td>
+<td>Woody plants multi-stemmed at the base (or within 200 mm from ground
+level) or if single stemmed, less than 2 m.</td>
+</tr>
+<tr class="odd">
+<td>Tree</td>
+<td>Woody plants, more than 2 m tall with a single stem or branches well
+above the base.</td>
+</tr>
+<tr class="even">
+<td>Tree mallee</td>
+<td>Woody perennial plant usually of the genus <em>Eucalyptus</em>.
+Multi-stemmed with fewer than five trunks of which at least three exceed
+100 mm diameter at breast height (1.3 m). Usually 8 m or more.</td>
+</tr>
+<tr class="odd">
+<td>Tree-fern</td>
+<td>Characterised by large and usually branched leaves (fronds),
+arborescent and terrestrial; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="even">
+<td>Tussock grass</td>
+<td>Grass forming discrete but open tussocks usually with distinct
+individual shoots, or if not, then forming a hummock. These are the
+common agricultural grasses.</td>
+</tr>
+<tr class="odd">
+<td>Unknown</td>
+<td>Unknown.</td>
+</tr>
+<tr class="even">
+<td>Vine</td>
+<td>Climbing, twining, winding or sprawling plants usually with a woody
+stem.</td>
+</tr>
+</tbody>
+</table>
+<ol start="12" type="1">
+<li><p>Record all plants (<em>species name</em>, <em>growth form</em>
+and <em>uppermost height</em>) that the staff touches between the laser
+pointer (1.5 m) and the densitometer (eye level).</p></li>
+<li><p>The GRS Densitometer™ is used to view canopy intercepts that are
+taller than the densitometer. Look through the densitometer to determine
+whether any portion of a tree/shrub crown intersects the vertical line
+of sight through the densitometer. The vertical line of sight is
+obtained by levelling both of the densitometer bubble-levels and then
+looking through the instrument so that the sighting marks (cross hairs
+and circle) are aligned.</p></li>
+<li><p>If foliage or branches of a live shrub/tree are sighted in the
+cross hairs, record the species name, growth form and uppermost height
+of the intercept using a rangefinder or other height estimation method
+(see 5 <a href="#additional-guidelines">Additional guidelines</a>).</p></li>
+<li><p>If no part of the foliage or branches are sighted in the cross
+hairs but the vertical line of sight is still completely within the
+canopy boundary, record the species name, growth form and uppermost
+height and flag as in canopy sky (ICS; see 5 <a href="#additional-guidelines">Additional guidelines</a>;
+<a href="#appendix-2">Appendix 2</a>).</p></li>
+<li><p>Repeat steps 9 to 15 at every 1 m interval along the transect.
+This will give a total of 101 point-intercepts for transect.</p></li>
+<li><p>Repeat steps 3 to 16 for each of the remaining point-intercept
+transect lines until all 10 have been completed. This will give 1010
+point-intercepts for the plot.</p></li>
+<li><p>At the completion of the point-intercept data collection, select
+<em>finish point intercept</em>.</p></li>
+<li><p>If undertaking the Fire Severity Module concurrently, and you
+have not yet completed the trunk char height component, you may now do
+so at the four sampling locations (see the <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity
+Module</a>).</p></li></ol>"""^^rdf:HTML ;
+.
+

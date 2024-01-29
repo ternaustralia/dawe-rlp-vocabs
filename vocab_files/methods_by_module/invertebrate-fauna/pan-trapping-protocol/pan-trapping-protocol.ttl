@@ -10,176 +10,436 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         skos:Concept ,
         tern:Method ;
-    dcterms:description """
-    <h3 id="protocol-overview">Protocol overview</h3>
-<p>
-  Pan traps are set in two fixed location transects of 12 traps, spaced 5 metres
-  apart (see <a href='#figure-1'>Figure 1</a>) and left out for up to 24 hours if using water with
-  detergent, or up to seven days if using propylene glycol. All the traps used
-  within a project must be the same dimensions. Yellow is the standard colour of
-  pan traps used to attract day-active insects. If using white and blue pans as
-  well, the trap colours are alternated in a repeat pattern (blue, yellow,
-  white). The pans are placed either directly on the ground or elevated off the
-  ground where vegetation obscures them from sight (LeBuhn et al. 2016). This
-  protocol should be undertaken on sunny or only partially cloudy days, with
-  minimal wind and preferably no rain (Droege et al. 2016; LeBuhn et al. 2016).
-</p>
-<p id='figure-1'>
-  <img
-    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/plot-layout.png"
-    alt="Plot layout for invertebrate survey"
-    widteh="470"
-    height="700"
-  />
-</p>
-<p>Figure 1. Plot layout for invertebrate survey.</p>
-    """^^rdf:HTML ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """
-    <p>
-    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e">Invertebrate fauna</a> module. 
-    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
-    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e">Invertebrate fauna</a>" module.
-    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
-    </p>
-    """^^rdf:HTML ;
-    skos:note """
-<h3 id="additional-guidelines">Additional guidelines</h3>
+    dcterms:description """<h3>Contents</h3>
+<ol>
+  <li><a href="#field-collection-3">Field Collection</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures-3">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines-3">Additional guidelines</a></li>
+  <li><a href="#references">References</a></li>
+  <li><a href="#appendices-4">Appendices</a></li>
+</ol>
+<h1 id="pan-trapping-protocol">Pan trapping protocol</h1>
+<h2 id="protocol-overview-3">Protocol overview</h2>
+<p>Pan trapping consists of small, coloured bowls placed on the ground,
+either filled with water and a small amount of dishwashing liquid for
+sampling over one day, or propylene glycol for sampling over a longer
+duration. Pan traps are set in two fixed transects of 12 traps, spaced 5
+m apart, 10 m in from either side of the plot. Pan trapping is most
+effective at sampling flies (Diptera), bees and wasps (Hymenoptera), as
+well as aphids (Hemiptera), thrips (Thysanoptera), some beetles
+(Coleoptera) and grasshoppers (Orthoptera). Pan trapping is most
+commonly used for monitoring bees and other pollinators, and is
+generally a more effective method for trapping bees than Malaise traps
+(Montgomery <em>et al.</em> 2021).</p>
+<h2 id="field-collection-3">Field collection</h2>
+<h3 id="pre-requisites-3">Pre-requisites</h3>
 <ul>
-  <li>
-    <p>
-      If monitoring is to be completed in one day, set the traps in the morning
-      and retrieve them shortly before sunset (Droege
-      <em>et al.</em> 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      Microhabitat detail is not collected for this protocol given the
-      attractant nature of the method.
-    </p>
-  </li>
-  <li>
-    <p>
-      Data from the adjoining vegetation plot will provide an indication of the
-      amount of floral resources available, when pan trapping is undertaken
-      within the same monitoring period. Phenology data is also collected for
-      the <em>Sweep netting</em> protocol.
-    </p>
-  </li>
-  <li>
-    <p>
-      When selecting trap locations, consider vegetation growth and other
-      activities that might be an issue if undertaking repeat monitoring (Droege
-      <em>et al.</em> 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      If flagging tape is used, be mindful of placement too close to traps as
-      these may bias sampling by attracting or deterring bees. Avoid using tape
-      that is the same colour as the traps (Droege <em>et al.</em> 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      For repeat monitoring, the pan traps should be repainted if the colour is
-      fading as this can affect the trap results (Droege
-      <em>et al.</em> 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      The pans do not need to be placed near flowers as bees will often travel
-      in search of flowers. Studies have shown that trap results can actually be
-      less when floral resources are present (Cane et al. 2000).
-    </p>
-  </li>
-  <li>
-    <p>
-      Propylene glycol is used in place of soapy water if undertaking trapping
-      for longer than 24 hours. Assess the suitability of the weather before
-      undertaking pan trapping over multiple days, as heavy rain can splash
-      trapped invertebrates out of the pan trap or result in pans overflowing.
-      Tiny overflow holes can be created in the top of the pan traps to let
-      water out (LeBuhn <em>et al.</em> 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      Any type of dish or laundry detergent can be used, except those with
-      citrus scent added as this will decrease the number of bees caught.
-      Laundry detergent is generally better than dish soap as it does not create
-      many suds on top of the water (LeBuhn <em>et al.</em> 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      Traps filled with soapy water should not be left for more than 24 hours
-      because they are generally easy to disturb and also the water will
-      evaporate, especially in hot conditions (Bulbert <em>et al.</em> 2007).
-    </p>
-  </li>
-  <li>
-    <p>
-      Unused soapy water can be disposed of by pouring down the drain. Used
-      soapy water from pan traps can be disposed of by pouring out onto the
-      ground, away from aquatic environments (MacKenzie <em>et al.</em> 2002).
-    </p>
-  </li>
-  <li>
-    <p>
-      Sieving is a common practice that speeds up specimen processing in the
-      field, but can damage small, fragile taxa such as aphids (Montgomery
-      <em>et al.</em> 2021). Do a quick check of the invertebrates present
-      before sieving to ensure samples will not be damaged.
-    </p>
-  </li>
-  <li>
-    <p>
-      The loss of individual traps is not an issue if only one or two are lost,
-      as long as this information is properly documented. At the end of the
-      collection process, during the analysis of the data, divide the number of
-      captures by the number of bowls available to account for any losses.
-    </p>
-  </li>
-  <li>
-    <p>
-      Bee data can be sent to Dr G. Lebuhn (beedata@sfsu.edu) at the San
-      Francisco State University, for collation and integration into a global
-      meta-analysis of bee monitoring (see
-      <a
-        href="https://www.fao.org/fileadmin/user_upload/pollination/docs/Data_Sheet_FINAL.xlsx"
-        ><u
-          >https://www.fao.org/fileadmin/user_upload/pollination/docs/Data_Sheet_FINAL.xlsx</u
-        ></a
-      >).
-    </p>
-  </li>
-  <li>
-    <p>
-      Post-field processing may include: specimen washing and drying, sorting,
-      pinning, labelling and identifying. Refer to LeBuhn
-      <em>et al.</em> (2016) for instructions. A video that demonstrates how to
-      dry bees can be viewed at
-      <a href="https://www.youtube.com/watch?v=935jlJep6go"
-        ><u>https://www.youtube.com/watch?v=935jlJep6go</u></a
-      >.
-    </p>
-  </li>
-  <li>
-    <p>
-      Bee identification is difficult in most circumstances, so any specimens
-      collected should be sent to experts for identification, at least at the
-      start of a project (LeBuhn <em>et al.</em> 2016).
-    </p>
-  </li>
+<li><p>The plot must be established first – refer to the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a>.</p></li>
+<li><p>The plot vegetation should be described using the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot
+Description Module</a>, at the start of the project and for each
+visit.</p></li>
+<li><p>Most invertebrate surveys do not require specific permits, but
+always check with your local authority. Requirements vary depending on
+the location and the presence of threatened and restricted species.
+Access permissions are required.</p></li>
 </ul>
+<h3 id="time-requirements-3">Time requirements</h3>
+<ul>
+<li><p>2 hours (2 people) to set-up traps (5 minutes per trap).</p></li>
+<li><p>2 hours (2 people) to remove traps and place samples into
+containers.</p></li>
+<li><p>1 hour (2 people) to process samples (post-field).</p></li>
+</ul>
+<h3 id="personnel-requirements-3">Personnel requirements</h3>
+<ul>
+<li><p>The protocol is best conducted with two personnel.</p></li>
+<li><p>General ecology skills are sufficient, as the protocol does not
+require the invertebrate species to be identified at the time of
+collection.</p></li>
+</ul>
+   """^^rdf:HTML ;
+    dcterms:source """
+    <h1 id="references">References</h1>
+<p>Abrams, JF, Hörig, LA, Brozovic, R, Axtner, J, Crampton‐Platt, A,
+Mohamed, A, Wong, ST, Sollmann, R, Yu, DW, Wilting, A (2019) Shifting up
+a gear with iDNA: From mammal detection events to standardised surveys.
+<em>Journal of Applied Ecology</em> <strong>56</strong>, 1637-1648.</p>
+<p>Agosti, D, Alonso, LE (2000) The ALL protocol. Smithsonian
+Institution Press, Washington DC.</p>
+<p>Andersen, A, Edwards, W, Sparrow, B, Prober, S (2022) WA Tern
+Biodiversity Monitoring - Draft Invertebrate Pitfall Trapping
+Protocol.</p>
+<p>Andersen, AN, Fisher, A, Hoffmann, BD, Read, JL, Richards, R (2004)
+Use of terrestrial invertebrates for biodiversity monitoring in
+Australian rangelands, with particular reference to ants. <em>Austral
+Ecology</em> <strong>29</strong>, 87-92.</p>
+<p>Andersen, AN, Majer, JD (2004) Ants show the way Down Under:
+invertebrates as bioindicators in land management. <em>Frontiers in
+Ecology and the Environment</em> <strong>2</strong>, 291-298.</p>
+<p>Armstrong, KF, Ball, SL (2005) DNA barcodes for biosecurity: invasive
+species identification. <em>Philosophical Transactions of the Royal
+Society B: Biological Sciences</em> <strong>360</strong>, 1813-1823.</p>
+<p>Australian Museum (2021) 'What are invertebrates?' Available at <a href="https://australian.museum/learn/teachers/learning/what-are-invertebrates/">https://australian.museum/learn/teachers/learning/what-are-invertebrates/</a></p>
+<p>Ball, SL, Armstrong, KF (2014) Rapid, One-Step DNA Extraction for
+Insect Pest Identification by Using DNA Barcodes. <em>Journal of
+Economic Entomology</em> <strong>101</strong>, 523-532.</p>
+<p>Bamford, M, Dunlop, N, Gamblin, T, Bamford, A, 2013. Fauna Sampling
+Manual. Guide To Sampling Techniques For Wildlife Research In Western
+Australia. Conservation Council of WA, Perth,</p>
+<p>Barnett, KL, Facey, SL (2016) Grasslands, Invertebrates, and
+Precipitation: A Review of the Effects of Climate Change. <em>Frontiers
+in Plant Science</em> <strong>7</strong>,</p>
+<p>Basset, Y (2020) 'Suggested field procedures for collecting
+soil/litter arthropods in a tropical rainforest for long-term monitoring
+with DNA metabarcoding.' Available at <a href="https://www.protocols.io/view/suggested-field-procedures-for-collecting-soil-lit-bj9gkr3w">https://www.protocols.io/view/suggested-field-procedures-for-collecting-soil-lit-bj9gkr3w</a></p>
+<p>Basset, Y, Donoso, D, Hajibabaei, M, Wright, M, Perez, K, Lamarre, G,
+De León, L, Palacios-Vargas, J, Rivera, M, Perez, F, Bobadilla, R,
+Lopez, Y, Ramirez Silva, J, Barrios, H (2020) Methodological
+considerations for monitoring soil/litter arthropods in tropical
+rainforests using DNA metabarcoding, with a special emphasis on ants,
+springtails and termites. <em>Metabarcoding and Metagenomics</em>
+<strong>4</strong>,</p>
+<p>Battelle (2020) 'National Ecological Observatory Network: Terrestrial
+Organisms.' Available at <a href="https://www.neonscience.org/data-collection/terrestrial-organisms">https://www.neonscience.org/data-collection/terrestrial-organisms</a></p>
+<p>Berglund, H-L, Milberg, P (2019) Sampling of flower-visiting insects:
+Poor correspondence between the catches of colour pan-trap and sweep
+netting. <em>European Journal of Entomology</em> <strong>116</strong>,
+425-431.</p>
+<p>Birkhofer, K, Rusch, A, Andersson, GKS, Bommarco, R, Dänhardt, J,
+Ekbom, B, Jönsson, A, Lindborg, R, Olsson, O, Rader, R, Stjernman, M,
+Williams, A, Hedlund, K, Smith, HG (2018) A framework to identify
+indicator species for ecosystem services in agricultural landscapes.
+<em>Ecological indicators</em> <strong>91</strong>, 278-286.</p>
+<p>Borgelt, A, New, TR (2006) Pitfall Trapping for Ants (Hymenoptera,
+Formicidae) in Mesic Australia: What is the Best Trapping Period?
+<em>Journal of Insect Conservation</em> <strong>10</strong>, 75-77.</p>
+<p>Braby, MF (2018) Threatened species conservation of invertebrates in
+Australia: an overview. <em>Austral Entomology</em> <strong>57</strong>,
+173-181.</p>
+<p>Brown, GR, Matthews, IM (2016) A review of extensive variation in the
+design of pitfall traps and a proposal for a standard pitfall trap
+design for monitoring ground-active arthropod biodiversity. <em>Ecology
+and Evolution</em> <strong>6</strong>, 3953-3964.</p>
+<p>Bulbert, M, Gollan, J, Donnelly, A, Wilkie, L (2007) Invertebrate
+Collection Manual: A guide to traditional invertebrate collection
+methods. Australian Museum, Sydney.</p>
+<p>Callan, SK, Majer, JD, Edwards, K, Moro, D (2011) Documenting the
+terrestrial invertebrate fauna of Barrow Island, Western Australia.
+<em>Australian Journal of Entomology</em> <strong>50</strong>,
+323-343.</p>
+<p>Cane, J, Minckley, R, Kervin, L (2000) Sampling bees (Hymenoptera:
+Apiformes) for pollinator community studies: Pitfalls of pan-trapping.
+<em>Journal of the Kansas Entomological Society</em>
+<strong>73</strong>, 225-231.</p>
+<p>Cardoso, P, Erwin, TL, Borges, PAV, New, TR (2011) The seven
+impediments in invertebrate conservation and how to overcome them.
+<em>Biological Conservation</em> <strong>144</strong>, 2647-2655.</p>
+<p>Centre of Biodiversity Genomics (2021) 'Global Malaise Program.'
+Available at <a href="http://globalmalaise.org/">http://globalmalaise.org/</a></p>
+<p>Chinn, W (2017a) Inventory and monitoring toolbox: Invertebrates.
+Invertebrate identification aids Version 1.0. New Zealand
+Government.</p>
+<p>Chinn, W (2017b) Inventory and monitoring toolbox: Invertebrates.
+Sorting invertebrate samples Version 1.0. New Zealand Government.</p>
+<p>D'Souza, ML, van der Bank, M, Shongwe, Z, Rattray, RD, Stewart, R,
+van Rooyen, J, Govender, D, Hebert, PDN (2021) Biodiversity baselines:
+Tracking insects in Kruger National Park with DNA barcodes.
+<em>Biological Conservation</em> <strong>256</strong>, 109034.</p>
+<p>Droege, S, Engler, J, Sellers, E, O’Brien, L (2016) National protocol
+framework for the inventory and monitoring of bees. <em>US Fish and
+Wildlife Service, Fort Collins, Colorado</em></p>
+<p>Evans, A (2016a) Introduction to invertebrate monitoring Version 1.0.
+Inventory and monitoring toolbox: invertebrates.</p>
+<p>Evans, A (2016b) Invertebrates: Malaise trapping Version 1.0,
+Inventory and monitoring toolbox: invertebrates.</p>
+<p>García-Robledo, C, Erickson, DL, Staines, CL, Erwin, TL, Kress, WJ
+(2013) Tropical Plant–Herbivore Networks: Reconstructing Species
+Interactions Using DNA Barcodes. <em>PloS ONE</em> <strong>8</strong>,
+e52967.</p>
+<p>GMP (2019) Global Malaise Trap Program Standard Operating Procedures.
+Available at <a href="https://biodiversitygenomics.net/site/wp-content/uploads/2019/06/GMP-Standard-Operating-Procedures-2019-500ml-1.pdf">https://biodiversitygenomics.net/site/wp-content/uploads/2019/06/GMP-Standard-Operating-Procedures-2019-500ml-1.pdf</a></p>
+<p>Grange, MC, Munoz, F, Moretti, M, Varona-Y-Varona, S, Renaud, J,
+Colace, M-P, Gueguen, M, Gallien, L (2021) Designing sampling protocols
+for plant-pollinator interactions - timing, meteorology, flowering
+variations and failed captures matter. <em>Botany Letters</em> 1-9.</p>
+<p>Greenslade, PJM (1973) Sampling ants with pitfall traps: Digging-in
+effects. <em>Insectes Sociaux</em> <strong>20</strong>, 343-353.</p>
+<p>Hallmann, CA, Sorg, M, Jongejans, E, Siepel, H, Hofland, N, Schwan,
+H, Stenmans, W, Müller, A, Sumser, H, Hörren, T, Goulson, D, de Kroon, H
+(2017) More than 75 percent decline over 27 years in total flying insect
+biomass in protected areas. <em>PloS ONE</em> <strong>12</strong>,
+e0185809.</p>
+<p>Harvey, MS, Rix, MG, Framenau, VW, Hamilton, ZR, Johnson, MS, Teale,
+RJ, Humphreys, G, Humphreys, WF (2011) Protecting the innocent: studying
+short-range endemic taxa enhances conservation outcomes.
+<em>Invertebrate Systematics</em> <strong>25</strong>, 1-10.</p>
+<p>Hebert, PDN, Ratnasingham, S, Zakharov, EV, Telfer, AC,
+Levesque-Beaudin, V, Milton, MA, Pedersen, S, Jannetta, P, deWaard, JR
+(2016) Counting animal species with DNA barcodes: Canadian insects.
+<em>Philosophical Transactions of the Royal Society B: Biological
+Sciences</em> <strong>371</strong>, 20150333.</p>
+<p>Higgins, RJ, Lindgren, BS (2012) An evaluation of methods for
+sampling ants (Hymenoptera: Formicidae) in British Columbia, Canada.
+<em>The Canadian Entomologist</em> <strong>144</strong>, 491-507.</p>
+<p>Hobern, D, Adamowicz, S (2021) BIOSCAN: DNA barcoding to accelerate
+taxonomy and biogeography for conservation and sustainability.
+<em>Genome</em> <strong>64</strong>, 161-164.</p>
+<p>Hodkinson, I, Jackson, J (2005) Terrestrial and Aquatic Invertebrates
+as Bioindicators for Environmental Monitoring, with Particular Reference
+to Mountain Ecosystems. <em>Environmental management</em>
+<strong>35</strong>, 649-66.</p>
+<p>Hoekman, D, LeVan, KE, Gibson, C, Ball, GE, Browne, RA, Davidson, RL,
+Erwin, TL, Knisley, CB, LaBonte, JR, Lundgren, J, Maddison, DR, Moore,
+W, Niemelä, J, Ober, KA, Pearson, DL, Spence, JR, Will, K, Work, T
+(2017) Design for ground beetle abundance and diversity sampling within
+the National Ecological Observatory Network. <em>Ecosphere</em>
+<strong>8</strong>, e01744.</p>
+<p>Hoffmann, BD (2010) Using ants for rangeland monitoring: global
+patterns in the responses of ant communities to grazing. <em>Ecological
+indicators</em> <strong>10</strong>, 105-111.</p>
+<p>Hohbein, RR, Conway, CJ (2018) Pitfall traps: A review of methods for
+estimating arthropod abundance. <em>Wildlife Society Bulletin</em>
+<strong>42</strong>, 597-606.</p>
+<p>Houghton, M, Terauds, A, Shaw, J (2019) Methods for monitoring
+invertebrate response to vertebrate eradication. <em>Island invasives:
+scaling up to meet the challenge</em> 381.</p>
+<p>Jackson, S (2020) 'Animal Ethics Infolink: Use of pitfall traps -
+Animal Research Review Panel Guideline 6.' Available at <a href="https://www.animalethics.org.au/policies-and-guidelines/wildlife-research/pitfall-traps">https://www.animalethics.org.au/policies-and-guidelines/wildlife-research/pitfall-traps</a></p>
+<p>Karan, M (2014) TERN May 2014 Draft Ant Monitoring Protocol,
+implemented as part of the TERN NCRIS-2013 grant. TERN Ecosystem
+Research Infrastructure.</p>
+<p>King, JR, Porter, SD (2005) Evaluation of Sampling Methods and
+Species Richness Estimators for Ants in Upland Ecosystems in Florida.
+<em>Environmental Entomology</em> <strong>34</strong>, 1566-1578.</p>
+<p>Kwok, AB, Wardle, GM, Greenville, AC, Dickman, CR (2016) Long‐term
+patterns of invertebrate abundance and relationships to environmental
+factors in arid Australia. <em>Austral Ecology</em> <strong>41</strong>,
+480-491.</p>
+<p>Lavelle, P, Decaëns, T, Aubert, M, Barot, S, Blouin, M, Bureau, F,
+Margerie, P, Mora, P, Rossi, J-P (2006) Soil invertebrates as ecosystem
+engineers. <strong>42</strong>, S13-S15.</p>
+<p>Lawes, MJ, Moore, AM, Andersen, AN, Preece, ND, Franklin, DC (2017)
+Ants as ecological indicators of rainforest restoration: Community
+convergence and the development of an Ant Forest Indicator Index in the
+Australian wet tropics. <em>Ecol Evol</em> <strong>7</strong>,
+8442-8455.</p>
+<p>LeBuhn, G, Droege, S, Connor, E, Gemmill-Herren, B, Azzu, N (2016)
+'Protocol to detect and monitor pollinator communities: Guidance for
+practitioners.' (Food and Agriculture Organization of the United
+Nations:</p>
+<p>LeVan, KE (2019) Tos Protocol and Procedure: Ground Beetle Sampling.
+NEON National Ecological Observatory Network.</p>
+<p>Lucas, A, Bodger, O, Brosi, BJ, Ford, CR, Forman, DW, Greig, C,
+Hegarty, M, Jones, L, Neyland, PJ, de Vere, N (2018) Floral resource
+partitioning by individuals within generalised hoverfly pollination
+networks revealed by DNA metabarcoding. <em>Scientific Reports</em>
+<strong>8</strong>, 5133-5133.</p>
+<p>MacKenzie, DI, Nichols, JD, Lachman, GB, Droege, S, Andrew Royle, J,
+Langtimm, CA (2002) Estimating site occupancy rates when detection
+probabilities are less than one. <em>Ecology</em> <strong>83</strong>,
+2248-2255.</p>
+<p>Majer, JD, Framenau, VW (2017) Beyond SREs: Invertebrates have their
+place in environmental assessment and management. <em>Working
+Paper</em></p>
+<p>McGeoch, MA (1998) The selection, testing and application of
+terrestrial insects as bioindicators. <em>Biological Reviews</em>
+<strong>73</strong>, 181-201.</p>
+<p>Medhi, J, Dutta, J, Kalita, MC (2020) Biomonitoring Ecosystem:
+Modelling Relationship with Arthropods. In 'Arthropods.'
+(IntechOpen:</p>
+<p>Montgomery, GA, Belitz, MW, Guralnick, RP, Tingley, MW (2021)
+Standards and best practices for monitoring and benchmarking insects.
+<em>Frontiers in Ecology and Evolution</em> <strong>8</strong>, 513.</p>
+<p>Nakamura, S, Tamura, S, Taki, H, Shoda-Kagaya, E (2020) Propylene
+glycol: a promising preservative for insects, comparable to ethanol,
+from trapping to DNA analysis. <em>Entomologia Experimentalis et
+Applicata</em> <strong>168</strong>, 158-165.</p>
+<p>National Health and Medical Research Council, 2013. Australian code
+for the care and use of animals for scientific purposes, 8th edition.
+Canberra, Australia.</p>
+<p>Oberprieler, SK, Andersen, AN, Yeates, DK (2020) Selecting
+complementary target taxa for representing terrestrial invertebrate
+diversity in the Australian seasonal tropics. <em>Ecological
+indicators</em> <strong>109</strong>, 105836.</p>
+<p>Oliver, I, Beattie, AJ (1996) Designing a cost‐effective invertebrate
+survey: a test of methods for rapid assessment of biodiversity.
+<em>Ecological applications</em> <strong>6</strong>, 594-607.</p>
+<p>Oraby, G (2013) Terrestrial invertebrates as bioindicators: Selecting
+the best Orders and the best methods. <em>CATRINA</em>
+<strong>7</strong>, 87-94.</p>
+<p>Pendola, A, New, TR (2007) Depth of pitfall traps—does it affect
+interpretation of ant (Hymenoptera: Formicidae) assemblages? <em>Journal
+of Insect Conservation</em> <strong>11</strong>, 199-201.</p>
+<p>Pik, A, Dangerfield, J, Bramble, R, Angus, C, Nipperess, D (2002) The
+Use of Invertebrates to Detect Small-scale Habitat Heterogeneity and its
+Application to Restoration Practices. <em>Environmental monitoring and
+assessment</em> <strong>75</strong>, 179-99.</p>
+<p>Prather, CM, Pelini, SL, Laws, A, Rivest, E, Woltz, M, Bloch, CP, Del
+Toro, I, Ho, C-K, Kominoski, J, Newbold, TAS, Parsons, S, Joern, A
+(2013) Invertebrates, ecosystem services and climate change.
+<em>Biological Reviews</em> <strong>88</strong>, 327-348.</p>
+<p>Queensland Museum (2005) 'Collecting Insects Fact Sheet.' Available
+at <a href="https://www.qm.qld.gov.au/">https://www.qm.qld.gov.au/</a>
+[Accessed 8/22/2021].</p>
+<p>Schmidt, O, Schmidt, S, Häuser, C, Hausmann, A, Van Vu, L (2019)
+Using Malaise traps for collecting Lepidoptera (Insecta), with notes on
+the preparation of Macrolepidoptera from ethanol. <em>Biodiversity Data
+Journal</em> <strong>7</strong>,</p>
+<p>Scudder, GGE (2017) The Importance of Insects. In 'Insect
+Biodiversity.' pp. 9-43.</p>
+<p>Sheikh, A, Ganaie, G, Thomas, M, Rather, Y (2018) Ant pitfall trap
+sampling: An overview. <em>Journal of Entomological Research</em>
+<strong>42</strong>, 421.</p>
+<p>Sherley, G, Evans, A (2016) Invertebrates: search and extraction
+methods Version 1.1.</p>
+<p>Sherley, G, Stringer, I (2016) Invertebrates: pitfall trapping
+Version 1.0: Inventory and monitoring toolbox: invertebrates.</p>
+<p>Skvarla, MJ, Larson, JL, Fisher, JR, Dowling, APG (2020) A Review of
+Terrestrial and Canopy Malaise Traps. <em>Annals of the Entomological
+Society of America</em> <strong>114</strong>, 27-47.</p>
+<p>Spafford, RD, Lortie, CJ (2013) Sweeping beauty: is grassland
+arthropod community composition effectively estimated by sweep netting?
+<em>Ecology and Evolution</em> <strong>3</strong>, 3347-3358.</p>
+<p>Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
+Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
+vegetation and soil survey method for surveillance monitoring of
+rangeland environments. <em>Frontiers in Ecology and Evolution</em>
+<strong>8</strong>, 157.</p>
+<p>Stanisic, J, Burwell, C, Raven, R, Monteith, G, Baehr, B (2005)
+Terrestrial Invertebrate Status Review Brisbane City. Queensland Museum,
+Brisbane.</p>
+<p>Taylor, G, Braby, M, Moir, M, Harvey, M, Sands, D, New, T, Kitching,
+R, McQuillan, P, Hogendoorn, K, Glatz, R, Andren, M, Cook, J, Henry, S,
+Valenzuela, I, Weinstein, P (2018) Strategic national approach for
+improving the conservation management of insects and allied
+invertebrates in Australia. <em>Austral Entomology</em>
+<strong>57</strong>,</p>
+<p>Upton, M, Mantle, B, Hastings, A (2010) Methods for collecting,
+preserving and studying insects and other terrestrial arthropods.
+Australian Entomological Society No. 0646543377, published online.
+Available at <a href="http://www.austentsoc.org.au/wordpress/publications/other-publications/">http://www.austentsoc.org.au/wordpress/publications/other-publications/</a>.</p>
+<p>Upton, MS, Mantle, BL (1991) Methods for Collecting, Preserving and
+Studying Insects. <em>The Australian Entomological Society,
+Brisbane</em> <strong>141</strong>,</p>
+<p>Ward, DF, Larivière, M-C (2004) Terrestrial invertebrate surveys and
+rapid biodiversity assessment in New Zealand: lessons from Australia.
+<em>New Zealand Journal of Ecology</em> <strong>28</strong>,
+151-159.</p>
+<p>Weigand, AM, Desquiotz, N, Weigand, H, Szucsich, N (2021) Application
+of propylene glycol in DNA-based studies of invertebrates.
+<em>Metabarcoding and Metagenomics</em></p>
+<p>White, A, Sparrow, B, Leitch, E, Foulkes, J, Flitton, R, Lowe, AJ,
+Caddy-Retalic, S (2012) 'AusPlots Rangelands Survey Protocols Manual.'
+(The University of Adelaide Press: Adelaide)</p>
+<p>Whitman, JD, Yanega, D, Watson, CBG, Strode, VW (2019) Collection and
+Preservation of Terrestrial Arthropods. <em>Methods in Molecular
+Biology</em> <strong>1897</strong>, 163-189.</p>
+<p>Williams, G (2020) 'The Invertebrate World of Australia's Subtropical
+Rainforests.' (CSIRO Publishing: Clayton North, Victoria)</p>
+<p>Zhao, J, Shao, Y, Wang, X, Neher, D, Xu, G-L, Li, ZA, Fu, S (2013)
+Sentinel soil invertebrate taxa as bioindicators for forest management
+practices. <em>Ecological indicators</em> <strong>24</strong>,
+236-239.</p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+<h3 id="additional-guidelines-3">Additional guidelines</h3>
+<ul>
+<li><p>Pan size reportedly does not affect catch rates (LeBuhn et al.
+2016; Montgomery et al. 2021) with (Gonzalez et al. 2020) finding that
+pan traps ranging from 4 to 12 cm captured a similar richness of bees,
+did not influence body size of collected bees, and had little or no
+effect on the abundance estimates of bees and flies. Given this, a
+mandatory pan size has not been set (but needs to be recorded in the
+Monitor app). Generally, 100 ml (Droege et al. 2016) or 350 ml (O'Connor
+et al. 2019) sizes are used. The size should be consistent for all pan
+traps used across a project.</p></li>
+<li><p>All traps used within a project must be the same dimensions.
+Yellow is the standard colour of pan traps used to attract day-active
+insects. If using other coloured pans (e.g. white, blue and red), the
+trap colours are alternated in a repeat pattern. Pans are placed either
+directly on the ground or elevated off the ground where vegetation
+obscures them from sight (LeBuhn et al. 2016). This protocol should be
+undertaken on sunny or only partially cloudy days, with minimal wind and
+preferably no rain (Droege et al. 2016; LeBuhn et al. 2016).</p></li>
+<li><p>The choice of the colour of pan traps used depends on the target
+insect species/group, with yellow being the standard because the catch
+is typically more abundant and taxonomically diverse than other colours.
+However, a range of pan colours can be used to maximise the insect
+diversity sampled and better capture the community of flying insects,
+which is useful for inventory, and if the monitoring focus is across
+different taxonomic groups (Montgomery et al. 2021). An assessment of
+the effectiveness of different coloured traps can be incorporated into
+the study design for each project (Droege et al. 2016).</p></li>
+<li><p>If monitoring is to be completed in one day, set the traps in the
+morning and retrieve them shortly before sunset (Droege <em>et al.</em>
+2016).</p></li>
+<li><p>Pan traps are generally easy to disturb. If the pan trap is light
+weight it may be necessary to stake it to the ground (Bulbert <em>et
+al.</em> 2007).</p></li>
+<li><p>Pan traps can attract other animals that investigate the water.
+Avoid using pan traps near obvious burrows (Bulbert <em>et al.</em>
+2007).</p></li>
+<li><p>When selecting trap locations, consider vegetation growth and
+other activities that might be an issue if undertaking repeat monitoring
+(Droege <em>et al.</em> 2016).</p></li>
+<li><p>If flagging tape is used, be mindful of placement too close to
+traps as these may bias sampling by attracting or deterring bees. Avoid
+using tape that is the same colour as the traps (Droege <em>et al.</em>
+2016).</p></li>
+<li><p>Replace the pans if the colour is fading as this can affect the
+trap results (Droege <em>et al.</em> 2016).</p></li>
+<li><p>Data from the core monitoring plot will provide an indication of
+the floral resources available, when pan trapping is undertaken within
+the same monitoring period.</p></li>
+<li><p>The pans do not need to be placed near flowers as bees will often
+travel in search of flowers. Studies have shown that trap results can
+actually be less when floral resources are present (Cane et al.
+2000).</p></li>
+<li><p>Propylene glycol is used in place of soapy water if undertaking
+trapping for longer than 24 hours as the soapy water will evaporate,
+especially in hot conditions (Bulbert <em>et al.</em> 2007). Assess the
+suitability of the weather before undertaking pan trapping over multiple
+days, as heavy rain can splash trapped invertebrates out of the pan trap
+or result in pans overflowing. Tiny overflow holes can be created in the
+top of the pan traps to let water out (LeBuhn <em>et al.</em>
+2016).</p></li>
+<li><p>Any type of dish or laundry detergent can be used, except those
+with citrus scent added as this will decrease the number of bees caught.
+Laundry detergent is generally better than dish soap as it does not
+create many suds on top of the water (LeBuhn <em>et al.</em>
+2016).</p></li>
+<li><p>Unused soapy water can be disposed of by pouring down the drain.
+Used soapy water from pan traps can be disposed of by pouring out onto
+the ground, away from aquatic environments (MacKenzie <em>et al.</em>
+2002).</p></li>
+<li><p>Sieving is a common practice that speeds up specimen processing
+in the field, but can damage small, fragile taxa such as aphids
+(Montgomery <em>et al.</em> 2021). Do a quick check of the invertebrates
+present before sieving to ensure samples will not be damaged.</p></li>
+<li><p>The loss of individual traps is not an issue if only one or two
+are lost, and if this information is properly documented. At the end of
+the collection process, during the analysis of the data, divide the
+number of captures by the number of bowls available to account for any
+losses.</p></li>
+<li><p>Post-field processing may include: specimen washing and drying,
+sorting, pinning, labelling and identifying. Refer to LeBuhn <em>et
+al.</em> (2016) for instructions. A video that demonstrates how to dry
+bees can be viewed at <a href="https://www.youtube.com/watch?v=935jlJep6go">https://www.youtube.com/watch?v=935jlJep6go</a>.</p></li>
+<li><p>Bee identification is difficult in most circumstances, so any
+specimens collected should be sent to experts for identification, at
+least at the start of a project (LeBuhn <em>et al.</em> 2016).</p>
+<img alt="Pan trapping set up and collection." id="figure-6" height="550" src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/Figure6.png" width="450"/></p></li>
+</ul>
+<p><span class="anchor"></span>Figure 6. Pan trapping
+set up and collection.</p>
 """^^rdf:HTML ;
     skos:prefLabel "Pan trapping protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/invertebrate-fauna/pan-trapping-protocol/pan-trapping-protocol.ttl"^^xsd:anyURI ;
     tern:appendix """
-<h3 id="appendices">Appendices</h3>
+<h3 id="appendices-4">Appendices</h3>
 <h4>
   Appendix A. Suitability of the sampling protocols for the commonly monitored
   insect guilds.
@@ -1347,709 +1607,270 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 </table>
 """^^rdf:HTML ;
     tern:equipment """
-    <h3 id="equipment">Equipment</h3>
+   <h3 id="equipment">Equipment</h3>
 <ul>
-  <li>
-    <p>Personnel – one person</p>
-  </li>
-  <li>
-    <p>
-      Mobile device (tablet/phone capable of taking high resolution photos) with
-      the App (progressive web app) saved to the home screen
-    </p>
-  </li>
-  <li>
-    <p>
-      24 pans, e.g. 100 ml white plastic portion/ice cream cups (only available
-      in clear or white), 355 ml bowls (e.g.
-      <a href="https://www.amscan.com.au"><u>https://www.amscan.com.au</u></a
-      >, available in yellow, white and blue), or stadium cups (e.g.
-      <a href="https://www.promotionalusb.com.au/product/stadium-cup/"
-        ><u>https://www.promotionalusb.com.au/product/stadium-cup/</u></a
-      >, available in yellow, white and blue)
-    </p>
-  </li>
-  <li>
-    <p>
-      Yellow, white, blue fluorescent paint, if using (e.g.
-      <a href="https://au.rosco.com/en/product/fluorescent-paint"
-        ><u>https://au.rosco.com/en/product/fluorescent-paint</u></a
-      >)
-    </p>
-  </li>
-  <li>
-    <p>
-      Container with 5L of water mixed with a generous dash of dishwashing
-      liquid (to break up surface tension), to use as collection fluid in traps
-      if undertaking rapid sampling, or
-    </p>
-  </li>
-  <li>
-    <p>
-      Container with 5L of propylene glycol mixed, to use as collection fluid in
-      traps, if undertaking trapping over a week
-    </p>
-  </li>
-  <li>
-    <p>1L water bottle, for refilling pan traps</p>
-  </li>
-  <li>
-    <p>Small stakes, to hold down the pan trap in windy conditions</p>
-  </li>
-  <li>
-    <p>
-      Trap stands (e.g.
-      <a href="https://www.bunnings.com.au/whites-450mm-plant-prop_p3321121"
-        ><u>wire plant prop</u></a
-      >, or pieces of PVC pipe attached to a stake; optional).
-    </p>
-  </li>
-  <li>
-    <p>Mallet</p>
-  </li>
-  <li>
-    <p>Flagging tape</p>
-  </li>
-  <li>
-    <p>Screw-top collecting jars or vials</p>
-  </li>
-  <li>
-    <p>Funnel</p>
-  </li>
-  <li>
-    <p>Medium-large snap-lock bags</p>
-  </li>
-  <li>
-    <p>95% ethanol or undiluted propylene glycol, to preserve catch</p>
-  </li>
-  <li>
-    <p>
-      Soft-tipped, flat-headed forceps (for removing samples from pan trap into
-      sample container)
-    </p>
-  </li>
-  <li>
-    <p>
-      Small pipette (for removing samples from pan trap into sample container)
-    </p>
-  </li>
-  <li>
-    <p>
-      Sieve e.g. paper paint strainer, tea strainer, aquarium net, net spoon,
-      nylon mesh (for removing samples from pan trap into sample container).
-    </p>
-  </li>
-  <li>
-    <p>Distilled (sterile) water</p>
-  </li>
-  <li>
-    <p>Permanent marker</p>
-  </li>
-  <li>
-    <p>
-      Small thermal printed waterproof labels with barcode and duplicate barcode
-      stickers
-    </p>
-  </li>
-  <li>
-    <p>Soft lead pencil and scissors.</p>
-  </li>
+<li><p>Mobile device (tablet/phone capable of taking high resolution
+photos) with the Monitor app saved to the home screen</p></li>
+<li><p>GNSS, such as a Trimble R1 or DA2 receiver, a hand-held GPS or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy</p></li>
+<li><p>24 pans (e.g.
+https://alpen.com.au/occasions-reusable/coloured-tableware/bowls,
+available in yellow, white, blue, red)</p></li>
+<li><p>Container with 5L of water mixed with a generous dash of
+dishwashing liquid (to break up surface tension), to use as collection
+fluid in traps if undertaking rapid sampling, or</p></li>
+<li><p>Container with 5L of propylene glycol, to use as collection fluid
+in traps, if undertaking trapping over a week</p></li>
+<li><p>1L water bottle, for refilling pan traps</p></li>
+<li><p>Small stakes, to hold down the pan trap in windy
+conditions</p></li>
+<li><p>Trap stands (e.g. <a href="https://www.bunnings.com.au/whites-450mm-plant-prop_p3321121">wire
+plant prop</a>, or pieces of PVC pipe attached to a stake;
+optional)</p></li>
+<li><p>Mallet</p></li>
+<li><p>Flagging tape</p></li>
+<li><p>Screw-top plastic containers or vials</p></li>
+<li><p>Funnel</p></li>
+<li><p>Medium-large snap-lock bags</p></li>
+<li><p>95% or above undenatured ethanol or undiluted propylene glycol,
+to preserve catch</p></li>
+<li><p>Soft-tipped, flat-headed forceps (for removing samples from pan
+trap into sample container)</p></li>
+<li><p>Small pipette (for removing samples from pan trap into sample
+container)</p></li>
+<li><p>Sieve e.g. paper paint strainer, tea strainer, aquarium net, net
+spoon, nylon mesh (for removing samples from pan trap into sample
+container).</p></li>
+<li><p>Distilled (sterile) water</p></li>
+<li><p>Permanent marker</p></li>
+<li><p>Voucher barcode labels (see the Generating Voucher Barcode Labels
+for EMSA Specimens and Samples instruction sheet)</p></li>
+<li><p>Lead pencil</p></li>
+<li><p>Scissors</p></li>
 </ul>
-    """^^rdf:HTML ;
-    tern:instructions """
-    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
-<h4 id="pre-field-2">A. Pre-field</h4>
-<ol type="1">
-  <li>
-    <p>
-      If required, use fluorescent paint to paint the inside of the required
-      number of pans based on the colours to be used (yellow, blue). Ensure even
-      coverage. A primer may be needed for the paint to adhere to the plastic.
-    </p>
-  </li>
-  <li>
-    <p>
-      For long-term trapping, create 4-5 small pin-holes spaced evenly around
-      and a few millimeters below the rim of each cup to allow rain/excess
-      liquid to drain away without overflowing and causing specimens to be lost
-      (Droege <em>et al.</em> 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      Determine how much soapy water or propylene glycol will be needed to fill
-      all pan traps before going to the field.
-    </p>
-  </li>
-  <li>
-    <p>
-      Fill a 5 litre water container with water with a heavy squirt
-      (approximately 1 ½ teaspoons) of dishwashing liquid (Blue Dawn is the
-      standard, others are fine as long as they are not citrus-based or scented)
-      (Droege <em>et al.</em> 2016).
-    </p>
-  </li>
-</ol>
-<h4 id="b.-trap-set-up">B. Trap set-up</h4>
-<ol type="1">
-  <li>
-    <p>
-      Open the <em>Invertebrate fauna</em> module in App and select the
-      <em>Pan trapping</em> protocol and <em>Undertake survey</em>.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Monitoring duration</em> (drop-down, short-term (&lt;24 hours)
-      or long-term); this dictates the type of liquid used in the trap and the
-    </p>
-  </li>
-  <li>
-    <p>
-      Check the box if <em>Repeat monitoring</em> will be undertaken (leave
-      blank if one off inventory survey).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the <em>Fauna Plot ID</em> (nearest plot should appear at top of
-      the drop-down list).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the <em>Observer</em> (default auto-fill based on login or last
-      user entry, drop-down options based on project personnel, manual entry
-      override if necessary).
-    </p>
-  </li>
-  <li>
-    <p>Select <em>Trap set-up</em>.</p>
-  </li>
-  <li>
-    <p>
-      Pan traps are set out in two transects of 12 bowls, spaced 5 metres apart
-      (24 pans in total). The standard protocol is to use yellow pans. If other
-      colours (blue and white) are also being used, these should be alternated
-      along the transect (blue, yellow, white), and the colour and location of
-      each trap recorded.
-    </p>
-  </li>
-  <li>
-    <p>
-      Use flagging tape to mark the start and the end pan trap within the
-      transect. The flagging tape should be visible from a distance (e.g. pegged
-      to a nearby tree).
-    </p>
-  </li>
-  <li>
-    <p>
-      Navigate to where the pan trap transects will be positioned, either by
-      using the mapping interface in the App and Trimble® R1 or manually by
-      using a compass and surveyor's tape measure, or by pacing out the
-      distance. To use the App and Trimble® R1, select
-      <em>Navigate to trap location</em> and the mapping interface in the App
-      will show your location in relation to the default pre-determined trap
-      locations (see <a href='#figure-1'>Figure 1</a>).
-    </p>
-  </li>
-  <li>
-    <p>
-      Start at one end of the pan trap line and establish each trap in order.
-      Make adjustments to the spatial placement as necessary, to avoid:
-    </p>
-  </li>
-</ol>
-<ul>
-  <li>
-    <p>heavy shade (as bees are unlikely to visit)</p>
-  </li>
-  <li>
-    <p>ant nests or key ant activity areas</p>
-  </li>
-  <li>
-    <p>areas of foot traffic</p>
-  </li>
-  <li>
-    <p>obvious vertebrate fauna travelways</p>
-  </li>
-  <li>
-    <p>
-      obvious burrows (as rabbits and wombats can destroy the bowls) (Bulbert
-      <em>et al.</em> 2007).
-    </p>
-  </li>
-</ul>
-<p>For each trap:</p>
-<ol start="11" type="1">
-  <li>
-    <p>
-      Place the pan level on the ground, in an exposed (full sun) location,
-      where there is no overhanging vegetation. Use small stakes to hold down
-      the pan if there is a risk of it being blown over; ensure the ends of the
-      stakes do not extend over the pan and provide an escape for trapped
-      insects. The idea is to position the traps within the vegetation but at a
-      location where they will be visible to insects flying above (not
-      necessarily above the vegetation canopy (Droege et al. 2016).
-    </p>
-  </li>
-  <li>
-    <p>
-      If the ground vegetation is obscuring the sight of the pan, install a
-      stand to elevate the trap so that the bottom of the pan is just above
-      (e.g. 2.5 cm) the level of the ground or underlying substrate (e.g. matted
-      down grass). If undertaking repeat monitoring, stands may be installed at
-      each trap location. Write the Trap ID on the stand.
-    </p>
-  </li>
-  <li>
-    <p>
-      Pour the liquid solution into the pan until about three quarters full; for
-      short-term monitoring (&lt;24 hours), use water-dishwashing liquid
-      solution. For longer-term monitoring, use undiluted propylene glycol. Pans
-      can either be left out for any 24 hour period of good weather or placed
-      out prior to when bees are active in the morning and collected after they
-      have become inactive in the afternoon. For longer-term monitoring, pans
-      can be left for up to two weeks, but may need to be checked and liquid
-      topped up during the survey period.
-    </p>
-  </li>
-  <li>
-    <p>
-      Open the App, and select <em>Add trap</em>. The date and time of trap
-      establishment will be auto-recorded (override if necessary).
-    </p>
-  </li>
-  <li>
-    <p>Enter the <em>Proposed Trapping Duration</em> (days).</p>
-  </li>
-  <li>
-    <p>
-      Select the <em>Trap ID</em> from the drop-down menu (the trap line/trap
-      number, e.g. PT1-1 or manually enter).
-    </p>
-  </li>
-  <li>
-    <p>
-      Hold Trimble® R1 directly over the trap location (to obtain best
-      positional accuracy), select <em>Record trap location</em>. The GPS
-      location will be automatically recorded and will be shown on the mapping
-      interface. A warning message will appear if the accuracy is less than +/-
-      5m, prompting the user to repeat this step.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Add photo</em>. Take a photo looking down at the trap and
-      record direction (drop-down list, default is ‘down’).
-    </p>
-  </li>
-  <li><p>Enter trap details:</p></li>
-</ol>
-<ul>
-  <li>
-    <p><em>Inside pan colour</em> (drop-down list, default is yellow)</p>
-  </li>
-  <li>
-    <p><em>Outside pan colour</em> (drop-down list, default is yellow)</p>
-  </li>
-  <li>
-    <p><em>Pan diameter</em> (cm)</p>
-  </li>
-  <li>
-    <p><em>Pan height</em> (cm)</p>
-  </li>
-  <li>
-    <p><em>Pan capacity</em> (ml)</p>
-  </li>
-  <li>
-    <p>
-      <em>Pan placement</em> (drop-down list, default in on ground, alternative
-      is on stand)
-    </p>
-  </li>
-  <li>
-    <p>
-      <em>Pan height above ground</em> (cm) (measured from the lowest point on
-      the bowl)
-    </p>
-  </li>
-  <li>
-    <p><em>Liquid type</em> (drop-down list, default is soapy water)</p>
-  </li>
-  <li>
-    <p><em>Liquid amount</em> (estimate, ml)</p>
-  </li>
-  <li>
-    <p><em>Stakes used to hold down pan</em> (Y/N)</p>
-  </li>
-</ul>
-
-<p>
-  Note: The selections will become the default entries for the project. If using
-  pans of multiple colours, ensure the pan colour is updated.
-</p>
-
-<ol start="20" type="1">
-  <li>
-    <p>
-      Record the <em>Plant species in flower</em> within 2.5 metres of the trap
-      (drop-down list, predictive text, multiple entries OK).
-    </p>
-  </li>
-  <li>
-    <p>
-      Enter any relevant <em>Comments</em> (e.g. type of dishwashing liquid
-      used)
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Save</em> and the App will return to the
-      <em>Invertebrate fauna</em> module main screen.
-    </p>
-  </li>
-  <li>
-    <p>
-      Leave the pan traps out for between 2 to 24 hours for the short-term
-      monitoring, or up to seven days before checking for the long-term
-      monitoring (no longer, given potential for evaporation of fluid and DNA
-      degradation). Add additional propylene glycol to traps left out for
-      multiple days if necessary.
-    </p>
-  </li>
-</ol>
-<h4 id="c.-sample-collectiontrap-removal">C. Sample collection/trap removal</h4>
-<ol type="1">
-  <li>
-    <p>
-      On return to the plot, open the App, select the
-      <em>Invertebrate fauna</em> module, sampling method
-      <em>Pan trapping</em> and <em>Trap check</em>. The Map function in the App
-      can be used to navigate back to the traps if necessary.
-    </p>
-  </li>
-</ol>
-<p>For each trap:</p>
-<ol start="2" type="1">
-  <li>
-    <p>
-      Select <em>Remove sample</em>, if collecting the samples but leaving the
-      trap in-situ. The date and time of sample collection will be
-      auto-recorded.
-    </p>
-  </li>
-  <li>
-    <p>
-      Checkbox <em>Trap refilled</em> if new preserving fluid is added to the
-      trap (confirm the pre-entered trap details on the screen are correct), or
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Remove trap</em> if collecting the samples and removing the
-      trap. The date and time of removal will be auto-recorded.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the <em>Observer</em> (default auto-fill based on entry for Trap
-      set-up).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Add photo</em> and take a close-up photo looking down at the
-      pan trap contents, getting the whole pan trap within the photo view.
-    </p>
-  </li>
-  <li><p>Mark the relevant checkboxes if:</p></li>
-</ol>
-<ul>
-  <li>
-    <p><em>Trap not found</em>, if the trap cannot be located</p>
-  </li>
-  <li>
-    <p>
-      <em>Trap evaporated</em>, if there is no fluid remaining in the trap (in
-      this case the contents can still be collected but this is a flag that they
-      may no longer be useful for DNA analysis)
-    </p>
-  </li>
-  <li>
-    <p>
-      <em>Rain impacted</em>, if there has been heavy rain causing sample loss
-    </p>
-  </li>
-  <li>
-    <p>
-      <em>Trap upended</em>, if the trap has flipped over, causing loss of fluid
-      and samples
-    </p>
-  </li>
-  <li>
-    <p>
-      <em>Trap damaged</em>, if the pan is broken, potentially impacting on
-      trapping results (this is also a flag that the pan needs replacing).
-    </p>
-  </li>
-</ul>
-
-<p>
-  If any of the boxes have been checked, then this bowl will be removed from the
-  total number of active bowls for the transect.
-</p>
-
-<ol start="8" type="1">
-  <li>
-    <p>
-      Mark the checkbox <em>No catch</em>, if the trap is in place but no
-      invertebrates present.
-    </p>
-  </li>
-  <li>
-    <p>Add <em>Comments</em> (optional, free text).</p>
-  </li>
-  <li>
-    <p>
-      Carefully pour the contents of the pan trap into a snap-lock bag or
-      decanted directly into a sampling container. Write the <em>Plot ID</em>,
-      <em>Trap ID</em>, <em>Date</em> and <em>Observer</em> onto the snap-lock
-      bag/sampling container with permanent marker.
-    </p>
-  </li>
-  <li>
-    <p>
-      Enter a <em>Count estimate</em> of the number of invertebrates obtained
-      from the trap (as a backup in case there are any mix-ups).
-    </p>
-  </li>
-  <li><p>Repeat steps 28 to 38 for each trap.</p></li>
-  <li>
-    <p>
-      Return to the field vehicle or an area where all the equipment is
-      available. Set up the sample bags, sampling containers, and barcode
-      labels. Fill 12 sampling containers ¾ full with 95% ethanol or undiluted
-      propylene glycol (or 4 sampling containers if pooling the results by pan
-      colour by trap line).
-    </p>
-  </li>
-  <li>
-    <p>
-      Open the App. Select sampling method <em>Pan trapping</em> and select
-      <em>Add sample</em> , then <em>Scan barcode</em>.
-    </p>
-  </li>
-  <li>
-    <p>
-      Unscrew the lid of the first sampling container. Take a small thermal
-      printed waterproof barcode label and scan using the app. Select the
-      <em>Plot ID</em> <em>and Pan trap line ID</em> for the sample from the
-      drop-down list. Select <em>Save record</em>. The barcode ID is now linked
-      to the pan trap line.
-    </p>
-  </li>
-  <li>
-    <p>
-      Remove specimens from the snap-lock bags by straining the water through a
-      mesh strainer, nylon mesh filter or net spoon or picking them out of the
-      water with soft-tipped forceps or a small pipette. If the specimens were
-      collected in soapy water, rinse them off in a mesh strainer or filter with
-      distilled (sterile) water to remove any soap residue or any other
-      contaminants.
-    </p>
-  </li>
-  <li>
-    <p>
-      Add the specimens to the sampling container. Select the
-      <em>Preservation type</em> (drop-down list, e.g. 95% ethanol, undiluted
-      propylene glycol).
-    </p>
-  </li>
-  <li>
-    <p>
-      Alongside the barcode on the label, write the following information with
-      lead pencil (do not use pen or marking pen as the ink will dissolve), in
-      approximately size 4 font: Project name, Plot ID, Trap line ID, Observer,
-      Date (start and end) and Pan colour. Place the label into the sampling
-      container.
-    </p>
-  </li>
-  <li>
-    <p>
-      Discard the soapy water or undiluted propylene glycol in an
-      environmentally safe way in line with permit and site requirements, at
-      least 50 m away from the fauna and vegetation plots.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Add photo</em> and take a photo looking down (into the sample
-      container with the lid off), with the barcode placed alongside the
-      container (not in the container), so it is visible in the photo (place a
-      blank piece of white paper underneath the container for the best photo).
-    </p>
-  </li>
-  <li>
-    <p>
-      Provide a brief description for each photo (default descriptions available
-      from drop-down list or enter free text description). Multiple photos can
-      be taken.
-    </p>
-  </li>
-  <li>
-    <p>
-      Top up the sample containers with 95% ethanol or undiluted propylene
-      glycol to prevent fluid splashing around and damaging the samples in the
-      container. Return the lid and ensure it is screwed on tightly. For
-      additional measure, place a small sticker barcode (duplicate code as that
-      in the sample) on the side or base of the sample container – this enables
-      the sample information to be readily retrieved without having to open the
-      container and remove the label from the fluid for scanning. Note: only one
-      barcode is allocated to a sample. For additional measure, write the Plot
-      ID, Trap Line ID and Date with permanent marker onto the lid of the
-      container.
-    </p>
-  </li>
-  <li><p>Store the containers in a cool location out of direct light.</p></li>
-</ol>
-<h4 id="d.-post-field-1">D. Post-field</h4>
-<ol type="1">
-  <li>
-    <p>
-      If the samples are not going to be processed within one to two days, store
-      them in the freezer.
-    </p>
-  </li>
-  <li>
-    <p>
-      Refer to standard
-      <a
-        href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/79296cab-a02f-420d-b260-17c0e8691499"
-        >Post-field guidelines</a
-      >
-      for post-field sample preservation and processing instructions.
-    </p>
-  </li>
-</ol>
-<p id='figure-8'>
-  <img
-    src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/pan-trapping-app-screen.png"
-    alt="Pan trapping App screen mock up"
-    widteh="993"
-    height="1075"
-  />
-</p>
-<p>Figure 8. Pan trapping App screen mock up</p>
 """^^rdf:HTML ;
-    tern:purpose """
-    <h3 id="rationale">Rationale</h3>
-<p>
-  Data on pollinators is important to establish baselines, track population
-  change, identify the consequences of pollinator population declines, determine
-  functionally important species and guide conservation and restoration programs
-  (Popic <em>et al.</em> 2013).
-</p>
-<p>
-  Rapid trapping (over 24 hours) is useful for inventory and monitoring, however
-  trapping over a longer duration will provide more comprehensive results, given
-  the flight period varies for different pollinators, and may shift from year to
-  year (Droege <em>et al.</em> 2016).
-</p>
-<p>
-  Pan trapping is most commonly used for monitoring bees and other pollinators,
-  and is generally a more effective method for trapping bees than Malaise traps
-  (Montgomery <em>et al.</em> 2021). Pan trapping has been found to capture less
-  diversity than sweep netting of flowering plants, but the methods are
-  considered complementary as the composition of catches can be very different
-  (Cane <em>et al.</em> 2000; Berglund and Milberg 2019). Pan trapping is also
-  useful for sampling elusive taxa, as well as bees when there are no flowers
-  present (e.g. after a fire) or in a ploughed paddock in an agricultural
-  setting. Pan trapping also has the added benefit of being able to be
-  undertaken by unskilled persons and requires no specialised equipment (Cane et
-  al. 2000).
-</p>
-<p>
-  Like all methods, there is sampling bias for certain taxa, and results are
-  strongly influenced by the environmental conditions (Cane et al. 2000;
-  Montgomery et al. 2021). Trap placement can impact on catch, with bees
-  unlikely to visit shaded traps, and vegetation height can influence trap
-  visibility. Traps are best placed in exposed open settings. Trap stands can be
-  used to adjust trap height, according to the habitat so they are easily seen
-  by the target insects (Droege et al. 2016).
-</p>
-<p>
-  The number of traps used per plot is considered adequate for estimating
-  species richness of bees (Shapiro et al. 2014). Pan traps are mostly commonly
-  placed 5 m apart and this distance is considered sufficient to decrease bee
-  competition among traps (Droege <em>et al.</em> 2016).
-</p>
-<p>
-  Pan size reportedly does not affect catch rates (LeBuhn et al. 2016;
-  Montgomery et al. 2021) with (Gonzalez et al. 2020) finding that pan traps
-  ranging from 4 to 12 cm captured a similar richness of bees, did not influence
-  body size of collected bees, and had little or no effect on the abundance
-  estimates of bees and flies. Given this, a mandatory pan size has not been set
-  (but needs to be recorded in the App), so the pan can be chosen based on
-  availability of materials and what is considered best for the situation.
-  Generally, 100 ml (Droege et al. 2016) or 350 ml (O'Connor et al. 2019) sizes
-  are used. The smaller size has the advantage of increased efficiency with trap
-  set up, as all 24 pans can be held at a time in one hand and filled without
-  having to put the bowls on the ground, and also means less water needs to be
-  carried to pour into the traps (Droege et al. 2016). The size should be
-  consistent for all pan traps used across a project.
-</p>
-<p>
-  The choice of the colour of pan traps used depends on the target insect
-  species/group, with yellow being the standard because the catch is more
-  abundant and taxonomically diverse than white and blue pans. However, a range
-  of pan colours can be used to maximise the insect diversity sampled and better
-  capture the community of flying insects, which is useful for inventory, and if
-  the monitoring focus is across different taxonomic groups (Montgomery
-  <em>et al.</em> 2021). An assessment of the effectiveness of different
-  coloured traps can be incorporated into the study design for each project
-  (Droege <em>et al.</em> 2016).
-</p>
-    """^^rdf:HTML ;
-    tern:scope """
-    <h3>Contents</h3>
-<ol>
-  <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#rationale">Rationale</a></li>
-  <li><a href="#protocol-overview">Protocol Overview</a></li>
-  <li><a href="#equipment">Equipment</a></li>
-  <li>
-    <a href="#instructions-and-procedures">Instructions and procedures</a>
-  </li>
-  <li><a href="#additional-guidelines">Additional guidelines</a></li>
-  <li><a href="#appendices">Appendices</a></li>
+    tern:instructions """
+   <h3 id="instructions-and-procedures-3">Instructions and procedures</h3>
+<h4 class="unnumbered" id="pre-field">Pre-field</h4>
+<ol type="1">
+<li><p>For long-term trapping, create 4-5 small pin-holes spaced evenly
+around and a few millimeters below the rim of each cup to allow
+rain/excess liquid to drain away without overflowing and causing
+specimens to be lost (Droege <em>et al.</em> 2016).</p></li>
+<li><p>Determine how much soapy water or propylene glycol will be needed
+to fill all pan traps before going to the field.</p></li>
+<li><p>Fill a 5-litre water container wth water with a heavy squirt
+(approximately 1 ½ teaspoons) of dishwashing liquid (Blue Dawn is the
+standard, others are fine as long as they are not citrus-based or
+scented) (Droege <em>et al.</em> 2016).</p></li>
+<h4 class="unnumbered" id="trap-set-up">Trap set-up</h4>
+<li><p>Open the Monitor app, select <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a>,
+and select the plot and visit.</p></li>
+<li><p>Open the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> and complete the standard
+protocol if vegetation information has not already been recorded for the
+visit.</p></li>
+<li><p>Open the <a href="https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e">Invertebrate Fauna Module</a>, select the Pan trapping
+protocol and <em>start</em>.</p></li>
+<li><p>Select the <em>monitoring duration</em> (short-term (&lt;24
+hours) or long-term (up to 7 days)); this dictates the type of liquid
+used in the trap.</p></li>
+<li><p>Check the box if <em>repeat monitoring</em> will be undertaken
+(leave blank if one off inventory survey).</p></li>
+<li><p>Select the <em>observer</em> and proceed to <em>add
+traps.</em></p></li>
+<li><p>Pan traps are set out in two lines of 12 bowls, spaced 5 metres
+apart (24 pans in total), 10 m in from either side of the fauna plot or
+core monitoring plot (<a href="#figure-5">Figure 5</a>). The standard protocol is
+to use yellow pans. If other colours (blue and white) are also being
+used, these should be alternated along the transect (blue, yellow,
+white), and the colour and location of each trap recorded.</p></li>
+<li><p>Use flagging tape to mark the start and the end of the pan trap
+lines within the transect. The flagging tape should be visible from a
+distance (e.g. pegged to a nearby tree).</p></li>
+<li><p>Navigate to where the pan trap lines will be positioned, either
+by using the mapping interface in the app (connected to a GNSS device)
+or manually by using a compass and surveyors tape measure, or by pacing
+out the distance. If using the app you can press <em>plot</em> on the
+mapping interface to be shown your location in relation to the default
+pre-determined trap locations and you can press <em>hide/show
+labels</em> to display the Trap ID’s.</p>
+<p><img alt="Pan trapping spatial layout within plot." id="figure-5" height="500" src="https://w3id.org/tern/static/dawe-rlp/latest/invertebrate/Figure5.jpg" width="450"/></p></li>
+<p><span class="anchor"></span>Figure 5. Pan trapping
+spatial layout within plot.</p>
+<li><p>Start at one end of the pan trap line and establish each trap in
+order. Make adjustments to the spatial placement as necessary, to avoid
+heavy shade (as bees are unlikely to visit), ant nests or key ant
+activity areas, areas of foot traffic, obvious vertebrate fauna
+travelways, and obvious burrows (as rabbits and wombats can destroy the
+bowls) (Bulbert <em>et al.</em> 2007).</p></li>
+<li><p>Place the pan level on the ground, in an exposed (full sun)
+location, where there is no overhanging vegetation. The traps should be
+positioned within the vegetation but at a location where they are
+visible to insects flying above (not necessarily above the vegetation
+canopy) (Droege et al. 2016). Use small stakes to hold down the pan if
+there is a risk of it being blown over; stakes should be metal, black
+plastic or the same colour as the pan so the trap results are not
+confounded; ensure the ends of the stakes do not extend over the pan and
+provide an escape for trapped insects.</p></li>
+<li><p>If the ground vegetation is obscuring the sight of the pan,
+install a stand to elevate the trap so that the bottom of the pan is
+just above (e.g. 2.5 cm) the level of the ground or underlying substrate
+(e.g. matted down grass). If undertaking repeat monitoring, stands may
+be installed at each trap location. Write the <em>trap ID</em> on the
+stand.</p></li>
+<li><p>Pour the liquid solution into the pan until about three quarters
+full; for short-term monitoring (&lt;24 hours), use water-dishwashing
+liquid solution. For longer-term monitoring, use undiluted propylene
+glycol. Pans can either be left out for any 24 hour period of good
+weather or placed out prior to when bees are active in the morning and
+collected after they have become inactive in the afternoon. For
+longer-term monitoring, pans can be left for up to 7 days, but may need
+to be checked and liquid topped up during the survey period.</p></li>
+<li><p>Select the <em>trap ID</em> (trap line/trap number, e.g. PT1-2 is
+trap line 1/trap number 2 and PT2-7 is trap line 2/trap number
+7).</p></li>
+<li><p>Hold the GNSS device over the trap location (to obtain best
+positional accuracy), select <em>record trap location</em>. The GPS
+location will be automatically recorded and will be shown on the mapping
+interface. A warning message will appear if the accuracy is greater than
+5m.</p></li>
+<li><p>Enter the Proposed Trapping Duration in days. The start/end date
+and time will be auto-recorded (override if necessary).</p></li>
+<li><p>Enter trap details:</p>
+<ul>
+<li><p>inside pan colour</p></li>
+<li><p>outside pan colour</p></li>
+<li><p>pan diameter (cm)</p></li>
+<li><p>pan depth (cm)</p></li>
+<li><p>pan capacity (ml)</p></li>
+<li><p>pan placement (drop-down list, default in on ground, alternative
+is on stand)</p></li>
+<li><p>pan height above ground (cm) (measured from the lowest point on
+the bowl)</p></li>
+<li><p>liquid type (drop-down list, default is soapy water)</p></li>
+<li><p>liquid amount (estimate, ml)</p>
+<p>Note: The selections will become the default entries for the project.
+If using pans of multiple colours, ensure the pan colour is updated as
+needed.</p></li>
+</ul></li>
+<li><p>Record <em>dominant plant species in flower</em> within 5 metres
+of the trap (optional).</p></li>
+<li><p>Select <em>finish trap set-up.</em></p></li>
+<li><p>Repeat steps 11 to 19 for remaining pan traps.</p></li>
+<li><p>Leave the pan traps out for between 2 to 24 hours for the
+short-term monitoring, or up to seven days before checking for the
+long-term monitoring (no longer, given potential for evaporation of
+fluid and DNA degradation). Add additional propylene glycol to traps
+left out for multiple days if necessary.</p></li>
+<h4 class="unnumbered" id="sample-collectiontrap-removal">Sample
+collection/trap removal</h4>
+<li><p>On return to the plot, open the app, select the <em>Invertebrate
+Fauna Module</em>, sampling method <em>Pan trapping</em>. The map
+interface in the app can be used to navigate back to the traps if
+necessary.</p></li>
+<li><p>If you are collecting samples but leaving the traps in-situ for
+longer, then go through one trap at a time and if necessary, decant the
+contents of the trap into a sampling container or snap-lock bag and
+label the container/bag with the plot ID, trap ID, date and observer.
+Keep these samples in a cool location out of direct light or in a fridge
+and at the end of the sampling period they will be combined with other
+samples from the same trap ID.</p></li>
+<li><p>Refill the traps with preserving fluid if necessary.</p></li>
+<li><p>If you are collecting samples and removing the trap (i.e. at the
+end of the sampling period) then go to the <em>remove traps</em> section
+in the app.</p></li>
+<li><p>Select the <em>trap ID</em>. The date and time of removal will be
+auto-recorded (override if necessary).</p></li>
+<li><p>Select <em>add photo</em> and take a close-up photo looking down
+at the pan trap contents, getting the whole pan trap within the photo
+view (optional).</p></li>
+<li><p>Mark the relevant checkboxes if:</p>
+<ul>
+<li><p><em>trap not found</em>, if the trap cannot be located</p></li>
+<li><p><em>rain impacted</em>, if there has been heavy rain causing
+sample loss</p></li>
+<li><p><em>trap damaged</em>, if the pan is broken, potentially
+impacting on trapping results (this is also a flag that the pan needs
+replacing).</p></li>
+<li><p><em>trap evaporated</em>, if there is no fluid remaining in the
+trap (in this case the contents can still be collected but this is a
+flag that they may no longer be useful for DNA analysis)</p></li>
+<li><p><em>trap upended</em>, if the trap has flipped over, causing loss
+of fluid and samples</p></li>
+<li><p><em>no catch</em>, if the trap is in place but no invertebrates
+present</p></li>
+</ul></li>
+<li><p>Add <em>comments</em> (optional, free text).</p></li>
+<li><p>Carefully decant the contents of the pan trap into a sampling
+container or snap-lock bag. Write the <em>plot ID</em>, <em>trap
+ID</em>, <em>date</em> and <em>observer</em> onto the container/bag with
+permanent marker. If any samples were taken earlier in the trapping
+period, ensure that they are also grouped with these final samples
+according to their trap IDs.</p></li>
+<li><p>Press <em>remove trap [trap ID]</em> to mark the trap as removed.
+Alternatively press <em>remove all traps</em> to remove all the traps at
+once with the same data as selected for the current trap (you can still
+edit the data of individual traps in the app if required).</p></li>
+<li><p>Repeat steps for 5 to 10 for each trap.</p></li>
+<h4 class="unnumbered" id="vouchering">Vouchering</h4>
+<li><p>Return to the field vehicle or an area where all the equipment is
+available. Set up all the collected sampling containers/bags, and
+barcode labels. Fill 24 fresh sampling containers ¾ full with 95%
+undenatured ethanol or undiluted propylene glycol</p></li>
+<li><p>Note: if aggregating the results by trap line and/or pan colour
+then you may require fewer containers and barcodes e.g. aggregating by
+trap line will require only 2 sampling containers and 2 barcodes whereas
+aggregating by trap line and pan colour (three colours) then 6 sampling
+containers and 6 barcodes are required.</p></li>
+<li><p>Open the app. select the Invertebrate Fauna Module, select
+sampling method <em>pan trapping</em> and go to
+<em>vouchering</em>.</p></li>
+<li><p>Select the <em>trap ID</em> (or multiple <em>trap IDs</em> if
+aggregating). Take a small thermal printed waterproof barcode label,
+scan it using the app and press <em>record barcode</em>. The <em>barcode
+ID</em> is now linked to the <em>trap IDs</em>.</p></li>
+<li><p>Remove specimens from the container/snap-lock bag by straining
+the water through a mesh strainer, nylon mesh filter or net spoon or
+picking them out of the water with soft-tipped forceps or a small
+pipette. If the specimens were collected in soapy water, rinse them off
+in a mesh strainer or filter with distilled (sterile) water to remove
+any soap residue or any other contaminants.</p></li>
+<li><p>Add the specimens to the sampling container. Select the
+<em>preservation type</em> (drop-down list, e.g. 95% undenatured
+ethanol, undiluted propylene glycol).</p></li>
+<li><p>Alongside the barcode on the label, write the following
+information with lead pencil (do not use pen or marking pen as the ink
+will dissolve<em>): project name, plot ID, trap IDs, observer, date</em>
+(start and end) and <em>pan colour</em>. Place the label into the
+sampling container.</p></li>
+<li><p>Note: if all of the specimens do not fit into the sampling
+container you may have to use multiple sampling containers and ensure
+that the additional containers are labelled identically with the
+<em>project name, plot ID, trap IDs, observer, date</em> (start and
+end), <em>pan colour</em> and <em>barcode ID</em>.</p></li>
+<li><p>Discard the soapy water or undiluted propylene glycol in an
+environmentally safe way in line with permit and site requirements, at
+least 50 m away from the fauna and core monitoring plots.</p></li>
+<li><p>Select <em>add photo</em> (optional) and take a photo looking
+down (into the sample container with the lid off), with the barcode
+placed alongside the container (not in the container), so it is visible
+in the photo (place a blank piece of white paper underneath the
+container for the best photo). If there are multiple containers assigned
+to the barcode then take a photo of each container separately.</p></li>
+<li><p>Top up the sample containers with 95% undenatured ethanol or
+undiluted propylene glycol if necessary. Return the lid and ensure it is
+screwed on tightly. For an additional measure, place a small sticker
+barcode (duplicate code as that in the sample) on the side or base of
+the sample container – this enables the sample information to be readily
+retrieved without having to open the container and remove the label from
+the fluid for scanning.</p></li>
+<li><p>Store the containers in a cool location out of direct
+light.</p></li>
+<h4 class="unnumbered" id="post-field">Post-field</h4>
+<li><p>Refer to Section 9 for standard <a href="https://linked.data.gov.au/def/nrm/79296cab-a02f-420d-b260-17c0e8691499">Post-Field Sample Curation</a> for sample preservation
+and processing instructions.</p></li>
 </ol>
-    <h3 id="introduction">Introduction</h3>
-<p>
-  Pan trapping is a cheap, efficient and simple method for monitoring flying
-  insects. It is most effective at sampling flies (Diptera), bees and wasps
-  (Hymenoptera), as well as aphids (Hemiptera), thrips (Thysanoptera), and even
-  some beetles (Coleoptera) and grasshoppers (Orthoptera) (Montgomery et al.
-  2021).
-</p>
-<p>
-  The method involves the use of small coloured bowls or ‘pans’ which are either
-  filled with water and a small amount of dishwashing liquid for rapid sampling
-  over one day, or undiluted propylene glycol for sampling over a longer
-  duration. When flying insects land on the water surface, they sink and drown,
-  and the liquid is then strained through a fine sieve and the specimens are
-  retrieved (Bulbert et al. 2007; LeBuhn et al. 2016).
-</p>
-<p>
-  The pans are typically yellow as many day-active flying insects are attracted
-  to this colour as a food resource, but blue and white pans can also be used to
-  attract different species (Montgomery et al. 2021).
-</p>
-<p>
-  This protocol is an adaptation of the existing “Protocol to detect and monitor
-  pollinator communities” (LeBuhn et al. 2016), which is implemented in various
-  countries across the globe.
-</p>
-    """^^rdf:HTML ;
+"""^^rdf:HTML ;
 .
 
