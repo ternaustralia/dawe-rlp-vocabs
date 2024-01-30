@@ -1,0 +1,18 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/88b1423f-a938-5344-87ba-547bed251482>
+    a skos:Concept ;
+    dcterms:source "Cox B, McCallum K, O’Neill S, Bignall J, Peacock D, Sparrow B. (2023) Sign-based Fauna Survey Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "Refers to the type of data recorded in each quadrat when conducting a sign-based fauna survey." ;
+    skos:prefLabel "quadrat data type" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/quadrat-data-type.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/5683a0ca-d2bd-5ec2-b8c4-fd02aa879729> ;
+    tern:valueType tern:IRI ;
+.
+

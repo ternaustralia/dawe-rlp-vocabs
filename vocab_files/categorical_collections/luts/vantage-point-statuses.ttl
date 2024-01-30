@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/5cd790a0-e585-5ab9-abd4-b5d42bf66ec3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vantage-point-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/87efced4-1ce4-55f9-aa92-52aa40933a50> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3d590b3d-f23e-540c-a036-0443273cfa02> ;
+    urnp:conceptDefinition "Refers to a well established or an existing vantage point, where previous fauna surveys were undertaken." ;
+    urnp:conceptSource "McCallum K, Bignall J, Cox B, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/7785ba33-9bf0-5c93-99db-aef6964d0f75>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vantage-point-statuses.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/87efced4-1ce4-55f9-aa92-52aa40933a50> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/2c98790c-b4f1-59b9-8fa0-a6487a511220> ;
+    urnp:conceptDefinition "Refers to a new vantage point or a point that was previously unknown, where fauna surveys will be undertaken." ;
+    urnp:conceptSource "McCallum K, Bignall J, Cox B, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/87efced4-1ce4-55f9-aa92-52aa40933a50>
+    a skos:Collection ;
+    dcterms:description "Whether the vantage point is a 'new vantage point' or an 'existing' vantage point' from previous survey." ;
+    dcterms:source "McCallum K, Bignall J, Cox B, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/2c98790c-b4f1-59b9-8fa0-a6487a511220> ,
+        <https://linked.data.gov.au/def/nrm/3d590b3d-f23e-540c-a036-0443273cfa02> ;
+    skos:prefLabel "Vantage point statuses" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vantage-point-statuses.ttl"^^xsd:anyURI ;
+.
+

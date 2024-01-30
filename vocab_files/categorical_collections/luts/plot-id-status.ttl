@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/2c5fe71a-1e70-5a33-b167-2cee927e1fda>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-id-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/7e467d40-754f-57cd-80e6-7d2084451afd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7f1b3b3d-c5f7-52f8-a244-c9d3775d8fc3> ;
+    urnp:conceptDefinition "Refers to the plot identifier representing an existing plot." ;
+    urnp:conceptSource "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/6b814a22-fbc4-552e-87fb-6b295d7e55a3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-id-status.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/7e467d40-754f-57cd-80e6-7d2084451afd> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0551492f-2f32-50a9-9efa-cc573471d11e> ;
+    urnp:conceptDefinition "Refers to the plot identifier representing a new survey plot." ;
+    urnp:conceptSource "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/7e467d40-754f-57cd-80e6-7d2084451afd>
+    a skos:Collection ;
+    dcterms:description "Refers to whether the plot identifier refers to an 'existing plot' or a 'new plot'." ;
+    dcterms:source "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0551492f-2f32-50a9-9efa-cc573471d11e> ,
+        <https://linked.data.gov.au/def/nrm/7f1b3b3d-c5f7-52f8-a244-c9d3775d8fc3> ;
+    skos:prefLabel "Plot ID statuses" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-id-status.ttl"^^xsd:anyURI ;
+.
+
