@@ -10,2427 +10,2111 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         skos:Concept ,
         tern:Method ;
-    dcterms:description """
-    <h3 class="list-paragraph" id="module-overview">Module overview</h3>
-<p>
-  This module covers the procedures and guidelines for classifying vegetation
-  across the project area. The methodology is similar to that of Sparrow and
-  Leitch (2009) and involves collecting structural and floristic data at precise
-  vegetation mapping points, located in areas of homogeneous vegetation
-  representative of the visually distinct vegetation associations within the
-  project area. At each vegetation mapping point, an approximate area of 10 x 10
-  m centred around the point is considered when collecting the data.
-</p>
-<p>The following information is recorded at each vegetation mapping point:</p>
-<ul>
-  <li>
-    <p>
-      GPS location, date and time (auto-recorded in the App, professional grade
-      GNSS preferred (e.g. Trimble R1) but not essential)
-    </p>
-  </li>
-  <li>
-    <p>
-      Static photo (facing south, to minimise the effect of shadow and ensure
-      consistent photos)
-    </p>
-  </li>
-  <li>
-    <p>
-      Measure of homogeneity (the shortest distance to a vegetation association
-      different to the one being sampled; maximum input of 1000 m)
-    </p>
-  </li>
-  <li>
-    <p>
-      Visual estimate of the foliage projective cover (to the nearest 1%) for
-      all flora species occurring at covers greater than 5%
-    </p>
-  </li>
-  <li>
-    <p>
-      Dominant growth form and maximum height for each flora species occurring
-      at covers greater than 5%
-    </p>
-  </li>
-  <li>
-    <p>Visual estimate of percentage cover for physical substrate components</p>
-  </li>
-  <li><p>Vegetation growth stage class</p></li>
-  <li><p>Disturbance class</p></li>
-  <li><p>Fire history class</p></li>
-  <li>
-    <p>
-      Vascular flora voucher specimens are collected when a species
-      identification is uncertain.
-    </p>
-  </li>
-</ul>
-<p>
-  Once the data is entered into the App, a structural formation description and
-  NVIS Level 5 (association) classification is auto-generated. A field ID name
-  can also be assigned to the vegetation mapping points (e.g. VA1a, VA1b, VA2).
-  This information is helpful for project area stratification, mapping and
-  reporting.
-</p>
-<p>
-  The vegetation mapping module can be done prior to other field modules to help
-  inform the selection of plot and targeted survey locations, however this is
-  not always possible or practical. In some instances, plots may be located at a
-  similar location to the vegetation mapping points.
-</p>
-<p>
-  The number of vegetation mapping points will depend on a range of factors,
-  such as the survey aims, availability/accuracy of existing mapping, size of
-  the project area and the variability of the vegetation (refer to post
-  field-survey tasks). The greater the number of vegetation mapping points, the
-  more accurate the vegetation mapping will be. For example, for a map scale of
-  1:50,000, at least one vegetation mapping point is recommended in each
-  visually distinct vegetation association per every 1 km<sup>2</sup> (Gunn
-  <em>et al.</em> 1988).
-</p>
-<p>This module has links to the following modules:</p>
-<ul>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32"
-          >Plot description</a
-        ></em
-      >
-      – structural formation, vegetation growth stage, disturbance and fire
-      history class are assigned at vegetation mapping points as per the
-      <em>Plot description</em> module.
-    </p>
-  </li>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6"
-          >Opportunistic observations</a
-        ></em
-      >
-      – the species field names used when collecting voucher specimens for this
-      module need to align with those used in other modules.
-    </p>
-  </li>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"
-          >Floristics</a
-        ></em
-      >
-      – voucher specimens collected from a vegetation mapping point are
-      additional to any collected within a plot. The species field names used
-      for this module need to align with those used in other modules.
-    </p>
-  </li>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b"
-          >Cover</a
-        ></em
-      >
-      – if plots are later placed at vegetation mapping points, then foliage
-      projective cover data (to inform NVIS Level 5) collected at vegetation
-      mapping points can be cross-checked against quantitative cover values
-      obtained in the <em>Cover</em> module.
-    </p>
-  </li>
-  <li>
-    <p>
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9"
-          >Photo points</a
-        ></em
-      >
-      – a static photo(s) is taken at each vegetation mapping point and should
-      capture the key components of the vegetation association. The
-      <em>Photo points</em> module specifies the camera settings for taking the
-      static photo(s).
-    </p>
-  </li>
-</ul>
-<h3 class="list-paragraph" id="prior-to-the-field">Prior to the field</h3>
-<ul>
-  <li>
-    <p>
-      Review existing data, available aerial/satellite imagery, NVIS/other
-      vegetation mapping for the area of interest and surrounds. This will
-      provide an indication of the likely extent of native vegetation cover and
-      the vegetation types to be expected (and whether any threatened species or
-      ecological communities have been recorded in or around the area), assist
-      with project area level stratification for vegetation mapping/survey
-      purposes, and help to determine the potential number of survey points
-      required. Refer to the
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821"
-          >Plot selection and layout</a
-        ></em
-      >
-      Module for key sources of information to review.
-    </p>
-  </li>
-  <li>
-    <p>
-      Determine if vegetation mapping is necessary and at what scale (see step
-      4). This will depend on the:
-    </p>
-  </li>
-  <li><p>Scale, aims, requirements and budget of the project</p></li>
-  <li>
-    <p>
-      The availability, scale and accuracy (spatial and classification) of
-      existing mapping
-    </p>
-  </li>
-  <li>
-    <p>
-      Changes to the project area since previous vegetation survey/mapping was
-      undertaken.
-    </p>
-  </li>
-  <p>
-    <strong>Note</strong>: it may not be necessary to undertake this module if
-    the project area is small (e.g. &lt;5 ha) and the range of visually distinct
-    vegetation associations are already represented within survey plots.
-  </p>
-  <li>
-    <p>
-      Determine what needs to be mapped based on the scope of the project (i.e.
-      all of project area or only areas to be impacted or managed).
-    </p>
-  </li>
-  <li>
-    <p>Determine if a reconnaisance survey is necessary to:</p>
-    <ul>
-      <li><p>Verify the accuracy of existing information</p></li>
-      <li>
-        <p>
-          Confirm if a nationally threatened species/ecological community is
-          present
-        </p>
-      </li>
-      <li>
-        <p>
-          Undertake site stratification (i.e. mud-map of visually distinct
-          vegetation associations) based on visual interpretation
-        </p>
-      </li>
-    </ul>
-    <p>
-      <strong>Note:</strong> Collecting vegetation mapping point data during a
-      reconnaissance survey helps to determine the associations present, to
-      inform subsequent vegetation classification and selection of survey plots.
-      Where a reconnaissance survey is unfeasible or unnecessary, vegetation
-      mapping can be undertaken while travelling across the project area (e.g.
-      to select plot locations or between existing plots).
-    </p>
-  </li>
-
-  <li>
-    <p>
-      Determine how many vegetation mapping points are required and how they are
-      spread across the project area. There is no set standard however consider:
-    </p>
-    <ul>
-      <li><p>Project aims, requirements and budget</p></li>
-      <li><p>Size of the project area/vegetation associations</p></li>
-      <li><p>Number and complexity of vegetation associations</p></li>
-      <li><p>Site access/practicalities</p></li>
-      <li>
-        <p>
-          Desired scale of mapping (the more points, the more accurate the
-          output)
-        </p>
-      </li>
-      <li><p>Coverage already provided by vegetation plots</p></li>
-      <li>
-        <p>
-          Environmental impact assessment requirements (e.g. sampling intensity
-          and proximity to proposed development footprint)
-        </p>
-      </li>
-      <li>
-        <p>Any state level survey requirements.</p>
-      </li>
-    </ul>
-    <p>
-      <strong>Note</strong>: Vegetation mapping points should cover the range of
-      visually distinct vegetation associations present, including common,
-      threatened and exotic. Vegetation mapping points should be in areas of
-      homogeneous vegetation. As a guide, for a 1:50,000 mapping scale, a
-      minimum of one vegetation mapping point is recommended in each visually
-      distinct vegetation association per every 1 km<sup>2</sup>
-      (Gunn et al. 1988; Brocklehurst et al. 2007). Refer to <a href='#appendix-c'>Appendix C</a>.
-      Recommended sampling based on mapping scale for sampling intensity
-      recommendations based on the desired mapping scale. It is recommended that
-      vegetation mapping points are at least 100 m apart to avoid
-      auto-correlation.
-    </p>
-  </li>
-</ul>
-    """^^rdf:HTML ;
-    dcterms:source """
-    <h3 class="list-paragraph" id="references">References</h3>
-<ul>
-  <li>
-    <p>
-      Addicott, E, Neldner, VJ, Ryan, T (2021) Aligning quantitative vegetation
-      classification and landscape scale mapping: updating the classification
-      approach of the Regional Ecosystem classification system used in
-      Queensland.
-      <em>Australian Journal of Botany</em>
-    </p>
-  </li>
-  <li>
-    <p>
-      Addicott, E, Newton, M, Laurance, S, Neldner, V, Laidlaw, M, Butler, D
-      (2018) A new classification of savanna plant communities on the igneous
-      rock lowlands and Tertiary sandy plain landscapes of Cape York Peninsula
-      bioregion.
-      <strong>18</strong>, 29-72.
-    </p>
-  </li>
-  <li>
-    <p>
-      Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E, Tokmakoff,
-      A, Lowe, AJ (2018) Floristic and structural assessment of Australian
-      rangeland vegetation with standardized plot-based surveys.
-      <em>PLoS One</em> <strong>13</strong>, e0202073.
-    </p>
-  </li>
-  <li>
-    <p>
-      Blázquez-Casado, Á, Calama, R, Valbuena, M, Vergarechea, M, Rodríguez, F
-      (2019) Combining low-density LiDAR and satellite images to discriminate
-      species in mixed Mediterranean forest. <em>Annals of Forest Science</em>
-      <strong>76</strong>, 1-14.
-    </p>
-  </li>
-  <li>
-    <p>
-      Brocklehurst, P, Lewis, D, Napier, D, Lynch, D (2007) Northern Territory
-      Guidelines and Field Methodology for Vegetation Survey and Mapping.
-      Technical Report No. 02/2007D. Department of Natural Resources,
-      Environment and the Arts, Palmerston, Northern Territory.
-    </p>
-  </li>
-  <li>
-    <p>
-      De Cáceres, M, Wiser, SK (2012) Towards consistency in vegetation
-      classification. <em>Journal of Vegetation Science</em>
-      <strong>23</strong>, 387-393.
-    </p>
-  </li>
-  <li>
-    <p>
-      Executive Steering Committee for Australian Vegetation Information (2003)
-      Australian Vegetation Attribute Manual: National Vegetation Information
-      System, Version 6.0. Department of the Environment and Heritage, Canberra.
-      Available at
-      <a
-        href="https://www.environment.gov.au/land/publications/australian-vegetation-attribute-manual-v6/section-2"
-        >https://www.environment.gov.au/land/publications/australian-vegetation-attribute-manual-v6/section-2</a
-      >.
-    </p>
-  </li>
-  <li>
-    <p>
-      Gellie, NJ, Hunter, JT, Benson, JS, Kirkpatrick, JB, Cheal, DC, McCreery,
-      K, Brocklehurst, P (2018) Overview of plot-based vegetation classification
-      approaches within Australia. <em>Phytocoenologia</em> <strong>48</strong>,
-      251–272.
-    </p>
-  </li>
-  <li>
-    <p>
-      Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z,
-      Lowe, AJ (2017) Opportunities for integrated ecological analysis across
-      inland Australia with standardised data from Ausplots Rangelands.
-      <em>PLoS One</em> <strong>12</strong>, e0170137.
-    </p>
-  </li>
-  <li>
-    <p>
-      Gunn, R, Beattie, J, Reid, R, Van de Graaff, R (1988) Guidelines for
-      conducting surveys. In 'Australian soil and land survey handbook.' (Inkata
-      Press: Melbourne, Victoria)
-    </p>
-  </li>
-  <li>
-    <p>
-      Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey: Using the
-      Biological Survey of South Australia. Department of Environment and
-      Natural Resources, Adelaide.
-    </p>
-  </li>
-  <li>
-    <p>
-      Lewis, DL, Brocklehurst, PB, Thackway, R, Hill, JV (2008) Adopting
-      national vegetation guidelines and the National Vegetation Information
-      System (NVIS) framework in the Northern Territory. <em>Cunninghamia</em>
-      <strong>10</strong>, 557-567.
-    </p>
-  </li>
-  <li>
-    <p>
-      McKenzie, NJ, Grundy, M, Webster, R, Ringrose-Voase, A (2008) 'Guidelines
-      for surveying soil and land resources.' (CSIRO Publishing: Melbourne)
-    </p>
-  </li>
-  <li>
-    <p>
-      NVIS Technical Working Group (2017) Australian Vegetation Attribute
-      Manual: National Vegetation Information System, Version 7.0. Department of
-      the Environment and Energy, Canberra.
-    </p>
-  </li>
-  <li>
-    <p>
-      Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
-      Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
-      vegetation and soil survey method for surveillance monitoring of rangeland
-      environments.
-      <em>Frontiers in Ecology and Evolution</em> <strong>8</strong>, 157.
-    </p>
-  </li>
-  <li>
-    <p>
-      Sparrow, B, Leitch, E (2009) Vegetation Survey and Mapping of the Eastern
-      and Southern Finke Bioregion and the NT Stony Plains Inlier, NT and SA.
-      The Department of Natural Resources, Environment, The Arts and Sport,
-      Alice Springs.
-    </p>
-  </li>
-  <li>
-    <p>
-      Thackway, R, Neldner, V, Bolton, M, 2008. Vegetation, Guidelines for
-      Surveying Soil and Land Resources (N. McKenzie, M. Grundy, R. Webster, and
-      A. Ringrose-Voase, editors). CSIRO Publishing, Melbourne, Victoria,
-    </p>
-  </li>
-  <li>
-    <p>
-      The National Committee on Soil and Terrain (2009) 'Australian Soil and
-      Land Survey Field Handbook.' (CSIRO Publishing: Melbourne)
-    </p>
-  </li>
-  <li>
-    <p>
-      Tierney, D, Powell, M, CE, E, 2017. Vegetation Mapping. Oxford
-      Bibliography, Oxford Journals, New York.
-    </p>
-  </li>
-  <li>
-    <p>
-      Tokmakoff, A, Sparrow, B, Turner, D, Lowe, A (2016) AusPlots Rangelands
-      field data collection and publication: Infrastructure for ecological
-      monitoring.
-      <em>Future Generation Computer Systems</em> <strong>56</strong>, 537–549.
-    </p>
-  </li>
-  <li>
-    <p>
-      Uyeda, KA, Warkentin, KK, Stow, DA, O'Leary, JF, Snavely, RA, Lambert, J,
-      Bolick, LA, O'Connor, K, Munson, B, Loerch, AC (2020) Vegetation mapping
-      using hierarchical object‐based image analysis applied to aerial imagery
-      and lidar data. <em>Applied Vegetation Science</em> <strong>23</strong>,
-      80-93.
-    </p>
-  </li>
-  <li>
-    <p>
-      White, A, Sparrow, B, Leitch, E, Foulkes, J, Flitton, R, Lowe, AJ,
-      Caddy-Retalic, S (2012) 'AusPlots Rangelands Survey Protocols Manual.'
-      (The University of Adelaide Press: Adelaide)
-    </p>
-  </li>
-  <li>
-    <p>
-      Xie, Y, Sha, Z, Yu, M (2008) Remote sensing imagery in vegetation mapping:
-      a review. <em>Journal of Plant Ecology</em> <strong>1</strong>, 9–23.
-    </p>
-  </li>
-  <li>
-    <p>
-      Yadav, B (2019) Mapping species composition and structure in wet eucalypt
-      forest using multi-source remote sensing data. University of Tasmania.
-    </p>
-  </li>
-</ul>
-    """^^rdf:HTML ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """
-    <h3 class="list-paragraph" id="key-definitions-and-terminology">
-  Key definitions and terminology
-</h3>
-<table>
-  <caption>
-    <p>
-      Table 1. Key definitions and terms used in the vegetation mapping module.
-    </p>
-  </caption>
-  <colgroup>
-    <col style="width: 19%" />
-    <col style="width: 80%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Term</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td><strong>Vegetation classification</strong></td>
-      <td>
-        Grouping together vegetation communities that are perceived as similar
-        in order to simplify the description of the vegetation patterns within a
-        given geographical area (De Cáceres and Wiser 2012).
-      </td>
-    </tr>
-    <tr class="even">
-      <td><strong>Vegetation mapping point</strong></td>
-      <td>
-        Geo-defined locations within the project area at which the vegetation is
-        classified consistent with Level 5 (association) of the NVIS vegetation
-        hierarchy.
-      </td>
-    </tr>
-    <tr class="odd">
-      <td><strong>Vegetation association</strong></td>
-      <td>
-        A climax community of which the dominant stratum has a qualitatively
-        uniform floristic composition and which exhibits uniform structure as a
-        whole (Executive Steering Committee for Australian Vegetation
-        Information 2003).
-      </td>
-    </tr>
-    <tr class="even">
-      <td><strong>NVIS</strong></td>
-      <td>
-        National Vegetation Information System – Framework that enables the
-        compilation of a nationally consistent vegetation dataset from data
-        collected by states and territories. It provides a comprehensive means
-        of describing and representing vegetation information based on
-        establishing relationships between structural and floristic data.
-      </td>
-    </tr>
-    <tr class="odd">
-      <td><strong>Homogeneity measure</strong></td>
-      <td>
-        A record of the visual estimate (in metres) of the shortest distance
-        from the vegetation mapping point to a vegetation association different
-        to the one being sampled.
-      </td>
-    </tr>
-    <tr class="even">
-      <td><strong>Foliage projective cover</strong></td>
-      <td>
-        The percentage of ground area occupied by the vertical projection of
-        foliage, being the actual vegetation cover (excludes in-canopy sky).
-      </td>
-    </tr>
-    <tr class="odd">
-      <td><strong>Cluster analysis</strong></td>
-      <td>
-        Estimates association (resemblance, affinity, distance) between any set
-        of objects described by a suite of variables (attributes), and
-        classifies the objects into groups.
-      </td>
-    </tr>
-  </tbody>
-</table>
-    """^^rdf:HTML ;
-    skos:note """
-    <h3 class="list-paragraph" id="additional-guidelines">Additional guidelines</h3>
-<h4 id="vegetation">Vegetation</h4>
-<ul>
-  <li>
-    <p>
-      The mapping interface within the App will allow you to track your location
-      and record and visualise your vegetation mapping points (which will ensure
-      an adequate number and distribution of points) and create a new vegetation
-      mapping data layer.
-    </p>
-  </li>
-  <li>
-    <p>
-      Existing vegetation mapping can also be loaded onto the GPS enabled mobile
-      device as a georeferenced PDF for use in an offline mapping application
-      (e.g. Avenza Maps). Although this approach does not allow for data
-      collection and visualization, it will allow you to track your location
-      relative to the mapped vegetation within the project area.
-    </p>
-  </li>
-  <li>
-    <p>
-      Click on information buttons within the App to access more information and
-      a description about the collection fields.
-    </p>
-  </li>
-  <li>
-    <p>
-      Where there is uncertainty in estimating the homogeneity measure, be
-      conservative in estimating the distance (it is better to underestimate to
-      ensure homogeneity). GPS error should also be taken into consideration,
-      particularly if the homogeneity measure is small. If working in large
-      homogeneous areas, existing field mapping and use of the vehicle odometer
-      may help to estimate the shortest distance to a different vegetation
-      association to that being sampled.
-    </p>
-  </li>
-  <li>
-    <p>
-      Where it is not possible to directly observe the distance to a different
-      association (e.g. goes over dune crest), estimate the furthest distance
-      that you are sure is within the same association (i.e. as far as you can
-      still see the vegetation association from the point you are standing).
-    </p>
-  </li>
-  <li>
-    <p>
-      The following growth forms are allowed for each stratum (these will be
-      pre-filtered in the App based on species selection):
-    </p>
-    <ul>
-      <li><p>Upper – trees, tree mallee</p></li>
-      <li>
-        <p>
-          Middle – shrubs, low trees, mallee shrubs, tall grasses, grass trees
-        </p>
-      </li>
-      <li>
-        <p>
-          Ground – grasses, forbs, rushes, sedges, lichens, low shrubs, ferns,
-          grass trees.
-        </p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>
-      Only species that fall into the growth forms associated with each stratum
-      will be available in the drop-down list for that layer (e.g. only species
-      classified as trees or tree mallees can be selected from the upper story
-      species lists).
-    </p>
-  </li>
-  <li>
-    <p>
-      The structural formation and NVIS Level 5 classification is derived from
-      the species’ cover, growth form and height data and will auto-generate
-      once a vegetation mapping location record is complete. For a list of
-      growth forms, height classes and cover codes, refer to the
-      <em>Vegetation Resources</em> information provided as part of the
-      <a href="#appendices">Appendices</a> at the end of this module or click on the info button within
-      the App.
-    </p>
-  </li>
-  <li>
-    <p>
-      You can collect opportunistic observations (flora and fauna) while
-      undertaking vegetation mapping.
-    </p>
-  </li>
-  <li>
-    <p>
-      See the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95">Plant tissue vouchering</a></em> module for procedures to collect
-      leaf material from a voucher for downstream molecular analysis. Plant
-      tissue vouchering is not necessary for this module but is an option if
-      particular species of interest are observed.
-    </p>
-  </li>
-  <li>
-    <p>
-      If necessary, you can amend the record after clicking ‘Save’ by using the
-      ‘Edit’ function.
-    </p>
-  </li>
-  <li>
-    <p>
-      If interested in recording the boundary between two vegetation
-      associations to assist with project area stratification and vegetation
-      mapping, this should be done in the Field notebook App feature.
-    </p>
-  </li>
-  <li>
-    <p>
-      The mapping interface will show the location of all the point samples over
-      aerial imagery. Points can be selected, coloured and labelled based on the
-      vegetation association so that similar vegetation associations can be
-      classed together to assist field stratification (i.e. 1a, 1b, 1c, 2).
-    </p>
-  </li>
-</ul>
-<h4 id="photos">Photos</h4>
-<ul>
-  <li><p>Select the highest resolution possible on your device.</p></li>
-  <li>
-    <p>
-      Where possible, take the photo facing south and ensure any large trees or
-      shrubs do not obscure the photo.
-    </p>
-  </li>
-</ul>
-<h4 id="species-identification">Species identification</h4>
-<ul>
-  <li>
-    <p>
-      Tracking of voucher specimens is of vital importance. Consequently, TERN
-      have created printed adhesive voucher labels that have a barcode on them
-      that can be scanned by mobile device software and linked directly into the
-      App. The voucher labels are available from DCCEEW/TERN. Note that a separate
-      batch of sequential barcodes are used for each plant voucher, as well as
-      each leaf tissue sample. Therefore, care is need to ensure the correct
-      label is being used.
-    </p>
-  </li>
-  <li>
-    <p>
-      When entering a field name for the vouchers it is essential that the field
-      name makes sense to you as it will be used in subsequent modules for data
-      collection. The name can be anything, but it is essential that the name is
-      used on every occasion that you are detailing that species; you must be
-      consistent with its use across the project.
-    </p>
-  </li>
-  <li>
-    <p>
-      The field names will not be made publicly available when the plot data is
-      published, however herbarium staff will have access to your field names.
-    </p>
-  </li>
-  <li>
-    <p>
-      Avoid using labels such as ‘Acacia sp.’. Use a descriptive word instead of
-      ‘sp.’ (e.g. Acacia spiky); this saves confusion later regarding whether it
-      was a genuine species in a non-identifiable vegetative form or not.
-    </p>
-  </li>
-  <li>
-    <p>
-      Use consistent taxonomy across the jurisdictions following published names
-      used in the Australian Plant Name Index.
-    </p>
-  </li>
-</ul>
-<h4 id="collecting-vouchers">Collecting vouchers</h4>
-<ul>
-  <li>
-    <p>
-      To aid identification, each voucher should ideally include when available:
-      flowers or buds, leaf, fruit, and bark (for trees). See the
-      <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics</a></em> module for an example. Try to minimise the number of
-      individual specimens needed to represent each species by maximising the
-      number of plant components (e.g. flowers, fruit, leaves) on each sample
-      collected.
-    </p>
-  </li>
-  <li>
-    <p>
-      If available, collect young, actively growing material for plant tissue
-      vouchering. Although it is inevitable that during some surveys only
-      sterile or vegetative material will be available, such material should
-      still be collected.
-    </p>
-  </li>
-  <li>
-    <p>
-      For small species, collect the whole plant, including the basal material
-      and roots, particularly for Gramineae (Poaceae), Cyperaceae and Juncaceae.
-      See the <em><a href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics</a></em> module for an example.
-    </p>
-  </li>
-  <li>
-    <p>For small annuals and ephemerals, collect a number of individuals.</p>
-  </li>
-  <li>
-    <p>For wet specimens, wrap them in newspaper to assist drying-out.</p>
-  </li>
-  <li>
-    <p>
-      For small wet specimens, wrap them in newspaper and place them in a small
-      snap-lock bag or paper bag until ready for pressing.
-    </p>
-  </li>
-  <li>
-    <p>
-      As a minimum requirement, press specimens by the end of each day’s field
-      work. Pressing plants in the field ensures that none are lost and also
-      speeds up the identification process as diagnostic characters will be
-      better preserved when pressed soon after collection.
-    </p>
-  </li>
-  <li>
-    <p>
-      When pressing, use one folded tabloid sized newspaper sheet for each
-      specimen and use corrugated cardboard dividers frequently – to a maximum
-      of one cardboard between every fifth specimen or more frequently for bulky
-      or wet specimens.
-    </p>
-  </li>
-  <li>
-    <p>
-      Change the newspaper regularly to prevent specimens becoming mouldy.
-      Frequent changes will be necessary if specimens were damp when collected.
-      Place press in a dryer as soon as possible (or at least a warm, dry
-      place).
-    </p>
-  </li>
-  <li>
-    <p>
-      Keep succulent plants in a separate press to facilitate easier changing of
-      papers and reduce the risk of damaging other specimens.
-    </p>
-  </li>
-  <li>
-    <p>
-      Succulent plants are difficult to dry and can be frozen overnight (either
-      in the field or on return to the office) to fracture the cell walls
-      enabling the moisture to escape. Once frozen, the specimen can be
-      transferred to newspaper and cardboard in the press for the vegetation
-      mapping point from which it was recorded.
-    </p>
-  </li>
-</ul>
-<h3 class="list-paragraph" id="post-field-survey-tasks">
-  Post-field survey tasks
-</h3>
-<h4 class="list-paragraph" id="a.-sample-curation">A. Sample curation</h4>
-<ul>
-  <li>
-    <p>Inspect the pressed specimens and change newspaper where necessary.</p>
-  </li>
-  <li>
-    <p>
-      Arrange for delivery of the specimens to the relevant herbarium for
-      identification. The procedures for lodging specimens for identification
-      with each herbarium are covered by separate agreements with each herbarium
-      and <em>Council of the Heads of Australasian Herbaria</em>. Details of
-      agreements that relate to the delivery of samples can be released to
-      collection agencies where this is appropriate.
-    </p>
-  </li>
-  <li>
-    <p>
-      Provide a species list with the specimens for the herbarium. The species
-      list can be extracted from the data supplied via the App for the herbarium
-      to use.
-    </p>
-  </li>
-  <li>
-    <p>
-      Once the species have been identified by the state herbarium, update any
-      assigned field names in the App.
-    </p>
-  </li>
-</ul>
-<h4 class="list-paragraph" id="b.-classification-and-analysis">
-  B. Classification and analysis
-</h4>
-<p>
-  Numerical classification of vegetation mapping point data can be performed to
-  describe and delineate vegetation associations within the project area in a
-  robust and consistent way (Thackway <em>et al.</em> 2008).
-</p>
-<p>
-  A hierarchical clustering analysis can be performed on the structural and
-  floristic data (post-field) to classify the NVIS associations at the
-  vegetation mapping points. The vegetation mapping point data is converted to
-  polygons by buffering the field location using the homogeneity measure. This
-  represents the area in which the floristic data (and thus mapping class) is
-  deemed to adequately describe the vegetation association (Sparrow and Leitch
-  2009).
-</p>
-<p>
-  This information is subsequently used to develop a vegetation map; the primary
-  output for most studies. The methodology used to develop a vegetation map will
-  depend on the project specifics, and should be clearly stated. Visual
-  extrapolation of the classification at the vegetation mapping point ‘polygons’
-  may be adequate for project-level vegetation mapping, but has limited use at
-  the broader scale.
-</p>
-<p>
-  It is more accurate, repeatable and efficient to use an image analysis
-  approach to spatial classification, particularly over large project areas with
-  sporadic field data. To perform such spatial classification requires satellite
-  imagery at a suitable scale and taken in the right conditions (Sparrow and
-  Leitch 2009). Satellite imagery of high spatial resolution has led to improved
-  analyses, when matched with field data of comparable positional accuracy. The
-  fusion of remote sensing datasets (e.g. Lidar combined with satellite imagery)
-  and field based data has powerful applications to assess and map plant species
-  composition (Blázquez-Casado <em>et al.</em> 2019; Yadav 2019).
-</p>
-<p>
-  A range of techniques exist for the classification and mapping of satellite
-  derived data. Sparrow and Leitch (2009) used a stepwise supervised maximum
-  likelihood classification approach. This method analyses the spectral
-  properties of each image pixel and assigns it to the class to which it most
-  likely belongs, defined using the field data and statistically analysing
-  pixels known to relate to each of the mapping classes (essentially training
-  areas) that were determined from the hierarchical clustering technique. Some
-  post processing tasks are required to improve the accuracy of the final
-  mapping units.
-</p>
-    """^^rdf:HTML ;
-    skos:prefLabel "Vegetation Mapping Module" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vegetation-mapping/vegetation-mapping.ttl"^^xsd:anyURI ;
-    tern:appendix """
-    <h3 id="appendices"><strong>APPENDICES</strong></h3>
-<h4>Appendix A. Supporting photos and diagrams</h4>
-<h4 class="Title-heading-3" id="homogeneity-measure">Homogeneity measure</h4>
-<h4 class="Title-heading-3" id="section-2">
-  <img
-    src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/homogeneity-measure.png"
-    alt="Example of homogeneity measure"
-    widteh="879"
-    height="600"
-  />
-</h4>
-<p>Example of homogeneity measure.</p>
-<h4 class="Title-heading-3" id="percent-cover">Percent Cover</h4>
-<table>
-  <colgroup>
-    <col style="width: 29%" />
-    <col style="width: 30%" />
-    <col style="width: 39%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/percent-cover-1.png"
-          alt="Percent cover 1"
-          widteh="151"
-          height="156"
-        />
-      </th>
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/percent-cover-2.png"
-          alt="Percent cover 2"
-          widteh="150"
-          height="156"
-        />
-      </th>
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/percent-cover-3.png"
-          alt="Percent cover 3"
-          widteh="147"
-          height="156"
-        />
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-<p>Examples of 5% plant species cover.</p>
-<h4>Appendix B. App screen mock-ups</h4>
-<table>
-  <colgroup>
-    <col style="width: 48%" />
-    <col style="width: 51%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/app-screen-vegetation-mapping-module.png"
-          alt="App screen - vegetation mapping module"
-          widteh="312"
-          height="588"
-        />
-      </th>
-      <th>
-        <ul>
-          <li><p>Message pop-up – do you want to save record?</p></li>
-          <li><p>Auto-generated ID</p></li>
-          <li>
-            <p>Field ID (e.g. A1, A2, B1, B2, B3 etc to help with reporting)</p>
-          </li>
-          <li>
-            <p>
-              Homogeneity measure = number field which records the distance in
-              metres from the plot centre to the edge of the vegetation
-              association (nearest edge). If too far to determine, put in
-              distance that vegetation association can still be seen (max 1000
-              m).
-            </p>
-          </li>
-          <li>
-            <p>
-              Growth Stage: Drop-down list; Early regeneration, Advanced
-              regeneration, Mixed age, Mature phase, Senescent phase.
-            </p>
-          </li>
-          <li>
-            <p>
-              Disturbance: Drop-down list with 9 values ranging from no
-              disturbance to highly disturbed.
-            </p>
-          </li>
-          <li>
-            <p>
-              Fire History: Drop-down list; Unburnt, Recently burnt, Past burn.
-            </p>
-          </li>
-          <li>
-            <p>
-              Structural formation and NVIS L5 will populate automatically based
-              on the information provided.
-            </p>
-          </li>
-          <li>
-            <p>
-              Mapping screen will show the location of all the point samples
-              over aerial imagery. Points can be coloured based on the VA. Allow
-              points to be labelled, so that similar VA’s can be classed
-              together (i.e. 1a, 1b, 1c, 2)
-            </p>
-          </li>
-        </ul>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/app-screen-vegetation-photo.png"
-          alt="App screen - vegetation photo"
-          widteh="290"
-          height="302"
-        />
-      </td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/app-screen-plant-species-cover.png"
-          alt="App screen - plant species cover"
-          widteh="296"
-          height="294"
-        />
-      </td>
-      <td>
-        <ul>
-          <li>
-            <p>
-              Cover: Enter the estimated foliage projective cover to nearest 1%
-              for each species with cover over 5%.
-            </p>
-          </li>
-          <li>
-            <p>
-              Growth form: Drop-down list for each species. Choose the dominant
-              growth form for the 10 x 10m. Refer to the Vegetation Resources
-              supporting information for a list of all growth forms.
-            </p>
-          </li>
-          <li><p>Height: Enter the maximum height for each species.</p></li>
-          <li>
-            <p>
-              Takes to voucher screen. Also selection of voucher type (include
-              option of plant tissue voucher)
-            </p>
-          </li>
-          <li>
-            <p>
-              Select which feature has been photographed – i.e. whole plant,
-              leaf, flowers, fruit etc (as per Floristics module).
-            </p>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/app-screen-voucher.png"
-          alt="App screen - voucher"
-          widteh="296"
-          height="322"
-        />
-      </td>
-      <td></td>
-    </tr>
-    <tr class="odd">
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/app-screen-substrate.png"
-          alt="App screen - substrate"
-          widteh="454"
-          height="650"
-        />
-      </td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="appendix-c">Appendix C. Recommended sampling based on mapping scale</h4>
-<h4
-  class="Title-heading-3"
-  id="recommended-number-of-vegetation-mapping-points-based-on-mapping-scale."
->
-  Recommended number of vegetation mapping points based on mapping scale.
-</h4>
-<p>Source: (Gunn et al. 1988).</p>
-<table>
-  <colgroup>
-    <col style="width: 19%" />
-    <col style="width: 27%" />
-    <col style="width: 26%" />
-    <col style="width: 26%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Scale of published map</th>
-      <th>Area in hectares represented by 1 cm<sup>2</sup> on map</th>
-      <th>Recommended sampling density 1 km<sup>2</sup></th>
-      <th>Example: mapping 1000 km<sup>2</sup> No. of sites</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td>1:5 000</td>
-      <td>0.25</td>
-      <td>100</td>
-      <td>100 000</td>
-    </tr>
-    <tr class="even">
-      <td>1:10 000</td>
-      <td>1</td>
-      <td>25</td>
-      <td>25 000</td>
-    </tr>
-    <tr class="odd">
-      <td>1:25 000</td>
-      <td>6.25</td>
-      <td>4</td>
-      <td>4 000</td>
-    </tr>
-    <tr class="even">
-      <td>1:50 000</td>
-      <td>25</td>
-      <td>1</td>
-      <td>1 000</td>
-    </tr>
-    <tr class="odd">
-      <td>1:100 000</td>
-      <td>100</td>
-      <td>0.25</td>
-      <td>250</td>
-    </tr>
-    <tr class="even">
-      <td>1:250 000</td>
-      <td>625</td>
-      <td>0.04</td>
-      <td>40</td>
-    </tr>
-    <tr class="odd">
-      <td>1:1 000 000</td>
-      <td>10 000</td>
-      <td>0.003</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
-<h2 class="list-paragraph" id="section-4"></h2>
-<h4>Appendix D. Vegetation resources</h4>
-<h4 class="Title-heading-3" id="growth-stage">Growth stage</h4>
-<p>Source: (The National Committee on Soil and Terrain 2009), p122.</p>
-<table>
-  <colgroup>
-    <col style="width: 5%" />
-    <col style="width: 10%" />
-    <col style="width: 24%" />
-    <col style="width: 20%" />
-    <col style="width: 20%" />
-    <col style="width: 18%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Code</th>
-      <th>Growth Stage</th>
-      <th>Trees dominant</th>
-      <th>Shrubs dominant</th>
-      <th>Grasses and herbs dominant</th>
-      <th>Cryptograms dominant (mosses and lichens)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td>1</td>
-      <td>Early regeneration</td>
-      <td>
-        Dominated by small, juvenile, dense to very sparse regenerating plants,
-        with or without a few older, widely spaced, emergent plants.
-      </td>
-      <td>
-        Dominated by small, juvenile, dense to very sparse regenerating plants.
-        A few older, widely spaced emergents may be present.
-      </td>
-      <td>
-        Plants small and juvenile stages predominate; bare soil or old litter
-        common.
-      </td>
-      <td>
-        Thin growth of young plants or widely spaced clumps of young plants.
-      </td>
-    </tr>
-    <tr class="even">
-      <td>2</td>
-      <td>Advanced regeneration</td>
-      <td>
-        Dominated by dense to sparse, well-developed, immature plants. Large
-        emergents can be present with crown cover &lt;5% of the total crown
-        cover. However, if the cover is &gt;5%, classify as ‘uneven age’. Trees
-        have well developed stems (poles). Crowns have small branches. The
-        height is below maximum height for the stand type. Apical dominance
-        still apparent in vigorous trees.
-      </td>
-      <td>
-        Dominated by dense to sparse, well-developed but not mature plants. If
-        large emergent plants are present, then they occupy &lt;5% crown cover
-        of the dominant stratum; if &gt;5%, classify as ‘uneven age’.
-      </td>
-      <td>
-        Vegetative growth abundant; plants approaching full mature size but
-        reproductive material absent or in early stages only; soil surface
-        largely obscured in average sites.
-      </td>
-      <td>
-        Cover of plants high for the site; some reproduction may be evident.
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>3</td>
-      <td>Uneven (mixed) age</td>
-      <td>
-        Mixed size and age classes, usually identified by two or more strata
-        dominated by the same species, but can also be sites with different
-        species regenerating in the understorey of an older canopy.
-      </td>
-      <td>
-        Mixed size and age classes; usually two or more strata dominated by the
-        same species, but includes sites with different species regenerating in
-        the understorey of an older canopy.
-      </td>
-      <td>
-        A mixture of mature, perennial and immature annual species present on
-        site.
-      </td>
-      <td>
-        A mixture of mature reproductive plants with immature regeneration.
-      </td>
-    </tr>
-    <tr class="even">
-      <td>4</td>
-      <td>Mature phase</td>
-      <td>
-        Well-spaced mature-sized plants or densely packed plants with crowns
-        touching, with or without emergent senescent plants. Trees at maximum
-        height for the type and conditions. Crown at full lateral development in
-        unlocked stands. No apical dominance.
-      </td>
-      <td>
-        May have well-spaced mature-sized plants, or have very densely packed
-        plants with crowns touching, with or without emergent senescent plants.
-      </td>
-      <td>
-        Most plants of reproductive age; depending on vegetation type,
-        reproduction evident, or would be if environmental conditions were
-        appropriate (e.g. water availability).
-      </td>
-      <td>
-        Swards of plants common; plants of mature physiognomy (clump sizes and
-        forms); reproduction common at appropriate times of year or drought/rain
-        cycle; overall health and vigour high.
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>5</td>
-      <td>Senescent phase</td>
-      <td>
-        Dominated by overmature plants particularly in the dominant stratum;
-        evidence of senescence in many plants, some without obvious links to
-        disturbance. Tree crowns show signs of contracting: dead branches and
-        decreased crown diameter and leaf area. Distorted branches and burls may
-        be common. Dead trees may be present.
-      </td>
-      <td>
-        Dominated by old plants (thick stems and primary branches, crowns either
-        extremely dense with much dead wood or thin and open if species sheds
-        dead branches), particularly in the dominant stratum. Many senescent
-        plants, some without obvious links to disturbance.
-      </td>
-      <td>
-        In largely annual vegetation, reproduction is complete and plants are
-        dying or mostly dead; in perennial vegetation, plants have lost vigour,
-        are breaking down; large areas of soil are exposed. Litter accumulation
-        may be high.
-      </td>
-      <td>
-        Clear evidence of the degeneration of plants or clumps; dead older parts
-        of plants may be conspicuous.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 class="Title-heading-3" id="vegetation-structural-formation">
-  Vegetation Structural Formation
-</h4>
-<p><strong>NVIS growth form and structural formation classes</strong></p>
-<p>Source: (NVIS Technical Working Group 2017), p39.</p>
-<table>
-  <colgroup>
-    <col style="width: 12%" />
-    <col style="width: 8%" />
-    <col style="width: 13%" />
-    <col style="width: 12%" />
-    <col style="width: 13%" />
-    <col style="width: 13%" />
-    <col style="width: 12%" />
-    <col style="width: 13%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th colspan="8">Cover characteristics</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td colspan="2">Foliage cover</td>
-      <td>70-100</td>
-      <td>30-70</td>
-      <td>10-30</td>
-      <td>&lt;10</td>
-      <td>0</td>
-      <td>0-5</td>
-    </tr>
-    <tr class="even">
-      <td colspan="2">Crown cover</td>
-      <td>&gt;80</td>
-      <td>50-80</td>
-      <td>20-50</td>
-      <td>0.25-20</td>
-      <td>&lt;0.25</td>
-      <td>0-5</td>
-    </tr>
-    <tr class="odd">
-      <td colspan="2">% Cover</td>
-      <td>&gt;80</td>
-      <td>50-80</td>
-      <td>20-50</td>
-      <td>0.25-20</td>
-      <td>&lt;0.25</td>
-      <td>0-5</td>
-    </tr>
-    <tr class="even">
-      <td colspan="2">Cover code</td>
-      <td>D</td>
-      <td>C</td>
-      <td>I</td>
-      <td>R</td>
-      <td>BI</td>
-      <td>BC</td>
-    </tr>
-    <tr class="odd">
-      <td>Growth form</td>
-      <td><strong>Height ranges (m)</strong></td>
-      <td colspan="6"><strong>Structural formation classes</strong></td>
-    </tr>
-    <tr class="even">
-      <td>Tree, palm</td>
-      <td>&lt;10, 10-30, &gt;30</td>
-      <td>Closed forest</td>
-      <td>Open forest</td>
-      <td>Woodland</td>
-      <td>Open woodland</td>
-      <td>Isolated trees</td>
-      <td>Isolated clumps of trees</td>
-    </tr>
-    <tr class="odd">
-      <td>Tree mallee</td>
-      <td>&lt;3, &lt;10, 10-30</td>
-      <td>Closed mallee forest</td>
-      <td>Open mallee forest</td>
-      <td>Mallee woodland</td>
-      <td>Open mallee woodland</td>
-      <td>Isolated mallee trees</td>
-      <td>Isolated clumps of mallee trees</td>
-    </tr>
-    <tr class="even">
-      <td>Shrub, cycad, grass-tree, tree-fern</td>
-      <td>&lt;1, 1-2, &gt;2</td>
-      <td>Closed shrubland</td>
-      <td>Shrubland</td>
-      <td>Open shrubland</td>
-      <td>Sparse shrubland</td>
-      <td>Isolated shrubs</td>
-      <td>Isolated clumps of trees</td>
-    </tr>
-    <tr class="odd">
-      <td>Mallee shrub</td>
-      <td>&lt;3, &lt;10, 10-30</td>
-      <td>Closed mallee shrubland</td>
-      <td>Mallee shrubland</td>
-      <td>Open mallee shrubland</td>
-      <td>Sparse mallee shrubland</td>
-      <td>Isolated mallee shrubs</td>
-      <td>Isolated clumps of mallee shrubs</td>
-    </tr>
-    <tr class="even">
-      <td>Health shrub</td>
-      <td>&lt;1, 1-2, &gt;2</td>
-      <td>Closed heathland</td>
-      <td>Heathland</td>
-      <td>Open heathland</td>
-      <td>Sparse heathland</td>
-      <td>Isolated heath shrubs</td>
-      <td>Isolated clumps of heath shrubs</td>
-    </tr>
-    <tr class="odd">
-      <td>Chenopod shrub</td>
-      <td>&lt;1, 1-2, &gt;2</td>
-      <td>Closed chenopod shrubland</td>
-      <td>Chenopod shrubland</td>
-      <td>Open chenopod shrubland</td>
-      <td>Sparse chenopod shrubland</td>
-      <td>Isolated chenopod shrubs</td>
-      <td>Isolated clumps of chenopod shrubs</td>
-    </tr>
-    <tr class="even">
-      <td>Samphire shrub</td>
-      <td>&lt;0.1, &gt;0.5</td>
-      <td>Closed samphire shrubland</td>
-      <td>Samphire shrubland</td>
-      <td>Open samphire shrubland</td>
-      <td>Sparse samphire shrubland</td>
-      <td>Isolated samphire shrubland</td>
-      <td>Isolated clumps of samphire shrubs</td>
-    </tr>
-    <tr class="odd">
-      <td>Hummock grass</td>
-      <td>&lt;2, 2</td>
-      <td>Closed hummock grassland</td>
-      <td>Hummock grassland</td>
-      <td>Open hummock grassland</td>
-      <td>Sparse hummock grassland</td>
-      <td>Isolated hummock grasses</td>
-      <td>Isolated clumps of hummock grasses</td>
-    </tr>
-    <tr class="even">
-      <td>Tussock grass</td>
-      <td>&lt;0.5, &gt;0.5</td>
-      <td>Closed tussock grassland</td>
-      <td>Tussock grassland</td>
-      <td>Open tussock grassland</td>
-      <td>Sparse tussock grassland</td>
-      <td>Isolated tussock grasses</td>
-      <td>Isolated clumps of tussock grasses</td>
-    </tr>
-    <tr class="odd">
-      <td>Other grass</td>
-      <td>&lt;0.5, &gt;0.5</td>
-      <td>Closed grassland</td>
-      <td>Grassland</td>
-      <td>Open grassland</td>
-      <td>Sparse grassland</td>
-      <td>Isolated grasses</td>
-      <td>Isolated clumps of grasses</td>
-    </tr>
-    <tr class="even">
-      <td>Sedge</td>
-      <td>&lt;0.5, &gt;0.5</td>
-      <td>Closed sedgeland</td>
-      <td>Sedgeland</td>
-      <td>Open sedgeland</td>
-      <td>Sparse sedgeland</td>
-      <td>Isolated sedges</td>
-      <td>Isolated clumps of sedges</td>
-    </tr>
-    <tr class="odd">
-      <td>Rush</td>
-      <td>&lt;0.5, &gt;0.5</td>
-      <td>Closed rushland</td>
-      <td>Rushland</td>
-      <td>Open rushland</td>
-      <td>Sparse rushland</td>
-      <td>Isolated rushes</td>
-      <td>Isolated clumps of rushes</td>
-    </tr>
-    <tr class="even">
-      <td>Forb</td>
-      <td>&lt;0.5, &gt;0.5</td>
-      <td>Closed forbland</td>
-      <td>Forbland</td>
-      <td>Open forbland</td>
-      <td>Sparse forbland</td>
-      <td>Isolated forbs</td>
-      <td>Isolated clumps of forbs</td>
-    </tr>
-    <tr class="odd">
-      <td>Fern</td>
-      <td>&lt;1, 1-2, &gt;2</td>
-      <td>Closed fernland</td>
-      <td>Fernland</td>
-      <td>Open fernland</td>
-      <td>Sparse fernland</td>
-      <td>Isolated ferns</td>
-      <td>Isolated clumps of ferns</td>
-    </tr>
-    <tr class="even">
-      <td>Bryophyte</td>
-      <td>&lt;0.5</td>
-      <td>Closed bryophyteland</td>
-      <td>Bryophyteland</td>
-      <td>Open bryophyteland</td>
-      <td>Sparse Bryophyteland</td>
-      <td>Isolated bryophytes</td>
-      <td>Isolated clumps of bryophytes</td>
-    </tr>
-  </tbody>
-</table>
-<h4 class="Title-heading-3" id="nvis-codes-and-descriptions">
-  NVIS codes and descriptions
-</h4>
-<p><strong>NVIS hierarchy</strong></p>
-<p>
-  Source: (NVIS Technical Working Group 2017). The levels below the orange line
-  are the “complex” levels recommended for vegetation mapping data collection.
-</p>
-<table>
-  <colgroup>
-    <col style="width: 17%" />
-    <col style="width: 21%" />
-    <col style="width: 61%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Hierarchical Level</th>
-      <th>Title</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td>1</td>
-      <td>Class</td>
-      <td>Dominant growth form for the structurally dominant stratum</td>
-    </tr>
-    <tr class="even">
-      <td>2</td>
-      <td>Structural formation</td>
-      <td>
-        Dominant growth form, cover and height for the structurally dominant
-        stratum
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>3</td>
-      <td>Broad floristic formation</td>
-      <td>
-        Dominant genus (or genera) plus growth form, cover and height for the
-        structurally dominant stratum
-      </td>
-    </tr>
-    <tr class="even">
-      <td>4</td>
-      <td>Sub-formation</td>
-      <td>
-        Dominant genus (or genera) plus growth form, cover and height for each
-        of the three main strata (i.e. Upper, Mid and Ground)
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>5</td>
-      <td>Association</td>
-      <td>
-        Dominant growth form, height, cover and species (to a maximum of 3
-        species) for each of the three main strata. (i.e. Upper, Mid and Ground)
-      </td>
-    </tr>
-    <tr class="even">
-      <td>6</td>
-      <td>Sub-Association</td>
-      <td>
-        Dominant growth form, height, cover and species (to a maximum of 5
-        species) for each of the substrata.
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p>
-  <strong
-    >NVIS stratum types, growth forms and height classes permitted within each
-    stratus type</strong
-  >
-</p>
-<p>
-  Source: (NVIS Technical Working Group 2017), p33. Values in () are permitted
-  but not recommended.
-</p>
-<table style="width: 100%">
-  <colgroup>
-    <col style="width: 10%" />
-    <col style="width: 13%" />
-    <col style="width: 31%" />
-    <col style="width: 14%" />
-    <col style="width: 11%" />
-    <col style="width: 19%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Strata</th>
-      <th>NVIS Substratum Code</th>
-      <th>Description</th>
-      <th>Growth Forms<sup>1</sup></th>
-      <th>Height Classes<sup>2</sup></th>
-      <th>Not permitted</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td rowspan="3">Upper (U)</td>
-      <td>U1</td>
-      <td>Tallest tree substratum.</td>
-      <td rowspan="3">
-        <ul>
-          <li><p>trees</p></li>
-          <li><p>tree mallees</p></li>
-        </ul>
-      </td>
-      <td rowspan="3">8,7,6 (5)</td>
-      <td rowspan="3">
-        <ul>
-          <li><p>grasses</p></li>
-          <li><p>shrubs</p></li>
-          <li><p>mallee shrubs</p></li>
-        </ul>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>U2</td>
-      <td>Sub-canopy layer, second tree layer</td>
-    </tr>
-    <tr class="odd">
-      <td>U3</td>
-      <td>Sub-canopy layer, third tree layer</td>
-    </tr>
-    <tr class="even">
-      <td rowspan="3">Middle (M)</td>
-      <td>M1</td>
-      <td>Tallest shrub layer</td>
-      <td rowspan="3">
-        <ul>
-          <li><p>shrubs</p></li>
-          <li><p>low trees</p></li>
-          <li><p>mallee shrubs</p></li>
-          <li><p>tall grasses</p></li>
-          <li><p>grass trees</p></li>
-        </ul>
-      </td>
-      <td rowspan="3">(6) 5, 4, 3</td>
-      <td rowspan="3">
-        <ul>
-          <li><p>mid grasses</p></li>
-          <li><p>low grasses</p></li>
-          <li><p>sedges</p></li>
-          <li><p>tall trees</p></li>
-          <li><p>palms</p></li>
-        </ul>
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>M2</td>
-      <td>Next shrub layer</td>
-    </tr>
-    <tr class="even">
-      <td>M3</td>
-      <td>Third shrub layer</td>
-    </tr>
-    <tr class="odd">
-      <td rowspan="3">Ground (G)</td>
-      <td>G1</td>
-      <td>Tallest ground species</td>
-      <td rowspan="2">
-        <ul>
-          <li><p>grasses</p></li>
-          <li><p>forbs</p></li>
-          <li><p>rushes</p></li>
-          <li><p>sedges</p></li>
-          <li><p>lichens</p></li>
-          <li><p>low shrubs</p></li>
-          <li><p>ferns</p></li>
-          <li><p>cycads</p></li>
-          <li><p>grass-trees</p></li>
-          <li><p>aquatics</p></li>
-        </ul>
-      </td>
-      <td rowspan="2">(4), 3, 2, 1</td>
-      <td rowspan="3">
-        <ul>
-          <li><p>trees</p></li>
-          <li><p>tree mallees</p></li>
-          <li><p>palms</p></li>
-        </ul>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>G2</td>
-      <td>Ground</td>
-    </tr>
-    <tr class="odd">
-      <td>G3</td>
-      <td>Substrate surface</td>
-      <td>
-        <ul>
-          <li><p>bryophytes</p></li>
-          <li><p>lichens</p></li>
-          <li><p>lower plants</p></li>
-        </ul>
-      </td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-<p>
-  <sup>1</sup> Growth forms can take the following values: T = tree, M = tree
-  mallee, S = shrub, Y = mallee shrub, Z = heath shrub, C = chenopod shrub, U =
-  samphire shrub, G = tussock grass, H = hummock grass, W = other grass, V =
-  sedge, R = rush, F = forb, D = tree-fern, E = fern, B = bryophyte, N = lichen,
-  K = epiphyte, L = vine, P = palm, X = grass-tree, A = cycad, J = seagrass, Q =
-  aquatic and O = lower plant.
-</p>
-<p>
-  <sup>2</sup> Height classes can take the following values: 8. &gt;30 m, 7.
-  10-30 m, 6. &lt;10 m, 5. &lt;3 m, 4. &gt;2 m, 3. 1-2 m, 2. 0.5-1 m, 1. &lt;0.5
-  m.
-</p>
-<h4>Growth forms and heights</h4>
-<p><strong>Height classes for specific growth forms</strong></p>
-<p>
-  Source: defined for the NVIS (NVIS Technical Working Group 2017), page 34.
-</p>
-<table style="width: 100%">
-  <colgroup>
-    <col style="width: 10%" />
-    <col style="width: 13%" />
-    <col style="width: 12%" />
-    <col style="width: 16%" />
-    <col style="width: 20%" />
-    <col style="width: 11%" />
-    <col style="width: 16%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th colspan="2">Height</th>
-      <th colspan="5">Growth Form</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td>Height Class</td>
-      <td>Height Range (m)</td>
-      <td>Tree, vine, palm</td>
-      <td>
-        Shrub, heath shrub, chenopod shrub, ferns, samphire shrub, cycad,
-        tree-fern, grass-tree, palm
-      </td>
-      <td>Tree mallee, mallee shrub</td>
-      <td>
-        Tussock grass, hummock grass, other grass, sedge, rush, forbs, vine
-      </td>
-      <td>Bryophyte, lichen, seagrass, aquatic</td>
-    </tr>
-    <tr class="even">
-      <td>8</td>
-      <td>&gt;30</td>
-      <td>Tall</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class="odd">
-      <td>7</td>
-      <td>10-30</td>
-      <td>Mid</td>
-      <td></td>
-      <td>Tall</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>6</td>
-      <td>&lt;10</td>
-      <td>Low</td>
-      <td></td>
-      <td>Mid</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class="odd">
-      <td>5</td>
-      <td>&lt;3</td>
-      <td></td>
-      <td></td>
-      <td>Low</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>4</td>
-      <td>&gt;2</td>
-      <td></td>
-      <td>Tall</td>
-      <td></td>
-      <td>Tall</td>
-      <td></td>
-    </tr>
-    <tr class="odd">
-      <td>3</td>
-      <td>1-2</td>
-      <td></td>
-      <td>Mid</td>
-      <td></td>
-      <td>Tall</td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>2</td>
-      <td>0.5-1</td>
-      <td></td>
-      <td>Low</td>
-      <td></td>
-      <td>Mid</td>
-      <td>Tall</td>
-    </tr>
-    <tr class="odd">
-      <td>1</td>
-      <td>&lt;0.5</td>
-      <td></td>
-      <td>Low</td>
-      <td></td>
-      <td>Low</td>
-      <td>Low</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 class="Title-heading-3" id="photo-vouchers">Photo vouchers</h4>
-<p><strong>Photo voucher instructions and guidelines</strong></p>
-<table>
-  <colgroup>
-    <col style="width: 17%" />
-    <col style="width: 82%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Plant feature</th>
-      <th>Photo voucher instructions and guidelines</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td>Whole plant (i.e. growth form)</td>
-      <td>
-        Photograph the plant habit; that is, its overall shape and form. Where
-        possible please use a scale (e.g. graduated range pole) to show the
-        height of the plant.
-      </td>
-    </tr>
-    <tr class="even">
-      <td>Leaves</td>
-      <td>
-        Photograph the leaves showing shape and any patterns, features (e.g.
-        hairs, spikes) and colour variations (e.g. different coloured top and
-        bottom). If relevant photograph the whole compound leaf and leaflets.
-        Where possible please use a scale (e.g. scale card, coin, pen).
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>Flower/inflorescence</td>
-      <td>
-        If present photograph individual flowers from the front, side and back.
-        If relevant photograph the whole inflorescence (complete flower head).
-        Where possible please use a scale (e.g. scale card, coin, pen).
-      </td>
-    </tr>
-    <tr class="even">
-      <td>Buds</td>
-      <td>
-        If present photograph the buds showing size, shape and number. Where
-        possible please use a scale (e.g. scale card, coin, pen).
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>Fruit</td>
-      <td>
-        If present photograph the fruit showing size, shape and number. Where
-        possible please use a scale (e.g. scale card, coin, pen).
-      </td>
-    </tr>
-    <tr class="even">
-      <td>Seeds</td>
-      <td>
-        If present photograph the seeds showing size, shape and number. Where
-        possible please use a scale (e.g. scale card, coin, pen).
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>Stem</td>
-      <td>
-        If useful for identification photograph the stem (e.g. spines,
-        cross-section shape). Where possible please use a scale (e.g. scale
-        card, coin, pen).
-      </td>
-    </tr>
-    <tr class="even">
-      <td>Bark</td>
-      <td>
-        If useful for identification photograph the bark. Where possible please
-        use a scale (e.g. scale card, coin, pen).
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>Roots/rhizomes</td>
-      <td>
-        If useful for identification photograph the roots or rhizomes. Where
-        possible please use a scale (e.g. scale card, coin, pen).
-      </td>
-    </tr>
-    <tr class="even">
-      <td>Other</td>
-      <td>
-        If useful for identification photograph any other plant features (e.g.
-        branch structure, ligule, thorns). Where possible please use a scale
-        (e.g. scale card, coin, pen).
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p>
-  <strong>Photo voucher examples showing the different plant features</strong>
-</p>
-<table>
-  <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/whole-plant.png"
-          alt="Whole plant (i.e. growth form)"
-          widteh="696"
-          height="928"
-        />
-      </th>
-      <th>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/flowers.png"
-          alt="Flowers/inflorescence"
-          widteh="696"
-          height="928"
-        />
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td>Whole plant (i.e. growth form)</td>
-      <td>Flowers/inflorescence</td>
-    </tr>
-    <tr class="even">
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/buds.png"
-          alt="Buds"
-          widteh="696"
-          height="928"
-        />
-      </td>
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/fruit.png"
-          alt="Fruit"
-          widteh="696"
-          height="928"
-        />
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>Buds</td>
-      <td>Fruit</td>
-    </tr>
-    <tr class="even">
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/leaves.png"
-          alt="Leaves"
-          widteh="696"
-          height="928"
-        />
-      </td>
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/stem.png"
-          alt="Stem"
-          widteh="696"
-          height="928"
-        />
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>Leaves</td>
-      <td>Stem</td>
-    </tr>
-    <tr class="even">
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/roots.png"
-          alt="Roots"
-          widteh="696"
-          height="928"
-        />
-      </td>
-      <td>
-        <img
-          src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/bark.png"
-          alt="Bark"
-          widteh="696"
-          height="928"
-        />
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>Roots</td>
-      <td>Bark</td>
-    </tr>
-  </tbody>
-</table>
-    """^^rdf:HTML ;
-    tern:equipment """
-    <h3 class="list-paragraph" id="equipment">Equipment</h3>
-<ul>
-  <li>
-    <p>
-      Mobile device loaded with the App, and a field GIS app with available
-      layers (e.g. satellite imagery, project area boundaries, prospective
-      vegetation mapping point and plot locations, vegetation mapping, landform
-      features, access tracks, watercourses)
-    </p>
-  </li>
-  <li><p>Trimble R1 GNSS receiver</p></li>
-  <li><p>DSLR camera and micro SD card(s) (backup)</p></li>
-  <li><p>Compass</p></li>
-  <li>
-    <p>Plant vouchering equipment (as per Floristics Module):</p>
-    <ul>
-      <li><p>Secateurs</p></li>
-      <li><p>Paper bags (small)</p></li>
-      <li>
-        <p>Envelopes (for storage of seeds and other small plant material)</p>
-      </li>
-      <li>
-        <p>
-          Plastics bags (large for storage and transport of plant specimens)
-        </p>
-      </li>
-      <li><p>Plant press and straps</p></li>
-      <li><p>Newspaper (tabloid size) and cardboard (43.5 x 28.5 cm)</p></li>
-      <li><p>Adhesive voucher labels (with barcodes)</p></li>
-      <li><p>Plant references for the region</p></li>
-    </ul>
-  </li>
-  <li>
-    <p>
-      Rangefinder or suitable app (e.g. Tree Meter, Arboreal – Tree Height) (to
-      measure tree height to correctly assign structural formation)
-    </p>
-  </li>
-  <li><p>Rangefinder (optional, to assist with homogeneity measure).</p></li>
-</ul>
-    """^^rdf:HTML ;
-    tern:instructions """
-    <h3 class="list-paragraph" id="instructions-and-procedures">
-  Instructions and procedures
-</h3>
-<ol type="1">
-  <li><p>Select a suitable location for a vegetation mapping point:</p></li>
-</ol>
-<ul>
-  <li><p>Consider Step 4 (Prior to Field Survey) above</p></li>
-  <li><p>Ensure you are located within homogeneous vegetation</p></li>
-  <li>
-    <p>
-      Avoid shrubs or trees in the foreground when facing south, so the photo is
-      unobscured.
-    </p>
-  </li>
-</ul>
-<ol start="2" type="1">
-  <li>
-    <p>
-      If using an external GNSS receiver (e.g. Trimble 1) to record location:
-    </p>
-  </li>
-</ol>
-<ul>
-  <li>
-    <p>
-      switch on by depressing power button in centre. It will flash green and
-      blue as it looks to connect to Bluetooth.
-    </p>
-  </li>
-  <li>
-    <p>
-      Navigate to the mobile device's Bluetooth settings and turn Bluetooth ON.
-    </p>
-  </li>
-  <li>
-    <p>
-      Check the "Devices" list and wait for the "GNSS:XXX" to appear. Select it
-      and you should be connected.
-    </p>
-  </li>
-  <li>
-    <p>
-      Navigate to the GNSS Status App and select "Source". If the GNSS is in
-      recent pick list, then select. If not, select "Position Source" to be the
-      Bluetooth and select from available devices.
-    </p>
-  </li>
-  <li><p>Allow some time to let the accuracy drop to sub metre.</p></li>
-</ul>
-<ol start="3" type="1">
-  <li><p>Select the Vegetation Mapping module in the App.</p></li>
-  <li>
-    <p>
-      Select ‘Start vegetation mapping point’. The GPS location (as well as
-      date, time and positional accuracy of record) will be automatically
-      recorded The default source is the GPS inbuilt into your device, unless an
-      alternative is selected.
-    </p>
-  </li>
-  <li><p>At each vegetation mapping point, record:</p></li>
-</ol>
-<ul>
-  <li>
-    <p>
-      A field ID (optional). Note that a sequential ID will be automatically
-      assigned; this is an additional field to assist with site stratification
-      (VA1, VA2, VA3, etc.).
-    </p>
-  </li>
-  <li>
-    <p>
-      A ‘homogeneity measure’ (in metres), defined as a record of the visual
-      estimate of the shortest distance from the vegetation mapping point to a
-      vegetation association different to the one that you are sampling.’
-    </p>
-  </li>
-  <li>
-    <p>
-      A static landscape photo facing south wherever possible to minimise the
-      effect of shadow and ensure consistent photos, using the highest
-      resolution that your device allows (refer to the Photo points module for
-      rationale). Select photo direction from the drop-down list (default is
-      south).
-    </p>
-  </li>
-  <li>
-    <p>
-      Additional photos (optional). Select photo direction from the drop-down
-      list.
-    </p>
-  </li>
-  <li>
-    <p>
-      Consider an approximate area of 10 x 10m centered around the vegetation
-      mapping point and record the following:
-    </p>
-    <ul>
-      <li><p>Vegetation growth stage (drop-down list)</p></li>
-      <li><p>Disturbance (drop-down list)</p></li>
-      <li><p>Fire-history (drop-down list)</p></li>
-      <li><p>Comment (optional)</p></li>
-      <li>
-        <p>For all plant species with covers greater than 5%:</p>
-        <ul>
-          <li>
-            <p>
-              Species (or a field name if uncertain). Field names must be
-              consistent between sites on the same survey.
-            </p>
-          </li>
-          <li>
-            <p>
-              Visual interpretation of foliage projective cover to the nearest
-              1% (e.g. Acacia aneura 36%)
-            </p>
-          </li>
-          <li>
-            <p>
-              Dominant growth form (drop-down list, auto-filtered by species
-              selection)
-            </p>
-          </li>
-          <li><p>Maximum height (m)</p></li>
-          <li><p>Photo/s (optional)</p></li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Substrate cover – a visual interpretation of actual percentage cover
-          for all relevant substrates (drop-down list); e.g. Bare 14%, Litter
-          9%.
-        </p>
-      </li>
-    </ul>
-  </li>
-</ul>
-<ol start="6" type="1">
-  <li>
-    <p>
-      When the taxonomy of a flora species is uncertain, collect a voucher
-      specimen to be confirmed by the relevant herbarium, taking enough material
-      to cover an A3 size herbarium sheet (Note: Prior to collection a permit
-      may be required – see <em>Chapter 1</em> Introduction). Refer to
-      vouchering guidelines in the <em>Floristics</em> module. Any species of
-      uncertain identification is allocated a field name, which is reselected
-      from the list if repeated at other vegetation mapping points.
-      <strong>Note</strong>: a voucher of every species must still be taken at
-      each survey plot, regardless of any duplication from vegetation mapping
-      points or opportunistic records.
-    </p>
-  </li>
-  <li>
-    <p>
-      Return to the field vehicle or an area where all the equipment is
-      available.
-    </p>
-  </li>
-  <li>
-    <p>
-      Tag each specimen securely with a unique voucher label provided by TERN.
-      Place the label on stems or away from any plant parts that will need to be
-      examined for identification purposes. Use paper envelopes for small
-      specimens and attach the voucher label to the envelope.
-    </p>
-  </li>
-  <li>
-    <p>
-      For each specimen, scan the voucher label using the App. Add any relevant
-      comments.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select ‘Save’ to save the species record and begin entering the next
-      record.
-    </p>
-  </li>
-  <li>
-    <p>
-      Once all species have been entered and voucher barcodes scanned, select
-      ‘Complete Module’ to return to the ‘Module Selection’ screen.
-    </p>
-  </li>
-  <li>
-    <p>
-      After labelling and scanning each specimen, place larger specimens
-      directly into a plastic bag, and smaller specimens into paper bags, then
-      the plastic bag, ready for transferring to a plant press. Temporarily
-      store in an appropriate place to maintain the quality of specimens until
-      pressed.
-    </p>
-  </li>
-  <li>
-    <p>
-      At the end of each field day, press voucher specimens of each plant
-      species in a plant press. Keep samples in a separate press to plot samples
-      if possible to avoid confusion.
-    </p>
-  </li>
-</ol>
-    """^^rdf:HTML ;
-    tern:purpose """
-    <h3 class="list-paragraph" id="rationale">Rationale</h3>
-<p>
-  Vegetation classification systems form a base for conservation management and
-  the ecological exploration of the patterns and drivers of species’
-  distributions (Addicott <em>et al.</em> 2021). Vegetation mapping is critical
-  to document and assess biodiversity through space and time, and support
-  biodiversity planning and management from local to global scales. Furthermore,
-  vegetation classification and mapping are integral to Australian biodiversity
-  laws and regulations (Lewis <em>et al.</em> 2008; McKenzie
-  <em>et al.</em> 2008; Gellie <em>et al.</em> 2018; Addicott
-  <em>et al.</em> 2021).
-</p>
-<p>
-  The NVIS is the nationally adopted approach to classify vegetation,
-  underpinned by rule sets and mandatory data requirements to deliver
-  standardised and comprehensive vegetation descriptions (NVIS Technical Working
-  Group 2017). The NVIS consists of six levels of classification (Level 1 the
-  simplest to Level 6 the most complex) (Table 10‑1). The data collected in this
-  protocol facilitates classification at NVIS Level 5 (association) or Level 6
-  (sub-association) with minimal observer bias, and enables the automatic
-  generation of higher levels (NVIS Technical Working Group 2017) (Table 10‑5).
-  This approach ensures the vegetation classification is consistent and
-  comparable within and across projects and jurisdictions (Guerin
-  <em>et al.</em> 2017; Baruch <em>et al.</em> 2018; Addicott
-  <em>et al.</em> 2021), and is suitable for inclusion in state or territory and
-  national vegetation datasets (Executive Steering Committee for Australian
-  Vegetation Information 2003).
-</p>
-<p>
-  The vegetation mapping point method is much less labour intensive and hence
-  much faster than other methods such as the quadrat or step-pointing method for
-  the purpose of defining and mapping vegetation associations (Sparrow and
-  Leitch 2009). Locating vegetation mapping points in homogeneous areas is the
-  most compatible approach for vegetation mapping. Recording a measure of
-  homogeneity means the vegetation mapping points are effectively ‘virtual
-  quadrats of variable size’. This enables accurate spatial correlation between
-  field data and remotely sensed imagery, to create robust mapping outputs
-  (Sparrow and Leitch 2009).
-</p>
-<p>
-  The collection of quantitative species-based cover data is considered
-  best-practice for vegetation classification (Addicott <em>et al.</em> 2021).
-  It provides the ability to measure change over time and under different
-  disturbance scenarios, and is robust and readily defensible, helping to instil
-  confidence in the classification in both legislators and end users (Sparrow
-  and Leitch 2009; Addicott <em>et al.</em> 2021).
-</p>
-<p>
-  This protocol requires visual estimates of foliage projective cover to the
-  nearest 1% (for species over 5% cover and substrate cover), however accuracy
-  is not assumed nor required to this level. The quantitative data can be
-  converted to a categorical value in the pre-processing stage for analysis.
-  This approach assists data re-use and is less subjective than assigning
-  categories at the point of collection. Species with less than 5% cover are not
-  considered a significant influence on the association definition or the
-  spectral response and hence are excluded for efficiency.
-</p>
-<p>
-  The tooling and integrated database to collect NVIS compatible vegetation data
-  at defined vegetation mapping points provides users with clean, consistent,
-  repeatable and spatially explicit data outputs to assist with vegetation
-  mapping and reporting. Recording supporting information such as vegetation
-  growth stage, disturbance and fire history helps to identify variability
-  within the vegetation associations, and assist with site stratification and
-  assessment (Heard and Channon 1997; Brocklehurst <em>et al.</em> 2007).
-</p>
-<p>
-  Project-level vegetation mapping is generally based on the available
-  ground-data (i.e. from the vegetation mapping points and survey plots) and a
-  visual interpretation of vegetation association boundaries using aerial
-  photographs or by the analysis of satellite imagery. Whilst this approach is
-  appropriate, the result can be subjective and vary considerably between
-  observers and projects, thus limiting the usefulness of the data at the
-  broader scale (Sparrow and Leitch 2009). Post-field numerical analysis of the
-  data (i.e. using a hierarchical cluster based analysis to classify the
-  vegetation data, and image analysis to spatially classify the landscape) is a
-  much more accurate, time efficient and cost effective approach at a landscape
-  scale (Sparrow and Leitch 2009).
-</p>
-<p>
-  The centralized collation of the data means it can be used to produce more
-  complex classifications and improved mapping outputs, which in-turn will
-  improve the information available to future users. For example, project data
-  from across Australia could help to update NVIS classification and mapping and
-  help to fill gaps in the current dataset.
-</p>
-    """^^rdf:HTML ;
-    tern:scope """
-      <h3>Contents</h3>
+    dcterms:description """<h3>Contents</h3>
   <ol>
-    <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#introduction-and-background">Introduction and Background</a></li>
     <li>
       <a href="#key-definitions-and-terminology"
-        >Key definitions and terminology</a
-      >
+        >Key definitions and Terminology</a>
     </li>
     <li><a href="#rationale">Rationale</a></li>
-    <li><a href="#module-overview">Module Overview</a></li>
     <li><a href="#equipment">Equipment</a></li>
     <li>
-      <a href="#instructions-and-procedures">Instructions and procedures</a>
+      <a href="#instructions-and-procedures">Instructions and Procedures</a>
     </li>
-    <li><a href="#additional-guidelines">Additional guidelines</a></li>
+    <li><a href="#additional-guidelines">Additional Guidelines</a></li>
     <li><a href="#references">References</a></li>
     <li><a href="#appendices">Appendices</a></li>
   </ol>
-    <h3 class="list-paragraph" id="introduction">Introduction</h3>
-<p>
-  Classifying and mapping vegetation helps to simplify complex systems into
-  discreet units, which are useful for landscape management (Addicott et al.
-  2018). Vegetation mapping incorporates two essential elements: a
-  classification of the vegetation, and a spatial attribution of that
-  classification (Tierney et al. 2017).
-</p>
-<p>
-  This module provides a standardised approach to vegetation classification,
-  which can be used to inform downstream vegetation mapping, reporting and
-  analysis. Structural and floristic data is collected at precise ‘vegetation
-  mapping points’ within homogeneous areas of vegetation that are representative
-  of the vegetation associations present within the project area (Sparrow and
-  Leitch 2009). This data can be collected at any stage of a project, although
-  collecting it at the start of a project helps to stratify the area and inform
-  the location of plots and targeted surveys. Data is entered directly into the
-  App and is additional to any plot-derived vegetation data.
-</p>
-<p>
-  At each vegetation mapping point, the growth form, height and estimated
-  foliage projective cover (to the nearest 1%) is recorded for all flora species
-  occurring at covers greater than 5%. Based on this information, the App
-  auto-generates a classification of the vegetation at the ‘association’ level,
-  in line with the nationally adopted National Vegetation Information System
-  (NVIS) (Thackway et al. 2008; White et al. 2012; Sparrow et al. 2020). A
-  visual estimate of how far the association being sampled extends beyond the
-  point of measurement (known as the ‘homogeneity measure’) is recorded for
-  mapping purposes (Sparrow and Leitch 2009). Supporting information including
-  vegetation growth stage, disturbance and fire history is also recorded.
-</p>
-<p>
-  For small project areas and/or those with relatively few vegetation
-  associations, vegetation mapping can be extrapolated from the vegetation
-  mapping points and visual interpretation of aerial or satellite imagery. At
-  larger scales, where ground data is sporadic and there are numerous vegetation
-  associations to discern, the point data buffered by the homogeneity measure
-  can be used to perform a supervised image classification to generate
-  vegetation maps (refer to <em>Classification and Analysis</em> in the post
-  field-survey task) (Xie et al. 2008; Sparrow and Leitch 2009; Uyeda et al.
-  2020).
-</p>
-    """^^rdf:HTML ;
-    tern:undertakenBefore
-        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
-        <https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6> ,
-        <https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ;
+    <h1 id="module-overview">Module Overview</h1>
+<h2 id="available-protocols">Available protocols</h2>
+<p>This module provides the procedures and guidelines to classify
+vegetation at precise points across the project area. It involves
+collecting rapid structural and floristic data within homogeneous
+vegetation representative of the visually distinct vegetation
+associations present. The data can be used to assist project area
+stratification, vegetation mapping, reporting and analysis.</p>
+<p>The procedures align with the national approach for collecting
+vegetation mapping data outlined in the <em>Australian Vegetation
+Attribute Manual: NVIS Version 7.0</em> (NVIS Technical Working Group
+2017) and the <em>Australian Soil and Land Survey Field Handbook</em>
+(National Committee on Soil and Terrain 2009).</p>
+<p>Vegetation mapping data can be collected at any stage of a project,
+although collecting it at the start helps to stratify the project area
+and inform the location of survey plots, targeted surveys and
+intervention activities. Data is entered directly into the Monitor app
+and is additional to any plot-derived vegetation data. This module may
+be unnecessary if the project area is small (e.g. less than 5 ha) and
+the range of visually distinct vegetation associations is already
+represented within survey plots.</p>
+<h2 id="relationship-to-other-modules">Relationship to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<p>The Vegetation Mapping Module is not dependent on any other module
+having been completed first.</p>
+<h3 id="optional-complementary-related-modules">Optional complementary
+related modules</h3>
+<p>This Vegetation Mapping Module has links to the following optional
+modules:</p>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection Module</a> – data from vegetation mapping points may
+inform the selection of plot locations. In some instances, plots may be
+located at a similar location to the vegetation mapping points.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> – structural formation, vegetation growth
+stage, disturbance, and fire history are assigned at vegetation mapping
+points as per the methodology adopted for plots in the Plot Description
+Module.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – provides guidelines for the collection of
+voucher specimens. Voucher specimens collected from vegetation mapping
+points are in addition to those collected within survey plots.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> – if plots are later placed at vegetation mapping
+points, the foliage projective cover data collected at vegetation
+mapping points can be cross-checked against quantitative cover values
+obtained from the Cover Module.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6">Opportune Module</a> – plant species of interest observed at
+vegetation mapping points that are not captured by the Vegetation
+Mapping Module can be recorded using the Opportune Module.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9">Targeted Surveys Module</a> – data from vegetation mapping points may
+inform the selection of targeted survey locations.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6">Interventions Module</a> – data from vegetation mapping points may
+inform the location of management interventions.</p></li>
+</ul>"""^^rdf:HTML ;
+    dcterms:source """
+    <h1 id="references">References</h1>
+<p>ABARES (2016) The Australian Land Use and Management Classification
+Version 8. Australian Bureau of Agricultural and Resource Economics and
+Sciences.</p>
+<p>Addicott, E, Neldner, VJ, Ryan, T (2021) Aligning quantitative
+vegetation classification and landscape scale mapping: updating the
+classification approach of the Regional Ecosystem classification system
+used in Queensland. <em>Australian Journal of Botany</em></p>
+<p>Addicott, E, Newton, M, Laurance, S, Neldner, V, Laidlaw, M, Butler,
+D (2018) A new classification of savanna plant communities on the
+igneous rock lowlands and Tertiary sandy plain landscapes of Cape York
+Peninsula bioregion. <strong>18</strong>, 29-72.</p>
+<p>Baruch, Z, Caddy-Retalic, S, Guerin, GR, Sparrow, B, Leitch, E,
+Tokmakoff, A, Lowe, AJ (2018) Floristic and structural assessment of
+Australian rangeland vegetation with standardized plot-based surveys.
+<em>PloS ONE</em> <strong>13</strong>, e0202073.</p>
+<p>Bell, SA, Driscoll, C (2020) Data-informed sampling and mapping: an
+approach to ensure plot-based classifications locate, classify and map
+rare and restricted vegetation types. <em>Australian Journal of
+Botany</em></p>
+<p>Brocklehurst, P, Lewis, D, Napier, D, Lynch, D (2007) Northern
+Territory Guidelines and Field Methodology for Vegetation Survey and
+Mapping. Technical Report No. 02/2007D. Department of Natural Resources,
+Environment and the Arts, Palmerston, Northern Territory.</p>
+<p>De Cáceres, M, Wiser, SK (2012) Towards consistency in vegetation
+classification. <em>Journal of Vegetation Science</em>
+<strong>23</strong>, 387-393.</p>
+<p>Executive Steering Committee for Australian Vegetation Information
+(2003) Australian Vegetation Attribute Manual: National Vegetation
+Information System, Version 6.0. Department of the Environment and
+Heritage, Canberra. Available at <a href="https://www.environment.gov.au/land/publications/australian-vegetation-attribute-manual-v6/section-2">https://www.environment.gov.au/land/publications/australian-vegetation-attribute-manual-v6/section-2</a>.</p>
+<p>Eyre, T, Ferguson, D, Smith, G, Mathieson, M, Venz, M, Hogan, L,
+Hourigan, C, Kelly, A, Rowland, J (2022) Terrestrial Vertebrate Fauna
+Survey Assessment Guidelines for Queensland, Version 4.0. <em>Brisbane:
+Department of Environment and Science, Queensland Government</em></p>
+<p>Gellie, NJH, Hunter, JT, Benson, JS, Kirkpatrick, JB, Cheal, DC,
+McCreery, K, Brocklehurst, P (2018) Overview of plot-based vegetation
+classification approaches within Australia. <em>Phytocoenologia</em>
+<strong>48</strong>, 251–272.</p>
+<p>Guerin, GR, Sparrow, B, Tokmakoff, A, Smyth, A, Leitch, E, Baruch, Z,
+Lowe, AJ (2017) Opportunities for integrated ecological analysis across
+inland Australia with standardised data from Ausplots Rangelands.
+<em>PloS ONE</em> <strong>12</strong>, e0170137.</p>
+<p>Gunn, RH, Beattie, JA, Reid, RE, Van de Graaff, RHM (1988) Guidelines
+for conducting surveys. In 'Australian soil and land survey handbook.'
+(Inkata Press: Melbourne, Victoria)</p>
+<p>Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey:
+Using the Biological Survey of South Australia. Department of
+Environment and Natural Resources, Adelaide.</p>
+<p>Hnatiuk, RJ, Thackway, R, Walker, J (2009a) Explanatory notes for the
+Vegetation field handbook, version 2.</p>
+<p>Hnatiuk, RJ, Thackway, R, Walker, J (2009b) Vegetation. In
+'Australian Soil and Land Survey Field Handbook.' (Ed. The National
+Committee on Soil and Terrain.) pp. 73­–125. (CSIRO Publishing:
+Melbourne)</p>
+<p>Lewis, DL, Brocklehurst, PB, Thackway, R, Hill, JV (2008) Adopting
+national vegetation guidelines and the National Vegetation Information
+System (NVIS) framework in the Northern Territory. <em>Cunninghamia</em>
+<strong>10</strong>, 557-567.</p>
+<p>Luxton, S, Lewis, D, Chalwell, S, Addicott, E, Hunter, J (2021)
+Australian advances in vegetation classification and the need for a
+national, science-based approach. <em>Australian Journal of Botany</em>
+<strong>69</strong>, 329-338.</p>
+<p>McKenzie, NJ, Grundy, MJ, Webster, R, Ringrose-Voase, AJ (2008)
+'Guidelines for surveying soil and land resources.' (CSIRO Publishing:
+Melbourne)</p>
+<p>National Committee on Soil and Terrain (2009) 'Australian Soil and
+Land Survey Field Handbook.' (CSIRO Publishing: Melbourne)</p>
+<p>National Committee on Soil and Terrain (in prep) 'Australian Soil and
+Land Survey Field Handbook.' (CSIRO Publishing:</p>
+<p>Neldner, VJ, Wilson, BA, Dillewaard, HA, Ryan, TS, Butler, DW,
+McDonald, WJF, Richter, D, Addicott, EP, Appelman, CN, 2022. Methodology
+for survey and mapping of regional ecosystems and vegetation communities
+in Queensland. Version 6.0. Updated April 2022. Brisbane.</p>
+<p>NVIS Technical Working Group (2017) Australian Vegetation Attribute
+Manual: National Vegetation Information System, Version 7.0. Department
+of the Environment and Energy, Canberra.</p>
+<p>Patykowski, J, Cowie, I, Cuff, N, Chong, C, Nano, C, Jobson, P,
+Lewis, D (2021) Can sampling for vegetation characterisation surrogate
+for species richness? Case studies from the wet–dry tropics of northern
+Australia. <em>Australian Journal of Botany</em> <strong>69</strong>,
+375-385.</p>
+<p>Sivertsen, D (2009) Native vegetation interim type standard.
+Department of Environment, Climate Change and Water (NSW), Sydney, NSW.
+Available at <a href="https://www.environment.nsw.gov.au/-/media/OEH/Corporate-Site/Documents/Research/Maps-and-data/native-vegetation-interim-type-standard-100060.pdf">https://www.environment.nsw.gov.au/-/media/OEH/Corporate-Site/Documents/Research/Maps-and-data/native-vegetation-interim-type-standard-100060.pdf</a>.</p>
+<p>Sparrow, B, Foulkes, J, Wardle, G, Leitch, E, Caddy-Retalic, S, van
+Leeuwen, S, Tokmakoff, A, Thurgate, N, Guerin, GR, Lowe, AJ (2020) A
+vegetation and soil survey method for surveillance monitoring of
+rangeland environments. <em>Frontiers in Ecology and Evolution</em>
+<strong>8</strong>, 157.</p>
+<p>Sparrow, BD, Leitch, EJ (2009) Vegetation Survey and Mapping of the
+Eastern and Southern Finke Bioregion and the NT Stony Plains Inlier, NT
+and SA. The Department of Natural Resources, Environment, The Arts and
+Sport, Alice Springs.</p>
+<p>Tierney, DA, Powell, MJ, E., EC, 2017. Vegetation Mapping. Oxford
+Bibliography, Oxford Journals, New York.</p>
+<p>Uyeda, KA, Warkentin, KK, Stow, DA, O'Leary, JF, Snavely, RA,
+Lambert, J, Bolick, LA, O'Connor, K, Munson, B, Loerch, AC (2020)
+Vegetation mapping using hierarchical object‐based image analysis
+applied to aerial imagery and lidar data. <em>Applied Vegetation
+Science</em> <strong>23</strong>, 80-93.</p>
+<p>White, A, Sparrow, B, Leitch, E, Foulkes, J, Flitton, R, Lowe, AJ,
+Caddy-Retalic, S (2012) 'AusPlots Rangelands Survey Protocols Manual.'
+(The University of Adelaide Press: Adelaide)</p>
+<p>Xie, Y, Sha, Z, Yu, M (2008) Remote sensing imagery in vegetation
+mapping: a review. <em>Journal of Plant Ecology</em> <strong>1</strong>,
+9–23.</p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h2 id="key-definitions-and-terminology">Key Definitions and
+Terminology</h2>
+<p><h5 id="table-2">Table 2. Key definitions and terms used in the Vegetation Mapping
+Module.</h5></p>
+<table>
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 80%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cluster analysis</td>
+<td>Numerical analysis of multivariate data (i.e. sites and species) to
+assist vegetation classification.</td>
+</tr>
+<tr class="even">
+<td>Emergent vegetation</td>
+<td><p>The tallest plants in some vegetation communities are so sparse
+that they no longer form the dominant or most significant layer. For
+example, widely scattered eucalypts or acacias may rise above lower
+shrubs or grasses in semi-arid regions. The tallest stratum is then
+classified as an ‘emergent layer’ and the dominant layer on which the
+vegetation will be classified is usually the next tallest layer.</p>
+<p>For example, using the NVIS classification framework, U1 is the
+tallest tree substratum. For forests and woodlands, this will generally
+be the dominant stratum, except where the substratum cover is &lt;5% and
+hence considered ‘emergent’. For a continuum (e.g., no distinct or
+discernible layering in the vegetation) the tallest stratum becomes the
+defining substratum (National Committee on Soil and Terrain in
+prep).</p></td>
+</tr>
+<tr class="odd">
+<td>Foliage projective cover</td>
+<td>The percentage of the sample site occupied by the vertical
+projection of foliage only (NVIS Technical Working Group 2017).</td>
+</tr>
+<tr class="even">
+<td>Homogeneity measure</td>
+<td>A record of the visual estimate (in metres) of the shortest distance
+from the vegetation mapping point to a vegetation association different
+to the one being sampled (White <em>et al.</em> 2012)(see <a href="#appendix-2">Appendix
+2</a>).</td>
+</tr>
+<tr class="odd">
+<td>Monitor</td>
+<td>Field data collection app for Ecological Monitoring System
+Australia. Collects data using the Biodiversity Information Standard for
+delivery to the Australian Biodiversity Data Repository managed by the
+Department of Climate Change, Energy, the Environment and Water.</td>
+</tr>
+<tr class="even">
+<td>NVIS</td>
+<td>National Vegetation Information System. A framework that enables the
+compilation of a nationally consistent vegetation dataset from data
+collected by states and territories. It provides a comprehensive means
+of describing and representing vegetation information based on
+establishing relationships between structural and floristic data.</td>
+</tr>
+<tr class="odd">
+<td>Plant photo voucher</td>
+<td>A photo of a plant species clearly indicating its habit, its main
+organs (leaves, flowers, inflorescences and fruits) or any other
+characters (e.g. spines) that are useful for unambiguous species
+identification (see <a href="#appendix-7">Appendix 7</a>).</td>
+</tr>
+<tr class="even">
+<td>Vegetation association</td>
+<td><p>A climax community of which the dominant stratum has a
+qualitatively uniform floristic composition and which exhibits uniform
+structure as a whole (Executive Steering Committee for Australian
+Vegetation Information 2003; NVIS Technical Working Group 2017).</p>
+<p>Vegetation association (NVIS Level 5) is the recommended minimum
+standard for the input of vegetation description data into NVIS. At this
+level, the three predominantly recognised strata (where present), are
+easily recognised for most vegetation types across Australia. For each
+stratum, the characteristic height and cover are recorded, and up to 3
+growth forms and up to 3 species (for each stratum) can be used to
+describe the vegetation type (NVIS Technical Working Group
+2017).</p></td>
+</tr>
+<tr class="odd">
+<td>Vegetation classification</td>
+<td>Grouping together vegetation communities that are perceived as
+similar in order to simplify the description of the vegetation patterns
+within a given geographical area (De Cáceres and Wiser 2012).</td>
+</tr>
+<tr class="even">
+<td>Vegetation mapping point</td>
+<td>Geo-defined locations within the project area at which the
+vegetation is classified consistent with the NVIS information hierarchy
+– to Level 5 (association).</td>
+</tr>
+<tr class="odd">
+<td>Voucher specimen</td>
+<td>A preserved specimen (whole plant, part thereof, or a tissue sample)
+retained for expert identification. Voucher specimens are ideally
+deposited in a permanent and accessible storage facility to enable
+examination and further study. Refer to vouchering protocols in the
+Floristics Module.</td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    skos:note """
+   <h2 id="additional-guidelines">Additional guidelines</h2>
+<h3 id="field-collection-1">Field collection</h3>
+<h4 class="unnumbered" id="vegetation">Vegetation</h4>
+<ul>
+<li><p>Vegetation mapping points should be in areas of homogeneous
+vegetation and should cover the range of visually distinct vegetation
+associations present. As a guide, for a 1:50,000 mapping scale, a
+minimum of one vegetation mapping point is recommended in each visually
+distinct vegetation association per every 1 km<sup>2</sup> (Gunn et al.
+1988). Refer to <a href="#appendix-1">Appendix 1</a> for sampling intensity recommendations based
+on the desired mapping scale. It is recommended that vegetation mapping
+points are at least 100 m apart to avoid auto-correlation.</p></li>
+<li><p>If the homogeneity measure is uncertain, it is best to be
+conservative and underestimate the distance to ensure
+homogeneity.</p></li>
+<li><p>The NVIS classification is derived from the species’ cover,
+growth form and height data. Refer to <a href="#appendix-6">Appendix 6</a> for the growth forms
+allowed for each stratum, height classes and cover codes.</p></li>
+<li><p>Emergent plant species (with foliage projective cover &lt;5%) can
+be entered. A warning message will appear when the cover value is
+&lt;5%. Select OK to proceed and the species will be marked as emergent
+and excluded for NVIS classification and mapping purposes.</p></li>
+<li><p>If using a stand-alone digital camera to take vegetation mapping
+point photos, enter the image number in the <em>photo ID</em> as a
+reference so the file can be identified and curated when back in the
+office (see the Submitting EMSA Digital Media information sheet for
+details).</p></li>
+</ul>
+<h4 class="unnumbered" id="species-identification">Species
+identification</h4>
+<ul>
+<li><p>If the taxonomic identification is uncertain when the observation
+is recorded, or if a lower taxonomic identification is possible with
+accompanying evidence (e.g. high-quality photos, physical voucher
+specimens), the record is given a descriptive field name. The
+descriptive field name must be used consistently across modules within a
+survey event. Once a descriptive field name has been entered, it will be
+available in the species drop-down list across relevant modules for the
+project.</p></li>
+<li><p>When assigning a descriptive field name, the field name must make
+sense to you. Avoid generic labels such as ‘Acacia sp.’. Use a
+descriptive word instead of ‘sp.’ (e.g. Acacia spiky); this saves
+confusion later regarding whether it was an uncertain species or a
+species in a non-identifiable vegetative form.</p></li>
+<li><p>If the taxonomic identification is known after reviewing the
+accompanying evidence, edit the record, and select the species from the
+drop-down list.</p></li>
+</ul>
+<h4 class="unnumbered" id="section-2"></h4>
+<ul>
+<li><p>A plant photo voucher should be taken for unknown species that
+have been assigned a field name to help identify them when surveying
+other vegetation mapping points or completing other modules.</p></li>
+</ul>
+<h4 class="unnumbered" id="taking-plant-photo-vouchers">Taking plant
+photo vouchers</h4>
+<ul>
+<li><p>Try to ensure you photograph a plant that has good vigour and is
+representative of the species within the area.</p></li>
+<li><p>Take a photo that shows the overall growth form of the plant (see
+<a href="#appendix-7">Appendix 7</a>), as the distinctions in growth form may not be apparent to
+the surveyor, but crucial to identification.</p></li>
+<li><p>A suitable photographic reference scale should be used depending
+on the species/features being photographed. If you do not have an actual
+reference scale, use something you have on hand to provide a reference
+(e.g. pen, pencil, compass).</p></li>
+</ul>
+<h4 class="unnumbered" id="section-3"></h4>
+<h4 class="unnumbered" id="section-4"></h4>
+<h4 class="unnumbered" id="collecting-plant-voucher-specimens">Collecting plant voucher
+specimens</h4>
+<p>Refer to the Floristics Module for further information regarding the
+collection and preparation of plant voucher specimens. Also, refer to
+the advice provided by the local herbarium. Key information is provided
+below.</p>
+<ul>
+<li><p>Collection of plant voucher specimens as part of the Vegetation
+Mapping Module is optional and limited to the dominant three species
+(≥5% cover) in the dominant three strata. Plant voucher specimens are
+recommended for new, unknown, important, contentious and threatened
+species (see definitions in the Floristics Module). Specimens of
+threatened species should only be collected if permitted and if their
+collection will not jeopardise the population.</p></li>
+<li><p>The need to collect a voucher specimen will depend on the
+circumstances and the other modules undertaken (e.g. if a species of
+uncertain identification has already been assigned a field name and a
+suitable voucher specimen has already been collected within the same
+visit, then collecting a further voucher specimen may be
+unnecessary).</p></li>
+<li><p>The Opportune Module is used to record plant species of interest
+observed at vegetation mapping points that are not captured by the
+Vegetation Mapping Module (i.e. species of &lt;5% cover).</p></li>
+<li><p>Herbaria typically require physical specimens for positive
+identification. Where possible, a voucher should include enough material
+to cover an A3 size herbarium sheet. For specimens that you anticipate
+herbaria will wish to lodge (e.g. species of interest to the herbaria
+determined from pre-survey consultation), a duplicate should be
+collected.</p></li>
+<li><p>To aid identification, each voucher should ideally include when
+available: flowers or buds, leaves, fruit, and bark (for trees). Try to
+minimise the number of individual specimens needed to represent each
+species by maximising the number of plant components (e.g. flowers,
+fruit, leaves) on each sample collected.</p></li>
+<li><p>Ideally, voucher specimens are pressed after each vegetation
+mapping point, but if this is not possible, press them before commencing
+another module, or at least by the end of each day’s field work. Until
+pressed, place larger specimens in a plastic bag, and smaller specimens 
+in paper bags within the plastic bag, and store them in an appropriate
+place to maintain their quality. To avoid confusion, it is best to place
+specimens from vegetation mapping points in a separate plant press to
+those obtained from plots and opportune sampling.</p></li>
+</ul>"""^^rdf:HTML ;
+    skos:prefLabel "Vegetation Mapping Module" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vegetation-mapping/vegetation-mapping.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h1 id="appendices">Appendices</h1>
+<p><h5 id="appendix-1">Appendix 1. Recommended sampling intensity for various scales of
+mapping.</h5></p>
+<p><i>Source: Adapted from Gunn et al. (1988); Brocklehurst et al. (2007);
+Neldner et al. (2022)</i></p>
+<table>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 26%"/>
+<col style="width: 26%"/>
+<col style="width: 26%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scale of published map</th>
+<th>Area in hectares represented by 1 cm<sup>2</sup> on map</th>
+<th>cm<sup>2</sup> of map km<sup>2</sup> on ground</th>
+<th>Recommended sampling density per 1 km<sup>2</sup> (100 ha)*</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1:5 000</td>
+<td>0.25</td>
+<td>400</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>1:10 000</td>
+<td>1</td>
+<td>100</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>1:20 000</td>
+<td>4</td>
+<td>25</td>
+<td>6.25</td>
+</tr>
+<tr class="even">
+<td>1:25 000</td>
+<td>6.25</td>
+<td>16</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>1:50 000</td>
+<td>25</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>1:100 000</td>
+<td>100</td>
+<td>1</td>
+<td>0.25</td>
+</tr>
+<tr class="odd">
+<td>1:150 000</td>
+<td>225</td>
+<td>0.44</td>
+<td>0.11</td>
+</tr>
+<tr class="even">
+<td>1:250 000</td>
+<td>625</td>
+<td>0.16</td>
+<td>0.04</td>
+</tr>
+<tr class="odd">
+<td>1:500 000</td>
+<td>2,500</td>
+<td>0.04</td>
+<td>0.01</td>
+</tr>
+<tr class="even">
+<td>1:1 000 000</td>
+<td>10,000</td>
+<td>0.01</td>
+<td>0.003</td>
+</tr>
+</tbody>
+</table>
+<p>* based on 0.25 observations cm<sup>2</sup> of published map.</p>
+<p><h5 id="appendix-2">Appendix 2. Example diagram of homogeneity measure.</h5></p>
+<p><img alt="appendix-1" height="350" src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/appendix-1.jpg" width="500"/></p>
+<p><h5 id="appendix-3">Appendix 3. Percentage cover estimation.</h5></p>
+<p><i>Source: adapted from Eyre et al. (2022).</i></p>
+<p><img alt="appendix-2" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/appendix-2.jpg" width="300"/></p>
+<p><h5 id="appendix-4">Appendix 4. Illustrated examples of growth stages for a) forests, b)
+woodlands and shrubs.</h5></p>
+<img alt="appendix-4" height="450" src="https://w3id.org/tern/static/dawe-rlp/latest/vegetation-mapping/appendix-4.png" width="500"/></p>
+<p><i>Source: National Committee on Soil and Terrain (in prep), adapted
+    from Hnatiuk et al. (2009b).</i></p>
+    <p>
+<p><h5 id="appendix-5">Appendix 5. Data collection fields relevant to the Vegetation Mapping
+Module</h5></p>
+<p>Complete lists are provided in the Monitor app, as well as the TERN
+website</p>
+<p><h4>Vegetation Growth Stage</h4></p>
+<p><i>Source: National Committee on Soil and Terrain (in prep), adapted
+from Hnatiuk et al. (2009a).</i></p>
+<table>
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 21%"/>
+<col style="width: 21%"/>
+<col style="width: 21%"/>
+<col style="width: 21%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Growth stage</th>
+<th>Trees dominant</th>
+<th>Shrubs dominant</th>
+<th>Grasses and herbs dominant</th>
+<th>Cryptogams dominant (mosses and lichens)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Early regeneration</td>
+<td>Dominated by small, juvenile, dense to very sparse regenerating
+plants, with or without a few older, widely spaced, emergent
+plants. </td>
+<td>Dominated by small, juvenile, dense to very sparse regenerating
+plants. A few older, widely spaced emergents may be present. </td>
+<td>Plants small and juvenile stages predominate, bare soil or old
+litter common. </td>
+<td>Thin growth of young plants or widely spaced clumps of young
+plants. </td>
+</tr>
+<tr class="even">
+<td>Advanced regeneration</td>
+<td>Dominated by dense to sparse, well-developed, immature plants. Large
+emergents can be present with crown cover &lt;5% of the total crown
+cover. However, if the cover is &gt;5%, classify as ‘uneven age’. Trees
+have well-developed stems (poles). Crowns have small branches. The
+height is below maximum height for the stand type. Apical dominance
+still apparent in vigorous trees. </td>
+<td>Dominated by dense to sparse, well-developed but not mature plants.
+If large emergent plants are present, then they occupy &lt;5% crown
+cover of the dominant stratum; if &gt;5%, classify as ‘uneven
+age’. </td>
+<td>Vegetative growth abundant; plants approaching full mature size but
+reproductive material absent or in early stages only; soil surface
+largely obscured in average sites. </td>
+<td>Cover of plants high for the site; some reproduction may be
+evident. </td>
+</tr>
+<tr class="odd">
+<td>Uneven age</td>
+<td>Mixed size and age classes, usually identified by two or more strata
+dominated by the same species but can also be sites with different
+species regenerating in the understorey of an older canopy. </td>
+<td>Mixed size and age classes; usually two or more strata dominated by
+the same species but includes sites with different species regenerating
+in the understorey of an older canopy. </td>
+<td>A mixture of mature, perennial and immature annual species present
+on site. </td>
+<td>A mixture of mature reproductive plants with immature
+regeneration. </td>
+</tr>
+<tr class="even">
+<td>Mature phase</td>
+<td>Mature-sized plants, with or without emergent senescent plants.
+Trees at maximum height for the type and conditions. Crown at full
+lateral development and limbs thicker in stands. No apical
+dominance. </td>
+<td>Mature-sized plants with or without emergent senescent plants. </td>
+<td>Most plants of reproductive age; depending on vegetation type,
+reproduction evident, or would be if environmental conditions were
+appropriate (e.g., water availability). </td>
+<td>Swards of plants common; plants of mature physiognomy (clump sizes
+and forms); reproduction common at appropriate times of year or
+drought/rain cycle; overall health and vigour high. </td>
+</tr>
+<tr class="odd">
+<td>Senescent phase</td>
+<td>Dominated by over-mature plants particularly in the dominant
+stratum; evidence of senescence in many plants, some without obvious
+links to disturbance. Tree crowns show signs of contracting: dead
+branches and decreased crown diameter and leaf area. Distorted branches
+and burls may be common. Dead trees may be present. </td>
+<td>Dominated by old plants (thick stems and primary branches, with
+increasing dead wood or thin and open if species sheds dead branches),
+particularly in the dominant stratum. Many senescent plants, some
+without obvious links to disturbance. </td>
+<td>In largely annual vegetation, reproduction is complete, and plants
+are dying or mostly dead; in perennial vegetation, plants have lost
+vigour, are breaking down; perennial grass base choked with old/brown
+tiller bases. Litter accumulation may be high. </td>
+<td>Clear evidence of the degeneration of plants or clumps; dead older
+parts of plants may be conspicuous. </td>
+</tr>
+</tbody>
+</table>
+<p><em><br/>
+</em></p>
+<p><h4>Disturbance of site</h4></p>
+<p>Disturbance classes adapted from information in the Yellow Book
+(National Committee on Soil and Terrain 2009) unpublished fourth edition
+(NCST in prep), with the addition of light, medium and high grazing
+disturbances (AusPlots Rangelands Manual (White et al. 2012).</p>
+<table>
+<colgroup>
+<col style="width: 18%"/>
+<col style="width: 81%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>No effective disturbance</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><p>No effective disturbance except grazing by hoofed animals</p>
+<ul>
+<li><p>1L = Light grazing</p></li>
+<li><p>1M = Medium grazing</p></li>
+<li><p>1H = High grazing</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Limited clearing, for example, limited logging</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Extensive clearing, for example, poisoning, ringbarking</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Complete clearing, pasture, native or improved, but never
+cultivated</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Complete clearing, pasture, native or improved, cultivated at some
+stage</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Cultivation, rain-fed</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Cultivation, irrigated, past or present</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>Highly disturbed, e.g. quarrying, road works, mining, landfill,
+urban</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>Regrowth after clearing</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>Significant natural disturbances, e.g. cyclonic impact</td>
+</tr>
+</tbody>
+</table>
+<p><h4>Land-use history</h4></p>
+<p>Land-use history categories according to the ALUM version 8
+classification system (ABARES 2016).</p>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 74%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tertiary code</th>
+<th><strong>Tertiary name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td colspan="2">Class 1 Conservation and natural environments</td>
+</tr>
+<tr class="even">
+<td>1.1.0</td>
+<td>Nature conservation</td>
+</tr>
+<tr class="odd">
+<td>1.1.1</td>
+<td>Strict nature reserves</td>
+</tr>
+<tr class="even">
+<td>1.1.2</td>
+<td>Wilderness area</td>
+</tr>
+<tr class="odd">
+<td>1.1.3</td>
+<td>National park</td>
+</tr>
+<tr class="even">
+<td>1.1.4</td>
+<td>Natural feature protection</td>
+</tr>
+<tr class="odd">
+<td>1.1.5</td>
+<td>Habitat/species management area</td>
+</tr>
+<tr class="even">
+<td>1.1.6</td>
+<td>Protected landscape</td>
+</tr>
+<tr class="odd">
+<td>1.1.7</td>
+<td>Other conserved area</td>
+</tr>
+<tr class="even">
+<td>1.2.0</td>
+<td>Managed resource protection</td>
+</tr>
+<tr class="odd">
+<td>1.2.1</td>
+<td>Biodiversity</td>
+</tr>
+<tr class="even">
+<td>1.2.2</td>
+<td>Surface water supply</td>
+</tr>
+<tr class="odd">
+<td>1.2.3</td>
+<td>Groundwater</td>
+</tr>
+<tr class="even">
+<td>1.2.4</td>
+<td>Landscape</td>
+</tr>
+<tr class="odd">
+<td>1.2.5</td>
+<td>Traditional Indigenous uses</td>
+</tr>
+<tr class="even">
+<td>1.3.0</td>
+<td>Other minimal use</td>
+</tr>
+<tr class="odd">
+<td>1.3.1</td>
+<td>Defence land - natural areas</td>
+</tr>
+<tr class="even">
+<td>1.3.2</td>
+<td>Stock route</td>
+</tr>
+<tr class="odd">
+<td>1.3.3</td>
+<td>Residual native cover</td>
+</tr>
+<tr class="even">
+<td>1.3.4</td>
+<td>Rehabilitation</td>
+</tr>
+<tr class="odd">
+<td colspan="2">Class 2 Production from relatively natural
+environments</td>
+</tr>
+<tr class="even">
+<td>2.1.0</td>
+<td>Grazing native vegetation</td>
+</tr>
+<tr class="odd">
+<td>2.2.0</td>
+<td>Production native forests</td>
+</tr>
+<tr class="even">
+<td colspan="2">Class 3 Production from dryland agriculture and
+plantations</td>
+</tr>
+<tr class="odd">
+<td>3.1.0</td>
+<td>Plantation forests</td>
+</tr>
+<tr class="even">
+<td>3.2.0</td>
+<td>Grazing modified pastures</td>
+</tr>
+<tr class="odd">
+<td>3.3.0</td>
+<td>Cropping</td>
+</tr>
+<tr class="even">
+<td>3.4.0</td>
+<td>Perennial horticulture</td>
+</tr>
+<tr class="odd">
+<td>3.5.0</td>
+<td>Seasonal horticulture</td>
+</tr>
+<tr class="even">
+<td>3.6.0</td>
+<td>Land in transition</td>
+</tr>
+<tr class="odd">
+<td>3.6.1</td>
+<td>Degraded land</td>
+</tr>
+<tr class="even">
+<td>3.6.2</td>
+<td>Abandoned land</td>
+</tr>
+<tr class="odd">
+<td>3.6.3</td>
+<td>Land under rehabilitation</td>
+</tr>
+<tr class="even">
+<td>3.6.4</td>
+<td>No defined use</td>
+</tr>
+<tr class="odd">
+<td>3.6.5</td>
+<td>Abandoned perennial horticulture</td>
+</tr>
+<tr class="even">
+<td colspan="2">Class 4 Production from irrigated agriculture and
+plantations</td>
+</tr>
+<tr class="odd">
+<td colspan="2">Class 5 Intensive Uses</td>
+</tr>
+<tr class="even">
+<td colspan="2">Class 6 Water (includes lakes, reservoirs, dams, rivers,
+wetlands)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><h4>Fire history</h4></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Known</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Date of known fire</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p><h5 id="appendix-6">Appendix 6. Vegetation description resources.</h5></p>
+<p>NVIS growth forms and definitions</p>
+<p>The growth form describes the habit of a plant. The dominant growth
+form for each substratum contributes to the definition of structural
+formation. Source: National Committee on Soil and Terrain (in prep),
+adapted from NVIS Technical Working Group (2017).</p>
+<table>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 87%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Growth Form</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 14%"/>
+<col style="width: 85%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tree</th>
+<th>Woody plants, more than 2 m tall with a single stem or branches well
+above the base.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tree mallee</td>
+<td>Woody perennial plant usually of the genus Eucalyptus. Multi-stemmed
+with fewer than five trunks of which at least three exceed 100 mm
+diameter at breast height (1.3 m). Usually 8 m or more.</td>
+</tr>
+<tr class="even">
+<td>Shrub</td>
+<td>Woody plants multi-stemmed at the base (or within 200mm from ground
+level) or if single stemmed, less than 2 m.</td>
+</tr>
+<tr class="odd">
+<td>Mallee shrub</td>
+<td>Commonly less than 8 m tall, usually with five or more trunks, of
+which at least three of the largest do not exceed 100 mm diameter at
+breast height (1.3 m).</td>
+</tr>
+<tr class="even">
+<td>Heath shrub</td>
+<td>Shrub usually less than 2 m, with sclerophyllous leaves having high
+fibre: protein ratios and with an area of nanophyll or smaller (less
+than 225 sq mm). Often a member of one the following families:
+Ericaceae, Myrtaceae, Fabaceae and Proteaceae. Commonly occur on
+nutrient-poor substrates.</td>
+</tr>
+<tr class="odd">
+<td>Chenopod shrub</td>
+<td>Single or multi-stemmed, semi-succulent shrub of the family
+Chenopodiaceae (and some chenopods now in the family Amaranthaceae)
+exhibiting drought and salt tolerance.</td>
+</tr>
+<tr class="even">
+<td>Samphire shrub</td>
+<td>Genera (i.e., Halosarcia, Pachycornia, Sarcocornia, Sclerostegia,
+Tecticornia and Tegicornia) with articulate branches, fleshy stems and
+reduced flowers, succulent chenopods. Also the genus Suaeda.</td>
+</tr>
+<tr class="odd">
+<td>Tussock grass</td>
+<td>Grass forming discrete but open tussocks usually with distinct
+individual shoots, or if not, then forming a hummock. These are the
+common agricultural grasses.</td>
+</tr>
+<tr class="even">
+<td>Hummock grass</td>
+<td>Coarse xeromorphic grass with a mound-like form often dead in the
+middle; genus is Triodia.</td>
+</tr>
+<tr class="odd">
+<td>Other grass</td>
+<td>Member of the family Poaceae, but having neither a distinctive
+tussock nor hummock appearance. Examples include stoloniferous species
+such as <em>Cynodon dactylon</em>.</td>
+</tr>
+<tr class="even">
+<td>Sedge</td>
+<td>Herbaceous, usually perennial erect plant generally with a tufted
+habit and of the families Cyperaceae (true sedges) or Restionaceae (node
+sedges).</td>
+</tr>
+<tr class="odd">
+<td>Rush</td>
+<td>Herbaceous, usually perennial erect monocot that is neither a grass
+nor a sedge. For the purposes of NVIS, rushes include the monocotyledon
+families Juncaceae, Typhaceae, Liliaceae, Iridaceae, Xyridaceae and the
+genus Lomandra. (i.e., "graminoid" or grass-like genera).</td>
+</tr>
+<tr class="even">
+<td>Forb</td>
+<td>Herbaceous or slightly woody, annual or sometimes perennial plant.
+(Usually a dicotyledon).</td>
+</tr>
+<tr class="odd">
+<td>Tree-fern</td>
+<td>Characterised by large and usually branched leaves (fronds),
+arborescent and terrestrial; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="even">
+<td>Fern</td>
+<td>Ferns and fern allies, except tree-fern, above. Characterised by
+large and usually branched leaves (fronds), herbaceous and terrestrial
+to aquatic; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="odd">
+<td>Bryophyte</td>
+<td>Mosses and Liverworts. Mosses are small plants usually with a
+slender leaf-bearing stem with no true vascular tissue. Liverworts are
+often moss-like in appearance or consisting of a flat, ribbon-like green
+thallus.</td>
+</tr>
+<tr class="even">
+<td>Lichen</td>
+<td>Composite plant consisting of a fungus living symbiotically with
+algae; without true roots, stems or leaves.</td>
+</tr>
+<tr class="odd">
+<td>Epiphyte</td>
+<td>Epiphytes, mistletoes and parasites. Plant with roots attached to
+the aerial portions of other plants. Can often be another growth form,
+such as fern or forb.</td>
+</tr>
+<tr class="even">
+<td>Vine</td>
+<td>Climbing, twining, winding or sprawling plants usually with a woody
+stem.</td>
+</tr>
+<tr class="odd">
+<td>Palm</td>
+<td>Palms and other arborescent monocotyledons. Members of the Arecaceae
+family or the genus Pandanus. (Pandanus is often multi-stemmed).</td>
+</tr>
+<tr class="even">
+<td>Grass-tree</td>
+<td>Australian grass trees. Members of the Xanthorrhoeaceae family.</td>
+</tr>
+<tr class="odd">
+<td>Cycad</td>
+<td>Members of the families Cycadaceae and Zamiaceae.</td>
+</tr>
+<tr class="even">
+<td>Seagrass</td>
+<td>Flowering angiosperms forming sparse to dense mats of material at
+the subtidal and down to 30 m below MSL. Occasionally exposed.</td>
+</tr>
+<tr class="odd">
+<td>Aquatic</td>
+<td>Plant growing in an inland waterway or wetland with the majority of
+its biomass under water for most of the year. Fresh, saline or brackish
+water.</td>
+</tr>
+<tr class="even">
+<td>Lower plant</td>
+<td>Algae, fungus.</td>
+</tr>
+</tbody>
+</table>
+<p><h4>NVIS strata and substrata codes, descriptions, applicable growth
+forms and heights</h4></p>
+<p><em>Source: National Committee for Soil and Terrain (in prep),
+adapted from NVIS Technical Working Group (2017).</em></p>
+<table>
+<colgroup>
+<col style="width: 8%"/>
+<col style="width: 11%"/>
+<col style="width: 30%"/>
+<col style="width: 17%"/>
+<col style="width: 12%"/>
+<col style="width: 9%"/>
+<col style="width: 10%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>NVIS Stratum Code</th>
+<th><p>NVIS</p>
+<p>Substratum</p>
+<p>Code</p></th>
+<th>Description</th>
+<th><p>Traditional Stratum</p>
+<p>Name</p></th>
+<th>Growth Forms</th>
+<th>Height Classes</th>
+<th>Not permitted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="3">Upper (U)</td>
+<td>U1</td>
+<td><p>Tallest tree substratum.</p>
+<p>For forests and woodlands this will generally be the dominant
+stratum, except where the substratum cover is &lt;5% and hence
+considered “emergent”.</p>
+<p>For a continuum (e.g., no distinct or discernible layering in the
+vegetation) the tallest stratum becomes the defining
+substratum.</p></td>
+<td rowspan="3"><p>Upper, tree</p>
+<p>Overstorey/Canopy</p>
+<p>(If only one tree layer occurs it is coded U1)</p></td>
+<td rowspan="3"><p>Trees, tree mallees, palms, vines (mallee shrubs)</p>
+<p>Also: epiphytes, lichens</p></td>
+<td rowspan="3">8,7,6 (5)</td>
+<td rowspan="3">Grasses &amp; shrubs, low mallee shrubs</td>
+</tr>
+<tr class="even">
+<td>U2</td>
+<td>Sub-canopy layer, second tree layer</td>
+</tr>
+<tr class="odd">
+<td>U3</td>
+<td>Sub-canopy layer, third tree layer</td>
+</tr>
+<tr class="even">
+<td rowspan="3">Middle (M)</td>
+<td>M1</td>
+<td>Tallest shrub layer</td>
+<td rowspan="3">Mid, shrub (if only one mid layer occurs it is coded
+M1)</td>
+<td rowspan="3"><p>Shrubs, low trees, mallee shrubs, vines, (low shrubs,
+tall grasses, tall forbs, tall sedges) grass-trees, tree-ferns, cycads,
+palms.</p>
+<p>Also: epiphytes, lichens</p></td>
+<td rowspan="3">(6) 5,4,3</td>
+<td rowspan="3">Mid and low grasses, sedges, rushes &amp; forbs. Mid
+&amp; tall trees/ palms.</td>
+</tr>
+<tr class="odd">
+<td>M2</td>
+<td>Next shrub layer</td>
+</tr>
+<tr class="even">
+<td>M3</td>
+<td>Third shrub layer</td>
+</tr>
+<tr class="odd">
+<td rowspan="3">Ground (G)</td>
+<td>G1</td>
+<td>Tallest ground species</td>
+<td rowspan="3">Lower, ground (if only one ground layer occurs it is
+coded G1)</td>
+<td rowspan="2">Grasses, forbs, sedges, rushes, vines, lichens,
+epiphytes, low shrubs, ferns, bryophytes, cycads, grass-trees, aquatics,
+seagrasses.</td>
+<td rowspan="2">(4) 3, 2,1</td>
+<td rowspan="3">Trees, tree-mallees, palms.</td>
+</tr>
+<tr class="even">
+<td>G2</td>
+<td>Ground</td>
+</tr>
+<tr class="odd">
+<td>G3</td>
+<td>Substrate surface</td>
+<td>Bryophytes, lichens, lower plants</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><h4>NVIS height classes and corresponding growth forms</h4></p>
+<p>Source: National Committee on Soil and Terrain (in prep), adapted
+from NVIS Technical Working Group (2017).</p>
+<table>
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 13%"/>
+<col style="width: 12%"/>
+<col style="width: 16%"/>
+<col style="width: 20%"/>
+<col style="width: 11%"/>
+<col style="width: 16%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2">Height</th>
+<th colspan="5">Growth Form</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Height Class</td>
+<td>Height Range (m)</td>
+<td>Tree, vine (M&amp;U), palm (single-stemmed)</td>
+<td>Shrub, heath shrub, chenopod shrub, ferns, samphire shrub, cycad,
+tree-fern, grass-tree, palm (multi-stemmed)</td>
+<td>Tree mallee, mallee shrub</td>
+<td>Tussock grass, hummock grass, other grass, sedge, rush, forbs, vine
+(G)</td>
+<td>Bryophyte, lichen, seagrass, aquatic</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>&gt;30</td>
+<td>Tall</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>10-30</td>
+<td>Mid</td>
+<td></td>
+<td>Tall</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>&lt;10</td>
+<td>Low</td>
+<td></td>
+<td>Mid</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>&lt;3</td>
+<td></td>
+<td></td>
+<td>Low</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>&gt;2</td>
+<td></td>
+<td>Tall</td>
+<td></td>
+<td>Tall</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>1-2</td>
+<td></td>
+<td>Mid</td>
+<td></td>
+<td>Tall</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0.5-1</td>
+<td></td>
+<td>Low</td>
+<td></td>
+<td>Mid</td>
+<td>Tall</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>&lt;0.5</td>
+<td></td>
+<td>Low</td>
+<td></td>
+<td>Low</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+<p><h4>NVIS cover characteristics, growth forms, height ranges and
+corresponding structural formation classes</h4></p>
+<p><em>Source: National Committee on Soil and Terrain (in prep), adapted
+from NVIS Technical Working Group (2017).</em></p>
+<table>
+<colgroup>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+<col style="width: 9%"/>
+<col style="width: 13%"/>
+<col style="width: 9%"/>
+</colgroup>
+<tbody>
+<tr class="odd">
+<td rowspan="6"></td>
+<td colspan="8"><strong>Cover Characteristics</strong></td>
+</tr>
+<tr class="even">
+<td>Foliage cover</td>
+<td>70-100</td>
+<td>30-70</td>
+<td>10-30</td>
+<td>&lt;10</td>
+<td>0</td>
+<td>0-5</td>
+<td>unknown</td>
+</tr>
+<tr class="odd">
+<td>Crown cover</td>
+<td>&gt;80</td>
+<td>50-80</td>
+<td>20-50</td>
+<td>0.25-20</td>
+<td>&lt;0.25</td>
+<td>0-5</td>
+<td>unknown</td>
+</tr>
+<tr class="even">
+<td>% Cover</td>
+<td>&gt;80</td>
+<td>50-80</td>
+<td>20-50</td>
+<td>0.25-20</td>
+<td>&lt;0.25</td>
+<td>0-5</td>
+<td>unknown</td>
+</tr>
+<tr class="odd">
+<td>Cover code</td>
+<td>d</td>
+<td>c</td>
+<td>i</td>
+<td>r</td>
+<td>bi</td>
+<td>bc</td>
+<td>unknown</td>
+</tr>
+<tr class="even">
+<td colspan="8"></td>
+</tr>
+<tr class="odd">
+<td><strong>Growth Form</strong></td>
+<td colspan="4"><strong>Height Ranges (m)</strong></td>
+<td colspan="4"><strong>Structural Formation Classes</strong></td>
+</tr>
+<tr class="even">
+<td>tree, palm</td>
+<td>&lt;10,10‑30, &gt;30</td>
+<td>closed forest</td>
+<td>open forest</td>
+<td>woodland</td>
+<td>open woodland</td>
+<td>isolated trees</td>
+<td>isolated clumps of trees</td>
+<td>trees</td>
+</tr>
+<tr class="odd">
+<td>tree mallee</td>
+<td>&lt;3, &lt;10, 10‑30</td>
+<td>closed mallee forest</td>
+<td>open mallee forest</td>
+<td>mallee woodland</td>
+<td>open mallee woodland</td>
+<td>isolated mallee trees</td>
+<td>isolated clumps of mallee trees</td>
+<td>mallee trees</td>
+</tr>
+<tr class="even">
+<td>shrub, cycad, grass-tree, tree-fern</td>
+<td>&lt;1,1-2,&gt;2</td>
+<td>closed shrubland</td>
+<td>shrubland</td>
+<td>open shrubland</td>
+<td>sparse shrubland</td>
+<td>isolated shrubs</td>
+<td>isolated clumps of shrubs</td>
+<td>shrubs</td>
+</tr>
+<tr class="odd">
+<td>mallee shrub</td>
+<td>&lt;3, &lt;10, 10‑30</td>
+<td>closed mallee shrubland</td>
+<td>mallee shrubland</td>
+<td>open mallee shrubland</td>
+<td>sparse mallee shrubland</td>
+<td>isolated mallee shrubs</td>
+<td>isolated clumps of mallee shrubs</td>
+<td>mallee shrubs</td>
+</tr>
+<tr class="even">
+<td>heath shrub</td>
+<td>&lt;1,1-2,&gt;2</td>
+<td>closed heathland</td>
+<td>heathland</td>
+<td>open heathland</td>
+<td>sparse heathland</td>
+<td>isolated heath shrubs</td>
+<td>isolated clumps of heath shrubs</td>
+<td>heath shrubs</td>
+</tr>
+<tr class="odd">
+<td>chenopod shrub</td>
+<td>&lt;1,1-2,&gt;2</td>
+<td>closed chenopod shrubland</td>
+<td>chenopod shrubland</td>
+<td>open chenopod shrubland</td>
+<td>sparse chenopod shrubland</td>
+<td>isolated chenopod shrubs</td>
+<td>isolated clumps of chenopod shrubs</td>
+<td>chenopod shrubs</td>
+</tr>
+<tr class="even">
+<td>samphire shrub</td>
+<td>&lt;0.5,&gt;0.5</td>
+<td>closed samphire shrubland</td>
+<td>samphire shrubland</td>
+<td>open samphire shrubland</td>
+<td>sparse samphire shrubland</td>
+<td>isolated samphire shrubs</td>
+<td>isolated clumps of samphire shrubs</td>
+<td>samphire shrubs</td>
+</tr>
+<tr class="odd">
+<td>hummock grass</td>
+<td>&lt;2,&gt;2</td>
+<td>closed hummock grassland</td>
+<td>hummock grassland</td>
+<td>open hummock grassland</td>
+<td>sparse hummock grassland</td>
+<td>isolated hummock grasses</td>
+<td>isolated clumps of hummock grasses</td>
+<td>hummock grasses</td>
+</tr>
+<tr class="even">
+<td>tussock grass</td>
+<td>&lt;0.5,&gt;0.5</td>
+<td>closed tussock grassland</td>
+<td>tussock grassland</td>
+<td>open tussock grassland</td>
+<td>sparse tussock grassland</td>
+<td>isolated tussock grasses</td>
+<td>isolated clumps of tussock grasses</td>
+<td>tussock grasses</td>
+</tr>
+<tr class="odd">
+<td>other grass</td>
+<td>&lt;0.5,&gt;0.5</td>
+<td>closed grassland</td>
+<td>grassland</td>
+<td>open grassland</td>
+<td>sparse grassland</td>
+<td>isolated grasses</td>
+<td>isolated clumps of grasses</td>
+<td>other grasses</td>
+</tr>
+<tr class="even">
+<td>edge</td>
+<td>&lt;0.5,&gt;0.5</td>
+<td>closed sedgeland</td>
+<td>sedgeland</td>
+<td>open sedgeland</td>
+<td>sparse sedgeland</td>
+<td>isolated sedges</td>
+<td>isolated clumps of sedges</td>
+<td>sedges</td>
+</tr>
+<tr class="odd">
+<td>rush</td>
+<td>&lt;0.5,&gt;0.5</td>
+<td>closed rushland</td>
+<td>rushland</td>
+<td>open rushland</td>
+<td>sparse rushland</td>
+<td>isolated rushes</td>
+<td>isolated clumps of rushes</td>
+<td>rushes</td>
+</tr>
+<tr class="even">
+<td>forb</td>
+<td>&lt;0.5,&gt;0.5</td>
+<td>closed forbland</td>
+<td>forbland</td>
+<td>open forbland</td>
+<td>sparse forbland</td>
+<td>isolated forbs</td>
+<td>isolated clumps of forbs</td>
+<td>forbs</td>
+</tr>
+<tr class="odd">
+<td>fern</td>
+<td>&lt;1,1-2,&gt;2</td>
+<td>closed fernland</td>
+<td>fernland</td>
+<td>open fernland</td>
+<td>sparse fernland</td>
+<td>isolated ferns</td>
+<td>isolated clumps of ferns</td>
+<td>ferns</td>
+</tr>
+<tr class="even">
+<td>bryophyte</td>
+<td>&lt;0.5</td>
+<td>closed bryophyteland</td>
+<td>bryophyteland</td>
+<td>open bryophyteland</td>
+<td>sparse bryophyteland</td>
+<td>isolated bryophytes</td>
+<td>isolated clumps of bryophytes</td>
+<td>bryophytes</td>
+</tr>
+<tr class="odd">
+<td>lichen</td>
+<td>&lt;0.5</td>
+<td>closed lichenland</td>
+<td>lichenland</td>
+<td>open lichenland</td>
+<td>sparse lichenland</td>
+<td>isolated lichens</td>
+<td>isolated clumps of lichens</td>
+<td>lichens</td>
+</tr>
+<tr class="even">
+<td>vine</td>
+<td>&lt;10,10‑30, &gt;30</td>
+<td>closed vineland</td>
+<td>vineland</td>
+<td>open vineland</td>
+<td>sparse vineland</td>
+<td>isolated vines</td>
+<td>isolated clumps of vines</td>
+<td>vines</td>
+</tr>
+</tbody>
+</table>
+<p><h4>Specifications for the NVIS vegetation hierarchy to generate a
+vegetation type description</h4></p>
+<p><em>Source: National Committee on Soil and Terrain (in prep), adapted
+from NVIS Technical Working Group (2017).</em></p>
+<table>
+<colgroup>
+<col style="width: 4%"/>
+<col style="width: 7%"/>
+<col style="width: 34%"/>
+<col style="width: 16%"/>
+<col style="width: 14%"/>
+<col style="width: 10%"/>
+<col style="width: 11%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Level</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Combined Requirements</strong></th>
+<th><strong>Genera and/or Species</strong></th>
+<th><strong>Growth form</strong></th>
+<th><strong>Cover</strong></th>
+<th><strong>Height</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Class</strong></td>
+<td>Dominant growth form for the structurally dominant stratum.
+<u>Example:</u> <strong>Tree</strong></td>
+<td>-</td>
+<td>One dominant growth form for the structurally dominant stratum</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td><strong>Structural Formation</strong></td>
+<td>Dominant growth form, cover and height for the structurally dominant
+stratum. <u>Example:</u> <strong>Low Open Woodland</strong></td>
+<td>-</td>
+<td>One dominant growth form for the dominant stratum</td>
+<td>One cover class for the dominant stratum</td>
+<td>One height class for the dominant stratum</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td><strong>Broad Floristic Formation</strong></td>
+<td>Dominant genus (or genera) plus growth form, cover and height for
+the structurally dominant stratum. <u>Example:</u>
+<strong><em>Corymbia</em> Low Open Woodland</strong></td>
+<td>One or two dominant genera for the dominant stratum or one genus
+with the word “(mixed)” for the dominant stratum.</td>
+<td>One dominant growth form for dominant stratum</td>
+<td>One cover class for dominant stratum</td>
+<td>One height class for dominant stratum</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td><strong>Sub-formation</strong></td>
+<td>Dominant genus (or genera) plus growth form, cover and height for
+each of the three main strata. (i.e., U, M and G). <u>Example:</u>
+<strong>U<em>+ Corymbia</em> Low Open Woodland/<em>Acacia</em> Mid
+Sparse Shrubland/<em>Triodia</em> Open Hummock Grassland</strong></td>
+<td>One or two dominant genera for each stratum (max 3 strata; i.e. for
+U, M, G where substantially present).</td>
+<td>One dominant growth form for each stratum (max three strata: i.e.,
+for U, M, G, where present)</td>
+<td>One cover class for each stratum (max 3 strata)</td>
+<td>One height class for each stratum (max three strata)</td>
+</tr>
+<tr class="odd">
+<td><strong>5</strong></td>
+<td><strong>Association</strong></td>
+<td>List up to three growth forms and three species in decreasing order
+of dominance for the three major strata. (i.e., U, M and G). Each
+stratum has a structural formation. Dominant stratum indicated with ‘+’.
+Species listed in order of dominance. <u>Example:</u>
+<strong>U+<em>Corymbia dichromophloia, Corymbia ferruginea,
+Erythrophleum chlorostachys</em> Low Open Woodland / M <em>Acacia
+monticola, Grevillea refracta, Acacia difficilis</em> Mid Sparse
+Shrubland / G <em>Triodia pungens, Schizachyrium fragile, Acacia
+spondylophylla</em> Mid Open Hummock Grassland</strong></td>
+<td>Up to three species for each stratum (max three strata; i.e. for U,
+M, G where present). Indicate dominant genus, genera or mixed.</td>
+<td>Up to three growth forms for each stratum (max three strata; i.e.
+for U, M, G where present)</td>
+<td>One cover class for each stratum (max three strata; i.e. for U, M, G
+where present)</td>
+<td>One height class for each stratum (max three strata; i.e. for U, M,
+G where present)</td>
+</tr>
+<tr class="even">
+<td><strong>6</strong></td>
+<td><strong>Sub-association</strong></td>
+<td>List up to five growth forms and five species in decreasing order of
+dominance for up to nine substrata. Each stratum has a structural
+formation. Dominant stratum indicated with ‘+’. Species listed in order
+of dominance. <u>Example:</u> <strong>U1+<em>Corymbia dichromophloia,
+Corymbia ferruginea, Erythrophleum chlorostachys</em> Low Open Woodland
+/ M1 <em>Acacia monticola, Grevillea refracta, Acacia difficilis,
+Grevillea wickhamii, Acacia stipuligera</em> Mid Sparse Shrubland / G1
+<em>Triodia pungens, Schizachyrium fragile, Acacia spondylophylla,
+Aristida holathera, Eriachne ciliata</em> Mid Open Hummock
+Grassland</strong></td>
+<td><p>Up to five species for each substratum (i.e., for U1, U2, U3, M1,
+M2, M3, G1, G2, G3 where present).</p>
+<p>Indicate dominant genus, genera or mixed</p></td>
+<td>Up to five growth forms for each substratum.</td>
+<td>One cover class for each substratum</td>
+<td>One height class for each substratum</td>
+</tr>
+</tbody>
+</table>
+<p><h4 id="appendix-7">Appendix 7. Plant photo voucher instructions and guidelines.</h4></p>
+<table>
+<colgroup>
+<col style="width: 18%"/>
+<col style="width: 81%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Plant feature</th>
+<th>Photo voucher instructions and guidelines</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Whole plant (i.e. growth form)</td>
+<td>Photograph the plant habit; that is, its overall shape and form.
+Where possible please use a scale (e.g. graduated range pole) to show
+the height of the plant.</td>
+</tr>
+<tr class="even">
+<td>Leaves</td>
+<td>Photograph the leaves showing shape and any patterns, features (e.g.
+hairs, spikes) and colour variations (e.g. different coloured top and
+bottom). If relevant photograph the whole compound leaf and leaflets.
+Where possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Flower/inflorescence</td>
+<td>If present photograph individual flowers from the front, side and
+back. If relevant photograph the whole inflorescence (complete flower
+head). Where possible please use a scale (e.g. scale card, coin,
+pen).</td>
+</tr>
+<tr class="even">
+<td>Buds</td>
+<td>If present photograph the buds showing size, shape and number. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Fruit</td>
+<td>If present photograph the fruit showing size, shape and number.
+Where possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Seeds</td>
+<td>If present photograph the seeds showing size, shape and number.
+Where possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Stem</td>
+<td>If useful for identification photograph the stem (e.g. spines,
+cross-section shape). Where possible please use a scale (e.g. scale
+card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Bark</td>
+<td>If useful for identification photograph the bark. Where possible
+please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Roots/rhizomes</td>
+<td>If useful for identification photograph the roots or rhizomes. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Other</td>
+<td>If useful for identification photograph any other plant features
+(e.g. branch structure, ligule, thorns). Where possible please use a
+scale (e.g. scale card, coin, pen).</td>
+</tr>
+</tbody>
+</table>
+"""^^rdf:HTML ;
+    tern:equipment """
+    <h3 id="equipment">Equipment</h3>
+<ul>
+<li><p>Mobile device pre-loaded with:</p></li>
+<li><p>the Monitor app</p></li>
+<li><p>a field GIS app (e.g. Avenza Maps) with available layers (e.g.
+satellite imagery, project area boundaries, prospective vegetation
+mapping point and plot locations, vegetation mapping, landform features,
+access tracks, watercourses) (optional)</p></li>
+<li><p>A suitable app for recording tree height, e.g. Tree Meter,
+Arboreal Tree Height (optional)</p></li>
+<li><p>GNSS, such as a Trimble R1 or DA2 receiver, a hand-held GPS or
+device built-in GPS (least preferred), capable of achieving &lt;30 cm
+accuracy</p></li>
+<li><p>Backup hard copy maps with relevant spatial layers</p></li>
+<li><p>DSLR camera and micro SD card(s) (backup)</p></li>
+<li><p>Compass (or a suitable app)</p></li>
+<li><p>Plant identification guides</p></li>
+<li><p>Plant vouchering equipment (refer to the Floristics Module for a
+more detailed equipment list):</p></li>
+</ul>
+<ul>
+<li><p>Secateurs</p></li>
+<li><p>Paper bags (small)</p></li>
+<li><p>Envelopes (for storage of seeds and other small plant
+material)</p></li>
+<li><p>Plastics bags (large for storage and transport of plant
+specimens)</p></li>
+<li><p>Plant press and straps</p></li>
+<li><p>Newspaper (tabloid size) and cardboard (43.5 x 28.5 cm)</p></li>
+<li><p>Voucher barcode labels (see the Generating Voucher Barcode Labels
+for EMSA Specimens and Samples instruction sheet)</p></li>
+</ul>
+<ul>
+<li><p>Rangefinder (optional, to measure tree height and to assist with
+homogeneity measure).</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """
+   <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<h4 class="unnumbered" id="pre-survey-planning-desktop-component">Pre-survey planning (desktop
+component)</h4>
+<ol type="1">
+<li><p>Review existing data, available aerial/satellite imagery, and
+NVIS/vegetation mapping for the area of interest and surrounds. This
+will provide an indication of the likely extent of native vegetation
+cover and the vegetation types to be expected, and whether any
+threatened species and threatened ecological communities have been
+recorded in or around the area, to assist with project area level
+stratification for vegetation mapping/survey purposes and help to
+determine the potential number of vegetation mapping points required.
+Refer to the Plot Selection and Layout Module for key sources of
+information to review.</p></li>
+<li><p>Determine if vegetation mapping is necessary and at what scale,
+depending on the:</p></li>
+</ol>
+<ul>
+<li><p>scale, aims, requirements and budget of the project</p></li>
+<li><p>availability, scale and accuracy (spatial and classification) of
+existing mapping</p></li>
+<li><p>changes to the project area since the previous vegetation
+survey/mapping was undertaken.</p></li>
+</ul>
+<ol start="3" type="1">
+<li><p>Assess if vegetation mapping points are required. If the project
+area is small (e.g. &lt; 5 ha) and the range of visually distinct
+vegetation associations is already represented within survey plots,
+vegetation mapping points may not be required.</p></li>
+<li><p>Determine what needs to be classified and mapped based on the
+scope of the project (i.e. all of the project area or only areas to be
+impacted or managed).</p></li>
+<li><p>Determine if a reconnaissance survey is necessary to:</p></li>
+</ol>
+<ul>
+<li><p>verify the accuracy of existing information</p></li>
+<li><p>confirm if nationally threatened species/threatened ecological
+communities are present</p></li>
+<li><p>stratify the project area based on visual interpretation</p></li>
+<li><p>refine the proposed location of plots.</p></li>
+</ul>
+<ol start="6" type="1">
+<li><p>Determine how many vegetation mapping points are required and how
+they are spread across the project area. There is no set standard,
+however, consider the:</p></li>
+</ol>
+<ul>
+<li><p>project aims, requirements and budget</p></li>
+<li><p>size of the project area/vegetation associations</p></li>
+<li><p>number and complexity of vegetation associations</p></li>
+<li><p>site access/practicalities</p></li>
+<li><p>desired scale of mapping (the more points, the more accurate the
+output)</p></li>
+<li><p>coverage already provided by survey plots</p></li>
+<li><p>environmental impact assessment requirements (e.g. sampling
+intensity, representation of areas of different condition, and proximity
+to proposed development footprint)</p></li>
+<li><p>state/territory level survey requirements.</p></li>
+</ul>
+<h4 class="unnumbered" id="field-survey">Field survey</h4>
+<ol type="1">
+<li><p>If using an external GNSS to record location, connect it to the
+mobile device and allow time for the accuracy to drop to
+sub-metre.</p></li>
+<li><p>Select a suitable location for a vegetation mapping
+point:</p></li>
+</ol>
+<ul>
+<li><p>ensure you are located within homogeneous vegetation</p></li>
+<li><p>avoid shrubs or trees in the foreground when facing south, so the
+photo is unobscured.</p></li>
+</ul>
+<ol start="3" type="1">
+<li><p>Open the Monitor app and select <em>Vegetation
+Mapping</em>.</p></li>
+<li><p>Select <em>add vegetation mapping point</em>. A sequential ID is
+automatically assigned to the record.</p></li>
+<li><p>The <em>date</em> and <em>time</em> of the observation are
+automatically recorded but can be edited if necessary.</p></li>
+<li><p>Assign a <em>field ID</em> (optional). This is additional to the
+automatically generated ID, to assist field-based stratification of the
+project area, visual mapping and reporting (e.g. VA1, VA2,
+VA2b).</p></li>
+<li><p>The <em>location</em> of the observation is automatically
+recorded. To change the location, select ‘choose on map’ or enter
+specific coordinates.</p></li>
+<li><p>Record the <em>homogeneity measure</em> (in metres), being a
+visual estimate of the shortest distance from the vegetation mapping
+point to a vegetation association different to the one that you are
+sampling (see diagram in <a href="#appendix-2">Appendix 2</a>).</p></li>
+<li><p>Take a landscape orientated photo (where possible, facing south
+to minimise the effect of shadow) by pressing the <em>camera</em>
+button. Select the <em>photo direction</em>. Provide a <em>photo
+description</em> (optional).</p></li>
+<li><p>Consider a virtual assessment area centred around the vegetation
+mapping point; the size of which will vary depending on the height of
+the vegetation. A 20 x 20 m area is typical however a smaller assessment
+area may be appropriate in grassland and heathland, and a larger area
+may be more appropriate in open woody communities (Hnatiuk <em>et
+al.</em> 2009a; Sivertsen 2009).</p></li>
+<li><p>Record the:</p></li>
+</ol>
+<ul>
+<li><p><em>vegetation growth stage</em> (refer to <a href="#appendix-4">Appendix 4</a> and
+    <a href="#appendix-5">Appendix 5</a>)</p></li>
+<li><p><em>disturbance of site</em> (refer to <a href="#appendix-5">Appendix 5</a>)</p></li>
+<li><p><em>land-use history</em> (refer to <a href="#appendix-5">Appendix 5</a>)</p></li>
+<li><p><em>fire history</em></p></li>
+<li><p><em>comment</em> (optional) (e.g. impact of weed species,
+overgrazing, mass flowering event etc.).</p></li>
+</ul>
+<ol start="12" type="1">
+<li><p>Collect vegetation information to NVIS Level 5 (association
+level). For each of the three vegetation strata (Upper [U], Mid [M],
+Ground [G]) nominate in descending order the dominant species (up to 3
+species per stratum with ≥5% foliage projective cover), where present.
+For each species, record:</p></li>
+</ol>
+<ul>
+<li><p><em>species</em> (using the search function and drop-down list,
+or manually enter a descriptive field name if identification is
+uncertain, see Additional guidelines)</p></li>
+<li><p>visual estimate of <em>foliage projective cover</em> to the
+nearest 1% (refer to <a href="#appendix-3">Appendix 3</a>)</p></li>
+<li><p>dominant <em>growth form</em> (refer to <a href="#appendix-6">Appendix 6</a>)</p></li>
+<li><p><em>average height</em> (m)</p></li>
+<li><p><em>photo/s</em> (optional, e.g. if species identification is
+uncertain) (refer to <a href="#appendix-7">Appendix 7</a>)</p></li>
+<li><p>a <em>voucher specimen</em> (optional)</p></li>
+</ul>
+<ol start="13" type="1">
+<li><p>Return to the field vehicle or an area where all the equipment is
+available. Tag each voucher specimen securely with a unique voucher
+barcode label. Place the label on stems or away from any plant parts
+that will need to be examined for identification purposes. Use paper
+envelopes for small specimens and attach the voucher label to the
+envelope.</p></li>
+<li><p>For each specimen, <em>scan</em> the voucher barcode label using
+the app. Add any relevant <em>comments</em> (optional).</p></li>
+<li><p>Select <em>save</em> to save the vegetation mapping point record.
+A summary page will appear. Based on the information entered, the app
+will auto-generate a draft NVIS Level 4 (sub-formation)
+description.</p></li>
+<li><p>If necessary, records can be amended after clicking save by using
+the <em>edit</em> function.</p></li>
+<li><p>Once all vegetation mapping point data has been entered and
+voucher barcodes scanned, select <em>complete module</em>.</p></li>
+<li><p>Transfer the voucher specimens to a plant press whilst in the
+field, ideally after each vegetation mapping point. </p></li>
+</ol>"""^^rdf:HTML ;
+    tern:purpose """
+    <h2 id="rationale">Rationale</h2>
+<p>Classifying and mapping vegetation is critical to environmental
+assessments, landscape management, and ecological research (Addicott
+<em>et al.</em> 2018; Luxton <em>et al.</em> 2021; Patykowski <em>et
+al.</em> 2021). Vegetation classification helps to understand the
+patterns and drivers of species distributions (Addicott <em>et al.</em>
+2021). Vegetation mapping underpins the assessment of biodiversity
+through space and time, to support biodiversity planning and management
+at various scales. Furthermore, vegetation classification and mapping
+are integral to Australian biodiversity laws and regulations (Lewis
+<em>et al.</em> 2008; McKenzie <em>et al.</em> 2008; Gellie <em>et
+al.</em> 2018; Addicott <em>et al.</em> 2021).</p>
+<p>The NVIS framework is the nationally adopted approach to classifying
+vegetation, underpinned by rule sets and mandatory data requirements to
+deliver standardised and comprehensive vegetation descriptions. The NVIS
+vegetation hierarchy provides a system for describing the structural and
+floristic patterns of groups of plants in the landscape and consists of
+six levels of classification (Level 1 the simplest to Level 6 the most
+complex). The data collected in this protocol facilitates classification
+at NVIS Level 5 (vegetation association) with minimal observer bias and
+enables the automatic generation of higher levels (NVIS Technical
+Working Group 2017). This approach ensures the classification is
+consistent and comparable within and across projects and jurisdictions
+(Guerin <em>et al.</em> 2017; Baruch <em>et al.</em> 2018; Addicott
+<em>et al.</em> 2021), and is suitable for inclusion in state, territory
+and national vegetation datasets (Executive Steering Committee for
+Australian Vegetation Information 2003; NVIS Technical Working Group
+2017).</p>
+<p>The vegetation mapping methodology is intentionally rapid and is more
+efficient than other survey methods to define and map vegetation
+associations. Locating vegetation mapping points in homogeneous areas is
+the most compatible approach for vegetation mapping. By recording a
+measure of homogeneity, the vegetation mapping points are effectively
+virtual quadrats of variable size, in which the structural and floristic
+data (and thus mapping class) is deemed to adequately describe the
+vegetation association (Sparrow and Leitch 2009).</p>
+<p>The collection of quantitative species-based cover data is considered
+best practice for vegetation classification (Addicott <em>et al.</em>
+2021). It provides the ability to measure change over time and under
+different disturbance scenarios, and is robust and readily defensible,
+helping to instil confidence in the classification in both legislators
+and end users (Sparrow and Leitch 2009; Addicott <em>et al.</em>
+2021).</p>
+<p>This protocol requires visual estimates of foliage projective cover
+to the nearest 1% (for species over 5% cover), however, accuracy is not
+assumed nor required to this level. The quantitative data can later be
+converted to a categorical value. This approach assists data reuse and
+is less subjective than assigning categories at the point of collection.
+Species with less than 5% cover are not considered a significant
+influence on the association definition or the spectral response and
+hence are excluded for efficiency (Sparrow and Leitch 2009; Patykowski
+<em>et al.</em> 2021).</p>
+<p>The intended use of data derived from the broad characterisation of
+vegetation associations at vegetation mapping points differs from the
+detailed vegetation survey undertaken at survey plots. The combined
+‘hybrid’ approach optimises survey timing, increases sampling and search
+intensity, enables sampling of rare and restricted vegetation
+communities, and provides the opportunity for both systematic and
+opportunistic collection of herbarium specimens (Bell and Driscoll 2020;
+Patykowski <em>et al.</em> 2021).</p>
+<p>Project-level vegetation mapping is generally based on the available
+ground data, i.e. from the vegetation mapping points (this module) and
+survey plots, and a visual interpretation of vegetation association
+boundaries using aerial photographs or satellite imagery. Whilst this
+approach is appropriate at small scales, the result can be subjective
+and vary considerably between observers and projects, thus limiting the
+usefulness of the data at the broader scale. Post-field numerical
+analysis of the data (e.g. using hierarchical cluster analysis to
+classify the vegetation data, and supervised image analysis to spatially
+classify remotely sensed data based on spectral characteristics), is a
+much more accurate, time-efficient and cost-effective approach at a
+landscape scale (Xie et al. 2008; Sparrow and Leitch 2009; Uyeda et al.
+2020).</p>
+<p>The tooling and integrated database to collect NVIS-compatible
+vegetation data at defined vegetation mapping points provides users with
+clean, consistent, repeatable and spatially explicit data outputs to
+assist with vegetation mapping and reporting. The centralised collation
+of the data means it can be used to produce larger-scale, more complex
+classifications and improved mapping outputs, which in turn will improve
+the information available to future users. For example, project data
+from across Australia could help to update NVIS classification and
+mapping and help to fill gaps in the current dataset (Bell and Driscoll
+2020).</p>
+<h1 id="vegetation-mapping-protocol">Vegetation mapping protocol</h1>
+<h2 id="field-collection">Field collection</h2>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<li><p>This module is not dependent on other modules. Vegetation mapping
+is often undertaken at the start of a project, before other modules, to
+help inform the selection of plots, targeted survey locations, or the
+location of intervention activities.</p></li>
+</ul>
+<h3 id="time-requirements">Time requirements</h3>
+<p>Time estimates vary depending on the level of experience and whether
+voucher specimens are collected. The time required to traverse between
+vegetation mapping points will vary based on the size of the project
+area and the number of points required. As a general guide, allow:</p>
+<ul>
+<li><p>5-15 minutes per vegetation mapping point to collect the required
+information.</p></li>
+<li><p>10-15 minutes per vegetation mapping point to collect and prepare
+voucher specimens, attach voucher labels, and scan and enter details
+into the app.</p></li>
+<li><p>10 minutes per plant press every 2–3 days, during and immediately
+after the field survey, to inspect and change newspaper as necessary,
+until specimens are dry.</p></li>
+</ul>
+<h3 id="personnel-requirements">Personnel requirements</h3>
+<ul>
+<li><p>Vegetation mapping can be completed by one person but is easier
+with two, so one can make the observations and the other can record the
+data directly into the app.</p></li>
+<li><p>The surveyor making the observations is ideally familiar with
+vegetation attributes and experienced in identifying the vegetation
+within the area.</p></li>
+<li><p>Scientific permits are required if voucher specimens are
+collected. Additional permits may be required for collecting threatened
+plant species, check with the local authority. Land access permissions
+are required.</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:scope """
+     <h1 id="introduction-and-background">Introduction and background</h1>
+<p>Vegetation mapping incorporates a classification of the vegetation,
+and a spatial attribution of that classification (Tierney et al. 2017).
+Classifying and mapping vegetation helps to simplify complex systems
+into discreet units and understand the distribution of vegetation
+communities (Addicott et al. 2018; Patykowski et al. 2021).</p>
+<p>This module provides a standardised approach to vegetation
+classification, in line with the nationally adopted National Vegetation
+Information System (NVIS) information hierarchy (NVIS Technical Working
+Group 2017). Data is collected at precise ‘vegetation mapping points’
+within homogeneous vegetation, as summarised in <a href="#table-1">Table 1</a>. The vegetation
+attributes enable the classification of the vegetation to NVIS Level 5
+(association) (NVIS Technical Working Group 2017). The homogeneity
+measure assists in vegetation classification and mapping (Sparrow et al.
+2020). Additional information such as vegetation growth stage,
+disturbance and fire history helps to identify variability within
+vegetation associations and assist stratification and assessment (Heard
+and Channon 1997; Brocklehurst et al. 2007).</p>
+<p>Vegetation mapping points should cover the range of visually distinct
+vegetation associations present, including common, threatened and
+exotic. The number of vegetation mapping points will depend on a range
+of factors, such as the survey aims, availability/accuracy of existing
+mapping, size of the project area and the variability of the vegetation
+(see <a href="#appendix-1">Appendix 1</a>). The greater the number of vegetation mapping points,
+the more accurate the vegetation mapping will be. For example, for a map
+scale of 1:50,000, at least one vegetation mapping point is recommended
+in each visually distinct vegetation association per every 1
+km<sup>2</sup> (Gunn et al. 1988). The vegetation mapping points should
+be at least 100 m apart to avoid auto-correlation.</p>
+<p>For small project areas and/or those with relatively few vegetation
+associations, vegetation mapping can be extrapolated from the vegetation
+mapping points and visual interpretation of aerial or satellite imagery.
+At larger scales, where ground data is sporadic and there are numerous
+vegetation associations to discern, the point data buffered by the
+homogeneity measure enables accurate spatial correlation between the
+field data and remotely sensed imagery, to create robust mapping
+outputs.</p>
+<p><h5 id="table-1">Table 1. Summary of the data collected at vegetation mapping
+points.</h5></p>
+<table>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 60%"/>
+<col style="width: 19%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Data field</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Vegetation attributes</strong></td>
+<td><p>For the three dominant plant species (with foliage projective
+cover ≥5%) in each of the three dominant strata:</p>
+<ul>
+<li><p>dominant growth form</p></li>
+<li><p>average height</p></li>
+<li><p>visual estimate of foliage projective cover (to the nearest
+1%)</p></li>
+</ul></td>
+<td>NVIS Technical Working Group (2017); National Committee on Soil and
+Terrain (in prep)</td>
+</tr>
+<tr class="even">
+<td><strong>Homogeneity measure</strong></td>
+<td>Visual estimate (metres)</td>
+<td>White <em>et al.</em> (2012)</td>
+</tr>
+<tr class="odd">
+<td rowspan="6"><strong>Additional information</strong></td>
+<td>Vegetation growth stage</td>
+<td rowspan="2">National Committee on Soil and Terrain (in prep)</td>
+</tr>
+<tr class="even">
+<td>Disturbance</td>
+</tr>
+<tr class="odd">
+<td>Land-use history</td>
+<td>ABARES (2016)</td>
+</tr>
+<tr class="even">
+<td>Fire history (if known, specify year)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Photo (optional)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Voucher specimen (optional)</td>
+<td></td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
     tern:undertakenConcurrently
         <https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9> ,
-        <https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ;
+        <https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32> ,
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
+        <https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9> ,
+        <https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6> ,
+        <https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6> ,
+        <https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b> ,
+        <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
 .
 
