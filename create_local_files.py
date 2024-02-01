@@ -9,7 +9,6 @@ of the RDF files in this repository. Further changes to the data should be
 done directly in the generated source files.
 """
 
-
 import re
 from pathlib import Path
 
