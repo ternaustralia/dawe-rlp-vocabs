@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -9,558 +10,1962 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         skos:Concept ,
         tern:Method ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """
-    <p>
-    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51">Vertebrate fauna</a> module. 
-    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
-    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51">Vertebrate fauna</a>" module.
-    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
-    </p>
-    """^^rdf:HTML ;
-    skos:note """
-    <h3 id="additional-guidelines">Additional guidelines</h3>
-<h4 id="diurnal-active-search-1">A. Diurnal active search</h4>
-<ul>
-  <li>
-    <p>
-      Diurnal active search effort must be a minimum of 60 minutes surveyor
-      time. Increased effort is recommended for non-trapping Fauna Plots. The
-      effort can be increased by repeating the search on different days and time
-      periods (i.e. morning and afternoon sessions under different weather and
-      cloud cover conditions).
-    </p>
-  </li>
-  <li>
-    <p>
-      Diurnal active searching may be conducted whilst the Fauna Plot is being
-      trapped (i.e. you do not need to wait until the conclusion of the
-      trapping).
-    </p>
-  </li>
-  <li>
-    <p>
-      Destructive methods, i.e. ripping bark of trees, lifting logs etc., must
-      be restricted to the outer edge of the Fauna Plot to limit disturbance.
-      All rocks and timber, especially hollow logs, must be put back into place.
-      Do not remove fauna refuges, or move them so they no longer provide
-      refuge.
-    </p>
-  </li>
-  <li>
-    <p>
-      Destructive methods can be conducted off-plot, within 20 m of the plot
-      boundary, and not within an adjacent Vegetation and Soils plot.
-    </p>
-  </li>
-  <li>
-    <p>Minimise noise when actively searching.</p>
-  </li>
-  <li>
-    <p>
-      If ground surfaces are sandy, the surveyors should ensure time is spent
-      investigating these areas to identify tracks.
-    </p>
-  </li>
-  <li>
-    <p>
-      Diurnal active searching can be conducted at any time during daylight
-      hours. If sandy surfaces are present, mid-mornings are recommended (after
-      trap checking is completed as a priority), before tracks blow away.
-      However, avoid cold weather conditions as animal movements will be
-      limited, thus the chance of observation will be low.
-    </p>
-  </li>
-  <li>
-    <p>
-      Where possible, for scat records, note the approximate age of the scat in
-      the comments section - noting if it is considered fresh or old).
-    </p>
-  </li>
-  <li>
-    <p>
-      For track observations, note the approximate age of the track in the
-      comments section, noting the track is considered fresh (i.e. overnight),
-      or old – such as tracks left in heavy or previously wet soils.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record burrows, to species level where possible, based on the shape, and
-      scats that may be present (use appropriate field guides such as Triggs
-      (2004) and Moseby <em>et al.</em> (2012).
-    </p>
-  </li>
-  <li>
-    <p>Remember to look up trees and amongst shrubs for bird nests.</p>
-  </li>
-</ul>
-<h4 id="nocturnal-passive-searching">B. Nocturnal passive searching</h4>
-<ul>
-  <li>
-    <p>
-      Nocturnal passive search effort must be a minimum of 60 minutes surveyor
-      time. Increased effort is recommended for non-trapping Fauna Plots. The
-      effort can be increased by repeating the search on different nights
-      (rather than extending the search time for one session).
-    </p>
-  </li>
-  <li>
-    <p>
-      Where possible, schedule the nocturnal searches to avoid nights
-      surrounding a full moon (all surveys should avoid a full moon where
-      possible) if cloud cover is sparse.
-    </p>
-  </li>
-  <li>
-    <p>
-      Nocturnal passive searching may be conducted whilst the Fauna Plot is
-      being trapped (i.e. you do not need to wait until the conclusion of the
-      trapping). Ideally the search should commence between 1 and 2 hours after
-      dark. Surveyors should take care to minimise noise and disturbance.
-    </p>
-  </li>
-  <li>
-    <p>
-      Due to WHS concerns, nocturnal passive searches should not be conducted
-      alone.
-    </p>
-  </li>
-</ul>
-<h4 id="additional-techniques">Additional techniques</h4>
-<h5 id="call-play-back-for-birds-and-frogs">
-  A. Call play-back for birds and frogs
-</h5>
-<ul>
-  <li>
-    <p>
-      Call play-back to encourage birds and frogs to respond, can be conducted,
-      but is recommended as a separate activity, not included as part of the
-      diurnal active searches, nocturnal passive searches, or bird surveys.
-      Species recorded should be noted on the opportunistic observation module
-      of the app, and the method noted as being ‘heard in response to call
-      play-back’.
-    </p>
-  </li>
-  <li>
-    <p>
-      Call play-back should not be undertaken within 30 minutes prior to a
-      nocturnal passive search, as this may interfere with the results, i.e.
-      some species have a delayed response to the calls being played.
-    </p>
-  </li>
-  <li>
-    <p>
-      Call play-back may be undertaken after the nocturnal passive search has
-      concluded.
-    </p>
-  </li>
-  <li>
-    <p>
-      As call play-back is not a specific method of the Vertebrate Fauna Module,
-      the effort spent playing calls is not specified, however bear in mind the
-      potential impact to trapping results (if the Fauna Plot is being trapped).
-    </p>
-  </li>
-  <li>
-    <p>
-      Consult field guides to determine which nocturnal bird species may be
-      present in your area and habitat.
-    </p>
-  </li>
-</ul>
-    """^^rdf:HTML ;
-    skos:prefLabel "Active and passive searching protocol" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vertebrate-fauna/active-and-passive-searching-protocol/active-and-passive-searching-protocol.ttl"^^xsd:anyURI ;
-    tern:equipment """
-    <h3>Contents</h3>
+    dcterms:description """<h3>Contents</h3>
 <ol>
-  <li><a href="#equipment">Equipment</a></li>
-  <li>
-    <a href="#instructions-and-procedures">Instructions and procedures</a>
+  <li><a href="#field-collection-3">Field Collection</a></li>
+  <li><a href="#equipment-3">Equipment</a></li>
+  <li><a href="#instructions-and-procedures-3">Instructions and procedures</a>
   </li>
-  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#additional-guidelines-3">Additional guidelines</a></li>
 </ol>
-    <h3 id="equipment">Equipment</h3>
+    <h1 id="active-and-passive-search-protocols-3">Active and passive search
+protocols</h1>
+<h2 id="field-collection-3">Field Collection</h2>
+<h3 id="pre-requisites-3">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<li><p>The plot must be established using the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> prior.</p></li>
+<li><p>The <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> must be completed prior to, or during
+the survey the Active and passive search protocol.</p></li>
+</ul>
+<h3 id="time-requirements-3">Time requirements</h3>
+<p>Survey activity time estimates will vary depending on the number and
+variety of signs encountered, the number of measures recorded, and if
+scats are being collected and removed or merely recorded. As a general
+guide:</p>
+<ul>
+<li><p>Allow 1–2 hours hour for survey planning.</p></li>
+<li><p>Allow 20–60 minutes per plot to complete the reconnaissance visit
+and set up the plot.</p></li>
+<li><p>Allow 15 minutes for the survey set-up before commencing each
+survey to enter the information.</p></li>
+<li><p>Active searches should be conducted for a minimum of 60 minutes
+active surveyor time per ha (i.e. two surveyors for 30 minutes per ha,
+for a Fauna Plot allow 1 hour and for a 2 ha Biodiversity Plots allow 2
+hours). Add additional time if time is spent identifying hand captures
+and observations or watching animals behaviour.</p></li>
+<li><p>Passive searches should be conducted for a minimum of 60 minutes
+active surveyor time per ha (i.e. two surveyors for 30 minutes per ha,
+for a Fauna Plot allow 1 hour and for a 2 ha Biodiversity Plots allow 2
+hours). Add additional time if time is spent watching animals
+behaviour.</p></li>
+</ul>
+<h3 id="personnel-requirements-3">Personnel requirements</h3>
+<p>Personnel number and skills:</p>
+<ul>
+<li><p>Active and passive searches are best conducted with two
+personnel.</p></li>
+<li><p>Surveyors should be familiar with and experienced in identifying
+the characteristic identifiable features of the species observed and
+signs encountered and how to distinguish these signs from other species.
+If surveyors are not confident, time should be dedicated to practising,
+using field reference guides, and seeking advice before conducting this
+protocol.</p></li>
+<li><p>Active searches do involve interference with wildlife. Therefore
+scientific permits and wildlife ethics approvals are may be required,
+but remember to always check with your local authority. Access
+permissions are required.</p></li>
+</ul>
+"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """
+   <h3 id="additional-guidelines-3">Additional guidelines</h3>
+<h4 class="unnumbered" id="diurnal-active-search">Diurnal active
+search</h4>
+<ul>
+<li><p>Diurnal active search effort must be a minimum of 60 minutes
+surveyor time. Increased effort is recommended for non-trapping Fauna
+Plots. The effort can be increased by repeating the search on different
+days and time periods (i.e. morning and afternoon sessions under
+different weather and cloud cover conditions).</p></li>
+<li><p>Diurnal active searching may be conducted whilst the Fauna Plot
+is being trapped (i.e. you do not need to wait until the conclusion of
+the trapping).</p></li>
+<li><p>Destructive methods, i.e. ripping bark of trees, lifting logs
+etc., must be restricted to the outer edge of the Fauna Plot to limit
+disturbance. All rocks and timber, especially hollow logs, must be put
+back into place. Do not remove fauna refuges, or move them so they no
+longer provide refuge.</p></li>
+<li><p>Destructive methods within 20 m of the plot boundary, and not
+within an adjacent Core Plot.</p></li>
+<li><p>Minimise noise when actively searching.</p></li>
+<li><p>Diurnal active searching can be conducted at any time during
+daylight hours. If sandy surfaces are present, mid-mornings are
+recommended (after trap checking is completed as a priority), before
+tracks blow away. However, avoid cold weather conditions as animal
+movements will be limited, thus chance of observation will be
+low.</p></li>
+<li><p>Where possible, for scat records, note the approximate age of the
+scat in the comments section - noting if it is considered fresh or
+old).</p></li>
+<li><p>For track observations, note the approximate age of the track in
+the comments section, noting the track is considered fresh (i.e.
+overnight), or old – such as tracks left in heavy or previously wet
+soils.</p></li>
+<li><p>Record burrows, to species level where possible, based on the
+shape, and scats that may be present (use appropriate field guides
+(Triggs 1996) (Moseby et al. 2012). Remember to look up trees and
+amongst shrubs for bird nests.</p></li>
+</ul>
+<h4 class="unnumbered" id="nocturnal-passive-searching">Nocturnal
+passive searching</h4>
+<ul>
+<li><p>Nocturnal passive search effort must be a minimum of 60 minutes
+surveyor time. Increased effort is recommended for non-trapping Fauna
+Plots. The effort can be increased by repeating the search on different
+nights (rather than extended the search time for one session).</p></li>
+<li><p>Where possible, schedule the nocturnal searches to avoid nights
+surrounding a full moon (all surveys should avoid a full moon where
+possible) if cloud cover is sparse.</p></li>
+<li><p>Nocturnal passive searching may be conducted whilst the Fauna
+Plot is being trapped (i.e. you do not need to wait until the conclusion
+of the trapping). Ideally the search should commence between 1 and 2
+hours after dark. Surveyors should take care to minimise noise and
+disturbance.</p></li>
+<li><p>For safety reasons, nocturnal searches should not be conducted
+alone.</p></li>
+</ul>"""^^rdf:HTML ;
+    skos:prefLabel "Active and Passive Search Protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vertebrate-fauna/active-and-passive-searching-protocol/active-and-passive-searching-protocol.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h1 id="appendices"> Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Key data
+collection fields from the Vertebrate Fauna Module</h4></p>
+<p>Complete lists are provided in the Monitor app, as well as the TERN
+website</p>
+<h4 class="Title-heading-4 unnumbered" id="trapping-set-up-and-closure">Trapping set-up and closure</h4>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Trap specifics</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Pitfall - PVC pipe</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Pitfall - plastic bucket</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Pitfall - temporary plastic sheet folded</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Box trap - foldable aluminium or galvanised steel (i.e. Elliott
+and Sherman style)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Funnel - shadecloth</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Funnel - shadecloth with hessian/other bag</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cage - wire mesh, foot plate mechanism</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Cage - wire mesh, hook mechanism</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other: text describe</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Trap measurements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Trap depth</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Trap height</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Trap width</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Trap length</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Trap set status</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Trap open</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Trap closed - permanently</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Trap closed - temporarily</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Trap closed - wired shut</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Trap closed and removed</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Pitfall closed - filled in</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Pitfall closed - lid secured</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Trap check result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Empty</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>False trigger</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Capture</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Comments</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h4 class="Title-heading-4 unnumbered" id="capture-records">Capture
+records</h4>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Capture status</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>New</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Recapture</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>ID mark type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Temporary</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Permanent</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Permanent ID type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Microchip</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Ear tag</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Bluetooth tag</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Band</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Temporary ID type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Texta - red</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Texta - blue</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Texta - black</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Texta - green</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Individual measurements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Total weight</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Bag weight</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Animal weight</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Age-class</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Adult</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Immature (sub-adult)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Juvenile</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Sex (all classes)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Female</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Male</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Individual measurements - mammals</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Head length</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Body length</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Tail length</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Hind foot length</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Forearm length (bats only)</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Tibia length (bats only)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Ear width</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Mammal reproduction – female: teat condition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>button/un-developed</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>lactating</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>distended/post-lactating</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>button</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>unknown</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Mammal reproduction – female: breeding status</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>pregnant</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>not pregnant</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>unknown</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>dependent young</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>pregnant</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Mammal reproduction – female: pouch young
+present</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>pouch young present</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>no pouch young present</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>unknown</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>not applicable</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>young on back</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Mammal reproduction – male: testes position</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Scrotal</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Abdominal</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Mammal reproduction – male: testes size
+category</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Not enlarged</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Enlarged</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Individual measurements - reptiles</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Body length</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Tail length</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 28%"/>
+<col style="width: 71%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Reptile breeding status - female</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GR</td>
+<td><ul>
+<li><p>Gravid</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>NG</td>
+<td><ul>
+<li><p>Not gravid</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>UK</td>
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Individual measurements - frogs</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Body length</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Tibia length</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Other</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 28%"/>
+<col style="width: 71%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Frog breeding status - female</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GR</td>
+<td><ul>
+<li><p>Gravid</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>NG</td>
+<td><ul>
+<li><p>Not gravid</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>UK</td>
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>BM</td>
+<td><ul>
+<li><p>In amplexus</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 18%"/>
+<col style="width: 81%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Frog breeding status - male</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VS</td>
+<td><ul>
+<li><p>Vocal sac obvious</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>UK</td>
+<td><ul>
+<li><p>Unknown</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>N1</td>
+<td><ul>
+<li><p>Nuptial pads inconspicuous</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>N2</td>
+<td><ul>
+<li><p>Nuptial pads obvious but not fully developed</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>N2</td>
+<td><ul>
+<li><p>Nuptial pads fully developed</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>BM</td>
+<td><ul>
+<li><p>In amplexus</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 6%"/>
+<col style="width: 93%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Body condition score</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><ul>
+<li><p>Emaciated - backbone, ribs and pelvis easily felt without
+applying pressure, no fat layer between bone and skin</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><ul>
+<li><p>Poor - slightly dishing or concave muscle on either side of
+scapula, scapula spine very obvious on palpation, edges of scapula bone
+palpable</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><ul>
+<li><p>Fair - flat to slightly convex muscle on either side of scapula,
+scapula spine prominent on palpation</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><ul>
+<li><p>Good - scapula spine is easily palpable</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><ul>
+<li><p>Excellent - good covering of fat, hard to fee backbone and pelvis
+when applying light pressure, muscle mass on either side of the
+scapula</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><ul>
+<li><p>Emaciated - backbone, ribs and pelvis easily felt without
+applying pressure, no fat layer between bone and skin</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p><i>Adapted from Jackson (2003)</i></p>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Skin condition - mammals</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Hair loss</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Scruffy or matted coat</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Fleas or mites</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Ticks</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Wart-like growths</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Lesions</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Thickened red skin</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Wounds</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Skin condition - reptiles</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Fleas or mites</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Ticks</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Wart-like growths</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Lesions</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Thickened red skin</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Wounds</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Tail loss</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Skin condition - frogs</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Fleas or mites</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Ticks</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Wart-like growths</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Lesions</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Thickened red skin</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Wounds</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 15%"/>
+<col style="width: 84%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Clinical scoring - chemosis of
+eyes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td><ul>
+<li><p>Normal</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><ul>
+<li><p>Mild</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td><ul>
+<li><p>Moderate</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><ul>
+<li><p>Severe</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 15%"/>
+<col style="width: 84%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Clinical scoring - proliferation of
+eyes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td><ul>
+<li><p>Normal</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><ul>
+<li><p>Mild</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td><ul>
+<li><p>Moderate</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><ul>
+<li><p>Severe</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 7%"/>
+<col style="width: 92%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Clinical scoring - chemosis of
+eyes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td><ul>
+<li><p>Normal</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><ul>
+<li><p>Slight discolouration of fur around cloaca; evidence of mild
+urine leakage and slight odour</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td><ul>
+<li><p>Slight discolouration of fur around cloaca/tail area; occasional
+urine dribble; mild odour</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><ul>
+<li><p>Discolouration of the tail area fur more evident; stronger odour;
+urine discharge, greasy texture evident on cloaca/tail</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td><ul>
+<li><p>Fur stain, greasy, darkened; Strong, pungent ‘wet bottom smell’;
+inflammation of cloacal margins, clitoris, vestibule; discharge
+containing urinary debris</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td><ul>
+<li><p>Stained, greasy fur covering a large area; very strong pungent
+acidic smell; blood in urine; coat brown, dry and lustreless; cloaca and
+tail area swollen; grinding teeth</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td><ul>
+<li><p>Stained, greasy, wet matted fur around rump/cloaca area;
+ulcerated oedematous cloaca/tail area; constant purulent discharge;
+crying, straining, distressed, flat, ear flicking, teeth
+grinding</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td><ul>
+<li><p>Progressive decline; myiasis</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p><i>Adapted from Flanagan (2015)</i></p>
+<table>
+<colgroup>
+<col style="width: 15%"/>
+<col style="width: 84%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Clinical swab taken</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td><ul>
+<li><p>Normal</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><ul>
+<li><p>Mild</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td><ul>
+<li><p>Moderate</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><ul>
+<li><p>Severe</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Clinical swab taken</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Yes</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>No</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Animal fate</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>released at point of capture</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>held for observation</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>held for museum vouchering</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>trap death</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>handling death</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>other</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h4 class="Title-heading-4 unnumbered" id="observation-survey-birds-active-and-passive-searches">Observation
+survey (birds, active and passive searches)</h4>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weather conditions </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Temperature</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Actual BOM/weather station <sup>o</sup>C</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rainfall</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Showers</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rain</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Drizzle</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Frost</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Mist</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Thunderstorm</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p> Rainfall duration</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Intermittent</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Occasional</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Frequent</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Continuous</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Periods of rain</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Brief</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cloud cover</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Sunny</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Mostly sunny</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Partly cloudy</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Cloudy</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Overcast</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p> Wind</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Calm</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Light winds</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Moderate winds</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Fresh winds</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Strong winds</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Near gale</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Gale</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p> Moon phase</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>New moon</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>First quarter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Full moon</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Third quarter</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Weather comments</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Free text description</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Observer role</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Spotter - binoculars</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Spotter - naked eye</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Data-entry</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Data-entry only</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Spotter - binoculars</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Equipment used</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Binoculars</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Spotting scope</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Rangefinder</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Spotlight</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Torch/headtorch</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Thermal device</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Camera - still</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Camera - video</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Vehicle</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Other</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Observation method</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Seen</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Heard</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Seen and heard</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Breeding activity - birds</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Nest with eggs</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Nest with young</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Young of out nest</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Recently fledged young</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Diagnostic behaviour</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Suggestive behaviour</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 18%"/>
+<col style="width: 81%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><strong>Activity type - birds</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CO</td>
+<td><ul>
+<li><p>Calling only</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>FO</td>
+<td><ul>
+<li><p>Flying overhead</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>FC</td>
+<td><ul>
+<li><p>Flying overhead circling</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>FW</td>
+<td><ul>
+<li><p>Flying within at strata level</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>ROT</td>
+<td><ul>
+<li><p>Resting on tree</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>ROS</td>
+<td><ul>
+<li><p>Resting on shrub</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>ROG</td>
+<td><ul>
+<li><p>Resting on ground</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>FOT</td>
+<td><ul>
+<li><p>Foraging on a tree</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>FOS</td>
+<td><ul>
+<li><p>Foraging on shrub</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>FOG</td>
+<td><ul>
+<li><p>Foraging on ground</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Breeding activity - birds</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Nest with eggs</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Nest with young</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Young of out nest</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Recently fledged young</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><p>Diagnostic behaviour</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>Suggestive behaviour</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+"""^^rdf:HTML ;
+    tern:equipment """
+  <h3 id="equipment-3">Equipment</h3>
 <p>The following equipment is required:</p>
 <ul>
-  <li>
-    <p>Mobile device with App installed</p>
-  </li>
-  <li>
-    <p>R1 GNSS</p>
-  </li>
-  <li>
-    <p>Hand tools, such as a jemmy bar</p>
-  </li>
-  <li>
-    <p>Rakes</p>
-  </li>
-  <li>
-    <p>Scale cards</p>
-  </li>
-  <li>
-    <p>Camera</p>
-  </li>
-  <li>
-    <p>Hand lens</p>
-  </li>
-  <li>
-    <p>Head-torches (for viewing inside hollows and diurnal searches)</p>
-  </li>
-  <li>
-    <p>
-      Hand-held spotlights (if conducting nocturnal searches with spotlights
-      rather than head-torches)
-    </p>
-  </li>
-  <li>
-    <p>Various field guides or field apps</p>
-  </li>
-  <li>
-    <p>Capture bags (with masking tape and texta to label bags if necessary)</p>
-  </li>
-  <li>
-    <p>
-      Mobile phone/speaker etc., loaded with bird calls to play bird calls
-      <em>(optional)</em>
-    </p>
-  </li>
-  <li>
-    <p>Bird whistles (to encourage call-back) <em>(optional).</em></p>
-  </li>
-</ul>
-    """^^rdf:HTML ;
+<li><p>Mobile device with App installed</p></li>
+<li><p>R1 GNSS</p></li>
+<li><p>Hand tools, such as a jemmy bar</p></li>
+<li><p>Rakes</p></li>
+<li><p>Scale cards</p></li>
+<li><p>Camera</p></li>
+<li><p>Hand lens</p></li>
+<li><p>Head-torches (for viewing inside hollows and diurnal
+searches)</p></li>
+<li><p>Hand-held spotlights (if conducting nocturnal searches with
+spotlights rather than head-torches)</p></li>
+<li><p>Various field guides or field apps</p></li>
+<li><p>Capture bags (with masking tape and texta to label bags if
+necessary)</p></li>
+<li><p>Mobile phone/speaker etc., loaded with bird calls to play bird
+calls <em>(optional)</em></p></li>
+<li><p>Bird whistles (to encourage call-back)
+<em>(optional).</em></p></li>
+</ul>"""^^rdf:HTML ;
     tern:instructions """
-    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
-<h4 id="diurnal-active-search">A. Diurnal active search</h4>
+    <h3 id="instructions-and-procedures-3">Instructions and procedures</h3>
+<h4 class="unnumbered" id="reconnaissance-and-survey-set-up">Reconnaissance and survey
+set-up</h4>
 <ol type="1">
-  <li>
-    <p>
-      Arrive at the Fauna Plot to be surveyed, ideally between mid-morning (i.e.
-      after all traps have been checked) and mid-afternoon, avoiding cold and
-      hot temperatures.
-    </p>
-  </li>
-  <li><p>Familiarise with the Fauna Plot boundaries.</p></li>
-  <li><p>Open the app, and select ‘Vertebrate fauna, ‘Diurnal search’.</p></li>
-  <li>
-    <p>
-      Select ‘survey details’. Select the applicable ‘plot name’, or type it in
-      if it is not listed.
-    </p>
-  </li>
-  <li>
-    <p>
-      Enter the number of ‘observers’, the default will be 1, tap and enter if
-      different.
-    </p>
-  </li>
-  <li>
-    <p>
-      Enter the weather conditions (these can be reviewed at the conclusion of
-      the survey if you feel conditions changed from that noted at the start).
-    </p>
-  </li>
-  <li>
-    <p>
-      The app will populate today's date (tap to edit). Select ‘start survey’,
-      and a timer will show at the top of the screen. The screen will show a map
-      of the plot, indicating your position. Keep an eye on this screen to make
-      sure you remain within the fauna plot boundary.
-    </p>
-  </li>
-  <li>
-    <p>
-      Work across the Fauna Plot (wandering is acceptable) looking for fauna, or
-      indirect signs.
-    </p>
-  </li>
-  <li>
-    <p>
-      If suitable habitat is present within the fauna plot, rake leaf litter and
-      the top 2-3 cm of topsoil, carefully searching for animals, particularly
-      legless lizards. Rake back any moved leaf litter.
-    </p>
-  </li>
-  <li>
-    <p>
-      Move to the edge of the Fauna Plot (in any direction, as long as the
-      habitat is homogenous with the plot), and actively search for fauna by
-      lifting rocks, removing bark from trees, and lifting logs and fallen
-      timber. Return rocks and logs back to their original position.
-    </p>
-  </li>
-  <li>
-    <p>
-      At the completion of the survey time (60 minutes if 1 surveyors, 30
-      minutes if 2 surveyors), select ‘end active search’.
-    </p>
-  </li>
-  <li>
-    <p>
-      Identify, mark and release any animals that were hand caught (follow the
-      procedures and guidelines in
-      <em
-        >Section
-        <a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/7942c1d3-8cfc-4d74-931d-850cacfa5a63"
-          >Identify, measure and release protocols</a
-        ></em
-      >
-      and take a tissue specimen following the procedures and guidelines in
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/a15130ca-82ce-4c50-9392-66f9b0c73450"
-          >Whole animal and tissue vouchering protocols</a
-        ></em
-      >. If the species has not been caught previously during the survey, follow
-      the decision key shown <a href='#figure-26'>Figure 26</a> to determine if the animal should be
-      vouchered.
-    </p>
-    <p id='figure-26'>
-      <img
-        src="https://w3id.org/tern/static/dawe-rlp/latest/vertebrate/field-photograph-frog.png"
-        alt="Field photograph of a frog on a scale card."
-        widteh="666"
-        height="635"
-      />
-    </p>
-    <p>Figure 26. Field photograph of a frog on a scale card.</p>
-  </li>
+<li><p>Arrive at the plot prior to the intended survey starte time.
+Ensure the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> has been completed to mark
+out the plot boundary and define the current visit in the Monitor
+app.</p></li>
 </ol>
-<h5 id="b.-record-direct-or-indirect-observations">
-  B. Record direct or indirect observations
-</h5>
 <ol type="1">
-  <li>
-    <p>
-      For each fauna observation, either a direct observation, or indirect sign
-      of fauna, including tracks, scats, diggings, bones, feathers etc.,
-      identifiable to the species level, select the ‘+’ symbol to add a new
-      observation.
-    </p>
-  </li>
-  <li>
-    <p>
-      A new screen will appear. Select <em>Species name</em> using the ‘lookup’.
-      As you type, options will be provided by class, order, family, genus,
-      species. Enter to the level you are confident of the identification (e.g.
-      enter to genus level if uncertain of the species). Where an identification
-      is uncertain, only record the observation if a voucher specimen, photo or
-      other evidence is taken for later identification. If the identification is
-      only known to the genus, manually assign a descriptive field species name
-      e.g. <em>Macropus</em> ‘red legs’. Invertebrates and non-vascular flora
-      are often only known to class or morphological groups.
-    </p>
-  </li>
-  <li>
-    <p>
-      If the identification is uncertain (i.e. pending the review of evidence
-      collected), switch <em>Confident</em> toggle to ‘off’ (default is ‘on’ to
-      indicate the surveyor is confident). If confident at the level of entry at
-      Step 5 (e.g. entered to genus level because of uncertainty of the species
-      and there is no supporting evidence to refine the identification), then
-      <em>Confident</em> toggle should be ‘on’.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Source of identification</em> from the drop-down list. If the
-      Confident toggle is ‘on’ the default selection is ‘field identification by
-      observer’. If <em>Confident</em> toggle is ‘off’ the default selection
-      becomes ‘awaiting identification’ and the record will be flagged for
-      follow up through the curation process. For example, if evidence (e.g.
-      photo, audio recording) is provided to support the record, which is later
-      identified by an expert, the <em>Source of identification</em> is then
-      updated to ‘identification of evidence by expert’).
-    </p>
-  </li>
-  <li>
-    <p>
-      The date and time of the observation will be automatically recorded. Click
-      to override the record date and time (i.e. if entering a record after the
-      event).
-    </p>
-  </li>
-  <li>
-    <p>
-      Record the <em>Number of individuals</em> observed (zero, blank and no
-      selection are invalid). Select if the count is exact or an estimate.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record the <em>Observation method</em> from the drop-down list (e.g.
-      observed, heard, sign – track, sign – scat).
-    </p>
-  </li>
-  <li>
-    <p>
-      Click the camera button, to open the device camera and take photographs,
-      ensuring a scale card is also in the photo. There is no need to collect
-      samples.
-    </p>
-  </li>
-  <li>
-    <p>
-      Record <em>Habitat description</em> using the drop-down lists or manual
-      entry (e.g. structural formation, vegetation association, macro and
-      microhabitat) (optional).
-    </p>
-  </li>
-  <li>
-    <p>Record any additional <em>Observation notes</em> (optional).</p>
-  </li>
-  <li>
-    <p>
-      Record additional <em>Observation details</em>. Relevant fields will be
-      visible based on the selection of class. Select the behaviour, age, sex
-      and reproductive status from the drop-down list and record morphological
-      measurements (optional, as per
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/7942c1d3-8cfc-4d74-931d-850cacfa5a63"
-          >Identify, measure and release protocols</a
-        ></em
-      >).
-    </p>
-  </li>
-  <li>
-    <p>
-      If a <em>Voucher specimen</em> is collected, switch toggle to ‘on’. Assign
-      a unique barcode voucher label to the specimen and
-      <em>scan barcode</em> (<em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/a15130ca-82ce-4c50-9392-66f9b0c73450"
-          >Whole animal and tissue vouchering protocols</a
-        ></em
-      >). Select <em>Voucher type</em> from the drop-down list. For fauna
-      remains, select the <em>Condition of the specimen</em> from the drop-down
-      list. If a separate voucher reference number is assigned by the relevant
-      museum then this should be recorded in the
-      <em>Voucher comments</em> field.
-    </p>
-  </li>
-  <li>
-    <p>
-      If more than one voucher specimen is collected for the same observation
-      (e.g. hair sample and a liver sample) then select toggle ‘on’ for
-      <em>Additional voucher specimen</em> and repeat Step 17. Each specimen is
-      allocated a unique QR code.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Save and Add</em> if you wish to record an additional entry for
-      the same location, date and time (e.g. if multiple bird species were
-      observed flying over at the same time).
-    </p>
-  </li>
-  <li>
-    <p>
-      Select <em>Save</em> to save the species record. The screen will then
-      return to Home or the Module that was being undertaken.
-    </p>
-  </li>
+<li><p>Ensure the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a>, Standard protocol (minimum),
+or Enhanced protocol has been completed.</p></li>
+<li><p>Open the Monitor app and select <em>Vertebrate Fauna Module &gt;
+Active search protocol</em>.</p></li>
+<li><p>Indicate if <em>survey intent</em> is a once-off measure,
+repeated measure, repeated measure with previous scat removal, or linked
+to a pre-control activity or post-control activity (optional).</p></li>
+<li><p>Enter the <em>number of observers</em>, <em>observer name</em>
+and <em>observer role</em> (spotter, data entry, data entry only) for
+each observer.</p></li>
+<li><p>Enter the <em>weather conditions</em>, including
+<em>temperature</em>, <em>rainfall</em>, <em>rainfall duration, cloud
+cover,</em> <em>wind speed</em>, and <em>moon phase</em> of the previous
+night. Note the weather conditions can be adjusted after the
+survey.</p></li>
+<li><p>Enter the <em>tracking surface</em> information.</p></li>
+<li><p>Enter the <em>search type</em> – active techniques or passive
+techniques only.</p></li>
+<li><p>Indicate if <em>call-play back</em> techniques will be
+used.</p></li>
+<li><p>Identify if <em>site information</em> will be completed after the
+survey has been conducted or if other modules are being conducted in
+unison, whereby site information such as floristics and habitat
+condition will be collected elsewhere (refer to guidelines for further
+information).</p></li>
 </ol>
-<h4 id="c.-nocturnal-passive-search">C. Nocturnal passive search</h4>
+<h4 class="unnumbered" id="conduct-the-survey-1">Conduct the survey
+</h4>
 <ol type="1">
-  <li>
-    <p>
-      Arrive at the Fauna Plot to be surveyed, ideally 1-2 hours after dark.
-    </p>
-  </li>
-  <li>
-    <p>
-      Open the app, and select ‘Vertebrate fauna, ‘Nocturnal passive search’.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select ‘survey details’. Select the applicable ‘plot name’, or type it in
-      if it is not listed.
-    </p>
-  </li>
-  <li>
-    <p>
-      Enter the number of ‘observers’, the default will be 2, tap and enter if
-      different.
-    </p>
-  </li>
-  <li>
-    <p>
-      Add a brief description of the methods, including equipment used
-      (spotlight or head torch description).
-    </p>
-  </li>
-  <li>
-    <p>
-      Enter the weather conditions (these can be reviewed at the conclusion of
-      the survey if you feel conditions changed from that noted at the start).
-    </p>
-  </li>
-  <li>
-    <p>
-      The app will populate todays date (tap to edit). Select ‘start survey’,
-      and a timer will show at the top of the screen. The screen will show a map
-      of the plot, indicating your position. Keep an eye on this screen to make
-      sure you remain within the fauna plot boundary.
-    </p>
-  </li>
-  <li>
-    <p>
-      Work across the Fauna Plot (wandering is acceptable) looking for fauna, or
-      indirect signs. Note, unlike the diurnal search the nocturnal passive
-      search should minimise disturbance, and raking of leaf litter, removal of
-      tree bark, and lifting of rocks should not be undertaken. Instead, focus
-      on looking for animal movement, rustling of vegetation, to detect animal
-      presence.
-    </p>
-  </li>
-  <li><p>Record observations as per above.</p></li>
-  <li>
-    <p>
-      At the completion of the survey time (&gt;30 minutes if 2 surveyors),
-      select ‘end nocturnal passive search’.
-    </p>
-  </li>
-  <li>
-    <p>
-      Identify, mark and release any animals that were hand caught (follow the
-      procedures and guidelines in
-      <em
-        ><a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/7942c1d3-8cfc-4d74-931d-850cacfa5a63"
-          >Identify, measure and release protocols</a
-        ></em
-      >
-      and take a tissue specimen following the procedures and guidelines in
-      <em
-        >Section 8
-        <a
-          href="https://linkeddata.tern.org.au/viewers/dawe-vocabs?uri=https://linked.data.gov.au/def/nrm/a15130ca-82ce-4c50-9392-66f9b0c73450"
-          >Whole animal and tissue vouchering protocols</a
-        ></em
-      >. If the species has not been caught previously during the survey, follow
-      the decision key shown <a href='#figure-28'>Figure 28</a> to determine if the animal should be
-      vouchered.
-    </p>
-    <p id='figure-28'>
-      <img
-        src="https://w3id.org/tern/static/dawe-rlp/latest/vertebrate/released-mouse.png"
-        alt="Animals can be released from the hand immediately after processing, or temporarily returned to the calico bag for release."
-        widteh="650"
-        height="490"
-      />
-    </p>
-
-    <p>
-      Figure 28.Animals can be released from the hand immediately after
-      processing, or temporarily returned to the calico bag for release.
-    </p>
-  </li>
+<li><p>Determine which direction to commence traversing the plot,
+ideally walking into the sun to use shadows cast by tracks, and identify
+which corner of the plot to start the survey at (either of the 4
+corners).</p></li>
 </ol>
-    """^^rdf:HTML ;
+<ol start="2" type="1">
+<li><p>Select <em>record start location</em> and select the corner you
+are standing at to commence the survey. The app will record the
+location, start date and time automatically. For subsequent re-surveys,
+make sure the survey starts at the same corner so that start location
+photos are the same.</p></li>
+<li><p>Select <em>start location photo</em> and face towards the centre
+of the plot to take a representative photo.</p></li>
+<li><p>Select <em>start active sign search</em> to commence the timer,
+then begin surveying by zig-zagging across the plot looking for signs.
+Your position within the plot will be shown, and the app will record a
+location every minute until the survey is completed, creating a trail
+across the plot. Ensure the entire plot is covered by checking the map
+intermittently, even when no signs are observed.</p></li>
+</ol>
+<ol start="5" type="1">
+<li><p>For <u>active</u> searches only, rake small areas of leaf litter,
+lift rocks and coarse woody debris, remove sections of tree bark, sift
+through vegetative matter and soil, carefully search for animals,
+particularly legless lizards. Return of refuges (rocks, leaf litter,
+logs etc, as found).</p></li>
+</ol>
+<ol start="6" type="1">
+<li><p>For each sign observed, select <em>add sign record</em>:</p></li>
+</ol>
+<ul>
+<li><p>select the sign type (scat, track, dig, burrow, warren, etc, see
+<a href="#appendices">Appendix</a>)</p></li>
+<li><p>select the attributable fauna species (select unknown if not
+certain)</p></li>
+<li><p>indicate the sign age (fresh 1-2 days, old 3-7 days, very old 7+
+days) (optional field)</p></li>
+<li><p>indicate the age class of the individual responsible for the sign
+(optional field applicable to scats and tracks only based on
+size)</p></li>
+<li><p>add photo (representative photos should be taken for each
+species/sign type for the plot – i.e. not all signs observed need to be
+photographed, ideally a scale card should be used in all photos
+(optional, up to 3 photos per sign record)</p></li>
+<li><p>if warrens, burrows or dens are observed, count and record the
+number of entrances and record if any are considered active or not
+active (optional)</p></li>
+<li><p>add any additional comments in the observation comments field.
+Recording the gait length and width may be of interest, particularly of
+feral cats and foxes to assist distinguishing individuals.</p></li>
+</ul>
+<ol start="7" type="1">
+<li><p>For each animal observed, select <em>add sign
+record</em>:</p></li>
+</ol>
+<ul>
+<li><p>enter the <em>species</em></p></li>
+<li><p>indicate the <em>age-class</em>, <em>sex</em> and
+<em>reproductive status</em> (optional)</p></li>
+<li><p>if hand-caught, complete and any <em>morphological
+measurements</em> relevant to the species, and any individual ID details
+(i.e. microchip numbers, tag number etc)</p></li>
+<li><p>enter the <em>activity type</em></p></li>
+<li><p>release the animal at the point of capture, and indicate the
+<em>animal fate.</em></p></li>
+</ul>
+<ol start="8" type="1">
+<li><p>Traverse the entire plot area recording all signs
+observed.</p></li>
+<li><p>The active search is complete when the surveyors are confident
+the entire plot has been searched, and there has been a minimum of 60
+minutes survey effort. Remember to check the app screen to identify any
+areas missed. There is no time limit (see below for
+recommendations).</p></li>
+<li><p>Once the active search is complete, select <em>end active
+search.</em> Edit any key information (i.e. adjust the weather
+conditions, particularly if wind or light conditions changed during the
+survey).</p></li>
+</ol>"""^^rdf:HTML ;
 .
 
