@@ -1,0 +1,136 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/a15130ca-82ce-4c50-9392-66f9b0c73450>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """<h3>Contents</h3>
+<ol>
+  <li><a href="#field-collection-2">Field Collection</a></li>
+  <li><a href="#equipment-4">Equipment</a></li>
+  <li>
+    <a href="#instructions-and-procedures-4">Instructions and procedures</a>
+  </li>
+  <li><a href="#additional-guidelines-4">Additional guidelines</a></li>
+</ol>
+    <h1 id="acoustic-and-ultrasonic-recordings-protocols-coming-soon">Acoustic
+and Ultrasonic Recordings Protocols <i>(under review)</i></h1>
+<h2 id="field-collection-2">Field collection</h2>
+<h3 id="pre-requisites-2">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<p>
+    <li>The plot must be established using the Plot Layout and Selection Module prior.</li> 
+    <li>The Plot Description Module must be completed prior to, or during the survey the Active and passive search protocol.
+    </li></p></ul>
+<h3 id="time-requirements-4">Time requirements</h3>
+<p>Survey time requirements will vary depending on the number and experience of personnel and the number of acoustic recorders being deployed.
+As a general guide, once at the survey area:
+<ul><li>Allow 30 minutes to identify suitable locations to install the recorder(s).</li>
+<li>Allow 15 minutes to install each recorder (longer may be required if installing solar panels).</li></p></ul>
+<p>At the end of the deployment period:
+<ul><li>Allow 15 minutes to retrieve each recorder, or check and replace battery and memory cards and check the recording status for any error messages.</li>
+<li>Allow 40 minutes to download each memory card.</li>
+</ul></p>
+<h3 id="personnel-requirements-4">Person Requirements</h3>
+<p>Personnel number and skills:
+    <ul><li>Acoustic recorder deployment is best conducted with two personnel, one setting up the recorder and the other recording the data directly into the Monitor app.</li>
+<li>The surveyor deploying the recorder should be familiar with and experienced in the operation of the record, particularly how to adjust the settings and the settings required for the location/target species (if any). If surveyors are not confident, time should be dedicated to practising, using instruction manuals, and seeking advice before conducting this protocol.</li>
+<li>The use of acoustic recorders involves interference with wildlife. Therefore, scientific permits and wildlife ethics approvals may be required. Remember to check with your local authority. Access permissions are required.</li>
+</ul></p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:note """<h3 class="unnumbered" id="additional-guidelines-4">Additional Guidelines</h3>
+<h4 class="unnumbered" id="site-selection-for-microbats">Site Selection for Microbats</h4>
+<p>The goal of the survey is to maximise the detection of all echolocating bats present at the project area, but there are a variety of reasons why not all species are equally detectable at a single survey location. These include species differences in:
+    <ul><li>general foraging area (some species fly high above the canopy, some within the canopy, some along canopy edges) </li>
+        <li>specific foraging area and how they get there (some species forage predominantly over water, many species will travel many kilometres along regular flight paths before spreading out and exploring a larger foraging area)</li>
+        <li>the loudness and type of echolocation calls (‘loud’ bats can be detected at a greater distance than ‘whispering’ bats)</li> 
+    <li>call parameters as a function of other species present</li> 
+    <li>call parameters as a function of the purpose of the call (typical free flying increase in slope and repetition rate as they approach prey and many species produce ‘social’ calls)</li> 
+    <li>call parameters as a function of environmental parameters such as temperature and humidity.</li>
+    </li></ul>
+    These difficulties are overcome by optimising detector locations to sample the variety of habitats available in the project area and to take advantage of any locations that might concentrate bat activity. Many species for example will come to a water source to drink early in the evening, and many commuting bats will take advantage of breaks in the canopy or open trails as natural flyways.
+</p>
+<h4 class="unnumbered" id="sampling-height-for-microbats">Sampling Height for Microbats</h4>
+<p><li>When targeting microbats, the height of the microphone is dependant on the vegetation canopy height. In rainforests, woodlands and forests, a height of 3 m is recommended. When surveying in communities of low vegetation, 1.5 m or star-dropper height may be appropriate. </li>
+    <li>The equipment list recommends 1.5 m lengths of 50 mm diameter PVC pipe are used. This is based on the logistics of transporting the pipe around the project area in the back of vehicles or on roof-racks. Joiners can be used to enable multiple 1.5 m lengths to be joined securely. The 50 mm width of the pipe is based on the ability to slide the pipe over the star-dropper. </li>
+    </p>"""^^rdf:HTML ;
+    skos:prefLabel "Acoustics and Ultrasound Protocol" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/vertebrate-fauna/acoustic-and-ultrasound-protocols/acoustic-and-ultrasound-protocols.ttl"^^xsd:anyURI ;
+    tern:equipment """
+    <h3 id="equipment-4">Equipment</h3>
+<p>The following equipment is required to conduct the acoustic and ultrasonic recordings protocols:
+    <ul><li>Mobile device (tablet/phone) with the Monitor app installed</li>
+    <li>Acoustic recorder(s) and associated mounting/security and cable lock/weather-proof box. Recommended acoustic recorders include the Titley Swift, Titley Chorus, Song Meter, and Audio Moth, but any acoustic recorder can be used </li>
+    <li>Appropriate microphone(s) and cables </li>
+    <li>1 x memory card of appropriate size and write speed per recorder </li>
+<li>Rechargeable batteries suitable for the acoustic recorder (i.e. eight AA batteries)</li>
+<li>1 x star dropper per recorder, 1.8 m</li>
+<li>Post driver</li>
+<li>Tape measure, 3 m</li>
+<li>Compass, or compass app</li>
+<li>Cable ties or straps</li>
+<li>Optional: 1 or 2, 1.5 m 50 mm width PVC pipe lengths and joiners to join the 2 lengths together for additional height (optional) (see guidelines for height recommendations and use) </li>
+<li>Optional: Solar charger and power connection cables.</li> 
+</ul></p>"""^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures-4">Instructions and Procedures</h3>
+<h4 class="unnumbered" id="prior-to-arriving">Prior to arriving at the survey location</h4>
+<ol type="1">
+<li><p>Conduct equipment maintenance. The acoustic recorders must function properly to ensure the integrity and quality of the data collected. Adequate care and maintenance of the equipment is essential, and close attention must be paid when preparing and calibrating the recorders before they are deployed in the field. Ensure the following tasks are undertaken before deploying acoustic recorders:
+    <ul><li>Acoustic recorders are adequately marked/numbered (noting any scientific permit requirements, i.e. some jurisdictions may require the contact person's name and number to be clearly visible).</li>
+    <li>Check for firmware updates.</li>
+    <li>Ensure settings are configured to your project/location/species requirements (note this Module does not specify requirements).</li>
+    <li>Ensure memory (SD cards) are numbered, meet the device requirements, and are formatted.</li>
+    <li>Ensure batteries are charged and ready to install.</li>
+    <li>Ensure silica desiccant is prepared (if using, recommended for humid/wet conditions). </li>
+</ul></p>
+</ol>
+<h4 class="unnumbered" id="reconnaissance-and-survey-set-up-2">Reconnaissance and survey set-up</h4>
+<ol type="1">
+<li><p>Arrive at the plot prior to the intended survey start time. Ensure the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> has been completed to mark out the plot boundary and define the current visit in the Monitor app. </li>
+<li>Identify a suitable location to install the acoustic recorder(s). Up to four recorders can be installed per plot. Walk across the plot identifying suitable locations, including relatively open areas, suitable flyways (i.e. breaks in the canopy), or areas with food, water or refuge sources. If multiple locations are identified across the plot, select the best/most appropriate location(s), towards the centre of the plot where possible. If using a solar panel for a power source, also consider direct sunlight to the device for recharging. See guidelines for further information on site selection for microbats, frogs and birds.</li>
+<li>Ensure the <a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> , Standard protocol (minimum), or Enhanced protocol has been completed prior to departing the plot (this can be done at any time, before or after setting up the recorders and commencing the survey). </li>    
+</ul></p>
+</ol>
+<h4 class="unnumbered" id="installing-the-recorder">Installing the recorder for the first time</h4>
+<ol type="1">
+<li><p>Install the star dropper to a depth that makes it stable.</li>
+    <li>Prepare the acoustic recorder, including inserting fully charged batteries and appropriate memory card cleared of all previous data. Check the time zone, date and time settings are correct. Check microphones are correctly attached (refer to the user manual when required). </li>
+    <li>Program the acoustic recorder (refer to the manual where necessary). Ideally settings should be:
+    <ul><li>.wav file type</li>
+    <li>For microbats: start recording at sunset and stop recording at sunrise
+    </li></ul>
+    <li>If using a PVC pipe for additional height:
+    <ul><li>Secure the microphone to one end of the PVC pipe.</li>
+    <li>Secure the acoustic device to the PVC pipe where appropriate (as low as the cable length will allow).</li>
+    <li>Stand the PVC pipe upright and slide it over the star dropper (or stand it adjacent and secure it to the star dropper).</ul>
+<li>If not using a PVC pipe for additional height, secure the acoustic device (and microphones) to the star dropper.</li>
+    <li>If using a solar panel:
+    <ul><li>Connect the panel approximately 40 cm below the acoustic device on the star dropper or PVC pipe (if being used) using the screws provided and connect the charging cable.</li>
+    <li>Using a compass/compass app, check the orientation and ensure the panel is facing north, and the angle of the panel is suitable for the latitude of the location to maximise charging opportunity.</ul></li>
+    <li>Open the Monitor app and ensure the Plot Selection and Layout Module has been completed to establish plots and define the current plot and visit.</li>
+    <li>Select the ‘Vertebrate Fauna Module’ and then ‘Acoustic and Ultrasonic Recordings’ and ‘Deployment’.</li>
+    <li>Record the acoustic recorder information, including acoustic recorder number, make, model, and firmware.</li>
+    <li>Select ‘Set-up acoustic recorder’, and follow the prompts to confirm and record the following information:
+    <ul><li>Check that the start date, time, and location have been pre-filled by the app (edit as required). 
+    <li>Select the acoustic recorder mount type.</li>
+    <li>Enter the number of microphones.</li>
+    <li>For each microphone, enter the microphone height and microphone type.</li>
+    <li>Enter the recording schedule, and recording interval.</li>
+    <li>Enter the location, microhabitat or refuge feature the recorder is set adjacent to.</ul>
+    <li>Close the recorder housing and secure it to the PVC pole/star-dropper. Ensure all attachments and tie-downs are tight so there is no movement. If appropriate, use a cable lock. </li>
+    <li>Select ‘Set-up complete’, and follow the prompts to:
+    <ul>Take a photo of the acoustic recorder and microphone set-up (up to 4 photos).</li>
+    <li>Stand 4-10 m away from the recorder and take a photo – ideally capturing the feature of interest (flyway, food or water feature).</li>
+    <li>Stand at the recorder, holding the mobile device at 1.4 m, take a photo to the north, east, south, and west.</li>
+</ul></p>
+</ol>"""^^rdf:HTML ;
+.
+
