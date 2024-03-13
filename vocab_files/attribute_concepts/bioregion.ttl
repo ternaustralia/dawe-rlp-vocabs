@@ -1,0 +1,22 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/507d7e56-8e1a-4c9e-af03-5ba3b2b03374>
+    a skos:Concept ;
+    dcterms:description "The latest version-7, IBRA7, classifies Australia's landscapes into 89 large geographically distinct bioregions based on common climate, geology, landform, native vegetation and species information." ;
+    dcterms:source
+        "https://www.dcceew.gov.au/sites/default/files/documents/revision-ibra-development-5-1-summary-report.pdf"^^xsd:anyURI ,
+        "Thackway, R and Cresswell, I 1995 An Interim Biogeographic Regionalisation for Australia: a framework for setting priorities in the National Reserves System Cooperative Program Version 4, Australian Nature Conservation Agency, Canberra" ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altlabel "Australia's bioregion (IBRA)" ;
+    skos:definition "The Interim Biogeographic Regionalisation for Australia (IBRA) is a large scale regional classification of homogenous ecosystems, and sub-regions in the Australian continent. There are more than " ;
+    skos:prefLabel "bioregion" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/bioregion.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/valuestbd> ;
+    tern:valueType tern:IRI ;
+.
+
