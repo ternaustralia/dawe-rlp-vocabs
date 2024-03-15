@@ -1,0 +1,19 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/3b2aa21d-c60f-45c5-9447-ff8a799a513e>
+    a skos:Concept ;
+    dcterms:source "Laws M, McCallum K, Bignall J, Cox B, Potter T, O’Neill S, Sparrow B. (2023) Plant Tissue Vouchering Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "The minimum distance between replicate plant tissue voucher samples, recorded in meters." ;
+    skos:prefLabel "distance between replicates" ;
+    skos:altLabel "minimum distance between replicates" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/distance-between-replicates.ttl"^^xsd:anyURI ;
+    skos:historyNote "Updated the prefLabel, source and definition during the version-2 changes of the EMSA modules (EMSA v2 Review process, March, 2024)." ;
+    tern:valueType tern:Float ;
+.
+
