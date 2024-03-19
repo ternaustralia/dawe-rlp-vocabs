@@ -5,17 +5,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/00df82dc-6851-57d3-9e25-9a8a1b3d5245>
+<https://linked.data.gov.au/def/nrm/e2396b81-e7cd-4ff4-adc4-d06e9643f592>
     a skos:Concept ;
     dcterms:source "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:altLabel
-        "current project for plot" ,
-        "project(s) for plot" ;
-    skos:definition "A unique alphanumeric code assigned to the current project, serving as an identifier when establishing plots during an ecological survey." ;
-    skos:historyNote "Updated source and definition based on the version-2 changes of EMSA modules (EMSA v2 Review process, March, 2024)." ;
-    skos:prefLabel "project code" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/current-project-code.ttl"^^xsd:anyURI ;
+    skos:definition "A unique four digit code provided by users in the Monitor App in conjunction with the parameters, such as 'state', 'program', and 'bioregion', to facilitate the automated creation of a corresponding 'plotname'." ;
+    skos:historyNote "Added this vocab and definition based on the version-2 changes of the EMSA modules (EMSA v2 Review process, March, 2024)." ;
+    skos:prefLabel "unique digits" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/unique-digits.ttl"^^xsd:anyURI ;
     tern:valueType tern:Text ;
 .
 
