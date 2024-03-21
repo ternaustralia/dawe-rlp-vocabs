@@ -5,17 +5,17 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/00df82dc-6851-57d3-9e25-9a8a1b3d5245>
+<https://linked.data.gov.au/def/nrm/81cc5c4b-179b-4483-861a-65008517bd32>
     a skos:Concept ;
     dcterms:source "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:altLabel
-        "current project for plot" ,
-        "project(s) for plot" ;
-    skos:definition "A unique alphanumeric code assigned to the current project, serving as an identifier when establishing plots during an ecological survey." ;
-    skos:historyNote "Updated source and definition based on the version-2 changes of EMSA modules (EMSA v2 Review process, March, 2024)." ;
-    skos:prefLabel "project code" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/current-project-code.ttl"^^xsd:anyURI ;
-    tern:valueType tern:Text ;
+        "replicate" ,
+        "replicate number" ;
+    skos:definition "A numerical designation indicating plot replication; if the plot is the initial or sole one of its kind within a sampling unit, the number will be 1." ;
+    skos:historyNote "Updated the label, definition and the source based on the version-2 changes of the EMSA modules (EMSA v2 Review process, March, 2024)." ;
+    skos:prefLabel "plot replicate number" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-replicate-number.ttl"^^xsd:anyURI ;
+    tern:valueType tern:Integer ;
 .
 
