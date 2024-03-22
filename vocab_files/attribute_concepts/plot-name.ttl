@@ -7,10 +7,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/8a4f71cc-7572-4b97-a3ef-c8061551b1fe>
     a skos:Concept ;
-    dcterms:source """O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (unpublished draft) Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved
-decision making. Draft v 0.1 Report to DCCEEW. TERN, Adelaide.""" ;
+    dcterms:source "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "The name given to the plot under survey." ;
+    skos:altLabel
+        "fauna plot id" ,
+        "plot code" ,
+        "plot id" ,
+        "sample plot id" ;
+    skos:definition "A unique name identifier of the selected plot, which is auto-generated in the Monitor App upon selecting the attributes in the following order: 'state', 'program', 'bioregion' and 'unique digits'." ;
+    skos:historyNote "Updated source and definition based on the version-2 changes of EMSA modules (EMSA v2 Review process, March, 2024)." ;
     skos:prefLabel "plot name" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-name.ttl"^^xsd:anyURI ;
     tern:valueType tern:Text ;
