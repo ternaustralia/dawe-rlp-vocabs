@@ -1,0 +1,22 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/33c1752f-b5f3-4ac9-9090-e9a4dd3096d1>
+    a skos:Concept ;
+    dcterms:source "Laws M, Bignall J, McCallum K, Cox B, Potter T, O’Neill S, Sparrow B. (2023) Floristics Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel
+        "phenological stage-change" ,
+        "phenology type" ;
+    skos:definition "The timing of recurring climate or weather-driven plant biological changes (e.g., germination, budding, flowering, etc.), the causes of periodicity, the relationship with biotic (e.g. fruit availability) and abiotic (e.g. rain) drivers and the interrelations between the seasonal cycle of the same or different species." ;
+    skos:exactMatch
+        <http://purl.obolibrary.org/obo/PPO_0007004> ,
+        <https://vocabs.lter-europe.net/envthes/en/page/20408> ;
+    skos:historyNotes "Updated the prefLabel, definition and source link during the version-2 changes of the EMSA modules (EMSA v2 Review process, March, 2024)." ;
+    skos:prefLabel "phenological stage" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/phenological-stage.ttl"^^xsd:anyURI ;
+.
+
