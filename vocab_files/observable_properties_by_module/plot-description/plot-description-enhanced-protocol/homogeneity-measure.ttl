@@ -1,5 +1,6 @@
 PREFIX schema: <https://schema.org/>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
 PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -8,9 +9,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a urnc:ObservablePropertyMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_properties_by_module/plot-description/plot-description-enhanced-protocol/homogeneity-measure.ttl"^^xsd:anyURI ;
     urnp:featureType <http://linked.data.gov.au/def/tern-cv/ea3a4c64-dac3-4660-809a-8ad5ced8997b> ;
+    urnp:minInclusive 0 ;
     urnp:observablePropertiesCollection <https://linked.data.gov.au/def/nrm/84f645c7-9094-40e5-977c-82da64aeb85e> ;
     urnp:observableProperty <https://linked.data.gov.au/def/nrm/325d5ff2-8c81-484a-a422-c13ff29666a9> ;
     urnp:protocolModule <https://linked.data.gov.au/def/nrm/88068941-4dc9-4b44-bcfe-5eeeb3ba1a21> ;
+    urnp:unitOfMeasurement unit:M ;
     urnp:valueType tern:Float ;
 .
 
