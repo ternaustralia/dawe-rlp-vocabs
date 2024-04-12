@@ -1,0 +1,22 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/c6317606-d5a1-44f4-a5c0-d582264b84fb>
+    a skos:Concept ;
+    dcterms:description "Sampling direction refers to the direction (cardinal) along which the observations will be made. For example, ‘N1’ means the surveyor is starting at the northern end of transect-1 and moving from north to south, while ‘S2’ means the surveyor is starting at the southern end of transect-2 and moving from south to north." ;
+    dcterms:source "Laws M, Morgan R, McCallum K, Potter T, Cox B, Bignall J, O’Neill S, Sparrow B. Cover Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "transect point orientation" ;
+    skos:closeMatch <https://linked.data.gov.au/def/nrm/efa96661-720c-5c6d-8092-951b95f35d80> ;
+    skos:definition "The direction of sampling along the transect where the study was initiated." ;
+    skos:historyNote "Updated the definition and added skos:description and  skos:closematch during the the version-2 changes of EMSA modules (EMSA v2 Review Process, March 2024)." ;
+    skos:prefLabel "transect sampling direction" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/transect-sampling-direction.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/232d5fdd-c15f-4a84-865e-46ea20b82ff1> ;
+    tern:valueType tern:IRI ;
+.
+

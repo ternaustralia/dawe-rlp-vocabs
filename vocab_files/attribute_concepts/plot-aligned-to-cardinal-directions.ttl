@@ -1,0 +1,18 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/df0598ae-e9cf-4433-8045-fc090a90b3bf>
+    a skos:Concept ;
+    dcterms:source "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "A checkbox field in the Monitor App to indicates whether the plot aligns to cardinal direction; as a default the north-south direction is a standard alignment." ;
+    skos:historyNote "Added this vocab and definition based on the version-2 changes of the EMSA modules (EMSA v2 Review process, March, 2024)." ;
+    skos:prefLabel "plot aligned to cardinal directions" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-aligned-to-cardinal-directions.ttl"^^xsd:anyURI ;
+    tern:valueType tern:Boolean ;
+.
+
