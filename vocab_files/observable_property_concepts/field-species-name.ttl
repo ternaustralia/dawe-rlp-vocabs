@@ -6,11 +6,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/26f843a5-e1ed-46da-b22b-053e567e3227>
     a skos:Concept ;
-    dcterms:source "Ecological Field Monitoring protocols - Basal area module, draft v0.1, 30/11/2021" ;
+    dcterms:source
+        "Laws M, Bignall J, McCallum K, Cox B, Potter T, O’Neill S, Sparrow B. (2023) Floristics Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide."^^xsd:anyURI ,
+        "Laws M, McCallum K, Bignall J, Cox B, Potter T, O’Neill S, Sparrow B. (2023) Plant Tissue Vouchering Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Taxon name determined during the process of field observation." ;
-    skos:exactMatch <http://linked.data.gov.au/def/tern-cv/04a4c009-2a51-4bdb-96dd-0bfd1bed8826> ;
-    skos:narrower <https://linked.data.gov.au/def/nrm/2d95624b-e04e-4826-b97d-b74b90db4d56> ;
+    skos:altLabel
+        "field name" ,
+        "plant species" ,
+        "species" ,
+        "species name" ;
+    skos:broader <http://linked.data.gov.au/def/tern-cv/56195246-ec5d-4050-a1c6-af786fbec715> ;
+    skos:definition "Taxon name determined during the process of field observation. A species is given two names in binomial nomenclature (e.g. Homo sapiens), the generic name and speciﬁc epithet (italicized in the scientiﬁc liter­ature), similar and related species being grouped into genera." ;
+    skos:exactMatch
+        <http://linked.data.gov.au/def/tern-cv/04a4c009-2a51-4bdb-96dd-0bfd1bed8826> ,
+        <http://vocabs.lter-europe.net/EnvThes/20717> ;
+    skos:historyNote "Updated the altLabel, exactMatch and source during the version-2 review of changes for the EMSA modules (EMSA v2 Review process, March, 2024)." ;
+    skos:narrower
+        <https://linked.data.gov.au/def/nrm/2d95624b-e04e-4826-b97d-b74b90db4d56> ,
+        <https://linked.data.gov.au/def/nrm/455d3f64-0523-5202-8db4-4775e8dff114> ;
     skos:prefLabel "field species name" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/field-species-name.ttl"^^xsd:anyURI ;
 .
