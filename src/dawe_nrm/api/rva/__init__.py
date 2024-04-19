@@ -128,7 +128,7 @@ def publish_new_vocabulary_version(
             },
             {
                 "ap-web-page": {
-                    "url": "https://linkeddata.tern.org.au/viewers/dawe-vocabs"
+                    "url": "https://linkeddata.tern.org.au/prez/dawe-cv/v/"
                 },
                 "source": "user",
                 "discriminator": "webPage",
