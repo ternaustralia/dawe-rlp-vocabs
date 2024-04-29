@@ -11,8 +11,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-types.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/beaa6b82-a4ea-5e4d-a354-de3f5394bc6b> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/823048ec-0144-5f7d-b193-ccab791f8fc5> ;
-    urnp:conceptDefinition "An impact plot refers to a plot where experimental monitoring or manipulations are being performed." ;
-    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    urnp:conceptDefinition "An 'Impact' plot refers to a plot type where experimental monitoring or manipulations are performed, resulting in some form of alternations/disturbance impact to the plot." ;
+    urnp:conceptNotation "I" ;
+    urnp:conceptSource "OMcCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
 .
 
 <https://linked.data.gov.au/def/nrm/95389f01-1cc6-52d9-9a65-b000569c753c>
@@ -20,8 +21,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-types.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/beaa6b82-a4ea-5e4d-a354-de3f5394bc6b> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/7c9b5cec-5dcc-5c9c-b785-4980abfb9fe7> ;
-    urnp:conceptDefinition "A control plot refers to a plot that is undisturbed (relatively) from the plots where an experimental monitoring is being performed." ;
-    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    urnp:conceptDefinition "A 'Control' plot refers to a plot type that is undisturbed (relatively) and used for study and record natural observations." ;
+    urnp:conceptNotation "C" ;
+    urnp:conceptSource "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
 .
 
 <https://linked.data.gov.au/def/nrm/ba33f184-fb2b-5a55-9e73-a495517a97a8>
@@ -30,19 +32,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/beaa6b82-a4ea-5e4d-a354-de3f5394bc6b> ;
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab> ;
     urnp:conceptDefinition "Refers to any categorical values/attributes that are 'Not Applicable' to a particular observation in the study." ;
-    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    urnp:conceptNotation "NA" ;
+    urnp:conceptSource "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
 .
 
 <https://linked.data.gov.au/def/nrm/beaa6b82-a4ea-5e4d-a354-de3f5394bc6b>
     a skos:Collection ;
-    dcterms:description "A collection of ecological study plot types used for either standard monitoring, or for experimental sampling design. The types include, an impact plot or a control plot." ;
-    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    dcterms:description "A collection of plot types used either for standard ecological monitoring, or for experimental sampling design. Plot types are assigned depending on their intended use in before-after-control-impact (BACI) assessments. For instance, plots are categorized as an 'Impact' type if they serve in experimental sampling designs, or as 'Control' type if they remain undisturbed and solely used for natural observations." ;
+    dcterms:source "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:historyNote "Updated definitions, sources and notations for categorical values based on the version-2 changes of the EMSA modules (EMSA v2 Review process, March, 2024). " ;
     skos:member
         <https://linked.data.gov.au/def/nrm/5488c9ea-e3a2-5348-887b-065d29b848ab> ,
         <https://linked.data.gov.au/def/nrm/7c9b5cec-5dcc-5c9c-b785-4980abfb9fe7> ,
         <https://linked.data.gov.au/def/nrm/823048ec-0144-5f7d-b193-ccab791f8fc5> ;
-    skos:prefLabel "Plot types" ;
+    skos:prefLabel "plot types" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-types.ttl"^^xsd:anyURI ;
 .
 
