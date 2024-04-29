@@ -7,10 +7,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/ca245b0d-b3e2-4dbc-8a72-d8cd1868a1ce>
     a skos:Concept ;
-    dcterms:source "McCallum K, Laws M, Bignall J, O’Neill S, Sparrow B. (unpublished draft) ‘Invertebrate fauna module’ in ….. (eds) Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision making. Draft v 0.1 Report to DCCEEW. TERN, Adelaide." ;
+    dcterms:source "Bignall J, Laws M, McCallum K, Cox B, O’Neill S, Potter T, Morgan R, Sparrow B. Opportune Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Whether the count of individuals sampled is an extact match or an estimate." ;
-    skos:prefLabel "count exact or estimate" ;
+    skos:altLabel
+        "exact or estimate" ,
+        "number - exact or estimate" ;
+    skos:definition "Indicates whether the count/number of individuals sampled from a species population is an extact match or an estimate." ;
+    skos:prefLabel "count - exact or estimate" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/count-exact-or-estimate.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/12750b20-0e91-4878-9029-b4d9d7788429> ;
     tern:valueType tern:IRI ;
