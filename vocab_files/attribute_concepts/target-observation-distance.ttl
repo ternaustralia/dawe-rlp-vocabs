@@ -5,16 +5,13 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/57f62105-c1e0-50b0-ae68-a978c38c6e46>
+<https://linked.data.gov.au/def/nrm/1da5942c-f67c-544d-9665-04886e9930d7>
     a skos:Concept ;
     dcterms:source "McCallum K, Bignall J, Cox B, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:altLabel
-        "applicable outlook zone" ,
-        "responsible outlook zone" ;
-    skos:definition "The outlook zone number/s are location/s where each spotter will be deployed primarily for fauna ground observations." ;
-    skos:prefLabel "observer outlook zone number" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/observer-outlook-zone-number.ttl"^^xsd:anyURI ;
-    tern:valueType tern:Integer ;
+    skos:definition "The distance (in meters) to a target fauna observed during a fauna ground survey." ;
+    skos:prefLabel "target observation distance" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/target-observation-distance.ttl"^^xsd:anyURI ;
+    tern:valueType tern:Float ;
 .
 
