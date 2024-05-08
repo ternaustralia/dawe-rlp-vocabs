@@ -169,8 +169,22 @@ endpoints: List[LUTSchema] = [
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-plot-dimensions",
         label="plot dimensions",
         description="The plot dimensions used for  ecological surveys. A standard protocol uses 100 x 100 m (1 hectare) and a sub-plot uses 40 x 40 m.",
-        collection_uuid="05c7a145-a675-4753-88d1-d86fa19dac3b",
+        collection_uuid="https://linked.data.gov.au/def/nrm/05c7a145-a675-4753-88d1-d86fa19dac3b",
         uuid_namespace="coarse woody debris plot dimensions",
+    ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-plot-types",
+        label="plot types",
+        description="A collection of plot types used either for standard ecological monitoring, or for experimental sampling design. Plot types are assigned depending on their intended use in before-after-control-impact (BACI) assessments. For instance, plots are categorized as an 'Impact' type if they serve in experimental sampling designs, or as 'Control' type if they remain undisturbed and solely used for natural observations.",
+        collection_uuid="https://linked.data.gov.au/def/nrm/beaa6b82-a4ea-5e4d-a354-de3f5394bc6b",
+        uuid_namespace="plot types",
+    ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-bioregions",
+        label="Interim Biogeographic Regionalisation for Australia (IBRA7) Codes",
+        description="This vocabulary contains the region and subregion codes for the IBRA7.",
+        collection_uuid="http://linked.data.gov.au/dataset/bioregion/IBRA7",
+        uuid_namespace="bioregions",
     ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-cwd-sampling-survey-methods",
@@ -230,7 +244,7 @@ endpoints: List[LUTSchema] = [
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-corners",
         label="plot marker locations",
         description="A collection of spatial points representing locations within the plot, such as, northeast, northwest, southeast, southwest and centre.",
-        collection_uuid="21072cd8-f8df-42ad-a3b0-c7adee21bc6d",
+        collection_uuid="https://linked.data.gov.au/def/nrm/21072cd8-f8df-42ad-a3b0-c7adee21bc6d",
         uuid_namespace="corners",
     ),
     # LUTSchema(
@@ -1176,7 +1190,7 @@ endpoints: List[LUTSchema] = [
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-states",
         label="States and Territories",
         description="A collection of Australian States and Territories.",
-        collection_uuid="0a71eab7-3989-4c35-82c0-1e746c36b291",
+        collection_uuid="https://linked.data.gov.au/def/nrm/0a71eab7-3989-4c35-82c0-1e746c36b291",
         uuid_namespace="states",
     ),
     # LUTSchema(
