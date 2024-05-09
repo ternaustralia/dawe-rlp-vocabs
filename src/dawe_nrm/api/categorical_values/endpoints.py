@@ -179,13 +179,13 @@ endpoints: List[LUTSchema] = [
         collection_uuid="https://linked.data.gov.au/def/nrm/beaa6b82-a4ea-5e4d-a354-de3f5394bc6b",
         uuid_namespace="plot types",
     ),
-    LUTSchema(
-        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-bioregions",
-        label="Interim Biogeographic Regionalisation for Australia (IBRA7) Codes",
-        description="This vocabulary contains the region and subregion codes for the IBRA7.",
-        collection_uuid="http://linked.data.gov.au/dataset/bioregion/IBRA7",
-        uuid_namespace="bioregions",
-    ),
+    # LUTSchema(
+    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-bioregions",
+    #     label="Interim Biogeographic Regionalisation for Australia (IBRA7) Codes",
+    #     description="This vocabulary contains the region and subregion codes for the IBRA7.",
+    #     collection_uuid="http://linked.data.gov.au/dataset/bioregion/IBRA7",
+    #     uuid_namespace="bioregions",
+    # ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-cwd-sampling-survey-methods",
     #     label="Coarse Woody Debris sampling survey methods codes",
