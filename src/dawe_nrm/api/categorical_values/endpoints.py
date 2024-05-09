@@ -613,13 +613,13 @@ endpoints: List[LUTSchema] = [
         collection_url="https://linked.data.gov.au/def/nrm/1d50eb79-685f-45ea-84b4-627154eddede",
         uuid_namespace="soil lithology",
     ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-substrates",
-    #     label="Soil substrate codes",
-    #     description="A collection of soil substrate types and its codes.",
-    #     collection_uuid="b061d7db-a608-4062-96d4-b367d6d9a792",
-    #     uuid_namespace="soil substrate",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-substrates",
+        label="Substrate types",
+        description="A collection of land surface substrate types. Some examples include bare, black ash, crypto, coarse woody debris, litter, etc.",
+        collection_url="https://linked.data.gov.au/def/nrm/b061d7db-a608-4062-96d4-b367d6d9a792",
+        uuid_namespace="soil substrate",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-surface-strew-sizes",
     #     label="Soil surface strew size codes",
