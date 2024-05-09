@@ -599,13 +599,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="baa1ee46-d49b-47cf-8dbb-a70aad01f06c",
     #     uuid_namespace="recruitment transect numbers",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses",
-    #     label="Plant statuses codes",
-    #     description="A collection of plant statuses and its codes.",
-    #     collection_uuid="b7368a37-a4ac-4c84-8a78-1fb9755ad849",
-    #     uuid_namespace="recruitment tree statuses",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-recruitment-tree-statuses",
+        label="Plant statuses",
+        description="Refers to whether a plant is 'alive' or 'dead'.",
+        collection_url="https://linked.data.gov.au/def/nrm/b7368a37-a4ac-4c84-8a78-1fb9755ad849",
+        uuid_namespace="recruitment tree statuses",
+    ),
     LUTSchema(
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-lithologies",
         label="soil lithology types",
