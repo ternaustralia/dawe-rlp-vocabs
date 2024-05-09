@@ -179,6 +179,13 @@ endpoints: List[LUTSchema] = [
         collection_uuid="https://linked.data.gov.au/def/nrm/beaa6b82-a4ea-5e4d-a354-de3f5394bc6b",
         uuid_namespace="plot types",
     ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-plot-nearest-infrastructures",
+        label="Intensive uses",
+        description="This class includes land uses that involve high levels of interference with natural processes, generally in association with closer settlement. The level of intervention may be high enough to completely remodel the natural landscape—the vegetation, surface and groundwater systems, and the land surface. If crop and or animal type is known, record this in the commodity field.",
+        collection_uuid="http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses",
+        uuid_namespace="intensive uses",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-bioregions",
     #     label="Interim Biogeographic Regionalisation for Australia (IBRA7) Codes",
