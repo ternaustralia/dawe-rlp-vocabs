@@ -260,13 +260,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="6aaa330c-3d60-419b-a29b-a2dbc6d67928",
     #     uuid_namespace="cover class",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances",
-    #     label="Disturbance type codes",
-    #     description="A collection of disturbance types and its codes.",
-    #     collection_uuid="f5a470e8-d29f-4ff6-b50d-529b0444dbe4",
-    #     uuid_namespace="disturbance type",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-disturbances",
+        label="disturbance types",
+        description="A collection of land surface disturbance types describing the historical land-use, such as 'cultivated land', 'rain-fed', 'clearing', 'grazing', 'extensive clearing', etc.",
+        collection_url="https://linked.data.gov.au/def/nrm/f5a470e8-d29f-4ff6-b50d-529b0444dbe4",
+        uuid_namespace="disturbance type",
+    ),
     LUTSchema(
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-exact-or-estimates",
         label="Measured quantity types",
