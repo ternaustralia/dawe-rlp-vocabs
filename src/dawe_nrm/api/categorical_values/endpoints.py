@@ -1292,14 +1292,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="b1b05cd1-3b85-4639-a6af-799a34d88d43",
     #     uuid_namespace="vegetation height class",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-veg-structural-formations",
-    #     label="Vegetation structural formation codes",
-    #     description="A collection of vegetation structural formation types "
-    #     "and its codes.",
-    #     collection_uuid="6e9baf51-566e-4a5d-93c4-a6e097dc364d",
-    #     uuid_namespace="vegetation structural formation",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-veg-structural-formations",
+        label="Vegetation structural formation types",
+        description="A collection of various structural formation types as recognised by the Australian National Vegetation Information System (NVIS). Some examples include: Bryophyteland; Closed rushland; Forbland; Heathland; Isolated chenopod shrubs; Isolated clumps of rushes; and others listed in the NVIS classification.",
+        collection_url="https://linked.data.gov.au/def/nrm/6e9baf51-566e-4a5d-93c4-a6e097dc364d",
+        uuid_namespace="vegetation structural formation",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-vegetation-types",
     #     label="Vegetation type codes",
