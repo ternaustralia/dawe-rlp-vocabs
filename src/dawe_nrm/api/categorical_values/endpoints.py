@@ -550,13 +550,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="d893e669-c530-4bc3-a057-a5799ffcb5db",
     #     uuid_namespace="plot slope",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-preservation-types",
-    #     label="Preservation type codes",
-    #     description="A collection of preservation types and its codes.",
-    #     collection_uuid="4e5037f1-97e6-4866-a018-915bcf482261",
-    #     uuid_namespace="preservation type",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-preservation-types",
+        label="Preservation types",
+        description="Refers to a collection of methods of preservation/preservatives used to preserve/voucher fauna specimens. The collection includes, methods such as 'dried and stored', using a 'Dry ice (solid CO2)', 'Ethanol' - denatured or undenatured, 'Ethanol/formalin mixed solution', 'Fixed (smear)', 'Formalin', 'Frozen (domestic freezer -20°C)', 'Liquid nitrogen (N2)', 'Methylated spirits', 'Propylene glycol', 'Refrigerated', 'Saline solution' and 'Silica'.",
+        collection_uuid="https://linked.data.gov.au/def/nrm/4e5037f1-97e6-4866-a018-915bcf482261",
+        uuid_namespace="preservation type",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-protocol-variants",
     #     label="Protocol variants codes",
