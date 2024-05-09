@@ -331,13 +331,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="45eb0e0f-be9f-4384-9d95-47f51ccec94c",
     #     uuid_namespace="fauna trap disturbeds",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fire-histories",
-    #     label="Fire history codes",
-    #     description="A collection of fire history types and its codes.",
-    #     collection_uuid="6e9d2f51-ce64-4c67-8391-d14a8bf96b6b",
-    #     uuid_namespace="fire history",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fire-histories",
+        label="Fire history types",
+        description="Refers to the site-level fire event history, i.e., whether the site has been burnt recently or in the past, or unburnt.",
+        collection_url="https://linked.data.gov.au/def/nrm/6e9d2f51-ce64-4c67-8391-d14a8bf96b6b",
+        uuid_namespace="fire history",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fire-in-canopy-sky-statuses",
     #     label="Fire in-canopy-sky statuses codes",
