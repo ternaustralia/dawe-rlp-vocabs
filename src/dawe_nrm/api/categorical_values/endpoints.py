@@ -213,7 +213,7 @@ endpoints: List[LUTSchema] = [
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-directions",
         label="Direction codes",
         description="A collection of direction codes.",
-        collection_uuid="https://linked.data.gov.au/def/nrm/232d5fdd-c15f-4a84-865e-46ea20b82ff1",
+        collection_url="https://linked.data.gov.au/def/nrm/232d5fdd-c15f-4a84-865e-46ea20b82ff1",
         uuid_namespace="coarse woody debris transect orientations",
     ),
     # LUTSchema(
@@ -519,14 +519,14 @@ endpoints: List[LUTSchema] = [
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods",
         label="Observation methods tier 1",
         description="A collection of observation methods (tier 1) used during a fauna survey. Some examples of tier 1 method include simple observations, such as 'seen', 'sign', 'heard', etc.",
-        collection_uuid="https://linked.data.gov.au/def/nrm/6b6ec6a4-33d2-4515-b988-617d190cfbdb",
+        collection_url="https://linked.data.gov.au/def/nrm/6b6ec6a4-33d2-4515-b988-617d190cfbdb",
         uuid_namespace="observation method tier 1",
     ),
     LUTSchema(
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-tier-2-observation-methods",
         label="Observation methods tier 2",
         description="A collection of observation methods (tier 2) used during a fauna survey. Some examples of tier 2 method include observations such as 'spotlighting', 'scat', 'skin', 'scratchings', 'bone/teeth', 'diggings', 'tracks', etc.",
-        collection_uuid="https://linked.data.gov.au/def/nrm/f1592e71-cc16-4b81-90c4-06b418a5a766",
+        collection_url="https://linked.data.gov.au/def/nrm/f1592e71-cc16-4b81-90c4-06b418a5a766",
         uuid_namespace="observation method tier 2",
     ),
     # LUTSchema(
@@ -554,7 +554,7 @@ endpoints: List[LUTSchema] = [
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-preservation-types",
         label="Preservation types",
         description="Refers to a collection of methods of preservation/preservatives used to preserve/voucher fauna specimens. The collection includes, methods such as 'dried and stored', using a 'Dry ice (solid CO2)', 'Ethanol' - denatured or undenatured, 'Ethanol/formalin mixed solution', 'Fixed (smear)', 'Formalin', 'Frozen (domestic freezer -20°C)', 'Liquid nitrogen (N2)', 'Methylated spirits', 'Propylene glycol', 'Refrigerated', 'Saline solution' and 'Silica'.",
-        collection_uuid="https://linked.data.gov.au/def/nrm/4e5037f1-97e6-4866-a018-915bcf482261",
+        collection_url="https://linked.data.gov.au/def/nrm/4e5037f1-97e6-4866-a018-915bcf482261",
         uuid_namespace="preservation type",
     ),
     # LUTSchema(
