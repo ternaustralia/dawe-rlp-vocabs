@@ -564,6 +564,13 @@ endpoints: List[LUTSchema] = [
         collection_url="https://linked.data.gov.au/def/nrm/015360a2-1e21-4401-be70-25c581569ba6",
         uuid_namespace="plant habit type",
     ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fractional-cover-intercepts",
+        label="Fractional cover response types",
+        description="A collection of the types of fraction cover responses. Examples are Branch, Non-photosynthetic vegetation and Photosynthetic Vegetation",
+        collection_url="https://linked.data.gov.au/def/nrm/51d1a677-0688-57b3-91c7-6f1e3beee188",
+        uuid_namespace="fractional cover response",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-protocol-variants",
     #     label="Protocol variants codes",
