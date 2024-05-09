@@ -543,13 +543,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="110398ca-32fa-4f69-b7bb-5aa69d5a5004",
     #     uuid_namespace="phenology type",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-plot-slopes",
-    #     label="Plot slope codes",
-    #     description="A collection of plot slope types and its codes.",
-    #     collection_uuid="d893e669-c530-4bc3-a057-a5799ffcb5db",
-    #     uuid_namespace="plot slope",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-slope-classes",
+        label="slope classes",
+        description="A collection of eight slope classes used when describing the landform of the plot. Some examples of slope classes include, 'level'- a slope percent of 0-10%, 'steep'- a slope percent of 35-56%, 'cliff'- a slope percent of >301.",
+        collection_url="https://linked.data.gov.au/def/nrm/d893e669-c530-4bc3-a057-a5799ffcb5db",
+        uuid_namespace="plot slope",
+    ),
     LUTSchema(
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-preservation-types",
         label="Preservation types",
