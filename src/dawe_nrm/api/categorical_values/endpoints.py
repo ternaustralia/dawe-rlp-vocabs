@@ -1203,7 +1203,7 @@ endpoints: List[LUTSchema] = [
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-veg-associations",
         label="Stratum types",
         description="A collection of Vegetation Stratum layers as recognised by the Australian National Vegetation Information System (NVIS). These include: the 'Upper', 'Middle' and 'Ground' strata.",
-        collection_uuid="https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03",
+        collection_url="https://linked.data.gov.au/def/nrm/eb6e9a4c-e277-4cb3-9792-9c91311b7e03",
         uuid_namespace="stratum type",
     ),
     # LUTSchema(
