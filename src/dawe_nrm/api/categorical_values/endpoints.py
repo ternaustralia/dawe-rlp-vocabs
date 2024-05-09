@@ -458,13 +458,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="e8659ef7-fe60-4484-be17-0ed9c1495b97",
     #     uuid_namespace="invertebrate post field guideline life stages",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-landform-elements",
-    #     label="Landform element codes",
-    #     description="A collection of landform element types and its codes.",
-    #     collection_uuid="c1a58967-cb12-4c2c-a7ca-9cee2589919c",
-    #     uuid_namespace="landform element",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-landform-elements",
+        label="Landform element types",
+        description="A collection of the types of landform elements such as a Dune, Gully, Hillcrest, Estuary, etc.",
+        collection_url="https://linked.data.gov.au/def/nrm/c1a58967-cb12-4c2c-a7ca-9cee2589919c",
+        uuid_namespace="landform element",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns",
     #     label="Landform pattern codes",
