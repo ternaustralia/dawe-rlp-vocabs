@@ -1235,13 +1235,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="cb1fc752-939d-4311-ab19-7b2bc80cf3f3",
     #     uuid_namespace="targeted survey fauna vouchers",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-targeted-survey-flora-growth-stages",
-    #     label="Growth stages codes",
-    #     description="A collection of growth stages and its codes.",
-    #     collection_uuid="096e018a-fb8f-4ba1-9fdc-302164e57682",
-    #     uuid_namespace="targeted survey flora growth stages",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-veg-growth-stages",
+        label="Growth stages",
+        description="A collection of dominant growth stages of plants. Examples include, 'Mature', 'Recruiting', 'Resprouting', 'Senescent', etc.",
+        collection_url="https://linked.data.gov.au/def/nrm/096e018a-fb8f-4ba1-9fdc-302164e57682",
+        uuid_namespace="targeted survey flora growth stages",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-targeted-survey-general-survey-types",
     #     label="Targeted survey general survey types codes",
