@@ -267,13 +267,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="f5a470e8-d29f-4ff6-b50d-529b0444dbe4",
     #     uuid_namespace="disturbance type",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-exact-or-estimates",
-    #     label="Exact or estimates codes",
-    #     description="A collection of exact or estimates and its codes.",
-    #     collection_uuid="12750b20-0e91-4878-9029-b4d9d7788429",
-    #     uuid_namespace="exact or estimates",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-exact-or-estimates",
+        label="Measured quantity types",
+        description="Refers to the count of an invertebrate specimens, i.e., whether the quantity is an exact match or an estimate of the total number of individuals.",
+        collection_url="https://linked.data.gov.au/def/nrm/12750b20-0e91-4878-9029-b4d9d7788429",
+        uuid_namespace="exact or estimates",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-bird-activity-types",
     #     label="Fauna bird activity types codes",
