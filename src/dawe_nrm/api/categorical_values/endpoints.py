@@ -536,13 +536,13 @@ endpoints: List[LUTSchema] = [
         collection_url="https://linked.data.gov.au/def/nrm/bf0e07c4-0977-4a97-9e82-11691641ca2e",
         uuid_namespace="observation methods tier 3",
     ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-phenologies",
-    #     label="Phenology type codes",
-    #     description="A colleciton of phenology types and its codes",
-    #     collection_uuid="110398ca-32fa-4f69-b7bb-5aa69d5a5004",
-    #     uuid_namespace="phenology type",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-floristics-phenologies",
+        label="phenological stages",
+        description="A collection of plant phenological stages. Examples include plants in flower, fruit, buds, senescent, etc.",
+        collection_url="https://linked.data.gov.au/def/nrm/110398ca-32fa-4f69-b7bb-5aa69d5a5004",
+        uuid_namespace="phenology type",
+    ),
     LUTSchema(
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-slope-classes",
         label="slope classes",
