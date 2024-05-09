@@ -592,13 +592,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="b7368a37-a4ac-4c84-8a78-1fb9755ad849",
     #     uuid_namespace="recruitment tree statuses",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-lithologies",
-    #     label="Soil lithology codes",
-    #     description="A collection of soil lithology types and its codes.",
-    #     collection_uuid="1d50eb79-685f-45ea-84b4-627154eddede",
-    #     uuid_namespace="soil lithology",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-lithologies",
+        label="soil lithology types",
+        description="A collection of parent rock and unconsolidated materials. Some examples include rocks that are of igneous origin such as, Adamellite, Andesite, Diorite, etc., or rocks that are sedimentary, such as Alcrete, Calcrete, Coal to name a few.",
+        collection_url="https://linked.data.gov.au/def/nrm/1d50eb79-685f-45ea-84b4-627154eddede",
+        uuid_namespace="soil lithology",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-substrates",
     #     label="Soil substrate codes",
