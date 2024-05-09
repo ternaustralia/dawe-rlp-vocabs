@@ -529,13 +529,13 @@ endpoints: List[LUTSchema] = [
         collection_url="https://linked.data.gov.au/def/nrm/f1592e71-cc16-4b81-90c4-06b418a5a766",
         uuid_namespace="observation method tier 2",
     ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-observation-methods",
-    #     label="Observation methods codes",
-    #     description="A collection of observation methods and its codes.",
-    #     collection_uuid="bf0e07c4-0977-4a97-9e82-11691641ca2e",
-    #     uuid_namespace="observation methods",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-tier-3-observation-methods",
+        label="Observation methods tier 3",
+        description="A collection of unique identifier codes used during an opportune observation methods - tier 3.",
+        collection_url="https://linked.data.gov.au/def/nrm/bf0e07c4-0977-4a97-9e82-11691641ca2e",
+        uuid_namespace="observation methods tier 3",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-phenologies",
     #     label="Phenology type codes",
