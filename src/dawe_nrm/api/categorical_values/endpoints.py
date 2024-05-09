@@ -216,13 +216,13 @@ endpoints: List[LUTSchema] = [
         collection_url="https://linked.data.gov.au/def/nrm/232d5fdd-c15f-4a84-865e-46ea20b82ff1",
         uuid_namespace="coarse woody debris transect orientations",
     ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-condition-life-stages",
-    #     label="Life stages codes",
-    #     description="A collection of life stages and its codes.",
-    #     collection_uuid="5f82c583-167b-4ed2-b25e-4d67decb3f2d",
-    #     uuid_namespace="condition life stages",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-condition-life-stages",
+        label="Life stages",
+        description="A collection of various life stages of a plant individual. Examples include, budding, vegetative, seedling, sapling, flowering, fruiting, mature, senescent and recently shed.",
+        collection_url="https://linked.data.gov.au/def/nrm/5f82c583-167b-4ed2-b25e-4d67decb3f2d",
+        uuid_namespace="condition life stages",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-condition-vegetation-diameter-classes",
     #     label="Condition vegetation diameter classes codes",
