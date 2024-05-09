@@ -17,13 +17,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="1301857c-4e02-4000-966b-a0d0ce60368f",
     #     uuid_namespace="animal behaviour",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-pouch-conditions",
-    #     label="Animal pouch condition codes",
-    #     description="A collection of animal pouch condition types and its codes.",
-    #     collection_uuid="4fab0c1c-c127-474e-8f5e-4afe45fec0ed",
-    #     uuid_namespace="animal pouch condition",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-pouch-conditions",
+        label="Animal pouch conditions",
+        description="Refers to the condition of pouch of an animal (such as marsupials), i.e., whether the pouch is developed, or Not, and if there are any young ones.",
+        collection_url="https://linked.data.gov.au/def/nrm/4fab0c1c-c127-474e-8f5e-4afe45fec0ed",
+        uuid_namespace="animal pouch condition",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-sexes",
     #     label="Animal sex codes",
