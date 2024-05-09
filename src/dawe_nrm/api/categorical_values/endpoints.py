@@ -662,13 +662,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="13c84b19-e2bb-48c4-93db-465bcad2dbb5",
     #     uuid_namespace="soils coarse frag shapes",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-coarse-frag-sizes",
-    #     label="Soils coarse fragment sizes codes",
-    #     description="A collection of soils coarse fragment sizes and its codes.",
-    #     collection_uuid="06d01bf1-3863-44ea-95fe-4c62bb47b996",
-    #     uuid_namespace="soils coarse frag sizes",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-coarse-frag-sizes",
+        label="soil coarse fragments sizes",
+        description="A collection of various size classes of soil coarse fragments. Sizes can vary from extremely Large Boulders (>2000 mm) or Bouldery (600-2000 mm) to medium gravelly or pebbles (6-20mm) or fine gravelly (2-6mm).",
+        collection_url="https://linked.data.gov.au/def/nrm/06d01bf1-3863-44ea-95fe-4c62bb47b996",
+        uuid_namespace="soils coarse frag sizes",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-coarse-frag-strengths",
     #     label="Soils coarse fragment strengths codes",
