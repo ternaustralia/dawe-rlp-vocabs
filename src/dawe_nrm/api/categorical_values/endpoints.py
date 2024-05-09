@@ -515,13 +515,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="2cf23037-6afa-4523-8e9f-0bd86190ccc8",
     #     uuid_namespace="microhabitats tier 2",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods",
-    #     label="Observation method tier 1 codes",
-    #     description="A collection of observation tier 1 types and its codes.",
-    #     collection_uuid="6b6ec6a4-33d2-4515-b988-617d190cfbdb",
-    #     uuid_namespace="observation method tier 1",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-tier-1-observation-methods",
+        label="Observation methods tier 1",
+        description="A collection of observation methods (tier 1) used during a fauna survey. Some examples of tier 1 method include simple observations, such as 'seen', 'sign', 'heard', etc.",
+        collection_uuid="https://linked.data.gov.au/def/nrm/6b6ec6a4-33d2-4515-b988-617d190cfbdb",
+        uuid_namespace="observation method tier 1",
+    ),
     LUTSchema(
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-tier-2-observation-methods",
         label="Observation methods tier 2",
