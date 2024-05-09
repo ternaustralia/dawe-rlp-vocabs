@@ -641,13 +641,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="70b3ea97-90dd-49f7-9ca2-717a8deb6368",
     #     uuid_namespace="soils biotic relief agents",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-coarse-frag-abundances",
-    #     label="Soils coarse fragment abundances codes",
-    #     description="A collection of soils coarse fragment abundances and its codes.",
-    #     collection_uuid="bec608c4-3a66-4630-b666-cabb666ac8d2",
-    #     uuid_namespace="soils coarse frag abundances",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-coarse-frag-abundances",
+        label="soil coarse fragments abundance types",
+        description="A collection of the types of abundance (percentage) of soil coarse fragments. The percentage can vary from '0'- no coarse fragments to '>90%'- extremely abundant.",
+        collection_url="https://linked.data.gov.au/def/nrm/bec608c4-3a66-4630-b666-cabb666ac8d2",
+        uuid_namespace="soils coarse frag abundances",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-coarse-frag-alterations",
     #     label="Soils coarse fragment alterations codes",
