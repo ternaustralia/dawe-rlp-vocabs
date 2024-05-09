@@ -1278,13 +1278,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="09de3b86-616e-49af-a34c-903cf7dec443",
     #     uuid_namespace="vaginal condition",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-veg-growth-forms",
-    #     label="Growth form codes",
-    #     description="A collection of growth form types and its codes.",
-    #     collection_uuid="d0fc07a7-3ec9-45ed-8850-885a32828d3c",
-    #     uuid_namespace="vegetation growth form",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-veg-growth-forms",
+        label="Growth forms",
+        description="A collection of vegetation growth forms adopted by the National Vegetation Information System (NVIS). Some examples include, Aquatic, Bryophyte, Chenopod, Cycad, Epiphyte, Fern, Forb, Grass, etc.",
+        collection_url="https://linked.data.gov.au/def/nrm/d0fc07a7-3ec9-45ed-8850-885a32828d3c",
+        uuid_namespace="vegetation growth form",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-veg-height-classes",
     #     label="Vegetation height class codes",
