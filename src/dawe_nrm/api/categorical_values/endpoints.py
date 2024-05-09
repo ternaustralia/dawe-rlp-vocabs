@@ -465,13 +465,13 @@ endpoints: List[LUTSchema] = [
         collection_url="https://linked.data.gov.au/def/nrm/c1a58967-cb12-4c2c-a7ca-9cee2589919c",
         uuid_namespace="landform element",
     ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns",
-    #     label="Landform pattern codes",
-    #     description="A collection of landform pattern types and its codes.",
-    #     collection_uuid="19d91a7a-2733-4b84-9d2b-4bda4808c003",
-    #     uuid_namespace="landform pattern",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-landform-patterns",
+        label="landform pattern types",
+        description="A collection of the types of landform patterns such as a Delta, Lava Plain, Tidal Flat, etc.",
+        collection_url="https://linked.data.gov.au/def/nrm/19d91a7a-2733-4b84-9d2b-4bda4808c003",
+        uuid_namespace="landform pattern",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-leaf-litter-sample-preservations",
     #     label="Leaf litter sample preservations codes",
