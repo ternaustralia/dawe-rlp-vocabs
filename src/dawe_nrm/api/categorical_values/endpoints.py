@@ -209,14 +209,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="c117bd06-9603-400d-a20d-29f56ffa78cc",
     #     uuid_namespace="coarse woody debris transect numbers",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-directions",
-    #     label="Coarse Woody Debris transect orientations codes",
-    #     description="A collection of Coarse Woody Debris transect "
-    #     "orientations and its codes.",
-    #     collection_uuid="232d5fdd-c15f-4a84-865e-46ea20b82ff1",
-    #     uuid_namespace="coarse woody debris transect orientations",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-directions",
+        label="Direction codes",
+        description="A collection of direction codes.",
+        collection_uuid="https://linked.data.gov.au/def/nrm/232d5fdd-c15f-4a84-865e-46ea20b82ff1",
+        uuid_namespace="coarse woody debris transect orientations",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-condition-life-stages",
     #     label="Life stages codes",
