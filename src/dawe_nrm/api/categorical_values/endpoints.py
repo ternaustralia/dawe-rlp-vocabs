@@ -997,13 +997,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="844f1b7a-6a65-4994-9526-c337d84a7652",
     #     uuid_namespace="soils relative inclination of slope elements",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-reliefs",
-    #     label="Soils reliefs codes",
-    #     description="A collection of soils reliefs and its codes.",
-    #     collection_uuid="9e377f67-190e-4d58-9ec9-adebedaf14e2",
-    #     uuid_namespace="soils reliefs",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-plot-reliefs",
+        label="Soil reliefs",
+        description="A collection of the types of soil reliefs. They range from: 'Extremely low (<9m)', 'Low (30-90m)',  'Very low (9-30 m)', 'High (90-300 m)', and 'Very high (>300 m)'.",
+        collection_url="https://linked.data.gov.au/def/nrm/9e377f67-190e-4d58-9ec9-adebedaf14e2",
+        uuid_namespace="soils reliefs",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-soils-rill-water-erosion-degrees",
     #     label="Soils rill water erosion degrees codes",
