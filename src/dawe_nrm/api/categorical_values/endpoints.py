@@ -3,13 +3,13 @@ from typing import List
 from dawe_nrm.schemas import LUTSchema
 
 endpoints: List[LUTSchema] = [
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes",
-    #     label="Age class codes",
-    #     description="A collection of age class types and its codes.",
-    #     collection_uuid="0e2641c3-0d7e-4d94-8cd7-02c21d564630",
-    #     uuid_namespace="age class",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-age-classes",
+        label="Age classes",
+        description="Refers to a collection of fauna age class or growth stage, i.e., whether the fauna under study is a juvenile, adult, nymph, metamorph, immature, tadpole, or in some cases even an egg.",
+        collection_url="https://linked.data.gov.au/def/nrm/0e2641c3-0d7e-4d94-8cd7-02c21d564630",
+        uuid_namespace="age class",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-behaviours",
     #     label="Animal behaviour codes",
