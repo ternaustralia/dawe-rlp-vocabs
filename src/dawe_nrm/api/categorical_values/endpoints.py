@@ -522,13 +522,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="6b6ec6a4-33d2-4515-b988-617d190cfbdb",
     #     uuid_namespace="observation method tier 1",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-tier-2-observation-methods",
-    #     label="Observation method tier 2 codes",
-    #     description="A collection of observation tier 2 types and its codes.",
-    #     collection_uuid="f1592e71-cc16-4b81-90c4-06b418a5a766",
-    #     uuid_namespace="observation method tier 2",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-tier-2-observation-methods",
+        label="Observation methods tier 2",
+        description="A collection of observation methods (tier 2) used during a fauna survey. Some examples of tier 2 method include observations such as 'spotlighting', 'scat', 'skin', 'scratchings', 'bone/teeth', 'diggings', 'tracks', etc.",
+        collection_uuid="https://linked.data.gov.au/def/nrm/f1592e71-cc16-4b81-90c4-06b418a5a766",
+        uuid_namespace="observation method tier 2",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-observation-methods",
     #     label="Observation methods codes",
