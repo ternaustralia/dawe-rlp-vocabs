@@ -557,6 +557,13 @@ endpoints: List[LUTSchema] = [
         collection_url="https://linked.data.gov.au/def/nrm/4e5037f1-97e6-4866-a018-915bcf482261",
         uuid_namespace="preservation type",
     ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-floristics-habits",
+        label="plant habit types",
+        description="A collection of plant habit types. Examples include climbing, erect, procumbent, decumbent, pendulous plants, etc.",
+        collection_url="https://linked.data.gov.au/def/nrm/015360a2-1e21-4401-be70-25c581569ba6",
+        uuid_namespace="plant habit type",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-protocol-variants",
     #     label="Protocol variants codes",
