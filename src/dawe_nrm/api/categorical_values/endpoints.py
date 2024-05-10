@@ -31,13 +31,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="fcc3a1e1-3e35-4a4f-bd44-eface035025c",
     #     uuid_namespace="animal sex",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-teats-conditions",
-    #     label="Animal teats condition codes",
-    #     description="A collection of animal teats condition types and its codes.",
-    #     collection_uuid="d2665d51-db1d-48ad-a80d-48593d280b76",
-    #     uuid_namespace="animal teats condition",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-teats-conditions",
+        label="Female teat conditions",
+        description="A collection of animal teats condition types, such as lactating, distended or button.",
+        collection_url="https://linked.data.gov.au/def/nrm/d2665d51-db1d-48ad-a80d-48593d280b76",
+        uuid_namespace="animal teats condition",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-testes-conditions",
     #     label="Animal testes condition codes",
