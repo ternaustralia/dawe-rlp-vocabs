@@ -1271,13 +1271,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="7ca1606b-e8ed-4f7b-af2c-b3bdab30bae5",
     #     uuid_namespace="targeted survey general survey types",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-taxa-types",
-    #     label="Taxa type codes",
-    #     description="A collection of taxa types and its codes.",
-    #     collection_uuid="7ea12fed-6b87-4c20-9ab4-600b32ce15ec",
-    #     uuid_namespace="taxa type",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-taxa-types",
+        label="Taxa types",
+        description="A collection of target taxa types such as, Amphibian; Bird; Invertebrate; Mammals; Non-vascular plant; Reptile; and Vascular plant.",
+        collection_url="https://linked.data.gov.au/def/nrm/7ea12fed-6b87-4c20-9ab4-600b32ce15ec",
+        uuid_namespace="taxa type",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-tecs",
     #     label="Threatened ecological communities codes",
