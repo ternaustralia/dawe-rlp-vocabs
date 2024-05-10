@@ -324,13 +324,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="a01656de-9627-4067-ad09-269242badbcb",
     #     uuid_namespace="fauna maturities",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-specimen-conditions",
-    #     label="Fauna specimen conditions codes",
-    #     description="A collection of fauna specimen conditions and its codes.",
-    #     collection_uuid="f0647b85-a014-4299-b23f-6aeb25e834bc",
-    #     uuid_namespace="fauna specimen conditions",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-voucher-conditions",
+        label="Fauna specimen conditions",
+        description="Refers to the condition of fauna voucher specimen. The conditions can range for example, from a 'fresh (estimate <24 hours)' to 'partially degenerated (estimate 2-7 days)' to almost 'long dead (>4 weeks)'.",
+        collection_url="https://linked.data.gov.au/def/nrm/f0647b85-a014-4299-b23f-6aeb25e834bc",
+        uuid_namespace="fauna specimen conditions",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-trap-disturbeds",
     #     label="Fauna trap disturbeds codes",
