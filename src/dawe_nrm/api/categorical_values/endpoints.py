@@ -73,13 +73,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="9282400b-56c3-49a9-bb82-87ef74914690",
     #     uuid_namespace="basal tree trunk",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes",
-    #     label="Breeding status codes",
-    #     description="A collection of breeding status types and its codes.",
-    #     collection_uuid="b7dc10d2-c0aa-46b3-94da-685cd0a723e4",
-    #     uuid_namespace="breeding status",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-breeding-codes",
+        label="Breeding statuses",
+        description="Refers to a collection of reproductive status of a fauna individual. For example, in female mammals, whether the mammal is pregnant or not, or is with a dependent young; in female frogs and reptiles, whether the female is gravid (fertile), or non-gravid; in male frogs, whether the vocal sac is obvious, nuptial pads inconspicuous, nuptial pads obvious but not fully developed, nuptial pads fully developed, or in amplexus.",
+        collection_url="https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4",
+        uuid_namespace="breeding status",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types",
     #     label="Camera battery types codes",
