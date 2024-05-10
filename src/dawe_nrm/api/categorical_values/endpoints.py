@@ -80,6 +80,13 @@ endpoints: List[LUTSchema] = [
         collection_url="https://linked.data.gov.au/def/nrm/b7dc10d2-c0aa-46b3-94da-685cd0a723e4",
         uuid_namespace="breeding status",
     ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-rumps",
+        label="Clinical scoring - rump",
+        description="A collection of clinical condition scores (0 - 7) of a mammalian rump (e.g., Koala), with '0' referred to 'normal condition' and '7' being 'progressive decline or myiasis'.",
+        collection_url="https://linked.data.gov.au/def/nrm/8799d474-09eb-5112-aa9d-87710cd1661c",
+        uuid_namespace="rump",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-camera-battery-types",
     #     label="Camera battery types codes",
