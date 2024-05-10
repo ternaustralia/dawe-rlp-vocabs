@@ -1342,13 +1342,13 @@ endpoints: List[LUTSchema] = [
     #     collection_uuid="6a69b9e5-4a1e-4ef5-b79e-d8cea6e3d97b",
     #     uuid_namespace="vertebrate pouch young development classes",
     # ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-testes-positions",
-    #     label="Vertebrate testes positions codes",
-    #     description="A collection of vertebrate testes positions and its codes.",
-    #     collection_uuid="6a46703e-dbc3-440e-b06f-217c400a18b5",
-    #     uuid_namespace="vertebrate testes positions",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-testes-positions",
+        label="fauna testes positions",
+        description="Refers to the position of animal testes, i.e., whether it is 'scrotal' or 'abdominal' position in a male mammal.",
+        collection_url="https://linked.data.gov.au/def/nrm/6a46703e-dbc3-440e-b06f-217c400a18b5",
+        uuid_namespace="vertebrate testes positions",
+    ),
     # LUTSchema(
     #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-vertebrate-trap-types",
     #     label="Vertebrate trap types codes",
