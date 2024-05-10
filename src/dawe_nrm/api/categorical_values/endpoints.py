@@ -1364,10 +1364,10 @@ endpoints: List[LUTSchema] = [
     #     uuid_namespace="voucher condition",
     # ),
     # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-voucher-types",
-    #     label="Voucher type codes",
-    #     description="A collection of voucher types and its codes.",
-    #     collection_uuid="a3333793-95bd-47fc-ba90-b8fc65a40456",
+    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-opportune-voucher-type-tier-2s",
+    #     label="Voucher types",
+    #     description="Refers to a collection of the type of specimens being vouchered. A voucher specimen is a preserved specimen of an expertly identified taxon deposited in a permanent and accessible storage facility that may later be obtained for examination and further study. This may comprise of a whole plant or animal, part thereof, or a tissue sample (examples include, animal fur, animal hair, plant tissue material, eDNA, etc.).",
+    #     collection_url="https://linked.data.gov.au/def/nrm/a3333793-95bd-47fc-ba90-b8fc65a40456",
     #     uuid_namespace="voucher type",
     # ),
     # LUTSchema(
