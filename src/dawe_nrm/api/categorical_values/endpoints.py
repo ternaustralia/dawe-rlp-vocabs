@@ -24,13 +24,13 @@ endpoints: List[LUTSchema] = [
         collection_url="https://linked.data.gov.au/def/nrm/4fab0c1c-c127-474e-8f5e-4afe45fec0ed",
         uuid_namespace="animal pouch condition",
     ),
-    # LUTSchema(
-    #     endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-sexes",
-    #     label="Animal sex codes",
-    #     description="A collection of animal sex types and its codes.",
-    #     collection_uuid="fcc3a1e1-3e35-4a4f-bd44-eface035025c",
-    #     uuid_namespace="animal sex",
-    # ),
+    LUTSchema(
+        endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-sexes",
+        label="Animal sexes",
+        description="Refers to a collection of sex class of an animal individual, i.e., male, female, 'mixed sexes' or unknown.",
+        collection_url="https://linked.data.gov.au/def/nrm/fcc3a1e1-3e35-4a4f-bd44-eface035025c",
+        uuid_namespace="animal sex",
+    ),
     LUTSchema(
         endpoint_url="https://core.vocabs.paratoo.tern.org.au/api/lut-fauna-teats-conditions",
         label="Female teat conditions",
