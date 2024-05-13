@@ -1,6 +1,6 @@
 from typing import List
 
-from dawe_nrm.schemas import LUTSchema
+from src.dawe_nrm.schemas import LUTSchema
 
 endpoints: List[LUTSchema] = [
     LUTSchema(
