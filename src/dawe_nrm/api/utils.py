@@ -1,6 +1,7 @@
 import uuid
-from rdflib import URIRef, SKOS, Namespace, Literal
+
 import requests
+from rdflib import SKOS, Literal, Namespace, URIRef
 
 
 def get_local_uuid_name(id):

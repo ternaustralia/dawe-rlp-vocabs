@@ -2,7 +2,6 @@ from pathlib import Path
 
 from rdflib import Graph, Namespace
 from rdflib.compare import isomorphic
-
 from rdflib.namespace import SDO
 
 from src.dawe_nrm import api
