@@ -48,7 +48,6 @@ if __name__ == "__main__":
 
         print("Checking for changes...")
 
-        # TODO: only fetch partial data from local graphs
         local_files = default_path.glob("**/*.ttl")
         local_lut_graph = Graph()
         local_lut_graph.bind("urnp", URNPROPERTY)
