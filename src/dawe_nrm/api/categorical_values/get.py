@@ -40,9 +40,9 @@ async def get(
     # graph.bind("urnc", URNCLASS)
     graph.bind("urnp", URNPROPERTY)
 
-    if all("uri" in row and row["uri"] for row in rows):
+    if all("uri" in row["attributes"] and row["attributes"]["uri"] for row in rows):
 
-        print(collection_uri)
+        # print(collection_uri)
 
         concepts = []
 

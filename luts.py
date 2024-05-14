@@ -60,12 +60,14 @@ if __name__ == "__main__":
 
         for endpoint in api.categorical_values.endpoints:
             if fetch_and_check_uri(endpoint.endpoint_url):
+                print("Fetching LUT with metadata --- ", endpoint.endpoint_url)
                 local_graph = fetch_lut_with_metadata(
-                    local_lut_graph, endpoint.endpoint_url, local_graph
+                    local_lut_graph, endpoint.collection_url, local_graph
                 )
             else:
+                print("Fetching LUT with only labels --- ", endpoint.endpoint_url)
                 local_graph = fetch_collection_url_and_member_labels(
-                    local_lut_graph, endpoint.endpoint_url, local_graph
+                    local_lut_graph, endpoint.collection_url, local_graph
                 )
 
         remote_files = path.glob("**/*.ttl")
@@ -79,6 +81,9 @@ if __name__ == "__main__":
         # is tied to the file path on disk.
         local_graph.remove((None, SDO.url, None))
         remote_graph.remove((None, SDO.url, None))
+
+        local_graph.serialize("local_graph.ttl", format="turtle")
+        remote_graph.serialize("remote_graph.ttl", format="turtle")
 
         # Check for changes
         IS_ISOMORPHIC = isomorphic(local_graph, remote_graph)

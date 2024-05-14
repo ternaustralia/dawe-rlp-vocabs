@@ -1,5 +1,5 @@
 import uuid
-from rdflib import URIRef, SKOS, Namespace
+from rdflib import URIRef, SKOS, Namespace, Literal
 import requests
 
 
@@ -36,7 +36,9 @@ def fetch_and_check_uri(endpoint_url):
                 rows = None
 
         # Check if all rows have values for the 'uri' attribute
-        return all("uri" in row and row["uri"] for row in rows)
+        return all(
+            "uri" in row["attributes"] and row["attributes"]["uri"] for row in rows
+        )
 
     except requests.exceptions.RequestException as e:
         print("Error fetching data:", e)
@@ -46,39 +48,97 @@ def fetch_and_check_uri(endpoint_url):
 def fetch_collection_url_and_member_labels(
     local_lut_graph, collection_url, local_graph
 ):
-
+    # print("HERE IT COMES - 1.")
+    # print("The local LUT graph has triples of length:  ", len(local_lut_graph))
+    # print("The SKOS here is ", SKOS)
     collection_url = URIRef(collection_url)
 
     for s, p, o in local_lut_graph.triples((collection_url, SKOS.member, None)):
+        # print("HERE IT COMES - 3.")
         for ss, pp, oo in local_lut_graph.triples((o, SKOS.prefLabel, None)):
-            local_graph.add((collection_url, SKOS.member, oo))
+            # print(
+            #     "LOCALLY FETCHING LUTS - only LABELS------",
+            #     "Collection is ---",
+            #     collection_url,
+            #     "Label is ---",
+            #     oo,
+            # )
+            local_graph.add((collection_url, SKOS.member, Literal(str(oo).lower())))
 
     return local_graph
 
 
 def fetch_lut_with_metadata(local_lut_graph, collection_url, local_graph):
+    # print("HERE IT COMES - 2.")
+    # print("The local LUT graph has triples of length:  ", len(local_lut_graph))
 
     collection_url = URIRef(collection_url)
 
     URNPROPERTY = Namespace("urn:property:")
 
     for s, p, o in local_lut_graph.triples((collection_url, SKOS.member, None)):
+        # print("HERE IT COMES - 4.")
         local_graph.add((collection_url, SKOS.member, o))
-        local_graph.add((o, SKOS.prefLabel, local_lut_graph.value(o, SKOS.prefLabel)))
+        local_graph.add(
+            (
+                o,
+                SKOS.prefLabel,
+                Literal(str(local_lut_graph.value(o, SKOS.prefLabel)).lower()),
+            )
+        )
+        # print(
+        #     "LOCALLY FETCHING LUTS - with METADATA------",
+        #     "Collection is ---",
+        #     collection_url,
+        #     "Concept is ---",
+        #     o,
+        # )
 
         meta_uri = generate_combined_uri(str(collection_url), str(o))
         local_graph.add((meta_uri, URNPROPERTY.categoricalCollection, collection_url))
         local_graph.add((meta_uri, URNPROPERTY.categoricalConcept, o))
 
         for s1, p1, o1 in local_lut_graph.triples((None, None, None)):
-            if (p1, o1) == (URNPROPERTY.categoricalCollection, collection_url) and (
-                p1,
-                o1,
-            ) == (URNPROPERTY.categoricalConcept, o):
-                for s2, p2, o2 in local_lut_graph.triples((s, None, None)):
-                    if p2 == URNPROPERTY.conceptDefinition:
-                        local_graph.add((meta_uri, URNPROPERTY.conceptDefinition, o2))
-                    elif p2 == URNPROPERTY.conceptNotation:
-                        local_graph.add((meta_uri, URNPROPERTY.conceptNotation, o2))
+            if (p1, o1) == (URNPROPERTY.categoricalCollection, collection_url):
+                for s2, p2, o2 in local_lut_graph.triples((s1, None, None)):
+                    if (p2, o2) == (URNPROPERTY.categoricalConcept, o):
+                        local_graph.add(
+                            (
+                                meta_uri,
+                                URNPROPERTY.conceptDefinition,
+                                local_lut_graph.value(
+                                    s2, URNPROPERTY.conceptDefinition
+                                ),
+                            )
+                        )
+                        concept_notation = local_lut_graph.value(
+                            s2, URNPROPERTY.conceptNotation
+                        )
+                        if concept_notation is not None:
+                            local_graph.add(
+                                (
+                                    meta_uri,
+                                    URNPROPERTY.conceptNotation,
+                                    concept_notation,
+                                )
+                            )
+
+                        # local_graph.add(
+                        #     (
+                        #         meta_uri,
+                        #         URNPROPERTY.conceptNotation,
+                        #         local_lut_graph.value(s2, URNPROPERTY.conceptNotation),
+                        #     )
+                        # )
+
+            # and (
+            #     p1,
+            #     o1,
+            # ) == (URNPROPERTY.categoricalConcept, o):
+            #     for s2, p2, o2 in local_lut_graph.triples((s, None, None)):
+            #         if p2 == URNPROPERTY.conceptDefinition:
+            #             local_graph.add((meta_uri, URNPROPERTY.conceptDefinition, o2))
+            #         elif p2 == URNPROPERTY.conceptNotation:
+            #             local_graph.add((meta_uri, URNPROPERTY.conceptNotation, o2))
 
     return local_graph
