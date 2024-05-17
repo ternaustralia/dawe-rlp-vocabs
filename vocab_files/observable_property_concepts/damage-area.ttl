@@ -2,16 +2,18 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/2514a05c-80a8-5100-9513-db50684ed499>
+<https://linked.data.gov.au/def/nrm/a1f5f46b-d6fe-4a1f-8fa8-01b113a2d69f>
     a skos:Concept ;
     dcterms:source "Cox B, Peacock D, McCallum K, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Refers to the status of herbivory damage caused to a vegetation. If 'true'- damage is encountered." ;
-    skos:prefLabel "herbivory damage status" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/herbivory-damage-status.ttl"^^xsd:anyURI ;
-    tern:valueType tern:Boolean ;
+    skos:altLabel
+        "area of damage" ,
+        "damage size" ;
+    skos:closeMatch <https://linked.data.gov.au/def/nrm/f8d5c98b-ecee-5c56-9b95-a57280faec60> ;
+    skos:definition "Refers to an approximate area/size of damage (in m^2) encountered on a landscape during fauna surveys." ;
+    skos:prefLabel "damage area" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/damage-area.ttl"^^xsd:anyURI ;
 .
 
