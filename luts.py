@@ -1,12 +1,19 @@
 from pathlib import Path
 
-from rdflib import Graph
+from rdflib import Graph, Namespace
 from rdflib.compare import isomorphic
 from rdflib.namespace import SDO
 
-from dawe_nrm import api
+from src.dawe_nrm import api
+from src.dawe_nrm.api.utils import (
+    fetch_and_check_uri,
+    fetch_collection_url_and_member_labels,
+    fetch_lut_with_metadata,
+)
 
 default_path = Path("vocab_files/categorical_collections/luts")
+
+URNPROPERTY = Namespace("urn:property:")
 
 
 if __name__ == "__main__":
@@ -41,9 +48,25 @@ if __name__ == "__main__":
         print("Checking for changes...")
 
         local_files = default_path.glob("**/*.ttl")
-        local_graph = Graph()
+        local_lut_graph = Graph()
+        local_lut_graph.bind("urnp", URNPROPERTY)
         for file in local_files:
-            local_graph.parse(file, format="turtle")
+            local_lut_graph.parse(file, format="turtle")
+
+        local_graph = Graph()
+        local_graph.bind("urnp", URNPROPERTY)
+
+        for endpoint in api.categorical_values.endpoints:
+            if fetch_and_check_uri(endpoint.endpoint_url):
+                print("Fetching LUT with metadata --- ", endpoint.endpoint_url)
+                local_graph = fetch_lut_with_metadata(
+                    local_lut_graph, endpoint.collection_url, local_graph
+                )
+            else:
+                print("Fetching LUT with only labels --- ", endpoint.endpoint_url)
+                local_graph = fetch_collection_url_and_member_labels(
+                    local_lut_graph, endpoint.collection_url, local_graph
+                )
 
         remote_files = path.glob("**/*.ttl")
         remote_graph = Graph()
@@ -56,6 +79,9 @@ if __name__ == "__main__":
         # is tied to the file path on disk.
         local_graph.remove((None, SDO.url, None))
         remote_graph.remove((None, SDO.url, None))
+
+        local_graph.serialize("local_graph.ttl", format="turtle")
+        remote_graph.serialize("remote_graph.ttl", format="turtle")
 
         # Check for changes
         IS_ISOMORPHIC = isomorphic(local_graph, remote_graph)
