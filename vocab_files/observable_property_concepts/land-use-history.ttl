@@ -9,14 +9,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:source "McCallum K, Laws M, Cox B, Bignall J, O’Neill S, Sparrow B. (2023) Plot Description Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "A brief historical notes of the land-use where the study/survey plot is being described." ;
+    skos:definition "Brief history notes on the land-use where the study/survey plot is being described." ;
+    skos:historyNote "Updated the concept as an Observable Property and added the concept to the metadata collection during the EMSA 2024 version-2 changes." ;
     skos:prefLabel "land-use history" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/land-use-history.ttl"^^xsd:anyURI ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/land-use-history.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Australian-Land-Use-and-Management-Classification> ;
-    tern:isAttributeOf
-        tern:Observation ,
-        tern:ObservationCollection ,
-        tern:Site ;
-    tern:valueType tern:IRI ;
 .
 
