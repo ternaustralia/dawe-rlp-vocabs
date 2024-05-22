@@ -1,0 +1,20 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/dd25002d-6fd8-4c1f-a1df-c556d43daea8>
+    a skos:Concept ;
+    dcterms:source "Laws M, Morgan R, McCallum K, Potter T, Cox B, Bignall J, O’Neill S, Sparrow B. Cover Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:closeMatch <https://linked.data.gov.au/def/nrm/ddd0c631-bfdd-4b0f-88de-a5eb1a0181c6> ;
+    skos:definition "Whether a branch (of a tree or shrub) is dead or NOT at the point of intercept, during a Cover survey." ;
+    skos:exactMatch
+        <http://linked.data.gov.au/def/tern-cv/e1a18f5f-b63e-4a67-b28e-52e6f838ac14> ,
+        <http://linked.data.gov.au/def/tern-cv/e3e69168-a959-4b8e-a1ea-2413fc3c2e4e> ;
+    skos:historyNote "Added this concept as part of the version-2 changes of EMSA modules (EMSA v2 Review Process, May 2024)." ;
+    skos:prefLabel "dead branch" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/dead-branch.ttl"^^xsd:anyURI ;
+.
+
