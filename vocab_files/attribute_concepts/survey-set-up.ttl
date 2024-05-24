@@ -7,13 +7,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/33f66f31-0ae4-4090-9ce9-3ba8249348a8>
     a skos:Concept ;
-    dcterms:source """McCallum K, Bignall J, Laws M, O’Neill S, Sparrow B. (unpublished draft) ‘Targeted Surveys module’ in ….. (eds) Ecological
-Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision
-making. Draft v 0.1 Report to DCCEEW. TERN, Adelaide.""" ;
+    dcterms:source "McCallum K, Bignall J, Cox B, Kilpatrick E, Laws M, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "To be selected if a new ecological survey is being conducted." ;
-    skos:prefLabel "survey set-up" ;
+    skos:definition "A unique alphanumeric identifier of the survey set-up for the fauna ground counts. This identifier is a combination of the transect ID and date." ;
+    skos:prefLabel "survey set-up ID" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/survey-set-up.ttl"^^xsd:anyURI ;
-    tern:valueType tern:Boolean ;
+    tern:valueType tern:Text ;
 .
 
