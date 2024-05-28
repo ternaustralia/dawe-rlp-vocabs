@@ -17,7 +17,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Updated source and definition based on the version-2 changes of EMSA modules (EMSA v2 Review process, March, 2024)." ;
     skos:prefLabel "project code" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/current-project-code.ttl"^^xsd:anyURI ;
-    tern:isAttributeOf tern-org:Project ;
+    tern:isAttributeOf
+        tern-org:Project ,
+        tern:Input ;
     tern:valueType tern:Text ;
 .
 
