@@ -9,10 +9,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:source "McCallum K, Bignall J, Cox B, O’Neill S, Sparrow B. (2023) Fauna Ground Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Indicates the movement or mode of access within the transect when conducting a fauna ground survey." ;
+    skos:altLabel "traverse type" ;
+    skos:definition "Indicates the movement or mode of access (e.g., vehicle, foot, etc.) along a transect when conducting a fauna ground survey." ;
     skos:prefLabel "transect movement type" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/transect-movement-type.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/b54ed592-837e-526d-92ae-17ce3dbdd3cb> ;
+    tern:isAttributeOf tern:Input ;
     tern:valueType tern:IRI ;
 .
 

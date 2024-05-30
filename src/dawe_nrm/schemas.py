@@ -8,5 +8,5 @@ class LUTSchema:
     endpoint_url: str
     label: str
     description: str
-    collection_uuid: str
+    collection_url: str
     uuid_namespace: str
