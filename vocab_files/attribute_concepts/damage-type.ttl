@@ -12,9 +12,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "herbivory encountered" ,
         "physical damage encountered" ;
-    skos:definition "Refers to the status of the herbivory damage caused to a vegetation or physical damage caused to a site by a fauna species. If 'true'- damage is encountered." ;
-    skos:prefLabel "damage status" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/damage-status.ttl"^^xsd:anyURI ;
+    skos:definition "Refers to the type of damage caused by a fauna species, i.e., either to a vegetation (herbivory) or physical damage on the site. If 'true'- damage is encountered." ;
+    skos:prefLabel "damage type" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/damage-type.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern:Site ;
     tern:valueType tern:Boolean ;
 .
 
