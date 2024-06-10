@@ -22,7 +22,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <li><a href="#references">References</a></li>
     <li><a href="#appendices">Appendices</a></li>
   </ol>
-   <h1 id="plot-layout-and-visit-protocol">Plot layout and visit
+  <h1 id="plot-layout-and-visit-protocol">Plot layout and visit
 protocol</h1>
 <h2 id="field-collection">Field collection</h2>
 <h3 id="pre-requisites-1">Pre-requisites</h3>
@@ -153,78 +153,66 @@ AusPlots Forests Survey Protocols Manual. Version 1.6. University of
 Tasmania, Hobart.</p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition """
-    <h3 id="key-definitions-and-terminology">Key definitions and terminology</h3>
-<p id="table-1">
-  Table 1. Key definitions and terminology relevant to the
-  <em>Plot selection and layout</em> module.
-</p>
-<table>
-  <colgroup>
-    <col style="width: 19%" />
-    <col style="width: 80%" />
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Term</th>
-      <th>Description</th>
-    </tr>
-    <tr class="odd">
-      <th><strong>Plot</strong></th>
-      <th>
-        The specific locations within a project area that are surveyed
-        (generally 100 m x 100 m; 1 ha). Plots are generally placed in locations
-        that are representative of the stratified sampling units (or zones) and
-        have a constant mix of vegetation, slope, relief and soil.
-      </th>
-    </tr>
-    <tr class="header">
-      <th><strong>Sampling unit</strong></th>
-      <th>
-        An area of land considered representative of the landform, vegetation,
-        land surface and other land features. Depending on local conditions, a
-        project area may consist of multiple sampling units and these units may
-        encompass multiple plots. In many instances, sampling units correspond
-        with vegetation associations.
-      </th>
-    </tr>
-    <tr class="odd">
-      <th><strong>Project area</strong></th>
-      <th>
-        The overall area studied as part of a project, which may consist of a
-        single parcel of land or multiple parcels.
-      </th>
-    </tr>
-    <tr class="header">
-      <th><strong>BACI</strong></th>
-      <th>
-        Before-After-Control-Impact – Experimental sampling design that consists
-        of a before and after (BA) period in combination with control and impact
-        (CI) treatments. The interaction between BA and CI indicates a
-        significant effect of the treatment or intervention (Smokorowski and
-        Randall 2017).
-      </th>
-    </tr>
-    <tr class="odd">
-      <th><strong>BOO</strong></th>
-      <th>
-        Best on Offer – areas that are in relatively optimal, functional
+    <h2 id="key-definitions-and-terminology">Key definitions and
+        terminology</h2>
+        <p><span class="anchor" id="_Ref73008632"></span><h4>Table 1. Key
+        definitions and terminology used in the Plot Selection and Layout
+        Module.</h4></p>
+        <table>
+        <colgroup>
+        <col style="width: 14%"/>
+        <col style="width: 85%"/>
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Term</th>
+        <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>Average condition site</td>
+        <td>Sites that are broadly representative of the environments within
+        project area that are subject to moderate to significant pressures (Eyre
+        <em>et al.</em> 2011).</td>
+        </tr>
+        <tr class="even">
+        <td>BACI</td>
+        <td>Before-After-Control-Impact – Experimental sampling design that
+        consists of a before and after (BA) period in combination with control
+        and impact (CI) treatments. The interaction between BA and CI indicates
+        a significant effect of the treatment or intervention (Smokorowski and
+        Randall 2017).</td>
+        </tr>
+        <tr class="odd">
+        <td>Biodiversity plot</td>
+        <td>The combined 200 x 100 m plot, encompassing the core monitoring plot
+        with the add-on area for fauna (see <a href="#figure-1">Figure 1</a>).</td>
+        </tr>
+        <tr class="even">
+        <td>BOO</td>
+        <td>Best on Offer – Areas that are in relatively optimal, functional
         condition where dominant threatening processes are minimised and
         represent the best condition available within the project area (Eyre
-        <em>et al.</em> 2011).
-      </th>
-    </tr>
-    <tr class="header">
-      <th><strong>Average condition site</strong></th>
-      <th>
-        Sites that are broadly representative of the environments within project
-        area that are subject to moderate to significant pressures (Eyre
-        <em>et al.</em> 2011).
-      </th>
-    </tr>
-    <tr class="odd">
-      <th><strong>GNSS</strong></th>
-      <th>
-        Global Navigation Satellite System – The standard generic term for
+        <em>et al.</em> 2011).</td>
+        </tr>
+        <tr class="odd">
+        <td>Core monitoring plot</td>
+        <td>The standard 100 x 100 m (1 ha) plot where all the majority of the
+        vegetation and soil surveys take place (see <a href="#figure-1">Figure 1</a>).</td>
+        </tr>
+        <tr class="even">
+        <td>Fauna plot</td>
+        <td>Paired 100 x 100 m (1 ha) plot adjacent to the core monitoring plot
+        where vertebrate and invertebrate fauna surveys take place (see <a href="#figure-1">Figure 1</a>).</td>
+        </tr>
+        <tr class="odd">
+        <td>GIS</td>
+        <td>Geographic Information System</td>
+        </tr>
+        <tr class="even">
+        <td>GNSS</td>
+        <td>Global Navigation Satellite System – The standard generic term for
         satellite navigation systems that provide autonomous geo-spatial
         positioning with global coverage. Common GNSS Systems are GPS, GLONASS,
         Galileo, Beidou and other regional systems. The advantage to having
@@ -232,27 +220,42 @@ Tasmania, Hobart.</p>"""^^rdf:HTML ;
         at all times. Though satellite systems do not often fail, if one fails
         GNSS receivers can pick up signals from other systems. Also, if line of
         sight is obstructed, having access to multiple satellites is also a
-        benefit.
-      </th>
-    </tr>
-    <tr class="header">
-      <th><strong>Trimble R1</strong></th>
-      <th>
-        A compact, lightweight GNSS receiver that provides professional-grade
-        positioning information (maximum precision of 50 cm) to any connected
-        mobile device using Bluetooth® connectivity.
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-    """^^rdf:HTML ;
+        benefit.</td>
+        </tr>
+        <tr class="odd">
+        <td>Plot</td>
+        <td>A specified area (generally 100 x 100 m; 1 ha) where information is
+        collected. Plots are generally established in locations that are
+        homogenous areas representative of the stratified sampling units (or
+        zones), with consistent vegetation, slope, relief and soil.</td>
+        </tr>
+        <tr class="even">
+        <td>Project area</td>
+        <td>The overall area studied as part of a project, which may consist of
+        a single parcel of land or multiple parcels.</td>
+        </tr>
+        <tr class="odd">
+        <td>Sampling unit</td>
+        <td>An area of land categorised on the basis of landform, vegetation,
+        land surface and other land features. Depending on local conditions, a
+        project area may consist of multiple sampling units and these units may
+        encompass multiple plots. In many instances, sampling units correspond
+        with vegetation associations.</td>
+        </tr>
+        <tr class="even">
+        <td>Trimble® R1 or DA2 receiver</td>
+        <td>Compact, lightweight GNSS receivers that provide professional-grade
+        positioning information (sub-metre accuracy) to any connected mobile
+        device using Bluetooth® connectivity.</td>
+        </tr>
+        </tbody>
+        </table>"""^^rdf:HTML ;
     skos:note """
-    <h3 id="additional-guidelines-1">Additional guidelines</h3>
+ <h3 id="additional-guidelines-1">Additional guidelines</h3>
 <ul>
 <li><p>If plot name is not automatically generated, follow the TERN
 naming convention (State, project code, bioregion code and 4-digit
-sequential number) when defining plot names (<a href="#appendix-2">Appendix 2</a>). You may
+sequential number) when defining plot names (Appendix 2). You may
 additionally include the project number, and/or other identifiers to
 identify control or impact sites, and the replicate number.</p></li>
 <li><p>Use of star droppers is advised for permanently marking plots.
@@ -284,7 +287,6 @@ align tape measures for the Cover Module.</p></li>
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/plot-selection/plot-layout-and-visit-protocol.ttl"^^xsd:anyURI ;
     tern:appendix """
     <h1 id="appendices">Appendices</h1>
-    <p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Spatial and environmental datasets.</h4></p>
 <p>The following is an overview of potential sources for GIS spatial
 layers that can be utilised as part of the site stratification process.
 Please note that this list is not exhaustive, so a general search for
@@ -562,8 +564,6 @@ geomorphology and soils.</td>
 </tr>
 </tbody>
 </table>
-<p><span class="anchor" id="appendix-2"></span><h4>Appendix 2.
-Nomenclature used when defining a plot.</h4></p>
 <p><img alt="appendix-2" height="1000" src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/Appendix-2.png" width="850"/></p>"""^^rdf:HTML ;
     tern:equipment """<h3 id="equipment-1">Equipment</h3>
 <ul>
@@ -641,12 +641,13 @@ plot layout</em> and then <em>set reference point.</em> The app will
 record the location of the <em>plot reference point</em> (green point)
 and <em>plot points</em> (yellow points) based on the reference point
 location, plot orientation and plot dimensions, and will identify where
-you are located (blue point; <a href="#figure-4">Figure 4</a>). The plot boundary will be
-displayed and the transect lines can be toggled on and off.</p>
-<p><img alt="figure-4" id="figure-4" height="550" src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/Picture4.png" width="450"/></p>
-<p>Figure 4. The core monitoring plot is displayed in the Monitor app to mark out
+you are located (blue point; see <a href="#figure-4">Figure 4</a>).</p>
+<p><img alt="figure-4" height="550" src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/Picture4.png" width="450"/></p>
+</ol>
+<p>The core monitoring plot is displayed in the Monitor app to mark out
 the plot and includes the plot reference point (green), plot grid points
 (yellow) your current location (blue point).</p>
+<ol start="13" type="1">
 <li><p>Traverse the plot to each plot grid point that is required to be
 marked out based on the modules required to meet the project
 biodiversity outcomes (e.g. Cover – Enhance protocol requires all plot
@@ -716,17 +717,23 @@ switching between existing plots, or undertaking a revisit.</p>
 <ol type="1">
 <li><p>Open the Plot Selection and Layout Module in the Monitor app and
 select the Plot layout and visit protocol.</p></li>
+</ol>
+<ol start="2" type="1">
 <li><p>Select <em>select existing plot</em>.</p></li>
 <li><p>Select the <em>plot name</em> from the list of plots existing in
 the project area. If just defining the current plot and visit when
 switching between plots during the current visit, skip to step
 11.</p></li>
+</ol>
+<ol start="3" type="1">
 <li><p>If undertaking a revisit that requires plot grid points to be
 marked out based on the modules required to meet the project
 biodiversity outcomes (e.g. Cover – Enhanced protocol requires all plot
 grid points to be marked out), connect your mobile device and GNSS
 location device. Please see reference guide <em>Connecting GNSS/GPS
 location devices to the Monitor app</em>.</p></li>
+</ol>
+<ol start="4" type="1">
 <li><p>Select <em>mark plot points for revisit</em> to launch the
 mapping interface. The plot points (yellow points) and your location
 (blue point) will be displayed.</p></li>
