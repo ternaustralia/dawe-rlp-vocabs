@@ -6,7 +6,7 @@
 
 > ⚠️ Until version 1.0.0, the controlled vocabulary and content may change.
 
-This repository contains the source data for the controlled vocabularies used in the Ecological Monitoring System Australia (EMSA) field survey collection protocols.
+This repository contains the source data for the controlled vocabularies used in the [Ecological Monitoring System Australia (EMSA)](https://emsa.tern.org.au/) field survey collection protocols.
 
 The controlled vocabulary is published in ARDC's Research Vocabularies Australia. The EMSA-controlled vocabularies can also be viewed on TERN's Linked Data website at https://linkeddata.tern.org.au/viewers/dawe-vocabs.
 
