@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/8af02cd8-c428-5ce1-88ca-86070560cfa6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/precipitation-condition.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2ebfee89-92db-44b3-bb89-06dd92798ae6> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/bca805fc-86d3-5fd5-a02b-1d289efd047c> ;
+    urnp:conceptDefinition "Selected when there is no evidence of recent rain." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e4cbb574-6823-5384-9c22-6ec2c09110ba>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/precipitation-condition.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/2ebfee89-92db-44b3-bb89-06dd92798ae6> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d7a30950-af83-5787-b94f-292070852285> ;
+    urnp:conceptDefinition "Refers to the precipitation condition, when there is evidence of recent rain." ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/2ebfee89-92db-44b3-bb89-06dd92798ae6>
+    a skos:Collection ;
+    dcterms:description "An indication whether a recent rainfall has occurred in the plot, i.e., a plot is either 'wet' or 'dry'." ;
+    dcterms:source "https://core.vocabs.paratoo.tern.org.au/api/lut-climatic-conditions"^^xsd:anyURI ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/bca805fc-86d3-5fd5-a02b-1d289efd047c> ,
+        <https://linked.data.gov.au/def/nrm/d7a30950-af83-5787-b94f-292070852285> ;
+    skos:prefLabel "rainfall conditions" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/rainfall-condition.ttl"^^xsd:anyURI ;
+.
+

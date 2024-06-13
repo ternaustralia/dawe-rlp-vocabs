@@ -1,0 +1,19 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/c6baeb59-0434-4619-ae0f-154caa65b9bf>
+    a skos:Concept ;
+    dcterms:source "Bignall J, Laws M, McCallum K, O’Neill S, Lewis, D, Sparrow B (2023) Vegetation Mapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "field id" ;
+    skos:definition "A unique sequential identifier (i.e., additional to the automatically generated vegetation mapping ID), to assist field-based stratification of the project area, visual mapping and reporting (e.g. VA1, VA2, VA2b).given to the vegetation mapping point location." ;
+    skos:prefLabel "vegetation mapping field ID" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/vegetation-mapping-field-id.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern:Procedure ;
+    tern:valueType tern:Text ;
+.
+

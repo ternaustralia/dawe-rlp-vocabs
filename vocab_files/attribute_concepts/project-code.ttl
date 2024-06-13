@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX tern-org: <https://w3id.org/tern/ontologies/org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/00df82dc-6851-57d3-9e25-9a8a1b3d5245>
@@ -16,6 +17,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Updated source and definition based on the version-2 changes of EMSA modules (EMSA v2 Review process, March, 2024)." ;
     skos:prefLabel "project code" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/current-project-code.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf
+        tern-org:Project ,
+        tern:Input ;
     tern:valueType tern:Text ;
 .
 
