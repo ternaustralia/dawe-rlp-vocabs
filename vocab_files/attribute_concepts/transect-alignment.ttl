@@ -9,9 +9,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:source "Peacock D, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Aerial Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "transect point orientation" ;
     skos:definition "The spatial orientation/alignment of the transect based on the compass direction of travel (in degrees)." ;
     skos:prefLabel "transect alignment" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/transect-alignment.ttl"^^xsd:anyURI ;
-    tern:valueType tern:Float ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/232d5fdd-c15f-4a84-865e-46ea20b82ff1> ;
+    tern:isAttributeOf tern:Transect ;
+    tern:valueType tern:IRI ;
 .
 
