@@ -150,19 +150,19 @@ See `.github/workflows/luts.yml` for more information.
 Run black to auto-format Python code.
 
 ```
-black.
+black .
 ```
 
 Run isort to auto-format Python code imports.
 
 ```
-isort.
+isort .
 ```
 
 Run RDF Turtle format.
 
 ```
-ontotools dir normalize.
+ontotools dir normalize .
 ```
 
 ---
