@@ -6,9 +6,9 @@
 
 > ⚠️ Until version 1.0.0, the controlled vocabulary and content may change.
 
-This repository contains the source data for the controlled vocabularies used in the [Ecological Monitoring System Australia (EMSA)](https://emsa.tern.org.au/) field survey collection protocols.
+This repository contains the source data for the controlled vocabularies used in the [Ecological Monitoring System - Australia (EMSA)](https://emsa.tern.org.au/), the field survey collection protocols.
 
-The controlled vocabulary is published in ARDC's Research Vocabularies Australia. The EMSA-controlled vocabularies can also be viewed on TERN's Linked Data website at https://linkeddata.tern.org.au/viewers/dawe-vocabs.
+The controlled vocabularies are published in ARDC's Research Vocabularies Australia. The EMSA-controlled vocabularies can also be viewed on TERN's Linked Data website at https://linkeddata.tern.org.au/prez/dawe-cv/v/.
 
 The EMSA-controlled vocabularies use persistent identifiers issued by the [Australian Government Linked Data Working Group](https://www.linked.data.gov.au/) (AGLDWG). The base URI issued for this project is:
 
@@ -94,7 +94,7 @@ To run locally, you will need the following installed:
 
 ## Editing locally
 
-This section is only relevant to those looking to make changes to the Python codebase, update tests, or make other non-vocab-related changes. If you are simply looking to make edits to the controlled vocabularies, the easiest method is to follow the instructions in [Editing the controlled vocabularies in the browser](#editing-the-controlled-vocabularies-in-the-browser).
+This section is only relevant to those looking to make changes to the Python codebase, update tests, or make other non-vocab-related changes. If you are looking to make edits to the controlled vocabularies, the easiest method is to follow the instructions in [Editing the controlled vocabularies in the browser](#editing-the-controlled-vocabularies-in-the-browser).
 
 Open the repository in Visual Studio Code in a devcontainer. To do this, run `command + shift + p` and select `Remote-Containers: Rebuild Container`. Note that the Docker Desktop needs to be installed.
 
@@ -130,7 +130,7 @@ Check if upstream LUTs data have changed by running:
 python luts.py -p remote_data_dir -v
 ```
 
-This checks to ensure the upstream data is the same as the local copy in this repository. The program will return a standard exit code `1` if the data is not isomorphic.
+This checks to ensure the upstream data is the same as the local copy in this repository. If the data is not isomorphic, the program will return a standard exit code of `1`.
 
 #### Scheduled check
 
@@ -179,7 +179,7 @@ The demo publication is located at https://demo.vocabs.ardc.edu.au/viewById/927 
 
 The production publication is located at https://vocabs.ardc.edu.au/viewById/639 and is published automatically using GitHub Actions on each GitHub _release_. Release versions follow [Semantic Versioning](https://semver.org/) and are in the format of `MAJOR.MINOR.PATCH` and must not have additional labels. E.g. `0.1.3`.
 
-The production release is published in RVA and TERN's GraphDB database. This database is deployed on a powerful server and drives TERN's Linked Data website and the NRM-controlled vocabularies viewer at https://linkeddata.tern.org.au/viewers/dawe-vocabs.
+The production release is published in RVA and TERN's GraphDB database. The controlled vocabularies are hosted on a TERN-managed semantic database and visible from the EMSA-controlled vocabularies viewer at [https://linkeddata.tern.org.au/prez/dawe-cv/v/](https://linkeddata.tern.org.au/prez/dawe-cv/v/).
 
 ### Creating releases and prereleases
 
