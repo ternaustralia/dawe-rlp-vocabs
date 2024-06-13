@@ -159,7 +159,7 @@ Run isort to auto-format Python code imports.
 isort .
 ```
 
-Run RDF Turtle formatter.
+Run RDF Turtle format.
 
 ```
 ontotools dir normalize .
@@ -169,7 +169,7 @@ ontotools dir normalize .
 
 ## Publishing
 
-The EMSA-controlled vocabularies are published in the ARDC Research Vocabularies Australia (RVA) registry. Each publication takes a snapshot of the current repository's state in the `main` branch and publishes it to the respective environments. This repository is published in two different RVA environments, production and demo.
+The Ecological Monitoring System Australia (EMSA) controlled vocabularies are published to the ARDC Research Vocabularies Australia (RVA) registry. Each publication takes a snapshot of the current repository's state in the `main` branch and publishes it to the respective environments. This repository is published in two different RVA environments: production and demo.
 
 ### Test (demo) environment
 
@@ -186,18 +186,18 @@ The production release is published in RVA and TERN's GraphDB database. The cont
 1. Create a new release or prerelease at https://github.com/ternaustralia/dawe-rlp-vocabs/releases/new
 2. Create a new tag conforming to Semantic Versioning
    - Don't forget the release and prerelease versioning formats as described previously
-   - If it is a prerelease, grab the latest commit's short hash (the first 7 characters of the git hash)
+   - If it is prerelease, grab the latest commit's short hash (the first 7 characters of the git hash)
 3. Click _Generate release notes_ to automatically generate the _Release title_ and _Description_ of the release.
 4. Tick _This is a pre-release_ checkbox if it is a prerelease
 5. Click _Publish release_
-6. Go to https://github.com/ternaustralia/dawe-rlp-vocabs/actions and a workflow should run to publish the new release or prerelease to RVA (and also GraphDB if it's a release)
+6. Go to https://github.com/ternaustralia/dawe-rlp-vocabs/actions, and a workflow should run to publish the new release or prerelease to RVA (and also GraphDB if it's a release)
 
 ### Reverting a release or prerelease
 
 If a release or prerelease was published by accident, follow the steps to get the state back to before it was published.
 
 1. Go to https://github.com/ternaustralia/dawe-rlp-vocabs/releases and delete the release
-2. Go to https://github.com/ternaustralia/dawe-rlp-vocabs/tags and you should see the tag with the new release
+2. Go to https://github.com/ternaustralia/dawe-rlp-vocabs/tags, and you should see the tag with the new release
    - To delete the tag:
      - With repository access, on the terminal type `git push --delete origin tagname`.
      - This will delete the tag in the origin (i.e., GitHub).
@@ -206,5 +206,4 @@ If a release or prerelease was published by accident, follow the steps to get th
 
 ## Contact
 
-TERN Support
-esupport@tern.org.au
+TERN Support: esupport@tern.org.au
