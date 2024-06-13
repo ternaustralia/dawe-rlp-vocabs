@@ -7,12 +7,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/1d847862-e2a2-447b-b185-ec3a477e7ffc>
     a skos:Concept ;
-    dcterms:source "McCallum K, Laws M, Bignall J, O’Neill S, Sparrow B. (unpublished draft) 'Recruitment module’ in ….. (eds) Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision making. Draft v 0.1 Report to DCCEEW. TERN, Adelaide." ;
+    dcterms:source "Cox B, Peacock D, McCallum K, Kilpatrick E, Laws M, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide. " ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "transect number" ;
     skos:definition "A spatial point on the transect representing the compass direction and sampling point. For 6-transects the transect numbers are : N/S2, N/S3, N/S4, E/W2, E/W3, E/W4; and for 4-transects the numbers are : (N/S2, N/S4, E/W2, E/W4)." ;
-    skos:prefLabel "transect id" ;
+    skos:prefLabel "transect ID" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/transect-id.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/2710cf3c-1641-499f-a59d-853f9d089f83> ;
+    tern:isAttributeOf tern:Transect ;
     tern:valueType tern:IRI ;
 .
 
