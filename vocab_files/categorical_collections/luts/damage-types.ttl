@@ -1,0 +1,60 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/5e599605-cefa-40eb-ac62-be6fc57a1518>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/damage-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/570bf865-71cb-483e-bfe4-0fca65953329> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a5d69936-ad66-4029-afa6-6efd4dbeb3eb> ;
+    urnp:conceptDefinition "Refers to NO 'herbivory' or 'physical damage' observed in the survey area." ;
+    urnp:conceptNotation "N" ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-herbivory-or-damages"^^xsd:anyURI ,
+        "Cox B, Peacock D, McCallum K, Kilpatrick E, Laws M, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/95906d36-a963-40c2-ada9-36dd00798a81>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/damage-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/570bf865-71cb-483e-bfe4-0fca65953329> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/5dd96c8b-08cc-403a-863f-6e4d380a0db2> ;
+    urnp:conceptDefinition "Refers to 'physical damage' encountered/observed to the vegetation or the land surface in a survey area." ;
+    urnp:conceptNotation "D" ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-herbivory-or-damages"^^xsd:anyURI ,
+        "Cox B, Peacock D, McCallum K, Kilpatrick E, Laws M, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/b59f2dd0-0afd-44e8-b4a0-7441829600f2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/damage-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/570bf865-71cb-483e-bfe4-0fca65953329> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a9e1763f-e978-4f19-b730-ea78736595af> ;
+    urnp:conceptDefinition "Refers to 'herbivory' encountered/observed to the vegetation in a survey area." ;
+    urnp:conceptNotation "H" ;
+    urnp:conceptSource
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-herbivory-or-damages"^^xsd:anyURI ,
+        "Cox B, Peacock D, McCallum K, Kilpatrick E, Laws M, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/570bf865-71cb-483e-bfe4-0fca65953329>
+    a skos:Collection ;
+    dcterms:description "A collection of the types of damage caused by a fauna species on a vegetation or land surface. Examples include damage such as 'herbivory' or 'physical damage'." ;
+    dcterms:source
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-herbivory-or-damages"^^xsd:anyURI ,
+        "Cox B, Peacock D, McCallum K, Kilpatrick E, Laws M, O’Neill S, Sparrow B. (2023) Herbivory and Physical Damage Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "herbivory or physical damage types" ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/5dd96c8b-08cc-403a-863f-6e4d380a0db2> ,
+        <https://linked.data.gov.au/def/nrm/a5d69936-ad66-4029-afa6-6efd4dbeb3eb> ,
+        <https://linked.data.gov.au/def/nrm/a9e1763f-e978-4f19-b730-ea78736595af> ;
+    skos:prefLabel "damage types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/damage-types.ttl"^^xsd:anyURI ;
+.
+
