@@ -19,11 +19,41 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <li><a href="#appendices">Appendices</a></li>
   </ol>
   <p>
-    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover</a> module. 
-    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
-    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover</a>" module.
-    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
-    </p>
+    <li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – The point-intercept transect
+grid is aligned to the plot points along the plot defined
+boundaries.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – Species cover data are recorded using naming
+consistent with the flora species identifications/assigned field names,
+which must be recorded in the <em>Floristics</em> module prior to
+undertaking the Cover Module.</p></li></p>
+<h3 id="time-requirements">Time requirements</h3>
+<ul>
+<li><p>Allow 3–6 hours depending on the density and complexity of
+vegetation.</p></li>
+<li><p>If undertaking the <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity Module</a> concurrently, allow an
+additional 30–60 minutes.</p></li>
+</ul>
+<h3 id="personnel-requirements">Personnel requirements</h3>
+<p>Number of personnel and skills:</p>
+<ul>
+<li><p>Point-intercept surveys are best conducted with two personnel,
+one making the point-intercept<br/>
+observations, and the other recording the data directly into the app and
+assisting with tree height<br/>
+measurements.</p></li>
+<li><p>The surveyor that conducted the Floristics Module should be
+involved to ensure consistent nomenclature.</p></li>
+<li><p>The surveyor making the observations should be familiar with and
+experienced in identifying the<br/>
+characteristic identifiable features of flora species and how to
+distinguish one species from another. If surveyors are not confident,
+time should be dedicated to practising, using field reference guides,
+and seeking advice before conducting this protocol.</p></li>
+<li><p>Point-intercept surveys do not involve interference with
+vegetation or wildlife. Therefore, scientific permits and wildlife
+ethics approvals are unlikely to be required but always check with your
+local authority. Access permissions are required.</p></li>
+</ul>
     """^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:note """
@@ -270,22 +300,23 @@ laying out a transect with a 100 m tape.</p>
 <li><p>Move to the 0 m mark of the first transect you wish to complete.
 It does not matter which order, or which direction each transect is
 completed, as your start position will be recorded in step 6.</p></li>
-<li><p>Select the Cover Module and then <em>Enhanced</em>
-<em>protocol</em> in the Monitor app.</p></li>
-<li><p>If undertaking the Fire Severity Module concurrently, tick the
-<em>plot is burnt</em> check box and enter the ignition date. This will
-reveal fire severity and resprouting fields for every intersect on the
-four Standard protocol transects only (see the Fire Severity Module).
-The <em>trunk char height</em> component will also appear below the
-<em>point intercept</em> component in the Monitor app. Trunk char height
-is recorded at the four locations where the four Standard protocol
+<li><p>Select the Cover Module and then the Enhanced protocol in the
+Monitor app.</p></li>
+<li><p>If undertaking the Fire Severity Module concurrently, select the
+Fire Severity Module in the app. This will open the Cover Module with
+the fire severity fields available for every intersect on the four
+Standard protocol transects only (see the Fire Severity Module). The
+<em>trunk char height</em> component will also appear below the
+point-intercept component in the Monitor app. Trunk char height is
+recorded at the four locations where the four Standard protocol
 transects intersect (see the Fire Severity Module).</p></li>
-<li><p>Record your <em>starting point</em> (i.e. N1–5, S1–5, E1–5, or
-W1–5). This records the <em>transect</em> you are on and the
+<li><p>Record your <em>transect start point</em> (i.e. N1–5, S1–5, E1–5,
+or W1–5). This records the <em>transect</em> you are on and the
 <em>sampling direction</em> (e.g. ‘N1’ means you are starting at the
 northern end of transect 1 and moving from north to south, while ‘S2’
 means you are starting at the southern end of transect 2 and moving from
-south to north).</p></li>
+south to north). The <em>transect point</em> (0–100) beginning at 0 is
+also recorded.</p></li>
 <li><p>Place the bottom of the staff at the 0 m mark of the tape
 measure. Ensure the staff is vertical and the laser pointer is pointing
 downwards so the laser beam will intercept the ground near the base of
@@ -342,12 +373,12 @@ intercept point.</td>
 <td>Particles 2 mm – 2 cm.</td>
 </tr>
 <tr class="even">
-<td>Lichen on rock</td>
-<td>Lichen growing on rock.</td>
+<td>Crypto on rock</td>
+<td>Cryptogam growing on rock.</td>
 </tr>
 <tr class="odd">
-<td>Lichen on outcrop</td>
-<td>Lichen growing on bedrock.</td>
+<td>Crypto on outcrop</td>
+<td>Cryptogam growing on bedrock.</td>
 </tr>
 <tr class="even">
 <td>Litter</td>
@@ -373,14 +404,18 @@ inaccessible).</td>
 <td>Particles &gt;2 cm.</td>
 </tr>
 <tr class="odd">
+<td>Termite mound</td>
+<td>Ground mound termite nest.</td>
+</tr>
+<tr class="even">
 <td>Unknown</td>
 <td>Unknown.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Water</td>
 <td>Body of water (sheet water, Gilgai).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>White ash</td>
 <td>Powdery white residue remaining after the complete combustion of
 wood during a bushfire.</td>
@@ -388,11 +423,11 @@ wood during a bushfire.</td>
 </tbody>
 </table>
 <ol start="11" type="1">
-<li><p>Where the laser beam intersects with a vascular plant, record the
-<em>species name</em> and <em>growth form</em> (see Table 3) along with
-the plant’s <em>uppermost</em> <em>height</em> at the point of
-intersection. The <em>growth form</em> selected during the Floristics
-Module will be automatically recorded with each species. If two
+<li><p><mark>Where the laser beam intersects with a vascular plant,
+record the <em>species name</em> and <em>growth form</em> (see Table
+3)</mark> along with the plant’s uppermost <em>height</em> at the point
+of intersection. The <em>growth form</em> selected during the <a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> 
+will be automatically recorded with each species. If two
 <em>growth forms</em> were recorded for a single species, the app will
 prompt you to select the appropriate <em>growth form</em>. Height
 measurements should be recorded in meters rounded to the nearest
@@ -567,7 +602,7 @@ stem.</td>
 </table>
 <ol start="12" type="1">
 <li><p>Record all plants (<em>species name</em>, <em>growth form</em>
-and <em>uppermost height</em>) that the staff touches between the laser
+and uppermost <em>height</em>) that the staff touches between the laser
 pointer (1.5 m) and the densitometer (eye level).</p></li>
 <li><p>The GRS Densitometer™ is used to view canopy intercepts that are
 taller than the densitometer. Look through the densitometer to determine
@@ -577,24 +612,25 @@ obtained by levelling both of the densitometer bubble-levels and then
 looking through the instrument so that the sighting marks (cross hairs
 and circle) are aligned.</p></li>
 <li><p>If foliage or branches of a live shrub/tree are sighted in the
-cross hairs, record the species name, growth form and uppermost height
-of the intercept using a rangefinder or other height estimation method
-(see 5 <a href="#additional-guidelines">Additional guidelines</a>).</p></li>
+cross hairs, record the <em>species name</em>, <em>growth form</em> and
+uppermost <em>height</em> of the intercept using a rangefinder or other
+height estimation method (see 5 <a href="#additional-guidelines">Additional guidelines</a>).</p></li>
 <li><p>If no part of the foliage or branches are sighted in the cross
 hairs but the vertical line of sight is still completely within the
-canopy boundary, record the species name, growth form and uppermost
-height and flag as in canopy sky (ICS; see 5 <a href="#additional-guidelines">Additional guidelines</a>;
+canopy boundary, record the <em>species name</em>, <em>growth form</em>
+and uppermost <em>height</em> and flag as <em>in canopy sky</em> (ICS; see 5 <a href="#additional-guidelines">Additional guidelines</a>;
 <a href="#appendix-2">Appendix 2</a>).</p></li>
-<li><p>Repeat steps 9 to 15 at every 1 m interval along the transect.
+<li><p>Once all intercepts for the point are recorded, select the save
+and next point button.</p></li>
+<li><p>Repeat steps 9 to 16 at every 1 m interval along the transect.
 This will give a total of 101 point-intercepts for transect.</p></li>
-<li><p>Repeat steps 3 to 16 for each of the remaining point-intercept
+<li><p>Repeat steps 3 to 17 for each of the remaining point-intercept
 transect lines until all 10 have been completed. This will give 1010
 point-intercepts for the plot.</p></li>
 <li><p>At the completion of the point-intercept data collection, select
 <em>finish point intercept</em>.</p></li>
-<li><p>If undertaking the Fire Severity Module concurrently, and you
-have not yet completed the trunk char height component, you may now do
-so at the four sampling locations (see the <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity
+<li><p>If undertaking the Fire Severity Module concurrently, complete
+the trunk char height component (see the <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity
 Module</a>).</p></li></ol>"""^^rdf:HTML ;
 .
 

@@ -20,19 +20,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <li><a href="#additional-guidelines">Additional Guidelines</a></li>
     <li><a href="#appendices">Appendices</a></li>
   </ol>
-  <p>
-    Cover recorded from 404 point-intercepts across the plot for all intercepts from the ground to the canopy, including substrate, species, growth form and height.
-    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover</a> module. 
-    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
-    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover</a>" module.
-    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
-    </p>
   <h1 id="standard-protocol">Standard protocol</h1>
 <h2 id="field-collection-1">Field collection</h2>
 <h3 id="pre-requisites-1">Pre-requisites</h3>
 <ul>
 <li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – The point-intercept transect
-grid is aligned to the plot defined boundaries.</p></li>
+grid is aligned to the plot points along the plot defined boundaries.</p></li>
 <li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a>– Species cover data are recorded using naming
 consistent with the flora species identifications/assigned field names,
 which must be recorded in the <em>Floristics</em> module prior to
@@ -210,6 +203,11 @@ situation.</p></li>
 estimate of tree height. Like the clinometer guidelines above, a
 measurement of the distance to the tree is required to estimate the
 height.</p></li>
+<li><p>In plots where is it impractical (i.e. too time consuming) to
+estimate tree height using one of the suggested methods for every canopy
+intercept, height estimates can be calibrated periodically (e.g. when
+intercepting a new tree of variable height) using a suggested method and
+otherwise estimated visually.</p></li>
 </ul>"""^^rdf:HTML ;
     skos:prefLabel "Standard protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/cover/standard-protocol/standard-protocol.ttl"^^xsd:anyURI ;
@@ -241,7 +239,7 @@ painter’s pole that can easily adjust to different eye heights; <a href="#figu
 <li><p>GRS Densitometer™ with the ability to be mounted on top of staff
 (required for use on plots with overstorey tree canopy cover;
 instructions for building the mount can be found in the <em>Densitometer
-mount</em> <em>information sheet</em>)</p></li>
+mount information sheet</em>)</p></li>
 <li><p>Laser pointer with spare batteries (mounted/taped to staff at 1.5
 m and pointing downwards)</p></li>
 <li><p>Forestry rangefinder (e.g. Nikon Forestry Pro II) or other tool
@@ -275,37 +273,39 @@ laying out a transect with a 100 m tape.</p>
 <li><p>Move to the 0 m mark of the first transect you wish to complete.
 It does not matter which order, or which direction each transect is
 completed, as your start position will be recorded in step 6.</p></li>
-<li><p>Select the Cover Module and then <em>Standard protocol</em> in
-the Monitor app.</p></li>
-<li><p>If undertaking the <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity Module</a> concurrently, tick the
-<em>plot is burnt</em> check box and enter the ignition date. This will
-reveal fire severity and resprouting fields for every intersect on the
-four Standard protocol transects only (see the Fire Severity Module).
-The <em>trunk char height</em> component will also appear below the
+<li><p>Select the Cover Module and then the Standard protocol in the
+Monitor app.</p></li>
+
+<li><p>If undertaking the Fire Severity Module concurrently, select the
+Fire Severity Module in the app. This will open the Cover Module with
+the fire severity fields available for every intersect on the four
+Standard protocol transects only (see the Fire Severity Module). The
+<em>trunk char height</em> component will also appear below the
 <em>point intercept</em> component in the Monitor app. Trunk char height
 is recorded at the four locations where the four Standard protocol
 transects intersect (see the Fire Severity Module).</p></li>
-<li><p>Record your <em>starting point</em> (i.e. N2, N4, S2, S4, E2, E4,
-W2 or W4). This records the <em>transect</em> you are on and the
+<li><p>Record your <em>transect start point</em> (i.e. N2, N4, S2, S4,
+E2, E4, W2 or W4). This records the <em>transect</em> you are on and the
 <em>sampling direction</em> (e.g. ‘N2’ means you are starting at the
 northern end of transect 2 and moving from north to south, while ‘S4’
 means you are starting at the southern end of transect 4 and moving from
-south to north).</p></li>
+south to north). The <em>transect point</em> (0–100) beginning at 0 is
+also recorded.</p></li>
 <li><p>Using a staff with laser pointer mounted on the pole at a height
 of 1.5 m and GRS Densitometer™ mounted at the top of the pole (for plots
-with an upper storey), place the bottom of the staff at the 0 m mark of
+with an upper storey), place the bottom of the staff at the 0 m mark of
 the tape measure. Ensure the staff is vertical and the laser pointer is
 pointing downwards so the laser beam will intercept the ground near the
 base of the staff.</p></li>
+<li><p><mark>For each point-intercept, you will begin by recording the
+nature of the substrate which is intercepted by the laser beam. Press
+the button on the laser</mark> pointer. If the laser beam is intercepted
+by vegetation, move the vegetation aside so that the laser beam reaches
+the substrate.</p></li>
 <p id="figure-4"><img alt="Surveyor_2" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/cover/Figure_4_Surveyor2.jpg" width="400"/><span class="anchor" id="_Ref73024279"></span>
 <p></p>Figure 4. Surveyor at the 0 m
 mark of a transect with the graduated, adjustable staff verticle and
 laser pointing downwards.</p>
-<li><p>For each point-intercept, you will begin by recording the nature
-of the substrate which is intercepted by the laser beam. Press the
-button on the laser pointer. If the laser beam is intercepted by
-vegetation, move the vegetation aside so that the laser beam reaches the
-substrate.</p></li>
 <li><p>For each point-intercept, assess and record the substrate from
 the categories available (defined in Table 2).</p></li>
 <p><span class="anchor" id="_Ref137650027"></span>Table 2. Substrate
@@ -425,10 +425,10 @@ photosynthetically active.</td>
 </tbody>
 </table>
 <ol start="12" type="1">
-<li><p>Height measurements should be recorded in meters and can be
+<p><mark>Height measurements should be recorded in meters and can be
 rounded to the nearest centimetre from the markings on the staff.
 Continue recording all other plants (and height) that are intersected by
-the beam to a height of 1.5 m.</p></li>
+the beam to a height of 1.5 m.</mark></p>
 <li><p>Record all plants (<em>factional cover</em> and <em>uppermost
 height</em> of the intercept) that the staff touches between the laser
 pointer (1.5 m) and the densitometer (eye level).</p></li>
@@ -448,20 +448,21 @@ see 5 <a href="#additional-guidelines">Additional guidelines</a>).</p></li>
 <li><p>If no part of the foliage or branches are sighted in the cross
 hairs but the vertical line is still enclosed within the canopy boundary
 of <u>live</u> plants only, record as <em>photosynthetic vegetation</em>
-and flag as <em>in canopy</em> <em>sky</em> (ICS; see 5 <a href="#additional-guidelines">Additional
-guidelines</a>).</p></li>
-<li><p>Repeat steps 9 to 17 at every 1 m interval along the transect.
+and flag as <em>in canopy sky</em> (ICS; see 5 <a href="#additional-guidelines">Additional guidelines</a>).</p></li>
+<li><p>Once all intercepts for the point are recorded, select the save
+and next point button.</p></li>
+<li><p>Repeat steps 9 to 18 at every 1 m interval along the transect.
 This will give a total of 101 point-intercepts for the
 transect.</p></li>
-<li><p>Repeat steps 3 to 18 for each of the remaining point-intercept
+<li><p>Repeat steps 3 to 19 for each of the remaining point-intercept
 transect lines until all four have been completed. This will give 404
-point-intercepts for the plot.</p></li>
-<li><p>At the completion of the point-intercept data collection, select
-<em>finish point intercept</em>.</p></li>
-<li><p>If undertaking the <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity Module</a> concurrently, and you
-have not yet completed the <em>trunk char height</em> component, you may
-now do so at the four sampling locations (see the Fire Severity
-Module).</p></li>
+point-intercepts for the plot.</p>
+<p>At the completion of the point-intercept data collection, select the
+complete point-intercept component button.</p></li>
+<li><p>If undertaking the Fire Severity Module concurrently, complete
+the trunk char height component (see the <a href="https://linked.data.gov.au/def/nrm/91a54c7c-48ff-402d-a761-ed4fd4ad4a4b">Fire Severity Module</a>).</p></li>
+<li><p>Check the summary of the data and queue the cover (+/- fire
+severity) collection for submission.</p></li>
 </ol>"""^^rdf:HTML ;
 .
 
