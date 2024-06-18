@@ -1,0 +1,20 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/a397b5b3-fe3d-5db3-9728-e2211b601280>
+    a skos:Concept ;
+    dcterms:source "Cox B, McCallum K, O’Neill S, Bignall J, Peacock D, Sparrow B. (2023) Sign-based Fauna Survey Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "corner start point" ;
+    skos:definition "Refers to the corner/s (either of the 4 corners) of the plot, as a reference point to start the survey." ;
+    skos:prefLabel "plot corner start point" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-corner-start-point.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/21072cd8-f8df-42ad-a3b0-c7adee21bc6d> ;
+    tern:isAttributeOf tern:Input ;
+    tern:valueType tern:IRI ;
+.
+
