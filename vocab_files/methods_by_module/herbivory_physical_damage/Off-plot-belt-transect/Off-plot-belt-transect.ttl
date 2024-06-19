@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -9,39 +10,109 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a
         skos:Concept ,
         tern:Method ;
+    dcterms:description """<h3>Contents</h3>
+  <ol>
+    <li><a href="#equipment-1">Equipment</a></li>
+    <li><a href="#instructions-and-procedures">Instructions and Procedures</a></li> 
+    <li><a href="#additional-guidelines">Additional Guidelines</a></li> 
+    <li><a href="#appendices">Appendices</a></li>
+  </ol> 
+  <h2 id="field-collection-1">Field Collection</h2>
+<h3 id="pre-requisites-1">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<li><p>None.</p></li>
+</ul>
+<h3 id="time-requirements-1">Time requirements</h3>
+<p>Survey activity time estimates will vary depending on the number and
+variety of herbivory and physical damage encountered, as well as the
+number of measures recorded. As a general guide:</p>
+<ul>
+<li><p>Allow 1–2 hours hour for survey planning.</p></li>
+<li><p>Allow 20–60 minutes to complete the reconnaissance visit and
+transect set-up.</p></li>
+<li><p>Allow 15 minutes for the survey set-up before commencing each
+survey to enter the information.</p></li>
+<li><p>Allow 30–60 minutes per 100 m of transect. The time estimate
+varies depending on the frequency and variety of signs, the number of
+measures recorded, and if scats are being collected and removed or
+merely recorded.</p></li>
+</ul>
+<h3 id="personnel-requirements-1">Personnel requirements</h3>
+<p>Personnel number and skills:</p>
+<ul>
+<li><p>Belt transects are best conducted with two personnel, one making
+the observations and one recording the data directly into the Monitor
+app. The second person may also assist with taking
+measurements.</p></li>
+<li><p>Personnel should be familiar with and experienced in identifying
+the growth form of various plant species. If personnel are not
+confident, time should be dedicated to practising, using field reference
+guides, and seeking advice prior to conducting this protocol.</p></li>
+<li><p>Personnel should be familiar with and experienced in identifying
+local plant species and how to distinguish different species from one
+another. If personnel are not confident, time should be dedicated to
+practising, using field reference guides, and seeking advice prior to
+conducting this protocol.</p></li>
+<li><p>Personnel should be familiar with and experienced in identifying
+various types of herbivory and physical damage that fauna species can
+cause. If surveyors are not confident, time should be dedicated to
+practising, using field reference guides, and seeking advice before
+conducting this protocol.</p></li>
+<li><p>Belt transects do not involve interference with wildlife.
+Therefore, scientific permits and wildlife ethics approvals are unlikely
+to be required but always check with your local authority. Access
+permissions will likely be required.</p></li>
+</ul>""" ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:note """<h3 id="additional-guidelines">Additional guidelines</h3>
-<h4 class="unnumbered" id="survey-design">Survey design</h4>
+    skos:note """<h3 id="additional-guidelines-1">Additional guidelines</h3>
+<h4 class="unnumbered" id="survey-design-1">Survey design</h4>
 <h5 class="unnumbered" id="transect-length">Transect length</h5>
 <ul>
-<li><p>There is no limitation to the length of transects. However,
-transect lengths are typically restricted to personnel resources,
-logistics of completing the surveys, and the window of opportunity to
-survey under the same weather conditions. As a guide, transects should
-be a minimum of 1 km in length.</p></li>
+<li><p>There is no limitation to the length of off-plot belt transects.
+However, transect lengths are typically restricted to personnel
+resources, logistics of completing the surveys, the number of transects
+required for an adequate sample size, and the window of opportunity to
+survey under the same weather conditions. The transect length must be
+divisible by the length of the quadrats on the transect.</p></li>
 </ul>
-<h5 class="unnumbered"
-id="quadrat-dimensions-and-surveyor-workflow">Quadrat dimensions and
+<h5 class="unnumbered" id="quadrat-dimensions-and-surveyor-workflow">Quadrat dimensions and
 surveyor workflow</h5>
 <ul>
 <li><p>Optimal quadrat size depends on the terrain, substrate,
-vegetation cover, and the number of pest signs being recorded per
-quadrat, and for data recording ease, the number of observers searching
-for signs. Assuming the quadrat is searched by one observer spotting the
+vegetation cover, the number of pest signs being recorded per quadrat,
+and, for data recording ease, the number of observers searching for
+signs. Assuming the quadrat is searched by one observer spotting the
 signs and one person completing the data entry, the recommended width
-should be 1-2 m and not exceed 4 m. It is recommended that one observer
-walks on the outer edge (i.e. 4 m) from the transect tape, and walks
+should be 1–2 m and not exceed 4 m. It is recommended that one observer
+walks on the outer edge (i.e., 4 m) from the transect tape, and walks
 parallel to the tape and only looking for damage that are within the
 quadrat, i.e. between them and the tape. The other person completing the
 data entry should walk along the tape, reading the tape to identify the
 end of each quadrat length. Quadrat length should be between 1 m and 20
 m.</p></li>
 </ul>
-<h4 class="unnumbered" id="field-survey-1">Field survey </h4>
+<h5 class="unnumbered" id="repeat-surveys-1">Repeat surveys</h5>
 <ul>
-<li><p>Where the species attributable species cannot be determined,
-provide as much information as possible (e.g., carnivore, herbivore,
-hoofed, deer, etc.) and provide a photograph of the damage.</p></li>
+<li><p>There is no rule for when to repeat surveys. However, surveys
+should be conducted as often as the project requires, i.e., weekly,
+monthly, bi-monthly, and quarterly. For consistency, aim to replicate
+the conditions, i.e., similar weather, similar time, moon phase,
+observers, and reference materials.</p></li>
+</ul>
+<h4 class="unnumbered" id="field-survey-1">Field survey </h4>
+<h5 class="unnumbered" id="attributable-fauna-species-1">Attributable
+fauna species</h5>
+<ul>
+<li><p>Where the species attributable cannot be determined, provide as
+much information as possible (e.g., carnivore, herbivore, hoofed, deer)
+and provide a photograph of the damage.</p></li>
+</ul>
+<h5 class="unnumbered" id="herbivory-measures-1">Herbivory measures</h5>
+<ul>
+<li><p>Herbivory is measured for each plant with herbivory damage within
+a quadrat. This information can be used to assess herbivory damage to
+vegetation at the plot level.</p></li>
 </ul>
 <h5 class="unnumbered" id="physical-damage-estimates-1">Physical damage
 estimates</h5>
@@ -49,47 +120,11 @@ estimates</h5>
 <li><p>Physical damage estimates will generally be restricted to
 wallowing and digging based activities that impact the soil and ground
 layer vegetation.</p></li>
-</ul>
-<h5 class="unnumbered" id="herbivory-measures-1">Herbivory measures</h5>
-<ul>
-<li><p>Herbivory is scored using a categorical class for each plant
-observed within a quadrat. This information can be used to assess
-herbivory and physical damage to vegetation at the plot level.</p></li>
-</ul>
-<h5 class="unnumbered" id="weather-conditions">Weather conditions</h5>
-<ul>
-<li><p>Surveys should only be conducted in good weather conditions when
-temperature, wind and rainfall are typical for the season. Poor weather
-conditions will impact both animal movement and the chance of detection
-through tracking. If conditions are less than optimal, such as
-significantly cooler/hotter/windier/wetter than expected, the survey
-should be rescheduled. Wind is a particularly important factor when
-detecting tracks of animals in sandy environments. Therefore, if it is
-windier than a fresh wind (Beaufort scale 5, when small trees begin to
-sway) the morning of the survey, consider rescheduling.</p></li>
-<li><p>If you are not using a weather station or temperature gauge, use
-the Bureau of Meteorology website (or other weather apps) to estimate
-the temperature at the time of the survey for the closest weather
-station (data can be checked with the closest weather station after the
-survey if needed).</p></li>
-<li><p>Moon phase is recorded as it plays an important role in how
-bright the night sky is and can impact animal activity and movement.
-Either observe the moon or use the Bureau of Meteorology website (or
-other weather apps) to determine the moon phase for the survey
-date.</p></li>
-</ul>
-<h5 class="unnumbered" id="repeat-surveys-1">Repeat surveys</h5>
-<ul>
-<li><p>There is no rule for when to repeat surveys. However, surveys
-should be conducted as often as the project requires, i.e. weekly,
-monthly, bi-monthly, and quarterly. For consistency, aim to replicate
-the conditions, i.e. similar weather, similar time, moon phase,
-observers, and reference materials.</p></li>
 </ul>"""^^rdf:HTML ;
     skos:prefLabel "Off-plot Belt Transect Protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/herbivory_physical_damage/Off-plot-belt-transect/Off-plot-belt-transect.ttl"^^xsd:anyURI ;
     tern:appendix """<h1 id="appendices"> Appendices</h1>
-<h3 id="appendix-1">Appendix 1. Data collection fields from the Herbivory and Physical
+<h3>Appendix 1. Data collection fields from the Herbivory and Physical
 Damage Module</h3>
 <table>
 <colgroup>
@@ -699,236 +734,342 @@ Damage Module</h3>
 </ul></td>
 </tr>
 </tbody>
-</table>"""^^rdf:HTML ;
-    tern:equipment """<h3>Contents</h3>
-  <ol>
-    <li><a href="#equipment-1">Equipment</a></li>
-    <li><a href="#instructions-and-procedures">Instructions</a></li> 
-    <li><a href="#additional-guidelines">Additional guidelines</a></li> 
-    <li><a href="#appendices">Appendices</a></li>
-  </ol>
-  <h3 id="equipment-1">Equipment</h3>
+</table>
+<h3>Appendix 2. Reference images</h3>
+<p>Rabbit Herbivory</p>
+<ul>
+<li><p>Grazing line on shrubs up to 0.6 m above ground level (Cooke
+<em>et al.</em> 2008)</p></li>
+<li><p>Lack of groundcover and seedlings (Cooke <em>et al.</em> 2008;
+Bird <em>et al.</em> 2012; Mutze <em>et al.</em> 2016b, 2016a)</p></li>
+<li><p>Twigs &lt; 7 mm cut through with clean 45<sup>0</sup> chisel-like
+cuts (Cooke <em>et al.</em> 2008)</p></li>
+<li><p>Trunk and branch bark chewed and occasionally ring-barked (Cooke
+<em>et al.</em> 2008)</p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Callictris_glaucophylla_A.png"
+style="width:1.90278in;height:2.03125in" /><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Allocaaurina_verticellata_B.jpg"
+style="width:1.95486in;height:2.01458in" /></p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Eucalyptus_twigs_C.jpg"
+style="width:1.8209in;height:2.36488in" /></p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Small_callictris_glaucophylla_D.jpg"
+style="width:2.61875in;height:1.9625in" /></p>
+<p>Images: A = <em>Callitris galucophylla</em> with rabbit browse line
+at ~0.6 m (plus a landscape lacking groundcover/seedlings) in
+Ikara-Flinders Ranges National Park, South Australia (Biosecurity SA). B
+= <em>Allocasuarina verticillata</em> with clean 45<sup>0</sup>
+chisel-like cut by a rabbit, Turretfield South Australia (Biosecurity
+SA). C = <em>Eucalyptus</em> branches with twigs &lt; 7 mm cut through
+with clean 45<sup>0</sup> chisel-like cut, and bark chewed off larger
+twigs, Turretfield South Australia (Biosecurity SA). D = Small
+<em>Callitris galucophylla</em> trees ring-barked by rabbits to ~0.4 m
+above ground level, Holowiliena, South Australia (Warwick
+family).</p></li>
+</ul>
+<p>Goat Herbivory</p>
+<ul>
+<li><p>Most common browse zone is below 1 m but can be up to 2
+m</p></li>
+<li><p>Severed stems</p></li>
+<li><p>Loss of branchlets</p></li>
+<li><p>In high densities all foliage is consumed</p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Goat_browseline.png"
+style="width:3.21203in;height:2.13434in" /></p>
+<p>Image: Goat browse line on <em>Electryon oleifolius</em>,
+Vulkathunha-Gammon Ranges National Park, South Australia (Biosecurity
+SA)</p></li>
+</ul>
+<p>Pig Wallows</p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/feral_wallows_1.png"
+style="width:1.95205in;height:1.57939in" /> <img
+src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/feral_wallows_2.jpg" style="width:1.95142in;height:1.57974in"
+alt="Wild Wonderings: Feral Hogs: Why do they Wallow?" /> <img
+src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/feral_wallows_3.jpg" style="width:1.79296in;height:1.58136in"
+alt="Wild Wonderings: The Many Functions of Wallowing for Wild Pigs" /></p>
+<p>Pig Ground rooting</p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Pig_ground_rooting1.png"
+style="width:1.51389in;height:1.20833in" /> <img
+src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Pig_ground_rooting2.jpg" style="width:1.67808in;height:1.20642in"
+alt="The Feral Hog Predicament | Mossy Oak" /> <img
+src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Pig_ground_rooting3.jpg" style="width:1.63014in;height:1.20208in"
+alt="Wild boars (2/2) - health risks and preventive measures - Articles - pig333, pig to pork community" /></p>
+<p>Pig Rubs</p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Pig_rubs1.png"
+style="width:1.54167in;height:1.27778in" /> <img
+src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Pig_rubs2.jpg" style="width:1.36458in;height:1.28455in"
+alt="Feral hogs, hog hunting" /> <img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Pig_rubs3.jpg"
+style="width:1.73807in;height:1.26712in"
+alt="Feral Hog rub spot - YouTube" /></p>
+<p>Deer Browsing</p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Deer_browsing.jpg"
+style="width:1.45712in;height:1.94283in" /></p>
+<p>Image: Allocasuarina verticillata seedling tree-guarded against
+rabbits but now being browsed by deer, Coorong National Park, South
+Australia (Biosecurity SA)</p>
+<p>Deer Rubs</p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Deerrubs_EucalyptusA.png"
+style="width:1.64179in;height:2.08381in" /> <img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/DeerrubsAntler_EucalyptusB.png"
+style="width:1.54478in;height:2.08545in" /> <img
+src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Bursaria_spinosa_thrashed_C.jpg" style="width:1.34328in;height:2.08433in" />
+<img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Allocasuarina_verticellata_antlerrubs_D.jpg"
+style="width:1.34328in;height:2.08576in" /></p>
+<p>Images: A and B = <em>Eucalyptus</em> branch and trunk severely
+antler rubbed by deer, C = <em>Bursaria spinosa</em> branches rubbed and
+thrashed by deer antlers, Coorong National Park, South Australia
+(Biosecurity SA). D = <em>Allocasuarina verticillata</em> seedling
+antler rubbed by a deer, Turretfield, South Australia (Biosecurity
+SA).</p>
+<h3>Appendix 3. Herbivory categories according to growth form </h3>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Herbivory_sketch_1.png"
+style="width:6.13847in;height:8.04776in" /></p>
+<p><em>Source: South Australian Bushland Condition Monitoring Manual
+(Milne et al. 2008)</em></p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Herbivory_sketch_2.png"
+style="width:5.85749in;height:9.39583in" /></p>
+<p><em>Source: South Australian Bushland Condition Monitoring Manual
+(Milne et al. 2008)</em></p>
+<p><img src="https://w3id.org/tern/static/dawe-rlp/latest/herbivory_physical_damage/Herbivory_sketch_3.png"
+style="width:6.32083in;height:9.18889in" /></p>
+<p><em>Source: South Australian Bushland Condition Monitoring Manual
+(Milne et al. 2008)</em></p>"""^^rdf:HTML ;
+    tern:equipment """<h3 id="equipment-1">Equipment</h3>
 <p>General:</p>
 <ul>
-<li><p>Mobile device with the Monitor app installed</p></li>
-<li><p>GNSS, such as a Trimble R1 or DA2 receiver, a hand-held GPS or
-device built-in GPS (least preferred), capable of achieving &lt;30 cm
-accuracy</p></li>
+<li><p>Mobile device (tablet/phone) with the Monitor app
+installed</p></li>
+<li><p>GNSS receiver capable of achieving &lt;30 cm accuracy (e.g.,
+Trimble R1 or DA2), hand-held GPS, or device built-in GPS (least
+preferred)</p></li>
 <li><p>Field guides for identifying signs to species level</p></li>
 <li><p>Scale card</p></li>
 <li><p>100 m tape measure</p></li>
-<li><p>1 m pole or builders tape measure set to 1 m (See <a href="#appendix-1">Appendix 1</a>).</p></li>
-</ul>
-<p>For removal of scats for faecal accumulation rates:</p>
-<ul>
-<li><p>Gloves</p></li>
-<li><p>Bags for temporarily holding scats for removal.</p></li>
+<li><p>Survey pole or pocket tape measure.</p></li>
 </ul>"""^^rdf:HTML ;
-    tern:instructions """
-<h2 id="field-collection-1">Field collection</h2>
-<h3 id="time-requirements-1">Time requirements</h3>
-<p>Survey activity time estimates will vary depending on the number and
-variety of herbivory and physical damage encountered, as well as the
-number of measures recorded. As a general guide:</p>
-<ul>
-<li><p>Allow 1–2 hours hour for survey planning.</p></li>
-<li><p>Allow 20–60 minutes to complete the reconnaissance visit and
-transect set-up.</p></li>
-<li><p>Allow 15 minutes for the survey set-up before commencing each
-survey to enter the information.</p></li>
-<li><p>Allow 30–60 minutes per 100 m of transect. The time estimate
-varies depending on the frequency and variety of signs, the number of
-measures recorded, and if scats are being collected and removed or
-merely recorded.</p></li>
-</ul>
-<h3 id="personnel-requirements-1">Personnel requirements</h3>
-<p>Personnel number and skills:</p>
-<ul>
-<li><p>Belt transects are best conducted with two personnel, one making
-the observations and one recording the data directly into the Monitor
-app. The second person may also assist with taking
-measurements.</p></li>
-<li><p>Personnel should be familiar with and experienced in identifying
-the growth form of various plant species. If personnel are not
-confident, time should be dedicated to practising, using field reference
-guides, and seeking advice prior to conducting this protocol.</p></li>
-<li><p>Personnel should be familiar with and experienced in identifying
-local plant species and how to distinguish different species from one
-another. If personnel are not confident, time should be dedicated to
-practising, using field reference guides, and seeking advice prior to
-conducting this protocol.</p></li>
-<li><p>Personnel should be familiar with and experienced in identifying
-various types of herbivory and physical damage that fauna species can
-cause. If surveyors are not confident, time should be dedicated to
-practising, using field reference guides, and seeking advice before
-conducting this protocol.</p></li>
-<li><p>Belt transects do not involve interference with wildlife.
-Therefore, scientific permits and wildlife ethics approvals are unlikely
-to be required but always check with your local authority. Access
-permissions will likely be required.</p></li>
-</ul>
-<h3 id="instructions-and-procedures">Instructions and procedures</h3>
-<h4 class="unnumbered" id="pre-survey-planning-1">Pre-survey
-planning</h4>
+    tern:instructions """<h3 id="instructions-and-procedures-1">Instructions and Procedures</h3>
+<h4 class="unnumbered" id="pre-survey-planning-1">Pre-survey planning</h4>
 <ol type="1">
 <li><p>Familiarise yourself with the ecology of the target pest fauna
 species and the project area.</p></li>
 </ol>
 <ul>
-<li><p>Assess the peak activity time of the target species to determine
-the most suitable start time for the survey.</p></li>
-<li><p>Determine habitat use preferences (e.g. dense vegetation, rugged
-terrain) to aid with site selection.</p></li>
-<li><p>Assess access (e.g. vehicle tracks), terrain and vegetation of
+<li><p>Assess the presence of focal shrub species (e.g., highly
+palatable) within the project area.</p></li>
+<li><p>Assess target species’ behaviour (e.g., elusive, utilises
+roads/tracks) and ecology.</p></li>
+<li><p>Determine habitat use preferences (e.g., dense vegetation, rugged
+terrain) to assist with site selection.</p></li>
+<li><p>Assess access (e.g., vehicle tracks), terrain and vegetation of
 the project area.</p></li>
 </ul>
 <ol start="2" type="1">
-<li><p>Decide on the most appropriate survey design (e.g. belt
-transects, active search plots, or a combination), and select survey
-sites.</p></li>
-<li><p>Determine the start location, route, and end location of
-transects and decide on the direction of travel. The start location,
-route, and end location should be accessible year-round. Ideally,
-transects should be a straight line but may meander to adjust with
-landforms for ease of walking routes.</p></li>
-<li><p>Determine the survey frequency (i.e. monthly, bi-monthly,
-quarterly, annually) and check that all plots will be accessible for
-each survey period.</p></li>
+<li><p>Decide on the most appropriate survey design (e.g., belt
+transects, active search plots, or a combination).</p></li>
+<li><p>Identify potential survey sites using satellite imagery, spatial
+datasets and on-ground knowledge of damaged areas, considering the start
+location, route, and end location of proposed transects.</p></li>
+<li><p>Consider the survey frequency (i.e., monthly, bi-monthly,
+quarterly, annually) and if the transects will be accessible for each
+survey period.</p></li>
 <li><p>Ensure suitably experienced field staff and all necessary
 equipment is available and operational.</p></li>
 <li><p>Assess weather forecasts to ensure conditions are suitable. If
 surveys are to be repeated over multiple days, ideally, the weather
 should be similar for each survey.</p></li>
 </ol>
-<h4 class="unnumbered"
-id="field-reconnaissance-and-transect-set-up">Field reconnaissance and
-transect set-up</h4>
-<ol type="1">
-<li><p>Locate the pre-identified transect locations and ensure habitats
-represent the project area.</p></li>
+<h4 class="unnumbered" id="field-reconnaissance">Field reconnaissance</h4>
+<ol start="1">
+<li><p>Conduct a reconnaissance field survey to identify which potential
+survey sites (and any others sites not identified during pre-survey
+planning) are suitable transect locations. Ensure habitats are
+representative of the project area.</p></li>
 </ol>
 <ol start="2" type="1">
-<li><p>Check the route and ensure the length is traversable in all
-weather conditions. Identify any safety hazards.</p></li>
-<li><p>If necessary, amend the transect start location, route and end
-location.</p></li>
-<li><p>Return to the transect start location.</p></li>
+<li><p>For each proposed transect, check the route and ensure the entire
+length is traversable in all weather conditions. Ideally, transects
+should be a straight line but may meander to adjust with landforms for
+ease of walking routes. Identify the best direction of travel and any
+safety hazards.</p></li>
+<li><p>Determine the transect start locations, routes and end
+locations.</p></li>
+</ol>
+<h4 class="unnumbered" id="transect-and-survey-set-up">Transect and
+survey set-up</h4>
+<ol start ="1" type="1">
+<li><p>Travel to a transect start location to begin a transect and
+survey set-up.</p></li>
 <li><p>If using an external GNSS/GPS, ensure it is turned on and
 connected to the mobile/tablet.</p></li>
-<li><p>Open the Monitor app and select <em>Herbivory and Physical Damage
-Module &gt; Off-plot belt transects protocol</em>.</p></li>
-<li><p>Select the applicable <em>project code</em>.</p></li>
-<li><p>Select either an <em>existing transect</em> and choose the
-applicable transect ID code from the drop-down list, or select
-<em>create new transect</em> to assign a new transect code.</p></li>
-<li><p>Enter the <em>transect route type</em> that best represents the
-transect (vehicle road, vehicle dirt track, walking track, off-track no
-defined path, or enter an alternative in the free text field).</p></li>
-<li><p>Enter the dominant <em>NVIS Major Vegetation Group</em> that best
-represents the transect. This optional field should be completed if no
-other monitoring plots or mapped locations using the Vegetation Mapping
-Module have been completed along or near the transect.</p></li>
-<li><p>Indicate if the <em>survey intent</em> is a once-off measure,
-repeated measure, linked to a pre-control activity or post-control
-activity (optional).</p></li>
-<li><p>Enter the <em>transect direction compass bearing</em>.</p></li>
-<li><p>Enter the <em>quadrat width</em> (between 1 and 4 m), and the
-<em>quadrat length</em> (along the tape) between 1 and 20 m (see
-guidelines for recommended dimensions).</p></li>
+<li><p>Open the Monitor app and select Herbivory and Physical Damage
+Module and then the Off-plot belt transects protocol.</p></li></ol>
+<ol start="4" type="1">
+<li><p>Select <em>create new transect</em> to assign a new <em>transect
+ID</em>. If conducting a repeated measure of an established transect,
+select <em>existing transect</em> and select the relevant <em>transect
+ID</em> from the dropdown, then skip to step 7.</p></li>
+</ol>
+<ol start="5" type="1">
+<li><p>Record the transect information, including:</p></li>
+</ol>
+<ul>
+<li><p><em>Route type</em> – select a value that best represents the
+transect from the dropdown (vehicle road, vehicle dirt track, walking
+track, off-track no defined path) or input a custom value.</p></li>
+<li><p><em>Transect alignment</em> (°) – based on the direction of
+travel.</p></li>
+<li><p><em>Quadrat width –</em> between 1–4 m (see guidelines for
+recommended quadrat dimensions).</p></li>
+<li><p><em>Quadrat length</em> – along the tape, between 1–20 m (see
+guidelines for recommended quadrat dimensions).</p></li>
+<li><p><em>Transect length</em> (m) –only numbers divisible by the
+quadrat length will be accepted.</p></li>
+<li><p><em>Transect spacing</em> (m) – distance between transects
+(optional, can be updated using spatial data if required).</p></li>
+<li><p><em>Habitat (Major Vegetation Group)</em> – select the Major
+Vegetation Group that best represents the transect. This is an optional
+field and should be completed if no monitoring plots or mapped locations
+using the <a href="https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508">Vegetation Mapping Module</a> have been completed along or in the
+vicinity of the transect.</p></li>
+</ul>
+<ol start="6" type="1">
+<li><p>Save the transect. Additional transects can be added by selecting
+the add button (if the workflow involves setting up all transects prior
+to conducting surveys.</p></li>
+</ol>
+<ol start="7" type="1">
+<li><p>Record the survey information:</p></li>
+</ol>
+<ul>
+<li><p><em>Survey set-up ID –</em> select the relevant <em>transect
+ID</em> to assign a new <em>survey set-up ID</em> (transect
+ID-date).</p></li>
+<li><p><em>Survey intent</em> – indicate if survey intent is once-off
+measure, repeated measure, linked to a pre-control activity or
+post-control activity (optional).</p></li>
+<li><p><em>Target species</em> – select the target species (e.g., Cat,
+Fox, Wild dog, Rabbit, Deer species, Goat, Pig, Horse, Camel). Select
+‘Other’ to specify a species not in the dropdown. Multiple species can
+be selected/specified.</p>
+<p><em>Observer details</em> – enter details for each observer,
+including the <em>observer name</em> and <em>observer role</em>
+(spotter, spotter outside of cab, spotter inside of cab, vehicle driver,
+data entry). Multiple roles can be selected for each observer.</p></li>
+<li><p><em>Weather conditions</em> – including <em>temperature</em>,
+<em>rainfall</em>, <em>rainfall duration</em>, <em>cloud cover</em>,
+<em>wind description</em>, and <em>moon phase</em>. Note the weather
+conditions can be adjusted at the completion of the survey.</p></li>
+</ul>
+<ol start="8" type="1">
+<li><p>Save the survey information. Survey information for additional
+transects can be added by selecting the add button (if the workflow
+involves setting up all surveys prior to conducting surveys.</p></li>
 <li><p>Install a peg into the end of a tape measure and run out the 100
 m tape measure in a straight line following the compass bearing towards
 the intended endpoint.</p></li>
+<li><p>Once all observers are ready and tape measure is in place, return
+to the start position and follow the <em>conduct the survey</em> steps
+below.</p></li>
 </ol>
 <h4 class="unnumbered" id="conduct-the-survey-1">Conduct the survey</h4>
 <ol type="1">
-<li><p>Once all observers are ready and the tape measure is in place,
-return to the transect start position and select <em>commence
-survey</em>.</p></li>
-</ol>
-<ol start="2" type="1">
-<li><p>Select <em>take transect 1 start photo</em>. Next, hold the
-device in front of you and take a landscape-orientated photo looking
-along the transect.</p></li>
-<li><p>Select <em>start transect 1.</em> The time and date will
-automatically be recorded.</p></li>
-<li><p>Using a compass or compass app, enter the <em>direction of
-travel</em>.</p></li>
-<li><p>Stand on the left side of the tape, at 0 m, hold the builders
-tape or measuring pole horizontally and at right angles to the tape, and
-walk parallel to the tape line so one end of the pole roughly follows
-the tape, and the other end aids as a visual clue to identify the area
-of the quadrat.</p></li>
-<li><p>At each 1 m interval along the transect, starting at 1 m, record
-for the preceding 1 m x 1 m quadrat, select <em>enter quadrat
-data:</em></p></li>
-</ol>
-<ul>
-<li><p>select <em>no herbivory or physical damage</em> if no herbivory
-or physical damage is observed</p></li>
-<li><p>where herbivory is encountered:</p></li>
-</ul>
-<ul>
-<li><p>select the <em>type of damage</em> (leaf chewing, browsing, bark
-gnawing, severed stems, other)</p></li>
-<li><p>record the <em>species</em> of the affected plant</p></li>
-<li><p>record the <em>growth form</em></p></li>
-<li><p>for shrubs and trees record:</p>
-<ul>
-<li><p><em>lowest</em> <em>damage height</em> and <em>highest damage
-point</em> (cm) at which the damage occurs</p></li>
-<li><p><em>extent of the damage</em> (percent of the foliage that is
-affected)</p></li>
-<li><p>any additional <em>physical damage</em> <em>type</em> (e.g.
-rubbing or rutting on the stem)</p></li>
-</ul></li>
-<li><p>for seedlings and saplings record:</p>
-<ul>
-<li><p>if grazing is light, heavy or severe</p></li>
-</ul></li>
-<li><p>for sedges, rushes and grasses record:</p>
-<ul>
-<li><p>if grazing is light, heavy or severe</p></li>
-</ul></li>
-<li><p>select the <em>attributable fauna species</em> (select unknown if
-not certain)</p></li>
-<li><p>add a photo (representative photos should be taken for each
-species/damage type for the plot – i.e. not all herbivory observed need
-to be photographed, ideally a scale card should be used in all photos
-(up to 3 photos per herbivory record)</p></li>
-<li><p>add any additional comments in the <em>observation comments</em>
-field</p></li>
-</ul>
-<ul>
-<li><p>where physical damage is encountered:</p></li>
-</ul>
-<ul>
-<li><p>select the <em>type of damage</em> (dig, burrow, warren, pad,
-trail/pathway, wallow, rooting, pugging, rub/rut, roll pit, tusk mark,
-fouled water source, other)</p></li>
-<li><p>select the <em>attributable</em> <em>fauna species</em> (select
-unknown if not certain)</p></li>
-<li><p>record the percentage of the quadrat effected</p></li>
-<li><p><em>add photo</em> (representative photos should be taken for
-each species/damage type for the plot – i.e. not all damage observed
-need to be photographed, ideally a scale card should be used in all
-photos (optional, up to 3 photos per damage record)</p></li>
-<li><p>add any additional comments in the <em>observation comments</em>
-field</p></li>
-</ul>
-<ol start="7" type="1">
-<li><p>Repeat this process for every quadrat along the transect. When
-you get to the end of your tape measure, select <em>end segment</em> to
-prompt the app to save your data.</p></li>
-<li><p>Add another tape measure by inserting a peg into the tape
-measure, following the compass bearing, running the tape measure out,
-and returning to the start of that tape to recommence the
+<li><p>Select the relevant <em>survey set-up ID</em> based on the
+relevant <em>transect ID</em> and associated survey set-up.</p></li>
+<li><p>Take a <em>transect photo</em>. Hold the device in front of you
+and take a landscape-orientated photo looking along the
 transect.</p></li>
-<li><p>Select <em>start new segment</em>, and continue surveying along
-the transect.</p></li>
-<li><p>Continue the end segment, and start new segment, process, until
-you reach the end of the transect.</p></li>
-<li><p>Once the belt transect is complete select <em>complete end
-transect survey.</em></p></li>
+<li><p>Select <em>start transect</em>. The <em>transect start
+location</em> and <em>survey start time</em> will be automatically
+recorded.</p></li>
+</ol>
+<ol start="4" type="1">
+<li><p>Stand on the left side of the transect at 0 m. Hold the pocket
+tape measure (locked at the width of the quadrat) or measuring pole
+horizontally and at a right angle to the transect. Begin to walk
+parallel to the transect so one end of the pocket tape/pole follows the
+100 m tape, and the other end provides a visual aid to identify the area
+of quadrat (see <a href="#figure-2">Figure 2</a>).</p></li>
+<li><p>Move through the quadrat recording all signs of herbivory or
+physical damage encountered by entering <em>quadrat number</em> and
+using the following steps:</p></li>
+</ol>
+<ul>
+<li><p>Select <em>no herbivory or physical damage</em> if no herbivory
+or physical damage is observed.</p></li>
+<li><p>Where herbivory is encountered:</p></li>
+</ul>
+<ul>
+<li><p>Select the <em>type of herbivory</em> (leaf chewing, browsing,
+bark gnawing, severed stems) or input a custom value.</p></li>
+<li><p>Record the <em>affected plant species.</em></p></li>
+<li><p>Record the <em>growth form.</em></p></li>
+<li><p>Indicate if the <em>life stage</em> is a <em>seedling or
+sapling.</em></p></li>
+<li><p>For shrubs and trees record:</p>
+<ul>
+<li><p><em>Damage lowest point</em> and <em>damage highest point</em>
+heights (cm).</p></li>
+<li><p><em>Extent of the damage</em> (percentage of the foliage that is
+affected).</p></li>
+<li><p>Any <em>additional</em> <em>damage</em> <em>to tree</em> (e.g.,
+rubbing or rutting on the stem).</p></li>
+</ul></li>
+<li><p>For seedlings and saplings record:</p>
+<ul>
+<li><p>The grazing severity (light, heavy or severe).</p></li>
+</ul></li>
+<li><p>For sedges, rushes and grasses record:</p>
+<ul>
+<li><p>The grazing severity (light, heavy or severe).</p></li>
+</ul></li>
+<li><p>Select the <em>attributable fauna species</em> (select unknown if
+not certain).</p></li>
+<li><p>Add a photo (representative photos should be taken for each
+species/damage type for the plot – i.e., not all herbivory observed need
+to be photographed, ideally a scale card should be used in all photos
+(up to 3 photos per herbivory record).</p></li>
+<li><p>Add any additional <em>comments.</em></p></li>
+</ul>
+<ul>
+<li><p>Where physical damage is encountered:</p></li>
+</ul>
+<ul>
+<li><p>Select the <em>type of physical damage</em> (dig, burrow, warren,
+pad, trail/pathway, wallow, rooting, pugging, rub/rut, roll pit, tusk
+mark, fouled water source) or input a custom value.</p></li>
+<li><p>Select the <em>attributable</em> <em>fauna species</em> (select
+unknown if not certain).</p></li>
+<li><p>Record the <em>percentage of the quadrat effected.</em></p></li>
+<li><p>Add a photo (representative photos should be taken for each
+species/damage type for the plot – i.e., not all damage observed need to
+be photographed, ideally a scale card should be used in all photos
+(optional, up to 3 photos per damage record)</p></li>
+<li><p>Add any additional <em>comments</em>.</p></li>
+</ul>
+<ol start="6" type="1">
+<li><p>Save the observation. If another observation for the same quadrat
+is to be recorded select the add button. When observations for a quadrat
+are complete, select ‘<em>next quadrat</em>’. The observations will be
+saved upon selecting this option.</p></li>
+<li><p>Repeat this process for all the quadrats along the
+transect.</p></li>
+<li><p>If you reach the end of the tape measure before the end of the
+transect, add another tape by inserting a peg into the end of the tape
+measure, and following the compass baring run out the tape measure
+before returning to the start of that tape to recommence the
+transect.</p></li>
+<li><p>Once the belt transect is complete, select the complete
+button<em>.</em> The <em>transect end location</em> and <em>survey end
+time</em> will be automatically recorded.</p></li>
+</ol>
+<ol start="10" type="1">
+<li><p>For each additional transect, repeat the <em>transect and survey
+set-up</em> and <em>conduct the survey</em> steps.</p></li>
+</ol>
+<ol start="11" type="1">
+<li><p>Once all transects have been completed, complete the transect
+survey component<em>.</em></p></li>
+<li><p>Queue the collection for submission.</p></li>
+<li><p>If conducting repeated measures within the current visit, repeat
+the entire process and create a new collection, selecting from existing
+transects in the transect and survey set-up step.</p></li>
 </ol>"""^^rdf:HTML ;
 .
 
