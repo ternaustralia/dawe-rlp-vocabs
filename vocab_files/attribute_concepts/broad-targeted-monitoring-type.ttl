@@ -1,0 +1,21 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/13f7d5bb-ac64-4f1e-b07c-68f8823a85ea>
+    a skos:Concept ;
+    dcterms:description "The types of monitoring the dataset can include are usually: 'flora moniotoring', 'fauna monitoring', 'habitat condition', 'ecological community assessment' etc." ;
+    dcterms:source "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "broad monitoring type" ;
+    skos:definition "Refers to the type of broad targeted monitoring program being undertaken." ;
+    skos:prefLabel "broad targeted monitoring type" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/broad-targeted-monitoring-type.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/77604106-fd4a-410f-81d0-a3c3f1ebdf34> ;
+    tern:isAttributeOf <https://linked.data.gov.au/def/nrm/756fe09c-9ca7-4fb6-af37-4a504e39bca4> ;
+    tern:valueType tern:IRI ;
+.
+
