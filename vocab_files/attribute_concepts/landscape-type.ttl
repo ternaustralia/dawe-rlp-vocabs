@@ -1,0 +1,21 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/1992586e-10be-450c-ac72-d8634a141275>
+    a skos:Concept ;
+    dcterms:source
+        "http://sweetontology.net/realmLandform/Landscape"^^xsd:anyURI ,
+        "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "A landscape comprises the visible features of an area of land, including physical elements such as landforms, living elements of flora and fauna, abstract elements such as lighting and weather conditions, and human elements, for instance human activity or the built environment." ;
+    skos:prefLabel "broad monitoring region" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/landscape-type.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/c9b10266-a116-4f04-a494-970f8456072a> ;
+    tern:isAttributeOf <https://linked.data.gov.au/def/nrm/756fe09c-9ca7-4fb6-af37-4a504e39bca4> ;
+    tern:valueType tern:IRI ;
+.
+
