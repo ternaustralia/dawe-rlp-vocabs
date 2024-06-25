@@ -1,0 +1,20 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/da923d42-0282-4116-b370-033c4f98f947>
+    a skos:Concept ;
+    dcterms:source "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "monitoring scale" ;
+    skos:definition "Refers to the broad region or scale at which the targeted monitoring program was implemented." ;
+    skos:prefLabel "broad monitoring region" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/broad-monitoring-region.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/982d3950-8364-4278-8db5-d3a0916178c9> ;
+    tern:isAttributeOf <https://linked.data.gov.au/def/nrm/756fe09c-9ca7-4fb6-af37-4a504e39bca4> ;
+    tern:valueType tern:IRI ;
+.
+
