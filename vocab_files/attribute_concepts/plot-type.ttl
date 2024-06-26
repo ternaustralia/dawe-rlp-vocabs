@@ -9,10 +9,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:source "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "Refers to the types of plots selected for a study or a survey. For example, a plot can be used for assessing the before-after-control-impact (BACI), where plots can be either be an impact (used for experimental sampling design) or a control (or undisturbed) plot." ;
+    skos:definition "Refers to the type of plot (i.e., 'core-Monitoring', 'fauna', or 'biodiversity', 'Control' or 'Impact') selected for a survey." ;
     skos:prefLabel "plot type" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-type.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/beaa6b82-a4ea-5e4d-a354-de3f5394bc6b> ;
+    tern:isAttributeOf tern:Site ;
     tern:valueType tern:IRI ;
 .
 

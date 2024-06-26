@@ -1,0 +1,21 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX tern-org: <https://w3id.org/tern/ontologies/org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/3aebcdb6-5c47-435d-bd53-b23315c3108d>
+    a skos:Concept ;
+    dcterms:source "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "survey area" ;
+    skos:definition "The overall area studied as part of a project, which may consist of a single parcel of land or multiple parcels." ;
+    skos:historyNote "Updated the label, definition and the source based on the version-2 changes of the EMSA modules (EMSA v2 Review process, March, 2024)." ;
+    skos:prefLabel "project area" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/project-area.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern-org:Project ;
+    tern:valueType tern:Float ;
+.
+

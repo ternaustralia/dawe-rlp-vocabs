@@ -1,5 +1,6 @@
 PREFIX schema: <https://schema.org/>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
 PREFIX urnc: <urn:class:>
 PREFIX urnp: <urn:property:>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -7,10 +8,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://linked.data.gov.au/def/nrm/21754a8f-1345-4e94-8bc0-40fef6546fe2>
     a urnc:ObservablePropertyMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_properties_by_module/vegetation-mapping/foliage-projective-cover.ttl"^^xsd:anyURI ;
-    urnp:featureType <http://linked.data.gov.au/def/tern-cv/ae71c3f6-d430-400f-a1d4-97a333b4ee02> ;
+    urnp:featureType <http://linked.data.gov.au/def/tern-cv/32834f36-a478-45be-97f4-ff2ff51e9f5c> ;
+    urnp:hasAttribute
+        <https://linked.data.gov.au/def/nrm/26cd531a-8fa1-4bd5-8402-ddb4d41c484e> ,
+        <https://linked.data.gov.au/def/nrm/5871b3a2-b475-4432-9f15-65424f21a878> ;
+    urnp:maxInclusive 100 ;
+    urnp:minInclusive 1 ;
     urnp:observablePropertiesCollection <https://linked.data.gov.au/def/nrm/2089561b-5b49-472a-812f-3de661505ccb> ;
     urnp:observableProperty <https://linked.data.gov.au/def/nrm/0378976a-0018-4604-826d-1886ca5f38c3> ;
     urnp:protocolModule <https://linked.data.gov.au/def/nrm/15361f98-7669-410e-9b04-e9be069c7508> ;
+    urnp:unitOfMeasurement unit:PERCENT ;
     urnp:valueType tern:Float ;
 .
 

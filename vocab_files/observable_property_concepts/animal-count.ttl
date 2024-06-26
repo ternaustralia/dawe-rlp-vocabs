@@ -1,0 +1,21 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/65f4cb64-a0c0-4a41-a9b9-d2f42affebc5>
+    a skos:Concept ;
+    dcterms:source "Bignall J, Laws M, McCallum K, Cox B, O’Neill S, Potter T, Morgan R, Sparrow B. Opportune Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel
+        "animal individual count" ,
+        "count" ,
+        "count of individuals" ;
+    skos:broader <https://linked.data.gov.au/def/nrm/b2d28629-c986-4c05-9d4a-8b05e99a0a94> ;
+    skos:definition "The count or number of individuals of an animal species present at the time of sampling." ;
+    skos:historyNote "Updated the definition and the source during the version-2 changes of the EMSA modules (EMSA v2 Review process, May, 2024)." ;
+    skos:prefLabel "animal count" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/animal-count.ttl"^^xsd:anyURI ;
+.
+

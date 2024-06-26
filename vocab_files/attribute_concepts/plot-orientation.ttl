@@ -7,14 +7,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/638aae02-cfe8-472d-ae9d-252fe73cb7c4>
     a skos:Concept ;
-    dcterms:source """O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (unpublished draft) ‘Vertebrate Fauna module’ in ….. (eds)
-Ecological Field Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved
-decision making. Draft v 0.1 Report to DCCEEW. TERN, Adelaide.""" ;
+    dcterms:source "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "The direction or orientation the plot (as a standard the plot alighs in the NS direction of the grid)." ;
+    skos:definition "The direction or orientation of the plot, in degrees from north." ;
+    skos:historyNote "Updated the definition and the source based on the version-2 changes of the EMSA modules (EMSA v2 Review process, March, 2024)." ;
     skos:prefLabel "plot orientation" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/plot-orientation.ttl"^^xsd:anyURI ;
-    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/232d5fdd-c15f-4a84-865e-46ea20b82ff1> ;
-    tern:valueType tern:IRI ;
+    tern:isAttributeOf tern:Sampling ;
+    tern:valueType tern:Integer ;
 .
 

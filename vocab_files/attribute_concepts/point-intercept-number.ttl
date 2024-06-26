@@ -7,14 +7,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/1080a165-ebfe-42d0-bae5-2acf90d59eb3>
     a skos:Concept ;
-    dcterms:source "Ecological Field Monitoring protocols - Condition Module, draft v0.1, 30/11/2021" ;
+    dcterms:source "Laws M, Morgan R, McCallum K, Potter T, Cox B, Bignall J, O’Neill S, Sparrow B. Cover Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:altLabel
+        "point number" ,
         "transect point number" ,
         "transect point-intercept number" ;
-    skos:definition "It is a spatial point along the transect where the condition point intercept is being assessed. Generally at every 1m interval along the transect." ;
+    skos:definition "A spatial point (0 - 100) along the transect where the point intercept is being assessed. Generally at every 1m interval along the transect." ;
     skos:prefLabel "point intercept number" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/point-intercept-number.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern:Sample ;
     tern:valueType tern:Text ;
 .
 
