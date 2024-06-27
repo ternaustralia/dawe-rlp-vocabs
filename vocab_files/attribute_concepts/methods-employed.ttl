@@ -5,13 +5,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/79709363-0f11-4f26-a3ad-f758daf37fa6>
+<https://linked.data.gov.au/def/nrm/2b363121-0162-4a2a-8d4d-b4df974926a7>
     a skos:Concept ;
     dcterms:source "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "A description of the methods used for targeted survey/s." ;
-    skos:prefLabel "methods description" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/methods-description.ttl"^^xsd:anyURI ;
-    tern:valueType tern:Text ;
+    skos:definition "Refers to the method/s employed while conducting the targeted survey monitoring." ;
+    skos:prefLabel "methods employed" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/methods-employed.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/ed7d6836-d706-43cc-97d1-4d20c3063c16> ;
+    tern:valueType tern:IRI ;
 .
 
