@@ -5,16 +5,16 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/fabf23b1-3828-4448-93f5-67a1b6fbdd5f>
+<https://linked.data.gov.au/def/nrm/da923d42-0282-4116-b370-033c4f98f947>
     a skos:Concept ;
     dcterms:source "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "The type of trap, i.e. a pitfall, funnel, cage or Elliot type, used during a vertebrate fauna survey." ;
-    skos:prefLabel "trap type" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/trap-type.ttl"^^xsd:anyURI ;
-    tern:hasCategoricalCollection
-        <https://linked.data.gov.au/def/nrm/ed7d6836-d706-43cc-97d1-4d20c3063c16> ,
-        <https://linked.data.gov.au/def/nrm/fd2ab6f0-01b8-4216-bb7b-1e62eae4a40e> ;
+    skos:altLabel "monitoring scale" ;
+    skos:definition "Refers to the broad region or scale at which the targeted monitoring program was implemented." ;
+    skos:prefLabel "broad monitoring region" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/broad-monitoring-region.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/982d3950-8364-4278-8db5-d3a0916178c9> ;
+    tern:isAttributeOf <https://linked.data.gov.au/def/nrm/756fe09c-9ca7-4fb6-af37-4a504e39bca4> ;
     tern:valueType tern:IRI ;
 .
 

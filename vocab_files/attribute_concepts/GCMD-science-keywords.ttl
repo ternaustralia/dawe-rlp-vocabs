@@ -1,0 +1,19 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/3c55d62f-250b-40d2-8825-8069868333d6>
+    a skos:Concept ;
+    dcterms:source
+        "https://www.earthdata.nasa.gov/learn/find-data/idn/gcmd-keywords"^^xsd:anyURI ,
+        "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "A list of Global Change Master Directory (GCMD) earth science keywords that best represent the type of target survey monitoring program." ;
+    skos:prefLabel "GCMD science keywords" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/GCMD-science-keywords.ttl"^^xsd:anyURI ;
+    tern:valueType tern:Text ;
+.
+

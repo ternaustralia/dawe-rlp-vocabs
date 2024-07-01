@@ -5,16 +5,13 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/fabf23b1-3828-4448-93f5-67a1b6fbdd5f>
+<https://linked.data.gov.au/def/nrm/b95d4288-d27a-42bb-99e6-94ec0cca6a19>
     a skos:Concept ;
     dcterms:source "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "The type of trap, i.e. a pitfall, funnel, cage or Elliot type, used during a vertebrate fauna survey." ;
-    skos:prefLabel "trap type" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/trap-type.ttl"^^xsd:anyURI ;
-    tern:hasCategoricalCollection
-        <https://linked.data.gov.au/def/nrm/ed7d6836-d706-43cc-97d1-4d20c3063c16> ,
-        <https://linked.data.gov.au/def/nrm/fd2ab6f0-01b8-4216-bb7b-1e62eae4a40e> ;
-    tern:valueType tern:IRI ;
+    skos:definition "A record of the geographic extent, i.e., the bounding box coordinates for the targeted monitoring area." ;
+    skos:prefLabel "geographic extent" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/geographic-extent.ttl"^^xsd:anyURI ;
+    tern:valueType tern:Text ;
 .
 
