@@ -1,0 +1,19 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/17e92e08-a800-4dc4-80b7-d7fe341d142d>
+    a skos:Concept ;
+    dcterms:description "Geographic features include vector data which uses geometric shapes such as points, lines, and polygons; or a raster data which uses a grid of cells or pixels, each with a specific value.. " ;
+    dcterms:source "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "geographic feature type" ;
+    skos:definition "A record of the type/s of spatial data used to represent the geographic features of the targeted monitoring area." ;
+    skos:prefLabel "spatial data type" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/spatial-data-type.ttl"^^xsd:anyURI ;
+    tern:valueType tern:Text ;
+.
+
