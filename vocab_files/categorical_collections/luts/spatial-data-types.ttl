@@ -1,0 +1,58 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/0eaa4a5e-6f87-4b69-822d-99bb25e91558>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/spatial-data-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c0206461-e27b-55c6-9043-220e11ea623d> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/47373e59-eea0-44b4-8c32-43696f4e9ea7> ;
+    urnp:conceptDefinition "Refers to the spatial data type representing the Targeted Survey Monitoring area. A 'raster' data represents geographic features using a grid of cells or pixels, each with a specific value. Each cell has a value representing information such as temperature, elevation, soil attributes or land cover features to name a few." ;
+    urnp:conceptSource "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/4d056f3c-7165-4ac0-a724-ea12d80927a2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/spatial-data-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c0206461-e27b-55c6-9043-220e11ea623d> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a82d6e95-a5e9-4789-a323-190accdf7f7c> ;
+    urnp:conceptDefinition "Refers to the spatial data type representing the Targeted Survey Monitoring area. A 'polygon' is a type of vector data that represents geographic features using geometric shapes of an area with a closed loop of coordinates (e.g., lakes, land parcels, etc.)." ;
+    urnp:conceptSource "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/6fdc6ce8-42a1-460c-b535-ec90e2b8b094>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/spatial-data-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c0206461-e27b-55c6-9043-220e11ea623d> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a73526b7-05b9-435b-8e3c-d6ea84ac4ae0> ;
+    urnp:conceptDefinition "Refers to the spatial data type representing the Targeted Survey Monitoring area. A 'line' is a type of vector data that represents geographic features using geometric shapes of linear features with a series of connected coordinates (e.g., roads, rivers, etc.)." ;
+    urnp:conceptSource "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/81067aaa-f7b1-4ef3-aa51-79d95aa24865>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/spatial-data-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/c0206461-e27b-55c6-9043-220e11ea623d> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/96682207-b25f-4792-86f6-b69cd112b58a> ;
+    urnp:conceptDefinition "Refers to the spatial data type representing the Targeted Survey Monitoring area. A 'point' is a type of vector data that represents geographic features using geometric shapes of specific locations with a single pair of coordinates (e.g., a city, a landmark, etc.)." ;
+    urnp:conceptSource "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/9cd75ae6-df4b-4595-8179-485f7bf9976d>
+    a skos:Collection ;
+    dcterms:description "A collection of the spatial data types representing the Targeted Survey Monitoring area. They include: 'vector' - lines, points, polygon or a 'raster' - grid type." ;
+    dcterms:source "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/47373e59-eea0-44b4-8c32-43696f4e9ea7> ,
+        <https://linked.data.gov.au/def/nrm/96682207-b25f-4792-86f6-b69cd112b58a> ,
+        <https://linked.data.gov.au/def/nrm/a73526b7-05b9-435b-8e3c-d6ea84ac4ae0> ,
+        <https://linked.data.gov.au/def/nrm/a82d6e95-a5e9-4789-a323-190accdf7f7c> ;
+    skos:prefLabel "spatial data types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/spatial-data-types.ttl"^^xsd:anyURI ;
+.
+

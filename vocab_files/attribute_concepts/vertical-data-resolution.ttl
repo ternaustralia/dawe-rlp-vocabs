@@ -1,0 +1,20 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/3bb75470-e2c8-42fd-aa1e-cc575a6d0cf4>
+    a skos:Concept ;
+    dcterms:source
+        "Global Change Master Directory (GCMD). 2023. GCMD Keywords, Version 18.7, Greenbelt, MD: Earth Science Data and Information System, Earth Science Projects Division, Goddard Space Flight Center, NASA. URL (GCMD Keyword Forum Page): https://forum.earthdata.nasa.gov/app.php/tag/GCMD+Keywords" ,
+        "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "A Global Change Master Directory (GCMD) standard keyword structure that defines the vertical resolution of the data." ;
+    skos:prefLabel "vertical data resolution" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/vertical-data-resolution.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/cd1ba7be-cb1e-490b-87bf-ad257597858e> ;
+    tern:valueType tern:IRI ;
+.
+
