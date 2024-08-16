@@ -40,15 +40,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a urnc:CategoricalConceptMeta ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-points.ttl"^^xsd:anyURI ;
     urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3a60d9da-ddeb-4d70-b352-a3d03944a645> ;
-    urnp:categoricalConcept
-        <https://linked.data.gov.au/def/nrm/d14dc71e-156d-5e64-95eb-d28dd774ed5d> ,
-        <https://linked.data.gov.au/def/nrm/e30885ba-1c94-4459-9184-d098c1938438> ;
-    urnp:conceptDefinition
-        "Refers to the spatial point location, denoting the 'North West' corner of the study plot." ,
-        "Refers to the spatial point location, denoting the location '1' in the 'North end' of the study plot." ;
-    urnp:conceptNotation
-        "North 1" ,
-        "North West" ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d14dc71e-156d-5e64-95eb-d28dd774ed5d> ;
+    urnp:conceptDefinition "Refers to the spatial point location, denoting the 'North West' corner of the study plot." ;
+    urnp:conceptNotation "North West" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-plot-points"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/403ec68b-b2be-4be4-bd15-b695f4c296f7>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-points.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/3a60d9da-ddeb-4d70-b352-a3d03944a645> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e30885ba-1c94-4459-9184-d098c1938438> ;
+    urnp:conceptDefinition "Refers to the spatial point location, denoting the location '1' in the 'North end' of the study plot." ;
+    urnp:conceptNotation "North 1" ;
     urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-plot-points"^^xsd:anyURI ;
 .
 
@@ -260,7 +264,32 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:altLabel "plot reference points" ;
-    skos:member <https://linked.data.gov.au/def/nrm/df58bcc5-34d9-5020-a519-bc83b18824db> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/1eb0f9ed-a928-527c-8724-4a636db55b9d> ,
+        <https://linked.data.gov.au/def/nrm/32c928fc-8c8c-47f2-8fa4-6b0ce80b6ca3> ,
+        <https://linked.data.gov.au/def/nrm/3dc4bc55-b40a-5ed9-94ba-697d59489e67> ,
+        <https://linked.data.gov.au/def/nrm/3faa6898-2d70-40fe-ad65-12ee7f65ff08> ,
+        <https://linked.data.gov.au/def/nrm/4b559e50-5bdb-42d1-9101-aab6f5958972> ,
+        <https://linked.data.gov.au/def/nrm/72e662b2-90c8-48c1-9621-ef7590fd80e6> ,
+        <https://linked.data.gov.au/def/nrm/80abeec3-4c69-45de-b3a9-7cacdfc3c65f> ,
+        <https://linked.data.gov.au/def/nrm/89b4fb99-d839-4e81-888f-37549f3b077c> ,
+        <https://linked.data.gov.au/def/nrm/8c9a919d-bd2c-4b47-8ce3-0cf13331e197> ,
+        <https://linked.data.gov.au/def/nrm/a021aa4b-f49b-4544-b80d-c79c467fee2d> ,
+        <https://linked.data.gov.au/def/nrm/ad1506a8-5fda-4930-94fb-964b34b9b85a> ,
+        <https://linked.data.gov.au/def/nrm/afa07308-191b-5daf-a106-c3208a477155> ,
+        <https://linked.data.gov.au/def/nrm/b05c3497-ce33-45b1-96a1-fea51aff9711> ,
+        <https://linked.data.gov.au/def/nrm/bd199741-d95f-431f-a839-0a0ea787c969> ,
+        <https://linked.data.gov.au/def/nrm/c469c848-57b6-48ca-bc6b-917cf604b56b> ,
+        <https://linked.data.gov.au/def/nrm/c878664c-b404-4010-8a70-a8ee92e50add> ,
+        <https://linked.data.gov.au/def/nrm/cb5b9a0f-0d0e-47b4-bc05-f592b2ea41aa> ,
+        <https://linked.data.gov.au/def/nrm/d14dc71e-156d-5e64-95eb-d28dd774ed5d> ,
+        <https://linked.data.gov.au/def/nrm/df58bcc5-34d9-5020-a519-bc83b18824db> ,
+        <https://linked.data.gov.au/def/nrm/e2ea53a0-b8e8-45b4-aeba-2c5847ea20fd> ,
+        <https://linked.data.gov.au/def/nrm/e30885ba-1c94-4459-9184-d098c1938438> ,
+        <https://linked.data.gov.au/def/nrm/e9f09694-2b76-41e8-a3cb-f5817deb3a57> ,
+        <https://linked.data.gov.au/def/nrm/edbe83ac-d795-4061-b3a5-6f045d58ba30> ,
+        <https://linked.data.gov.au/def/nrm/f029a109-89b4-4e5b-8128-ab5a105eb1f2> ,
+        <https://linked.data.gov.au/def/nrm/fea35c81-7c5e-4e82-8abf-a7b5cf417453> ;
     skos:prefLabel "plot points" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-points.ttl"^^xsd:anyURI ;
 .
