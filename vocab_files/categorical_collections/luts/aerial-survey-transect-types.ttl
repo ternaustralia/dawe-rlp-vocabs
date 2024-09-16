@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/9aa39b49-dd41-589d-8138-95b6fba0b0f6>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/transect-aerial-survey-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/71f0182a-e143-5acc-8965-f72ab1795036> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/33b030e0-29dd-5568-bc9e-ce43ab02b6db> ;
+    urnp:conceptDefinition "Refers to the type of fauna aerial transect. A strip transect involves a fixed width (in meters)." ;
+    urnp:conceptSource "Peacock D, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Aerial Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/f9623a7c-406f-5af5-ad93-11a85fb965f9>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/transect-aerial-survey-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/71f0182a-e143-5acc-8965-f72ab1795036> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/37ceee03-376d-5be9-a1b6-a85518e08231> ;
+    urnp:conceptDefinition "Refers to the type of fauna aerial transect. A line transect involves a pre-defined distance sampling method (e.g., 0-20, 21-40, etc. in meters)." ;
+    urnp:conceptSource "Peacock D, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Aerial Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/71f0182a-e143-5acc-8965-f72ab1795036>
+    a skos:Collection ;
+    dcterms:description "The types of fauna aerial survey. This uses either a 'strip transect' or a 'line transect'." ;
+    dcterms:source "Peacock D, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Aerial Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/33b030e0-29dd-5568-bc9e-ce43ab02b6db> ,
+        <https://linked.data.gov.au/def/nrm/37ceee03-376d-5be9-a1b6-a85518e08231> ;
+    skos:prefLabel "aerial survey transect types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/aerial-survey-transect-types.ttl"^^xsd:anyURI ;
+.
+
