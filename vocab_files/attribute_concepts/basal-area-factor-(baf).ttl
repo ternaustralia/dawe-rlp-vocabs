@@ -12,9 +12,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition """Basal Area Factor – the mathematical relationship between the angle formed by the TERN Basal Wedge and
 the distance it is held from the eye. The aperture or prism factor used to measure basal area. 
 BAF in TERN wedge uses six standard aperture sizes such as 0.32, 0.5, 0.71, 0.87, 1 and 1.41 which corresponds to a standard basal area of 0.1, 0.25, 0.75, 1, and 2 m^2/hectare.""" ;
-    skos:prefLabel "basal area factor (baf)" ;
+    skos:notation "BAF" ;
+    skos:prefLabel "basal area factor" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/basal-area-factor-(baf).ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/13d010d7-91b7-4621-b80a-70cb4324ddf5> ;
+    tern:isAttributeOf
+        tern:Observation ,
+        tern:Sampling ;
     tern:valueType tern:IRI ;
 .
 
