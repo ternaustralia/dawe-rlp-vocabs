@@ -15,7 +15,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <h3>Contents</h3>
   <ol>
     <li><a href="#module-overview">Module Overview</a></li>
-    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#introduction-and-background">Introduction</a></li>
     <li>
       <a href="#key-definitions-and-terminology"
         >Key definitions and terminology</a>
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <li><a href="#references">References</a></li>
     <li><a href="#appendices">Appendices</a></li>
   </ol>
-   <p style="color: purple; text-align: center; font-weight: bold; font-size:16px;">The following is a new section</p><h1 id="module-overview">Module overview</h1>
+   <h1 id="module-overview">Module overview</h1>
 <h2 id="available-protocols">Available protocols</h2>
 <p>This module covers two protocols for plot selection and layout:</p>
 <ol type="1">
@@ -45,8 +45,8 @@ visit (e.g. recording trap captures from multiple fauna plots each
 morning and afternoon).</p>
 <p>Plot types include the core monitoring plot (100 x 100 m; 1 ha) and
 optional paired fauna plot (100 x 100 m; 1 ha), which together form the
-biodiversity plot, where 2 ha bird surveys can be undertaken (Figure
-1).</p>
+biodiversity plot, where 2 ha bird surveys can be undertaken (<a href="#figure-1">Figure
+1</a>).</p>
 <h2 id="relationships-to-other-modules">Relationships to other
 modules</h2>
 <h3 id="mandatory-related-modules">Mandatory related modules</h3>
@@ -61,7 +61,7 @@ below:</p>
         are then described in the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a>.</p></li>
         <li><p><a href="https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9">Photopoints Module</a> – requires the plot to be established
         first.</p></li>
-        <li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e"></a>Floristics Module – requires the plot to be established
+        <li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – requires the plot to be established
         first.</p></li>
         <li><p><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> – requires the plot to be established
         first.</p></li>
@@ -265,6 +265,7 @@ Tasmania, Hobart.</p>
     skos:prefLabel "Plot Selection and Layout Module" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/plot-selection-and-layout.ttl"^^xsd:anyURI ;
     tern:appendix """<h1 id="appendices">Appendices</h1>
+    <p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Spatial and environmental datasets.</h4></p>
 <p>The following is an overview of potential sources for GIS spatial
 layers that can be utilised as part of the site stratification process.
 Please note that this list is not exhaustive, so a general search for
@@ -542,6 +543,8 @@ geomorphology and soils.</td>
 </tr>
 </tbody>
 </table>
+<p><span class="anchor" id="appendix-2"></span><h4>Appendix 2.
+Nomenclature used when defining a plot.</h4></p>
 <p><img alt="appendix-2" height="1000" src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/Appendix-2.png" width="850"/></p>"""^^rdf:HTML ;
     tern:purpose """
     <h2 id="rationale">Rationale</h2>
@@ -580,6 +583,7 @@ during each revisit, thereby maintaining good quality data (White <em>et
 al.</em> 2012).</p>"""^^rdf:HTML ;
     tern:scope """
    <h1 id="introduction-and-background">Introduction and background</h1>
+<p>Plot selection and layout should be approached in two stages:</p>
 <ol type="1">
     <li><p>Initial desktop stratification of the project area to identify
     key areas of interest and select proposed plot locations based on
@@ -632,8 +636,7 @@ al.</em> 2012).</p>"""^^rdf:HTML ;
     ha area.</p>
     <p><img alt="Picture1" height="400" src="https://w3id.org/tern/static/dawe-rlp/latest/plot-selection/Picture 1.jpg" width="950"/></p>
     <p><span class="anchor" id="figure-1"></span>Figure 1. Ecological
-    Monitoring System Australia plot types.</p>
-<table>"""^^rdf:HTML ;
+    Monitoring System Australia plot types.</p>"""^^rdf:HTML ;
     tern:undertakenBefore
         <https://linked.data.gov.au/def/nrm/05669173-2fe7-4b70-ba67-2e09fbe87de9> ,
         <https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51> ,
