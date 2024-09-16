@@ -3,16 +3,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX tern-org: <https://w3id.org/tern/ontologies/org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/5dfd212b-debe-503d-83c8-c9ceebfc5d46>
     a skos:Concept ;
     dcterms:source "Peacock D, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Aerial Counts Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "The aerial survey experience (in hours) of a field observer conducting an aerial survey." ;
+    skos:definition "The aerial survey experience (in hours) of a field observer conducting an aerial fauna survey." ;
     skos:prefLabel "aerial survey experience" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/aerial-survey-experience.ttl"^^xsd:anyURI ;
     tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/be38292b-33b3-5e62-b256-98f2271444c8> ;
+    tern:isAttributeOf tern-org:Person ;
     tern:valueType tern:IRI ;
 .
 
