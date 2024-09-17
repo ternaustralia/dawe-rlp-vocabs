@@ -85,7 +85,39 @@ species.</p></li>
 <li><p><a href="https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5">Camera Trapping Module</a> – opportune observations of particular species
 may warrant the use of camera trapping.</p></li>
 </ul>
-"""^^rdf:HTML ;
+<h2 id="field-collection">Field collection</h2>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<li><p>Opportune observations can be recorded at any stage of a project
+and are not dependent on other modules.</p></li>
+</ul>
+<h3 id="time-requirements">Time requirements</h3>
+<p>Time estimates vary depending on the level of detail recorded and
+whether voucher specimens are collected. As a general guide, allow:</p>
+<ul>
+<li><p>2 – 5 minutes to record an opportune flora observation in the
+Monitor app, depending on if a voucher specimen is collected.</p></li>
+<li><p>2 – 10 minutes to record an opportune fauna observation in the
+app, depending on if a voucher specimen is collected.</p></li>
+<li><p>5 minutes processing time per flora voucher specimen (barcode and
+press).</p></li>
+<li><p>5 – 30 minutes processing time per fauna voucher specimen (e.g.
+tissue sampling, preservation, labelling, barcode).</p></li>
+<li><p>5 minutes per record to upload any photos/videos/audio recordings
+collected outside of the app.</p></li>
+</ul>
+<h3 id="personnel-requirements">Personnel requirements</h3>
+<p>Number of personnel and skills:</p>
+<ul>
+<li><p>Opportune observations can be completed by one person but is
+easier with two, so one can make the observations and the other can
+record the data directly into the app.</p></li>
+<li><p>The surveyor making the observations is ideally familiar with and
+experienced in identifying the flora and fauna within the area.</p></li>
+<li><p>Scientific permits may be required for the collection of voucher
+specimens. Land access permissions are required.</p></li>
+</ul>"""^^rdf:HTML ;
     dcterms:source """
     <h1 id="references">References</h1>
 <p>ABARES (2016) The Australian Land Use and Management Classification
@@ -512,21 +544,21 @@ specimens). Vertebrate vouchering is not covered in the EMSA Modules
 voucher specimens (animal remains or signs) include when:</p></li>
 </ul>
 <ul>
-<li><p>species identification is uncertain</p></li>
-<li><p>a record is considered important (e.g. the species has a limited
+<li><p>Species identification is uncertain</p>
+<p>A record is considered important (e.g. the species has a limited
 occurrence, there are few existing records, the record represents a
 range extension (including introduced species), the specimen has
-atypical characteristics)</p></li>
-<li><p>the voucher is in better condition or has more scientific value
-(e.g. more likely to provide species identification) than previously
-collected specimens</p></li>
-<li><p>animal remains or signs are considered important for other
-studies (e.g. genetics, diet, parasites and zoonoses)</p></li>
-<li><p>advised by the relevant museum to address scientific knowledge
+atypical characteristics)</p>
+<p>The voucher is in better condition or has more scientific value (e.g.
+more likely to provide species identification) than previously collected
+specimens</p>
+<p>Animal remains or signs are considered important for other studies
+(e.g. genetics, diet, parasites and zoonoses)</p></li>
+<li><p>Advised by the relevant museum to address scientific knowledge
 gaps and improve representation within their collection</p></li>
-<li><p>it is a required condition of permits, approved by an animal
+<li><p>It is a required condition of permits, approved by an animal
 ethics committee</p></li>
-<li><p>a dead specimen or sign is of a threatened or presumed extinct
+<li><p>A dead specimen or sign is of a threatened or presumed extinct
 species, no matter what the quality/condition.</p></li>
 </ul>
 <ul>
@@ -534,15 +566,15 @@ species, no matter what the quality/condition.</p></li>
 specimens should only be collected if they are considered a suitable
 condition for accessioning and if they can be prepared, preserved,
 stored and transported appropriately. As a guide, suitable specimen
-quality should be interpreted as:</p></li>
+quality should be interpreted as:</p>
+<p>Road kill, beach washed and freshly deceased: whole, with the skull
+intact, clean (no blood stains) and not decomposing (strong odour, fur,
+feathers or skin easily fall off) or desiccated.</p>
+<p>Skeletal material: dry, whole and partial skeletal material may be
+useful, depending on species and condition. Broken or fractured
+bones/skulls are not useful.</p></li>
 </ul>
 <ul>
-<li><p>Road kill, beach washed and freshly deceased: whole, with the
-skull intact, clean (no blood stains) and not decomposing (strong odour,
-fur, feathers or skin easily fall off) or desiccated.</p></li>
-<li><p>Skeletal material: dry, whole and partial skeletal material may
-be useful, depending on species and condition. Broken or fractured
-bones/skulls are not useful.</p></li>
 <li><p>Eggs and nests: abandoned nests or eggs are a good record of
 breeding data for birds. Alternatively, a photo and measurements of the
 eggs and/or nest can be used as an observational record (DPaW
@@ -557,7 +589,8 @@ was dead before the tissues were sampled. This will assist in
 interpreting potentially anomalous results in the lab (Owens 2000).
 Photos can be taken of the specimen (with scale) to accompany the
 record. Ideally include close-ups showing features, any tags/microchip
-numbers etc., as well as photos of the surrounding environment.</p></li>
+numbers, etc., as well as photos of the surrounding
+environment.</p></li>
 <li><p>If a specimen is not required, is not of a suitable condition for
 collection, or animal ethics approval has not been obtained, then take
 photos (with scale) instead (DPaW 2013).</p></li>
@@ -588,7 +621,7 @@ to the Post-field sample curation protocol in the Invertebrate Fauna
 Module. Also consult with the relevant museum for guidance.</p></li>
 </ul>"""^^rdf:HTML ;
     skos:prefLabel "Opportune Module" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/opportunistic-observations/opportunistic-observations.ttl"^^xsd:anyURI ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/opportune-observations/opportune-observations.ttl"^^xsd:anyURI ;
     tern:appendix """
     <h1 id="appendices">Appendices</h1>
 <p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Collection
@@ -2244,35 +2277,17 @@ measurements</h3>
 <td></td>
 </tr>
 <tr class="even">
-<td>Teats</td>
-<td>Drop-down list</td>
-<td></td>
-<td></td>
-<td></td>
-<td>X</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Testes</td>
-<td>Drop-down list</td>
-<td></td>
-<td></td>
-<td></td>
-<td>X</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Pouch</td>
-<td>Drop-down list</td>
-<td></td>
-<td></td>
-<td></td>
-<td>X</td>
-<td></td>
-</tr>
-<tr class="odd">
 <td>Number in Pouch</td>
 <td>Enter number of young observed in pouch</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Testes size</td>
+<td>Drop-down list</td>
 <td></td>
 <td></td>
 <td></td>
@@ -3047,113 +3062,88 @@ knife, scraper (for collection)</p></li>
 pencil, scissors (for storing specimens).</p></li>
 </ul>"""^^rdf:HTML ;
     tern:instructions """
-    <h2 id="field-collection">Field collection</h2>
-<h3 id="pre-requisites">Pre-requisites</h3>
-<p>Pre-requisites for completing this protocol:</p>
-<ul>
-<li><p>Opportune observations can be recorded at any stage of a project
-and are not dependent on other modules.</p></li>
-</ul>
-<h3 id="time-requirements">Time requirements</h3>
-<p>Time estimates vary depending on the level of detail recorded and
-whether voucher specimens are collected. As a general guide, allow:</p>
-<ul>
-<li><p>2 – 5 minutes to record an opportune flora observation in the
-Monitor app, depending on if a voucher specimen is collected.</p></li>
-<li><p>2 – 10 minutes to record an opportune fauna observation in the
-app, depending on if a voucher specimen is collected.</p></li>
-<li><p>5 minutes processing time per flora voucher specimen (barcode and
-press).</p></li>
-<li><p>5 – 30 minutes processing time per fauna voucher specimen (e.g.
-tissue sampling, preservation, labelling, barcode).</p></li>
-<li><p>5 minutes per record to upload any photos/videos/audio recordings
-collected outside of the app.</p></li>
-</ul>
-<h3 id="personnel-requirements">Personnel requirements</h3>
-<p>Number of personnel and skills:</p>
-<ul>
-<li><p>Opportune observations can be completed by one person but is
-easier with two, so one can make the observations and the other can
-record the data directly into the app.</p></li>
-<li><p>The surveyor making the observations is ideally familiar with and
-experienced in identifying the flora and fauna within the area.</p></li>
-<li><p>Scientific permits may be required for the collection of voucher
-specimens. Land access permissions are required.</p></li>
-</ul>
-<h3 id="instructions-and-procedures">Instructions and procedures</h3>
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
 <ol type="1">
 <li><p>Open the Monitor app and select the Opportune Module from the
-projects page or via the yellow quick-access <em>opportune</em> button
-located in the top right corner of the screen.</p></li>
-<li><p>Select <em>add observation record</em>, A unique sequential
-<em>observation ID</em> is automatically assigned to the
-record.</p></li>
-<li><p>Add <em>photos, video</em> or <em>audio</em> for the observation
-(if applicable) using the in-app camera/audio recorder or selecting from
-the camera roll/audio recorder on your device. If files are on another
-device, enter a <em>media ID</em> (i.e. the unique photo ID on the
-external device) so the files can be uploaded later when accessing the
-app from a computer. Enter a <em>description</em> (free text) to
-accompany each file, e.g. <em>close up of thorns</em>.</p></li>
+projects page or via the quick-access opportune button located in the
+app menu.</p></li>
+<li><p>Since the opportune collection is not plot-based, and therefore
+not associated with a plot visit, record the <em>start date time</em>
+(yyyy-mm-dd hh:mm:ss) of the opportune survey. This is only required
+prior to recording the first opportune record.</p>
+<p>Save the opportune survey (start) component. The first opportune
+record will open. A unique sequential <em>observation ID</em> is
+automatically assigned to the record.</p></li>
+<li><p>Media including <em>photos, video</em> or <em>audio</em> can be
+recorded for the observation. Enter a <em>comment</em> to accompany each
+file (e.g. <em>close up of thorns</em>).</p></li>
 <li><p>The <em>date</em>, <em>time</em> and <em>location</em> of the
 observation are automatically recorded but can be changed as necessary
 (i.e. if entering a record after the event). To change the location,
-select <em>choose on map</em> or enter specific coordinates. If the
-location is recorded on a stand-alone GPS, enter a <em>GPS ID</em> so
-the coordinates can be uploaded later.</p></li>
-<li><p>Select the <em>taxa type</em> from the drop-down list.</p></li>
-<li><p>Select the <em>species</em> or the lowest taxonomic level known
-using the search function and drop-down list (as you type, options will
-be provided by species, genus, class, order, and family). The common
-name and scientific name are shown for each species. If the
+select <em>choose on map</em> or enter specific coordinates.</p></li>
+<li><p>Select the <em>taxa type</em> from the drop-down list. This
+filters the species and other drop-down lists.</p></li>
+<li><p>Record the <em>species</em> from the drop-down list. Begin typing
+the scientific or common name to query the species list. If the
 identification is unknown and pending the review of evidence collected,
-then manually enter a descriptive field name instead e.g. <em>Acacia
-spiky</em>. The field name given during this step should be used as the
+then manually enter a descriptive field name instead (e.g. Acacia
+spiky). The field name given during this step should be used as the
 field name every time that species is encountered within a survey
 event.</p></li>
 <li><p>Switch the <em>confident</em> toggle to <em>off</em> if the
-identification is uncertain. The default is <em>on</em> (see  <a href="#additional-guidelines">Additional Guidelines</a>).</p></li>
+identification is uncertain. The default is <em>on</em> (see Additional
+guidelines).</p></li>
 <li><p>Record the <em>number of individuals</em> observed (zero, blank
 and no selection are invalid) and select if the number of individuals is
 <em>exact</em> or an <em>estimate</em>.</p></li>
 <li><p>Select the <em>observation method</em> (tier 1 to tier 3) from
-the drop-down list (refer to <a href="#appendix-1">Appendix 1</a> for the full list of
+the drop-down list (refer to Appendix 1 for the full list of
 options).</p></li>
-<li><p>Select the <em>observer/s</em> (drop-down list, multiple
+<li><p>Select the <em>observers</em> (drop-down list, multiple
 selections allowed, or manually enter first name, middle initial and
 last name).</p></li>
-<li><p>If observed outside of a plot, record the <em>habitat (major
-vegetation group)</em> from the drop-down list.</p></li>
-<li><p>Record <em>observation notes</em> (optional) as free text (e.g.
-additional habitat information, condition, fauna behaviour, presumed
-cause of death, appearance, signs of disease, tag details (ID
-number/colour/Bluetooth ID).</p></li>
-<li><p>Toggle on to record <em>advanced details</em> (optional; refer to
-<a href="#appendix-2">Appendix 2</a>). Relevant fields will be visible based on the selection of
-taxa type in Step 5. For flora, select the <em>growth form</em> and
-<em>life stage</em> (multiple selections allowed) from the drop-down
-lists. For direct observations of fauna, select the <em>sex</em>,
-<em>age class</em> and <em>breeding status</em> from the drop-down lists
-and record <em>fauna measurements</em> (where relevant).</p></li>
-<li><p>If a <em>voucher specimen</em> is collected, switch the toggle to
-<em>on</em>. Assign a unique barcode label to the specimen and <em>scan
+<li><p>Record the <em>habitat (major vegetation group)</em> (optional)
+from the drop-down list.</p></li>
+<li><p>Record any <em>comments</em> (optional) (e.g. additional habitat
+information, condition, fauna behaviour, presumed cause of death,
+appearance, signs of disease, tag details (ID number/colour/Bluetooth
+ID).</p></li>
+<li><p>For flora, select the <em>growth form</em> and <em>life
+stage</em> (multiple selections allowed) from the drop-down
+lists.</p></li>
+<li><p>For fauna, check the checkbox to record <em>additional fauna
+details</em> (optional; refer to Appendix 2). Relevant fields will be
+visible based on the selection of taxa type in Step 5. For direct
+observations of fauna, select the <em>sex</em>, <em>age class</em> and
+<em>breeding status</em> from the drop-down lists and record <em>fauna
+measurements</em> (where relevant).</p></li>
+<li><p>If a <em>voucher specimen</em> is collected, check the checkbox.
+Assign a unique <em>voucher barcode</em> to the specimen and <em>scan
 the barcode</em> (see section 3.2.2 Voucher specimen collection). Select
 <em>voucher type</em> (tier 1 and tier 2) from the drop-down list (refer
 to <a href="#appendix-3">Appendix 3</a>. for the full list of options). For vertebrate fauna
 remains (i.e. carcasses), select the <em>condition of the specimen</em>
 from the drop-down list. Select the <em>preservative type</em>
-(drop-down list) and specify the <em>% concentration</em> if relevant
-(e.g. 95% undenatured ethanol). Record any <em>voucher comments</em>
-(optional) as free text (e.g. physical description of the specimen,
-linked voucher IDs, prey/parasites collected with samples).</p></li>
-<li><p>Select the <em>add voucher specimen</em> to add additional
-voucher specimens for the same observation (e.g. a plant voucher and a
-plant tissue voucher). Each specimen is allocated a unique
-barcode.</p></li>
-<li><p>Select <em>save</em> to save the opportune record. Repeat from
-Step 3.1.5 to add another observation.</p></li>
-<li><p>At the end of a survey event, select <em>complete protocol</em>.
-The observation records can be edited as necessary.</p></li>
+(drop-down list) and specify the <em>concentration</em> if relevant
+(e.g. 95% undenatured ethanol). Record a <em>voucher comment</em>
+(optional) (e.g. physical description of the specimen, linked voucher
+IDs, prey/parasites collected with samples).</p></li>
+<li><p>Add additional voucher specimens for the same observation (e.g. a
+plant voucher and a plant tissue voucher) if required. Each specimen is
+allocated a unique barcode.</p></li>
+<li><p>Save the opportune record. Add another opportune record for the
+current location if required. A new opportune record will open. The next
+unique sequential <em>observation ID</em> is automatically assigned to
+the record. Repeat steps 4–18.</p></li>
+<li><p>After all opportune records for the current location are saved,
+select the back button at the top of page to return to the project
+page.</p></li>
+<li><p>Record additional records by selecting the Opportune Module and
+then the edit button.</p></li>
+<li><p>At the end of the survey, complete the opportune component and
+then record the <em>end date time</em> (yyyy-mm-dd hh:mm:ss) of the
+opportune survey. Check the summary of the data and queue the collection
+for submission.</p></li>
 </ol>"""^^rdf:HTML ;
     tern:purpose """
    <h2 id="rationale">Rationale</h2>
@@ -3247,6 +3237,16 @@ not intended to cover the capture or euthanasia of vertebrate fauna;
 thus, fauna voucher specimens are restricted to those collected from
 deceased animals or observed signs such as scats and hair.</p>
     """^^rdf:HTML ;
+    tern:undertakenComplementarily
+        <https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51> ,
+        <https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e> ,
+        <https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95> ,
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
+        <https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9> ,
+        <https://linked.data.gov.au/def/nrm/8e7c86ce-e283-4cea-aca7-44ed7a22629c> ,
+        <https://linked.data.gov.au/def/nrm/cd04526e-7455-45c1-8a44-55575a4a7b2d> ,
+        <https://linked.data.gov.au/def/nrm/dd2da1e0-edbe-4f20-a1ae-b860876c1837> ,
+        <https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5> ;
     tern:undertakenConcurrently
         <https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51> ,
         <https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e> ,
