@@ -1,0 +1,19 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/58a12ec8-d673-4838-a5fa-df7828701da1>
+    a skos:Concept ;
+    dcterms:source "Laws M, McCallum K, Bignall J, Kilpatrick E, O’Neill S, Sparrow B. (2023) Basal Area Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:altLabel "stem ID" ;
+    skos:definition "A numeric identifier of an individual stem of a tree (i.e., in multi-stemmed individuals)." ;
+    skos:prefLabel "stem number identifier" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/stem-number-identifier.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern:Sample ;
+    tern:valueType tern:Text ;
+.
+
