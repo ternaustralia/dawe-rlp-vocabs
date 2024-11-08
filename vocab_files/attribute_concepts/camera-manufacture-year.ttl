@@ -5,14 +5,16 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/8aff92b0-351f-587d-a491-d558a535ddc8>
+<https://linked.data.gov.au/def/nrm/ec93bcc2-e395-4655-820c-c3aaf28bafdb>
     a skos:Concept ;
     dcterms:source "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "A camera setting providing an option to select daytime or night-time captures." ;
-    skos:prefLabel "day/night recording" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/day-night-recording.ttl"^^xsd:anyURI ;
-    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/04978779-a61c-5e56-a827-1598ee87bc18> ;
-    tern:valueType tern:IRI ;
+    skos:definition "The year when the camera trap was manufactured." ;
+    skos:prefLabel "camera manufacture year" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/camera-manufacture-year.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf
+        tern:FeatureOfInterest ,
+        tern:Sampler ;
+    tern:valueType tern:Integer ;
 .
 
