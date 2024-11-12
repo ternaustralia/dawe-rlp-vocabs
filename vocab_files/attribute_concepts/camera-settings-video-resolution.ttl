@@ -5,14 +5,15 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/5a6e0781-7294-5003-85a2-4ee40190d3f9>
+<https://linked.data.gov.au/def/nrm/22f48771-8778-4865-958c-7334a4d36b40>
     a skos:Concept ;
     dcterms:source "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "The height above ground of the lure used in a camera trap bait set-up." ;
-    skos:prefLabel "lure height" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/lure-height.ttl"^^xsd:anyURI ;
+    skos:definition "A mode in the camera trap that defines the video pixel resolution used for the camera traps. Default is '3.1 megapixels'." ;
+    skos:prefLabel "camera settings - video resolution" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/camera-settings-video-resolution.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <urn:test:tbc> ;
     tern:isAttributeOf tern:Deployment ;
-    tern:valueType tern:Float ;
+    tern:valueType tern:IRI ;
 .
 
