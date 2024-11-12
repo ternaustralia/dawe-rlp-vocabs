@@ -5,16 +5,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/0b1cc26f-ea77-4fd9-9c0e-f2c0069af83f>
+<https://linked.data.gov.au/def/nrm/b400ec81-0c8e-4f8a-bbcc-62f9b991cbb8>
     a skos:Concept ;
     dcterms:source "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "A unique alphanumeric identification of the spatial point in the plot where the camera trap is deployed." ;
-    skos:prefLabel "camera trap point ID" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/camera-trap-point-id.ttl"^^xsd:anyURI ;
-    tern:isAttributeOf
-        tern:FeatureOfInterest ,
-        tern:Sampling ;
+    skos:definition "Any relevant comments pertaining to the recovery of the camera traps." ;
+    skos:prefLabel "retrieval comments" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/retrieval-comments.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern:Sampling ;
     tern:valueType tern:Text ;
 .
 

@@ -12,7 +12,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "The unique identification number or code assigned to the previous camera trap setup/installation at the same location." ;
     skos:prefLabel "relevant deployment id" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/relevant-deployment-id"^^xsd:anyURI ;
-    tern:isAttributeOf tern:Deployment ;
+    tern:isAttributeOf
+        tern:Deployment ,
+        tern:Sampling ;
     tern:valueType tern:Text ;
 .
 
