@@ -12,7 +12,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "A unique identifier of the photograph/s." ;
     skos:prefLabel "photo ID" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/photo-id.ttl"^^xsd:anyURI ;
-    tern:isAttributeOf tern:Sample ;
+    tern:isAttributeOf
+        tern:MaterialSample ,
+        tern:Sample ;
     tern:valueType tern:Text ;
 .
 
