@@ -2,14 +2,18 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/e73af424-f20d-49b8-81e3-cd30afb5b267>
+<https://linked.data.gov.au/def/nrm/812f4ca2-842b-4201-95d1-e1fae9024c96>
     a skos:Concept ;
     dcterms:source "McCallum K, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Coarse Woody Debris Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "The diameter (in cm) of the CWD measured at the narrowest end of the debris using a tape measure." ;
-    skos:prefLabel "coarse woody debris narrowest diameter" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/coarse-woody-debris-narrowest-diameter.ttl"^^xsd:anyURI ;
+    skos:definition "A 50 cm (default) or 30 cm length threshold specified during CWD survey." ;
+    skos:prefLabel "coarse woody debris - length cut-off" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/coarse-woody-debris-length-cut-off.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <urn:test:tbc> ;
+    tern:isAttributeOf tern:Procedure ;
+    tern:valueType tern:IRI ;
 .
 
