@@ -16,7 +16,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "A spatial point (0 - 100) along the transect where the point intercept is being assessed. Generally at every 1m interval along the transect." ;
     skos:prefLabel "point intercept number" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/point-intercept-number.ttl"^^xsd:anyURI ;
-    tern:isAttributeOf tern:Sample ;
+    tern:isAttributeOf
+        tern:FeatureOfInterest ,
+        tern:Sample ,
+        tern:Transect ;
     tern:valueType tern:Text ;
 .
 

@@ -5,15 +5,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/6908d9cc-d882-542c-b2d6-eaa59a121a4d>
+<https://linked.data.gov.au/def/nrm/9fb5e245-124a-4ff0-a76b-eed0c838ab15>
     a skos:Concept ;
     dcterms:source "Laws M, Morgan R, McCallum K, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Fire Severity Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition "An estimate of the date accuray level (month or year) since the last fire event." ;
-    skos:prefLabel "fire ignition date accuracy" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/fire-ignition-date-accuracy.ttl"^^xsd:anyURI ;
-    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/tbd> ;
-    tern:isAttributeOf tern:Attribute ;
-    tern:valueType tern:IRI ;
+    skos:definition "The approximate date when the fire ignition is believed to have occurred, based on estimation rather than verified records." ;
+    skos:prefLabel "fire ignition estimate date" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/fire-ignition-estimate-date.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern:FeatureOfInterest ;
+    tern:valueType tern:DateTime ;
 .
 
