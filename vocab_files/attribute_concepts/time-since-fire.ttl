@@ -7,13 +7,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/c079efc5-5e96-4460-9323-e2f5eee7eb8f>
     a skos:Concept ;
-    dcterms:source """Laws M, McCallum K, Bignall J, O’Neill S, Sparrow B. (unpublished draft) ‘Fire module’ in ….. (eds) Ecological Field
-Monitoring Protocols Manual: Standardising environmental monitoring and data systems for improved decision
-making. Draft v 0.1 Report to DCCEEW. TERN, Adelaide.""" ;
+    dcterms:source "Laws M, Morgan R, McCallum K, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Fire Severity Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "The amount of time passed since the first fire event or start date and time of the fire event has occurred." ;
     skos:prefLabel "time since fire" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/time-since-fire.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern:FeatureOfInterest ;
     tern:valueType tern:DateTime ;
 .
 
