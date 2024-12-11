@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/afa07308-191b-5daf-a106-c3208a477155> ;
     urnp:conceptDefinition "The spatial point location which represents the cardinal direction at the 'southwest' corner of the study plot." ;
     urnp:conceptNotation "SW" ;
-    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-corners"^^xsd:anyURI ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-plot-corner-and-centres"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/35c95748-aece-5751-869b-957df52ab16b>
@@ -23,7 +23,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/df58bcc5-34d9-5020-a519-bc83b18824db> ;
     urnp:conceptDefinition "The spatial point location, denoting the 'Centre' of the study plot and is equidistant from the plot corners." ;
     urnp:conceptNotation "Centre" ;
-    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-corners"^^xsd:anyURI ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-plot-corner-and-centres"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/56ab384d-45bb-5151-a57b-677210c5fa53>
@@ -33,7 +33,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/d14dc71e-156d-5e64-95eb-d28dd774ed5d> ;
     urnp:conceptDefinition "The spatial point location which represents the cardinal direction at the 'northwest' corner of the study plot." ;
     urnp:conceptNotation "NW" ;
-    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-corners"^^xsd:anyURI ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-plot-corner-and-centres"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/7d494e05-d98f-50cc-9e25-014d83e179fd>
@@ -43,7 +43,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1eb0f9ed-a928-527c-8724-4a636db55b9d> ;
     urnp:conceptDefinition "The spatial point location which represents the cardinal direction at the 'southeast' corner of the study plot." ;
     urnp:conceptNotation "SE" ;
-    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-corners"^^xsd:anyURI ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-plot-corner-and-centres"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/9adb827c-4149-50ec-93c4-fe2c1777fa6c>
@@ -53,20 +53,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/3dc4bc55-b40a-5ed9-94ba-697d59489e67> ;
     urnp:conceptDefinition "The spatial point location which represents the cardinal direction at the 'northeast' corner of the study plot." ;
     urnp:conceptNotation "NE" ;
-    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-corners"^^xsd:anyURI ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-plot-corner-and-centres"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/d3d0701f-da6e-4a7d-803c-e4b9331854f5>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/plot-marker-locations.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/21072cd8-f8df-42ad-a3b0-c7adee21bc6d> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "The spatial point location which represents the cardinal direction at other corners of the study plot." ;
+    urnp:conceptNotation "O" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-plot-corner-and-centres"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/def/nrm/21072cd8-f8df-42ad-a3b0-c7adee21bc6d>
     a skos:Collection ;
     dcterms:description "A collection of spatial points representing locations within the plot, such as, northeast, northwest, southeast, southwest and centre." ;
     dcterms:source
-        "https://core.vocabs.paratoo.tern.org.au/api/lut-corners"^^xsd:anyURI ,
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-plot-corner-and-centres"^^xsd:anyURI ,
         "McCallum K, Laws M, Cox B, Potter T, Bignall J, O’Neill S, Sparrow B. (2023) Plot Selection and Layout Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:historyNote "PrefLabel updated to 'plot marker locations', including definition and source. Also, added concept notations to each categorical value source during March 2024 Review for version-2 of the EMSA Modules." ;
     skos:member
         <https://linked.data.gov.au/def/nrm/1eb0f9ed-a928-527c-8724-4a636db55b9d> ,
         <https://linked.data.gov.au/def/nrm/3dc4bc55-b40a-5ed9-94ba-697d59489e67> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ,
         <https://linked.data.gov.au/def/nrm/afa07308-191b-5daf-a106-c3208a477155> ,
         <https://linked.data.gov.au/def/nrm/d14dc71e-156d-5e64-95eb-d28dd774ed5d> ,
         <https://linked.data.gov.au/def/nrm/df58bcc5-34d9-5020-a519-bc83b18824db> ;
