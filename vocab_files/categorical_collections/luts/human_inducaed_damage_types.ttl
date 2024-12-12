@@ -1,0 +1,75 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/3544e8b6-3160-4888-8f83-bb00a50aa8bc>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/human_induced_damage_types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ffe13f4f-3613-430f-a2b5-a46fcb4662c1> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/62d50bd4-daeb-4cd2-89f1-f31c0883c5ec> ;
+    urnp:conceptDefinition "Application of toxic substances to deliberately kill vegetation." ;
+    urnp:conceptNotation "P" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-condition-human-induced-damages"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/dc47cd69-4b27-4878-9a84-fb76502c5f8b>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/human_induced_damage_types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ffe13f4f-3613-430f-a2b5-a46fcb4662c1> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/9b3cb451-f8a5-42ed-a3e3-a0f7bf32ce63> ;
+    urnp:conceptDefinition "Removing a complete ring of bark around a tree's circumference, which typically kills the tree by preventing nutrient flow." ;
+    urnp:conceptNotation "R" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-condition-human-induced-damages"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/eb654f9a-3251-465c-bd3a-1e241b359a1d>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/human_induced_damage_types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ffe13f4f-3613-430f-a2b5-a46fcb4662c1> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    urnp:conceptDefinition "Any human-caused damage that doesn't fit the above categories (e.g., vehicle damage, vandalism, fire damage)." ;
+    urnp:conceptNotation "O" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-condition-human-induced-damages"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ee9f1690-07ba-4825-8c92-5d40f6840699>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/human_induced_damage_types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ffe13f4f-3613-430f-a2b5-a46fcb4662c1> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/72acab5b-e5f5-465b-927b-af648faf1da9> ;
+    urnp:conceptDefinition "Removal of trees or parts of trees for timber or other commercial purposes." ;
+    urnp:conceptNotation "LG" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-condition-human-induced-damages"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/f0d5d9fc-c826-4bbb-aede-e33e6296733e>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/human_induced_damage_types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/ffe13f4f-3613-430f-a2b5-a46fcb4662c1> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/83565937-e735-48a2-a8cf-e8ac1b490ae3> ;
+    urnp:conceptDefinition "Cutting or trimming of tree branches, often leaving stubs or irregular cuts." ;
+    urnp:conceptNotation "LP" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-condition-human-induced-damages"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ffe13f4f-3613-430f-a2b5-a46fcb4662c1>
+    a skos:Collection ;
+    dcterms:description "A collection of human induced damage types." ;
+    dcterms:source
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-condition-human-induced-damages"^^xsd:anyURI ,
+        "McCallum K, Potter T, Cox, B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Condition Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/62d50bd4-daeb-4cd2-89f1-f31c0883c5ec> ,
+        <https://linked.data.gov.au/def/nrm/72acab5b-e5f5-465b-927b-af648faf1da9> ,
+        <https://linked.data.gov.au/def/nrm/83565937-e735-48a2-a8cf-e8ac1b490ae3> ,
+        <https://linked.data.gov.au/def/nrm/9b3cb451-f8a5-42ed-a3e3-a0f7bf32ce63> ,
+        <https://linked.data.gov.au/def/nrm/a96d7507-e823-5f3a-a26b-62313538e0bb> ;
+    skos:prefLabel "Human induced damage types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/human_induced_damage_types.ttl"^^xsd:anyURI ;
+.
+
