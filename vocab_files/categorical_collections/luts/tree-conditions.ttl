@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/31ba36a7-3e5d-4e9f-b659-ab5d94627294>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/tree-conditions.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/65a394bf-5362-4174-974e-be6f3964721c> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/ee6fec88-5173-451a-871b-ba48cb98c9f0> ;
+    urnp:conceptDefinition "Tree is partially fallen or leaning significantly but still partially upright/supported." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox, B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Condition Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/ed66a642-369b-488c-9562-cbfee71765a2>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/tree-conditions.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/65a394bf-5362-4174-974e-be6f3964721c> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/feb3c7e2-1976-46eb-ba48-0fdc7061b3ee> ;
+    urnp:conceptDefinition "Bark is detaching or peeling from the tree trunk but still partially attached." ;
+    urnp:conceptSource "McCallum K, Potter T, Cox, B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Condition Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/65a394bf-5362-4174-974e-be6f3964721c>
+    a skos:Collection ;
+    dcterms:description "Acollection of tree conditions." ;
+    dcterms:source "McCallum K, Potter T, Cox, B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Condition Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/ee6fec88-5173-451a-871b-ba48cb98c9f0> ,
+        <https://linked.data.gov.au/def/nrm/feb3c7e2-1976-46eb-ba48-0fdc7061b3ee> ;
+    skos:prefLabel "Tree conditions" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/tree-conditions.ttl"^^xsd:anyURI ;
+.
+

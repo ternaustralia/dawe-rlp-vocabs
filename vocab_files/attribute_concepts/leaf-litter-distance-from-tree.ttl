@@ -2,18 +2,17 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/nrm/7d4eaa80-0f2a-4828-886e-34cd5a4e2746>
+<https://linked.data.gov.au/def/nrm/2665f985-ef0a-4bd7-860f-c15c5c0462ec>
     a skos:Concept ;
     dcterms:source "McCallum K, Potter T, Cox, B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Condition Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:altLabel
-        "flora health factor" ,
-        "health" ,
-        "health factors" ;
-    skos:definition "The health factor (chosen from a drop-down list) indicating the health status of the species in study." ;
-    skos:prefLabel "vegetation health" ;
-    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/observable_property_concepts/vegetation-health.ttl"^^xsd:anyURI ;
+    skos:definition "The distance from leaf litter to the location of an associated tree." ;
+    skos:prefLabel "leaf litter - distance from tree" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/leaf-litter-distance-from-tree.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern:Sampling ;
+    tern:valueType tern:Float ;
 .
 

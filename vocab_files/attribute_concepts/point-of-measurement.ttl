@@ -13,7 +13,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "POM" ;
     skos:prefLabel "point of measurement" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/point-of-measurement.ttl"^^xsd:anyURI ;
-    tern:isAttributeOf tern:Sampling ;
+    tern:isAttributeOf
+        tern:Observation ,
+        tern:Sampling ;
     tern:valueType tern:Float ;
 .
 
