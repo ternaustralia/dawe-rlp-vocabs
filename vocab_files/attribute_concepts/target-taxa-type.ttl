@@ -7,13 +7,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/8cf16ca0-e21b-4296-81f3-2e3b5c3b0f17>
     a skos:Concept ;
-    dcterms:source "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    dcterms:source
+        "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ,
+        "O'Neill S, Laws M, Kilpatrick E, Singh Ramesh A, McCallum K, Sparrow B. (2024) Targeted Surveys Module. In 'Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia'. (Eds S O'Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "The specific category or group of organisms selected for observation or data collection within a survey." ;
     skos:prefLabel "target taxa type" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/target-taxa-type.ttl"^^xsd:anyURI ;
-    tern:hasCategoricalCollection <urn:test:tbc> ;
-    tern:isAttributeOf tern:Input ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/7ea12fed-6b87-4c20-9ab4-600b32ce15ec> ;
+    tern:isAttributeOf
+        tern:Input ,
+        tern:Survey ;
     tern:valueType tern:IRI ;
 .
 
