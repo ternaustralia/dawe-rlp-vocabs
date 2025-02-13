@@ -1,12 +1,13 @@
+import glob
+import json
+import logging
+import os
+import ssl
+from datetime import datetime
+
 import pandas as pd
 import requests
-import json
 from rdflib import Graph, Namespace, URIRef
-from datetime import datetime
-import glob
-import os
-import logging
-import ssl
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 downloads_folder = "Downloads/LUTs"
