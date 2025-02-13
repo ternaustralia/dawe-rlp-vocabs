@@ -50,13 +50,13 @@ def get_collection_labels(g, collection_iri):
 
     if (
         collection_iri
-        == "http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Intensive-uses"
+        == "https://linked.data.gov.au/def/alum/5"
     ):
         for concept in g.subjects(SKOS.broader, collection_uri):
             for label in g.objects(concept, SKOS.prefLabel):
                 labels.add(str(label).lower())
     elif collection_iri in [
-        "http://www.neii.gov.au/def/voc/ACLUMP/australian-land-use-and-management-classification/Australian-Land-Use-and-Management-Classification",
+        "https://linked.data.gov.au/def/alum",
         "http://linked.data.gov.au/dataset/bioregion/IBRA7",
     ]:
         for concept in g.subjects(SKOS.inScheme, collection_uri):
