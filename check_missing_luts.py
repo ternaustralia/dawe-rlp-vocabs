@@ -49,10 +49,7 @@ def get_collection_labels(g, collection_iri):
     collection_uri = URIRef(collection_iri)
     labels = set()
 
-    if (
-        collection_iri
-        == "https://linked.data.gov.au/def/alum/5"
-    ):
+    if collection_iri == "https://linked.data.gov.au/def/alum/5":
         for concept in g.subjects(SKOS.broader, collection_uri):
             for label in g.objects(concept, SKOS.prefLabel):
                 labels.add(str(label).lower())
@@ -87,12 +84,16 @@ def main():
     try:
         df1 = pd.read_csv(sheet1_url)
         df2 = pd.read_csv(sheet2_url)
-        logging.info(f"Successfully read sheets. Sheet1: {len(df1)} rows, Sheet2: {len(df2)} rows")
+        logging.info(
+            f"Successfully read sheets. Sheet1: {len(df1)} rows, Sheet2: {len(df2)} rows"
+        )
     except Exception as e:
         logging.error(f"Error reading sheets: {str(e)}")
         return
 
-    missing_labels_file = os.path.join(downloads_folder, f"missing_luts_{timestamp}.log")
+    missing_labels_file = os.path.join(
+        downloads_folder, f"missing_luts_{timestamp}.log"
+    )
     excel_data = []
 
     with open(missing_labels_file, "w") as log_file:
@@ -116,7 +117,10 @@ def main():
                         found = False
                         matching_rows = df2[
                             (df2["paratoo-source"] == row["Paratoo endpoints"])
-                            & (df2["NRM Collection URI"] == row["NRM Categorical Collection"])
+                            & (
+                                df2["NRM Collection URI"]
+                                == row["NRM Categorical Collection"]
+                            )
                         ]
 
                         for _, sheet2_row in matching_rows.iterrows():
@@ -128,7 +132,9 @@ def main():
                             if label in [mv.strip() for mv in missing_values]:
                                 if pd.notna(sheet2_row["NRM Concept URI"]):
                                     concept_uri = URIRef(sheet2_row["NRM Concept URI"])
-                                    collection_uri = URIRef(row["NRM Categorical Collection"])
+                                    collection_uri = URIRef(
+                                        row["NRM Categorical Collection"]
+                                    )
                                     has_member = (
                                         collection_uri,
                                         SKOS.member,
@@ -155,7 +161,9 @@ def main():
                             excel_data.append(
                                 {
                                     "paratoo-source": row["Paratoo endpoints"],
-                                    "NRM Collection URI": row["NRM Categorical Collection"],
+                                    "NRM Collection URI": row[
+                                        "NRM Categorical Collection"
+                                    ],
                                     "missing values": label,
                                 }
                             )
