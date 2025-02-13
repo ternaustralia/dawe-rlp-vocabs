@@ -1,0 +1,42 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/7666d654-fc8f-479b-8b7b-1adfa2a13e37>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cwd-length-cut-off.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6e4bf6e2-59f3-41b7-90d1-6548ca6e6d0e> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/1476a071-8da9-436d-93f0-3ef957568948> ;
+    urnp:conceptDefinition "The definition of concept `50 cm` in collection `coarse woody debris - length cut-offs` is to be determined." ;
+    urnp:conceptNotation "C50" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-cwd-cut-off-lengths"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/ba8b1cb8-2080-43ad-a5ad-8b75a8f365a3>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cwd-length-cut-off.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/6e4bf6e2-59f3-41b7-90d1-6548ca6e6d0e> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/0d87a325-3935-4404-9f4d-72a595c86ab3> ;
+    urnp:conceptDefinition "The definition of concept `30 cm` in collection `coarse woody debris - length cut-offs` is to be determined." ;
+    urnp:conceptNotation "C30" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-cwd-cut-off-lengths"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/6e4bf6e2-59f3-41b7-90d1-6548ca6e6d0e>
+    a skos:Collection ;
+    dcterms:description "A list of coarse woody debris length cut-offs." ;
+    dcterms:source
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-cwd-cut-off-lengths"^^xsd:anyURI ,
+        "McCallum K, Cox B, Laws M, Bignall J, O’Neill S, Sparrow B. (2023) Coarse Woody Debris Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/0d87a325-3935-4404-9f4d-72a595c86ab3> ,
+        <https://linked.data.gov.au/def/nrm/1476a071-8da9-436d-93f0-3ef957568948> ;
+    skos:prefLabel "coarse woody debris - length cut-offs" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/cwd-length-cut-off.ttl"^^xsd:anyURI ;
+.
+

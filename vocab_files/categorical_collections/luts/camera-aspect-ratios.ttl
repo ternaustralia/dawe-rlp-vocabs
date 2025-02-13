@@ -1,0 +1,42 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/2e80f341-d730-45b5-b918-3400e8f99c44>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-aspect-ratios.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/02517212-b996-41dc-8f69-d07782650892> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/e38d915b-efa9-4def-b210-3e67f9ba15e4> ;
+    urnp:conceptDefinition "The definition of concept `4:3 standard` in collection `camera aspect ratios` is to be determined." ;
+    urnp:conceptNotation "4:3 standard" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-camera-aspect-ratios"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/e3a4f4e1-b2a8-4b36-ad7d-888d47e7c360>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-aspect-ratios.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/02517212-b996-41dc-8f69-d07782650892> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/eadf10f1-f3b6-4343-81f5-8f60973903d7> ;
+    urnp:conceptDefinition "The definition of concept `16:9 wide` in collection `camera aspect ratios` is to be determined." ;
+    urnp:conceptNotation "16:9 wide" ;
+    urnp:conceptSource "https://core.vocabs.paratoo.tern.org.au/api/lut-camera-aspect-ratios"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/def/nrm/02517212-b996-41dc-8f69-d07782650892>
+    a skos:Collection ;
+    dcterms:description "A list of camera aspect ratios." ;
+    dcterms:source
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-camera-aspect-ratios"^^xsd:anyURI ,
+        "Laws M, Potter T, McCallum K, Cox B, Bignall J, Peacock D, O’Neill S, Sparrow B. (2023) Camera Trapping Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/e38d915b-efa9-4def-b210-3e67f9ba15e4> ,
+        <https://linked.data.gov.au/def/nrm/eadf10f1-f3b6-4343-81f5-8f60973903d7> ;
+    skos:prefLabel "camera aspect ratios" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/camera-aspect-ratios.ttl"^^xsd:anyURI ;
+.
+
