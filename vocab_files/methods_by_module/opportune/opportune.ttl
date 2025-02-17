@@ -1,0 +1,3259 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/6fd39a33-9c4f-469e-80a5-e76b5d5f04a6>
+    a
+        skos:Concept ,
+        tern:Method ;
+    dcterms:description """
+     <h3>Contents</h3>
+  <ol>
+    <li><a href="#module-overview">Module Overview</a></li>
+    <li><a href="#introduction-and-background">Introduction and Background</a></li>
+    <li>
+      <a href="#key-definitions-and-terminology">Key definitions and terminology</a>
+    </li>
+    <li><a href="#rationale">Rationale</a></li>
+    <li><a href="#equipment">Equipment</a></li>
+    <li>
+      <a href="#instructions-and-procedures">Instructions and procedures</a>
+    </li>
+    <li><a href="#additional-guidelines">Additional guidelines</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+  </ol>
+    <h1 id="module-overview">Module overview</h1>
+<p>This module covers the procedures and guidelines for recording
+opportune observations of flora (vascular and non-vascular) and fauna
+(vertebrate and invertebrate). Fauna observations include sightings and
+calls as well as indirect evidence of species presence such as tracks
+and scats.</p>
+<p>Opportune observations are unplanned (no defined survey effort) and
+made while undertaking other activities, at any stage of a project.
+Opportune observations often occur while travelling between monitoring
+plots and while undertaking other EMSA (Environmental Monitoring Systems
+Australia) modules. The likelihood of species detection is increased by
+traversing the project area on foot and visiting the range of habitats
+present.</p>
+<p>Opportune observations are entered directly into the Monitor app.
+Minimum data requirements apply to save a record, including taxonomic
+name or descriptive field name, location, date and time of the
+observation, number of individuals observed, the observation method and
+the observer. Additional information can be recorded using the optional
+advanced data fields. Records can be accompanied by physical voucher
+specimens and/or photo, video and audio files, to verify species
+identification. Voucher specimens are linked to a record via a unique
+barcode which is scanned within the app.</p>
+<h2 id="relationships-to-other-modules">Relationships to other
+modules</h2>
+<h3 id="mandatory-related-modules">Mandatory related modules</h3>
+<p>The Opportune Module is not dependent on any other modules.</p>
+<h3 id="optional-complimentary-related-modules">Optional complimentary
+related modules</h3>
+<p>The Opportune Module has links to the following modules:</p>
+<ul>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – further details on vascular plant collection
+and vouchering methods. Species names should be consistent between these
+two modules.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95"> Plant Tissue Vouchering Module</a> – provides standardised survey
+protocols for the collection of plant tissue samples and further details
+on vascular plant tissue collection and vouchering methods.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51">Vertebrate Fauna Module</a> – provides standardised survey protocols
+for vertebrate fauna within plots, and further details on vertebrate
+fauna survey, collection, and vouchering methods.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e">Invertebrate Fauna Module</a> – provides standardised survey
+protocols for invertebrate fauna within plots, and further details on
+invertebrate fauna survey, collection, and vouchering methods.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9">Targeted Survey Module</a> – opportune observations of species of
+interest (e.g. threatened or invasive) may trigger the need for targeted
+surveys.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/cd04526e-7455-45c1-8a44-55575a4a7b2d">Fauna Ground Counts Module</a> – provides standardised survey
+protocols for ground counts of vertebrate fauna (namely pest fauna) and
+includes similar data collection fields to those for opportune
+observations.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/8e7c86ce-e283-4cea-aca7-44ed7a22629c">Signs-based Fauna Survey Module</a> – provides standardised survey
+protocols for recording signs of vertebrate fauna (namely pest fauna)
+within plots.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/dd2da1e0-edbe-4f20-a1ae-b860876c1837">Herbivory and Physical Damage Module</a> – provides a standardised
+survey protocol for recording physical impacts of pest vertebrate fauna
+species.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5">Camera Trapping Module</a> – opportune observations of particular species
+may warrant the use of camera trapping.</p></li>
+</ul>
+<h2 id="field-collection">Field collection</h2>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<p>Pre-requisites for completing this protocol:</p>
+<ul>
+<li><p>Opportune observations can be recorded at any stage of a project
+and are not dependent on other modules.</p></li>
+</ul>
+<h3 id="time-requirements">Time requirements</h3>
+<p>Time estimates vary depending on the level of detail recorded and
+whether voucher specimens are collected. As a general guide, allow:</p>
+<ul>
+<li><p>2 – 5 minutes to record an opportune flora observation in the
+Monitor app, depending on if a voucher specimen is collected.</p></li>
+<li><p>2 – 10 minutes to record an opportune fauna observation in the
+app, depending on if a voucher specimen is collected.</p></li>
+<li><p>5 minutes processing time per flora voucher specimen (barcode and
+press).</p></li>
+<li><p>5 – 30 minutes processing time per fauna voucher specimen (e.g.
+tissue sampling, preservation, labelling, barcode).</p></li>
+<li><p>5 minutes per record to upload any photos/videos/audio recordings
+collected outside of the app.</p></li>
+</ul>
+<h3 id="personnel-requirements">Personnel requirements</h3>
+<p>Number of personnel and skills:</p>
+<ul>
+<li><p>Opportune observations can be completed by one person but is
+easier with two, so one can make the observations and the other can
+record the data directly into the app.</p></li>
+<li><p>The surveyor making the observations is ideally familiar with and
+experienced in identifying the flora and fauna within the area.</p></li>
+<li><p>Scientific permits may be required for the collection of voucher
+specimens. Land access permissions are required.</p></li>
+</ul>"""^^rdf:HTML ;
+    dcterms:source """
+    <h1 id="references">References</h1>
+<p>ABARES (2016) The Australian Land Use and Management Classification
+Version 8. Australian Bureau of Agricultural and Resource Economics and
+Sciences.</p>
+<p>Australian Academy of Science (2022) 'Taxonomy Australia: Australia's
+Biodiversity.' Available at <a href="https://www.taxonomyaustralia.org.au/australias-biodiversity">https://www.taxonomyaustralia.org.au/australias-biodiversity</a>
+[Accessed 28/09/2022].</p>
+<p>Bird, TJ, Bates, AE, Lefcheck, JS, Hill, NA, Thomson, RJ, Edgar, GJ,
+Stuart-Smith, RD, Wotherspoon, S, Krkosek, M, Stuart-Smith, JF (2014)
+Statistical solutions for error and bias in global citizen science
+datasets. <em>Biological Conservation</em> <strong>173</strong>,
+144-154.</p>
+<p>Bulbert, M, Gollan, J, Donnelly, A, Wilkie, L (2007) Invertebrate
+Collection Manual: A guide to traditional invertebrate collection
+methods. Australian Museum, Sydney.</p>
+<p>Centre for Invasive Species Solutions (2023) 'PestSmart.' Available
+at <a href="https://pestsmart.org.au/">https://pestsmart.org.au/</a>
+[Accessed May 2023].</p>
+<p>Cleary, G, Ortac, G, Proft, K, Law, M, Turnbull, J (2015) Survey
+Techniques for Citizen Scientists. National Parks Association of NSW
+Inc, Newtown, NSW.</p>
+<p>Coron, C, Calenge, C, Giraud, C, Julliard, R (2018) Bayesian
+estimation of species relative abundances and habitat preferences using
+opportunistic data. <em>Environmental and ecological statistics</em>
+<strong>25</strong>, 71-93.</p>
+<p>Cotton, TA (2018) Arbuscular mycorrhizal fungal communities and
+global change: an uncertain future. <em>FEMS Microbiology Ecology</em>
+<strong>94</strong>, fiy179.</p>
+<p>da Rocha, JRM, De Almeida, JR, Lins, GA, Durval, A (2010) Insects as
+indicators of environmental changing and pollution: a review of
+appropriate species and their monitoring. <em>Holos environment</em>
+<strong>10</strong>, 250-262.</p>
+<p>DPaW (2013) Standard Operating Procedure No: 8.1 Vouchering
+vertebrate fauna specimens. Department of Parks and Wildlife, Perth,
+Western Australia. Available at Department of Parks and Wildlife.</p>
+<p>DPIE (2020) Surveying threatened plants and their habitats. NSW
+survey guide for the Biodiversity Assessment Method. Department of
+Planning, Industry and Environment, Parramatta, New South Wales.</p>
+<p>Eldridge, D, Skinner, S, Entwisle, TJ (2003) Survey Guidelines for
+Non-Vascular Plants. A report produced under the NSW Biodiversity
+Strategy.</p>
+<p>EPA (2016) Technical guidance: flora and vegetation surveys for
+Environmental Impact Assessment. Environmental Protection Authority,
+Perth, Western Australia.</p>
+<p>EPA (2020) Technical guidance – terrestrial vertebrate fauna surveys
+for environmental impact assessment. Environmental Protection Authority,
+Perth, Western Australia.</p>
+<p>Eyre, TJ, Ferguson, DJ, Hourigan, CL, Smith, GC, Mathieson, MT,
+Kelly, AL, Venz, MF, Hogan, LD, Rowland, J (2018) Terrestrial vertebrate
+fauna survey assessment guidelines for Queensland. Department of
+Environment and Science, Queensland Government, Brisbane, Brisbane.</p>
+<p>Flanagan, C (2015) Koala Rehabilitation Manual. Koala Hospital Port
+Macquarie Available at <a href="https://www.fourthcrossingwildlife.com/--koala-rehabilitation-manual.html">https://www.fourthcrossingwildlife.com/--koala-rehabilitation-manual.html</a>.</p>
+<p>Giraud, C, Calenge, C, Coron, C, Julliard, R (2016) Capitalizing on
+opportunistic data for monitoring relative abundances of species.
+<em>Biometrics</em> <strong>72</strong>, 649-658.</p>
+<p>Guillera‐Arroita, G (2017) Modelling of species distributions, range
+dynamics and communities under imperfect detection: advances, challenges
+and opportunities. <em>Ecography</em> <strong>40</strong>, 281-295.</p>
+<p>Heard, L, Channon, B (1997) Guide to a Native Vegetation Survey:
+Using the Biological Survey of South Australia. Department of
+Environment and Natural Resources, Adelaide.</p>
+<p>Henckel, L, Bradter, U, Jönsson, M, Isaac, NJ, Snäll, T (2020)
+Assessing the usefulness of citizen science data for habitat suitability
+modelling: Opportunistic reporting versus sampling based on a systematic
+protocol. <em>Diversity and Distributions</em> <strong>26</strong>,
+1276–1290.</p>
+<p>Houghton, M, Terauds, A, Shaw, J (2019) Methods for monitoring
+invertebrate response to vertebrate eradication. <em>Island invasives:
+scaling up to meet the challenge</em> 381.</p>
+<p>Isaac, NJB, Pocock, MJO (2015) Bias and information in biological
+records. <em>Biological Journal of the Linnean Society</em>
+<strong>115</strong>, 522-531.</p>
+<p>Jackson, S (2020) 'Animal Research Review Panel Guideline 10:
+Wildlife Surveys.' Available at <a href="https://www.animalethics.org.au/policies-and-guidelines/wildlife-research/wildlife-surveys">https://www.animalethics.org.au/policies-and-guidelines/wildlife-research/wildlife-surveys</a>
+[Accessed 22/03/2021].</p>
+<p>Johnson, SN, Jones, TH (2017) 'Global climate change and terrestrial
+invertebrates.' (John Wiley &amp; Sons:</p>
+<p>Maes, D, Isaac, NJB, Harrower, CA, Collen, B, Van Strien, AJ, Roy, DB
+(2015) The use of opportunistic data for IUCN Red List assessments.
+<em>Biological Journal of the Linnean Society</em> <strong>115</strong>,
+690-706.</p>
+<p>Meineke, EK, Davis, CC, Davies, TJ (2018) The unrealized potential of
+herbaria for global change biology. <em>Ecological monographs</em>
+<strong>88</strong>, 505-525.</p>
+<p>NVIS Technical Working Group (2017) Australian Vegetation Attribute
+Manual: National Vegetation Information System, Version 7.0. Department
+of the Environment and Energy, Canberra.</p>
+<p>O’Meally, D, Livingston, SP, Mason, RAB (2011) Opportunistic
+Collection of Tissue in the Field: DNA Laboratory &amp; Frozen Tissue
+Collection. Australian Museum.</p>
+<p>O’Neill, S, Sparrow, B, Thurgate, N, Lowe, A (2017) Ausplots
+Rangelands Vertebrate Fauna Survey Protocols Manual.</p>
+<p>Owens, H (2000) Guidelines for Vertebrate Surveys in South Australia:
+Using the Biological Survey of South Australia. Department for
+Environment and Heritage, Adelaide.</p>
+<p>Pagel, J, Anderson, BJ, O'Hara, RB, Cramer, W, Fox, R, Jeltsch, F,
+Roy, DB, Thomas, CD, Schurr, FM (2014) Quantifying range‐wide variation
+in population trends from local abundance surveys and widespread
+opportunistic occurrence records. <em>Methods in Ecology and
+Evolution</em> <strong>5</strong>, 751–760.</p>
+<p>Ruete, A, Pärt, T, Berg, Å, Knape, J (2017) Exploiting opportunistic
+observations to estimate changes in seasonal site use: An example with
+wetland birds. <em>Ecology and Evolution</em> <strong>7</strong>,
+5632-5644.</p>
+<p>Silvertown, J (2009) A new dawn for citizen science. <em>Trends in
+Ecology &amp; Evolution</em> <strong>24</strong>, 467-471.</p>
+<p>Soroye, P, Ahmed, N, Kerr, JT (2018) Opportunistic citizen science
+data transform understanding of species distributions, phenology, and
+diversity gradients for global change research. <em>Global change
+biology</em> <strong>24</strong>, 5281-5291.</p>
+<p>Tenan, S, Pedrini, P, Bragalanti, N, Groff, C, Sutherland, C (2016)
+Investigating the potential of opportunistic sighting data to inform
+wildlife conservation strategies. <em>bioRxiv</em> 075945.</p>
+<p>Upton, M, Mantle, B, Hastings, A (2010) Methods for collecting,
+preserving and studying insects and other terrestrial arthropods.
+Australian Entomological Society No. 0646543377, published online.
+Available at <a href="http://www.austentsoc.org.au/wordpress/publications/other-publications/">http://www.austentsoc.org.au/wordpress/publications/other-publications/</a>.</p>
+<p>US National Herbarium (2002) The Importance of Herbaria. <em>Plant
+Press</em> <strong>5</strong>,</p>
+<p>van Strien, AJ, van Swaay, CAM, Termaat, T (2013) Opportunistic
+citizen science data of animal species produce reliable estimates of
+distribution trends if analysed with occupancy models. <em>Journal of
+Applied Ecology</em> <strong>50</strong>, 1450–1458.</p>
+<p>WA Department of Biodiversity Conservation and Attractions (2020)
+'Standard Operating Procedures for fauna survey.' Available at <a href="https://www.dpaw.wa.gov.au/plants-and-animals/96-monitoring/standards/99-standard-operating-procedures">https://www.dpaw.wa.gov.au/plants-and-animals/96-monitoring/standards/99-standard-operating-procedures</a></p>
+<p>Ward, DF, Larivière, M-C (2004) Terrestrial invertebrate surveys and
+rapid biodiversity assessment in New Zealand: lessons from Australia.
+<em>New Zealand Journal of Ecology</em> <strong>28</strong>,
+151-159.</p>
+<p>Wildlife Ethics Committee (2020) Collection of voucher specimen
+policy. Government of South Australia.</p>"""^^rdf:HTML ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition """
+    <h2 id="key-definitions-and-terminology">Key definitions and
+terminology</h2>
+<p><span class="anchor" id="table-1"></span>Table 1. Key
+definitions and terminology relevant to the Opportune Module.</p>
+<table>
+<colgroup>
+<col style="width: 11%"/>
+<col style="width: 88%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monitor</td>
+<td>Field data collection app for Ecological Monitoring System
+Australia. Collects data using the Biodiversity Information Standard for
+delivery to the Australian Biodiversity Data Repository managed by the
+Department of Climate Change, Energy, the Environment and Water.</td>
+</tr>
+<tr class="even">
+<td>Opportune observation</td>
+<td>A documented record of a species collected without standardised
+field protocol and without an explicit sampling design (van Strien
+<em>et al.</em> 2013), associated with a geographic location, date and
+time; may be accompanied by voucher specimens, photos, video, audio and
+ultrasonic recordings.</td>
+</tr>
+<tr class="odd">
+<td>Voucher specimen</td>
+<td><p>A preserved specimen (whole plant or animal, part thereof, or a
+tissue sample) that is retained for expert identification. Voucher
+specimens are ideally deposited in a permanent and accessible storage
+facility to enable examination and further study. See vouchering
+protocols in the <em>Floristics</em>, <em>Plant tissue vouchering</em>,
+<em>Vertebrate fauna</em> and <em>Invertebrate fauna</em> modules.</p>
+<p>The Opportune Module is not intended to cover the capture or
+euthanasia of vertebrate fauna; thus, fauna voucher specimens are
+restricted to those collected from deceased animals or observed signs
+such as scats and hair.</p></td>
+</tr>
+<tr class="even">
+<td>Tissue sample</td>
+<td><p>For vertebrate fauna, this is a sample of tissue taken from a
+live or deceased animal that includes ear clip/notch, toe clip, tail
+clip, skin, skin scrape (cetaceans), muscle, liver, heart, blood, hair,
+feather, eggshell, scale, faecal sample, egg or semen (Wildlife Ethics
+Committee 2020). See tissue vouchering protocols in the Vertebrate fauna
+module. The Opportune Module is not intended to cover the capture or
+euthanasia of vertebrate fauna; thus, tissue samples are restricted to
+those collected from deceased animals.</p>
+<p>For flora, tissue samples ideally consist of approximately 10
+cm<sup>2</sup> of young, undamaged leaves (or the best/freshest growth
+that is on offer) that have been rapidly dried using silica gel granules
+to preserve the DNA for subsequent molecular analyses. See also the
+Plant tissue vouchering module.</p></td>
+</tr>
+</tbody>
+</table>"""^^rdf:HTML ;
+    skos:note """
+   <h2 id="additional-guidelines">Additional guidelines</h2>
+<h3 id="field-collection-1">Field collection</h3>
+<h4 class="unnumbered" id="general-1">General</h4>
+<ul>
+<li><p>Opportune observations can be recorded at any time and location
+within a project area, including within monitoring plots.</p></li>
+<li><p>If uncertainty exists in the taxonomic identification, switch the
+confident toggle to off. If the genus is unknown at the time of the
+survey and there is no evidence to accompany the record, there is
+generally no benefit in recording the observation.</p></li>
+<li><p>If the taxonomic identification is unknown when the observation
+is recorded, or if a lower taxonomic identification is possible with
+accompanying evidence (e.g. high-quality photos, physical voucher
+specimens), the record is given a descriptive field name and the
+confident toggle is off, acting as a flag to review the record. After
+reviewing the accompanying evidence, the identification can be edited in
+the Monitor app and the confident toggle switched on.</p></li>
+<li><p>When assigning a descriptive field name, the field name must make
+sense to you as it will be used in subsequent modules for data
+collection. Avoid generic labels such as Acacia sp. as this can create
+confusion. Use a descriptive word (e.g. Acacia spiky). Use this name
+consistently across the project area for that species.</p></li>
+<li><p>Use the optional fields to record additional information. The
+habitat comment field can be used to record details of the surrounding
+habitat, such as the vegetation association and important habitat
+features (e.g. found in a large tree hollow in Eucalyptus
+viminalis).</p></li>
+</ul>
+<h4 class="unnumbered" id="flora">Flora</h4>
+<ul>
+<li><p>Only record opportune vascular flora observations within a plot
+if outside of a designated monitoring event, as all flora species within
+the plot are recorded during the Floristics module. This is to capture
+any new flora sightings (e.g. annuals that may not have been detected
+during a formal plot monitoring event).</p></li>
+</ul>
+<h4 class="unnumbered" id="fauna">Fauna</h4>
+<ul>
+<li><p>Opportune records are recommended for all vertebrate fauna
+observations, however, it may prove too time-consuming to record every
+observation for some species. Any sighting of a significant species
+should be recorded. If some species or their signs are particularly
+common, consider only recording spatially representative
+samples.</p></li>
+<li><p>When the species selected is Koala (<em>Phascolarctos
+cinereus</em>), a <em>clinical scoring – rump</em> field will appear
+under <em>advanced fields</em> for recording the condition of the
+animal’s rump (see <a href="#appendix-2">Appendix 2</a>).</p></li>
+</ul>
+<h4 class="unnumbered" id="evidence-photos-video-and-audio">Evidence
+(photos, video and audio)</h4>
+<ul>
+<li><p>It is not always possible or warranted to provide evidence of
+opportune fauna observations (e.g. if observed at a distance through
+binoculars, if the species is common and readily identifiable, or if the
+observer is experienced). Bird observations are often visual records
+only, justified by the high level of taxonomic discrimination and the
+wide availability of expertise in their identification (Wildlife Ethics
+Committee 2020).</p></li>
+<li><p>Accompanying evidence needs to be sufficiently distinctive to
+enable identification. Photos should be high resolution, show
+distinguishable features, and ideally include a scale card or something
+for scale (e.g. pencil). For plants, photograph an individual with good
+vigour that is representative of the population recorded. Photos of the
+habit of the plant and the surrounding habitat are also helpful for
+identification. Refer to <a href="#appendix-4">Appendix 4</a> for plant photo voucher instructions
+and guidelines.</p></li>
+</ul>
+<h3 id="voucher-specimen-collection">Voucher specimen collection</h3>
+<h4 class="unnumbered" id="general-2">General</h4>
+<ul>
+<li><p>Collection of voucher specimens is not essential for opportune
+observations but is considered best practice. Herbaria typically require
+physical specimens for positive identification. In most cases, opportune
+fauna observations will not have an associated voucher specimen given
+the incidental and unobtrusive nature of the record. In the absence of a
+voucher specimen, other evidence such as a photo, video, or audio file
+help to validate the record.</p></li>
+<li><p>Voucher specimens should only be collected if the relevant
+permits and approvals have been obtained. Only collect voucher specimens
+from within the project area (animal remains/signs on public roads being
+an exception).</p></li>
+<li><p>Seek advice from the relevant herbarium/museum regarding the
+species to voucher, and the collection, preservation and labelling
+requirements for voucher specimens. Accessioning of voucher specimens is
+at the discretion of the herbarium/museum.</p></li>
+<li><p>Before collecting a voucher specimen, consider if there are
+existing specimens of the species from the area (previous records and
+those recorded during other EMSA modules), the existing survey effort,
+scientific knowledge gaps, representation of specimens currently held in
+collections, the importance of and the quality of the specimen.</p></li>
+<li><p>When there are multiple voucher specimens from the same
+observation, each specimen is given a unique, sequential barcode. Take
+care to ensure the correct barcode is assigned.</p></li>
+<li><p>Voucher specimen details may be entered into the app after the
+event (e.g. if the specimen cannot be processed at that time). If this
+is the case, affix the barcode to the sample and include any additional,
+sequential barcodes required (e.g. for a tissue sample) in a plastic bag
+with the sample. Then, when appropriate, process the voucher and edit
+the details in the Monitor app.</p></li>
+<li><p>The voucher comment field can be used to record important
+additional information, such as linked voucher records (e.g. to link the
+voucher ID of a parasite to the voucher ID of its host).</p></li>
+</ul>
+<h4 class="unnumbered" id="vascular-flora-voucher-specimens">Vascular
+flora voucher specimens</h4>
+<ul>
+<li><p>For a full guide to flora vouchering (collecting, pressing,
+preparing, labelling and storing specimens) refer to the Floristics
+Module. Also refer to the Plant Tissue Vouchering Module for procedures
+and guidelines to collect and store leaf tissue samples for DNA and
+isotope analysis. Also consult with the relevant herbarium for
+guidance.</p></li>
+<li><p>The collection of flora voucher specimens is optional, but highly
+recommended when:</p></li>
+</ul>
+<ul>
+<li><p>species identification is uncertain</p></li>
+<li><p>a new species is recorded for the project area</p></li>
+<li><p>a new species is recorded for a monitoring plot outside of a
+dedicated monitoring event (e.g. annual species that were not present
+during plot monitoring)</p></li>
+<li><p>advised by the herbarium to address scientific knowledge gaps and
+improve representation within their collection</p></li>
+<li><p>it is a condition of a scientific research permit</p></li>
+<li><p>a new population of a rare, threatened or endangered flora
+species is found (unless collecting a specimen would jeopardise the
+population)</p></li>
+<li><p>a species has atypical characteristics</p></li>
+<li><p>a species is recorded outside of its known range, including
+introduced and weedy species</p></li>
+<li><p>a species is located within a habitat in which it is unknown or
+has not previously been detected</p></li>
+<li><p>a species is flowering outside its typical flowering time (EPA
+2016; DPIE 2020).</p></li>
+</ul>
+<ul>
+<li><p>If collecting a voucher specimen would jeopardise the continued
+existence of a rare, threatened or endangered flora population, the
+following can serve as the required voucher (listed in decreasing order
+of preference):</p></li>
+</ul>
+<ul>
+<li><p>A portion of the fertile plant without the root</p></li>
+<li><p>Photos of the plant in conjunction with a piece of fertile plant
+or plant parts (leaves and flowers or fruits)</p></li>
+<li><p>Photos of fertile plant in conjunction with sterile plant
+specimen</p></li>
+<li><p>Sterile plant specimen only, or photos only (preferably with
+descriptive notes).</p></li>
+</ul>
+<ul>
+<li><p>Tag each specimen securely with a unique voucher barcode label.
+Place the label on stems or away from any plant parts that will need to
+be examined for identification purposes. Use paper envelopes for small
+specimens and attach the voucher label to the envelope.</p></li>
+<li><p>Where possible, a voucher should include enough material to cover
+an A3 size herbarium sheet.</p></li>
+<li><p>As soon as possible. voucher specimens should be placed into a
+folded sheet of newspaper and transferred into a plant press to maintain
+their integrity.</p></li>
+</ul>
+<h4 class="unnumbered" id="non-vascular-flora-voucher-specimens">Non-vascular flora voucher
+specimens</h4>
+<ul>
+<li><p>The collection and preparation of non-vascular flora is detailed
+in Eldridge et al. (2003). A summary is provided below given
+non-vascular flora is not included in other EMSA modules. Also consult
+with the relevant herbarium/museum for guidance.</p></li>
+<li><p>Minimise damage to colonies by only collecting small amounts as
+non-vascular plants can have limited distributions and can be
+slow-growing. A number of small, representative samples is generally
+better than numerous random samples. For seasonally variable organisms
+(e.g. fungi) collections need to be made at different times of the
+year.</p></li>
+</ul>
+<h5 class="unnumbered" id="dry-area-species">Dry-area species</h5>
+<ul>
+<li><p>Species growing on trees and soil can be prised off with a knife
+or scraper.</p></li>
+<li><p>Species growing on rocks, if difficult to remove, may need to be
+collected with the rock attached using a chisel and hammer.</p></li>
+<li><p>Choose specimens with fruiting bodies if available to assist in
+identification.</p></li>
+<li><p>Collect specimens in paper bags or folded newspaper envelopes
+(not plastic).</p></li>
+<li><p>Include a small amount of soil for moss/liverwort/hornwort
+samples to preserve rhizoids/protonema (do not press
+specimens).</p></li>
+<li><p>For fragile soil-borne specimens, wrap them in paper before
+placing them in a paper bag.</p></li>
+<li><p>Thallose liverworts/hornworts (i.e. with undifferentiated
+vegetative tissue), especially when reproductive, may be placed in small
+screw-cap plastic containers or cardboard boxes, to protect fragile
+sporophytes.</p></li>
+<li><p>Store samples in a cool, dry place.</p></li>
+</ul>
+<h5 class="unnumbered" id="wet-area-species">Wet-area species</h5>
+<ul>
+<li><p>Place wet specimens in plastic snap-lock bags or screw-top
+plastic containers</p></li>
+<li><p>Keep specimens cool and moist (not frozen); they can be fragile
+and difficult to identify when dry.</p></li>
+<li><p>Drip-dry moist or waterlogged algae samples first to remove
+excess fluid (do not squeeze).</p></li>
+<li><p>Aquatic bryophyte, moss and liverwort voucher specimens can be
+collected and transported in paper.</p></li>
+<li><p>If algae specimens are to be kept for over 48 hours before
+laboratory examination, they should be fixed with 70% alcohol
+(containing 7% formalin).</p></li>
+</ul>
+<h5 class="unnumbered" id="fungi">Fungi</h5>
+<ul>
+<li><p>Collect fungi specimens in paper bags and keep them from becoming
+either too dry or sweating. Drying may require special
+equipment.</p></li>
+</ul>
+<h4 class="unnumbered" id="vertebrate-fauna-voucher-specimens">Vertebrate fauna voucher
+specimens</h4>
+<ul>
+<li><p>Consult with the relevant museum for guidance on vertebrate fauna
+vouchering (preparing, labelling, preserving, storing and transporting
+specimens). Vertebrate vouchering is not covered in the EMSA Modules
+(including the <a href="https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51">Vertebrate Fauna Module</a>).</p></li>
+<li><p>Circumstances for the opportune collection of vertebrate fauna
+voucher specimens (animal remains or signs) include when:</p></li>
+</ul>
+<ul>
+<li><p>Species identification is uncertain</p>
+<p>A record is considered important (e.g. the species has a limited
+occurrence, there are few existing records, the record represents a
+range extension (including introduced species), the specimen has
+atypical characteristics)</p>
+<p>The voucher is in better condition or has more scientific value (e.g.
+more likely to provide species identification) than previously collected
+specimens</p>
+<p>Animal remains or signs are considered important for other studies
+(e.g. genetics, diet, parasites and zoonoses)</p></li>
+<li><p>Advised by the relevant museum to address scientific knowledge
+gaps and improve representation within their collection</p></li>
+<li><p>It is a required condition of permits, approved by an animal
+ethics committee</p></li>
+<li><p>A dead specimen or sign is of a threatened or presumed extinct
+species, no matter what the quality/condition.</p></li>
+</ul>
+<ul>
+<li><p>Unless there are overriding circumstances, fauna voucher
+specimens should only be collected if they are considered a suitable
+condition for accessioning and if they can be prepared, preserved,
+stored and transported appropriately. As a guide, suitable specimen
+quality should be interpreted as:</p>
+<p>Road kill, beach washed and freshly deceased: whole, with the skull
+intact, clean (no blood stains) and not decomposing (strong odour, fur,
+feathers or skin easily fall off) or desiccated.</p>
+<p>Skeletal material: dry, whole and partial skeletal material may be
+useful, depending on species and condition. Broken or fractured
+bones/skulls are not useful.</p></li>
+</ul>
+<ul>
+<li><p>Eggs and nests: abandoned nests or eggs are a good record of
+breeding data for birds. Alternatively, a photo and measurements of the
+eggs and/or nest can be used as an observational record (DPaW
+2013).</p></li>
+</ul>
+<ul>
+<li><p>Road kills or specimens found dead or injured need to be
+processed as soon as possible to maximise the usefulness of tissue
+samples. If an animal has been dead for some time, tissue samples can
+still be taken but record in the field notes how long you estimate it
+was dead before the tissues were sampled. This will assist in
+interpreting potentially anomalous results in the lab (Owens 2000).
+Photos can be taken of the specimen (with scale) to accompany the
+record. Ideally include close-ups showing features, any tags/microchip
+numbers, etc., as well as photos of the surrounding
+environment.</p></li>
+<li><p>If a specimen is not required, is not of a suitable condition for
+collection, or animal ethics approval has not been obtained, then take
+photos (with scale) instead (DPaW 2013).</p></li>
+<li><p>Tag the bag or container containing the specimen with a unique
+voucher barcode label. The labelling requirements vary depending on the
+type of specimen and method of preservation.</p></li>
+<li><p>After labelling and scanning, place fauna voucher specimens in
+airtight bags and storage containers. Storage requirements vary
+depending on the type of specimen and method of preservation.</p></li>
+<li><p>For preservation recommendations (where to take samples and what
+to preserve them in), refer to O’Meally <em>et al.</em> (2011).</p></li>
+<li><p>Recently dead animals can be a good source of ectoparasites
+(fleas, mites, ticks, and lice). For ectoparasite collection
+information, refer to Upton <em>et al.</em> (2010).</p></li>
+<li><p>Arrange for any fresh fauna voucher specimens of significance
+(e.g. road kill of a threatened species) to be transported ASAP to the
+relevant museum (refer to the museum for advice).</p></li>
+<li><p>Scats, sub-fossil material and skeletal remains should be put in
+the freezer for a minimum of two weeks to kill any insects which may
+infest museum collections (Owens 2000).</p></li>
+</ul>
+<h4 class="unnumbered" id="invertebrate-fauna-voucher-specimens">Invertebrate fauna voucher
+specimens</h4>
+<ul>
+<li><p>For a full guide to invertebrate fauna vouchering (preserving,
+sorting, preparing, labelling, transporting and storing specimens) refer
+to the Post-field sample curation protocol in the Invertebrate Fauna
+Module. Also consult with the relevant museum for guidance.</p></li>
+</ul>"""^^rdf:HTML ;
+    skos:prefLabel "Opportune Module" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/opportune/opportune.ttl"^^xsd:anyURI ;
+    tern:appendix """
+    <h1 id="appendices">Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span><h4>Appendix 1. Collection
+fields – standard details.</h4></p>
+<h3 class="Appendix-heading-3" id="taxa-type">Taxa type</h3>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Taxa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vascular plant</td>
+</tr>
+<tr class="even">
+<td>Non-vascular plant</td>
+</tr>
+<tr class="odd">
+<td>Amphibian</td>
+</tr>
+<tr class="even">
+<td>Bird</td>
+</tr>
+<tr class="odd">
+<td>Invertebrate</td>
+</tr>
+<tr class="even">
+<td>Mammal</td>
+</tr>
+<tr class="odd">
+<td>Reptile</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-3" id="number-observed">Number observed
+</h3>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Estimate</td>
+</tr>
+<tr class="even">
+<td>Exactly</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-3" id="section-3"></h3>
+<h3 class="Appendix-heading-3" id="observation-method">Observation
+method</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 13%"/>
+<col style="width: 13%"/>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th rowspan="2"><p>Observation method</p>
+<p>(Tier 1)</p></th>
+<th rowspan="2"> Observation method (Tier 2)</th>
+<th rowspan="2">Observation method (Tier 3)</th>
+<th colspan="5">Taxa type</th>
+</tr>
+<tr class="odd">
+<th>Amphibian</th>
+<th>Bird</th>
+<th>Invertebrate</th>
+<th>Mammal</th>
+<th>Reptile</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Seen</td>
+<td>No method stated</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Seen</td>
+<td>Spotlighting</td>
+<td> </td>
+<td>X</td>
+<td>X </td>
+<td>X </td>
+<td>X </td>
+<td>X </td>
+</tr>
+<tr class="odd">
+<td>Seen</td>
+<td>Air - helicopter</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Seen</td>
+<td>Air - fixed wing</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Seen</td>
+<td>Remote camera</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Seen</td>
+<td>Other (specify)</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Heard</td>
+<td>No method stated</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Heard</td>
+<td>After call playback</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Heard</td>
+<td>Acoustic recording</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Heard</td>
+<td>Ultrasonic recording</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Carcass (full)</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Carcass (partial)</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Bone/teeth</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Skin</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Shell</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Feather</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Hair/fur</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Tracks</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Diggings</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Scratchings (ground)</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Scratchings (arboreal)</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Wallow</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Travel pad</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Odour</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Scats</td>
+<td>Fresh</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Scats</td>
+<td>Old</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Within scat</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Pellet</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Within pellet</td>
+<td>Recent</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Within pellet</td>
+<td>Subfossil</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Within gut content</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Burrow</td>
+<td>Active</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Burrow</td>
+<td>Inactive</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Den</td>
+<td>Active</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Den</td>
+<td>Inactive</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Nest</td>
+<td>Active</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Nest</td>
+<td>Inactive</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Nest</td>
+<td>With egg/s</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Nest</td>
+<td>With chick/s</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Eggs/eggshell</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Subfossil/fossil</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Exoskeleton</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Radio-tracking</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>GPS tracking</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Satellite tracking</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>Hair tube</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Scent pad</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>DNA</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>eDNA</td>
+<td>Soil</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>eDNA</td>
+<td>Water</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>eDNA</td>
+<td>Plant</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>eDNA</td>
+<td>Air</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>eDNA</td>
+<td>Invertebrate derived</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Sign</td>
+<td>eDNA</td>
+<td>Vertebrate derived</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Sign</td>
+<td>Other (specify)</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Captured</td>
+<td>Hand capture</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Captured</td>
+<td>Pitfall trap</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Captured</td>
+<td>Elliott trap</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Captured</td>
+<td>Funnel trap</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Captured</td>
+<td>Harp trap</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Captured</td>
+<td>Mist net</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Captured</td>
+<td>Cage trap</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Captured</td>
+<td>Trap type unknown</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Captured</td>
+<td>Wet pitfall trap</td>
+<td> </td>
+<td> X</td>
+<td> </td>
+<td>X</td>
+<td>X </td>
+<td>X </td>
+</tr>
+<tr class="odd">
+<td>Captured</td>
+<td>Malaise trap</td>
+<td> </td>
+<td> X</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Captured</td>
+<td>Pan trap</td>
+<td> </td>
+<td> X</td>
+<td> </td>
+<td>X</td>
+<td>X </td>
+<td>X </td>
+</tr>
+<tr class="odd">
+<td>Captured</td>
+<td>Light trap</td>
+<td></td>
+<td> X</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X </td>
+</tr>
+<tr class="even">
+<td>Captured</td>
+<td>Sweep net</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Captured</td>
+<td>Other (specify)</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-3" id="section-4"></h3>
+<h3 class="Appendix-heading-3" id="habitat-major-vegetation-group">Habitat (major vegetation
+group)</h3>
+<p><em>Source: Australian Vegetation Attribute Manual, National
+Vegetation Information System, Version 7.0 (NVIS Technical Working Group
+2017)).</em></p>
+<table>
+<colgroup>
+<col style="width: 21%"/>
+<col style="width: 78%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th rowspan="2">NVIS major vegetation group</th>
+<th rowspan="2">NVIS major vegetation sub-group</th>
+</tr>
+<tr class="odd">
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="4">Rainforest and Vine Thickets (MVG 1)</td>
+<td>Cool temperate rainforest</td>
+</tr>
+<tr class="even">
+<td>Tropical or sub-tropical rainforests</td>
+</tr>
+<tr class="odd">
+<td>Dry rainforest</td>
+</tr>
+<tr class="even">
+<td>Vine thickets</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Eucalypt Tall Open Forests (MVG 2)</td>
+<td>Eucalyptus tall open forests with a dense broad-leaved and/or
+tree-fern understorey (wet-sclerophyll)</td>
+</tr>
+<tr class="even">
+<td>Eucalyptus tall open forests with a fine-leaved shrubby understorey
+OR Eucalyptus tall open forests and open forests with ferns, herbs,
+sedges, rushes or wet tussock grasses</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Eucalypt Open Forests (MVG 3)</td>
+<td>Eucalyptus open forests with a shrubby understorey</td>
+</tr>
+<tr class="even">
+<td>Eucalyptus open forests with a grassy understorey</td>
+</tr>
+<tr class="odd">
+<td><p>Eucalypt Low Open Forests</p>
+<p>(MVG 4)</p></td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Eucalypt Woodlands (MVG 5)</td>
+<td>Eucalyptus woodlands with a shrubby understorey OR Eucalyptus
+woodlands with a chenopod or samphire understorey</td>
+</tr>
+<tr class="odd">
+<td>Eucalyptus woodlands with a grassy understorey OR Eucalyptus
+woodlands with ferns, herbs, sedges, rushes or wet tussock grassland OR
+Eucalyptus woodlands with a hummock grass understorey</td>
+</tr>
+<tr class="even">
+<td rowspan="3">Acacia Forests and Woodlands (MVG 6)</td>
+<td>Brigalow (<em>Acacia harpophylla</em>) forests and woodlands</td>
+</tr>
+<tr class="odd">
+<td>Other Acacia forests and woodlands</td>
+</tr>
+<tr class="even">
+<td>Mulga (<em>Acacia aneura</em>) woodlands and shrublands +/- tussock
+grass +/- forbs OR Mulga (<em>Acacia aneura</em>) woodlands and
+shrublands with hummock grass</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Callitris Forests and Woodlands (MVG 7)</td>
+<td>Callitris forests and woodlands (Eastern occurrence)</td>
+</tr>
+<tr class="even">
+<td>Callitris forests and woodlands (mallee, arid and semi-arid
+occurrence)</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Casuarina Forests and Woodlands (MVG 8)</td>
+<td>Casuarina and Allocasuarina forests and woodlands</td>
+</tr>
+<tr class="even">
+<td>River Oak forests and woodlands</td>
+</tr>
+<tr class="odd">
+<td>Melaleuca Forests and Woodlands (MVG 9)</td>
+<td>Melaleuca open forests and woodlands</td>
+</tr>
+<tr class="even">
+<td>Other Forests and Woodlands (MVG 10)</td>
+<td>Other forests and woodlands OR Banksia woodlands OR Leptospermum
+forests and woodlands OR Tropical mixed species forests and
+woodlands</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Eucalypt Open Woodlands (MVG 11)</td>
+<td>Eucalyptus open woodlands with a grassy understorey OR Eucalyptus
+open woodlands with shrubby understorey</td>
+</tr>
+<tr class="even">
+<td>Eucalyptus low open woodlands with tussock grass OR Eucalyptus low
+open woodlands with a shrubby understorey OR Eucalyptus low open
+woodlands with a chenopod or samphire understorey</td>
+</tr>
+<tr class="odd">
+<td>Tropical Eucalypt Woodlands / Grasslands (MVG 12)</td>
+<td>Tropical Eucalyptus forests and woodlands with a tall annual grassy
+understorey</td>
+</tr>
+<tr class="even">
+<td>Acacia Open Woodlands (MVG 13)</td>
+<td>Mulga (<em>Acacia aneura</em>) open woodlands and sparse shrublands
++/- tussock grass OR Mulga (<em>Acacia aneura</em>) open woodlands and
+sparse shrublands with hummock grass</td>
+</tr>
+<tr class="odd">
+<td>Mallee Woodlands and Shrublands (MVG 14)</td>
+<td>Mallee with hummock grass OR Mallee with a tussock grass understorey
+OR Mallee with a dense shrubby understorey OR Mallee with an open
+shrubby understorey</td>
+</tr>
+<tr class="even">
+<td>Low Closed Forest and Tall Closed Shrublands (MVG 15)</td>
+<td>Low closed forests or tall closed shrublands (including Acacia,
+Melaleuca and Banksia)</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Acacia Shrublands (MVG 16)</td>
+<td>Acacia (+/- low) open woodlands and sparse shrublands with a shrubby
+understorey OR Acacia (+/- low) open woodlands and sparse shrublands
+with hummock grass OR Acacia (+/- low) open woodlands and sparse
+shrublands with tussock grass OR Acacia (+/- low) open woodlands and
+sparse shrublands with chenopods.</td>
+</tr>
+<tr class="even">
+<td>Other Acacia tall open shrublands and shrublands</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Other Shrublands (MVG 17)</td>
+<td>Melaleuca shrublands and open shrublands OR Casuarina/Allocasuarina
+shrublands (<em>C. equisetifolia, A. littoralis,
+A.</em> <em>verticillata</em>) OR other shrublands</td>
+</tr>
+<tr class="even">
+<td>Lignum shrublands and wetlands</td>
+</tr>
+<tr class="odd">
+<td>Heathlands (MVG 18)</td>
+<td>Heathlands</td>
+</tr>
+<tr class="even">
+<td rowspan="2">Tussock Grasslands (MVG 19)</td>
+<td>Temperate tussock grassland</td>
+</tr>
+<tr class="odd">
+<td>Mitchell grass (<em>Astrebla</em>) tussock grasslands and Blue grass
+(<em>Dichanthium</em>) and tall bunch grass (<em>Chrysopogon</em>)
+tussock grasslands OR Other tussock grasslands</td>
+</tr>
+<tr class="even">
+<td>Hummock Grasslands (MVG 20)</td>
+<td>Hummock grasslands</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Other Grasslands, Herblands, Sedgelands and Rushlands
+(MVG 21)</td>
+<td>Sedgelands, rushes or reeds OR Wet tussock grasslands with herbs,
+sedges or rushes, herblands or ferns OR Other grasslands</td>
+</tr>
+<tr class="even">
+<td>Saline or brackish sedgelands or grasslands</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Chenopod Shrublands, Samphire Shrublands and Forblands
+(MVG 22)</td>
+<td>Saltbush and/or Bluebush shrublands</td>
+</tr>
+<tr class="even">
+<td>Mixed chenopod, samphire +/- forbs</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Mangroves (MVG 23)</td>
+<td>Mangroves (Northern)</td>
+</tr>
+<tr class="even">
+<td>Mangroves (Southern)</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Other Open Woodlands (MVG 31)</td>
+<td>Callitris open woodlands OR Melaleuca open woodlands OR Other open
+woodlands</td>
+</tr>
+<tr class="even">
+<td>Casuarina and Allocasuarina open woodlands with a shrubby
+understorey OR Casuarina and Allocasuarina open woodlands with a
+chenopod shrub understorey OR Casuarina and Allocasuarina open woodlands
+with a tussock grass understorey OR Casuarina and Allocasuarina open
+woodlands with a hummock grass understorey</td>
+</tr>
+<tr class="odd">
+<td>Mallee Open Woodlands and Sparse Mallee Shrublands (MVG 32)</td>
+<td>Open mallee woodlands and sparse mallee shrublands with a dense
+shrubby understorey OR Open mallee woodlands and sparse mallee
+shrublands with a sparse shrubby understorey OR Open mallee woodlands
+and sparse mallee shrublands with a tussock grass understorey OR Open
+mallee woodlands and sparse mallee shrublands with a hummock grass
+understorey</td>
+</tr>
+<tr class="even">
+<td colspan="2"><strong>Other cover types</strong></td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Inland aquatic - freshwater, salt lakes, lagoons (MVG
+24)</td>
+<td>Salt lakes and lagoons</td>
+</tr>
+<tr class="even">
+<td>Freshwater, dams, lakes, lagoons or aquatic plants</td>
+</tr>
+<tr class="odd">
+<td>Cleared, non-native vegetation, buildings (MVG 25)</td>
+<td>Cleared, non-native vegetation, buildings</td>
+</tr>
+<tr class="even">
+<td>Unclassified native vegetation (MVG 26)</td>
+<td>Unclassified native vegetation</td>
+</tr>
+<tr class="odd">
+<td>Naturally bare - sand, rock, claypan, mudflat (MVG 27)</td>
+<td>Naturally bare - sand, rock, claypan, mudflat</td>
+</tr>
+<tr class="even">
+<td>Sea and estuaries (MVG 28)</td>
+<td>Sea, estuaries (includes seagrass)</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">Regrowth, modified native vegetation (MVG 29)</td>
+<td>Regrowth or modified forests and woodlands</td>
+</tr>
+<tr class="even">
+<td>Regrowth or modified shrublands</td>
+</tr>
+<tr class="odd">
+<td>Regrowth or modified chenopod shrublands, samphire or forblands</td>
+</tr>
+<tr class="even">
+<td>Regrowth or modified graminoids</td>
+</tr>
+<tr class="odd">
+<td>Unclassified Forest (MVG 30)</td>
+<td>Unclassified Forest</td>
+</tr>
+<tr class="even">
+<td>Unknown/no data (MVG 99)</td>
+<td>Unknown/no data</td>
+</tr>
+<tr class="odd">
+<td>NA – flyover *</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>* NA – flyover was added to account for situations where birds or
+bats are observed flying overhead without utilising terrestrial
+habitats.</p>
+<p><span class="anchor" id="appendix-2"></span><h4>Appendix 2. Collection
+fields – advanced.</h4></p>
+<h3 class="Appendix-heading-3" id="growth-form-vascular-flora">Growth
+form (vascular flora)</h3>
+<p>Source: NVIS Technical Working Group (2017).</p>
+<table>
+<colgroup>
+<col style="width: 15%"/>
+<col style="width: 84%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Growth Form</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tree</td>
+<td>Woody plants, more than 2m tall with a single stem or branches well
+above the base.</td>
+</tr>
+<tr class="even">
+<td>Tree mallee</td>
+<td>Woody perennial plant usually of the genus Eucalyptus. Multi-stemmed
+with fewer than 5 trunks of which at least 3 exceed 100mm at breast
+height (1.3m). Usually 8m or more.</td>
+</tr>
+<tr class="odd">
+<td>Shrub</td>
+<td>Woody plants multi-stemmed at the base (or within 200mm from ground
+level) or if single-stemmed, less than 2m.</td>
+</tr>
+<tr class="even">
+<td>Mallee shrub</td>
+<td>Commonly less than 8m tall, usually with 5 or more trunks, of which
+at least three of the largest do not exceed 100mm at breast height
+(1.3m).</td>
+</tr>
+<tr class="odd">
+<td>Heath shrub</td>
+<td>Shrub usually less than 2 m, with sclerophyllous leaves having high
+fibre: protein ratios and with an area of nanophyll or smaller (less
+than 225 sq mm). Often a member of one of the following families:
+Ericaceae, Myrtaceae, Fabaceae and Proteaceae. Commonly occur on
+nutrient-poor substrates.</td>
+</tr>
+<tr class="even">
+<td>Chenopod shrub</td>
+<td>Single or multi-stemmed, semi-succulent shrub of the family
+Chenopodiaceae exhibiting drought and salt tolerance.</td>
+</tr>
+<tr class="odd">
+<td>Samphire shrub</td>
+<td>Genera (of Tribe Salicornioideae, viz: Halosarcia, Pachycornia,
+Sarcocornia, Sclerostegia, Tecticornia and Tegicornia) with articulate
+branches, fleshy stems and reduced flowers within the Chenopodiaceae
+family, succulent chenopods (Wilson 1980). Also the genus Sueda.</td>
+</tr>
+<tr class="even">
+<td>Tussock grass</td>
+<td>Forms discrete but open tussocks usually with distinct individual
+shoots, or if not, then forming a hummock. These are the common
+agricultural grasses.</td>
+</tr>
+<tr class="odd">
+<td>Hummock grass</td>
+<td>Coarse xeromorphic grass with a mound-like form often dead in the
+middle; genus is Triodia.</td>
+</tr>
+<tr class="even">
+<td>Other grass</td>
+<td>Member of the family Poaceae, but having neither a distinctive
+tussock nor hummock appearance.</td>
+</tr>
+<tr class="odd">
+<td>Sedge</td>
+<td>Herbaceous, usually perennial erect plant generally with a tufted
+habit and of the families Cyperaceae (true sedges) or Restionaceae (node
+sedges).</td>
+</tr>
+<tr class="even">
+<td>Rush</td>
+<td>Herbaceous, usually perennial erect monocot that is neither a grass
+nor a sedge. For the purposes of NVIS, rushes include the monocotyledon
+families Juncaceae, Typhaceae, Liliaceae, Iridaceae, Xyridaceae and the
+genus Lomandra. I.e. graminoid or grass-like genera.</td>
+</tr>
+<tr class="odd">
+<td>Forb</td>
+<td>Herbaceous or slightly woody, annual or sometimes perennial plant.
+(Usually a dicotyledon).</td>
+</tr>
+<tr class="even">
+<td>Tree-fern</td>
+<td>Characterised by large and usually branched leaves (fronds),
+arborescent and terrestrial; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="odd">
+<td>Fern</td>
+<td>Ferns and fern allies, except tree-fern, above. Characterised by
+large and usually branched leaves (fronds), herbaceous and terrestrial
+to aquatic; spores in sporangia on the leaves.</td>
+</tr>
+<tr class="even">
+<td>Bryophyte</td>
+<td>Mosses and Liverworts. Mosses are small plants usually with a
+slender leafbearing stem with no true vascular tissue. Liverworts are
+often moss-like in appearance or consisting of a flat, ribbon-like green
+thallus.</td>
+</tr>
+<tr class="odd">
+<td>Lichen</td>
+<td>Composite plant consisting of a fungus living symbiotically with
+algae: without true roots, stems or leaves.</td>
+</tr>
+<tr class="even">
+<td>Epiphyte</td>
+<td>Epiphytes, mistletoes and parasites. Plant with roots attached to
+the aerial portions of other plants. Can often be another growth form,
+such as fern or forb.</td>
+</tr>
+<tr class="odd">
+<td>Vine</td>
+<td>Climbing, twining, winding or sprawling plants usually with a woody
+stem.</td>
+</tr>
+<tr class="even">
+<td>Palm</td>
+<td>Palms and other arborescent monocotyledons. Members of the Arecaceae
+or the genus Pandanus. (Pandanus is often multi-stemmed).</td>
+</tr>
+<tr class="odd">
+<td>Grass-tree</td>
+<td>Australian grass trees. Members of the Xanthorrhoeaceae family.</td>
+</tr>
+<tr class="even">
+<td>Cycad</td>
+<td>Members of the families Cycadaceae and Zamiaceae.</td>
+</tr>
+<tr class="odd">
+<td>Seagrass</td>
+<td>Flowering angiosperms forming sparse to dense mats of material at
+the subtidal and down to 30m below MSL. Occasionally exposed.</td>
+</tr>
+<tr class="even">
+<td>Aquatic</td>
+<td>Plant growing in an inland waterway or wetland with the majority of
+its biomass under water for most of the year. Fresh, saline or brackish
+water.</td>
+</tr>
+<tr class="odd">
+<td>Lower plant</td>
+<td>Alga, fungus.</td>
+</tr>
+<tr class="even">
+<td>Unknown</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-3" id="life-stage-vascular-flora">Life stage
+(vascular flora)</h3>
+<p>Source: adapted from Heard and Channon (1997)</p>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 74%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Life stage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>seedling</td>
+<td><em>Trees:</em> individuals &lt;2 cm DBH. <em>Shrubs</em>: &lt;5cm
+height</td>
+</tr>
+<tr class="even">
+<td>sapling</td>
+<td><em>Trees:</em> individuals &lt;2 m in height and ~2-10 cm DBH.
+<em>Shrubs:</em> has not reached maximum height, apical dominance</td>
+</tr>
+<tr class="odd">
+<td>buds</td>
+<td>plants have buds formed in varying stages of development for
+flowering</td>
+</tr>
+<tr class="even">
+<td>flowers</td>
+<td>plants are in flower</td>
+</tr>
+<tr class="odd">
+<td>immature fruit</td>
+<td>immature fruits not shedding seed</td>
+</tr>
+<tr class="even">
+<td>mature</td>
+<td>fruit fruits ripe and/or shedding seed</td>
+</tr>
+<tr class="odd">
+<td>recently shed</td>
+<td>plants are in a non-reproductive phase which show signs of having
+shed seeds or fruits within the last 12 months</td>
+</tr>
+<tr class="even">
+<td>dead/dormant</td>
+<td>indicates above-ground material only is dead and includes plant
+species that may still have dormant below-ground organs (eg orchids,
+lilies etc.)</td>
+</tr>
+<tr class="odd">
+<td>vegetative</td>
+<td>only refers to plants in a non-reproductive phase ie. no flowers,
+buds or unshed seed</td>
+</tr>
+<tr class="even">
+<td>regenerating</td>
+<td>woody perennial which is resprouting after significant loss of
+foliage</td>
+</tr>
+</tbody>
+</table>
+<p>Note: A species can have more than one life stage code entered. For
+reproductive stages (fruiting or budding) only note if more than 10% of
+the reproductive organs are at that stage.</p>
+<h3 class="Appendix-heading-3" id="sex-fauna">Sex (fauna) </h3>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sex</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Male</td>
+</tr>
+<tr class="even">
+<td>Female</td>
+</tr>
+<tr class="odd">
+<td>Unknown</td>
+</tr>
+<tr class="even">
+<td>Mixed sexes</td>
+</tr>
+<tr class="odd">
+<td>Not recorded</td>
+</tr>
+<tr class="even">
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-3" id="section-5"></h3>
+<h3 class="Appendix-heading-3" id="age-class-and-breeding-status-fauna">Age class and breeding status
+(fauna) </h3>
+<table>
+<colgroup>
+<col style="width: 14%"/>
+<col style="width: 22%"/>
+<col style="width: 22%"/>
+<col style="width: 8%"/>
+<col style="width: 8%"/>
+<col style="width: 8%"/>
+<col style="width: 8%"/>
+<col style="width: 8%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th rowspan="2"><strong>Age class (Tier 1)</strong></th>
+<th rowspan="2"><strong>Breeding status (Tier 2)</strong></th>
+<th rowspan="2"><strong>Breeding status description</strong></th>
+<th colspan="5"><strong>Taxa type</strong></th>
+</tr>
+<tr class="odd">
+<th><strong>Amphibian</strong></th>
+<th><strong>Bird</strong></th>
+<th><strong>Invertebrate</strong></th>
+<th><strong>Mammal</strong></th>
+<th><strong>Reptile</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adult</td>
+<td>Unknown</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Adult</td>
+<td>Breeding</td>
+<td></td>
+<td>X</td>
+<td>X </td>
+<td>X </td>
+<td>X </td>
+<td>X </td>
+</tr>
+<tr class="odd">
+<td>Adult</td>
+<td>Teats - Lactating</td>
+<td>Teats and surrounding mammary tissue swollen. Milk can be squeezed
+from teat</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Adult</td>
+<td>Teats – Distended</td>
+<td>Teats easy to see, enlarged</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Adult</td>
+<td>Teats - Button</td>
+<td>Teats barely visible</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Adult</td>
+<td>Testes – scrotal (placentals only)</td>
+<td>Scrotal sack obvious, may appear empty or full</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Adult</td>
+<td>Testes – abdominal (placentals only)</td>
+<td>Scrotum not obvious</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Adult</td>
+<td>Nesting</td>
+<td></td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Adult</td>
+<td>Not breeding</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Adult</td>
+<td>Pregnant</td>
+<td></td>
+<td></td>
+<td></td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Adult</td>
+<td>Pouch not developed (marsupials only)</td>
+<td>No pouch visible, usually just a ring of button teats</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Adult</td>
+<td>Pouch developed, no young present (marsupials only)</td>
+<td>Swollen, flaps present, teats enlarged</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Adult</td>
+<td>Dependent young</td>
+<td></td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Adult</td>
+<td>Dependent young in pouch (marsupials only)</td>
+<td>Enter the number of young in observation notes field</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Adult</td>
+<td>Dependent young (in nest)</td>
+<td></td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Adult</td>
+<td>Gravid (carrying eggs or young)</td>
+<td></td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Immature (sub-adult)</td>
+<td> </td>
+<td></td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Juvenile</td>
+<td> </td>
+<td></td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Tadpole</td>
+<td> </td>
+<td></td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Egg/ egg mass</td>
+<td> </td>
+<td></td>
+<td>X</td>
+<td> X</td>
+<td>X</td>
+<td> </td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Metamorph</td>
+<td> </td>
+<td></td>
+<td>X </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Nymph</td>
+<td> </td>
+<td></td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Larva</td>
+<td> </td>
+<td></td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Pupa</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Unknown</td>
+<td> </td>
+<td></td>
+<td>X </td>
+<td>X </td>
+<td>X </td>
+<td>X </td>
+<td>X </td>
+</tr>
+</tbody>
+</table>
+<p><em>Breeding status definitions for mammals sourced from: Owens
+(2000).</em></p>
+<h3 class="Appendix-heading-3" id="section-6"></h3>
+<h3 class="Appendix-heading-3" id="fauna-measurements">Fauna
+measurements</h3>
+<table>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 16%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th rowspan="2">Measurement</th>
+<th rowspan="2">Description</th>
+<th colspan="5">Taxa type</th>
+</tr>
+<tr class="odd">
+<th>Amphibian</th>
+<th>Bird</th>
+<th>Invertebrate</th>
+<th>Mammal</th>
+<th>Reptile</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Weight</td>
+<td>gm</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Total length</td>
+<td>mm</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Head-Body length</td>
+<td>mm</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Number in Pouch</td>
+<td>Enter number of young observed in pouch</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Testes size</td>
+<td>Drop-down list</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Head length</td>
+<td>mm</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Head/snout width</td>
+<td>mm</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Tail length</td>
+<td>mm</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Tail width</td>
+<td>mm</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Vent-tail length</td>
+<td>mm</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Snout-tail length</td>
+<td>mm</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Carapace length</td>
+<td>mm</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Ear length</td>
+<td>mm</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Hind foot length</td>
+<td>mm</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Forearm length</td>
+<td>mm</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X (bats)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Snout length</td>
+<td>mm</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Snout-vent length</td>
+<td>mm</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Standing height</td>
+<td>cm</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Other (specify)</td>
+<td>mm</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-3" id="clinical-scoring---rump-for-koalas">Clinical scoring - rump (for
+koalas)</h3>
+<p>Source: adapted from Flanagan (2015).</p>
+<table>
+<colgroup>
+<col style="width: 11%"/>
+<col style="width: 88%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Score</strong></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Slight discolouration of fure around cloaca; evidence of mild urine
+leakage and slight odour</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Slight discolouration of fur around cloaca/tail area; occasional
+urine dribble; mild odour</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Discolouration of the tail area fur more evident; stronger odour;
+urine discharge, greasy texture evident on cloaca/tail</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Fur stain, greasy, darkened; Strong, pungent ‘wet bottom smell’;
+inflammation of cloacal margins, clitoris, vestibule; discharge
+containing urinary debris</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Stained, greasy fur covering a large area; very strong pungent
+acidic smell; blood in urine; coat brown, dry and lustreless; cloaca and
+tail area swollen; grinding teeth</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Stained, greasy, wet matted fur around rump/cloaca area; ulcerated
+oedematous cloaca/tail area; constant purulent discharge; crying,
+straining, distressed, flat, ear flicking, teeth grinding</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Progressive decline; myiasis</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-3" id="section-7"></h3>
+<p><span class="anchor" id="appendix-3"></span><h4>Appendix 3. Collection
+fields – voucher specimens.</h4></p>
+<h3 class="Appendix-heading-3" id="voucher-type">Voucher type </h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 11%"/>
+<col style="width: 12%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th rowspan="2"><p><strong>Voucher type</strong></p>
+<p><strong>(Tier 1)</strong></p></th>
+<th rowspan="2"><p><strong>Voucher type</strong></p>
+<p><strong>(Tier 2)</strong></p></th>
+<th colspan="7">Taxa type</th>
+</tr>
+<tr class="odd">
+<th>Amphibian</th>
+<th>Bird</th>
+<th>Mammal</th>
+<th>Reptile</th>
+<th>Invertebrate</th>
+<th>Vascular flora</th>
+<th>Non-vascular flora</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Animal tissue</td>
+<td>ear clip or punch</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Animal tissue</td>
+<td>feather</td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Animal tissue</td>
+<td>fur/hair</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Animal tissue</td>
+<td>heart</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Animal tissue</td>
+<td>kidney</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Animal tissue</td>
+<td>liver</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Animal tissue</td>
+<td>spleen</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Animal tissue</td>
+<td>muscle</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Animal tissue</td>
+<td>fat</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Animal tissue</td>
+<td>scale</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Animal tissue</td>
+<td>skin</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Animal tissue</td>
+<td>skull</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Animal tissue</td>
+<td>bone</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Animal tissue</td>
+<td>stomach contents</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Animal tissue</td>
+<td>tail</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Animal tissue</td>
+<td>toe</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Animal tissue</td>
+<td>wing</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Blood</td>
+<td>blood smear</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Blood</td>
+<td>whole blood</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Carcass</td>
+<td>complete</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Carcass</td>
+<td>partial</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Plant</td>
+<td>complete</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Plant</td>
+<td>partial</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>Plant tissue</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>Regurgitant</td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>Scat</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>Other (specify)</td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-3" id="condition-of-fauna-specimen-carcass">Condition of fauna specimen
+(carcass)</h3>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fauna voucher specimen condition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fresh (estimate &lt;24 hours)</td>
+</tr>
+<tr class="even">
+<td>Fresh (estimate 24 hours – &lt;48 hours)</td>
+</tr>
+<tr class="odd">
+<td>Partially degenerated (estimate 2-7 days)</td>
+</tr>
+<tr class="even">
+<td>Partially degenerated (estimate 1-2 weeks)</td>
+</tr>
+<tr class="odd">
+<td>Degenerated (estimate 2-4 weeks)</td>
+</tr>
+<tr class="even">
+<td>Long dead (&gt; 4 weeks)</td>
+</tr>
+<tr class="odd">
+<td>Unknown</td>
+</tr>
+<tr class="even">
+<td>Other (specify)</td>
+</tr>
+</tbody>
+</table>
+<h3 class="Appendix-heading-3" id="preservation-type">Preservation
+type</h3>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Preservation type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dried and stored</td>
+</tr>
+<tr class="even">
+<td>Dry ice (solid C0<sub>2</sub>)</td>
+</tr>
+<tr class="odd">
+<td>Ethanol - denatured</td>
+</tr>
+<tr class="even">
+<td>Ethanol - undenatured</td>
+</tr>
+<tr class="odd">
+<td>Ethanol/formalin mixed solution</td>
+</tr>
+<tr class="even">
+<td>Fixed (smear)</td>
+</tr>
+<tr class="odd">
+<td>Formalin</td>
+</tr>
+<tr class="even">
+<td>Frozen (domestic freezer -20°C)</td>
+</tr>
+<tr class="odd">
+<td>Liquid nitrogen (N<sub>2</sub>)</td>
+</tr>
+<tr class="even">
+<td>Methylated spirits</td>
+</tr>
+<tr class="odd">
+<td>Propylene glycol</td>
+</tr>
+<tr class="even">
+<td>Refrigerated</td>
+</tr>
+<tr class="odd">
+<td>Saline solution</td>
+</tr>
+<tr class="even">
+<td>Silica</td>
+</tr>
+<tr class="odd">
+<td>Unspecified</td>
+</tr>
+<tr class="even">
+<td>Other (specify)</td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="appendix-4"></span><h4>Appendix 4. Plant
+photo voucher instructions and guidelines.</h4></p>
+<table>
+<colgroup>
+<col style="width: 18%"/>
+<col style="width: 81%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Plant feature</th>
+<th>Plant photo voucher instructions and guidelines</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Whole plant (i.e. growth form)</td>
+<td>Photograph the plant habit; that is, its overall shape and form.
+Where possible please use a scale (e.g. graduated range pole) to show
+the height of the plant.</td>
+</tr>
+<tr class="even">
+<td>Leaves</td>
+<td>Photograph the leaves showing shape and any patterns, features (e.g.
+hairs, spikes) and colour variations (e.g. different coloured top and
+bottom). If relevant photograph the whole compound leaf and leaflets.
+Where possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Flower/inflorescence</td>
+<td>If present photograph individual flowers from the front, side and
+back. If relevant photograph the whole inflorescence (complete flower
+head). Where possible please use a scale (e.g. scale card, coin,
+pen).</td>
+</tr>
+<tr class="even">
+<td>Buds</td>
+<td>If present photograph the buds showing size, shape and number. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Fruit</td>
+<td>If present photograph the fruit showing size, shape and number.
+Where possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Seeds</td>
+<td>If present photograph the seeds show size, shape and number. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Stem</td>
+<td>If useful for identification photograph the stem (e.g. spines,
+cross-section shape). Where possible please use a scale (e.g. scale
+card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Bark</td>
+<td>If useful for identification photograph the bark. Where possible
+please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="odd">
+<td>Roots/rhizomes</td>
+<td>If useful for identification photograph the roots or rhizomes. Where
+possible please use a scale (e.g. scale card, coin, pen).</td>
+</tr>
+<tr class="even">
+<td>Other</td>
+<td>If useful for identification photograph any other plant features
+(e.g. branch structure, ligule). Where possible please use a scale (e.g.
+scale card, coin, pen).</td>
+</tr>
+</tbody>
+</table>
+"""^^rdf:HTML ;
+    tern:equipment """<h3 id="equipment">Equipment</h3>
+<h4 class="unnumbered" id="general">General</h4>
+<ul>
+<li><p>Mobile device (tablet/phone) capable of recording location
+(GPS/GNSS or similar), taking high resolution photos and loaded with the
+Monitor app, electronic field guides, interactive identification keys
+and call playback apps</p></li>
+<li><p>Copy of applicable permits and licences</p></li>
+<li><p>Flora and fauna checklists, reference keys, field guides and apps
+for the region</p></li>
+<li><p>TERN Vascular Plant Collection Guidelines</p></li>
+<li><p>Hand lens</p></li>
+<li><p>Binoculars</p></li>
+<li><p>Camera, ideally with a long-focal length lens (for distant
+sightings) and macro lens (for close-ups of small organisms)</p></li>
+<li><p>Photo scale card</p></li>
+<li><p>Hand-held GPS</p></li>
+<li><p>Spotlight and head torch (for night work)</p></li>
+</ul>
+<h4 class="unnumbered" id="vouchering-general">Vouchering (general)</h4>
+<ul>
+<li><p>Material Safety Datasheets (MSDS) for chemical/dangerous
+substances</p></li>
+<li><p>Voucher barcode labels (see the Generating Voucher Barcode Labels
+for EMSA Specimens and Samples instruction sheet)</p></li>
+<li><p>Permanent markers</p></li>
+<li><p>Masking tape</p></li>
+</ul>
+<h4 class="unnumbered" id="vouchering-vascular-flora">Vouchering
+(vascular flora)</h4>
+<ul>
+<li><p>Secateurs</p></li>
+<li><p>Newspaper (tabloid size) and cardboard (43.5 x 28.5 cm)</p></li>
+<li><p>Large plastic bags (for collection)</p></li>
+<li><p>Plant press and straps (for storage)</p></li>
+<li><p>Specific flora vouchering equipment (see Floristics
+Module)</p></li>
+</ul>
+<h4 class="unnumbered" id="vouchering-vertebrate-fauna-deceased-fauna-hair-scats">Vouchering
+(vertebrate fauna) – deceased fauna, hair, scats</h4>
+<ul>
+<li><p>Masks, disposable gloves, medium snap-lock bags, paper bags (for
+collection of scats and animal remains)</p></li>
+<li><p>Heavy-duty large plastic bags (for collection and transport of
+animal remains)</p></li>
+<li><p>Silica, ideally self-indicating granules (for storage of moist
+scat samples)</p></li>
+<li><p>Callipers, ruler or tape measure (for fauna measurement)</p></li>
+<li><p>Fauna processing kit: Eppendorf tubes/vials, preservative
+solutions (e.g. formalin and ethanol), paper, pencil, pencil sharpener,
+scissors, glue, ruler, eraser, tags/labels/thread, dissecting kit,
+utility knife, paper towel, long forceps, plastic tongs, suitable
+storage containers (for preparing and storing fauna voucher specimens)
+(see Vertebrate fauna Module)</p></li>
+<li><p>Large plastic bags, secure storage containers, insulated box
+(polystyrene or similar) (for transporting fauna specimens)</p></li>
+</ul>
+<h4 class="unnumbered" id="vouchering-non-vascular-flora">Vouchering
+(non-vascular flora)</h4>
+<ul>
+<li><p>Chisel and hammer (for collection)</p></li>
+<li><p>Screw cap plastic bottles, paper bags, newspaper, cardboard
+boxes, ethanol/formalin preservative solution (for storing
+specimens)</p></li>
+</ul>
+<h4 class="unnumbered" id="vouchering-invertebrate-fauna">Vouchering
+(invertebrate fauna)</h4>
+<ul>
+<li><p>Sweep net, flat head tweezers, artists paintbrush, aspirator,
+knife, scraper (for collection)</p></li>
+<li><p>Specimen containers, vials, preservative solution, labels,
+pencil, scissors (for storing specimens).</p></li>
+</ul>"""^^rdf:HTML ;
+    tern:instructions """
+    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+<ol type="1">
+<li><p>Open the Monitor app and select the Opportune Module from the
+projects page or via the quick-access opportune button located in the
+app menu.</p></li>
+<li><p>Since the opportune collection is not plot-based, and therefore
+not associated with a plot visit, record the <em>start date time</em>
+(yyyy-mm-dd hh:mm:ss) of the opportune survey. This is only required
+prior to recording the first opportune record.</p>
+<p>Save the opportune survey (start) component. The first opportune
+record will open. A unique sequential <em>observation ID</em> is
+automatically assigned to the record.</p></li>
+<li><p>Media including <em>photos, video</em> or <em>audio</em> can be
+recorded for the observation. Enter a <em>comment</em> to accompany each
+file (e.g. <em>close up of thorns</em>).</p></li>
+<li><p>The <em>date</em>, <em>time</em> and <em>location</em> of the
+observation are automatically recorded but can be changed as necessary
+(i.e. if entering a record after the event). To change the location,
+select <em>choose on map</em> or enter specific coordinates.</p></li>
+<li><p>Select the <em>taxa type</em> from the drop-down list. This
+filters the species and other drop-down lists.</p></li>
+<li><p>Record the <em>species</em> from the drop-down list. Begin typing
+the scientific or common name to query the species list. If the
+identification is unknown and pending the review of evidence collected,
+then manually enter a descriptive field name instead (e.g. Acacia
+spiky). The field name given during this step should be used as the
+field name every time that species is encountered within a survey
+event.</p></li>
+<li><p>Switch the <em>confident</em> toggle to <em>off</em> if the
+identification is uncertain. The default is <em>on</em> (see Additional
+guidelines).</p></li>
+<li><p>Record the <em>number of individuals</em> observed (zero, blank
+and no selection are invalid) and select if the number of individuals is
+<em>exact</em> or an <em>estimate</em>.</p></li>
+<li><p>Select the <em>observation method</em> (tier 1 to tier 3) from
+the drop-down list (refer to Appendix 1 for the full list of
+options).</p></li>
+<li><p>Select the <em>observers</em> (drop-down list, multiple
+selections allowed, or manually enter first name, middle initial and
+last name).</p></li>
+<li><p>Record the <em>habitat (major vegetation group)</em> (optional)
+from the drop-down list.</p></li>
+<li><p>Record any <em>comments</em> (optional) (e.g. additional habitat
+information, condition, fauna behaviour, presumed cause of death,
+appearance, signs of disease, tag details (ID number/colour/Bluetooth
+ID).</p></li>
+<li><p>For flora, select the <em>growth form</em> and <em>life
+stage</em> (multiple selections allowed) from the drop-down
+lists.</p></li>
+<li><p>For fauna, check the checkbox to record <em>additional fauna
+details</em> (optional; refer to Appendix 2). Relevant fields will be
+visible based on the selection of taxa type in Step 5. For direct
+observations of fauna, select the <em>sex</em>, <em>age class</em> and
+<em>breeding status</em> from the drop-down lists and record <em>fauna
+measurements</em> (where relevant).</p></li>
+<li><p>If a <em>voucher specimen</em> is collected, check the checkbox.
+Assign a unique <em>voucher barcode</em> to the specimen and <em>scan
+the barcode</em> (see section 3.2.2 Voucher specimen collection). Select
+<em>voucher type</em> (tier 1 and tier 2) from the drop-down list (refer
+to <a href="#appendix-3">Appendix 3</a>. for the full list of options). For vertebrate fauna
+remains (i.e. carcasses), select the <em>condition of the specimen</em>
+from the drop-down list. Select the <em>preservative type</em>
+(drop-down list) and specify the <em>concentration</em> if relevant
+(e.g. 95% undenatured ethanol). Record a <em>voucher comment</em>
+(optional) (e.g. physical description of the specimen, linked voucher
+IDs, prey/parasites collected with samples).</p></li>
+<li><p>Add additional voucher specimens for the same observation (e.g. a
+plant voucher and a plant tissue voucher) if required. Each specimen is
+allocated a unique barcode.</p></li>
+<li><p>Save the opportune record. Add another opportune record for the
+current location if required. A new opportune record will open. The next
+unique sequential <em>observation ID</em> is automatically assigned to
+the record. Repeat steps 4–18.</p></li>
+<li><p>After all opportune records for the current location are saved,
+select the back button at the top of page to return to the project
+page.</p></li>
+<li><p>Record additional records by selecting the Opportune Module and
+then the edit button.</p></li>
+<li><p>At the end of the survey, complete the opportune component and
+then record the <em>end date time</em> (yyyy-mm-dd hh:mm:ss) of the
+opportune survey. Check the summary of the data and queue the collection
+for submission.</p></li>
+</ol>"""^^rdf:HTML ;
+    tern:purpose """
+   <h2 id="rationale">Rationale</h2>
+<p>This module was developed in consideration of national (Bulbert
+<em>et al.</em> 2007; Jackson 2020) and state/territory survey
+guidelines and protocols (Heard and Channon 1997; Owens 2000; Eldridge
+<em>et al.</em> 2003; DPaW 2013; Cleary <em>et al.</em> 2015; EPA 2016;
+Eyre <em>et al.</em> 2018; EPA 2020; WA Department of Biodiversity
+Conservation and Attractions 2020; Centre for Invasive Species Solutions
+2023), and existing platforms for recording opportune data. The work of
+the National Fauna Protocols Work Group (O’Neill <em>et al.</em> 2017)
+was also considered.</p>
+<p>Opportune observations are important to maximise the overall species
+inventory of the project area. This is particularly relevant to baseline
+surveys for monitoring programs, and environmental impact assessments,
+as it increases the opportunity to detect threatened and invasive
+species and can help to determine the need for targeted surveys.</p>
+<p>The detection of species during standardised field protocols can be
+impacted by several factors, including survey method, survey timing and
+location, climatic conditions, landform and habitat structure (Owens
+2000). Opportune observations can help to overcome some of these
+limitations and in many instances, they may represent the only record of
+a species for a given area (Eyre <em>et al.</em> 2018).</p>
+<p>Opportune records are supplementary to standardised datasets, which
+form the essential basis of statistical analysis to determine species’
+status, population trends and impacts (Guillera‐Arroita 2017). Opportune
+data has inherent biases and limited application for monitoring and
+analysis if used alone. However, when integrated with standardised
+datasets and suitable modelling techniques, opportune data can help to
+improve knowledge and prediction of key population parameters, such as
+species distribution, abundance and habitat suitability (e.g. van Strien
+<em>et al.</em> 2013; Pagel <em>et al.</em> 2014; Maes <em>et al.</em>
+2015; Giraud <em>et al.</em> 2016; Tenan <em>et al.</em> 2016; Coron
+<em>et al.</em> 2018; Soroye <em>et al.</em> 2018; Henckel <em>et
+al.</em> 2020). Opportune observations can also help infer responses to
+environmental events such as habitat destruction and climate change and
+could provide the impetus for future monitoring (Meineke <em>et al.</em>
+2018).</p>
+<p>Non-vascular flora and invertebrate fauna are generally
+under-represented in biological surveys, partly due to a lack of
+expertise in their identification (Ward and Larivière 2004). Many
+species are yet to be discovered or formally described (Australian
+Academy of Science 2022). Our understanding of their roles in ecosystem
+function and response to environmental change is limited, however, their
+application in global change research is widely recognised (Johnson and
+Jones 2017; Cotton 2018; Meineke <em>et al.</em> 2018). The
+vulnerability of non-vascular flora to disturbance impacts (Eldridge
+<em>et al.</em> 2003) and the short life cycles and rapid response of
+invertebrates to recovery measures (da Rocha <em>et al.</em> 2010;
+Houghton <em>et al.</em> 2019) make them useful indicators of ecosystem
+change.</p>
+<p>Voucher specimens verify species identification and serve as a
+definitive record of what was present and where through time.
+Opportunistic voucher specimens can add significant value to
+institutional collections and support research, impact assessment,
+education and forensics (US National Herbarium 2002; O’Meally <em>et
+al.</em> 2011; DPaW 2013; Meineke <em>et al.</em> 2018)</p>"""^^rdf:HTML ;
+    tern:scope """
+    <h1 id="introduction-and-background">Introduction and Background</h1>
+<p>An opportune (or incidental) observation is a presence-only record,
+collected without standardised field protocols and without an explicit
+sampling design (van Strien <em>et al.</em> 2013). This module covers
+the opportune observation of vascular flora (flowering plants,
+gymnosperms, ferns and fern allies), non-vascular flora (algae,
+bryophytes, fungi and lichens), vertebrate fauna (amphibians, birds,
+mammals and reptiles) and invertebrate fauna (e.g. insects, spiders,
+snails and worms). Opportune observations of fauna include sightings,
+calls, and indirect evidence of species presence, such as tracks and
+scats.</p>
+<p>Opportune observations supplement the data collected from other EMSA
+modules to provide a more complete picture of the flora and fauna
+occurring within a project area. This is particularly important for
+species of conservation significance, invasive species, species recorded
+outside of their known distribution, species with poorly understood
+habitat requirements, and small, cryptic, elusive, and sparsely
+distributed species that are difficult to detect.</p>
+<p>Opportune flora observations are recommended where a species is
+unknown, new, threatened, invasive or important (e.g. range extension,
+data deficient, contentious taxonomy, uncharacteristic growth form), and
+where a species is not represented within the core monitoring plots (see
+<a href="#additional-guidelines">Additional Guidelines</a>). Opportune records of flora can also be recorded
+within core monitoring plots outside of a designated monitoring event
+(see <a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a>). Opportune flora observations may be accompanied
+by voucher specimens and photos.</p>
+<p>Opportune fauna observations are recommended for all fauna species
+(see <a href="#additional-guidelines">Additional Guidelines</a>) and can include observations from core
+monitoring plots and fauna plots, within or outside a designated
+monitoring event. Opportune observations of fauna may be accompanied by
+photos, video, audio and ultrasonic recordings. The Opportune Module is
+not intended to cover the capture or euthanasia of vertebrate fauna;
+thus, fauna voucher specimens are restricted to those collected from
+deceased animals or observed signs such as scats and hair.</p>
+    """^^rdf:HTML ;
+    tern:undertakenComplementarily
+        <https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51> ,
+        <https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e> ,
+        <https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95> ,
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
+        <https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9> ,
+        <https://linked.data.gov.au/def/nrm/8e7c86ce-e283-4cea-aca7-44ed7a22629c> ,
+        <https://linked.data.gov.au/def/nrm/cd04526e-7455-45c1-8a44-55575a4a7b2d> ,
+        <https://linked.data.gov.au/def/nrm/dd2da1e0-edbe-4f20-a1ae-b860876c1837> ,
+        <https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5> ;
+    tern:undertakenConcurrently
+        <https://linked.data.gov.au/def/nrm/0771a99f-27f4-4ff7-bf6d-aa70fe22ae51> ,
+        <https://linked.data.gov.au/def/nrm/0ad98270-707f-4a78-acd1-666faa2c124e> ,
+        <https://linked.data.gov.au/def/nrm/1f2ac884-2177-403a-a6c3-27e109b1fc95> ,
+        <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
+        <https://linked.data.gov.au/def/nrm/420ce0a7-9364-4bf4-861c-ef5f710e31b9> ,
+        <https://linked.data.gov.au/def/nrm/8e7c86ce-e283-4cea-aca7-44ed7a22629c> ,
+        <https://linked.data.gov.au/def/nrm/cd04526e-7455-45c1-8a44-55575a4a7b2d> ;
+.
+
