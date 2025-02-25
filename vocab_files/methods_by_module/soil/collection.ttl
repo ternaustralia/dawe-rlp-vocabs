@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         tern:MethodCollection ;
     dcterms:description """<h3>Contents</h3>
   <ol>
-    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#introduction-and-background">Introduction</a></li>
     <li>
       <a href="#key-definitions-and-terminology"
         >Key definitions and terminology</a
@@ -22,33 +22,34 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <li><a href="#rationale">Rationale</a></li>
     <li><a href="#module-overview">Module Overview</a></li>
     <li><a href="#references">References</a></li>
-    <li><a href="#appendices">Appendices</a></li>
+    <li><a href="#appendix">Appendices</a></li>
   </ol>
-    <h1 id="module-overview">Module overview</h1>
+<h1 id="module-overview">Module overview</h1>
 <h2 id="available-protocols">Available protocols</h2>
 <p>The Soils Module covers the procedures and guidelines to conduct four
-survey protocols. The protocols are:</p>
+survey protocols. The protocols include the following (summarised in
+<a href="#table-1">Table 1</a>):</p>
 <ul>
-<li><p>Soil Sub-Pit and Soil Metagenomics</p>
-<ul>
-    <li><a href="https://linked.data.gov.au/def/nrm/9a1ab016-60d6-4876-a751-b25ccb734c2d">Enhanced Protocol</a></li>
-    <li><a href="https://linked.data.gov.au/def/nrm/5d12a157-61a0-42e6-b23d-895018974c67">Standard Protocol</a></li>
-</ul>
-</li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/1c83a60d-12e5-4bb3-b876-7eb97da79fa9">Soil Sample Pit</a></p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/8f00b7c6-34b4-4203-8dcc-4be47f21d7db">Soil Site Observation and Pit Characterisation</a></p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/d9e6739a-c2dd-4619-be43-1251449a6436">Soil Bulk Density</a></p></li>
-</ul>
-<p>The Soil Sub-Pit and Soil Metagenomics protocol includes the
+    <li><p>Soil Sub-Pit and Soil Metagenomics</p>
+    <ul>
+        <li><a href="https://linked.data.gov.au/def/nrm/9a1ab016-60d6-4876-a751-b25ccb734c2d">Enhanced Protocol</a></li>
+        <li><a href="https://linked.data.gov.au/def/nrm/5d12a157-61a0-42e6-b23d-895018974c67">Standard Protocol</a></li>
+    </ul>
+    </li>
+    <li><p><a href="https://linked.data.gov.au/def/nrm/1c83a60d-12e5-4bb3-b876-7eb97da79fa9">Soil Sample Pit</a></p></li>
+    <li><p><a href="https://linked.data.gov.au/def/nrm/8f00b7c6-34b4-4203-8dcc-4be47f21d7db">Soil Site Observation and Pit Characterisation</a></p></li>
+    <li><p><a href="https://linked.data.gov.au/def/nrm/d9e6739a-c2dd-4619-be43-1251449a6436">Soil Bulk Density</a></p></li>
+    </ul></ul>
+<p>The Soil sub-pit and soil metagenomics protocol includes the
 procedures and guidelines for collecting soil surface and upper soil
-samples in a plot; including surface sampling to 3 cm, capturing a
-photographic record of microhabitat sampled and soil profile, exposing
-the soil profile to a depth of 30 cm, collecting 10 cm increment soil
-samples down the soil profile, scanning sample barcodes and post-field
-survey processing of soil samples. The protocol has been split into two
-survey efforts:</p>
+samples in a core monitoring plot; including surface sampling to 3 cm,
+capturing a photographic record of microhabitat sampled and soil
+profile, exposing the soil profile to a depth of 30 cm, collecting 10 cm
+increment soil samples down the soil profile, and post-field survey
+processing of soil samples (including assigning sample barcodes). The
+protocol has been split into two survey efforts:</p>
 <ul>
-<li><p><a href="https://linked.data.gov.au/def/nrm/9a1ab016-60d6-4876-a751-b25ccb734c2d">Enhanced Protocol</a> – collection of metagenomic soil surface
+<li><a href="https://linked.data.gov.au/def/nrm/9a1ab016-60d6-4876-a751-b25ccb734c2d">Enhanced Protocol</a> – collection of metagenomic soil surface
 samples and soil sub-pit samples at nine locations with differing
 microhabitats (e.g. bare ground, dense litter, sparse vegetation cover,
 dense vegetation cover) within the plot. Five soil sub-pits are located
@@ -61,30 +62,31 @@ corner of the plot (<a href="#figure-1">Figure 1</a>).</p></li>
 </ul>
 <p>The <a href="https://linked.data.gov.au/def/nrm/1c83a60d-12e5-4bb3-b876-7eb97da79fa9">Soil Sample Pit</a> protocol includes the procedures and guidelines
 for collecting soil samples from a 1 m+ soil pit in a plot, including
-exposing the soil profile to 1 m+, sampling the soil profile in 10 cm
-increments, scanning sample barcodes and post-field survey processing of
-soil samples.</p>
+exposing the soil profile to 1 m+, sampling the soil profile in 10 cm
+increments, and post-field survey processing of soil samples (including
+assigning sample barcodes).</p>
 <p>The <a href="https://linked.data.gov.au/def/nrm/8f00b7c6-34b4-4203-8dcc-4be47f21d7db">Soil Site Observation and Pit Characterisation</a> protocol includes
 the procedures and guidelines for describing aspects of the land surface
 around the soil pit, including slope, landform element, erosion,
 microrelief, drainage, disturbance, and soil surface condition (when
 dry), characterising the soil profile by exposing the profile to a depth
-of 1 m+ or to depth of limiting layer, capturing a photographic record
+of 1 m+ or to depth of limiting layer, capturing a photographic record
 of the soil pit, identifying the soil horizons, recording the physical
-properties of the soil within each horizon, assigning an <a href="https://www.soilscienceaustralia.org.au/asc/">Australian Soil
-Classification</a>, collecting soil samples from 10 cm increments, and
-post-field survey processing of soil samples.</p>
-<p>The <a href="https://linked.data.gov.au/def/nrm/d9e6739a-c2dd-4619-be43-1251449a6436">Soil Bulk Density</a> protocol includes the procedures and guidelines
-for collecting soil core samples at 10 cm increments down to 30 cm from
+properties of the soil within each horizon, assigning an Australian Soil
+Classification, collecting soil samples from 10 cm increments, and
+post-field survey processing of soil samples (including assigning sample
+barcodes).</p>
+<p>The <a href="https://linked.data.gov.au/def/nrm/d9e6739a-c2dd-4619-be43-1251449a6436">Soil Bulk Density</a> includes the procedures and guidelines
+for collecting soil core samples at 10 cm increments down to 30 cm from
 the edge of the soil pit (<a href="#figure-1">Figure 1</a>), plus additional locations if
 required, sealing the core samples, and post-field survey processing of
-soil core samples.</p>
+soil core samples (including assigning sample barcodes).</p>
 <p>Protocols from the Soils Module can be conducted using either a
 single protocol or a combination of protocols based on the specific
-requirements and objectives of a project. <a href="https://linked.data.gov.au/def/nrm/d9e6739a-c2dd-4619-be43-1251449a6436">Soil Bulk Density</a> protocol
+requirements and objectives of a project. The <a href="https://linked.data.gov.au/def/nrm/d9e6739a-c2dd-4619-be43-1251449a6436">Soil Bulk Density</a> protocol
 works well with either <a href="https://linked.data.gov.au/def/nrm/1c83a60d-12e5-4bb3-b876-7eb97da79fa9">Soil Sample Pit</a> protocol or <a href="https://linked.data.gov.au/def/nrm/8f00b7c6-34b4-4203-8dcc-4be47f21d7db">Soil Site Observation and Pit Characterisation</a> protocol, utilising the already excavated soil
 pit to obtain bulk density samples.</p>
-<p>The Soil Sub-Pit and Soil Metagenomics protocol procedure allows for
+<p>The <a href="https://linked.data.gov.au/def/nrm/9a1ab016-60d6-4876-a751-b25ccb734c2d">Soil Sub-pit and metagenomics (Enhanced)</a> protocol procedure allows for
 the surveyor to incorporate metagenomics sampling into the soil sub-pit
 sampling workflow. Within the Monitor app, there is the option to
 collect soil sub-pits without metagenomics, however it is encouraged
@@ -92,30 +94,30 @@ that practitioners collect metagenomics and soil sub-pit together.</p>
 <h2 id="relationships-to-other-modules">Relationships to other
 modules</h2>
 <h3 id="mandatory-related-modules">Mandatory related modules</h3>
-<h4 class="unnumbered" id="mandatory-modules-to-be-completed-prior-to-the-soils-module">Mandatory
-modules to be completed prior to the Soils Module:</h4>
+<h4 id="complete-before-the-soils-module">Complete before the Soils
+Module</h4>
 <ul>
 <li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – the plot must be established
 first to ensure soil sampling is conducted within the plot or adjacent
 to the southwest corner of the plot.</p></li>
 </ul>
-<h4 class="unnumbered" id="mandatory-module-to-be-completed-prior-to-or-in-unison-with-the-soils-module">Mandatory
-module to be completed prior to or in unison with the Soils Module:</h4>
+<h4 id="complete-before-concurrently-or-after-the-soils-module">Complete
+before, concurrently or after the Soils Module</h4>
 <ul>
-<li><p><a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> – Both modules include a description of
+<li><p><a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> – both modules include a description of
 land surface features such as slope, landform element, and disturbance.
-While the focus of the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> is on the 1 ha core plot,
-the Soils Module records land surface features in the immediate vicinity
-(20 m radius) of the soil pit to assist with the understanding of soil
-development and morphology.</p></li>
+While the focus of the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> is on the 1 ha core
+monitoring plot, the Soils Module records land surface features in the
+immediate vicinity (20 m radius) of the soil pit to assist with the
+understanding of soil development and morphology.</p></li>
 </ul>
 <h3 id="optional-complementary-related-modules">Optional complementary
 related modules</h3>
 <p>Optional complementary modules to gather additional information
 relating to the Soil Module:</p>
 <ul>
-<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> - allows for vegetation data to be associated
-with soil characteristics. (Sparrow <em>et al.</em> 2020).</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – allows for vegetation data to be associated
+with soil characteristics (Sparrow <em>et al.</em> 2020).</p></li>
 <li><p><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a>– substrate type and vegetation cover data provide
 insights into the microhabitats within the plot, aiding in the
 identification of suitable soil sub-pit and metagenomics sampling
@@ -130,9 +132,9 @@ understood by considering supplementary information such as soil surface
 condition, erosion status and severity, and soil
 characterisation.</p></li>
 </ul>
-<p><span class="anchor" id="_Toc140667302"></span>Table 1. Overview of
-the Soils Module protocols</p>
 <table>
+<p><span class="anchor" id="table-1"></span><h3>Table 1.
+Overview of the Soils Module protocols.</p></h3>
 <colgroup>
 <col style="width: 13%"/>
 <col style="width: 17%"/>
@@ -142,28 +144,28 @@ the Soils Module protocols</p>
 <col style="width: 13%"/>
 </colgroup>
 <thead>
-<tr class="header">
-<th>Protocol</th>
-<th>Overview</th>
-<th>Details</th>
-<th>Data captured</th>
-<th>Sampling location</th>
-<th>Estimated time</th>
+<tr>
+<th style="text-align: center;">Protocol</th>
+<th style="text-align: center;">Overview</th>
+<th style="text-align: center;">Details</th>
+<th style="text-align: center;">Data captured</th>
+<th style="text-align: center;">Sampling location</th>
+<th style="text-align: center;">Estimated time</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Soil sub-pit and soil metagenomics</td>
+<tr>
+<th>Soil sub-pit and soil metagenomics</th>
 <td><ul>
 <li><p>Soil sub-pit is the collection of soil samples from a soil pit at
-10 cm intervals to a depth of 30 cm.</p></li>
+10 cm intervals to a depth of 30 cm.</p></li>
 <li><p>Soil metagenomics is the collection of a surface sample to 3
-cm</p></li>
+cm.</p></li>
 </ul></td>
 <td><ul>
 <li><p>Soil metagenomics and soil sub-pits can be completed separately
-or paired together. Sampling at one location (standard protocol) or nine
-locations across the plot (enhanced protocol).</p></li>
+or paired together. Sampling at one location (Standard protocol) or nine
+locations across the plot (Enhanced protocol).</p></li>
 <li><p>When pairing metagenomics and sub-pits, metagenomics must be
 collected before the sub-pit to minimise contamination.</p></li>
 </ul></td>
@@ -173,48 +175,48 @@ microhabitat photo and description, basic soil pit information and pit
 photo, sample barcode and sampling interval.</p></li>
 </ul></td>
 <td><ul>
-<li><p>Standard protocol –outside SW corner of plot</p></li>
+<li><p>Standard protocol – outside SW corner of plot.</p></li>
 <li><p>Enhanced protocol – nine locations in differing microhabitats
-within the plot (<a href="#figure-1">Figure 1</a>),</p></li>
+within the plot (<a href="#figure-1">Figure 1</a>).</p></li>
 </ul></td>
 <td><ul>
-<li><p>Standard protocol – 30 mins – 1 hour</p></li>
-<li><p>Enhanced protocol - 2 - 3 hours</p></li>
+<li><p>Standard protocol – 0.5–1 hour.</p></li>
+<li><p>Enhanced protocol – 2–3 hours.</p></li>
 </ul></td>
 </tr>
-<tr class="even">
-<td>Soil sample pit</td>
+<tr>
+<th>Soil sample pit</th>
 <td><ul>
 <li><p>Collection of soil samples at 10 cm increments down soil
-pit</p></li>
+pit.</p></li>
 </ul></td>
 <td><ul>
-<li><p>Soil pit exposed to 1 m+ or depth to limiting layer.</p></li>
+<li><p>Soil pit exposed to 1 m+ or depth to limiting layer.</p></li>
 <li><p>Limited soil expertise is required to complete this
-protocol</p></li>
+protocol.</p></li>
 </ul></td>
 <td><ul>
 <li><p>Records basic soil pit details, pit photo, sample barcode and
 sampling interval.</p></li>
 </ul></td>
 <td><ul>
-<li><p>Outside SW corner of plot</p></li>
+<li><p>Outside SW corner of plot.</p></li>
 </ul></td>
 <td><ul>
 <li><p>3–4 hours depending on soil type and depth.</p></li>
 </ul></td>
 </tr>
-<tr class="odd">
-<td>Soil site observation and pit characterisation</td>
+<tr>
+<th>Soil site observation and pit characterisation</th>
 <td><ul>
 <li><p>Describing land surface features, soil characterisation and
 collection of samples at 10 cm increments down soil pit.</p></li>
 </ul></td>
 <td><ul>
-<li><p>Soil pit exposed to 1 m+ or depth to limiting layer.</p></li>
+<li><p>Soil pit exposed to 1 m+ or depth to limiting layer.</p></li>
 <li><p>Describing land surface features and soil profile based on Yellow
 Book.</p></li>
-<li><p>Assigning of an Australian Soil Classification (ASC)</p></li>
+<li><p>Assigning of an Australian Soil Classification (ASC).</p></li>
 <li><p>Requires experienced personnel.</p></li>
 </ul></td>
 <td><ul>
@@ -223,17 +225,17 @@ detail, soil classification, soil pit photo, sample barcode and sampling
 interval.</p></li>
 </ul></td>
 <td><ul>
-<li><p>Outside SW corner of plot</p></li>
+<li><p>Outside SW corner of plot.</p></li>
 </ul></td>
 <td><ul>
-<li><p>4 – 5 hours depending on soil type and depth.</p></li>
+<li><p>4–5 hours depending on soil type and depth.</p></li>
 </ul></td>
 </tr>
-<tr class="even">
-<td>Soil bulk density</td>
+<tr>
+<th>Soil bulk density</th>
 <td><ul>
-<li><p>Collection of bulk density soil core samples at 10 cm
-increments.</p></li>
+<li><p>Collection of bulk density soil core samples at 10 cm increments
+to a depth of 30 cm.</p></li>
 </ul></td>
 <td><ul>
 <li><p>Soil core sample collection of three measures at the soil pit at
@@ -249,15 +251,14 @@ properties to volumetric measures.</p></li>
 Outside SW corner of plot.</p></li>
 </ul></td>
 <td><ul>
-<li><p>30 mins – 1 hour</p></li>
+<li><p>0.5 –1 hour.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
-<img id="figure-1" alt="figure-1" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/soil/Fig1_plot_layout.png" width="1000"/>
-<p>Figure 1. Core plot with indicative locations of the soil pit and
-nine soil sub-pits across the plot.</p>
-<p>Five soil sub-pits are located within the 25 x 25 m soil sub-pit zone
+<caption><img id="figure-1" alt="figure-1" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/soil/Fig1_plot_layout.png" width="1000"/>
+</caption><p>Figure 1. Core plot with indicative locations of the soil pit and
+nine soil sub-pits across the plot. Five soil sub-pits are located within the 25 x 25 m soil sub-pit zone
 in the southwest corner of the plot. Soil bulk density core samples are
 collected from an edge of the soil pit.</p>"""^^rdf:HTML ;
     dcterms:source """
@@ -365,93 +366,92 @@ Soil bacterial community differences along a coastal restoration
 chronosequence. <em>Plant Ecology</em> <strong>221</strong>,
 795–811.</p>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """
-    <h2 id="key-definitions-and-terminology">Key definitions and
+    skos:definition """<h2 id="key-definitions-and-terminology">Key definitions and
 terminology</h2>
-<p><span class="anchor" id="_Toc140667303"></span>Table 2. Key
-definitions and terms used in the Soils Module.</p>
 <table>
+<caption><p><span class="anchor" id="table-2"></span>Table 2. Key
+definitions and terms used in the Soils Module.</p></caption>
 <colgroup>
 <col style="width: 17%"/>
 <col style="width: 82%"/>
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Term</th>
 <th>Definition</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Accelerated erosion</td>
+<tr>
+<th>Accelerated erosion</th>
 <td>More rapid erosion [than natural] that follows the destruction or
 loss of protective cover often resulting from people's influence on the
 soil, vegetation or landform (NCST 2009).</td>
 </tr>
-<tr class="even">
-<td>ANSIS</td>
+<tr>
+<th>ANSIS</th>
 <td>Australian National Soil Information System (ANSIS) provides access
 to nationally consistent soil data and information to support the
 sustainable management of soil resources.</td>
 </tr>
-<tr class="odd">
-<td>Australian Soil Classification (ASC)</td>
+<tr>
+<th>Australian Soil Classification (ASC)</th>
 <td>Australia's national soil classification, a multi-category scheme
 with classes defined by diagnostic horizons or materials and their
 arrangement in vertical sequence as seen in an exposed soil profile
 (Isbell and The National Committee on Soil and Terrain 2021).</td>
 </tr>
-<tr class="even">
-<td>Blue Book</td>
+<tr>
+<th>Blue Book</th>
 <td>Guidelines for Surveying Soil and Land Resources (McKenzie <em>et
 al.</em> 2008).</td>
 </tr>
-<tr class="odd">
-<td>Chroma</td>
+<tr>
+<th>Chroma</th>
 <td>How weak or strong a colour is. In the Munsell system, chroma is
 indicated with a number, typically ranging from 2–14. The chroma scale
 runs horizontally, moving from weak (from the left of the chart) to
 strong (to the right of the chart) in ascending order.</td>
 </tr>
-<tr class="even">
-<td>Coarse fragments</td>
+<tr>
+<th>Coarse fragments</th>
 <td>Particles coarser than 2 mm. Include unattached rock fragments and
 other fragments such as charcoal and shells. Distinguished from
 segregations of pedogenic origin in that they are not, or not considered
 to be, of pedogenic origin. Can occur on the surface (NCST 2009).</td>
 </tr>
-<tr class="odd">
-<td>Colour</td>
+<tr>
+<th>Colour</th>
 <td>Soil colour, recorded by comparing soils with colour charts using
 the Munsell Color system, for example the Munsell Soil Color Charts or
 the Revised Standard Soil Color Charts (NCST 2009).</td>
 </tr>
-<tr class="even">
-<td>Condition of soil surface (when dry)</td>
+<tr>
+<th>Condition of soil surface (when dry)</th>
 <td>Characteristic appearance of the soil surface when dry. Often
 relevant to the use of the soil and indicative of particular kinds of
 soil.</td>
 </tr>
-<tr class="odd">
-<td>Consistence</td>
+<tr>
+<th>Consistence</th>
 <td>The strength of cohesion and adhesion in soil. Strength will vary
 according to soil water status.</td>
 </tr>
-<tr class="even">
-<td>Cutans</td>
+<tr>
+<th>Cutans</th>
 <td>Modification of the texture, structure or fabric at natural surfaces
 in soil materials; arises from concentration of particular soil
 constituents or <em>in situ</em> modification of the plasma. Comprise
 any of the component substances of the soil material.</td>
 </tr>
-<tr class="odd">
-<td>Disturbance</td>
+<tr>
+<th>Disturbance</th>
 <td>Broad categories of disturbance, including grazing by hoofed
 animals, clearing, pasture conversion, cultivation and infrastructure
 development (NCST 2009).</td>
 </tr>
-<tr class="even">
-<td>Drainage</td>
+<tr>
+<th>Drainage</th>
 <td>The rapidity and extent of water removal from the soil profile.
 Affected by soil permeability, hydraulic gradient and the permeability
 of materials below the soil profile. Soils that drain water quickly are
@@ -459,43 +459,43 @@ highly permeable. They usually have coarse textures (sands) and many
 interconnected pores. Soils with rapid drainage often have low water
 holding capacities.</td>
 </tr>
-<tr class="odd">
-<td>Effervescence</td>
+<tr>
+<th>Effervescence</th>
 <td>The escape of gas from an aqueous solution and the foaming or
 fizzing resulting from that release.</td>
 </tr>
-<tr class="even">
-<td>Electrical conductivity (EC)</td>
+<tr>
+<th>Electrical conductivity (EC)</th>
 <td>A measure of the conduction of electricity through water or a water
 extract of soil. Can be used to determine the soluble salts in the
 extract and hence soil salinity.</td>
 </tr>
-<tr class="odd">
-<td>Environmental DNA (eDNA)</td>
+<tr>
+<th>Environmental DNA (eDNA)</th>
 <td>Extra-organismal genetic material in environmental samples (Lugg
 <em>et al.</em> 2018).</td>
 </tr>
-<tr class="even">
-<td>Erosion</td>
+<tr>
+<th>Erosion</th>
 <td>The wearing away of the land by running water, rainfall, wind, ice
 or other geological agents including such processes as detachment,
 entrainment, suspension, transportation and mass movement.</td>
 </tr>
-<tr class="odd">
-<td>Experienced soil surveyor</td>
+<tr>
+<th>Experienced soil surveyor</th>
 <td>A soil surveyor with an understanding of the origins, composition
 and distribution of soils and the materials from which soils are formed,
 developed from extensive soil survey experience.</td>
 </tr>
-<tr class="even">
-<td>Fabric</td>
+<tr>
+<th>Fabric</th>
 <td>The appearance of the soil material using a hand lens (x10).
 Differences in the presence or absence of peds, the lustre (or lack
 thereof), ped surfaces, and the size and arrangement of pores (voids) in
 the soil mass are noted.</td>
 </tr>
-<tr class="odd">
-<td>Field texture</td>
+<tr>
+<th>Field texture</th>
 <td>A measure of the behaviour of a small handful of soil (&lt;2 mm
 fraction) when moistened and kneaded into a ball and then pressed out
 between thumb and forefinger. Generally related to the proportion of
@@ -503,15 +503,15 @@ soil particles of different sizes (sand, silt, clay and gravel) in a
 soil, but is also influenced by organic matter content, clay type and
 degree of structural development of the soil.</td>
 </tr>
-<tr class="even">
-<td>Hue</td>
+<tr>
+<th>Hue</th>
 <td>Basic colour. In the Munsell system, hues are given letter codes
 (i.e. red (R), yellow-red (YR), yellow (Y) and so on) and charts are
 numbered from 0–10. Within each letter range, the hue becomes more
 yellow and less red as the numbers increase.</td>
 </tr>
-<tr class="odd">
-<td>Landform element</td>
+<tr>
+<th>Landform element</th>
 <td>Landform elements have a dimension of approximately 40 m but can
 vary from a few metres to 100 m. A landform element is described by the
 following attributes – slope, morphological type, dimensions,
@@ -519,8 +519,8 @@ geomorphological activity and geomorphological agent. Landform elements
 make up a mosaic within landform patterns. There are approximately 80
 different landform elements that occur in Australia.</td>
 </tr>
-<tr class="even">
-<td>Landform pattern</td>
+<tr>
+<th>Landform pattern</th>
 <td>Landform patterns have dimensions of approximately 600 m and are
 based on the following attributes – relief, slope (most common), stream
 channel occurrence, geomorphological attributes and component landform
@@ -528,126 +528,126 @@ elements. Landform patterns generally have longer histories than
 landform elements. There are approximately 40 different landform
 patterns that occur in Australia.</td>
 </tr>
-<tr class="odd">
-<td>Matrix</td>
+<tr>
+<th>Matrix</th>
 <td>The smaller, grain-sized material that is typically a cementing
 agent within a soil or rock in which larger particles are embedded.</td>
 </tr>
-<tr class="even">
-<td>Metagenomics</td>
+<tr>
+<th>Metagenomics</th>
 <td>The study of genetic material recovered directly from environmental
 samples.</td>
 </tr>
-<tr class="odd">
-<td>Microrelief</td>
+<tr>
+<th>Microrelief</th>
 <td>Relief up to a few metres about the plane of the land surface (NCST
 2009).</td>
 </tr>
-<tr class="even">
-<td>Monitor</td>
+<tr>
+<th>Monitor</th>
 <td>Field data collection app for Ecological Monitoring System
 Australia. Collects data using the Australian Biodiversity Information
 Standard for delivery to the Australian Biodiversity Data Repository
 managed by the Department of Climate Change, Energy, the Environment and
 Water (DCCEEW)</td>
 </tr>
-<tr class="odd">
-<td>Mottles</td>
+<tr>
+<th>Mottles</th>
 <td>Spots, blotches or streaks of subdominant colours different from the
 matrix colour and also different from the colour of the ped surface.
 Segregations of pedogenic origin are not considered to be mottles (NCST
 2009).</td>
 </tr>
-<tr class="even">
-<td>Munsell Soil Color Charts</td>
+<tr>
+<th>Munsell Soil Color Charts</th>
 <td>Enable quick and easy soil colour evaluations in the field using the
 widely accepted Munsell Color system.</td>
 </tr>
-<tr class="odd">
-<td>Pans</td>
+<tr>
+<th>Pans</th>
 <td>Indurated and/or cemented soil horizon.</td>
 </tr>
-<tr class="even">
-<td>Ped</td>
+<tr>
+<th>Ped</th>
 <td>An individual, natural soil aggregate consisting of a cluster of
 primary particles. Separated from adjoining peds by surfaces of weakness
 that are recognisable as natural voids or by the occurrence of
 cutans.</td>
 </tr>
-<tr class="odd">
-<td>Pedologist</td>
+<tr>
+<th>Pedologist</th>
 <td>A scientist who studies origins, composition and distribution of
 soils and the materials from which soils are formed.</td>
 </tr>
-<tr class="even">
-<td>Permeability</td>
+<tr>
+<th>Permeability</th>
 <td>Independent of climate and drainage, and – as applied to a soil – is
 controlled by the potential to transmit water (saturated hydraulic
 conductivity, Ks) of the least permeable layer in the soil (NCST
 2009).</td>
 </tr>
-<tr class="odd">
-<td>pH</td>
+<tr>
+<th>pH</th>
 <td>A measure of the acidity or alkalinity of the soil. A pH of 7.0
 denotes neutrality. Higher values indicate increasing alkalinity and
 lower values indicate increasing acidity.</td>
 </tr>
-<tr class="even">
-<td>Relief</td>
+<tr>
+<th>Relief</th>
 <td>The difference in elevation between the high and low points of the
 landscape.</td>
 </tr>
-<tr class="odd">
-<td>Runoff</td>
+<tr>
+<th>Runoff</th>
 <td>Relative rate at which water runs off the soil surface. Largely
 determined by slope, surface cover and soil infiltration rate (NCST
 2009).</td>
 </tr>
-<tr class="even">
-<td>Segregations</td>
+<tr>
+<th>Segregations</th>
 <td>Discrete segregations that have accumulated in the soil because of
 the concentration of some constituent, usually by chemical or biological
 action.</td>
 </tr>
-<tr class="odd">
-<td>SLGA</td>
+<tr>
+<th>SLGA</th>
 <td>Soil and Landscape Grid of Australia.</td>
 </tr>
-<tr class="even">
-<td>Slope</td>
+<tr>
+<th>Slope</th>
 <td>The rise or fall of the land surface, which is measured using the
 percent scale of a clinometer. Slope should be measured over a distance
 of at least 20 m, to reduce influence of any microrelief changes.</td>
 </tr>
-<tr class="odd">
-<td>Soil</td>
+<tr>
+<th>Soil</th>
 <td>A natural body consisting of layers or horizons of mineral and/or
 organic constituents, of variable thickness, that differs from its
 parent material in morphological, physical, chemical and mineralogical
 properties and biological characteristics (Isbell and The National
 Committee on Soil and Terrain 2021).</td>
 </tr>
-<tr class="even">
-<td>Soil bulk density</td>
+<tr>
+<th>Soil bulk density</th>
 <td>The ratio of oven-dry soil mass to bulk volume. Obtained by drying
 an intact core sample of known volume to constant weight at 105°C.</td>
 </tr>
-<tr class="odd">
-<td>Soil horizon</td>
+<tr>
+<th>Soil horizon</th>
 <td>Layer of soil, approximately parallel to the land surface, with
 morphological properties different from layers below and/or above it.
 Tongues of material from one horizon may penetrate into adjacent
 horizons (NCST 2009).</td>
 </tr>
-<tr class="even">
-<td>Soil profile</td>
+<tr>
+<th>Soil profile</th>
 <td>A vertical section of a soil from the soil surface through all its
 horizons to parent material, other consolidated substrate material or
 selected depth in unconsolidated material (Isbell and The National
 Committee on Soil and Terrain 2021).</td>
 </tr>
-<tr class="odd">
-<td>Solum</td>
+<tr>
+<th>Solum</th>
 <td>The surface and subsoil layers that have undergone the same soil
 forming conditions. In terms of soil horizon designations, a solum
 consists of A and B horizons and their transitional horizons and P and
@@ -656,29 +656,30 @@ be subject to significant soil forming conditions. A solum does not have
 a maximum or a minimum thickness (Isbell and The National Committee on
 Soil and Terrain 2021).</td>
 </tr>
-<tr class="even">
-<td>Structure</td>
+<tr>
+<th>Structure</th>
 <td>The distinctness, size, shape and condition of natural, or
 artificially produced soil aggregates (peds).</td>
 </tr>
-<tr class="odd">
-<td>Value</td>
+<tr>
+<th>Value</th>
 <td>How light or dark a colour is. In the Munsell system, value is
 indicated with a number (i.e. 2, 4, 6 and so on). The value scale runs
 vertically and moves from lightest (at the top of the chart) to darkest
 (at the bottom of the chart) in descending order.</td>
 </tr>
-<tr class="even">
-<td>Voids</td>
+<tr>
+<th>Voids</th>
 <td>General term for pore space and other openings (e.g. cracks, pores)
 in soils not occupied by solid mineral matter.</td>
 </tr>
-<tr class="odd">
-<td>Yellow Book</td>
+<tr>
+<th>Yellow Book</th>
 <td>Australian Soil and Land Survey Handbook (NCST 2009).</td>
 </tr>
 </tbody>
-</table>"""^^rdf:HTML ;
+</table>
+"""^^rdf:HTML ;
     skos:memberList (
             <https://linked.data.gov.au/def/nrm/9a1ab016-60d6-4876-a751-b25ccb734c2d>
             <https://linked.data.gov.au/def/nrm/5d12a157-61a0-42e6-b23d-895018974c67>
@@ -812,8 +813,7 @@ the following equation:</p>
 <br><img alt="bulkD" id="bulk-density" height="100" src="https://w3id.org/tern/static/dawe-rlp/latest/soil/Fine_earth_BD.png" width="400"/></br>
 </ol>
 <blockquote>"""^^rdf:HTML ;
-    tern:purpose """
-    <h2 id="rationale">Rationale</h2>
+    tern:purpose """<h2 id="rationale">Rationale</h2>
 <p>Large areas of Australia have limited or no soils information.
 Investigation of soils has typically focused on agricultural zones,
 resulting in soil characteristics for large areas of the country being
@@ -897,21 +897,20 @@ Wheatbelt (Holmes et al. 2011).</p></li>
 variables measured and collection methods of soil samples. Approaches
 are complementary, and data can be shared to provide larger improved
 datasets for interpretation (Grealish <em>et al.</em> 2011).</p>"""^^rdf:HTML ;
-    tern:scope """
-    <h1 id="introduction">Introduction and Background</h1>
+    tern:scope """The following is a new section</p><h1 id="introduction-and-background">Introduction and background</h1>
 <p>This Soils Module provides the procedures and guidelines for
-describing and characterising the soils within the plot. It facilitates
-the conversion of soil properties into volumetric measures and enables
-the collection of soil samples for various downstream laboratory tests
-and analyses, including soil chemistry texts and soil metagenomics
-analysis. The soil description and survey procedures align with the
-national guidelines for surveying land and vegetation, including the
-<em>Australian Soil and Land Survey Field Handbook</em> (colloquially
-known as the Yellow Book; The National Committee on Soils and Terrain
-2009), <em>Guidelines for Surveying Soil and Land Resources</em>
-(commonly referred to as the Blue Book; McKenzie <em>et al.</em> 2008)
-and the <em>Australian Soil Classification</em> (Isbell and The National
-Committee on Soil and Terrain 2021).</p>
+describing and characterising the soils within the core monitoring plot.
+It facilitates the conversion of soil properties into volumetric
+measures and enables the collection of soil samples for various
+downstream laboratory tests and analyses, including soil chemistry texts
+and soil metagenomics analysis. The soil description and survey
+procedures align with the national guidelines for surveying land and
+vegetation, including the <em>Australian Soil and Land Survey Field
+Handbook</em> (colloquially known as the Yellow Book; The National
+Committee on Soils and Terrain 2009), <em>Guidelines for Surveying Soil
+and Land Resources</em> (commonly referred to as the Blue Book; McKenzie
+<em>et al.</em> 2008) and the <em>Australian Soil Classification</em>
+(Isbell and The National Committee on Soil and Terrain 2021).</p>
 <p>The soil descriptions and survey procedures in this module adhere to
 the third edition of the Yellow Book (NCST 2009). This ensures
 consistency with various organisations in Australia that are involved
@@ -923,7 +922,7 @@ surveying issues related to soil and land resources is based on the
 second edition of the Blue Book (McKenzie et al. 2008).</p>
 <p>As part of the Soil Module, important land surface aspects of the
 plot are described, in addition to the descriptive information collected
-in the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a>. These aspects include slope, landform
+in the Plot Description Module. These aspects include slope, landform
 element and pattern, erosion (accelerated erosion, rather than natural),
 microrelief, drainage, disturbance, and soil surface condition (when
 dry). These observations provide valuable background information
@@ -970,7 +969,7 @@ investigate the diversity and abundance of soil biota (e.g. bacteria,
 fungi), and identify traces of above-ground flora and fauna.</p>
 <p>A measure of the bulk density of the soil is necessary to quantify
 volumetric measures of important soil parameters, particularly carbon
-content (e.g. tonnes of carbon within a depth of 0-30 cm per hectare).
+content (e.g. tonnes of carbon within a depth of 0–30 cm per hectare).
 To ensure a reliable measure, multiple samples should be collected
 across the plot in different surface substrate classes and at different
 distances from trees or shrubs. If this is beyond the scope of the
@@ -989,7 +988,7 @@ sample pit protocol collecting samples at a standard interval from the
 soil profile for a more detailed description back in the lab by a
 pedologist or experienced soil surveyor. The Soil site observation and
 pit characterisation protocol is recommended to be undertaken at the
-same time as vegetation modules (e.g. <a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a>, <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a>)
+same time as vegetation modules (e.g. Floristics Module, Cover Module)
 to enable vegetation analyses to consider contemporaneous soil
 characteristics (Sparrow <em>et al.</em> 2020).</p>"""^^rdf:HTML ;
     tern:undertakenAfter
