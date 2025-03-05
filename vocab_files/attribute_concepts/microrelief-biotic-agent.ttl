@@ -2,6 +2,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/e3dc0901-0bad-4157-bcb3-58aaffda313c>
@@ -10,9 +11,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:definition "Biotic microrelief is relief caused by biotic agents such as termite mounds, rabbit warrens, wombat burrows, pig wallows, constructed terraces, stump holes, vegetation mounds." ;
     skos:prefLabel "microrelief - biotic agent" ;
-    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/70b3ea97-90dd-49f7-9ca2-717a8deb6368> ;
-    tern:valueType tern:IRI ;
-    tern:isAttributeOf tern:Observation ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/microrelief-biotic-agent.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/70b3ea97-90dd-49f7-9ca2-717a8deb6368> ;
+    tern:isAttributeOf tern:Observation ;
+    tern:valueType tern:IRI ;
 .
 
