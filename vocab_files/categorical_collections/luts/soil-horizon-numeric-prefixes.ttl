@@ -98,8 +98,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/nrm/f176951b-3fb2-44b7-a906-62b600e450dc>
     a skos:Collection ;
-    dcterms:description "A collection of numeric prefixes of doil horizon." ;
-    dcterms:source "SOURCE" ;
+    dcterms:description "A collection of numeric prefixes of soil horizon." ;
+    dcterms:source
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-numeric-prefixes"^^xsd:anyURI ,
+        "Steen C, Laws M, Finn L, Gellie N, O’Neill S, Sparrow B. (2023) Soil Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
         <https://linked.data.gov.au/def/nrm/285d87d2-517b-4e8a-a292-ae0bf3db5d65> ,

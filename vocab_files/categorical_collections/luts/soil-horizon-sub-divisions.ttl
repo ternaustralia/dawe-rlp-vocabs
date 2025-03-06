@@ -109,7 +109,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://linked.data.gov.au/def/nrm/0b8049bc-e40d-40d0-9e04-e8d2dfa3070a>
     a skos:Collection ;
     dcterms:description "A collection of sub-divisions of soil horizon." ;
-    dcterms:source "SOURCE" ;
+    dcterms:source
+        "https://core.vocabs.paratoo.tern.org.au/api/lut-soils-horizon-subdivisions"^^xsd:anyURI ,
+        "Steen C, Laws M, Finn L, Gellie N, O’Neill S, Sparrow B. (2023) Soil Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:member
         <https://linked.data.gov.au/def/nrm/1f1ae5d0-4047-4359-aadf-7871bdc557eb> ,
