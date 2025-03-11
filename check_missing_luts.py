@@ -130,20 +130,35 @@ def main():
                             if pd.notna(sheet2_row["missing values"]):
                                 # Try to parse as JSON if it looks like a list
                                 missing_value_text = sheet2_row["missing values"]
-                                if missing_value_text.strip().startswith('[') and missing_value_text.strip().endswith(']'):
+                                if missing_value_text.strip().startswith(
+                                    "["
+                                ) and missing_value_text.strip().endswith("]"):
                                     try:
-                                        missing_values = [mv.lower().strip() for mv in json.loads(missing_value_text)]
+                                        missing_values = [
+                                            mv.lower().strip()
+                                            for mv in json.loads(missing_value_text)
+                                        ]
                                     except json.JSONDecodeError:
                                         # If not valid JSON, treat as a single value
-                                        missing_values = [missing_value_text.lower().strip()]
+                                        missing_values = [
+                                            missing_value_text.lower().strip()
+                                        ]
                                 else:
                                     # Split by comma, but only if not enclosed in quotes
                                     missing_values = []
                                     # Simple approach: if the value contains quotes, treat as a single value
-                                    if '"' in missing_value_text or "'" in missing_value_text:
-                                        missing_values = [missing_value_text.lower().strip()]
+                                    if (
+                                        '"' in missing_value_text
+                                        or "'" in missing_value_text
+                                    ):
+                                        missing_values = [
+                                            missing_value_text.lower().strip()
+                                        ]
                                     else:
-                                        missing_values = [mv.lower().strip() for mv in missing_value_text.split(',')]
+                                        missing_values = [
+                                            mv.lower().strip()
+                                            for mv in missing_value_text.split(",")
+                                        ]
                             else:
                                 missing_values = []
 
@@ -175,8 +190,12 @@ def main():
 
                         if not found:
                             # Create a unique key for this entry
-                            entry_key = (row["Paratoo endpoints"], row["NRM Categorical Collection"], label)
-                            
+                            entry_key = (
+                                row["Paratoo endpoints"],
+                                row["NRM Categorical Collection"],
+                                label,
+                            )
+
                             # Only add if we haven't processed this combination before
                             if entry_key not in processed_entries:
                                 processed_entries.add(entry_key)
