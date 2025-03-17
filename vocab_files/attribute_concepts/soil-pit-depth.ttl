@@ -1,0 +1,18 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/cc960a7d-33a1-446a-85dc-8d1f8fda9996>
+    a skos:Concept ;
+    dcterms:source "Steen C, Laws M, Finn L, Gellie N, O’Neill S, Sparrow B. (2023) Soil Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:definition "It is the depth of the soil pit when dug in the SW corner of the plot. Usually they are 1 m+, but can change depending on the object underneath (such as rocks, gravel etc.)" ;
+    skos:prefLabel "soil pit depth" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/soil-pit-depth.ttl"^^xsd:anyURI ;
+    tern:isAttributeOf tern:Sampling ;
+    tern:valueType tern:Float ;
+.
+
