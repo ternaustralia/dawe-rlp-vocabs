@@ -14,9 +14,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Taxon name determined during the process of field observation." ;
     skos:prefLabel "target species" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/attribute_concepts/target-species.ttl"^^xsd:anyURI ;
+    tern:hasCategoricalCollection <https://linked.data.gov.au/def/nrm/ff157253-6923-5816-ac05-312dc32cd903> ;
     tern:isAttributeOf
         tern:Input ,
         tern:Survey ;
-    tern:valueType tern:Text ;
+    tern:valueType
+        tern:IRI ,
+        tern:Text ;
 .
 
