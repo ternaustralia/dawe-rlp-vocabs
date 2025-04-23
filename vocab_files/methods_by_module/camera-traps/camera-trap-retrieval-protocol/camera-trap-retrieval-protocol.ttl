@@ -14,25 +14,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <h1>Contents</h1>
 <ol>
   <li><a href="#camera-trap-retrieval">Camera Trap Retrieval</a></li>
-  <li><a href="#equipment">Equipment</a></li>
+  <li><a href="#equipment-2">Equipment</a></li>
   <li>
-    <a href="#instructions-and-procedures">Instructions and procedures</a>
+    <a href="#instructions-and-procedures-2">Instructions and procedures</a>
   </li>
-  <li><a href="#additional-guidelines">Additional guidelines</a></li>
+  <li><a href="#additional-guidelines-2">Additional guidelines</a></li>
   <li><a href="#appendices-1">Appendices</a></li>
 </ol>
-    <h1 id="camera-trap-retrieval">Camera Trap Retrieval protocol</h1>
-    <p>
-    This module serves as a sub-protocol of the <a href="https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5">Camera Trapping</a> module. 
-    Prior to implementing this protocol, it is essential to thoroughly review the Introduction, Key Definitions and Terminology,
-    Rationale, and Module Overview provided in the "<a href="https://linked.data.gov.au/def/nrm/f0123418-c565-45a6-be01-c5c332c727e5">Camera Trapping</a>" module.
-    These sections will provide you with important contextual information and a comprehensive understanding of the protocol.
-    </p>
-<h2 id="field-collection-2">Field collection</h2>
+    <h1 id="camera-trap-retrieval-protocol">Camera Trap Retrieval protocol</h1>
+<h2 id="field-collection-2">Field Collection</h2>
 <h3 id="pre-requisites-2">Pre-requisites</h3>
 <p>There are no tasks that need to be undertaken before commencing a
 retrieval field survey.</p>
-<h3 id="time-requirements-2">Time requirements</h3>
+<h3 id="time-requirements-2">Time Requirements</h3>
 <p>Survey time requirements will vary depending on the number and
 experience of personnel, the number of camera traps being retrieved, the
 size of the project area, and the level of difficulty in traversing the
@@ -43,7 +37,7 @@ project area.</p>
 removing a bait station or carcass.</p></li>
 <li><p>Allow travel time between camera trap points.</p></li>
 </ul>
-<h3 id="personnel-requirements-2">Personnel requirements</h3>
+<h3 id="personnel-requirements-2">Personnel Requirements</h3>
 <p>Personnel number and skills:</p>
 <ul>
 <li><p>Camera trap retrieval and recording the data directly into the
@@ -65,7 +59,7 @@ permissions are required.</p></li>
 </ul>"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
     skos:note """
-<h3 id="additional-guidelines">Additional guidelines</h3>
+<h3 id="additional-guidelines-2">Additional guidelines</h3>
 <ul>
 <li><p>It is important to confirm whether or not the camera trap was
 operational for the whole survey period. If there is no capture sequence
@@ -75,14 +69,35 @@ last image occurs in week 3 of 4, this could reflect either no animals
 at the camera trap point post week 3 or a camera malfunction sometime
 after this capture.</p></li>
 </ul>
+<h2 id="post-field-survey-tasks-2">Post-field survey tasks</h2>
+<h3 id="data-curation">Data curation</h3>
+<ul>
+<li><p>When back in the office, backup the media data (images and video)
+from the camera trap SD cards for long-term storage and processing, to a
+server of your choosing.</p></li>
+<li><p>Media data should not be deleted from SD cards until it has been
+checked that they have been backed up successfully.</p></li>
+<li><p>It is good practice to keep an additional back-up of media data
+(e.g. cloud storage, external hard-drive) until electronic delivery of
+the receiving server.</p></li>
+<li><p>Once all data is backed up and checked, a good practice is to
+clear all SD cards, preferably by formatting. This ensures that SD cards
+are working correctly and prevents full cards from being reloaded into
+camera traps in future deployments.</p></li>
+<li><p>Arrange for electronic delivery of the media data to the
+receiving server (see the Submitting EMSA Digital Media information
+sheet).</p></li>
+<li><p>This will involve linking the project administration data and
+camera trap survey data to the media data via the project number,
+deployment number, camera trap number and SD card number.</p></li>
+</ul>
 """^^rdf:HTML ;
-    skos:prefLabel "Camera Trap Retrieval protocol" ;
+    skos:prefLabel "Camera Trap Retrieval Protocol" ;
     schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/methods_by_module/camera-traps/camera-trap-retrieval-protocol/camera-trap-retrieval-protocol.ttl"^^xsd:anyURI ;
     tern:appendix """
-<h1 id="appendices-1">Appendices</h1>
-<p><span class="anchor" id="_Ref140579994"></span><h2>Appendix 1. Pre-field
-survey tasks</h2></p>
-<p><h3>Camera trap identification</h3></p>
+<h1 id="appendices">Appendices</h1>
+<p><span class="anchor" id="appendix-1"></span><h3>Appendix 1. Pre-field survey tasks</h3></p>
+<p><h4>Camera trap identification</h4></p>
 <p>Before camera traps are deployed in the field they need to be
 allocated and marked with an identification number. Camera traps should
 also be registered in an equipment management database (e.g.
@@ -106,7 +121,7 @@ to record includes the camera trap <em>make</em>, <em>model</em>,
 <em>status</em> and <em>current location</em>.</p></li>
 <li><p>Repeat steps 1–4 for each camera trap.</p></li>
 </ol>
-<p><h3>Camera trap firmware update</h3></p>
+<p><h4>Camera trap firmware update</h4></p>
 <p>Camera trap manufacturers regularly provide firmware updates for
 their camera traps. Ensure you check the relevant website for updates
 and instructions for updating before each field survey or camera trap
@@ -131,7 +146,7 @@ updates are completed.</p></li>
 <ol start="7" type="1">
 <li><p>Repeat steps 4–6 for all remaining Reconyx camera traps.</p></li>
 </ol>
-<p><h3>Camera trap settings configuration</h3></p>
+<p><h4>Camera trap settings configuration</h4></p>
 <p>Configure your camera trap settings before going into the field.
 Refer to the user manual for your camera trap make and model for
 instructions to navigate the control panel.</p>
@@ -172,7 +187,7 @@ used during the survey.</p></li>
 <ol start="21" type="1">
 <li><p>Repeat steps 1–20 for each camera trap.</p></li>
 </ol>
-<p><h3>SD card identification</h3></p>
+<p><h4>SD card identification</h4></p>
 <p>Before SD cards are used in camera traps that are deployed in the
 field, they need to be allocated and marked with an identification
 number. Similar to camera traps, SD cards should also be registered in
@@ -195,7 +210,7 @@ data you may wish to record includes the SD card <em>brand</em>,
 date</em>, and <em>current location</em>.</p></li>
 <li><p>Repeat steps 1–3 for each SD card.</p></li>
 </ol>
-<p><h3>SD card formatting</h3></p>
+<p><h4>SD card formatting</h4></p>
 <p>Formatting an SD card effectively erases all the card data, giving
 you a fresh, empty folder structure to work with. After you have backed
 up your SD card after each field survey, you should format each SD card
@@ -228,7 +243,7 @@ for the survey.</p></li>
 <ol start="7" type="1">
 <li><p>Repeat steps 1–6 for each SD card.</p></li>
 </ol>
-<p><span class="anchor" id="_Batteries"></span><h3>Batteries preparation</h3></p>
+<p><span class="anchor" id="_Batteries"></span><h4>Batteries preparation</h4></p>
 <p>Each camera trap can require up to 12 AA batteries depending on the
 make and model. Batteries should be selected after consulting the user
 manual of the camera traps you are using and consideration of your study
@@ -263,7 +278,7 @@ ready for the survey. Do not mix battery types.</p></li>
 survey to configure the camera trap settings (see above). Use a spare
 set of batteries.</p></li>
 </ol>
-<p><h3>Desiccant installation</h3></p>
+<p><h4>Desiccant installation</h4></p>
 <p>If the camera traps are being deployed in humid or wet conditions,
 desiccant (silica gel) can be placed inside the camera trap housings to
 help protect the electronics from moisture.</p>
@@ -275,26 +290,26 @@ inside.</p></li>
 <ol start="3" type="1">
 <li><p>Repeat steps 1–2 for each camera trap.</p></li>
 </ol>
-<p><h3>Camera trap array development and upload</h3></p>
+<p><h4>Camera trap array development and upload</h4></p>
 <ol type="1">
 <li><p>Review ecological information for the target taxa/species to
 inform the number, spacing and shape of the camera trap array. GIS
 spatial data layers (e.g. vegetation mapping, access tracks, landform),
 along with any other information relevant to the project, are also
 useful in determining an array.</p></li>
-<li><p>Upload a csv file of the proposed array with ‘Name’, ‘Latitude’
-and ‘Longitude’ columns, with latitude and longitude in decimal degrees,
-to your device.</p></li>
+<li><p>Upload a GeoJSON or csv file of the proposed array to your mobile
+device, with ‘Camera Trap Point ID’, ‘Latitude’ and ‘Longitude’
+features/columns, and with latitude and longitude in decimal
+degrees.</p></li>
 </ol>
-<p><span class="anchor" id="appendix-2"></span><h2>Appendix 2. Study
-design and planning considerations</h2></p>
+<p><span class="anchor" id="appendix-2"></span><h3>Appendix 2. Study design and planning considerations</h4></p>
 <p>Proper attention must be given to the design of camera trapping
 studies, including the target species, the make and model of the camera
 trap used, the camera settings used, the mode of camera trap deployment,
 and what data is collected and how it will be analysed. Poorly designed
 surveys often result in data which cannot be used to answer the question
 of interest (Gillespie et al. 2015). A clear and defined statement of
-the study objectives and why camera traps are the best survey tool to
+the study objectives and why camera traps are the best surv ey tool to
 achieve these objectives is therefore an important component of camera
 trapping studies. The study design and methodology should align with the
 clearly defined objectives (Meek <em>et al.</em> 2014a).</p>
@@ -318,32 +333,20 @@ are detailed in the sections below, and cover:</p>
 <li><p>Storage and transport</p></li>
 <li><p>Permits and ethics.</p></li>
 </ul>
-<p><h4>Camera trap decision key</p></h4>
+<p>Camera trap decision key</p>
 <p>The following decision key (below) will help you determine whether or
 not camera traps are suitable to use and for what purpose, based on the
 objectives of your survey, the available resources and the target
 species (Gillespie <em>et al.</em> 2015).</p>
-<p><table>
-        <tbody>
-          <tr>
-            <td id='decision_key'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/decision_key.png"
-                alt="New_description"
-                width="450"
-                height="400"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    <p>Camera trap decision key.</p>
+<figure>
+<img alt="Figure-1" height="900" src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/decision_key.png" width="1200"/>
+<figcaption><p><h5>Camera trap decision key</h5></p></figcaption>
+</figure>
 <p><em>Use to determine whether or not camera traps are suitable to use
 and for what purpose, based on the objectives of your survey, the
 available resources and the target species (adapted from Gillespie et
 al. 2015).</em></p>
-<p><h4><span class="anchor" id="_Quick_reference_deployment"></span>Quick
-reference deployment guidelines</h4></p>
+<p><span class="anchor" id="_Quick_reference_deployment"></span><h4>Quick reference deployment guidelines</h4></p>
 <p>The quick reference deployment guidelines (see table below) provide
 informed deployment recommendations for various taxa (e.g. small,
 medium-sized and large mammals, invasive predators, reptiles), including
@@ -359,6 +362,7 @@ for the following aspects of camera trap deployment:</p>
 </ul>
 <p>Each of these aspects is discussed more broadly in the sections
 below.</p>
+<p><h4>Quick reference camera trap deployment guidelines.</h4></p>
 <p><em>Deployment guidelines for various Australian taxa based on those
 used in relevant studies and those recommended in relevant guidelines
 (shown in bold).</em></p>
@@ -375,9 +379,9 @@ used in relevant studies and those recommended in relevant guidelines
 <col style="width: 8%"/>
 </colgroup>
 <thead>
-<tr class="header">
-<th>Taxa</th>
-<th>Target species</th>
+<tr>
+<th style="text-align: center;">Taxa</th>
+<th style="text-align: center;">Target species</th>
 <th>Camera trap specifications used/<br/>
 recommended</th>
 <th>Mode of deployment</th>
@@ -389,7 +393,7 @@ recommended</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td rowspan="3">Small mammals</td>
 <td><ul>
 <li><p><em>Antechinus arktos</em></p></li>
@@ -430,7 +434,7 @@ station on ground</p></li>
 </ul></td>
 <td>(Gray <em>et al.</em> 2017)</td>
 </tr>
-<tr class="even">
+<tr>
 <td><ul>
 <li><p>Dasyurids</p></li>
 </ul></td>
@@ -462,7 +466,7 @@ tile marked with 5 x<br/>
 </ul></td>
 <td>(Dundas <em>et al.</em> 2019)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><ul>
 <li><p><em>Sminthopsis fuliginosus aitkeni</em></p></li>
 </ul></td>
@@ -496,7 +500,7 @@ tile marked with 5 x<br/>
 </ul></td>
 <td>(Hohnen <em>et al.</em> 2019)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Medium-sized mammals</td>
 <td><ul>
 <li><p><em><strong>Isoodon obesulus obesulus</strong></em></p></li>
@@ -525,7 +529,7 @@ rainfall</strong></p></li>
 </ul></td>
 <td><strong>(DSEWPAC 2011)</strong></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Medium-sized mammals</td>
 <td><ul>
 <li><p><em>Dasyurus hallucatus</em> (camera trap angle did not impact
@@ -564,7 +568,7 @@ vertically with angle of 10° towards bait station on ground</p></li>
 </ul></td>
 <td>(Moore <em>et al.</em> 2020b)</td>
 </tr>
-<tr class="even">
+<tr>
 <td rowspan="2">Large mammals</td>
 <td><ul>
 <li><p>Macropods</p></li>
@@ -596,7 +600,7 @@ vertically with angle of 10° towards bait station on ground</p></li>
 </ul></td>
 <td>(Reid <em>et al.</em> 2020)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><ul>
 <li><p><em>Macropus giganteus</em></p></li>
 <li><p><em>Wallabia bicolor</em></p></li>
@@ -632,7 +636,7 @@ vertically with angle of 10° towards bait station on ground</p></li>
 </ul></td>
 <td>(Davis <em>et al.</em> 2022)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Small, medium-sized and large mammals</td>
 <td><ul>
 <li><p><strong>Wide range of mammal species</strong></p></li>
@@ -670,7 +674,7 @@ deployment</strong></p></li>
 </ul></td>
 <td><strong>(Gillespie <em>et al.</em> 2015)</strong></td>
 </tr>
-<tr class="odd">
+<tr>
 <td rowspan="5">Vertebrate pests</td>
 <td><ul>
 <li><p><strong>Wild dogs</strong></p></li>
@@ -711,7 +715,7 @@ quality</strong></p></li>
 </ul></td>
 <td><strong>(Meek 2018)</strong></td>
 </tr>
-<tr class="even">
+<tr>
 <td><ul>
 <li><p>Rabbits</p></li>
 </ul></td>
@@ -735,7 +739,7 @@ quality</strong></p></li>
 </ul></td>
 <td>(Fancourt <em>et al.</em> 2018; Ruykys and Carter 2019)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><ul>
 <li><p>Feral deer</p></li>
 </ul></td>
@@ -763,7 +767,7 @@ quality</strong></p></li>
 </ul></td>
 <td>(Davies <em>et al.</em> 2020; Bengsen <em>et al.</em> 2022)</td>
 </tr>
-<tr class="even">
+<tr>
 <td><ul>
 <li><p>Feral pigs</p></li>
 </ul></td>
@@ -789,7 +793,7 @@ quality</strong></p></li>
 </ul></td>
 <td>(Davis <em>et al.</em> 2020)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><ul>
 <li><p>Feral goats</p></li>
 </ul></td>
@@ -815,7 +819,7 @@ quality</strong></p></li>
 </ul></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td rowspan="2">Vertebrate pests</td>
 <td><ul>
 <li><p>Feral horses</p></li>
@@ -841,7 +845,7 @@ quality</strong></p></li>
 </ul></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><ul>
 <li><p>Feral camels</p></li>
 </ul></td>
@@ -868,7 +872,7 @@ diurnally</p></li>
 </ul></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td rowspan="2">Reptiles</td>
 <td><ul>
 <li><p><em>Varanus giganteus</em></p></li>
@@ -904,7 +908,7 @@ station on ground</p></li>
 </ul></td>
 <td>(Moore <em>et al.</em> 2020a)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><ul>
 <li><p>Varanids (vertical camera trap angle more effective for
 detection)</p></li>
@@ -940,7 +944,7 @@ vertically with angle of 10° towards bait station on ground</p></li>
 </ul></td>
 <td>(Moore <em>et al.</em> 2020b)</td>
 </tr>
-<tr class="even">
+<tr>
 <td rowspan="2">Reptiles</td>
 <td><ul>
 <li><p>Snakes</p></li>
@@ -978,7 +982,7 @@ tile and bait station on ground</p></li>
 </ul></td>
 <td>(Welbourne <em>et al.</em> 2019)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><ul>
 <li><p>Small reptiles</p></li>
 </ul></td>
@@ -1012,7 +1016,7 @@ tile and bait station on ground</p></li>
 </ul></td>
 <td>(Welbourne <em>et al.</em> 2015)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Birds</td>
 <td><ul>
 <li><p><strong>Birds</strong></p></li>
@@ -1042,7 +1046,7 @@ orientated vertically</strong></p></li>
 </ul></td>
 <td><strong>(Meek <em>et al.</em> 2012b)</strong></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Birds</td>
 <td><ul>
 <li><p>Honeyeaters</p></li>
@@ -1076,7 +1080,7 @@ orientated vertically</strong></p></li>
 </ul></td>
 <td>(Krauss <em>et al.</em> 2018)</td>
 </tr>
-<tr class="even">
+<tr>
 <td rowspan="2">Amphibians</td>
 <td><ul>
 <li><p>Amphibians</p></li>
@@ -1102,7 +1106,7 @@ species</strong></p></li>
 </ul></td>
 <td><strong>(Meek <em>et al.</em> 2012b)</strong></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><ul>
 <li><p>Cane toads</p></li>
 </ul></td>
@@ -1131,7 +1135,7 @@ species</strong></p></li>
 </ul></td>
 <td>(Silvester <em>et al.</em> 2017)</td>
 </tr>
-<tr class="even">
+<tr>
 <td rowspan="2">Invertebrates</td>
 <td><ul>
 <li><p>Lycosids</p></li>
@@ -1164,7 +1168,7 @@ toward ground</p></li>
 </ul></td>
 <td>(Potter <em>et al.</em> 2021)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><ul>
 <li><p>Litter arthropods</p></li>
 </ul></td>
@@ -1197,7 +1201,7 @@ pitfall trap</p></li>
 </tr>
 </tbody>
 </table>
-<p><h3>Factors affecting detection</h3></p>
+<p><h4>Factors affecting detection</h4></p>
 <p>Like any fauna survey methodology, camera trap surveys must address
 common sources of sampling error to reliably assess animal populations.
 This includes imperfect detection – where individuals or species present
@@ -1223,26 +1227,15 @@ detection bias in camera trap field data collection. However,
 researchers will need to consider analytical approaches to contend with
 imperfect detection when undertaking downstream analyses (e.g.
 capture-mark-recapture methods, random encounter models).</p>
-<p><table>
-        <tbody>
-          <tr>
-            <td id='detection_factors'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/decision_factors.png"
-                alt="New_description"
-                width="450"
-                height="400"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-<p>Factors affecting camera trap detection.</p>
+<figure>
+<img alt="figure-2" height="600" src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/decision_factors.png" width="650"/>
+<figcaption><p>Factors affecting camera trap detection.</p></figcaption>
+</figure>
 <p><em>The detection of fauna by camera traps is affected by ecological
 and observational processes occurring at the broader, landscape scale
 and local, camera trap detection zone scale (Burton et al.
 2015).</em></p>
-<p><h3>Target species</h3></p>
+<p><h4>Target species</h4></p>
 <p>The target species, suites of species, or community of interest
 should be clearly identified when planning camera trap surveys. This is
 because the study design, camera trap model, camera trap point
@@ -1260,7 +1253,7 @@ summarised in the <em>Quick reference deployment guidelines</em> above.
 Furthermore, deployment recommendations for different species, relating
 to each of the factors mentioned above, are discussed in the
 corresponding sections below.</p>
-<p><h3>Camera trap selection</h3></p>
+<p><h4>Camera trap selection</h4></p>
 <p>The make and model of the camera traps used in a survey have
 important consequences for species detectability and the interpretation
 and repeatability of results. There are numerous manufacturers (e.g.
@@ -1318,21 +1311,21 @@ particularly the HC500 or PC800 models, depending on the site’s climate
 (PC800 models used in humid climates). This is due to their rapid
 response time, infrared flash, multi-fire capabilities and unique design
 for field conditions (TEAM Network 2011).</p>
-<p><h3>Summary of the camera trap features that should be evaluated when
-selecting a camera trap model (Rovero et al. 2013).</h3></p>
 <table>
+<caption><p><h4>Summary of the camera trap features that should be evaluated
+when selecting a camera trap model (Rovero et al. 2013).</h4></p></caption>
 <colgroup>
 <col style="width: 16%"/>
 <col style="width: 83%"/>
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Feature</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Sensor (PIR or AIR)</td>
 <td>Most camera traps have passive infrared (PIR) sensor, which detect a
 differential in temperature and motion between a subject and the
@@ -1346,14 +1339,14 @@ directly to a background that is under sun incidence. Active infrared
 units spaced apart, are not widely used but may, for example, be
 suitable for studies of animal use of burrows or tree hollows.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Trigger speed</td>
 <td>A fundamental feature of camera traps, if not the critical feature.
 Fast trigger speeds are necessary to capture fast moving targets. Fast
 trigger speeds may be less necessary if using a bait station as fauna
 generally stay in the detection zone for longer.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Flash type (white or infrared)</td>
 <td>Camera traps with white flash are critical to capture sharp and
 colour images at night as well as during the day. This is fundamental in
@@ -1370,7 +1363,7 @@ emitted by standard infrared LEDs which is seen by animals. A limited
 number of PIR camera trap models (e.g. Spypoint, Bolymedia) have dual
 flashes (Xenon and infrared).</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Detection zone</td>
 <td>Critical feature that varies widely among current models (15.8–324.1
 m; Meek <em>et al.</em> 2012b). Camera traps with a narrow detection
@@ -1380,7 +1373,7 @@ of view. The detection zone can be increased to some extent by moving
 the camera trap further away from the target, which can compensate for
 slow trigger speeds.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Number of photos taken, recovery time, and video</td>
 <td>Capability to capture bursts of images in rapid sequence (i.e. fast
 recovery time) may be important for improved species identification (as
@@ -1396,14 +1389,14 @@ research needs. However, data handling is more time consuming, SD cards
 are filled quicker and power consumption is greater, hence videos are
 not recommended when photographs alone provide sufficient data.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>PIR sensitivity</td>
 <td>Regulates the sensor responsiveness to the target by changing the
 heat sensitivity threshold. High sensitivity is generally better to
 detect small-sized animals. However, this will increase chance of false
 triggers caused by warm, moving vegetation.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Flash intensity</td>
 <td>A number of camera trap models allow flash intensity to be adjusted
 automatically to the distance to the subject. Some models enable the
@@ -1411,7 +1404,7 @@ amount of light generated by the white flash to be adjusted for two to
 three distance settings. However, the flash of most models is programmed
 for maximum distance and illumination.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Power autonomy</td>
 <td>Studies in remote areas and/or with long deployment periods require
 high power autonomy. Camera traps with white flash generally consume
@@ -1424,7 +1417,7 @@ Spypoint, Bolymedia, Uway) mount an input jack for external batteries or
 small solar panels so higher capacity, lead-acid batteries can be used
 to prolong deployment.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Image resolution, sharpness and clarity</td>
 <td>Most camera traps capture medium-to-high resolution images and
 video. However, the sharpness and clarity of colour images, needed to
@@ -1435,7 +1428,7 @@ resolution and clarity is often critical when targeting small animals,
 especially where sympatric species coexist with similar morphological
 features.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Camera housing and sealing</td>
 <td>Housing, camouflage and water and insect proof qualities of camera
 traps is extremely important, especially where extreme weather
@@ -1447,7 +1440,7 @@ access to replace batteries and SD cards when attached to the support.
 Housing should ideally have a tripod stud on the rear and underside to
 attach mounting brackets.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Camera programming and setting</td>
 <td>Should be as simple as possible, to allow researchers and
 practitioners with varying degree of experience to set camera traps
@@ -1479,7 +1472,7 @@ and flexible programming (Gillespie <em>et al.</em> 2015).</p>
 taxa (e.g. small, medium-sized and large mammals, invasive predators,
 reptiles) are summarised in the <a href="#_Quick_reference_deployment">Quick reference deployment
 guidelines</a>.</p>
-<p><h3>Camera trap point selection and preparation</h3></p>
+<p><h4>Camera trap point selection and preparation</h4></p>
 <p>When choosing the exact location for a camera trap, careful attention
 to camera trap placement and site preparation can improve detection,
 facilitate species identification and significantly reduce the incidence
@@ -1511,7 +1504,7 @@ prevent false triggers. The vegetation around the base of the camera
 trap mount, or tree to which the camera trap is attached to, should also
 be reduced to minimise the risk of fire damage to camera traps
 (Gillespie <em>et al.</em> 2015).</p>
-<p><h3>Mode of deployment</h3></p>
+<p><h4>Mode of deployment</h4></p>
 <p>How a camera trap is deployed in the field (i.e. its height, angle,
 direction) can greatly improve detection probability and reduce false
 triggers. The detection zone of the PIR sensor in most camera traps is a
@@ -1632,38 +1625,15 @@ direct the camera trap (Gillespie <em>et al.</em> 2015).</p>
 (e.g. small, medium-sized and large mammals, invasive predators,
 reptiles) are summarised in the <a href="#_Quick_reference_deployment">Quick reference deployment
 guidelines</a>.</p>
-<p><table>
-        <tbody>
-          <tr>
-            <td id='PIR_sensor'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/PIR_sensor.jpg"
-                alt="New_description"
-                width="450"
-                height="400"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-<p>PIR sensor detection zone (adapted from; Reconyx 2018).</p>
-<p><table>
-        <tbody>
-          <tr>
-            <td id='detection_height'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/Detection_height.jpg"
-                alt="New_description"
-                width="450"
-                height="400"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-<p>Detection of different sized fauna from camera traps mounted at
-different heights (adapted from Gillespie <em>et al.</em> 2015).</p>
-<p><h3>Camera trap settings</h3></p>
+<figure>
+<img alt="Figure-3" height="700" src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/PIR_sensor.jpg" width="550"/>
+<figcaption><p><h5>PIR sensor detection zone (adapted from; Reconyx 2018).</h5></p></figcaption>
+</figure>
+<figure>
+<img alt="Figure-4" height="480" src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/Detection_height.jpg" width="700"/>
+<figcaption><p><h5>Detection of different sized fauna from camera traps mounted at different heights (adapted from Gillespie <em>et al.</em>2015).</h5></p></figcaption>
+</figure>
+<p><h4>Camera trap settings</h4></p>
 <p>Three adjustable settings are common to many camera traps that can be
 used to ensure animals are captured, false triggers are minimised, and
 camera traps remain operational for the duration of a deployment: (i)
@@ -1748,7 +1718,7 @@ mark-recapture studies (Mattioli <em>et al.</em> 2018).</p>
 (e.g. small, medium-sized and large mammals, invasive predators,
 reptiles) are summarised in the <a href="#_Quick_reference_deployment">Quick reference deployment
 guidelines</a>.</p>
-<p><h3>Lures</h3></p>
+<p><h4>Lures</h4></p>
 <p>Camera trap surveys often use lures to attract fauna into the
 detection zone of camera traps, thereby maximising the likelihood of
 detection. This is particularly important when targeting wide ranging
@@ -1822,23 +1792,11 @@ al.</em> 2014a).</p>
 medium-sized and large mammals, invasive predators, reptiles) are
 summarised in the <a href="#_Quick_reference_deployment">Quick reference
 deployment guidelines</a>.</p>
-<p><table>
-        <tbody>
-          <tr>
-            <td id='Lure_decision_key'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/Lure_decision_key.png"
-                alt="New_description"
-                width="450"
-                height="400"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-<p>Lure use decision key. Use to help determine whether or not lures are
-suitable for use.</p>
-<p><span class="anchor" id="_Number_and_density"></span><h3>Carcasses</h3></p>
+<figure>
+<img alt="Figure-5" height="660" src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/Lure_decision_key.png" width="650"/>
+<figcaption><p><h4>Lure use decision key. Use to help determine whether or not lures are suitable for use.</h4></p></figcaption>
+</figure>
+<p><span class="anchor" id="_Number_and_density"></span><h4>Carcasses</h4></p>
 <p>Carrion, or decaying animal flesh, is a key component and driver of
 ecosystem structure and functioning that supports a range of vertebrate,
 invertebrate and microbial species. Considering vertebrate species, many
@@ -1875,7 +1833,7 @@ loses its attraction to scavengers (Behrendorff <em>et al.</em> 2018;
 Spencer and Newsome 2021). The indirect impact of carcass provision on
 native species must be considered before use (Spencer <em>et al.</em>
 2021).</p>
-<p><h3>Monitoring herbivory of palatable plants</h3></p>
+<p><h4>Monitoring herbivory of palatable plants</h4></p>
 <p>Camera traps can be focused on palatable plants to monitor browse
 species and their impacts, including both native fauna and introduced
 pests. It is important determine the most palatable plant species and
@@ -1903,7 +1861,7 @@ needs to be balanced with limiting disturbance to the potential foraging
 area. Where long grass is present, a simple solution is to place the
 camera trap at least 1 m above the ground to prevent false triggers
 (Reid <em>et al.</em> 2020).</p>
-<p><h3>Number and density of camera trap points</h3></p>
+<p><h4>Number and density of camera trap points</h4></p>
 <p>The number of camera trap points, whether single or multiple camera
 traps are allocated per point, the distance between camera traps, the
 spatial coverage of a camera trap, and the total survey area are all
@@ -1983,47 +1941,46 @@ animal signs (Colyn <em>et al.</em> 2018).</p>
 Australian taxa (e.g. small, medium-sized and large mammals, invasive
 predators, reptiles) are summarised in the <a href="#_Quick_reference_deployment">Quick reference deployment
 guidelines</a>.</p>
-<p><h5>A rudimentary guide to the minimum number of camera trap points and
-deployment periods with a single camera trap for occupancy surveys.
-These values will vary depending on the ecology of the target species
-and habitat type (Gillespie et al. 2015).</h5></p>
 <table>
+<p><h4>A rudimentary guide to the minimum number of camera trap points and deployment periods with a single camera trap for occupancy
+surveys. These values will vary depending on the ecology of the target species and habitat type (Gillespie et al. 2015).</h4></p>
 <colgroup>
 <col style="width: 33%"/>
 <col style="width: 33%"/>
 <col style="width: 33%"/>
 </colgroup>
 <thead>
-<tr class="header">
-<th>Species</th>
-<th>Minimum number of camera trap points</th>
-<th>Minimum deployment period</th>
+<tr>
+<th style="text-align: center;">Species</th>
+<th style="text-align: center;">Minimum number of camera trap
+points</th>
+<th style="text-align: center;">Minimum deployment period</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Common and easy to detect</td>
-<td>30</td>
-<td>3 weeks</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">3 weeks</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Common but hard to detect</td>
-<td>40</td>
-<td>7 weeks</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">7 weeks</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Rare but easy to detect</td>
-<td>150</td>
-<td>4 weeks</td>
+<td style="text-align: center;">150</td>
+<td style="text-align: center;">4 weeks</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Rare and hard to detect</td>
-<td>180</td>
-<td>7 weeks</td>
+<td style="text-align: center;">180</td>
+<td style="text-align: center;">7 weeks</td>
 </tr>
 </tbody>
 </table>
-<p><h3>Camera trap arrays</h3></p>
+<p><h4>Camera trap arrays</h4></p>
 <p>If you wish to undertake a general survey of the fauna across a
 project or study area without altering the behaviour of that fauna,
 deploying camera traps in a grid array is the most effective approach.
@@ -2084,17 +2041,17 @@ range over large (&gt;100 km<sup>2</sup>) and small (~1 km<sup>2</sup>)
 home ranges. For camera trapping using transect arrays, the <em>Guide
 for camera trapping wild dogs, foxes and feral cats</em> provides useful
 information (Meek 2018).</p>
-<p><h3>Camera trap array desktop assessment decision making framework.</h3></p>
 <table>
+<caption><p><h4>Camera trap array desktop assessment decision making framework.</h4></p></caption>
 <colgroup>
 <col style="width: 20%"/>
 <col style="width: 79%"/>
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Target fauna<br/>
 (species, suite of species, or community)</th>
-<th><ul>
+<td><ul>
 <li><p>Home range</p></li>
 <li><p>Habitat preferences</p></li>
 <li><p>Habitat use</p></li>
@@ -2102,11 +2059,11 @@ information (Meek 2018).</p>
 <li><p>Speed</p></li>
 <li><p>Mode of temperature regulation</p></li>
 <li><p>Demography</p></li>
-</ul></th>
+</ul></td>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>GIS spatial data layers</td>
 <td><ul>
 <li><p>Extent of the project area</p></li>
@@ -2133,7 +2090,7 @@ vegetation/habitat mapping)</p></li>
 <li><p>Other data on hydrology, topography, landcover, etc.</p></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Logistic Considerations</td>
 <td><ul>
 <li><p>Number of camera traps available</p></li>
@@ -2144,7 +2101,7 @@ vegetation/habitat mapping)</p></li>
 <li><p>Development or intervention footprint.</p></li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Political or Legislative Considerations</td>
 <td><ul>
 <li><p>Animal ethics approval and reporting</p></li>
@@ -2157,21 +2114,10 @@ vegetation/habitat mapping)</p></li>
 </tr>
 </tbody>
 </table>
-<p><table>
-        <tbody>
-          <tr>
-            <td id='potentail_grid'>
-              <img
-                src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/deployment_grid.png"
-                alt="New_description"
-                width="450"
-                height="400"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-<p>Examples of potential camera trap grid arrays.</p>
+<figure>
+<img alt="Figure-7" height="700" src="https://w3id.org/tern/static/dawe-rlp/latest/camera-traps/deployment_grid.png" width="780"/>
+<figcaption><p><h5>Examples of potential camera trap grid arrays.</h5></p></figcaption>
+</figure>
 <p><em>Each small square is 1 x 1 km and the ‘X’ represents the ideal
 location of a camera trap. There is one camera trap per 2 km2. (A) 20 x
 3 km array with camera traps placed regularly along the array. (B)
@@ -2181,8 +2127,7 @@ but placed at the predetermined density of one camera trap per 2 km2.
 arrays are orientated along the elevational gradient (TEAM Network
 2011).<br/>
 </em></p>
-<p><h3>Overview of potential sources for GIS spatial layers that can be
-utilised as part of the camera trap array generation process.</h3></p>
+<p><h4>Overview of potential sources for GIS spatial layers that can be utilised as part of the camera trap array generation process.</h4></p>
 <p><em>Please note that this list is not exhaustive, so it is also
 recommended to do a general search for any other information relevant to
 your project area, that is not contained below.</em></p>
@@ -2190,12 +2135,12 @@ your project area, that is not contained below.</em></p>
 <colgroup>
 <col style="width: 9%"/>
 <col style="width: 5%"/>
-<col style="width: 22%"/>
-<col style="width: 37%"/>
-<col style="width: 24%"/>
+<col style="width: 23%"/>
+<col style="width: 35%"/>
+<col style="width: 25%"/>
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Name</th>
 <th>Extent</th>
 <th>Description</th>
@@ -2204,7 +2149,7 @@ your project area, that is not contained below.</em></p>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Geoscience Australia</td>
 <td>AUS</td>
 <td>Australian Government database for geoscience data. Includes a range
@@ -2213,7 +2158,7 @@ of spatial and other resources.</td>
 <td>Hydrogeology, geophysics, surface hydrology, topography and
 elevation, catchments, and drainage basins.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Data.gov.au</td>
 <td>AUS</td>
 <td><p>Australian Government database including a range of spatial and
@@ -2226,7 +2171,7 @@ dependent ecosystems, administrative boundaries, roads and railways,
 topography, IBRA, threatened species and ecological communities, soils
 and geology.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Atlas of Living Australia</td>
 <td>AUS</td>
 <td>Database of species occurrence records, from multiple sources (open
@@ -2234,7 +2179,7 @@ infrastructure).</td>
 <td><a href="https://www.ala.org.au/">https://www.ala.org.au/</a></td>
 <td>Species occurrence records.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NVIS</td>
 <td>AUS</td>
 <td>Native Vegetation Information System (NVIS), Australia wide mapping
@@ -2243,7 +2188,7 @@ from vegetation class to sub-association.</td>
 <td><p>Vegetation cover shapefiles for each state and territory.</p>
 <p>Australia wide major vegetation group layer.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ARDC – Research Data Australia</td>
 <td>AUS</td>
 <td>Research datasets, including open access data. Mix of data types,
@@ -2251,14 +2196,14 @@ including some spatial data.</td>
 <td><a href="https://researchdata.edu.au/">https://researchdata.edu.au/</a></td>
 <td>Some species or ecosystem specific research datasets.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>CSIRO habitat condition portal</td>
 <td>AUS</td>
 <td>Continent-wide ecological condition data.</td>
 <td><a href="https://data.csiro.au/collections/collection/CIcsiro:38438v2/DItrue">https://data.csiro.au/collections/collection/CIcsiro:38438v2/DItrue</a></td>
 <td>Habitat condition.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>WA Department of Water</td>
 <td>WA</td>
 <td>Western Australia Department of Water and Environmental Regulation
@@ -2266,7 +2211,7 @@ database for state wide water layers.</td>
 <td><a href="https://water.wa.gov.au/maps-and-data/monitoring">https://water.wa.gov.au/maps-and-data/monitoring</a></td>
 <td>Groundwater, hydrogeology, catchments, dams.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Data WA</td>
 <td>WA</td>
 <td>Provides access to a range of WA government data. Mix of open access
@@ -2277,7 +2222,7 @@ payment.</td>
 vegetation cover, threatened ecological communities, reserves,
 hydrology, soils.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>NatureMap</td>
 <td>WA</td>
 <td>Biodiversity mapping portal.</td>
@@ -2286,7 +2231,7 @@ hydrology, soils.</td>
 communities, NRM regions, pastoral leases, climate and rainfall,
 infrastructure, flora and fauna records, topography.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NT Environment Data</td>
 <td>NT</td>
 <td>Northern Territory Government resource that provides links to web
@@ -2296,7 +2241,7 @@ portals for a range of environmental data.</td>
 resources, weeds, geoscience data, infrastructure, administrative
 boundaries, cadastre, and fire.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>NatureMaps</td>
 <td>SA</td>
 <td>South Australian Department for Environment and Water (DEW) online
@@ -2307,7 +2252,7 @@ information.</td>
 gradients, administrative boundaries, cadastre, elevation, hydrology and
 soils, fire and heritage.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>DataSA</td>
 <td>SA</td>
 <td>Provides access to spatial datasets for a range of South Australian
@@ -2319,7 +2264,7 @@ regional datasets.</td>
 use, soils, land systems, roads and tracks, railways, built up areas,
 pastoral stations.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>SARIG</p>
 <p>(South Australian Resources Information Gateway)</p></td>
 <td>SA</td>
@@ -2331,7 +2276,7 @@ mineral leases, property boundaries, pastoral stations, dog fence,
 administrative boundaries, land use zones, land management agreements,
 protected areas, infrastructure, soils, geology,</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Data NSW</td>
 <td>NSW</td>
 <td>Open access NSW government data. Provides links to other departments
@@ -2340,7 +2285,7 @@ and databases.</td>
 <td>State Heritage, threatened species habitat mapping, state forest,
 flora reserves, <em>Phytophthora</em>, land zoning, wetlands.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SEED NSW</td>
 <td>NSW</td>
 <td>The Central Resource for Sharing and Enabling Environmental Data
@@ -2349,7 +2294,7 @@ flora reserves, <em>Phytophthora</em>, land zoning, wetlands.</td>
 <td>Vegetation and floristics, climate, biodiversity values, fire
 history and prescribed burns, soils, elevation,</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NSW BioNet</td>
 <td>NSW</td>
 <td>Repository for biodiversity data products managed by the Department
@@ -2357,7 +2302,7 @@ of Planning, Industry and Environment.</td>
 <td><a href="http://www.bionet.nsw.gov.au/">http://www.bionet.nsw.gov.au/</a></td>
 <td>Species records, vegetation classification.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>NSW Spatial Collaboration Portal</td>
 <td>NSW</td>
 <td>Provides a secure platform to facilitate the delivery of NSW spatial
@@ -2366,7 +2311,7 @@ datasets. Local, state, and federal datasets.</td>
 <td>Administrative boundaries, elevation, landcover, cadastre, bushfire,
 transport and infrastructure, hydrology.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NSW Spatial Services</td>
 <td>NSW</td>
 <td>New South Wales spatial services portal that contains links to a
@@ -2375,7 +2320,7 @@ range of state resources.</td>
 <td>Links to imagery and elevation, topographic maps, and surveys
 (aquaculture leases, mineral leases).</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>eSpade</td>
 <td>NSW</td>
 <td>NSW soil mapping</td>
@@ -2383,7 +2328,7 @@ range of state resources.</td>
 <td>Soil landscapes, land systems, acid sulphate soils, hydrogeology and
 soil profiles.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>ACT Open Data Portal</td>
 <td>ACT</td>
 <td>Geospatial Data Catalogue.</td>
@@ -2393,7 +2338,7 @@ soil profiles.</td>
 administration, hydrology, threatened fauna habitat, threatened plants,
 vegetation mapping, aquatic habitat, soil landscapes, wetlands.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Data Vic</td>
 <td>VIC</td>
 <td>Discover and access Victorian Government open data. Provides access
@@ -2403,7 +2348,7 @@ to a range of spatial and non-spatial datasets.</td>
 flora and fauna records, groundwater dependent ecosystems, hydrology,
 vegetation cover, roads and infrastructure.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>VicMap</td>
 <td>VIC</td>
 <td>Victoria’s state-wide portfolio of spatial data products. Managed by
@@ -2413,7 +2358,7 @@ with Data Vic.</td>
 <td>Administrative boundaries, crown land, elevation, hydrology,
 transport, topography, vegetation and planning.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>MapShareVic</td>
 <td>VIC</td>
 <td>Online interactive mapping interface.</td>
@@ -2421,7 +2366,7 @@ transport, topography, vegetation and planning.</td>
 <td>Provides access to property, forest, public land, water and wetland
 information.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Victorian Biodiversity Atlas (VBA)</td>
 <td>VIC</td>
 <td>Access and upload occurrence data to the VBA. Search and map species
@@ -2429,7 +2374,7 @@ from across the state or check for species in a specific area.</td>
 <td><a href="https://www.environment.vic.gov.au/biodiversity/victorian-biodiversity-atlas">https://www.environment.vic.gov.au/biodiversity/victorian-biodiversity-atlas</a></td>
 <td>Flora and fauna records.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>List Data</td>
 <td>TAS</td>
 <td>Tasmanian Government List Data</td>
@@ -2438,7 +2383,7 @@ from across the state or check for species in a specific area.</td>
 flora and fauna, reserves, administrative boundaries, infrastructure and
 utilities.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Land Tasmania</td>
 <td>TAS</td>
 <td>Provides links to other databases that contain relevant
@@ -2447,7 +2392,7 @@ information.</td>
 <td>Links to datasets including administrative boundaries, elevation,
 imagery, landcover and land use, place names.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Natural Values Atlas</td>
 <td>TAS</td>
 <td>Tasmanian Government website that provides species occurrence
@@ -2458,7 +2403,7 @@ geomorphology and soils.</td>
 </tr>
 </tbody>
 </table>
-<p><h3>Deployment period</h3></p>
+<p><h4>Deployment period</h4></p>
 <p>The period of time in which camera traps are deployed determines how
 many daily replicate samples are collected (Meek <em>et al.</em> 2014a),
 with datasets generally improving the longer the deployment period (Kays
@@ -2515,9 +2460,9 @@ number of locations surveyed (Gillespie <em>et al.</em> 2015).</p>
 (e.g. small, medium-sized and large mammals, invasive predators,
 reptiles) are summarised in the <a href="#_Quick_reference_deployment">Quick reference deployment
 guidelines</a>.</p>
-<p><h3>Deployment periods to achieve a detection probability &gt;0.7 for
+<p>Deployment periods to achieve a detection probability &gt;0.7 for
 feral cats using different numbers of camera traps in and around a 50 x
-50 m Fauna Plot (Stokeld et al. 2015).</h3></p>
+50 m Fauna Plot (Stokeld et al. 2015).</p>
 <p><em>At each plot, five camera traps were deployed in a diamond
 configuration, with a single camera trap in the centre and four camera
 traps placed 30–100 m from the centre point.</em></p>
@@ -2528,36 +2473,36 @@ traps placed 30–100 m from the centre point.</em></p>
 <col style="width: 33%"/>
 </colgroup>
 <thead>
-<tr class="header">
-<th>Number of camera traps</th>
-<th>Deployment period (weeks)</th>
-<th>Detection probability</th>
+<tr>
+<th style="text-align: center;">Number of camera traps</th>
+<th style="text-align: center;">Deployment period (weeks)</th>
+<th style="text-align: center;">Detection probability</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>5</td>
-<td>5</td>
-<td>0.705</td>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0.705</td>
 </tr>
-<tr class="even">
-<td>4</td>
-<td>6</td>
-<td>0.727</td>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">0.727</td>
 </tr>
-<tr class="odd">
-<td>3</td>
-<td>7</td>
-<td>0.709</td>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">0.709</td>
 </tr>
-<tr class="even">
-<td>2</td>
-<td>8</td>
-<td>0.704</td>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">0.704</td>
 </tr>
 </tbody>
 </table>
-<p><h3>SD cards</h3></p>
+<p><h4>SD cards</h4></p>
 <p>A Secure Digital<sup>®</sup> (SD) card is required to store the
 images and videos captured by a camera trap. SD cards have various
 storage capacities and reading and writing speeds. Larger capacity cards
@@ -2578,7 +2523,7 @@ high reading and writing speeds with a minimum write speed of 10MB/s,
 are recommend. It is also recommended that you purchase two SD cards per
 camera trap, so they can be easily swapped when redeploying camera
 traps.</p>
-<p><h3>Batteries</h3></p>
+<p><h4>Batteries</h4></p>
 <p>Each camera trap can require up to 12 AA batteries depending on the
 make and model. Batteries should be selected after consulting the user
 manual of the camera traps you are using and consideration of your study
@@ -2597,7 +2542,7 @@ batteries per camera trap, which enables the seamless redeployment of
 camera traps within and between studies. Instructions for preparing
 rechargeable batteries for the field are outlined <a href="#camera-trap-deployment-protocol">Pre-field survey tasks</a> (TEAM
 Network 2011).</p>
-<p><h3>Storage and transport</h3></p>
+<p><h4>Storage and transport</h4></p>
 <p>Camera traps should be stored in a safe location and transported in
 sealed, padded containers to prevent accidental damage, water damage,
 dust damage and theft (Gillespie et al. 2015). Do not store or carry
@@ -2606,7 +2551,7 @@ as this might attract fauna to the camera trap in the field, biasing the
 estimates of detection probability. An open backpack frame to which the
 camera traps can be strapped is a practical solution to carry camera
 traps in the field (TEAM Network 2011).</p>
-<p><h3>Permits and ethics</h3></p>
+<p><h4>Permits and ethics</h4></p>
 <p>A key feature of camera traps, in contrast to many other wildlife
 survey techniques, is that they are relatively non-invasive; animals
 don’t need to be physically captured or handled as part of the survey.
@@ -2622,33 +2567,41 @@ survey. You will need to consider how often the animal ethics committee
 meets and the timeframe for approvals to be granted. It is also wise to
 allow time to address any queries from the committee or conditions that
 must be met prior to an approval being granted.</p>
-<blockquote>"""^^rdf:HTML ;
+<blockquote>
+"""^^rdf:HTML ;
     tern:equipment """
-    <h3 id="equipment">Equipment</h3>
+   <h3 id="equipment-2">Equipment</h3>
 <ul>
-<li><p>Mobile device (tablet/phone) with the <em>Monitor</em> app
+<li><p>Mobile device (tablet/phone) with the Monitor app
 pre-loaded</p></li>
-<li><p>Anti-theft device keys</p></li>
+<li><p>GNSS receiver capable of achieving &lt;30 cm accuracy (e.g.
+Trimble R1 or DA2), hand-held GPS, or device built-in GPS (least
+preferred)</p></li>
+<li><p>Anti-theft device keys.</p></li>
 </ul>"""^^rdf:HTML ;
     tern:instructions """
-    <h3 id="instructions-and-procedures">Instructions and procedures</h3>
+    <h3 id="instructions-and-procedures-2">Instructions and procedures</h3>
 <ol type="1">
 <li><p>Select the Camera Trapping Module in the Monitor app.</p></li>
+</ol>
+<ol start="2" type="1">
 <li><p>Select Camera Trap Retrieval.</p></li>
 <li><p>Select the relevant deployment <em>survey label</em> (e.g. June
 30 array deployment).</p></li>
+<li><p>The <em>start date time</em> of the retrieval survey will be
+automatically recorded. Update if required.</p></li>
 <li><p>Traverse your project area and locate a camera trap point.
 Approach it with the required equipment from the front to trigger a
 capture sequence, which is used to indicate the end of the sampling
 period.</p></li>
 <li><p>If the camera trap is missing, search the vicinity as it may have
 been dislodged and shifted by fauna. If you cannot find the camera trap,
-you will record it as ‘Missing’ in step 8.</p></li>
-<li><p>Select the relevant <em>camera trap point ID</em> from the
-drop-down list. The App will automatically record a <em>retrieval
-ID</em> (sequential number from 1, assigned to the project, current
-survey and <em>deployment ID</em>) and bring up the required data
-fields.</p></li>
+you will record it as ‘Missing’ in step 10.</p></li>
+<li><p>Select the relevant <em>deployment ID</em> from the drop-down
+list.</p></li>
+<li><p>Record the <em>retrieval date</em>. The app will automatically
+calculate the <em>deployment period</em> (number of camera trap nights
+based on the deployment date).</p></li>
 <li><p>Open the camera trap and turn it off to disarm it.</p></li>
 <li><p>Turn the camera trap on and navigate to the <em>check status</em>
 function. The number of images captured, amount of space on the SD card
@@ -2659,10 +2612,7 @@ due to flat batteries or being damaged. Record the <em>operational
 status</em> from the drop-down. Record the <em>number of images</em>
 (optional).</p></li>
 <li><p>Switch off and close the camera trap.</p></li>
-<li><p>Record the <em>deployment end date</em>. The qpp will
-automatically calculate the <em>deployment period</em> (number of camera
-trap nights).</p></li>
-<li><p>Record any additional <em>retrieval notes</em>
+<li><p>Record any additional <em>retrieval comments</em>
 (optional).</p></li>
 <li><p>Select the <em>save camera trap retrieval</em> button.</p></li>
 <li><p>Remove the camera trap and bait container (if bait station used)
@@ -2672,14 +2622,15 @@ used to mark the location of the camera trap.</p></li>
 <li><p>Ensure all equipment is packed appropriately for transport.
 Camera traps, in particular the PIR sensor, may become damaged if they
 are left loose in a vehicle or backpack.</p></li>
-<li><p>Repeat steps 4–14 for each camera trap point for the selected
+<li><p>Repeat steps 5–15 for each camera trap point for the selected
 <em>survey type</em>.</p></li>
 <li><p>Once all camera traps for the selected <em>survey type</em> have
-been retrieved, select the <em>finish protocol</em> button. Check the
-data summary before submitting the collection.</p></li>
-<li><p>Repeat Steps 3–16 for a different <em>survey type</em> if
-required.</p></li>
-</ol>
-"""^^rdf:HTML ;
+been retrieved, complete the camera trap retrieval component. The
+<em>end date time</em> of the retrieval survey will be automatically
+recorded. Update if required. Check the data summary before queuing the
+collection for submission.</p></li>
+<li><p>Repeat Steps 1–17 for a different <em>survey type</em> (creating
+a new collection for each) if required.</p></li>
+</ol>"""^^rdf:HTML ;
 .
 
