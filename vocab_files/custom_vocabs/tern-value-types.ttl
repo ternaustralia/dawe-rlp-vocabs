@@ -1,0 +1,83 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+
+tern:Boolean
+    a owl:Class ;
+    reg:status reg:statusStable ;
+    rdfs:subClassOf tern:Value ;
+    skos:definition "Class to encapsulate a true-or-false value." ;
+    skos:prefLabel "Boolean" ;
+.
+
+tern:Date
+    a owl:Class ;
+    reg:status reg:statusStable ;
+    rdfs:subClassOf tern:Value ;
+    skos:definition "A class to encapsulate an `xsd:date` value." ;
+    skos:prefLabel "Date" ;
+.
+
+tern:DateTime
+    a owl:Class ;
+    reg:status reg:statusStable ;
+    rdfs:subClassOf tern:Value ;
+    skos:definition "A class to encapsulate an `xsd:dateTime` value." ;
+    skos:prefLabel "Date time" ;
+.
+
+tern:Float
+    a owl:Class ;
+    reg:status reg:statusStable ;
+    rdfs:seeAlso sdo:Float ;
+    rdfs:subClassOf tern:Value ;
+    skos:definition "A class to encapsulate a float." ;
+    skos:prefLabel "Float" ;
+.
+
+tern:IRI
+    a owl:Class ;
+    reg:status reg:statusStable ;
+    rdfs:subClassOf tern:Value ;
+    skos:definition "A class to encapsulate an IRI value." ;
+    skos:prefLabel "IRI" ;
+.
+
+tern:Integer
+    a owl:Class ;
+    reg:status reg:statusStable ;
+    rdfs:seeAlso sdo:Integer ;
+    rdfs:subClassOf tern:Value ;
+    skos:definition "A class to encapsulate an integer value." ;
+    skos:prefLabel "Integer" ;
+.
+
+tern:Taxon
+    a owl:Class ;
+    reg:status reg:statusStable ;
+    rdfs:subClassOf tern:Value ;
+    skos:definition "A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) considered by taxonomists to form a homogeneous unit." ;
+    skos:prefLabel "Taxon" ;
+    skos:scopeNote "The genus Truncorotaloides as published by Bronnimann et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820." ;
+.
+
+tern:Text
+    a owl:Class ;
+    reg:status reg:statusStable ;
+    rdfs:subClassOf tern:Value ;
+    skos:definition "Class to encapsulate a textual value." ;
+    skos:prefLabel "Text" ;
+.
+
+tern:Value
+    a owl:Class ;
+    reg:status reg:statusStable ;
+    rdfs:subClassOf rdfs:Resource ;
+    skos:definition "A value of an `Attribute` or an `Observation`. " ;
+    skos:prefLabel "Value" ;
+    skos:scopeNote "This is an 'abstract' class and is not intended to be used directly to create individuals." ;
+.
+
