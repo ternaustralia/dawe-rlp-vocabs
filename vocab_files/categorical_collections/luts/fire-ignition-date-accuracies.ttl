@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/559bbc48-022f-4974-888c-8563598be638>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-ignition-date-accuracies.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/8efd625e-23dc-4ac5-8ed7-b9673902866b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/95a238b7-f66c-4e36-9620-7b9e894c973f> ;
+    urnp:conceptDefinition "Refers to the 'year' accuracy of the fire ignition date." ;
+    urnp:conceptSource "Laws M, Morgan R, McCallum K, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Fire Severity Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide."^^xsd:string ;
+.
+
+<https://linked.data.gov.au/def/nrm/f6c4ed3a-fd42-4c23-bb8e-01aa564477cb>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-ignition-date-accuracies.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/8efd625e-23dc-4ac5-8ed7-b9673902866b> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/484fd7b7-0172-4b60-a8a3-e473e35ab30c> ;
+    urnp:conceptDefinition "Refers to the 'month' accuracy of the fire ignition date." ;
+    urnp:conceptSource "Laws M, Morgan R, McCallum K, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Fire Severity Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide."^^xsd:string ;
+.
+
+<https://linked.data.gov.au/def/nrm/8efd625e-23dc-4ac5-8ed7-b9673902866b>
+    a skos:Collection ;
+    dcterms:description "Refers to the fire ignition date accuracies." ;
+    dcterms:source "Laws M, Morgan R, McCallum K, Bignall J, Cox B, O'Neill S, Sparrow B. (2023) Fire Severity Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide."^^xsd:string ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/484fd7b7-0172-4b60-a8a3-e473e35ab30c> ,
+        <https://linked.data.gov.au/def/nrm/95a238b7-f66c-4e36-9620-7b9e894c973f> ;
+    skos:prefLabel "Fire ignition date accuracies" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/fire-ignition-date-accuracies.ttl"^^xsd:anyURI ;
+.
+
