@@ -3,8 +3,7 @@ from typing import Tuple
 import requests
 from jinja2 import Template
 
-graphdb_configuration_template = Template(
-    """
+graphdb_configuration_template = Template("""
 #
 # RDF4J configuration template for a GraphDB Free repository
 #
@@ -42,8 +41,7 @@ graphdb_configuration_template = Template(
             owlim:read-only "false" ;
         ]
     ].
-"""
-)
+""")
 
 
 def create(
