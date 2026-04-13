@@ -2,8 +2,7 @@ from rdflib import Graph
 
 
 def add_observable_property_relationships(graph: Graph, new_data_graph: Graph):
-    result = graph.query(
-        """
+    result = graph.query("""
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX urnc: <urn:class:>
         PREFIX urnp: <urn:property:>
@@ -22,8 +21,7 @@ def add_observable_property_relationships(graph: Graph, new_data_graph: Graph):
                             urnp:valueType ?valueType .
         }
         ORDER BY ?label
-    """
-    )
+    """)
     for triple in result:
         new_data_graph.add(triple)
 
@@ -31,8 +29,7 @@ def add_observable_property_relationships(graph: Graph, new_data_graph: Graph):
 def add_observable_property_categorical_values_collections(
     graph: Graph, new_data_graph: Graph
 ):
-    result = graph.query(
-        """
+    result = graph.query("""
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX urnc: <urn:class:>
         PREFIX urnp: <urn:property:>
@@ -47,15 +44,13 @@ def add_observable_property_categorical_values_collections(
                             urnp:categoricalValuesCollection ?categoricalValuesCollection .
         }
         ORDER BY ?label
-    """
-    )
+    """)
     for triple in result:
         new_data_graph.add(triple)
 
 
 def add_categorical_concepts_definition_source(graph: Graph, new_data_graph: Graph):
-    result = graph.query(
-        """
+    result = graph.query("""
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX urnc: <urn:class:>
         PREFIX urnp: <urn:property:>
@@ -72,15 +67,13 @@ def add_categorical_concepts_definition_source(graph: Graph, new_data_graph: Gra
                             urnp:conceptDefinition ?definition ;
                             urnp:conceptSource ?source .
         }
-    """
-    )
+    """)
     for triple in result:
         new_data_graph.add(triple)
 
 
 def add_skos_concept_collection_relationship(graph: Graph, new_data_graph: Graph):
-    result = graph.query(
-        """
+    result = graph.query("""
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX urnc: <urn:class:>
         PREFIX urnp: <urn:property:>
@@ -95,15 +88,13 @@ def add_skos_concept_collection_relationship(graph: Graph, new_data_graph: Graph
             ?collection a skos:Collection ;
                         skos:member ?concept .
         }
-    """
-    )
+    """)
     for triple in result:
         new_data_graph.add(triple)
 
 
 def add_modules_submodules_relationship(graph: Graph, new_data_graph: Graph):
-    result = graph.query(
-        """
+    result = graph.query("""
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX urnc: <urn:class:>
         PREFIX urnp: <urn:property:>
@@ -117,8 +108,7 @@ def add_modules_submodules_relationship(graph: Graph, new_data_graph: Graph):
         WHERE {
             ?protocol skos:memberList/rdf:rest*/rdf:first ?subProtocol .
         }
-    """
-    )
+    """)
     for triple in result:
         new_data_graph.add(triple)
 
