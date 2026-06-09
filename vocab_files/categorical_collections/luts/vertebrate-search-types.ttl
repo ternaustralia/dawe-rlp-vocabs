@@ -1,0 +1,38 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX urnc: <urn:class:>
+PREFIX urnp: <urn:property:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/nrm/37149377-b4a9-4e3f-9136-b93c63a5d830>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-search-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/60b7821d-6986-41b8-8a08-737cbf4be8f6> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/6c2b7de0-6dce-58ea-af26-3772943e863f> ;
+    urnp:conceptDefinition "Refers to the active search techniques." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/832c9824-1af0-434c-915d-d6abc9faff29>
+    a urnc:CategoricalConceptMeta ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-search-types.ttl"^^xsd:anyURI ;
+    urnp:categoricalCollection <https://linked.data.gov.au/def/nrm/60b7821d-6986-41b8-8a08-737cbf4be8f6> ;
+    urnp:categoricalConcept <https://linked.data.gov.au/def/nrm/94649590-0cb8-41e6-a3e7-ff66ba310c1b> ;
+    urnp:conceptDefinition "Refers to the passive search techniques." ;
+    urnp:conceptSource "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+.
+
+<https://linked.data.gov.au/def/nrm/60b7821d-6986-41b8-8a08-737cbf4be8f6>
+    a skos:Collection ;
+    dcterms:description "Refers to the search type when conducting vertebrate fauna surveys." ;
+    dcterms:source "O’Neill S, McCallum K, Bignall J, Laws M, and Sparrow B, (2023) Vertebrate Fauna Module. In ‘Ecological Field Monitoring Protocols Manual using the Ecological Monitoring System Australia’. (Eds S O’Neill, K Irvine, A Tokmakoff, B Sparrow). TERN, Adelaide." ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
+    skos:member
+        <https://linked.data.gov.au/def/nrm/6c2b7de0-6dce-58ea-af26-3772943e863f> ,
+        <https://linked.data.gov.au/def/nrm/94649590-0cb8-41e6-a3e7-ff66ba310c1b> ;
+    skos:prefLabel "Vertebrate search types" ;
+    schema:url "https://github.com/ternaustralia/dawe-rlp-vocabs/tree/main/vocab_files/categorical_collections/luts/vertebrate-search-types.ttl"^^xsd:anyURI ;
+.
+
