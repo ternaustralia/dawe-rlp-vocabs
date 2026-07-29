@@ -14,7 +14,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:description """<h3>Contents</h3>
   <ol>
     <li><a href="#module-overview">Module Overview</a></li>
-    <li><a href="#introduction">Introduction and Background</a></li>
+    <li><a href="#introduction-and-background">Introduction and Background</a></li>
     <li>
       <a href="#key-definitions-and-terminology"
         >Key Definitions and Terminology</a
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     <li><a href="#references">References</a></li>
   </ol>
    <h1 id="module-overview">Module Overview</h1>
-<h2 id="available-protocols">Available Protocols </h2>
+<h2 id="available-protocols">Available protocols </h2>
 <p>The Recruitment Module covers the procedures and guidelines of two
 protocols for recording age class structure and survivorship of
 vegetation within a core monitoring plot. Depending on the project aims
@@ -32,12 +32,10 @@ and the system under study, recruitment surveys can consist of a single
 protocol or combination of the two protocols. The two protocols are:</p>
 <ul>
 <li><p><a href="https://linked.data.gov.au/def/nrm/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f">Age Class Protocol</a> – consists of two sub-protocols, the growth
-stage and life-stage surveys at the plot level (100 m x 100 m) and
-seedling, sapling and juvenile counts at the sub-plot level (40 x 40
-m).</p></li>
+stage and life-stage surveys at the plot level (100 x 100 m), and
+seedling, sapling and juvenile counts at the subplot level (40 x 40 m).</p></li>
 <li><p><a href="https://linked.data.gov.au/def/nrm/f470e27d-20ed-46dc-b64a-d67b39a9dffc">Survivorship Protocol</a> – enables users to tag individual plants
-with a unique ID, record location, health, growth stage and life-stage,
-and record size measurements for individual plants.</p></li>
+with a unique ID, record location, health, growth stage and life-stage, and record size measurements for individual plants.</p></li>
 </ul>
 <h2 id="relationships-to-other-modules">Relationships to other
 modules</h2>
@@ -45,34 +43,34 @@ modules</h2>
 <h4 class="unnumbered" id="complete-before-the-recruitment-module">Complete before the
 Recruitment Module</h4>
 <ul>
-<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – to be undertaken to create the
-bounds of where the recruitment survey will take place.</p></li>
-<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – the plant species list used in the
-Recruitment Module is dependent on the species or field names defined
-during the <a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a>. </p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821">Plot Selection and Layout Module</a> – will determine the boundaries
+of the survey plot and location of the 40 x 40 m subplot.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e">Floristics Module</a> – species are recorded in the Recruitment
+Module using naming consistent with the flora species or field names
+assigned during the Floristics Module.</p></li>
 </ul>
 <h4 class="unnumbered" id="complete-concurrently-with-the-recruitment-module">Complete
 concurrently with the Recruitment Module</h4>
 <ul>
-<li><p><a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> – if the Condition Module is undertaken, the <a href="https://linked.data.gov.au/def/nrm/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f">Age Class Protocol</a> from the Recruitment Module must be completed.</p></li>
+<li><p><a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> – if the Condition Module is undertaken, the Age
+class protocol from the Recruitment Module must be completed.</p></li>
 </ul>
 <h3 id="optional-complementary-related-modules">Optional complementary
 related modules</h3>
-<p>Optional complementary modules to gather additional information
-relating to recruitment in a project area:</p>
+<p>Optional complementary modules to gather additional information relating to recruitment in a project area:</p>
 <ul>
 <li><p><a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a> – it is recommended that recruitment data
 be assessed in combination with the descriptive data collected as part
-of the <a href="https://linked.data.gov.au/def/nrm/1ff9e97c-3bdd-44c9-bdd3-401fa31c0b32">Plot Description Module</a>.</p></li>
+of the Plot Description Module.</p></li>
 <li><p><a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> – the tapes placed to mark the transects used within
-    <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> can be used to mark the border of the 40 x 40 m subplot
-used to undertake the seedling, sapling and juvenile protocol.</p></li>
+Cover Module can be used to mark the border of the 40 x 40 m subplot for
+the seedling, sapling and juvenile counts.</p></li>
 <li><p><a href="https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6">Interventions Module</a> – if recruitment is being assessed before
-and after an intervention (e.g. revegetation, translocation) it is
-recommended that the <a href="https://linked.data.gov.au/def/nrm/8b334ccd-5e1a-474c-88e1-0f9b02d7d9c6">Interventions Module</a> also be completed.</p></li>
+and after an intervention (e.g. revegetation, translocation), it is
+recommended that the Interventions Module also be completed.</p></li>
 <li><p><a href="https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5">Basal Area Module</a> and <a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> – diameter at breast
 height (DBH) measures undertaken as part of the Tree survey protocol in
-the <a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> or within the <a href="https://linked.data.gov.au/def/nrm/f7e0d965-ae73-434e-8599-634598e506b5">Basal Area Module</a> can be used in
+the Condition Module or within the Basal Area Module can be used in
 combination with seedling, sapling and juvenile counts to assess the
 size and age class structure of the entire population.</p></li>
 </ul>"""^^rdf:HTML ;
@@ -177,105 +175,100 @@ southern NSW. <em>Ecological Management &amp; Restoration</em>
 Australian SuperSite Network.</p>
 <p>Wood, S, Stephens, H, Foulkes, J, Ebsworth, E, Bowman, D (2015)
 AusPlots Forests Survey Protocols Manual. Version 1.6. University of
-Tasmania, Hobart.</p>"""^^rdf:HTML ;
+Tasmania, Hobart.</p>
+"""^^rdf:HTML ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/nrm> ;
-    skos:definition """
-   <h2 id="key-definitions-and-terminology">Key definitions and
-terminology</h2>
-<p><span class="anchor" id="table-1"></span><h5>Table 1. Key
-definitions and terms used in the Recruitment Module.</h5></p>
+    skos:definition """<h2 id="key-definitions-and-terminology">Key Definitions and Terminology</h2>
 <table>
+<caption><p><span class="anchor" id="table-1"></span><h4>Table 1. Key
+definitions and terms used in the Recruitment Module.</h4></p></caption>
 <colgroup>
 <col style="width: 17%"/>
 <col style="width: 82%"/>
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Term</th>
 <th>Definition</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Adequate recruitment</td>
 <td>Recruitment that is sufficient to replenish natural attrition of
 plants / species (DSE 2004).</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Cohort</td>
 <td>Group of plants of the same species that germinated at the same time
 (i.e. in the same season or year).</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Diameter at breast height (DBH)</td>
 <td>The straight-line distance in centimetres across the centre of a
 standing tree trunk or stem measured at 1.3 m above ground level.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>GNSS</td>
 <td>Global Navigation Satellite System</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Juvenile</td>
 <td><em>Trees:</em> individuals with a DBH between 5-10 cm.
 <em>Shrubs:</em> has not reached maximum height, apical dominance. Not
 reproductive.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Monitor</td>
 <td>Field data collection app for Ecological Monitoring System
 Australia. Collects data using the Biodiversity Information Standard for
 delivery to the Australian Biodiversity Data Repository managed by the
 Department of Climate Change, Energy, the Environment and Water.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Perennial</td>
 <td>Long-lived species, tending to persist for three or more years.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Recruit</td>
 <td>Immature perennial plant that contains no evidence of flowering or
 fruiting material.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Recruitment</td>
 <td>Evidence of immature plants that have survived for at least one year
-since germination or first establishment (DSE 2004; Michaels 2006).
-Adequate recruitment occurs where there is enough recruitment “to
-replenish natural attrition of individual plants and species within the
-various life forms found in the habitat zone, to maintain or improve
-site condition” (DSE 2004).</td>
+since germination or first establishment (DSE 2004; Michaels 2006).</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Regenerative capacity</td>
 <td>The ability of the taxa that make up a plant community to
 successfully produce new generations of plants.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Sapling</td>
 <td>Young woody plant with a DBH between 1-5 cm and a height &lt;1.5
 m.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Seedling</td>
 <td>Very young plant, herbaceous to slightly woody, with a DBH &lt;1 cm.
 The leaves are adolescent and often the cotyledons (first leaves) are
 still present.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Shrub</td>
 <td>Woody plant, multi-stemmed at the base (or within 20 cm from the
 ground), or if single stemmed, &lt;5 m tall. Not always readily
 distinguishable from small trees (NCST 2009).</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Tree</td>
 <td>Woody plant greater than 2 m in height usually with a single stem,
 or branches well above the base. Includes trees, tall shrubs, or palms
 with DBH ≥10 cm (global forest ecology standard; Wood <em>et al.</em>
 2015), and mallee and mulga with a DBH ≥5 cm (TERN 2015).</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Trimble R1 or DA2</td>
 <td>A rugged, compact, lightweight GNSS receiver (configured with the
 GNSS Status app) that provides professional-grade positioning
@@ -283,8 +276,7 @@ information (sub-metre) to any connected mobile device using Bluetooth®
 connectivity.</td>
 </tr>
 </tbody>
-</table>
-"""^^rdf:HTML ;
+</table>"""^^rdf:HTML ;
     skos:memberList (
             <https://linked.data.gov.au/def/nrm/c93922b2-3b0e-4ee1-b1ef-c9719d039f5f>
             <https://linked.data.gov.au/def/nrm/f470e27d-20ed-46dc-b64a-d67b39a9dffc>
@@ -328,39 +320,58 @@ appropriate than transects, with larger sampling areas providing a more
 representative sample (DEC 2012). Consequently, a 40 x 40 m subplot
 situated within the centre of a 100 x 100 m plot has been adopted as
 this also enables compatibility with other related modules (e.g. Basal
-Area Module and Condition Module).</p>
-"""^^rdf:HTML ;
+Area Module and Condition Module).</p>"""^^rdf:HTML ;
     tern:scope """
-   <h1 id="introduction">Introduction and background</h1>
-<p>Recruitment is critical to the development, succession, and
-maintenance of plant populations (Casson <em>et al.</em> 2009; Bailey
-<em>et al.</em> 2012). Species need to be able to successfully produce
-new generations of individuals if they are to persist over the long term
-(DEC 2012). For recruitment to occur, there needs to be a sufficient
-seed supply and following this, suitable conditions (water, light,
-temperature and nutrients) to trigger germination and support the
-establishment and development of seedlings (Bailey <em>et al.</em>
-2012). Optimal conditions differ between species (Casson <em>et al.</em>
-2009) and as a result, the recruitment of many tree and shrub species
-can be infrequent and episodic (Michaels 2006).</p>
-<p>The Recruitment Module enables users to collect a range of
-information including growth and life-stages of each perennial species
-present (to assess level of recruitment and potential to recruit), and
-seedling, sapling and juvenile counts for woody species to assess age
-class structure. A survivorship option is also available to track
-survival, growth, health and life-stages of individual plants over time.
-The <a href="https://linked.data.gov.au/def/nrm/f470e27d-20ed-46dc-b64a-d67b39a9dffc">Survivorship Protocol</a>  is optional but it has a range of
-applications, including monitoring restoration and translocation
-activities, and post-fire recovery. The survivorship protocol is
-optional and flexible, with the survey area and target species
-determined by the user, depending on the project aims. The location of
-individual plants will be recorded, and each individual will be tagged,
-allowing repeat measures of health and growth to be undertaken over
-time. Individuals can be tagged and tracked using belt transects, a core
-plot (100 x 100 m), a subplot (40 x 40 m) or a population extent. The
-survivorship protocol allows users to track selected individuals, a
-single target species, multiple target species or all species
-present.</p>"""^^rdf:HTML ;
+   <h1 id="introduction-and-background">Introduction and Background</h1>
+<p>Fire severity is defined as the degree of consumption and scorching
+of live vegetation and dead fuel, and the degree to which soil
+properties and processes are altered due to combustion (Smith <em>et
+al.</em> 2005; Hammill and Bradstock 2006). The Fire Severity Module
+involves the collection of quantitative, accurate and repeatable
+measures of fire severity using the point-intercept method (described in
+detail in the <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a>), as well as measurements of trunk char
+height. Given that the Fire Severity Module and the <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a> utilise
+the same point-intercept transects, the two modules are undertaken
+concurrently and this is reflected in the Monitor app.</p>
+<p>The effects of fire severity are directly measured, allowing them to
+be integrated into fire severity indices designed for objective fire
+severity monitoring and mapping (Edwards <em>et al.</em> 2013; Morgan
+<em>et al.</em> 2014). This includes the calibration and validation of
+broad-scale remote sensing derived fire severity indices (Hammill and
+Bradstock 2006) and in calculations to determine fire intensity (Whight
+and Bradstock 1999; Chafer <em>et al.</em> 2004).</p>
+<p>Fire severity is quantified horizontally and vertically within the plot through the following attributes:</p>
+<ul>
+<li><p>Cover and height of vegetation</p></li>
+<li><p>Cover and height of charred and scorched vegetation</p></li>
+<li><p>Cover and height of resprouting vegetation</p></li>
+<li><p>Cover of litter and coarse woody debris (CWD)</p></li>
+<li><p>Cover of charred litter and CWD</p></li>
+<li><p>Cover of scorched litter (i.e. scorched leaf fall)</p></li>
+<li><p>Cover of bare and charred soil</p></li>
+<li><p>Cover of white and black ash</p></li>
+<li><p>Trunk char height (in wooded systems).</p></li>
+</ul>
+<p>The cover measurements are indicative of fire extent and patchiness
+(Edwards <em>et al.</em> 2013). The height measurements provide insight
+into the degree of charring and scorching of the vegetation in each
+stratum, which are key indicators of fire severity (Whight and Bradstock
+1999; Hammill and Bradstock 2006; Russell-Smith and Edwards 2006; Chafer
+2008; Edwards <em>et al.</em> 2013; Oliveira <em>et al.</em> 2015).</p>
+<p>Time since fire is recorded based on on-ground knowledge and/or
+available datasets (e.g. interactive online natural resources GIS
+datasets) to ensure the correct interpretation and comparison of the
+data.</p>
+<p>The Fire Severity Module is tailored to monitor fire severity in
+burnt areas, including areas subject to controlled burns. It does not
+include the collection of fuel load and ecosystem response data.
+However, fuel load and arrangement can be monitored with data collected
+in the <a href="https://linked.data.gov.au/def/nrm/c3403517-fcc6-4389-9c09-f1e1ee8b0f3b">Cover Module</a>, <a href="https://linked.data.gov.au/def/nrm/16a20c3f-e95d-4919-b2d1-a25c7a275109">Condition Module</a> and <a href="https://linked.data.gov.au/def/nrm/0d8b47b4-1ca8-4c76-8329-0eb781a823a2">Coarse Woody Debris Module</a>,
+including the cover and depth of litter, and the cover and percentage of
+dead material in the ground and mid strata. While ecosystem responses to
+fire can be monitored with data collected from multiple modules (e.g.
+Floristics, Cover, Vertebrate Fauna, Invertebrate Fauna, Condition,
+Recruitment).</p>"""^^rdf:HTML ;
     tern:undertakenAfter
         <https://linked.data.gov.au/def/nrm/2b5c2281-e0f4-4ef5-8ae0-8ae745af9a7e> ,
         <https://linked.data.gov.au/def/nrm/d15d05db-5007-411e-b257-105ef4f76821> ;
